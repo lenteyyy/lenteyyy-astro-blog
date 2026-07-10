@@ -155,11 +155,17 @@ export async function getPosts(): Promise<Post[]> {
 
 	try {
 		const client = new Client({ auth: token });
-		const response = await client.dataSources.query({ data_source_id: dataSourceId, page_size: 100 });
+		let response: { results: any[] };
+		try {
+			response = await client.dataSources.query({ data_source_id: dataSourceId, page_size: 100 });
+		} catch {
+			// Older Notion connections expose the same collection through the database endpoint.
+			response = await client.databases.query({ database_id: dataSourceId, page_size: 100 });
+		}
 		const posts = await Promise.all(
 			(response.results as any[]).map(async (page) => ({
 				...normalizePost(page),
-				blocks: await fetchChildren(client, page.id),
+				blocks: await fetchChildren(client, page.id).catch(() => []),
 			})),
 		);
 		if (posts.length === 0) return fallbackPosts;
