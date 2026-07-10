@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getPosts, type PostCategory } from '../../lib/posts';
+
+const posts = await getPosts();
+const selectedCategory = Astro.url.searchParams.get('category');
+const filteredPosts = selectedCategory ? posts.filter((post) => post.category === selectedCategory) : posts;
+const categories: Array<PostCategory | '全部'> = ['全部', ...new Set(posts.map((post) => post.category))];
+---
+<BaseLayout title="文章 · Lenteyyy" description="Lenteyyy 的全部文章。">
+	<section class="archive-page shell">
+		<div class="page-intro"><p class="eyebrow">THE ARCHIVE</p><h1>文章<span>.</span></h1><p>把住过的地方、听过的歌和路上的想法，慢慢整理成可以回看的记录。</p></div>
+		<nav class="filters" aria-label="文章分类">{categories.map((category) => <a class:list-selected={(!selectedCategory && category === '全部') || selectedCategory === category} href={category === '全部' ? '/posts' : `/posts?category=${encodeURIComponent(category)}`}>{category}</a>)}</nav>
+		<div class="post-list">{filteredPosts.map((post) => <PostCard post={post} />)}</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.archive-page { padding-top: 92px; }
+	.page-intro { max-width: 680px; padding-bottom: 60px; }
+	h1 { margin: 15px 0 15px; font-size: clamp(56px, 10vw, 120px); line-height: .95; font-weight: 600; letter-spacing: -.04em; }
+	h1 span { color: var(--accent); }
+	.page-intro p:last-child { max-width: 550px; color: var(--muted); font-size: 16px; line-height: 1.9; }
+	.filters { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 34px; border-bottom: 1px solid var(--line); }
+	.filters a { padding: 0 0 12px; color: var(--muted); font: 12px 'DM Mono', monospace; border-bottom: 2px solid transparent; }
+	.filters a:hover, .filters a.list-selected { color: var(--accent); border-color: var(--accent); }
+	.post-list { display: grid; gap: 34px; }
+</style>
