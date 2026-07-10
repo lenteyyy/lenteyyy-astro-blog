@@ -1,0 +1,31 @@
+---
+import type { Post } from '../lib/posts';
+const { post } = Astro.props as { post: Post };
+---
+<article class="post-card">
+	<a href={`/posts/${post.slug}`} class="cover-link" aria-label={`阅读：${post.title}`}>
+		<img src={post.cover} alt="" loading="lazy" />
+	</a>
+	<div class="post-card-copy">
+		<div class="meta"><span>{post.category}</span><time datetime={post.date}>{post.date}</time></div>
+		<h2><a href={`/posts/${post.slug}`}>{post.title}</a></h2>
+		<p>{post.summary}</p>
+		<a class="read-more" href={`/posts/${post.slug}`}>阅读全文 <span aria-hidden="true">↗</span></a>
+	</div>
+</article>
+
+<style>
+	.post-card { display: grid; grid-template-columns: 1.05fr 1fr; gap: 24px; border-top: 1px solid var(--line); padding-top: 22px; }
+	.cover-link { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #e4dfd5; }
+	.cover-link img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+	.cover-link:hover img { transform: scale(1.035); }
+	.post-card-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 3px 0 8px; }
+	.meta { display: flex; gap: 14px; color: var(--muted); font: 11px/1.5 'DM Mono', monospace; letter-spacing: .02em; }
+	.meta span { color: var(--accent); }
+	h2 { font-size: clamp(22px, 3vw, 30px); line-height: 1.35; font-weight: 600; margin: 20px 0 12px; }
+	h2 a:hover { color: var(--accent); }
+	p { color: var(--muted); font-size: 14px; line-height: 1.9; margin: 0; }
+	.read-more { margin-top: auto; padding-top: 24px; color: var(--accent); font: 12px/1.5 'DM Mono', monospace; }
+	.read-more span { font-size: 16px; margin-left: 4px; }
+	@media (max-width: 700px) { .post-card { grid-template-columns: 1fr; gap: 16px; } .post-card-copy { padding-bottom: 4px; } .read-more { margin-top: 18px; padding-top: 0; } }
+</style>
