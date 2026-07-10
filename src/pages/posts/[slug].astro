@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NotionContent from '../../components/NotionContent.astro';
+import { getPosts } from '../../lib/posts';
+
+export async function getStaticPaths() {
+	const posts = await getPosts();
+	return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+---
+<BaseLayout title={`${post.title} · Lenteyyy`} description={post.summary}>
+	<article class="post-page shell">
+		<header class="post-header">
+			<a class="back" href="/posts">← 全部文章</a>
+			<div class="meta"><span>{post.category}</span><time datetime={post.date}>{post.date}</time></div>
+			<h1>{post.title}</h1>
+			{post.summary && <p class="summary">{post.summary}</p>}
+			{post.cover && <img class="hero-image" src={post.cover} alt="" />}
+		</header>
+		<div class="article-grid">
+			<aside class="article-aside">{post.tags.length > 0 && <div class="tags">{post.tags.map((tag) => <span>#{tag}</span>)}</div>}<a href="/posts">返回文章列表 ↗</a></aside>
+			<div class="article-body"><NotionContent blocks={post.blocks} /></div>
+		</div>
+	</article>
+</BaseLayout>
+
+<style>
+	.post-page { padding-top: 70px; }
+	.post-header { max-width: 920px; margin: 0 auto; }
+	.back { display: inline-block; margin-bottom: 50px; color: var(--muted); font: 12px 'DM Mono', monospace; }
+	.back:hover { color: var(--accent); }
+	.meta { display: flex; gap: 14px; color: var(--muted); font: 11px 'DM Mono', monospace; }
+	.meta span { color: var(--accent); }
+	h1 { max-width: 850px; margin: 20px 0 14px; font-size: clamp(38px, 7vw, 82px); line-height: 1.18; font-weight: 600; letter-spacing: -.03em; }
+	.summary { max-width: 620px; color: var(--muted); font-size: 17px; line-height: 1.85; }
+	.hero-image { display: block; width: 100%; max-height: 640px; object-fit: cover; margin-top: 44px; background: #e4dfd5; }
+	.article-grid { display: grid; grid-template-columns: 180px minmax(0, 680px); gap: 70px; justify-content: center; padding-top: 75px; }
+	.article-aside { color: var(--muted); font: 11px/1.8 'DM Mono', monospace; }
+	.article-aside > a { display: inline-block; margin-top: 28px; }
+	.article-aside > a:hover { color: var(--accent); }
+	.tags { display: flex; flex-wrap: wrap; gap: 6px 10px; }
+	@media (max-width: 760px) { .post-page { padding-top: 45px; } .back { margin-bottom: 36px; } .article-grid { grid-template-columns: 1fr; gap: 30px; padding-top: 52px; } .article-aside { order: 2; } .article-body { order: 1; } }
+</style>
