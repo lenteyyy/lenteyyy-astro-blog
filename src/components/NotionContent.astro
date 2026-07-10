@@ -1,0 +1,52 @@
+---
+import { blockText, blockUrl, escapeHtml, richTextToHtml, type NotionBlock } from '../lib/posts';
+const { blocks } = Astro.props as { blocks: NotionBlock[] };
+
+function renderBlock(block: NotionBlock): string {
+	const data = block[block.type] as any;
+	const text = blockText(block);
+	const children = block.children?.map(renderBlock).join('') || '';
+	switch (block.type) {
+		case 'paragraph': return text ? `<p>${text}</p>${children}` : children;
+		case 'heading_1': return `<h2>${text}</h2>${children}`;
+		case 'heading_2': return `<h2>${text}</h2>${children}`;
+		case 'heading_3': return `<h3>${text}</h3>${children}`;
+		case 'bulleted_list_item': return `<ul><li>${text}${children}</li></ul>`;
+		case 'numbered_list_item': return `<ol><li>${text}${children}</li></ol>`;
+		case 'quote': return `<blockquote>${text}</blockquote>${children}`;
+		case 'callout': return `<aside class="callout">${data?.icon?.emoji ? `<span>${escapeHtml(data.icon.emoji)}</span>` : ''}<div>${text}${children}</div></aside>`;
+		case 'divider': return '<hr />';
+		case 'code': return `<pre><code>${escapeHtml((data?.rich_text || []).map((item: any) => item.plain_text || '').join(''))}</code></pre>`;
+		case 'image': { const url = blockUrl(block); return url ? `<figure><img src="${url}" alt="${escapeHtml((data?.caption || []).map((item: any) => item.plain_text || '').join(''))}" loading="lazy" /></figure>` : ''; }
+		case 'video': { const url = blockUrl(block); return url ? `<p><a class="embed-link" href="${url}" target="_blank" rel="noreferrer">打开视频 ↗</a></p>` : ''; }
+		case 'embed':
+		case 'bookmark': { const url = blockUrl(block); return url ? `<p><a class="embed-link" href="${url}" target="_blank" rel="noreferrer">${escapeHtml(url)} ↗</a></p>` : ''; }
+		case 'table_of_contents': return '';
+		default: return text || children;
+	}
+}
+
+const html = blocks.map(renderBlock).join('');
+---
+<div class="notion-content" set:html={html} />
+
+<style>
+	.notion-content { font-size: 17px; line-height: 2.05; }
+	.notion-content :global(p) { margin: 0 0 1.25em; }
+	.notion-content :global(h2) { margin: 2.2em 0 .65em; font-size: 1.5em; line-height: 1.4; }
+	.notion-content :global(h3) { margin: 1.8em 0 .5em; font-size: 1.18em; line-height: 1.5; }
+	.notion-content :global(a) { color: var(--accent); text-decoration: underline; text-decoration-color: #d9a49a; text-underline-offset: 3px; }
+	.notion-content :global(code) { padding: 2px 5px; background: #ebe7de; border-radius: 3px; font: .82em 'DM Mono', monospace; }
+	.notion-content :global(blockquote) { margin: 1.8em 0; padding: .1em 1.25em; border-left: 3px solid var(--accent); color: var(--muted); }
+	.notion-content :global(ul), .notion-content :global(ol) { padding-left: 1.5em; margin: 0 0 1em; }
+	.notion-content :global(li) { padding-left: .35em; }
+	.notion-content :global(hr) { border: 0; border-top: 1px solid var(--line); margin: 2.8em 0; }
+	.notion-content :global(figure) { margin: 2em 0; }
+	.notion-content :global(figure img) { display: block; width: 100%; max-height: 760px; object-fit: contain; background: #eeece7; }
+	.notion-content :global(.callout) { display: flex; gap: 12px; padding: 16px 18px; margin: 1.7em 0; background: #eee9df; font-size: .94em; line-height: 1.8; }
+	.notion-content :global(.callout span) { flex: 0 0 auto; }
+	.notion-content :global(pre) { overflow-x: auto; padding: 16px; background: #272522; color: #f7f5f0; line-height: 1.7; }
+	.notion-content :global(pre code) { padding: 0; background: none; }
+	.notion-content :global(.embed-link) { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); text-decoration: none; font: 12px 'DM Mono', monospace; }
+	@media (max-width: 640px) { .notion-content { font-size: 16px; line-height: 1.95; } }
+</style>
