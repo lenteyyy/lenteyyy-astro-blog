@@ -4,7 +4,7 @@ import NotionContent from '../../components/NotionContent.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import ViewCounter from '../../components/ViewCounter.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { blockPlainText, getPosts, type NotionBlock } from '../../lib/posts';
+import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../lib/posts';
 import { canonicalUrl, site } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -38,7 +38,7 @@ const articleJson = {
 	<article class="post-page shell">
 		<header class="post-header">
 			<a class="back" href="/posts">← 全部文章</a>
-			<div class="meta"><span>{post.category}</span><time datetime={post.publishedAt}>{post.publishedAt}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
+			<div class="meta"><span>{post.category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
 			<h1>{post.title}</h1>
 			<ShareButton title={post.title} text={post.description} url={url} />
 			{post.cover && <img class="hero-image" src={post.cover} alt={post.title} loading="eager" decoding="async" />}
