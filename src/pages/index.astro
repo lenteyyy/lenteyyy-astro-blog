@@ -5,7 +5,6 @@ import { getPosts } from '../lib/posts';
 
 const posts = await getPosts();
 const featured = posts.filter((post) => post.featured).concat(posts).filter((post, index, array) => array.findIndex((item) => item.id === post.id) === index).slice(0, 3);
-const heroPost = featured[0];
 const categories = [...new Set(posts.map((post) => post.category))];
 const categoryHref = (category: string) => `/posts/category/${encodeURIComponent(category)}/`;
 ---
@@ -17,12 +16,6 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 			<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。这里记录酒店、旅行、音乐和一些还没想明白的事情。</p>
 			<div class="intro-links"><a href="/posts">浏览文章 ↗</a><a href="/about">关于我</a></div>
 		</div>
-		{heroPost?.cover && (
-			<a class="intro-media" href={`/posts/${heroPost.slug}`} aria-label={`阅读：${heroPost.title}`}>
-				<img src={heroPost.cover} alt={heroPost.title} loading="eager" decoding="async" />
-				<span>{heroPost.category} / {heroPost.title}</span>
-			</a>
-		)}
 		<div class="intro-note">
 			<span>Contact</span>
 			<a href="mailto:lenteyteytey@gmail.com">lenteyteytey@gmail.com</a>
@@ -42,7 +35,7 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 </BaseLayout>
 
 <style>
-	.intro { min-height: 640px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr) minmax(180px, .45fr); align-items: center; gap: clamp(28px, 5vw, 72px); padding: 58px 0 70px; }
+	.intro { min-height: 560px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 280px); align-items: center; gap: clamp(40px, 8vw, 120px); padding: 58px 0 70px; }
 	.eyebrow { margin: 0; color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .12em; }
 	h1 { margin: 18px 0 30px; font-size: clamp(48px, 8vw, 108px); line-height: .95; letter-spacing: -.03em; font-weight: 600; }
 	h1 span { color: var(--accent); }
@@ -50,10 +43,6 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	.intro-links { display: flex; gap: 24px; margin-top: 34px; font: 12px var(--mono); letter-spacing: .02em; }
 	.intro-links a:first-child { color: var(--accent); }
 	.intro-links a:hover { color: var(--accent); }
-	.intro-media { align-self: stretch; display: grid; grid-template-rows: 1fr auto; gap: 14px; min-height: 430px; }
-	.intro-media img { width: 100%; height: 100%; min-height: 0; object-fit: cover; background: var(--surface); box-shadow: var(--shadow); transition: filter 200ms ease, transform 200ms ease; }
-	.intro-media:hover img { filter: saturate(1.05) contrast(1.03); transform: translateY(-2px); }
-	.intro-media span { color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .04em; }
 	.intro-note { align-self: end; width: min(240px, 100%); padding-bottom: 8px; color: var(--muted); }
 	.intro-note span { display: block; margin-bottom: 14px; color: var(--soft); font: 10px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
 	.intro-note a { display: block; color: var(--muted); font-size: 13px; line-height: 1.8; }
@@ -70,6 +59,6 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	.category-row a { display: flex; align-items: center; justify-content: space-between; min-height: 88px; padding: 0 2px; border-top: 1px solid var(--line); color: var(--muted); font-size: 17px; transition: color 180ms ease, border-color 180ms ease; }
 	.category-row a:hover { color: var(--accent); }
 	.category-row span { font: 16px var(--mono); }
-	@media (max-width: 900px) { .intro { grid-template-columns: 1fr; min-height: 0; } .intro-media { min-height: 340px; } .intro-note { align-self: start; } }
+	@media (max-width: 900px) { .intro { grid-template-columns: 1fr; min-height: 0; } .intro-note { align-self: start; } }
 	@media (max-width: 700px) { .intro { gap: 34px; padding-top: 52px; padding-bottom: 58px; } .lead { font-size: 16px; } .category-row { grid-template-columns: 1fr; gap: 0; } }
 </style>
