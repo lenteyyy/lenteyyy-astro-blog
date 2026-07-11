@@ -1,6 +1,6 @@
 ---
-import type { PostSummary } from '../lib/posts';
-const { posts } = Astro.props as { posts: PostSummary[] };
+type SearchPost = { title: string; slug: string; tags: string[] };
+const { posts } = Astro.props as { posts: SearchPost[] };
 ---
 <section class="search-box" aria-label="搜索文章">
 	<label>
