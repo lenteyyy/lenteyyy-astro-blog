@@ -8,12 +8,13 @@ const posts = await getPosts();
 const selectedCategory = Astro.url.searchParams.get('category');
 const filteredPosts = selectedCategory ? posts.filter((post) => post.category === selectedCategory) : posts;
 const categories: Array<PostCategory | '全部'> = ['全部', ...new Set(posts.map((post) => post.category))];
+const categoryHref = (category: string) => `/posts/category/${encodeURIComponent(category)}/`;
 ---
 <BaseLayout title="文章 · Lenteyyy" description="Lenteyyy 的全部文章。">
 	<section class="archive-page shell">
 		<div class="page-intro"><p class="eyebrow">THE ARCHIVE</p><h1>文章<span>.</span></h1><p>把住过的地方、听过的歌和路上的想法，慢慢整理成可以回看的记录。</p></div>
 		<SearchBox posts={posts.map(({ content, ...post }) => post)} />
-		<nav class="filters" aria-label="文章分类">{categories.map((category) => <a class={(!selectedCategory && category === '全部') || selectedCategory === category ? 'selected' : ''} href={category === '全部' ? '/posts' : `/posts?category=${encodeURIComponent(category)}`}>{category}</a>)}</nav>
+		<nav class="filters" aria-label="文章分类">{categories.map((category) => <a class={(!selectedCategory && category === '全部') || selectedCategory === category ? 'selected' : ''} href={category === '全部' ? '/posts' : categoryHref(category)}>{category}</a>)}</nav>
 		{filteredPosts.length > 0 ? <div class="post-list">{filteredPosts.map((post) => <PostCard post={post} />)}</div> : <p class="empty">没有已发布文章。</p>}
 	</section>
 </BaseLayout>
