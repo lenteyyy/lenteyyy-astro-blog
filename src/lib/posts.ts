@@ -94,6 +94,12 @@ function propertyDate(properties: Record<string, any>, name: string, fallback: s
 	return property(properties, name)?.date?.start || fallback.slice(0, 10);
 }
 
+export function formatDisplayDate(value: string): string {
+	const [year, month, day] = value.slice(0, 10).split('-').map(Number);
+	if (!year || !month || !day) return value;
+	return `${String(year).slice(-2)}.${month}.${day}`;
+}
+
 function propertyBool(properties: Record<string, any>, name: string): boolean {
 	return Boolean(property(properties, name)?.checkbox);
 }
