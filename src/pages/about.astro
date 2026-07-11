@@ -30,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
 	.about { padding-top: 92px; min-height: 560px; }
-	.about-cover { display: block; width: 100%; aspect-ratio: 1068 / 102; height: auto; margin-bottom: 54px; object-fit: cover; background: var(--surface); }
+	.about-cover { display: block; width: 100%; height: clamp(220px, 28vw, 360px); margin-bottom: 54px; object-fit: cover; background: var(--surface); }
 	h1 { margin: 0 0 45px; max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 1.2; font-weight: 600; letter-spacing: 0; }
 	.about-copy { max-width: 720px; color: var(--ink); font-size: 17px; line-height: 2.05; }
 	.about-copy p { margin: 0 0 1.25em; }
