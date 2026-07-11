@@ -1,0 +1,32 @@
+---
+const { title, text, url } = Astro.props as { title: string; text: string; url: string };
+---
+<div class="share">
+	<button type="button" data-share data-title={title} data-text={text} data-url={url}>分享文章</button>
+	<span role="status" aria-live="polite" data-share-status></span>
+</div>
+
+<script>
+	document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((button) => {
+		button.addEventListener('click', async () => {
+			const payload = { title: button.dataset.title || document.title, text: button.dataset.text || '', url: button.dataset.url || location.href };
+			const status = button.parentElement?.querySelector('[data-share-status]');
+			const canShare = typeof navigator.share === 'function';
+			try {
+				if (canShare) await navigator.share(payload);
+				else await navigator.clipboard.writeText(payload.url);
+				if (status) status.textContent = canShare ? '已打开分享' : '链接已复制';
+			} catch {
+				if (status) status.textContent = '';
+			}
+			window.setTimeout(() => { if (status) status.textContent = ''; }, 1800);
+		});
+	});
+</script>
+
+<style>
+	.share { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
+	button { padding: 9px 13px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); color: var(--ink); font: 12px var(--mono); cursor: pointer; }
+	button:hover { color: var(--accent); border-color: var(--accent); }
+	span { color: var(--muted); font: 12px var(--mono); }
+</style>

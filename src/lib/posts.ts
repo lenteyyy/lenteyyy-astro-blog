@@ -1,87 +1,55 @@
 import { Client } from '@notionhq/client';
 
-export type PostCategory = '酒店测评' | '个人杂谈' | '音乐推荐';
+export type PostCategory = '酒店测评' | '个人杂谈' | '音乐推荐' | string;
 
-export type Post = {
-	id: string;
-	title: string;
-	slug: string;
-	date: string;
-	category: PostCategory;
-	tags: string[];
-	summary: string;
-	cover: string;
-	blocks: NotionBlock[];
-	url?: string;
+export type RichText = {
+	plain_text?: string;
+	href?: string | null;
+	annotations?: {
+		bold?: boolean;
+		italic?: boolean;
+		underline?: boolean;
+		strikethrough?: boolean;
+		code?: boolean;
+		color?: string;
+	};
+	text?: { link?: { url: string } | null };
 };
 
 export type NotionBlock = {
 	id?: string;
 	type: string;
+	has_children?: boolean;
 	children?: NotionBlock[];
 	[key: string]: unknown;
 };
 
-type RichText = {
-	plain_text?: string;
-	href?: string | null;
-	annotations?: {
-	bold?: boolean;
-	italic?: boolean;
-	underline?: boolean;
-	strikethrough?: boolean;
-	code?: boolean;
-	color?: string;
-	};
-	text?: { link?: { url: string } | null };
+export type Post = {
+	id: string;
+	title: string;
+	slug: string;
+	description: string;
+	cover: string;
+	publishedAt: string;
+	updatedAt: string;
+	tags: string[];
+	category: PostCategory;
+	featured: boolean;
+	published: boolean;
+	content: NotionBlock[];
+	readingMinutes: number;
+	url?: string;
 };
 
-const fallbackPosts: Post[] = [
-	{
-		id: 'sample-wuhu',
-		title: '芜湖世贸希尔顿逸林酒店',
-		slug: 'wuhu-doubletree-hilton',
-		date: '2026-06-28',
-		category: '酒店测评',
-		tags: ['酒店', '希尔顿', '芜湖'],
-		summary: '一篇关于入住、空间和城市停留感受的酒店记录。',
-		cover: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=85',
-		blocks: [
-			{ type: 'heading_2', heading_2: { rich_text: [{ plain_text: '先说结论' }] } },
-			{ type: 'paragraph', paragraph: { rich_text: [{ plain_text: '这里是本地预览内容。接入 Notion 数据库后，文章正文会在构建时自动读取。' }] } },
-			{ type: 'paragraph', paragraph: { rich_text: [{ plain_text: '你仍然在 Notion 里写作，Astro 只负责把内容整理成更快、更可控的网站。' }] } },
-		],
-	},
-	{
-		id: 'sample-taipei-w',
-		title: '台北 W 酒店',
-		slug: 'w-taipei',
-		date: '2026-06-12',
-		category: '酒店测评',
-		tags: ['酒店', '台北', 'W Hotels'],
-		summary: '从房间、公共空间到服务细节，记录一次城市酒店体验。',
-		cover: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=85',
-		blocks: [
-			{ type: 'paragraph', paragraph: { rich_text: [{ plain_text: '这是一篇待接入 Notion 正文的预览文章。' }] } },
-		],
-	},
-	{
-		id: 'sample-summer',
-		title: '二六年的初夏，我',
-		slug: 'early-summer-2026',
-		date: '2026-06-08',
-		category: '个人杂谈',
-		tags: ['生活', '随笔'],
-		summary: '一些没有被归档成结论的想法。',
-		cover: 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=85',
-		blocks: [
-			{ type: 'paragraph', paragraph: { rich_text: [{ plain_text: '有些文章不需要一个特别明确的主题，记录本身就是主题。' }] } },
-		],
-	},
-];
+export type PostSummary = Omit<Post, 'content'>;
+
+const isProd = import.meta.env.PROD;
+const isVercel = Boolean(import.meta.env.VERCEL);
+let postsCache: Promise<Post[]> | undefined;
 
 function textOf(value: unknown): string {
 	if (typeof value === 'string') return value;
+	if (typeof value === 'number') return String(value);
 	if (Array.isArray(value)) return value.map(textOf).join('');
 	if (value && typeof value === 'object') {
 		const item = value as RichText & { name?: string; start?: string };
@@ -90,99 +58,164 @@ function textOf(value: unknown): string {
 	return '';
 }
 
-function slugify(value: string): string {
-	return value
+function slugify(value: string, fallback: string): string {
+	const slug = value
 		.trim()
 		.toLowerCase()
 		.replace(/[^\p{Letter}\p{Number}]+/gu, '-')
-		.replace(/^-+|-+$/g, '') || `post-${Date.now()}`;
+		.replace(/^-+|-+$/g, '');
+	return slug || fallback;
+}
+
+function property(properties: Record<string, any>, name: string): any {
+	return properties[name];
 }
 
 function propertyText(properties: Record<string, any>, name: string): string {
-	const property = properties[name];
-	if (!property) return '';
-	return textOf(property.title || property.rich_text || property.select || property.url || property.number || '');
+	const item = property(properties, name);
+	if (!item) return '';
+	return textOf(item.title || item.rich_text || item.select || item.status || item.url || item.number || item.checkbox || '');
 }
 
 function propertyList(properties: Record<string, any>, name: string): string[] {
-	const property = properties[name];
-	if (!property) return [];
-	const values = property.multi_select || property.rich_text || [];
+	const item = property(properties, name);
+	const values = item?.multi_select || item?.rich_text || [];
 	return Array.isArray(values) ? values.map(textOf).filter(Boolean) : [];
 }
 
-function propertyDate(properties: Record<string, any>, name: string): string {
-	return properties[name]?.date?.start || properties[name]?.created_time || new Date().toISOString().slice(0, 10);
+function propertyDate(properties: Record<string, any>, name: string, fallback: string): string {
+	return property(properties, name)?.date?.start || fallback.slice(0, 10);
 }
 
-function normalizePost(page: any): Omit<Post, 'blocks'> {
+function propertyBool(properties: Record<string, any>, name: string): boolean {
+	return Boolean(property(properties, name)?.checkbox);
+}
+
+function coverUrl(page: any, properties: Record<string, any>): string {
+	const fromProperty = propertyText(properties, 'Cover');
+	return fromProperty || page.cover?.external?.url || page.cover?.file?.url || '';
+}
+
+function isPublished(properties: Record<string, any>): boolean {
+	const status = propertyText(properties, 'Status');
+	return status === 'Published' || status === '已发布' || status === 'Publish';
+}
+
+function normalizePost(page: any, content: NotionBlock[]): Post {
 	const properties = page.properties || {};
-	const title = propertyText(properties, 'Title') || propertyText(properties, 'Name') || page.title || '未命名文章';
-	const category = propertyText(properties, 'Category') as PostCategory;
+	const title = propertyText(properties, 'Title') || propertyText(properties, 'Name') || '未命名文章';
+	const publishedAt = propertyDate(properties, 'Date', page.created_time || new Date().toISOString());
+	const description = propertyText(properties, 'Summary');
+	const plainContent = blocksToPlainText(content);
 	return {
 		id: page.id,
 		title,
-		slug: propertyText(properties, 'Slug') || slugify(title),
-		date: propertyDate(properties, 'Date'),
-		category: ['酒店测评', '个人杂谈', '音乐推荐'].includes(category) ? category : '个人杂谈',
+		slug: slugify(propertyText(properties, 'Slug') || title, page.id.replaceAll('-', '').slice(0, 12)),
+		description,
+		cover: coverUrl(page, properties),
+		publishedAt,
+		updatedAt: page.last_edited_time || publishedAt,
 		tags: propertyList(properties, 'Tags'),
-		summary: propertyText(properties, 'Summary'),
-		cover: page.cover?.external?.url || page.cover?.file?.url || '',
+		category: propertyText(properties, 'Category') || '个人杂谈',
+		featured: propertyBool(properties, 'Featured'),
+		published: isPublished(properties),
+		content,
+		readingMinutes: Math.max(1, Math.ceil(plainContent.length / 500)),
 		url: page.url,
 	};
 }
 
+function createClient(): Client | undefined {
+	const token = import.meta.env.NOTION_TOKEN;
+	if (!token) {
+		if (isProd && isVercel) throw new Error('Missing NOTION_TOKEN');
+		console.warn('[notion] Missing NOTION_TOKEN. Returning an empty post list.');
+		return undefined;
+	}
+	return new Client({ auth: token });
+}
+
+async function queryAllPages(client: Client): Promise<any[]> {
+	const dataSourceId = import.meta.env.NOTION_DATA_SOURCE_ID;
+	const databaseId = import.meta.env.NOTION_DATABASE_ID;
+	if (!dataSourceId && !databaseId) {
+		if (isProd && isVercel) throw new Error('Missing NOTION_DATA_SOURCE_ID or NOTION_DATABASE_ID');
+		console.warn('[notion] Missing data source/database id. Returning an empty post list.');
+		return [];
+	}
+
+	const pages: any[] = [];
+	let start_cursor: string | undefined;
+	while (true) {
+		const response = dataSourceId
+			? await client.dataSources.query({
+					data_source_id: dataSourceId,
+					page_size: 100,
+					start_cursor,
+					sorts: [{ timestamp: 'last_edited_time', direction: 'descending' }],
+				})
+			: await (client as any).databases.query({
+					database_id: databaseId,
+					page_size: 100,
+					start_cursor,
+					sorts: [{ timestamp: 'last_edited_time', direction: 'descending' }],
+				});
+		pages.push(...(response.results as any[]));
+		if (!response.has_more) break;
+		start_cursor = response.next_cursor || undefined;
+	}
+	return pages;
+}
+
 async function fetchChildren(client: Client, blockId: string): Promise<NotionBlock[]> {
 	const blocks: NotionBlock[] = [];
-	let cursor: string | undefined;
+	let start_cursor: string | undefined;
 	while (true) {
-		const response = await client.blocks.children.list({ block_id: blockId, page_size: 100, start_cursor: cursor });
+		const response = await client.blocks.children.list({ block_id: blockId, page_size: 100, start_cursor });
 		for (const block of response.results as any[]) {
 			const normalized = block as NotionBlock;
 			if (block.has_children) normalized.children = await fetchChildren(client, block.id);
 			blocks.push(normalized);
 		}
 		if (!response.has_more) break;
-		cursor = response.next_cursor || undefined;
+		start_cursor = response.next_cursor || undefined;
 	}
 	return blocks;
 }
 
-export async function getPosts(): Promise<Post[]> {
-	const token = import.meta.env.NOTION_TOKEN;
-	const dataSourceId = import.meta.env.NOTION_DATA_SOURCE_ID || import.meta.env.NOTION_DATABASE_ID;
-	if (!token || !dataSourceId) return fallbackPosts;
-
+async function loadPosts(): Promise<Post[]> {
+	const client = createClient();
+	if (!client) return [];
 	try {
-		const client = new Client({ auth: token });
-		let response: { results: any[] };
-		try {
-			response = await client.dataSources.query({ data_source_id: dataSourceId, page_size: 100 });
-		} catch {
-			// Older Notion connections expose the same collection through the database endpoint.
-			response = await client.databases.query({ database_id: dataSourceId, page_size: 100 });
-		}
+		const pages = await queryAllPages(client);
+		const publishedPages = pages.filter((page) => isPublished(page.properties || {}));
 		const posts = await Promise.all(
-			(response.results as any[]).map(async (page) => ({
-				...normalizePost(page),
-				blocks: await fetchChildren(client, page.id).catch(() => []),
-			})),
+			publishedPages.map(async (page) => normalizePost(page, await fetchChildren(client, page.id))),
 		);
-		if (posts.length === 0) return fallbackPosts;
-		return posts
-			.filter((post) => {
-				const status = propertyText((response.results as any[]).find((page) => page.id === post.id)?.properties || {}, 'Status');
-				return !status || status === 'Published' || status === '已发布';
-			})
-			.sort((a, b) => b.date.localeCompare(a.date));
+		return posts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 	} catch (error) {
-		console.warn('Notion unavailable, using preview content.', error);
-		return fallbackPosts;
+		console.error('[notion] Failed to load posts. Check integration permissions, API version, and environment variables.');
+		if (isProd && isVercel) throw new Error('Notion content load failed');
+		console.error(error);
+		return [];
 	}
+}
+
+export async function getPosts(): Promise<Post[]> {
+	postsCache ||= loadPosts();
+	return postsCache;
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | undefined> {
 	return (await getPosts()).find((post) => post.slug === slug);
+}
+
+export async function getTags(): Promise<Array<{ tag: string; count: number }>> {
+	const counts = new Map<string, number>();
+	for (const post of await getPosts()) {
+		for (const tag of post.tags) counts.set(tag, (counts.get(tag) || 0) + 1);
+	}
+	return [...counts].map(([tag, count]) => ({ tag, count })).sort((a, b) => a.tag.localeCompare(b.tag, 'zh-Hans-CN'));
 }
 
 export function richTextToHtml(richText: RichText[] = []): string {
@@ -203,13 +236,22 @@ export function escapeHtml(value: string): string {
 	return value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character] || character);
 }
 
-function escapeAttribute(value: string): string {
+export function escapeAttribute(value: string): string {
 	return escapeHtml(value);
 }
 
 export function blockText(block: NotionBlock): string {
 	const data = block[block.type] as any;
 	return richTextToHtml(data?.rich_text || data?.caption || []);
+}
+
+export function blockPlainText(block: NotionBlock): string {
+	const data = block[block.type] as any;
+	return textOf(data?.rich_text || data?.caption || data?.title || '');
+}
+
+export function blocksToPlainText(blocks: NotionBlock[]): string {
+	return blocks.map((block) => `${blockPlainText(block)} ${blocksToPlainText(block.children || [])}`).join(' ');
 }
 
 export function blockUrl(block: NotionBlock): string {

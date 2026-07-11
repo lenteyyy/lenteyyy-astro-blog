@@ -1,15 +1,16 @@
 ---
 import type { Post } from '../lib/posts';
 const { post } = Astro.props as { post: Post };
+const cover = post.cover || '/og-default.svg';
 ---
 <article class="post-card">
 	<a href={`/posts/${post.slug}`} class="cover-link" aria-label={`阅读：${post.title}`}>
-		<img src={post.cover} alt="" loading="lazy" />
+		<img src={cover} alt="" loading="lazy" decoding="async" />
 	</a>
 	<div class="post-card-copy">
-		<div class="meta"><span>{post.category}</span><time datetime={post.date}>{post.date}</time></div>
+		<div class="meta"><span>{post.category}</span><time datetime={post.publishedAt}>{post.publishedAt}</time></div>
 		<h2><a href={`/posts/${post.slug}`}>{post.title}</a></h2>
-		<p>{post.summary}</p>
+		<p>{post.description}</p>
 		<a class="read-more" href={`/posts/${post.slug}`}>阅读全文 <span aria-hidden="true">↗</span></a>
 	</div>
 </article>

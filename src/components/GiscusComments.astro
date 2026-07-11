@@ -1,0 +1,48 @@
+---
+import { giscusConfig } from '../lib/site';
+const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig.category && giscusConfig.categoryId);
+---
+{enabled ? (
+	<section class="comments" data-giscus data-repo={giscusConfig.repo} data-repo-id={giscusConfig.repoId} data-category={giscusConfig.category} data-category-id={giscusConfig.categoryId}>
+		<div class="comments-anchor"></div>
+	</section>
+) : (
+	<section class="comments comments-disabled"><p>评论区配置完成后会显示在这里。</p></section>
+)}
+
+<script>
+	const root = document.querySelector<HTMLElement>('[data-giscus]');
+	if (root) {
+		const load = () => {
+			if (root.dataset.loaded) return;
+			root.dataset.loaded = 'true';
+			const script = document.createElement('script');
+			script.src = 'https://giscus.app/client.js';
+			script.async = true;
+			script.crossOrigin = 'anonymous';
+			script.setAttribute('data-repo', root.dataset.repo || '');
+			script.setAttribute('data-repo-id', root.dataset.repoId || '');
+			script.setAttribute('data-category', root.dataset.category || '');
+			script.setAttribute('data-category-id', root.dataset.categoryId || '');
+			script.setAttribute('data-mapping', 'pathname');
+			script.setAttribute('data-strict', '1');
+			script.setAttribute('data-reactions-enabled', '1');
+			script.setAttribute('data-emit-metadata', '0');
+			script.setAttribute('data-input-position', 'bottom');
+			script.setAttribute('data-theme', document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+			script.setAttribute('data-lang', 'zh-CN');
+			root.querySelector('.comments-anchor')?.append(script);
+		};
+		new IntersectionObserver((entries, observer) => {
+			if (entries.some((entry) => entry.isIntersecting)) {
+				load();
+				observer.disconnect();
+			}
+		}, { rootMargin: '280px' }).observe(root);
+	}
+</script>
+
+<style>
+	.comments { margin-top: 70px; padding-top: 34px; border-top: 1px solid var(--line); }
+	.comments-disabled p { color: var(--muted); font: 13px/1.8 var(--mono); }
+</style>

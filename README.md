@@ -1,37 +1,102 @@
 # Lenteyyy Astro Blog
 
-这是 Lenteyyy 的 Astro + Notion Blog 第一版：Notion 负责写作，Astro 在构建时读取已发布文章并生成静态页面。
+Astro + Notion 个人博客。Notion 是唯一内容后台；Astro 在构建时读取已发布文章，Vercel 托管页面和浏览量 API。
 
-## 当前状态
+## 内容后台
 
-网站已经包含首页、文章列表、分类筛选、文章详情和关于页。没有配置 Notion 环境变量时，项目会使用本地预览文章；配置完成后会切换到 Notion 数据库内容。
+发布数据库：`Astro Blog Posts`
 
-Notion 数据库已创建在博客主页下，名称是 `Astro Blog Posts`。网站查询使用它的 Data Source ID：`0e5369a4-53d1-455f-8e11-e1484822ee40`。只把 `Status` 设置为 `Published` 或 `已发布` 的文章发布到网站。
+网站读取 `NOTION_DATA_SOURCE_ID` 指向的 Notion data source。不要把普通 database ID 当作 data source ID 混用；新版 Notion API 已把 database 与 data source 拆开。
 
-## 本地运行
+文章属性：
+
+```txt
+Name：标题
+Slug：文章 URL，必须唯一
+Date：发布日期
+Category：分类
+Tags：标签
+Status：Published / 已发布 才会上线
+Summary：摘要
+Cover：封面 URL
+Featured：可选，首页优先展示
+```
+
+正文写在数据库页面内部。取消 `Published` 后，文章不会进入首页、文章列表、标签页、RSS、Sitemap，也不会生成文章路由。
+
+## 同步方式
+
+当前是静态生成：Notion 修改后需要触发 Vercel 重新部署。
+
+推荐做法：
+
+1. 在 Vercel Project Settings 中创建 Deploy Hook。
+2. 复制 hook URL。
+3. 修改或新增 Notion 文章后，手动打开这个 URL，或后续用 Notion Webhook 调用它。
+
+这样不会让每位访客访问页面时都请求 Notion API，速度更快，也更安全。
+
+## 环境变量
+
+```txt
+NOTION_TOKEN
+NOTION_DATA_SOURCE_ID
+NOTION_DATABASE_ID
+PUBLIC_SITE_URL
+UPSTASH_REDIS_REST_URL
+UPSTASH_REDIS_REST_TOKEN
+PUBLIC_GISCUS_REPO
+PUBLIC_GISCUS_REPO_ID
+PUBLIC_GISCUS_CATEGORY
+PUBLIC_GISCUS_CATEGORY_ID
+```
+
+`NOTION_DATABASE_ID` 只作为旧接口兼容兜底；正常使用 `NOTION_DATA_SOURCE_ID`。
+
+## 评论
+
+评论使用 giscus。需要在 GitHub 仓库开启 Discussions，然后到 https://giscus.app 选择：
+
+```txt
+Mapping: pathname
+Theme: light/dark 自动
+Reaction: enabled
+Input position: bottom
+```
+
+把 giscus 生成的 repo、repoId、category、categoryId 填入 Vercel 环境变量。未配置时页面只显示安全占位，不会加载第三方脚本。
+
+## 浏览量
+
+公开文章浏览量使用 Upstash Redis REST API。
+
+在 Vercel Marketplace 连接 Upstash Redis 后，填入：
+
+```txt
+UPSTASH_REDIS_REST_URL
+UPSTASH_REDIS_REST_TOKEN
+```
+
+接口只允许真实文章 slug，机器人和预取请求不会增加计数。Redis 缺失或失败时文章正文正常显示。
+
+## 统计
+
+项目已接入 Vercel Web Analytics 与 Speed Insights。需要在 Vercel 项目后台启用对应功能。
+
+## 本地开发
 
 ```sh
-pnpm install
+npm install
 cp .env.example .env
-pnpm dev
+npm run dev
 ```
 
-`.env` 需要填写：
+检查与构建：
 
 ```sh
-NOTION_TOKEN=你的Notion内部集成密钥
-NOTION_DATA_SOURCE_ID=0e5369a4-53d1-455f-8e11-e1484822ee40
-PUBLIC_SITE_URL=https://你的域名
+npm run check
+npm run lint
+npm run build
 ```
 
-Notion 内部集成需要被邀请进 `Astro Blog Posts` 数据库，否则网站无法读取内容。`.env` 不要提交到 GitHub。
-
-## 发布规则
-
-在 Notion 数据库中填写 `Name`、`Slug`、`Date`、`Category`、`Tags`、`Status`、`Summary` 和 `Cover`。文章正文仍然写在数据库页面内部，图片和段落会在构建时读取。
-
-```sh
-pnpm build
-```
-
-生产构建输出在 `dist/`，之后可以连接 GitHub 部署到 Vercel 或 Cloudflare Pages。
+本地没有 Notion 环境变量时会显示空文章状态；Vercel 生产环境缺少必要 Notion 变量会构建失败，避免悄悄发布错误内容。
