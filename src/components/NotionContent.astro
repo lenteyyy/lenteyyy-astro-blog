@@ -7,7 +7,15 @@ function caption(data: any): string {
 }
 
 function renderChildren(block: NotionBlock): string {
-	return block.children?.map(renderBlock).join('') || '';
+	return renderBlocks(block.children || []);
+}
+
+function renderImage(block: NotionBlock): string {
+	const data = block[block.type] as any;
+	const url = blockUrl(block);
+	const cap = caption(data);
+	if (!url) return '';
+	return `<figure class="notion-image"><img src="${escapeAttribute(url)}" alt="${cap}" loading="lazy" decoding="async" data-lightbox-image data-caption="${escapeAttribute(cap)}" />${cap ? `<figcaption>${cap}</figcaption>` : ''}</figure>`;
 }
 
 function renderTable(block: NotionBlock): string {
@@ -70,9 +78,9 @@ function renderBlock(block: NotionBlock): string {
 	const children = renderChildren(block);
 	switch (block.type) {
 		case 'paragraph': return text ? `<p>${text}</p>${children}` : children;
-		case 'heading_1': return `<h2 id="${escapeAttribute(slug(text))}">${text}</h2>${children}`;
-		case 'heading_2': return `<h2 id="${escapeAttribute(slug(text))}">${text}</h2>${children}`;
-		case 'heading_3': return `<h3 id="${escapeAttribute(slug(text))}">${text}</h3>${children}`;
+		case 'heading_1': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h2>${children}`;
+		case 'heading_2': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h2>${children}`;
+		case 'heading_3': return `<h3 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h3>${children}`;
 		case 'bulleted_list_item': return `<ul><li>${text}${children}</li></ul>`;
 		case 'numbered_list_item': return `<ol><li>${text}${children}</li></ol>`;
 		case 'to_do': return `<p class="todo"><input type="checkbox" disabled ${data?.checked ? 'checked' : ''} />${text}</p>${children}`;
@@ -81,10 +89,7 @@ function renderBlock(block: NotionBlock): string {
 		case 'callout': return `<aside class="callout">${data?.icon?.emoji ? `<span>${escapeHtml(data.icon.emoji)}</span>` : ''}<div>${text}${children}</div></aside>`;
 		case 'divider': return '<hr />';
 		case 'code': return `<div class="code-wrap"><button type="button" class="copy-code" aria-label="复制代码">复制</button><pre><code>${escapeHtml((data?.rich_text || []).map((item: any) => item.plain_text || '').join(''))}</code></pre></div>`;
-		case 'image': {
-			const url = blockUrl(block);
-			return url ? `<figure><img src="${escapeAttribute(url)}" alt="${caption(data)}" loading="lazy" decoding="async" /><figcaption>${caption(data)}</figcaption></figure>` : '';
-		}
+		case 'image': return renderImage(block);
 		case 'video':
 		case 'embed':
 		case 'bookmark': {
@@ -104,39 +109,141 @@ function slug(value: string): string {
 	return value.replace(/<[^>]+>/g, '').trim().toLowerCase().replace(/[^\p{Letter}\p{Number}]+/gu, '-').replace(/^-+|-+$/g, '');
 }
 
-const html = blocks.map(renderBlock).join('');
+function renderBlocks(items: NotionBlock[]): string {
+	let html = '';
+	for (let index = 0; index < items.length; index += 1) {
+		if (items[index]?.type === 'image') {
+			const images: NotionBlock[] = [];
+			while (items[index]?.type === 'image') {
+				images.push(items[index]);
+				index += 1;
+			}
+			index -= 1;
+			const imageHtml = images.map(renderImage).join('');
+			html += images.length > 1 ? `<div class="image-gallery image-gallery-${Math.min(images.length, 4)}">${imageHtml}</div>` : imageHtml;
+		} else {
+			html += renderBlock(items[index]);
+		}
+	}
+	return html;
+}
+
+const html = renderBlocks(blocks);
 ---
 <div class="notion-content" set:html={html} />
 
 <script>
+	const images = Array.from(document.querySelectorAll<HTMLImageElement>('.notion-content [data-lightbox-image]'));
+	let currentIndex = 0;
+	let touchStartX = 0;
+	let lightbox: HTMLElement | null = null;
+
+	const ensureLightbox = () => {
+		if (lightbox) return lightbox;
+		lightbox = document.createElement('div');
+		lightbox.className = 'lightbox';
+		lightbox.innerHTML = `
+			<button class="lightbox-close" type="button" aria-label="关闭">×</button>
+			<button class="lightbox-prev" type="button" aria-label="上一张">‹</button>
+			<figure>
+				<img alt="" />
+				<figcaption></figcaption>
+			</figure>
+			<button class="lightbox-next" type="button" aria-label="下一张">›</button>
+		`;
+		document.body.append(lightbox);
+		lightbox.addEventListener('click', (event) => {
+			const target = event.target as HTMLElement;
+			if (target === lightbox || target.closest('.lightbox-close')) closeLightbox();
+			if (target.closest('.lightbox-prev')) showImage(currentIndex - 1);
+			if (target.closest('.lightbox-next')) showImage(currentIndex + 1);
+		});
+		lightbox.addEventListener('touchstart', (event) => { touchStartX = event.touches[0]?.clientX || 0; }, { passive: true });
+		lightbox.addEventListener('touchend', (event) => {
+			const diff = (event.changedTouches[0]?.clientX || 0) - touchStartX;
+			if (Math.abs(diff) > 45) showImage(currentIndex + (diff < 0 ? 1 : -1));
+		});
+		return lightbox;
+	};
+
+	const showImage = (index: number) => {
+		if (!images.length) return;
+		currentIndex = (index + images.length) % images.length;
+		const image = images[currentIndex];
+		const box = ensureLightbox();
+		const boxImage = box.querySelector<HTMLImageElement>('img');
+		const boxCaption = box.querySelector<HTMLElement>('figcaption');
+		if (!boxImage || !boxCaption) return;
+		boxImage.src = image.currentSrc || image.src;
+		boxImage.alt = image.alt || '';
+		boxCaption.textContent = image.dataset.caption || '';
+		boxCaption.hidden = !image.dataset.caption;
+		box.classList.add('is-open');
+		document.documentElement.classList.add('has-lightbox');
+	};
+
+	const closeLightbox = () => {
+		lightbox?.classList.remove('is-open');
+		document.documentElement.classList.remove('has-lightbox');
+	};
+
+	images.forEach((image, index) => {
+		image.addEventListener('click', () => showImage(index));
+	});
+
 	document.addEventListener('click', async (event) => {
 		const button = (event.target as HTMLElement).closest<HTMLButtonElement>('.copy-code');
-		if (!button) return;
-		const code = button.nextElementSibling?.textContent || '';
-		await navigator.clipboard?.writeText(code);
-		button.textContent = '已复制';
-		window.setTimeout(() => { button.textContent = '复制'; }, 1400);
+		const anchor = (event.target as HTMLElement).closest<HTMLButtonElement>('.heading-anchor');
+		if (button) {
+			const code = button.nextElementSibling?.textContent || '';
+			await navigator.clipboard?.writeText(code);
+			button.textContent = '已复制';
+			window.setTimeout(() => { button.textContent = '复制'; }, 1400);
+		}
+		if (anchor?.dataset.anchor) {
+			const url = `${location.origin}${location.pathname}#${anchor.dataset.anchor}`;
+			history.replaceState(null, '', `#${anchor.dataset.anchor}`);
+			await navigator.clipboard?.writeText(url);
+		}
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (!lightbox?.classList.contains('is-open')) return;
+		if (event.key === 'Escape') closeLightbox();
+		if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
+		if (event.key === 'ArrowRight') showImage(currentIndex + 1);
 	});
 </script>
 
 <style>
 	.notion-content { font-size: 18px; line-height: 2.08; }
 	.notion-content :global(p) { margin: 0 0 1.35em; }
-	.notion-content :global(h2) { margin: 2.35em 0 .72em; font-size: 1.55em; line-height: 1.38; scroll-margin-top: 90px; letter-spacing: 0; }
-	.notion-content :global(h3) { margin: 1.9em 0 .56em; font-size: 1.2em; line-height: 1.5; scroll-margin-top: 90px; }
-	.notion-content :global(a) { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-soft); text-underline-offset: 3px; }
+	.notion-content :global(h2), .notion-content :global(h3) { position: relative; }
+	.notion-content :global(h2) { margin: 2.35em 0 .72em; font-size: 1.55em; line-height: 1.38; scroll-margin-top: 95px; letter-spacing: 0; }
+	.notion-content :global(h3) { margin: 1.9em 0 .56em; font-size: 1.2em; line-height: 1.5; scroll-margin-top: 95px; }
+	.notion-content :global(.heading-anchor) { opacity: 0; margin-left: 10px; border: 0; background: transparent; color: var(--muted); font: .55em var(--mono); cursor: pointer; transition: opacity 160ms ease, color 160ms ease; }
+	.notion-content :global(h2:hover .heading-anchor), .notion-content :global(h3:hover .heading-anchor), .notion-content :global(.heading-anchor:focus-visible) { opacity: 1; }
+	.notion-content :global(.heading-anchor:hover) { color: var(--accent); }
+	.notion-content :global(a) { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-soft); text-underline-offset: 3px; transition: text-decoration-color 160ms ease, color 160ms ease; }
+	.notion-content :global(a:hover) { text-decoration-color: currentColor; }
 	.notion-content :global(code) { padding: 2px 5px; background: var(--code-bg); border-radius: 4px; font: .82em var(--mono); }
-	.notion-content :global(blockquote) { margin: 2em 0; padding: .2em 1.2em; border-left: 1px solid var(--accent); color: var(--muted); font-size: 1.08em; }
-	.notion-content :global(ul), .notion-content :global(ol) { padding-left: 1.5em; margin: 0 0 1em; }
-	.notion-content :global(li) { padding-left: .35em; }
-	.notion-content :global(hr) { border: 0; border-top: 1px solid var(--line); margin: 2.8em 0; }
-	.notion-content :global(figure) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); }
-	.notion-content :global(figure img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); }
-	.notion-content :global(figcaption) { margin-top: 10px; color: var(--muted); font: 11px/1.7 var(--mono); letter-spacing: .04em; }
+	.notion-content :global(blockquote) { margin: 2.15em 0; padding: .25em 1.35em; border-left: 1px solid var(--accent); color: var(--muted); font-size: 1.08em; background: color-mix(in srgb, var(--surface) 38%, transparent); }
+	.notion-content :global(ul), .notion-content :global(ol) { padding-left: 1.45em; margin: 0 0 1.15em; }
+	.notion-content :global(li) { padding-left: .35em; margin: .18em 0; }
+	.notion-content :global(hr) { border: 0; width: 42%; border-top: 1px solid var(--line); margin: 3.2em auto; }
+	.notion-content :global(.notion-image) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); }
+	.notion-content :global(.notion-image img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); cursor: zoom-in; transition: transform 180ms ease, filter 180ms ease; }
+	.notion-content :global(.notion-image img:hover) { transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
+	.notion-content :global(figcaption) { margin-top: 9px; color: var(--muted); font: 11px/1.7 var(--mono); letter-spacing: .04em; }
+	.notion-content :global(.image-gallery) { width: min(1040px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); display: grid; gap: 12px; align-items: start; }
+	.notion-content :global(.image-gallery-2) { grid-template-columns: repeat(2, 1fr); }
+	.notion-content :global(.image-gallery-3), .notion-content :global(.image-gallery-4) { grid-template-columns: repeat(3, 1fr); }
+	.notion-content :global(.image-gallery .notion-image) { width: 100%; margin: 0; transform: none; }
+	.notion-content :global(.image-gallery .notion-image img) { aspect-ratio: 4 / 5; height: 100%; object-fit: cover; }
 	.notion-content :global(.callout) { display: flex; gap: 12px; padding: 16px 18px; margin: 1.9em 0; background: color-mix(in srgb, var(--surface) 82%, transparent); font-size: .94em; line-height: 1.85; border-radius: var(--radius); }
 	.notion-content :global(.callout span) { flex: 0 0 auto; }
 	.notion-content :global(.code-wrap) { position: relative; margin: 1.8em 0; }
-	.notion-content :global(pre) { overflow-x: auto; padding: 20px; background: #27231d; color: #f7f1e8; line-height: 1.7; border-radius: var(--radius); }
+	.notion-content :global(pre) { overflow-x: auto; padding: 22px; background: #27231d; color: #f7f1e8; line-height: 1.75; border-radius: var(--radius); }
 	.notion-content :global(pre code) { padding: 0; background: none; color: inherit; }
 	.notion-content :global(.copy-code) { position: absolute; right: 8px; top: 8px; padding: 5px 8px; border: 1px solid #ffffff33; border-radius: 4px; background: #00000033; color: #fff; font: 11px var(--mono); cursor: pointer; }
 	.notion-content :global(.embed-link) { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); text-decoration: none; font: 12px var(--mono); border-radius: var(--radius); }
@@ -151,8 +258,25 @@ const html = blocks.map(renderBlock).join('');
 	.notion-content :global(details) { margin: 1.2em 0; padding: 12px 14px; background: var(--surface); border-radius: var(--radius); }
 	.notion-content :global(summary) { cursor: pointer; }
 	.notion-content :global(.todo) { display: flex; gap: 8px; align-items: baseline; }
-	.notion-content :global(.table-wrap) { overflow-x: auto; margin: 1.8em 0; }
+	.notion-content :global(.table-wrap) { overflow-x: auto; margin: 2em 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 	.notion-content :global(table) { width: 100%; border-collapse: collapse; min-width: 520px; }
-	.notion-content :global(td) { border: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
-	@media (max-width: 640px) { .notion-content { font-size: 16px; line-height: 1.98; } .notion-content :global(figure) { width: 100%; margin-left: 0; transform: none; } }
+	.notion-content :global(td) { border: 0; border-bottom: 1px solid var(--line); padding: 12px 14px; vertical-align: top; }
+	:global(.has-lightbox) { overflow: hidden; }
+	:global(.lightbox) { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; gap: 10px; padding: 28px; background: color-mix(in srgb, var(--paper) 92%, #000 8%); opacity: 0; pointer-events: none; transition: opacity 180ms ease; }
+	:global(.lightbox.is-open) { opacity: 1; pointer-events: auto; }
+	:global(.lightbox figure) { min-width: 0; margin: 0; text-align: center; }
+	:global(.lightbox img) { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; }
+	:global(.lightbox figcaption) { margin-top: 10px; color: var(--muted); font: 11px/1.7 var(--mono); }
+	:global(.lightbox button) { border: 0; background: transparent; color: var(--muted); cursor: pointer; transition: color 160ms ease; }
+	:global(.lightbox button:hover) { color: var(--accent); }
+	:global(.lightbox-close) { position: absolute; top: 20px; right: 24px; font-size: 28px; }
+	:global(.lightbox-prev), :global(.lightbox-next) { font-size: 42px; }
+	@media (max-width: 640px) {
+		.notion-content { font-size: 16px; line-height: 1.98; }
+		.notion-content :global(.notion-image), .notion-content :global(.image-gallery) { width: 100%; margin-left: 0; transform: none; }
+		.notion-content :global(.image-gallery) { grid-template-columns: 1fr; }
+		.notion-content :global(.image-gallery .notion-image img) { aspect-ratio: auto; height: auto; object-fit: contain; }
+		:global(.lightbox) { grid-template-columns: 1fr; padding: 18px; }
+		:global(.lightbox-prev), :global(.lightbox-next) { display: none; }
+	}
 </style>
