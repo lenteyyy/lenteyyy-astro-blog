@@ -18,6 +18,52 @@ function renderTable(block: NotionBlock): string {
 	}).join('')}</table></div>`;
 }
 
+function youtubeEmbedUrl(url: string): string {
+	try {
+		const parsed = new URL(url);
+		const host = parsed.hostname.replace(/^www\./, '');
+		const id = host === 'youtu.be' ? parsed.pathname.slice(1) : parsed.searchParams.get('v');
+		return id ? `https://www.youtube.com/embed/${escapeAttribute(id)}` : '';
+	} catch {
+		return '';
+	}
+}
+
+function spotifyEmbedUrl(url: string): string {
+	try {
+		const parsed = new URL(url);
+		if (!parsed.hostname.includes('open.spotify.com')) return '';
+		const parts = parsed.pathname.split('/').filter(Boolean);
+		const type = parts[0] === 'intl-ja' ? parts[1] : parts[0];
+		const id = parts[0] === 'intl-ja' ? parts[2] : parts[1];
+		return type && id ? `https://open.spotify.com/embed/${escapeAttribute(type)}/${escapeAttribute(id)}` : '';
+	} catch {
+		return '';
+	}
+}
+
+function appleMusicEmbedUrl(url: string): string {
+	try {
+		const parsed = new URL(url);
+		if (!parsed.hostname.includes('music.apple.com')) return '';
+		parsed.hostname = 'embed.music.apple.com';
+		return parsed.toString();
+	} catch {
+		return '';
+	}
+}
+
+function renderEmbed(url: string): string {
+	const safeUrl = escapeAttribute(url);
+	const youtube = youtubeEmbedUrl(url);
+	if (youtube) return `<figure class="media-embed media-embed-youtube"><iframe src="${youtube}" title="YouTube embedded player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>`;
+	const spotify = spotifyEmbedUrl(url);
+	if (spotify) return `<figure class="media-embed media-embed-spotify"><iframe src="${spotify}" title="Spotify embedded player" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></figure>`;
+	const apple = appleMusicEmbedUrl(url);
+	if (apple) return `<figure class="media-embed media-embed-apple"><iframe src="${apple}" title="Apple Music embedded player" loading="lazy" allow="autoplay *; encrypted-media *; fullscreen *"></iframe></figure>`;
+	return `<p><a class="embed-link" href="${safeUrl}" target="_blank" rel="noreferrer">${escapeHtml(url)} ↗</a></p>`;
+}
+
 function renderBlock(block: NotionBlock): string {
 	const data = block[block.type] as any;
 	const text = blockText(block);
@@ -43,8 +89,10 @@ function renderBlock(block: NotionBlock): string {
 		case 'embed':
 		case 'bookmark': {
 			const url = blockUrl(block);
-			return url ? `<p><a class="embed-link" href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${escapeHtml(url)} ↗</a></p>` : '';
+			return url ? renderEmbed(url) : '';
 		}
+		case 'column_list': return `<div class="notion-columns">${children}</div>`;
+		case 'column': return `<div class="notion-column">${children}</div>`;
 		case 'table': return renderTable(block);
 		case 'child_page': return `<p><strong>${escapeHtml(data?.title || '子页面')}</strong></p>`;
 		case 'table_of_contents': return '';
@@ -92,6 +140,14 @@ const html = blocks.map(renderBlock).join('');
 	.notion-content :global(pre code) { padding: 0; background: none; color: inherit; }
 	.notion-content :global(.copy-code) { position: absolute; right: 8px; top: 8px; padding: 5px 8px; border: 1px solid #ffffff33; border-radius: 4px; background: #00000033; color: #fff; font: 11px var(--mono); cursor: pointer; }
 	.notion-content :global(.embed-link) { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); text-decoration: none; font: 12px var(--mono); border-radius: var(--radius); }
+	.notion-content :global(.media-embed) { margin: 2em 0; border-radius: var(--radius); overflow: hidden; background: var(--surface); border: 1px solid var(--line); }
+	.notion-content :global(.media-embed iframe) { display: block; width: 100%; border: 0; }
+	.notion-content :global(.media-embed-youtube iframe) { aspect-ratio: 16 / 9; height: auto; }
+	.notion-content :global(.media-embed-spotify iframe) { height: 152px; }
+	.notion-content :global(.media-embed-apple iframe) { height: 175px; }
+	.notion-content :global(.notion-columns) { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 22px; align-items: start; margin: 1.8em 0; }
+	.notion-content :global(.notion-column > :first-child) { margin-top: 0; }
+	.notion-content :global(.notion-column > :last-child) { margin-bottom: 0; }
 	.notion-content :global(details) { margin: 1.2em 0; padding: 12px 14px; background: var(--surface); border-radius: var(--radius); }
 	.notion-content :global(summary) { cursor: pointer; }
 	.notion-content :global(.todo) { display: flex; gap: 8px; align-items: baseline; }
