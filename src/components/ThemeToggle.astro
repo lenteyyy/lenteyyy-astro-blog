@@ -1,13 +1,31 @@
-<button class="theme-toggle" type="button" aria-label="切换深浅色" data-theme-toggle>◐</button>
+<button class="theme-toggle" type="button" aria-label="切换深浅色" aria-pressed="false" data-theme-toggle>◐</button>
 
 <script is:inline>
 	const root = document.documentElement;
-	const saved = localStorage.getItem('theme');
-	if (saved) root.dataset.theme = saved;
-	document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
-		const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+	const toggle = document.querySelector('[data-theme-toggle]');
+	const media = window.matchMedia('(prefers-color-scheme: dark)');
+	const storedTheme = () => {
+		try { return localStorage.getItem('theme'); } catch { return null; }
+	};
+	const effectiveTheme = () => root.dataset.theme || (media.matches ? 'dark' : 'light');
+	const syncButton = () => {
+		if (!toggle) return;
+		const theme = effectiveTheme();
+		toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+		toggle.textContent = theme === 'dark' ? '☾' : '☼';
+	};
+	const saved = storedTheme();
+	if (saved === 'dark' || saved === 'light') root.dataset.theme = saved;
+	syncButton();
+	media.addEventListener('change', () => {
+		if (!storedTheme()) syncButton();
+	});
+	toggle?.addEventListener('click', () => {
+		const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
 		root.dataset.theme = next;
-		localStorage.setItem('theme', next);
+		try { localStorage.setItem('theme', next); } catch {}
+		syncButton();
+		window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
 	});
 </script>
 

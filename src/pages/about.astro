@@ -1,19 +1,28 @@
 ---
+import NotionContent from '../components/NotionContent.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getNotionPageContent } from '../lib/posts';
+
+const aboutPageId = import.meta.env.NOTION_ABOUT_PAGE_ID || '344e7043-eb63-80b5-b5e0-f416808242fc';
+const about = await getNotionPageContent(aboutPageId);
 ---
 <BaseLayout title="关于 · Lenteyyy" description="关于 Lenteyyy。">
 	<section class="about shell">
-		<p class="eyebrow">ABOUT THE AUTHOR</p>
-		<h1>你好，我是<br /><span>Lenteyyy.</span></h1>
-		<div class="about-copy"><p>我是在读大学生，也可以叫我冷踢踢。我有很多爱好，酒店、旅行、时尚、音乐、语言学习，以及一些还没有被很好命名的想法。</p><p>这个网站是一个持续生长的个人档案。内容写在 Notion 里，Astro 负责把它变成轻快、清晰、属于自己的页面。</p><p class="contact">Email：lenteyteytey@gmail.com<br />Instagram：@lenteyyy_</p></div>
+		{about.error ? (
+			<p class="about-error">关于页暂时无法读取。</p>
+		) : (
+			<>
+				<h1>{about.title}</h1>
+				<div class="about-copy"><NotionContent blocks={about.content} /></div>
+			</>
+		)}
 	</section>
 </BaseLayout>
 
 <style>
 	.about { padding-top: 110px; min-height: 560px; }
-	h1 { margin: 22px 0 45px; font-size: clamp(48px, 9vw, 108px); line-height: 1.12; font-weight: 600; letter-spacing: -.04em; }
-	h1 span { color: var(--accent); }
-	.about-copy { max-width: 610px; margin-left: min(26vw, 280px); color: #56514b; font-size: 17px; line-height: 2; }
-	.contact { padding-top: 24px; color: var(--muted); font: 12px/2 'DM Mono', monospace; }
-	@media (max-width: 640px) { .about { padding-top: 75px; } .about-copy { margin-left: 0; font-size: 16px; } }
+	h1 { margin: 0 0 45px; max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 1.2; font-weight: 600; letter-spacing: 0; }
+	.about-copy { max-width: 720px; color: var(--ink); }
+	.about-error { color: var(--muted); font-size: 16px; line-height: 1.9; }
+	@media (max-width: 640px) { .about { padding-top: 75px; } }
 </style>
