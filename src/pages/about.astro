@@ -1,28 +1,38 @@
 ---
-import NotionContent from '../components/NotionContent.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getNotionPageContent } from '../lib/posts';
-
-const aboutPageId = import.meta.env.NOTION_ABOUT_PAGE_ID || '344e7043-eb63-80b5-b5e0-f416808242fc';
-const about = await getNotionPageContent(aboutPageId);
 ---
 <BaseLayout title="关于 · Lenteyyy" description="关于 Lenteyyy。">
 	<section class="about shell">
-		{about.error ? (
-			<p class="about-error">关于页暂时无法读取。</p>
-		) : (
-			<>
-				<h1>{about.title}</h1>
-				<div class="about-copy"><NotionContent blocks={about.content} /></div>
-			</>
-		)}
+		<h1>欢迎你来到Lenteyyy的个人博客！</h1>
+		<div class="about-copy">
+			<p>你好！我是Lenteyyy，在读大学生，你也可以叫我冷踢踢。我是一个有很多爱好的很奇怪的人。</p>
+
+			<p><em>在这个Blog里，我可能会分享</em>：</p>
+			<ul>
+				<li>我的酒店测评</li>
+				<li>我关于时尚和生活方式的看法</li>
+				<li>我关于语言学习的分享和Podcast</li>
+				<li>我的个人杂谈和思考</li>
+				<li>更多可能的内容…</li>
+			</ul>
+
+			<p>非常感谢你可能的阅读和支持，我会尽我努力认真搭建好这一片小天地的。</p>
+			<p><em>这个博客可能会使用的语言</em>：简体中文，繁體中文。</p>
+
+			<p><em>你可以找到我</em>：</p>
+			<p>Email：<strong>lenteyteytey@gmail.com</strong><br />Instagram：<strong>@lenteyyy_</strong><br />微信公众平台/小红书：@冷踢踢<br />哔哩哔哩：@Lenteyyy_</p>
+
+			<p><em>（这个网站的Cover是台中市。可能是全亚洲我最喜欢的城市…）</em></p>
+		</div>
 	</section>
 </BaseLayout>
 
 <style>
 	.about { padding-top: 110px; min-height: 560px; }
 	h1 { margin: 0 0 45px; max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 1.2; font-weight: 600; letter-spacing: 0; }
-	.about-copy { max-width: 720px; color: var(--ink); }
-	.about-error { color: var(--muted); font-size: 16px; line-height: 1.9; }
+	.about-copy { max-width: 720px; color: var(--ink); font-size: 17px; line-height: 2.05; }
+	.about-copy p { margin: 0 0 1.25em; }
+	.about-copy ul { margin: 0 0 1.25em; padding-left: 1.5em; }
+	.about-copy li { padding-left: .35em; }
 	@media (max-width: 640px) { .about { padding-top: 75px; } }
 </style>
