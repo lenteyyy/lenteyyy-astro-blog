@@ -40,7 +40,7 @@ const articleJson = {
 			<a class="back" href="/posts">← 全部文章</a>
 			<div class="meta"><span>{post.category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
 			<h1>{post.title}</h1>
-			<ShareButton title={post.title} text={post.description} url={url} />
+			<div class="post-actions"><ShareButton title={post.title} text={post.description} url={url} /></div>
 			{post.cover && <img class="hero-image" src={post.cover} alt={post.title} loading="eager" decoding="async" />}
 		</header>
 		<div class="article-grid">
@@ -61,27 +61,29 @@ const articleJson = {
 </BaseLayout>
 
 <style>
-	.post-page { padding-top: 70px; }
-	.post-header { max-width: 920px; margin: 0 auto; }
-	.back { display: inline-block; margin-bottom: 50px; color: var(--muted); font: 12px var(--mono); }
+	.post-page { padding-top: 62px; }
+	.post-header { max-width: 1080px; margin: 0 auto; }
+	.back { display: inline-block; margin-bottom: 48px; color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .04em; }
 	.back:hover { color: var(--accent); }
-	.meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font: 11px var(--mono); }
+	.meta { display: flex; flex-wrap: wrap; gap: 12px 16px; color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .04em; }
 	.meta span:first-child { color: var(--accent); }
-	h1 { max-width: 850px; margin: 20px 0 14px; font-size: clamp(38px, 7vw, 82px); line-height: 1.18; font-weight: 600; letter-spacing: 0; }
-	.hero-image { display: block; width: 100%; height: auto; max-height: 640px; object-fit: cover; margin-top: 44px; background: var(--surface); }
-	.article-grid { display: grid; grid-template-columns: 190px minmax(0, 700px); gap: 64px; justify-content: center; padding-top: 75px; }
-	.article-aside { color: var(--muted); font: 11px/1.8 var(--mono); }
-	.tags { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-bottom: 28px; }
+	h1 { max-width: 980px; margin: 24px 0 0; font-size: clamp(42px, 7vw, 92px); line-height: 1.12; font-weight: 600; letter-spacing: 0; }
+	.post-actions { margin-top: 28px; }
+	.hero-image { display: block; width: 100%; aspect-ratio: 16 / 7; height: auto; object-fit: cover; margin-top: 54px; background: var(--surface); }
+	.article-grid { display: grid; grid-template-columns: 170px minmax(0, 760px); gap: clamp(38px, 7vw, 86px); justify-content: center; padding-top: 78px; }
+	.article-aside { color: var(--muted); font: 11px/1.8 var(--mono); letter-spacing: .02em; }
+	.tags { display: flex; flex-wrap: wrap; gap: 7px 11px; margin-bottom: 28px; }
 	.tags a:hover, .toc a:hover { color: var(--accent); }
 	.toc { position: sticky; top: 100px; display: grid; gap: 9px; }
 	.toc a { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-	.post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 58px; padding-top: 28px; border-top: 1px solid var(--line); }
+	.post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 66px; padding-top: 28px; border-top: 1px solid var(--line); }
 	.post-nav a { display: grid; gap: 6px; color: var(--ink); }
 	.post-nav a:last-child { text-align: right; }
 	.post-nav span { color: var(--muted); font: 11px var(--mono); }
 	@media (max-width: 760px) {
-		.post-page { padding-top: 45px; }
+		.post-page { padding-top: 42px; }
 		.back { margin-bottom: 36px; }
+		.hero-image { aspect-ratio: 4 / 3; margin-top: 36px; }
 		.article-grid { grid-template-columns: 1fr; gap: 30px; padding-top: 52px; }
 		.article-aside { order: 2; }
 		.article-body { order: 1; }

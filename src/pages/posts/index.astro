@@ -20,14 +20,16 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 </BaseLayout>
 
 <style>
-	.archive-page { padding-top: 92px; }
-	.page-intro { max-width: 680px; padding-bottom: 60px; }
-	h1 { margin: 15px 0 15px; font-size: clamp(56px, 10vw, 120px); line-height: .95; font-weight: 600; letter-spacing: -.04em; }
+	.archive-page { padding-top: 86px; }
+	.page-intro { max-width: 760px; padding-bottom: 54px; }
+	.eyebrow { margin: 0; color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .12em; }
+	h1 { margin: 14px 0 18px; font-size: clamp(54px, 9vw, 112px); line-height: .98; font-weight: 600; letter-spacing: -.025em; }
 	h1 span { color: var(--accent); }
 	.page-intro p:last-child { max-width: 550px; color: var(--muted); font-size: 16px; line-height: 1.9; }
-	.filters { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 34px; border-bottom: 1px solid var(--line); }
-	.filters a { padding: 0 0 12px; color: var(--muted); font: 12px 'DM Mono', monospace; border-bottom: 2px solid transparent; }
-	.filters a:hover, .filters a.selected { color: var(--accent); border-color: var(--accent); }
-	.post-list { display: grid; gap: 34px; }
+	.filters { display: flex; flex-wrap: wrap; gap: 24px; margin: 0 0 42px; padding-top: 12px; }
+	.filters a { color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .06em; transition: color 180ms ease; }
+	.filters a:hover, .filters a.selected { color: var(--accent); }
+	.post-list { display: grid; gap: 42px; }
 	.empty { color: var(--muted); font-size: 15px; line-height: 1.9; }
+	@media (max-width: 640px) { .archive-page { padding-top: 58px; } .page-intro { padding-bottom: 38px; } }
 </style>

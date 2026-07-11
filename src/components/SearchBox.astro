@@ -30,13 +30,13 @@ const { posts } = Astro.props as { posts: SearchPost[] };
 </script>
 
 <style>
-	.search-box { margin: 0 0 36px; }
+	.search-box { margin: 0 0 34px; max-width: 760px; }
 	label { display: grid; gap: 8px; }
-	label span { color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .08em; }
-	input { width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); color: var(--ink); font: 15px var(--serif); }
-	input:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
-	.search-results { margin-top: 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); overflow: hidden; }
-	.search-results :global(a) { display: grid; gap: 4px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+	label span { color: var(--soft); font: 10px/1.5 var(--mono); letter-spacing: .14em; }
+	input { width: 100%; padding: 12px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--ink); font: 16px var(--serif); }
+	input:focus { outline: 0; border-color: var(--accent); }
+	.search-results { margin-top: 12px; background: var(--white); box-shadow: var(--shadow); overflow: hidden; }
+	.search-results :global(a) { display: grid; gap: 4px; padding: 13px 15px; border-bottom: 1px solid var(--line); }
 	.search-results :global(a:last-child) { border-bottom: 0; }
 	.search-results :global(a:hover) { color: var(--accent); }
 	.search-results :global(span), .search-results :global(p) { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }

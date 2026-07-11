@@ -25,8 +25,8 @@ const { title, text, url } = Astro.props as { title: string; text: string; url: 
 </script>
 
 <style>
-	.share { display: flex; align-items: center; gap: 12px; margin-top: 28px; }
-	button { padding: 9px 13px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); color: var(--ink); font: 12px var(--mono); cursor: pointer; }
+	.share { display: flex; align-items: center; gap: 12px; }
+	button { padding: 0 0 7px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .04em; cursor: pointer; transition: color 180ms ease, border-color 180ms ease; }
 	button:hover { color: var(--accent); border-color: var(--accent); }
 	span { color: var(--muted); font: 12px var(--mono); }
 </style>
