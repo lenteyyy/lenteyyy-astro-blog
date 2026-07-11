@@ -1,0 +1,43 @@
+---
+import type { PostSummary } from '../lib/posts';
+const { posts } = Astro.props as { posts: PostSummary[] };
+---
+<section class="search-box" aria-label="搜索文章">
+	<label>
+		<span>SEARCH</span>
+		<input type="search" placeholder="标题、摘要或标签" data-search-input />
+	</label>
+	<div class="search-results" data-search-results hidden></div>
+</section>
+
+<script is:inline define:vars={{ posts }}>
+	const input = document.querySelector('[data-search-input]');
+	const results = document.querySelector('[data-search-results]');
+	const data = posts;
+	input?.addEventListener('input', () => {
+		const query = input.value.trim().toLowerCase();
+		if (!query) {
+			results.hidden = true;
+			results.innerHTML = '';
+			return;
+		}
+		const matches = data.filter((post) => [post.title, post.description, post.tags.join(' ')].join(' ').toLowerCase().includes(query)).slice(0, 8);
+		results.hidden = false;
+		results.innerHTML = matches.length
+			? matches.map((post) => `<a href="/posts/${post.slug}"><strong>${post.title}</strong><span>${post.description || post.tags.join(' / ')}</span></a>`).join('')
+			: '<p>没有找到。</p>';
+	});
+</script>
+
+<style>
+	.search-box { margin: 0 0 36px; }
+	label { display: grid; gap: 8px; }
+	label span { color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .08em; }
+	input { width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); color: var(--ink); font: 15px var(--serif); }
+	input:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+	.search-results { margin-top: 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); overflow: hidden; }
+	.search-results :global(a) { display: grid; gap: 4px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+	.search-results :global(a:last-child) { border-bottom: 0; }
+	.search-results :global(a:hover) { color: var(--accent); }
+	.search-results :global(span), .search-results :global(p) { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+</style>

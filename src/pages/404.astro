@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="页面不存在 · Lenteyyy" description="这个页面不存在。" noindex={true}>
+	<section class="not-found shell">
+		<p class="eyebrow">404</p>
+		<h1>页面不存在<span>.</span></h1>
+		<p>可能是文章未发布、链接已更新，或这条路本来就没有铺完。</p>
+		<a href="/posts">回到文章列表 ↗</a>
+	</section>
+</BaseLayout>
+
+<style>
+	.not-found { padding-top: 120px; min-height: 520px; }
+	.eyebrow { margin: 0; color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .08em; }
+	h1 { margin: 18px 0 20px; font-size: clamp(46px, 9vw, 100px); line-height: 1.05; font-weight: 600; letter-spacing: 0; }
+	h1 span, a { color: var(--accent); }
+	p { max-width: 560px; color: var(--muted); font-size: 17px; line-height: 1.9; }
+	a { display: inline-block; margin-top: 22px; font: 12px var(--mono); }
+</style>

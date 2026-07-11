@@ -4,7 +4,7 @@ import PostCard from '../components/PostCard.astro';
 import { getPosts } from '../lib/posts';
 
 const posts = await getPosts();
-const featured = posts.slice(0, 3);
+const featured = posts.filter((post) => post.featured).concat(posts).filter((post, index, array) => array.findIndex((item) => item.id === post.id) === index).slice(0, 3);
 const categories = [...new Set(posts.map((post) => post.category))];
 ---
 <BaseLayout title="Lenteyyy · 个人博客" description="酒店、旅行、音乐和一些个人杂谈。">
@@ -20,13 +20,13 @@ const categories = [...new Set(posts.map((post) => post.category))];
 
 	<section class="archive shell">
 		<div class="section-head"><p class="eyebrow">SELECTED WRITINGS</p><a href="/posts">查看全部 {posts.length} 篇 ↗</a></div>
-		<div class="post-list">{featured.map((post) => <PostCard post={post} />)}</div>
+		{featured.length > 0 ? <div class="post-list">{featured.map((post) => <PostCard post={post} />)}</div> : <p class="empty">Notion 发布数据库目前没有文章。把文章加入数据库并设置 Status 为 Published 后，重新部署即可显示。</p>}
 	</section>
 
-	<section class="categories shell">
+	{categories.length > 0 && <section class="categories shell">
 		<div class="section-head"><p class="eyebrow">BY CATEGORY</p></div>
 		<div class="category-row">{categories.map((category) => <a href={`/posts?category=${encodeURIComponent(category)}`}>{category}<span>↗</span></a>)}</div>
-	</section>
+	</section>}
 </BaseLayout>
 
 <style>
@@ -45,6 +45,7 @@ const categories = [...new Set(posts.map((post) => post.category))];
 	.section-head a { color: var(--muted); font: 11px 'DM Mono', monospace; }
 	.section-head a:hover { color: var(--accent); }
 	.post-list { display: grid; gap: 34px; }
+	.empty { color: var(--muted); font-size: 15px; line-height: 1.9; }
 	.categories { padding-top: 100px; }
 	.category-row { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
 	.category-row a { display: flex; align-items: center; justify-content: space-between; min-height: 90px; padding-right: 18px; border-bottom: 1px solid var(--line); font-size: 18px; }

@@ -1,0 +1,27 @@
+---
+const { slug } = Astro.props as { slug: string };
+---
+<span class="views" data-view-counter data-slug={slug}>阅读量 --</span>
+
+<script>
+	const item = document.querySelector<HTMLElement>('[data-view-counter]');
+	if (item) {
+		const slug = item.dataset.slug || '';
+		const visible = document.visibilityState === 'visible';
+		const prefetched = navigator.userAgent.includes('bot') || document.referrer.includes('_rsc=');
+		const seenKey = `viewed:${slug}`;
+		const shouldIncrement = visible && !prefetched && sessionStorage.getItem(seenKey) !== '1';
+		fetch(`/api/views/${encodeURIComponent(slug)}${shouldIncrement ? '?increment=1' : ''}`)
+			.then((response) => response.ok ? response.json() : null)
+			.then((data) => {
+				if (!data || typeof data.views !== 'number') return;
+				item.textContent = `阅读量 ${data.views}`;
+				if (shouldIncrement) sessionStorage.setItem(seenKey, '1');
+			})
+			.catch(() => {});
+	}
+</script>
+
+<style>
+	.views { color: var(--muted); font: 11px var(--mono); }
+</style>

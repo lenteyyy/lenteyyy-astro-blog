@@ -1,0 +1,17 @@
+<button class="theme-toggle" type="button" aria-label="切换深浅色" data-theme-toggle>◐</button>
+
+<script is:inline>
+	const root = document.documentElement;
+	const saved = localStorage.getItem('theme');
+	if (saved) root.dataset.theme = saved;
+	document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
+		const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+		root.dataset.theme = next;
+		localStorage.setItem('theme', next);
+	});
+</script>
+
+<style>
+	.theme-toggle { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink); cursor: pointer; }
+	.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+</style>

@@ -1,25 +1,61 @@
 ---
-const { title = 'Lenteyyy', description = 'Lenteyyy 的个人博客' } = Astro.props;
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import { canonicalUrl, site } from '../lib/site';
+
+const {
+	title = site.title,
+	description = site.description,
+	image = site.defaultOgImage,
+	type = 'website',
+	publishedAt,
+	updatedAt,
+	noindex = false,
+} = Astro.props;
 const currentPath = Astro.url.pathname;
+const canonical = canonicalUrl(currentPath);
+const imageUrl = image.startsWith('http') ? image : canonicalUrl(image);
 ---
 <!doctype html>
-<html lang="zh-CN">
+<html lang={site.lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content={description} />
 		<meta name="generator" content={Astro.generator} />
+		{noindex && <meta name="robots" content="noindex,nofollow" />}
+		<link rel="canonical" href={canonical} />
 		<link rel="icon" href="/favicon.svg" />
+		<link rel="alternate" type="application/rss+xml" title="Lenteyyy RSS" href="/rss.xml" />
+		<meta property="og:site_name" content={site.name} />
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={imageUrl} />
+		<meta property="og:locale" content={site.locale} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={imageUrl} />
+		{publishedAt && <meta property="article:published_time" content={publishedAt} />}
+		{updatedAt && <meta property="article:modified_time" content={updatedAt} />}
 		<title>{title}</title>
+		<script is:inline>
+			const saved = localStorage.getItem('theme');
+			if (saved) document.documentElement.dataset.theme = saved;
+		</script>
 	</head>
 	<body>
 		<header class="site-header">
 			<div class="shell nav-wrap">
 				<a class="brand" href="/">Lenteyyy<span>.</span></a>
 				<nav aria-label="主导航">
-					<a class:list-active={currentPath === '/'} href="/">首页</a>
-					<a class:list-active={currentPath.startsWith('/posts')} href="/posts">文章</a>
-					<a href="/about">关于</a>
+					<a class={currentPath === '/' ? 'active' : ''} href="/">首页</a>
+					<a class={currentPath.startsWith('/posts') || currentPath.startsWith('/tags') ? 'active' : ''} href="/posts">文章</a>
+					<a class={currentPath === '/about' ? 'active' : ''} href="/about">关于</a>
+					<ThemeToggle />
 				</nav>
 			</div>
 		</header>
@@ -30,24 +66,76 @@ const currentPath = Astro.url.pathname;
 				<span>写一点，走远一点。</span>
 			</div>
 		</footer>
+		<Analytics />
+		<SpeedInsights />
 	</body>
 </html>
 
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
-	:root { color-scheme: light; --ink: #222222; --muted: #77736c; --line: #ddd8cf; --paper: #f7f5f0; --accent: #9b3e2e; --white: #fffdfa; font-family: 'Noto Serif SC', Georgia, serif; }
+	:root {
+		color-scheme: light;
+		--serif: 'Noto Serif SC', Georgia, serif;
+		--mono: 'DM Mono', ui-monospace, monospace;
+		--ink: #222222;
+		--muted: #77736c;
+		--line: #ddd8cf;
+		--paper: #f7f5f0;
+		--surface: #eee9df;
+		--accent: #9b3e2e;
+		--accent-soft: #d9a49a;
+		--white: #fffdfa;
+		--code-bg: #ebe7de;
+		--radius: 6px;
+		font-family: var(--serif);
+	}
+	@media (prefers-color-scheme: dark) {
+		:root:not([data-theme='light']) {
+			color-scheme: dark;
+			--ink: #eee9df;
+			--muted: #aaa39a;
+			--line: #3e3a34;
+			--paper: #171614;
+			--surface: #24211d;
+			--accent: #d28b7e;
+			--accent-soft: #7b473f;
+			--white: #1d1b18;
+			--code-bg: #2b2722;
+		}
+	}
+	:root[data-theme='dark'] {
+		color-scheme: dark;
+		--ink: #eee9df;
+		--muted: #aaa39a;
+		--line: #3e3a34;
+		--paper: #171614;
+		--surface: #24211d;
+		--accent: #d28b7e;
+		--accent-soft: #7b473f;
+		--white: #1d1b18;
+		--code-bg: #2b2722;
+	}
 	* { box-sizing: border-box; }
-	body { margin: 0; background: var(--paper); color: var(--ink); }
+	body { margin: 0; background: var(--paper); color: var(--ink); text-rendering: optimizeLegibility; }
 	a { color: inherit; text-decoration: none; }
+	img { max-width: 100%; }
+	button, input { font: inherit; }
+	:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 	.shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
-	.site-header { border-bottom: 1px solid var(--line); background: rgba(247,245,240,.94); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(12px); }
+	.site-header { border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 94%, transparent); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(12px); }
 	.nav-wrap, .footer-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 	.brand { font-size: 21px; font-weight: 700; letter-spacing: .02em; }
 	.brand span { color: var(--accent); }
-	nav { display: flex; gap: 24px; font-size: 14px; color: var(--muted); }
+	nav { display: flex; align-items: center; gap: 22px; font-size: 14px; color: var(--muted); }
 	nav a { padding: 24px 0 20px; border-bottom: 2px solid transparent; }
-	nav a:hover, nav a.list-active { color: var(--ink); border-color: var(--accent); }
-	.site-footer { margin-top: 100px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.6 'DM Mono', monospace; }
+	nav a:hover, nav a.active { color: var(--ink); border-color: var(--accent); }
+	.site-footer { margin-top: 100px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.6 var(--mono); }
 	.footer-inner { min-height: 90px; }
-	@media (max-width: 640px) { .shell { width: min(100% - 28px, 1120px); } .nav-wrap { min-height: 62px; } nav { gap: 15px; } nav a { padding: 20px 0 17px; } .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 4px; } }
+	@media (max-width: 640px) {
+		.shell { width: min(100% - 28px, 1120px); }
+		.nav-wrap { min-height: 62px; }
+		nav { gap: 12px; }
+		nav a { padding: 20px 0 17px; }
+		.footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 4px; }
+	}
 </style>
