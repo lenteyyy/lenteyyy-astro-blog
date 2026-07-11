@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="关于 · Lenteyyy" description="关于 Lenteyyy。">
 	<section class="about shell">
-		<img class="about-cover" src="/about-cover.png" alt="台中市街景" loading="eager" decoding="async" width="1068" height="102" />
+		<img class="about-cover" src="/about-cover.jpg" alt="台中市街景" loading="eager" decoding="async" width="6240" height="3512" />
 		<h1>欢迎你来到Lenteyyy的个人博客！</h1>
 		<div class="about-copy">
 			<p>你好！我是Lenteyyy，在读大学生，你也可以叫我冷踢踢。我是一个有很多爱好的很奇怪的人。</p>
@@ -30,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
 	.about { padding-top: 92px; min-height: 560px; }
-	.about-cover { display: block; width: 100%; height: clamp(220px, 28vw, 360px); margin-bottom: 54px; object-fit: cover; background: var(--surface); }
+	.about-cover { display: block; width: 100%; height: auto; margin-bottom: 54px; object-fit: contain; background: var(--surface); }
 	h1 { margin: 0 0 45px; max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 1.2; font-weight: 600; letter-spacing: 0; }
 	.about-copy { max-width: 720px; color: var(--ink); font-size: 17px; line-height: 2.05; }
 	.about-copy p { margin: 0 0 1.25em; }
