@@ -29,10 +29,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-	.about { padding-top: 92px; min-height: 560px; }
-	.about-cover { display: block; width: 100%; height: auto; margin-bottom: 54px; object-fit: contain; background: var(--surface); }
-	h1 { margin: 0 0 45px; max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 1.2; font-weight: 600; letter-spacing: 0; }
-	.about-copy { max-width: 720px; color: var(--ink); font-size: 17px; line-height: 2.05; }
+	.about { padding-top: 76px; min-height: 560px; }
+	.about-cover { display: block; width: min(1040px, 100%); height: auto; margin: 0 auto 64px; object-fit: contain; background: var(--surface); box-shadow: var(--shadow); }
+	h1 { margin: 0 auto 46px; max-width: 820px; font-size: clamp(38px, 6vw, 74px); line-height: 1.18; font-weight: 600; letter-spacing: 0; }
+	.about-copy { max-width: 760px; margin: 0 auto; color: var(--ink); font-size: 18px; line-height: 2.08; }
 	.about-copy p { margin: 0 0 1.25em; }
 	.about-copy ul { margin: 0 0 1.25em; padding-left: 1.5em; }
 	.about-copy li { padding-left: .35em; }
