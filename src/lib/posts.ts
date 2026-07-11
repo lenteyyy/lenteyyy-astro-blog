@@ -43,6 +43,13 @@ export type Post = {
 
 export type PostSummary = Omit<Post, 'content'>;
 
+export type NotionPageContent = {
+	id: string;
+	title: string;
+	content: NotionBlock[];
+	error?: boolean;
+};
+
 const isProd = import.meta.env.PROD;
 const isVercel = Boolean(import.meta.env.VERCEL);
 let postsCache: Promise<Post[]> | undefined;
@@ -93,7 +100,7 @@ function propertyBool(properties: Record<string, any>, name: string): boolean {
 
 function coverUrl(page: any, properties: Record<string, any>): string {
 	const fromProperty = propertyText(properties, 'Cover');
-	return fromProperty || page.cover?.external?.url || page.cover?.file?.url || '';
+	return page.cover?.external?.url || page.cover?.file?.url || fromProperty || '';
 }
 
 function isPublished(properties: Record<string, any>): boolean {
@@ -198,6 +205,24 @@ async function loadPosts(): Promise<Post[]> {
 		if (isProd && isVercel) throw new Error('Notion content load failed');
 		console.error(error);
 		return [];
+	}
+}
+
+async function fetchPageTitle(client: Client, pageId: string): Promise<string> {
+	const page = await client.pages.retrieve({ page_id: pageId }) as any;
+	return propertyText(page.properties || {}, 'title') || propertyText(page.properties || {}, 'Name') || '';
+}
+
+export async function getNotionPageContent(pageId: string): Promise<NotionPageContent> {
+	const client = createClient();
+	if (!client) return { id: pageId, title: '', content: [], error: true };
+	try {
+		const [title, content] = await Promise.all([fetchPageTitle(client, pageId), fetchChildren(client, pageId)]);
+		return { id: pageId, title, content };
+	} catch (error) {
+		console.error('[notion] Failed to load page content.');
+		if (!isProd || !isVercel) console.error(error);
+		return { id: pageId, title: '', content: [], error: true };
 	}
 }
 

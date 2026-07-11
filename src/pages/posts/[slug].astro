@@ -42,7 +42,7 @@ const articleJson = {
 			<h1>{post.title}</h1>
 			{post.description && <p class="summary">{post.description}</p>}
 			<ShareButton title={post.title} text={post.description} url={url} />
-			<img class="hero-image" src={post.cover || '/og-default.svg'} alt="" loading="eager" decoding="async" />
+			{post.cover && <img class="hero-image" src={post.cover} alt={post.title} loading="eager" decoding="async" />}
 		</header>
 		<div class="article-grid">
 			<aside class="article-aside">

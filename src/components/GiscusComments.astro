@@ -13,6 +13,11 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 <script>
 	const root = document.querySelector<HTMLElement>('[data-giscus]');
 	if (root) {
+		const currentTheme = () => document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+		const setGiscusTheme = (theme: string) => {
+			const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+			iframe?.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+		};
 		const load = () => {
 			if (root.dataset.loaded) return;
 			root.dataset.loaded = 'true';
@@ -29,10 +34,11 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 			script.setAttribute('data-reactions-enabled', '1');
 			script.setAttribute('data-emit-metadata', '0');
 			script.setAttribute('data-input-position', 'bottom');
-			script.setAttribute('data-theme', document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+			script.setAttribute('data-theme', currentTheme());
 			script.setAttribute('data-lang', 'zh-CN');
 			root.querySelector('.comments-anchor')?.append(script);
 		};
+		window.addEventListener('themechange', (event) => setGiscusTheme((event as CustomEvent).detail?.theme || currentTheme()));
 		new IntersectionObserver((entries, observer) => {
 			if (entries.some((entry) => entry.isIntersecting)) {
 				load();
