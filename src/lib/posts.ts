@@ -106,7 +106,9 @@ function propertyBool(properties: Record<string, any>, name: string): boolean {
 
 function coverUrl(page: any, properties: Record<string, any>): string {
 	const fromProperty = propertyText(properties, 'Cover');
-	return page.cover?.external?.url || page.cover?.file?.url || fromProperty || '';
+	if (page.cover?.external?.url) return page.cover.external.url;
+	if (page.cover?.file?.url && page.id) return `/api/notion-image?page=${encodeURIComponent(page.id)}`;
+	return fromProperty || '';
 }
 
 function isPublished(properties: Record<string, any>): boolean {
@@ -288,4 +290,11 @@ export function blocksToPlainText(blocks: NotionBlock[]): string {
 export function blockUrl(block: NotionBlock): string {
 	const data = block[block.type] as any;
 	return data?.external?.url || data?.file?.url || data?.url || data?.embed?.url || '';
+}
+
+export function blockImageUrl(block: NotionBlock): string {
+	const data = block[block.type] as any;
+	if (data?.external?.url) return data.external.url;
+	if (data?.file?.url && block.id) return `/api/notion-image?block=${encodeURIComponent(block.id)}`;
+	return data?.file?.url || '';
 }
