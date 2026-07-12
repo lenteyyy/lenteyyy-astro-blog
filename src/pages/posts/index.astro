@@ -12,7 +12,7 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 ---
 <BaseLayout title="文章 · Lenteyyy" description="Lenteyyy 的全部文章。">
 	<section class="archive-page shell">
-		<div class="page-intro"><p class="eyebrow">THE ARCHIVE</p><h1>文章<span>.</span></h1><p>把住过的地方、听过的歌和路上的想法，慢慢整理成可以回看的记录。</p></div>
+		<div class="page-intro"><p class="eyebrow">THE ARCHIVE</p><h1>文章<span>.</span></h1><p>以下是所有我写的文章同分类。当然，你亦可使用搜寻功能快速定位你想看的文章。</p></div>
 		<SearchBox posts={posts.map(({ title, slug, tags }) => ({ title, slug, tags }))} />
 		<nav class="filters" aria-label="文章分类">{categories.map((category) => <a class={(!selectedCategory && category === '全部') || selectedCategory === category ? 'selected' : ''} href={category === '全部' ? '/posts' : categoryHref(category)}>{category}</a>)}</nav>
 		{filteredPosts.length > 0 ? <div class="post-list">{filteredPosts.map((post) => <PostCard post={post} />)}</div> : <p class="empty">没有已发布文章。</p>}
