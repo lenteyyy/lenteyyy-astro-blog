@@ -1,5 +1,5 @@
 ---
-import { blockText, blockUrl, escapeAttribute, escapeHtml, type NotionBlock } from '../lib/posts';
+import { blockImageUrl, blockText, blockUrl, escapeAttribute, escapeHtml, type NotionBlock } from '../lib/posts';
 const { blocks } = Astro.props as { blocks: NotionBlock[] };
 
 function caption(data: any): string {
@@ -12,7 +12,7 @@ function renderChildren(block: NotionBlock): string {
 
 function renderImage(block: NotionBlock): string {
 	const data = block[block.type] as any;
-	const url = blockUrl(block);
+	const url = blockImageUrl(block);
 	const cap = caption(data);
 	if (!url) return '';
 	return `<figure class="notion-image"><img src="${escapeAttribute(url)}" alt="${cap}" loading="lazy" decoding="async" data-lightbox-image data-caption="${escapeAttribute(cap)}" />${cap ? `<figcaption>${cap}</figcaption>` : ''}</figure>`;

@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { post, previous, next } = Astro.props;
 const url = canonicalUrl(`/posts/${post.slug}`);
+const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.defaultOgImage);
 function collectHeadings(blocks: NotionBlock[]): Array<{ text: string; id: string; level: 2 | 3 }> {
 	const items: Array<{ text: string; id: string; level: 2 | 3 }> = [];
 	for (const block of blocks) {
@@ -32,7 +33,7 @@ const articleJson = {
 	'@type': 'BlogPosting',
 	headline: post.title,
 	description: post.description,
-	image: post.cover ? [post.cover] : [canonicalUrl(site.defaultOgImage)],
+	image: [coverImage],
 	datePublished: post.publishedAt,
 	dateModified: post.updatedAt,
 	author: { '@type': 'Person', name: site.author },
