@@ -55,10 +55,12 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	.intro-note a:hover { color: var(--accent); }
 	.social-media { margin-top: 34px; }
 	.social-title { display: block; margin-bottom: 14px; color: var(--soft); font: 10px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
-	.social-item { display: flex !important; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; line-height: 1.8; }
-	.social-item + .social-item { margin-top: 8px; }
-	.social-icon { display: inline-grid; width: 50px; height: 50px; place-items: center; flex: 0 0 50px; border: 1px solid currentColor; color: var(--muted); }
-	.social-icon svg { width: 31px; height: 31px; fill: none; stroke: currentColor; stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round; }
+	.social-item { display: flex !important; flex-direction: column; align-items: center; gap: 7px; color: var(--muted); font-size: 10px; line-height: 1.45; text-align: center; }
+	.social-media { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 8px; }
+	.social-title { grid-column: 1 / -1; }
+	.social-item + .social-item { margin-top: 0; }
+	.social-icon { display: inline-grid; width: 44px; height: 44px; place-items: center; flex: 0 0 44px; border: 1px solid currentColor; color: var(--muted); box-sizing: border-box; }
+	.social-icon svg { display: block; width: 25px; height: 25px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round; }
 	.social-icon svg .fill { fill: currentColor; stroke: none; }
 	.social-icon svg text { fill: currentColor; stroke: none; font: 600 7px/1 sans-serif; letter-spacing: -.8px; }
 	.social-icon-red { color: var(--muted); }
