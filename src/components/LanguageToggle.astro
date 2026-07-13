@@ -1,14 +1,19 @@
 ---
 ---
-<div class="language-toggle" role="group" aria-label="语言切换">
-	<button type="button" data-language-option="zh-TW" aria-label="切换繁体中文">🇹🇼 繁中</button>
-	<button type="button" data-language-option="zh-CN" aria-label="切换简体中文">🇨🇳 简中</button>
+<div class="language-toggle">
+	<button class="language-trigger" type="button" aria-expanded="false" aria-controls="language-menu">语言</button>
+	<div class="language-menu" id="language-menu" role="menu" hidden>
+		<button type="button" data-language-option="zh-TW" role="menuitem"><svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#e60012" /><rect width="11" height="8" fill="#000095" /><circle cx="5.5" cy="4" r="2.35" fill="#fff" /><path d="m5.5 1.15.42 1.8 1.36-1.24-.5 1.78 1.8-.42-1.36 1.18 1.36 1.18-1.8-.42.5 1.78L5.92 5.55 5.5 7.35l-.42-1.8-1.36 1.24.5-1.78-1.8.42L3.78 4.25 2.42 3.07l1.8.42-.5-1.78 1.36 1.24Z" fill="#000095" /></svg><span>繁體中文</span></button>
+		<button type="button" data-language-option="zh-CN" role="menuitem"><svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#de2910" /><path d="m4.3 2.1.55 1.7 1.78.02-1.43 1.04.53 1.7-1.43-1.01-1.44 1.01.54-1.7L1.99 3.82l1.78-.02Z" fill="#ffde00" /></svg><span>简体中文</span></button>
+	</div>
 </div>
 
 <script>
 	import OpenCC from 'opencc-js';
 
 	const root = document.documentElement;
+	const trigger = document.querySelector<HTMLButtonElement>('.language-trigger');
+	const menu = document.querySelector<HTMLDivElement>('#language-menu');
 	const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-language-option]'));
 	const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
 	const textNodes: Array<{ node: Text; original: string }> = [];
@@ -42,11 +47,22 @@
 	try { saved = localStorage.getItem('language') || saved; } catch {}
 	setLanguage(saved === 'zh-TW' ? 'zh-TW' : 'zh-CN');
 	buttons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.languageOption || 'zh-CN')));
+	const closeMenu = () => { if (!menu || !trigger) return; menu.hidden = true; trigger.setAttribute('aria-expanded', 'false'); };
+	trigger?.addEventListener('click', () => { if (!menu) return; menu.hidden = !menu.hidden; trigger.setAttribute('aria-expanded', String(!menu.hidden)); });
+	buttons.forEach((button) => button.addEventListener('click', closeMenu));
+	document.addEventListener('click', (event) => { if (!event.composedPath().includes(document.querySelector('.language-toggle') as EventTarget)) closeMenu(); });
+	document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
 </script>
 
 <style>
-	.language-toggle { display: inline-flex; align-items: center; gap: 5px; margin-left: 2px; }
-	.language-toggle button { padding: 4px 0; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: 11px var(--mono); transition: color 180ms ease; }
-	.language-toggle button:hover, .language-toggle button[aria-pressed='true'] { color: var(--ink); }
-	@media (max-width: 640px) { .language-toggle { gap: 2px; } .language-toggle button { font-size: 10px; } }
+	.language-toggle { position: relative; margin-left: 0; }
+	.language-trigger { position: relative; padding: 24px 0 22px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: inherit; transition: color 180ms ease; }
+	.language-trigger::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
+	.language-trigger:hover, .language-trigger[aria-expanded='true'] { color: var(--ink); }
+	.language-trigger:hover::after, .language-trigger[aria-expanded='true']::after { transform: scaleX(1); }
+	.language-menu { position: absolute; top: 58px; right: -10px; min-width: 140px; padding: 6px; border: 1px solid var(--line); background: var(--paper); box-shadow: var(--shadow); z-index: 20; }
+	.language-menu button { display: flex; width: 100%; align-items: center; gap: 9px; padding: 9px 10px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: 12px/1.4 var(--serif); text-align: left; }
+	.language-menu button:hover, .language-menu button[aria-pressed='true'] { background: var(--surface); color: var(--ink); }
+	.language-menu svg { width: 22px; height: 15px; flex: 0 0 auto; border: 1px solid color-mix(in srgb, var(--line) 75%, transparent); }
+	@media (max-width: 640px) { .language-trigger { padding: 20px 0 17px; } .language-menu { top: 52px; right: -8px; } }
 </style>
