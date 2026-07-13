@@ -12,6 +12,8 @@
 	const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-language-option]'));
 	const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
 	const textNodes: Array<{ node: Text; original: string }> = [];
+	const titleOriginal = document.title;
+	const metaNodes = Array.from(document.querySelectorAll<HTMLMetaElement>('meta[name="description"], meta[property="og:title"], meta[property="og:description"], meta[name="twitter:title"], meta[name="twitter:description"]')).map((node) => ({ node, original: node.content }));
 
 	const collectTextNodes = () => {
 		const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -29,6 +31,8 @@
 		const traditional = language === 'zh-TW';
 		root.lang = language;
 		textNodes.forEach(({ node, original }) => { node.nodeValue = traditional ? converter(original) : original; });
+		document.title = traditional ? converter(titleOriginal) : titleOriginal;
+		metaNodes.forEach(({ node, original }) => { node.content = traditional ? converter(original) : original; });
 		buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.languageOption === language)));
 		try { localStorage.setItem('language', language); } catch {}
 	};
