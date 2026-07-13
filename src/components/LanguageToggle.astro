@@ -1,0 +1,48 @@
+---
+---
+<div class="language-toggle" role="group" aria-label="语言切换">
+	<button type="button" data-language-option="zh-TW" aria-label="切换繁体中文">🇹🇼 繁中</button>
+	<button type="button" data-language-option="zh-CN" aria-label="切换简体中文">🇨🇳 简中</button>
+</div>
+
+<script>
+	import OpenCC from 'opencc-js';
+
+	const root = document.documentElement;
+	const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-language-option]'));
+	const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+	const textNodes: Array<{ node: Text; original: string }> = [];
+
+	const collectTextNodes = () => {
+		const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+			acceptNode(node) {
+				const parent = node.parentElement;
+				if (!parent || /^(SCRIPT|STYLE|CODE|PRE|TEXTAREA|INPUT)$/i.test(parent.tagName)) return NodeFilter.FILTER_REJECT;
+				return node.nodeValue?.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+			},
+		});
+		let node: Node | null;
+		while ((node = walker.nextNode())) textNodes.push({ node: node as Text, original: node.nodeValue || '' });
+	};
+
+	const setLanguage = (language: string) => {
+		const traditional = language === 'zh-TW';
+		root.lang = language;
+		textNodes.forEach(({ node, original }) => { node.nodeValue = traditional ? converter(original) : original; });
+		buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.languageOption === language)));
+		try { localStorage.setItem('language', language); } catch {}
+	};
+
+	collectTextNodes();
+	let saved = 'zh-CN';
+	try { saved = localStorage.getItem('language') || saved; } catch {}
+	setLanguage(saved === 'zh-TW' ? 'zh-TW' : 'zh-CN');
+	buttons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.languageOption || 'zh-CN')));
+</script>
+
+<style>
+	.language-toggle { display: inline-flex; align-items: center; gap: 5px; margin-left: 2px; }
+	.language-toggle button { padding: 4px 0; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: 11px var(--mono); transition: color 180ms ease; }
+	.language-toggle button:hover, .language-toggle button[aria-pressed='true'] { color: var(--ink); }
+	@media (max-width: 640px) { .language-toggle { gap: 2px; } .language-toggle button { font-size: 10px; } }
+</style>
