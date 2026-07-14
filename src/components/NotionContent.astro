@@ -253,6 +253,8 @@ const html = renderBlocks(blocks);
 	.notion-content :global(.media-embed-spotify iframe) { height: 152px; }
 	.notion-content :global(.media-embed-apple iframe) { height: 175px; }
 	.notion-content :global(.notion-columns) { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 22px; align-items: start; margin: 1.8em 0; }
+	.notion-content :global(.notion-column) { min-width: 0; }
+	.notion-content :global(.notion-column > .notion-image) { width: 100%; margin: 0; transform: none; }
 	.notion-content :global(.notion-column > :first-child) { margin-top: 0; }
 	.notion-content :global(.notion-column > :last-child) { margin-bottom: 0; }
 	.notion-content :global(details) { margin: 1.2em 0; padding: 12px 14px; background: var(--surface); border-radius: var(--radius); }
