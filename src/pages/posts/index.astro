@@ -7,7 +7,7 @@ import { getPosts, type PostCategory } from '../../lib/posts';
 const posts = await getPosts();
 const selectedCategory = Astro.url.searchParams.get('category');
 const filteredPosts = selectedCategory ? posts.filter((post) => post.category === selectedCategory) : posts;
-const categories: Array<PostCategory | '全部'> = ['全部', ...new Set(posts.map((post) => post.category))];
+const categories: Array<PostCategory | '全部'> = ['全部', ...new Set<PostCategory>(['酒店测评', ...posts.map((post) => post.category)])];
 const categoryHref = (category: string) => `/posts/category/${encodeURIComponent(category)}/`;
 ---
 <BaseLayout title="文章 · Lenteyyy" description="Lenteyyy 的全部文章。">
