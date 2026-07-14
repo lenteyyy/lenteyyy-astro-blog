@@ -104,12 +104,10 @@ function propertyBool(properties: Record<string, any>, name: string): boolean {
 	return Boolean(property(properties, name)?.checkbox);
 }
 
-function coverUrl(page: any, properties: Record<string, any>, content: NotionBlock[]): string {
+function coverUrl(page: any, properties: Record<string, any>): string {
 	const fromProperty = propertyText(properties, 'Cover');
 	if (page.cover?.external?.url) return page.cover.external.url;
 	if (page.cover?.file?.url && page.id) return `/api/notion-image?page=${encodeURIComponent(page.id)}`;
-	const firstImage = content.find((block) => block.type === 'image');
-	if (firstImage?.id) return `/api/notion-image?block=${encodeURIComponent(firstImage.id)}`;
 	return fromProperty || '';
 }
 
@@ -129,7 +127,7 @@ function normalizePost(page: any, content: NotionBlock[]): Post {
 		title,
 		slug: slugify(propertyText(properties, 'Slug') || title, page.id.replaceAll('-', '').slice(0, 12)),
 		description,
-		cover: coverUrl(page, properties, content),
+		cover: coverUrl(page, properties),
 		publishedAt,
 		updatedAt: page.last_edited_time || publishedAt,
 		tags: propertyList(properties, 'Tags'),
