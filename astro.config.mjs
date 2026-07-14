@@ -6,4 +6,9 @@ export default defineConfig({
 	site: process.env.PUBLIC_SITE_URL || 'https://lenteyyy.vercel.app',
 	trailingSlash: 'never',
 	adapter: vercel(),
+	vite: {
+		build: {
+			chunkSizeWarningLimit: 1200,
+		},
+	},
 });

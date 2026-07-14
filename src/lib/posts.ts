@@ -104,10 +104,12 @@ function propertyBool(properties: Record<string, any>, name: string): boolean {
 	return Boolean(property(properties, name)?.checkbox);
 }
 
-function coverUrl(page: any, properties: Record<string, any>): string {
+function coverUrl(page: any, properties: Record<string, any>, content: NotionBlock[]): string {
 	const fromProperty = propertyText(properties, 'Cover');
 	if (page.cover?.external?.url) return page.cover.external.url;
 	if (page.cover?.file?.url && page.id) return `/api/notion-image?page=${encodeURIComponent(page.id)}`;
+	const firstImage = content.find((block) => block.type === 'image');
+	if (firstImage?.id) return `/api/notion-image?block=${encodeURIComponent(firstImage.id)}`;
 	return fromProperty || '';
 }
 
@@ -127,7 +129,7 @@ function normalizePost(page: any, content: NotionBlock[]): Post {
 		title,
 		slug: slugify(propertyText(properties, 'Slug') || title, page.id.replaceAll('-', '').slice(0, 12)),
 		description,
-		cover: coverUrl(page, properties),
+		cover: coverUrl(page, properties, content),
 		publishedAt,
 		updatedAt: page.last_edited_time || publishedAt,
 		tags: propertyList(properties, 'Tags'),
@@ -144,7 +146,6 @@ function createClient(): Client | undefined {
 	const token = import.meta.env.NOTION_TOKEN;
 	if (!token) {
 		if (isProd && isVercel) throw new Error('Missing NOTION_TOKEN');
-		console.warn('[notion] Missing NOTION_TOKEN. Returning an empty post list.');
 		return undefined;
 	}
 	return new Client({ auth: token });
@@ -155,7 +156,6 @@ async function queryAllPages(client: Client): Promise<any[]> {
 	const databaseId = import.meta.env.NOTION_DATABASE_ID;
 	if (!dataSourceId && !databaseId) {
 		if (isProd && isVercel) throw new Error('Missing NOTION_DATA_SOURCE_ID or NOTION_DATABASE_ID');
-		console.warn('[notion] Missing data source/database id. Returning an empty post list.');
 		return [];
 	}
 

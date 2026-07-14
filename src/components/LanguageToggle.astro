@@ -9,13 +9,11 @@
 </div>
 
 <script>
-	import OpenCC from 'opencc-js';
-
 	const root = document.documentElement;
 	const trigger = document.querySelector<HTMLButtonElement>('.language-trigger');
 	const menu = document.querySelector<HTMLDivElement>('#language-menu');
 	const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-language-option]'));
-	const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+	let converter: ((value: string) => string) | undefined;
 	const textNodes: Array<{ node: Text; original: string }> = [];
 	const titleOriginal = document.title;
 	const metaNodes = Array.from(document.querySelectorAll<HTMLMetaElement>('meta[name="description"], meta[property="og:title"], meta[property="og:description"], meta[name="twitter:title"], meta[name="twitter:description"]')).map((node) => ({ node, original: node.content }));
@@ -32,12 +30,21 @@
 		while ((node = walker.nextNode())) textNodes.push({ node: node as Text, original: node.nodeValue || '' });
 	};
 
-	const setLanguage = (language: string) => {
+	const getConverter = async () => {
+		if (!converter) {
+			const { default: OpenCC } = await import('opencc-js');
+			converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+		}
+		return converter;
+	};
+
+	const setLanguage = async (language: string) => {
 		const traditional = language === 'zh-TW';
+		const convert = traditional ? await getConverter() : undefined;
 		root.lang = language;
-		textNodes.forEach(({ node, original }) => { node.nodeValue = traditional ? converter(original) : original; });
-		document.title = traditional ? converter(titleOriginal) : titleOriginal;
-		metaNodes.forEach(({ node, original }) => { node.content = traditional ? converter(original) : original; });
+		textNodes.forEach(({ node, original }) => { node.nodeValue = traditional && convert ? convert(original) : original; });
+		document.title = traditional && convert ? convert(titleOriginal) : titleOriginal;
+		metaNodes.forEach(({ node, original }) => { node.content = traditional && convert ? convert(original) : original; });
 		buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.languageOption === language)));
 		try { localStorage.setItem('language', language); } catch {}
 	};
