@@ -13,8 +13,8 @@ function json(body: unknown, status = 200): Response {
 }
 
 async function redis(command: unknown[]): Promise<any> {
-	const url = import.meta.env.UPSTASH_REDIS_REST_URL;
-	const token = import.meta.env.UPSTASH_REDIS_REST_TOKEN;
+	const url = import.meta.env.UPSTASH_REDIS_REST_URL || import.meta.env.KV_REST_API_URL;
+	const token = import.meta.env.UPSTASH_REDIS_REST_TOKEN || import.meta.env.KV_REST_API_TOKEN;
 	if (!url || !token) throw new Error('Missing Redis env');
 	const response = await fetch(url, {
 		method: 'POST',
