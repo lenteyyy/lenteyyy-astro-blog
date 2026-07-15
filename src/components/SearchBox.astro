@@ -18,14 +18,28 @@ const { posts } = Astro.props as { posts: SearchPost[] };
 		const query = input.value.trim().toLowerCase();
 		if (!query) {
 			results.hidden = true;
-			results.innerHTML = '';
+			results.replaceChildren();
 			return;
 		}
 		const matches = data.filter((post) => [post.title, post.tags.join(' ')].join(' ').toLowerCase().includes(query)).slice(0, 8);
 		results.hidden = false;
-		results.innerHTML = matches.length
-			? matches.map((post) => `<a href="/posts/${post.slug}"><strong>${post.title}</strong><span>${post.tags.join(' / ')}</span></a>`).join('')
-			: '<p>没有找到。</p>';
+		results.replaceChildren();
+		if (!matches.length) {
+			const empty = document.createElement('p');
+			empty.textContent = '没有找到。';
+			results.append(empty);
+			return;
+		}
+		for (const post of matches) {
+			const link = document.createElement('a');
+			const title = document.createElement('strong');
+			const tags = document.createElement('span');
+			link.href = `/posts/${encodeURIComponent(post.slug)}`;
+			title.textContent = post.title;
+			tags.textContent = post.tags.join(' / ');
+			link.append(title, tags);
+			results.append(link);
+		}
 	});
 </script>
 
