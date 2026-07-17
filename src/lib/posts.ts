@@ -116,7 +116,7 @@ function isPublished(properties: Record<string, any>): boolean {
 	return status === 'Published' || status === '已发布' || status === 'Publish';
 }
 
-function normalizePost(page: any, content: NotionBlock[]): Post {
+function normalizePost(page: any, content: NotionBlock[], sourcePage?: any): Post {
 	const properties = page.properties || {};
 	const title = propertyText(properties, 'Title') || propertyText(properties, 'Name') || '未命名文章';
 	const publishedAt = propertyDate(properties, 'Date', page.created_time || new Date().toISOString());
@@ -127,9 +127,9 @@ function normalizePost(page: any, content: NotionBlock[]): Post {
 		title,
 		slug: slugify(propertyText(properties, 'Slug') || title, page.id.replaceAll('-', '').slice(0, 12)),
 		description,
-		cover: coverUrl(page, properties),
+		cover: coverUrl(page, properties) || (sourcePage ? coverUrl(sourcePage, sourcePage.properties || {}) : ''),
 		publishedAt,
-		updatedAt: page.last_edited_time || publishedAt,
+		updatedAt: sourcePage?.last_edited_time || page.last_edited_time || publishedAt,
 		tags: propertyList(properties, 'Tags'),
 		category: propertyText(properties, 'Category') || '个人杂谈',
 		featured: propertyBool(properties, 'Featured'),
@@ -138,6 +138,18 @@ function normalizePost(page: any, content: NotionBlock[]): Post {
 		readingMinutes: Math.max(1, Math.ceil(plainContent.length / 500)),
 		url: page.url,
 	};
+}
+
+function sourcePageId(properties: Record<string, any>): string | undefined {
+	const value = propertyText(properties, 'SourcePage').trim();
+	if (/^[0-9a-f-]{32,36}$/i.test(value)) return value;
+	try {
+		const url = new URL(value);
+		if (!/(^|\.)notion\.(so|com)$/i.test(url.hostname)) return undefined;
+		return url.pathname.match(/([0-9a-f]{32})\/?$/i)?.[1];
+	} catch {
+		return undefined;
+	}
 }
 
 function createClient(): Client | undefined {
@@ -203,7 +215,15 @@ async function loadPosts(): Promise<Post[]> {
 		const pages = await queryAllPages(client);
 		const publishedPages = pages.filter((page) => isPublished(page.properties || {}));
 		const posts = await Promise.all(
-			publishedPages.map(async (page) => normalizePost(page, await fetchChildren(client, page.id))),
+			publishedPages.map(async (page) => {
+				const sourceId = sourcePageId(page.properties || {});
+				if (!sourceId) return normalizePost(page, await fetchChildren(client, page.id));
+				const [source, content] = await Promise.all([
+					client.pages.retrieve({ page_id: sourceId }),
+					fetchChildren(client, sourceId),
+				]);
+				return normalizePost(page, content, source);
+			}),
 		);
 		return posts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 	} catch (error) {
