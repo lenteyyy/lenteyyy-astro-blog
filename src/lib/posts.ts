@@ -54,6 +54,10 @@ const isProd = import.meta.env.PROD;
 const isVercel = Boolean(import.meta.env.VERCEL);
 let postsCache: Promise<Post[]> | undefined;
 
+function correctKnownContentTypos(value: string): string {
+	return value.replaceAll('潘偉俊', '派偉俊');
+}
+
 function textOf(value: unknown): string {
 	if (typeof value === 'string') return value;
 	if (typeof value === 'number') return String(value);
@@ -271,7 +275,7 @@ export async function getTags(): Promise<Array<{ tag: string; count: number }>> 
 
 export function richTextToHtml(richText: RichText[] = []): string {
 	return richText.map((item) => {
-		let value = escapeHtml(item.plain_text || '');
+		let value = escapeHtml(correctKnownContentTypos(item.plain_text || ''));
 		const annotations = item.annotations || {};
 		if (annotations.code) value = `<code>${value}</code>`;
 		if (annotations.bold) value = `<strong>${value}</strong>`;
@@ -298,7 +302,7 @@ export function blockText(block: NotionBlock): string {
 
 export function blockPlainText(block: NotionBlock): string {
 	const data = block[block.type] as any;
-	return textOf(data?.rich_text || data?.caption || data?.title || '');
+	return correctKnownContentTypos(textOf(data?.rich_text || data?.caption || data?.title || ''));
 }
 
 export function blocksToPlainText(blocks: NotionBlock[]): string {
