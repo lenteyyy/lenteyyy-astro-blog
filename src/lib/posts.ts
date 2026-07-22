@@ -218,17 +218,20 @@ async function loadPosts(): Promise<Post[]> {
 	try {
 		const pages = await queryAllPages(client);
 		const publishedPages = pages.filter((page) => isPublished(page.properties || {}));
-		const posts = await Promise.all(
-			publishedPages.map(async (page) => {
-				const sourceId = sourcePageId(page.properties || {});
-				if (!sourceId) return normalizePost(page, await fetchChildren(client, page.id));
+		const posts = await Promise.all(publishedPages.map(async (page) => {
+			const sourceId = sourcePageId(page.properties || {});
+			if (!sourceId) return normalizePost(page, await fetchChildren(client, page.id));
+			try {
 				const [source, content] = await Promise.all([
 					client.pages.retrieve({ page_id: sourceId }),
 					fetchChildren(client, sourceId),
 				]);
 				return normalizePost(page, content, source);
-			}),
-		);
+			} catch (error) {
+				console.warn(`[notion] SourcePage unavailable for ${page.id}; using database page content.`);
+				return normalizePost(page, await fetchChildren(client, page.id));
+			}
+		}));
 		return posts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 	} catch (error) {
 		console.error('[notion] Failed to load posts. Check integration permissions, API version, and environment variables.');
