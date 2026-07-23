@@ -1,16 +1,19 @@
 ---
 type SearchPost = { title: string; slug: string; tags: string[] };
-const { posts } = Astro.props as { posts: SearchPost[] };
+import { localizedPath, translateText, type SiteLocale } from '../lib/locale';
+const { posts, locale = 'zh-CN' } = Astro.props as { posts: SearchPost[]; locale?: SiteLocale };
+const path = (value: string) => localizedPath(value, locale);
+const localizedPosts = posts.map((post) => ({ ...post, title: translateText(post.title, locale), tags: post.tags.map((tag) => translateText(tag, locale)) }));
 ---
-<section class="search-box" aria-label="搜索文章">
+<section class="search-box" aria-label={locale === 'zh-TW' ? '搜尋文章' : '搜索文章'}>
 	<label>
 		<span>SEARCH</span>
-		<input type="search" placeholder="标题或标签" data-search-input />
+		<input type="search" placeholder={locale === 'zh-TW' ? '標題或標籤' : '标题或标签'} data-search-input />
 	</label>
 	<div class="search-results" data-search-results hidden></div>
 </section>
 
-<script is:inline define:vars={{ posts }}>
+<script is:inline define:vars={{ posts: localizedPosts, resultPath: path('/posts'), emptyLabel: locale === 'zh-TW' ? '沒有找到。' : '没有找到。' }}>
 	const input = document.querySelector('[data-search-input]');
 	const results = document.querySelector('[data-search-results]');
 	const data = posts;
@@ -26,7 +29,7 @@ const { posts } = Astro.props as { posts: SearchPost[] };
 		results.replaceChildren();
 		if (!matches.length) {
 			const empty = document.createElement('p');
-			empty.textContent = '没有找到。';
+			empty.textContent = emptyLabel;
 			results.append(empty);
 			return;
 		}
@@ -34,7 +37,7 @@ const { posts } = Astro.props as { posts: SearchPost[] };
 			const link = document.createElement('a');
 			const title = document.createElement('strong');
 			const tags = document.createElement('span');
-			link.href = `/posts/${encodeURIComponent(post.slug)}`;
+			link.href = `${resultPath}/${encodeURIComponent(post.slug)}`;
 			title.textContent = post.title;
 			tags.textContent = post.tags.join(' / ');
 			link.append(title, tags);

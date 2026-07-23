@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const locale = 'zh-TW' as const;
+---
+<BaseLayout locale={locale} title="關於 · Lenteyyy" description="關於 Lenteyyy。">
+	<section class="about shell">
+		<img class="about-cover" src="/about-cover.jpg" alt="臺中市街景" loading="eager" decoding="async" width="6240" height="3512" />
+		<h1>歡迎你來到Lenteyyy的個人部落格！</h1>
+		<div class="about-copy">
+			<p>你好！我是Lenteyyy，在讀大學生，你也可以叫我冷踢踢。我是一個有很多愛好的很奇怪的人。</p>
+			<p><em>在這個 Blog 裡，我可能會分享</em>：</p>
+			<ul><li>我的飯店評測</li><li>我關於時尚和生活方式的看法</li><li>我關於語言學習的分享和 Podcast</li><li>我的個人雜談和思考</li><li>更多可能的內容…</li></ul>
+			<p>非常感謝你可能的閱讀和支持，我會盡我努力認真搭建好這一片小天地的。</p>
+			<p><em>這個部落格可能會使用的語言</em>：簡體中文、繁體中文。</p>
+			<p><em>你可以找到我</em>：</p>
+			<p>Email：<strong>lenteyteytey@gmail.com</strong><br />Instagram：<strong>@lenteyyy_</strong><br />微信公眾平台／小紅書：@冷踢踢<br />YouTube／嗶哩嗶哩：@Lenteyyy_</p>
+			<p><em>（這個網站的 Cover 是臺中市。可能是全亞洲我最喜歡的城市…）</em></p>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.about { padding-top: 76px; min-height: 560px; }
+	.about-cover { display: block; width: min(1040px, 100%); height: auto; margin: 0 auto 64px; object-fit: contain; background: var(--surface); box-shadow: var(--shadow); }
+	h1 { margin: 0 auto 46px; max-width: 820px; font-size: clamp(38px, 6vw, 74px); line-height: 1.18; font-weight: 600; letter-spacing: 0; }
+	.about-copy { max-width: 760px; margin: 0 auto; color: var(--ink); font-size: 18px; line-height: 2.08; }
+	.about-copy p { margin: 0 0 1.25em; }
+	.about-copy ul { margin: 0 0 1.25em; padding-left: 1.5em; }
+	.about-copy li { padding-left: .35em; }
+	@media (max-width: 640px) { .about { padding-top: 75px; } }
+</style>

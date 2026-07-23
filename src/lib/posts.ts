@@ -1,4 +1,5 @@
 import { Client } from '@notionhq/client';
+import { translateText, type SiteLocale } from './locale';
 
 export type PostCategory = '酒店测评' | '个人杂谈' | '音乐推荐' | string;
 
@@ -276,9 +277,9 @@ export async function getTags(): Promise<Array<{ tag: string; count: number }>> 
 	return [...counts].map(([tag, count]) => ({ tag, count })).sort((a, b) => a.tag.localeCompare(b.tag, 'zh-Hans-CN'));
 }
 
-export function richTextToHtml(richText: RichText[] = []): string {
+export function richTextToHtml(richText: RichText[] = [], locale: SiteLocale = 'zh-CN'): string {
 	return richText.map((item) => {
-		let value = escapeHtml(correctKnownContentTypos(item.plain_text || ''));
+		let value = escapeHtml(translateText(correctKnownContentTypos(item.plain_text || ''), locale));
 		const annotations = item.annotations || {};
 		if (annotations.code) value = `<code>${value}</code>`;
 		if (annotations.bold) value = `<strong>${value}</strong>`;
@@ -298,14 +299,14 @@ export function escapeAttribute(value: string): string {
 	return escapeHtml(value);
 }
 
-export function blockText(block: NotionBlock): string {
+export function blockText(block: NotionBlock, locale: SiteLocale = 'zh-CN'): string {
 	const data = block[block.type] as any;
-	return richTextToHtml(data?.rich_text || data?.caption || []);
+	return richTextToHtml(data?.rich_text || data?.caption || [], locale);
 }
 
-export function blockPlainText(block: NotionBlock): string {
+export function blockPlainText(block: NotionBlock, locale: SiteLocale = 'zh-CN'): string {
 	const data = block[block.type] as any;
-	return correctKnownContentTypos(textOf(data?.rich_text || data?.caption || data?.title || ''));
+	return translateText(correctKnownContentTypos(textOf(data?.rich_text || data?.caption || data?.title || '')), locale);
 }
 
 export function blocksToPlainText(blocks: NotionBlock[]): string {
