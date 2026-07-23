@@ -223,11 +223,13 @@ async function loadPosts(): Promise<Post[]> {
 			const sourceId = sourcePageId(page.properties || {});
 			if (!sourceId) return normalizePost(page, await fetchChildren(client, page.id));
 			try {
-				const [source, content] = await Promise.all([
+				const [source, sourceContent] = await Promise.all([
 					client.pages.retrieve({ page_id: sourceId }),
 					fetchChildren(client, sourceId),
 				]);
-				return normalizePost(page, content, source);
+				if (sourceContent.length > 0) return normalizePost(page, sourceContent, source);
+				console.warn(`[notion] SourcePage ${sourceId} is empty for ${page.id}; using database page content.`);
+				return normalizePost(page, await fetchChildren(client, page.id), source);
 			} catch (error) {
 				console.warn(`[notion] SourcePage unavailable for ${page.id}; using database page content.`);
 				return normalizePost(page, await fetchChildren(client, page.id));
