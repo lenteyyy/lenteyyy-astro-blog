@@ -41,7 +41,7 @@ const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', 
 	<article class="post-page shell"><header class="post-header">
 		<a class="back" href={path('/posts')}>← 全部文章</a>
 		<div class="meta"><span>{category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
-		<h1>{title}</h1><div class="post-actions"><ShareButton title={title} text={description} url={url} /></div>
+		<h1>{title}</h1><div class="post-actions"><ShareButton title={title} text={description} url={url} locale={locale} /></div>
 		{post.cover && <img class="hero-image" src={post.cover} alt={title} loading="eager" decoding="async" />}
 	</header>
 	{headings.length > 0 && <details class="toc-mobile"><summary>目錄</summary>{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link>{heading.text}</a>)}</details>}
@@ -50,7 +50,7 @@ const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', 
 		{headings.length > 0 && <nav aria-label="文章目錄" class="toc toc-desktop">{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link>{heading.text}</a>)}</nav>}
 	</aside><div class="article-body"><NotionContent blocks={post.content} locale={locale} />
 		<nav class="post-nav" aria-label="上一篇下一篇">{previous ? <a href={path(`/posts/${previous.slug}`)}><span>上一篇</span>{translateText(previous.title, locale)}</a> : <span></span>}{next ? <a href={path(`/posts/${next.slug}`)}><span>下一篇</span>{translateText(next.title, locale)}</a> : <span></span>}</nav>
-		<GiscusComments /></div></div></article>
+		<GiscusComments locale={locale} /></div></div></article>
 	<script>
 		const progress = document.querySelector<HTMLElement>('[data-reading-progress]'); const article = document.querySelector<HTMLElement>('.article-body'); const headings = Array.from(document.querySelectorAll<HTMLElement>('.article-body h2[id], .article-body h3[id]')); const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')); let activeId = ''; let ticking = false;
 		const updateReading = () => { ticking = false; if (article && progress) { const rect = article.getBoundingClientRect(); const total = rect.height - window.innerHeight * .65; const read = Math.min(Math.max(-rect.top, 0), Math.max(total, 1)); progress.style.transform = `scaleX(${read / Math.max(total, 1)})`; } let nextId = activeId; for (const heading of headings) if (heading.getBoundingClientRect().top <= 130) nextId = heading.id; if (nextId && nextId !== activeId) { activeId = nextId; tocLinks.forEach((link) => link.classList.toggle('active', link.dataset.tocLink === activeId)); history.replaceState(null, '', `#${activeId}`); } };

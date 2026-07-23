@@ -17,9 +17,7 @@ const label = locale === 'zh-TW' ? '語言' : '语言';
 <style>
 	.language-toggle { position: relative; margin-left: 0; }
 	.language-trigger { position: relative; padding: 24px 0 22px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font: inherit; transition: color 180ms ease; }
-	.language-trigger::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
 	.language-trigger:hover, .language-trigger[aria-expanded='true'] { color: var(--ink); }
-	.language-trigger:hover::after, .language-trigger[aria-expanded='true']::after { transform: scaleX(1); }
 	.language-menu { position: absolute; top: 58px; right: -10px; min-width: 140px; padding: 6px; border: 1px solid var(--line); background: var(--paper); box-shadow: var(--shadow); z-index: 20; }
 	.language-menu a { display: flex; width: 100%; align-items: center; padding: 9px 10px; color: var(--muted); cursor: pointer; font: 12px/1.4 var(--serif); text-align: left; }
 	.language-menu a:hover { background: var(--surface); color: var(--ink); }
