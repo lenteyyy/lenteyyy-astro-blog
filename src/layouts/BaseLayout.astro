@@ -146,10 +146,10 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.brand span { color: var(--accent); }
 	.brand:hover { color: var(--accent); }
 	nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 14px; }
-	nav a { position: relative; padding: 24px 0 22px; transition: color 180ms ease; }
-	nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
-	nav a:hover, nav a.active { color: var(--ink); }
-	nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+	nav > a { position: relative; padding: 24px 0 22px; transition: color 180ms ease; }
+	nav > a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; }
+	nav > a:hover, nav > a.active { color: var(--ink); }
+	nav > a:hover::after, nav > a.active::after { transform: scaleX(1); }
 	.site-footer { margin-top: 120px; color: var(--muted); font: 11px/1.6 var(--mono); }
 	.footer-inner { min-height: 84px; border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
 	@media (max-width: 640px) {
@@ -157,7 +157,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		.nav-wrap { min-height: 62px; }
 		.brand { font-size: 18px; }
 		nav { gap: 14px; font-size: 13px; }
-		nav a { padding: 20px 0 17px; }
+		nav > a { padding: 20px 0 17px; }
 		.footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 4px; }
 	}
 </style>

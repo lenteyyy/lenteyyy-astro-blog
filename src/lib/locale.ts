@@ -4,6 +4,7 @@ export type SiteLocale = 'zh-CN' | 'zh-TW';
 
 const toTaiwanTraditional = OpenCC.Converter({ from: 'cn', to: 'twp' });
 const taiwanTerms: Array<[string, string]> = [
+	['回复', '回覆'],
 	['博客', '部落格'],
 	['搜索', '搜尋'],
 	['链接', '連結'],

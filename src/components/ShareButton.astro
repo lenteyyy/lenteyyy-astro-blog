@@ -1,12 +1,16 @@
 ---
-const { title, text, url } = Astro.props as { title: string; text: string; url: string };
+const { title, text, url, locale = 'zh-CN' } = Astro.props as { title: string; text: string; url: string; locale?: 'zh-CN' | 'zh-TW' };
+const labels = locale === 'zh-TW' ? { share: '分享文章', opened: '已開啟分享', copied: '連結已複製' } : { share: '分享文章', opened: '已打开分享', copied: '链接已复制' };
 ---
-<div class="share">
-	<button type="button" data-share data-title={title} data-text={text} data-url={url}>分享文章</button>
+<div class="share" data-opened-label={labels.opened} data-copied-label={labels.copied}>
+	<button type="button" data-share data-title={title} data-text={text} data-url={url}>{labels.share}</button>
 	<span role="status" aria-live="polite" data-share-status></span>
 </div>
 
 <script>
+	const shareLabels = document.querySelector<HTMLElement>('.share');
+	const openedLabel = shareLabels?.dataset.openedLabel || '已打开分享';
+	const copiedLabel = shareLabels?.dataset.copiedLabel || '链接已复制';
 	document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((button) => {
 		button.addEventListener('click', async () => {
 			const payload = { title: button.dataset.title || document.title, text: button.dataset.text || '', url: button.dataset.url || location.href };
@@ -15,7 +19,7 @@ const { title, text, url } = Astro.props as { title: string; text: string; url: 
 			try {
 				if (canShare) await navigator.share(payload);
 				else await navigator.clipboard.writeText(payload.url);
-				if (status) status.textContent = canShare ? '已打开分享' : '链接已复制';
+				if (status) status.textContent = canShare ? openedLabel : copiedLabel;
 			} catch {
 				if (status) status.textContent = '';
 			}
