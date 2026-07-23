@@ -1,0 +1,63 @@
+---
+import GiscusComments from '../../../components/GiscusComments.astro';
+import NotionContent from '../../../components/NotionContent.astro';
+import ShareButton from '../../../components/ShareButton.astro';
+import ViewCounter from '../../../components/ViewCounter.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../../lib/posts';
+import { localizedPath, translateText } from '../../../lib/locale';
+import { canonicalUrl, site } from '../../../lib/site';
+
+const locale = 'zh-TW' as const;
+export async function getStaticPaths() {
+	const posts = await getPosts();
+	return posts.map((post, index) => ({ params: { slug: post.slug }, props: { post, previous: posts[index + 1], next: posts[index - 1] } }));
+}
+const { post, previous, next } = Astro.props;
+const title = translateText(post.title, locale);
+const description = translateText(post.description, locale);
+const category = translateText(post.category, locale);
+const url = canonicalUrl(`/zh-tw/posts/${post.slug}`);
+const path = (value: string) => localizedPath(value, locale);
+function collectHeadings(blocks: NotionBlock[]): Array<{ text: string; id: string; level: 2 | 3 }> {
+	const items: Array<{ text: string; id: string; level: 2 | 3 }> = [];
+	for (const block of blocks) {
+		if (['heading_1', 'heading_2', 'heading_3'].includes(block.type)) {
+			const text = blockPlainText(block, locale);
+			const id = text.trim().toLowerCase().replace(/[^\p{Letter}\p{Number}]+/gu, '-').replace(/^-+|-+$/g, '');
+			if (text && id) items.push({ text, id, level: block.type === 'heading_3' ? 3 : 2 });
+		}
+		items.push(...collectHeadings(block.children || []));
+	}
+	return items;
+}
+const headings = collectHeadings(post.content);
+const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.defaultOgImage);
+const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description, image: [coverImage], datePublished: post.publishedAt, dateModified: post.updatedAt, author: { '@type': 'Person', name: site.author }, mainEntityOfPage: url };
+---
+<BaseLayout locale={locale} title={`${title} · Lenteyyy`} description={description || translateText(site.description, locale)} image={post.cover || site.defaultOgImage} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
+	<script is:inline type="application/ld+json" set:html={JSON.stringify(articleJson)} />
+	<div class="reading-progress" data-reading-progress></div>
+	<article class="post-page shell"><header class="post-header">
+		<a class="back" href={path('/posts')}>← 全部文章</a>
+		<div class="meta"><span>{category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
+		<h1>{title}</h1><div class="post-actions"><ShareButton title={title} text={description} url={url} /></div>
+		{post.cover && <img class="hero-image" src={post.cover} alt={title} loading="eager" decoding="async" />}
+	</header>
+	{headings.length > 0 && <details class="toc-mobile"><summary>目錄</summary>{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link>{heading.text}</a>)}</details>}
+	<div class="article-grid"><aside class="article-aside">
+		{post.tags.length > 0 && <div class="tags">{post.tags.map((tag) => <a href={path(`/tags/${encodeURIComponent(tag)}`)}>#{translateText(tag, locale)}</a>)}</div>}
+		{headings.length > 0 && <nav aria-label="文章目錄" class="toc toc-desktop">{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link>{heading.text}</a>)}</nav>}
+	</aside><div class="article-body"><NotionContent blocks={post.content} locale={locale} />
+		<nav class="post-nav" aria-label="上一篇下一篇">{previous ? <a href={path(`/posts/${previous.slug}`)}><span>上一篇</span>{translateText(previous.title, locale)}</a> : <span></span>}{next ? <a href={path(`/posts/${next.slug}`)}><span>下一篇</span>{translateText(next.title, locale)}</a> : <span></span>}</nav>
+		<GiscusComments /></div></div></article>
+	<script>
+		const progress = document.querySelector<HTMLElement>('[data-reading-progress]'); const article = document.querySelector<HTMLElement>('.article-body'); const headings = Array.from(document.querySelectorAll<HTMLElement>('.article-body h2[id], .article-body h3[id]')); const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')); let activeId = ''; let ticking = false;
+		const updateReading = () => { ticking = false; if (article && progress) { const rect = article.getBoundingClientRect(); const total = rect.height - window.innerHeight * .65; const read = Math.min(Math.max(-rect.top, 0), Math.max(total, 1)); progress.style.transform = `scaleX(${read / Math.max(total, 1)})`; } let nextId = activeId; for (const heading of headings) if (heading.getBoundingClientRect().top <= 130) nextId = heading.id; if (nextId && nextId !== activeId) { activeId = nextId; tocLinks.forEach((link) => link.classList.toggle('active', link.dataset.tocLink === activeId)); history.replaceState(null, '', `#${activeId}`); } };
+		const requestUpdate = () => { if (ticking) return; ticking = true; requestAnimationFrame(updateReading); }; updateReading(); window.addEventListener('scroll', requestUpdate, { passive: true }); window.addEventListener('resize', requestUpdate);
+	</script>
+</BaseLayout>
+
+<style>
+	html { scroll-behavior: smooth; } .reading-progress { position: fixed; left: 0; right: 0; top: 0; height: 2px; z-index: 30; background: var(--accent); transform: scaleX(0); transform-origin: left; } .post-page { padding-top: 62px; } .post-header { max-width: 1080px; margin: 0 auto; } .back { display: inline-block; margin-bottom: 48px; color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .04em; } .back:hover { color: var(--accent); } .meta { display: flex; flex-wrap: wrap; gap: 12px 16px; color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .04em; } .meta span:first-child { color: var(--accent); } h1 { max-width: 980px; margin: 24px 0 0; font-size: clamp(42px, 7vw, 92px); line-height: 1.12; font-weight: 600; } .post-actions { margin-top: 28px; } .hero-image { display: block; width: 100%; aspect-ratio: 16 / 7; height: auto; object-fit: cover; margin-top: 54px; background: var(--surface); } .article-grid { display: grid; grid-template-columns: 170px minmax(0, 760px); gap: clamp(38px, 7vw, 86px); justify-content: center; padding-top: 78px; } .article-aside { color: var(--muted); font: 11px/1.8 var(--mono); letter-spacing: .02em; } .tags { display: flex; flex-wrap: wrap; gap: 7px 11px; margin-bottom: 28px; } .tags a:hover, .toc a:hover { color: var(--accent); } .toc { position: sticky; top: 104px; display: grid; gap: 9px; } .toc a, .toc-mobile a { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); transition: color 160ms ease; } .toc a.level-3, .toc-mobile a.level-3 { padding-left: 12px; color: var(--soft); } .toc a.active, .toc-mobile a.active { color: var(--accent); } .toc-mobile { display: none; max-width: 760px; margin: 42px auto 0; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font: 11px/1.8 var(--mono); } .toc-mobile summary { cursor: pointer; color: var(--ink); } .toc-mobile a { margin-top: 8px; } .post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 66px; padding-top: 28px; border-top: 1px solid var(--line); } .post-nav a { display: grid; gap: 6px; color: var(--ink); } .post-nav a:last-child { text-align: right; } .post-nav span { color: var(--muted); font: 11px var(--mono); } @media (max-width: 760px) { .post-page { padding-top: 42px; } .back { margin-bottom: 36px; } .hero-image { aspect-ratio: 4 / 3; margin-top: 36px; } .article-grid { grid-template-columns: 1fr; gap: 30px; padding-top: 52px; } .article-aside { order: 2; } .article-body { order: 1; } .toc-desktop { display: none; } .toc-mobile { display: block; } .post-nav { grid-template-columns: 1fr; } .post-nav a:last-child { text-align: left; } }
+</style>

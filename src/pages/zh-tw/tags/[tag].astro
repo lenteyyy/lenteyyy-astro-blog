@@ -1,0 +1,19 @@
+---
+import PostCard from '../../../components/PostCard.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getPosts, getTags } from '../../../lib/posts';
+import { translateText, type SiteLocale } from '../../../lib/locale';
+const locale: SiteLocale = 'zh-TW';
+export async function getStaticPaths() {
+	return (await getTags()).map(({ tag }) => ({ params: { tag }, props: { tag } }));
+}
+const { tag } = Astro.props as { tag: string };
+const posts = (await getPosts()).filter((post) => post.tags.includes(tag));
+const title = translateText(tag, locale);
+---
+<BaseLayout locale={locale} title={`#${title} · Lenteyyy`} description={`Lenteyyy 中關於 ${title} 的文章。`}>
+	<section class="tag-page shell"><p class="eyebrow">TAG</p><h1>#{title}</h1><div class="post-list">{posts.map((post) => <PostCard post={post} locale={locale} />)}</div></section>
+</BaseLayout>
+<style>
+	.tag-page { padding-top: 86px; } .eyebrow { margin: 0; color: var(--muted); font: 11px/1.5 var(--mono); letter-spacing: .12em; } h1 { margin: 16px 0 54px; font-size: clamp(48px, 8vw, 98px); line-height: 1; font-weight: 600; } .post-list { display: grid; gap: 42px; }
+</style>
