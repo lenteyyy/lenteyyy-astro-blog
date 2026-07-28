@@ -53,8 +53,8 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		<title>{title}</title>
 		<script is:inline>
 			try {
-				const saved = localStorage.getItem('theme');
-				if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+				localStorage.removeItem('theme');
+				document.documentElement.removeAttribute('data-theme');
 			} catch {}
 		</script>
 	</head>
