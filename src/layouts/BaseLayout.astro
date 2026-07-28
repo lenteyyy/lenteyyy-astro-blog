@@ -75,8 +75,28 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		<footer class="site-footer">
 			<div class="shell footer-inner">
 				<span>© {new Date().getFullYear()} Lenteyyy</span>
+				<nav class="footer-links" aria-label={locale === 'zh-TW' ? '聯絡方式' : '联系方式'}>
+					<a href="https://github.com/lenteyyy" target="_blank" rel="noreferrer">GitHub</a>
+					<a href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noreferrer">Instagram</a>
+					<a href="mailto:lenteyteytey@gmail.com">Email</a>
+				</nav>
 			</div>
 		</footer>
+		<div class="easter-egg" data-easter-egg hidden role="dialog" aria-modal="true" aria-labelledby="easter-egg-title">
+			<div class="easter-egg-card"><button type="button" class="easter-egg-close" data-easter-egg-close aria-label={locale === 'zh-TW' ? '關閉' : '关闭'}>×</button><p id="easter-egg-title">{locale === 'zh-TW' ? '恭喜你發現了這個彩蛋！附上全世界最好喝的手搖飲之相片一張。' : '恭喜你发现了这个彩蛋！附上全世界最好喝的手摇饮之相片一张。'}</p><img src="/assets/egg-tea.png" alt={locale === 'zh-TW' ? '手搖飲照片' : '手摇饮照片'} /></div>
+		</div>
+		<script is:inline>
+			const egg = document.querySelector('[data-easter-egg]');
+			const eggClose = document.querySelector('[data-easter-egg-close]');
+			let sevenCount = 0;
+			document.addEventListener('keydown', (event) => {
+				if (!event.shiftKey || event.key !== '7') { if (event.key !== 'Shift') sevenCount = 0; return; }
+				sevenCount += 1;
+				if (sevenCount === 3 && egg) { egg.hidden = false; sevenCount = 0; eggClose?.focus(); }
+			});
+			eggClose?.addEventListener('click', () => { if (egg) egg.hidden = true; });
+			egg?.addEventListener('click', (event) => { if (event.target === egg) egg.hidden = true; });
+		</script>
 		<Analytics />
 		<SpeedInsights />
 	</body>
@@ -152,12 +172,23 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	nav > a:hover::after, nav > a.active::after { transform: scaleX(1); }
 	.site-footer { margin-top: 120px; color: var(--muted); font: 11px/1.6 var(--mono); }
 	.footer-inner { min-height: 84px; border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
+	.footer-links { display: flex; gap: 20px; font: 11px var(--mono); }
+	.footer-links a { color: var(--muted); transition: color 180ms ease; }
+	.footer-links a:hover { color: var(--accent); }
+	.easter-egg { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 22px; background: #0009; }
+	.easter-egg-card { position: relative; width: min(560px, 100%); padding: 28px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 18px; line-height: 1.8; }
+	.easter-egg-card img { display: block; width: 100%; max-height: 65vh; object-fit: cover; }
+	.easter-egg-close { position: absolute; top: 10px; right: 14px; border: 0; background: transparent; color: var(--muted); font-size: 26px; cursor: pointer; }
+	@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .notion-content img, :root:not([data-theme='light']) .hero-image { filter: brightness(.9); } }
+	:root[data-theme='dark'] .notion-content img, :root[data-theme='dark'] .hero-image { filter: brightness(.9); }
 	@media (max-width: 640px) {
 		.shell { width: min(100% - 30px, 1180px); }
 		.nav-wrap { min-height: 62px; }
 		.brand { font-size: 18px; }
 		nav { gap: 14px; font-size: 13px; }
 		nav > a { padding: 20px 0 17px; }
-		.footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 4px; }
+		.footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 12px; }
+		.footer-links { gap: 14px; flex-wrap: wrap; }
 	}
 </style>

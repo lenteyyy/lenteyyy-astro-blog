@@ -6,7 +6,7 @@ import ViewCounter from '../../../components/ViewCounter.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../../lib/posts';
 import { localizedPath, translateText } from '../../../lib/locale';
-import { canonicalUrl, site } from '../../../lib/site';
+import { canonicalUrl, site, socialImagePath } from '../../../lib/site';
 
 const locale = 'zh-TW' as const;
 export async function getStaticPaths() {
@@ -35,7 +35,7 @@ const headings = collectHeadings(post.content);
 const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.defaultOgImage);
 const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description, image: [coverImage], datePublished: post.publishedAt, dateModified: post.updatedAt, author: { '@type': 'Person', name: site.author }, mainEntityOfPage: url };
 ---
-<BaseLayout locale={locale} title={`${title} · Lenteyyy`} description={description || translateText(site.description, locale)} image={post.cover || site.defaultOgImage} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
+<BaseLayout locale={locale} title={`${title} · Lenteyyy`} description={description || translateText(site.description, locale)} image={socialImagePath(post.slug)} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
 	<script is:inline type="application/ld+json" set:html={JSON.stringify(articleJson)} />
 	<div class="reading-progress" data-reading-progress></div>
 	<article class="post-page shell"><header class="post-header">
