@@ -143,7 +143,6 @@ const html = renderBlocks(blocks);
 	let currentIndex = 0;
 	let touchStartX = 0;
 	let lightbox: HTMLElement | null = null;
-	let previouslyFocused: HTMLElement | null = null;
 
 	const ensureLightbox = () => {
 		if (lightbox) return lightbox;
@@ -185,7 +184,6 @@ const html = renderBlocks(blocks);
 		boxImage.alt = image.alt || '';
 		boxCaption.textContent = image.dataset.caption || '';
 		boxCaption.hidden = !image.dataset.caption;
-		previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
 		box.classList.add('is-open');
 		document.documentElement.classList.add('has-lightbox');
 	};
@@ -193,8 +191,7 @@ const html = renderBlocks(blocks);
 	const closeLightbox = () => {
 		lightbox?.classList.remove('is-open');
 		document.documentElement.classList.remove('has-lightbox');
-		previouslyFocused?.focus({ preventScroll: true });
-		previouslyFocused = null;
+		if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
 	};
 
 	images.forEach((image, index) => {

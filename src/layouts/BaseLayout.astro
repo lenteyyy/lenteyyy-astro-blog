@@ -78,7 +78,6 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 				<nav class="footer-links" aria-label={locale === 'zh-TW' ? '聯絡方式' : '联系方式'}>
 					<a href="https://github.com/lenteyyy" target="_blank" rel="noreferrer">GitHub</a>
 					<a href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noreferrer">Instagram</a>
-					<a href="mailto:lenteyteytey@gmail.com">Email</a>
 				</nav>
 			</div>
 		</footer>
@@ -90,7 +89,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 			const eggClose = document.querySelector('[data-easter-egg-close]');
 			let sevenCount = 0;
 			document.addEventListener('keydown', (event) => {
-				if (!event.shiftKey || event.key !== '7') { if (event.key !== 'Shift') sevenCount = 0; return; }
+				if (!event.shiftKey || event.code !== 'Digit7') { if (event.key !== 'Shift') sevenCount = 0; return; }
 				sevenCount += 1;
 				if (sevenCount === 3 && egg) { egg.hidden = false; sevenCount = 0; eggClose?.focus(); }
 			});
