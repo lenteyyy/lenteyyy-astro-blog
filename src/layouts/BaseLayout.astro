@@ -91,7 +91,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 			document.addEventListener('keydown', (event) => {
 				if (!event.shiftKey || event.code !== 'Digit7') { if (event.key !== 'Shift') sevenCount = 0; return; }
 				sevenCount += 1;
-				if (sevenCount === 3 && egg) { egg.hidden = false; sevenCount = 0; eggClose?.focus(); }
+				if (sevenCount === 3 && egg) { egg.hidden = false; sevenCount = 0; if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); }
 			});
 			eggClose?.addEventListener('click', () => { if (egg) egg.hidden = true; });
 			egg?.addEventListener('click', (event) => { if (event.target === egg) egg.hidden = true; });
