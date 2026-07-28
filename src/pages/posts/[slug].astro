@@ -5,7 +5,7 @@ import ShareButton from '../../components/ShareButton.astro';
 import ViewCounter from '../../components/ViewCounter.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../lib/posts';
-import { canonicalUrl, site } from '../../lib/site';
+import { canonicalUrl, site, socialImagePath } from '../../lib/site';
 
 export async function getStaticPaths() {
 	const posts = await getPosts();
@@ -40,7 +40,7 @@ const articleJson = {
 	mainEntityOfPage: url,
 };
 ---
-<BaseLayout title={`${post.title} · Lenteyyy`} description={post.description || site.description} image={post.cover || site.defaultOgImage} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
+<BaseLayout title={`${post.title} · Lenteyyy`} description={post.description || site.description} image={socialImagePath(post.slug)} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
 	<script is:inline type="application/ld+json" set:html={JSON.stringify(articleJson)} />
 	<div class="reading-progress" data-reading-progress></div>
 	<article class="post-page shell">

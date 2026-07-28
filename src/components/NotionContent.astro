@@ -143,6 +143,7 @@ const html = renderBlocks(blocks);
 	let currentIndex = 0;
 	let touchStartX = 0;
 	let lightbox: HTMLElement | null = null;
+	let previouslyFocused: HTMLElement | null = null;
 
 	const ensureLightbox = () => {
 		if (lightbox) return lightbox;
@@ -184,6 +185,7 @@ const html = renderBlocks(blocks);
 		boxImage.alt = image.alt || '';
 		boxCaption.textContent = image.dataset.caption || '';
 		boxCaption.hidden = !image.dataset.caption;
+		previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
 		box.classList.add('is-open');
 		document.documentElement.classList.add('has-lightbox');
 	};
@@ -191,6 +193,8 @@ const html = renderBlocks(blocks);
 	const closeLightbox = () => {
 		lightbox?.classList.remove('is-open');
 		document.documentElement.classList.remove('has-lightbox');
+		previouslyFocused?.focus({ preventScroll: true });
+		previouslyFocused = null;
 	};
 
 	images.forEach((image, index) => {
@@ -215,7 +219,7 @@ const html = renderBlocks(blocks);
 
 	document.addEventListener('keydown', (event) => {
 		if (!lightbox?.classList.contains('is-open')) return;
-		if (event.key === 'Escape') closeLightbox();
+		if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeLightbox(); }
 		if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
 		if (event.key === 'ArrowRight') showImage(currentIndex + 1);
 	});

@@ -19,3 +19,7 @@ export const giscusConfig = {
 export function canonicalUrl(path = '/'): string {
 	return new URL(path, site.url).toString();
 }
+
+export function socialImagePath(slug: string): string {
+	return `/api/og/${encodeURIComponent(slug)}.svg`;
+}
