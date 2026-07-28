@@ -176,6 +176,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.footer-links a { color: var(--muted); transition: color 180ms ease; }
 	.footer-links a:hover { color: var(--accent); }
 	.easter-egg { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 22px; background: #0009; }
+	.easter-egg[hidden] { display: none; }
 	.easter-egg-card { position: relative; width: min(560px, 100%); padding: 28px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 18px; line-height: 1.8; }
 	.easter-egg-card img { display: block; width: 100%; max-height: 65vh; object-fit: cover; }
