@@ -9,7 +9,7 @@ const locale = 'zh-TW' as const;
 const posts = await getPosts();
 const selectedCategory = Astro.url.searchParams.get('category');
 const filteredPosts = selectedCategory ? posts.filter((post) => translateText(post.category, locale) === selectedCategory || post.category === selectedCategory) : posts;
-const categories: Array<PostCategory | '全部'> = ['全部', ...new Set<PostCategory>(['酒店測評', ...posts.map((post) => post.category)])];
+const categories: Array<PostCategory | '全部'> = ['全部', ...new Set<PostCategory>(['酒店测评', ...posts.map((post) => post.category)])];
 const path = (value: string) => localizedPath(value, locale);
 const categoryHref = (category: string) => path(`/posts/category/${encodeURIComponent(category)}`);
 ---
