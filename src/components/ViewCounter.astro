@@ -1,12 +1,14 @@
 ---
-const { slug } = Astro.props as { slug: string };
+const { slug, locale = 'zh-CN' } = Astro.props as { slug: string; locale?: 'zh-CN' | 'zh-TW' };
+const label = locale === 'zh-TW' ? '閱讀量' : '阅读量';
 ---
-<span class="views" data-view-counter data-slug={slug}>阅读量 --</span>
+<span class="views" data-view-counter data-slug={slug} data-label={label}>{label} --</span>
 
 <script>
 	const item = document.querySelector<HTMLElement>('[data-view-counter]');
 	if (item) {
 		const slug = item.dataset.slug || '';
+		const label = item.dataset.label || '阅读量';
 		const visible = document.visibilityState === 'visible';
 		const prefetched = navigator.userAgent.includes('bot') || document.referrer.includes('_rsc=');
 		const seenKey = `viewed:${slug}`;
@@ -15,7 +17,7 @@ const { slug } = Astro.props as { slug: string };
 			.then((response) => response.ok ? response.json() : null)
 			.then((data) => {
 				if (!data || typeof data.views !== 'number') return;
-				item.textContent = `阅读量 ${data.views}`;
+				item.textContent = `${label} ${data.views}`;
 				if (shouldIncrement) sessionStorage.setItem(seenKey, '1');
 			})
 			.catch(() => {});

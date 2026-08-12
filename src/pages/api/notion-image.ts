@@ -1,5 +1,6 @@
 import { Client } from '@notionhq/client';
 import type { APIRoute } from 'astro';
+import { withinRateLimit } from '../../lib/rate-limit';
 
 const notionIdPattern = /^[0-9a-f-]{32,36}$/i;
 
@@ -22,7 +23,7 @@ async function imageUrlForRequest(client: Client, blockId: string | null, pageId
 	return '';
 }
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, request }) => {
 	const blockId = url.searchParams.get('block');
 	const pageId = url.searchParams.get('page');
 	if ((blockId && !validId(blockId)) || (pageId && !validId(pageId)) || (!blockId && !pageId)) {
@@ -33,6 +34,9 @@ export const GET: APIRoute = async ({ url }) => {
 	if (!token) return new Response('Image service unavailable', { status: 503 });
 
 	try {
+		if (!(await withinRateLimit(request, 'notion-image', 120, 60))) {
+			return new Response('Too many image requests', { status: 429, headers: { 'Retry-After': '60' } });
+		}
 		const client = new Client({ auth: token });
 		const source = await imageUrlForRequest(client, blockId, pageId);
 		if (!source) return new Response('Image not found', { status: 404 });

@@ -4,6 +4,7 @@ import { translateText, type SiteLocale } from '../lib/locale';
 const { blocks, locale = 'zh-CN' } = Astro.props as { blocks: NotionBlock[]; locale?: SiteLocale };
 const copyDoneLabel = locale === 'zh-TW' ? '已複製' : '已复制';
 const copyLabel = locale === 'zh-TW' ? '複製' : '复制';
+const headingLinkLabel = locale === 'zh-TW' ? '複製標題連結' : '复制标题链接';
 
 function caption(data: any): string {
 	return escapeHtml((data?.caption || []).map((item: any) => item.plain_text || '').join(''));
@@ -81,9 +82,9 @@ function renderBlock(block: NotionBlock): string {
 	const children = renderChildren(block);
 	switch (block.type) {
 		case 'paragraph': return text ? `<p>${text}</p>${children}` : children;
-		case 'heading_1': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h2>${children}`;
-		case 'heading_2': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h2>${children}`;
-		case 'heading_3': return `<h3 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="复制标题链接">#</button></h3>${children}`;
+		case 'heading_1': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="${headingLinkLabel}">#</button></h2>${children}`;
+		case 'heading_2': return `<h2 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="${headingLinkLabel}">#</button></h2>${children}`;
+		case 'heading_3': return `<h3 id="${escapeAttribute(slug(text))}">${text}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(slug(text))}" aria-label="${headingLinkLabel}">#</button></h3>${children}`;
 		case 'bulleted_list_item': return `<ul><li>${text}${children}</li></ul>`;
 		case 'numbered_list_item': return `<ol><li>${text}${children}</li></ol>`;
 		case 'to_do': return `<p class="todo"><input type="checkbox" disabled ${data?.checked ? 'checked' : ''} />${text}</p>${children}`;

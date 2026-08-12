@@ -184,7 +184,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .notion-content img, :root:not([data-theme='light']) .hero-image { filter: brightness(.9); } }
 	:root[data-theme='dark'] .notion-content img, :root[data-theme='dark'] .hero-image { filter: brightness(.9); }
 	@media (max-width: 640px) {
-		.shell { width: min(100% - 30px, 1180px); }
+		.shell { width: min(1180px, calc(100% - 30px)); }
 		.nav-wrap { min-height: 62px; }
 		.brand { font-size: 18px; }
 		nav { gap: 14px; font-size: 13px; }
