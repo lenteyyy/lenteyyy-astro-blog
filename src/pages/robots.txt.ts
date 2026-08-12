@@ -3,6 +3,7 @@ import { canonicalUrl } from '../lib/site';
 
 export const GET: APIRoute = () => new Response(`User-agent: *
 Allow: /
+Allow: /api/og/
 
 Sitemap: ${canonicalUrl('/sitemap.xml')}
 `, { headers: { 'content-type': 'text/plain; charset=utf-8' } });

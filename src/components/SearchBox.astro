@@ -5,7 +5,7 @@ const { posts, locale = 'zh-CN' } = Astro.props as { posts: SearchPost[]; locale
 const path = (value: string) => localizedPath(value, locale);
 const localizedPosts = posts.map((post) => ({ ...post, title: translateText(post.title, locale), tags: post.tags.map((tag) => translateText(tag, locale)) }));
 ---
-<section class="search-box" aria-label={locale === 'zh-TW' ? '搜尋文章' : '搜索文章'}>
+<section class="search-box" aria-label={locale === 'zh-TW' ? '搜尋文章' : '搜索文章'} data-search-posts={JSON.stringify(localizedPosts)} data-result-path={path('/posts')} data-empty-label={locale === 'zh-TW' ? '沒有找到。' : '没有找到。'}>
 	<label>
 		<span>SEARCH</span>
 		<input type="search" placeholder={locale === 'zh-TW' ? '標題或標籤' : '标题或标签'} data-search-input />
@@ -13,36 +13,47 @@ const localizedPosts = posts.map((post) => ({ ...post, title: translateText(post
 	<div class="search-results" data-search-results hidden></div>
 </section>
 
-<script is:inline define:vars={{ posts: localizedPosts, resultPath: path('/posts'), emptyLabel: locale === 'zh-TW' ? '沒有找到。' : '没有找到。' }}>
-	const input = document.querySelector('[data-search-input]');
-	const results = document.querySelector('[data-search-results]');
-	const data = posts;
-	input?.addEventListener('input', () => {
-		const query = input.value.trim().toLowerCase();
-		if (!query) {
-			results.hidden = true;
-			results.replaceChildren();
-			return;
-		}
-		const matches = data.filter((post) => [post.title, post.tags.join(' ')].join(' ').toLowerCase().includes(query)).slice(0, 8);
-		results.hidden = false;
-		results.replaceChildren();
-		if (!matches.length) {
-			const empty = document.createElement('p');
-			empty.textContent = emptyLabel;
-			results.append(empty);
-			return;
-		}
-		for (const post of matches) {
-			const link = document.createElement('a');
-			const title = document.createElement('strong');
-			const tags = document.createElement('span');
-			link.href = `${resultPath}/${encodeURIComponent(post.slug)}`;
-			title.textContent = post.title;
-			tags.textContent = post.tags.join(' / ');
-			link.append(title, tags);
-			results.append(link);
-		}
+<script>
+	import { onPageLoad } from '../lib/client-lifecycle';
+	type SearchPost = { title: string; slug: string; tags: string[] };
+
+	onPageLoad('search-box', (signal) => {
+		document.querySelectorAll<HTMLElement>('.search-box').forEach((box) => {
+			const input = box.querySelector<HTMLInputElement>('[data-search-input]');
+			const results = box.querySelector<HTMLElement>('[data-search-results]');
+			if (!input || !results) return;
+			let data: SearchPost[] = [];
+			try { data = JSON.parse(box.dataset.searchPosts || '[]'); } catch {}
+			const resultPath = box.dataset.resultPath || '/posts';
+			const emptyLabel = box.dataset.emptyLabel || '没有找到。';
+			input.addEventListener('input', () => {
+				const query = input.value.trim().toLowerCase();
+				if (!query) {
+					results.hidden = true;
+					results.replaceChildren();
+					return;
+				}
+				const matches = data.filter((post) => [post.title, post.tags.join(' ')].join(' ').toLowerCase().includes(query)).slice(0, 8);
+				results.hidden = false;
+				results.replaceChildren();
+				if (!matches.length) {
+					const empty = document.createElement('p');
+					empty.textContent = emptyLabel;
+					results.append(empty);
+					return;
+				}
+				for (const post of matches) {
+					const link = document.createElement('a');
+					const title = document.createElement('strong');
+					const tags = document.createElement('span');
+					link.href = `${resultPath}/${encodeURIComponent(post.slug)}`;
+					title.textContent = post.title;
+					tags.textContent = post.tags.join(' / ');
+					link.append(title, tags);
+					results.append(link);
+				}
+			}, { signal });
+		});
 	});
 </script>
 

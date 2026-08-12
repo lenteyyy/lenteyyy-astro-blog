@@ -8,22 +8,26 @@ const labels = locale === 'zh-TW' ? { share: '分享文章', opened: '已開啟�
 </div>
 
 <script>
-	const shareLabels = document.querySelector<HTMLElement>('.share');
-	const openedLabel = shareLabels?.dataset.openedLabel || '已打开分享';
-	const copiedLabel = shareLabels?.dataset.copiedLabel || '链接已复制';
-	document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((button) => {
-		button.addEventListener('click', async () => {
-			const payload = { title: button.dataset.title || document.title, text: button.dataset.text || '', url: button.dataset.url || location.href };
-			const status = button.parentElement?.querySelector('[data-share-status]');
-			const canShare = typeof navigator.share === 'function';
-			try {
-				if (canShare) await navigator.share(payload);
-				else await navigator.clipboard.writeText(payload.url);
-				if (status) status.textContent = canShare ? openedLabel : copiedLabel;
-			} catch {
-				if (status) status.textContent = '';
-			}
-			window.setTimeout(() => { if (status) status.textContent = ''; }, 1800);
+	import { onPageLoad } from '../lib/client-lifecycle';
+
+	onPageLoad('share-button', (signal) => {
+		document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((button) => {
+			button.addEventListener('click', async () => {
+				const root = button.closest<HTMLElement>('.share');
+				const openedLabel = root?.dataset.openedLabel || '已打开分享';
+				const copiedLabel = root?.dataset.copiedLabel || '链接已复制';
+				const payload = { title: button.dataset.title || document.title, text: button.dataset.text || '', url: button.dataset.url || location.href };
+				const status = root?.querySelector<HTMLElement>('[data-share-status]');
+				const canShare = typeof navigator.share === 'function';
+				try {
+					if (canShare) await navigator.share(payload);
+					else await navigator.clipboard.writeText(payload.url);
+					if (status) status.textContent = canShare ? openedLabel : copiedLabel;
+				} catch {
+					if (status) status.textContent = '';
+				}
+				window.setTimeout(() => { if (status?.isConnected) status.textContent = ''; }, 1800);
+			}, { signal });
 		});
 	});
 </script>

@@ -20,6 +20,7 @@ export function canonicalUrl(path = '/'): string {
 	return new URL(path, site.url).toString();
 }
 
-export function socialImagePath(slug: string): string {
-	return `/api/og/${encodeURIComponent(slug)}.svg`;
+export function socialImagePath(slug: string, locale: 'zh-CN' | 'zh-TW' = 'zh-CN'): string {
+	const suffix = locale === 'zh-TW' ? '?locale=zh-tw' : '';
+	return `/api/og/${encodeURIComponent(slug)}.png${suffix}`;
 }
