@@ -1,28 +1,35 @@
 <button class="theme-toggle" type="button" aria-label="切换深浅色" aria-pressed="false" data-theme-toggle>◐</button>
 
-<script is:inline>
-	const root = document.documentElement;
-	const toggle = document.querySelector('[data-theme-toggle]');
-	const media = window.matchMedia('(prefers-color-scheme: dark)');
-	const effectiveTheme = () => root.dataset.theme || (media.matches ? 'dark' : 'light');
-	const syncButton = () => {
-		if (!toggle) return;
-		const theme = effectiveTheme();
-		toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-		toggle.textContent = theme === 'dark' ? '☾' : '☼';
-	};
-	try { localStorage.removeItem('theme'); } catch {}
-	root.removeAttribute('data-theme');
-	syncButton();
-	media.addEventListener('change', () => {
-		root.removeAttribute('data-theme');
+<script>
+	import { onPageLoad } from '../lib/client-lifecycle';
+
+	onPageLoad('theme-toggle', (signal) => {
+		const root = document.documentElement;
+		const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+		const media = window.matchMedia('(prefers-color-scheme: dark)');
+		const effectiveTheme = () => root.dataset.theme || (media.matches ? 'dark' : 'light');
+		const syncButton = () => {
+			if (!toggle) return;
+			const theme = effectiveTheme();
+			toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+			toggle.textContent = theme === 'dark' ? '☾' : '☼';
+		};
+		const handleSystemTheme = () => {
+			if (sessionStorage.getItem('theme')) return;
+			root.removeAttribute('data-theme');
+			syncButton();
+			window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: effectiveTheme() } }));
+		};
+		media.addEventListener('change', handleSystemTheme);
+		signal.addEventListener('abort', () => media.removeEventListener('change', handleSystemTheme), { once: true });
+		toggle?.addEventListener('click', () => {
+			const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+			root.dataset.theme = next;
+			sessionStorage.setItem('theme', next);
+			syncButton();
+			window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
+		}, { signal });
 		syncButton();
-	});
-	toggle?.addEventListener('click', () => {
-		const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
-		root.dataset.theme = next;
-		syncButton();
-		window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
 	});
 </script>
 

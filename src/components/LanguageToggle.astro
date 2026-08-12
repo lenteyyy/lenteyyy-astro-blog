@@ -15,33 +15,35 @@ const label = locale === 'zh-TW' ? '語言' : '语言';
 </div>
 
 <script>
-	const toggles = document.querySelectorAll<HTMLElement>('.language-toggle');
+	import { onPageLoad } from '../lib/client-lifecycle';
 
-	toggles.forEach((toggle) => {
-		const trigger = toggle.querySelector<HTMLButtonElement>('.language-trigger');
-		const menu = toggle.querySelector<HTMLElement>('.language-menu');
-		if (!trigger || !menu) return;
+	onPageLoad('language-toggle', (signal) => {
+		document.querySelectorAll<HTMLElement>('.language-toggle').forEach((toggle) => {
+			const trigger = toggle.querySelector<HTMLButtonElement>('.language-trigger');
+			const menu = toggle.querySelector<HTMLElement>('.language-menu');
+			if (!trigger || !menu) return;
 
-		const close = () => {
-			trigger.setAttribute('aria-expanded', 'false');
-			menu.hidden = true;
-		};
+			const close = () => {
+				trigger.setAttribute('aria-expanded', 'false');
+				menu.hidden = true;
+			};
 
-		trigger.addEventListener('click', () => {
-			const isOpen = trigger.getAttribute('aria-expanded') === 'true';
-			trigger.setAttribute('aria-expanded', String(!isOpen));
-			menu.hidden = isOpen;
-		});
+			trigger.addEventListener('click', () => {
+				const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+				trigger.setAttribute('aria-expanded', String(!isOpen));
+				menu.hidden = isOpen;
+			}, { signal });
 
-		document.addEventListener('click', (event) => {
-			if (!toggle.contains(event.target as Node)) close();
-		});
+			document.addEventListener('click', (event) => {
+				if (!toggle.contains(event.target as Node)) close();
+			}, { signal });
 
-		document.addEventListener('keydown', (event) => {
-			if (event.key === 'Escape') {
+			document.addEventListener('keydown', (event) => {
+				if (event.key !== 'Escape' || trigger.getAttribute('aria-expanded') !== 'true') return;
+				event.preventDefault();
 				close();
 				trigger.focus();
-			}
+			}, { signal });
 		});
 	});
 </script>

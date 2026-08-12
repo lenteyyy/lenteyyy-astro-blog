@@ -12,11 +12,14 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 )}
 
 <script>
-	const root = document.querySelector<HTMLElement>('[data-giscus]');
-	if (root) {
+	import { onPageLoad } from '../lib/client-lifecycle';
+
+	onPageLoad('giscus-comments', (signal) => {
+		const root = document.querySelector<HTMLElement>('[data-giscus]');
+		if (!root) return;
 		const currentTheme = () => document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 		const setGiscusTheme = (theme: string) => {
-			const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+			const iframe = root.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
 			iframe?.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
 		};
 		const load = () => {
@@ -39,14 +42,16 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 			script.setAttribute('data-lang', root.dataset.lang || 'zh-CN');
 			root.querySelector('.comments-anchor')?.append(script);
 		};
-		window.addEventListener('themechange', (event) => setGiscusTheme((event as CustomEvent).detail?.theme || currentTheme()));
-		new IntersectionObserver((entries, observer) => {
+		window.addEventListener('themechange', (event) => setGiscusTheme((event as CustomEvent).detail?.theme || currentTheme()), { signal });
+		const observer = new IntersectionObserver((entries) => {
 			if (entries.some((entry) => entry.isIntersecting)) {
 				load();
 				observer.disconnect();
 			}
-		}, { rootMargin: '280px' }).observe(root);
-	}
+		}, { rootMargin: '280px' });
+		observer.observe(root);
+		signal.addEventListener('abort', () => observer.disconnect(), { once: true });
+	});
 </script>
 
 <style>

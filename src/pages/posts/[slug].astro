@@ -3,6 +3,7 @@ import GiscusComments from '../../components/GiscusComments.astro';
 import NotionContent from '../../components/NotionContent.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import ViewCounter from '../../components/ViewCounter.astro';
+import ReadingProgress from '../../components/ReadingProgress.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../lib/posts';
 import { canonicalUrl, site, socialImagePath } from '../../lib/site';
@@ -67,55 +68,7 @@ const articleJson = {
 			</div>
 		</div>
 	</article>
-
-	<script>
-		const progress = document.querySelector<HTMLElement>('[data-reading-progress]');
-		const article = document.querySelector<HTMLElement>('.article-body');
-		const headings = Array.from(document.querySelectorAll<HTMLElement>('.article-body h2[id], .article-body h3[id]'));
-		const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
-		let activeId = '';
-		let ticking = false;
-
-		tocLinks.forEach((link) => {
-			link.addEventListener('click', (event) => {
-				const id = link.dataset.tocLink;
-				const target = id ? document.getElementById(id) : null;
-				if (!target) return;
-				event.preventDefault();
-				target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				history.replaceState(null, '', `#${id}`);
-			});
-		});
-
-		const updateReading = () => {
-			ticking = false;
-			if (article && progress) {
-				const rect = article.getBoundingClientRect();
-				const total = rect.height - window.innerHeight * 0.65;
-				const read = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
-				progress.style.transform = `scaleX(${read / Math.max(total, 1)})`;
-			}
-			let nextId = activeId;
-			for (const heading of headings) {
-				if (heading.getBoundingClientRect().top <= 130) nextId = heading.id;
-			}
-			if (nextId && nextId !== activeId) {
-				activeId = nextId;
-				tocLinks.forEach((link) => link.classList.toggle('active', link.dataset.tocLink === activeId));
-				history.replaceState(null, '', `#${activeId}`);
-			}
-		};
-
-		const requestUpdate = () => {
-			if (ticking) return;
-			ticking = true;
-			requestAnimationFrame(updateReading);
-		};
-
-		updateReading();
-		window.addEventListener('scroll', requestUpdate, { passive: true });
-		window.addEventListener('resize', requestUpdate);
-	</script>
+	<ReadingProgress />
 </BaseLayout>
 
 <style>

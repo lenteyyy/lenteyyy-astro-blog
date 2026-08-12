@@ -134,92 +134,94 @@ function renderBlocks(items: NotionBlock[]): string {
 
 const html = renderBlocks(blocks);
 ---
-<div class="notion-content" data-copy-done={copyDoneLabel} data-copy-label={copyLabel} set:html={html} />
+<div class="notion-content" data-copy-done={copyDoneLabel} data-copy-label={copyLabel} data-close-label={locale === 'zh-TW' ? '關閉' : '关闭'} data-previous-label={locale === 'zh-TW' ? '上一張' : '上一张'} data-next-label={locale === 'zh-TW' ? '下一張' : '下一张'} set:html={html} />
 
 <script>
-	const images = Array.from(document.querySelectorAll<HTMLImageElement>('.notion-content [data-lightbox-image]'));
-	const content = document.querySelector<HTMLElement>('.notion-content');
-	const copyDoneLabel = content?.dataset.copyDone || '已复制';
-	const copyLabel = content?.dataset.copyLabel || '复制';
-	let currentIndex = 0;
-	let touchStartX = 0;
-	let lightbox: HTMLElement | null = null;
+	import { onPageLoad } from '../lib/client-lifecycle';
 
-	const ensureLightbox = () => {
-		if (lightbox) return lightbox;
-		lightbox = document.createElement('div');
-		lightbox.className = 'lightbox';
-		lightbox.innerHTML = `
-			<button class="lightbox-close" type="button" aria-label="关闭">×</button>
-			<button class="lightbox-prev" type="button" aria-label="上一张">‹</button>
-			<figure>
-				<img alt="" />
-				<figcaption></figcaption>
-			</figure>
-			<button class="lightbox-next" type="button" aria-label="下一张">›</button>
-		`;
-		document.body.append(lightbox);
-		lightbox.addEventListener('click', (event) => {
+	onPageLoad('notion-content', (signal) => {
+		const content = document.querySelector<HTMLElement>('.notion-content');
+		if (!content) return;
+		const images = Array.from(content.querySelectorAll<HTMLImageElement>('[data-lightbox-image]'));
+		const copyDoneLabel = content.dataset.copyDone || '已复制';
+		const copyLabel = content.dataset.copyLabel || '复制';
+		let currentIndex = 0;
+		let touchStartX = 0;
+		let lightbox: HTMLElement | null = null;
+
+		const closeLightbox = () => {
+			lightbox?.classList.remove('is-open');
+			document.documentElement.classList.remove('has-lightbox');
+			if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+		};
+		const showImage = (index: number) => {
+			if (!images.length) return;
+			currentIndex = (index + images.length) % images.length;
+			const image = images[currentIndex];
+			const box = ensureLightbox();
+			const boxImage = box.querySelector<HTMLImageElement>('img');
+			const boxCaption = box.querySelector<HTMLElement>('figcaption');
+			if (!boxImage || !boxCaption) return;
+			boxImage.src = image.currentSrc || image.src;
+			boxImage.alt = image.alt || '';
+			boxCaption.textContent = image.dataset.caption || '';
+			boxCaption.hidden = !image.dataset.caption;
+			box.classList.add('is-open');
+			document.documentElement.classList.add('has-lightbox');
+		};
+		const ensureLightbox = () => {
+			if (lightbox) return lightbox;
+			lightbox = document.createElement('div');
+			lightbox.className = 'lightbox';
+			const close = document.createElement('button');
+			const previous = document.createElement('button');
+			const next = document.createElement('button');
+			const figure = document.createElement('figure');
+			const boxImage = document.createElement('img');
+			const boxCaption = document.createElement('figcaption');
+			close.className = 'lightbox-close'; close.type = 'button'; close.ariaLabel = content.dataset.closeLabel || '关闭'; close.textContent = '×';
+			previous.className = 'lightbox-prev'; previous.type = 'button'; previous.ariaLabel = content.dataset.previousLabel || '上一张'; previous.textContent = '‹';
+			next.className = 'lightbox-next'; next.type = 'button'; next.ariaLabel = content.dataset.nextLabel || '下一张'; next.textContent = '›';
+			figure.append(boxImage, boxCaption); lightbox.append(close, previous, figure, next); document.body.append(lightbox);
+			lightbox.addEventListener('click', (event) => {
+				const target = event.target as HTMLElement;
+				if (target === lightbox || target.closest('.lightbox-close')) closeLightbox();
+				if (target.closest('.lightbox-prev')) showImage(currentIndex - 1);
+				if (target.closest('.lightbox-next')) showImage(currentIndex + 1);
+			}, { signal });
+			lightbox.addEventListener('touchstart', (event) => { touchStartX = event.touches[0]?.clientX || 0; }, { passive: true, signal });
+			lightbox.addEventListener('touchend', (event) => {
+				const diff = (event.changedTouches[0]?.clientX || 0) - touchStartX;
+				if (Math.abs(diff) > 45) showImage(currentIndex + (diff < 0 ? 1 : -1));
+			}, { signal });
+			return lightbox;
+		};
+
+		images.forEach((image, index) => image.addEventListener('click', () => showImage(index), { signal }));
+		document.addEventListener('click', async (event) => {
 			const target = event.target as HTMLElement;
-			if (target === lightbox || target.closest('.lightbox-close')) closeLightbox();
-			if (target.closest('.lightbox-prev')) showImage(currentIndex - 1);
-			if (target.closest('.lightbox-next')) showImage(currentIndex + 1);
-		});
-		lightbox.addEventListener('touchstart', (event) => { touchStartX = event.touches[0]?.clientX || 0; }, { passive: true });
-		lightbox.addEventListener('touchend', (event) => {
-			const diff = (event.changedTouches[0]?.clientX || 0) - touchStartX;
-			if (Math.abs(diff) > 45) showImage(currentIndex + (diff < 0 ? 1 : -1));
-		});
-		return lightbox;
-	};
-
-	const showImage = (index: number) => {
-		if (!images.length) return;
-		currentIndex = (index + images.length) % images.length;
-		const image = images[currentIndex];
-		const box = ensureLightbox();
-		const boxImage = box.querySelector<HTMLImageElement>('img');
-		const boxCaption = box.querySelector<HTMLElement>('figcaption');
-		if (!boxImage || !boxCaption) return;
-		boxImage.src = image.currentSrc || image.src;
-		boxImage.alt = image.alt || '';
-		boxCaption.textContent = image.dataset.caption || '';
-		boxCaption.hidden = !image.dataset.caption;
-		box.classList.add('is-open');
-		document.documentElement.classList.add('has-lightbox');
-	};
-
-	const closeLightbox = () => {
-		lightbox?.classList.remove('is-open');
-		document.documentElement.classList.remove('has-lightbox');
-		if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
-	};
-
-	images.forEach((image, index) => {
-		image.addEventListener('click', () => showImage(index));
-	});
-
-	document.addEventListener('click', async (event) => {
-		const button = (event.target as HTMLElement).closest<HTMLButtonElement>('.copy-code');
-		const anchor = (event.target as HTMLElement).closest<HTMLButtonElement>('.heading-anchor');
-		if (button) {
-			const code = button.nextElementSibling?.textContent || '';
-			await navigator.clipboard?.writeText(code);
-			button.textContent = copyDoneLabel;
-			window.setTimeout(() => { button.textContent = copyLabel; }, 1400);
-		}
-		if (anchor?.dataset.anchor) {
-			const url = `${location.origin}${location.pathname}#${anchor.dataset.anchor}`;
-			history.replaceState(null, '', `#${anchor.dataset.anchor}`);
-			await navigator.clipboard?.writeText(url);
-		}
-	});
-
-	document.addEventListener('keydown', (event) => {
-		if (!lightbox?.classList.contains('is-open')) return;
-		if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeLightbox(); }
-		if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
-		if (event.key === 'ArrowRight') showImage(currentIndex + 1);
+			if (!content.contains(target)) return;
+			const button = target.closest<HTMLButtonElement>('.copy-code');
+			const anchor = target.closest<HTMLButtonElement>('.heading-anchor');
+			if (button) {
+				const code = button.nextElementSibling?.textContent || '';
+				await navigator.clipboard?.writeText(code);
+				button.textContent = copyDoneLabel;
+				window.setTimeout(() => { if (button.isConnected) button.textContent = copyLabel; }, 1400);
+			}
+			if (anchor?.dataset.anchor) {
+				const url = `${location.origin}${location.pathname}#${anchor.dataset.anchor}`;
+				history.replaceState(null, '', `#${anchor.dataset.anchor}`);
+				await navigator.clipboard?.writeText(url);
+			}
+		}, { signal });
+		document.addEventListener('keydown', (event) => {
+			if (!lightbox?.classList.contains('is-open')) return;
+			if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeLightbox(); }
+			if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
+			if (event.key === 'ArrowRight') showImage(currentIndex + 1);
+		}, { signal });
+		signal.addEventListener('abort', () => { closeLightbox(); lightbox?.remove(); }, { once: true });
 	});
 </script>
 
