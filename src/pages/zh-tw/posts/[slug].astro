@@ -40,7 +40,7 @@ const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', 
 	<div class="reading-progress" data-reading-progress></div>
 	<article class="post-page shell"><header class="post-header">
 		<a class="back" href={path('/posts')}>← 全部文章</a>
-		<div class="meta"><span>{category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} /></div>
+		<div class="meta"><span>{category}</span><time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time><span>{post.readingMinutes} min</span><ViewCounter slug={post.slug} locale={locale} /></div>
 		<h1>{title}</h1><div class="post-actions"><ShareButton title={title} text={description} url={url} locale={locale} /></div>
 		{post.cover && <img class="hero-image" src={post.cover} alt={title} loading="eager" decoding="async" />}
 	</header>
