@@ -154,6 +154,10 @@ const html = renderBlocks(blocks);
 
 		const closeLightbox = () => {
 			lightbox?.classList.remove('is-open');
+			if (lightbox) {
+				lightbox.hidden = true;
+				lightbox.setAttribute('aria-hidden', 'true');
+			}
 			document.documentElement.classList.remove('has-lightbox');
 			if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
 		};
@@ -169,6 +173,8 @@ const html = renderBlocks(blocks);
 			boxImage.alt = image.alt || '';
 			boxCaption.textContent = image.dataset.caption || '';
 			boxCaption.hidden = !image.dataset.caption;
+			box.hidden = false;
+			box.setAttribute('aria-hidden', 'false');
 			box.classList.add('is-open');
 			document.documentElement.classList.add('has-lightbox');
 		};
@@ -176,6 +182,8 @@ const html = renderBlocks(blocks);
 			if (lightbox) return lightbox;
 			lightbox = document.createElement('div');
 			lightbox.className = 'lightbox';
+			lightbox.hidden = true;
+			lightbox.setAttribute('aria-hidden', 'true');
 			const close = document.createElement('button');
 			const previous = document.createElement('button');
 			const next = document.createElement('button');
@@ -223,7 +231,7 @@ const html = renderBlocks(blocks);
 			if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeLightbox(); }
 			if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
 			if (event.key === 'ArrowRight') showImage(currentIndex + 1);
-		}, { signal });
+		}, { capture: true, signal });
 		signal.addEventListener('abort', () => { closeLightbox(); lightbox?.remove(); }, { once: true });
 	});
 </script>

@@ -4,6 +4,9 @@ export type SiteLocale = 'zh-CN' | 'zh-TW';
 
 const toTaiwanTraditional = OpenCC.Converter({ from: 'cn', to: 'twp' });
 const taiwanTerms: Array<[string, string]> = [
+	['酒店', '飯店'],
+	['测评', '評測'],
+	['測評', '評測'],
 	['回复', '回覆'],
 	['回復', '回覆'],
 	['博客', '部落格'],
@@ -27,10 +30,12 @@ const taiwanTerms: Array<[string, string]> = [
 	['质量', '品質'],
 ];
 
+const applyTaiwanTerms = (value: string): string =>
+	taiwanTerms.reduce((result, [from, to]) => result.replaceAll(from, to), value);
+
 export function translateText(value: string, locale: SiteLocale): string {
 	if (locale !== 'zh-TW' || !value) return value;
-	const converted = toTaiwanTraditional(value);
-	return taiwanTerms.reduce((result, [from, to]) => result.replaceAll(from, to), converted);
+	return applyTaiwanTerms(toTaiwanTraditional(applyTaiwanTerms(value)));
 }
 
 export function localizedPath(path: string, locale: SiteLocale): string {
