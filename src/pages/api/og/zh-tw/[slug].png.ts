@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
-import { createOgImage } from '../../../lib/og';
-import { getPosts, type Post } from '../../../lib/posts';
+import { createOgImage } from '../../../../lib/og';
+import { getPosts, type Post } from '../../../../lib/posts';
 
 export const prerender = true;
 
@@ -9,5 +9,5 @@ export async function getStaticPaths() {
 }
 
 export const GET: APIRoute = ({ props }) => {
-	return createOgImage((props as { post: Post }).post, 'zh-CN');
+	return createOgImage((props as { post: Post }).post, 'zh-TW');
 };

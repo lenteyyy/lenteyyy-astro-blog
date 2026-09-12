@@ -288,8 +288,8 @@ export function richTextToHtml(richText: RichText[] = [], locale: SiteLocale = '
 		if (annotations.italic) value = `<em>${value}</em>`;
 		if (annotations.underline) value = `<u>${value}</u>`;
 		if (annotations.strikethrough) value = `<s>${value}</s>`;
-		const href = item.href || item.text?.link?.url;
-		return href ? `<a href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">${value}</a>` : value;
+		const href = safeLinkUrl(item.href || item.text?.link?.url || '');
+		return href ? `<a href="${escapeAttribute(href)}" target="_blank" rel="noopener noreferrer">${value}</a>` : value;
 	}).join('');
 }
 
@@ -299,6 +299,18 @@ export function escapeHtml(value: string): string {
 
 export function escapeAttribute(value: string): string {
 	return escapeHtml(value);
+}
+
+export function safeLinkUrl(value: string, protocols = ['http:', 'https:', 'mailto:', 'tel:']): string {
+	const trimmed = value.trim();
+	if (!trimmed) return '';
+	if (trimmed.startsWith('#') || (trimmed.startsWith('/') && !trimmed.startsWith('//'))) return trimmed;
+	try {
+		const parsed = new URL(trimmed);
+		return protocols.includes(parsed.protocol) ? parsed.toString() : '';
+	} catch {
+		return '';
+	}
 }
 
 export function blockText(block: NotionBlock, locale: SiteLocale = 'zh-CN'): string {

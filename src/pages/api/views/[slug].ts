@@ -1,5 +1,4 @@
 import type { APIRoute } from 'astro';
-import { getPostBySlug } from '../../../lib/posts';
 import { claimDailyView, redis, withinRateLimit } from '../../../lib/rate-limit';
 
 export const prerender = false;
@@ -19,13 +18,19 @@ export const GET: APIRoute = async ({ params, request }) => {
 
 	try {
 		if (!(await withinRateLimit(request, 'views', 90, 60))) return json({ error: 'rate_limited' }, 429);
-		if (!(await getPostBySlug(slug))) return json({ error: 'not_found' }, 404);
 		const key = `post:views:${slug}`;
-		const shouldIncrement = new URL(request.url).searchParams.get('increment') === '1';
+		const requestUrl = new URL(request.url);
+		const shouldIncrement = requestUrl.searchParams.get('increment') === '1';
 		const userAgent = request.headers.get('user-agent') || '';
 		const purpose = request.headers.get('purpose') || request.headers.get('sec-purpose') || '';
 		const isBot = botPattern.test(userAgent) || /prefetch|prerender/i.test(purpose);
-		const increment = shouldIncrement && !isBot && await claimDailyView(request, slug);
+		let validPageRequest = false;
+		try {
+			const referrer = new URL(request.headers.get('referer') || '');
+			validPageRequest = referrer.origin === requestUrl.origin
+				&& [`/posts/${slug}`, `/zh-tw/posts/${slug}`].includes(referrer.pathname.replace(/\/$/, ''));
+		} catch {}
+		const increment = shouldIncrement && validPageRequest && !isBot && await claimDailyView(request, slug);
 		const result = increment ? await redis(['INCR', key]) : await redis(['GET', key]);
 		const raw = result.result ?? 0;
 		return json({ slug, views: Number(raw) || 0 });

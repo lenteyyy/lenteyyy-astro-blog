@@ -7,7 +7,7 @@ import ReadingProgress from '../../../components/ReadingProgress.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../../lib/posts';
 import { localizedPath, translateText } from '../../../lib/locale';
-import { canonicalUrl, site, socialImagePath } from '../../../lib/site';
+import { canonicalUrl, serializeJsonLd, site, socialImagePath } from '../../../lib/site';
 
 const locale = 'zh-TW' as const;
 export async function getStaticPaths() {
@@ -37,7 +37,7 @@ const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.def
 const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description, image: [coverImage], datePublished: post.publishedAt, dateModified: post.updatedAt, author: { '@type': 'Person', name: site.author }, mainEntityOfPage: url };
 ---
 <BaseLayout locale={locale} title={`${title} · Lenteyyy`} description={description || translateText(site.description, locale)} image={socialImagePath(post.slug, locale)} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
-	<script is:inline type="application/ld+json" set:html={JSON.stringify(articleJson)} />
+	<script is:inline type="application/ld+json" set:html={serializeJsonLd(articleJson)} />
 	<div class="reading-progress" data-reading-progress></div>
 	<article class="post-page shell"><header class="post-header">
 		<a class="back" href={path('/posts')}>← 全部文章</a>

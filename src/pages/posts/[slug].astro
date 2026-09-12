@@ -6,7 +6,7 @@ import ViewCounter from '../../components/ViewCounter.astro';
 import ReadingProgress from '../../components/ReadingProgress.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../lib/posts';
-import { canonicalUrl, site, socialImagePath } from '../../lib/site';
+import { canonicalUrl, serializeJsonLd, site, socialImagePath } from '../../lib/site';
 
 export async function getStaticPaths() {
 	const posts = await getPosts();
@@ -42,7 +42,7 @@ const articleJson = {
 };
 ---
 <BaseLayout title={`${post.title} · Lenteyyy`} description={post.description || site.description} image={socialImagePath(post.slug)} type="article" publishedAt={post.publishedAt} updatedAt={post.updatedAt}>
-	<script is:inline type="application/ld+json" set:html={JSON.stringify(articleJson)} />
+	<script is:inline type="application/ld+json" set:html={serializeJsonLd(articleJson)} />
 	<div class="reading-progress" data-reading-progress></div>
 	<article class="post-page shell">
 		<header class="post-header">
