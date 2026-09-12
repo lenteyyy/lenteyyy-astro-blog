@@ -1,5 +1,5 @@
 ---
-import { blockImageUrl, blockText, blockUrl, escapeAttribute, escapeHtml, type NotionBlock } from '../lib/posts';
+import { blockImageUrl, blockText, blockUrl, escapeAttribute, escapeHtml, safeLinkUrl, type NotionBlock } from '../lib/posts';
 import { translateText, type SiteLocale } from '../lib/locale';
 const { blocks, locale = 'zh-CN' } = Astro.props as { blocks: NotionBlock[]; locale?: SiteLocale };
 const copyDoneLabel = locale === 'zh-TW' ? '已複製' : '已复制';
@@ -7,7 +7,7 @@ const copyLabel = locale === 'zh-TW' ? '複製' : '复制';
 const headingLinkLabel = locale === 'zh-TW' ? '複製標題連結' : '复制标题链接';
 
 function caption(data: any): string {
-	return escapeHtml((data?.caption || []).map((item: any) => item.plain_text || '').join(''));
+	return translateText((data?.caption || []).map((item: any) => item.plain_text || '').join(''), locale);
 }
 
 function renderChildren(block: NotionBlock): string {
@@ -17,15 +17,15 @@ function renderChildren(block: NotionBlock): string {
 function renderImage(block: NotionBlock): string {
 	const data = block[block.type] as any;
 	const url = blockImageUrl(block);
-	const cap = translateText(caption(data), locale);
+	const cap = caption(data);
 	if (!url) return '';
-	return `<figure class="notion-image"><img src="${escapeAttribute(url)}" alt="${cap}" loading="lazy" decoding="async" data-lightbox-image data-caption="${escapeAttribute(cap)}" />${cap ? `<figcaption>${cap}</figcaption>` : ''}</figure>`;
+	return `<figure class="notion-image"><img src="${escapeAttribute(url)}" alt="${escapeAttribute(cap)}" loading="lazy" decoding="async" data-lightbox-image data-caption="${escapeAttribute(cap)}" />${cap ? `<figcaption>${escapeHtml(cap)}</figcaption>` : ''}</figure>`;
 }
 
 function renderTable(block: NotionBlock): string {
 	const rows = block.children || [];
 	return `<div class="table-wrap"><table>${rows.map((row) => {
-		const cells = ((row.table_row as any)?.cells || []).map((cell: any[]) => `<td>${cell.map((item) => escapeHtml(item.plain_text || '')).join('')}</td>`).join('');
+		const cells = ((row.table_row as any)?.cells || []).map((cell: any[]) => `<td>${cell.map((item) => escapeHtml(translateText(item.plain_text || '', locale))).join('')}</td>`).join('');
 		return `<tr>${cells}</tr>`;
 	}).join('')}</table></div>`;
 }
@@ -34,8 +34,9 @@ function youtubeEmbedUrl(url: string): string {
 	try {
 		const parsed = new URL(url);
 		const host = parsed.hostname.replace(/^www\./, '');
-		const id = host === 'youtu.be' ? parsed.pathname.slice(1) : parsed.searchParams.get('v');
-		return id ? `https://www.youtube.com/embed/${escapeAttribute(id)}` : '';
+		if (host !== 'youtu.be' && host !== 'youtube.com' && host !== 'm.youtube.com' && host !== 'youtube-nocookie.com') return '';
+		const id = host === 'youtu.be' ? parsed.pathname.slice(1) : parsed.pathname.startsWith('/embed/') ? parsed.pathname.split('/')[2] : parsed.searchParams.get('v');
+		return id && /^[A-Za-z0-9_-]{6,32}$/.test(id) ? `https://www.youtube-nocookie.com/embed/${id}` : '';
 	} catch {
 		return '';
 	}
@@ -44,11 +45,11 @@ function youtubeEmbedUrl(url: string): string {
 function spotifyEmbedUrl(url: string): string {
 	try {
 		const parsed = new URL(url);
-		if (!parsed.hostname.includes('open.spotify.com')) return '';
+		if (parsed.hostname !== 'open.spotify.com') return '';
 		const parts = parsed.pathname.split('/').filter(Boolean);
 		const type = parts[0] === 'intl-ja' ? parts[1] : parts[0];
 		const id = parts[0] === 'intl-ja' ? parts[2] : parts[1];
-		return type && id ? `https://open.spotify.com/embed/${escapeAttribute(type)}/${escapeAttribute(id)}` : '';
+		return type && id ? `https://open.spotify.com/embed/${encodeURIComponent(type)}/${encodeURIComponent(id)}` : '';
 	} catch {
 		return '';
 	}
@@ -57,7 +58,7 @@ function spotifyEmbedUrl(url: string): string {
 function appleMusicEmbedUrl(url: string): string {
 	try {
 		const parsed = new URL(url);
-		if (!parsed.hostname.includes('music.apple.com')) return '';
+		if (parsed.hostname !== 'music.apple.com') return '';
 		parsed.hostname = 'embed.music.apple.com';
 		return parsed.toString();
 	} catch {
@@ -66,14 +67,16 @@ function appleMusicEmbedUrl(url: string): string {
 }
 
 function renderEmbed(url: string): string {
-	const safeUrl = escapeAttribute(url);
-	const youtube = youtubeEmbedUrl(url);
+	const normalizedUrl = safeLinkUrl(url, ['http:', 'https:']);
+	if (!normalizedUrl) return '';
+	const safeUrl = escapeAttribute(normalizedUrl);
+	const youtube = youtubeEmbedUrl(normalizedUrl);
 	if (youtube) return `<figure class="media-embed media-embed-youtube"><iframe src="${youtube}" title="YouTube embedded player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>`;
-	const spotify = spotifyEmbedUrl(url);
+	const spotify = spotifyEmbedUrl(normalizedUrl);
 	if (spotify) return `<figure class="media-embed media-embed-spotify"><iframe src="${spotify}" title="Spotify embedded player" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></figure>`;
-	const apple = appleMusicEmbedUrl(url);
+	const apple = appleMusicEmbedUrl(normalizedUrl);
 	if (apple) return `<figure class="media-embed media-embed-apple"><iframe src="${apple}" title="Apple Music embedded player" loading="lazy" allow="autoplay *; encrypted-media *; fullscreen *"></iframe></figure>`;
-	return `<p><a class="embed-link" href="${safeUrl}" target="_blank" rel="noreferrer">${escapeHtml(url)} ↗</a></p>`;
+	return `<p><a class="embed-link" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(normalizedUrl)} ↗</a></p>`;
 }
 
 function renderBlock(block: NotionBlock): string {

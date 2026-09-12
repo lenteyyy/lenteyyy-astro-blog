@@ -21,6 +21,13 @@ export function canonicalUrl(path = '/'): string {
 }
 
 export function socialImagePath(slug: string, locale: 'zh-CN' | 'zh-TW' = 'zh-CN'): string {
-	const suffix = locale === 'zh-TW' ? '?locale=zh-tw' : '';
-	return `/api/og/${encodeURIComponent(slug)}.png${suffix}`;
+	const prefix = locale === 'zh-TW' ? '/api/og/zh-tw' : '/api/og';
+	return `${prefix}/${encodeURIComponent(slug)}.png`;
+}
+
+export function serializeJsonLd(value: unknown): string {
+	return JSON.stringify(value)
+		.replaceAll('<', '\\u003c')
+		.replaceAll('\u2028', '\\u2028')
+		.replaceAll('\u2029', '\\u2029');
 }

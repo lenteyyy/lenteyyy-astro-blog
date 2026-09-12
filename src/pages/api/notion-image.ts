@@ -14,13 +14,27 @@ async function imageUrlForRequest(client: Client, blockId: string | null, pageId
 	if (blockId) {
 		const block = await client.blocks.retrieve({ block_id: blockId }) as any;
 		if (block.type !== 'image') return '';
-		return block.image?.file?.url || block.image?.external?.url || '';
+		return block.image?.file?.url || '';
 	}
 	if (pageId) {
 		const page = await client.pages.retrieve({ page_id: pageId }) as any;
-		return page.cover?.file?.url || page.cover?.external?.url || '';
+		return page.cover?.file?.url || '';
 	}
 	return '';
+}
+
+function safeNotionAssetUrl(value: string): string {
+	try {
+		const parsed = new URL(value);
+		const host = parsed.hostname.toLowerCase();
+		const allowedHost = host === 'file.notion.so'
+			|| host.endsWith('.notion.so')
+			|| host.endsWith('.notionusercontent.com')
+			|| host.endsWith('.amazonaws.com');
+		return parsed.protocol === 'https:' && allowedHost ? parsed.toString() : '';
+	} catch {
+		return '';
+	}
 }
 
 export const GET: APIRoute = async ({ url, request }) => {
@@ -38,15 +52,17 @@ export const GET: APIRoute = async ({ url, request }) => {
 			return new Response('Too many image requests', { status: 429, headers: { 'Retry-After': '60' } });
 		}
 		const client = new Client({ auth: token });
-		const source = await imageUrlForRequest(client, blockId, pageId);
+		const source = safeNotionAssetUrl(await imageUrlForRequest(client, blockId, pageId));
 		if (!source) return new Response('Image not found', { status: 404 });
 
-		const image = await fetch(source);
+		const image = await fetch(source, { redirect: 'error' });
 		if (!image.ok || !image.body) return new Response('Image fetch failed', { status: 502 });
+		const contentType = image.headers.get('content-type') || '';
+		if (!contentType.startsWith('image/')) return new Response('Invalid image response', { status: 502 });
 
 		return new Response(image.body, {
 			headers: {
-				'Content-Type': image.headers.get('content-type') || 'image/jpeg',
+				'Content-Type': contentType,
 				'Cache-Control': 'public, max-age=900, s-maxage=1800, stale-while-revalidate=86400',
 			},
 		});
