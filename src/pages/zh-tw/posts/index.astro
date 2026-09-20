@@ -15,7 +15,7 @@ const categoryHref = (category: string) => path(`/posts/category/${encodeURIComp
 ---
 <BaseLayout locale={locale} title="文章 · Lenteyyy" description="Lenteyyy 的全部文章。">
 	<section class="archive-page shell">
-		<div class="page-intro"><h1>文章<span>.</span></h1><p>這裡收著我寫過的所有文章。可以按分類慢慢翻，也可以直接搜尋。</p></div>
+		<div class="page-intro"><h1>文章<span>.</span></h1><p>以下是所有我寫的文章與分類。當然，你亦可使用搜尋功能快速定位你想看的文章。</p></div>
 		<SearchBox posts={posts.map(({ title, slug, tags }) => ({ title, slug, tags }))} locale={locale} />
 		<nav class="filters" aria-label="文章分類">{categories.map((category) => <a class={(!selectedCategory && category === '全部') || selectedCategory === category || selectedCategory === translateText(category, locale) ? 'selected' : ''} href={category === '全部' ? path('/posts') : categoryHref(category)}>{translateText(category, locale)}</a>)}</nav>
 		{filteredPosts.length > 0 ? <div class="post-list">{filteredPosts.map((post) => <PostCard post={post} locale={locale} />)}</div> : <p class="empty">沒有已發布文章。</p>}
