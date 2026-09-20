@@ -11,18 +11,17 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 <BaseLayout title="Lenteyyy · 个人博客" description="酒店、旅行、音乐和一些个人杂谈。">
 	<section class="intro shell">
 		<div class="intro-copy">
-			<p class="eyebrow">HOTEL / MUSIC / MORE</p>
 			<h1>欢迎！</h1>
 			<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。这里记录酒店、旅行、音乐和一些还没想明白的事情。</p>
 			<div class="intro-links"><a href="/posts">浏览文章 ↗</a><a href="/about">关于我</a></div>
 		</div>
 		<div class="intro-note">
-			<span>Contact</span>
+			<span>联系我</span>
 			<!--email_off-->
 			<a href="mailto:lenteyteytey@gmail.com">lenteyteytey@gmail.com</a>
 			<!--/email_off-->
 			<div class="social-media">
-				<span class="social-title">Social Media</span>
+				<span class="social-title">其他平台</span>
 				<a class="social-item" href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noreferrer">Instagram：@lenteyyy_</a>
 				<a class="social-item" href="https://www.xiaohongshu.com/user/profile/651b8dea0000000024015402" target="_blank" rel="noreferrer">小红书：@冷踢踢</a>
 				<div class="social-item">微信公众平台：@冷踢踢</div>
@@ -31,12 +30,12 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	</section>
 
 	<section class="archive shell">
-		<div class="section-head"><p class="eyebrow">SELECTED WRITINGS</p><a href="/posts">查看全部 {posts.length} 篇 ↗</a></div>
-		{featured.length > 0 ? <div class="post-list">{featured.map((post) => <PostCard post={post} />)}</div> : <p class="empty">Notion 发布数据库目前没有文章。把文章加入数据库并设置 Status 为 Published 后，重新部署即可显示。</p>}
+		<div class="section-head"><p class="eyebrow">我写的东西</p><a href="/posts">查看全部 {posts.length} 篇 ↗</a></div>
+		{featured.length > 0 ? <div class="post-list">{featured.map((post) => <PostCard post={post} />)}</div> : <p class="empty">这里暂时还没有文章。</p>}
 	</section>
 
 	{categories.length > 0 && <section class="categories shell">
-		<div class="section-head"><p class="eyebrow">BY CATEGORY</p></div>
+		<div class="section-head"><p class="eyebrow">文章分类</p></div>
 		<div class="category-row">{categories.map((category) => <a href={categoryHref(category)}>{category}<span>↗</span></a>)}</div>
 	</section>}
 </BaseLayout>

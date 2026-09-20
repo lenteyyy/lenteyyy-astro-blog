@@ -13,18 +13,17 @@ const path = (value: string) => localizedPath(value, locale);
 <BaseLayout locale={locale} title="Lenteyyy · 個人部落格" description="飯店、旅行、音樂和一些個人雜談。">
 	<section class="intro shell">
 		<div class="intro-copy">
-			<p class="eyebrow">HOTEL / MUSIC / MORE</p>
 			<h1>歡迎！</h1>
 			<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。這裡記錄飯店、旅行、音樂和一些還沒想明白的事情。</p>
 			<div class="intro-links"><a href={path('/posts')}>瀏覽文章 ↗</a><a href={path('/about')}>關於我</a></div>
 		</div>
 		<div class="intro-note">
-			<span>Contact</span>
+			<span>聯絡我</span>
 			<!--email_off-->
 			<a href="mailto:lenteyteytey@gmail.com">lenteyteytey@gmail.com</a>
 			<!--/email_off-->
 			<div class="social-media">
-				<span class="social-title">Social Media</span>
+				<span class="social-title">其他平台</span>
 				<a class="social-item" href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noreferrer">Instagram：@lenteyyy_</a>
 				<a class="social-item" href="https://www.xiaohongshu.com/user/profile/651b8dea0000000024015402" target="_blank" rel="noreferrer">小紅書：@冷踢踢</a>
 				<div class="social-item">微信公眾平台：@冷踢踢</div>
@@ -33,12 +32,12 @@ const path = (value: string) => localizedPath(value, locale);
 	</section>
 
 	<section class="archive shell">
-		<div class="section-head"><p class="eyebrow">SELECTED WRITINGS</p><a href={path('/posts')}>查看全部 {posts.length} 篇 ↗</a></div>
-		{featured.length > 0 ? <div class="post-list">{featured.map((post) => <PostCard post={post} locale={locale} />)}</div> : <p class="empty">Notion 發布資料庫目前沒有文章。將文章加入資料庫並設定 Status 為 Published 後，重新部署即可顯示。</p>}
+		<div class="section-head"><p class="eyebrow">我寫的東西</p><a href={path('/posts')}>查看全部 {posts.length} 篇 ↗</a></div>
+		{featured.length > 0 ? <div class="post-list">{featured.map((post) => <PostCard post={post} locale={locale} />)}</div> : <p class="empty">這裡暫時還沒有文章。</p>}
 	</section>
 
 	{categories.length > 0 && <section class="categories shell">
-		<div class="section-head"><p class="eyebrow">BY CATEGORY</p></div>
+		<div class="section-head"><p class="eyebrow">文章分類</p></div>
 		<div class="category-row">{categories.map((category) => <a href={path(`/posts/category/${encodeURIComponent(category)}`)}>{translateText(category, locale)}<span>↗</span></a>)}</div>
 	</section>}
 </BaseLayout>
