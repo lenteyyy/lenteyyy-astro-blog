@@ -7,7 +7,7 @@ const localizedPosts = posts.map((post) => ({ ...post, title: translateText(post
 ---
 <section class="search-box" aria-label={locale === 'zh-TW' ? '搜尋文章' : '搜索文章'} data-search-posts={JSON.stringify(localizedPosts)} data-result-path={path('/posts')} data-empty-label={locale === 'zh-TW' ? '沒有找到。' : '没有找到。'}>
 	<label>
-		<span>SEARCH</span>
+		<span>{locale === 'zh-TW' ? '搜尋文章' : '搜索文章'}</span>
 		<input type="search" placeholder={locale === 'zh-TW' ? '標題或標籤' : '标题或标签'} data-search-input />
 	</label>
 	<div class="search-results" data-search-results hidden></div>
