@@ -13,10 +13,10 @@ const posts = [];
 for (const name of files) {
 	const source = await readFile(path.join(postsDir, name), 'utf8');
 	const { data } = splitFrontmatter(source);
-	posts.push({ slug: String(field(data, 'slug')) });
+	posts.push({ slug: String(field(data, 'slug')), hasCover: Boolean(String(field(data, 'cover')).trim()) });
 }
 
-for (const { slug } of posts) {
+for (const { slug, hasCover } of posts) {
 	for (const localePrefix of ['', 'zh-tw/']) {
 		const articlePath = path.join(buildDir, localePrefix, 'posts', slug, 'index.html');
 		let html = '';
@@ -28,6 +28,7 @@ for (const { slug } of posts) {
 		if (!html.includes(`/api/og/${localePrefix}${slug}.png`)) failures.push(`${localePrefix}${slug}: dynamic OG metadata is missing`);
 		if (!html.includes('data-view-counter')) failures.push(`${localePrefix}${slug}: view counter is missing`);
 		if (!html.includes('data-share')) failures.push(`${localePrefix}${slug}: share control is missing`);
+		if (hasCover && !html.includes('class="hero-image"')) failures.push(`${localePrefix}${slug}: cover image is missing`);
 		if (localePrefix && /回复|回復/.test(content)) failures.push(`${localePrefix}${slug}: Taiwan wording still contains 回复/回復`);
 		for (const match of content.matchAll(/(?:src|href)="(\/media\/[a-f0-9]+\.webp)"/g)) {
 			try { await stat(path.join(project, 'public', match[1])); } catch { failures.push(`${localePrefix}${slug}: missing ${match[1]}`); }

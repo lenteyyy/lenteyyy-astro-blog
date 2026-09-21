@@ -74,6 +74,11 @@ export function wikiReferences(source) {
 	return [...refs];
 }
 
+export function wikiReference(value) {
+	const match = String(value || '').trim().match(/^!?\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]$/);
+	return match ? path.basename(match[1].trim()) : '';
+}
+
 export function titleFromFile(file) {
 	return path.basename(file, path.extname(file));
 }

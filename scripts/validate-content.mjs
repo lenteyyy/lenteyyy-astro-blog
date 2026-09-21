@@ -1,7 +1,7 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
-import { field, splitFrontmatter, wikiReferences } from './content-utils.mjs';
+import { field, splitFrontmatter, wikiReference, wikiReferences } from './content-utils.mjs';
 
 const project = process.cwd();
 const postsDir = path.join(project, 'content', 'posts');
@@ -30,6 +30,10 @@ for (const name of files) {
 	if (/^(?:notion-id|SourcePage|base):/mi.test(source)) failures.push(`${name}: legacy Notion metadata remains`);
 	if (/\/Users\/|(?:NOTION|VERCEL|GITHUB)_[A-Z_]*TOKEN\s*=|\b(?:gh[op]|sk)-[A-Za-z0-9_-]{12,}/.test(source)) failures.push(`${name}: possible local path or secret`);
 	for (const ref of wikiReferences(source)) if (!manifest[ref]) failures.push(`${name}: missing media manifest entry for ${ref}`);
+	const cover = String(field(data, 'cover')).trim();
+	const coverRef = wikiReference(cover);
+	if (coverRef && !manifest[coverRef]) failures.push(`${name}: missing cover manifest entry for ${coverRef}`);
+	if (cover && !coverRef && !cover.startsWith('/media/') && !/^https:\/\//.test(cover)) failures.push(`${name}: unsupported cover reference ${cover}`);
 }
 
 for (const [ref, url] of Object.entries(manifest)) {

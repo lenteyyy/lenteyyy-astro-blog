@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
-import { wikiReferences } from './content-utils.mjs';
+import { field, splitFrontmatter, wikiReference, wikiReferences } from './content-utils.mjs';
 
 const project = process.cwd();
 const postsDir = path.join(project, 'content', 'posts');
@@ -25,7 +25,11 @@ await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
 const references = new Set();
 for (const file of await markdownFiles(postsDir)) {
-	for (const ref of wikiReferences(await readFile(file, 'utf8'))) references.add(ref);
+	const source = await readFile(file, 'utf8');
+	const { data } = splitFrontmatter(source);
+	for (const ref of wikiReferences(source)) references.add(ref);
+	const cover = wikiReference(field(data, 'cover'));
+	if (cover) references.add(cover);
 }
 
 const sourceFiles = await readdir(attachmentsDir);
