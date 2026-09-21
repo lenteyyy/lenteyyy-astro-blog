@@ -156,7 +156,7 @@ function createBlogRenderer(locale: SiteLocale): Renderer {
 }
 
 function groupImageGalleries(html: string): string {
-	return html.replace(/((?:<figure class="article-image">[\s\S]*?<\/figure>\s*){2,})/g, (group) => {
+	return html.replace(/((?:<figure class="article-image"><img [^>]*\/><figcaption>[\s\S]*?<\/figcaption><\/figure>\s*|<figure class="article-image"><img [^>]*\/><\/figure>\s*){2,})/g, (group) => {
 		const count = Math.min((group.match(/<figure class="article-image">/g) || []).length, 4);
 		return `<div class="image-gallery image-gallery-${count}">${group}</div>`;
 	});

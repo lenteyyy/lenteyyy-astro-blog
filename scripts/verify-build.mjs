@@ -30,6 +30,13 @@ for (const { slug, hasCover } of posts) {
 		if (!html.includes('data-share')) failures.push(`${localePrefix}${slug}: share control is missing`);
 		if (hasCover && !html.includes('class="hero-image"')) failures.push(`${localePrefix}${slug}: cover image is missing`);
 		if (localePrefix && /回复|回復/.test(content)) failures.push(`${localePrefix}${slug}: Taiwan wording still contains 回复/回復`);
+		for (const gallery of content.matchAll(/<div class="image-gallery[^">]*">([\s\S]*?)<\/div>/g)) {
+			const remainder = gallery[1]
+				.replace(/<figure class="article-image"><img [^>]*\/><figcaption>[\s\S]*?<\/figcaption><\/figure>\s*/g, '')
+				.replace(/<figure class="article-image"><img [^>]*\/><\/figure>\s*/g, '')
+				.trim();
+			if (remainder) failures.push(`${localePrefix}${slug}: gallery contains non-image content`);
+		}
 		for (const match of content.matchAll(/(?:src|href)="(\/media\/[a-f0-9]+\.webp)"/g)) {
 			try { await stat(path.join(project, 'public', match[1])); } catch { failures.push(`${localePrefix}${slug}: missing ${match[1]}`); }
 		}
