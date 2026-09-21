@@ -198,8 +198,8 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 18px; line-height: 1.8; }
 	.easter-egg-card img { display: block; width: 100%; max-height: 65vh; object-fit: cover; }
 	.easter-egg-close { position: absolute; top: 10px; right: 14px; border: 0; background: transparent; color: var(--muted); font-size: 26px; cursor: pointer; }
-	@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .notion-content img, :root:not([data-theme='light']) .hero-image { filter: brightness(.9); } }
-	:root[data-theme='dark'] .notion-content img, :root[data-theme='dark'] .hero-image { filter: brightness(.9); }
+	@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .article-content img, :root:not([data-theme='light']) .hero-image { filter: brightness(.9); } }
+	:root[data-theme='dark'] .article-content img, :root[data-theme='dark'] .hero-image { filter: brightness(.9); }
 	@media (max-width: 640px) {
 		.shell { width: min(1180px, calc(100% - 30px)); }
 		.nav-wrap { min-height: 62px; }

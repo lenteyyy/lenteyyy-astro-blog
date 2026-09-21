@@ -1,11 +1,12 @@
 ---
 import GiscusComments from '../../components/GiscusComments.astro';
-import NotionContent from '../../components/NotionContent.astro';
+import ObsidianContent from '../../components/ObsidianContent.astro';
 import ShareButton from '../../components/ShareButton.astro';
 import ViewCounter from '../../components/ViewCounter.astro';
 import ReadingProgress from '../../components/ReadingProgress.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../lib/posts';
+import { formatDisplayDate, getPosts } from '../../lib/posts';
+import { getMarkdownHeadings } from '../../lib/markdown';
 import { canonicalUrl, serializeJsonLd, site, socialImagePath } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -16,19 +17,7 @@ export async function getStaticPaths() {
 const { post, previous, next } = Astro.props;
 const url = canonicalUrl(`/posts/${post.slug}`);
 const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.defaultOgImage);
-function collectHeadings(blocks: NotionBlock[]): Array<{ text: string; id: string; level: 2 | 3 }> {
-	const items: Array<{ text: string; id: string; level: 2 | 3 }> = [];
-	for (const block of blocks) {
-		if (['heading_1', 'heading_2', 'heading_3'].includes(block.type)) {
-			const text = blockPlainText(block);
-			const id = text.trim().toLowerCase().replace(/[^\p{Letter}\p{Number}]+/gu, '-').replace(/^-+|-+$/g, '');
-			if (text && id) items.push({ text, id, level: block.type === 'heading_3' ? 3 : 2 });
-		}
-		items.push(...collectHeadings(block.children || []));
-	}
-	return items;
-}
-const headings = collectHeadings(post.content);
+const headings = getMarkdownHeadings(post.content);
 const articleJson = {
 	'@context': 'https://schema.org',
 	'@type': 'BlogPosting',
@@ -59,7 +48,7 @@ const articleJson = {
 				{headings.length > 0 && <nav aria-label="文章目录" class="toc toc-desktop">{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link={heading.id}>{heading.text}</a>)}</nav>}
 			</aside>
 			<div class="article-body">
-				<NotionContent blocks={post.content} />
+				<ObsidianContent source={post.content} />
 				<nav class="post-nav" aria-label="上一篇下一篇">
 					{previous ? <a href={`/posts/${previous.slug}`}><span>上一篇</span>{previous.title}</a> : <span></span>}
 					{next ? <a href={`/posts/${next.slug}`}><span>下一篇</span>{next.title}</a> : <span></span>}

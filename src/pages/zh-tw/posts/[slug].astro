@@ -1,11 +1,12 @@
 ---
 import GiscusComments from '../../../components/GiscusComments.astro';
-import NotionContent from '../../../components/NotionContent.astro';
+import ObsidianContent from '../../../components/ObsidianContent.astro';
 import ShareButton from '../../../components/ShareButton.astro';
 import ViewCounter from '../../../components/ViewCounter.astro';
 import ReadingProgress from '../../../components/ReadingProgress.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { blockPlainText, formatDisplayDate, getPosts, type NotionBlock } from '../../../lib/posts';
+import { formatDisplayDate, getPosts } from '../../../lib/posts';
+import { getMarkdownHeadings } from '../../../lib/markdown';
 import { localizedPath, translateText } from '../../../lib/locale';
 import { canonicalUrl, serializeJsonLd, site, socialImagePath } from '../../../lib/site';
 
@@ -20,19 +21,7 @@ const description = translateText(post.description, locale);
 const category = translateText(post.category, locale);
 const url = canonicalUrl(`/zh-tw/posts/${post.slug}`);
 const path = (value: string) => localizedPath(value, locale);
-function collectHeadings(blocks: NotionBlock[]): Array<{ text: string; id: string; level: 2 | 3 }> {
-	const items: Array<{ text: string; id: string; level: 2 | 3 }> = [];
-	for (const block of blocks) {
-		if (['heading_1', 'heading_2', 'heading_3'].includes(block.type)) {
-			const text = blockPlainText(block, locale);
-			const id = text.trim().toLowerCase().replace(/[^\p{Letter}\p{Number}]+/gu, '-').replace(/^-+|-+$/g, '');
-			if (text && id) items.push({ text, id, level: block.type === 'heading_3' ? 3 : 2 });
-		}
-		items.push(...collectHeadings(block.children || []));
-	}
-	return items;
-}
-const headings = collectHeadings(post.content);
+const headings = getMarkdownHeadings(post.content, locale);
 const coverImage = post.cover ? canonicalUrl(post.cover) : canonicalUrl(site.defaultOgImage);
 const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description, image: [coverImage], datePublished: post.publishedAt, dateModified: post.updatedAt, author: { '@type': 'Person', name: site.author }, mainEntityOfPage: url };
 ---
@@ -49,7 +38,7 @@ const articleJson = { '@context': 'https://schema.org', '@type': 'BlogPosting', 
 	<div class="article-grid"><aside class="article-aside">
 		{post.tags.length > 0 && <div class="tags">{post.tags.map((tag) => <a href={path(`/tags/${encodeURIComponent(tag)}`)}>#{translateText(tag, locale)}</a>)}</div>}
 		{headings.length > 0 && <nav aria-label="文章目錄" class="toc toc-desktop">{headings.map((heading) => <a class={`level-${heading.level}`} href={`#${heading.id}`} data-toc-link={heading.id}>{heading.text}</a>)}</nav>}
-	</aside><div class="article-body"><NotionContent blocks={post.content} locale={locale} />
+	</aside><div class="article-body"><ObsidianContent source={post.content} locale={locale} />
 		<nav class="post-nav" aria-label="上一篇下一篇">{previous ? <a href={path(`/posts/${previous.slug}`)}><span>上一篇</span>{translateText(previous.title, locale)}</a> : <span></span>}{next ? <a href={path(`/posts/${next.slug}`)}><span>下一篇</span>{translateText(next.title, locale)}</a> : <span></span>}</nav>
 		<GiscusComments locale={locale} /></div></div></article>
 	<ReadingProgress />

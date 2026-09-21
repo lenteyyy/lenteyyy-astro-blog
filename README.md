@@ -1,47 +1,39 @@
 # Lenteyyy Astro Blog
 
-Astro + Notion 个人博客。Notion 是唯一内容后台；Astro 在构建时读取已发布文章，Vercel 托管页面和浏览量 API。
+Astro + Obsidian 个人博客。文章和发布图片随 Git 保存，Vercel 负责网站、动态 OG 图、浏览量、统计与部署；生产构建不再访问 Notion。
 
-## 内容后台
+## 写作与发布
 
-发布数据库：`Astro Blog Posts`
+用 Obsidian 打开项目里的 `content/` 目录。草稿放在 `content/drafts/`，完成后移到 `content/posts/`，并按 `content/templates/博客文章模板.md` 填写属性。图片直接粘贴到文章，Obsidian 会把原图存入本机 `content/_attachments/`。
 
-网站读取 `NOTION_DATA_SOURCE_ID` 指向的 Notion data source。不要把普通 database ID 当作 data source ID 混用；新版 Notion API 已把 database 与 data source 拆开。
+发布前运行：
+
+```sh
+pnpm content:sync
+pnpm content:validate
+pnpm check
+pnpm build
+```
+
+`content:sync` 会把正文引用的原图转换为 WebP、限制长边为 2400 像素并清除 EXIF/GPS，然后写入 `public/media/`。原图、草稿和 Obsidian 本机设置均被 Git 忽略。
 
 文章属性：
 
 ```txt
-Name：标题
-Slug：文章 URL，必须唯一
-Date：发布日期
-Category：分类
-Tags：标签
-Status：Published / 已发布 才会上线
-Summary：摘要
-Cover：封面 URL
-Featured：可选，首页优先展示
+title：标题
+slug：唯一 URL 标识，只用小写英文、数字和连字符
+date：发布日期，格式 YYYY-MM-DD
+category：酒店测评 / 音乐推荐 / 个人杂谈 / 时尚议论
+tags：标签列表
+status：published 才会上线
+summary：摘要
+cover：封面，可用 Obsidian 图片链接
+featured：首页优先展示
 ```
-
-正文写在数据库页面内部。取消 `Published` 后，文章不会进入首页、文章列表、标签页、RSS、Sitemap，也不会生成文章路由。
-
-## 同步方式
-
-当前是静态生成：Notion 修改后需要触发 Vercel 重新部署。
-
-推荐做法：
-
-1. 在 Vercel Project Settings 中创建 Deploy Hook。
-2. 复制 hook URL。
-3. 修改或新增 Notion 文章后，手动打开这个 URL，或后续用 Notion Webhook 调用它。
-
-这样不会让每位访客访问页面时都请求 Notion API，速度更快，也更安全。
 
 ## 环境变量
 
 ```txt
-NOTION_TOKEN
-NOTION_DATA_SOURCE_ID
-NOTION_DATABASE_ID
 PUBLIC_SITE_URL
 UPSTASH_REDIS_REST_URL
 UPSTASH_REDIS_REST_TOKEN
@@ -51,52 +43,15 @@ PUBLIC_GISCUS_CATEGORY
 PUBLIC_GISCUS_CATEGORY_ID
 ```
 
-`NOTION_DATABASE_ID` 只作为旧接口兼容兜底；正常使用 `NOTION_DATA_SOURCE_ID`。
+Notion 环境变量已经不再使用。
 
-## 评论
+## 评论与浏览量
 
-评论使用 giscus。需要在 GitHub 仓库开启 Discussions，然后到 https://giscus.app 选择：
-
-```txt
-Mapping: pathname
-Theme: light/dark 自动
-Reaction: enabled
-Input position: bottom
-```
-
-把 giscus 生成的 repo、repoId、category、categoryId 填入 Vercel 环境变量。未配置时页面只显示安全占位，不会加载第三方脚本。
-
-## 浏览量
-
-公开文章浏览量使用 Upstash Redis REST API。
-
-在 Vercel Marketplace 连接 Upstash Redis 后，填入：
-
-```txt
-UPSTASH_REDIS_REST_URL
-UPSTASH_REDIS_REST_TOKEN
-```
-
-接口只允许真实文章 slug，机器人和预取请求不会增加计数。Redis 缺失或失败时文章正文正常显示。
-
-## 统计
-
-项目已接入 Vercel Web Analytics 与 Speed Insights。需要在 Vercel 项目后台启用对应功能。
+评论使用 giscus；未配置时只显示安全占位。浏览量使用 Upstash Redis REST API；接口只接受真实文章 slug，Redis 缺失或失败不会影响正文。Vercel Web Analytics 与 Speed Insights 需在项目后台启用。
 
 ## 本地开发
 
 ```sh
-npm install
-cp .env.example .env
-npm run dev
+pnpm install
+pnpm dev
 ```
-
-检查与构建：
-
-```sh
-npm run check
-npm run lint
-npm run build
-```
-
-本地没有 Notion 环境变量时会显示空文章状态；Vercel 生产环境缺少必要 Notion 变量会构建失败，避免悄悄发布错误内容。

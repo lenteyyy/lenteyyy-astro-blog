@@ -11,15 +11,20 @@
     "check": "astro check",
     "lint": "astro check",
     "preview": "astro preview",
+    "content:sync": "node scripts/sync-media.mjs",
+    "content:validate": "node scripts/validate-content.mjs",
+    "verify:build": "node scripts/verify-build.mjs",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/vercel": "^11.0.5",
-    "@notionhq/client": "^5.8.0",
+    "@fontsource/noto-sans-sc": "^5.3.0",
+    "@fontsource/noto-sans-tc": "^5.3.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/og": "^1.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "astro": "^7.2.8",
+    "marked": "^18.0.13",
     "opencc-js": "^1.4.0",
     "react": "^19.2.8"
   },
@@ -27,6 +32,7 @@
     "@astrojs/check": "^0.9.9",
     "@types/node": "^26.1.1",
     "@types/react": "^19.2.18",
+    "sharp": "0.35.4",
     "typescript": "^5.9.3"
   }
 }

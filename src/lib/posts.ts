@@ -1,29 +1,7 @@
-import { Client } from '@notionhq/client';
-import { translateText, type SiteLocale } from './locale';
+import mediaManifest from '../../content/media-manifest.json';
+import { escapeAttribute, escapeHtml, markdownToPlainText, resolveMediaReference, safeLinkUrl } from './markdown';
 
-export type PostCategory = '酒店测评' | '个人杂谈' | '音乐推荐' | string;
-
-export type RichText = {
-	plain_text?: string;
-	href?: string | null;
-	annotations?: {
-		bold?: boolean;
-		italic?: boolean;
-		underline?: boolean;
-		strikethrough?: boolean;
-		code?: boolean;
-		color?: string;
-	};
-	text?: { link?: { url: string } | null };
-};
-
-export type NotionBlock = {
-	id?: string;
-	type: string;
-	has_children?: boolean;
-	children?: NotionBlock[];
-	[key: string]: unknown;
-};
+export type PostCategory = '酒店测评' | '个人杂谈' | '音乐推荐' | '时尚议论' | string;
 
 export type Post = {
 	id: string;
@@ -37,67 +15,83 @@ export type Post = {
 	category: PostCategory;
 	featured: boolean;
 	published: boolean;
-	content: NotionBlock[];
+	content: string;
 	readingMinutes: number;
-	url?: string;
 };
 
 export type PostSummary = Omit<Post, 'content'>;
 
-export type NotionPageContent = {
-	id: string;
-	title: string;
-	content: NotionBlock[];
-	error?: boolean;
-};
+type Frontmatter = Record<string, string | boolean | string[]>;
 
-const isProd = import.meta.env.PROD;
-const isVercel = Boolean(import.meta.env.VERCEL);
-let postsCache: Promise<Post[]> | undefined;
+const postFiles = import.meta.glob('/content/posts/**/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 
-function correctKnownContentTypos(value: string): string {
-	return value.replaceAll('潘偉俊', '派偉俊');
-}
-
-function textOf(value: unknown): string {
-	if (typeof value === 'string') return value;
-	if (typeof value === 'number') return String(value);
-	if (Array.isArray(value)) return value.map(textOf).join('');
-	if (value && typeof value === 'object') {
-		const item = value as RichText & { name?: string; start?: string };
-		return String(item.plain_text || item.name || item.start || '');
+function parseScalar(raw: string): string | boolean {
+	const value = raw.trim();
+	if (value === 'true') return true;
+	if (value === 'false') return false;
+	if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+		try { return value.startsWith('"') ? JSON.parse(value) : value.slice(1, -1).replaceAll("''", "'"); } catch { return value.slice(1, -1); }
 	}
-	return '';
+	return value;
 }
 
-function slugify(value: string, fallback: string): string {
-	const slug = value
-		.trim()
-		.toLowerCase()
-		.replace(/[^\p{Letter}\p{Number}]+/gu, '-')
-		.replace(/^-+|-+$/g, '');
-	return slug || fallback;
+function parsePost(source: string): { data: Frontmatter; body: string } {
+	const normalized = source.replace(/^\uFEFF/, '').replaceAll('\r\n', '\n');
+	if (!normalized.startsWith('---\n')) throw new Error('Article frontmatter is missing');
+	const end = normalized.indexOf('\n---\n', 4);
+	if (end < 0) throw new Error('Article frontmatter is not closed');
+	const data: Frontmatter = {};
+	let listKey = '';
+	for (const rawLine of normalized.slice(4, end).split('\n')) {
+		const list = rawLine.match(/^\s+-\s+(.*)$/);
+		if (list && listKey && Array.isArray(data[listKey])) {
+			(data[listKey] as string[]).push(String(parseScalar(list[1])));
+			continue;
+		}
+		const item = rawLine.match(/^([A-Za-z][A-Za-z0-9_-]*):(?:\s*(.*))?$/);
+		if (!item) continue;
+		const [, key, raw = ''] = item;
+		if (!raw.trim()) {
+			data[key] = [];
+			listKey = key;
+		} else {
+			data[key] = parseScalar(raw);
+			listKey = '';
+		}
+	}
+	return { data, body: normalized.slice(end + 5).trim() };
 }
 
-function property(properties: Record<string, any>, name: string): any {
-	return properties[name];
+function text(data: Frontmatter, key: string, fallback = ''): string {
+	const value = data[key];
+	return typeof value === 'string' ? value : fallback;
 }
 
-function propertyText(properties: Record<string, any>, name: string): string {
-	const item = property(properties, name);
-	if (!item) return '';
-	return textOf(item.title || item.rich_text || item.select || item.status || item.url || item.number || item.checkbox || '');
+function loadPosts(): Post[] {
+	return Object.values(postFiles).map((source) => {
+		const { data, body } = parsePost(source);
+		const slug = text(data, 'slug');
+		const publishedAt = text(data, 'date');
+		const plain = markdownToPlainText(body);
+		return {
+			id: slug,
+			title: text(data, 'title', '未命名文章'),
+			slug,
+			description: text(data, 'summary'),
+			cover: resolveMediaReference(text(data, 'cover')),
+			publishedAt,
+			updatedAt: publishedAt,
+			tags: Array.isArray(data.tags) ? data.tags : [],
+			category: text(data, 'category', '个人杂谈'),
+			featured: data.featured === true,
+			published: text(data, 'status') === 'published',
+			content: body,
+			readingMinutes: Math.max(1, Math.ceil(plain.length / 500)),
+		};
+	}).filter((post) => post.published).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
-function propertyList(properties: Record<string, any>, name: string): string[] {
-	const item = property(properties, name);
-	const values = item?.multi_select || item?.rich_text || [];
-	return Array.isArray(values) ? values.map(textOf).filter(Boolean) : [];
-}
-
-function propertyDate(properties: Record<string, any>, name: string, fallback: string): string {
-	return property(properties, name)?.date?.start || fallback.slice(0, 10);
-}
+const posts = loadPosts();
 
 export function formatDisplayDate(value: string): string {
 	const [year, month, day] = value.slice(0, 10).split('-').map(Number);
@@ -105,236 +99,23 @@ export function formatDisplayDate(value: string): string {
 	return `${String(year).slice(-2)}.${month}.${day}`;
 }
 
-function propertyBool(properties: Record<string, any>, name: string): boolean {
-	return Boolean(property(properties, name)?.checkbox);
-}
-
-function coverUrl(page: any, properties: Record<string, any>): string {
-	const fromProperty = propertyText(properties, 'Cover');
-	if (page.cover?.external?.url) return page.cover.external.url;
-	if (page.cover?.file?.url && page.id) return `/api/notion-image?page=${encodeURIComponent(page.id)}`;
-	return fromProperty || '';
-}
-
-function isPublished(properties: Record<string, any>): boolean {
-	const status = propertyText(properties, 'Status');
-	return status === 'Published' || status === '已发布' || status === 'Publish';
-}
-
-function normalizePost(page: any, content: NotionBlock[], sourcePage?: any): Post {
-	const properties = page.properties || {};
-	const title = propertyText(properties, 'Title') || propertyText(properties, 'Name') || '未命名文章';
-	const publishedAt = propertyDate(properties, 'Date', page.created_time || new Date().toISOString());
-	const description = propertyText(properties, 'Summary');
-	const plainContent = blocksToPlainText(content);
-	return {
-		id: page.id,
-		title,
-		slug: slugify(propertyText(properties, 'Slug') || title, page.id.replaceAll('-', '').slice(0, 12)),
-		description,
-		cover: coverUrl(page, properties) || (sourcePage ? coverUrl(sourcePage, sourcePage.properties || {}) : ''),
-		publishedAt,
-		updatedAt: sourcePage?.last_edited_time || page.last_edited_time || publishedAt,
-		tags: propertyList(properties, 'Tags'),
-		category: propertyText(properties, 'Category') || '个人杂谈',
-		featured: propertyBool(properties, 'Featured'),
-		published: isPublished(properties),
-		content,
-		readingMinutes: Math.max(1, Math.ceil(plainContent.length / 500)),
-		url: page.url,
-	};
-}
-
-function sourcePageId(properties: Record<string, any>): string | undefined {
-	const value = propertyText(properties, 'SourcePage').trim();
-	if (/^[0-9a-f-]{32,36}$/i.test(value)) return value;
-	try {
-		const url = new URL(value);
-		if (!/(^|\.)notion\.(so|com)$/i.test(url.hostname)) return undefined;
-		return url.pathname.match(/([0-9a-f]{32})\/?$/i)?.[1];
-	} catch {
-		return undefined;
-	}
-}
-
-function createClient(): Client | undefined {
-	const token = import.meta.env.NOTION_TOKEN;
-	if (!token) {
-		if (isProd && isVercel) throw new Error('Missing NOTION_TOKEN');
-		return undefined;
-	}
-	return new Client({ auth: token });
-}
-
-async function queryAllPages(client: Client): Promise<any[]> {
-	const dataSourceId = import.meta.env.NOTION_DATA_SOURCE_ID;
-	const databaseId = import.meta.env.NOTION_DATABASE_ID;
-	if (!dataSourceId && !databaseId) {
-		if (isProd && isVercel) throw new Error('Missing NOTION_DATA_SOURCE_ID or NOTION_DATABASE_ID');
-		return [];
-	}
-
-	const pages: any[] = [];
-	let start_cursor: string | undefined;
-	while (true) {
-		const response = dataSourceId
-			? await client.dataSources.query({
-					data_source_id: dataSourceId,
-					page_size: 100,
-					start_cursor,
-					sorts: [{ timestamp: 'last_edited_time', direction: 'descending' }],
-				})
-			: await (client as any).databases.query({
-					database_id: databaseId,
-					page_size: 100,
-					start_cursor,
-					sorts: [{ timestamp: 'last_edited_time', direction: 'descending' }],
-				});
-		pages.push(...(response.results as any[]));
-		if (!response.has_more) break;
-		start_cursor = response.next_cursor || undefined;
-	}
-	return pages;
-}
-
-async function fetchChildren(client: Client, blockId: string): Promise<NotionBlock[]> {
-	const blocks: NotionBlock[] = [];
-	let start_cursor: string | undefined;
-	while (true) {
-		const response = await client.blocks.children.list({ block_id: blockId, page_size: 100, start_cursor });
-		for (const block of response.results as any[]) {
-			const normalized = block as NotionBlock;
-			if (block.has_children) normalized.children = await fetchChildren(client, block.id);
-			blocks.push(normalized);
-		}
-		if (!response.has_more) break;
-		start_cursor = response.next_cursor || undefined;
-	}
-	return blocks;
-}
-
-async function loadPosts(): Promise<Post[]> {
-	const client = createClient();
-	if (!client) return [];
-	try {
-		const pages = await queryAllPages(client);
-		const publishedPages = pages.filter((page) => isPublished(page.properties || {}));
-		const posts = await Promise.all(publishedPages.map(async (page) => {
-			const sourceId = sourcePageId(page.properties || {});
-			if (!sourceId) return normalizePost(page, await fetchChildren(client, page.id));
-			try {
-				const [source, sourceContent] = await Promise.all([
-					client.pages.retrieve({ page_id: sourceId }),
-					fetchChildren(client, sourceId),
-				]);
-				if (sourceContent.length > 0) return normalizePost(page, sourceContent, source);
-				console.warn(`[notion] SourcePage ${sourceId} is empty for ${page.id}; using database page content.`);
-				return normalizePost(page, await fetchChildren(client, page.id), source);
-			} catch (error) {
-				console.warn(`[notion] SourcePage unavailable for ${page.id}; using database page content.`);
-				return normalizePost(page, await fetchChildren(client, page.id));
-			}
-		}));
-		return posts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-	} catch (error) {
-		console.error('[notion] Failed to load posts. Check integration permissions, API version, and environment variables.');
-		if (isProd && isVercel) throw new Error('Notion content load failed');
-		console.error(error);
-		return [];
-	}
-}
-
-async function fetchPageTitle(client: Client, pageId: string): Promise<string> {
-	const page = await client.pages.retrieve({ page_id: pageId }) as any;
-	return propertyText(page.properties || {}, 'title') || propertyText(page.properties || {}, 'Name') || '';
-}
-
-export async function getNotionPageContent(pageId: string): Promise<NotionPageContent> {
-	const client = createClient();
-	if (!client) return { id: pageId, title: '', content: [], error: true };
-	try {
-		const [title, content] = await Promise.all([fetchPageTitle(client, pageId), fetchChildren(client, pageId)]);
-		return { id: pageId, title, content };
-	} catch (error) {
-		console.error('[notion] Failed to load page content.');
-		if (!isProd || !isVercel) console.error(error);
-		return { id: pageId, title: '', content: [], error: true };
-	}
-}
-
 export async function getPosts(): Promise<Post[]> {
-	postsCache ||= loadPosts();
-	return postsCache;
+	return posts;
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | undefined> {
-	return (await getPosts()).find((post) => post.slug === slug);
+	return posts.find((post) => post.slug === slug);
 }
 
 export async function getTags(): Promise<Array<{ tag: string; count: number }>> {
 	const counts = new Map<string, number>();
-	for (const post of await getPosts()) {
-		for (const tag of post.tags) counts.set(tag, (counts.get(tag) || 0) + 1);
-	}
+	for (const post of posts) for (const tag of post.tags) counts.set(tag, (counts.get(tag) || 0) + 1);
 	return [...counts].map(([tag, count]) => ({ tag, count })).sort((a, b) => a.tag.localeCompare(b.tag, 'zh-Hans-CN'));
 }
 
-export function richTextToHtml(richText: RichText[] = [], locale: SiteLocale = 'zh-CN'): string {
-	return richText.map((item) => {
-		let value = escapeHtml(translateText(correctKnownContentTypos(item.plain_text || ''), locale));
-		const annotations = item.annotations || {};
-		if (annotations.code) value = `<code>${value}</code>`;
-		if (annotations.bold) value = `<strong>${value}</strong>`;
-		if (annotations.italic) value = `<em>${value}</em>`;
-		if (annotations.underline) value = `<u>${value}</u>`;
-		if (annotations.strikethrough) value = `<s>${value}</s>`;
-		const href = safeLinkUrl(item.href || item.text?.link?.url || '');
-		return href ? `<a href="${escapeAttribute(href)}" target="_blank" rel="noopener noreferrer">${value}</a>` : value;
-	}).join('');
+export function blocksToPlainText(content: string): string {
+	return markdownToPlainText(content);
 }
 
-export function escapeHtml(value: string): string {
-	return value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character] || character);
-}
-
-export function escapeAttribute(value: string): string {
-	return escapeHtml(value);
-}
-
-export function safeLinkUrl(value: string, protocols = ['http:', 'https:', 'mailto:', 'tel:']): string {
-	const trimmed = value.trim();
-	if (!trimmed) return '';
-	if (trimmed.startsWith('#') || (trimmed.startsWith('/') && !trimmed.startsWith('//'))) return trimmed;
-	try {
-		const parsed = new URL(trimmed);
-		return protocols.includes(parsed.protocol) ? parsed.toString() : '';
-	} catch {
-		return '';
-	}
-}
-
-export function blockText(block: NotionBlock, locale: SiteLocale = 'zh-CN'): string {
-	const data = block[block.type] as any;
-	return richTextToHtml(data?.rich_text || data?.caption || [], locale);
-}
-
-export function blockPlainText(block: NotionBlock, locale: SiteLocale = 'zh-CN'): string {
-	const data = block[block.type] as any;
-	return translateText(correctKnownContentTypos(textOf(data?.rich_text || data?.caption || data?.title || '')), locale);
-}
-
-export function blocksToPlainText(blocks: NotionBlock[]): string {
-	return blocks.map((block) => `${blockPlainText(block)} ${blocksToPlainText(block.children || [])}`).join(' ');
-}
-
-export function blockUrl(block: NotionBlock): string {
-	const data = block[block.type] as any;
-	return data?.external?.url || data?.file?.url || data?.url || data?.embed?.url || '';
-}
-
-export function blockImageUrl(block: NotionBlock): string {
-	const data = block[block.type] as any;
-	if (data?.external?.url) return data.external.url;
-	if (data?.file?.url && block.id) return `/api/notion-image?block=${encodeURIComponent(block.id)}`;
-	return data?.file?.url || '';
-}
+export { escapeAttribute, escapeHtml, safeLinkUrl };
+export const publishedMediaCount = Object.keys(mediaManifest).length;
