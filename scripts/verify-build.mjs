@@ -56,6 +56,13 @@ for (const { slug, hasCover } of posts) {
 const sitemap = await readFile(path.join(buildDir, 'sitemap.xml'), 'utf8');
 const rss = await readFile(path.join(buildDir, 'rss.xml'), 'utf8');
 const twRss = await readFile(path.join(buildDir, 'zh-tw', 'rss.xml'), 'utf8');
+const ieltsPage = await readFile(path.join(buildDir, 'ielts', 'index.html'), 'utf8');
+for (const marker of ['data-ielts-page', 'data-auth-dialog', 'data-booking-form', 'data-material-list', 'data-account-button', '/lenteyyy-logo.png']) {
+	if (!ieltsPage.includes(marker)) failures.push(`IELTS study page is missing ${marker}`);
+}
+if (ieltsPage.includes('class="site-header"') || ieltsPage.includes('about-cover')) failures.push('IELTS study page leaked the main-site layout or decorative photo');
+if (/SUPABASE_(?:SECRET|SERVICE_ROLE)|RESEND_API_KEY|POSTGRES_URL/.test(ieltsPage)) failures.push('IELTS study page exposes a server-only environment name');
+if (!sitemap.includes('/ielts')) failures.push('IELTS study page is missing from the sitemap');
 for (const { slug } of posts) {
 	if (!sitemap.includes(`/posts/${slug}`) || !sitemap.includes(`/zh-tw/posts/${slug}`)) failures.push(`${slug}: sitemap entry is missing`);
 	if (!rss.includes(`/posts/${slug}`) || !twRss.includes(`/zh-tw/posts/${slug}`)) failures.push(`${slug}: RSS entry is missing`);

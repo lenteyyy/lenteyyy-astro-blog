@@ -1,0 +1,93 @@
+---
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
+import '@fontsource/noto-sans-sc/400.css';
+import '@fontsource/noto-sans-sc/500.css';
+import '@fontsource/noto-sans-sc/600.css';
+import '@fontsource/noto-sans-sc/700.css';
+import { canonicalUrl } from '../lib/site';
+
+const {
+	title = 'Lenteyyy IELTS',
+	description = '课程预约、雅思学习资料与模考入口。',
+} = Astro.props;
+const canonical = canonicalUrl(Astro.url.pathname);
+---
+<!doctype html>
+<html lang="zh-CN" data-ielts-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/png" sizes="512x512" href="/lenteyyy-logo.png" />
+		<link rel="apple-touch-icon" sizes="512x512" href="/lenteyyy-logo.png" />
+		<meta property="og:site_name" content="Lenteyyy IELTS" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<title>{title}</title>
+		<script is:inline>
+			try {
+				const saved = localStorage.getItem('ielts-theme');
+				const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				document.documentElement.dataset.ieltsTheme = saved === 'dark' || (!saved && systemDark) ? 'dark' : 'light';
+			} catch {}
+		</script>
+	</head>
+	<body class="ielts-site">
+		<slot />
+		<Analytics />
+		<SpeedInsights />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color-scheme: light;
+		--ielts-bg: #eaf1f7;
+		--ielts-panel: #f8fafc;
+		--ielts-card: #ffffff;
+		--ielts-ink: #0e2949;
+		--ielts-text: #28425f;
+		--ielts-muted: #6f8195;
+		--ielts-faint: #9eabb8;
+		--ielts-line: #d5dee8;
+		--ielts-accent: #315c86;
+		--ielts-accent-soft: #dbe8f4;
+		--ielts-hover: #eef4f9;
+		--ielts-shadow: 0 24px 70px #27486718;
+		--ielts-radius: 14px;
+		font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+	}
+	:root[data-ielts-theme='dark'] {
+		color-scheme: dark;
+		--ielts-bg: #0e1824;
+		--ielts-panel: #131f2c;
+		--ielts-card: #182635;
+		--ielts-ink: #eff6fc;
+		--ielts-text: #cfdae5;
+		--ielts-muted: #90a2b5;
+		--ielts-faint: #6e8092;
+		--ielts-line: #2c3d4e;
+		--ielts-accent: #91b7db;
+		--ielts-accent-soft: #213b54;
+		--ielts-hover: #203244;
+		--ielts-shadow: 0 24px 70px #00000045;
+	}
+	* { box-sizing: border-box; }
+	[hidden] { display: none !important; }
+	html { scroll-behavior: smooth; }
+	body.ielts-site { margin: 0; min-width: 320px; background: var(--ielts-bg); color: var(--ielts-text); text-rendering: optimizeLegibility; }
+	.ielts-site a { color: inherit; text-decoration: none; }
+	.ielts-site button, .ielts-site input, .ielts-site textarea { font: inherit; }
+	.ielts-site button, .ielts-site a { -webkit-tap-highlight-color: transparent; }
+	.ielts-site img { max-width: 100%; }
+	.ielts-site :focus-visible { outline: 3px solid color-mix(in srgb, var(--ielts-accent) 62%, transparent); outline-offset: 3px; }
+	.ielts-site ::selection { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
+</style>
