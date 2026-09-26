@@ -33,6 +33,11 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 			<div class="section-head"><div><span>LIBRARY</span><h2>已发布资料</h2></div><strong data-material-count>读取中</strong></div>
 			<div class="materials" data-material-list></div>
 		</section>
+
+		<section class="panel bookings-panel">
+			<div class="section-head"><div><span>BOOKINGS</span><h2>课程预约</h2></div><strong data-booking-count>读取中</strong></div>
+			<div class="bookings" data-booking-list></div>
+		</section>
 	</main>
 
 	<script>
@@ -41,6 +46,8 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 		const page = document.querySelector<HTMLElement>('[data-management-page]');
 		const list = page?.querySelector<HTMLElement>('[data-material-list]');
 		const count = page?.querySelector<HTMLElement>('[data-material-count]');
+		const bookingList = page?.querySelector<HTMLElement>('[data-booking-list]');
+		const bookingCount = page?.querySelector<HTMLElement>('[data-booking-count]');
 		const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
 			const response = await fetch(path, { credentials: 'same-origin', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
 			const body = await response.json().catch(() => ({}));
@@ -61,6 +68,39 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 					copy.append(title, meta); row.append(copy); list?.append(row);
 				}
 			} catch { if (count) count.textContent = '读取失败'; }
+		};
+		const loadBookings = async () => {
+			try {
+				const result = await api<{ bookings: Array<Record<string, unknown>> }>('/api/ielts/bookings');
+				if (bookingCount) bookingCount.textContent = `${result.bookings.length} 条`;
+				bookingList?.replaceChildren();
+				if (!result.bookings.length && bookingList) { const empty = document.createElement('p'); empty.textContent = '暂无预约。'; bookingList.append(empty); }
+				const statusLabels: Record<string, string> = { pending: '待确认', confirmed: '已确认', cancelled: '已取消', declined: '未接受' };
+				for (const item of result.bookings) {
+					const row = document.createElement('article');
+					const copy = document.createElement('div');
+					const title = document.createElement('strong'); title.textContent = `${String(item.name || '')} · ${String(item.lesson_subject || '')}`;
+					const status = String(item.status || 'pending');
+					const meta = document.createElement('span'); meta.textContent = `${String(item.lesson_date || '')} · ${String(item.lesson_time || '')} · ${statusLabels[status] || status}`;
+					const contact = document.createElement('p'); contact.textContent = `${String(item.email || '')}${item.contact ? ` · ${String(item.contact)}` : ''}`;
+					copy.append(title, meta, contact); row.append(copy);
+					if (status === 'pending' || status === 'confirmed') {
+						const cancel = document.createElement('button'); cancel.type = 'button'; cancel.textContent = '取消预约';
+						cancel.addEventListener('click', async () => {
+							if (cancel.dataset.confirm !== 'true') {
+								cancel.dataset.confirm = 'true'; cancel.textContent = '确认取消'; cancel.classList.add('confirm');
+								setTimeout(() => { if (cancel.isConnected) { delete cancel.dataset.confirm; cancel.textContent = '取消预约'; cancel.classList.remove('confirm'); } }, 5000);
+								return;
+							}
+							cancel.disabled = true;
+							try { await api('/api/ielts/bookings', { method: 'PATCH', body: JSON.stringify({ id: item.id }) }); await loadBookings(); }
+							catch { cancel.disabled = false; cancel.textContent = '取消失败'; }
+						});
+						row.append(cancel);
+					}
+					bookingList?.append(row);
+				}
+			} catch { if (bookingCount) bookingCount.textContent = '读取失败'; }
 		};
 
 		page?.querySelector<HTMLFormElement>('[data-upload-form]')?.addEventListener('submit', async (event) => {
@@ -100,7 +140,7 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 		};
 		themeButtons.forEach((button) => button.addEventListener('click', () => syncTheme(button.dataset.themeChoice === 'dark' ? 'dark' : 'light')));
 		themeButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === document.documentElement.dataset.ieltsTheme)));
-		void loadMaterials();
+		void Promise.all([loadMaterials(), loadBookings()]);
 	</script>
 </IeltsLayout>
 
@@ -133,6 +173,13 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 	.materials article div { display: grid; gap: 4px; }
 	.materials strong { color: var(--ielts-ink); font-size: 13px; }
 	.materials span, .materials p { margin: 0; color: var(--ielts-muted); font-size: 11px; }
+	.bookings { display: grid; gap: 8px; }
+	.bookings article { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 13px 14px; border: 1px solid var(--ielts-line); border-radius: 8px; }
+	.bookings article div { min-width: 0; display: grid; gap: 4px; }
+	.bookings strong { color: var(--ielts-ink); font-size: 13px; }
+	.bookings span, .bookings p { margin: 0; overflow-wrap: anywhere; color: var(--ielts-muted); font-size: 11px; }
+	.bookings button { min-height: 36px; padding: 0 13px; border: 1px solid var(--ielts-line); border-radius: 7px; background: transparent; color: var(--ielts-text); cursor: pointer; }
+	.bookings button.confirm { border-color: #b55252; background: #b55252; color: #fff; }
 	@media (max-width: 700px) {
 		.management { width: min(100% - 20px, 980px); margin: 10px auto; }
 		header { align-items: flex-start; }
