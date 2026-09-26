@@ -48,6 +48,11 @@ const canonical = canonicalUrl(Astro.url.pathname);
 </html>
 
 <style is:global>
+	@view-transition { navigation: auto; }
+	::view-transition-old(root) { animation: .18s ease both page-out; }
+	::view-transition-new(root) { animation: .24s cubic-bezier(.2,.75,.25,1) both page-in; }
+	@keyframes page-out { to { opacity: 0; transform: translateY(-4px); } }
+	@keyframes page-in { from { opacity: 0; transform: translateY(7px); } }
 	:root {
 		color-scheme: light;
 		--ielts-bg: #eaf1f7;
@@ -90,4 +95,7 @@ const canonical = canonicalUrl(Astro.url.pathname);
 	.ielts-site img { max-width: 100%; }
 	.ielts-site :focus-visible { outline: 3px solid color-mix(in srgb, var(--ielts-accent) 62%, transparent); outline-offset: 3px; }
 	.ielts-site ::selection { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
+	@media (prefers-reduced-motion: reduce) {
+		::view-transition-old(root), ::view-transition-new(root) { animation-duration: .01ms; }
+	}
 </style>

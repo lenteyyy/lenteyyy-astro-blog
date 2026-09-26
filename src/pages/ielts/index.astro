@@ -33,7 +33,14 @@ const notes = [
 			</nav>
 
 			<div class="side-footer">
-				<button class="account-button" type="button" data-account-button><IeltsIcon name="user" size={18} /><span data-account-label>登录</span></button>
+				<div class="account-menu" data-account-menu>
+					<button class="account-button" type="button" data-account-button aria-expanded="false"><IeltsIcon name="user" size={18} />个人账户</button>
+					<div class="account-panel" data-account-panel hidden>
+						<span data-account-email>尚未登录</span>
+						<button type="button" data-account-login>登录或注册</button>
+						<button type="button" data-account-logout hidden>退出登录</button>
+					</div>
+				</div>
 				<a class="management-link" href="/ielts/management" data-management-link hidden><IeltsIcon name="clipboard" size={18} />管理后台</a>
 				<a class="back-home" href="/"><IeltsIcon name="arrow" />回到主站</a>
 				<div class="theme-choices" aria-label="页面配色">
@@ -222,6 +229,11 @@ const notes = [
 			const activateSection = (id: string, updateHash = true) => {
 				const next = panels.some((panel) => panel.id === id) ? id : 'overview';
 				panels.forEach((panel) => { panel.hidden = panel.id !== next; });
+				const activePanel = panels.find((panel) => panel.id === next);
+				if (activePanel) {
+					activePanel.classList.remove('section-enter');
+					requestAnimationFrame(() => activePanel.classList.add('section-enter'));
+				}
 				navLinks.forEach((link) => {
 					const active = link.hash === `#${next}`;
 					link.classList.toggle('active', active);
@@ -316,7 +328,11 @@ const notes = [
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
 			const bookingForm = page?.querySelector<HTMLFormElement>('[data-booking-form]');
 			const accountButton = page?.querySelector<HTMLButtonElement>('[data-account-button]');
-			const accountLabel = page?.querySelector<HTMLElement>('[data-account-label]');
+			const accountMenu = page?.querySelector<HTMLElement>('[data-account-menu]');
+			const accountPanel = page?.querySelector<HTMLElement>('[data-account-panel]');
+			const accountEmail = page?.querySelector<HTMLElement>('[data-account-email]');
+			const accountLogin = page?.querySelector<HTMLButtonElement>('[data-account-login]');
+			const accountLogout = page?.querySelector<HTMLButtonElement>('[data-account-logout]');
 			const managementLink = page?.querySelector<HTMLAnchorElement>('[data-management-link]');
 			const materialList = page?.querySelector<HTMLElement>('[data-material-list]');
 			const materialState = page?.querySelector<HTMLElement>('[data-material-state]');
@@ -326,7 +342,7 @@ const notes = [
 			let unavailable = new Map<string, Set<string>>();
 
 			const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
-				const response = await fetch(path, { credentials: 'same-origin', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
+				const response = await fetch(path, { credentials: 'same-origin', cache: 'no-store', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
 				const body = await response.json().catch(() => ({}));
 				if (!response.ok) throw new Error(String(body.error || `http_${response.status}`));
 				return body as T;
@@ -336,6 +352,7 @@ const notes = [
 				invalid_credentials: '邮箱或密码错误。', rate_limited: '操作过于频繁，请稍后再试。', login_unavailable: '暂时无法登录，请稍后再试。',
 				verification_unavailable: '验证码暂时无法发送，请稍后再试。', account_unavailable: '暂时无法设置密码，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
 				slot_unavailable: '该时段刚被预约，请选择其他时间。', invalid_booking: '请检查预约资料与勾选项。', booking_unavailable: '预约暂时无法提交。',
+				booking_not_found: '找不到这条预约，请刷新后重试。', booking_not_active: '该预约已更新，无需重复操作。', booking_changed: '预约状态刚刚改变，请刷新后重试。',
 			}[code] || '操作失败，请稍后再试。');
 			const closeOnBackdrop = (dialog: HTMLDialogElement | null) => dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
 			closeOnBackdrop(authDialog);
@@ -429,9 +446,12 @@ const notes = [
 								}
 								cancel.disabled = true;
 								try {
-									await api('/api/ielts/bookings', { method: 'PATCH', body: JSON.stringify({ id: item.id }) });
+									await api('/api/ielts/bookings', { method: 'PATCH', body: JSON.stringify({ id: item.id, action: 'cancel' }) });
 									await Promise.all([loadBookings(), loadAvailability()]);
-								} catch { cancel.disabled = false; cancel.textContent = '取消失败，请重试'; }
+								} catch (error) {
+									cancel.disabled = false;
+									cancel.textContent = messageFor(error instanceof Error ? error.message : '');
+								}
 							});
 							row.append(cancel);
 						}
@@ -441,17 +461,34 @@ const notes = [
 			};
 			const syncSession = async () => {
 				try { session = await api<typeof session>('/api/ielts/auth/me'); } catch { session = { authenticated: false }; }
-				if (accountLabel) accountLabel.textContent = session.authenticated ? '退出登录' : '登录';
-				if (accountButton) accountButton.title = session.email || '邮箱与密码登录';
+				if (accountEmail) accountEmail.textContent = session.email || '尚未登录';
+				if (accountLogin) accountLogin.hidden = session.authenticated;
+				if (accountLogout) accountLogout.hidden = !session.authenticated;
+				if (accountButton) accountButton.title = session.email || '登录或注册';
 				if (managementLink) managementLink.hidden = session.role !== 'admin';
-				await Promise.all([loadMaterials(), loadBookings()]);
+				await Promise.all([loadMaterials(), loadBookings(), loadAvailability()]);
 			};
 
-			accountButton?.addEventListener('click', async () => {
-				if (!session.authenticated) return openAuth();
+			accountButton?.addEventListener('click', () => {
+				if (!accountPanel) return;
+				accountPanel.hidden = !accountPanel.hidden;
+				accountButton.setAttribute('aria-expanded', String(!accountPanel.hidden));
+			});
+			accountLogin?.addEventListener('click', () => { if (accountPanel) accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); openAuth(); });
+			accountLogout?.addEventListener('click', async () => {
+				accountLogout.disabled = true;
 				await api('/api/ielts/auth/logout', { method: 'POST', body: '{}' }).catch(() => undefined);
 				session = { authenticated: false };
+				if (accountPanel) accountPanel.hidden = true;
+				accountButton?.setAttribute('aria-expanded', 'false');
 				await syncSession();
+				accountLogout.disabled = false;
+			});
+			document.addEventListener('click', (event) => {
+				if (accountPanel && !accountPanel.hidden && !accountMenu?.contains(event.target as Node)) {
+					accountPanel.hidden = true;
+					accountButton?.setAttribute('aria-expanded', 'false');
+				}
 			});
 
 			authDialog?.querySelector<HTMLFormElement>('[data-login-form]')?.addEventListener('submit', async (event) => {
@@ -533,6 +570,8 @@ const notes = [
 				submit && (submit.disabled = true);
 				if (message) message.textContent = '正在提交预约…';
 				try {
+					await loadAvailability();
+					if (time !== '其他时间' && unavailable.get(date)?.has(time)) throw new Error('slot_unavailable');
 					const result = await api<{ emailSent: boolean }>('/api/ielts/bookings', { method: 'POST', body: JSON.stringify({
 						name: values.get('name'), contact: values.get('contact'), notes: values.get('note'), subject: values.get('subject'), date, time, consent: values.get('consent') === 'on',
 					}) });
@@ -551,7 +590,7 @@ const notes = [
 				if (!match) return;
 				const month = `${match[1]}-${match[2].padStart(2, '0')}`;
 				try {
-					const result = await api<{ unavailable: Array<{ lesson_date: string; lesson_time: string }> }>(`/api/ielts/availability?month=${month}`);
+					const result = await api<{ unavailable: Array<{ lesson_date: string; lesson_time: string }> }>(`/api/ielts/availability?month=${month}&fresh=${Date.now()}`);
 					unavailable = new Map();
 					for (const item of result.unavailable) {
 						const set = unavailable.get(item.lesson_date) || new Set<string>(); set.add(item.lesson_time); unavailable.set(item.lesson_date, set);
@@ -585,6 +624,8 @@ const notes = [
 				if (target.closest('[data-calendar-prev], [data-calendar-next]')) queueMicrotask(loadAvailability);
 				if (target.closest('[data-calendar-days] button')) queueMicrotask(syncTimeAvailability);
 			});
+			window.addEventListener('focus', () => { void loadAvailability(); });
+			document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') void loadAvailability(); });
 
 			void syncSession().then(() => {
 				const params = new URLSearchParams(location.search);
@@ -594,7 +635,6 @@ const notes = [
 					if (session.role === 'admin' && next?.startsWith('/ielts/') && !next.includes('//')) location.assign(next);
 				}
 			});
-			void loadAvailability();
 		</script>
 	</IeltsLayout>
 
@@ -609,7 +649,13 @@ const notes = [
 	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); background: var(--ielts-accent-soft); }
 	.side-nav :global(svg) { flex: 0 0 auto; }
 	.side-footer { display: grid; gap: 14px; margin-top: auto; }
+	.account-menu { position: relative; }
 	.account-button, .management-link, .back-home { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--ielts-accent); border-radius: 10px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; font-weight: 500; }
+	.account-button { width: 100%; }
+	.account-panel { position: absolute; z-index: 12; right: 0; bottom: calc(100% + 9px); left: 0; display: grid; gap: 8px; padding: 12px; border: 1px solid var(--ielts-line); border-radius: 11px; background: var(--ielts-card); box-shadow: var(--ielts-shadow); animation: account-in .18s ease both; }
+	.account-panel > span { overflow: hidden; color: var(--ielts-muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+	.account-panel > button { min-height: 38px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); cursor: pointer; font-size: 12px; }
+	.account-panel [data-account-logout] { border-color: color-mix(in srgb, #b55252 48%, var(--ielts-line)); color: #b55252; }
 	.management-link[hidden] { display: none; }
 	.back-home :global(svg) { transform: rotate(180deg); }
 	.theme-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border: 1px solid var(--ielts-line); border-radius: 999px; }
@@ -619,7 +665,10 @@ const notes = [
 	.mobile-heading { display: none; }
 	.dashboard { display: grid; }
 	.module { min-width: 0; padding: 24px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: var(--ielts-radius); background: var(--ielts-card); }
+	.module.section-enter { animation: section-in .24s cubic-bezier(.2,.75,.25,1) both; }
 	.module[hidden] { display: none; }
+	@keyframes section-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+	@keyframes account-in { from { opacity: 0; transform: translateY(5px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 	.overview-module { min-height: calc(100dvh - 82px); }
 	.overview-copy { width: min(780px, 100%); display: grid; align-content: start; gap: 30px; padding: clamp(12px, 3vw, 42px) 0; }
 	.overview-copy > p, .overview-copy section { margin: 0; padding: clamp(22px, 3vw, 34px); border: 1px solid var(--ielts-line); border-radius: 12px; background: var(--ielts-panel); color: var(--ielts-text); font-size: clamp(15px, 1.4vw, 18px); line-height: 2; }
@@ -745,6 +794,8 @@ const notes = [
 		.side-nav a { min-height: 38px; flex: 0 0 auto; gap: 7px; padding: 0 11px; font-size: 12px; }
 		.side-nav :global(svg) { width: 17px; height: 17px; }
 		.side-footer { margin: 0 0 0 auto; }
+		.account-menu { min-width: 132px; }
+		.account-panel { right: 0; bottom: auto; left: auto; top: calc(100% + 8px); width: min(260px, calc(100vw - 32px)); }
 		.back-home { display: none; }
 		.account-button, .management-link { min-height: 38px; padding-inline: 12px; font-size: 12px; }
 		.theme-choices { width: 146px; }
@@ -768,5 +819,8 @@ const notes = [
 		.mock-tabs button:nth-child(-n+2) { border-bottom: 1px solid var(--ielts-line); }
 		.mock-body { grid-template-columns: 1fr; }
 		.mock-poster { min-height: 150px; }
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.module.section-enter, .account-panel { animation: none; }
 	}
 </style>
