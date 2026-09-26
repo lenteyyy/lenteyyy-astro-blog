@@ -107,6 +107,7 @@ const notes = [
 						<form class="booking-form-card booking-column" data-booking-form>
 							<h2>预约信息</h2>
 							<p class="dialog-selection" data-booking-selection>请选择日期与时间。</p>
+							<label data-custom-time hidden>希望的上课时间<input name="customTime" autocomplete="off" maxlength="80" placeholder="例如：周六 14:00–15:30" /></label>
 							<label>科目<select name="subject" required><option value="">请选择科目</option><option>听力</option><option>阅读</option><option>写作</option><option>口语</option></select></label>
 							<label>你的称呼<input name="name" autocomplete="name" maxlength="60" required /></label>
 							<label>微信或其他联系方式（选填）<input name="contact" autocomplete="off" maxlength="120" /></label>
@@ -262,6 +263,9 @@ const notes = [
 			const bookingButton = root.querySelector<HTMLButtonElement>('[data-open-booking]');
 			const bookingStatus = root.querySelector<HTMLElement>('[data-booking-status]');
 			const bookingSelection = root.querySelector<HTMLElement>('[data-booking-selection]');
+			const customTimeField = root.querySelector<HTMLElement>('[data-custom-time]');
+			const customTimeInput = customTimeField?.querySelector<HTMLInputElement>('input');
+			const notesInput = root.querySelector<HTMLTextAreaElement>('textarea[name="note"]');
 			const today = new Date();
 			today.setHours(0, 0, 0, 0);
 			const earliestMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -273,9 +277,12 @@ const notes = [
 			const isoDate = (date: Date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 			const syncBookingButton = () => {
 				if (!bookingButton) return;
-				bookingButton.disabled = !(selectedDate && selectedTime);
-				if (bookingStatus) bookingStatus.textContent = selectedDate && selectedTime ? `${selectedDate} · ${selectedTime}` : '选择日期与时间后即可填写。';
-				if (bookingSelection) bookingSelection.textContent = selectedDate && selectedTime ? `${selectedDate} · ${selectedTime}` : '请选择日期与时间。';
+				const customTime = customTimeInput?.value.trim() || '';
+				const customTimeReady = selectedTime !== '其他时间' || customTime.length >= 2;
+				const displayTime = selectedTime === '其他时间' && customTime ? `其他时间：${customTime}` : selectedTime;
+				bookingButton.disabled = !(selectedDate && selectedTime && customTimeReady);
+				if (bookingStatus) bookingStatus.textContent = selectedDate && selectedTime ? customTimeReady ? `${selectedDate} · ${displayTime}` : '请填写希望的上课时间。' : '选择日期与时间后即可填写。';
+				if (bookingSelection) bookingSelection.textContent = selectedDate && selectedTime ? customTimeReady ? `${selectedDate} · ${displayTime}` : `${selectedDate} · 其他时间（待填写）` : '请选择日期与时间。';
 			};
 			const renderCalendar = () => {
 				if (!calendarTitle || !calendarDays) return;
@@ -312,8 +319,14 @@ const notes = [
 			timeButtons.forEach((button) => button.addEventListener('click', () => {
 				selectedTime = button.dataset.time || '';
 				timeButtons.forEach((item) => { const active = item === button; item.classList.toggle('selected', active); item.setAttribute('aria-pressed', String(active)); });
+				const needsCustomTime = selectedTime === '其他时间';
+				if (customTimeField) customTimeField.hidden = !needsCustomTime;
+				if (customTimeInput) customTimeInput.required = needsCustomTime;
+				if (notesInput) notesInput.maxLength = needsCustomTime ? 400 : 500;
 				syncBookingButton();
+				if (needsCustomTime) requestAnimationFrame(() => customTimeInput?.focus());
 			}));
+			customTimeInput?.addEventListener('input', syncBookingButton);
 			renderCalendar();
 
 			const mockButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-mock]')];
@@ -435,7 +448,8 @@ const notes = [
 					for (const item of result.bookings) {
 						const row = document.createElement('article'); row.className = 'booking-row';
 						const copy = document.createElement('div');
-						const title = document.createElement('strong'); title.textContent = `${String(item.lesson_date || '')} · ${String(item.lesson_time || '')}`;
+						const time = item.lesson_time === '其他时间' && item.lesson_time_note ? `其他时间：${String(item.lesson_time_note)}` : String(item.lesson_time || '');
+						const title = document.createElement('strong'); title.textContent = `${String(item.lesson_date || '')} · ${time}`;
 						const status = String(item.status || 'pending');
 						const meta = document.createElement('span'); meta.textContent = `${String(item.lesson_subject || '')} · ${statusLabels[status] || status}`;
 						copy.append(title, meta); row.append(copy);
@@ -570,20 +584,24 @@ const notes = [
 				const values = new FormData(form);
 				const date = page?.querySelector<HTMLButtonElement>('[data-calendar-days] button.selected')?.dataset.date || '';
 				const time = page?.querySelector<HTMLButtonElement>('[data-time].selected')?.dataset.time || '';
+				const customTime = String(values.get('customTime') || '').trim();
 				submit && (submit.disabled = true);
 				if (message) message.textContent = '正在提交预约…';
 				try {
 					await loadAvailability();
 					if (time !== '其他时间' && unavailable.get(date)?.has(time)) throw new Error('slot_unavailable');
 					const result = await api<{ emailSent: boolean }>('/api/ielts/bookings', { method: 'POST', body: JSON.stringify({
-						name: values.get('name'), contact: values.get('contact'), notes: values.get('note'), subject: values.get('subject'), date, time, consent: values.get('consent') === 'on',
+						name: values.get('name'), contact: values.get('contact'), notes: values.get('note'), subject: values.get('subject'), date, time, customTime, consent: values.get('consent') === 'on',
 					}) });
 					if (message) message.textContent = result.emailSent ? '预约已提交，确认邮件已发送。' : '预约已提交；邮件稍有延迟，我会另行确认。';
 					form.reset();
+					form.querySelector<HTMLInputElement>('input[name="customTime"]')?.dispatchEvent(new Event('input'));
 					await Promise.all([loadAvailability(), loadBookings()]);
 				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
 				finally {
-					if (submit) submit.disabled = !(page?.querySelector('[data-calendar-days] button.selected') && page?.querySelector('[data-time].selected'));
+					const selectedTimeButton = page?.querySelector<HTMLButtonElement>('[data-time].selected');
+					const customTimeReady = selectedTimeButton?.dataset.time !== '其他时间' || Boolean(form.querySelector<HTMLInputElement>('input[name="customTime"]')?.value.trim());
+					if (submit) submit.disabled = !(page?.querySelector('[data-calendar-days] button.selected') && selectedTimeButton && customTimeReady);
 				}
 			});
 
@@ -713,6 +731,7 @@ const notes = [
 	.booking-status { min-height: 32px; margin: 0; color: var(--ielts-muted); font-size: 11px; line-height: 1.45; }
 	.booking-form-card { display: flex; flex-direction: column; gap: 12px; padding: 17px; }
 	.booking-form-card label { display: grid; gap: 6px; color: var(--ielts-text); font-size: 12px; font-weight: 500; }
+	.booking-form-card [hidden] { display: none !important; }
 	.booking-form-card input, .booking-form-card select, .booking-form-card textarea { width: 100%; padding: 10px 11px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-ink); resize: vertical; }
 	.booking-form-card .consent-row { grid-template-columns: 17px 1fr; align-items: start; gap: 8px; font-size: 10px; line-height: 1.5; }
 	.booking-form-card .consent-row input { width: 15px; height: 15px; margin: 1px 0 0; padding: 0; }

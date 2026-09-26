@@ -13,8 +13,10 @@ export const POST: APIRoute = async ({ request }) => {
 		const body = await readJson<{ email?: unknown }>(request);
 		const email = normalizeEmail(body.email);
 		if (!email) return json({ error: 'invalid_email' }, 400);
-		if (!(await claimRateLimit(request, 'otp-ip', '', 20, 3600)) || !(await claimRateLimit(request, 'otp-email', email, 5, 900))) {
-			return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
+		if (!(await claimRateLimit(request, 'otp-ip', '', 10, 3600, 'request'))
+			|| !(await claimRateLimit(request, 'otp-email-cooldown', email, 1, 60, 'identity'))
+			|| !(await claimRateLimit(request, 'otp-email', email, 3, 3600, 'identity'))) {
+			return json({ error: 'rate_limited' }, 429, { 'retry-after': '60' });
 		}
 		const code = createSixDigitCode();
 		const emailHash = await sha256(email);

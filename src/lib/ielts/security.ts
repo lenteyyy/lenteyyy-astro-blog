@@ -29,9 +29,13 @@ const requestAddress = (request: Request): string => request.headers.get('cf-con
 	|| request.headers.get('x-real-ip')
 	|| 'unknown';
 
-export async function claimRateLimit(request: Request, scope: string, identity: string, limit: number, windowSeconds: number): Promise<boolean> {
+type RateLimitKey = 'combined' | 'identity' | 'request';
+
+export async function claimRateLimit(request: Request, scope: string, identity: string, limit: number, windowSeconds: number, key: RateLimitKey = 'combined'): Promise<boolean> {
 	const bucket = Math.floor(Date.now() / 1000 / windowSeconds);
-	const fingerprint = await sha256(`${scope}|${bucket}|${requestAddress(request)}|${request.headers.get('user-agent') || 'unknown'}|${identity}`);
+	const requestFingerprint = `${requestAddress(request)}|${request.headers.get('user-agent') || 'unknown'}`;
+	const subject = key === 'identity' ? identity : key === 'request' ? requestFingerprint : `${requestFingerprint}|${identity}`;
+	const fingerprint = await sha256(`${scope}|${bucket}|${subject}`);
 	const { data, error } = await createServiceClient().rpc('claim_ielts_rate_limit', {
 		p_key_hash: fingerprint,
 		p_limit: limit,

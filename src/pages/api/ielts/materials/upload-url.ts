@@ -18,7 +18,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 	try {
 		const auth = await getAuthContext(cookies);
 		if (!auth || auth.role !== 'admin') return json({ error: 'forbidden' }, 403);
-		if (!(await claimRateLimit(request, 'material-upload', auth.user.id, 30, 3600))) return json({ error: 'rate_limited' }, 429);
+		if (!(await claimRateLimit(request, 'material-upload', auth.user.id, 30, 3600, 'identity'))) return json({ error: 'rate_limited' }, 429);
 		const body = await readJson<Record<string, unknown>>(request);
 		const fileName = safeFileName(String(body.fileName || ''));
 		const mimeType = String(body.mimeType || '').toLowerCase();

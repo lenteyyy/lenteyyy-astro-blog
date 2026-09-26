@@ -91,7 +91,8 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 					const copy = document.createElement('div');
 					const title = document.createElement('strong'); title.textContent = `${String(item.name || '')} · ${String(item.lesson_subject || '')}`;
 					const status = String(item.status || 'pending');
-					const meta = document.createElement('span'); meta.textContent = `${String(item.lesson_date || '')} · ${String(item.lesson_time || '')} · ${statusLabels[status] || status}`;
+					const time = item.lesson_time === '其他时间' && item.lesson_time_note ? `其他时间：${String(item.lesson_time_note)}` : String(item.lesson_time || '');
+					const meta = document.createElement('span'); meta.textContent = `${String(item.lesson_date || '')} · ${time} · ${statusLabels[status] || status}`;
 					const contact = document.createElement('p'); contact.textContent = `${String(item.email || '')}${item.contact ? ` · ${String(item.contact)}` : ''}`;
 					copy.append(title, meta, contact); row.append(copy);
 					if (status === 'pending' || status === 'confirmed') {
