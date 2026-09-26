@@ -1,9 +1,27 @@
 import { createServiceClient } from './supabase';
 
-const sha256 = async (value: string): Promise<string> => {
+export const sha256 = async (value: string): Promise<string> => {
 	const bytes = new TextEncoder().encode(value);
 	const digest = await crypto.subtle.digest('SHA-256', bytes);
 	return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+};
+
+export const verificationHash = async (email: string, code: string, secret: string): Promise<string> => sha256(`${secret}|${email}|${code}`);
+
+export const constantTimeEqual = (left: string, right: string): boolean => {
+	const a = new TextEncoder().encode(left);
+	const b = new TextEncoder().encode(right);
+	if (a.length !== b.length) return false;
+	let difference = 0;
+	for (let index = 0; index < a.length; index += 1) difference |= a[index] ^ b[index];
+	return difference === 0;
+};
+
+export const createSixDigitCode = (): string => {
+	const maximum = Math.floor(0x100000000 / 1_000_000) * 1_000_000;
+	const values = new Uint32Array(1);
+	do crypto.getRandomValues(values); while (values[0] >= maximum);
+	return String(values[0] % 1_000_000).padStart(6, '0');
 };
 
 const requestAddress = (request: Request): string => request.headers.get('cf-connecting-ip')

@@ -13,7 +13,7 @@ const notes = [
 	{ icon: 'user' as const, title: '一对一课程', text: '提交时间意向后，我会再与你确认。' },
 	{ icon: 'file' as const, title: '登录后查看资料', text: '资料储存在私有空间，只向已验证学员开放。' },
 	{ icon: 'calendar' as const, title: '时间需要预约', text: '页面显示的是时间意向，不代表预约已确认。' },
-	{ icon: 'info' as const, title: '邮件验证码登录', text: '本站不设置或保存密码；预约资料仅用于课程联络。' },
+	{ icon: 'info' as const, title: '邮箱与密码登录', text: '首次设置或忘记密码时，邮箱会收到六位验证码。' },
 ];
 ---
 <IeltsLayout title="Lenteyyy IELTS · 学习与课程" description="课程预约、雅思学习资料与模考入口。">
@@ -34,6 +34,7 @@ const notes = [
 
 			<div class="side-footer">
 				<button class="account-button" type="button" data-account-button><IeltsIcon name="user" size={18} /><span data-account-label>登录</span></button>
+				<a class="management-link" href="/ielts/management" data-management-link hidden><IeltsIcon name="clipboard" size={18} />管理后台</a>
 				<a class="back-home" href="/"><IeltsIcon name="arrow" />回到主站</a>
 				<div class="theme-choices" aria-label="页面配色">
 					<button type="button" data-theme-choice="light" aria-pressed="true"><IeltsIcon name="sun" size={17} />浅色</button>
@@ -72,10 +73,11 @@ const notes = [
 								<strong data-selected-date>请选择日期</strong>
 							</div>
 							<div class="time-slots" aria-label="时间意向">
-								<button type="button" data-time="10:30–11:30" aria-pressed="false">10:30–11:30</button>
-								<button type="button" data-time="14:00–15:00" aria-pressed="false">14:00–15:00</button>
-								<button type="button" data-time="16:00–17:00" aria-pressed="false">16:00–17:00</button>
-								<button type="button" data-time="20:00–21:00" aria-pressed="false">20:00–21:00</button>
+								<button type="button" data-time="8:30–10:00" aria-pressed="false">8:30–10:00</button>
+								<button type="button" data-time="10:30–12:00" aria-pressed="false">10:30–12:00</button>
+								<button type="button" data-time="19:00–20:30" aria-pressed="false">19:00–20:30</button>
+								<button type="button" data-time="21:00–22:30" aria-pressed="false">21:00–22:30</button>
+								<button type="button" data-time="其他时间" aria-pressed="false">其他时间</button>
 							</div>
 							<button class="booking-action" type="button" data-open-booking disabled>填写预约意向<IeltsIcon name="arrow" size={18} /></button>
 							<p class="booking-status" data-booking-status aria-live="polite">选择日期与时间后即可填写。</p>
@@ -98,7 +100,7 @@ const notes = [
 						))}
 					</div>
 					<div class="small-resources">
-						<div class="material-list-head"><span>资料列表</span><button type="button" data-open-upload hidden>上传资料</button></div>
+						<div class="material-list-head"><span>资料列表</span></div>
 						<div class="material-list" data-material-list><p>登录后可查看与下载学习资料。</p></div>
 					</div>
 				</section>
@@ -156,32 +158,28 @@ const notes = [
 	</dialog>
 
 	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
-		<form data-auth-form>
-			<div class="dialog-head"><div><span>账户验证</span><h2 id="auth-dialog-title">邮件验证码登录</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
-			<div data-auth-request>
-				<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
-				<p class="privacy-note">验证码仅用于登录；本站不设置或保存密码。</p>
-				<button class="dialog-submit" type="submit">发送验证码<IeltsIcon name="arrow" size={18} /></button>
-			</div>
-			<div data-auth-verify hidden>
-				<p class="dialog-selection" data-auth-email></p>
-				<label>八位验证码<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{8}" minlength="8" maxlength="8" /></label>
-				<button class="dialog-submit" type="button" data-verify-code>验证并登录<IeltsIcon name="arrow" size={18} /></button>
-			</div>
+		<form data-login-form>
+			<div class="dialog-head"><div><span>账户登录</span><h2 id="auth-dialog-title">邮箱与密码</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
+			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
+			<label>密码<input type="password" name="password" autocomplete="current-password" maxlength="72" required /></label>
+			<p class="privacy-note">密码由 Supabase 加密管理，本站不会读取或保存明文。</p>
 			<p class="form-message" data-auth-message aria-live="polite"></p>
+			<button class="dialog-submit" type="submit">登录<IeltsIcon name="arrow" size={18} /></button>
+			<button class="auth-switch" type="button" data-open-password-setup>首次设置或忘记密码</button>
 		</form>
-	</dialog>
-
-	<dialog class="booking-dialog upload-dialog" data-upload-dialog aria-labelledby="upload-dialog-title">
-		<form data-upload-form>
-			<div class="dialog-head"><div><span>管理员</span><h2 id="upload-dialog-title">上传学习资料</h2></div><button type="button" data-close-upload aria-label="关闭">×</button></div>
-			<label>资料标题<input name="title" maxlength="120" required /></label>
-			<label>分类<select name="category" required><option>听力</option><option>阅读</option><option>写作</option><option>口语</option><option>词汇</option><option>语法</option><option>备考</option></select></label>
-			<label>简短说明<textarea name="description" rows="2" maxlength="300"></textarea></label>
-			<label>文件<input type="file" name="file" accept=".pdf,.docx,.pptx,.mp3,.m4a,.mp4,.jpg,.jpeg,.png,.webp" required /></label>
-			<p class="privacy-note">单个文件上限 100 MB；文件存入私有空间并通过短时链接下载。</p>
-			<p class="form-message" data-upload-message aria-live="polite"></p>
-			<button class="dialog-submit" type="submit">上传并发布<IeltsIcon name="arrow" size={18} /></button>
+		<form data-password-form hidden>
+			<div class="dialog-head"><div><span>账户验证</span><h2 id="auth-reset-title">设置或重设密码</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
+			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
+			<div data-password-code hidden>
+				<p class="dialog-selection" data-auth-email></p>
+				<label>六位验证码<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" /></label>
+				<label>新密码<input type="password" name="password" autocomplete="new-password" minlength="10" maxlength="72" /></label>
+				<label>再次输入新密码<input type="password" name="confirmPassword" autocomplete="new-password" minlength="10" maxlength="72" /></label>
+			</div>
+			<p class="privacy-note">新密码至少 10 位，并同时包含字母与数字。</p>
+			<p class="form-message" data-auth-message aria-live="polite"></p>
+			<button class="dialog-submit" type="submit" data-password-submit>发送六位验证码<IeltsIcon name="arrow" size={18} /></button>
+			<button class="auth-switch" type="button" data-back-login>返回密码登录</button>
 		</form>
 	</dialog>
 
@@ -286,19 +284,15 @@ const notes = [
 		}
 		</script>
 		<script>
-			import { createClient } from '@supabase/supabase-js';
-
 			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
 			const bookingDialog = document.querySelector<HTMLDialogElement>('[data-booking-dialog]');
-			const uploadDialog = document.querySelector<HTMLDialogElement>('[data-upload-dialog]');
 			const accountButton = page?.querySelector<HTMLButtonElement>('[data-account-button]');
 			const accountLabel = page?.querySelector<HTMLElement>('[data-account-label]');
+			const managementLink = page?.querySelector<HTMLAnchorElement>('[data-management-link]');
 			const materialList = page?.querySelector<HTMLElement>('[data-material-list]');
 			const materialState = page?.querySelector<HTMLElement>('[data-material-state]');
-			const uploadButton = page?.querySelector<HTMLButtonElement>('[data-open-upload]');
 			let session: { authenticated: boolean; email?: string; role?: 'student' | 'admin' } = { authenticated: false };
-			let requestedEmail = '';
 			let unavailable = new Map<string, Set<string>>();
 
 			const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
@@ -308,25 +302,30 @@ const notes = [
 				return body as T;
 			};
 			const messageFor = (code: string) => ({
-				invalid_email: '请输入有效邮箱。', invalid_code: '验证码错误或已过期。', rate_limited: '操作过于频繁，请稍后再试。',
-				verification_unavailable: '验证码暂时无法发送，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
+				invalid_email: '请输入有效邮箱。', invalid_code: '验证码错误或已过期。', invalid_password: '密码至少 10 位，并同时包含字母与数字。', password_mismatch: '两次输入的密码不一致。',
+				invalid_credentials: '邮箱或密码错误。', rate_limited: '操作过于频繁，请稍后再试。', login_unavailable: '暂时无法登录，请稍后再试。',
+				verification_unavailable: '验证码暂时无法发送，请稍后再试。', account_unavailable: '暂时无法设置密码，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
 				slot_unavailable: '该时段刚被预约，请选择其他时间。', invalid_booking: '请检查预约资料与勾选项。', booking_unavailable: '预约暂时无法提交。',
-				invalid_file: '文件格式或大小不符合要求。', material_unavailable: '资料暂时无法保存。', upload_unavailable: '上传暂时不可用。',
 			}[code] || '操作失败，请稍后再试。');
 			const closeOnBackdrop = (dialog: HTMLDialogElement | null) => dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
-			closeOnBackdrop(authDialog); closeOnBackdrop(uploadDialog);
-			document.querySelector<HTMLButtonElement>('[data-close-auth]')?.addEventListener('click', () => authDialog?.close());
-			document.querySelector<HTMLButtonElement>('[data-close-upload]')?.addEventListener('click', () => uploadDialog?.close());
+			closeOnBackdrop(authDialog);
+			document.querySelectorAll<HTMLButtonElement>('[data-close-auth]').forEach((button) => button.addEventListener('click', () => authDialog?.close()));
 
 			const openAuth = () => {
-				const requestPane = authDialog?.querySelector<HTMLElement>('[data-auth-request]');
-				const verifyPane = authDialog?.querySelector<HTMLElement>('[data-auth-verify]');
-				const message = authDialog?.querySelector<HTMLElement>('[data-auth-message]');
-				if (requestPane) requestPane.hidden = false;
-				if (verifyPane) verifyPane.hidden = true;
-				if (message) message.textContent = '';
+				const loginForm = authDialog?.querySelector<HTMLFormElement>('[data-login-form]');
+				const passwordForm = authDialog?.querySelector<HTMLFormElement>('[data-password-form]');
+				if (loginForm) loginForm.hidden = false;
+				if (passwordForm) passwordForm.hidden = true;
+				authDialog?.setAttribute('aria-labelledby', 'auth-dialog-title');
+				authDialog?.querySelectorAll<HTMLElement>('[data-auth-message]').forEach((message) => { message.textContent = ''; });
 				authDialog?.showModal();
-				requestAnimationFrame(() => authDialog?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
+				requestAnimationFrame(() => loginForm?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
+			};
+			const finishLogin = async () => {
+				authDialog?.close();
+				await syncSession();
+				const next = new URLSearchParams(location.search).get('next');
+				if (next?.startsWith('/ielts/') && !next.includes('//')) location.assign(next);
 			};
 
 			const renderMaterials = (materials: Array<Record<string, unknown>>, category = '') => {
@@ -371,8 +370,8 @@ const notes = [
 			const syncSession = async () => {
 				try { session = await api<typeof session>('/api/ielts/auth/me'); } catch { session = { authenticated: false }; }
 				if (accountLabel) accountLabel.textContent = session.authenticated ? '退出登录' : '登录';
-				if (accountButton) accountButton.title = session.email || '邮件验证码登录';
-				if (uploadButton) uploadButton.hidden = session.role !== 'admin';
+				if (accountButton) accountButton.title = session.email || '邮箱与密码登录';
+				if (managementLink) managementLink.hidden = session.role !== 'admin';
 				await loadMaterials();
 			};
 
@@ -383,41 +382,59 @@ const notes = [
 				await syncSession();
 			});
 
-			authDialog?.querySelector<HTMLFormElement>('[data-auth-form]')?.addEventListener('submit', async (event) => {
+			authDialog?.querySelector<HTMLFormElement>('[data-login-form]')?.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				const form = event.currentTarget as HTMLFormElement;
 				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 				const message = form.querySelector<HTMLElement>('[data-auth-message]');
-				requestedEmail = String(new FormData(form).get('email') || '').trim().toLowerCase();
+				const values = new FormData(form);
 				if (submit) submit.disabled = true;
-				if (message) message.textContent = '正在发送验证码…';
+				if (message) message.textContent = '正在登录…';
 				try {
-					await api('/api/ielts/auth/request-code', { method: 'POST', body: JSON.stringify({ email: requestedEmail }) });
-					const requestPane = form.querySelector<HTMLElement>('[data-auth-request]');
-					const verifyPane = form.querySelector<HTMLElement>('[data-auth-verify]');
-					if (requestPane) requestPane.hidden = true;
-					if (verifyPane) verifyPane.hidden = false;
-					const emailLabel = form.querySelector<HTMLElement>('[data-auth-email]');
-					if (emailLabel) emailLabel.textContent = `验证码已发送至 ${requestedEmail}`;
-					if (message) message.textContent = '请查看邮箱，验证码有效期较短。';
-					form.querySelector<HTMLInputElement>('input[name="code"]')?.focus();
+					await api('/api/ielts/auth/login', { method: 'POST', body: JSON.stringify({ email: values.get('email'), password: values.get('password') }) });
+					await finishLogin();
 				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
 				finally { if (submit) submit.disabled = false; }
 			});
 
-			authDialog?.querySelector<HTMLButtonElement>('[data-verify-code]')?.addEventListener('click', async (event) => {
-				const button = event.currentTarget as HTMLButtonElement;
-				const form = button.closest('form');
-				const message = form?.querySelector<HTMLElement>('[data-auth-message]');
-				const code = form?.querySelector<HTMLInputElement>('input[name="code"]')?.value || '';
-				button.disabled = true;
-				if (message) message.textContent = '正在验证…';
+			authDialog?.querySelector<HTMLButtonElement>('[data-open-password-setup]')?.addEventListener('click', () => {
+				const loginForm = authDialog?.querySelector<HTMLFormElement>('[data-login-form]');
+				const passwordForm = authDialog?.querySelector<HTMLFormElement>('[data-password-form]');
+				if (loginForm) loginForm.hidden = true;
+				if (passwordForm) passwordForm.hidden = false;
+				authDialog?.setAttribute('aria-labelledby', 'auth-reset-title');
+				requestAnimationFrame(() => passwordForm?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
+			});
+			authDialog?.querySelector<HTMLButtonElement>('[data-back-login]')?.addEventListener('click', openAuth);
+
+			authDialog?.querySelector<HTMLFormElement>('[data-password-form]')?.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				const form = event.currentTarget as HTMLFormElement;
+				const codePane = form.querySelector<HTMLElement>('[data-password-code]');
+				const submit = form.querySelector<HTMLButtonElement>('[data-password-submit]');
+				const message = form.querySelector<HTMLElement>('[data-auth-message]');
+				const values = new FormData(form);
+				const email = String(values.get('email') || '').trim().toLowerCase();
+				if (submit) submit.disabled = true;
 				try {
-					await api('/api/ielts/auth/verify-code', { method: 'POST', body: JSON.stringify({ email: requestedEmail, code }) });
-					authDialog?.close();
-					await syncSession();
+					if (codePane?.hidden) {
+						if (message) message.textContent = '正在发送验证码…';
+						await api('/api/ielts/auth/request-code', { method: 'POST', body: JSON.stringify({ email }) });
+						codePane.hidden = false;
+						const emailLabel = form.querySelector<HTMLElement>('[data-auth-email]');
+						if (emailLabel) emailLabel.textContent = `验证码已发送至 ${email}`;
+						if (submit) submit.textContent = '验证并设置密码';
+						if (message) message.textContent = '六位验证码 15 分钟内有效。';
+						form.querySelector<HTMLInputElement>('input[name="code"]')?.focus();
+					} else {
+						const password = String(values.get('password') || '');
+						if (password !== String(values.get('confirmPassword') || '')) throw new Error('password_mismatch');
+						if (message) message.textContent = '正在验证并设置密码…';
+						await api('/api/ielts/auth/verify-code', { method: 'POST', body: JSON.stringify({ email, code: values.get('code'), password }) });
+						await finishLogin();
+					}
 				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
-				finally { button.disabled = false; }
+				finally { if (submit) submit.disabled = false; }
 			});
 
 			page?.addEventListener('click', (event) => {
@@ -454,33 +471,6 @@ const notes = [
 				finally { submit && (submit.disabled = false); }
 			});
 
-			uploadButton?.addEventListener('click', () => uploadDialog?.showModal());
-			uploadDialog?.querySelector<HTMLFormElement>('[data-upload-form]')?.addEventListener('submit', async (event) => {
-				event.preventDefault();
-				const form = event.currentTarget as HTMLFormElement;
-				const values = new FormData(form);
-				const file = values.get('file');
-				const message = form.querySelector<HTMLElement>('[data-upload-message]');
-				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
-				if (!(file instanceof File)) return;
-				if (file.size > 104857600) { if (message) message.textContent = '单个文件不能超过 100 MB。'; return; }
-				submit && (submit.disabled = true);
-				if (message) message.textContent = '正在安全上传…';
-				try {
-					const signed = await api<{ path: string; token: string }>('/api/ielts/materials/upload-url', { method: 'POST', body: JSON.stringify({ fileName: file.name, mimeType: file.type, sizeBytes: file.size }) });
-					const url = import.meta.env.PUBLIC_SUPABASE_URL;
-					const key = import.meta.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY || import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
-					if (!url || !key) throw new Error('upload_unavailable');
-					const uploaded = await createClient(url, key).storage.from('ielts-materials').uploadToSignedUrl(signed.path, signed.token, file, { contentType: file.type, upsert: false });
-					if (uploaded.error) throw new Error('upload_unavailable');
-					await api('/api/ielts/materials', { method: 'POST', body: JSON.stringify({ title: values.get('title'), category: values.get('category'), description: values.get('description'), storagePath: signed.path, fileName: file.name, mimeType: file.type, sizeBytes: file.size }) });
-					if (message) message.textContent = '资料已上传并发布。';
-					form.reset(); await loadMaterials();
-					setTimeout(() => uploadDialog.close(), 1200);
-				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
-				finally { submit && (submit.disabled = false); }
-			});
-
 			const loadAvailability = async () => {
 				const title = page?.querySelector('[data-calendar-title]')?.textContent || '';
 				const match = title.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
@@ -507,7 +497,14 @@ const notes = [
 				});
 			});
 
-			void syncSession();
+			void syncSession().then(() => {
+				const params = new URLSearchParams(location.search);
+				if (params.get('login') === '1' && !session.authenticated) openAuth();
+				else if (params.get('login') === '1' && session.authenticated) {
+					const next = params.get('next');
+					if (session.role === 'admin' && next?.startsWith('/ielts/') && !next.includes('//')) location.assign(next);
+				}
+			});
 			void loadAvailability();
 		</script>
 	</IeltsLayout>
@@ -523,7 +520,7 @@ const notes = [
 	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); background: var(--ielts-accent-soft); }
 	.side-nav :global(svg) { flex: 0 0 auto; }
 	.side-footer { display: grid; gap: 14px; margin-top: auto; }
-	.account-button, .back-home { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--ielts-accent); border-radius: 10px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; font-weight: 500; }
+	.account-button, .management-link, .back-home { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--ielts-accent); border-radius: 10px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; font-weight: 500; }
 	.back-home :global(svg) { transform: rotate(180deg); }
 	.theme-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border: 1px solid var(--ielts-line); border-radius: 999px; }
 	.theme-choices button { min-height: 32px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 0; border-radius: 999px; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 12px; white-space: nowrap; }
@@ -608,13 +605,14 @@ const notes = [
 	.dialog-selection { margin: 0; padding: 11px 13px; border-radius: 8px; background: var(--ielts-accent-soft); color: var(--ielts-ink); font-size: 13px; font-weight: 600; }
 	.booking-dialog label { display: grid; gap: 7px; color: var(--ielts-text); font-size: 13px; font-weight: 500; }
 	.booking-dialog input, .booking-dialog textarea, .booking-dialog select { width: 100%; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); padding: 11px 12px; resize: vertical; }
-	.booking-dialog [data-auth-request], .booking-dialog [data-auth-verify] { display: grid; gap: 16px; }
+	.booking-dialog [data-password-code] { display: grid; gap: 16px; }
 	.booking-dialog [hidden] { display: none !important; }
 	.booking-dialog .consent-row { grid-template-columns: 18px 1fr; align-items: start; gap: 9px; font-size: 11px; line-height: 1.55; }
 	.booking-dialog .consent-row input { width: 16px; height: 16px; margin: 1px 0 0; padding: 0; }
 	.privacy-note { margin: 0; color: var(--ielts-muted); font-size: 11px; line-height: 1.6; }
 	.form-message { min-height: 18px; margin: 0; color: var(--ielts-accent); font-size: 11px; line-height: 1.6; }
 	.dialog-submit { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-weight: 600; }
+	.auth-switch { min-height: 36px; border: 0; background: transparent; color: var(--ielts-accent); cursor: pointer; font-size: 12px; }
 	@media (max-width: 1220px) {
 		.ielts-app { grid-template-columns: 210px minmax(0, 1fr); }
 		.side-panel { padding-inline: 15px; }
@@ -633,7 +631,7 @@ const notes = [
 		.side-nav :global(svg) { width: 17px; height: 17px; }
 		.side-footer { margin: 0 0 0 auto; }
 		.back-home { display: none; }
-		.account-button { min-height: 38px; padding-inline: 12px; font-size: 12px; }
+		.account-button, .management-link { min-height: 38px; padding-inline: 12px; font-size: 12px; }
 		.theme-choices { width: 146px; }
 		.work-area { padding: 12px; }
 		.mobile-heading { display: flex; align-items: center; justify-content: space-between; padding: 6px 3px 14px; color: var(--ielts-muted); font-size: 10px; letter-spacing: .12em; }

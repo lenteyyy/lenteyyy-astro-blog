@@ -14,9 +14,9 @@ export async function sendLoginCode(to: string, code: string): Promise<void> {
 	const { error } = await client().emails.send({
 		from: sender(),
 		to,
-		subject: 'Lenteyyy IELTS 登录验证码',
-		text: `你的登录验证码是 ${code}。如非本人操作，请忽略本邮件。`,
-		html: `<div style="font-family:Arial,sans-serif;color:#102a49;line-height:1.7"><p>你的登录验证码是：</p><p style="font-size:32px;font-weight:700;letter-spacing:.18em">${escapeHtml(code)}</p><p>如非本人操作，请忽略本邮件。</p></div>`,
+		subject: 'Lenteyyy IELTS 密码验证',
+		text: `你的六位验证码是 ${code}，15 分钟内有效。验证码用于设置或重设密码；如非本人操作，请忽略本邮件。`,
+		html: `<div style="font-family:Arial,sans-serif;color:#102a49;line-height:1.7"><p>你的六位验证码是：</p><p style="font-size:32px;font-weight:700;letter-spacing:.18em">${escapeHtml(code)}</p><p>15 分钟内有效，用于设置或重设密码。如非本人操作，请忽略本邮件。</p></div>`,
 		headers: { 'X-Entity-Ref-ID': crypto.randomUUID() },
 	});
 	if (error) throw new Error('email_delivery_failed');

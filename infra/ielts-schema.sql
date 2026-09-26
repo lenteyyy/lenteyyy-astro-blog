@@ -32,16 +32,21 @@ create table if not exists public.ielts_bookings (
 	name text not null check (char_length(name) between 1 and 60),
 	contact text not null default '' check (char_length(contact) <= 120),
 	lesson_date date not null,
-	lesson_time text not null check (lesson_time in ('10:30–11:30', '14:00–15:00', '16:00–17:00', '20:00–21:00')),
+	lesson_time text not null check (lesson_time in ('8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间')),
 	notes text not null default '' check (char_length(notes) <= 500),
 	status text not null default 'pending' check (status in ('pending', 'confirmed', 'cancelled', 'declined')),
 	created_at timestamptz not null default now(),
 	updated_at timestamptz not null default now()
 );
 
-create unique index if not exists ielts_bookings_active_slot
+alter table public.ielts_bookings drop constraint if exists ielts_bookings_lesson_time_check;
+alter table public.ielts_bookings add constraint ielts_bookings_lesson_time_check
+	check (lesson_time in ('8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间'));
+
+drop index if exists public.ielts_bookings_active_slot;
+create unique index ielts_bookings_active_slot
 	on public.ielts_bookings (lesson_date, lesson_time)
-	where status in ('pending', 'confirmed');
+	where status in ('pending', 'confirmed') and lesson_time <> '其他时间';
 
 create index if not exists ielts_bookings_user_created
 	on public.ielts_bookings (user_id, created_at desc);
@@ -52,10 +57,21 @@ create table if not exists public.ielts_rate_limits (
 	expires_at timestamptz not null
 );
 
+create table if not exists public.ielts_verification_codes (
+	email_hash text primary key,
+	code_hash text not null,
+	expires_at timestamptz not null,
+	attempts integer not null default 0 check (attempts between 0 and 10),
+	created_at timestamptz not null default now()
+);
+
 alter table public.ielts_profiles enable row level security;
 alter table public.ielts_materials enable row level security;
 alter table public.ielts_bookings enable row level security;
 alter table public.ielts_rate_limits enable row level security;
+alter table public.ielts_verification_codes enable row level security;
+
+revoke all on table public.ielts_verification_codes from public, anon, authenticated;
 
 drop policy if exists "users read own IELTS profile" on public.ielts_profiles;
 create policy "users read own IELTS profile" on public.ielts_profiles
