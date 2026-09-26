@@ -12,6 +12,7 @@ export const GET: APIRoute = async () => {
 		{ loc: canonicalUrl('/'), priority: '1.0' },
 		{ loc: canonicalUrl('/posts'), priority: '0.8' },
 		{ loc: canonicalUrl('/about'), priority: '0.5' },
+		{ loc: canonicalUrl('/ielts'), priority: '0.7' },
 		{ loc: canonicalUrl('/zh-tw'), priority: '1.0' },
 		{ loc: canonicalUrl('/zh-tw/posts'), priority: '0.8' },
 		{ loc: canonicalUrl('/zh-tw/about'), priority: '0.5' },

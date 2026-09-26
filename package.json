@@ -20,13 +20,16 @@
     "@astrojs/vercel": "^11.0.5",
     "@fontsource/noto-sans-sc": "^5.3.0",
     "@fontsource/noto-sans-tc": "^5.3.0",
+    "@supabase/supabase-js": "^2.117.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/og": "^1.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "astro": "^7.2.8",
     "marked": "^18.0.13",
     "opencc-js": "^1.4.0",
-    "react": "^19.2.8"
+    "postgres": "^3.4.9",
+    "react": "^19.2.8",
+    "resend": "^6.29.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

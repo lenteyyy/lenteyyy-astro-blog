@@ -1,0 +1,658 @@
+---
+import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+
+const resources = [
+	{ icon: 'headphones' as const, title: '听力', lines: ['真题精听', '场景词汇'] },
+	{ icon: 'book' as const, title: '阅读', lines: ['题型解析', '长难句整理'] },
+	{ icon: 'pen' as const, title: '写作', lines: ['思路拆解', '高分表达'] },
+	{ icon: 'chat' as const, title: '口语', lines: ['话题素材', '逻辑表达'] },
+];
+
+const notes = [
+	{ icon: 'user' as const, title: '一对一课程', text: '提交时间意向后，我会再与你确认。' },
+	{ icon: 'file' as const, title: '登录后查看资料', text: '资料储存在私有空间，只向已验证学员开放。' },
+	{ icon: 'calendar' as const, title: '时间需要预约', text: '页面显示的是时间意向，不代表预约已确认。' },
+	{ icon: 'info' as const, title: '邮件验证码登录', text: '本站不设置或保存密码；预约资料仅用于课程联络。' },
+];
+---
+<IeltsLayout title="Lenteyyy IELTS · 学习与课程" description="课程预约、雅思学习资料与模考入口。">
+	<div class="ielts-app" data-ielts-page>
+		<aside class="side-panel">
+			<a class="studio-brand" href="/ielts" aria-label="Lenteyyy IELTS 首页">
+				<span class="logo-frame"><img src="/lenteyyy-logo.png" alt="Lenteyyy" width="512" height="512" /></span>
+				<span>IELTS STUDY DESK</span>
+			</a>
+
+			<nav class="side-nav" aria-label="雅思学习中心导航">
+				<a class="active" href="#overview"><IeltsIcon name="home" />总览</a>
+				<a href="#booking"><IeltsIcon name="calendar" />课程预约</a>
+				<a href="#materials"><IeltsIcon name="folder" />学习资料</a>
+				<a href="#mock"><IeltsIcon name="clipboard" />模考页面</a>
+				<a href="#notes"><IeltsIcon name="info" />其他说明</a>
+			</nav>
+
+			<div class="side-footer">
+				<button class="account-button" type="button" data-account-button><IeltsIcon name="user" size={18} /><span data-account-label>登录</span></button>
+				<a class="back-home" href="/"><IeltsIcon name="arrow" />回到主站</a>
+				<div class="theme-choices" aria-label="页面配色">
+					<button type="button" data-theme-choice="light" aria-pressed="true"><IeltsIcon name="sun" size={17} />浅色</button>
+					<button type="button" data-theme-choice="dark" aria-pressed="false"><IeltsIcon name="moon" size={17} />深色</button>
+				</div>
+			</div>
+		</aside>
+
+		<main class="work-area" id="overview">
+			<div class="mobile-heading">
+				<span>IELTS STUDY DESK</span>
+				<a href="/">回到主站</a>
+			</div>
+
+			<div class="dashboard">
+				<section class="module booking-module" id="booking">
+					<header class="module-head">
+						<h1><span>01</span>课程预约</h1>
+						<a href="#booking-note">预约规则<IeltsIcon name="arrow" size={18} /></a>
+					</header>
+
+					<div class="booking-grid">
+						<div class="calendar-card" data-booking-calendar>
+							<div class="calendar-head">
+								<button type="button" data-calendar-prev aria-label="上个月">‹</button>
+								<strong data-calendar-title></strong>
+								<button type="button" data-calendar-next aria-label="下个月">›</button>
+							</div>
+							<div class="week-row" aria-hidden="true"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+							<div class="calendar-days" data-calendar-days></div>
+						</div>
+
+						<div class="time-card">
+							<div>
+								<span class="field-label">上课日期</span>
+								<strong data-selected-date>请选择日期</strong>
+							</div>
+							<div class="time-slots" aria-label="时间意向">
+								<button type="button" data-time="10:30–11:30" aria-pressed="false">10:30–11:30</button>
+								<button type="button" data-time="14:00–15:00" aria-pressed="false">14:00–15:00</button>
+								<button type="button" data-time="16:00–17:00" aria-pressed="false">16:00–17:00</button>
+								<button type="button" data-time="20:00–21:00" aria-pressed="false">20:00–21:00</button>
+							</div>
+							<button class="booking-action" type="button" data-open-booking disabled>填写预约意向<IeltsIcon name="arrow" size={18} /></button>
+							<p class="booking-status" data-booking-status aria-live="polite">选择日期与时间后即可填写。</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="module resources-module" id="materials">
+					<header class="module-head">
+						<h2><span>02</span>学习资料</h2>
+						<span class="module-state" data-material-state>登录后查看</span>
+					</header>
+					<div class="resource-grid">
+						{resources.map((item) => (
+							<button class="resource-card" type="button" data-material-category={item.title}>
+								<span class="resource-icon"><IeltsIcon name={item.icon} size={27} /></span>
+								<div><h3>{item.title}</h3><p>{item.lines[0]}<br />{item.lines[1]}</p></div>
+								<IeltsIcon name="arrow" size={18} />
+							</button>
+						))}
+					</div>
+					<div class="small-resources">
+						<div class="material-list-head"><span>资料列表</span><button type="button" data-open-upload hidden>上传资料</button></div>
+						<div class="material-list" data-material-list><p>登录后可查看与下载学习资料。</p></div>
+					</div>
+				</section>
+
+				<section class="module mock-module" id="mock">
+					<header class="module-head">
+						<h2><span>03</span>模考页面</h2>
+						<span class="module-state">内容待导入</span>
+					</header>
+					<div class="mock-tabs" role="tablist" aria-label="模考科目">
+						<button type="button" class="active" data-mock="Listening" role="tab" aria-selected="true"><IeltsIcon name="headphones" size={19} />Listening</button>
+						<button type="button" data-mock="Reading" role="tab" aria-selected="false"><IeltsIcon name="book" size={19} />Reading</button>
+						<button type="button" data-mock="Writing" role="tab" aria-selected="false"><IeltsIcon name="pen" size={19} />Writing</button>
+						<button type="button" data-mock="Speaking" role="tab" aria-selected="false"><IeltsIcon name="chat" size={19} />Speaking</button>
+					</div>
+					<div class="mock-body">
+						<div class="mock-poster" aria-hidden="true"><span>FULL</span><strong>TEST</strong><small>01</small></div>
+						<div class="mock-copy">
+							<p class="field-label">IELTS PRACTICE</p>
+							<h3>全真模考 · <span data-mock-title>Listening</span></h3>
+							<p>题目与答案会从学习资料库导入；正式开放前不会生成虚假成绩。</p>
+							<div class="mock-meta"><span><IeltsIcon name="file" size={19} />40 道题</span><span><IeltsIcon name="calendar" size={19} />30 分钟</span></div>
+							<button type="button" disabled>资料加入后开放</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="module notes-module" id="notes">
+					<header class="module-head"><h2><span>04</span>其他说明</h2></header>
+					<div class="note-list">
+						{notes.map((item, index) => (
+							<article id={index === 2 ? 'booking-note' : undefined}>
+								<span><IeltsIcon name={item.icon} size={22} /></span>
+								<div><h3>{item.title}</h3><p>{item.text}</p></div>
+							</article>
+						))}
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+
+	<dialog class="booking-dialog" data-booking-dialog aria-labelledby="booking-dialog-title">
+		<form data-booking-form>
+			<div class="dialog-head"><div><span>课程预约</span><h2 id="booking-dialog-title">填写联系资料</h2></div><button type="button" data-close-booking aria-label="关闭">×</button></div>
+			<p class="dialog-selection" data-dialog-selection></p>
+			<label>你的称呼<input name="name" autocomplete="name" required /></label>
+			<label>微信或其他联系方式（选填）<input name="contact" autocomplete="off" maxlength="120" /></label>
+			<label>想说明的内容<textarea name="note" rows="3"></textarea></label>
+			<label class="consent-row"><input type="checkbox" name="consent" required />我同意仅为预约、确认与课程联络储存以上资料。</label>
+			<p class="privacy-note">登录邮箱会随预约保存；你可通过主站邮箱申请查询或删除。</p>
+			<p class="form-message" data-booking-message aria-live="polite"></p>
+			<button class="dialog-submit" type="submit">提交预约并发送确认邮件<IeltsIcon name="arrow" size={18} /></button>
+		</form>
+	</dialog>
+
+	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
+		<form data-auth-form>
+			<div class="dialog-head"><div><span>账户验证</span><h2 id="auth-dialog-title">邮件验证码登录</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
+			<div data-auth-request>
+				<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
+				<p class="privacy-note">验证码仅用于登录；本站不设置或保存密码。</p>
+				<button class="dialog-submit" type="submit">发送验证码<IeltsIcon name="arrow" size={18} /></button>
+			</div>
+			<div data-auth-verify hidden>
+				<p class="dialog-selection" data-auth-email></p>
+				<label>八位验证码<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{8}" minlength="8" maxlength="8" /></label>
+				<button class="dialog-submit" type="button" data-verify-code>验证并登录<IeltsIcon name="arrow" size={18} /></button>
+			</div>
+			<p class="form-message" data-auth-message aria-live="polite"></p>
+		</form>
+	</dialog>
+
+	<dialog class="booking-dialog upload-dialog" data-upload-dialog aria-labelledby="upload-dialog-title">
+		<form data-upload-form>
+			<div class="dialog-head"><div><span>管理员</span><h2 id="upload-dialog-title">上传学习资料</h2></div><button type="button" data-close-upload aria-label="关闭">×</button></div>
+			<label>资料标题<input name="title" maxlength="120" required /></label>
+			<label>分类<select name="category" required><option>听力</option><option>阅读</option><option>写作</option><option>口语</option><option>词汇</option><option>语法</option><option>备考</option></select></label>
+			<label>简短说明<textarea name="description" rows="2" maxlength="300"></textarea></label>
+			<label>文件<input type="file" name="file" accept=".pdf,.docx,.pptx,.mp3,.m4a,.mp4,.jpg,.jpeg,.png,.webp" required /></label>
+			<p class="privacy-note">单个文件上限 100 MB；文件存入私有空间并通过短时链接下载。</p>
+			<p class="form-message" data-upload-message aria-live="polite"></p>
+			<button class="dialog-submit" type="submit">上传并发布<IeltsIcon name="arrow" size={18} /></button>
+		</form>
+	</dialog>
+
+	<script>
+		const root = document.querySelector<HTMLElement>('[data-ielts-page]');
+		if (root) {
+			const themeButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-theme-choice]')];
+			const setTheme = (theme: 'light' | 'dark', persist = true) => {
+				document.documentElement.dataset.ieltsTheme = theme;
+				if (persist) try { localStorage.setItem('ielts-theme', theme); } catch {}
+				themeButtons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === theme)));
+			};
+			const initialTheme = document.documentElement.dataset.ieltsTheme === 'dark' ? 'dark' : 'light';
+			setTheme(initialTheme, false);
+			themeButtons.forEach((button) => button.addEventListener('click', () => setTheme(button.dataset.themeChoice === 'dark' ? 'dark' : 'light')));
+			const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+			systemTheme.addEventListener('change', (event) => {
+				try { if (!localStorage.getItem('ielts-theme')) setTheme(event.matches ? 'dark' : 'light', false); } catch {}
+			});
+
+			const navLinks = [...root.querySelectorAll<HTMLAnchorElement>('.side-nav a')];
+			navLinks.forEach((link) => link.addEventListener('click', () => {
+				navLinks.forEach((item) => item.classList.remove('active'));
+				link.classList.add('active');
+			}));
+
+			const calendarTitle = root.querySelector<HTMLElement>('[data-calendar-title]');
+			const calendarDays = root.querySelector<HTMLElement>('[data-calendar-days]');
+			const selectedDateLabel = root.querySelector<HTMLElement>('[data-selected-date]');
+			const prevButton = root.querySelector<HTMLButtonElement>('[data-calendar-prev]');
+			const nextButton = root.querySelector<HTMLButtonElement>('[data-calendar-next]');
+			const timeButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-time]')];
+			const bookingButton = root.querySelector<HTMLButtonElement>('[data-open-booking]');
+			const bookingStatus = root.querySelector<HTMLElement>('[data-booking-status]');
+			const today = new Date();
+			today.setHours(0, 0, 0, 0);
+			const earliestMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+			let visibleMonth = new Date(earliestMonth);
+			let selectedDate = '';
+			let selectedTime = '';
+
+			const formatDate = (date: Date) => date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' });
+			const isoDate = (date: Date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+			const syncBookingButton = () => {
+				if (!bookingButton) return;
+				bookingButton.disabled = !(selectedDate && selectedTime);
+				if (bookingStatus) bookingStatus.textContent = selectedDate && selectedTime ? `${selectedDate} · ${selectedTime}` : '选择日期与时间后即可填写。';
+			};
+			const renderCalendar = () => {
+				if (!calendarTitle || !calendarDays) return;
+				calendarTitle.textContent = `${visibleMonth.getFullYear()} 年 ${visibleMonth.getMonth() + 1} 月`;
+				calendarDays.replaceChildren();
+				const firstDay = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1);
+				const mondayOffset = (firstDay.getDay() + 6) % 7;
+				const start = new Date(firstDay);
+				start.setDate(1 - mondayOffset);
+				for (let index = 0; index < 42; index += 1) {
+					const date = new Date(start);
+					date.setDate(start.getDate() + index);
+					const button = document.createElement('button');
+					button.type = 'button';
+					button.textContent = String(date.getDate());
+					button.dataset.date = isoDate(date);
+					button.className = date.getMonth() === visibleMonth.getMonth() ? '' : 'outside';
+					if (date < today) button.disabled = true;
+					if (button.dataset.date === selectedDate) button.classList.add('selected');
+					button.setAttribute('aria-label', formatDate(date));
+					button.addEventListener('click', () => {
+						selectedDate = button.dataset.date || '';
+						if (selectedDateLabel) selectedDateLabel.textContent = formatDate(date);
+						renderCalendar();
+						syncBookingButton();
+					});
+					calendarDays.append(button);
+				}
+				if (prevButton) prevButton.disabled = visibleMonth <= earliestMonth;
+			};
+			prevButton?.addEventListener('click', () => { visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() - 1, 1); renderCalendar(); });
+			nextButton?.addEventListener('click', () => { visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1); renderCalendar(); });
+			timeButtons.forEach((button) => button.addEventListener('click', () => {
+				selectedTime = button.dataset.time || '';
+				timeButtons.forEach((item) => { const active = item === button; item.classList.toggle('selected', active); item.setAttribute('aria-pressed', String(active)); });
+				syncBookingButton();
+			}));
+			renderCalendar();
+
+			const dialog = document.querySelector<HTMLDialogElement>('[data-booking-dialog]');
+			const dialogSelection = dialog?.querySelector<HTMLElement>('[data-dialog-selection]');
+			bookingButton?.addEventListener('click', () => {
+				if (!selectedDate || !selectedTime || !dialog) return;
+				if (dialogSelection) dialogSelection.textContent = `${selectedDate} · ${selectedTime}`;
+				dialog.showModal();
+			});
+			dialog?.querySelector<HTMLButtonElement>('[data-close-booking]')?.addEventListener('click', () => dialog.close());
+			dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+			const mockButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-mock]')];
+			const mockTitle = root.querySelector<HTMLElement>('[data-mock-title]');
+			mockButtons.forEach((button) => button.addEventListener('click', () => {
+				mockButtons.forEach((item) => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-selected', String(active)); });
+				if (mockTitle) mockTitle.textContent = button.dataset.mock || 'Listening';
+			}));
+		}
+		</script>
+		<script>
+			import { createClient } from '@supabase/supabase-js';
+
+			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
+			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
+			const bookingDialog = document.querySelector<HTMLDialogElement>('[data-booking-dialog]');
+			const uploadDialog = document.querySelector<HTMLDialogElement>('[data-upload-dialog]');
+			const accountButton = page?.querySelector<HTMLButtonElement>('[data-account-button]');
+			const accountLabel = page?.querySelector<HTMLElement>('[data-account-label]');
+			const materialList = page?.querySelector<HTMLElement>('[data-material-list]');
+			const materialState = page?.querySelector<HTMLElement>('[data-material-state]');
+			const uploadButton = page?.querySelector<HTMLButtonElement>('[data-open-upload]');
+			let session: { authenticated: boolean; email?: string; role?: 'student' | 'admin' } = { authenticated: false };
+			let requestedEmail = '';
+			let unavailable = new Map<string, Set<string>>();
+
+			const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
+				const response = await fetch(path, { credentials: 'same-origin', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
+				const body = await response.json().catch(() => ({}));
+				if (!response.ok) throw new Error(String(body.error || `http_${response.status}`));
+				return body as T;
+			};
+			const messageFor = (code: string) => ({
+				invalid_email: '请输入有效邮箱。', invalid_code: '验证码错误或已过期。', rate_limited: '操作过于频繁，请稍后再试。',
+				verification_unavailable: '验证码暂时无法发送，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
+				slot_unavailable: '该时段刚被预约，请选择其他时间。', invalid_booking: '请检查预约资料与勾选项。', booking_unavailable: '预约暂时无法提交。',
+				invalid_file: '文件格式或大小不符合要求。', material_unavailable: '资料暂时无法保存。', upload_unavailable: '上传暂时不可用。',
+			}[code] || '操作失败，请稍后再试。');
+			const closeOnBackdrop = (dialog: HTMLDialogElement | null) => dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+			closeOnBackdrop(authDialog); closeOnBackdrop(uploadDialog);
+			document.querySelector<HTMLButtonElement>('[data-close-auth]')?.addEventListener('click', () => authDialog?.close());
+			document.querySelector<HTMLButtonElement>('[data-close-upload]')?.addEventListener('click', () => uploadDialog?.close());
+
+			const openAuth = () => {
+				const requestPane = authDialog?.querySelector<HTMLElement>('[data-auth-request]');
+				const verifyPane = authDialog?.querySelector<HTMLElement>('[data-auth-verify]');
+				const message = authDialog?.querySelector<HTMLElement>('[data-auth-message]');
+				if (requestPane) requestPane.hidden = false;
+				if (verifyPane) verifyPane.hidden = true;
+				if (message) message.textContent = '';
+				authDialog?.showModal();
+				requestAnimationFrame(() => authDialog?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
+			};
+
+			const renderMaterials = (materials: Array<Record<string, unknown>>, category = '') => {
+				if (!materialList) return;
+				materialList.replaceChildren();
+				const visible = category ? materials.filter((item) => item.category === category) : materials;
+				if (!visible.length) {
+					const empty = document.createElement('p'); empty.textContent = category ? `暂时没有${category}资料。` : '资料正在整理中。'; materialList.append(empty); return;
+				}
+				for (const item of visible) {
+					const row = document.createElement('article'); row.className = 'material-row';
+					const copy = document.createElement('div');
+					const title = document.createElement('strong'); title.textContent = String(item.title || '未命名资料');
+					const meta = document.createElement('span'); meta.textContent = `${String(item.category || '')} · ${Math.max(1, Math.ceil(Number(item.size_bytes || 0) / 1048576))} MB`;
+					const description = document.createElement('p'); description.textContent = String(item.description || item.file_name || '');
+					copy.append(title, meta, description);
+					const download = document.createElement('button'); download.type = 'button'; download.textContent = '下载';
+					download.addEventListener('click', async () => {
+						download.disabled = true;
+						try { const result = await api<{ url: string }>(`/api/ielts/materials/${String(item.id)}`); window.location.assign(result.url); }
+						catch (error) { description.textContent = messageFor(error instanceof Error ? error.message : ''); }
+						finally { download.disabled = false; }
+					});
+					row.append(copy, download); materialList.append(row);
+				}
+			};
+			let materialsCache: Array<Record<string, unknown>> = [];
+			const loadMaterials = async () => {
+				if (!session.authenticated) {
+					materialsCache = [];
+					if (materialState) materialState.textContent = '登录后查看';
+					if (materialList) materialList.innerHTML = '<p>登录后可查看与下载学习资料。</p>';
+					return;
+				}
+				try {
+					const result = await api<{ materials: Array<Record<string, unknown>>; role: 'student' | 'admin' }>('/api/ielts/materials');
+					materialsCache = result.materials;
+					if (materialState) materialState.textContent = `${materialsCache.length} 份资料`;
+					renderMaterials(materialsCache);
+				} catch { if (materialState) materialState.textContent = '暂时无法读取'; }
+			};
+			const syncSession = async () => {
+				try { session = await api<typeof session>('/api/ielts/auth/me'); } catch { session = { authenticated: false }; }
+				if (accountLabel) accountLabel.textContent = session.authenticated ? '退出登录' : '登录';
+				if (accountButton) accountButton.title = session.email || '邮件验证码登录';
+				if (uploadButton) uploadButton.hidden = session.role !== 'admin';
+				await loadMaterials();
+			};
+
+			accountButton?.addEventListener('click', async () => {
+				if (!session.authenticated) return openAuth();
+				await api('/api/ielts/auth/logout', { method: 'POST', body: '{}' }).catch(() => undefined);
+				session = { authenticated: false };
+				await syncSession();
+			});
+
+			authDialog?.querySelector<HTMLFormElement>('[data-auth-form]')?.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				const form = event.currentTarget as HTMLFormElement;
+				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+				const message = form.querySelector<HTMLElement>('[data-auth-message]');
+				requestedEmail = String(new FormData(form).get('email') || '').trim().toLowerCase();
+				if (submit) submit.disabled = true;
+				if (message) message.textContent = '正在发送验证码…';
+				try {
+					await api('/api/ielts/auth/request-code', { method: 'POST', body: JSON.stringify({ email: requestedEmail }) });
+					const requestPane = form.querySelector<HTMLElement>('[data-auth-request]');
+					const verifyPane = form.querySelector<HTMLElement>('[data-auth-verify]');
+					if (requestPane) requestPane.hidden = true;
+					if (verifyPane) verifyPane.hidden = false;
+					const emailLabel = form.querySelector<HTMLElement>('[data-auth-email]');
+					if (emailLabel) emailLabel.textContent = `验证码已发送至 ${requestedEmail}`;
+					if (message) message.textContent = '请查看邮箱，验证码有效期较短。';
+					form.querySelector<HTMLInputElement>('input[name="code"]')?.focus();
+				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
+				finally { if (submit) submit.disabled = false; }
+			});
+
+			authDialog?.querySelector<HTMLButtonElement>('[data-verify-code]')?.addEventListener('click', async (event) => {
+				const button = event.currentTarget as HTMLButtonElement;
+				const form = button.closest('form');
+				const message = form?.querySelector<HTMLElement>('[data-auth-message]');
+				const code = form?.querySelector<HTMLInputElement>('input[name="code"]')?.value || '';
+				button.disabled = true;
+				if (message) message.textContent = '正在验证…';
+				try {
+					await api('/api/ielts/auth/verify-code', { method: 'POST', body: JSON.stringify({ email: requestedEmail, code }) });
+					authDialog?.close();
+					await syncSession();
+				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
+				finally { button.disabled = false; }
+			});
+
+			page?.addEventListener('click', (event) => {
+				const target = event.target as Element;
+				if (target.closest('[data-open-booking]') && !session.authenticated) {
+					event.preventDefault(); event.stopImmediatePropagation(); openAuth(); return;
+				}
+				const categoryButton = target.closest<HTMLButtonElement>('[data-material-category]');
+				if (categoryButton) {
+					if (!session.authenticated) openAuth();
+					else renderMaterials(materialsCache, categoryButton.dataset.materialCategory || '');
+				}
+			}, true);
+
+			bookingDialog?.querySelector<HTMLFormElement>('[data-booking-form]')?.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				if (!session.authenticated) { bookingDialog.close(); openAuth(); return; }
+				const form = event.currentTarget as HTMLFormElement;
+				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+				const message = form.querySelector<HTMLElement>('[data-booking-message]');
+				const values = new FormData(form);
+				const date = page?.querySelector<HTMLButtonElement>('[data-calendar-days] button.selected')?.dataset.date || '';
+				const time = page?.querySelector<HTMLButtonElement>('[data-time].selected')?.dataset.time || '';
+				submit && (submit.disabled = true);
+				if (message) message.textContent = '正在提交预约…';
+				try {
+					const result = await api<{ emailSent: boolean }>('/api/ielts/bookings', { method: 'POST', body: JSON.stringify({
+						name: values.get('name'), contact: values.get('contact'), notes: values.get('note'), date, time, consent: values.get('consent') === 'on',
+					}) });
+					if (message) message.textContent = result.emailSent ? '预约已提交，确认邮件已发送。' : '预约已提交；邮件稍有延迟，我会另行确认。';
+					form.reset();
+					setTimeout(() => bookingDialog.close(), 1500);
+				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
+				finally { submit && (submit.disabled = false); }
+			});
+
+			uploadButton?.addEventListener('click', () => uploadDialog?.showModal());
+			uploadDialog?.querySelector<HTMLFormElement>('[data-upload-form]')?.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				const form = event.currentTarget as HTMLFormElement;
+				const values = new FormData(form);
+				const file = values.get('file');
+				const message = form.querySelector<HTMLElement>('[data-upload-message]');
+				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+				if (!(file instanceof File)) return;
+				if (file.size > 104857600) { if (message) message.textContent = '单个文件不能超过 100 MB。'; return; }
+				submit && (submit.disabled = true);
+				if (message) message.textContent = '正在安全上传…';
+				try {
+					const signed = await api<{ path: string; token: string }>('/api/ielts/materials/upload-url', { method: 'POST', body: JSON.stringify({ fileName: file.name, mimeType: file.type, sizeBytes: file.size }) });
+					const url = import.meta.env.PUBLIC_SUPABASE_URL;
+					const key = import.meta.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY || import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+					if (!url || !key) throw new Error('upload_unavailable');
+					const uploaded = await createClient(url, key).storage.from('ielts-materials').uploadToSignedUrl(signed.path, signed.token, file, { contentType: file.type, upsert: false });
+					if (uploaded.error) throw new Error('upload_unavailable');
+					await api('/api/ielts/materials', { method: 'POST', body: JSON.stringify({ title: values.get('title'), category: values.get('category'), description: values.get('description'), storagePath: signed.path, fileName: file.name, mimeType: file.type, sizeBytes: file.size }) });
+					if (message) message.textContent = '资料已上传并发布。';
+					form.reset(); await loadMaterials();
+					setTimeout(() => uploadDialog.close(), 1200);
+				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
+				finally { submit && (submit.disabled = false); }
+			});
+
+			const loadAvailability = async () => {
+				const title = page?.querySelector('[data-calendar-title]')?.textContent || '';
+				const match = title.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
+				if (!match) return;
+				const month = `${match[1]}-${match[2].padStart(2, '0')}`;
+				try {
+					const result = await api<{ unavailable: Array<{ lesson_date: string; lesson_time: string }> }>(`/api/ielts/availability?month=${month}`);
+					unavailable = new Map();
+					for (const item of result.unavailable) {
+						const set = unavailable.get(item.lesson_date) || new Set<string>(); set.add(item.lesson_time); unavailable.set(item.lesson_date, set);
+					}
+				} catch { unavailable = new Map(); }
+			};
+			page?.addEventListener('click', (event) => {
+				const target = event.target as Element;
+				if (target.closest('[data-calendar-prev], [data-calendar-next]')) queueMicrotask(loadAvailability);
+				if (target.closest('[data-calendar-days] button')) queueMicrotask(() => {
+					const date = page.querySelector<HTMLButtonElement>('[data-calendar-days] button.selected')?.dataset.date || '';
+					const blocked = unavailable.get(date) || new Set<string>();
+					for (const button of page.querySelectorAll<HTMLButtonElement>('[data-time]')) {
+						button.disabled = blocked.has(button.dataset.time || '');
+						if (button.disabled) { button.classList.remove('selected'); button.setAttribute('aria-pressed', 'false'); }
+					}
+				});
+			});
+
+			void syncSession();
+			void loadAvailability();
+		</script>
+	</IeltsLayout>
+
+<style>
+	.ielts-app { width: min(1680px, calc(100% - 40px)); min-height: calc(100dvh - 40px); margin: 20px auto; display: grid; grid-template-columns: 244px minmax(0, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 22px; background: var(--ielts-panel); box-shadow: var(--ielts-shadow); }
+	.side-panel { position: sticky; top: 0; height: calc(100dvh - 40px); display: flex; flex-direction: column; padding: 32px 20px 24px; border-right: 1px solid var(--ielts-line); background: color-mix(in srgb, var(--ielts-card) 92%, transparent); }
+	.studio-brand { display: grid; justify-items: center; gap: 5px; color: var(--ielts-ink); font-size: 11px; font-weight: 600; letter-spacing: .25em; }
+	.logo-frame { width: 150px; height: 105px; display: grid; place-items: center; overflow: hidden; background: #fff; }
+	.logo-frame img { width: 138px; height: 138px; object-fit: contain; mix-blend-mode: multiply; }
+	.side-nav { display: grid; gap: 7px; margin-top: 44px; }
+	.side-nav a { min-height: 52px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-radius: 10px; color: var(--ielts-text); font-size: 16px; font-weight: 500; transition: color .16s ease, background .16s ease; }
+	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); background: var(--ielts-accent-soft); }
+	.side-nav :global(svg) { flex: 0 0 auto; }
+	.side-footer { display: grid; gap: 14px; margin-top: auto; }
+	.account-button, .back-home { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--ielts-accent); border-radius: 10px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; font-weight: 500; }
+	.back-home :global(svg) { transform: rotate(180deg); }
+	.theme-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border: 1px solid var(--ielts-line); border-radius: 999px; }
+	.theme-choices button { min-height: 32px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 0; border-radius: 999px; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 12px; white-space: nowrap; }
+	.theme-choices button[aria-pressed='true'] { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
+	.work-area { min-width: 0; padding: 20px; }
+	.mobile-heading { display: none; }
+	.dashboard { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(420px, .92fr); gap: 16px; }
+	.module { min-width: 0; padding: 24px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: var(--ielts-radius); background: var(--ielts-card); }
+	.module-head { min-height: 50px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+	.module-head h1, .module-head h2 { margin: 0; color: var(--ielts-ink); font-size: clamp(25px, 2.2vw, 36px); font-weight: 700; letter-spacing: -.035em; line-height: 1.2; }
+	.module-head h1 span, .module-head h2 span { margin-right: 16px; color: var(--ielts-faint); font-size: .84em; font-style: italic; font-weight: 400; }
+	.module-head a { display: flex; align-items: center; gap: 8px; color: var(--ielts-accent); font-size: 13px; font-weight: 500; }
+	.module-state { color: var(--ielts-muted); font-size: 13px; }
+	.booking-grid { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: 12px; }
+	.calendar-card, .time-card { min-width: 0; border: 1px solid var(--ielts-line); border-radius: 11px; background: var(--ielts-panel); }
+	.calendar-card { padding: 16px; }
+	.calendar-head { display: grid; grid-template-columns: 34px 1fr 34px; align-items: center; margin-bottom: 13px; }
+	.calendar-head strong { text-align: center; color: var(--ielts-ink); font-size: 16px; font-weight: 600; }
+	.calendar-head button { width: 34px; height: 34px; border: 0; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 24px; }
+	.calendar-head button:disabled { opacity: .22; cursor: not-allowed; }
+	.week-row, .calendar-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+	.week-row { margin-bottom: 5px; color: var(--ielts-muted); text-align: center; font-size: 11px; }
+	.calendar-days :global(button) { aspect-ratio: 1; min-width: 0; border: 0; border-radius: 50%; background: transparent; color: var(--ielts-text); cursor: pointer; font-size: 12px; }
+	.calendar-days :global(button:hover:not(:disabled)), .calendar-days :global(button.selected) { background: var(--ielts-accent); color: #fff; }
+	.calendar-days :global(button.outside) { color: var(--ielts-faint); }
+	.calendar-days :global(button:disabled) { opacity: .25; cursor: not-allowed; }
+	.time-card { display: flex; flex-direction: column; gap: 13px; padding: 17px; }
+	.field-label { display: block; margin-bottom: 6px; color: var(--ielts-muted); font-size: 11px; font-weight: 600; letter-spacing: .09em; }
+	.time-card strong { display: block; min-height: 24px; color: var(--ielts-ink); font-size: 14px; line-height: 1.7; }
+	.time-slots { display: grid; gap: 8px; }
+	.time-slots button { min-height: 39px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-text); cursor: pointer; font-size: 13px; }
+	.time-slots button:hover, .time-slots button.selected { border-color: var(--ielts-accent); background: var(--ielts-accent); color: #fff; }
+	.booking-action { min-height: 43px; display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: auto; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-size: 13px; font-weight: 600; }
+	.booking-action:disabled { opacity: .35; cursor: not-allowed; }
+	.booking-status { min-height: 32px; margin: 0; color: var(--ielts-muted); font-size: 11px; line-height: 1.45; }
+	.resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+	.resource-card { min-height: 118px; display: grid; grid-template-columns: 54px 1fr auto; align-items: center; gap: 13px; padding: 16px; border: 1px solid var(--ielts-line); border-radius: 10px; background: transparent; color: inherit; cursor: pointer; font: inherit; text-align: left; }
+	.resource-card:hover { border-color: var(--ielts-accent); background: var(--ielts-hover); }
+	.resource-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 10px; background: var(--ielts-hover); color: var(--ielts-ink); }
+	.resource-card h3 { margin: 0 0 6px; color: var(--ielts-ink); font-size: 18px; }
+	.resource-card p { margin: 0; color: var(--ielts-muted); font-size: 12px; line-height: 1.65; }
+	.resource-card > :global(svg) { color: var(--ielts-accent); }
+	.small-resources { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--ielts-line); }
+	.material-list-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 10px; color: var(--ielts-muted); font-size: 12px; }
+	.material-list-head button { min-height: 34px; padding: 0 13px; border: 1px solid var(--ielts-accent); border-radius: 8px; background: transparent; color: var(--ielts-ink); cursor: pointer; }
+	.material-list { display: grid; gap: 8px; }
+	.material-list > p { margin: 0; color: var(--ielts-muted); font-size: 12px; line-height: 1.6; }
+	.material-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 12px 13px; border: 1px solid var(--ielts-line); border-radius: 9px; }
+	.material-row div { min-width: 0; display: grid; gap: 3px; }
+	.material-row strong { overflow: hidden; color: var(--ielts-ink); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+	.material-row span { color: var(--ielts-muted); font-size: 10px; }
+	.material-row p { margin: 2px 0 0; overflow: hidden; color: var(--ielts-text); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+	.material-row > button { min-height: 34px; padding: 0 12px; border: 0; border-radius: 7px; background: var(--ielts-accent-soft); color: var(--ielts-ink); cursor: pointer; }
+	.small-resources > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+	.small-resources button { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--ielts-line); border-radius: 8px; background: transparent; color: var(--ielts-text); font-size: 12px; }
+	.mock-tabs { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 9px; }
+	.mock-tabs button { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-right: 1px solid var(--ielts-line); background: var(--ielts-panel); color: var(--ielts-text); cursor: pointer; font-size: 12px; }
+	.mock-tabs button:last-child { border-right: 0; }
+	.mock-tabs button.active { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
+	.mock-body { display: grid; grid-template-columns: 190px 1fr; gap: 22px; margin-top: 15px; }
+	.mock-poster { min-height: 196px; display: flex; flex-direction: column; justify-content: flex-end; padding: 18px; border-radius: 10px; background: linear-gradient(145deg, #0f2a48, #3f6b94); color: #fff; }
+	.mock-poster span, .mock-poster strong { font-size: 36px; font-weight: 700; letter-spacing: -.06em; line-height: .84; }
+	.mock-poster small { margin-top: 18px; font-size: 13px; letter-spacing: .2em; }
+	.mock-copy { align-self: center; }
+	.mock-copy h3 { margin: 0 0 8px; color: var(--ielts-ink); font-size: 19px; }
+	.mock-copy > p:not(.field-label) { margin: 0; color: var(--ielts-muted); font-size: 13px; line-height: 1.7; }
+	.mock-meta { display: flex; flex-wrap: wrap; gap: 16px; margin: 18px 0; color: var(--ielts-text); font-size: 12px; }
+	.mock-meta span { display: flex; align-items: center; gap: 7px; }
+	.mock-copy button { width: 100%; min-height: 43px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); opacity: .42; }
+	.note-list { display: grid; gap: 8px; }
+	.note-list article { min-height: 69px; display: grid; grid-template-columns: 46px 1fr; align-items: center; gap: 13px; padding: 10px 13px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: 10px; }
+	.note-list article > span { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--ielts-hover); color: var(--ielts-ink); }
+	.note-list h3 { margin: 0 0 3px; color: var(--ielts-ink); font-size: 14px; }
+	.note-list p { margin: 0; color: var(--ielts-muted); font-size: 12px; line-height: 1.55; }
+	.booking-dialog { width: min(520px, calc(100% - 30px)); padding: 0; border: 1px solid var(--ielts-line); border-radius: 16px; background: var(--ielts-card); color: var(--ielts-text); box-shadow: var(--ielts-shadow); }
+	.booking-dialog::backdrop { background: #07111db3; backdrop-filter: blur(5px); }
+	.booking-dialog form { display: grid; gap: 16px; padding: 25px; }
+	.dialog-head { display: flex; justify-content: space-between; gap: 20px; }
+	.dialog-head span { color: var(--ielts-muted); font-size: 11px; letter-spacing: .1em; }
+	.dialog-head h2 { margin: 5px 0 0; color: var(--ielts-ink); font-size: 25px; }
+	.dialog-head button { width: 34px; height: 34px; border: 0; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 27px; }
+	.dialog-selection { margin: 0; padding: 11px 13px; border-radius: 8px; background: var(--ielts-accent-soft); color: var(--ielts-ink); font-size: 13px; font-weight: 600; }
+	.booking-dialog label { display: grid; gap: 7px; color: var(--ielts-text); font-size: 13px; font-weight: 500; }
+	.booking-dialog input, .booking-dialog textarea, .booking-dialog select { width: 100%; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); padding: 11px 12px; resize: vertical; }
+	.booking-dialog [data-auth-request], .booking-dialog [data-auth-verify] { display: grid; gap: 16px; }
+	.booking-dialog [hidden] { display: none !important; }
+	.booking-dialog .consent-row { grid-template-columns: 18px 1fr; align-items: start; gap: 9px; font-size: 11px; line-height: 1.55; }
+	.booking-dialog .consent-row input { width: 16px; height: 16px; margin: 1px 0 0; padding: 0; }
+	.privacy-note { margin: 0; color: var(--ielts-muted); font-size: 11px; line-height: 1.6; }
+	.form-message { min-height: 18px; margin: 0; color: var(--ielts-accent); font-size: 11px; line-height: 1.6; }
+	.dialog-submit { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-weight: 600; }
+	@media (max-width: 1220px) {
+		.ielts-app { grid-template-columns: 210px minmax(0, 1fr); }
+		.side-panel { padding-inline: 15px; }
+		.dashboard { grid-template-columns: 1fr; }
+		.booking-grid { grid-template-columns: minmax(0, 1fr) 250px; }
+	}
+	@media (max-width: 820px) {
+		.ielts-app { width: 100%; min-height: 100dvh; margin: 0; display: block; border: 0; border-radius: 0; }
+		.side-panel { position: static; width: 100%; height: auto; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 16px; padding: 14px 16px; border-right: 0; border-bottom: 1px solid var(--ielts-line); }
+		.studio-brand { justify-items: start; gap: 0; font-size: 8px; }
+		.logo-frame { width: 88px; height: 48px; }
+		.logo-frame img { width: 82px; height: 82px; }
+		.side-nav { grid-column: 1 / -1; display: flex; gap: 7px; margin: 0; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+		.side-nav::-webkit-scrollbar { display: none; }
+		.side-nav a { min-height: 38px; flex: 0 0 auto; gap: 7px; padding: 0 11px; font-size: 12px; }
+		.side-nav :global(svg) { width: 17px; height: 17px; }
+		.side-footer { margin: 0 0 0 auto; }
+		.back-home { display: none; }
+		.account-button { min-height: 38px; padding-inline: 12px; font-size: 12px; }
+		.theme-choices { width: 146px; }
+		.work-area { padding: 12px; }
+		.mobile-heading { display: flex; align-items: center; justify-content: space-between; padding: 6px 3px 14px; color: var(--ielts-muted); font-size: 10px; letter-spacing: .12em; }
+		.mobile-heading a { color: var(--ielts-accent); letter-spacing: 0; }
+		.module { padding: 18px; }
+		.module-head h1, .module-head h2 { font-size: 26px; }
+	}
+	@media (max-width: 620px) {
+		.booking-grid { grid-template-columns: 1fr; }
+		.calendar-card { padding: 13px; }
+		.time-card { min-height: 0; }
+		.time-slots { grid-template-columns: 1fr 1fr; }
+		.resource-grid { grid-template-columns: 1fr; }
+		.resource-card { min-height: 98px; }
+		.small-resources > div { grid-template-columns: 1fr; }
+		.mock-tabs { grid-template-columns: 1fr 1fr; }
+		.mock-tabs button:nth-child(2) { border-right: 0; }
+		.mock-tabs button:nth-child(-n+2) { border-bottom: 1px solid var(--ielts-line); }
+		.mock-body { grid-template-columns: 1fr; }
+		.mock-poster { min-height: 150px; }
+	}
+</style>
