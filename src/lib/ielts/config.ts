@@ -9,7 +9,7 @@ export const ieltsConfig = () => ({
 	secretKey: required('SUPABASE_SECRET_KEY', import.meta.env.SUPABASE_SECRET_KEY || import.meta.env.SUPABASE_SERVICE_ROLE_KEY),
 	resendKey: required('RESEND_API_KEY', import.meta.env.RESEND_API_KEY),
 	resendDomain: import.meta.env.RESEND_EMAIL_DOMAIN || 'lenteyyy.com',
-	adminEmail: (import.meta.env.IELTS_ADMIN_EMAIL || 'lenteyteytey@gmail.com').trim().toLowerCase(),
+	adminEmail: 'lenteyteytey@gmail.com',
 });
 
 export const isAdminEmail = (email: string | undefined): boolean => {
