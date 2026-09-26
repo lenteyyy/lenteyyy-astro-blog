@@ -36,18 +36,32 @@ export const PATCH: APIRoute = async ({ request, cookies }) => {
 	try {
 		const auth = await getAuthContext(cookies);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
-		if (!(await claimRateLimit(request, 'booking-cancel', auth.user.id, 20, 3600))) return json({ error: 'rate_limited' }, 429);
+		if (!(await claimRateLimit(request, 'booking-update', auth.user.id, 20, 3600))) return json({ error: 'rate_limited' }, 429);
 		const body = await readJson<Record<string, unknown>>(request);
 		const id = String(body.id || '');
-		if (!/^[a-f0-9-]{36}$/i.test(id)) return json({ error: 'invalid_booking' }, 400);
-		let query = createServiceClient().from('ielts_bookings')
-			.update({ status: 'cancelled', updated_at: new Date().toISOString() })
+		const action = String(body.action || 'cancel');
+		if (!/^[a-f0-9-]{36}$/i.test(id) || !['cancel', 'confirm'].includes(action)) return json({ error: 'invalid_booking' }, 400);
+		if (action === 'confirm' && auth.role !== 'admin') return json({ error: 'forbidden' }, 403);
+		const client = createServiceClient();
+		const { data: existing, error: lookupError } = await client.from('ielts_bookings')
+			.select('id, user_id, email, status')
 			.eq('id', id)
-			.in('status', ['pending', 'confirmed']);
-		if (auth.role !== 'admin') query = query.eq('user_id', auth.user.id);
-		const { data, error } = await query.select('id, status').maybeSingle();
+			.maybeSingle();
+		if (lookupError) throw lookupError;
+		if (!existing) return json({ error: 'booking_not_found' }, 404);
+		const ownsBooking = existing.user_id === auth.user.id || String(existing.email).trim().toLowerCase() === auth.email;
+		if (auth.role !== 'admin' && !ownsBooking) return json({ error: 'forbidden' }, 403);
+		const allowedStatuses = action === 'confirm' ? ['pending'] : ['pending', 'confirmed'];
+		if (!allowedStatuses.includes(existing.status)) return json({ error: 'booking_not_active' }, 409);
+		const nextStatus = action === 'confirm' ? 'confirmed' : 'cancelled';
+		const { data, error } = await client.from('ielts_bookings')
+			.update({ status: nextStatus, updated_at: new Date().toISOString() })
+			.eq('id', id)
+			.eq('status', existing.status)
+			.select('id, status')
+			.maybeSingle();
 		if (error) throw error;
-		if (!data) return json({ error: 'booking_not_found' }, 404);
+		if (!data) return json({ error: 'booking_changed' }, 409);
 		return json({ ok: true, booking: data });
 	} catch (error) {
 		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
