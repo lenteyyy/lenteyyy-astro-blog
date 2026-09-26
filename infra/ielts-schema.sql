@@ -33,6 +33,7 @@ create table if not exists public.ielts_bookings (
 	contact text not null default '' check (char_length(contact) <= 120),
 	lesson_date date not null,
 	lesson_time text not null check (lesson_time in ('8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间')),
+	lesson_subject text not null check (lesson_subject in ('听力', '阅读', '写作', '口语')),
 	notes text not null default '' check (char_length(notes) <= 500),
 	status text not null default 'pending' check (status in ('pending', 'confirmed', 'cancelled', 'declined')),
 	created_at timestamptz not null default now(),
@@ -42,6 +43,14 @@ create table if not exists public.ielts_bookings (
 alter table public.ielts_bookings drop constraint if exists ielts_bookings_lesson_time_check;
 alter table public.ielts_bookings add constraint ielts_bookings_lesson_time_check
 	check (lesson_time in ('8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间'));
+
+alter table public.ielts_bookings add column if not exists lesson_subject text;
+update public.ielts_bookings set lesson_subject = '听力' where lesson_subject is null;
+alter table public.ielts_bookings alter column lesson_subject set default '听力';
+alter table public.ielts_bookings alter column lesson_subject set not null;
+alter table public.ielts_bookings drop constraint if exists ielts_bookings_lesson_subject_check;
+alter table public.ielts_bookings add constraint ielts_bookings_lesson_subject_check
+	check (lesson_subject in ('听力', '阅读', '写作', '口语'));
 
 drop index if exists public.ielts_bookings_active_slot;
 create unique index ielts_bookings_active_slot

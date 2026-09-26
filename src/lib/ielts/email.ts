@@ -5,29 +5,33 @@ const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => (
 
 const sender = () => {
 	const config = ieltsConfig();
-	return `Lenteyyy IELTS <notice@${config.resendDomain}>`;
+	return `冷踢踢 IELTS <notice@${config.resendDomain}>`;
 };
 
 const client = () => new Resend(ieltsConfig().resendKey);
+const supportEmail = 'lenteywang@gmail.com';
+const securityNotice = '基于保安要求并为了保证服务质素，请勿回复此电子邮件，也请勿点击任何来源不明之网页和附件。';
 
 export async function sendLoginCode(to: string, code: string): Promise<void> {
+	const text = `您好，非常感谢您申请注册冷踢踢 IELTS 或申请重设密码。以下为您的六位验证码：\n${code}\n\n此验证码于 15 分钟内有效，请及时输入。如非本人操作，请忽略本电子邮件或发送咨询邮件至 ${supportEmail}\n\n${securityNotice}`;
 	const { error } = await client().emails.send({
 		from: sender(),
 		to,
-		subject: 'Lenteyyy IELTS 密码验证',
-		text: `你的六位验证码是 ${code}，15 分钟内有效。验证码用于设置或重设密码；如非本人操作，请忽略本邮件。`,
-		html: `<div style="font-family:Arial,sans-serif;color:#102a49;line-height:1.7"><p>你的六位验证码是：</p><p style="font-size:32px;font-weight:700;letter-spacing:.18em">${escapeHtml(code)}</p><p>15 分钟内有效，用于设置或重设密码。如非本人操作，请忽略本邮件。</p></div>`,
+		subject: '冷踢踢 IELTS 的 验证码',
+		text,
+		html: `<div style="font-family:Arial,sans-serif;color:#102a49;line-height:1.8;max-width:640px"><p>您好，非常感谢您申请注册冷踢踢 IELTS 或申请重设密码。以下为您的六位验证码：</p><p style="font-size:32px;font-weight:700;letter-spacing:.18em">${escapeHtml(code)}</p><p>此验证码于 15 分钟内有效，请及时输入。如非本人操作，请忽略本电子邮件或发送咨询邮件至 <a href="mailto:${supportEmail}">${supportEmail}</a></p><p>${securityNotice}</p></div>`,
 		headers: { 'X-Entity-Ref-ID': crypto.randomUUID() },
 	});
 	if (error) throw new Error('email_delivery_failed');
 }
 
-type BookingMail = { id: string; email: string; name: string; contact: string; date: string; time: string; notes: string };
+type BookingMail = { id: string; email: string; name: string; contact: string; date: string; time: string; subject: string; notes: string };
 
 export async function sendBookingEmails(booking: BookingMail): Promise<boolean> {
 	const config = ieltsConfig();
-	const details = `称呼：${booking.name}\n邮箱：${booking.email}\n其他联系方式：${booking.contact || '无'}\n日期：${booking.date}\n时间：${booking.time}\n补充：${booking.notes || '无'}`;
+	const details = `称呼：${booking.name}\n邮箱：${booking.email}\n其他联系方式：${booking.contact || '无'}\n日期：${booking.date}\n时间：${booking.time}\n科目：${booking.subject}\n补充：${booking.notes || '无'}`;
 	const safeDetails = escapeHtml(details).replace(/\n/g, '<br>');
+	const studentText = `${booking.name}，谢谢您的预约！我们已经收到您的预约意向。待确认时间后会再次联系您。\n\n${details}\n\n如非本人操作，请忽略本电子邮件或发送咨询邮件至 ${supportEmail}\n\n${securityNotice}`;
 	const requests = [
 		client().emails.send({
 			from: sender(),
@@ -41,10 +45,9 @@ export async function sendBookingEmails(booking: BookingMail): Promise<boolean> 
 		client().emails.send({
 			from: sender(),
 			to: booking.email,
-			replyTo: config.adminEmail,
-			subject: '已收到你的 IELTS 课程预约',
-			text: `已收到你的预约意向，最终时间以邮件确认为准。\n\n${details}`,
-			html: `<div style="font-family:Arial,sans-serif;line-height:1.7"><h2>已收到预约意向</h2><p>最终时间以邮件确认为准。</p><p>${safeDetails}</p></div>`,
+			subject: `${booking.name}，已收到您的 IELTS 课程预约`,
+			text: studentText,
+			html: `<div style="font-family:Arial,sans-serif;line-height:1.8;max-width:640px"><p>${escapeHtml(booking.name)}，谢谢您的预约！我们已经收到您的预约意向。待确认时间后会再次联系您。</p><p>${safeDetails}</p><p>如非本人操作，请忽略本电子邮件或发送咨询邮件至 <a href="mailto:${supportEmail}">${supportEmail}</a></p><p>${securityNotice}</p></div>`,
 			headers: { 'X-Entity-Ref-ID': `${booking.id}-student` },
 		}),
 	];
