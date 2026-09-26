@@ -20,6 +20,7 @@ export const GET: APIRoute = async ({ request }) => {
 			.select('lesson_date, lesson_time')
 			.gte('lesson_date', start)
 			.lt('lesson_date', end)
+			.neq('lesson_time', '其他时间')
 			.in('status', ['pending', 'confirmed']);
 		if (error) throw error;
 		return json({ unavailable: data || [] });

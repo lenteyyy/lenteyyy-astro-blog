@@ -7,7 +7,7 @@ import { createServiceClient } from '../../../lib/ielts/supabase';
 
 export const prerender = false;
 
-const slots = new Set(['10:30–11:30', '14:00–15:00', '16:00–17:00', '20:00–21:00']);
+const slots = new Set(['8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间']);
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const localDate = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
 const localToday = () => localDate(new Date());
