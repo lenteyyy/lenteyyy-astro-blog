@@ -29,4 +29,13 @@ export const normalizeEmail = (value: unknown): string | undefined => {
 	return email.length <= 254 && emailPattern.test(email) ? email : undefined;
 };
 
-export const cleanText = (value: unknown, max: number): string => String(value || '').trim().slice(0, max);
+export const cleanText = (value: unknown, max: number): string => String(value || '')
+	.normalize('NFKC')
+	.replace(/\r\n?/g, '\n')
+	.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '')
+	.trim()
+	.slice(0, max);
+
+export const cleanLine = (value: unknown, max: number): string => cleanText(value, max)
+	.replace(/\s+/g, ' ')
+	.slice(0, max);

@@ -13,7 +13,8 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		const email = normalizeEmail(body.email);
 		const password = String(body.password || '');
 		if (!email || password.length < 1 || password.length > 72) return json({ error: 'invalid_credentials' }, 400);
-		if (!(await claimRateLimit(request, 'password-login', email, 10, 900))) return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
+		if (!(await claimRateLimit(request, 'password-login-email', email, 10, 900, 'identity'))
+			|| !(await claimRateLimit(request, 'password-login-ip', '', 30, 900, 'request'))) return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
 		const { data, error } = await createPublicClient().auth.signInWithPassword({ email, password });
 		if (error || !data.session || !data.user) return json({ error: 'invalid_credentials' }, 401);
 		setAuthSession(cookies, data.session);
