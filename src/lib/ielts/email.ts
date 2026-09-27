@@ -29,29 +29,32 @@ export async function sendLoginCode(to: string, code: string): Promise<void> {
 	if (error) throw new Error('email_delivery_failed');
 }
 
-type BookingMail = { id: string; email: string; name: string; contact: string; date: string; time: string; subject: string; notes: string };
+type BookingMailItem = { id: string; date: string; time: string; subject: string };
+type BookingMail = { email: string; name: string; contact: string; notes: string; bookings: BookingMailItem[] };
 
 export async function sendBookingEmails(booking: BookingMail): Promise<boolean> {
 	const config = ieltsConfig();
-	const details = `称呼：${booking.name}\n邮箱：${booking.email}\n其他联系方式：${booking.contact || '无'}\n日期：${booking.date}\n时间：${booking.time}\n科目：${booking.subject}\n补充：${booking.notes || '无'}`;
+	const courses = booking.bookings.map((item, index) => `课程 ${index + 1}\n日期：${item.date}\n时间：${item.time}\n科目：${item.subject}`).join('\n\n');
+	const details = `称呼：${booking.name}\n邮箱：${booking.email}\n其他联系方式：${booking.contact || '无'}\n\n${courses}\n\n补充：${booking.notes || '无'}`;
 	const safeDetails = escapeHtml(details).replace(/\n/g, '<br>');
 	const studentText = `${booking.name}，谢谢您的预约！我们已经收到您的预约意向。待确认时间后会再次联系您。\n\n${details}\n\n如非本人操作，请忽略本电子邮件或发送咨询邮件至 ${supportEmail}\n\n${securityNotice}`;
+	const batchKey = await idempotencyKey(booking.bookings.map((item) => item.id).sort().join('|'));
 	const requests = [
 		client().emails.send({
 			from: sender(),
 			to: config.adminEmail,
 			replyTo: booking.email,
-			subject: `IELTS 课程预约 · ${booking.date} ${booking.time}`,
+			subject: `IELTS 课程预约 · ${booking.bookings.length} 次课程`,
 			text: details,
 			html: `<div style="font-family:Arial,sans-serif;line-height:1.7"><h2>新的课程预约</h2><p>${safeDetails}</p></div>`,
-		}, { idempotencyKey: `booking-${booking.id}-admin` }),
+		}, { idempotencyKey: `booking-${batchKey}-admin` }),
 		client().emails.send({
 			from: sender(),
 			to: booking.email,
 			subject: `${booking.name}，已收到您的 IELTS 课程预约`,
 			text: studentText,
 			html: `<div style="font-family:Arial,sans-serif;line-height:1.8;max-width:640px"><p>${escapeHtml(booking.name)}，谢谢您的预约！我们已经收到您的预约意向。待确认时间后会再次联系您。</p><p>${safeDetails}</p><p>如非本人操作，请忽略本电子邮件或发送咨询邮件至 <a href="mailto:${supportEmail}">${supportEmail}</a></p><p>${securityNotice}</p></div>`,
-		}, { idempotencyKey: `booking-${booking.id}-student` }),
+		}, { idempotencyKey: `booking-${batchKey}-student` }),
 	];
 	const results = await Promise.allSettled(requests);
 	return results.every((result) => result.status === 'fulfilled' && !result.value.error);
