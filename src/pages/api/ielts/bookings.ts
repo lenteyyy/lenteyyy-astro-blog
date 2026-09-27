@@ -107,34 +107,52 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		const body = await readJson<Record<string, unknown>>(request);
 		const name = cleanLine(body.name, 60);
 		const contact = cleanLine(body.contact, 120);
-		const date = String(body.date || '');
-		const time = String(body.time || '');
-		const customTime = time === '其他时间' ? cleanLine(body.customTime, 80) : '';
-		const notes = cleanText(body.notes, customTime ? 400 : 500);
-		const storedNotes = customTime ? `${customTimePrefix}${customTime}\n${notes}` : notes;
-		const subject = String(body.subject || '');
+		const notes = cleanText(body.notes, 400);
 		const consent = body.consent === true;
-		const parsedDate = new Date(`${date}T00:00:00+08:00`);
+		const requested = Array.isArray(body.bookings) ? body.bookings : [body];
+		if (!name || !consent || requested.length < 1 || requested.length > 4) return json({ error: 'invalid_booking' }, 400);
 		const latest = new Date(); latest.setDate(latest.getDate() + 180);
-		if (!name || !consent || !subjects.has(subject) || !datePattern.test(date) || !slots.has(time) || (time === '其他时间' && customTime.length < 2) || Number.isNaN(parsedDate.getTime()) || localDate(parsedDate) !== date || date < localToday() || date > localDate(latest)) {
-			return json({ error: 'invalid_booking' }, 400);
-		}
+		const seen = new Set<string>();
+		const prepared = requested.map((value) => {
+			const item = value && typeof value === 'object' ? value as Record<string, unknown> : {};
+			const date = String(item.date || '');
+			const time = String(item.time || '');
+			const customTime = time === '其他时间' ? cleanLine(item.customTime, 80) : '';
+			const subject = String(item.subject || '');
+			const parsedDate = new Date(`${date}T00:00:00+08:00`);
+			const key = `${date}|${time}|${customTime}`;
+			if (!subjects.has(subject) || !datePattern.test(date) || !slots.has(time) || (time === '其他时间' && customTime.length < 2) || Number.isNaN(parsedDate.getTime()) || localDate(parsedDate) !== date || date < localToday() || date > localDate(latest) || seen.has(key)) throw new Error('invalid_booking');
+			seen.add(key);
+			return { date, time, customTime, subject, storedNotes: customTime ? `${customTimePrefix}${customTime}\n${notes}` : notes };
+		});
 		const client = createServiceClient();
-		const { data, error } = await client.from('ielts_bookings').insert({
+		const { data, error } = await client.from('ielts_bookings').insert(prepared.map((item) => ({
 			user_id: auth.user.id,
 			email: auth.email,
 			name,
 			contact,
-			lesson_date: date,
-			lesson_time: time,
-			lesson_subject: subject,
-			notes: storedNotes,
-		}).select('id, lesson_date, lesson_time, lesson_subject, status').single();
+			lesson_date: item.date,
+			lesson_time: item.time,
+			lesson_subject: item.subject,
+			notes: item.storedNotes,
+		}))).select('id, lesson_date, lesson_time, lesson_subject, status');
 		if (error?.code === '23505') return json({ error: 'slot_unavailable' }, 409);
-		if (error || !data) throw error || new Error('booking_insert_failed');
-		const emailSent = await sendBookingEmails({ id: data.id, email: auth.email, name, contact, date, time: customTime ? `其他时间：${customTime}` : time, subject, notes });
-		return json({ ok: true, booking: { ...data, lesson_time_note: customTime }, emailSent }, 201);
+		if (error || !data || data.length !== prepared.length) throw error || new Error('booking_insert_failed');
+		const emailSent = await sendBookingEmails({
+			email: auth.email,
+			name,
+			contact,
+			notes,
+			bookings: data.map((item, index) => ({
+				id: item.id,
+				date: prepared[index].date,
+				time: prepared[index].customTime ? `其他时间：${prepared[index].customTime}` : prepared[index].time,
+				subject: prepared[index].subject,
+			})),
+		});
+		return json({ ok: true, bookings: data.map((item, index) => ({ ...item, lesson_time_note: prepared[index].customTime })), emailSent }, 201);
 	} catch (error) {
+		if (error instanceof Error && error.message === 'invalid_booking') return json({ error: 'invalid_booking' }, 400);
 		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'booking_unavailable' }, 503);
 	}
