@@ -154,22 +154,21 @@ const notes = [
 				<section class="module mock-module" id="mock" hidden>
 					<header class="module-head">
 						<h2>模考页面</h2>
-						<span class="module-state">内容待导入</span>
+						<span class="module-state">剑雅21 · Test 1</span>
 					</header>
 					<div class="mock-tabs" role="tablist" aria-label="模考科目">
-						<button type="button" class="active" data-mock="Listening" role="tab" aria-selected="true"><IeltsIcon name="headphones" size={19} />Listening</button>
-						<button type="button" data-mock="Reading" role="tab" aria-selected="false"><IeltsIcon name="book" size={19} />Reading</button>
-						<button type="button" data-mock="Writing" role="tab" aria-selected="false"><IeltsIcon name="pen" size={19} />Writing</button>
-						<button type="button" data-mock="Speaking" role="tab" aria-selected="false"><IeltsIcon name="chat" size={19} />Speaking</button>
+						<button type="button" class="active" data-mock="listening" role="tab" aria-selected="true"><IeltsIcon name="headphones" size={19} />Listening</button>
+						<button type="button" data-mock="reading" role="tab" aria-selected="false"><IeltsIcon name="book" size={19} />Reading</button>
+						<button type="button" data-mock="writing" role="tab" aria-selected="false"><IeltsIcon name="pen" size={19} />Writing</button>
 					</div>
 					<div class="mock-body">
-						<div class="mock-poster" aria-hidden="true"><span>FULL</span><strong>TEST</strong><small>01</small></div>
+						<div class="mock-poster" aria-hidden="true"><span>FULL</span><strong>TEST</strong><small>CAMBRIDGE 21 · 01</small></div>
 						<div class="mock-copy">
 							<p class="field-label">IELTS PRACTICE</p>
 							<h3>全真模考 · <span data-mock-title>Listening</span></h3>
-							<p>题目与答案会从学习资料库导入；正式开放前不会生成虚假成绩。</p>
-							<div class="mock-meta"><span><IeltsIcon name="file" size={19} />40 道题</span><span><IeltsIcon name="calendar" size={19} />30 分钟</span></div>
-							<button type="button" disabled>资料加入后开放</button>
+							<p>剑雅21 Test 1 真题。答案保存在当前浏览器；听力与阅读提交后显示对题数，写作不自动估分。</p>
+							<div class="mock-meta"><span><IeltsIcon name="file" size={19} /><span data-mock-count>40 道题</span></span><span><IeltsIcon name="calendar" size={19} /><span data-mock-time>35 分钟</span></span></div>
+							<a class="mock-open" data-mock-open href="/ielts/mock/test-1?subject=listening">开始练习<IeltsIcon name="arrow" size={18} /></a>
 						</div>
 					</div>
 				</section>
@@ -350,9 +349,16 @@ const notes = [
 
 			const mockButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-mock]')];
 			const mockTitle = root.querySelector<HTMLElement>('[data-mock-title]');
+			const mockCount = root.querySelector<HTMLElement>('[data-mock-count]');
+			const mockTime = root.querySelector<HTMLElement>('[data-mock-time]');
+			const mockOpen = root.querySelector<HTMLAnchorElement>('[data-mock-open]');
 			mockButtons.forEach((button) => button.addEventListener('click', () => {
 				mockButtons.forEach((item) => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-selected', String(active)); });
-				if (mockTitle) mockTitle.textContent = button.dataset.mock || 'Listening';
+				const subject = button.dataset.mock || 'listening';
+				if (mockTitle) mockTitle.textContent = subject[0].toUpperCase() + subject.slice(1);
+				if (mockCount) mockCount.textContent = subject === 'writing' ? '2 道题' : '40 道题';
+				if (mockTime) mockTime.textContent = subject === 'listening' ? '35 分钟' : '60 分钟';
+				if (mockOpen) mockOpen.href = `/ielts/mock/test-1?subject=${subject}`;
 			}));
 		}
 		</script>
@@ -844,7 +850,7 @@ const notes = [
 	.material-row > button { min-height: 34px; padding: 0 12px; border: 0; border-radius: 7px; background: var(--ielts-accent-soft); color: var(--ielts-ink); cursor: pointer; }
 	.small-resources > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 	.small-resources button { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--ielts-line); border-radius: 8px; background: transparent; color: var(--ielts-text); font-size: 12px; }
-	.mock-tabs { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 9px; }
+	.mock-tabs { display: grid; grid-template-columns: repeat(3, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 9px; }
 	.mock-tabs button { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-right: 1px solid var(--ielts-line); background: var(--ielts-panel); color: var(--ielts-text); cursor: pointer; font-size: 12px; }
 	.mock-tabs button:last-child { border-right: 0; }
 	.mock-tabs button.active { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
@@ -857,7 +863,7 @@ const notes = [
 	.mock-copy > p:not(.field-label) { margin: 0; color: var(--ielts-muted); font-size: 13px; line-height: 1.7; }
 	.mock-meta { display: flex; flex-wrap: wrap; gap: 16px; margin: 18px 0; color: var(--ielts-text); font-size: 12px; }
 	.mock-meta span { display: flex; align-items: center; gap: 7px; }
-	.mock-copy button { width: 100%; min-height: 43px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); opacity: .42; }
+	.mock-copy .mock-open { width: 100%; min-height: 43px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); font-size: 13px; font-weight: 700; }
 	.note-list { display: grid; gap: 8px; }
 	.note-list article { min-height: 69px; display: grid; grid-template-columns: 46px 1fr; align-items: center; gap: 13px; padding: 10px 13px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: 10px; }
 	.note-list article > span { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--ielts-hover); color: var(--ielts-ink); }
@@ -917,9 +923,7 @@ const notes = [
 		.resource-grid { grid-template-columns: 1fr; }
 		.resource-card { min-height: 98px; }
 		.small-resources > div { grid-template-columns: 1fr; }
-		.mock-tabs { grid-template-columns: 1fr 1fr; }
-		.mock-tabs button:nth-child(2) { border-right: 0; }
-		.mock-tabs button:nth-child(-n+2) { border-bottom: 1px solid var(--ielts-line); }
+		.mock-tabs { grid-template-columns: repeat(3, 1fr); }
 		.mock-body { grid-template-columns: 1fr; }
 		.mock-poster { min-height: 150px; }
 	}
