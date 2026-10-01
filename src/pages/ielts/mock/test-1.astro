@@ -2,6 +2,7 @@
 import IeltsLayout from '../../../layouts/IeltsLayout.astro';
 import { getAuthContext } from '../../../lib/ielts/auth';
 import test from '../../../lib/ielts/mock/test1-content.json';
+import { questionSets } from '../../../lib/ielts/mock/test1-questions';
 
 export const prerender = false;
 
@@ -19,7 +20,7 @@ Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 const labels: Record<Subject, string> = { listening: 'Listening', reading: 'Reading', writing: 'Writing' };
 const sections = test.sections[subject];
 const answerKey = subject === 'writing' ? [] : test.answerKeys[subject];
-const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.user.id || 'demo' }).replace(/</g, '\\u003c');
+const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject === 'writing' ? [] : questionSets[subject], accountId: auth?.user.id || 'demo' }).replace(/</g, '\\u003c');
 ---
 <IeltsLayout title={`剑雅21 Test 1 · ${labels[subject]}`} description="雅思机考练习页面。">
   <main class="exam" data-exam>
@@ -30,24 +31,23 @@ const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.
       </nav>
     </header>
     <div class="statusbar"><span>{labels[subject]} · Test 1</span><strong data-clock>{subject === 'listening' ? '35:00' : '60:00'}</strong><div class="toolbar"><button type="button" data-clear>清除本机答案</button><button type="button" data-help>Help</button></div></div>
-    <div class="workspace">
+    <div class:list={['workspace', { 'listening-workspace': subject === 'listening' }]}>
       <section class="pane question-pane" aria-label="题目">
         <div class="pane-head"><h1 data-section-title></h1><span data-section-range></span></div>
         <div class="question-scroll" data-question-scroll tabindex="0">
-          <p class="instructions" data-instructions></p>
+          {subject === 'writing' && <p class="instructions" data-instructions></p>}
           {subject === 'listening' && <div class="audio-wrap" data-audio-wrap hidden><audio controls preload="none" data-audio></audio></div>}
           <div data-passage></div>
-          <div data-question-images></div>
-          <details class="ocr-transcript" data-ocr-left hidden><summary>题目文字版（OCR，扫描图为准）</summary><pre data-ocr-left-text></pre></details>
-          <details class="source-scan" data-source-scan hidden><summary>查看原书扫描页以核对 OCR 文字</summary><div data-reference-images></div></details>
+          {subject === 'listening' && <div data-question-content></div>}
+          {subject === 'writing' && <div data-question-images></div>}
         </div>
       </section>
-      <section class="pane answer-pane" aria-label="答题区">
-        <div class="pane-head"><h2>{subject === 'writing' ? 'Your answer' : 'Answer sheet'}</h2><span data-answer-heading></span></div>
-        {subject === 'reading' && <div class="reading-questions" data-reading-questions><div data-reading-question-images></div><details class="ocr-transcript" data-ocr-right><summary>题目文字版（OCR，扫描图为准）</summary><pre data-ocr-right-text></pre></details></div>}
-        <div class="answer-scroll" data-answer-scroll></div>
+      {subject !== 'listening' && <section class="pane answer-pane" aria-label={subject === 'reading' ? '阅读题目' : '答题区'}>
+        <div class="pane-head"><h2>{subject === 'writing' ? 'Your answer' : 'Questions'}</h2><span data-answer-heading></span></div>
+        {subject === 'reading' && <div class="answer-scroll" data-question-content></div>}
+        {subject === 'writing' && <div class="answer-scroll" data-answer-scroll></div>}
         {subject === 'writing' && <p class="word-count"><span data-word-count>0 words</span><span data-save-state>仅保存在本机浏览器</span></p>}
-      </section>
+      </section>}
     </div>
     <nav class="test-nav" aria-label="试卷导航"><label><input type="checkbox" data-review /> Mark for review</label><div class="section-tabs" data-section-tabs></div><div class="nav-actions"><button type="button" data-prev aria-label="上一部分">‹</button><button type="button" data-next aria-label="下一部分">›</button><button type="button" class="submit" data-submit>Submit</button></div></nav>
   </main>
@@ -57,8 +57,9 @@ const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.
   <script is:inline type="application/json" id="exam-payload" set:html={payload} />
 
   <script>
-    type Section = { label: string; first: number; last: number; title: string; instructions: string; paragraphs: string[]; questionImages: string[]; questionOcr: string[]; referenceImages: string[]; audioUrl: string };
-    type Payload = { subject: 'listening' | 'reading' | 'writing'; sections: Section[]; answerKey: string[]; accountId: string };
+    import type { Choice, QuestionBlock } from '../../../lib/ielts/mock/test1-questions';
+    type Section = { label: string; first: number; last: number; title: string; instructions: string; paragraphs: string[]; questionImages: string[]; audioUrl: string };
+    type Payload = { subject: 'listening' | 'reading' | 'writing'; sections: Section[]; answerKey: string[]; blocks: QuestionBlock[][]; accountId: string };
     type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number };
     const root = document.querySelector<HTMLElement>('[data-exam]');
     const parsed = document.querySelector<HTMLElement>('#exam-payload');
@@ -82,32 +83,139 @@ const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.
         const clock = $<HTMLElement>('[data-clock]'); if (clock) clock.textContent = formatTime(left);
         if (left === 0 && state.started && !state.finished) { state.finished = true; save(); render(); showDialog('时间已到。答案仍保存在当前浏览器。'); }
       };
+      const element = <K extends keyof HTMLElementTagNameMap>(tag: K, className = '', value = '') => {
+        const node = document.createElement(tag); node.className = className; node.textContent = value; return node;
+      };
+      const correct = (number: number) => data.answerKey[number - 1]?.replaceAll('|', ' / ') || '—';
+      const answerControl = (number: number, options?: string[]) => {
+        const wrap = element('label', 'inline-answer');
+        wrap.append(element('strong', 'answer-number', String(number)));
+        if (options) {
+          const select = document.createElement('select'); select.setAttribute('aria-label', `Question ${number}`);
+          const empty = document.createElement('option'); empty.value = ''; empty.textContent = '选择'; select.append(empty);
+          for (const option of options) { const item = document.createElement('option'); item.value = option; item.textContent = option; select.append(item); }
+          select.value = state.answers[String(number)] || ''; select.disabled = state.finished;
+          select.addEventListener('change', () => { state.answers[String(number)] = select.value; save(); }); wrap.append(select);
+        } else {
+          const input = document.createElement('input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
+          input.setAttribute('aria-label', `Question ${number}`); input.value = state.answers[String(number)] || ''; input.disabled = state.finished;
+          input.addEventListener('input', () => { state.answers[String(number)] = input.value; save(); }); wrap.append(input);
+        }
+        if (state.finished) wrap.append(element('small', 'correct-answer', `参考：${correct(number)}`));
+        return wrap;
+      };
+      const fillText = (text: string) => {
+        const fragment = document.createDocumentFragment();
+        for (const part of text.split(/(\{\{\d+\}\})/g)) {
+          const match = /^\{\{(\d+)\}\}$/.exec(part);
+          if (match) {
+            const number = Number(match[1]);
+            fragment.append(answerControl(number, data.subject === 'reading' && number >= 31 && number <= 36 ? 'ABCDEFGHI'.split('') : undefined));
+          } else if (part) fragment.append(document.createTextNode(part));
+        }
+        return fragment;
+      };
+      const appendText = (parent: HTMLElement, tag: 'p' | 'li', value: string, className = '') => {
+        const node = element(tag, className); node.append(fillText(value)); parent.append(node); return node;
+      };
+      const optionBank = (options: Choice[], title = '') => {
+        const box = element('div', 'option-bank'); if (title) box.append(element('h4', '', title));
+        const grid = element('div', 'option-grid');
+        for (const option of options) { const row = element('div', 'option-bank-row'); row.append(element('strong', '', option.letter), document.createTextNode(option.text)); grid.append(row); }
+        box.append(grid); return box;
+      };
+      const renderBlocks = () => {
+        const target = $<HTMLElement>('[data-question-content]'); target?.replaceChildren(); if (!target) return;
+        for (const block of data.blocks[state.active] || []) {
+          if (block.type === 'heading') target.append(element('h3', 'question-heading', block.text));
+          if (block.type === 'subheading') target.append(element('h4', 'question-subheading', block.text));
+          if (block.type === 'instruction') target.append(element('p', 'question-instruction', block.text));
+          if (block.type === 'paragraph') appendText(target, 'p', block.text, 'question-paragraph');
+          if (block.type === 'table') {
+            const wrap = element('div', 'table-wrap'); wrap.append(element('h4', 'table-title', block.title));
+            const table = document.createElement('table'); const head = document.createElement('thead'); const headRow = document.createElement('tr');
+            for (const label of block.columns) headRow.append(element('th', '', label)); head.append(headRow); table.append(head);
+            const body = document.createElement('tbody');
+            for (const row of block.rows) { const tr = document.createElement('tr'); for (const cell of row) { const td = element('td'); td.append(fillText(cell)); tr.append(td); } body.append(tr); }
+            table.append(body); wrap.append(table); target.append(wrap);
+          }
+          if (block.type === 'notes') {
+            const box = element('section', 'note-box'); box.append(element('h4', 'note-title', block.title));
+            for (const group of block.groups) { if (group.heading) box.append(element('h5', 'note-heading', group.heading));
+              for (const text of group.intro || []) appendText(box, 'p', text, 'note-intro');
+              const list = element('ul', 'note-list'); for (const item of group.items) appendText(list, 'li', item); box.append(list);
+            } target.append(box);
+          }
+          if (block.type === 'summary') {
+            const box = element('section', 'summary-box'); box.append(element('h4', 'note-title', block.title));
+            for (const text of block.paragraphs) appendText(box, 'p', text); target.append(box);
+          }
+          if (block.type === 'bank') target.append(optionBank(block.options, block.title));
+          if (block.type === 'choice') {
+            const group = element('fieldset', 'choice-question'); group.append(element('legend', '', `${block.number}  ${block.prompt}`));
+            for (const option of block.options) { const label = element('label', 'choice-option'); const radio = document.createElement('input');
+              radio.type = 'radio'; radio.name = `question-${block.number}`; radio.value = option.letter;
+              radio.checked = state.answers[String(block.number)] === option.letter; radio.disabled = state.finished;
+              radio.addEventListener('change', () => { state.answers[String(block.number)] = option.letter; save(); });
+              label.append(radio, element('strong', '', option.letter), document.createTextNode(option.text)); group.append(label);
+            }
+            if (state.finished) group.append(element('small', 'correct-answer', `参考：${correct(block.number)}`)); target.append(group);
+          }
+          if (block.type === 'pair') {
+            const group = element('fieldset', 'choice-question'); group.append(element('legend', '', `${block.numbers.join(' & ')}  ${block.prompt}`));
+            for (const option of block.options) { const label = element('label', 'choice-option'); const checkbox = document.createElement('input');
+              checkbox.type = 'checkbox'; checkbox.value = option.letter; checkbox.checked = block.numbers.some((number) => state.answers[String(number)] === option.letter); checkbox.disabled = state.finished;
+              checkbox.addEventListener('change', () => { const chosen = block.numbers.map((number) => state.answers[String(number)]).filter(Boolean);
+                if (checkbox.checked) { if (chosen.length >= 2) { checkbox.checked = false; return; } chosen.push(option.letter); }
+                else { const index = chosen.indexOf(option.letter); if (index >= 0) chosen.splice(index, 1); }
+                block.numbers.forEach((number, index) => { state.answers[String(number)] = chosen[index] || ''; }); save();
+              }); label.append(checkbox, element('strong', '', option.letter), document.createTextNode(option.text)); group.append(label);
+            }
+            if (state.finished) group.append(element('small', 'correct-answer', `参考：${block.numbers.map(correct).join(' / ')}`)); target.append(group);
+          }
+          if (block.type === 'match') {
+            target.append(optionBank(block.options, block.title === 'Resources' ? 'Opinions' : block.title === 'Duties' ? 'Abilities' : block.title || 'Options'));
+            if (block.title === 'Resources') target.append(element('h4', 'question-subheading', 'Resources'));
+            if (block.title === 'Duties') target.append(element('h4', 'question-subheading', 'Duties'));
+            const rows = element('div', 'match-rows'); for (const row of block.rows) {
+              const line = element('div', 'match-row'); line.append(element('strong', 'question-index', String(row.number)), element('span', '', row.text), answerControl(row.number, block.options.map((option) => option.letter))); rows.append(line);
+            } target.append(rows);
+          }
+          if (block.type === 'statements') {
+            const rows = element('div', 'statement-rows'); for (const row of block.rows) {
+              const line = element('div', 'statement-row'); line.append(element('strong', 'question-index', String(row.number)), element('span', '', row.text), answerControl(row.number, block.options)); rows.append(line);
+            } target.append(rows);
+          }
+        }
+      };
       const render = () => {
         const section = data.sections[state.active]; if (!section) return;
         const title = $<HTMLElement>('[data-section-title]'); if (title) title.textContent = section.title;
         const range = $<HTMLElement>('[data-section-range]'); if (range) range.textContent = data.subject === 'writing' ? `Task ${state.active + 1}` : `Questions ${section.first}–${section.last}`;
         const instructions = $<HTMLElement>('[data-instructions]'); if (instructions) instructions.textContent = section.instructions;
         const passage = $<HTMLElement>('[data-passage]'); passage?.replaceChildren();
-        for (const text of section.paragraphs) { const paragraph = document.createElement('p'); paragraph.textContent = text; passage?.append(paragraph); }
-        const images = $<HTMLElement>(data.subject === 'reading' ? '[data-reading-question-images]' : '[data-question-images]'); images?.replaceChildren();
-        for (const url of section.questionImages) { const link = document.createElement('a'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `放大查看${section.label}题图`); const image = document.createElement('img'); image.src = url; image.alt = `${section.label} 题目或图表，点击可放大`; image.loading = 'lazy'; link.append(image); images?.append(link); }
-        const transcript = $<HTMLDetailsElement>(data.subject === 'reading' ? '[data-ocr-right]' : '[data-ocr-left]');
-        const transcriptText = $<HTMLElement>(data.subject === 'reading' ? '[data-ocr-right-text]' : '[data-ocr-left-text]');
-        if (transcript) transcript.hidden = section.questionOcr.length === 0;
-        if (transcriptText) transcriptText.textContent = section.questionOcr.join('\n\n');
-        const sourceScan = $<HTMLDetailsElement>('[data-source-scan]'); const referenceImages = $<HTMLElement>('[data-reference-images]'); referenceImages?.replaceChildren();
-        if (sourceScan) sourceScan.hidden = section.referenceImages.length === 0;
-        for (const url of section.referenceImages) { const image = document.createElement('img'); image.src = url; image.alt = `${section.label} 原书扫描页`; image.loading = 'lazy'; referenceImages?.append(image); }
+        if (data.subject === 'reading' && passage) {
+          passage.append(element('p', 'passage-intro', `You should spend about 20 minutes on Questions ${section.first}–${section.last}, which are based on Reading Passage ${state.active + 1} below.`));
+          passage.append(element('h2', 'passage-title', section.title));
+        }
+        for (const [index, text] of section.paragraphs.entries()) { const paragraph = element('p', data.subject === 'reading' && index === 0 && state.active === 0 ? 'passage-lede' : '', text); passage?.append(paragraph); }
+        if (data.subject === 'reading' && state.active === 0 && passage) {
+          passage.append(element('p', 'passage-footnote', '* philanthropic: seeking to promote the welfare of others, often by charitable funding'));
+          passage.append(element('p', 'passage-footnote', '** Old Master: a highly respected artist of great skill who worked in Europe before about 1800'));
+          passage.append(element('p', 'passage-footnote', '*** Impressionist: an artist with a style of painting that developed in France in the late 1800s'));
+        }
+        const images = $<HTMLElement>('[data-question-images]'); images?.replaceChildren();
+        if (data.subject === 'writing') for (const url of section.questionImages) { const link = document.createElement('a'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `放大查看${section.label}图表`); const image = document.createElement('img'); image.src = url; image.alt = `${section.label} 图表，点击可放大`; image.loading = 'lazy'; link.append(image); images?.append(link); }
         const audioWrap = $<HTMLElement>('[data-audio-wrap]'); const audio = $<HTMLAudioElement>('[data-audio]');
         if (audioWrap && audio) { audioWrap.hidden = !section.audioUrl; audio.src = section.audioUrl || ''; }
+        if (data.subject !== 'writing') renderBlocks();
         const answers = $<HTMLElement>('[data-answer-scroll]'); answers?.replaceChildren();
         if (data.subject === 'writing') {
           const textarea = document.createElement('textarea'); textarea.className = 'essay'; textarea.setAttribute('aria-label', `Task ${state.active + 1} answer`); textarea.spellcheck = false; textarea.autocapitalize = 'off'; textarea.autocomplete = 'off'; textarea.value = state.answers[String(state.active + 1)] || ''; textarea.disabled = state.finished;
           textarea.addEventListener('input', () => { state.answers[String(state.active + 1)] = textarea.value; save(); const count = $<HTMLElement>('[data-word-count]'); if (count) count.textContent = `${words(textarea.value)} words`; }); answers?.append(textarea);
           const count = $<HTMLElement>('[data-word-count]'); if (count) count.textContent = `${words(textarea.value)} words`;
           const heading = $<HTMLElement>('[data-answer-heading]'); if (heading) heading.textContent = state.active === 0 ? 'at least 150 words' : 'at least 250 words';
-        } else {
-          for (let number = section.first; number <= section.last; number++) { const label = document.createElement('label'); label.className = 'answer-row'; const numberText = document.createElement('strong'); numberText.textContent = String(number); const input = document.createElement('input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('aria-label', `Question ${number}`); input.value = state.answers[String(number)] || ''; input.disabled = state.finished; input.addEventListener('input', () => { state.answers[String(number)] = input.value; save(); }); label.append(numberText, input); if (state.finished) { const reference = document.createElement('small'); reference.textContent = `参考：${data.answerKey[number - 1]?.replaceAll('|', ' / ') || '—'}`; label.append(reference); } answers?.append(label); }
+        } else if (data.subject === 'reading') {
           const heading = $<HTMLElement>('[data-answer-heading]'); if (heading) heading.textContent = `${section.last - section.first + 1} answers`;
         }
         const review = $<HTMLInputElement>('[data-review]'); if (review) review.checked = !!state.review[state.active];
@@ -169,27 +277,58 @@ const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.
   .toolbar { justify-self: end; display: flex; gap: 6px; }
   .statusbar button { padding: 4px 12px; border: 1px solid #68737a; border-radius: 4px; background: #edf0f2; color: #111; cursor: pointer; }
   .workspace { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(320px, 1fr); min-height: 0; gap: 10px; padding: 10px; }
+  .listening-workspace { grid-template-columns: minmax(0, 1fr); }
   .pane { display: flex; flex-direction: column; min-height: 0; min-width: 0; overflow: hidden; border: 1px solid #aeb7bf; border-radius: 6px; background: #fff; box-shadow: 0 1px 4px #1b2b3a26; }
   .pane-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; padding: 10px 16px; border-bottom: 1px solid #d6dadd; background: linear-gradient(#fff, #edf1f4); }
   .pane-head h1, .pane-head h2 { margin: 0; font-size: 17px; }
   .pane-head span { color: #4f5d68; font-size: 11px; font-weight: 700; text-transform: uppercase; }
   .question-scroll, .answer-scroll { flex: 1; min-height: 0; overflow: auto; padding: 20px 22px; line-height: 1.58; }
+  .listening-workspace .question-scroll { width: 100%; max-width: 1120px; margin-inline: auto; padding: 24px 34px 70px; }
   .instructions { padding: 13px 15px; border-left: 4px solid #d71920; background: #f7f8fa; }
   [data-passage] :global(p) { margin: 0 0 17px; }
+  [data-passage] :global(.passage-intro) { margin-bottom: 22px; font-style: italic; }
+  [data-passage] :global(.passage-title) { margin: 0 0 18px; text-align: center; font-size: 22px; }
+  [data-passage] :global(.passage-lede) { font-weight: 600; }
+  [data-passage] :global(.passage-footnote) { font-size: 12px; color: #525b63; }
   [data-question-images] :global(img) { display: block; width: 100%; height: auto; margin: 15px 0; border: 1px solid #c8cdd2; }
-  [data-question-images] :global(a), .reading-questions :global(a) { display: block; cursor: zoom-in; }
-  .reading-questions { flex: 0 0 55%; min-height: 0; overflow: auto; padding: 10px 20px; border-bottom: 1px solid #d6dadd; }
-  .reading-questions :global(img) { display: block; width: 100%; height: auto; margin: 10px 0; border: 1px solid #c8cdd2; }
-  .source-scan { margin: 20px 0; padding: 10px 12px; border: 1px solid #c8cdd2; border-radius: 5px; background: #f7f9fb; }
-  .source-scan summary { cursor: pointer; font-size: 13px; font-weight: 700; }
-  .source-scan :global(img) { display: block; width: 100%; height: auto; margin: 12px 0; border: 1px solid #c8cdd2; }
-  .ocr-transcript { margin: 15px 0; padding: 10px 12px; border: 1px solid #c8cdd2; border-radius: 5px; background: #f7f9fb; }
-  .ocr-transcript summary { cursor: pointer; font-size: 13px; font-weight: 700; }
-  .ocr-transcript pre { overflow-wrap: anywhere; white-space: pre-wrap; color: #20252a; font: 13px/1.55 Arial, sans-serif; }
+  [data-question-images] :global(a) { display: block; cursor: zoom-in; }
+  .exam :global(.question-heading) { margin: 32px 0 8px; font-size: 18px; font-style: italic; font-weight: 700; }
+  .exam :global(.question-heading:first-child) { margin-top: 0; }
+  .exam :global(.question-subheading) { margin: 24px 0 12px; font-size: 17px; text-align: center; }
+  .exam :global(.question-instruction) { margin: 8px 0; font-style: italic; }
+  .exam :global(.question-paragraph) { margin: 15px 0; }
+  .exam :global(.table-wrap) { max-width: 100%; overflow-x: auto; margin: 20px 0 30px; }
+  .exam :global(.table-title) { margin: 0 0 8px; text-align: center; font-size: 18px; }
+  .exam :global(.table-wrap table) { width: 100%; min-width: 670px; border-collapse: collapse; }
+  .exam :global(.table-wrap th), .exam :global(.table-wrap td) { width: 25%; padding: 12px; border: 1px solid #879099; text-align: left; vertical-align: top; white-space: pre-line; }
+  .exam :global(.table-wrap th) { background: #f1f3f4; text-align: center; }
+  .exam :global(.note-box), .exam :global(.summary-box) { margin: 18px 0 30px; padding: 18px 22px; border: 1px solid #879099; background: #fff; }
+  .exam :global(.note-title) { margin: 0 0 14px; font-size: 18px; text-align: center; }
+  .exam :global(.note-heading) { margin: 16px 0 6px; font-size: 15px; }
+  .exam :global(.note-intro) { margin: 3px 0; }
+  .exam :global(.note-list) { margin: 0 0 8px; padding-left: 25px; }
+  .exam :global(.note-list li) { margin: 8px 0; padding-left: 4px; }
+  .exam :global(.summary-box p) { margin: 10px 0 16px; }
+  .exam :global(.inline-answer) { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; margin: 2px 3px; vertical-align: middle; white-space: normal; }
+  .exam :global(.answer-number) { font-weight: 700; }
+  .exam :global(.inline-answer input), .exam :global(.inline-answer select) { width: 148px; max-width: 100%; min-height: 34px; padding: 5px 8px; border: 1px solid #83909b; border-radius: 3px; background: #fff; color: #111; }
+  .exam :global(.inline-answer select) { width: auto; min-width: 83px; }
+  .exam :global(.inline-answer input:focus), .exam :global(.inline-answer select:focus) { outline: 2px solid #0d72ac; outline-offset: 1px; }
+  .exam :global(.correct-answer) { display: inline-block; margin-left: 8px; color: #356843; font-size: 12px; font-weight: 700; }
+  .exam :global(.choice-question) { margin: 15px 0 24px; padding: 0; border: 0; }
+  .exam :global(.choice-question legend) { margin-bottom: 9px; font-weight: 700; }
+  .exam :global(.choice-option) { display: flex; align-items: baseline; gap: 9px; margin: 3px 0 3px 25px; cursor: pointer; }
+  .exam :global(.choice-option input) { flex: 0 0 auto; accent-color: #0d72ac; }
+  .exam :global(.choice-option strong) { min-width: 17px; }
+  .exam :global(.option-bank) { margin: 18px 0 22px; padding: 14px 18px; border: 1px solid #89929a; }
+  .exam :global(.option-bank h4) { margin: 0 0 10px; text-align: center; }
+  .exam :global(.option-grid) { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 6px 18px; }
+  .exam :global(.option-bank-row) { display: grid; grid-template-columns: 20px 1fr; gap: 8px; }
+  .exam :global(.match-row), .exam :global(.statement-row) { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: start; gap: 9px; margin: 13px 0; }
+  .exam :global(.match-row .answer-number), .exam :global(.statement-row .answer-number) { display: none; }
+  .exam :global(.match-row .inline-answer), .exam :global(.statement-row .inline-answer) { margin: -4px 0 0; }
+  .exam :global(.statement-row .inline-answer select) { min-width: 122px; }
   .audio-wrap { margin: 16px 0; } audio { width: 100%; }
-  :global(.answer-row) { display: grid; grid-template-columns: 32px 1fr; align-items: center; gap: 8px; margin: 0 0 11px; }
-  :global(.answer-row input) { width: 100%; min-height: 38px; padding: 7px 10px; border: 1px solid #8d969d; border-radius: 3px; background: #fff; color: #111; }
-  :global(.answer-row small) { grid-column: 2; color: #4f5d68; font-size: 12px; }
   :global(.essay) { display: block; width: 100%; height: 100%; min-height: 200px; padding: 15px; resize: none; border: 1px solid #8d969d; border-radius: 2px; outline: none; background: #fff; color: #111; }
   .word-count { display: flex; justify-content: space-between; margin: 0; padding: 5px 16px 9px; color: #4f5961; font-size: 12px; }
   .test-nav { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 10px; padding: 8px 12px; background: linear-gradient(#35444d, #121d23); color: #fff; font-size: 13px; }
@@ -211,6 +350,6 @@ const payload = JSON.stringify({ subject, sections, answerKey, accountId: auth?.
   .modal-actions .primary { border-color: #075683; background: #0d72ac; color: #fff; }
   .result-dialog { width: min(460px, calc(100vw - 32px)); padding: 22px; border: 0; border-radius: 6px; background: #fff; color: #20252a; box-shadow: 0 18px 60px #0008; }
   .result-dialog::backdrop { background: #10181fc7; } .result-dialog form { margin-top: 20px; text-align: right; }
-  @media (max-width: 820px) { .exam { grid-template-rows: 62px 42px minmax(0, 1fr) 66px; } .brand strong { font-size: 29px; } .brand span { display: none; } .workspace { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); } .test-nav { grid-template-columns: auto 1fr auto; } .test-nav label { font-size: 0; } }
-  @media (max-width: 560px) { .brandbar { padding: 0 10px; } .brand strong { font-size: 24px; } .subjects { gap: 3px; } .subjects a { padding: 7px 5px; font-size: 11px; } .statusbar { grid-template-columns: 1fr auto; } .statusbar > span { display: none; } .statusbar strong { justify-self: start; } .toolbar button { padding: 4px 6px; font-size: 11px; } .section-tabs :global(button) { padding: 6px; font-size: 11px; } .test-nav { grid-template-columns: 24px 1fr auto; gap: 4px; padding: 6px; } .nav-actions { gap: 3px; } .nav-actions button { padding: 5px 7px; } .question-scroll, .answer-scroll { padding: 12px; } }
+  @media (max-width: 820px) { .exam { grid-template-rows: 62px 42px minmax(0, 1fr) 66px; } .brand strong { font-size: 29px; } .brand span { display: none; } .workspace { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); } .listening-workspace { grid-template-rows: minmax(0, 1fr); } .test-nav { grid-template-columns: auto 1fr auto; } .test-nav label { font-size: 0; } }
+  @media (max-width: 560px) { .brandbar { padding: 0 10px; } .brand strong { font-size: 24px; } .subjects { gap: 3px; } .subjects a { padding: 7px 5px; font-size: 11px; } .statusbar { grid-template-columns: 1fr auto; } .statusbar > span { display: none; } .statusbar strong { justify-self: start; } .toolbar button { padding: 4px 6px; font-size: 11px; } .section-tabs :global(button) { padding: 6px; font-size: 11px; } .test-nav { grid-template-columns: 24px 1fr auto; gap: 4px; padding: 6px; } .nav-actions { gap: 3px; } .nav-actions button { padding: 5px 7px; } .question-scroll, .answer-scroll, .listening-workspace .question-scroll { padding: 12px; } .exam :global(.table-wrap table) { min-width: 600px; } .exam :global(.match-row), .exam :global(.statement-row) { grid-template-columns: 25px 1fr; } .exam :global(.match-row .inline-answer), .exam :global(.statement-row .inline-answer) { grid-column: 2; margin: 0; } }
 </style>
