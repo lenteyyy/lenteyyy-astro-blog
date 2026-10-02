@@ -10,6 +10,7 @@
     "build": "astro build",
     "check": "astro check",
     "lint": "astro check",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "preview": "astro preview",
     "content:sync": "node scripts/sync-media.mjs",
     "content:validate": "node scripts/validate-content.mjs",

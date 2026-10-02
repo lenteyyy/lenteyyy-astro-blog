@@ -30,7 +30,17 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 			if (challenge) await client.from('ielts_verification_codes').update({ attempts: Math.min(10, challenge.attempts + 1) }).eq('email_hash', emailHash);
 			return json({ error: 'invalid_code' }, 401);
 		}
-		await client.from('ielts_verification_codes').delete().eq('email_hash', emailHash);
+		// Consume the exact challenge atomically: concurrent/replayed requests cannot reset twice.
+		const { data: consumed, error: consumeError } = await client.from('ielts_verification_codes')
+			.delete()
+			.eq('email_hash', emailHash)
+			.eq('code_hash', expected)
+			.gt('expires_at', new Date().toISOString())
+			.lt('attempts', 5)
+			.select('email_hash')
+			.maybeSingle();
+		if (consumeError) throw consumeError;
+		if (!consumed) return json({ error: 'invalid_code' }, 401);
 		let existing: Awaited<ReturnType<typeof client.auth.admin.listUsers>>['data']['users'][number] | undefined;
 		for (let page = 1; page <= 20 && !existing; page += 1) {
 			const listed = await client.auth.admin.listUsers({ page, perPage: 1000 });
