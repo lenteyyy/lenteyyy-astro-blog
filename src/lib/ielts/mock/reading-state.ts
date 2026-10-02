@@ -1,4 +1,9 @@
-export type HighlightRange = { start: number; end: number };
+export type HighlightColor = 'yellow' | 'blue';
+export type HighlightRange = { start: number; end: number; color?: HighlightColor };
+
+export function examFontSize(value: unknown): 16 | 18 | 20 {
+  return value === 18 || value === 20 ? value : 16;
+}
 
 /** Store offsets, never saved HTML. Invalid browser storage must not affect rendering. */
 export function normalizeHighlights(value: unknown, length: number): HighlightRange[] {
@@ -6,11 +11,15 @@ export function normalizeHighlights(value: unknown, length: number): HighlightRa
   const ranges = value.slice(0, 500).filter((item): item is HighlightRange =>
     !!item && Number.isInteger(item.start) && Number.isInteger(item.end) &&
     item.start >= 0 && item.end > item.start && item.end <= length,
-  ).map(({ start, end }) => ({ start, end })).sort((a, b) => a.start - b.start);
+  ).map(({ start, end, color }) => ({ start, end, color: color === 'blue' ? 'blue' as const : 'yellow' as const }));
+  // Later selections repaint only their overlap; other colours remain intact.
+  let disjoint: HighlightRange[] = [];
+  for (const range of ranges) disjoint = [...removeHighlight(disjoint, range), range];
+  disjoint.sort((a, b) => a.start - b.start);
   const merged: HighlightRange[] = [];
-  for (const range of ranges) {
+  for (const range of disjoint) {
     const previous = merged.at(-1);
-    if (previous && range.start <= previous.end) previous.end = Math.max(previous.end, range.end);
+    if (previous && range.start <= previous.end && range.color === previous.color) previous.end = Math.max(previous.end, range.end);
     else merged.push(range);
   }
   return merged;
@@ -20,8 +29,8 @@ export function removeHighlight(ranges: HighlightRange[], selection: HighlightRa
   return ranges.flatMap((range) => {
     if (range.end <= selection.start || range.start >= selection.end) return [range];
     const result: HighlightRange[] = [];
-    if (range.start < selection.start) result.push({ start: range.start, end: selection.start });
-    if (range.end > selection.end) result.push({ start: selection.end, end: range.end });
+    if (range.start < selection.start) result.push({ ...range, end: selection.start });
+    if (range.end > selection.end) result.push({ ...range, start: selection.end });
     return result;
   });
 }

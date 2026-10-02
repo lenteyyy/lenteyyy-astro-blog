@@ -1,4 +1,4 @@
-import { normalizeHighlights, removeHighlight, splitPercent, type HighlightRange } from './reading-state';
+import { normalizeHighlights, removeHighlight, splitPercent, type HighlightColor, type HighlightRange } from './reading-state';
 
 export function setupReadingTools(root: HTMLElement, hooks: {
   getSplit: () => number;
@@ -10,7 +10,7 @@ export function setupReadingTools(root: HTMLElement, hooks: {
   const divider = root.querySelector<HTMLElement>('[data-divider]')!;
   const passage = root.querySelector<HTMLElement>('[data-passage]')!;
   const tools = root.querySelector<HTMLElement>('[data-highlight-tools]')!;
-  const add = tools.querySelector<HTMLButtonElement>('[data-highlight-add]')!;
+  const adds = tools.querySelectorAll<HTMLButtonElement>('[data-highlight-add]');
   const remove = tools.querySelector<HTMLButtonElement>('[data-highlight-remove]')!;
   const narrow = window.matchMedia('(max-width: 699px)');
   let pointer: number | null = null;
@@ -81,6 +81,7 @@ export function setupReadingTools(root: HTMLElement, hooks: {
         const from = Math.max(0, range.start - start); const to = Math.min(text.length, range.end - start);
         fragment.append(document.createTextNode(text.slice(cursor, from)));
         const mark = document.createElement('mark'); mark.dataset.readingHighlight = '';
+        mark.dataset.color = range.color || 'yellow';
         mark.dataset.start = String(range.start); mark.dataset.end = String(range.end);
         mark.textContent = text.slice(from, to); fragment.append(mark); cursor = to;
       }
@@ -110,13 +111,14 @@ export function setupReadingTools(root: HTMLElement, hooks: {
     if (mark) show({ start: Number(mark.dataset.start), end: Number(mark.dataset.end) }, mark.getBoundingClientRect());
   });
   tools.addEventListener('pointerdown', (event) => event.preventDefault());
-  const change = (erase: boolean) => {
+  const change = (color?: HighlightColor) => {
     if (!pending) return;
     const current = hooks.getHighlights();
-    const ranges = erase ? removeHighlight(current, pending) : normalizeHighlights([...current, pending], passage.textContent?.length || 0);
+    const ranges = color ? normalizeHighlights([...current, { ...pending, color }], passage.textContent?.length || 0) : removeHighlight(current, pending);
     window.getSelection()?.removeAllRanges(); hooks.setHighlights(ranges); paint(); hide();
   };
-  add.addEventListener('click', () => change(false)); remove.addEventListener('click', () => change(true));
+  for (const add of adds) add.addEventListener('click', () => change(add.dataset.highlightAdd === 'blue' ? 'blue' : 'yellow'));
+  remove.addEventListener('click', () => change());
   document.addEventListener('pointerdown', (event) => { if (!tools.contains(event.target as Node) && !passage.contains(event.target as Node)) hide(); });
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { window.getSelection()?.removeAllRanges(); hide(); } });
   for (const pane of root.querySelectorAll('.question-scroll, .answer-scroll')) pane.addEventListener('scroll', hide);
