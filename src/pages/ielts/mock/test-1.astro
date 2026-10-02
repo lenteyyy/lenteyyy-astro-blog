@@ -25,6 +25,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
 <IeltsLayout title={`剑雅21 Test 1 · ${labels[subject]}`} description="雅思机考练习页面。" telemetry={false}>
   <main class="exam" data-exam>
     <header class="brandbar">
+      <label class="font-size-control">字号 <select data-font-size aria-label="练习字体大小"><option value="16">标准</option><option value="18">较大</option><option value="20">最大</option></select></label>
       <nav class="subjects" aria-label="选择科目">
         {(['listening', 'reading', 'writing'] as const).map((item) => <a class:list={[{ active: subject === item }]} href={`/ielts/mock/test-1?subject=${item}`}>{labels[item]}</a>)}
       </nav>
@@ -49,7 +50,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
         {subject === 'writing' && <p class="word-count"><span data-word-count>0 words</span><span data-save-state>仅保存在本机浏览器</span></p>}
       </section>}
     </div>
-    {subject === 'reading' && <div class="highlight-tools" data-highlight-tools role="group" aria-label="原文高亮" hidden><button type="button" data-highlight-add>高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>}
+    {subject === 'reading' && <div class="highlight-tools" data-highlight-tools role="group" aria-label="原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>}
     <nav class="test-nav" aria-label="试卷导航"><label><input type="checkbox" data-review /> Mark for review</label><div class="section-tabs" data-section-tabs></div><div class="nav-actions"><button type="button" data-prev aria-label="上一部分">‹</button><button type="button" data-next aria-label="下一部分">›</button><button type="button" class="submit" data-submit>Submit</button></div></nav>
   </main>
 
@@ -59,18 +60,18 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
 
   <script>
     import { setupReadingTools } from '../../../lib/ielts/mock/reading-tools';
-    import { normalizeHighlights, type HighlightRange } from '../../../lib/ielts/mock/reading-state';
+    import { examFontSize, normalizeHighlights, type HighlightRange } from '../../../lib/ielts/mock/reading-state';
     import type { Choice, QuestionBlock } from '../../../lib/ielts/mock/test1-questions';
     type Section = { label: string; first: number; last: number; title: string; instructions: string; paragraphs: string[]; questionImages: string[]; audioUrl: string };
     type Payload = { subject: 'listening' | 'reading' | 'writing'; sections: Section[]; answerKey: string[]; blocks: QuestionBlock[][]; accountId: string };
-    type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; highlights: Record<string, HighlightRange[]> };
+    type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; fontSize: number; highlights: Record<string, HighlightRange[]> };
     const root = document.querySelector<HTMLElement>('[data-exam]');
     const parsed = document.querySelector<HTMLElement>('#exam-payload');
     if (root && parsed) {
       const data = JSON.parse(parsed.textContent || '{}') as Payload;
       const key = `lenteyyy-mock-c21-t1-${data.subject}-${data.accountId}`;
       const duration = data.subject === 'listening' ? 35 * 60 : 60 * 60;
-      const defaults = (): Saved => ({ version: 1, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, highlights: {} });
+      const defaults = (): Saved => ({ version: 1, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, fontSize: 16, highlights: {} });
       const load = (): Saved => {
         try {
           const value = JSON.parse(localStorage.getItem(key) || 'null'); const clean = defaults();
@@ -83,6 +84,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
             if (/^(?:[1-9]|[1-3]\d|40)$/.test(number) && typeof answer === 'string') clean.answers[number] = answer.slice(0, data.subject === 'writing' ? 100000 : 1000);
           }
           clean.split = typeof value.split === 'number' && Number.isFinite(value.split) ? Math.max(0, Math.min(100, value.split)) : 50;
+          clean.fontSize = examFontSize(value.fontSize);
           if (value.highlights && typeof value.highlights === 'object') for (let index = 0; index < data.sections.length; index++) clean.highlights[String(index)] = normalizeHighlights(value.highlights[String(index)], 200000);
           return clean;
         } catch { return defaults(); }
@@ -93,6 +95,13 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
       const dialog = document.querySelector<HTMLDialogElement>('[data-dialog]');
       const dialogBody = document.querySelector<HTMLElement>('[data-dialog-body]');
       const save = () => { try { localStorage.setItem(key, JSON.stringify(state)); } catch { const status = $<HTMLElement>('[data-save-state]'); if (status) status.textContent = '本机存储不可用，离开页面会丢失答案'; } };
+      const sizeControl = $<HTMLSelectElement>('[data-font-size]');
+      const applyFontSize = () => {
+        root.style.setProperty('--exam-font-size', `${examFontSize(state.fontSize)}px`);
+        if (sizeControl) sizeControl.value = String(examFontSize(state.fontSize));
+      };
+      sizeControl?.addEventListener('change', () => { state.fontSize = examFontSize(Number(sizeControl.value)); applyFontSize(); save(); });
+      applyFontSize();
       const readingTools = data.subject === 'reading' ? setupReadingTools(root, {
         getSplit: () => state.split, setSplit: (value) => { state.split = value; save(); },
         getHighlights: () => state.highlights[String(state.active)] || [],
@@ -249,7 +258,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
         const next = $<HTMLButtonElement>('[data-next]'); if (next) next.disabled = state.active === data.sections.length - 1;
         readingTools?.render();
       };
-      const enter = (fresh: boolean) => { if (fresh) { state = defaults(); state.started = true; state.deadline = Date.now() + duration * 1000; save(); } overlay?.remove(); render(); updateClock(); };
+      const enter = (fresh: boolean) => { if (fresh) { const fontSize = state.fontSize; state = defaults(); state.fontSize = fontSize; state.started = true; state.deadline = Date.now() + duration * 1000; save(); } applyFontSize(); overlay?.remove(); render(); updateClock(); };
       const ready = document.querySelector<HTMLInputElement>('[data-ready]'); const start = document.querySelector<HTMLButtonElement>('[data-start-button]');
       ready?.addEventListener('change', () => { if (start) start.disabled = !ready.checked; }); start?.addEventListener('click', () => enter(true));
       const resume = document.querySelector<HTMLButtonElement>('[data-resume]'); if (resume) resume.disabled = !state.started; resume?.addEventListener('click', () => enter(false));
@@ -280,7 +289,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
         }
       });
       document.querySelector<HTMLButtonElement>('[data-reset]')?.addEventListener('click', () => { if (!confirm('清除本次练习的全部答案并重新开始？')) return; localStorage.removeItem(key); location.reload(); });
-      $<HTMLButtonElement>('[data-help]')?.addEventListener('click', () => showDialog(`点击底部切换部分；答案自动保存在本机浏览器。${data.subject === 'reading' ? '拖动中间分隔条调整宽度（也可用方向键）；选中原文后点击高亮，选中高亮文字或点击色块可取消。窄屏上下排列。' : ''}请勿在共用设备上留下个人信息。`));
+      $<HTMLButtonElement>('[data-help]')?.addEventListener('click', () => showDialog(`点击底部切换部分；答案自动保存在本机浏览器。顶部可切换字号。${data.subject === 'reading' ? '拖动中间分隔条调整宽度（也可用方向键）；选中原文后选择黄色或蓝色高亮，再次选中可改色或取消。窄屏上下排列。' : ''}请勿在共用设备上留下个人信息。`));
       $<HTMLButtonElement>('[data-clear]')?.addEventListener('click', () => { if (!confirm('清除本机保存的本次练习答案？')) return; localStorage.removeItem(key); location.reload(); });
       updateClock(); window.setInterval(updateClock, 1000);
     }
@@ -291,7 +300,9 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
   :global(body.ielts-site) { overflow: hidden; background: #dce6f2; }
   .exam { height: 100dvh; display: grid; grid-template-rows: 52px 42px minmax(0, 1fr) 66px; color: #20252a; color-scheme: light; font: 16px/1.55 Arial, Helvetica, sans-serif; }
   button, input, select, textarea { font: inherit; }
-  .brandbar { display: flex; align-items: center; justify-content: flex-end; padding: 0 16px; background: #fff; border-top: 3px solid #d71920; border-bottom: 1px solid #d9dde1; }
+  .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 16px; background: #fff; border-top: 3px solid #d71920; border-bottom: 1px solid #d9dde1; }
+  .font-size-control { display: flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; }
+  .font-size-control select { min-height: 34px; padding: 4px 6px; border: 1px solid #83909b; border-radius: 4px; background: #fff; color: #20252a; }
   .subjects { display: flex; gap: 8px; }
   .subjects a { padding: 9px 12px; border: 1px solid #c8cdd2; border-radius: 4px; color: #27343b; font-size: 13px; }
   .subjects a.active { color: #fff; background: #263238; border-color: #263238; }
@@ -307,36 +318,39 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
   .resizing, .resizing * { cursor: col-resize !important; user-select: none !important; }
   .highlight-tools { position: fixed; z-index: 20; display: flex; gap: 4px; max-width: calc(100vw - 16px); padding: 5px; border: 1px solid #83909b; border-radius: 4px; background: #fff; box-shadow: 0 3px 12px #0003; }
   .highlight-tools button { min-height: 36px; padding: 4px 10px; border: 1px solid #83909b; border-radius: 3px; color: #20252a; background: #f7f8fa; cursor: pointer; }
+  .highlight-tools [data-highlight-add="yellow"] { background: #fff09a; }
+  .highlight-tools [data-highlight-add="blue"] { background: #bce4ff; }
   [data-passage] :global(mark[data-reading-highlight]) { background: #fff09a; color: inherit; padding: 0; }
+  [data-passage] :global(mark[data-color="blue"]) { background: #bce4ff; }
   .listening-workspace { grid-template-columns: minmax(0, 1fr); }
   .pane { display: flex; flex-direction: column; min-height: 0; min-width: 0; overflow: hidden; border: 1px solid #aeb7bf; border-radius: 6px; background: #fff; box-shadow: 0 1px 4px #1b2b3a26; }
   .pane-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 8px; padding: 10px 16px; border-bottom: 1px solid #d6dadd; background: linear-gradient(#fff, #edf1f4); }
   .pane-head h1, .pane-head h2 { margin: 0; font-size: 17px; }
   .pane-head span { color: #4f5d68; font-size: 11px; font-weight: 700; text-transform: uppercase; }
-  .question-scroll, .answer-scroll { flex: 1; min-height: 0; overflow: auto; padding: 20px 22px; line-height: 1.6; overflow-wrap: anywhere; }
+  .question-scroll, .answer-scroll { flex: 1; min-height: 0; overflow: auto; padding: 20px 22px; font-size: var(--exam-font-size, 16px); line-height: 1.6; overflow-wrap: anywhere; }
   .reading-workspace .answer-pane { container-type: inline-size; container-name: questions; }
   .listening-workspace .question-scroll { width: 100%; max-width: 1120px; margin-inline: auto; padding: 24px 34px 70px; }
   .instructions { padding: 13px 15px; border-left: 4px solid #d71920; background: #f7f8fa; }
   [data-passage] :global(p) { margin: 0 0 17px; }
   [data-passage] :global(.passage-intro) { margin-bottom: 22px; font-style: italic; }
-  [data-passage] :global(.passage-title) { margin: 0 0 18px; text-align: center; font-size: 22px; }
+  [data-passage] :global(.passage-title) { margin: 0 0 18px; text-align: center; font-size: 1.375em; }
   [data-passage] :global(.passage-lede) { font-weight: 600; }
-  [data-passage] :global(.passage-footnote) { font-size: 12px; color: #525b63; }
+  [data-passage] :global(.passage-footnote) { font-size: .75em; color: #525b63; }
   [data-question-images] :global(img) { display: block; width: 100%; height: auto; margin: 15px 0; border: 1px solid #c8cdd2; }
   [data-question-images] :global(a) { display: block; cursor: zoom-in; }
-  .exam :global(.question-heading) { margin: 32px 0 8px; font-size: 18px; font-style: italic; font-weight: 700; }
+  .exam :global(.question-heading) { margin: 32px 0 8px; font-size: 1.125em; font-style: italic; font-weight: 700; }
   .exam :global(.question-heading:first-child) { margin-top: 0; }
-  .exam :global(.question-subheading) { margin: 24px 0 12px; font-size: 17px; text-align: center; }
+  .exam :global(.question-subheading) { margin: 24px 0 12px; font-size: 1.0625em; text-align: center; }
   .exam :global(.question-instruction) { margin: 8px 0; font-style: italic; }
   .exam :global(.question-paragraph) { margin: 15px 0; }
   .exam :global(.table-wrap) { max-width: 100%; overflow-x: auto; margin: 20px 0 30px; }
-  .exam :global(.table-title) { margin: 0 0 8px; text-align: center; font-size: 18px; }
+  .exam :global(.table-title) { margin: 0 0 8px; text-align: center; font-size: 1.125em; }
   .exam :global(.table-wrap table) { width: 100%; min-width: 670px; border-collapse: collapse; }
   .exam :global(.table-wrap th), .exam :global(.table-wrap td) { width: 25%; padding: 12px; border: 1px solid #879099; text-align: left; vertical-align: top; white-space: pre-line; }
   .exam :global(.table-wrap th) { background: #f1f3f4; text-align: center; }
   .exam :global(.note-box), .exam :global(.summary-box) { margin: 18px 0 30px; padding: 18px 22px; border: 1px solid #879099; background: #fff; }
-  .exam :global(.note-title) { margin: 0 0 14px; font-size: 18px; text-align: center; }
-  .exam :global(.note-heading) { margin: 16px 0 6px; font-size: 15px; }
+  .exam :global(.note-title) { margin: 0 0 14px; font-size: 1.125em; text-align: center; }
+  .exam :global(.note-heading) { margin: 16px 0 6px; font-size: .9375em; }
   .exam :global(.note-intro) { margin: 3px 0; }
   .exam :global(.note-list) { margin: 0 0 8px; padding-left: 25px; }
   .exam :global(.note-list li) { margin: 8px 0; padding-left: 4px; }
@@ -365,7 +379,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
   .exam :global(.match-row .inline-answer), .exam :global(.statement-row .inline-answer) { margin: -4px 0 0; }
   .exam :global(.statement-row .inline-answer select) { min-width: 122px; }
   .audio-wrap { margin: 16px 0; } audio { width: 100%; }
-  :global(.essay) { display: block; width: 100%; height: 100%; min-height: 200px; padding: 15px; resize: none; border: 1px solid #8d969d; border-radius: 2px; outline: none; background: #fff; color: #111; }
+  :global(.essay) { display: block; width: 100%; height: 100%; min-height: 200px; padding: 15px; font: inherit; resize: none; border: 1px solid #8d969d; border-radius: 2px; outline: none; background: #fff; color: #111; }
   .word-count { display: flex; justify-content: space-between; margin: 0; padding: 5px 16px 9px; color: #4f5961; font-size: 12px; }
   .test-nav { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 10px; padding: 8px 12px; background: linear-gradient(#35444d, #121d23); color: #fff; font-size: 13px; }
   .test-nav label { display: flex; align-items: center; gap: 8px; }

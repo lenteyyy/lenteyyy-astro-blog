@@ -21,7 +21,7 @@ test('mouse, touch and pen drags share bounds, release capture and handle cancel
   };
   const workspace = {clientWidth: 1000, getBoundingClientRect: () => ({left: 0}), style: {setProperty(key, value) {styles.set(key, value);}}};
   const add = target('add'); const remove = target('remove');
-  const tools = {...target('tools'), querySelector: (selector) => selector.includes('-add') ? add : remove};
+  const tools = {...target('tools'), querySelector: () => remove, querySelectorAll: () => [add]};
   const passage = target('passage');
   const root = {
     querySelector: (selector) => selector === '.reading-workspace' ? workspace : selector === '[data-divider]' ? divider : selector === '[data-passage]' ? passage : tools,
