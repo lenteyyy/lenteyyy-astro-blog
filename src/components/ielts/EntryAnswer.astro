@@ -1,0 +1,8 @@
+---
+import type { EntryQuestion } from '../../lib/ielts/entry-test/answers';
+const { question, prefix = '' } = Astro.props as { question: EntryQuestion; prefix?: string };
+---
+<label class="entry-answer">
+  <span>{prefix} Question {question.number}</span>
+  {question.options.length ? <select aria-label={`${prefix} Question ${question.number}`} data-entry-answer={question.id}><option value="">选择答案</option>{question.options.map(option => <option value={option}>{option}</option>)}</select> : <input type="text" aria-label={`${prefix} Question ${question.number}`} data-entry-answer={question.id} maxlength="200" autocomplete="off" spellcheck="false" />}
+</label>

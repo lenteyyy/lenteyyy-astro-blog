@@ -1,0 +1,620 @@
+{
+  "title": "入学基础测试",
+  "version": 1,
+  "intro": [
+    "先独立把这份测试做完。不会的可以留空，拿不准的先选一个。我需要看你现在真正能做出来多少，后面的课才好安排。",
+    "不要查词或使用 AI。听力由老师播放或朗读，只听一遍。写作先做选择题，再在答题框里写完整作文；写不出来就写到你能写的地方。",
+    "这里不计时，也不自动评分。做完导出答案，把卡住的地方一起发给我。"
+  ],
+  "listening": {
+    "title": "Listening · 听力",
+    "instructions": [
+      "You will hear a lecture on community renewable energy projects. Answer Questions 1–10.",
+      "听力由老师播放或朗读。本页不提供听力原文。"
+    ],
+    "groups": [
+      {
+        "title": "Questions 1–3",
+        "instructions": [
+          "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "Funding Sources for Renewable Energy Case Studies"
+        ],
+        "bank": [],
+        "questions": [
+          {
+            "id": "L1",
+            "number": 1,
+            "prompt": "Fenwick's solar panel scheme was funded through a regional ____________.",
+            "options": [],
+            "choices": []
+          },
+          {
+            "id": "L2",
+            "number": 2,
+            "prompt": "The Dunmore Bay wind farm is owned collectively as a ____________.",
+            "options": [],
+            "choices": []
+          },
+          {
+            "id": "L3",
+            "number": 3,
+            "prompt": "The Ashgrove Valley hydroelectric scheme was funded entirely through ____________.",
+            "options": [],
+            "choices": []
+          }
+        ]
+      },
+      {
+        "title": "Questions 4–6",
+        "instructions": [
+          "Choose the correct letter, A, B or C."
+        ],
+        "bank": [],
+        "questions": [
+          {
+            "id": "L4",
+            "number": 4,
+            "prompt": "The speaker believes the strongest case study is",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": [
+              "A. Fenwick",
+              "B. Dunmore Bay",
+              "C. Ashgrove Valley"
+            ]
+          },
+          {
+            "id": "L5",
+            "number": 5,
+            "prompt": "The speaker suggests that Fenwick's main weakness is that",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": [
+              "A. too few households took part.",
+              "B. community enthusiasm may decline once the subsidy ends.",
+              "C. the funding source was too restrictive."
+            ]
+          },
+          {
+            "id": "L6",
+            "number": 6,
+            "prompt": "The speaker considers Ashgrove Valley the weakest example mainly because it is",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": [
+              "A. poorly funded.",
+              "B. difficult to replicate on a larger scale.",
+              "C. lacking in community support."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Questions 7–10",
+        "instructions": [
+          "Which project matches each description? Choose the correct letter, A, B or C. You may use any letter more than once."
+        ],
+        "bank": [
+          "A. Fenwick",
+          "B. Dunmore Bay",
+          "C. Ashgrove Valley"
+        ],
+        "questions": [
+          {
+            "id": "L7",
+            "number": 7,
+            "prompt": "Defined by the scale and speed of household uptake",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": []
+          },
+          {
+            "id": "L8",
+            "number": 8,
+            "prompt": "Defined by how profits are shared among the community",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": []
+          },
+          {
+            "id": "L9",
+            "number": 9,
+            "prompt": "Defined by complete independence from institutional funding",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": []
+          },
+          {
+            "id": "L10",
+            "number": 10,
+            "prompt": "Has a clear advantage in terms of replicability",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices": []
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "title": "Reading · 阅读",
+    "instructions": [
+      "Read the passage and answer Questions 1–14."
+    ],
+    "passageTitle": "Urban Beekeeping and the Future of City Ecosystems",
+    "paragraphs": [
+      "A  Over the past two decades, a quiet but significant shift has taken place on the rooftops of major cities around the world. Where once only ventilation units and water tanks occupied this unused space, wooden hives now sit alongside them, housing colonies of honeybees. London, New York, Paris and Tokyo have all seen a marked rise in the number of registered urban apiaries, with some cities reporting a tenfold increase in hive numbers since 2005. This movement, commonly referred to as urban beekeeping, has moved from a niche hobby practised by a handful of enthusiasts to a phenomenon embraced by hotels, corporate offices, schools and even government buildings.",
+      "B  The appeal of keeping bees in an urban setting is not immediately obvious. Cities are, after all, dominated by concrete, glass and tarmac rather than the open meadows traditionally associated with pollinator-friendly environments. Yet research conducted by entomologists at several European universities has demonstrated that urban environments can, somewhat counterintuitively, support healthier bee colonies than rural ones. This is partly because the diversity of plant species found in city parks, private gardens and roadside verges provides bees with a more varied diet than the vast monoculture fields typical of modern agriculture, where a single crop such as wheat or rapeseed may dominate the landscape for miles. In addition, urban areas tend to have lower concentrations of the pesticides that have been strongly implicated in colony collapse disorder, a phenomenon in which worker bees abruptly disappear from a hive, leaving the queen and immature bees to perish.",
+      "C  Despite these apparent benefits, the rapid expansion of urban beekeeping has not gone without criticism. Some ecologists have raised concerns that an excessive concentration of honeybee hives within a limited geographic area can place unsustainable pressure on local nectar and pollen resources. Honeybees, unlike many native pollinator species such as solitary bees and certain species of hoverfly, are highly efficient foragers capable of travelling several kilometres from their hive and recruiting other bees to profitable flower patches through a distinctive dance behaviour. Critics argue that where hive density becomes too high, honeybees may effectively outcompete native pollinators for limited floral resources, inadvertently threatening the very biodiversity that beekeeping initiatives often claim to support. A widely cited study conducted in a major European capital found that areas with the highest density of registered hives also showed a measurable decline in sightings of several native bee species over a five-year period.",
+      "D  In response to such concerns, a number of cities have begun introducing regulations governing the registration, density and placement of urban hives. Some municipal authorities now require prospective beekeepers to complete a mandatory training course before being granted permission to install a hive, while others have imposed caps on the total number of hives permitted within a given postcode. Proponents of regulation argue that such measures need not discourage urban beekeeping altogether, but rather ensure that it develops in a manner that is genuinely beneficial to urban ecosystems as a whole, rather than serving the interests of honeybees alone at the expense of other pollinating species.",
+      "E  Beyond the ecological debate, urban beekeeping has also generated unexpected social and economic benefits. Many corporate beekeeping programmes report that the presence of hives on office rooftops has had a measurable effect on staff wellbeing, with employees citing a renewed sense of connection to nature and increased engagement with environmental issues more broadly. Honey produced within city limits has, somewhat surprisingly, tested as free from the contamination many assume would result from urban pollution, and in several cases has been found to contain a richer and more complex flavour profile than honey produced in rural monoculture settings, owing to the greater diversity of flowers from which city bees forage. This has created a small but growing market for premium urban honey, sold at a significant price markup compared to conventional supermarket honey.",
+      "F  Looking ahead, researchers broadly agree that the long-term success of urban beekeeping will depend not on unchecked expansion but on a more integrated approach to urban ecological planning. This would involve coordinating hive placement with the deliberate cultivation of diverse, pollinator-friendly green spaces, ensuring that the floral resources available in a city can genuinely support the pollinator population it hosts, honeybee and native species alike. Several pilot schemes along these lines are currently underway, combining hive registration data with mapping of local flowering plant diversity in an effort to identify where additional hives can be sustainably accommodated and where, conversely, a moratorium on new installations may be advisable."
+    ],
+    "groups": [
+      {
+        "title": "Questions 1–4",
+        "instructions": [
+          "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "Urban Beekeeping"
+        ],
+        "bank": [],
+        "questions": [
+          {
+            "id": "R1",
+            "number": 1,
+            "prompt": "Since 2005, some cities have reported a (1) ____________ increase in hive numbers.",
+            "options": [],
+            "choices": []
+          },
+          {
+            "id": "R2",
+            "number": 2,
+            "prompt": "Compared with rural monoculture fields, cities offer bees a greater (2) ____________ of plant species.",
+            "options": [],
+            "choices": []
+          },
+          {
+            "id": "R3",
+            "number": 3,
+            "prompt": "Lower levels of (3) ____________ in cities are linked to a reduced risk of colony collapse disorder.",
+            "options": [],
+            "choices": []
+          },
+          {
+            "id": "R4",
+            "number": 4,
+            "prompt": "Honeybees communicate the location of good flower patches through a particular (4) ____________.",
+            "options": [],
+            "choices": []
+          }
+        ]
+      },
+      {
+        "title": "Questions 5–8",
+        "instructions": [
+          "The passage has six paragraphs, A–F. Choose the correct heading for paragraphs A, B, D and F from the list of headings below.",
+          "Write the correct number, i–viii, next to Questions 5–8. There are more headings than paragraphs, so you will not use all of them."
+        ],
+        "bank": [
+          "i. A call for coordinated urban planning",
+          "ii. The rapid global growth of a new trend",
+          "iii. Unexpected financial rewards for beekeepers",
+          "iv. Why cities can be surprisingly good for bees",
+          "v. A decline in honey quality in urban settings",
+          "vi. Rules introduced to manage hive numbers",
+          "vii. The failure of early urban beekeeping schemes",
+          "viii. Competition between honeybees and other pollinators"
+        ],
+        "questions": [
+          {
+            "id": "R5",
+            "number": 5,
+            "prompt": "Paragraph A",
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv",
+              "v",
+              "vi",
+              "vii",
+              "viii"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R6",
+            "number": 6,
+            "prompt": "Paragraph B",
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv",
+              "v",
+              "vi",
+              "vii",
+              "viii"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R7",
+            "number": 7,
+            "prompt": "Paragraph D",
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv",
+              "v",
+              "vi",
+              "vii",
+              "viii"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R8",
+            "number": 8,
+            "prompt": "Paragraph F",
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv",
+              "v",
+              "vi",
+              "vii",
+              "viii"
+            ],
+            "choices": []
+          }
+        ]
+      },
+      {
+        "title": "Questions 9–12",
+        "instructions": [
+          "Do the following statements agree with the information given in the passage?"
+        ],
+        "bank": [
+          "TRUE  if the statement agrees with the information.",
+          "FALSE  if the statement contradicts the information.",
+          "NOT GIVEN  if there is no information on this."
+        ],
+        "questions": [
+          {
+            "id": "R9",
+            "number": 9,
+            "prompt": "Urban honeybee colonies are generally less healthy than those kept in rural areas.",
+            "options": [
+              "TRUE",
+              "FALSE",
+              "NOT GIVEN"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R10",
+            "number": 10,
+            "prompt": "A study found that native bee sightings decreased in areas with the highest concentration of hives.",
+            "options": [
+              "TRUE",
+              "FALSE",
+              "NOT GIVEN"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R11",
+            "number": 11,
+            "prompt": "All cities with high numbers of registered hives have introduced mandatory beekeeping training.",
+            "options": [
+              "TRUE",
+              "FALSE",
+              "NOT GIVEN"
+            ],
+            "choices": []
+          },
+          {
+            "id": "R12",
+            "number": 12,
+            "prompt": "Honey produced in urban areas has been found to contain traces of pollution.",
+            "options": [
+              "TRUE",
+              "FALSE",
+              "NOT GIVEN"
+            ],
+            "choices": []
+          }
+        ]
+      },
+      {
+        "title": "Questions 13–14",
+        "instructions": [
+          "Choose the correct letter, A, B, C or D."
+        ],
+        "bank": [],
+        "questions": [
+          {
+            "id": "R13",
+            "number": 13,
+            "prompt": "According to the passage, one criticism of unregulated urban beekeeping is that it may",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "choices": [
+              "A. reduce the overall quality of urban green spaces.",
+              "B. place too much pressure on native pollinator species.",
+              "C. make city honey more expensive than rural honey.",
+              "D. discourage corporations from supporting environmental programmes."
+            ]
+          },
+          {
+            "id": "R14",
+            "number": 14,
+            "prompt": "What do researchers suggest is necessary for the long-term success of urban beekeeping?",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "choices": [
+              "A. A complete halt on the installation of new hives in cities.",
+              "B. Greater public awareness of colony collapse disorder.",
+              "C. Coordination between hive placement and pollinator-friendly planting.",
+              "D. A shift of beekeeping activity away from cities back to rural areas."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "title": "Writing · 写作",
+    "tasks": [
+      {
+        "id": "W1",
+        "title": "Writing Task 1",
+        "instructions": [
+          "The graph below shows the annual sales of four different genres of video games in Japan between 1980 and 2000.",
+          "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "Write at least 150 words."
+        ],
+        "image": "/ielts/entry-test/writing-task-1.png",
+        "minimumWords": 150,
+        "groups": [
+          {
+            "title": "Questions 1–5",
+            "instructions": [
+              "Use the graph to answer Questions 1–5. Choose the correct letter, A, B, C or D."
+            ],
+            "bank": [],
+            "questions": [
+              {
+                "id": "W1Q1",
+                "number": 1,
+                "prompt": "Which of the following is the most appropriate paraphrase of the original question stem for use in the introduction?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. The line graph depicts the sales figures of four genres of video games in Japan over a twenty-year period from 1980 to 2000.",
+                  "B. The line graph illustrates how many video games were sold every year in Japan from 1980 to 2000.",
+                  "C. The line graph compares the quantities of video games bought by four age groups in Japan between 1980 and 2000.",
+                  "D. The line graph presents the total revenue generated by the video game industry in Japan between 1980 and 2000."
+                ]
+              },
+              {
+                "id": "W1Q2",
+                "number": 2,
+                "prompt": "Which of the following statements most accurately reflects the overall trend shown in the graph?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. Sales of all four genres increased steadily throughout the entire period, with RPG consistently remaining the top-selling genre.",
+                  "B. Action & Platform games were the best-selling genre throughout the period, while RPG showed the least change overall.",
+                  "C. Role-Playing games experienced the most dramatic rise of all four genres and overtook Action & Platform as the leading genre by the mid-1990s, despite a slight decline towards the end of the period.",
+                  "D. Sports & Racing and Adventure & Strategy games consistently outsold both RPG and Action & Platform games throughout the period."
+                ]
+              },
+              {
+                "id": "W1Q3",
+                "number": 3,
+                "prompt": "Which of the following statements about specific data points in the graph is correct?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. In 1980, Adventure & Strategy games had the highest sales of the four genres.",
+                  "B. In 1995, RPG sales reached their peak at approximately 32.5 million units, compared with about 19 million units for Action & Platform games in the same year.",
+                  "C. Sports & Racing games overtook Action & Platform games in sales at some point between 1990 and 1995.",
+                  "D. In 2000, Action & Platform and RPG sales were exactly equal."
+                ]
+              },
+              {
+                "id": "W1Q4",
+                "number": 4,
+                "prompt": "Which sentence best demonstrates an appropriate structure for describing a trend in the body paragraph?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. RPG sales go up a lot between 1980 and 1995, then it goes down a bit.",
+                  "B. RPG was low in 1980 and high in 1995 and then lower in 2000, it changed a lot during this time.",
+                  "C. Sales of RPG games rose dramatically from just 1.5 million units in 1980 to a peak of around 32.5 million units in 1995, before falling slightly to approximately 28 million units in 2000.",
+                  "D. The sales amount of RPG had a big change from 1980 to 2000 which was very dramatic and interesting to look at."
+                ]
+              },
+              {
+                "id": "W1Q5",
+                "number": 5,
+                "prompt": "Which connective best fits the gap in the following sentence?\n“Action & Platform games were the best-selling genre in 1980; ____, by 2000, RPG sales had risen to 28 million units, exceeding the 24 million units sold for Action & Platform games.”",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. Similarly",
+                  "B. In addition",
+                  "C. As a result",
+                  "D. By contrast"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "W2",
+        "title": "Writing Task 2",
+        "instructions": [
+          "Write about the following topic:",
+          "In some cities, artificial intelligence and big data are now used to manage public services and monitor citizens' daily behaviour.",
+          "Some people believe this creates a safer and more efficient society, while others argue that it threatens privacy and personal freedom.",
+          "Discuss both views and give your own opinion.",
+          "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+          "Write at least 250 words."
+        ],
+        "image": "",
+        "minimumWords": 250,
+        "groups": [
+          {
+            "title": "Questions 1–5",
+            "instructions": [
+              "Use the task above to answer Questions 1–5. Choose the correct letter, A, B, C or D."
+            ],
+            "bank": [],
+            "questions": [
+              {
+                "id": "W2Q1",
+                "number": 1,
+                "prompt": "Which of the following is the most appropriate paraphrase of the original question stem for use in the introduction?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. Many governments have completely replaced human police officers with artificial intelligence in recent years.",
+                  "B. In some urban areas, artificial intelligence and big data are used to oversee public services and monitor citizens' behaviour, prompting debate over whether this improves safety and efficiency or threatens individual privacy and freedom.",
+                  "C. Artificial intelligence has made cities significantly safer than they were a decade ago.",
+                  "D. Big data is now the primary tool used by businesses to track consumer spending habits in major cities."
+                ]
+              },
+              {
+                "id": "W2Q2",
+                "number": 2,
+                "prompt": "Given the instruction \"Discuss both views and give your own opinion,\" which essay structure would be most appropriate?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. One body paragraph presenting only the writer's own opinion, with no discussion of alternative views.",
+                  "B. Four body paragraphs, each discussing a different city's use of AI, with no personal opinion included.",
+                  "C. A single long paragraph combining both views and the opinion without clear separation.",
+                  "D. An introduction stating the writer's position, one body paragraph discussing each view, and a conclusion summarising the writer's opinion."
+                ]
+              },
+              {
+                "id": "W2Q3",
+                "number": 3,
+                "prompt": "Which of the following arguments would most appropriately belong in the body paragraph discussing the view that AI and big data improve public safety and efficiency?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. Predictive policing systems can help allocate police resources to areas with historically higher crime rates, potentially reducing response times to incidents.",
+                  "B. Constant surveillance may discourage citizens from expressing dissenting political opinions in public spaces.",
+                  "C. Data breaches involving personal information collected by government systems have become increasingly common.",
+                  "D. Citizens may feel that their daily movements are being tracked without their consent."
+                ]
+              },
+              {
+                "id": "W2Q4",
+                "number": 4,
+                "prompt": "Which sentence best demonstrates an appropriate academic sentence structure for a body paragraph?",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. AI is good for safety because it can stop crime and this is a big benefit for everyone in the city.",
+                  "B. Some people think AI good, some people think AI bad, both have point.",
+                  "C. On the other hand, critics contend that the pervasive collection of personal data by government agencies risks normalising surveillance to an extent that fundamentally undermines individual privacy.",
+                  "D. AI and big data, they are used in many cities now, and this is because governments want safer cities."
+                ]
+              },
+              {
+                "id": "W2Q5",
+                "number": 5,
+                "prompt": "Which connective best fits the gap in the following sentence?\n\"Proponents argue that AI-driven surveillance can significantly reduce crime rates in urban areas; ____, opponents maintain that the cost of this safety may be an erosion of the very freedoms that such systems claim to protect.\"",
+                "options": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "choices": [
+                  "A. Furthermore",
+                  "B. Nevertheless",
+                  "C. For instance",
+                  "D. Consequently"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

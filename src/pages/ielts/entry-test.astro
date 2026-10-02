@@ -1,0 +1,172 @@
+---
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+import EntryQuestions from '../../components/ielts/EntryQuestions.astro';
+import EntryAnswer from '../../components/ielts/EntryAnswer.astro';
+import { getAuthContext } from '../../lib/ielts/auth';
+import content from '../../lib/ielts/entry-test/content.json';
+import type { EntryContent } from '../../lib/ielts/entry-test/answers';
+export const prerender = false;
+const test: EntryContent = content;
+type Subject = 'listening' | 'reading' | 'writing';
+const requested = Astro.url.searchParams.get('subject');
+const subject: Subject = requested === 'reading' || requested === 'writing' ? requested : 'listening';
+const demo = import.meta.env.DEV && Astro.url.searchParams.get('demo') === '1';
+if (!demo && !Astro.cookies.has('ielts_access') && !Astro.cookies.has('ielts_refresh')) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+const auth = demo ? undefined : await getAuthContext(Astro.cookies);
+if (!demo && !auth) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+const labels = { listening: '听力', reading: '阅读', writing: '写作' };
+const payload = JSON.stringify({ subject, accountId: auth?.user.id || 'demo', content: test }).replace(/</g, '\\u003c');
+const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo ? '&demo=1' : ''}`;
+---
+<IeltsLayout title="入学基础测试 · 冷踢踢 IELTS" description="了解当前的听力、阅读与写作基础。不计时，完成后导出答案。" telemetry={false}>
+  <main class="entry-test" data-entry-test>
+    <header class="entry-header"><div><a href="/ielts#notes">← 返回学习中心</a><h1>入学基础测试</h1></div><div class="entry-actions"><label>字号 <select data-font-size aria-label="测试字体大小"><option value="16">标准</option><option value="18">较大</option><option value="20">最大</option></select></label><button type="button" data-theme aria-label="切换深浅色">深浅色</button><button type="button" data-export>导出全部答案</button></div></header>
+    <details class="entry-intro"><summary>做题前</summary>{test.intro.map(text => <p>{text}</p>)}</details>
+    <div class="entry-tabs"><nav aria-label="测试科目">{(['listening', 'reading', 'writing'] as const).map(item => <a href={subjectHref(item)} aria-current={subject === item ? 'page' : undefined}>{labels[item]}</a>)}</nav><span data-save-status role="status">答案仅保存在本机浏览器</span></div>
+    <div class="reading-workspace">
+      <section class="entry-pane"><h2>{subject === 'reading' ? test.reading.passageTitle : subject === 'writing' ? '写作题目' : test.listening.title}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文"><div data-passage>
+        {subject === 'listening' && <>{test.listening.instructions.map(text => <p>{text}</p>)}<EntryQuestions groups={test.listening.groups} controls={false} /></>}
+        {subject === 'reading' && <>{test.reading.instructions.map(text => <p class="instruction">{text}</p>)}{test.reading.paragraphs.map(text => <p>{text}</p>)}</>}
+        {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-prompt"><h3>{task.title}</h3>{task.instructions.map(text => <p>{text}</p>)}{task.image && <figure><img src={task.image} alt="日本1980年至2000年四类电子游戏年销量折线图，单位为百万套" width="1469" height="949" /></figure>}</section>)}
+      </div></div></section>
+      <div class="divider" data-divider role="separator" aria-label="调整题目与答题区宽度" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-controls="entry-answers" tabindex="0"><span aria-hidden="true"></span></div>
+      <section class="entry-pane"><h2>{labels[subject]}答题区</h2><div class="answer-scroll" id="entry-answers" tabindex="0" aria-label="答题区">
+        {subject === 'listening' && <><p class="instruction">对照左侧题目填写。拿不准可以留空。</p><div class="listening-answers">{test.listening.groups.flatMap(group => group.questions).map(question => <EntryAnswer question={question} prefix="Listening" />)}</div></>}
+        {subject === 'reading' && <EntryQuestions groups={test.reading.groups} prefix="Reading" />}
+        {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-answers"><h3>{task.title}</h3><EntryQuestions groups={task.groups} prefix={task.title} /><label class="essay-label">{task.title} 完整作文<textarea data-entry-answer={task.id} aria-label={`${task.title} 完整作文`} maxlength="50000" spellcheck="false" placeholder="先做选择题，再在这里写完整作文。" /></label><p class="word-count"><span data-word-count={task.id}>0 words</span><span>至少 {task.minimumWords} words</span></p></section>)}
+      </div></section>
+    </div>
+    <div class="highlight-tools" data-highlight-tools role="group" aria-label="题目原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>
+    <footer class="entry-footer"><label>想讨论的问题或卡住的地方（选填）<textarea data-entry-answer="notes" maxlength="3000" rows="3" /></label><div><button type="button" data-clear>清除本机作答</button>{subject !== 'writing' && <a class="next-subject" href={subjectHref(subject === 'listening' ? 'reading' : 'writing')}>继续{subject === 'listening' ? '阅读' : '写作'} →</a>}</div><p>完成三个部分后，导出全部答案发给老师。不自动上传、不计时、不自动评分。</p></footer>
+    <dialog data-clear-dialog><p>清除三个部分的本机答案与高亮？此操作不能撤销。</p><form method="dialog"><button value="cancel">保留作答</button><button value="clear">确认清除</button></form></dialog>
+  </main>
+  <script is:inline type="application/json" id="entry-payload" set:html={payload} />
+  <script>
+    import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
+    import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
+    import { answerIds, cleanAnswers, exportAnswers, wordCount, type EntryContent } from '../../lib/ielts/entry-test/answers';
+    const root = document.querySelector<HTMLElement>('[data-entry-test]');
+    const payload = document.querySelector('#entry-payload');
+    if (root && payload) {
+      const data = JSON.parse(payload.textContent || '{}') as { subject: string; accountId: string; content: EntryContent };
+      const key = `lenteyyy-entry-test-v1-${data.accountId}`;
+      const ids = answerIds(data.content);
+      const defaults = () => ({ version: 1, answers: {} as Record<string, string>, fontSize: 16, split: 50, highlights: {} as Record<string, HighlightRange[]> });
+      const load = () => {
+        const state = defaults();
+        try {
+        const saved = JSON.parse(localStorage.getItem(key) || 'null');
+        if (saved?.version === 1) {
+          state.answers = cleanAnswers(saved.answers, ids);
+          state.fontSize = examFontSize(saved.fontSize);
+          state.split = typeof saved.split === 'number' && Number.isFinite(saved.split) ? Math.max(0, Math.min(100, saved.split)) : 50;
+          for (const subject of ['listening', 'reading', 'writing']) state.highlights[subject] = normalizeHighlights(saved.highlights?.[subject], 200000);
+        }
+        } catch { /* Invalid/unavailable storage must not prevent answering. */ }
+        return state;
+      };
+      let state = load();
+      const status = root.querySelector<HTMLElement>('[data-save-status]');
+      const save = () => {
+        try { localStorage.setItem(key, JSON.stringify(state)); if (status) status.textContent = '已保存在本机浏览器'; }
+        catch { if (status) status.textContent = '本机保存不可用，请及时导出答案'; }
+      };
+      const controls = root.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('[data-entry-answer]');
+      const updateWords = () => root.querySelectorAll<HTMLElement>('[data-word-count]').forEach(label => { label.textContent = `${wordCount(state.answers[label.dataset.wordCount || ''] || '')} words`; });
+      for (const control of controls) {
+        control.value = state.answers[control.dataset.entryAnswer || ''] || '';
+        control.addEventListener(control instanceof HTMLSelectElement ? 'change' : 'input', () => { state.answers[control.dataset.entryAnswer || ''] = control.value; save(); updateWords(); });
+      }
+      updateWords();
+      const font = root.querySelector<HTMLSelectElement>('[data-font-size]');
+      const applySize = () => { root.style.setProperty('--entry-font-size', `${examFontSize(state.fontSize)}px`); if (font) font.value = String(examFontSize(state.fontSize)); };
+      font?.addEventListener('change', () => { state.fontSize = examFontSize(Number(font.value)); applySize(); save(); }); applySize();
+      const tools = setupReadingTools(root, {
+        getSplit: () => state.split, setSplit: value => { state.split = value; save(); },
+        getHighlights: () => state.highlights[data.subject] || [],
+        setHighlights: value => { state.highlights[data.subject] = value; save(); },
+      }); tools.render();
+      const restore = () => {
+        state = load(); controls.forEach(control => { control.value = state.answers[control.dataset.entryAnswer || ''] || ''; });
+        updateWords(); applySize(); tools.render();
+      };
+      // Back/forward cache and other tabs must not overwrite another section's newer answers.
+      window.addEventListener('pageshow', event => { if (event.persisted) restore(); });
+      window.addEventListener('storage', event => { if (event.key === key) restore(); });
+      root.querySelector('[data-export]')?.addEventListener('click', () => {
+        const url = URL.createObjectURL(new Blob([exportAnswers(data.content, state.answers)], { type: 'text/plain;charset=utf-8' }));
+        const link = document.createElement('a'); link.href = url; link.download = '冷踢踢-入学基础测试-我的答案.txt'; document.body.append(link); link.click(); link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+      const clearDialog = root.querySelector<HTMLDialogElement>('[data-clear-dialog]');
+      root.querySelector('[data-clear]')?.addEventListener('click', () => clearDialog?.showModal());
+      clearDialog?.addEventListener('close', () => {
+        if (clearDialog.returnValue !== 'clear') return;
+        state = defaults(); save(); controls.forEach(control => { control.value = ''; }); updateWords(); applySize(); tools.render();
+      });
+      root.querySelector('[data-theme]')?.addEventListener('click', () => {
+        const theme = document.documentElement.dataset.ieltsTheme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.ieltsTheme = theme;
+        try { localStorage.setItem('ielts-theme', theme); } catch { /* Theme remains usable without storage. */ }
+      });
+    }
+  </script>
+</IeltsLayout>
+<style is:global>
+  .entry-test { --entry-font-size: 16px; max-width: 1580px; margin: 24px auto; padding: 24px; background: var(--ielts-card); border: 1px solid var(--ielts-line); border-radius: 16px; }
+  .entry-header { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
+  .entry-header a { font-size: 14px; color: var(--ielts-muted); }
+  .entry-test h1 { margin: 10px 0; color: var(--ielts-ink); font-size: 28px; }
+  .entry-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: 14px; }
+  .entry-test button, .entry-test select, .entry-test input, .entry-test textarea, .entry-test .next-subject { border: 1px solid var(--ielts-line); border-radius: 8px; padding: 9px 12px; background: var(--ielts-card); color: var(--ielts-ink); font: inherit; }
+  .entry-test button, .entry-test select { cursor: pointer; }
+  .entry-test button:hover, .entry-test .next-subject:hover { background: var(--ielts-hover); }
+  .entry-intro { padding: 14px 0; border-bottom: 1px solid var(--ielts-line); font-size: 14px; line-height: 1.8; }
+  .entry-intro summary { cursor: pointer; color: var(--ielts-ink); font-weight: 600; }
+  .entry-tabs { display: flex; gap: 16px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 18px 0; }
+  .entry-tabs nav { display: flex; gap: 8px; }
+  .entry-tabs a { padding: 10px 24px; border-radius: 8px; }
+  .entry-tabs a[aria-current='page'] { background: var(--ielts-accent-soft); color: var(--ielts-ink); font-weight: 600; }
+  .entry-tabs > span { font-size: 12px; color: var(--ielts-muted); }
+  .entry-test .reading-workspace { display: grid; grid-template-columns: minmax(0, var(--passage-share, 50fr)) 14px minmax(0, var(--answer-share, 50fr)); gap: 10px; font-size: var(--entry-font-size); }
+  .entry-pane { min-width: 0; border: 1px solid var(--ielts-line); border-radius: 10px; overflow: hidden; }
+  .entry-pane > h2 { font-size: 17px; margin: 0; padding: 14px 18px; border-bottom: 1px solid var(--ielts-line); color: var(--ielts-ink); }
+  .entry-test .question-scroll, .entry-test .answer-scroll { height: min(70vh, 850px); min-height: 360px; overflow: auto; overscroll-behavior: contain; padding: 20px; overflow-wrap: anywhere; line-height: 1.75; }
+  .entry-test [data-passage] { font-family: Arial, 'Noto Sans SC', sans-serif; }
+  .entry-test p { margin: 0 0 16px; white-space: pre-line; }
+  .entry-test h3 { color: var(--ielts-ink); font-size: 1.12em; margin: 0 0 14px; }
+  .entry-group, .entry-test .writing-prompt, .entry-test .writing-answers { margin-bottom: 30px; }
+  .entry-test .instruction { font-size: .95em; color: var(--ielts-muted); }
+  .entry-test .option-bank { padding: 14px; margin: 18px 0; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); }
+  .entry-test .option-bank p { margin: 0 0 8px; }
+  .entry-test .option-bank p:last-child { margin: 0; }
+  .entry-question { margin-bottom: 25px; }
+  .entry-test .question-prompt { display: grid; grid-template-columns: 2ch minmax(0, 1fr); gap: 10px; }
+  .entry-test .question-prompt strong { color: var(--ielts-ink); }
+  .entry-test .question-options { padding-left: 2.5ch; }
+  .entry-test .question-options p { margin-bottom: 8px; }
+  .entry-answer { display: grid; gap: 6px; margin: 12px 0; }
+  .entry-answer > span { font-size: .82em; color: var(--ielts-muted); }
+  .entry-answer input, .entry-answer select { min-width: 0; width: 100%; }
+  .entry-test figure { margin: 20px 0; }
+  .entry-test figure img { display: block; width: 100%; height: auto; border-radius: 5px; background: white; }
+  .entry-test .essay-label { display: grid; gap: 12px; font-weight: 600; }
+  .entry-test .essay-label textarea { min-height: 380px; width: 100%; line-height: 1.75; resize: vertical; font-weight: 400; }
+  .entry-test .word-count { display: flex; justify-content: space-between; flex-wrap: wrap; font-size: 12px; color: var(--ielts-muted); }
+  .entry-test .divider { cursor: col-resize; touch-action: none; display: grid; place-items: center; border-radius: 8px; background: var(--ielts-hover); }
+  .entry-test .divider span { height: 40px; width: 3px; border-radius: 3px; background: var(--ielts-muted); }
+  .entry-test.resizing { user-select: none; cursor: col-resize; }
+  .entry-test .highlight-tools { position: fixed; display: flex; gap: 5px; max-width: calc(100vw - 16px); flex-wrap: wrap; z-index: 20; padding: 6px; background: var(--ielts-card); border: 1px solid var(--ielts-line); border-radius: 9px; box-shadow: var(--ielts-shadow); font-size: 13px; }
+  .entry-test mark[data-reading-highlight] { background: #ffe786; color: #20232b; }
+  .entry-test mark[data-color='blue'] { background: #aad7ff; color: #102c48; }
+  .entry-footer { border-top: 1px solid var(--ielts-line); margin-top: 22px; padding-top: 20px; font-size: 14px; }
+  .entry-footer > label { display: grid; gap: 10px; }
+  .entry-footer textarea { width: 100%; resize: vertical; }
+  .entry-footer > div { display: flex; justify-content: space-between; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
+  .entry-footer > p { color: var(--ielts-muted); font-size: 12px; }
+  .entry-test dialog { max-width: min(460px, calc(100vw - 32px)); border: 1px solid var(--ielts-line); border-radius: 12px; background: var(--ielts-card); color: var(--ielts-ink); padding: 24px; }
+  .entry-test dialog::backdrop { background: #0006; }
+  .entry-test dialog form { display: flex; gap: 12px; justify-content: flex-end; }
+  @media (max-width: 699px) { .entry-test { margin: 0; padding: 16px; border-radius: 0; } .entry-test .reading-workspace { display: block; } .entry-test .divider { display: none; } .entry-pane + .divider + .entry-pane { margin-top: 16px; } .entry-test .question-scroll, .entry-test .answer-scroll { height: auto; max-height: 70vh; min-height: 0; padding: 16px; } .entry-tabs a { padding: 8px 18px; } }
+</style>
