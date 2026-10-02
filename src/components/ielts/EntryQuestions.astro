@@ -1,0 +1,15 @@
+---
+import EntryAnswer from './EntryAnswer.astro';
+import type { EntryGroup } from '../../lib/ielts/entry-test/answers';
+const { groups, controls = true, prefix = '' } = Astro.props as { groups: EntryGroup[]; controls?: boolean; prefix?: string };
+---
+{groups.map(group => <section class="entry-group">
+  <h3>{group.title}</h3>
+  {group.instructions.map(text => <p class="instruction">{text}</p>)}
+  {group.bank.length > 0 && <div class="option-bank">{group.bank.map(text => <p>{text}</p>)}</div>}
+  {group.questions.map(question => <section class="entry-question">
+    <p class="question-prompt"><strong>{question.number}</strong><span>{question.prompt}</span></p>
+    {question.choices.length > 0 && <div class="question-options">{question.choices.map(choice => <p>{choice}</p>)}</div>}
+    {controls && <EntryAnswer question={question} prefix={prefix} />}
+  </section>)}
+</section>)}

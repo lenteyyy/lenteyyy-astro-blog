@@ -176,6 +176,10 @@ const notes = [
 				<section class="module notes-module" id="notes" hidden>
 					<header class="module-head"><h2>其他信息</h2></header>
 					<div class="note-list">
+						<article class="entry-test-card">
+							<span><IeltsIcon name="clipboard" size={22} /></span>
+							<div><h3>入学基础测试</h3><p>按听力、阅读、写作顺序完成，不计时。做完导出答案发给我。</p><a href="/ielts/entry-test">开始基础测试 →</a></div>
+						</article>
 						{notes.map((item, index) => (
 							<article id={index === 2 ? 'booking-note' : undefined}>
 								<span><IeltsIcon name={item.icon} size={22} /></span>
@@ -869,6 +873,7 @@ const notes = [
 	.note-list article > span { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--ielts-hover); color: var(--ielts-ink); }
 	.note-list h3 { margin: 0 0 3px; color: var(--ielts-ink); font-size: 14px; }
 	.note-list p { margin: 0; color: var(--ielts-muted); font-size: 12px; line-height: 1.55; }
+	.entry-test-card a { display: inline-block; margin-top: 10px; padding: 8px 12px; border: 1px solid var(--ielts-line); border-radius: 7px; color: var(--ielts-accent); font-size: 13px; }
 	.booking-dialog { width: min(520px, calc(100% - 30px)); padding: 0; border: 1px solid var(--ielts-line); border-radius: 16px; background: var(--ielts-card); color: var(--ielts-text); box-shadow: var(--ielts-shadow); }
 	.booking-dialog::backdrop { background: #07111db3; backdrop-filter: blur(5px); }
 	.booking-dialog form { display: grid; gap: 16px; padding: 25px; }
