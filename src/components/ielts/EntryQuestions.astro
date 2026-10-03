@@ -1,10 +1,8 @@
 ---
 import EntryAnswer from './EntryAnswer.astro';
 import type { EntryGroup } from '../../lib/ielts/entry-test/answers';
+import { inlineAnswerParts } from '../../lib/ielts/entry-test/answers';
 const { groups, controls = true, prefix = '' } = Astro.props as { groups: EntryGroup[]; controls?: boolean; prefix?: string };
-const hasGap = (prompt: string) => /_{3,}/.test(prompt);
-const beforeGap = (prompt: string) => prompt.split(/_{3,}/)[0].replace(/\(\d+\)\s*$/, '');
-const afterGap = (prompt: string) => prompt.split(/_{3,}/)[1];
 const definition = (text: string) => /^(TRUE|FALSE|NOT GIVEN)\s+(.+)$/.exec(text);
 ---
 {groups.map(group => <section class="entry-group">
@@ -12,8 +10,8 @@ const definition = (text: string) => /^(TRUE|FALSE|NOT GIVEN)\s+(.+)$/.exec(text
   {group.instructions.map(text => <p class="instruction">{text}</p>)}
   {group.bank.length > 0 && (group.bank.every(text => definition(text)) ? <dl class="option-bank entry-definitions">{group.bank.map(text => <div><dt>{definition(text)![1]}</dt><dd>{definition(text)![2]}</dd></div>)}</dl> : <div class="option-bank">{group.bank.map(text => <p>{text}</p>)}</div>)}
   {group.questions.map(question => <section class="entry-question" role={question.choices.length > 0 ? 'group' : undefined} aria-label={`Question ${question.number}`}>
-    <p class="question-prompt"><strong>{question.number}</strong><span>{controls && hasGap(question.prompt) ? <>{beforeGap(question.prompt)}<EntryAnswer question={question} prefix={prefix} inline />{afterGap(question.prompt)}</> : question.prompt}</span></p>
+    <p class="question-prompt"><strong>{question.number}</strong><span>{controls && inlineAnswerParts(question) ? <>{inlineAnswerParts(question)!.before}<EntryAnswer question={question} prefix={prefix} inline />{inlineAnswerParts(question)!.after}</> : question.prompt}</span></p>
     {!controls && question.choices.length > 0 && <div class="question-options">{question.choices.map(choice => <p>{choice}</p>)}</div>}
-    {controls && !hasGap(question.prompt) && <EntryAnswer question={question} prefix={prefix} />}
+    {controls && !inlineAnswerParts(question) && <EntryAnswer question={question} prefix={prefix} />}
   </section>)}
 </section>)}

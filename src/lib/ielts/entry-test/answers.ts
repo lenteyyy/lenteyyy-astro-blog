@@ -4,13 +4,25 @@ export type EntryContent = {
   title: string; version: number;
   listening: { title: string; audio: string; instructions: string[]; groups: EntryGroup[] };
   reading: { title: string; instructions: string[]; passageTitle: string; paragraphs: string[]; groups: EntryGroup[] };
-  writing: { title: string; tasks: { id: string; title: string; instructions: string[]; image: string; minimumWords: number; groups: EntryGroup[] }[] };
+  writing: { title: string; tasks: { id: string; title: string; instructions: string[]; image: string; groups: EntryGroup[] }[] };
 };
+
+/** Only a single free-text blank gets an inline input. Choice questions retain their entire stem. */
+export function inlineAnswerParts(question: EntryQuestion): { before: string; after: string } | undefined {
+  if (question.options.length || question.choices.length) return undefined;
+  const gaps = [...question.prompt.matchAll(/_{3,}/g)];
+  if (gaps.length !== 1) return undefined;
+  const gap = gaps[0];
+  return {
+    before: question.prompt.slice(0, gap.index).replace(/\(\d+\)\s*$/, ''),
+    after: question.prompt.slice(gap.index + gap[0].length),
+  };
+}
 
 export function answerIds(content: EntryContent): string[] {
   return [...content.listening.groups.flatMap(g => g.questions.map(q => q.id)),
     ...content.reading.groups.flatMap(g => g.questions.map(q => q.id)),
-    ...content.writing.tasks.flatMap(t => [...t.groups.flatMap(g => g.questions.map(q => q.id)), t.id])];
+    ...content.writing.tasks.flatMap(t => t.groups.flatMap(g => g.questions.map(q => q.id)))];
 }
 
 /** Untrusted browser storage is plain text, never HTML; only this test's fields survive. */
@@ -19,13 +31,9 @@ export function cleanAnswers(value: unknown, ids: string[]): Record<string, stri
   if (!value || typeof value !== 'object' || Array.isArray(value)) return answers;
   for (const id of ids) {
     const item = Object.hasOwn(value, id) ? (value as Record<string, unknown>)[id] : undefined;
-    if (typeof item === 'string') answers[id] = item.slice(0, /^W[12]$/.test(id) ? 50000 : 200);
+    if (typeof item === 'string') answers[id] = item.slice(0, 200);
   }
   return answers;
-}
-
-export function wordCount(value: string): number {
-  return (value.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu) || []).length;
 }
 
 /** TXT deliberately avoids spreadsheet formula injection and active HTML. No account identifier. */
@@ -38,9 +46,8 @@ export function exportAnswers(content: EntryContent, value: unknown): string {
   for (const g of content.reading.groups) for (const q of g.questions) lines.push(`${q.number}. ${text(q.id)}`);
   lines.push('', content.writing.title);
   for (const task of content.writing.tasks) {
-    lines.push('', task.title, '基础诊断题');
+    lines.push('', task.title);
     for (const g of task.groups) for (const q of g.questions) lines.push(`${q.number}. ${text(q.id)}`);
-    lines.push('作文', text(task.id), `字数：${wordCount(answers[task.id] || '')}`);
   }
   return '\ufeff' + lines.join('\n');
 }
