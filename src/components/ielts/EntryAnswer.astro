@@ -1,8 +1,7 @@
 ---
 import type { EntryQuestion } from '../../lib/ielts/entry-test/answers';
-const { question, prefix = '' } = Astro.props as { question: EntryQuestion; prefix?: string };
+const { question, prefix = '', inline = false } = Astro.props as { question: EntryQuestion; prefix?: string; inline?: boolean };
 ---
-<label class="entry-answer">
-  <span>{prefix} Question {question.number}</span>
-  {question.options.length ? <select aria-label={`${prefix} Question ${question.number}`} data-entry-answer={question.id}><option value="">选择答案</option>{question.options.map(option => <option value={option}>{option}</option>)}</select> : <input type="text" aria-label={`${prefix} Question ${question.number}`} data-entry-answer={question.id} maxlength="200" autocomplete="off" spellcheck="false" />}
-</label>
+{question.choices.length > 0 ? <div class="question-options">{question.choices.map((choice, index) => <label class="entry-choice"><input type="radio" name={question.id} value={question.options[index]} data-entry-answer={question.id} aria-label={`${prefix} Question ${question.number}: ${choice}`} /><span>{choice}</span></label>)}</div> : <label class:list={['entry-answer', { 'entry-answer-inline': inline }]}>
+  {question.options.length ? <select aria-label={`${prefix} Question ${question.number}`} data-entry-answer={question.id}><option value="">Select an answer</option>{question.options.map(option => <option value={option}>{option}</option>)}</select> : <input type="text" aria-label={`${prefix} Question ${question.number}`} placeholder={String(question.number)} data-entry-answer={question.id} maxlength="200" autocomplete="off" spellcheck="false" />}
+</label>}
