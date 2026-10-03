@@ -1,16 +1,11 @@
 {
   "title": "入学基础测试",
   "version": 1,
-  "intro": [
-    "先独立把这份测试做完。不会的可以留空，拿不准的先选一个。我需要看你现在真正能做出来多少，后面的课才好安排。",
-    "不要查词或使用 AI。听力由老师播放或朗读，只听一遍。写作先做选择题，再在答题框里写完整作文；写不出来就写到你能写的地方。",
-    "这里不计时，也不自动评分。做完导出答案，把卡住的地方一起发给我。"
-  ],
   "listening": {
     "title": "Listening · 听力",
+    "audio": "/ielts/entry-test/listening.mp3",
     "instructions": [
-      "You will hear a lecture on community renewable energy projects. Answer Questions 1–10.",
-      "听力由老师播放或朗读。本页不提供听力原文。"
+      "You will hear a lecture on community renewable energy projects. Answer Questions 1–10."
     ],
     "groups": [
       {
