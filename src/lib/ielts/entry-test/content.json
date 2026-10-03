@@ -398,11 +398,9 @@
         "title": "Writing Task 1",
         "instructions": [
           "The graph below shows the annual sales of four different genres of video games in Japan between 1980 and 2000.",
-          "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-          "Write at least 150 words."
+          "Summarise the information by selecting and reporting the main features, and make comparisons where relevant."
         ],
         "image": "/ielts/entry-test/writing-task-1.png",
-        "minimumWords": 150,
         "groups": [
           {
             "title": "Questions 1–5",
@@ -504,15 +502,11 @@
         "id": "W2",
         "title": "Writing Task 2",
         "instructions": [
-          "Write about the following topic:",
           "In some cities, artificial intelligence and big data are now used to manage public services and monitor citizens' daily behaviour.",
           "Some people believe this creates a safer and more efficient society, while others argue that it threatens privacy and personal freedom.",
-          "Discuss both views and give your own opinion.",
-          "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
-          "Write at least 250 words."
+          "Discuss both views and give your own opinion."
         ],
         "image": "",
-        "minimumWords": 250,
         "groups": [
           {
             "title": "Questions 1–5",

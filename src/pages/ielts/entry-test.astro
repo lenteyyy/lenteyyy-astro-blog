@@ -25,14 +25,14 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
     <div class="entry-tabs"><nav aria-label="测试科目">{(['listening', 'reading', 'writing'] as const).map(item => <a href={subjectHref(item)} aria-current={subject === item ? 'page' : undefined}>{labels[item]}</a>)}</nav><span data-save-status role="status"></span></div>
     {subject === 'listening' ? <section class="entry-pane listening-pane"><h2>{test.listening.title}</h2><div class="listening-content"><audio controls preload="metadata" src={test.listening.audio} aria-label="入学测试听力录音"></audio>{test.listening.instructions.map(text => <p class="instruction">{text}</p>)}<EntryQuestions groups={test.listening.groups} prefix="Listening" /></div></section> : <>
     <div class="reading-workspace">
-      <section class="entry-pane"><h2>{subject === 'reading' ? test.reading.passageTitle : subject === 'writing' ? '写作题目' : test.listening.title}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文"><div data-passage>
+      <section class="entry-pane"><h2>{subject === 'reading' ? test.reading.passageTitle : '题干与图表'}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文"><div data-passage>
         {subject === 'reading' && <>{test.reading.instructions.map(text => <p class="instruction">{text}</p>)}{test.reading.paragraphs.map(text => <p>{text}</p>)}</>}
         {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-prompt"><h3>{task.title}</h3>{task.instructions.map(text => <p>{text}</p>)}{task.image && <figure><img src={task.image} alt="日本1980年至2000年四类电子游戏年销量折线图，单位为百万套" width="1469" height="949" /></figure>}</section>)}
       </div></div></section>
       <div class="divider" data-divider role="separator" aria-label="调整题目与答题区宽度" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-controls="entry-answers" tabindex="0"><span aria-hidden="true"></span></div>
-      <section class="entry-pane"><h2>{labels[subject]}答题区</h2><div class="answer-scroll" id="entry-answers" tabindex="0" aria-label="答题区">
+      <section class="entry-pane"><h2>{subject === 'writing' ? '写作选择题' : '阅读答题区'}</h2><div class="answer-scroll" id="entry-answers" tabindex="0" aria-label="答题区">
         {subject === 'reading' && <EntryQuestions groups={test.reading.groups} prefix="Reading" />}
-        {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-answers"><h3>{task.title}</h3><label class="essay-label">Your answer<textarea data-entry-answer={task.id} aria-label={`${task.title} 完整作文`} maxlength="50000" spellcheck="false" /></label><p class="word-count"><span data-word-count={task.id}>0 words</span><span>至少 {task.minimumWords} words</span></p><details class="writing-diagnostic"><summary>基础诊断题</summary><EntryQuestions groups={task.groups} prefix={task.title} /></details></section>)}
+        {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-answers"><h3>{task.title}</h3><EntryQuestions groups={task.groups} prefix={task.title} /></section>)}
       </div></section>
     </div>
     <div class="highlight-tools" data-highlight-tools role="group" aria-label="题目原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div></>}
@@ -43,7 +43,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   <script>
     import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
     import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
-    import { answerIds, cleanAnswers, exportAnswers, wordCount, type EntryContent } from '../../lib/ielts/entry-test/answers';
+    import { answerIds, cleanAnswers, exportAnswers, type EntryContent } from '../../lib/ielts/entry-test/answers';
     const root = document.querySelector<HTMLElement>('[data-entry-test]');
     const payload = document.querySelector('#entry-payload');
     if (root && payload) {
@@ -71,7 +71,6 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
         catch { if (status) status.textContent = '本机保存不可用，请及时导出答案'; }
       };
       const controls = root.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('[data-entry-answer]');
-      const updateWords = () => root.querySelectorAll<HTMLElement>('[data-word-count]').forEach(label => { label.textContent = `${wordCount(state.answers[label.dataset.wordCount || ''] || '')} words`; });
       const restoreControl = (control: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement) => {
         const answer = state.answers[control.dataset.entryAnswer || ''] || '';
         if (control instanceof HTMLInputElement && control.type === 'radio') control.checked = answer === control.value;
@@ -81,10 +80,9 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
         restoreControl(control);
         control.addEventListener(control instanceof HTMLSelectElement || (control instanceof HTMLInputElement && control.type === 'radio') ? 'change' : 'input', () => {
           if (control instanceof HTMLInputElement && control.type === 'radio' && !control.checked) return;
-          state.answers[control.dataset.entryAnswer || ''] = control.value; save(); updateWords();
+          state.answers[control.dataset.entryAnswer || ''] = control.value; save();
         });
       }
-      updateWords();
       const font = root.querySelector<HTMLSelectElement>('[data-font-size]');
       const applySize = () => { root.style.setProperty('--entry-font-size', `${examFontSize(state.fontSize)}px`); if (font) font.value = String(examFontSize(state.fontSize)); };
       font?.addEventListener('change', () => { state.fontSize = examFontSize(Number(font.value)); applySize(); save(); }); applySize();
@@ -95,7 +93,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
       }); tools?.render();
       const restore = () => {
         state = load(); controls.forEach(restoreControl);
-        updateWords(); applySize(); tools?.render();
+        applySize(); tools?.render();
       };
       // Back/forward cache and other tabs must not overwrite another section's newer answers.
       window.addEventListener('pageshow', event => { if (event.persisted) restore(); });
@@ -109,7 +107,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
       root.querySelector('[data-clear]')?.addEventListener('click', () => clearDialog?.showModal());
       clearDialog?.addEventListener('close', () => {
         if (clearDialog.returnValue !== 'clear') return;
-        state = defaults(); save(); controls.forEach(restoreControl); updateWords(); applySize(); tools?.render();
+        state = defaults(); save(); controls.forEach(restoreControl); applySize(); tools?.render();
       });
       root.querySelector('[data-theme]')?.addEventListener('click', () => {
         const theme = document.documentElement.dataset.ieltsTheme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.ieltsTheme = theme;
@@ -151,9 +149,9 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   .entry-test .entry-definitions dt { font-weight: 700; }
   .entry-test .entry-definitions dd { margin: 0; }
   .entry-question { margin-bottom: 25px; }
-  .entry-test .question-prompt { display: grid; grid-template-columns: 2ch minmax(0, 1fr); gap: 10px; }
-  .entry-test .question-prompt strong { color: var(--ielts-ink); }
-  .entry-test .question-options { padding-left: 2.5ch; }
+  .entry-test .question-prompt { display: grid; grid-template-columns: 2.5ch minmax(0, 1fr); gap: 10px; }
+  .entry-test .question-prompt strong { color: var(--ielts-ink); white-space: nowrap; overflow-wrap: normal; word-break: normal; font-variant-numeric: tabular-nums; }
+  .entry-test .question-options { padding-left: calc(2.5ch + 10px); }
   .entry-test .question-options p { margin-bottom: 8px; }
   .entry-test .entry-choice { display: flex; gap: 12px; align-items: flex-start; padding: 7px 0; cursor: pointer; }
   .entry-test .entry-choice input { width: 18px; height: 18px; flex: 0 0 18px; margin: .3em 0 0; padding: 0; accent-color: var(--ielts-ink); }
@@ -161,13 +159,8 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   .entry-answer input, .entry-answer select { min-width: 0; width: 100%; }
   .entry-test .entry-answer-inline { display: inline-block; max-width: 100%; width: 14ch; margin: 2px 5px; vertical-align: baseline; }
   .entry-test .entry-answer-inline input { padding: 3px 8px; border-radius: 4px; }
-  .entry-test .writing-diagnostic { margin-top: 24px; }
-  .entry-test .writing-diagnostic summary { cursor: pointer; margin-bottom: 18px; }
   .entry-test figure { margin: 20px 0; }
   .entry-test figure img { display: block; width: 100%; height: auto; border-radius: 5px; background: white; }
-  .entry-test .essay-label { display: grid; gap: 12px; font-weight: 600; }
-  .entry-test .essay-label textarea { min-height: 380px; width: 100%; line-height: 1.75; resize: vertical; font-weight: 400; }
-  .entry-test .word-count { display: flex; justify-content: space-between; flex-wrap: wrap; font-size: 12px; color: var(--ielts-muted); }
   .entry-test .divider { cursor: col-resize; touch-action: none; display: grid; place-items: center; border-radius: 8px; background: var(--ielts-hover); }
   .entry-test .divider span { height: 40px; width: 3px; border-radius: 3px; background: var(--ielts-muted); }
   .entry-test.resizing { user-select: none; cursor: col-resize; }
