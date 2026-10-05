@@ -6,6 +6,14 @@ import { createClient } from '@supabase/supabase-js';
 import { safeIeltsNext, oauthOrigin, oauthMemoryStorage, parseOAuthPending, validGoogleAuthorizationUrl, OAUTH_STORAGE_KEY } from '../src/lib/ielts/oauth-policy.ts';
 import { rateLimitAddress } from '../src/lib/ielts/rate-policy.ts';
 
+test('Google login keeps its accessible label and serves the official logo locally', () => {
+	const page = readFileSync(new URL('../src/pages/ielts/index.astro', import.meta.url), 'utf8');
+	assert.match(page, /data-google-login><img src="\/assets\/google-g\.png" width="20" height="20" alt="" aria-hidden="true"\s*\/><span data-google-login-label>使用 Google 登录<\/span><\/button>/);
+	const logo = readFileSync(new URL('../public/assets/google-g.png', import.meta.url));
+	assert.equal(logo.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+	assert.doesNotMatch(page, /<img[^>]+src="https:\/\/[^\"]*google/);
+});
+
 test('rate limits cannot be reset by rotating user agent or spoofing Cloudflare headers', () => {
 	const request = headers => new Request('https://www.lenteyyy.com/api/ielts/auth/google', { headers });
 	assert.equal(rateLimitAddress(request({ 'x-vercel-forwarded-for': '192.0.2.1', 'x-forwarded-for': '192.0.2.2', 'cf-connecting-ip': '192.0.2.3' })), '192.0.2.1');
