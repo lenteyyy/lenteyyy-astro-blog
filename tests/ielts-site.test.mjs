@@ -48,3 +48,10 @@ test('other contains only entrance test and management entry is inside account m
   assert.match(home, /telemetry=\{false\}/);
   assert.match(home, /button\.selected\) \{[^}]*color: var\(--ielts-card\)/);
 });
+test('cross-page animation uses a compatible CSS fallback and respects reduced motion', () => {
+  const layout = source('src/layouts/IeltsLayout.astro');
+  assert.doesNotMatch(layout, /@view-transition/);
+  assert.match(layout, /body\.ielts-site \{[^}]*animation: page-in/);
+  assert.match(layout, /prefers-reduced-motion: reduce/);
+  assert.match(layout, /body\.ielts-site \{ animation: none; \}/);
+});
