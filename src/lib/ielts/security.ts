@@ -1,4 +1,5 @@
 import { createServiceClient } from './supabase';
+import { rateLimitAddress } from './rate-policy';
 
 export const sha256 = async (value: string): Promise<string> => {
 	const bytes = new TextEncoder().encode(value);
@@ -24,16 +25,11 @@ export const createSixDigitCode = (): string => {
 	return String(values[0] % 1_000_000).padStart(6, '0');
 };
 
-const requestAddress = (request: Request): string => request.headers.get('cf-connecting-ip')
-	|| request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
-	|| request.headers.get('x-real-ip')
-	|| 'unknown';
-
 type RateLimitKey = 'combined' | 'identity' | 'request';
 
 export async function claimRateLimit(request: Request, scope: string, identity: string, limit: number, windowSeconds: number, key: RateLimitKey = 'combined'): Promise<boolean> {
 	const bucket = Math.floor(Date.now() / 1000 / windowSeconds);
-	const requestFingerprint = `${requestAddress(request)}|${request.headers.get('user-agent') || 'unknown'}`;
+	const requestFingerprint = rateLimitAddress(request);
 	const subject = key === 'identity' ? identity : key === 'request' ? requestFingerprint : `${requestFingerprint}|${identity}`;
 	const fingerprint = await sha256(`${scope}|${bucket}|${subject}`);
 	const { data, error } = await createServiceClient().rpc('claim_ielts_rate_limit', {
