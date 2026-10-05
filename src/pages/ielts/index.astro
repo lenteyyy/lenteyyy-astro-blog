@@ -3,70 +3,60 @@ import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 
 const resources = [
-	{ icon: 'headphones' as const, title: '听力', lines: ['真题精听', '场景词汇'] },
-	{ icon: 'book' as const, title: '阅读', lines: ['题型解析', '长难句整理'] },
-	{ icon: 'pen' as const, title: '写作', lines: ['思路拆解', '高分表达'] },
-	{ icon: 'chat' as const, title: '口语', lines: ['话题素材', '逻辑表达'] },
+	{ icon: 'headphones' as const, title: '听力' },
+	{ icon: 'book' as const, title: '阅读' },
+	{ icon: 'pen' as const, title: '写作' },
+	{ icon: 'chat' as const, title: '口语' },
 ];
 
-const notes = [
-	{ icon: 'user' as const, title: '预约流程', text: '提交后会先显示为「待确认」；由我确认后，课程才算约好。' },
-	{ icon: 'file' as const, title: '课程资料', text: '登录后即可查看已开放的资料，内容会按教学进度更新。' },
-	{ icon: 'calendar' as const, title: '一次约几节', text: '一次最多提交四个时间，之后也能在「我的预约」里取消。' },
-	{ icon: 'info' as const, title: '账户登录', text: '平时使用邮箱和密码；只有设置或重置密码时需要验证码。' },
-];
 ---
-<IeltsLayout title="Lenteyyy IELTS · 学习与课程" description="课程预约、雅思学习资料与模考入口。">
+<IeltsLayout title="冷踢踢 IELTS" description="课程预约、雅思学习资料与模考入口。" telemetry={false}>
 	<div class="ielts-app" data-ielts-page>
-		<aside class="side-panel">
+		<header class="study-header side-panel">
 			<a class="studio-brand" href="/ielts" aria-label="Lenteyyy IELTS 首页">
 				<span class="logo-frame"><img src="/lenteyyy-logo.png" alt="Lenteyyy" width="512" height="512" /></span>
-				<span>IELTS STUDY DESK</span>
 			</a>
 
 			<nav class="side-nav" aria-label="雅思学习中心导航">
-				<a class="active" href="#overview"><IeltsIcon name="home" />我的个人简介</a>
-				<a href="#booking"><IeltsIcon name="calendar" />课程预约</a>
-				<a href="#materials"><IeltsIcon name="folder" />学习资料</a>
-				<a href="#mock"><IeltsIcon name="clipboard" />模考页面</a>
-				<a href="#notes"><IeltsIcon name="info" />其他信息</a>
+				<a class="active" href="#overview">首页</a>
+				<a href="#booking">课程预约</a>
+				<a href="#materials">学习资料</a>
+				<a href="#mock">模考页面</a>
+				<a href="#notes">其他</a>
 			</nav>
 
 			<div class="side-footer">
+				<button class="search-button" type="button" data-open-search aria-label="搜索"><IeltsIcon name="search" /></button>
 				<div class="account-menu" data-account-menu>
-					<button class="account-button" type="button" data-account-button aria-expanded="false"><IeltsIcon name="user" size={18} />个人账户</button>
-					<div class="account-panel" data-account-panel hidden>
+					<button class="account-button" type="button" data-account-button aria-label="个人账户" aria-controls="account-panel" aria-expanded="false"><IeltsIcon name="user" size={20} /></button>
+					<div class="account-panel" id="account-panel" data-account-panel hidden>
 						<span data-account-email>尚未登录</span>
 						<button type="button" data-account-login>登录或注册</button>
+						<a class="management-link" href="/ielts/management" data-management-link hidden>管理后台</a>
 						<button type="button" data-account-logout hidden>退出登录</button>
+						<div class="theme-choices" aria-label="页面配色">
+							<button type="button" data-theme-choice="light" aria-pressed="true"><IeltsIcon name="sun" size={17} />浅色</button>
+							<button type="button" data-theme-choice="dark" aria-pressed="false"><IeltsIcon name="moon" size={17} />深色</button>
+						</div>
 					</div>
 				</div>
-				<a class="management-link" href="/ielts/management" data-management-link hidden><IeltsIcon name="clipboard" size={18} />管理后台</a>
-				<div class="theme-choices" aria-label="页面配色">
-					<button type="button" data-theme-choice="light" aria-pressed="true"><IeltsIcon name="sun" size={17} />浅色</button>
-					<button type="button" data-theme-choice="dark" aria-pressed="false"><IeltsIcon name="moon" size={17} />深色</button>
-				</div>
 			</div>
-		</aside>
+		</header>
 
 		<main class="work-area">
-			<div class="mobile-heading">
-				<span>IELTS STUDY DESK</span>
-			</div>
-
 			<div class="dashboard">
 				<section class="module overview-module" id="overview">
 					<header class="module-head">
-						<h1>Introduction</h1>
+						<h1>冷踢踢的雅思学习网站</h1>
 					</header>
 					<div class="overview-copy">
 						<p>你好！我是雅思 Overall 8.0 的冷踢踢老师，欢迎来到冷踢踢的雅思学习网站！这里主要为我的学员提供课程线上预约、学习资料查询与整理、仿真模考等服务。如果你是通过其他途径来到这里的雅思学习者，也非常欢迎你注册登录，并免费使用网站内开放的学习功能。</p>
 						<section>
 							<h2>网站使用说明</h2>
-							<p>使用前，请先在左下角完成注册或登录。为保障账户安全，注册或登录过程中可能需要通过电子邮箱接收验证码。登录后，可以通过左侧导航栏进入需要的功能页面。更多使用说明及 IELTS 学习工具，请参照左侧的「其他信息」。</p>
+							<p>点击右上角的个人账户注册或登录，然后通过顶部导航进入课程预约、学习资料或模考页面。入学基础测试在「其他」中。</p>
 						</section>
 						<section class="more-contact">
-							<h2>FOR MORE</h2>
+							<h2>联系我</h2>
 							<p>更多咨询，请发送电子邮件至 <a href="mailto:lenteywang@gmail.com">lenteywang@gmail.com</a>。<br />冷踢踢的 Instagram：<a href="https://www.instagram.com/lenteyyy_/" rel="me noreferrer">@lenteyyy_</a></p>
 						</section>
 					</div>
@@ -75,7 +65,6 @@ const notes = [
 				<section class="module booking-module" id="booking" hidden>
 					<header class="module-head">
 						<h1>课程预约</h1>
-						<a href="#notes" data-section-target="notes">预约规则<IeltsIcon name="arrow" size={18} /></a>
 					</header>
 
 					<div class="booking-grid">
@@ -140,7 +129,7 @@ const notes = [
 						{resources.map((item) => (
 							<button class="resource-card" type="button" data-material-category={item.title}>
 								<span class="resource-icon"><IeltsIcon name={item.icon} size={27} /></span>
-								<div><h3>{item.title}</h3><p>{item.lines[0]}<br />{item.lines[1]}</p></div>
+								<div><h3>{item.title}</h3></div>
 								<IeltsIcon name="arrow" size={18} />
 							</button>
 						))}
@@ -162,11 +151,8 @@ const notes = [
 						<button type="button" data-mock="writing" role="tab" aria-selected="false"><IeltsIcon name="pen" size={19} />Writing</button>
 					</div>
 					<div class="mock-body">
-						<div class="mock-poster" aria-hidden="true"><span>FULL</span><strong>TEST</strong><small>CAMBRIDGE 21 · 01</small></div>
 						<div class="mock-copy">
-							<p class="field-label">IELTS PRACTICE</p>
 							<h3>全真模考 · <span data-mock-title>Listening</span></h3>
-							<p>剑雅21 Test 1 真题。答案保存在当前浏览器；听力与阅读提交后显示对题数，写作不自动估分。</p>
 							<div class="mock-meta"><span><IeltsIcon name="file" size={19} /><span data-mock-count>40 道题</span></span><span><IeltsIcon name="calendar" size={19} /><span data-mock-time>35 分钟</span></span></div>
 							<a class="mock-open" data-mock-open href="/ielts/mock/test-1?subject=listening">开始练习<IeltsIcon name="arrow" size={18} /></a>
 						</div>
@@ -174,30 +160,29 @@ const notes = [
 				</section>
 
 				<section class="module notes-module" id="notes" hidden>
-					<header class="module-head"><h2>其他信息</h2></header>
+					<header class="module-head"><h2>其他</h2></header>
 					<div class="note-list">
 						<article class="entry-test-card">
 							<span><IeltsIcon name="clipboard" size={22} /></span>
-							<div><h3>入学基础测试</h3><p>按听力、阅读、写作顺序完成，不计时。做完导出答案发给我。</p><a href="/ielts/entry-test">开始基础测试 →</a></div>
+							<div><h3>入学基础测试</h3><a href="/ielts/entry-test">开始测试</a></div>
 						</article>
-						{notes.map((item, index) => (
-							<article id={index === 2 ? 'booking-note' : undefined}>
-								<span><IeltsIcon name={item.icon} size={22} /></span>
-								<div><h3>{item.title}</h3><p>{item.text}</p></div>
-							</article>
-						))}
 					</div>
 				</section>
 			</div>
 		</main>
 	</div>
+	<dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+		<div class="search-head"><h2 id="search-title">搜索</h2><button type="button" data-close-search aria-label="关闭搜索">×</button></div>
+		<label class="search-field"><IeltsIcon name="search" /><input type="search" data-search-input aria-label="搜索栏目与学习资料" maxlength="100" placeholder="搜索栏目、测试或学习资料" autocomplete="off" /></label>
+		<p class="search-state" data-search-state role="status"></p>
+		<div class="search-results" data-search-results></div>
+	</dialog>
 
 	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
 		<form data-login-form>
 			<div class="dialog-head"><div><span>账户登录</span><h2 id="auth-dialog-title">邮箱与密码</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
 			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
 			<label>密码<input type="password" name="password" autocomplete="current-password" maxlength="72" required /></label>
-			<p class="privacy-note">密码由 Supabase 加密管理，本站不会读取或保存明文。</p>
 			<p class="form-message" data-auth-message aria-live="polite"></p>
 			<button class="dialog-submit" type="submit">登录<IeltsIcon name="arrow" size={18} /></button>
 			<button class="auth-switch" type="button" data-open-password-setup>首次设置或忘记密码</button>
@@ -263,6 +248,11 @@ const notes = [
 				activateSection(link.dataset.sectionTarget || 'overview');
 			}));
 			activateSection(location.hash.slice(1), false);
+			window.addEventListener('hashchange', () => activateSection(location.hash.slice(1), false));
+			root.addEventListener('ielts:navigate', (event) => {
+				const section = (event as CustomEvent<{ section?: unknown }>).detail?.section;
+				if (typeof section === 'string') activateSection(section);
+			});
 
 			const calendarTitle = root.querySelector<HTMLElement>('[data-calendar-title]');
 			const calendarDays = root.querySelector<HTMLElement>('[data-calendar-days]');
@@ -367,6 +357,7 @@ const notes = [
 		}
 		</script>
 		<script>
+			import { searchStudy } from '../../lib/ielts/search';
 			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
 			const bookingForm = page?.querySelector<HTMLFormElement>('[data-booking-form]');
@@ -474,25 +465,61 @@ const notes = [
 				}
 			};
 			let materialsCache: Array<Record<string, unknown>> = [];
+			const searchDialog = document.querySelector<HTMLDialogElement>('[data-search-dialog]');
+			const searchInput = searchDialog?.querySelector<HTMLInputElement>('[data-search-input]');
+			const searchResults = searchDialog?.querySelector<HTMLElement>('[data-search-results]');
+			const searchState = searchDialog?.querySelector<HTMLElement>('[data-search-state]');
+			const renderSearch = () => {
+				if (!searchResults) return;
+				const results = searchStudy(searchInput?.value || '', materialsCache, session.authenticated);
+				searchResults.replaceChildren();
+				if (searchState) searchState.textContent = results.length ? `${results.length} 个结果` : '没有找到相关内容。';
+				for (const result of results) {
+					const control = document.createElement(result.href ? 'a' : 'button');
+					if (control instanceof HTMLAnchorElement && result.href) control.href = result.href;
+					if (control instanceof HTMLButtonElement) control.type = 'button';
+					control.append(document.createTextNode(result.title));
+					const detail = document.createElement('span'); detail.textContent = result.detail; control.append(detail);
+					control.addEventListener('click', () => {
+						searchDialog?.close();
+						if (result.section) page?.dispatchEvent(new CustomEvent('ielts:navigate', { detail: { section: result.section } }));
+						if (result.materialId && session.authenticated) renderMaterials(materialsCache.filter(item => item.id === result.materialId));
+					});
+					searchResults.append(control);
+				}
+			};
+			page?.querySelector('[data-open-search]')?.addEventListener('click', () => {
+				if (accountPanel) accountPanel.hidden = true;
+				accountButton?.setAttribute('aria-expanded', 'false');
+				if (searchInput) searchInput.value = '';
+				renderSearch(); searchDialog?.showModal(); searchInput?.focus();
+			});
+			searchDialog?.querySelector('[data-close-search]')?.addEventListener('click', () => searchDialog.close());
+			searchInput?.addEventListener('input', renderSearch);
+			closeOnBackdrop(searchDialog || null);
 			const loadMaterials = async () => {
+				materialsCache = [];
+				renderSearch();
 				if (!session.authenticated) {
 					materialsCache = [];
 					if (materialState) materialState.textContent = '登录后查看';
-					if (materialList) materialList.innerHTML = '<p>登录后可查看与下载学习资料。</p>';
+					if (materialList) { const empty = document.createElement('p'); empty.textContent = '登录后查看学习资料。'; materialList.replaceChildren(empty); }
+					renderSearch();
 					return;
 				}
 				try {
 					const result = await api<{ materials: Array<Record<string, unknown>>; role: 'student' | 'admin' }>('/api/ielts/materials');
 					materialsCache = result.materials;
+					renderSearch();
 					if (materialState) materialState.textContent = `${materialsCache.length} 份资料`;
 					renderMaterials(materialsCache);
-				} catch { if (materialState) materialState.textContent = '暂时无法读取'; }
+				} catch { if (materialState) materialState.textContent = '暂时无法读取'; renderMaterials([]); }
 			};
 			const loadBookings = async () => {
 				if (!bookingList) return;
 				if (!session.authenticated) {
 					bookingListState && (bookingListState.textContent = '登录后查看');
-					bookingList.innerHTML = '<p>登录后可查看和取消预约。</p>';
+					const empty = document.createElement('p'); empty.textContent = '登录后查看预约。'; bookingList.replaceChildren(empty);
 					return;
 				}
 				try {
@@ -563,6 +590,11 @@ const notes = [
 				if (accountPanel && !accountPanel.hidden && !accountMenu?.contains(event.target as Node)) {
 					accountPanel.hidden = true;
 					accountButton?.setAttribute('aria-expanded', 'false');
+				}
+			});
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && accountPanel && !accountPanel.hidden) {
+					accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); accountButton?.focus();
 				}
 			});
 
@@ -742,42 +774,46 @@ const notes = [
 	</IeltsLayout>
 
 <style>
-	.ielts-app { width: min(1680px, calc(100% - 40px)); min-height: calc(100dvh - 40px); margin: 20px auto; display: grid; grid-template-columns: 244px minmax(0, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 22px; background: var(--ielts-panel); box-shadow: var(--ielts-shadow); }
-	.side-panel { position: sticky; top: 0; height: calc(100dvh - 40px); display: flex; flex-direction: column; padding: 32px 20px 24px; border-right: 1px solid var(--ielts-line); background: color-mix(in srgb, var(--ielts-card) 92%, transparent); }
-	.studio-brand { display: grid; justify-items: center; gap: 5px; color: var(--ielts-ink); font-size: 11px; font-weight: 600; letter-spacing: .25em; }
-	.logo-frame { width: 150px; height: 105px; display: grid; place-items: center; overflow: hidden; background: #fff; }
-	.logo-frame img { width: 138px; height: 138px; object-fit: contain; mix-blend-mode: multiply; }
-	.side-nav { display: grid; gap: 7px; margin-top: 44px; }
-	.side-nav a { min-height: 52px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-radius: 10px; color: var(--ielts-text); font-size: 16px; font-weight: 500; transition: color .16s ease, background .16s ease; }
-	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); background: var(--ielts-accent-soft); }
+	.ielts-app { min-height: 100dvh; background: var(--ielts-bg); }
+	.side-panel { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: clamp(24px, 4vw, 64px); padding: 14px max(24px, calc((100vw - 1360px) / 2)); border-bottom: 1px solid var(--ielts-line); background: color-mix(in srgb, var(--ielts-bg) 94%, transparent); backdrop-filter: blur(16px); }
+	.studio-brand { flex: 0 0 auto; display: block; color: var(--ielts-ink); }
+	.logo-frame { width: 120px; height: 60px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+	.logo-frame img { width: 115px; height: 115px; flex: 0 0 auto; object-fit: contain; mix-blend-mode: multiply; }
+	:global([data-ielts-theme='dark']) .logo-frame img { filter: invert(1); mix-blend-mode: screen; }
+	.side-nav { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 36px); margin: 0; }
+	.side-nav a { position: relative; min-height: 54px; display: flex; align-items: center; padding: 0 2px; color: var(--ielts-muted); font-size: 15px; font-weight: 500; white-space: nowrap; transition: color .2s ease; }
+	.side-nav a::after { content: ''; position: absolute; bottom: 4px; left: 0; right: 0; height: 2px; background: var(--ielts-ink); transform: scaleX(0); transform-origin: left; transition: transform .25s cubic-bezier(.2,.75,.25,1); }
+	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); }
+	.side-nav a.active::after { transform: scaleX(1); }
 	.side-nav :global(svg) { flex: 0 0 auto; }
-	.side-footer { display: grid; gap: 14px; margin-top: auto; }
+	.side-footer { display: flex; align-items: center; gap: 16px; margin-left: auto; }
 	.account-menu { position: relative; }
-	.account-button, .management-link { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--ielts-accent); border-radius: 10px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; font-weight: 500; }
-	.account-button { width: 100%; }
-	.account-panel { position: absolute; z-index: 12; right: 0; bottom: calc(100% + 9px); left: 0; display: grid; gap: 8px; padding: 12px; border: 1px solid var(--ielts-line); border-radius: 11px; background: var(--ielts-card); box-shadow: var(--ielts-shadow); animation: account-in .18s ease both; }
-	.account-panel > span { overflow: hidden; color: var(--ielts-muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
-	.account-panel > button { min-height: 38px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); cursor: pointer; font-size: 12px; }
-	.account-panel [data-account-logout] { border-color: color-mix(in srgb, #b55252 48%, var(--ielts-line)); color: #b55252; }
+	.search-button, .account-button { width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border: 0; border-radius: 50%; background: transparent; color: var(--ielts-ink); cursor: pointer; transition: background .2s ease, transform .2s ease; }
+	.search-button:hover { background: var(--ielts-hover); }
+	.account-button { background: var(--ielts-ink); color: var(--ielts-card); }
+	.account-button:hover { transform: translateY(-2px); }
+	.account-panel { position: absolute; z-index: 12; right: 0; top: calc(100% + 14px); width: min(280px, calc(100vw - 32px)); display: grid; gap: 10px; padding: 20px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); box-shadow: 0 16px 48px #00000016; animation: account-in .18s ease both; }
+	.account-panel > span { overflow: hidden; color: var(--ielts-muted); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+	.account-panel > button, .management-link { min-height: 42px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ielts-line); border-radius: 5px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; }
+	.account-panel [data-account-logout] { color: var(--ielts-muted); }
 	.management-link[hidden] { display: none; }
 	.theme-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border: 1px solid var(--ielts-line); border-radius: 999px; }
 	.theme-choices button { min-height: 32px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 0; border-radius: 999px; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 12px; white-space: nowrap; }
 	.theme-choices button[aria-pressed='true'] { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
-	.work-area { min-width: 0; padding: 20px; }
-	.mobile-heading { display: none; }
+	.work-area { width: min(1360px, 100%); min-width: 0; margin: auto; padding: clamp(28px, 4vw, 64px) 24px; }
 	.dashboard { display: grid; }
-	.module { min-width: 0; padding: 24px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: var(--ielts-radius); background: var(--ielts-card); }
+	.module { min-width: 0; padding: 0; scroll-margin-top: 100px; background: var(--ielts-bg); }
 	.module.section-enter { animation: section-in .24s cubic-bezier(.2,.75,.25,1) both; }
 	.module[hidden] { display: none; }
 	@keyframes section-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 	@keyframes account-in { from { opacity: 0; transform: translateY(5px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
-	.overview-module { min-height: calc(100dvh - 82px); }
-	.overview-copy { width: min(780px, 100%); display: grid; align-content: start; gap: 30px; padding: clamp(12px, 3vw, 42px) 0; }
-	.overview-copy > p, .overview-copy section { margin: 0; padding: clamp(22px, 3vw, 34px); border: 1px solid var(--ielts-line); border-radius: 12px; background: var(--ielts-panel); color: var(--ielts-text); font-size: clamp(15px, 1.4vw, 18px); line-height: 2; }
-	.overview-copy section h2 { margin: 0 0 14px; color: var(--ielts-ink); font-size: clamp(20px, 2vw, 27px); }
+	.overview-copy { width: min(1000px, 100%); display: grid; grid-template-columns: 1.3fr 1fr; align-content: start; gap: 40px; padding: 28px 0; }
+	.overview-copy > p, .overview-copy section { margin: 0; padding: 28px 0; border-top: 1px solid var(--ielts-line); color: var(--ielts-text); font-size: 17px; line-height: 2; }
+	.overview-copy > p { grid-column: 1 / -1; font-size: clamp(18px, 1.7vw, 22px); line-height: 2; }
+	.overview-copy section h2 { margin: 0 0 18px; color: var(--ielts-ink); font-size: 20px; font-weight: 600; }
 	.overview-copy section p { margin: 0; }
 	.overview-copy .more-contact a { color: var(--ielts-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-	.module-head { min-height: 50px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+	.module-head { min-height: 50px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 30px; }
 	.module-head h1, .module-head h2 { margin: 0; color: var(--ielts-ink); font-size: clamp(25px, 2.2vw, 36px); font-weight: 700; letter-spacing: -.035em; line-height: 1.2; }
 	.module-head h1 span, .module-head h2 span { margin-right: 16px; color: var(--ielts-faint); font-size: .84em; font-style: italic; font-weight: 400; }
 	.module-head a { display: flex; align-items: center; gap: 8px; color: var(--ielts-accent); font-size: 13px; font-weight: 500; }
@@ -793,7 +829,7 @@ const notes = [
 	.week-row, .calendar-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
 	.week-row { margin-bottom: 5px; color: var(--ielts-muted); text-align: center; font-size: 11px; }
 	.calendar-days :global(button) { aspect-ratio: 1; min-width: 0; border: 0; border-radius: 50%; background: transparent; color: var(--ielts-text); cursor: pointer; font-size: 12px; }
-	.calendar-days :global(button:hover:not(:disabled)), .calendar-days :global(button.selected) { background: var(--ielts-accent); color: #fff; }
+	.calendar-days :global(button:hover:not(:disabled)), .calendar-days :global(button.selected) { background: var(--ielts-accent); color: var(--ielts-card); }
 	.calendar-days :global(button.outside) { color: var(--ielts-faint); }
 	.calendar-days :global(button:disabled) { opacity: .25; cursor: not-allowed; }
 	.time-card { display: flex; flex-direction: column; gap: 13px; padding: 17px; }
@@ -801,7 +837,7 @@ const notes = [
 	.time-card strong { display: block; min-height: 24px; color: var(--ielts-ink); font-size: 14px; line-height: 1.7; }
 	.time-slots { display: grid; gap: 8px; }
 	.time-slots button { min-height: 39px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-text); cursor: pointer; font-size: 13px; }
-	.time-slots button:hover, .time-slots button.selected { border-color: var(--ielts-accent); background: var(--ielts-accent); color: #fff; }
+	.time-slots button:hover, .time-slots button.selected { border-color: var(--ielts-accent); background: var(--ielts-accent); color: var(--ielts-card); }
 	.booking-action { min-height: 43px; display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: auto; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-size: 13px; font-weight: 600; }
 	.booking-action:disabled { opacity: .35; cursor: not-allowed; }
 	.booking-status { min-height: 32px; margin: 0; color: var(--ielts-muted); font-size: 11px; line-height: 1.45; }
@@ -858,10 +894,7 @@ const notes = [
 	.mock-tabs button { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-right: 1px solid var(--ielts-line); background: var(--ielts-panel); color: var(--ielts-text); cursor: pointer; font-size: 12px; }
 	.mock-tabs button:last-child { border-right: 0; }
 	.mock-tabs button.active { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
-	.mock-body { display: grid; grid-template-columns: 190px 1fr; gap: 22px; margin-top: 15px; }
-	.mock-poster { min-height: 196px; display: flex; flex-direction: column; justify-content: flex-end; padding: 18px; border-radius: 10px; background: linear-gradient(145deg, #0f2a48, #3f6b94); color: #fff; }
-	.mock-poster span, .mock-poster strong { font-size: 36px; font-weight: 700; letter-spacing: -.06em; line-height: .84; }
-	.mock-poster small { margin-top: 18px; font-size: 13px; letter-spacing: .2em; }
+	.mock-body { margin-top: 28px; padding: 32px; border: 1px solid var(--ielts-line); border-radius: 6px; }
 	.mock-copy { align-self: center; }
 	.mock-copy h3 { margin: 0 0 8px; color: var(--ielts-ink); font-size: 19px; }
 	.mock-copy > p:not(.field-label) { margin: 0; color: var(--ielts-muted); font-size: 13px; line-height: 1.7; }
@@ -892,32 +925,21 @@ const notes = [
 	.form-message { min-height: 18px; margin: 0; color: var(--ielts-accent); font-size: 11px; line-height: 1.6; }
 	.dialog-submit { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-weight: 600; }
 	.auth-switch { min-height: 36px; border: 0; background: transparent; color: var(--ielts-accent); cursor: pointer; font-size: 12px; }
-	@media (max-width: 1220px) {
-		.ielts-app { grid-template-columns: 210px minmax(0, 1fr); }
-		.side-panel { padding-inline: 15px; }
+	@media (max-width: 1100px) {
 		.booking-grid { grid-template-columns: minmax(0, 1fr) 250px; }
 		.booking-form-card { grid-column: 1 / -1; }
 	}
 	@media (max-width: 820px) {
-		.ielts-app { width: 100%; min-height: 100dvh; margin: 0; display: block; border: 0; border-radius: 0; }
-		.side-panel { position: static; width: 100%; height: auto; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 16px; padding: 14px 16px; border-right: 0; border-bottom: 1px solid var(--ielts-line); }
-		.studio-brand { justify-items: start; gap: 0; font-size: 8px; }
-		.logo-frame { width: 88px; height: 48px; }
-		.logo-frame img { width: 82px; height: 82px; }
-		.side-nav { grid-column: 1 / -1; display: flex; gap: 7px; margin: 0; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+		.side-panel { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; padding: 12px 20px 0; }
+		.logo-frame { width: 92px; height: 44px; }
+		.logo-frame img { width: 90px; height: 90px; }
+		.side-nav { grid-column: 1 / -1; grid-row: 2; min-width: 0; display: flex; gap: 24px; margin: 0; overflow-x: auto; scrollbar-width: none; }
 		.side-nav::-webkit-scrollbar { display: none; }
-		.side-nav a { min-height: 38px; flex: 0 0 auto; gap: 7px; padding: 0 11px; font-size: 12px; }
-		.side-nav :global(svg) { width: 17px; height: 17px; }
-		.side-footer { margin: 0 0 0 auto; }
-		.account-menu { min-width: 132px; }
-		.account-panel { right: 0; bottom: auto; left: auto; top: calc(100% + 8px); width: min(260px, calc(100vw - 32px)); }
-		.account-button, .management-link { min-height: 38px; padding-inline: 12px; font-size: 12px; }
-		.theme-choices { width: 146px; }
-		.work-area { padding: 12px; }
-		.mobile-heading { display: flex; align-items: center; justify-content: space-between; padding: 6px 3px 14px; color: var(--ielts-muted); font-size: 10px; letter-spacing: .12em; }
-		.mobile-heading a { color: var(--ielts-accent); letter-spacing: 0; }
-		.module { padding: 18px; }
-		.module-head h1, .module-head h2 { font-size: 26px; }
+		.side-nav a { min-height: 48px; flex: 0 0 auto; font-size: 14px; }
+		.side-footer { grid-column: 2; grid-row: 1; gap: 10px; }
+		.work-area { padding: 30px 20px; }
+		.module-head h1, .module-head h2 { font-size: 28px; }
+		.overview-copy { grid-template-columns: 1fr; gap: 10px; padding: 12px 0; }
 	}
 	@media (max-width: 620px) {
 		.booking-grid { grid-template-columns: 1fr; }
@@ -930,9 +952,26 @@ const notes = [
 		.small-resources > div { grid-template-columns: 1fr; }
 		.mock-tabs { grid-template-columns: repeat(3, 1fr); }
 		.mock-body { grid-template-columns: 1fr; }
-		.mock-poster { min-height: 150px; }
 	}
+	.search-dialog { width: min(660px, calc(100vw - 32px)); max-height: min(650px, 85dvh); padding: 28px; border: 1px solid var(--ielts-line); border-radius: 10px; background: var(--ielts-card); color: var(--ielts-ink); box-shadow: var(--ielts-shadow); }
+	.search-dialog::backdrop { background: #0007; backdrop-filter: blur(6px); }
+	.search-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+	.search-head h2 { margin: 0; font-size: 24px; }
+	.search-head button { width: 36px; height: 36px; border: 0; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 26px; }
+	.search-field { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--ielts-line); }
+	.search-field input { width: 100%; min-width: 0; border: 0; background: transparent; color: var(--ielts-ink); font-size: 16px; }
+	.search-state { color: var(--ielts-muted); font-size: 14px; }
+	.search-results { display: grid; gap: 4px; }
+	.search-results :global(button), .search-results :global(a) { width: 100%; padding: 16px 12px; border: 0; border-radius: 4px; background: transparent; color: var(--ielts-ink); font: inherit; font-size: 16px; text-align: left; cursor: pointer; }
+	.search-results :global(button:hover), .search-results :global(a:hover) { background: var(--ielts-hover); }
+	.search-results :global(span) { display: block; margin-top: 5px; color: var(--ielts-muted); font-size: 14px; }
+	.booking-column, .resource-card, .note-list article { border-radius: 6px; }
+	.booking-form-card label, .time-slots button, .add-booking, .booking-action, .calendar-days :global(button), .week-row, .resource-card p, .mock-tabs button, .note-list p, .entry-test-card a { font-size: 14px; }
+	.small-resources > .material-list { display: grid; grid-template-columns: 1fr; }
+	.booking-row button.confirm { border-color: var(--ielts-ink); background: var(--ielts-ink); color: var(--ielts-card); }
+	.booking-dialog::backdrop { background: #0007; }
 	@media (prefers-reduced-motion: reduce) {
 		.module.section-enter, .account-panel { animation: none; }
+		.side-nav a::after, .account-button { transition: none; }
 	}
 </style>

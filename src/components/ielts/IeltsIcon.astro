@@ -14,7 +14,9 @@ type IconName =
 	| 'user'
 	| 'arrow'
 	| 'sun'
-	| 'moon';
+	| 'moon'
+	| 'search';
+
 
 interface Props {
 	name: IconName;
@@ -23,6 +25,7 @@ interface Props {
 
 const { name, size = 22 } = Astro.props;
 const paths: Record<IconName, string[]> = {
+	search: ['M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z', 'm15 15 6 6'],
 	home: ['M3 11.5 12 4l9 7.5', 'M5.5 10v10h13V10', 'M9.5 20v-6h5v6'],
 	calendar: ['M5 3v3M19 3v3M4 8h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z'],
 	folder: ['M3.5 6.5h6l2 2h9v11h-17Z'],

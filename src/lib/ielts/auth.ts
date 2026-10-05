@@ -48,7 +48,7 @@ export async function getAuthContext(cookies: AstroCookies): Promise<AuthContext
 	}
 	const email = user.email?.trim().toLowerCase();
 	if (!email || !accessToken) return undefined;
-	const role = isAdminEmail(email) ? 'admin' : 'student';
+	const role = isAdminEmail(email) && Boolean(user.email_confirmed_at) ? 'admin' : 'student';
 	const { error } = await createServiceClient().from('ielts_profiles').upsert({ id: user.id, email, role }, { onConflict: 'id' });
 	if (error) throw new Error('profile_unavailable');
 	return { user, email, role };
