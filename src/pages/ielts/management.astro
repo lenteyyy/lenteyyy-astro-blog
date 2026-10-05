@@ -8,34 +8,36 @@ export const prerender = false;
 const auth = await getAuthContext(Astro.cookies);
 if (!auth) return Astro.redirect('/ielts?login=1&next=%2Fielts%2Fmanagement');
 if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 ---
-<IeltsLayout title="IELTS 管理后台" description="Lenteyyy IELTS 学习资料管理。">
+<IeltsLayout title="IELTS 管理后台" description="Lenteyyy IELTS 学习资料管理。" telemetry={false}>
 	<main class="management" data-management-page>
 		<header>
-			<a class="brand" href="/ielts"><img src="/lenteyyy-logo.png" alt="Lenteyyy" width="512" height="512" /><span>IELTS MANAGEMENT</span></a>
+			<a class="brand" href="/ielts" aria-label="学习中心"><img src="/lenteyyy-logo.png" alt="Lenteyyy" width="512" height="512" /></a>
 			<nav><a href="/ielts">返回学习中心</a><button type="button" data-logout>退出</button></nav>
 		</header>
 
 		<section class="panel upload-panel">
-			<div class="section-head"><div><span>ADMIN ONLY</span><h1>上传学习资料</h1></div><div class="theme"><button type="button" data-theme-choice="light">浅色</button><button type="button" data-theme-choice="dark">深色</button></div></div>
+			<div class="section-head"><div><h1>上传学习资料</h1></div><div class="theme"><button type="button" data-theme-choice="light">浅色</button><button type="button" data-theme-choice="dark">深色</button></div></div>
 			<form data-upload-form>
 				<label>资料标题<input name="title" maxlength="120" required /></label>
 				<label>分类<select name="category" required><option>听力</option><option>阅读</option><option>写作</option><option>口语</option><option>词汇</option><option>语法</option><option>备考</option></select></label>
 				<label class="wide">简短说明<textarea name="description" rows="3" maxlength="300"></textarea></label>
 				<label class="wide file-field">文件<input type="file" name="file" accept=".pdf,.docx,.pptx,.mp3,.m4a,.mp4,.jpg,.jpeg,.png,.webp" required /></label>
-				<p class="note wide">单个文件上限 100 MB；文件存入私有空间，仅通过短时签名链接访问。</p>
+				<p class="note wide">文件上限 100 MB。</p>
 				<p class="message wide" data-upload-message aria-live="polite"></p>
 				<button class="submit wide" type="submit">上传并发布<IeltsIcon name="arrow" size={18} /></button>
 			</form>
 		</section>
 
 		<section class="panel list-panel">
-			<div class="section-head"><div><span>LIBRARY</span><h2>已发布资料</h2></div><strong data-material-count>读取中</strong></div>
+			<div class="section-head"><div><h2>已发布资料</h2></div><strong data-material-count>读取中</strong></div>
 			<div class="materials" data-material-list></div>
 		</section>
 
 		<section class="panel bookings-panel">
-			<div class="section-head"><div><span>BOOKINGS</span><h2>课程预约</h2></div><strong data-booking-count>读取中</strong></div>
+			<div class="section-head"><div><h2>课程预约</h2></div><strong data-booking-count>读取中</strong></div>
 			<div class="bookings" data-booking-list></div>
 			<details class="cancelled-bookings" data-cancelled-section hidden>
 				<summary>已取消预约 <span data-cancelled-count></span></summary>
@@ -174,6 +176,7 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 	header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 20px; border: 1px solid var(--ielts-line); border-radius: 14px; background: var(--ielts-card); }
 	.brand { display: flex; align-items: center; gap: 12px; color: var(--ielts-ink); font-size: 11px; font-weight: 700; letter-spacing: .18em; }
 	.brand img { width: 68px; height: 44px; object-fit: contain; background: #fff; }
+	:global([data-ielts-theme="dark"]) .brand img { filter: invert(1); }
 	nav { display: flex; align-items: center; gap: 9px; }
 	nav a, nav button { min-height: 38px; display: inline-flex; align-items: center; justify-content: center; padding: 0 13px; border: 1px solid var(--ielts-line); border-radius: 8px; background: transparent; color: var(--ielts-text); cursor: pointer; font-size: 12px; line-height: 1; }
 	.panel { padding: 28px; border: 1px solid var(--ielts-line); border-radius: 14px; background: var(--ielts-card); box-shadow: var(--ielts-shadow); }
@@ -206,7 +209,7 @@ if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 	.bookings button { min-height: 36px; padding: 0 13px; border: 1px solid var(--ielts-line); border-radius: 7px; background: transparent; color: var(--ielts-text); cursor: pointer; }
 	.bookings .booking-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
 	.bookings button.confirm-booking { border-color: var(--ielts-accent); background: var(--ielts-accent-soft); color: var(--ielts-ink); }
-	.bookings button.confirm { border-color: #b55252; background: #b55252; color: #fff; }
+	.bookings button.confirm { border-color: var(--ielts-accent); background: var(--ielts-accent); color: var(--ielts-card); }
 	.cancelled-bookings { margin-top: 16px; border-top: 1px solid var(--ielts-line); }
 	.cancelled-bookings summary { padding: 16px 2px 6px; color: var(--ielts-muted); cursor: pointer; font-size: 12px; font-weight: 600; }
 	.cancelled-bookings summary span { margin-left: 6px; font-weight: 400; }
