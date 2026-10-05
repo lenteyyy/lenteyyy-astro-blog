@@ -180,7 +180,9 @@ const resources = [
 
 	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
 		<form data-login-form>
-			<div class="dialog-head"><div><span>账户登录</span><h2 id="auth-dialog-title">邮箱与密码</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
+			<div class="dialog-head"><div><h2 id="auth-dialog-title">登录</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
+			<button class="google-login" type="button" data-google-login>使用 Google 登录</button>
+			<div class="auth-divider" aria-hidden="true">或</div>
 			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
 			<label>密码<input type="password" name="password" autocomplete="current-password" maxlength="72" required /></label>
 			<p class="form-message" data-auth-message aria-live="polite"></p>
@@ -358,6 +360,7 @@ const resources = [
 		</script>
 		<script>
 			import { searchStudy } from '../../lib/ielts/search';
+			import { safeIeltsNext } from '../../lib/ielts/oauth-policy';
 			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
 			const bookingForm = page?.querySelector<HTMLFormElement>('[data-booking-form]');
@@ -391,7 +394,7 @@ const resources = [
 			};
 			const messageFor = (code: string) => ({
 				invalid_email: '请输入有效邮箱。', invalid_code: '验证码错误或已过期。', invalid_password: '密码至少 10 位，并同时包含字母与数字。', password_mismatch: '两次输入的密码不一致。',
-				invalid_credentials: '邮箱或密码错误。', rate_limited: '操作过于频繁，请稍后再试。', login_unavailable: '暂时无法登录，请稍后再试。',
+				invalid_credentials: '邮箱或密码错误。', rate_limited: '操作过于频繁，请稍后再试。', login_unavailable: '暂时无法登录，请稍后再试。', google_login_unavailable: 'Google 登录暂时不可用，请使用邮箱与密码。',
 				verification_unavailable: '验证码暂时无法发送，请稍后再试。', account_unavailable: '暂时无法设置密码，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
 				slot_unavailable: '该时段刚被预约，请选择其他时间。', invalid_booking: '请检查预约资料与勾选项。', booking_unavailable: '预约暂时无法提交。',
 				booking_not_found: '找不到这条预约，请刷新后重试。', booking_not_active: '该预约已更新，无需重复操作。', booking_changed: '预约状态刚刚改变，请刷新后重试。',
@@ -437,7 +440,7 @@ const resources = [
 				authDialog?.close();
 				await syncSession();
 				const next = new URLSearchParams(location.search).get('next');
-				if (next?.startsWith('/ielts/') && !next.includes('//')) location.assign(next);
+				if (next) location.assign(safeIeltsNext(next));
 			};
 
 			const renderMaterials = (materials: Array<Record<string, unknown>>, category = '') => {
@@ -595,6 +598,21 @@ const resources = [
 			document.addEventListener('keydown', (event) => {
 				if (event.key === 'Escape' && accountPanel && !accountPanel.hidden) {
 					accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); accountButton?.focus();
+				}
+			});
+
+			authDialog?.querySelector<HTMLButtonElement>('[data-google-login]')?.addEventListener('click', async (event) => {
+				const button = event.currentTarget as HTMLButtonElement;
+				const message = authDialog?.querySelector<HTMLElement>('[data-login-form] [data-auth-message]');
+				button.disabled = true;
+				if (message) message.textContent = '正在连接 Google…';
+				try {
+					const next = new URLSearchParams(location.search).get('next') || `/ielts${location.hash}`;
+					const result = await api<{ url: string }>('/api/ielts/auth/google', { method: 'POST', body: JSON.stringify({ next: safeIeltsNext(next) }) });
+					location.assign(result.url);
+				} catch (error) {
+					if (message) message.textContent = messageFor(error instanceof Error ? error.message : 'google_login_unavailable');
+					button.disabled = false;
 				}
 			});
 
@@ -764,10 +782,17 @@ const resources = [
 			renderBookingCart();
 			void syncSession().then(() => {
 				const params = new URLSearchParams(location.search);
-				if (params.get('login') === '1' && !session.authenticated) openAuth();
+				if (params.get('login') === '1' && !session.authenticated) {
+					openAuth();
+					if (params.get('auth_error') === 'google') {
+						const message = authDialog?.querySelector<HTMLElement>('[data-login-form] [data-auth-message]');
+						if (message) message.textContent = 'Google 登录未完成，请重试或使用邮箱与密码。';
+						history.replaceState(null, '', `/ielts${location.hash}`);
+					}
+				}
 				else if (params.get('login') === '1' && session.authenticated) {
 					const next = params.get('next');
-					if (session.role === 'admin' && next?.startsWith('/ielts/') && !next.includes('//')) location.assign(next);
+					if (session.role === 'admin' && next) location.assign(safeIeltsNext(next));
 				}
 			});
 		</script>
@@ -925,6 +950,11 @@ const resources = [
 	.form-message { min-height: 18px; margin: 0; color: var(--ielts-accent); font-size: 11px; line-height: 1.6; }
 	.dialog-submit { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-weight: 600; }
 	.auth-switch { min-height: 36px; border: 0; background: transparent; color: var(--ielts-accent); cursor: pointer; font-size: 12px; }
+	.google-login { min-height: 46px; display: grid; place-items: center; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-ink); cursor: pointer; font-weight: 500; transition: background .2s ease; }
+	.google-login:hover { background: var(--ielts-hover); }
+	.google-login:disabled { opacity: .5; cursor: wait; }
+	.auth-divider { display: flex; align-items: center; gap: 12px; color: var(--ielts-muted); font-size: 12px; }
+	.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--ielts-line); }
 	@media (max-width: 1100px) {
 		.booking-grid { grid-template-columns: minmax(0, 1fr) 250px; }
 		.booking-form-card { grid-column: 1 / -1; }
