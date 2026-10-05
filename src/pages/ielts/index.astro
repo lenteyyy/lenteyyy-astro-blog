@@ -181,7 +181,7 @@ const resources = [
 	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
 		<form data-login-form>
 			<div class="dialog-head"><div><h2 id="auth-dialog-title">登录</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
-			<button class="google-login" type="button" data-google-login>使用 Google 登录</button>
+			<button class="google-login" type="button" data-google-login><img src="/assets/google-g.png" width="20" height="20" alt="" aria-hidden="true" /><span data-google-login-label>使用 Google 登录</span></button>
 			<div class="auth-divider" aria-hidden="true">或</div>
 			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
 			<label>密码<input type="password" name="password" autocomplete="current-password" maxlength="72" required /></label>
@@ -950,7 +950,8 @@ const resources = [
 	.form-message { min-height: 18px; margin: 0; color: var(--ielts-accent); font-size: 11px; line-height: 1.6; }
 	.dialog-submit { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); cursor: pointer; font-weight: 600; }
 	.auth-switch { min-height: 36px; border: 0; background: transparent; color: var(--ielts-accent); cursor: pointer; font-size: 12px; }
-	.google-login { min-height: 46px; display: grid; place-items: center; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-ink); cursor: pointer; font-weight: 500; transition: background .2s ease; }
+	.google-login { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-ink); cursor: pointer; font-weight: 500; transition: background .2s ease; }
+	.google-login img { width: 20px; height: 20px; flex: 0 0 20px; object-fit: contain; background: #fff; border-radius: 50%; }
 	.google-login:hover { background: var(--ielts-hover); }
 	.google-login:disabled { opacity: .5; cursor: wait; }
 	.auth-divider { display: flex; align-items: center; gap: 12px; color: var(--ielts-muted); font-size: 12px; }
