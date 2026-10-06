@@ -1,0 +1,1217 @@
+{
+  "source": {
+    "book": 20,
+    "test": 1,
+    "questionPages": [
+      [
+        11,
+        12,
+        13
+      ],
+      [
+        16,
+        17,
+        18
+      ],
+      [
+        21,
+        22,
+        23
+      ]
+    ]
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-1/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-1/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-1/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-1/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "The kākāpō",
+        "instructions": "",
+        "paragraphs": [
+          "The kākāpō is a nocturnal, flightless parrot that is critically endangered and one of New Zealand's unique treasures",
+          "The kākāpō, also known as the owl parrot, is a large, forest -dwelling bird, with a pale owl -like face. Up to 64 cm in length, it has predominantly yellow -green feathers, forward-facing eyes, a large grey beak, large blue feet, and relative ly short wings and tail. It is the world's only flightless parrot, and is also possibly one of the world's longest-living birds, with a reported lifespan of up to 100 years. Kākāpō are solitary birds and tend to occupy the same home range for many years.",
+          "They forage on the ground and climb high into trees. They often leap from trees and flap their wings, but at best manage a controlled descent to the ground. They are entirely vegetarian, with their diet including the leaves, roots and bark of trees as well as bulbs, and fern fronds. Kākāpō breed in summer and autumn, but only in years when food is plentiful.",
+          "Males play no part in incubation or chick -rearing - females alone incubate eggs and feed the chicks. The 1 -4 eggs are laid in soil, which is repeatedly turned over before and during incubation. The female kākāpō has to spend long periods away from the nest searching for food, which leaves the unattended eggs and chicks particularly vulnerable to predators.",
+          "Before humans arrived, kākāpō were common throughout New Zealand's forests.",
+          "However, this all changed with the arrival of the first Polynesian settlers about 700 years ago. For the early settlers, the flightless kākāpō was easy prey. They ate its meat and used its feathers to make soft cloaks. With the m came the Polynesian dog and rat, which also preyed on kakap6. By the time European colonisers arrived in the early 1800s, kākāpō had become confined to the central North Island and forested parts of the South Island. The fall in kākāpō numbers was accele rated by European colonisation. A great deal of habitat was lost through forest clearance, and introduced species such as deer depleted the remaining forests of food. Other predators such as cats, stoats and two more species of rat were also introduced. The kākāpō were in serious trouble.",
+          "In 1894, the New Zealand government launched its first attempt to save the kākāpō. Conservationist Richard Henry led an effort to relocate several hundred of the birds to predator -free Resolution Island in Fiordland. Unfort unately, the island didn't remain predator free - stoats arrived within six years, eventually destroying the kākāpō population. By the mid-1900s, the kākāpō was practically a lost species. Only a few clung to life in the most isolated parts of New Zealand.",
+          "From 1949 to 1973, the newly formed New Zealand Wildlife Service made over 60 expeditions to find kākāpō, focusing mainly on Fiordland. Six were caught, but there were no females amongst them and all but one died within a few months of captivity. In 1974, a new initiative was launched, and by 1977, 18 more kākāpō were found in Fiordland. However, there were still no females. In 1977, a large population of males was spotted in Rakiura - a large island free from sto ats, ferrets and weasels. There were about 200 individuals, and in 1980 it was confirmed females were also present. These birds have been the foundation of all subsequent work in managing the species.",
+          "Unfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980 -97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island. However, breeding success was hard to achieve. Rats were found to be a major predator of kākāpō chicks and an insufficient number of chicks survived to offset adult mortality. By 1995, although at least 12 chicks had been produced on the islands, only three had survived. The kākāpō population had dropped to 51 birds. The critical situation prompted an urge nt review of kākāpō management in New Zealand.",
+          "In 1996, a new Recovery Plan was launched, together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of funding. Renewed steps were taken to control predators on the three islands. Cats were eradicated from Little Barrier Island in 1980, and possums were eradicated from Codfish Island by 1986. However, the population did not start to increase until rats were removed from all three islands, and the birds were more intensively managed. This involved moving the birds between islands, supplementary feeding of adults and rescuing and hand-raising any failing chicks.",
+          "After the first five years of the Recovery Plan, the population was on target. By 2000, five new females had been produced, and the total population had grown to 62 birds. For the first time, there was cautious optimism for the future of kākāpō and by June 2020, a total of 210 birds was recorded.",
+          "Today, kākāpō management continues to be guided by the kākāpō Recovery Plan.",
+          "Its key goals are: minimise the loss of genetic diversity in the kākāpō population, restore or maintain sufficient habitat to accommodate the expected increase in the kākāpō population, and ensure stakeholders continue to be fully engaged in the preservation of the species."
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "The return of the elm to Britain",
+        "instructions": "",
+        "paragraphs": [
+          "Mark Rowe investigates attempts to reintroduce elms to Britain",
+          "A Around 25 million elms, accounting for 90% of all elm trees in the U K, died during the 1960s and '70s of Dutch elm disease. In the aftermath, the elm, once so dominant in the British landscape, was largely forgotten. However, there's now hope the elm may be reintroduced to the countryside of central and southern England. Any reintroduction will start from a very low base. 'The impact of the disease is difficult to picture if you hadn't seen what was there before,' says Matt Elliot of the Woodland Trust. 'You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] . .. They were significant, large trees ... then they were gone.'",
+          "B The disease is caused by a fungus that blocks the elms' vascular (water, nutrient and food transport) system, causing branches to wilt and die. A first epidemic, which occurred in the 1920s, gradually died down, but in the '70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus. This time, the beetles carried a much more virulent strain that destroyed the vast majority of British elms.",
+          "C Today, elms still exist in the southern English countryside but mostly only in low hedgerows between fields. 'We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a cer tain size,' says Karen Russell, co-author of the report 'Where we are with elm'. Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold. Yet mature specimens have been identified, in counties such as Cambridgeshire, that are hundreds of years old, and have mysteriously escaped the epidemic.",
+          "The key, Russell says, is to identify and study those trees that have survived and work out why they stood tall when millions of others succumbed. Nevertheless, opportunities are limited as the number of these mature s urvivors is relatively small. 'What are the reasons for their survival?' asks Russell. 'Avoidance, tolerance, resistance? We don't know where the balance lies between the three. I don't see how it can be entirely down to luck.'",
+          "D For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain and was in many instances the most prominent tree in the landscape.",
+          "Not only was elm common in European forests, it became a key component of birch, ash and hazel woodlands. The use of elm is thought to go back to the Bronze Age, when it was widely used for tools. Elm was also the preferred material for shields and early swords. In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring. It was also suitable for items that experienced high levels of impact and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.",
+          "E Given how ingrained elm is in British culture, it's unsurprising the tree has many advocates. Amongst them is Peter Bourne of the National Elm Collection in Brighton. 'I saw Dutch elm disease unfold as a small boy,' he says. 'The elm seemed to be part of rural England, but I remember watching trees just lose their leaves and that really stayed with me.' Today, the city of Brighton's elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city's elm population. However, the situation is precarious. 'The beetles can just march in if we're not careful, as the threat is right on our doorstep,' says Bourne.",
+          "F Any prospect of the elm returning relies heavily on trees being either resistant to, or tolerant of, the dis ease. This means a widespread reintroduction would involve existing or new hybrid strains derived from resistant, generally non- native elm species. A new generation of seedlings have been bred and tested to see if they can withstand the fungus by cutting a small slit on the bark and injecting a tiny amount of the pathogen. 'The effects are very quick,' says Russell. 'You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.'",
+          "G All of this raises questions of social acceptance, acknowledges Russell. 'If we're putting elm back into the landscape, a small element of it is not native - are we bothered about that?' For her, the environmental case for reintroducing elm is strong. 'They will host wildlife, which is a good thing.' Others are more wary. 'On the face of it, it seems like a good idea,' says Elliot. The problem, he suggests, is that, 'You're replacing a native species with a horticultural analogue*. You're effectively cloning.' There's also the risk of introducing new diseases. Rather than plant new elms, the Woodland Trust emphasises providin g space to those elms that have survived independently. 'Sometimes the best thing you can do is just give nature time to recover ... over time, you might get resistance,' says Elliot.",
+          "* horticultural analogue: a cultivated plant species that is genetically similar to an existing species"
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "How stress affects our judgement",
+        "instructions": "",
+        "paragraphs": [
+          "Some of the most important decisions of our lives occur while we're feeling stressed and anxious. From medical decisions to financial and professional ones, we are all sometimes required to weigh up information under stressful conditions.",
+          "But do we become better or worse at processing and using information under such circumstances?",
+          "My colleague and I, both neuroscientists, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Firefighters' workdays vary quite a bit. Some are pretty relaxed; they'll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be hectic, with numerous life-threatening incidents to attend to; they'll enter burning homes to rescue trapped residents, and assist with medical emergencies.",
+          "These ups and downs presented the perfect setting for an experiment on how people's ability to use information changes when they feel under pressure.",
+          "We found that perceived threat acted as a trigger for a stress reaction that made the task of processing information easier for the firefighters - but only as long as it conveyed bad news.",
+          "This is how we arrived at these results. We asked the firefighters to estimate their likelihood of experiencing 40 different adverse events in their life, such as being involved in an accident or becoming a victim of card fraud. We then gave them either good news (that their likelihood of experiencing these events was lower than they'd thought) or bad news (that it was higher) and asked them to provide new estimates.",
+          "People are normally quite optimistic - they will ignore bad news and embrace the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different pattern emerged. Under these conditions, they became hyper-vigilant to bad news, even when it had nothing to do with the ir job (such as learning that the likelihood of card fraud was higher than they'd thought), and altered their beliefs in response. In contrast, stress didn't change how they responded to good news (such as learning that the likelihood of card fraud was lower than they'd thought).",
+          "Back in our lab, we observed the same pattern in students who were told they had to give a surprise public speech, which would be judged by a panel, recorded and posted online. Sure enough, their cortisol levels spiked, their heart rates went up and they suddenly became better at processing unrelated, yet alarming, information about rates of disease and violence.",
+          "When we experience stressful events, a physiological change is triggered that causes us to take in warnings and focus on what might go wrong. Brain imaging reveals that this 'switch' is related to a sudden boost in a neural signal important for learning, specifically in response to unexpected warning signs, such as faces expressing fear.",
+          "Such neural engineering could have he lped prehistoric humans to survive. When our ancestors found themselves surrounded by hungry animals, they would have benefited from an increased ability to learn about hazards. In a safe environment, however, it would have been wasteful to be on high aler t constantly. So, a neural switch that automatically increases or decreases our ability to process warnings in response to changes in our environment could have been useful. In fact, people with clinical depression and anxiety seem unable to switch away fr om a state in which they absorb all the negative messages around them.",
+          "It is also important to realise that stress travels rapidly from one person to the next. If a co-worker is stressed, we are more likely to tense up and feel stressed ourselves. We don't even need to be in the same room with someone for their emotions to influence our behaviour. Studies show that if we observe positive feeds on social media, such as images of a pink sunset, we are more likely to post uplifting messages ourselves. If we ob serve negative posts, such as complaints about a long queue at the coffee shop, we will in turn create more negative posts.",
+          "In some ways, many of us now live as if we are in danger, constantly ready to tackle demanding emails and text messages, and respond to news alerts and comments on social media. Repeatedly checking your phone, according to a survey conducted by the American Psychological Association, is related to stress. In other words, a pre -programmed physiological reaction, which evolution has equipped us with to help us avoid famished predators, is now being triggered by an online post. Social media posting, according to one study, raises your pulse, makes you sweat, and enlarges your pupils more than most daily activities.",
+          "The fact that stress inc reases the likelihood that we will focus more on alarming messages, together with the fact that it spreads extremely rapidly, can create collective fear that is not always justified. After a stressful public event, such as a natural disaster or major finan cial crash, there is often a wave of alarming information in traditional and social media, which individuals become very aware of. But that has the effect of exaggerating existing danger. And so, a reliable pattern emerges - stress is triggered, spreading from one person to the next, which temporarily enhances the likelihood that people will take in negative reports, which increases stress further. As a result, trips are cancelled, even if the disaster took place across the globe; stocks are sold, even when holding on is the best thing to do.",
+          "The good news, however, is that positive emotions, such as hope, are contagious too, and are powerful in inducing people to act to find solutions. Being aware of the close relationship between people's emotional state a nd how they process information can help us frame our messages more effectively and become conscientious agents of change."
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "You should spend about 20 minutes on this task.",
+        "paragraphs": [
+          "The first table below shows changes in the total population of New York City from 1800 to 2000. The second and third tables show changes in the population of the five districts of the city (Manhattan, Brooklyn, Bronx, Queens, Staten Island) over the same period.",
+          "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "Write at least 150 words."
+        ],
+        "questionImages": [
+          "/ielts/mock/c20-test-1/writing-task-1.webp"
+        ],
+        "audioUrl": ""
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "You should spend about 40 minutes on this task.",
+        "paragraphs": [
+          "Access to clean water is a basic human right. Therefore, every home should have a water supply that is provided free of charge.",
+          "Do you agree or disagree?",
+          "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+          "Write at least 250 words."
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      }
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "fish",
+      "roof",
+      "Spanish",
+      "vegetarian",
+      "Audley",
+      "hotel",
+      "reviews",
+      "local",
+      "30|thirty",
+      "average",
+      "A",
+      "B",
+      "C",
+      "A",
+      "B",
+      "C",
+      "A",
+      "E",
+      "C",
+      "E",
+      "C",
+      "E",
+      "A",
+      "C",
+      "A",
+      "B",
+      "A",
+      "B",
+      "A",
+      "C",
+      "factories",
+      "dead",
+      "whale",
+      "apartments",
+      "park",
+      "art",
+      "beaches",
+      "ferry",
+      "bikes",
+      "drone"
+    ],
+    "reading": [
+      "FALSE",
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "bulbs",
+      "soil",
+      "feathers",
+      "deer",
+      "1980",
+      "funding",
+      "stakeholders",
+      "C",
+      "G",
+      "B",
+      "E",
+      "C",
+      "B",
+      "A",
+      "B",
+      "C",
+      "A",
+      "oak",
+      "flooring",
+      "keel",
+      "C",
+      "A",
+      "D",
+      "C",
+      "B",
+      "G",
+      "F",
+      "E",
+      "D",
+      "YES",
+      "NOT GIVEN",
+      "NO",
+      "YES",
+      "YES"
+    ]
+  },
+  "completionOptions": {},
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "heading",
+          "text": "Questions 1–10"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the table below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "table",
+          "title": "Restaurants",
+          "columns": [
+            "Name of restaurant",
+            "Location",
+            "Reason for recommendation",
+            "Other comments"
+          ],
+          "rows": [
+            [
+              "The Junction",
+              "Greyson Street, near the station",
+              "Good for people who are especially keen on {{1}}",
+              "Quite expensive. The {{2}} is a good place for a drink."
+            ],
+            [
+              "Paloma",
+              "In Bow Street next to the cinema",
+              "{{3}} food, good for sharing",
+              "Staff are very friendly. Need to pay £50 deposit. A limited selection of {{4}} food on the menu."
+            ],
+            [
+              "The {{5}}",
+              "At the top of a {{6}}",
+              "A famous chef. All the {{7}} are very good. Only uses {{8}} ingredients.",
+              "Set lunch costs {{9}} per person. Portions probably of {{10}} size."
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 11–16"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 11,
+          "prompt": "Heather says pottery differs from other art forms because",
+          "options": [
+            {
+              "letter": "A",
+              "text": "it lasts longer in the ground."
+            },
+            {
+              "letter": "B",
+              "text": "it is practised by more people."
+            },
+            {
+              "letter": "C",
+              "text": "it can be repaired more easily."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 12,
+          "prompt": "Archaeologists sometimes identify the use of ancient pottery from",
+          "options": [
+            {
+              "letter": "A",
+              "text": "the clay it was made with."
+            },
+            {
+              "letter": "B",
+              "text": "the marks that are on it."
+            },
+            {
+              "letter": "C",
+              "text": "the basic shape of it."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 13,
+          "prompt": "Some people join Heather's pottery class because they want to",
+          "options": [
+            {
+              "letter": "A",
+              "text": "create an item that looks very old."
+            },
+            {
+              "letter": "B",
+              "text": "find something that they are good at."
+            },
+            {
+              "letter": "C",
+              "text": "make something that will outlive them."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 14,
+          "prompt": "What does Heather value most about being a potter?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "its calming effect"
+            },
+            {
+              "letter": "B",
+              "text": "its messy nature"
+            },
+            {
+              "letter": "C",
+              "text": "its physical benefits"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 15,
+          "prompt": "Most of the visitors to Edelman Pottery",
+          "options": [
+            {
+              "letter": "A",
+              "text": "bring friends to join courses."
+            },
+            {
+              "letter": "B",
+              "text": "have never made a pot before."
+            },
+            {
+              "letter": "C",
+              "text": "try to learn techniques too quickly."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 16,
+          "prompt": "Heather reminds her visitors that they should",
+          "options": [
+            {
+              "letter": "A",
+              "text": "put on their aprons."
+            },
+            {
+              "letter": "B",
+              "text": "change their clothes."
+            },
+            {
+              "letter": "C",
+              "text": "take off their jewellery."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 17–18"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            17,
+            18
+          ],
+          "prompt": "Which TWO things does Heather explain about kilns?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "what their function is"
+            },
+            {
+              "letter": "B",
+              "text": "when they were invented"
+            },
+            {
+              "letter": "C",
+              "text": "ways of keeping them safe"
+            },
+            {
+              "letter": "D",
+              "text": "where to put one in your home"
+            },
+            {
+              "letter": "E",
+              "text": "what some people use instead of one"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 19–20"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            19,
+            20
+          ],
+          "prompt": "Which TWO points does Heather make about a potter's tools?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Some are hard to hold."
+            },
+            {
+              "letter": "B",
+              "text": "Some are worth buying."
+            },
+            {
+              "letter": "C",
+              "text": "Some are essential items."
+            },
+            {
+              "letter": "D",
+              "text": "Some have memorable names."
+            },
+            {
+              "letter": "E",
+              "text": "Some are available for use by participants."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 21–22"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Which TWO things do the students both believe are responsible for the increase in loneliness?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "social media"
+            },
+            {
+              "letter": "B",
+              "text": "smaller nuclear families"
+            },
+            {
+              "letter": "C",
+              "text": "urban design"
+            },
+            {
+              "letter": "D",
+              "text": "longer lifespans"
+            },
+            {
+              "letter": "E",
+              "text": "a mobile workforce"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 23–24"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Which TWO health risks associated with loneliness do the students agree are based on solid evidence?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "a weakened immune system"
+            },
+            {
+              "letter": "B",
+              "text": "dementia"
+            },
+            {
+              "letter": "C",
+              "text": "cancer"
+            },
+            {
+              "letter": "D",
+              "text": "obesity"
+            },
+            {
+              "letter": "E",
+              "text": "cardiovascular disease"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 25–26"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Which TWO opinions do both the students express about the evolutionary theory of loneliness?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "It has little practical relevance."
+            },
+            {
+              "letter": "B",
+              "text": "It needs further investigation."
+            },
+            {
+              "letter": "C",
+              "text": "It is misleading."
+            },
+            {
+              "letter": "D",
+              "text": "It should be more widely accepted."
+            },
+            {
+              "letter": "E",
+              "text": "It is difficult to understand."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 27–30"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 27,
+          "prompt": "When comparing loneliness to depression, the students",
+          "options": [
+            {
+              "letter": "A",
+              "text": "doubt that there will ever be a medical cure for loneliness."
+            },
+            {
+              "letter": "B",
+              "text": "claim that the link between loneliness and mental health is overstated."
+            },
+            {
+              "letter": "C",
+              "text": "express frustration that loneliness is not taken more seriously."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 28,
+          "prompt": "Why do the students decide to start their presentation with an example from their own experience?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "to explain how difficult loneliness can be"
+            },
+            {
+              "letter": "B",
+              "text": "to highlight a situation that most students will recognise"
+            },
+            {
+              "letter": "C",
+              "text": "to emphasise that feeling lonely is more common for men than women"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 29,
+          "prompt": "The students agree that talking to strangers is a good strategy for dealing with loneliness because",
+          "options": [
+            {
+              "letter": "A",
+              "text": "it creates a sense of belonging."
+            },
+            {
+              "letter": "B",
+              "text": "it builds self-confidence."
+            },
+            {
+              "letter": "C",
+              "text": "it makes people feel more positive."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 30,
+          "prompt": "The students find it difficult to understand why solitude is considered to be",
+          "options": [
+            {
+              "letter": "A",
+              "text": "similar to loneliness."
+            },
+            {
+              "letter": "B",
+              "text": "necessary for mental health."
+            },
+            {
+              "letter": "C",
+              "text": "an enjoyable experience."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 31–40"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the notes below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "notes",
+          "title": "Reclaiming urban rivers",
+          "groups": [
+            {
+              "items": [
+                "Nearly all major cities were built on a river.",
+                "Rivers were traditionally used by city dwellers for transport, fishing and recreation.",
+                "Industrial development and rising populations later led to: - more sewage from houses being discharged into the river - pollution from {{31}} on the river bank.",
+                "In 1957, the River Thames in London was declared biologically {{32}}"
+              ]
+            },
+            {
+              "heading": "Recent improvements",
+              "items": [
+                "Seals and even a {{33}} have been seen in the River Thames.",
+                "Riverside warehouses are converted to restaurants and {{34}} .",
+                "In Los Angeles, there are plans to: - -build a riverside {{35}} . - Display {{36}} projects.",
+                "In Paris, {{37}} are created on the sides of the river every summer."
+              ]
+            },
+            {
+              "heading": "Transport possibilities",
+              "items": [
+                "Over 2 billion passengers already travel by {{38}} In cities round the world.",
+                "Changes in shopping habits mean the number of deliveries that are made is increasing.",
+                "Instead of road transport, goods could be transported by large freight barges and electric {{39}} or, in future, by {{40}}"
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "instruction",
+          "text": "Do the following statements agree with the information given in the passage?"
+        },
+        {
+          "type": "bank",
+          "title": "",
+          "options": [
+            {
+              "letter": "TRUE",
+              "text": "if the statement agrees with the information"
+            },
+            {
+              "letter": "FALSE",
+              "text": "if the statement contradicts the information"
+            },
+            {
+              "letter": "NOT GIVEN",
+              "text": "if there is no information on this"
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": "There are other parrots that share the kākāpō's inability to fly."
+            },
+            {
+              "number": 2,
+              "text": "Adult kākāpō produce chicks every year."
+            },
+            {
+              "number": 3,
+              "text": "Adult male kākāpō bring food back to nesting females."
+            },
+            {
+              "number": 4,
+              "text": "The Polynesian rat was a greater threat to the kākāpō than Polynesian settlers."
+            },
+            {
+              "number": 5,
+              "text": "Kākāpō were transferred from Rakiura Island to other locations because they were at risk from feral cats."
+            },
+            {
+              "number": 6,
+              "text": "One Recovery Plan initiative that helped increase the kākāpō population size was caring for struggling young birds."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 7–13"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the notes below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "notes",
+          "title": "New Zealand’s kākāpō",
+          "groups": [
+            {
+              "items": [
+                "diet consists of fern fronds, various parts of a tree and {{7}}",
+                "nests are created in {{8}} where eggs are laid."
+              ]
+            },
+            {
+              "heading": "Arrival of Polynesian settlers",
+              "items": [
+                "the {{9}} of the kākāpō were used to make clothes."
+              ]
+            },
+            {
+              "heading": "Arrival of European colonisers",
+              "items": [
+                "{{10}} were an animal which they introduced that ate the kākāpō's food sources."
+              ]
+            },
+            {
+              "heading": "Protecting kākāpō",
+              "items": [
+                "Richard Henry, a conservationist, tried to protect the kākāpō.",
+                "a definite sighting of female kākāpō on Rakiura Island was reported in the year {{11}}",
+                "the Recovery Plan included an increase in {{12}}",
+                "a current goal of the Recovery Plan is to maintain the involvement of {{13}} in kākāpō protection."
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 14–18"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "Sections",
+          "options": [
+            {
+              "letter": "A",
+              "text": ""
+            },
+            {
+              "letter": "B",
+              "text": ""
+            },
+            {
+              "letter": "C",
+              "text": ""
+            },
+            {
+              "letter": "D",
+              "text": ""
+            },
+            {
+              "letter": "E",
+              "text": ""
+            },
+            {
+              "letter": "F",
+              "text": ""
+            },
+            {
+              "letter": "G",
+              "text": ""
+            }
+          ],
+          "rows": [
+            {
+              "number": 14,
+              "text": "reference to the research problems that arise from there being only a few surviving large elms"
+            },
+            {
+              "number": 15,
+              "text": "details of a difference of opinion about the value of reintroducing elms to Britain"
+            },
+            {
+              "number": 16,
+              "text": "reference to how Dutch elm disease was brought into Britain"
+            },
+            {
+              "number": 17,
+              "text": "a description of the conditions that have enabled a location in Britain to escape Dutch elm disease"
+            },
+            {
+              "number": 18,
+              "text": "reference to the stage at which young elms become vulnerable to Dutch elm disease"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 19–23"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "People",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "letter": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "letter": "C",
+              "text": "Peter Bourne"
+            }
+          ],
+          "rows": [
+            {
+              "number": 19,
+              "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible."
+            },
+            {
+              "number": 20,
+              "text": "It may be better to wait and see if the mature elms that have survived continue to flourish."
+            },
+            {
+              "number": 21,
+              "text": "There must be an explanation for the survival of some mature elms."
+            },
+            {
+              "number": 22,
+              "text": "We need to be aware that insects carrying Dutch elm disease are not very far away."
+            },
+            {
+              "number": 23,
+              "text": "You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once was."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 24–26"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the summary below."
+        },
+        {
+          "type": "instruction",
+          "text": "Choose ONE WORD ONLY from the passage for each answer."
+        },
+        {
+          "type": "summary",
+          "title": "Uses of a popular tree",
+          "paragraphs": [
+            "For hundreds of years, the only tree that was more popular in Britain than elm was {{24}} . Starting in the Bronze Age, many tools were made from elm and people also used it to make weapons. In the 18th century, it was grown to provide wood for boxes and {{25}} . Due to its strength, elm was often used for mining equipment and the Cutty Sark's {{26}} was also constructed from elm."
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 27–30"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 27,
+          "prompt": "In the first paragraph, the writer introduces the topic of the text by",
+          "options": [
+            {
+              "letter": "A",
+              "text": "defining some commonly used terms."
+            },
+            {
+              "letter": "B",
+              "text": "questioning a widely held assumption."
+            },
+            {
+              "letter": "C",
+              "text": "mentioning a challenge faced by everyone."
+            },
+            {
+              "letter": "D",
+              "text": "specifying a situation which makes us most anxious."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 28,
+          "prompt": "What point does the writer make about firefighters in the second paragraph?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "The regular changes of stress levels in their working lives make them ideal study subjects."
+            },
+            {
+              "letter": "B",
+              "text": "The strategies they use to handle stress are of particular interest to researchers."
+            },
+            {
+              "letter": "C",
+              "text": "The stressful nature of their job is typical of many public service professions."
+            },
+            {
+              "letter": "D",
+              "text": "Their personalities make them especially well-suited to working under stress."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 29,
+          "prompt": "What is the writer doing in the fourth paragraph?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "explaining their findings"
+            },
+            {
+              "letter": "B",
+              "text": "justifying their approach"
+            },
+            {
+              "letter": "C",
+              "text": "setting out their objectives"
+            },
+            {
+              "letter": "D",
+              "text": "describing their methodology"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 30,
+          "prompt": "In the seventh paragraph, the writer describes a mechanism in the brain which",
+          "options": [
+            {
+              "letter": "A",
+              "text": "enables people to respond more quickly to stressful situations."
+            },
+            {
+              "letter": "B",
+              "text": "results in increased ability to control our levels of anxiety."
+            },
+            {
+              "letter": "C",
+              "text": "produces heightened sensitivity to indications of external threats."
+            },
+            {
+              "letter": "D",
+              "text": "is activated when there is a need to communicate a sense of danger."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 31–35"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "Sentence endings",
+          "options": [
+            {
+              "letter": "A",
+              "text": "made them feel optimistic."
+            },
+            {
+              "letter": "B",
+              "text": "took relatively little notice of bad news."
+            },
+            {
+              "letter": "C",
+              "text": "responded to negative and positive information in the same way."
+            },
+            {
+              "letter": "D",
+              "text": "were feeling under stress."
+            },
+            {
+              "letter": "E",
+              "text": "put them in a stressful situation."
+            },
+            {
+              "letter": "F",
+              "text": "behaved in a similar manner, regardless of the circumstances."
+            },
+            {
+              "letter": "G",
+              "text": "thought it more likely that they would experience something bad."
+            }
+          ],
+          "rows": [
+            {
+              "number": 31,
+              "text": "At times when they were relaxed, the firefighters usually"
+            },
+            {
+              "number": 32,
+              "text": "The researchers noted that when the firefighters were stressed, they"
+            },
+            {
+              "number": 33,
+              "text": "When the firefighters were told good news, they always"
+            },
+            {
+              "number": 34,
+              "text": "The students' cortisol levels and heart rates were affected when the researchers"
+            },
+            {
+              "number": 35,
+              "text": "In both experiments, negative information was processed better when the subjects"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 36–40"
+        },
+        {
+          "type": "instruction",
+          "text": "Do the following statements agree with the claims of the writer?"
+        },
+        {
+          "type": "bank",
+          "title": "",
+          "options": [
+            {
+              "letter": "YES",
+              "text": "if the statement agrees with the claims of the writer"
+            },
+            {
+              "letter": "NO",
+              "text": "if the statement contradicts the claims of the writer"
+            },
+            {
+              "letter": "NOT GIVEN",
+              "text": "if it is impossible to say what the writer thinks about this"
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds."
+            },
+            {
+              "number": 37,
+              "text": "Phones have a greater impact on our stress levels than other electronic media devices."
+            },
+            {
+              "number": 38,
+              "text": "The more we read about a stressful public event on social media, the less able we are to take the information in."
+            },
+            {
+              "number": 39,
+              "text": "Stress created by social media posts can lead us to take unnecessary precautions."
+            },
+            {
+              "number": 40,
+              "text": "Our tendency to be affected by other people's moods can be used in a positive way."
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

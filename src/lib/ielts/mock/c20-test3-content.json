@@ -1,0 +1,1216 @@
+{
+  "source": {
+    "book": 20,
+    "test": 3,
+    "questionPages": [
+      [
+        86,
+        87,
+        88
+      ],
+      [
+        91,
+        92,
+        93
+      ],
+      [
+        96,
+        97,
+        98,
+        99
+      ]
+    ]
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-3/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-3/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-3/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c20-test-3/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Frozen Food – an American perspective",
+        "instructions": "",
+        "paragraphs": [
+          "A US perspective on the development of the frozen food industry",
+          "At some point in history, humans discovered that ice preserved food. There is evidence that winter ice was stored to preserve food in the summer as far back as 10,000 years ago. Two thousand years ago, the inhabitants of South America's Andean mountains had a unique means of conserving potatoes for later consumption. They froze them overnight, then trampled them to squeeze out the moisture, then dried them in the sun. This preserved their nutritional value -if not their aesthetic appeal.",
+          "Natural ice remained the main form of refrigeration until late in the 19th century.",
+          "In the early 1800s, ship owners from Boston, USA, had enormous blocks of Arctic ice towed all over the Atlantic for the purpose of food preservation. In 1851, railroads first began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston.",
+          "Finally, in 1870, Australian inventors found a way to make 'mechanical ice'. They used a compressor to force a gas -ammonia at first and later Freon -through a condenser. The compressed gas gave up some of its heat as it moved through the condenser. Then the gas was released quickly into a low-pressure evaporator coil where it became liquid and cold. Air was blown over the evaporator coil and then this cooled air passed into an insulated compartment, lowering its temperature to freezing point.",
+          "Initially, this process was invented to keep Australian beer cool even in hot weather. But Australian cattlemen were quick to realize that, if they could put this new invention on a ship , they could export meat across the oceans. In 1880, a shipment of Australian beef and mutton was sent, frozen, to England. While the food frozen this way was still palatable, there was some deterioration. During the freezing process, crystals formed within the cells of the food, and when the ice expanded and the cells burst, this spoilt the flavor and texture of the food.",
+          "The modern frozen food industry began with the indigenous Inuit people of Canada. In 1912, a biology student in Massachusetts, USA, named Clarence Birdseye, ran out of money and went to Labrador in Canada to trap and trade furs.",
+          "While he was there, he became fascinated with how the Inuit would quickly freeze fish in the Arctic air. The fish looked and tasted fresh even months later.",
+          "Birdseye returned to the USA in 1917 and began developing mechanical freezers capable of quick-freezing food. Birdseye methodically kept inventing better freezers and gradually built a business selling frozen fish from Gloucester, Massachusetts. In 1929, his business was sold and became General Foods, but he stayed with the company as director of research, and his division continued to innovate.",
+          "Birdseye was responsible for several key innovations that made the frozen food industry possible. He developed quick-freezing techniques that reduced the damage that crystals caused, as well as the technique of freezing the product in the package it was to be sold in. He also introduced the use of cellophane, the first transparent material for food packaging, which allowed consumers to see the quality of the product. Birdseye products also came in convenient size packages that could be prepared with a minimum of effort.",
+          "But there were still obstacles. In the 1930s, few grocery stores could afford to buy freezers for a market that wasn't established yet. So, Birdseye leased inexpensive freezer cases to them. He also leased insulated railroad cars so that he could ship his products nationwide. However, few consumers had freezers large enough or efficient enough to take advantage of the products.",
+          "Sales increased in the early 1940s, when World War II gave a boost to the frozen food industry because tin was being used for munitions. Canned foods were rationed to save tin for the war effort, while frozen foods were abundant and cheap. Finally, by the 1950s, refrigerator technology had developed far enough to make these appliances affordable for the average family. By 1953, 33 million US families owned a refrigerator, and manufacturers were gradually increasing the size of the freezer compartments in them. 1950s families were also looking for convenience at mealtimes, so the moment was right for the arrival of the 'TV Dinner'. Swanson Foods was a large, nationally recognized producer of canned and frozen poultry. In 1954, the company adapted some of Birdseye's freezing techniques, and with the help of a clever name and a huge advertising budget, it launched the first 'TV Dinner'. This consisted of frozen turkey, potatoes and vegetables served in the same segmented aluminum tray that was used by airlines. The product was an instant success. Within a year, Swanson had sold 13 million TV dinners. American consumers couldn't resist the combination of a trusted brand name, a single-serving package and the convenience of a meal that could be ready after only 25 minutes in a hot oven. By 1959, Americans were spending $2.7 billion annually on frozen foods, and half a billion of that was spent on ready-prepared meals such as the TV Dinner.",
+          "Today, the US frozen food industry has a turnover of over $67 billion annually, with $26.6 billion of that sold to consumers for home consumption. The remaining $40 billion in frozen food sales come through restaurants, cafeterias, hospitals and schools, and that represents a third of the total food service sales."
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Can the planet's coral reefs be saved?",
+        "instructions": "",
+        "paragraphs": [
+          "A Conservationists have put the final touches to a giant artificial reef they have been assembling at the world-renowned Zoological Society of London (London Zoo).",
+          "Samples of the planet's most spectacular corals - vivid green branching coral, yellow scroll, blue ridge and many more species - have been added to the giant tank along with fish that thrive in their presence: blue tang, clownfish and many others. The reef is in the zoo's new gallery, Tiny Giants, which is dedicated to the minuscule invertebrate creatures that sustain life across the planet. The coral reef tank and its seven-metre-wide window form the core of the exhibition.",
+          "'Coral reefs are the most diverse ecosystems on Earth and we want to show people how wonderful they are,' said Paul Pearce -Kelly, senior curator of invertebrates and fish at the Zoological Society of London. 'However, we also want to highlight the research and conservation efforts that are now being carried out to try to save them from the threat of global warming.' They want people to see what is being done to try to save these wonders.",
+          "B Corals are composed of tiny animals, known as polyps, with tentacles for capturing small marine creatures in the sea water. These polyps are transparent but get their brilliant tones of pink, orange, blue, green, etc. from algae that live within them, which in turn get protection, while their photosynthesising of the sun's rays provides nutrients for the polyps. This comfortable symbiotic relationship has led to the growth of coral reefs that cover 0.1% of the planet's ocean bed while providing homes for more than 25% of marine species, including fish, molluscs, sponges and shellfish.",
+          "C As a result, coral reefs are often described as the 'rainforests of the sea', though the comparison is dismissed by some naturalists, including David Attenborough. 'People say you cannot beat the rainforest,' Attenborough has stated. 'But that is simply not true. You go there and the first thing you think is: where ... are the birds?",
+          "Where are the animals? They are hiding in the trees, of course. No, if you want beauty and wildlife, you want a coral reef. Put on a mask and stick your head under the water. The sight is mind-blowing.'",
+          "D Unfortunately, these majestic sights are now under very serious threat, with the most immediate problem coming in the form of thermal stress. Rising ocean temperatures are triggering bleaching events that strip reefs of their colour and eventually kill them. And that is just the start. Other menaces include ocean acidification, sea level increase, pollution by humans, deoxygenation and ocean current changes, while the climate crisis is also increasing habitat destruction. As a result, vast areas - including massive chunks of Australia's Great Barrier Reef - have already been destroyed, and scientists advise that more than 90% of reefs could be lost by 2050 unless urgent action is taken to tackle global heating and greenhouse gasemissions.",
+          "Pearce-Kelly says that coral reefs have to survive really harsh conditions - wave erosion and other factors. And 'when things start to go wrong in the oceans, then corals will be the first to react. And that is exactly what we are seeing now. Coral reefs are dying and they are telling us that all is not well with our planet.'",
+          "E However, scientists are trying to pinpoint hardy types of coral that could survive our overheated oceans, and some of this research will be carried out at London Zoo. 'Behind our ... coral reef tank we have built laboratories where scientists will be studying coral species,' said Pearce-Kelly. One aim will be to carry out research on species to find those that can survive best in warm, acidic waters. Another will be to try to increase coral breeding rates. 'Coral spawn just once a year,' he added. 'However, aquarium-based research has enabled some corals to spawn artificially, which can assist coral reef restoration efforts. And if this can be extended for all species, we could consider the launching of coral-spawning programmes several times a year. That would be a big help in restoring blighted reefs.'",
+          "F Research in these fields is being conducted in laboratories around the world, with the London Zoo centre linked to this global network. Studies carried out in one centre can then be tested in others. The resulting young coral can then be displayed in the tank in Tiny Giants. 'The crucial point is that the progress we make in making coral better able to survive in a warming world can be shown to the public and encourage them to believe that we can do something to save the planet's reefs,' said Pearce -Kelly. 'Saving our coral reefs is now a critically important ecological goal.'"
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Robots and us",
+        "instructions": "",
+        "paragraphs": [
+          "Three leaders in their fields answer questions about our relationships with robot",
+          "When asked 'Should robots be used to colonies other planets?', cosmology and astrophysics Professor Martin Rees said he believed the solar system would be mapped by robotic craft by the end of the century. 'The next step would be mining of asteroids, enabling fabrication of large structures in space without having to bring all the raw materials from Earth. ... I think this is more realistic and benign than the … \"terraforming\"* of planets.' He maintains that colonised planets 'should be preserved with a status that is analogous to Antarctica here on Earth.'",
+          "On the question of using robots to colonise other planets and exploit mineral resources, engineering Professor Daniel Wolpert replied, 'I don't see a pressing need to colonise other planets unless we can bring [these] resources back to Earth. The vast majority of Earth is currently inaccessible to us. Using robots to gather resources nearer to home would seem to be a better use of our robotic tools.'",
+          "Meanwhile, for anthropology Professor Kathleen Richardson, the idea of 'colonisation' of other planets seemed morally dubious: 'I think whether we do something on Earth or on Mars we should always do it in the spirit of a genuine interest in \"the Other\", not to impose a particular model, but to meet \"the Other\".'",
+          "In response to the second question, 'How soon will machine intelligence outstrip human intelligence?', Rees mentions robots that are advanced enough to beat humans at chess, but then goes on to say, 'Robots are still limited in their ability to sense their environment: they can't yet recognise and move the pieces on a real chessboard as cleverly as a child can. Later this century, however, their more advanced successors may relate to their surroundings, and to people, as adeptly as we do. Moral questions then arise. … Should we feel guilty about exploiting [sophisticated robots]? Should we fret if they are underemployed, frustrated, or bored?'",
+          "Wolpert's response to the question about machine intelligence outstripping human intelligence was this: 'In a limited sense it alread y has. Machines can already navigate, remember and search for items with an ability that far outstrips humans. However, there is no machine that can identify visual objects or speech with the reliability and flexibility of humans. … Expecting a machine close to the creative intelligence of a human within the next 50 years would be highly ambitious.'",
+          "Richardson believes that our fear of machines becoming too advanced has more to do with human nature than anything intrinsic to the machines themselves. In her view, it stems from humans' tendency to personify inanimate objects: we create machines based on representations of ourselves, imagine that machines think and behave as we do, and therefore see them as an autonomous threat. 'One of the consequences of thi nking that the problem lies with machines is that …. we tend to imagine they are greater and more powerful than they really are and subsequently they become so.' This led on to the third question, 'Should we be scared by advances in artificial intelligence?' To this question, Rees replied, 'Those who should be worried are the futurologists who believe in the so -called \"singularity\".** ... And another worry is that we are increasingly dependent on computer networks, and that these could behave like a single \"brain\" with a mind of its own, and with goals that may be contrary to human welfare. I think we should ensure that robots remain as no more than \"idiot savants\" lacking the capacity to outwit us, even though they may greatly surpass us in the ability to calculate and process information.'",
+          "Wolpert's response was to say that we have already seen the damaging effects of artificial intelligence in the form of computer viruses. 'But in this case,' he says, 'the real intelligence is the malicious designer. Criti cally, the benefits of computers outweigh the damage that computer viruses cause. Similarly, while there may be misuses of robotics in the near future, the benefits that they will bring are likely to outweigh these negative aspects.'",
+          "Richardson's response to this question was this: 'We need to ask why fears of artificial intelligence and robots persist; none have in fact risen up and challenged human supremacy.' She believes that as robots have never shown themselves to be a threat to humans, it seems unlik ely that they ever will. In fact, she went on, 'Not all fear [robots]; many people welcome machine intelligence.' In answer to the fourth question, 'What can science fiction tell us about robotics?',",
+          "Rees replied, 'I sometimes advise students that it's bet ter to read first -rate science fiction than second-rate science - more stimulating, and perhaps no more likely to be wrong.' As his response, Wolpert commented, 'Science fiction has often been remarkable at predicting the future Science fiction has painte d a vivid spectrum of possible futures, from cute and helpful robots to dystopian robotic societies. Interestingly, almost no science fiction envisages a future without robots.' Finally, on the question of science fiction, Richardson pointed out that in mo dern society, people tend to think there is reality on the one hand, and fiction and fantasy on the other. She then explained that the division did not always exist, and that scientists and technologists made this separation because they wanted to carve out the sphere of their work. 'But the divide is not so clear cut, and that is why the worlds seem to collide at times,' she said. 'In some cases, we need to bring these different understandings together to get a whole perspective. Perhaps then, we won't be so frightened that something we create as a copy of ourselves will be a [threat] to us.'",
+          "* terraforming: modifying a planet's atmosphere to suit human needs",
+          "** singularity: the point when robots will be able to start creating ever more sophisticated versions of themselves"
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "You should spend about 20 minutes on this task.",
+        "paragraphs": [
+          "The charts below give information about a public library in a town called Little Chalfont.",
+          "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "Write at least 150 words."
+        ],
+        "questionImages": [
+          "/ielts/mock/c20-test-3/writing-task-1.webp"
+        ],
+        "audioUrl": ""
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "You should spend about 40 minutes on this task.",
+        "paragraphs": [
+          "Some people have decided to reduce the number of times they fly every year or to stop flying altogether.",
+          "Do you think the environmental benefits of this development outweigh the disadvantages for individuals and businesses?",
+          "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+          "Write at least 250 words."
+        ],
+        "questionImages": [],
+        "audioUrl": ""
+      }
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "239|two hundred thirty-nine|two hundred and thirty-nine",
+      "modern",
+      "lamp",
+      "Aaron",
+      "damage",
+      "electronic",
+      "insurance",
+      "space",
+      "app",
+      "exchanges",
+      "B",
+      "A",
+      "A",
+      "C",
+      "B",
+      "C",
+      "B",
+      "A",
+      "G",
+      "E",
+      "B",
+      "A",
+      "C",
+      "A",
+      "C",
+      "B",
+      "F",
+      "E",
+      "B",
+      "D",
+      "adaptation",
+      "cognitive",
+      "desks",
+      "taps",
+      "blue",
+      "voice",
+      "pregnant",
+      "shoulders",
+      "police",
+      "temperature"
+    ],
+    "reading": [
+      "potatoes",
+      "butter",
+      "meat",
+      "crystals",
+      "cellophane",
+      "tin",
+      "refrigerator",
+      "NOT GIVEN",
+      "TRUE",
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "NOT GIVEN",
+      "v",
+      "ii",
+      "iv",
+      "vii",
+      "iii",
+      "vi",
+      "C",
+      "E",
+      "B",
+      "D",
+      "tentacles",
+      "protection",
+      "colour|color",
+      "A",
+      "C",
+      "B",
+      "A",
+      "B",
+      "A",
+      "C",
+      "C",
+      "B",
+      "D",
+      "B",
+      "C",
+      "B",
+      "C"
+    ]
+  },
+  "completionOptions": {},
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "heading",
+          "text": "Questions 1–10"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the table below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "table",
+          "title": "Furniture Rental Companies",
+          "columns": [
+            "Name of company",
+            "Information about costs",
+            "Additional notes"
+          ],
+          "rows": [
+            [
+              "Peak Rentals",
+              "Prices range from $105 to ${{1}} per room per month",
+              "The furniture is very {{2}}. Delivers in 1–2 days. Special offer: free {{3}} with every living room set."
+            ],
+            [
+              "{{4}} and Oliver",
+              "Mid-range prices. 12% monthly fee for {{5}}.",
+              "Also offers a cleaning service."
+            ],
+            [
+              "Larch Furniture",
+              "Offers cheapest prices for renting furniture and {{6}} items",
+              "Must have own {{7}}. Minimum contract length: six months."
+            ],
+            [
+              "{{8}} Rentals",
+              "See the {{9}} for the most up-to-date prices",
+              "{{10}} are allowed within 7 days of delivery."
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 11–16"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 11,
+          "prompt": "Who was responsible for starting the community project?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "the castle owners"
+            },
+            {
+              "letter": "B",
+              "text": "a national charity"
+            },
+            {
+              "letter": "C",
+              "text": "the local council"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 12,
+          "prompt": "How was the gold coin found?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Heavy rain had removed some of the soil."
+            },
+            {
+              "letter": "B",
+              "text": "The ground was dug up by wild rabbits."
+            },
+            {
+              "letter": "C",
+              "text": "A person with a metal detector searched the area."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 13,
+          "prompt": "What led the archaeologists to believe there was an ancient village on this site?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "the lucky discovery of old records"
+            },
+            {
+              "letter": "B",
+              "text": "the bases of several structures visible in the grass"
+            },
+            {
+              "letter": "C",
+              "text": "the unusual stones found near the castle"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 14,
+          "prompt": "What are the team still hoping to find?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "everyday pottery"
+            },
+            {
+              "letter": "B",
+              "text": "animal bones"
+            },
+            {
+              "letter": "C",
+              "text": "pieces of jewellery"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 15,
+          "prompt": "What was found on the other side of the river to the castle?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "the remains of a large palace"
+            },
+            {
+              "letter": "B",
+              "text": "the outline of fields"
+            },
+            {
+              "letter": "C",
+              "text": "a number of small huts"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 16,
+          "prompt": "What do the team plan to do after work ends this summer?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "prepare a display for a museum"
+            },
+            {
+              "letter": "B",
+              "text": "take part in a television programme"
+            },
+            {
+              "letter": "C",
+              "text": "start to organise school visits"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 17–20"
+        },
+        {
+          "type": "instruction",
+          "text": "Label the map below. Choose the correct letter, A–G."
+        },
+        {
+          "type": "image",
+          "url": "/ielts/mock/c20-test-3/listening-map.webp",
+          "alt": "Bidcaster Archaeological Dig map with locations A–G"
+        },
+        {
+          "type": "heading",
+          "text": "Questions 17–20"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "",
+          "options": [
+            {
+              "letter": "A",
+              "text": ""
+            },
+            {
+              "letter": "B",
+              "text": ""
+            },
+            {
+              "letter": "C",
+              "text": ""
+            },
+            {
+              "letter": "D",
+              "text": ""
+            },
+            {
+              "letter": "E",
+              "text": ""
+            },
+            {
+              "letter": "F",
+              "text": ""
+            },
+            {
+              "letter": "G",
+              "text": ""
+            }
+          ],
+          "rows": [
+            {
+              "number": 17,
+              "text": "bridge foundations"
+            },
+            {
+              "number": 18,
+              "text": "rubbish pit"
+            },
+            {
+              "number": 19,
+              "text": "meeting hall"
+            },
+            {
+              "number": 20,
+              "text": "fish pond"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 21–26"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 21,
+          "prompt": "Finn was pleased to discover that their topic",
+          "options": [
+            {
+              "letter": "A",
+              "text": "was not familiar to their module leader."
+            },
+            {
+              "letter": "B",
+              "text": "had not been chosen by other students."
+            },
+            {
+              "letter": "C",
+              "text": "did not prove to be difficult to research."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 22,
+          "prompt": "Maya says a mistaken belief about theatre programmes is that",
+          "options": [
+            {
+              "letter": "A",
+              "text": "theatres pay companies to produce them."
+            },
+            {
+              "letter": "B",
+              "text": "few theatre-goers buy them nowadays."
+            },
+            {
+              "letter": "C",
+              "text": "they contain far more adverts than previously."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 23,
+          "prompt": "Finn was surprised that, in early British theatre, programmes",
+          "options": [
+            {
+              "letter": "A",
+              "text": "were difficult for audiences to obtain."
+            },
+            {
+              "letter": "B",
+              "text": "were given out free of charge."
+            },
+            {
+              "letter": "C",
+              "text": "were seen as a kind of contract."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 24,
+          "prompt": "Maya feels their project should include an explanation of why companies of actors",
+          "options": [
+            {
+              "letter": "A",
+              "text": "promoted their own plays."
+            },
+            {
+              "letter": "B",
+              "text": "performed plays outdoors."
+            },
+            {
+              "letter": "C",
+              "text": "had to tour with their plays."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 25,
+          "prompt": "Finn and Maya both think that, compared to nineteenth-century programmes, those from the eighteenth century",
+          "options": [
+            {
+              "letter": "A",
+              "text": "were more original."
+            },
+            {
+              "letter": "B",
+              "text": "were more colourful."
+            },
+            {
+              "letter": "C",
+              "text": "were more informative."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 26,
+          "prompt": "Maya doesn't fully understand why, in the twentieth century,",
+          "options": [
+            {
+              "letter": "A",
+              "text": "very few theatre programmes were printed in the USA."
+            },
+            {
+              "letter": "B",
+              "text": "British theatre programmes failed to develop for so long."
+            },
+            {
+              "letter": "C",
+              "text": "theatre programmes in Britain copied fashions from the USA."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 27–30"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose FOUR answers from the box."
+        },
+        {
+          "type": "match",
+          "title": "Comments about programmes",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Its origin is somewhat controversial."
+            },
+            {
+              "letter": "B",
+              "text": "It is historically significant for a country."
+            },
+            {
+              "letter": "C",
+              "text": "It was effective at attracting audiences."
+            },
+            {
+              "letter": "D",
+              "text": "It is included in a recent project."
+            },
+            {
+              "letter": "E",
+              "text": "It contains insights into the show."
+            },
+            {
+              "letter": "F",
+              "text": "It resembles an artwork."
+            }
+          ],
+          "rows": [
+            {
+              "number": 27,
+              "text": "Ruy Blas"
+            },
+            {
+              "number": 28,
+              "text": "Man of La Mancha"
+            },
+            {
+              "number": 29,
+              "text": "The Tragedy of Jane Shore"
+            },
+            {
+              "number": 30,
+              "text": "The Sailors’ Festival"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 31–40"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the notes below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "notes",
+          "title": "Inclusive design",
+          "groups": [
+            {
+              "heading": "Definition",
+              "items": [
+                "Designing products that can be accessed by a diverse range of people without the need for any {{31}}",
+                "Not the same as universal design: that is design for everyone, including catering for people with {{32}} problems."
+              ]
+            },
+            {
+              "heading": "Examples of inclusive design",
+              "items": [
+                "{{33}} Which are adjustable, avoiding back or neck problems",
+                "{{34}} in public toilets which are easier to use",
+                "To assist the elderly: - designers avoid using {{35}} in interfaces - people can make commands using a mouse, keyboard or their {{36}}"
+              ]
+            },
+            {
+              "heading": "Impact of non-inclusive designs",
+              "items": [
+                "Access - Loss of independence for disabled people.",
+                "Safety - Seatbelts are especially problematic for {{37}} women. - PPE jackets are often unsuitable because of the size of women's {{38}} - PPE for female {{39}} officers dealing with emergencies is the worst.",
+                "Comfort in the workplace - The {{40}} in offices is often too low for women."
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "heading",
+          "text": "Questions 1–7"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the notes below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "notes",
+          "title": "The history of frozen food",
+          "groups": [
+            {
+              "heading": "2,000 years ago, South America",
+              "items": [
+                "People conserved the nutritional value of{{1}} , using a method of freezing then drying."
+              ]
+            },
+            {
+              "heading": "1851, USA",
+              "items": [
+                "{{2}} was kept cool by ice during transportation in specially adapted trains."
+              ]
+            },
+            {
+              "heading": "1880, Australia",
+              "items": [
+                "Two kinds of {{3}} were the first frozen food shipped to England."
+              ]
+            },
+            {
+              "heading": "1917 onwards, USA",
+              "items": [
+                "Clarence Birdseye introduced innovations including: - quick-freezing methods, so that {{4}} did not spoil the food. - packaging products with {{5}}, so the product was visible."
+              ]
+            },
+            {
+              "heading": "Early 1940s, USA",
+              "items": [
+                "Frozen food became popular because of a shortage of {{6}}"
+              ]
+            },
+            {
+              "heading": "1950s, USA",
+              "items": [
+                "A large number of homes now had a {{7}}"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 8–13"
+        },
+        {
+          "type": "instruction",
+          "text": "Do the following statements agree with the information given in the passage?"
+        },
+        {
+          "type": "bank",
+          "title": "",
+          "options": [
+            {
+              "letter": "TRUE",
+              "text": "if the statement agrees with the information"
+            },
+            {
+              "letter": "FALSE",
+              "text": "if the statement contradicts the information"
+            },
+            {
+              "letter": "NOT GIVEN",
+              "text": "if there is no information on this"
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": "The ice transportation business made some Boston ship owners very wealthy in the early 1800s."
+            },
+            {
+              "number": 9,
+              "text": "A disadvantage of the freezing process invented in Australia was that it affected the taste of food."
+            },
+            {
+              "number": 10,
+              "text": "Clarence Birdseye travelled to Labrador in order to learn how the Inuit people froze fish."
+            },
+            {
+              "number": 11,
+              "text": "Swanson Foods invested a great deal of money in the promotion of the TV Dinner."
+            },
+            {
+              "number": 12,
+              "text": "Swanson Foods developed a new style of container for the launch of the TV Dinner."
+            },
+            {
+              "number": 13,
+              "text": "The US frozen food industry is currently the largest in the world."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 14–19"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct heading for each section, A–F."
+        },
+        {
+          "type": "match",
+          "title": "List of Headings",
+          "options": [
+            {
+              "letter": "i",
+              "text": "Tried and tested solutions"
+            },
+            {
+              "letter": "ii",
+              "text": "Cooperation beneath the waves"
+            },
+            {
+              "letter": "iii",
+              "text": "Working to lessen the problems"
+            },
+            {
+              "letter": "iv",
+              "text": "Disagreement about the accuracy of a certain phrase"
+            },
+            {
+              "letter": "v",
+              "text": "Two clear educational goals"
+            },
+            {
+              "letter": "vi",
+              "text": "Promoting hope"
+            },
+            {
+              "letter": "vii",
+              "text": "A warning of further trouble ahead"
+            }
+          ],
+          "rows": [
+            {
+              "number": 14,
+              "text": "Section A"
+            },
+            {
+              "number": 15,
+              "text": "Section B"
+            },
+            {
+              "number": 16,
+              "text": "Section C"
+            },
+            {
+              "number": 17,
+              "text": "Section D"
+            },
+            {
+              "number": 18,
+              "text": "Section E"
+            },
+            {
+              "number": 19,
+              "text": "Section F"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 20–21"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            20,
+            21
+          ],
+          "prompt": "Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "a rising number of extreme storms"
+            },
+            {
+              "letter": "B",
+              "text": "the removal of too many fish from the sea"
+            },
+            {
+              "letter": "C",
+              "text": "the contamination of the sea from waste"
+            },
+            {
+              "letter": "D",
+              "text": "increased disease among marine species"
+            },
+            {
+              "letter": "E",
+              "text": "alterations in the usual flow of water in the seas"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 22–23"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose TWO letters, A–E."
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            22,
+            23
+          ],
+          "prompt": "Which TWO of the following statements are true of the researchers at London Zoo?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "They are hoping to expand the numbers of different corals being bred in laboratories."
+            },
+            {
+              "letter": "B",
+              "text": "They want to identify corals that can cope well with the changed sea conditions."
+            },
+            {
+              "letter": "C",
+              "text": "They are looking at ways of creating artificial reefs that corals could grow on."
+            },
+            {
+              "letter": "D",
+              "text": "They are trying out methods that would speed up reproduction in some corals."
+            },
+            {
+              "letter": "E",
+              "text": "They are investigating materials that might protect reefs from higher temperatures."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 24–26"
+        },
+        {
+          "type": "instruction",
+          "text": "Complete the notes below."
+        },
+        {
+          "type": "instruction",
+          "text": "Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "notes",
+          "title": "Complete the sentences",
+          "groups": [
+            {
+              "items": [
+                "Corals have a number of {{24}} which they use to collect their food. Algae gain {{25}} from being inside the coral. Increases in the warmth of the sea water can remove the {{26}} from coral."
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "text": "Questions 27–33"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "Experts",
+          "options": [
+            {
+              "letter": "A",
+              "text": "Martin Rees"
+            },
+            {
+              "letter": "B",
+              "text": "Daniel Wolpert"
+            },
+            {
+              "letter": "C",
+              "text": "Kathleen Richardson"
+            }
+          ],
+          "rows": [
+            {
+              "number": 27,
+              "text": "For our own safety, humans will need to restrict the abilities of robots."
+            },
+            {
+              "number": 28,
+              "text": "The risk of robots harming us is less serious than humans believe it to be."
+            },
+            {
+              "number": 29,
+              "text": "It will take many decades for robot intelligence to be as imaginative as human intelligence."
+            },
+            {
+              "number": 30,
+              "text": "We may have to start considering whether we are treating robots fairly."
+            },
+            {
+              "number": 31,
+              "text": "Robots are probably of more help to us on Earth than in space."
+            },
+            {
+              "number": 32,
+              "text": "The ideas in high-quality science fiction may prove to be just as accurate as those found in the work of mediocre scientists."
+            },
+            {
+              "number": 33,
+              "text": "There are those who look forward to robots developing greater intelligence."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 34–36"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter for each question."
+        },
+        {
+          "type": "match",
+          "title": "Sentence endings",
+          "options": [
+            {
+              "letter": "A",
+              "text": "robots to explore outer space."
+            },
+            {
+              "letter": "B",
+              "text": "advances made in machine intelligence so far."
+            },
+            {
+              "letter": "C",
+              "text": "changes made to other planets for our own benefit."
+            },
+            {
+              "letter": "D",
+              "text": "the harm already done by artificial intelligence."
+            }
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": "Richardson and Rees express similar views regarding the ethical aspect of"
+            },
+            {
+              "number": 35,
+              "text": "Rees and Wolpert share an opinion about the extent of"
+            },
+            {
+              "number": 36,
+              "text": "Wolpert disagrees with Richardson on the question of"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Questions 37–40"
+        },
+        {
+          "type": "instruction",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "number": 37,
+          "prompt": "What point does Richardson make about fear of machines?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "It has grown alongside the development of ever more advanced robots."
+            },
+            {
+              "letter": "B",
+              "text": "It is the result of our inclination to attribute human characteristics to non - human entities."
+            },
+            {
+              "letter": "C",
+              "text": "It has its origins in basic misunderstandings about how inanimate objects function."
+            },
+            {
+              "letter": "D",
+              "text": "It demonstrates a key difference between human intelligence and machine intelligence."
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 38,
+          "prompt": "What potential advance does Rees see as a cause for concern?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "robots outnumbering people"
+            },
+            {
+              "letter": "B",
+              "text": "robots having abilities which humans do not"
+            },
+            {
+              "letter": "C",
+              "text": "artificial intelligence developing independent thought"
+            },
+            {
+              "letter": "D",
+              "text": "artificial intelligence taking over every aspect of our lives"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 39,
+          "prompt": "What does Wolpert emphasise in his response to the question about science fiction?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "how science fiction influences our attitudes to robots"
+            },
+            {
+              "letter": "B",
+              "text": "how fundamental robots are to the science fiction genre"
+            },
+            {
+              "letter": "C",
+              "text": "how the image of robots in science fiction has changed over time"
+            },
+            {
+              "letter": "D",
+              "text": "how reactions to similar portrayals of robots in science fiction may vary"
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "number": 40,
+          "prompt": "What is Richardson doing in her comment about reality and fantasy?",
+          "options": [
+            {
+              "letter": "A",
+              "text": "warning people not to confuse one with the other"
+            },
+            {
+              "letter": "B",
+              "text": "outlining ways in which one has impacted on the other"
+            },
+            {
+              "letter": "C",
+              "text": "recommending a change of approach in how people view them"
+            },
+            {
+              "letter": "D",
+              "text": "explaining why scientists have a different perspective on them from other people"
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

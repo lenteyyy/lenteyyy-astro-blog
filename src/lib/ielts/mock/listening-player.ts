@@ -25,6 +25,7 @@ export function setupListeningPlayer(audio:HTMLAudioElement,urls:string[],hooks:
  return{
   start:(fresh:boolean)=>{const saved=fresh?cleanPlayback(null):cleanPlayback(hooks.get());if(saved.complete)return;hooks.set(saved);active=true;load(saved.part,saved.time);},
   running:()=>active,
+  stop:()=>{write();active=false;audio.pause();},
   retry:()=>{if(audio.error)load(part,trustedTime);else play();},
   rate:(value:number)=>{if(!rates.includes(value))return;audio.playbackRate=value;write();},
  };
