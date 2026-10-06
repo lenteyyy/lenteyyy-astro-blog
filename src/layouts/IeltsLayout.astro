@@ -12,6 +12,7 @@ const {
 	title = 'Lenteyyy IELTS',
 	description = '课程预约、雅思学习资料与模考入口。',
 	telemetry = true,
+	legalLinks = true,
 } = Astro.props;
 const canonical = canonicalUrl(Astro.url.pathname);
 ---
@@ -44,7 +45,7 @@ const canonical = canonicalUrl(Astro.url.pathname);
 	</head>
 	<body class="ielts-site">
 		<slot />
-		<LegalLinks />
+		{legalLinks && <LegalLinks />}
 		{telemetry && <Analytics />}
 		{telemetry && <SpeedInsights />}
 	</body>

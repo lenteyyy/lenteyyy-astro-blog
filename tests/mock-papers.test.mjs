@@ -51,6 +51,12 @@ test('playback restores only after metadata and reports autoplay errors',async()
  const audio={controls:true,src:'',playbackRate:1,currentTime:0,duration:20,seeking:false,ended:false,addEventListener:(n,f)=>events.set(n,f),play:()=>Promise.reject(new Error('Blocked'))};
  const player=setupListeningPlayer(audio,['/1','/2','/3','/4'],{get:()=>saved,set:v=>saved=v,status:(_,b)=>blocked=b,complete:()=>{}});player.start(false);assert.equal(audio.src,'/2');events.get('loadedmetadata')();assert.equal(audio.currentTime,12);assert.equal(audio.playbackRate,1.25);await new Promise(resolve=>setTimeout(resolve,0));assert.equal(blocked,true);
 });
+test('custom exit stops playback without triggering automatic resume and preserves position',()=>{
+ const events=new Map();let saved=cleanPlayback(null),plays=0,pauses=0;
+ const audio={controls:true,src:'',playbackRate:1,currentTime:0,duration:20,seeking:false,ended:false,addEventListener:(n,f)=>events.set(n,f),play:()=>{plays++;return Promise.resolve();},pause:()=>{pauses++;events.get('pause')();}};
+ const player=setupListeningPlayer(audio,['/1','/2','/3','/4'],{get:()=>saved,set:v=>saved=v,status:()=>{},complete:()=>{}});
+ player.start(true);audio.currentTime=7;events.get('timeupdate')();player.stop();assert.equal(player.running(),false);assert.equal(pauses,1);assert.equal(plays,1);assert.equal(saved.time,7);player.start(false);events.get('loadedmetadata')();assert.equal(audio.currentTime,7);assert.equal(plays,2);
+});
 test('question highlights exclude interactive UI and never render saved HTML',()=>{
  const highlights=source('src/lib/ielts/mock/text-highlights.ts');assert.doesNotMatch(highlights,/innerHTML|outerHTML|insertAdjacentHTML|\bfetch\(|\beval\(/);assert.match(highlights,/input,select,textarea,button,a,audio/);assert.match(highlights,/r\.contains\(range\.startContainer\)&&r\.contains\(range\.endContainer\)/);
  const exam=source('src/components/ielts/MockExam.astro');assert.match(exam,/data-highlight-region="questions"/);assert.match(exam,/data-highlight-region="passage"/);assert.doesNotMatch(exam,/<audio controls/);assert.doesNotMatch(exam,/audio\.src\s*=/);assert.match(exam,/t\$\{data\.testNumber\}/);

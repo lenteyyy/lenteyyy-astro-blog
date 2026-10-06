@@ -4,7 +4,7 @@ const destinations = [
 	{ title: '首页', detail: '个人简介与联系方式', section: 'overview', keywords: '简介 冷踢踢 老师 邮箱 Instagram' },
 	{ title: '课程预约', detail: '选择日期与上课时间', section: 'booking', keywords: '预约 课程 时间 日期 取消 我的预约' },
 	{ title: '学习资料', detail: '听力、阅读、写作、口语', section: 'materials', keywords: '学习 资料 下载 听力 阅读 写作 口语 词汇 语法 备考' },
-	{ title: '模考页面', detail: '剑雅21 Test 1 / Test 2 / Test 3 / Test 4', section: 'mock', keywords: '模考 剑雅 考试 练习 listening reading writing test cambridge' },
+	{ title: '模考页面', detail: '剑雅20、21 · Test 1–4', section: 'mock', keywords: '模考 剑雅 考试 练习 自选 仿真 listening reading writing test cambridge c20 c21' },
 	{ title: '入学基础测试', detail: '听力、阅读、写作', href: '/ielts/entry-test', keywords: '入学 基础 测试 其他 听力 阅读 写作' },
 ];
 

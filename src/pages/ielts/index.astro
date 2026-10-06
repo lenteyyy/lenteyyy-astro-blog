@@ -138,19 +138,11 @@ const resources = [
 				<section class="module mock-module" id="mock" hidden>
 					<header class="module-head">
 						<h2>模考页面</h2>
-						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷"><option value="1">剑雅21 · Test 1</option><option value="2">剑雅21 · Test 2</option><option value="3">剑雅21 · Test 3</option><option value="4">剑雅21 · Test 4</option></select></label>
+						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷">{[21,20].map(book => <optgroup label={`剑雅${book}`}>{[1,2,3,4].map(test => <option value={`${book}-${test}`}>剑雅{book} · Test {test}</option>)}</optgroup>)}</select></label>
 					</header>
-					<div class="mock-tabs" role="tablist" aria-label="模考科目">
-						<button type="button" class="active" data-mock="listening" role="tab" aria-selected="true"><IeltsIcon name="headphones" size={19} />Listening</button>
-						<button type="button" data-mock="reading" role="tab" aria-selected="false"><IeltsIcon name="book" size={19} />Reading</button>
-						<button type="button" data-mock="writing" role="tab" aria-selected="false"><IeltsIcon name="pen" size={19} />Writing</button>
-					</div>
-					<div class="mock-body">
-						<div class="mock-copy">
-							<h3>全真模考 · <span data-mock-title>Listening</span></h3>
-							<div class="mock-meta"><span><IeltsIcon name="file" size={19} /><span data-mock-count>40 道题</span></span><span><IeltsIcon name="calendar" size={19} /><span data-mock-time>35 分钟</span></span></div>
-							<a class="mock-open" data-mock-open href="/ielts/mock/test-1?subject=listening">开始练习<IeltsIcon name="arrow" size={18} /></a>
-						</div>
+					<div class="mock-modes" data-mock-modes>
+						<article class="mock-mode"><h3>自选模考</h3><fieldset class="mock-selection"><legend>选择科目</legend>{[['listening','听力'],['reading','阅读'],['writing','写作']].map(([value,label]) => <label><input type="checkbox" data-mock-subject value={value} checked />{label}</label>)}</fieldset><p data-mock-duration>155 分钟 · 可随时退出</p><a class="mock-open" data-mock-custom href="/ielts/mock/test-1?subject=listening&amp;mode=custom&amp;subjects=listening%2Creading%2Cwriting">开始自选模考<IeltsIcon name="arrow" size={18} /></a></article>
+						<article class="mock-mode simulation-mode"><h3>仿真模考</h3><div class="mock-sequence"><span>听力</span><IeltsIcon name="arrow" size={18} /><span>阅读</span><IeltsIcon name="arrow" size={18} /><span>写作</span></div><p>155 分钟 · 按顺序自动切换</p><a class="mock-open" data-mock-simulation href="/ielts/mock/test-1?subject=listening&amp;mode=simulation&amp;subjects=listening%2Creading%2Cwriting">开始仿真模考<IeltsIcon name="arrow" size={18} /></a></article>
 					</div>
 				</section>
 
@@ -202,6 +194,8 @@ const resources = [
 
 	<script>
 		import { bookingWindow } from '../../lib/ielts/booking-window';
+		import {workflowUrl,subjectOrder,type Subject} from '../../lib/ielts/mock/run-policy';
+		import {reveal} from '../../lib/ielts/dashboard-motion';
 		const root = document.querySelector<HTMLElement>('[data-ielts-page]');
 		if (root) {
 			const themeButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-theme-choice]')];
@@ -229,7 +223,7 @@ const resources = [
 				panels.forEach((panel) => { panel.hidden = panel.id !== next; });
 				const activePanel = panels.find((panel) => panel.id === next);
 				if (activePanel && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-					sectionAnimation = activePanel.animate([{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'translateY(0)'}],{duration:420,easing:'cubic-bezier(.22,1,.36,1)'});
+					sectionAnimation = activePanel.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:280,easing:'cubic-bezier(.22,1,.36,1)'});
 				}
 				if (updateHash) history.replaceState(null, '', `#${next}`);
 				window.dispatchEvent(new CustomEvent('ielts:section-change', { detail: {section: next} }));
@@ -303,6 +297,7 @@ const resources = [
 						selectedDate = button.dataset.date || '';
 						if (selectedDateLabel) selectedDateLabel.textContent = formatDate(date);
 						renderCalendar();
+						const selected=root.querySelector<HTMLButtonElement>(`[data-date="${selectedDate}"]`);selected?.focus({preventScroll:true});reveal(selected);
 						syncBookingButton();
 						root.dispatchEvent(new CustomEvent('ielts:date-change'));
 					});
@@ -311,8 +306,8 @@ const resources = [
 				if (prevButton) prevButton.disabled = visibleMonth <= earliestMonth;
 				if (nextButton) nextButton.disabled = visibleMonth >= latestMonth;
 			};
-			prevButton?.addEventListener('click', () => { visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() - 1, 1); renderCalendar(); root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
-			nextButton?.addEventListener('click', () => { if (visibleMonth >= latestMonth) return; visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1); renderCalendar(); root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
+			prevButton?.addEventListener('click', () => { if(visibleMonth<=earliestMonth)return;visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() - 1, 1); renderCalendar();reveal(calendarDays,-14);root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
+			nextButton?.addEventListener('click', () => { if (visibleMonth >= latestMonth) return; visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1); renderCalendar();reveal(calendarDays,14);root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
 			timeButtons.forEach((button) => button.addEventListener('click', () => {
 				selectedTime = button.dataset.time || '';
 				timeButtons.forEach((item) => { const active = item === button; item.classList.toggle('selected', active); item.setAttribute('aria-pressed', String(active)); });
@@ -336,28 +331,24 @@ const resources = [
 			});
 			renderCalendar();
 
-			const mockButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-mock]')];
-			const mockTitle = root.querySelector<HTMLElement>('[data-mock-title]');
-			const mockCount = root.querySelector<HTMLElement>('[data-mock-count]');
-			const mockTime = root.querySelector<HTMLElement>('[data-mock-time]');
-			const mockOpen = root.querySelector<HTMLAnchorElement>('[data-mock-open]');
 			const mockPaper = root.querySelector<HTMLSelectElement>('[data-mock-paper]');
-			let mockSubject = 'listening';
-			const syncMockLink = () => { if (mockOpen) mockOpen.href = `/ielts/mock/test-${mockPaper?.value || '1'}?subject=${mockSubject}`; };
-			mockPaper?.addEventListener('change', syncMockLink);
-			mockButtons.forEach((button) => button.addEventListener('click', () => {
-				mockButtons.forEach((item) => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-selected', String(active)); });
-				const subject = button.dataset.mock || 'listening';
-				if (mockTitle) mockTitle.textContent = subject[0].toUpperCase() + subject.slice(1);
-				if (mockCount) mockCount.textContent = subject === 'writing' ? '2 道题' : '40 道题';
-				if (mockTime) mockTime.textContent = subject === 'listening' ? '35 分钟' : '60 分钟';
-				mockSubject = subject; syncMockLink();
-			}));
+			const syncMockLink = () => {
+				const [book,test] = (mockPaper?.value || '21-1').split('-').map(Number);
+				const selected = [...root.querySelectorAll<HTMLInputElement>('[data-mock-subject]:checked')].map(input => input.value as Subject);
+				const custom = root.querySelector<HTMLAnchorElement>('[data-mock-custom]');
+				if (custom) { custom.setAttribute('aria-disabled', String(!selected.length)); if(selected.length)custom.href=workflowUrl(book,test,'custom',selected,selected[0]);else custom.removeAttribute('href'); }
+				const simulation = root.querySelector<HTMLAnchorElement>('[data-mock-simulation]');
+				if(simulation)simulation.href=workflowUrl(book,test,'simulation',subjectOrder,'listening');
+				const duration=root.querySelector<HTMLElement>('[data-mock-duration]');if(duration)duration.textContent=selected.length?`${selected.reduce((total,s)=>total+(s==='listening'?35:60),0)} 分钟 · 可随时退出`:'请选择至少一科';
+			};
+			mockPaper?.addEventListener('change',()=>{syncMockLink();reveal(root.querySelector<HTMLElement>('[data-mock-modes]'));});
+			root.querySelectorAll('[data-mock-subject]').forEach(input=>input.addEventListener('change',syncMockLink));syncMockLink();
 		}
 		</script>
 		<script>
 			import { searchStudy } from '../../lib/ielts/search';
 			import { safeIeltsNext } from '../../lib/ielts/oauth-policy';
+			import {reveal,resizeContent,openDialog,closeDialog,installDialogMotion,setMenu} from '../../lib/ielts/dashboard-motion';
 			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
 			const bookingForm = page?.querySelector<HTMLFormElement>('[data-booking-form]');
@@ -399,6 +390,7 @@ const resources = [
 			const displayPendingTime = (item: PendingBooking) => item.time === '其他时间' ? `其他时间：${item.customTime}` : item.time;
 			const renderBookingCart = () => {
 				if (!bookingForm || !bookingCart) return;
+				const previousHeight=bookingCart.getBoundingClientRect().height;
 				bookingForm.dataset.bookingCount = String(pendingBookings.length);
 				if (bookingCartCount) bookingCartCount.textContent = `${pendingBookings.length} / 4`;
 				if (bookingSubmit) {
@@ -418,10 +410,11 @@ const resources = [
 					});
 				}
 				page?.dispatchEvent(new CustomEvent('ielts:booking-cart-change'));
+				resizeContent(bookingCart,previousHeight);
 			};
-			const closeOnBackdrop = (dialog: HTMLDialogElement | null) => dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+			const closeOnBackdrop = (dialog: HTMLDialogElement | null) => {installDialogMotion(dialog);dialog?.addEventListener('click', (event) => { if (event.target === dialog) closeDialog(dialog); });};
 			closeOnBackdrop(authDialog);
-			document.querySelectorAll<HTMLButtonElement>('[data-close-auth]').forEach((button) => button.addEventListener('click', () => authDialog?.close()));
+			document.querySelectorAll<HTMLButtonElement>('[data-close-auth]').forEach((button) => button.addEventListener('click', () => closeDialog(authDialog)));
 
 			const openAuth = () => {
 				const loginForm = authDialog?.querySelector<HTMLFormElement>('[data-login-form]');
@@ -430,7 +423,7 @@ const resources = [
 				if (passwordForm) passwordForm.hidden = true;
 				authDialog?.setAttribute('aria-labelledby', 'auth-dialog-title');
 				authDialog?.querySelectorAll<HTMLElement>('[data-auth-message]').forEach((message) => { message.textContent = ''; });
-				authDialog?.showModal();
+				openDialog(authDialog);
 				requestAnimationFrame(() => loginForm?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
 			};
 			const finishLogin = async () => {
@@ -442,6 +435,7 @@ const resources = [
 
 			const renderMaterials = (materials: Array<Record<string, unknown>>, category = '') => {
 				if (!materialList) return;
+				reveal(materialList);
 				materialList.replaceChildren();
 				const visible = category ? materials.filter((item) => item.category === category) : materials;
 				if (!visible.length) {
@@ -492,9 +486,9 @@ const resources = [
 				if (accountPanel) accountPanel.hidden = true;
 				accountButton?.setAttribute('aria-expanded', 'false');
 				if (searchInput) searchInput.value = '';
-				renderSearch(); searchDialog?.showModal(); searchInput?.focus();
+				renderSearch(); openDialog(searchDialog); searchInput?.focus();
 			});
-			searchDialog?.querySelector('[data-close-search]')?.addEventListener('click', () => searchDialog.close());
+			searchDialog?.querySelector('[data-close-search]')?.addEventListener('click', () => closeDialog(searchDialog));
 			searchInput?.addEventListener('input', renderSearch);
 			closeOnBackdrop(searchDialog || null);
 			const loadMaterials = async () => {
@@ -573,8 +567,8 @@ const resources = [
 
 			accountButton?.addEventListener('click', () => {
 				if (!accountPanel) return;
-				accountPanel.hidden = !accountPanel.hidden;
-				accountButton.setAttribute('aria-expanded', String(!accountPanel.hidden));
+				const open=accountButton.getAttribute('aria-expanded')!=='true';setMenu(accountPanel,open);
+				accountButton.setAttribute('aria-expanded', String(open));
 			});
 			accountLogin?.addEventListener('click', () => { if (accountPanel) accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); openAuth(); });
 			accountLogout?.addEventListener('click', async () => {
@@ -588,13 +582,13 @@ const resources = [
 			});
 			document.addEventListener('click', (event) => {
 				if (accountPanel && !accountPanel.hidden && !accountMenu?.contains(event.target as Node)) {
-					accountPanel.hidden = true;
+					setMenu(accountPanel,false);
 					accountButton?.setAttribute('aria-expanded', 'false');
 				}
 			});
 			document.addEventListener('keydown', (event) => {
 				if (event.key === 'Escape' && accountPanel && !accountPanel.hidden) {
-					accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); accountButton?.focus();
+					setMenu(accountPanel,false); accountButton?.setAttribute('aria-expanded', 'false'); accountButton?.focus();
 				}
 			});
 
@@ -808,7 +802,7 @@ const resources = [
 	.search-button:hover { background: var(--ielts-hover); }
 	.account-button { background: var(--ielts-ink); color: var(--ielts-card); }
 	.account-button:hover { transform: translateY(-2px); }
-	.account-panel { position: absolute; z-index: 12; right: 0; top: calc(100% + 14px); width: min(280px, calc(100vw - 32px)); display: grid; gap: 10px; padding: 20px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); box-shadow: 0 16px 48px #00000016; animation: account-in .18s ease both; }
+	.account-panel { position: absolute; z-index: 12; right: 0; top: calc(100% + 14px); width: min(280px, calc(100vw - 32px)); display: grid; gap: 10px; padding: 20px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); box-shadow: 0 16px 48px #00000016; }
 	.account-panel > span { overflow: hidden; color: var(--ielts-muted); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
 	.account-panel > button, .management-link { min-height: 42px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ielts-line); border-radius: 5px; background: transparent; color: var(--ielts-ink); cursor: pointer; font-size: 14px; }
 	.account-panel [data-account-logout] { color: var(--ielts-muted); }
@@ -820,7 +814,6 @@ const resources = [
 	.dashboard { display: grid; }
 	.module { min-width: 0; padding: 0; scroll-margin-top: 100px; background: var(--ielts-bg); }
 	.module[hidden] { display: none; }
-	@keyframes account-in { from { opacity: 0; transform: translateY(5px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 	.overview-copy { width: min(1000px, 100%); display: grid; grid-template-columns: 1.3fr 1fr; align-content: start; gap: 40px; padding: 28px 0; }
 	.overview-copy > p, .overview-copy section { margin: 0; padding: 28px 0; border-top: 1px solid var(--ielts-line); color: var(--ielts-text); font-size: 17px; line-height: 2; }
 	.overview-copy > p { grid-column: 1 / -1; font-size: clamp(18px, 1.7vw, 22px); line-height: 2; }
@@ -916,7 +909,23 @@ const resources = [
 	.mock-copy > p:not(.field-label) { margin: 0; color: var(--ielts-muted); font-size: 13px; line-height: 1.7; }
 	.mock-meta { display: flex; flex-wrap: wrap; gap: 16px; margin: 18px 0; color: var(--ielts-text); font-size: 12px; }
 	.mock-meta span { display: flex; align-items: center; gap: 7px; }
-	.mock-copy .mock-open { width: 100%; min-height: 43px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); font-size: 13px; font-weight: 700; }
+	.mock-open { width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding:12px 16px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-ink); color: var(--ielts-card); font-size: 14px; font-weight: 600; }
+	.mock-open[aria-disabled="true"] {opacity:.4;cursor:not-allowed;}
+	.mock-modes {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+	.mock-mode {display:flex;flex-direction:column;gap:24px;padding:32px;border:1px solid var(--ielts-line);border-radius:14px;background:var(--ielts-panel);min-width:0;}
+	.mock-mode h3 {margin:0;color:var(--ielts-ink);font-size:24px;font-weight:600;letter-spacing:-.03em;}
+	.mock-mode p {margin:auto 0 0;color:var(--ielts-muted);font-size:13px;}
+	.mock-selection {display:flex;flex-wrap:wrap;gap:12px;padding:0;border:0;min-width:0;}
+	.mock-selection legend {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+	.mock-selection label {display:flex;align-items:center;gap:8px;padding:12px 14px;border:1px solid var(--ielts-line);border-radius:7px;cursor:pointer;color:var(--ielts-text);font-size:14px;}
+	.mock-selection label:has(input:checked) {border-color:var(--ielts-ink);background:var(--ielts-card);}
+	.mock-selection input {width:16px;height:16px;accent-color:var(--ielts-ink);}
+	.mock-sequence {display:flex;flex-wrap:wrap;align-items:center;gap:12px;min-height:48px;color:var(--ielts-text);font-size:14px;}
+	.mock-mode,.resource-card,.entry-test-card a,.mock-open {transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
+	@media(hover:hover) {.mock-mode:hover {border-color:var(--ielts-muted);box-shadow:0 8px 24px #00000006;}.mock-open:hover,.resource-card:hover,.entry-test-card a:hover {transform:translateY(-2px);}}
+	.mock-open:active,.resource-card:active {transform:translateY(0);}
+	@media(max-width:720px) {.mock-modes {grid-template-columns:minmax(0,1fr);}.mock-mode {padding:24px;}}
+	@media(prefers-reduced-motion:reduce) {.mock-mode,.resource-card,.entry-test-card a,.mock-open {transition:none;transform:none!important;}}
 	.note-list { display: grid; gap: 8px; }
 	.note-list article { min-height: 69px; display: grid; grid-template-columns: 46px 1fr; align-items: center; gap: 13px; padding: 10px 13px; scroll-margin-top: 24px; border: 1px solid var(--ielts-line); border-radius: 10px; }
 	.note-list article > span { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--ielts-hover); color: var(--ielts-ink); }
@@ -990,7 +999,6 @@ const resources = [
 	.booking-row button.confirm { border-color: var(--ielts-ink); background: var(--ielts-ink); color: var(--ielts-card); }
 	.booking-dialog::backdrop { background: #0007; }
 	@media (prefers-reduced-motion: reduce) {
-		.account-panel { animation: none; }
 		.account-button { transition: none; }
 	}
 </style>
