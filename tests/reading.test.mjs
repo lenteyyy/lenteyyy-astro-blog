@@ -71,7 +71,7 @@ test('passage/highlight renderers do not execute saved HTML or make network requ
   assert.doesNotMatch(tools, /innerHTML|outerHTML|insertAdjacentHTML|\bfetch\(|\beval\(/);
   assert.match(tools, /passage\.contains\(range\.startContainer\)/);
   assert.match(tools, /passage\.contains\(range\.endContainer\)/);
-  const source = readFileSync(new URL('../src/pages/ielts/mock/test-1.astro', import.meta.url), 'utf8');
+  const source = readFileSync(new URL('../src/components/ielts/MockExam.astro', import.meta.url), 'utf8');
   assert.match(source, /telemetry=\{false\}/);
   assert.match(source, /replace\(\/</);
   assert.doesNotMatch(source, /class="brand"|<strong>IELTS<\/strong>/);

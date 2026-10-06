@@ -5,9 +5,9 @@ export const OAUTH_CALLBACK_PATH = '/api/ielts/auth/google/callback';
 export function safeIeltsNext(value: unknown): string {
 	if (typeof value !== 'string' || value.length > 250) return '/ielts';
 	// Exact paths only: never accept a host, encoded path, nested redirect or backslash.
-	if (/^\/ielts(?:\/management|\/entry-test|\/mock\/test-1)?(?:#[a-z-]+)?$/.test(value)) return value;
+	if (/^\/ielts(?:\/management|\/entry-test|\/mock\/test-[1234])?(?:#[a-z-]+)?$/.test(value)) return value;
 	// Preserve only the existing test subject selector, never arbitrary query parameters.
-	if (/^\/ielts\/(?:entry-test|mock\/test-1)\?subject=(?:listening|reading|writing)(?:#[a-z-]+)?$/.test(value)) return value;
+	if (/^\/ielts\/(?:entry-test|mock\/test-[1234])\?subject=(?:listening|reading|writing)(?:#[a-z-]+)?$/.test(value)) return value;
 	return '/ielts';
 }
 

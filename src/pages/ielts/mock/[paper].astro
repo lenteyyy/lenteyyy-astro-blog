@@ -1,0 +1,17 @@
+---
+import MockExam from '../../../components/ielts/MockExam.astro';
+import {getAuthContext} from '../../../lib/ielts/auth';
+import {paperPayload,type Subject} from '../../../lib/ielts/mock/papers';
+export const prerender=false;
+const match=/^test-([1234])$/.exec(Astro.params.paper||'');
+if(!match)return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store'}});
+const requested=Astro.url.searchParams.get('subject');
+const subject:Subject=requested==='reading'||requested==='writing'?requested:'listening';
+const demo=import.meta.env.DEV&&Astro.url.searchParams.get('demo')==='1';
+const auth=demo?undefined:await getAuthContext(Astro.cookies);
+if(!auth&&!demo)return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/mock/test-${match[1]}?subject=${subject}`)}`);
+Astro.response.headers.set('Cache-Control','private, no-store');
+Astro.response.headers.set('X-Robots-Tag','noindex, nofollow');
+const payload=paperPayload(Number(match[1]),subject,auth?.user.id||'demo');
+---
+<MockExam {...payload}/>

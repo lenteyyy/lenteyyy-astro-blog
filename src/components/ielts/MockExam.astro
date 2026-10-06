@@ -1,77 +1,66 @@
 ---
-import IeltsLayout from '../../../layouts/IeltsLayout.astro';
-import { getAuthContext } from '../../../lib/ielts/auth';
-import test from '../../../lib/ielts/mock/test1-content.json';
-import { questionSets } from '../../../lib/ielts/mock/test1-questions';
-
-export const prerender = false;
-
-type Subject = 'listening' | 'reading' | 'writing';
-const requested = Astro.url.searchParams.get('subject')?.toLowerCase();
-const subject: Subject = requested === 'reading' || requested === 'writing' ? requested : 'listening';
-const demo = import.meta.env.DEV && Astro.url.searchParams.get('demo') === '1';
-if (!demo && !Astro.cookies.has('ielts_access') && !Astro.cookies.has('ielts_refresh')) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/mock/test-1?subject=${subject}`)}`);
-const auth = demo ? undefined : await getAuthContext(Astro.cookies);
-if (!auth && !demo) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/mock/test-1?subject=${subject}`)}`);
-
-Astro.response.headers.set('Cache-Control', 'private, no-store');
-Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
-
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+import type { ExamPayload, Subject } from '../../lib/ielts/mock/papers';
+interface Props extends ExamPayload {}
+const {subject,testNumber,sections} = Astro.props;
 const labels: Record<Subject, string> = { listening: 'Listening', reading: 'Reading', writing: 'Writing' };
-const sections = test.sections[subject];
-const answerKey = subject === 'writing' ? [] : test.answerKeys[subject];
-const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject === 'writing' ? [] : questionSets[subject], accountId: auth?.user.id || 'demo' }).replace(/</g, '\\u003c');
+const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
 ---
-<IeltsLayout title={`剑雅21 Test 1 · ${labels[subject]}`} description="雅思机考练习页面。" telemetry={false}>
+<IeltsLayout title={`剑雅21 Test ${testNumber} · ${labels[subject]}`} description="雅思机考练习页面。" telemetry={false}>
   <main class="exam" data-exam>
     <header class="brandbar">
       <label class="font-size-control">字号 <select data-font-size aria-label="练习字体大小"><option value="16">标准</option><option value="18">较大</option><option value="20">最大</option></select></label>
       <nav class="subjects" aria-label="选择科目">
-        {(['listening', 'reading', 'writing'] as const).map((item) => <a class:list={[{ active: subject === item }]} href={`/ielts/mock/test-1?subject=${item}`}>{labels[item]}</a>)}
+        {(['listening', 'reading', 'writing'] as const).map((item) => <a class:list={[{ active: subject === item }]} href={`/ielts/mock/test-${testNumber}?subject=${item}`}>{labels[item]}</a>)}
       </nav>
     </header>
-    <div class="statusbar"><span>{labels[subject]} · Test 1</span><strong data-clock>{subject === 'listening' ? '35:00' : '60:00'}</strong><div class="toolbar"><button type="button" data-clear>清除本机答案</button><button type="button" data-help>Help</button></div></div>
+    <div class="statusbar"><span>{labels[subject]} · Test {testNumber}</span><strong data-clock>{subject === 'listening' ? '35:00' : '60:00'}</strong><div class="toolbar"><button type="button" data-clear>清除本机答案</button><button type="button" data-help>Help</button></div></div>
     <div class:list={['workspace', { 'listening-workspace': subject === 'listening', 'reading-workspace': subject === 'reading' }]}>
       <section class="pane question-pane" aria-label="题目">
         <div class="pane-head"><h1 data-section-title></h1><span data-section-range></span></div>
         <div class="question-scroll" data-question-scroll tabindex="0">
-          {subject === 'writing' && <p class="instructions" data-instructions></p>}
-          {subject === 'listening' && <div class="audio-wrap" data-audio-wrap hidden><audio controls preload="none" data-audio></audio></div>}
-          <div data-passage></div>
-          {subject === 'listening' && <div data-question-content></div>}
+          {subject === 'writing' && <p class="instructions" data-instructions data-highlight-region="instructions"></p>}
+          {subject === 'listening' && <audio preload="auto" data-audio src={sections[0].audioUrl}></audio>}
+          <div data-passage data-highlight-region="passage"></div>
+          {subject === 'listening' && <div data-question-content data-highlight-region="questions"></div>}
           {subject === 'writing' && <div data-question-images></div>}
         </div>
       </section>
       {subject === 'reading' && <div class="divider" data-divider role="separator" aria-label="调整原文与题目宽度" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-controls="reading-answers" tabindex="0"><span aria-hidden="true"></span></div>}
       {subject !== 'listening' && <section class="pane answer-pane" aria-label={subject === 'reading' ? '阅读题目' : '答题区'}>
         <div class="pane-head"><h2>{subject === 'writing' ? 'Your answer' : 'Questions'}</h2><span data-answer-heading></span></div>
-        {subject === 'reading' && <div class="answer-scroll" id="reading-answers" data-question-content></div>}
+        {subject === 'reading' && <div class="answer-scroll" id="reading-answers" data-question-content data-highlight-region="questions"></div>}
         {subject === 'writing' && <div class="answer-scroll" data-answer-scroll></div>}
         {subject === 'writing' && <p class="word-count"><span data-word-count>0 words</span><span data-save-state>仅保存在本机浏览器</span></p>}
       </section>}
     </div>
-    {subject === 'reading' && <div class="highlight-tools" data-highlight-tools role="group" aria-label="原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>}
-    <nav class="test-nav" aria-label="试卷导航"><label><input type="checkbox" data-review /> Mark for review</label><div class="section-tabs" data-section-tabs></div><div class="nav-actions"><button type="button" data-prev aria-label="上一部分">‹</button><button type="button" data-next aria-label="下一部分">›</button><button type="button" class="submit" data-submit>Submit</button></div></nav>
+    <div class="highlight-tools" data-highlight-tools role="group" aria-label="文本高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>
+    <nav class="test-nav" aria-label="试卷导航"><label><input type="checkbox" data-review /> Mark for review</label><div class="section-tabs" data-section-tabs></div><div class="nav-actions"><button type="button" data-prev aria-label="上一部分">‹</button><button type="button" data-next aria-label="下一部分">›</button><button type="button" class="submit" data-submit>Submit</button></div>
+      {subject === 'listening' && <div class="audio-speed"><span data-audio-status aria-live="polite">录音将在开始后播放</span><label>速度 <select data-audio-rate aria-label="听力播放速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button data-audio-retry type="button" hidden>恢复播放</button></div>}
+    </nav>
   </main>
 
-  <div class="overlay" data-start><section class="modal" role="dialog" aria-modal="true" aria-labelledby="start-title"><div class="modal-head"><h2 id="start-title">剑雅21 Test 1 · {labels[subject]}</h2></div><div class="modal-body"><p>按机考界面练习；答案和计时只保存在当前浏览器。关闭页面后重新打开，可继续本次练习。</p>{subject === 'reading' && <p>原文高亮和分栏宽度也保存在本机，清除本机答案时一并删除。</p>}<p>{subject === 'listening' ? '35 分钟练习计时，含四段录音与检查时间。' : '60 分钟练习计时。'}提交后，听力和阅读会显示对题数；写作不自动估分。</p><label><input type="checkbox" data-ready /> 我已阅读并准备开始</label></div><div class="modal-actions"><button type="button" data-resume disabled>继续上次练习</button><button type="button" class="primary" data-start-button disabled>开始</button></div></section></div>
+  <div class="overlay" data-start><section class="modal" role="dialog" aria-modal="true" aria-labelledby="start-title"><div class="modal-head"><h2 id="start-title">剑雅21 Test {testNumber} · {labels[subject]}</h2></div><div class="modal-body"><p>答案、计时和高亮仅保存在本机浏览器。</p><p>{subject === 'listening' ? '点击开始即连续播放四段录音，不能暂停或跳转，可调整速度。35 分钟计时。' : '60 分钟计时。'}听力、阅读提交后显示对题数，写作需人工评阅。</p><label><input type="checkbox" data-ready /> 准备开始</label></div><div class="modal-actions"><button type="button" data-resume disabled>继续上次练习</button><button type="button" class="primary" data-start-button disabled>确认开始考试</button></div></section></div>
   <dialog class="result-dialog" data-dialog><div data-dialog-body></div><form method="dialog"><button type="button" data-reset>重新开始</button><button>关闭</button></form></dialog>
   <script is:inline type="application/json" id="exam-payload" set:html={payload} />
 
   <script>
-    import { setupReadingTools } from '../../../lib/ielts/mock/reading-tools';
-    import { examFontSize, normalizeHighlights, type HighlightRange } from '../../../lib/ielts/mock/reading-state';
-    import type { Choice, QuestionBlock } from '../../../lib/ielts/mock/test1-questions';
+    import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
+    import { setupTextHighlights } from '../../lib/ielts/mock/text-highlights';
+    import { setupListeningPlayer, cleanPlayback, type Playback } from '../../lib/ielts/mock/listening-player';
+    import { scoreAnswers } from '../../lib/ielts/mock/scoring';
+    import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
+    import type { Choice, QuestionBlock } from '../../lib/ielts/mock/test1-questions';
     type Section = { label: string; first: number; last: number; title: string; instructions: string; paragraphs: string[]; questionImages: string[]; audioUrl: string };
-    type Payload = { subject: 'listening' | 'reading' | 'writing'; sections: Section[]; answerKey: string[]; blocks: QuestionBlock[][]; accountId: string };
-    type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; fontSize: number; highlights: Record<string, HighlightRange[]> };
+    type Payload = { subject: 'listening' | 'reading' | 'writing'; testNumber:number; sections: Section[]; answerKey: string[]; blocks: QuestionBlock[][]; accountId: string; completionOptions:Record<string,string[]> };
+    type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; fontSize: number; highlights: Record<string, HighlightRange[]>; playback:Playback };
     const root = document.querySelector<HTMLElement>('[data-exam]');
     const parsed = document.querySelector<HTMLElement>('#exam-payload');
     if (root && parsed) {
       const data = JSON.parse(parsed.textContent || '{}') as Payload;
-      const key = `lenteyyy-mock-c21-t1-${data.subject}-${data.accountId}`;
+      const key = `lenteyyy-mock-c21-t${data.testNumber}-${data.subject}-${data.accountId}`;
       const duration = data.subject === 'listening' ? 35 * 60 : 60 * 60;
-      const defaults = (): Saved => ({ version: 1, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, fontSize: 16, highlights: {} });
+      const defaults = (): Saved => ({ version: 1, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, fontSize: 16, highlights: {}, playback:cleanPlayback(null) });
       const load = (): Saved => {
         try {
           const value = JSON.parse(localStorage.getItem(key) || 'null'); const clean = defaults();
@@ -80,12 +69,13 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
           clean.review = data.sections.map((_, index) => value.review[index] === true);
           clean.deadline = typeof value.deadline === 'number' && Number.isFinite(value.deadline) && value.deadline > 0 ? value.deadline : 0;
           clean.started = value.started === true && clean.deadline > 0; clean.finished = value.finished === true && clean.started;
-          if (value.answers && typeof value.answers === 'object') for (const [number, answer] of Object.entries(value.answers)) {
+          if (value.answers && typeof value.answers === 'object' && !Array.isArray(value.answers)) for (const [number, answer] of Object.entries(value.answers)) {
             if (/^(?:[1-9]|[1-3]\d|40)$/.test(number) && typeof answer === 'string') clean.answers[number] = answer.slice(0, data.subject === 'writing' ? 100000 : 1000);
           }
           clean.split = typeof value.split === 'number' && Number.isFinite(value.split) ? Math.max(0, Math.min(100, value.split)) : 50;
           clean.fontSize = examFontSize(value.fontSize);
-          if (value.highlights && typeof value.highlights === 'object') for (let index = 0; index < data.sections.length; index++) clean.highlights[String(index)] = normalizeHighlights(value.highlights[String(index)], 200000);
+          if (value.highlights && typeof value.highlights === 'object' && !Array.isArray(value.highlights)) for (let index = 0; index < data.sections.length; index++) for(const region of ['passage','questions','instructions']) clean.highlights[`${index}:${region}`] = normalizeHighlights(value.highlights[`${index}:${region}`] ?? (region==='passage'?value.highlights[String(index)]:[]), 200000);
+          clean.playback = cleanPlayback(value.playback);
           return clean;
         } catch { return defaults(); }
       };
@@ -104,9 +94,16 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
       applyFontSize();
       const readingTools = data.subject === 'reading' ? setupReadingTools(root, {
         getSplit: () => state.split, setSplit: (value) => { state.split = value; save(); },
-        getHighlights: () => state.highlights[String(state.active)] || [],
-        setHighlights: (value) => { state.highlights[String(state.active)] = value; save(); },
+        getHighlights: () => [], setHighlights: () => {},
+        highlight:false,
       }) : undefined;
+      const textTools=setupTextHighlights(root,{get:(region)=>state.highlights[`${state.active}:${region}`]||[],set:(region,value)=>{state.highlights[`${state.active}:${region}`]=value;save();}});
+      const audio=$<HTMLAudioElement>('[data-audio]');
+      const player=audio?setupListeningPlayer(audio,data.sections.map(s=>s.audioUrl),{get:()=>state.playback,set:(value)=>{state.playback=value;save();},status:(message,blocked)=>{const status=$<HTMLElement>('[data-audio-status]');if(status)status.textContent=message;const retry=$<HTMLButtonElement>('[data-audio-retry]');if(retry)retry.hidden=!blocked;},complete:()=>syncAudioControls()}):undefined;
+      const syncAudioControls=()=>{const rate=$<HTMLSelectElement>('[data-audio-rate]');if(rate)rate.value=String(state.playback.rate);const locked=!!player?.running();for(const selector of ['[data-clear]','[data-submit]']){const button=$<HTMLButtonElement>(selector);if(button)button.disabled=locked;}for(const link of root.querySelectorAll<HTMLAnchorElement>('.subjects a'))link.setAttribute('aria-disabled',String(locked));};
+      for(const link of root.querySelectorAll<HTMLAnchorElement>('.subjects a'))link.addEventListener('click',event=>{if(player?.running())event.preventDefault();});
+      $<HTMLSelectElement>('[data-audio-rate]')?.addEventListener('change',event=>{player?.rate(Number((event.target as HTMLSelectElement).value));});
+      $<HTMLButtonElement>('[data-audio-retry]')?.addEventListener('click',()=>player?.retry());
       const words = (value: string) => (value.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu) || []).length;
       const formatTime = (seconds: number) => `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
       const showDialog = (message: string) => { if (dialogBody) dialogBody.textContent = message; dialog?.showModal(); };
@@ -142,7 +139,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
           const match = /^\{\{(\d+)\}\}$/.exec(part);
           if (match) {
             const number = Number(match[1]);
-            fragment.append(answerControl(number, data.subject === 'reading' && number >= 31 && number <= 36 ? 'ABCDEFGHI'.split('') : undefined));
+            fragment.append(answerControl(number, data.completionOptions[String(number)]));
           } else if (part) fragment.append(document.createTextNode(part));
         }
         return fragment;
@@ -161,6 +158,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
       const renderBlocks = () => {
         const target = $<HTMLElement>('[data-question-content]'); target?.replaceChildren(); if (!target) return;
         for (const block of data.blocks[state.active] || []) {
+          if(block.type==='image'){const img=element('img','question-image');img.src=block.url;img.alt=block.alt;target.append(img);}
           if (block.type === 'heading') target.append(element('h3', 'question-heading', block.text));
           if (block.type === 'subheading') target.append(element('h4', 'question-subheading', block.text));
           if (block.type === 'instruction') target.append(element('p', 'question-instruction', block.text));
@@ -183,6 +181,10 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
           if (block.type === 'summary') {
             const box = element('section', 'summary-box'); box.append(element('h4', 'note-title', block.title));
             for (const text of block.paragraphs) appendText(box, 'p', text); target.append(box);
+          }
+          if (block.type === 'flow') {
+            const box = element('section', 'flow-chart'); box.append(element('h4', 'note-title', block.title));
+            for (const text of block.steps) appendText(box, 'p', text, 'flow-step'); target.append(box);
           }
           if (block.type === 'bank') target.append(optionBank(block.options, block.title));
           if (block.type === 'choice') {
@@ -208,10 +210,10 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
             if (state.finished) group.append(element('small', 'correct-answer', `参考：${block.numbers.map(correct).join(' / ')}`)); target.append(group);
           }
           if (block.type === 'match') {
-            target.append(optionBank(block.options, block.title === 'Resources' ? 'Opinions' : block.title === 'Duties' ? 'Abilities' : block.title || 'Options'));
+            if(block.options.some(option=>option.text))target.append(optionBank(block.options, block.title === 'Resources' ? 'Opinions' : block.title === 'Duties' ? 'Abilities' : block.title || 'Options'));
             if (block.title === 'Resources') target.append(element('h4', 'question-subheading', 'Resources'));
             if (block.title === 'Duties') target.append(element('h4', 'question-subheading', 'Duties'));
-            const rows = element('div', 'match-rows'); for (const row of block.rows) {
+            const rows = element('div', block.flow ? 'match-rows flow-match' : 'match-rows'); for (const row of block.rows) {
               const line = element('div', 'match-row'); line.append(element('strong', 'question-index', String(row.number)), element('span', '', row.text), answerControl(row.number, block.options.map((option) => option.letter))); rows.append(line);
             } target.append(rows);
           }
@@ -232,16 +234,14 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
           passage.append(element('p', 'passage-intro', `You should spend about 20 minutes on Questions ${section.first}–${section.last}, which are based on Reading Passage ${state.active + 1} below.`));
           passage.append(element('h2', 'passage-title', section.title));
         }
-        for (const [index, text] of section.paragraphs.entries()) { const paragraph = element('p', data.subject === 'reading' && index === 0 && state.active === 0 ? 'passage-lede' : '', text); passage?.append(paragraph); }
-        if (data.subject === 'reading' && state.active === 0 && passage) {
+        for (const [index, text] of section.paragraphs.entries()) { const paragraph = element('p', data.testNumber === 1 && data.subject === 'reading' && index === 0 && state.active === 0 ? 'passage-lede' : '', text); passage?.append(paragraph); }
+        if (data.testNumber===1 && data.subject === 'reading' && state.active === 0 && passage) {
           passage.append(element('p', 'passage-footnote', '* philanthropic: seeking to promote the welfare of others, often by charitable funding'));
           passage.append(element('p', 'passage-footnote', '** Old Master: a highly respected artist of great skill who worked in Europe before about 1800'));
           passage.append(element('p', 'passage-footnote', '*** Impressionist: an artist with a style of painting that developed in France in the late 1800s'));
         }
         const images = $<HTMLElement>('[data-question-images]'); images?.replaceChildren();
         if (data.subject === 'writing') for (const url of section.questionImages) { const link = document.createElement('a'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `放大查看${section.label}图表`); const image = document.createElement('img'); image.src = url; image.alt = `${section.label} 图表，点击可放大`; image.loading = 'lazy'; link.append(image); images?.append(link); }
-        const audioWrap = $<HTMLElement>('[data-audio-wrap]'); const audio = $<HTMLAudioElement>('[data-audio]');
-        if (audioWrap && audio) { audioWrap.hidden = !section.audioUrl; audio.src = section.audioUrl || ''; }
         if (data.subject !== 'writing') renderBlocks();
         const answers = $<HTMLElement>('[data-answer-scroll]'); answers?.replaceChildren();
         if (data.subject === 'writing') {
@@ -257,8 +257,9 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
         const prev = $<HTMLButtonElement>('[data-prev]'); if (prev) prev.disabled = state.active === 0;
         const next = $<HTMLButtonElement>('[data-next]'); if (next) next.disabled = state.active === data.sections.length - 1;
         readingTools?.render();
+        textTools.render();syncAudioControls();
       };
-      const enter = (fresh: boolean) => { if (fresh) { const fontSize = state.fontSize; state = defaults(); state.fontSize = fontSize; state.started = true; state.deadline = Date.now() + duration * 1000; save(); } applyFontSize(); overlay?.remove(); render(); updateClock(); };
+      const enter = (fresh: boolean) => { if (fresh) { const fontSize = state.fontSize; state = defaults(); state.fontSize = fontSize; state.started = true; state.deadline = Date.now() + duration * 1000; save(); } if(!state.playback.complete&&data.subject==='listening')player?.start(fresh);applyFontSize(); overlay?.remove(); render(); updateClock(); };
       const ready = document.querySelector<HTMLInputElement>('[data-ready]'); const start = document.querySelector<HTMLButtonElement>('[data-start-button]');
       ready?.addEventListener('change', () => { if (start) start.disabled = !ready.checked; }); start?.addEventListener('click', () => enter(true));
       const resume = document.querySelector<HTMLButtonElement>('[data-resume]'); if (resume) resume.disabled = !state.started; resume?.addEventListener('click', () => enter(false));
@@ -266,31 +267,20 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
       $<HTMLButtonElement>('[data-prev]')?.addEventListener('click', () => { state.active = Math.max(0, state.active - 1); save(); render(); });
       $<HTMLButtonElement>('[data-next]')?.addEventListener('click', () => { state.active = Math.min(data.sections.length - 1, state.active + 1); save(); render(); });
       $<HTMLButtonElement>('[data-submit]')?.addEventListener('click', () => {
+        if(player?.running())return;
         if (state.finished) { showDialog('本次练习已提交。可查看答案或重新开始。'); return; }
         if (!confirm('提交本次练习？提交后不能继续作答。')) return;
         state.finished = true; state.deadline = Date.now(); save(); render(); updateClock();
         if (data.subject === 'writing') {
           showDialog(`练习已提交。Task 1：${words(state.answers['1'] || '')} 词；Task 2：${words(state.answers['2'] || '')} 词。写作需人工评阅，不生成机器分数。`);
         } else {
-          const normal = (value: string) => value.normalize('NFKC').trim().toLocaleLowerCase().replace(/\s+/g, ' ');
-          const accepted = (given: string, expected: string) => expected.split('|').some((value) => normal(given) === normal(value));
-          let score = 0;
-          for (let number = 1; number <= 40; number++) {
-            if (data.subject === 'listening' && [21, 22, 23, 24].includes(number)) continue;
-            if (accepted(state.answers[String(number)] || '', data.answerKey[number - 1] || '')) score++;
-          }
-          if (data.subject === 'listening') {
-            for (const pair of [[21, 22], [23, 24]]) {
-              const remaining = pair.map((number) => data.answerKey[number - 1]);
-              for (const number of pair) { const index = remaining.findIndex((expected) => accepted(state.answers[String(number)] || '', expected)); if (index >= 0) { score++; remaining.splice(index, 1); } }
-            }
-          }
+          const score=scoreAnswers(state.answers,data.answerKey,data.blocks);
           showDialog(`练习已提交：${score} / 40 题正确。仅显示原始对题数，不换算官方雅思分数。答案留在当前浏览器。`);
         }
       });
-      document.querySelector<HTMLButtonElement>('[data-reset]')?.addEventListener('click', () => { if (!confirm('清除本次练习的全部答案并重新开始？')) return; localStorage.removeItem(key); location.reload(); });
+      document.querySelector<HTMLButtonElement>('[data-reset]')?.addEventListener('click', () => { if(player?.running()||!confirm('清除本次练习的全部答案并重新开始？')) return; localStorage.removeItem(key); location.reload(); });
       $<HTMLButtonElement>('[data-help]')?.addEventListener('click', () => showDialog(`点击底部切换部分；答案自动保存在本机浏览器。顶部可切换字号。${data.subject === 'reading' ? '拖动中间分隔条调整宽度（也可用方向键）；选中原文后选择黄色或蓝色高亮，再次选中可改色或取消。窄屏上下排列。' : ''}请勿在共用设备上留下个人信息。`));
-      $<HTMLButtonElement>('[data-clear]')?.addEventListener('click', () => { if (!confirm('清除本机保存的本次练习答案？')) return; localStorage.removeItem(key); location.reload(); });
+      $<HTMLButtonElement>('[data-clear]')?.addEventListener('click', () => { if(player?.running()||!confirm('清除本机保存的本次练习答案？')) return; localStorage.removeItem(key); location.reload(); });
       updateClock(); window.setInterval(updateClock, 1000);
     }
   </script>
@@ -298,7 +288,7 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
 
 <style>
   :global(body.ielts-site) { overflow: hidden; background: #dce6f2; }
-  .exam { height: 100dvh; display: grid; grid-template-rows: 52px 42px minmax(0, 1fr) 66px; color: #20252a; color-scheme: light; font: 16px/1.55 Arial, Helvetica, sans-serif; }
+  .exam { height: 100dvh; display: grid; grid-template-rows: 52px 42px minmax(0, 1fr) minmax(66px, auto); color: #20252a; color-scheme: light; font: 16px/1.55 Arial, Helvetica, sans-serif; }
   button, input, select, textarea { font: inherit; }
   .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 16px; background: #fff; border-top: 3px solid #d71920; border-bottom: 1px solid #d9dde1; }
   .font-size-control { display: flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; }
@@ -320,8 +310,14 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
   .highlight-tools button { min-height: 36px; padding: 4px 10px; border: 1px solid #83909b; border-radius: 3px; color: #20252a; background: #f7f8fa; cursor: pointer; }
   .highlight-tools [data-highlight-add="yellow"] { background: #fff09a; }
   .highlight-tools [data-highlight-add="blue"] { background: #bce4ff; }
-  [data-passage] :global(mark[data-reading-highlight]) { background: #fff09a; color: inherit; padding: 0; }
-  [data-passage] :global(mark[data-color="blue"]) { background: #bce4ff; }
+  [data-highlight-region] :global(mark[data-reading-highlight]) { background: #fff09a; color: inherit; padding: 0; }
+  [data-highlight-region] :global(mark[data-color="blue"]) { background: #bce4ff; }
+  .exam :global(.question-image) { display:block;max-width:100%;height:auto;margin:20px auto; }
+  .audio-speed { grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:end;align-items:center;gap:8px;min-width:0;padding:0 0 2px;color:#fff;font-size:12px; }
+  .test-nav .audio-speed label { font-size:12px; }
+  .audio-speed select { padding:4px;border:1px solid #879099;background:#fff;color:#20252a; }
+  audio { display:none; }
+  .subjects a[aria-disabled="true"] { opacity:.5;cursor:not-allowed; }
   .listening-workspace { grid-template-columns: minmax(0, 1fr); }
   .pane { display: flex; flex-direction: column; min-height: 0; min-width: 0; overflow: hidden; border: 1px solid #aeb7bf; border-radius: 6px; background: #fff; box-shadow: 0 1px 4px #1b2b3a26; }
   .pane-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 8px; padding: 10px 16px; border-bottom: 1px solid #d6dadd; background: linear-gradient(#fff, #edf1f4); }
@@ -355,6 +351,11 @@ const payload = JSON.stringify({ subject, sections, answerKey, blocks: subject =
   .exam :global(.note-list) { margin: 0 0 8px; padding-left: 25px; }
   .exam :global(.note-list li) { margin: 8px 0; padding-left: 4px; }
   .exam :global(.summary-box p) { margin: 10px 0 16px; }
+  .exam :global(.flow-chart) { margin:20px auto 30px;max-width:560px; }
+  .exam :global(.flow-step) { position:relative;margin:0 0 34px;padding:14px;border:1px solid #879099;text-align:center; }
+  .exam :global(.flow-step:not(:last-child)::after) { content:'↓';position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);font-size:24px; }
+  .exam :global(.flow-match .match-row) { position:relative;margin:0 auto 34px;max-width:560px;padding:12px;border:1px solid #879099; }
+  .exam :global(.flow-match .match-row:not(:last-child)::after) { content:'↓';position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);font-size:24px; }
   .exam :global(.inline-answer) { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; margin: 2px 3px; vertical-align: middle; white-space: normal; }
   .exam :global(.answer-number) { font-weight: 700; }
   .exam :global(.inline-answer input), .exam :global(.inline-answer select) { width: 148px; max-width: 100%; min-height: 34px; padding: 5px 8px; border: 1px solid #83909b; border-radius: 3px; background: #fff; color: #111; }

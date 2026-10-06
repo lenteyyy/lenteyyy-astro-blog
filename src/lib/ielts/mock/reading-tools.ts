@@ -5,6 +5,7 @@ export function setupReadingTools(root: HTMLElement, hooks: {
   setSplit: (value: number) => void;
   getHighlights: () => HighlightRange[];
   setHighlights: (value: HighlightRange[]) => void;
+  highlight?: boolean;
 }) {
   const workspace = root.querySelector<HTMLElement>('.reading-workspace')!;
   const divider = root.querySelector<HTMLElement>('[data-divider]')!;
@@ -62,6 +63,8 @@ export function setupReadingTools(root: HTMLElement, hooks: {
   });
   divider.addEventListener('dblclick', () => { ratio = 50; applySplit(); hooks.setSplit(ratio); });
   new ResizeObserver(() => { endDrag(); hide(); applySplit(); }).observe(workspace);
+
+  if(hooks.highlight===false){applySplit();return{render:()=>{endDrag();hide();applySplit();}};}
 
   const paint = () => {
     // Unwrap only our marks; paragraph/heading structure and text are untouched.

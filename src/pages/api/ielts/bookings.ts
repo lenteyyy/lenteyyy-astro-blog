@@ -4,12 +4,12 @@ import { sendBookingEmails } from '../../../lib/ielts/email';
 import { cleanLine, cleanText, json, readJson, sameOrigin } from '../../../lib/ielts/http';
 import { claimRateLimit } from '../../../lib/ielts/security';
 import { createServiceClient } from '../../../lib/ielts/supabase';
+import { isBookableDate } from '../../../lib/ielts/booking-window';
 
 export const prerender = false;
 
 const slots = new Set(['8:30–10:00', '10:30–12:00', '19:00–20:30', '21:00–22:30', '其他时间']);
 const subjects = new Set(['听力', '阅读', '写作', '口语']);
-const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const customTimePrefix = '@requested-time:';
 type BookingRecord = Record<string, unknown> & {
 	id?: unknown;
@@ -20,8 +20,6 @@ type BookingRecord = Record<string, unknown> & {
 	status?: unknown;
 	created_at?: unknown;
 };
-const localDate = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
-const localToday = () => localDate(new Date());
 
 const unpackNotes = (booking: BookingRecord) => {
 	const notes = String(booking.notes || '');
@@ -111,7 +109,6 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		const consent = body.consent === true;
 		const requested = Array.isArray(body.bookings) ? body.bookings : [body];
 		if (!name || !consent || requested.length < 1 || requested.length > 4) return json({ error: 'invalid_booking' }, 400);
-		const latest = new Date(); latest.setDate(latest.getDate() + 180);
 		const seen = new Set<string>();
 		const prepared = requested.map((value) => {
 			const item = value && typeof value === 'object' ? value as Record<string, unknown> : {};
@@ -119,9 +116,8 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 			const time = String(item.time || '');
 			const customTime = time === '其他时间' ? cleanLine(item.customTime, 80) : '';
 			const subject = String(item.subject || '');
-			const parsedDate = new Date(`${date}T00:00:00+08:00`);
 			const key = `${date}|${time}|${customTime}`;
-			if (!subjects.has(subject) || !datePattern.test(date) || !slots.has(time) || (time === '其他时间' && customTime.length < 2) || Number.isNaN(parsedDate.getTime()) || localDate(parsedDate) !== date || date < localToday() || date > localDate(latest) || seen.has(key)) throw new Error('invalid_booking');
+			if (!subjects.has(subject) || !isBookableDate(date) || !slots.has(time) || (time === '其他时间' && customTime.length < 2) || seen.has(key)) throw new Error('invalid_booking');
 			seen.add(key);
 			return { date, time, customTime, subject, storedNotes: customTime ? `${customTimePrefix}${customTime}\n${notes}` : notes };
 		});
