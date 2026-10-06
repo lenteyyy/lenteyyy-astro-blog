@@ -1,6 +1,7 @@
 ---
 import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
+import StudyNavigation from '../../components/ielts/StudyNavigation';
 
 const resources = [
 	{ icon: 'headphones' as const, title: '听力' },
@@ -17,13 +18,7 @@ const resources = [
 				<span class="logo-frame"><img src="/lenteyyy-logo.png" alt="Lenteyyy" width="512" height="512" /></span>
 			</a>
 
-			<nav class="side-nav" aria-label="雅思学习中心导航">
-				<a class="active" href="#overview">首页</a>
-				<a href="#booking">课程预约</a>
-				<a href="#materials">学习资料</a>
-				<a href="#mock">模考页面</a>
-				<a href="#notes">其他</a>
-			</nav>
+			<StudyNavigation client:load />
 
 			<div class="side-footer">
 				<button class="search-button" type="button" data-open-search aria-label="搜索"><IeltsIcon name="search" /></button>
@@ -47,7 +42,7 @@ const resources = [
 			<div class="dashboard">
 				<section class="module overview-module" id="overview">
 					<header class="module-head">
-						<h1>冷踢踢的雅思学习网站</h1>
+						<h1>欢迎！</h1>
 					</header>
 					<div class="overview-copy">
 						<p>你好！我是雅思 Overall 8.0 的冷踢踢老师，欢迎来到冷踢踢的雅思学习网站！这里主要为我的学员提供课程线上预约、学习资料查询与整理、仿真模考等服务。如果你是通过其他途径来到这里的雅思学习者，也非常欢迎你注册登录，并免费使用网站内开放的学习功能。</p>
@@ -143,7 +138,7 @@ const resources = [
 				<section class="module mock-module" id="mock" hidden>
 					<header class="module-head">
 						<h2>模考页面</h2>
-						<span class="module-state">剑雅21 · Test 1</span>
+						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷"><option value="1">剑雅21 · Test 1</option><option value="2">剑雅21 · Test 2</option><option value="3">剑雅21 · Test 3</option><option value="4">剑雅21 · Test 4</option></select></label>
 					</header>
 					<div class="mock-tabs" role="tablist" aria-label="模考科目">
 						<button type="button" class="active" data-mock="listening" role="tab" aria-selected="true"><IeltsIcon name="headphones" size={19} />Listening</button>
@@ -206,6 +201,7 @@ const resources = [
 	</dialog>
 
 	<script>
+		import { bookingWindow } from '../../lib/ielts/booking-window';
 		const root = document.querySelector<HTMLElement>('[data-ielts-page]');
 		if (root) {
 			const themeButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-theme-choice]')];
@@ -222,29 +218,23 @@ const resources = [
 				try { if (!localStorage.getItem('ielts-theme')) setTheme(event.matches ? 'dark' : 'light', false); } catch {}
 			});
 
-			const navLinks = [...root.querySelectorAll<HTMLAnchorElement>('.side-nav a')];
 			const panels = [...root.querySelectorAll<HTMLElement>('.dashboard > .module')];
+			let currentSection = '';
+			let sectionAnimation: Animation | undefined;
 			const activateSection = (id: string, updateHash = true) => {
 				const next = panels.some((panel) => panel.id === id) ? id : 'overview';
+				if (next === currentSection) return;
+				currentSection = next;
+				sectionAnimation?.cancel();
 				panels.forEach((panel) => { panel.hidden = panel.id !== next; });
 				const activePanel = panels.find((panel) => panel.id === next);
-				if (activePanel) {
-					activePanel.classList.remove('section-enter');
-					requestAnimationFrame(() => activePanel.classList.add('section-enter'));
+				if (activePanel && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+					sectionAnimation = activePanel.animate([{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'translateY(0)'}],{duration:420,easing:'cubic-bezier(.22,1,.36,1)'});
 				}
-				navLinks.forEach((link) => {
-					const active = link.hash === `#${next}`;
-					link.classList.toggle('active', active);
-					if (active) link.setAttribute('aria-current', 'page');
-					else link.removeAttribute('aria-current');
-				});
 				if (updateHash) history.replaceState(null, '', `#${next}`);
+				window.dispatchEvent(new CustomEvent('ielts:section-change', { detail: {section: next} }));
 				window.scrollTo({ top: 0, behavior: 'auto' });
 			};
-			navLinks.forEach((link) => link.addEventListener('click', (event) => {
-				event.preventDefault();
-				activateSection(link.hash.slice(1));
-			}));
 			root.querySelectorAll<HTMLAnchorElement>('[data-section-target]').forEach((link) => link.addEventListener('click', (event) => {
 				event.preventDefault();
 				activateSection(link.dataset.sectionTarget || 'overview');
@@ -269,8 +259,10 @@ const resources = [
 			const customTimeInput = customTimeField?.querySelector<HTMLInputElement>('input');
 			const notesInput = root.querySelector<HTMLTextAreaElement>('textarea[name="note"]');
 			const subjectInput = root.querySelector<HTMLSelectElement>('select[name="subject"]');
-			const today = new Date();
-			today.setHours(0, 0, 0, 0);
+			const windowDates = bookingWindow();
+			const today = new Date(`${windowDates.first}T00:00:00`);
+			const latestDate = new Date(`${windowDates.last}T00:00:00`);
+			const latestMonth = new Date(latestDate.getFullYear(), latestDate.getMonth(), 1);
 			const earliestMonth = new Date(today.getFullYear(), today.getMonth(), 1);
 			let visibleMonth = new Date(earliestMonth);
 			let selectedDate = '';
@@ -304,7 +296,7 @@ const resources = [
 					button.textContent = String(date.getDate());
 					button.dataset.date = isoDate(date);
 					button.className = date.getMonth() === visibleMonth.getMonth() ? '' : 'outside';
-					if (date < today) button.disabled = true;
+					if (date < today || date > latestDate) button.disabled = true;
 					if (button.dataset.date === selectedDate) button.classList.add('selected');
 					button.setAttribute('aria-label', formatDate(date));
 					button.addEventListener('click', () => {
@@ -317,9 +309,10 @@ const resources = [
 					calendarDays.append(button);
 				}
 				if (prevButton) prevButton.disabled = visibleMonth <= earliestMonth;
+				if (nextButton) nextButton.disabled = visibleMonth >= latestMonth;
 			};
 			prevButton?.addEventListener('click', () => { visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() - 1, 1); renderCalendar(); root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
-			nextButton?.addEventListener('click', () => { visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1); renderCalendar(); root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
+			nextButton?.addEventListener('click', () => { if (visibleMonth >= latestMonth) return; visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1); renderCalendar(); root.dispatchEvent(new CustomEvent('ielts:calendar-change')); });
 			timeButtons.forEach((button) => button.addEventListener('click', () => {
 				selectedTime = button.dataset.time || '';
 				timeButtons.forEach((item) => { const active = item === button; item.classList.toggle('selected', active); item.setAttribute('aria-pressed', String(active)); });
@@ -348,13 +341,17 @@ const resources = [
 			const mockCount = root.querySelector<HTMLElement>('[data-mock-count]');
 			const mockTime = root.querySelector<HTMLElement>('[data-mock-time]');
 			const mockOpen = root.querySelector<HTMLAnchorElement>('[data-mock-open]');
+			const mockPaper = root.querySelector<HTMLSelectElement>('[data-mock-paper]');
+			let mockSubject = 'listening';
+			const syncMockLink = () => { if (mockOpen) mockOpen.href = `/ielts/mock/test-${mockPaper?.value || '1'}?subject=${mockSubject}`; };
+			mockPaper?.addEventListener('change', syncMockLink);
 			mockButtons.forEach((button) => button.addEventListener('click', () => {
 				mockButtons.forEach((item) => { const active = item === button; item.classList.toggle('active', active); item.setAttribute('aria-selected', String(active)); });
 				const subject = button.dataset.mock || 'listening';
 				if (mockTitle) mockTitle.textContent = subject[0].toUpperCase() + subject.slice(1);
 				if (mockCount) mockCount.textContent = subject === 'writing' ? '2 道题' : '40 道题';
 				if (mockTime) mockTime.textContent = subject === 'listening' ? '35 分钟' : '60 分钟';
-				if (mockOpen) mockOpen.href = `/ielts/mock/test-1?subject=${subject}`;
+				mockSubject = subject; syncMockLink();
 			}));
 		}
 		</script>
@@ -805,12 +802,6 @@ const resources = [
 	.logo-frame { width: 120px; height: 60px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 	.logo-frame img { width: 115px; height: 115px; flex: 0 0 auto; object-fit: contain; mix-blend-mode: multiply; }
 	:global([data-ielts-theme='dark']) .logo-frame img { filter: invert(1); mix-blend-mode: screen; }
-	.side-nav { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 36px); margin: 0; }
-	.side-nav a { position: relative; min-height: 54px; display: flex; align-items: center; padding: 0 2px; color: var(--ielts-muted); font-size: 15px; font-weight: 500; white-space: nowrap; transition: color .2s ease; }
-	.side-nav a::after { content: ''; position: absolute; bottom: 4px; left: 0; right: 0; height: 2px; background: var(--ielts-ink); transform: scaleX(0); transform-origin: left; transition: transform .25s cubic-bezier(.2,.75,.25,1); }
-	.side-nav a:hover, .side-nav a.active { color: var(--ielts-ink); }
-	.side-nav a.active::after { transform: scaleX(1); }
-	.side-nav :global(svg) { flex: 0 0 auto; }
 	.side-footer { display: flex; align-items: center; gap: 16px; margin-left: auto; }
 	.account-menu { position: relative; }
 	.search-button, .account-button { width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border: 0; border-radius: 50%; background: transparent; color: var(--ielts-ink); cursor: pointer; transition: background .2s ease, transform .2s ease; }
@@ -828,9 +819,7 @@ const resources = [
 	.work-area { width: min(1360px, 100%); min-width: 0; margin: auto; padding: clamp(28px, 4vw, 64px) 24px; }
 	.dashboard { display: grid; }
 	.module { min-width: 0; padding: 0; scroll-margin-top: 100px; background: var(--ielts-bg); }
-	.module.section-enter { animation: section-in .24s cubic-bezier(.2,.75,.25,1) both; }
 	.module[hidden] { display: none; }
-	@keyframes section-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 	@keyframes account-in { from { opacity: 0; transform: translateY(5px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 	.overview-copy { width: min(1000px, 100%); display: grid; grid-template-columns: 1.3fr 1fr; align-content: start; gap: 40px; padding: 28px 0; }
 	.overview-copy > p, .overview-copy section { margin: 0; padding: 28px 0; border-top: 1px solid var(--ielts-line); color: var(--ielts-text); font-size: 17px; line-height: 2; }
@@ -916,6 +905,8 @@ const resources = [
 	.small-resources > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 	.small-resources button { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--ielts-line); border-radius: 8px; background: transparent; color: var(--ielts-text); font-size: 12px; }
 	.mock-tabs { display: grid; grid-template-columns: repeat(3, 1fr); overflow: hidden; border: 1px solid var(--ielts-line); border-radius: 9px; }
+	.mock-paper-select { display:flex;align-items:center;gap:10px;color:var(--ielts-muted);font-size:14px; }
+	.mock-paper-select select { padding:8px 12px;border:1px solid var(--ielts-line);border-radius:8px;background:var(--ielts-panel);color:var(--ielts-ink);font:inherit;max-width:100%; }
 	.mock-tabs button { min-width: 0; min-height: 44px; display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-right: 1px solid var(--ielts-line); background: var(--ielts-panel); color: var(--ielts-text); cursor: pointer; font-size: 12px; }
 	.mock-tabs button:last-child { border-right: 0; }
 	.mock-tabs button.active { background: var(--ielts-accent-soft); color: var(--ielts-ink); }
@@ -964,9 +955,6 @@ const resources = [
 		.side-panel { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; padding: 12px 20px 0; }
 		.logo-frame { width: 92px; height: 44px; }
 		.logo-frame img { width: 90px; height: 90px; }
-		.side-nav { grid-column: 1 / -1; grid-row: 2; min-width: 0; display: flex; gap: 24px; margin: 0; overflow-x: auto; scrollbar-width: none; }
-		.side-nav::-webkit-scrollbar { display: none; }
-		.side-nav a { min-height: 48px; flex: 0 0 auto; font-size: 14px; }
 		.side-footer { grid-column: 2; grid-row: 1; gap: 10px; }
 		.work-area { padding: 30px 20px; }
 		.module-head h1, .module-head h2 { font-size: 28px; }
@@ -1002,7 +990,7 @@ const resources = [
 	.booking-row button.confirm { border-color: var(--ielts-ink); background: var(--ielts-ink); color: var(--ielts-card); }
 	.booking-dialog::backdrop { background: #0007; }
 	@media (prefers-reduced-motion: reduce) {
-		.module.section-enter, .account-panel { animation: none; }
-		.side-nav a::after, .account-button { transition: none; }
+		.account-panel { animation: none; }
+		.account-button { transition: none; }
 	}
 </style>

@@ -2,14 +2,16 @@
 // {{n}} marks the exact numbered gap in a completion question.
 export type Choice = { letter: string; text: string };
 export type QuestionBlock =
+  | { type: 'image'; url: string; alt: string }
   | { type: 'heading' | 'instruction' | 'subheading' | 'paragraph'; text: string }
   | { type: 'table'; title: string; columns: string[]; rows: string[][] }
   | { type: 'notes'; title: string; groups: { heading?: string; intro?: string[]; items: string[] }[] }
   | { type: 'summary'; title: string; paragraphs: string[] }
+  | { type: 'flow'; title: string; steps: string[] }
   | { type: 'bank'; title: string; options: Choice[] }
   | { type: 'choice'; number: number; prompt: string; options: Choice[] }
   | { type: 'pair'; numbers: [number, number]; prompt: string; options: Choice[] }
-  | { type: 'match'; title?: string; options: Choice[]; rows: { number: number; text: string }[] }
+  | { type: 'match'; title?: string; flow?: boolean; options: Choice[]; rows: { number: number; text: string }[] }
   | { type: 'statements'; options: string[]; rows: { number: number; text: string }[] };
 
 const abc = (texts: string[]): Choice[] => texts.map((text, index) => ({ letter: String.fromCharCode(65 + index), text }));
