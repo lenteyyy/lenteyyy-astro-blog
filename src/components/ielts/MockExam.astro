@@ -315,8 +315,8 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
 </IeltsLayout>
 
 <style>
-  :global(html) { scroll-behavior: auto; }
-  :global(body.ielts-site) { overflow: hidden; height:100dvh; background: #dce6f2; animation:none; }
+  :global(html:has(.exam)) { scroll-behavior: auto; }
+  :global(body.ielts-site:has(.exam)) { overflow: hidden; height:100dvh; background: #dce6f2; animation:none; }
   .exam { height: 100dvh; display: grid; grid-template-rows: 52px 42px minmax(0, 1fr) minmax(66px, auto); color: #20252a; color-scheme: light; font: 16px/1.55 Arial, Helvetica, sans-serif; }
   button, input, select, textarea { font: inherit; }
   .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 16px; background: #fff; border-top: 3px solid #d71920; border-bottom: 1px solid #d9dde1; }

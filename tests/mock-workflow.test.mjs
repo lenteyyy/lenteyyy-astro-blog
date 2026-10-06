@@ -53,5 +53,5 @@ test('dashboard motion remains isolated from the exam and honors reduced motion'
  const motion=read('src/lib/ielts/dashboard-motion.ts');assert.match(motion,/prefers-reduced-motion/);assert.match(motion,/\.cancel\(\)/);
  const exam=read('src/components/ielts/MockExam.astro');assert.doesNotMatch(exam,/dashboard-motion|\.animate\(/);assert.match(exam,/data-exit/);assert.match(exam,/finishStage/);
  assert.match(exam,/data\.subject!==run\.current\)\{navigateStage\(run\.started\?run\.current:data\.subjects\[0\]\);\}else\{/);
- assert.match(exam,/:global\(body\.ielts-site\)[^}]*animation:none/);assert.match(exam,/legalLinks=\{false\}/);
+ assert.match(exam,/:global\(body\.ielts-site:has\(\.exam\)\)[^}]*animation:none/);assert.match(exam,/:global\(html:has\(\.exam\)\)[^}]*scroll-behavior: auto/);assert.match(exam,/legalLinks=\{false\}/);
 });
