@@ -10,7 +10,8 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
 		const origin = oauthOrigin(request.url, import.meta.env.PROD);
-		const body = await readJson<{ next?: unknown }>(request);
+		const body = await readJson<{ next?: unknown; legalConsent?: unknown }>(request);
+		if (body.legalConsent !== true) return json({ error: 'consent_required' }, 400);
 		if (!(await claimRateLimit(request, 'google-login-ip', '', 20, 900, 'request'))) return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
 		clearOAuthPending(cookies);
 		const state = [...crypto.getRandomValues(new Uint8Array(32))].map(byte => byte.toString(16).padStart(2, '0')).join('');
@@ -21,8 +22,9 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		if (error || !data.url || !validGoogleAuthorizationUrl(data.url, supabaseUrl)) return json({ error: 'google_login_unavailable' }, 503);
 		saveOAuthPending(cookies, { state, createdAt: Date.now(), next: safeIeltsNext(body.next), storage: storage.pkceSnapshot() });
 		return json({ url: data.url });
-	} catch {
+	} catch (error) {
 		clearOAuthPending(cookies);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'google_login_unavailable' }, 503);
 	}
 };

@@ -30,7 +30,8 @@ test('management requires the exact verified owner identity, never client roles'
   for (const email of [undefined, 'lenteyteytey+admin@gmail.com', 'lenteyteytey@gmail.com.attacker.test', 'student@gmail.com']) assert.equal(isAdminEmail(email), false);
   const auth = source('src/lib/ielts/auth.ts');
   assert.match(auth, /client\.auth\.getUser\(accessToken\)/);
-  assert.match(auth, /isAdminEmail\(email\) && Boolean\(user\.email_confirmed_at\)/);
+  assert.match(auth, /!email \|\| !accessToken \|\| !user\.email_confirmed_at/);
+  assert.match(auth, /isAdminEmail\(email\) \? 'admin' : 'student'/);
   assert.doesNotMatch(auth, /user_metadata|app_metadata/);
   const management = source('src/pages/ielts/management.astro');
   assert.match(management, /auth\.role !== 'admin'/);

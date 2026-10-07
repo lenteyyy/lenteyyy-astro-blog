@@ -90,7 +90,7 @@ export const PATCH: APIRoute = async ({ request, cookies }) => {
 		if (!data) return json({ error: 'booking_changed' }, 409);
 		return json({ ok: true, booking: data });
 	} catch (error) {
-		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'booking_unavailable' }, 503);
 	}
 };
@@ -149,7 +149,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		return json({ ok: true, bookings: data.map((item, index) => ({ ...item, lesson_time_note: prepared[index].customTime })), emailSent }, 201);
 	} catch (error) {
 		if (error instanceof Error && error.message === 'invalid_booking') return json({ error: 'invalid_booking' }, 400);
-		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'booking_unavailable' }, 503);
 	}
 };

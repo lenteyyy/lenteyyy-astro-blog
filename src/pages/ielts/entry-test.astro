@@ -4,6 +4,7 @@ import EntryQuestions from '../../components/ielts/EntryQuestions.astro';
 import { getAuthContext } from '../../lib/ielts/auth';
 import content from '../../lib/ielts/entry-test/content.json';
 import type { EntryContent } from '../../lib/ielts/entry-test/answers';
+import { LISTENING_RATES } from '../../lib/ielts/mock/listening-player';
 export const prerender = false;
 const test: EntryContent = content;
 type Subject = 'listening' | 'reading' | 'writing';
@@ -23,7 +24,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   <main class="entry-test" data-entry-test>
     <header class="entry-header"><div><a href="/ielts#notes">← 返回学习中心</a><h1>入学基础测试</h1></div><div class="entry-actions"><label>字号 <select data-font-size aria-label="测试字体大小"><option value="16">标准</option><option value="18">较大</option><option value="20">最大</option></select></label><button type="button" data-theme aria-label="切换深浅色">深浅色</button><button type="button" data-export>导出全部答案</button></div></header>
     <div class="entry-tabs"><nav aria-label="测试科目">{(['listening', 'reading', 'writing'] as const).map(item => <a href={subjectHref(item)} aria-current={subject === item ? 'page' : undefined}>{labels[item]}</a>)}</nav><span data-save-status role="status"></span></div>
-    {subject === 'listening' ? <section class="entry-pane listening-pane"><h2>{test.listening.title}</h2><div class="listening-content"><audio controls preload="metadata" src={test.listening.audio} aria-label="入学测试听力录音"></audio>{test.listening.instructions.map(text => <p class="instruction">{text}</p>)}<EntryQuestions groups={test.listening.groups} prefix="Listening" /></div></section> : <>
+    {subject === 'listening' ? <section class="entry-pane listening-pane"><h2>{test.listening.title}</h2><div class="listening-content"><audio controls preload="metadata" controlslist="noplaybackrate" src={test.listening.audio} aria-label="入学测试听力录音"></audio><label class="entry-audio-speed">速度 <select data-audio-rate aria-label="听力播放速度">{LISTENING_RATES.map(rate => <option value={rate} selected={rate === 1}>{rate.toFixed(1)}×</option>)}</select></label>{test.listening.instructions.map(text => <p class="instruction">{text}</p>)}<EntryQuestions groups={test.listening.groups} prefix="Listening" /></div></section> : <>
     <div class="reading-workspace">
       <section class="entry-pane"><h2>{subject === 'reading' ? test.reading.passageTitle : '题干与图表'}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文"><div data-passage>
         {subject === 'reading' && <>{test.reading.instructions.map(text => <p class="instruction">{text}</p>)}{test.reading.paragraphs.map(text => <p>{text}</p>)}</>}
@@ -44,6 +45,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
     import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
     import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
     import { answerIds, cleanAnswers, exportAnswers, type EntryContent } from '../../lib/ielts/entry-test/answers';
+    import { LISTENING_RATES } from '../../lib/ielts/mock/listening-player';
     const root = document.querySelector<HTMLElement>('[data-entry-test]');
     const payload = document.querySelector('#entry-payload');
     if (root && payload) {
@@ -84,6 +86,16 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
         });
       }
       const font = root.querySelector<HTMLSelectElement>('[data-font-size]');
+      const audio = root.querySelector<HTMLAudioElement>('audio');
+      const audioRate = root.querySelector<HTMLSelectElement>('[data-audio-rate]');
+      audioRate?.addEventListener('change', () => {
+        const rate = Number(audioRate.value);
+        if (audio && LISTENING_RATES.includes(rate)) audio.playbackRate = rate;
+      });
+      audio?.addEventListener('ratechange', () => {
+        if (!LISTENING_RATES.includes(audio.playbackRate)) audio.playbackRate = 1;
+        if (audioRate) audioRate.value = String(audio.playbackRate);
+      });
       const applySize = () => { root.style.setProperty('--entry-font-size', `${examFontSize(state.fontSize)}px`); if (font) font.value = String(examFontSize(state.fontSize)); };
       font?.addEventListener('change', () => { state.fontSize = examFontSize(Number(font.value)); applySize(); save(); }); applySize();
       const tools = data.subject === 'listening' ? undefined : setupReadingTools(root, {
@@ -133,6 +145,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   .entry-test .reading-workspace { display: grid; grid-template-columns: minmax(0, var(--passage-share, 50fr)) 14px minmax(0, var(--answer-share, 50fr)); gap: 10px; font-size: var(--entry-font-size); }
   .entry-test .listening-content { max-width: 960px; margin: auto; padding: 24px; font: var(--entry-font-size)/1.75 Arial, 'Noto Sans SC', sans-serif; overflow-wrap: anywhere; }
   .entry-test audio { display: block; width: 100%; margin-bottom: 24px; }
+  .entry-test .entry-audio-speed { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 14px; }
   .entry-pane { min-width: 0; border: 1px solid var(--ielts-line); border-radius: 10px; overflow: hidden; }
   .entry-pane > h2 { font-size: 17px; margin: 0; padding: 14px 18px; border-bottom: 1px solid var(--ielts-line); color: var(--ielts-ink); }
   .entry-test .question-scroll, .entry-test .answer-scroll { height: min(70vh, 850px); min-height: 360px; overflow: auto; overscroll-behavior: contain; padding: 20px; overflow-wrap: anywhere; line-height: 1.75; }

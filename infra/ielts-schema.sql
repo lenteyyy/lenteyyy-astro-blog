@@ -81,6 +81,10 @@ alter table public.ielts_rate_limits enable row level security;
 alter table public.ielts_verification_codes enable row level security;
 
 revoke all on table public.ielts_verification_codes from public, anon, authenticated;
+-- All application database access is mediated by the verified server API.
+-- Direct REST writes must not bypass booking validation or mail rate limits.
+revoke all on table public.ielts_profiles, public.ielts_materials,
+	public.ielts_bookings, public.ielts_rate_limits from public, anon, authenticated;
 
 drop policy if exists "users read own IELTS profile" on public.ielts_profiles;
 create policy "users read own IELTS profile" on public.ielts_profiles
@@ -95,8 +99,6 @@ create policy "users read own IELTS bookings" on public.ielts_bookings
 	for select to authenticated using (auth.uid() = user_id);
 
 drop policy if exists "users create own IELTS bookings" on public.ielts_bookings;
-create policy "users create own IELTS bookings" on public.ielts_bookings
-	for insert to authenticated with check (auth.uid() = user_id);
 
 create or replace function public.handle_ielts_user()
 returns trigger

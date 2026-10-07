@@ -1,3 +1,5 @@
+import { rateLimitAddress } from './ielts/rate-policy';
+
 type RedisResult = { result?: unknown };
 
 function redisConfig(): { url: string; token: string } | undefined {
@@ -19,9 +21,7 @@ export async function redis(command: unknown[]): Promise<RedisResult> {
 }
 
 async function fingerprint(request: Request, scope: string): Promise<string> {
-	const forwarded = request.headers.get('cf-connecting-ip') || request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || request.headers.get('x-real-ip') || 'unknown';
-	const userAgent = request.headers.get('user-agent') || 'unknown';
-	const input = new TextEncoder().encode(`${scope}|${forwarded}|${userAgent}`);
+	const input = new TextEncoder().encode(`${scope}|${rateLimitAddress(request)}`);
 	const digest = await crypto.subtle.digest('SHA-256', input);
 	return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
 }

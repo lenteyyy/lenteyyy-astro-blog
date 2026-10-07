@@ -2,10 +2,14 @@
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import type { ExamPayload, Subject } from '../../lib/ielts/mock/papers';
 import {workflowUrl} from '../../lib/ielts/mock/run-policy';
+import {LISTENING_RATES} from '../../lib/ielts/mock/listening-player';
+import {subjectDurationSeconds,formatExamDuration} from '../../lib/ielts/mock/timing-policy';
 interface Props extends ExamPayload {}
 const {subject,testNumber,bookNumber,mode,subjects,sections} = Astro.props;
 const labels: Record<Subject, string> = { listening: 'Listening', reading: 'Reading', writing: 'Writing' };
 const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
+const initialSeconds = subjectDurationSeconds(subject, bookNumber, testNumber);
+const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds % 60).padStart(2, '0')}`;
 ---
 <IeltsLayout title={`剑雅${bookNumber} Test ${testNumber} · ${labels[subject]}`} description="雅思机考练习页面。" telemetry={false} legalLinks={false}>
   <main class="exam" data-exam>
@@ -16,7 +20,7 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
         {mode==='custom'&&<button type="button" data-exit>退出模考</button>}
       </nav>
     </header>
-    <div class="statusbar"><span>{mode==='simulation'?'仿真模考':mode==='custom'?'自选模考':labels[subject]} · C{bookNumber} T{testNumber}</span><strong data-clock>{subject === 'listening' ? '35:00' : '60:00'}</strong><div class="toolbar"><button type="button" data-clear>清除本机答案</button><button type="button" data-help>Help</button></div></div>
+    <div class="statusbar"><span>{mode==='simulation'?'仿真模考':mode==='custom'?'自选模考':labels[subject]} · C{bookNumber} T{testNumber}</span><strong data-clock>{initialClock}</strong><div class="toolbar"><button type="button" data-clear>清除本机答案</button><button type="button" data-help>Help</button></div></div>
     <div class:list={['workspace', { 'listening-workspace': subject === 'listening', 'reading-workspace': subject === 'reading' }]}>
       <section class="pane question-pane" aria-label="题目">
         <div class="pane-head"><h1 data-section-title></h1><span data-section-range></span></div>
@@ -38,11 +42,11 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
     </div>
     <div class="highlight-tools" data-highlight-tools role="group" aria-label="文本高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>
     <nav class="test-nav" aria-label="试卷导航"><label><input type="checkbox" data-review /> Mark for review</label><div class="section-tabs" data-section-tabs></div><div class="nav-actions"><button type="button" data-prev aria-label="上一部分">‹</button><button type="button" data-next aria-label="下一部分">›</button><button type="button" class="submit" data-submit>Submit</button></div>
-      {subject === 'listening' && <div class="audio-speed"><span data-audio-status aria-live="polite">录音将在开始后播放</span><label>速度 <select data-audio-rate aria-label="听力播放速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button data-audio-retry type="button" hidden>恢复播放</button></div>}
+      {subject === 'listening' && <div class="audio-speed"><span data-audio-status aria-live="polite">录音将在开始后播放</span><label>速度 <select data-audio-rate aria-label="听力播放速度">{LISTENING_RATES.map(rate => <option value={rate} selected={rate === 1}>{rate.toFixed(1)}×</option>)}</select></label><button data-audio-retry type="button" hidden>恢复播放</button></div>}
     </nav>
   </main>
 
-  <div class="overlay" data-start><section class="modal" role="dialog" aria-modal="true" aria-labelledby="start-title"><div class="modal-head"><h2 id="start-title">剑雅{bookNumber} Test {testNumber} · {mode==='simulation'?'仿真模考':mode==='custom'?'自选模考':labels[subject]}</h2></div><div class="modal-body"><p>答案、计时和高亮仅保存在本机浏览器。</p><p>{subject === 'listening' ? '点击开始即连续播放四段录音，不能暂停或跳转，可调整速度。35 分钟计时。' : '60 分钟计时。'}{mode!=='single'?'完成当前科目后自动进入下一科。':''}写作需人工评阅。</p><label><input type="checkbox" data-ready /> 准备开始</label></div><div class="modal-actions"><button type="button" data-resume disabled>继续上次练习</button><button type="button" class="primary" data-start-button disabled>确认开始考试</button>{mode==='custom'&&<button type="button" data-exit>关闭</button>}</div></section></div>
+  <div class="overlay" data-start><section class="modal" role="dialog" aria-modal="true" aria-labelledby="start-title"><div class="modal-head"><h2 id="start-title">剑雅{bookNumber} Test {testNumber} · {mode==='simulation'?'仿真模考':mode==='custom'?'自选模考':labels[subject]}</h2></div><div class="modal-body"><p>答案、计时和高亮仅保存在本机浏览器。</p><p>{subject === 'listening' ? `点击开始即连续播放四段录音，不能暂停或跳转，可调整速度。标准速度下约 ${formatExamDuration(initialSeconds)}，Part 4 检查提示语结束后计时 2 分钟。` : '60 分钟计时。'}{mode!=='single'?'完成当前科目后自动进入下一科。':''}写作需人工评阅。</p><label><input type="checkbox" data-ready /> 准备开始</label></div><div class="modal-actions"><button type="button" data-resume disabled>继续上次练习</button><button type="button" class="primary" data-start-button disabled>确认开始考试</button>{mode==='custom'&&<button type="button" data-exit>关闭</button>}</div></section></div>
   <dialog class="result-dialog" data-dialog><div data-dialog-body></div><form method="dialog"><button type="button" data-reset>重新开始</button><button>关闭</button><a href="/ielts#mock">返回模考页面</a></form></dialog>
   <script is:inline type="application/json" id="exam-payload" set:html={payload} />
 
@@ -55,7 +59,8 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
     import type { Choice } from '../../lib/ielts/mock/test1-questions';
     import type {ExamPayload} from '../../lib/ielts/mock/papers';
     import {workflowUrl,cleanRun,completeStage,type Subject} from '../../lib/ielts/mock/run-policy';
-    type Saved = { version: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; fontSize: number; highlights: Record<string, HighlightRange[]>; playback:Playback };
+    import {subjectDurationSeconds,LISTENING_TIMING_VERSION,LISTENING_AUDIO_SECONDS,LISTENING_CHECK_SECONDS,listeningCheckCueSeconds,previousListeningDurationSeconds,migrateListeningDeadline,listeningCheckDeadline} from '../../lib/ielts/mock/timing-policy';
+    type Saved = { version: number; timingVersion: number; active: number; answers: Record<string, string>; review: boolean[]; started: boolean; finished: boolean; deadline: number; split: number; fontSize: number; highlights: Record<string, HighlightRange[]>; playback:Playback };
     const root = document.querySelector<HTMLElement>('[data-exam]');
     const parsed = document.querySelector<HTMLElement>('#exam-payload');
     if (root && parsed) {
@@ -68,8 +73,8 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
       const saveRun=()=>{try{localStorage.setItem(runKey,JSON.stringify(run));}catch{/* Per-stage save reports storage failures in the interface. */}};
       const navigateStage=(subject:Subject)=>{let url=workflowUrl(data.bookNumber,data.testNumber,data.mode,data.subjects,subject);if(import.meta.env.DEV&&new URLSearchParams(location.search).get('demo')==='1')url+='&demo=1';location.assign(url);};
       if(data.mode==='simulation'&&data.subject!==run.current){navigateStage(run.started?run.current:data.subjects[0]);}else{
-      const duration = data.subject === 'listening' ? 35 * 60 : 60 * 60;
-      const defaults = (): Saved => ({ version: 1, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, fontSize: 16, highlights: {}, playback:cleanPlayback(null) });
+      const duration = subjectDurationSeconds(data.subject, data.bookNumber, data.testNumber);
+      const defaults = (): Saved => ({ version: 1, timingVersion: LISTENING_TIMING_VERSION, active: 0, answers: {}, review: data.sections.map(() => false), started: false, finished: false, deadline: 0, split: 50, fontSize: 16, highlights: {}, playback:cleanPlayback(null) });
       const load = (): Saved => {
         try {
           const value = JSON.parse(localStorage.getItem(key) || 'null'); const clean = defaults();
@@ -85,6 +90,7 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
           clean.fontSize = examFontSize(value.fontSize);
           if (value.highlights && typeof value.highlights === 'object' && !Array.isArray(value.highlights)) for (let index = 0; index < data.sections.length; index++) for(const region of ['passage','questions','instructions']) clean.highlights[`${index}:${region}`] = normalizeHighlights(value.highlights[`${index}:${region}`] ?? (region==='passage'?value.highlights[String(index)]:[]), 200000);
           clean.playback = cleanPlayback(value.playback);
+          if (data.subject === 'listening' && clean.started) clean.deadline = migrateListeningDeadline(clean.deadline, value.timingVersion, clean.playback.complete, clean.finished, Date.now(), duration, previousListeningDurationSeconds(data.bookNumber, data.testNumber, value.timingVersion));
           return clean;
         } catch { return defaults(); }
       };
@@ -108,8 +114,11 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
       }) : undefined;
       const textTools=setupTextHighlights(root,{get:(region)=>state.highlights[`${state.active}:${region}`]||[],set:(region,value)=>{state.highlights[`${state.active}:${region}`]=value;save();}});
       const audio=$<HTMLAudioElement>('[data-audio]');
-      const player=audio?setupListeningPlayer(audio,data.sections.map(s=>s.audioUrl),{get:()=>state.playback,set:(value)=>{state.playback=value;save();},status:(message,blocked)=>{const status=$<HTMLElement>('[data-audio-status]');if(status)status.textContent=message;const retry=$<HTMLButtonElement>('[data-audio-retry]');if(retry)retry.hidden=!blocked;},complete:()=>{syncAudioControls();if(state.started&&state.deadline<=Date.now()&&!state.finished)finishStage();}}):undefined;
-      const syncAudioControls=()=>{const rate=$<HTMLSelectElement>('[data-audio-rate]');if(rate)rate.value=String(state.playback.rate);const locked=!!player?.running();for(const selector of ['[data-clear]','[data-submit]']){const button=$<HTMLButtonElement>(selector);if(button)button.disabled=locked;}for(const link of root.querySelectorAll<HTMLAnchorElement>('.subjects a'))link.setAttribute('aria-disabled',String(locked));};
+      const player=audio?setupListeningPlayer(audio,data.sections.map(s=>s.audioUrl),{get:()=>state.playback,set:(value)=>{state.playback=value;save();},status:(message,blocked)=>{const status=$<HTMLElement>('[data-audio-status]');if(status)status.textContent=message;const retry=$<HTMLButtonElement>('[data-audio-retry]');if(retry)retry.hidden=!blocked;},complete:(elapsedSeconds)=>{
+        if(state.started&&!state.finished){state.deadline=listeningCheckDeadline(Date.now()-elapsedSeconds*1000);save();const status=$<HTMLElement>('[data-audio-status]');if(status)status.textContent='检查答案：2 分钟';updateClock();}
+        syncAudioControls();
+      }},{checkCueSeconds:listeningCheckCueSeconds(data.bookNumber,data.testNumber),partDurations:LISTENING_AUDIO_SECONDS[`${data.bookNumber}-${data.testNumber}`]}):undefined;
+      const syncAudioControls=()=>{const rate=$<HTMLSelectElement>('[data-audio-rate]');if(rate)rate.value=String(state.playback.rate);if(state.started&&state.playback.complete&&!state.finished){const status=$<HTMLElement>('[data-audio-status]');if(status)status.textContent='检查答案：2 分钟';}const locked=!!player?.running();for(const selector of ['[data-clear]','[data-submit]']){const button=$<HTMLButtonElement>(selector);if(button)button.disabled=locked;}for(const link of root.querySelectorAll<HTMLAnchorElement>('.subjects a'))link.setAttribute('aria-disabled',String(locked));};
       for(const link of root.querySelectorAll<HTMLAnchorElement>('.subjects a'))link.addEventListener('click',event=>{if(player?.running())event.preventDefault();});
       $<HTMLSelectElement>('[data-audio-rate]')?.addEventListener('change',event=>{player?.rate(Number((event.target as HTMLSelectElement).value));});
       $<HTMLButtonElement>('[data-audio-retry]')?.addEventListener('click',()=>player?.retry());
@@ -129,9 +138,11 @@ const payload = JSON.stringify(Astro.props).replace(/</g, '\\u003c');
         render();showDialog(data.subject==='writing'?`练习已提交。Task 1：${words(state.answers['1']||'')} 词；Task 2：${words(state.answers['2']||'')} 词。写作需人工评阅。`:`练习已提交：${score} / 40 题正确。`);
       };
       const updateClock = () => {
-        const left = state.started ? Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000)) : duration;
+        player?.checkProgress();
+        const remainingAudio = player?.remainingSeconds();
+        const left = state.started ? remainingAudio === undefined ? Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000)) : Math.ceil(remainingAudio) + LISTENING_CHECK_SECONDS : duration;
         const clock = $<HTMLElement>('[data-clock]'); if (clock) clock.textContent = formatTime(left);
-        if (left === 0 && state.started && !state.finished && !player?.running()) finishStage();
+        if (left === 0 && state.started && !state.finished && !player?.running() && (data.subject !== 'listening' || state.playback.complete)) finishStage();
       };
       const element = <K extends keyof HTMLElementTagNameMap>(tag: K, className = '', value = '') => {
         const node = document.createElement(tag); node.className = className; node.textContent = value; return node;

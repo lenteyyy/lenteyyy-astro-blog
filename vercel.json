@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/ielts/mock/test-1/(.*)",
+      "source": "/ielts/mock/(.*)",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
         { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }

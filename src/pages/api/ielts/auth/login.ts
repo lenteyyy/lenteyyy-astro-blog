@@ -9,7 +9,8 @@ export const prerender = false;
 export const POST: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
-		const body = await readJson<{ email?: unknown; password?: unknown }>(request);
+		const body = await readJson<{ email?: unknown; password?: unknown; legalConsent?: unknown }>(request);
+		if (body.legalConsent !== true) return json({ error: 'consent_required' }, 400);
 		const email = normalizeEmail(body.email);
 		const password = String(body.password || '');
 		if (!email || password.length < 1 || password.length > 72) return json({ error: 'invalid_credentials' }, 400);
@@ -20,7 +21,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		setAuthSession(cookies, data.session);
 		return json({ ok: true, email: data.user.email });
 	} catch (error) {
-		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'login_unavailable' }, 503);
 	}
 };
