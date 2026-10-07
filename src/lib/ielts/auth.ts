@@ -27,15 +27,16 @@ export const clearAuthSession = (cookies: AstroCookies) => {
 export type AuthContext = { user: User; email: string; role: 'student' | 'admin' };
 
 export async function getAuthContext(cookies: AstroCookies): Promise<AuthContext | undefined> {
-	const client = createPublicClient();
 	let accessToken = cookies.get(accessCookie)?.value;
+	const refreshToken = cookies.get(refreshCookie)?.value;
+	if (!accessToken && !refreshToken) return undefined;
+	const client = createPublicClient();
 	let user: User | undefined;
 	if (accessToken) {
 		const result = await client.auth.getUser(accessToken);
 		user = result.data.user || undefined;
 	}
 	if (!user) {
-		const refreshToken = cookies.get(refreshCookie)?.value;
 		if (!refreshToken) return undefined;
 		const refreshed = await client.auth.refreshSession({ refresh_token: refreshToken });
 		if (!refreshed.data.session || !refreshed.data.user) {
@@ -47,8 +48,11 @@ export async function getAuthContext(cookies: AstroCookies): Promise<AuthContext
 		accessToken = refreshed.data.session.access_token;
 	}
 	const email = user.email?.trim().toLowerCase();
-	if (!email || !accessToken) return undefined;
-	const role = isAdminEmail(email) && Boolean(user.email_confirmed_at) ? 'admin' : 'student';
+	if (!email || !accessToken || !user.email_confirmed_at) {
+		clearAuthSession(cookies);
+		return undefined;
+	}
+	const role = isAdminEmail(email) ? 'admin' : 'student';
 	const { error } = await createServiceClient().from('ielts_profiles').upsert({ id: user.id, email, role }, { onConflict: 'id' });
 	if (error) throw new Error('profile_unavailable');
 	return { user, email, role };

@@ -1,0 +1,12 @@
+<label class="login-consent">
+	<input type="checkbox" name="legalConsent" value="accepted" required />
+	<span>我已阅读并同意<a href="/ielts/terms" target="_blank" rel="noopener noreferrer">《使用条款》</a>和<a href="/ielts/privacy" target="_blank" rel="noopener noreferrer">《隐私政策》</a>。</span>
+</label>
+
+<style>
+	label.login-consent { display: grid; grid-template-columns: 18px minmax(0, 1fr); align-items: start; gap: 10px; margin: 0; font-size: 12px; font-weight: 400; line-height: 1.7; color: var(--ielts-text); }
+	.login-consent input { width: 17px; height: 17px; margin: 2px 0 0; padding: 0; border-radius: 3px; accent-color: var(--ielts-ink); cursor: pointer; }
+	.login-consent span { min-width: 0; overflow-wrap: anywhere; }
+	.login-consent a { color: var(--ielts-ink); text-decoration: underline; text-underline-offset: 3px; }
+	.login-consent a:hover { color: var(--ielts-accent); }
+</style>

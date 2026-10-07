@@ -15,6 +15,7 @@ export function escapeAttribute(value: string): string {
 export function safeLinkUrl(value: string, protocols = ['http:', 'https:', 'mailto:', 'tel:']): string {
 	const trimmed = value.trim();
 	if (!trimmed) return '';
+	if (/[\\\u0000-\u001f\u007f]/.test(trimmed)) return '';
 	if (trimmed.startsWith('#') || (trimmed.startsWith('/') && !trimmed.startsWith('//'))) return trimmed;
 	try {
 		const parsed = new URL(trimmed);

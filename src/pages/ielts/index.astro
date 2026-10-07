@@ -1,7 +1,9 @@
 ---
 import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
+import LoginConsent from '../../components/ielts/LoginConsent.astro';
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import StudyNavigation from '../../components/ielts/StudyNavigation';
+import {subjectDurationSeconds,formatExamDuration} from '../../lib/ielts/mock/timing-policy';
 
 const resources = [
 	{ icon: 'headphones' as const, title: '听力' },
@@ -141,8 +143,8 @@ const resources = [
 						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷">{[21,20].map(book => <optgroup label={`剑雅${book}`}>{[1,2,3,4].map(test => <option value={`${book}-${test}`}>剑雅{book} · Test {test}</option>)}</optgroup>)}</select></label>
 					</header>
 					<div class="mock-modes" data-mock-modes>
-						<article class="mock-mode"><h3>自选模考</h3><fieldset class="mock-selection"><legend>选择科目</legend>{[['listening','听力'],['reading','阅读'],['writing','写作']].map(([value,label]) => <label><input type="checkbox" data-mock-subject value={value} checked />{label}</label>)}</fieldset><p data-mock-duration>155 分钟 · 可随时退出</p><a class="mock-open" data-mock-custom href="/ielts/mock/test-1?subject=listening&amp;mode=custom&amp;subjects=listening%2Creading%2Cwriting">开始自选模考<IeltsIcon name="arrow" size={18} /></a></article>
-						<article class="mock-mode simulation-mode"><h3>仿真模考</h3><div class="mock-sequence"><span>听力</span><IeltsIcon name="arrow" size={18} /><span>阅读</span><IeltsIcon name="arrow" size={18} /><span>写作</span></div><p>155 分钟 · 按顺序自动切换</p><a class="mock-open" data-mock-simulation href="/ielts/mock/test-1?subject=listening&amp;mode=simulation&amp;subjects=listening%2Creading%2Cwriting">开始仿真模考<IeltsIcon name="arrow" size={18} /></a></article>
+						<article class="mock-mode"><h3>自选模考</h3><fieldset class="mock-selection"><legend>选择科目</legend>{[['listening','听力'],['reading','阅读'],['writing','写作']].map(([value,label]) => <label><input type="checkbox" data-mock-subject value={value} checked />{label}</label>)}</fieldset><p data-mock-duration>{formatExamDuration(subjectDurationSeconds('listening',21,1) + 120 * 60)} · 可随时退出</p><a class="mock-open" data-mock-custom href="/ielts/mock/test-1?subject=listening&amp;mode=custom&amp;subjects=listening%2Creading%2Cwriting">开始自选模考<IeltsIcon name="arrow" size={18} /></a></article>
+						<article class="mock-mode simulation-mode"><h3>仿真模考</h3><div class="mock-sequence"><span>听力</span><IeltsIcon name="arrow" size={18} /><span>阅读</span><IeltsIcon name="arrow" size={18} /><span>写作</span></div><p data-mock-simulation-duration>{formatExamDuration(subjectDurationSeconds('listening',21,1) + 120 * 60)} · 按顺序自动切换</p><a class="mock-open" data-mock-simulation href="/ielts/mock/test-1?subject=listening&amp;mode=simulation&amp;subjects=listening%2Creading%2Cwriting">开始仿真模考<IeltsIcon name="arrow" size={18} /></a></article>
 					</div>
 				</section>
 
@@ -168,12 +170,13 @@ const resources = [
 	<dialog class="booking-dialog auth-dialog" data-auth-dialog aria-labelledby="auth-dialog-title">
 		<form data-login-form>
 			<div class="dialog-head"><div><h2 id="auth-dialog-title">登录</h2></div><button type="button" data-close-auth aria-label="关闭">×</button></div>
-			<button class="google-login" type="button" data-google-login><img src="/assets/google-g.png" width="20" height="20" alt="" aria-hidden="true" /><span data-google-login-label>使用 Google 登录</span></button>
+			<LoginConsent />
+			<button class="google-login" type="button" disabled data-google-login><img src="/assets/google-g.png" width="20" height="20" alt="" aria-hidden="true" /><span data-google-login-label>使用 Google 登录</span></button>
 			<div class="auth-divider" aria-hidden="true">或</div>
 			<label>邮箱<input type="email" name="email" autocomplete="email" maxlength="254" required /></label>
 			<label>密码<input type="password" name="password" autocomplete="current-password" maxlength="72" required /></label>
 			<p class="form-message" data-auth-message aria-live="polite"></p>
-			<button class="dialog-submit" type="submit">登录<IeltsIcon name="arrow" size={18} /></button>
+			<button class="dialog-submit" type="submit" disabled>登录<IeltsIcon name="arrow" size={18} /></button>
 			<button class="auth-switch" type="button" data-open-password-setup>首次设置或忘记密码</button>
 		</form>
 		<form data-password-form hidden>
@@ -186,8 +189,9 @@ const resources = [
 				<label>再次输入新密码<input type="password" name="confirmPassword" autocomplete="new-password" minlength="10" maxlength="72" /></label>
 			</div>
 			<p class="privacy-note">新密码至少 10 位，并同时包含字母与数字。</p>
+			<LoginConsent />
 			<p class="form-message" data-auth-message aria-live="polite"></p>
-			<button class="dialog-submit" type="submit" data-password-submit>发送六位验证码<IeltsIcon name="arrow" size={18} /></button>
+			<button class="dialog-submit" type="submit" disabled data-password-submit>发送六位验证码<IeltsIcon name="arrow" size={18} /></button>
 			<button class="auth-switch" type="button" data-back-login>返回密码登录</button>
 		</form>
 	</dialog>
@@ -195,6 +199,7 @@ const resources = [
 	<script>
 		import { bookingWindow } from '../../lib/ielts/booking-window';
 		import {workflowUrl,subjectOrder,type Subject} from '../../lib/ielts/mock/run-policy';
+		import {subjectDurationSeconds,formatExamDuration} from '../../lib/ielts/mock/timing-policy';
 		import {reveal} from '../../lib/ielts/dashboard-motion';
 		const root = document.querySelector<HTMLElement>('[data-ielts-page]');
 		if (root) {
@@ -339,7 +344,8 @@ const resources = [
 				if (custom) { custom.setAttribute('aria-disabled', String(!selected.length)); if(selected.length)custom.href=workflowUrl(book,test,'custom',selected,selected[0]);else custom.removeAttribute('href'); }
 				const simulation = root.querySelector<HTMLAnchorElement>('[data-mock-simulation]');
 				if(simulation)simulation.href=workflowUrl(book,test,'simulation',subjectOrder,'listening');
-				const duration=root.querySelector<HTMLElement>('[data-mock-duration]');if(duration)duration.textContent=selected.length?`${selected.reduce((total,s)=>total+(s==='listening'?35:60),0)} 分钟 · 可随时退出`:'请选择至少一科';
+				const duration=root.querySelector<HTMLElement>('[data-mock-duration]');if(duration)duration.textContent=selected.length?`${formatExamDuration(selected.reduce((total,s)=>total+subjectDurationSeconds(s,book,test),0))} · 可随时退出`:'请选择至少一科';
+				const simulationDuration=root.querySelector<HTMLElement>('[data-mock-simulation-duration]');if(simulationDuration)simulationDuration.textContent=`${formatExamDuration(subjectOrder.reduce((total,s)=>total+subjectDurationSeconds(s,book,test),0))} · 按顺序自动切换`;
 			};
 			mockPaper?.addEventListener('change',()=>{syncMockLink();reveal(root.querySelector<HTMLElement>('[data-mock-modes]'));});
 			root.querySelectorAll('[data-mock-subject]').forEach(input=>input.addEventListener('change',syncMockLink));syncMockLink();
@@ -381,6 +387,7 @@ const resources = [
 				return body as T;
 			};
 			const messageFor = (code: string) => ({
+				consent_required: '请先阅读并勾选使用条款和隐私政策。',
 				invalid_email: '请输入有效邮箱。', invalid_code: '验证码错误或已过期。', invalid_password: '密码至少 10 位，并同时包含字母与数字。', password_mismatch: '两次输入的密码不一致。',
 				invalid_credentials: '邮箱或密码错误。', rate_limited: '操作过于频繁，请稍后再试。', login_unavailable: '暂时无法登录，请稍后再试。', google_login_unavailable: 'Google 登录暂时不可用，请使用邮箱与密码。',
 				verification_unavailable: '验证码暂时无法发送，请稍后再试。', account_unavailable: '暂时无法设置密码，请稍后再试。', unauthorized: '请先登录。', forbidden: '没有执行此操作的权限。',
@@ -416,11 +423,43 @@ const resources = [
 			closeOnBackdrop(authDialog);
 			document.querySelectorAll<HTMLButtonElement>('[data-close-auth]').forEach((button) => button.addEventListener('click', () => closeDialog(authDialog)));
 
+			const syncAuthConsent = (form: HTMLFormElement) => {
+				const checkbox = form.querySelector<HTMLInputElement>('input[name="legalConsent"]');
+				const busy = form.dataset.authBusy === 'true';
+				if (checkbox) checkbox.disabled = busy;
+				form.querySelectorAll<HTMLButtonElement>('button[type="submit"], [data-google-login]').forEach((button) => {
+					button.disabled = busy || !checkbox?.checked;
+				});
+			};
+			const setAuthBusy = (form: HTMLFormElement, busy: boolean) => {
+				form.dataset.authBusy = String(busy);
+				syncAuthConsent(form);
+			};
+			const requireAuthConsent = (form: HTMLFormElement) => {
+				if (form.dataset.authBusy === 'true') return false;
+				const checkbox = form.querySelector<HTMLInputElement>('input[name="legalConsent"]');
+				if (checkbox?.checked) return true;
+				const message = form.querySelector<HTMLElement>('[data-auth-message]');
+				if (message) message.textContent = messageFor('consent_required');
+				checkbox?.focus();
+				return false;
+			};
+			authDialog?.querySelectorAll<HTMLFormElement>('form').forEach((form) => {
+				form.querySelector('input[name="legalConsent"]')?.addEventListener('change', () => syncAuthConsent(form));
+				syncAuthConsent(form);
+			});
+			const resetAuthConsent = (form: HTMLFormElement) => {
+				const checkbox = form.querySelector<HTMLInputElement>('input[name="legalConsent"]');
+				if (checkbox) checkbox.checked = false;
+				syncAuthConsent(form);
+			};
 			const openAuth = () => {
 				const loginForm = authDialog?.querySelector<HTMLFormElement>('[data-login-form]');
 				const passwordForm = authDialog?.querySelector<HTMLFormElement>('[data-password-form]');
 				if (loginForm) loginForm.hidden = false;
 				if (passwordForm) passwordForm.hidden = true;
+				if (loginForm) resetAuthConsent(loginForm);
+				if (passwordForm) resetAuthConsent(passwordForm);
 				authDialog?.setAttribute('aria-labelledby', 'auth-dialog-title');
 				authDialog?.querySelectorAll<HTMLElement>('[data-auth-message]').forEach((message) => { message.textContent = ''; });
 				openDialog(authDialog);
@@ -594,32 +633,34 @@ const resources = [
 
 			authDialog?.querySelector<HTMLButtonElement>('[data-google-login]')?.addEventListener('click', async (event) => {
 				const button = event.currentTarget as HTMLButtonElement;
+				const form = button.closest('form');
+				if (!form || !requireAuthConsent(form)) return;
 				const message = authDialog?.querySelector<HTMLElement>('[data-login-form] [data-auth-message]');
-				button.disabled = true;
+				setAuthBusy(form, true);
 				if (message) message.textContent = '正在连接 Google…';
 				try {
 					const next = new URLSearchParams(location.search).get('next') || `/ielts${location.hash}`;
-					const result = await api<{ url: string }>('/api/ielts/auth/google', { method: 'POST', body: JSON.stringify({ next: safeIeltsNext(next) }) });
+					const result = await api<{ url: string }>('/api/ielts/auth/google', { method: 'POST', body: JSON.stringify({ next: safeIeltsNext(next), legalConsent: true }) });
 					location.assign(result.url);
 				} catch (error) {
 					if (message) message.textContent = messageFor(error instanceof Error ? error.message : 'google_login_unavailable');
-					button.disabled = false;
+					setAuthBusy(form, false);
 				}
 			});
 
 			authDialog?.querySelector<HTMLFormElement>('[data-login-form]')?.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				const form = event.currentTarget as HTMLFormElement;
-				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+				if (!requireAuthConsent(form)) return;
 				const message = form.querySelector<HTMLElement>('[data-auth-message]');
 				const values = new FormData(form);
-				if (submit) submit.disabled = true;
+				setAuthBusy(form, true);
 				if (message) message.textContent = '正在登录…';
 				try {
-					await api('/api/ielts/auth/login', { method: 'POST', body: JSON.stringify({ email: values.get('email'), password: values.get('password') }) });
+					await api('/api/ielts/auth/login', { method: 'POST', body: JSON.stringify({ email: values.get('email'), password: values.get('password'), legalConsent: values.get('legalConsent') === 'accepted' }) });
 					await finishLogin();
 				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
-				finally { if (submit) submit.disabled = false; }
+				finally { setAuthBusy(form, false); }
 			});
 
 			authDialog?.querySelector<HTMLButtonElement>('[data-open-password-setup]')?.addEventListener('click', () => {
@@ -627,6 +668,7 @@ const resources = [
 				const passwordForm = authDialog?.querySelector<HTMLFormElement>('[data-password-form]');
 				if (loginForm) loginForm.hidden = true;
 				if (passwordForm) passwordForm.hidden = false;
+				if (passwordForm) resetAuthConsent(passwordForm);
 				authDialog?.setAttribute('aria-labelledby', 'auth-reset-title');
 				requestAnimationFrame(() => passwordForm?.querySelector<HTMLInputElement>('input[name="email"]')?.focus());
 			});
@@ -635,16 +677,17 @@ const resources = [
 			authDialog?.querySelector<HTMLFormElement>('[data-password-form]')?.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				const form = event.currentTarget as HTMLFormElement;
+				if (!requireAuthConsent(form)) return;
 				const codePane = form.querySelector<HTMLElement>('[data-password-code]');
 				const submit = form.querySelector<HTMLButtonElement>('[data-password-submit]');
 				const message = form.querySelector<HTMLElement>('[data-auth-message]');
 				const values = new FormData(form);
 				const email = String(values.get('email') || '').trim().toLowerCase();
-				if (submit) submit.disabled = true;
+				setAuthBusy(form, true);
 				try {
 					if (codePane?.hidden) {
 						if (message) message.textContent = '正在发送验证码…';
-						await api('/api/ielts/auth/request-code', { method: 'POST', body: JSON.stringify({ email }) });
+						await api('/api/ielts/auth/request-code', { method: 'POST', body: JSON.stringify({ email, legalConsent: values.get('legalConsent') === 'accepted' }) });
 						codePane.hidden = false;
 						const emailLabel = form.querySelector<HTMLElement>('[data-auth-email]');
 						if (emailLabel) emailLabel.textContent = `验证码已发送至 ${email}`;
@@ -655,11 +698,11 @@ const resources = [
 						const password = String(values.get('password') || '');
 						if (password !== String(values.get('confirmPassword') || '')) throw new Error('password_mismatch');
 						if (message) message.textContent = '正在验证并设置密码…';
-						await api('/api/ielts/auth/verify-code', { method: 'POST', body: JSON.stringify({ email, code: values.get('code'), password }) });
+						await api('/api/ielts/auth/verify-code', { method: 'POST', body: JSON.stringify({ email, code: values.get('code'), password, legalConsent: values.get('legalConsent') === 'accepted' }) });
 						await finishLogin();
 					}
 				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
-				finally { if (submit) submit.disabled = false; }
+				finally { setAuthBusy(form, false); }
 			});
 
 			page?.addEventListener('click', (event) => {
@@ -941,7 +984,7 @@ const resources = [
 	.dialog-head button { width: 34px; height: 34px; border: 0; background: transparent; color: var(--ielts-muted); cursor: pointer; font-size: 27px; }
 	.dialog-selection { margin: 0; padding: 11px 13px; border-radius: 8px; background: var(--ielts-accent-soft); color: var(--ielts-ink); font-size: 13px; font-weight: 600; }
 	.booking-dialog label { display: grid; gap: 7px; color: var(--ielts-text); font-size: 13px; font-weight: 500; }
-	.booking-dialog input, .booking-dialog textarea, .booking-dialog select { width: 100%; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); padding: 11px 12px; resize: vertical; }
+	.booking-dialog input:not([type="checkbox"]), .booking-dialog textarea, .booking-dialog select { width: 100%; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-panel); color: var(--ielts-ink); padding: 11px 12px; resize: vertical; }
 	.booking-dialog [data-password-code] { display: grid; gap: 16px; }
 	.booking-dialog [hidden] { display: none !important; }
 	.booking-dialog .consent-row { grid-template-columns: 18px 1fr; align-items: start; gap: 9px; font-size: 11px; line-height: 1.55; }
@@ -953,7 +996,7 @@ const resources = [
 	.google-login { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--ielts-line); border-radius: 8px; background: var(--ielts-card); color: var(--ielts-ink); cursor: pointer; font-weight: 500; transition: background .2s ease; }
 	.google-login img { width: 20px; height: 20px; flex: 0 0 20px; object-fit: contain; background: #fff; border-radius: 50%; }
 	.google-login:hover { background: var(--ielts-hover); }
-	.google-login:disabled { opacity: .5; cursor: wait; }
+	.google-login:disabled, .auth-dialog .dialog-submit:disabled { opacity: .5; cursor: not-allowed; }
 	.auth-divider { display: flex; align-items: center; gap: 12px; color: var(--ielts-muted); font-size: 12px; }
 	.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--ielts-line); }
 	@media (max-width: 1100px) {

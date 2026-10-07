@@ -10,12 +10,15 @@ export const prerender = false;
 export const POST: APIRoute = async ({ request }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
-		const body = await readJson<{ email?: unknown }>(request);
+		const body = await readJson<{ email?: unknown; legalConsent?: unknown }>(request);
+		if (body.legalConsent !== true) return json({ error: 'consent_required' }, 400);
 		const email = normalizeEmail(body.email);
 		if (!email) return json({ error: 'invalid_email' }, 400);
 		if (!(await claimRateLimit(request, 'otp-ip', '', 10, 3600, 'request'))
 			|| !(await claimRateLimit(request, 'otp-email-cooldown', email, 1, 60, 'identity'))
-			|| !(await claimRateLimit(request, 'otp-email', email, 3, 3600, 'identity'))) {
+			|| !(await claimRateLimit(request, 'otp-email', email, 3, 3600, 'identity'))
+			|| !(await claimRateLimit(request, 'otp-global-hour', 'all', 60, 3600, 'identity'))
+			|| !(await claimRateLimit(request, 'otp-global-day', 'all', 300, 86400, 'identity'))) {
 			return json({ error: 'rate_limited' }, 429, { 'retry-after': '60' });
 		}
 		const code = createSixDigitCode();
@@ -35,7 +38,7 @@ export const POST: APIRoute = async ({ request }) => {
 		catch (error) { await client.from('ielts_verification_codes').delete().eq('email_hash', emailHash); throw error; }
 		return json({ ok: true }, 202);
 	} catch (error) {
-		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'verification_unavailable' }, 503);
 	}
 };

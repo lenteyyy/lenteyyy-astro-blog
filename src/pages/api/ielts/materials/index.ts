@@ -65,7 +65,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		return json({ ok: true, material: data }, 201);
 	} catch (error) {
 		await removeUploadedFile(storagePath);
-		if (error instanceof Error && ['invalid_content_type', 'payload_too_large'].includes(error.message)) return json({ error: error.message }, 400);
+		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'material_unavailable' }, 503);
 	}
 };

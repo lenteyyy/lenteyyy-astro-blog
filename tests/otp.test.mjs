@@ -37,7 +37,7 @@ test('concurrent OTP requests consume one challenge and change one account only'
   vm.runInNewContext(code, {
     exports, Response,
     sameOrigin: () => true,
-    readJson: async () => ({email: 'test@example.com', code: '123456', password: 'testPassword123'}),
+    readJson: async () => ({email: 'test@example.com', code: '123456', password: 'testPassword123', legalConsent: true}),
     normalizeEmail: (value) => value,
     claimRateLimit: async () => true,
     sha256: async () => 'email-hash',

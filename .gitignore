@@ -18,6 +18,7 @@ pnpm-debug.log*
 .env.local
 .env.development
 .env.production
+.env.*
 
 # local deployment metadata
 .vercel/

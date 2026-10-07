@@ -1,11 +1,19 @@
-<nav class="legal-links" aria-label="隐私与使用条款">
-	<a href="/ielts/privacy">隐私政策</a>
-	<a href="/ielts/terms">使用条款</a>
-	<a href="https://github.com/lenteyyy" target="_blank" rel="noopener noreferrer">GitHub</a>
-</nav>
+---
+const year = new Date().getFullYear();
+---
+<footer class="legal-footer">
+	<p class="copyright">© {year} Lenteyyy. 本站原创内容保留所有权利。本站为独立学习网站，与 IELTS 官方无隶属关系。</p>
+	<nav class="legal-links" aria-label="隐私与使用条款">
+		<a href="/ielts/privacy">隐私政策</a>
+		<a href="/ielts/terms">使用条款</a>
+		<a href="https://github.com/lenteyyy" target="_blank" rel="noopener noreferrer">GitHub</a>
+	</nav>
+</footer>
 
 <style>
-	.legal-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px 24px; padding: 24px 20px; color: var(--ielts-muted); font-size: .875rem; line-height: 1.6; }
+	.legal-footer { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 14px 32px; padding: 24px 20px; color: var(--ielts-muted); font-size: .8125rem; line-height: 1.7; }
+	.copyright { flex: 1 1 520px; margin: 0; min-width: 0; }
+	.legal-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
 	.legal-links a { text-decoration: underline; text-underline-offset: 4px; }
 	.legal-links a:hover { color: var(--ielts-ink); }
 </style>
