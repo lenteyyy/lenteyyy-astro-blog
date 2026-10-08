@@ -6,8 +6,51 @@ import { isAdminEmail } from '../src/lib/ielts/config.ts';
 const source = path => readFileSync(new URL('../' + path, import.meta.url), 'utf8');
 const home = source('src/pages/ielts/index.astro');
 
+test('home preserves requested introduction and uses local, icon-only social profiles', () => {
+  assert.match(home, /你可以点击右上角的个人账户进行注册或登录（当然，我们支持Google登陆！）。/);
+  assert.match(home, /<h2>Why I do this<\/h2>/);
+  assert.match(home, /这个网站会持续更新，感兴趣的话就Stay Focused吧！/);
+  assert.match(home, /当然也似乎是为了看一看自己的Vibe Coding能力/);
+  assert.match(home, /个人网站<a href="https:\/\/lenteyyy.com\/">lenteyyy.com<\/a>！/);
+  assert.match(home, /<SocialProfiles \/>/);
+  const social = source('src/components/ielts/SocialProfiles.astro');
+  assert.match(social, /冷踢踢（IELTS教学版）/);
+  assert.match(social, /profiles = defaultProfiles/);
+  assert.match(social, /url.protocol === 'https:'/);
+  assert.match(social, /rel="noopener noreferrer"/);
+  for (const platform of ['instagram', 'xiaohongshu', 'douyin', 'bilibili']) {
+    const svg = source(`public/assets/social/${platform}.svg`);
+    assert.match(svg, /viewBox="0 0 24 24"/);
+    assert.doesNotMatch(svg, /<script|<foreignObject|\son\w+=|href=|src=/i);
+  }
+  assert.doesNotMatch(social, /set:html|fetch\(|localStorage|navigator\./);
+  const urls = [
+    'https://www.instagram.com/lenteyyy_/',
+    'https://www.xiaohongshu.com/user/profile/6abc8f3f0000000013020401',
+    'https://www.douyin.com/user/MS4wLjABAAAAGX6D-MGYOEVmIQvMqKrBG2fYMFo5-G2gvNiaNNvnh1I',
+    'https://space.bilibili.com/228771562',
+  ];
+  for (const url of urls) assert.ok(social.includes(url));
+  assert.doesNotMatch(home, /冷踢踢的 Instagram：/);
+});
+
+test('all social marks crossfade to brand colours with keyboard and reduced-motion support', () => {
+  const social = source('src/components/ielts/SocialProfiles.astro');
+  assert.match(social, /data-platform=\{id\}/);
+  assert.match(social, /:is\(:hover, :focus-visible\) \.brand-mark \{ opacity: 1; \}/);
+  assert.match(social, /:is\(:hover, :focus-visible\) img \{ opacity: 0; \}/);
+  assert.match(social, /\[data-platform='xiaohongshu'\].*#ff2442/);
+  assert.match(social, /\[data-platform='bilibili'\].*#00a1d6/);
+  assert.match(social, /\[data-platform='instagram'\] \.brand-main.*linear-gradient/);
+  assert.match(social, /\[data-platform='douyin'\] \.brand-cyan.*#25f4ee/);
+  assert.match(social, /\[data-platform='douyin'\] \.brand-magenta.*#fe2c55/);
+  assert.match(social, /pointer-events: none/);
+  assert.match(social, /prefers-reduced-motion: reduce.*\.brand-mark \{ transition: none; \}/);
+});
+
 test('search finds sections and entrance test without sending queries elsewhere', () => {
-  assert.equal(searchStudy('').length, 5);
+  assert.equal(searchStudy('').length, 7);
+  assert.ok(searchStudy('分数').some(item => item.href === '/ielts/score-calculator'));
   assert.ok(searchStudy('入学').some(item => item.href === '/ielts/entry-test'));
   assert.ok(searchStudy('预约 时间').some(item => item.section === 'booking'));
   assert.ok(searchStudy('ＣＡＭＢＲＩＤＧＥ').some(item => item.section === 'mock'));
@@ -37,10 +80,13 @@ test('management requires the exact verified owner identity, never client roles'
   assert.match(management, /auth\.role !== 'admin'/);
   assert.match(management, /private, no-store/);
 });
-test('other contains only entrance test and management entry is inside account menu', () => {
+test('other contains entrance test, calculator and dictation, with management inside account menu', () => {
   const other = home.slice(home.indexOf('<section class="module notes-module"'), home.indexOf('<dialog class="search-dialog"'));
-  assert.equal((other.match(/<article/g) || []).length, 1);
+  assert.equal((other.match(/<article/g) || []).length, 3);
+  assert.match(other, /href="\/ielts\/dictation"/);
   assert.match(other, /入学基础测试/);
+  assert.match(other, /href="\/ielts\/score-calculator"/);
+  assert.doesNotMatch(other, /<ScoreCalculator/);
   assert.doesNotMatch(other, /预约流程|一次约几节|账户登录/);
   assert.equal((home.match(/href="\/ielts\/management"/g) || []).length, 1);
   assert.ok(home.indexOf('data-management-link') > home.indexOf('data-account-panel'));

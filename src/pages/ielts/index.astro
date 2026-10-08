@@ -1,6 +1,7 @@
 ---
 import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
 import LoginConsent from '../../components/ielts/LoginConsent.astro';
+import SocialProfiles from '../../components/ielts/SocialProfiles.astro';
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import StudyNavigation from '../../components/ielts/StudyNavigation';
 import {subjectDurationSeconds,formatExamDuration} from '../../lib/ielts/mock/timing-policy';
@@ -50,11 +51,16 @@ const resources = [
 						<p>你好！我是雅思 Overall 8.0 的冷踢踢老师，欢迎来到冷踢踢的雅思学习网站！这里主要为我的学员提供课程线上预约、学习资料查询与整理、仿真模考等服务。如果你是通过其他途径来到这里的雅思学习者，也非常欢迎你注册登录，并免费使用网站内开放的学习功能。</p>
 						<section>
 							<h2>网站使用说明</h2>
-							<p>点击右上角的个人账户注册或登录，然后通过顶部导航进入课程预约、学习资料或模考页面。入学基础测试在「其他」中。</p>
+							<p>你可以点击右上角的个人账户进行注册或登录（当然，我们支持Google登陆！）。通过顶部的导航栏，访问不同的学习功能。对于冷踢踢的学员，请点选“其他”以进入入学测试并使用其余的IELTS学习工具。</p>
 						</section>
 						<section class="more-contact">
 							<h2>联系我</h2>
-							<p>更多咨询，请发送电子邮件至 <a href="mailto:lenteywang@gmail.com">lenteywang@gmail.com</a>。<br />冷踢踢的 Instagram：<a href="https://www.instagram.com/lenteyyy_/" rel="me noreferrer">@lenteyyy_</a></p>
+							<p>更多咨询，请发送电子邮件至 <a href="mailto:lenteywang@gmail.com">lenteywang@gmail.com</a>。</p>
+							<SocialProfiles />
+						</section>
+						<section class="why-section">
+							<h2>Why I do this</h2>
+							<p>为什么我要做这个网站？冷踢踢作为喜欢秩序感和安心感的INFJ，深感做任何工作都要做到最好，当然也似乎是为了看一看自己的Vibe Coding能力和组织能力。总之，这个网站会持续更新，感兴趣的话就Stay Focused吧！想了解我更多，也欢迎访问我的个人网站<a href="https://lenteyyy.com/">lenteyyy.com</a>！</p>
 						</section>
 					</div>
 				</section>
@@ -154,6 +160,14 @@ const resources = [
 						<article class="entry-test-card">
 							<span><IeltsIcon name="clipboard" size={22} /></span>
 							<div><h3>入学基础测试</h3><a href="/ielts/entry-test">开始测试</a></div>
+						</article>
+						<article class="entry-test-card">
+							<span><IeltsIcon name="info" size={22} /></span>
+							<div><h3>IELTS分数计算器</h3><a href="/ielts/score-calculator">打开计算器</a></div>
+						</article>
+						<article class="entry-test-card">
+							<span><IeltsIcon name="headphones" size={22} /></span>
+							<div><h3>单词听写</h3><a href="/ielts/dictation">开始听写</a></div>
 						</article>
 					</div>
 				</section>
@@ -833,7 +847,7 @@ const resources = [
 	</IeltsLayout>
 
 <style>
-	.ielts-app { min-height: 100dvh; background: var(--ielts-bg); }
+	.ielts-app { min-height: 0; flex: 1; background: var(--ielts-bg); }
 	.side-panel { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: clamp(24px, 4vw, 64px); padding: 14px max(24px, calc((100vw - 1360px) / 2)); border-bottom: 1px solid var(--ielts-line); background: color-mix(in srgb, var(--ielts-bg) 94%, transparent); backdrop-filter: blur(16px); }
 	.studio-brand { flex: 0 0 auto; display: block; color: var(--ielts-ink); }
 	.logo-frame { width: 120px; height: 60px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -862,7 +876,9 @@ const resources = [
 	.overview-copy > p { grid-column: 1 / -1; font-size: clamp(18px, 1.7vw, 22px); line-height: 2; }
 	.overview-copy section h2 { margin: 0 0 18px; color: var(--ielts-ink); font-size: 20px; font-weight: 600; }
 	.overview-copy section p { margin: 0; }
+	.overview-copy .why-section { grid-column: 1 / -1; }
 	.overview-copy .more-contact a { color: var(--ielts-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+	.overview-copy .why-section a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 	.module-head { min-height: 50px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 30px; }
 	.module-head h1, .module-head h2 { margin: 0; color: var(--ielts-ink); font-size: clamp(25px, 2.2vw, 36px); font-weight: 700; letter-spacing: -.035em; line-height: 1.2; }
 	.module-head h1 span, .module-head h2 span { margin-right: 16px; color: var(--ielts-faint); font-size: .84em; font-style: italic; font-weight: 400; }

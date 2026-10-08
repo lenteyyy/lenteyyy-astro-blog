@@ -24,25 +24,29 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   <main class="entry-test" data-entry-test>
     <header class="entry-header"><div><a href="/ielts#notes">← 返回学习中心</a><h1>入学基础测试</h1></div><div class="entry-actions"><label>字号 <select data-font-size aria-label="测试字体大小"><option value="16">标准</option><option value="18">较大</option><option value="20">最大</option></select></label><button type="button" data-theme aria-label="切换深浅色">深浅色</button><button type="button" data-export>导出全部答案</button></div></header>
     <div class="entry-tabs"><nav aria-label="测试科目">{(['listening', 'reading', 'writing'] as const).map(item => <a href={subjectHref(item)} aria-current={subject === item ? 'page' : undefined}>{labels[item]}</a>)}</nav><span data-save-status role="status"></span></div>
-    {subject === 'listening' ? <section class="entry-pane listening-pane"><h2>{test.listening.title}</h2><div class="listening-content"><audio controls preload="metadata" controlslist="noplaybackrate" src={test.listening.audio} aria-label="入学测试听力录音"></audio><label class="entry-audio-speed">速度 <select data-audio-rate aria-label="听力播放速度">{LISTENING_RATES.map(rate => <option value={rate} selected={rate === 1}>{rate.toFixed(1)}×</option>)}</select></label>{test.listening.instructions.map(text => <p class="instruction">{text}</p>)}<EntryQuestions groups={test.listening.groups} prefix="Listening" /></div></section> : <>
     <div class="reading-workspace">
-      <section class="entry-pane"><h2>{subject === 'reading' ? test.reading.passageTitle : '题干与图表'}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文"><div data-passage>
+      <section class="entry-pane"><h2>{subject === 'listening' ? test.listening.title : subject === 'reading' ? test.reading.passageTitle : '题干与图表'}</h2><div class="question-scroll" tabindex="0" aria-label="题目原文">
+        {subject === 'listening' && <div class="entry-audio"><audio controls preload="metadata" controlslist="noplaybackrate" src={test.listening.audio} aria-label="入学测试听力录音"></audio><label class="entry-audio-speed">速度 <select data-audio-rate aria-label="听力播放速度">{LISTENING_RATES.map(rate => <option value={rate} selected={rate === 1}>{rate.toFixed(1)}×</option>)}</select></label></div>}
+        <div data-passage data-highlight-region={subject}>
+        {subject === 'listening' && test.listening.instructions.map(text => <p class="instruction">{text}</p>)}
         {subject === 'reading' && <>{test.reading.instructions.map(text => <p class="instruction">{text}</p>)}{test.reading.paragraphs.map(text => <p>{text}</p>)}</>}
         {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-prompt"><h3>{task.title}</h3>{task.instructions.map(text => <p>{text}</p>)}{task.image && <figure><img src={task.image} alt="日本1980年至2000年四类电子游戏年销量折线图，单位为百万套" width="1469" height="949" /></figure>}</section>)}
       </div></div></section>
       <div class="divider" data-divider role="separator" aria-label="调整题目与答题区宽度" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-controls="entry-answers" tabindex="0"><span aria-hidden="true"></span></div>
-      <section class="entry-pane"><h2>{subject === 'writing' ? '写作选择题' : '阅读答题区'}</h2><div class="answer-scroll" id="entry-answers" tabindex="0" aria-label="答题区">
+      <section class="entry-pane"><h2>{subject === 'writing' ? '写作选择题' : subject === 'listening' ? '听力题目' : '阅读题目'}</h2><div class="answer-scroll" id="entry-answers" tabindex="0" aria-label="答题区" data-highlight-region={`${subject}-questions`}>
+        {subject === 'listening' && <EntryQuestions groups={test.listening.groups} prefix="Listening" />}
         {subject === 'reading' && <EntryQuestions groups={test.reading.groups} prefix="Reading" />}
         {subject === 'writing' && test.writing.tasks.map(task => <section class="writing-answers"><h3>{task.title}</h3><EntryQuestions groups={task.groups} prefix={task.title} /></section>)}
       </div></section>
     </div>
-    <div class="highlight-tools" data-highlight-tools role="group" aria-label="题目原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div></>}
+    <div class="highlight-tools" data-highlight-tools role="group" aria-label="题干与原文高亮" hidden><button type="button" data-highlight-add="yellow">黄色高亮</button><button type="button" data-highlight-add="blue">蓝色高亮</button><button type="button" data-highlight-remove>取消高亮</button></div>
     <footer class="entry-footer"><div><button type="button" data-clear>清除本机作答</button>{subject !== 'writing' && <a class="next-subject" href={subjectHref(subject === 'listening' ? 'reading' : 'writing')}>继续{subject === 'listening' ? '阅读' : '写作'} →</a>}</div></footer>
     <dialog data-clear-dialog><p>清除三个部分的本机答案与高亮？此操作不能撤销。</p><form method="dialog"><button value="cancel">保留作答</button><button value="clear">确认清除</button></form></dialog>
   </main>
   <script is:inline type="application/json" id="entry-payload" set:html={payload} />
   <script>
     import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
+    import { setupTextHighlights } from '../../lib/ielts/mock/text-highlights';
     import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
     import { answerIds, cleanAnswers, exportAnswers, type EntryContent } from '../../lib/ielts/entry-test/answers';
     import { LISTENING_RATES } from '../../lib/ielts/mock/listening-player';
@@ -61,7 +65,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
           state.answers = cleanAnswers(saved.answers, ids);
           state.fontSize = examFontSize(saved.fontSize);
           state.split = typeof saved.split === 'number' && Number.isFinite(saved.split) ? Math.max(0, Math.min(100, saved.split)) : 50;
-          for (const subject of ['listening', 'reading', 'writing']) state.highlights[subject] = normalizeHighlights(saved.highlights?.[subject], 200000);
+          for (const region of ['listening', 'reading', 'writing', 'listening-questions', 'reading-questions', 'writing-questions']) state.highlights[region] = normalizeHighlights(saved.highlights?.[region], 200000);
         }
         } catch { /* Invalid/unavailable storage must not prevent answering. */ }
         return state;
@@ -98,14 +102,18 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
       });
       const applySize = () => { root.style.setProperty('--entry-font-size', `${examFontSize(state.fontSize)}px`); if (font) font.value = String(examFontSize(state.fontSize)); };
       font?.addEventListener('change', () => { state.fontSize = examFontSize(Number(font.value)); applySize(); save(); }); applySize();
-      const tools = data.subject === 'listening' ? undefined : setupReadingTools(root, {
+      const tools = setupReadingTools(root, {
         getSplit: () => state.split, setSplit: value => { state.split = value; save(); },
-        getHighlights: () => state.highlights[data.subject] || [],
-        setHighlights: value => { state.highlights[data.subject] = value; save(); },
-      }); tools?.render();
+        getHighlights: () => [], setHighlights: () => {}, highlight: false,
+      });
+      const textTools = setupTextHighlights(root, {
+        get: region => state.highlights[region] || [],
+        set: (region, value) => { state.highlights[region] = value; save(); },
+      });
+      tools.render(); textTools.render();
       const restore = () => {
         state = load(); controls.forEach(restoreControl);
-        applySize(); tools?.render();
+        applySize(); tools.render(); textTools.render();
       };
       // Back/forward cache and other tabs must not overwrite another section's newer answers.
       window.addEventListener('pageshow', event => { if (event.persisted) restore(); });
@@ -119,7 +127,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
       root.querySelector('[data-clear]')?.addEventListener('click', () => clearDialog?.showModal());
       clearDialog?.addEventListener('close', () => {
         if (clearDialog.returnValue !== 'clear') return;
-        state = defaults(); save(); controls.forEach(restoreControl); applySize(); tools?.render();
+        state = defaults(); save(); controls.forEach(restoreControl); applySize(); tools.render(); textTools.render();
       });
       root.querySelector('[data-theme]')?.addEventListener('click', () => {
         const theme = document.documentElement.dataset.ieltsTheme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.ieltsTheme = theme;
@@ -129,27 +137,27 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   </script>
 </IeltsLayout>
 <style is:global>
-  .entry-test { --entry-font-size: 16px; max-width: 1580px; margin: 24px auto; padding: 24px; background: var(--ielts-card); border: 1px solid var(--ielts-line); border-radius: 16px; }
-  .entry-header { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
+  body.ielts-site:has(> .entry-test) { animation: none; }
+  .entry-test { --entry-font-size: 16px; width: 100%; margin: 0; padding: 0 24px; background: var(--ielts-card); display: flex; flex-direction: column; }
+  .entry-test, .entry-test * { animation: none !important; transition: none !important; }
+  .entry-header { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; padding: 18px 0; border-bottom: 1px solid var(--ielts-line); }
   .entry-header a { font-size: 14px; color: var(--ielts-muted); }
-  .entry-test h1 { margin: 10px 0; color: var(--ielts-ink); font-size: 28px; }
+  .entry-test h1 { margin: 8px 0 0; color: var(--ielts-ink); font-size: 22px; }
   .entry-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: 14px; }
   .entry-test button, .entry-test select, .entry-test input, .entry-test textarea, .entry-test .next-subject { border: 1px solid var(--ielts-line); border-radius: 8px; padding: 9px 12px; background: var(--ielts-card); color: var(--ielts-ink); font: inherit; }
   .entry-test button, .entry-test select { cursor: pointer; }
   .entry-test button:hover, .entry-test .next-subject:hover { background: var(--ielts-hover); }
   .entry-tabs { display: flex; gap: 16px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 18px 0; }
   .entry-tabs nav { display: flex; gap: 8px; }
-  .entry-tabs a { padding: 10px 24px; border-radius: 8px; }
-  .entry-tabs a[aria-current='page'] { background: var(--ielts-accent-soft); color: var(--ielts-ink); font-weight: 600; }
+  .entry-tabs a { padding: 10px 24px; border-bottom: 2px solid transparent; }
+  .entry-tabs a[aria-current='page'] { border-bottom-color: var(--ielts-ink); color: var(--ielts-ink); font-weight: 600; }
   .entry-tabs > span { font-size: 12px; color: var(--ielts-muted); }
   .entry-test .reading-workspace { display: grid; grid-template-columns: minmax(0, var(--passage-share, 50fr)) 14px minmax(0, var(--answer-share, 50fr)); gap: 10px; font-size: var(--entry-font-size); }
-  .entry-test .listening-content { max-width: 960px; margin: auto; padding: 24px; font: var(--entry-font-size)/1.75 Arial, 'Noto Sans SC', sans-serif; overflow-wrap: anywhere; }
   .entry-test audio { display: block; width: 100%; margin-bottom: 24px; }
   .entry-test .entry-audio-speed { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 14px; }
-  .entry-pane { min-width: 0; border: 1px solid var(--ielts-line); border-radius: 10px; overflow: hidden; }
-  .entry-pane > h2 { font-size: 17px; margin: 0; padding: 14px 18px; border-bottom: 1px solid var(--ielts-line); color: var(--ielts-ink); }
-  .entry-test .question-scroll, .entry-test .answer-scroll { height: min(70vh, 850px); min-height: 360px; overflow: auto; overscroll-behavior: contain; padding: 20px; overflow-wrap: anywhere; line-height: 1.75; }
-  .entry-test [data-passage] { font-family: Arial, 'Noto Sans SC', sans-serif; }
+  .entry-pane { min-width: 0; border: 1px solid var(--ielts-line); border-radius: 4px; overflow: hidden; }
+  .entry-pane > h2 { font-size: 17px; margin: 0; padding: 14px 18px; background: var(--ielts-panel); border-bottom: 1px solid var(--ielts-line); color: var(--ielts-ink); }
+  .entry-test .question-scroll, .entry-test .answer-scroll { height: max(360px, calc(100dvh - 350px)); overflow: auto; overscroll-behavior: contain; padding: 24px; overflow-wrap: anywhere; font-family: Arial, 'Noto Sans SC', sans-serif; line-height: 1.65; }
   .entry-test p { margin: 0 0 16px; white-space: pre-line; }
   .entry-test h3 { color: var(--ielts-ink); font-size: 1.12em; margin: 0 0 14px; }
   .entry-group, .entry-test .writing-prompt, .entry-test .writing-answers { margin-bottom: 30px; }
@@ -180,7 +188,7 @@ const subjectHref = (item: Subject) => `/ielts/entry-test?subject=${item}${demo 
   .entry-test .highlight-tools { position: fixed; display: flex; gap: 5px; max-width: calc(100vw - 16px); flex-wrap: wrap; z-index: 20; padding: 6px; background: var(--ielts-card); border: 1px solid var(--ielts-line); border-radius: 9px; box-shadow: var(--ielts-shadow); font-size: 13px; }
   .entry-test mark[data-reading-highlight] { background: #ffe786; color: #20232b; }
   .entry-test mark[data-color='blue'] { background: #aad7ff; color: #102c48; }
-  .entry-footer { border-top: 1px solid var(--ielts-line); margin-top: 22px; padding-top: 20px; font-size: 14px; }
+  .entry-footer { border-top: 1px solid var(--ielts-line); margin-top: 18px; font-size: 14px; }
   .entry-footer > div { display: flex; justify-content: space-between; gap: 12px; margin: 16px 0; flex-wrap: wrap; }
   .entry-test dialog { max-width: min(460px, calc(100vw - 32px)); border: 1px solid var(--ielts-line); border-radius: 12px; background: var(--ielts-card); color: var(--ielts-ink); padding: 24px; }
   .entry-test dialog::backdrop { background: #0006; }

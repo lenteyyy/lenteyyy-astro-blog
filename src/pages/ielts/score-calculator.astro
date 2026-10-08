@@ -1,0 +1,16 @@
+---
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+import ScoreCalculator from '../../components/ielts/ScoreCalculator.astro';
+export const prerender = true;
+---
+<IeltsLayout title="IELTS分数计算器 · Lenteyyy IELTS" description="计算雅思总分、写作与口语分数，查看目标分数组合及院校门槛。" telemetry={false}>
+	<main><a class="back" href="/ielts#notes">← 返回学习中心</a><h1>IELTS分数计算器</h1><ScoreCalculator /></main>
+</IeltsLayout>
+<style>
+	main { width: 100%; max-width: 960px; margin: 0 auto; padding: 48px 28px 56px; }
+	.back { font-size: 16px; color: var(--ielts-muted); text-decoration: none; }
+	.back:hover { color: var(--ielts-ink); }
+	.back:focus-visible { outline: 2px solid var(--ielts-ink); outline-offset: 4px; }
+	h1 { font-size: clamp(25px, 2.2vw, 36px); font-weight: 700; letter-spacing: -.035em; margin: 32px 0 20px; }
+	@media (max-width: 600px) { main { padding: 28px 20px 40px; } }
+</style>

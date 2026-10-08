@@ -1,0 +1,128 @@
+---
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
+import { DICTATION_KINDS, DICTATION_LABELS } from '../../lib/ielts/dictation';
+export const prerender = true;
+---
+<IeltsLayout title="单词听写 · Lenteyyy IELTS" description="练习 IELTS Part 1 中的车牌、航班号与电话号码听写。" telemetry={false}>
+  <main data-dictation>
+    <a class="back" href="/ielts#notes">← 返回学习中心</a>
+    <h1>单词听写</h1>
+    <div class="banks"><span aria-current="page">Part 1</span><button type="button" disabled>其他词库 · 待更新</button></div>
+    <div class="settings"><label>内容<select data-kind aria-label="听写内容">{DICTATION_KINDS.map(kind => <option value={kind}>{DICTATION_LABELS[kind]}</option>)}</select></label><label>速度<select data-rate aria-label="听写速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select></label><button type="button" class="primary" data-start disabled>开始听写</button></div>
+    <p class="speech-status" data-speech-status role="status">录音待更新</p>
+    <section class="practice" data-practice hidden aria-label="听写练习">
+      <audio controls preload="none" data-audio aria-label="听写录音"></audio>
+      <div class="practice-head"><span data-progress>1 / 10</span><button type="button" class="play" data-play aria-label="重播录音"><IeltsIcon name="play" size={22} />重播</button></div>
+      <form data-answer-form><label for="dictation-answer">你的答案</label><div class="answer-row"><input id="dictation-answer" data-answer maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" required /><button class="primary" type="submit" data-check disabled>检查</button></div></form>
+      <p class="feedback" data-feedback role="status"></p>
+      <button type="button" class="next" data-next hidden>下一题 →</button>
+    </section>
+    <p class="summary" data-summary role="status" hidden></p>
+  </main>
+  <script>
+    import { randomIndex, normalizeDictation, DICTATION_KINDS, type DictationKind } from '../../lib/ielts/dictation';
+    import { recordedDictations, readyDictations, type RecordedDictation } from '../../lib/ielts/dictation-bank';
+    const root = document.querySelector<HTMLElement>('[data-dictation]');
+    if (root) {
+      const $ = <T extends Element>(selector: string) => root.querySelector<T>(selector)!;
+      const kind = $<HTMLSelectElement>('[data-kind]');
+      const rate = $<HTMLSelectElement>('[data-rate]');
+      const start = $<HTMLButtonElement>('[data-start]');
+      const input = $<HTMLInputElement>('[data-answer]');
+      const check = $<HTMLButtonElement>('[data-check]');
+      const next = $<HTMLButtonElement>('[data-next]');
+      const play = $<HTMLButtonElement>('[data-play]');
+      const status = $<HTMLElement>('[data-speech-status]');
+      const feedback = $<HTMLElement>('[data-feedback]');
+      const practice = $<HTMLElement>('[data-practice]');
+      const summary = $<HTMLElement>('[data-summary]');
+      const audio = $<HTMLAudioElement>('[data-audio]');
+      let current = '', index = 0, correct = 0, checked = false;
+      let questions: RecordedDictation[] = [];
+      const selectedKind = () => DICTATION_KINDS.includes(kind.value as DictationKind) ? kind.value as DictationKind : 'plate';
+      const availability = () => {
+        const ready = readyDictations(recordedDictations[selectedKind()]);
+        start.disabled = ready.length === 0;
+        status.textContent = ready.length ? '' : '录音待更新';
+      };
+      const applyRate = () => { const speed = Number(rate.value); audio.playbackRate = [0.75, 1, 1.25].includes(speed) ? speed : 1; };
+      const replay = () => { if (!current || !audio.src) return; audio.currentTime = 0; applyRate(); void audio.play().catch(() => { status.textContent = '播放失败，请重播。'; }); };
+      const newQuestion = () => {
+        audio.pause(); checked = false; input.value = ''; input.disabled = false; check.disabled = true;
+        feedback.textContent = ''; feedback.removeAttribute('data-correct'); next.hidden = true;
+        current = questions[index].answer; audio.src = questions[index].audio!;
+        $<HTMLElement>('[data-progress]').textContent = `${index + 1} / ${questions.length}`;
+        input.inputMode = selectedKind() === 'phone' ? 'tel' : 'text';
+        input.focus(); replay();
+      };
+      start.addEventListener('click', () => {
+        questions = readyDictations(recordedDictations[selectedKind()]);
+        if (!questions.length) return;
+        try { for (let i = questions.length - 1; i > 0; i--) { const j = randomIndex(i + 1); [questions[i], questions[j]] = [questions[j], questions[i]]; } }
+        catch { status.textContent = '无法生成题目，请使用安全连接后重试。'; return; }
+        questions = questions.slice(0, 10);
+        index = 0; correct = 0; summary.hidden = true; practice.hidden = false;
+        kind.disabled = true; start.textContent = '重新开始'; newQuestion();
+      });
+      input.addEventListener('input', () => { check.disabled = checked || !input.value.trim(); });
+      play.addEventListener('click', replay);
+      $<HTMLFormElement>('[data-answer-form]').addEventListener('submit', event => {
+        event.preventDefault();
+        if (checked || !current || !input.value.trim()) return;
+        checked = true; audio.pause(); status.textContent = '';
+        const match = normalizeDictation(input.value) === normalizeDictation(current);
+        if (match) correct++;
+        feedback.textContent = match ? `正确：${current}` : `正确答案：${current}`;
+        feedback.dataset.correct = String(match);
+        input.disabled = true; check.disabled = true; next.hidden = false;
+        next.textContent = index === questions.length - 1 ? '查看结果' : '下一题 →'; next.focus();
+      });
+      next.addEventListener('click', () => {
+        if (!checked) return;
+        index++;
+        if (index === questions.length) {
+          audio.pause(); status.textContent = ''; practice.hidden = true; summary.hidden = false;
+          summary.textContent = `完成 · ${correct} / ${questions.length}`; kind.disabled = false; start.textContent = '再练一组'; start.focus();
+        } else newQuestion();
+      });
+      kind.addEventListener('change', availability); availability();
+      rate.addEventListener('change', applyRate);
+      audio.addEventListener('playing', () => { status.textContent = '正在播放'; });
+      audio.addEventListener('pause', () => { status.textContent = ''; });
+      audio.addEventListener('ended', () => { status.textContent = ''; });
+      audio.addEventListener('error', () => { status.textContent = '录音无法加载，请稍后重试。'; });
+      window.addEventListener('pagehide', () => audio.pause());
+    }
+  </script>
+</IeltsLayout>
+<style>
+  main { width: 100%; max-width: 960px; margin: 0 auto; padding: 48px 28px 56px; font-size: 17px; }
+  .back { font-size: 16px; color: var(--ielts-muted); text-decoration: none; }
+  h1 { font-size: clamp(25px, 2.2vw, 36px); letter-spacing: -.035em; margin: 32px 0 28px; }
+  .banks { display: flex; gap: 28px; align-items: center; border-bottom: 1px solid var(--ielts-line); margin-bottom: 28px; }
+  .banks span { padding: 12px 0; border-bottom: 2px solid var(--ielts-ink); font-weight: 600; }
+  button, select, input { font: inherit; color: var(--ielts-ink); border: 1px solid var(--ielts-line); background: var(--ielts-card); border-radius: 5px; padding: 10px 14px; }
+  button { cursor: pointer; }
+  button:disabled { color: var(--ielts-muted); cursor: default; }
+  .banks button { border: 0; padding: 12px 0; background: none; }
+  .settings { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; }
+  .settings label { display: grid; gap: 10px; }
+  .primary { background: var(--ielts-ink); color: var(--ielts-card); border-color: var(--ielts-ink); }
+  .primary:disabled { opacity: .45; color: var(--ielts-card); }
+  .speech-status { min-height: 1.5em; margin: 18px 0; color: var(--ielts-muted); font-size: 15px; }
+  .practice { border-top: 1px solid var(--ielts-line); padding-top: 28px; }
+  audio { display: block; width: 100%; margin-bottom: 24px; }
+  .practice-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; font-variant-numeric: tabular-nums; }
+  .play { display: flex; align-items: center; gap: 8px; }
+  form > label { display: block; margin-bottom: 12px; }
+  .answer-row { display: flex; gap: 12px; }
+  input { width: 100%; min-width: 0; font-size: 22px; letter-spacing: .07em; }
+  .answer-row button { flex-shrink: 0; }
+  .feedback { min-height: 1.6em; margin: 22px 0; }
+  .next { display: block; margin-left: auto; }
+  .summary { padding: 32px 0; border-top: 1px solid var(--ielts-line); font-size: 26px; }
+  button:hover:not(:disabled) { filter: brightness(.9); }
+  :is(button, select, input, a):focus-visible { outline: 2px solid var(--ielts-ink); outline-offset: 4px; }
+  @media (max-width: 600px) { main { padding: 28px 20px 40px; } .settings { gap: 12px; } .banks { gap: 20px; } }
+</style>

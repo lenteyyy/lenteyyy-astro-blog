@@ -1,0 +1,71 @@
+---
+type Platform = 'instagram' | 'xiaohongshu' | 'douyin' | 'bilibili';
+interface Props {
+	profiles?: Partial<Record<Platform, string>>;
+}
+const defaultProfiles: Record<Platform, string> = {
+	instagram: 'https://www.instagram.com/lenteyyy_/',
+	xiaohongshu: 'https://www.xiaohongshu.com/user/profile/6abc8f3f0000000013020401',
+	douyin: 'https://www.douyin.com/user/MS4wLjABAAAAGX6D-MGYOEVmIQvMqKrBG2fYMFo5-G2gvNiaNNvnh1I',
+	bilibili: 'https://space.bilibili.com/228771562',
+};
+const { profiles = defaultProfiles } = Astro.props;
+const account = '冷踢踢（IELTS教学版）';
+const platforms: { id: Platform; label: string }[] = [
+	{ id: 'instagram', label: 'Instagram' },
+	{ id: 'xiaohongshu', label: '小红书' },
+	{ id: 'douyin', label: '抖音' },
+	{ id: 'bilibili', label: 'B站' },
+];
+// No guessed profile URLs: only enable a link after its owner supplies it.
+const verifiedUrl = (value: string | undefined) => {
+	if (!value) return undefined;
+	try {
+		const url = new URL(value);
+		return url.protocol === 'https:' && !url.username && !url.password ? url.href : undefined;
+	} catch { return undefined; }
+};
+---
+<div class="social-profiles" aria-label="社交账号">
+	{platforms.map(({ id, label }) => {
+		const href = verifiedUrl(profiles[id]);
+		const name = `${label}：${id === 'instagram' ? '@lenteyyy_' : account}`;
+		return href ? (
+			<a class="social-icon" data-platform={id} href={href} aria-label={name} title={name} target="_blank" rel="noopener noreferrer">
+				<img src={`/assets/social/${id}.svg`} width="28" height="28" alt="" aria-hidden="true" />
+				<span class="brand-mark" style={`--brand-mask: url('/assets/social/${id}.svg')`} aria-hidden="true">
+					<span class="brand-layer brand-cyan"></span>
+					<span class="brand-layer brand-magenta"></span>
+					<span class="brand-layer brand-main"></span>
+				</span>
+			</a>
+		) : (
+			<span class="social-icon pending" role="img" aria-label={`${name}（主页链接待补充）`} title={name}>
+				<img src={`/assets/social/${id}.svg`} width="28" height="28" alt="" aria-hidden="true" />
+			</span>
+		);
+	})}
+</div>
+<style>
+	.social-profiles { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 24px; }
+	.social-icon { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; flex: 0 0 auto; border: 1px solid var(--ielts-line); border-radius: 50%; background: var(--ielts-card); color: var(--ielts-ink); }
+	a.social-icon { transition: transform .2s ease, background .2s ease; }
+	a.social-icon:hover { transform: translateY(-2px); background: var(--ielts-hover); }
+	a.social-icon:focus-visible { outline: 2px solid var(--ielts-ink); outline-offset: 4px; }
+	.social-icon img { display: block; width: 28px; height: 28px; object-fit: contain; transition: opacity .22s ease; }
+	.brand-mark { display: none; position: absolute; width: 28px; height: 28px; opacity: 0; pointer-events: none; transition: opacity .22s ease; }
+	.brand-layer { position: absolute; inset: 0; background: var(--brand-color, var(--ielts-ink)); -webkit-mask: var(--brand-mask) center / contain no-repeat; mask: var(--brand-mask) center / contain no-repeat; }
+	.brand-cyan, .brand-magenta { display: none; }
+	[data-platform='xiaohongshu'] { --brand-color: #ff2442; }
+	[data-platform='bilibili'] { --brand-color: #00a1d6; }
+	[data-platform='instagram'] .brand-main { background: linear-gradient(35deg, #feda75 0%, #fa7e1e 24%, #d62976 48%, #962fbf 72%, #4f5bd5 100%); }
+	[data-platform='douyin'] .brand-cyan { display: block; background: #25f4ee; transform: translate(-1.2px, -1.2px); }
+	[data-platform='douyin'] .brand-magenta { display: block; background: #fe2c55; transform: translate(1.2px, 1.2px); }
+	@supports (mask-image: url('/assets/social/instagram.svg')) or (-webkit-mask-image: url('/assets/social/instagram.svg')) {
+		.brand-mark { display: block; }
+		a.social-icon:is(:hover, :focus-visible) .brand-mark { opacity: 1; }
+		a.social-icon:is(:hover, :focus-visible) img { opacity: 0; }
+	}
+	:global([data-ielts-theme='dark']) .social-icon img { filter: invert(1); }
+	@media (prefers-reduced-motion: reduce) { a.social-icon, .social-icon img, .brand-mark { transition: none; } a.social-icon:hover { transform: none; } }
+</style>

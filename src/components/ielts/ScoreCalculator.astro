@@ -1,0 +1,165 @@
+---
+import { skills, skillLabels } from '../../lib/ielts/score-calculator';
+import { postgraduateGroups } from '../../lib/ielts/score-requirements';
+const groups = ['香港', '新加坡', '澳大利亚', '英国'];
+const defaults = { listening: 7.5, speaking: 6.5, reading: 7.5, writing: 6.5 };
+const halfBands = Array.from({ length: 19 }, (_, i) => i / 2);
+const integers = Array.from({ length: 10 }, (_, i) => i);
+const rubricSets = [
+	{ id: 'task1', label: '小作文', criteria: ['任务完成', '连贯与衔接', '词汇', '语法'] },
+	{ id: 'task2', label: '大作文', criteria: ['任务回应', '连贯与衔接', '词汇', '语法'] },
+	{ id: 'speaking', label: '口语', criteria: ['流利与连贯', '词汇', '语法', '发音'] },
+];
+---
+<div class="score-calculator" data-score-calculator>
+	<div class="tabs" role="tablist" aria-label="计算项目">{[['overall', '总分'], ['writing', '写作'], ['speaking', '口语']].map(([id, label], index) => <button type="button" role="tab" id={`tab-${id}`} aria-controls={`panel-${id}`} aria-selected={index === 0 ? 'true' : 'false'} tabindex={index === 0 ? 0 : -1} data-score-tab={id}>{label}</button>)}</div>
+	<section id="panel-overall" role="tabpanel" aria-labelledby="tab-overall" data-score-panel="overall">
+		<div class="score-top">
+			<div class="sliders">{skills.map(key => <label class="band-slider" for={`score-${key}`}><span>{skillLabels[key]}<output for={`score-${key}`} data-band-output={key}>{defaults[key].toFixed(1)}</output></span><input id={`score-${key}`} data-band={key} type="range" min="0" max="9" step="0.5" value={defaults[key]} aria-valuetext={`${defaults[key].toFixed(1)}分`} /></label>)}</div>
+			<div class="overall"><span>总分</span><output data-overall role="status" aria-live="polite">7.0</output><p data-average>平均 7.000</p></div>
+		</div>
+		<div class="planning-controls">
+			<label>课程层次<select data-study-level aria-label="课程层次"><option value="postgraduate" selected>研究生</option><option value="undergraduate">本科</option></select></label>
+			<label>目标总分<select data-goal aria-label="目标总分">{[6, 6.5, 7, 7.5, 8, 8.5, 9].map(value => <option value={value} selected={value === 7.5}>{value.toFixed(1)}</option>)}</select></label>
+			<label>院校要求<select data-school aria-label="院校要求"><option value="">不选院校</option>{groups.map(group => <optgroup label={group}>{postgraduateGroups.filter(item => item.group === group).map(item => <option value={item.id}>{item.label}</option>)}</optgroup>)}</select></label>
+		</div>
+		<p class="caption" data-school-coverage>QS 2027前100 · 香港、新加坡、澳大利亚、英国 · 32所</p>
+		<div class="school-result" data-school-result hidden><p data-threshold></p><p data-school-status role="status" aria-live="polite"></p><p class="caption" data-school-note hidden></p><details><summary>适用院校与课程</summary><p data-school-members></p></details><p class="caption">按所列课程或英语等级匹配，非全校统一门槛。</p></div>
+		<section class="paths" aria-labelledby="score-path-title"><h2 id="score-path-title">目标分数组合</h2><p class="caption" data-path-status></p><div class="table-scroll"><table><caption class="sr-only">满足目标的听阅优先组合</caption><thead><tr>{skills.map(key => <th scope="col">{skillLabels[key]}</th>)}<th scope="col">总分</th></tr></thead><tbody data-paths></tbody></table></div></section>
+	</section>
+	<section id="panel-writing" role="tabpanel" aria-labelledby="tab-writing" data-score-panel="writing" hidden>
+		<p class="caption">小作文∶大作文＝1∶2，向上取至0.5分。</p>
+		<div class="task-bands">{['task1', 'task2'].map((key, index) => <label>{index === 0 ? '小作文分数' : '大作文分数'}<select data-task-band={key} aria-label={index === 0 ? '小作文分数' : '大作文分数'}>{halfBands.map(value => <option value={value} selected={value === 7}>{value.toFixed(1)}</option>)}</select></label>)}</div>
+		<div class="rubric-result writing-result"><span>写作总分 <output data-writing-total role="status" aria-live="polite">7.0</output></span><button type="button" data-use-writing>填入总分计算</button></div>
+		<details class="rubrics"><summary>按四项标准计算</summary><p class="caption">四项整数评分，平均后向下取至0.5分。</p>{rubricSets.filter(set => set.id !== 'speaking').map(set => <fieldset data-rubric={set.id}><legend>{set.label}</legend><div class="criteria-grid">{set.criteria.map((label, index) => <label>{label}<select data-criterion={index} aria-label={`${set.label} ${label}`}>{integers.map(value => <option value={value} selected={value === 7}>{value}</option>)}</select></label>)}</div><div class="rubric-result"><span>得分 <output data-rubric-output={set.id}>7.0</output></span><button type="button" data-use-rubric={set.id}>填入作文分数</button></div></fieldset>)}</details>
+	</section>
+	<section id="panel-speaking" role="tabpanel" aria-labelledby="tab-speaking" data-score-panel="speaking" hidden>
+		<p class="caption">四项整数评分，平均后向下取至0.5分。</p>{rubricSets.filter(set => set.id === 'speaking').map(set => <fieldset data-rubric={set.id}><legend class="sr-only">口语四项评分</legend><div class="criteria-grid">{set.criteria.map((label, index) => <label>{label}<select data-criterion={index} aria-label={`${set.label} ${label}`}>{integers.map(value => <option value={value} selected={value === 7}>{value}</option>)}</select></label>)}</div><div class="rubric-result writing-result"><span>口语分数 <output data-rubric-output={set.id} role="status" aria-live="polite">7.0</output></span><button type="button" data-use-rubric={set.id}>填入总分计算</button></div></fieldset>)}
+	</section>
+	<button type="button" class="reset" data-score-reset>重置</button><p class="calculator-error" data-score-error role="alert" hidden></p>
+</div>
+
+<script>
+	import { skills, skillLabels, overallBand, criteriaBand, writingBand, requirementGaps, scorePaths, type Scores } from '../../lib/ielts/score-calculator';
+	import { postgraduateGroups, undergraduateGroups } from '../../lib/ielts/score-requirements';
+	const root = document.querySelector<HTMLElement>('[data-score-calculator]');
+	if (root) {
+		const query = <T extends HTMLElement>(selector: string) => { const element = root.querySelector<T>(selector); if (!element) throw new Error('计算器控件缺失'); return element; };
+		const sliders = Object.fromEntries(skills.map(key => [key, query<HTMLInputElement>(`[data-band="${key}"]`)])) as Record<typeof skills[number], HTMLInputElement>;
+		const readScores = () => Object.fromEntries(skills.map(key => [key, Number(sliders[key].value)])) as Scores;
+		const task1 = query<HTMLSelectElement>('[data-task-band="task1"]');
+		const task2 = query<HTMLSelectElement>('[data-task-band="task2"]');
+		const error = query<HTMLElement>('[data-score-error]');
+		const studyLevel = query<HTMLSelectElement>('[data-study-level]');
+		const schoolSelect = query<HTMLSelectElement>('[data-school]');
+		const activeGroups = () => studyLevel.value === 'undergraduate' ? undergraduateGroups : postgraduateGroups;
+		const rebuildSchools = () => {
+			const none = document.createElement('option'); none.value = ''; none.textContent = '不选院校';
+			const groups = ['香港', '新加坡', '澳大利亚', '英国'].map(region => {
+				const group = document.createElement('optgroup'); group.label = region;
+				for (const item of activeGroups().filter(item => item.group === region)) { const option = document.createElement('option'); option.value = item.id; option.textContent = item.label; group.append(option); }
+				return group;
+			});
+			schoolSelect.replaceChildren(none, ...groups);
+			schoolSelect.value = '';
+			query<HTMLElement>('[data-school-coverage]').textContent = studyLevel.value === 'undergraduate' ? '本科 · 所列课程要求' : 'QS 2027前100 · 香港、新加坡、澳大利亚、英国 · 32所';
+			query<HTMLDetailsElement>('[data-school-result] details').open = false;
+		};
+		const tabs = [...root.querySelectorAll<HTMLButtonElement>('[data-score-tab]')];
+		const activateTab = (id: string, focus = false) => {
+			for (const tab of tabs) { const active = tab.dataset.scoreTab === id; tab.setAttribute('aria-selected', String(active)); tab.tabIndex = active ? 0 : -1; if (active && focus) tab.focus(); }
+			for (const panel of root.querySelectorAll<HTMLElement>('[data-score-panel]')) panel.hidden = panel.dataset.scorePanel !== id;
+		};
+		for (const [index, tab] of tabs.entries()) {
+			tab.addEventListener('click', () => activateTab(tab.dataset.scoreTab!));
+			tab.addEventListener('keydown', event => { const offset = event.key === 'ArrowRight' ? 1 : event.key === 'ArrowLeft' ? -1 : 0; const next = offset ? (index + offset + tabs.length) % tabs.length : event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : undefined; if (next === undefined) return; event.preventDefault(); activateTab(tabs[next].dataset.scoreTab!, true); });
+		}
+		const rubricValue = (id: string) => criteriaBand([...query<HTMLElement>(`[data-rubric="${id}"]`).querySelectorAll<HTMLSelectElement>('[data-criterion]')].map(input => Number(input.value)));
+		const update = () => {
+			try {
+				const scores = readScores();
+				query<HTMLOutputElement>('[data-overall]').textContent = overallBand(scores).toFixed(1);
+				for (const key of skills) { query<HTMLOutputElement>(`[data-band-output="${key}"]`).textContent = scores[key].toFixed(1); sliders[key].setAttribute('aria-valuetext', `${scores[key].toFixed(1)}分`); }
+				query<HTMLElement>('[data-average]').textContent = `平均 ${(skills.reduce((sum, key) => sum + scores[key], 0) / 4).toFixed(3)}`;
+				const school = activeGroups().find(item => item.id === schoolSelect.value);
+				const requirement = school ?? { overall: 0, minimums: {} };
+				query<HTMLElement>('[data-school-result]').hidden = !school;
+				if (school) {
+					const minimums = skills.filter(key => school.minimums[key] !== undefined).map(key => `${skillLabels[key]} ≥ ${school.minimums[key]?.toFixed(1)}`);
+					query<HTMLElement>('[data-threshold]').textContent = [`总分 ≥ ${school.overall.toFixed(1)}`, ...minimums].join(' · ');
+					const gaps = requirementGaps(scores, school);
+					query<HTMLElement>('[data-school-status]').textContent = gaps.length ? gaps.join('；') : '所列分数已达标';
+					query<HTMLElement>('[data-school-members]').textContent = school.members.map(item => item.label).join('；');
+					const notes = school.members.filter(item => item.note).map(item => `${item.label.split(' · ')[0]}：${item.note}`).join('；');
+					query<HTMLElement>('[data-school-note]').textContent = notes;
+					query<HTMLElement>('[data-school-note]').hidden = !notes;
+				}
+				const paths = scorePaths(scores, Number(query<HTMLSelectElement>('[data-goal]').value), requirement, { listening: 1, speaking: 2, reading: 1, writing: 3 });
+				query<HTMLElement>('[data-path-status]').textContent = paths[0]?.cost === 0 ? '当前分数已满足目标' : '听阅优先，同时满足单项门槛';
+				const rows = paths.map(path => { const row = document.createElement('tr'); for (const value of [...skills.map(key => path.scores[key]), path.overall]) { const cell = document.createElement('td'); cell.textContent = value.toFixed(1); row.append(cell); } return row; });
+				query<HTMLTableSectionElement>('[data-paths]').replaceChildren(...rows);
+				query<HTMLOutputElement>('[data-writing-total]').textContent = writingBand(Number(task1.value), Number(task2.value)).toFixed(1);
+				for (const id of ['task1', 'task2', 'speaking']) query<HTMLOutputElement>(`[data-rubric-output="${id}"]`).textContent = rubricValue(id).toFixed(1);
+				error.hidden = true;
+			} catch { error.textContent = '请检查输入分数。'; error.hidden = false; }
+		};
+		root.addEventListener('input', update);
+		studyLevel.addEventListener('change', () => { rebuildSchools(); update(); });
+		root.addEventListener('change', update);
+		query<HTMLButtonElement>('[data-use-writing]').addEventListener('click', () => { sliders.writing.value = String(writingBand(Number(task1.value), Number(task2.value))); update(); activateTab('overall', true); });
+		for (const id of ['task1', 'task2', 'speaking']) query<HTMLButtonElement>(`[data-use-rubric="${id}"]`).addEventListener('click', () => { const value = String(rubricValue(id)); if (id === 'speaking') sliders.speaking.value = value; else (id === 'task1' ? task1 : task2).value = value; update(); if (id === 'speaking') activateTab('overall', true); });
+		query<HTMLButtonElement>('[data-score-reset]').addEventListener('click', () => {
+			for (const input of root.querySelectorAll<HTMLInputElement>('input')) input.value = input.defaultValue;
+			for (const select of root.querySelectorAll<HTMLSelectElement>('select')) { const defaultOption = [...select.options].find(option => option.defaultSelected) ?? select.options[0]; select.value = defaultOption.value; }
+			rebuildSchools();
+			for (const details of root.querySelectorAll<HTMLDetailsElement>('details')) details.open = false;
+			update(); activateTab('overall', true);
+		});
+		update();
+	}
+</script>
+
+<style>
+	.score-calculator { color: var(--ielts-ink); font-size: 17px; line-height: 1.8; }
+	.tabs { display: flex; gap: 28px; border-bottom: 1px solid var(--ielts-line); margin-bottom: 32px; }
+	.tabs button { padding: 12px 0; border: 0; border-bottom: 2px solid transparent; border-radius: 0; color: var(--ielts-muted); background: transparent; }
+	.tabs button[aria-selected='true'] { color: var(--ielts-ink); border-bottom-color: var(--ielts-ink); }
+	[data-score-panel][hidden], [data-school-result][hidden] { display: none; }
+	.score-top { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 64px; align-items: center; }
+	.sliders { display: grid; gap: 16px; }
+	.band-slider { display: grid; gap: 8px; }
+	.band-slider > span { display: flex; justify-content: space-between; gap: 16px; }
+	input[type='range'] { width: 100%; min-width: 0; padding: 0; height: 22px; border: 0; border-radius: 0; accent-color: var(--ielts-ink); cursor: pointer; box-shadow: none; }
+	output { font-variant-numeric: tabular-nums; font-weight: 600; }
+	.overall { text-align: center; }
+	.overall > output { display: block; font-size: 72px; line-height: 1.2; letter-spacing: -3px; }
+	p { margin: 10px 0; font-size: 17px; line-height: 1.8; overflow-wrap: anywhere; }
+	.overall p { color: var(--ielts-muted); }
+	.caption { color: var(--ielts-muted); font-size: 15px; }
+	.planning-controls { display: grid; grid-template-columns: 110px 130px minmax(0, 1fr); gap: 16px; margin-top: 32px; }
+	label { display: grid; gap: 8px; font-size: 17px; min-width: 0; }
+	select { width: 100%; min-width: 0; max-width: 100%; padding: 10px 12px; font: inherit; border: 1px solid var(--ielts-line); border-radius: 4px; background: var(--ielts-card); color: var(--ielts-ink); }
+	.school-result { padding: 12px 0; }
+	summary { cursor: pointer; font-size: 17px; padding: 10px 0; }
+	.rubrics { margin-top: 28px; border-top: 1px solid var(--ielts-line); }
+	.criteria-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+	.paths { margin-top: 32px; }
+	h2 { font-size: 20px; margin: 0; font-weight: 600; }
+	table { width: 100%; border-collapse: collapse; font-size: 17px; font-variant-numeric: tabular-nums; }
+	th, .table-scroll :global(td) { padding: 12px 8px; text-align: center; border-bottom: 1px solid var(--ielts-line); }
+	th { color: var(--ielts-muted); font-weight: 400; }
+	.table-scroll { max-width: 100%; overflow-x: auto; }
+	fieldset { margin: 24px 0 0; padding: 0; min-width: 0; border: 0; }
+	legend { padding: 0; margin-bottom: 12px; font-size: 17px; font-weight: 500; }
+	.task-bands { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+	.rubric-result { margin-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 17px; }
+	.writing-result { padding: 20px 0; border-bottom: 1px solid var(--ielts-line); }
+	.writing-result output { font-size: 32px; margin-left: 12px; }
+	button { padding: 9px 14px; border: 1px solid var(--ielts-line); border-radius: 4px; background: var(--ielts-card); color: var(--ielts-ink); font: inherit; cursor: pointer; }
+	button:hover { background: var(--ielts-hover); }
+	.reset { margin-top: 28px; font-size: 15px; color: var(--ielts-muted); border: 0; padding: 8px 0; background: transparent; }
+	:is(button, select, input, summary):focus-visible { outline: 2px solid var(--ielts-ink); outline-offset: 4px; }
+	.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+	.calculator-error { color: #9c2525; }
+	@media (max-width: 600px) { .score-top { grid-template-columns: minmax(0, 1fr) 96px; gap: 20px; } .overall > output { font-size: 48px; } .overall p { font-size: 13px; } .planning-controls { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .planning-controls label:last-child { grid-column: 1 / -1; } .criteria-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
