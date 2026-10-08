@@ -88,7 +88,8 @@ const canonical = canonicalUrl(Astro.url.pathname);
 	* { box-sizing: border-box; }
 	[hidden] { display: none !important; }
 	html { scroll-behavior: smooth; }
-	body.ielts-site { margin: 0; min-width: 320px; background: var(--ielts-bg); color: var(--ielts-text); text-rendering: optimizeLegibility; animation: page-in .24s cubic-bezier(.2,.75,.25,1); }
+	body.ielts-site { margin: 0; min-width: 320px; min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; background: var(--ielts-bg); color: var(--ielts-text); text-rendering: optimizeLegibility; animation: page-in .24s cubic-bezier(.2,.75,.25,1); }
+	.ielts-site > main { flex: 1; }
 	.ielts-site a { color: inherit; text-decoration: none; }
 	.ielts-site button, .ielts-site input, .ielts-site textarea { font: inherit; }
 	.ielts-site button, .ielts-site a { -webkit-tap-highlight-color: transparent; }

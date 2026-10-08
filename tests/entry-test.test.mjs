@@ -93,3 +93,18 @@ test('answers are rendered as form values and exported locally, never HTML or ne
   const home = readFileSync(new URL('../src/pages/ielts/index.astro', import.meta.url), 'utf8');
   assert.match(home, /href="\/ielts\/entry-test"/);
 });
+test('formal entry workspace highlights stems and passages in every subject without touching controls', () => {
+  assert.match(source, /data-highlight-region=\{subject\}/);
+  assert.match(source, /data-highlight-region=\{`\$\{subject\}-questions`\}/);
+  assert.match(source, /setupTextHighlights\(root/);
+  assert.match(source, /highlight: false/);
+  assert.match(source, /'listening-questions', 'reading-questions', 'writing-questions'/);
+  assert.match(source, /textTools\.render\(\)/);
+  const questions = readFileSync(new URL('../src/components/ielts/EntryQuestions.astro', import.meta.url), 'utf8');
+  assert.match(questions, /<strong data-no-highlight>/);
+  const highlights = readFileSync(new URL('../src/lib/ielts/mock/text-highlights.ts', import.meta.url), 'utf8');
+  assert.match(highlights, /input,select,textarea,button,a,audio/);
+  assert.match(highlights, /range\.intersectsNode\(el\)/);
+  assert.match(highlights, /mark\.textContent=/);
+  assert.doesNotMatch(highlights, /innerHTML|insertAdjacentHTML/);
+});

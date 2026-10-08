@@ -10,7 +10,7 @@ const definition = (text: string) => /^(TRUE|FALSE|NOT GIVEN)\s+(.+)$/.exec(text
   {group.instructions.map(text => <p class="instruction">{text}</p>)}
   {group.bank.length > 0 && (group.bank.every(text => definition(text)) ? <dl class="option-bank entry-definitions">{group.bank.map(text => <div><dt>{definition(text)![1]}</dt><dd>{definition(text)![2]}</dd></div>)}</dl> : <div class="option-bank">{group.bank.map(text => <p>{text}</p>)}</div>)}
   {group.questions.map(question => <section class="entry-question" role={question.choices.length > 0 ? 'group' : undefined} aria-label={`Question ${question.number}`}>
-    <p class="question-prompt"><strong>{question.number}</strong><span>{controls && inlineAnswerParts(question) ? <>{inlineAnswerParts(question)!.before}<EntryAnswer question={question} prefix={prefix} inline />{inlineAnswerParts(question)!.after}</> : question.prompt}</span></p>
+    <p class="question-prompt"><strong data-no-highlight>{question.number}</strong><span>{controls && inlineAnswerParts(question) ? <>{inlineAnswerParts(question)!.before}<EntryAnswer question={question} prefix={prefix} inline />{inlineAnswerParts(question)!.after}</> : question.prompt}</span></p>
     {!controls && question.choices.length > 0 && <div class="question-options">{question.choices.map(choice => <p>{choice}</p>)}</div>}
     {controls && !inlineAnswerParts(question) && <EntryAnswer question={question} prefix={prefix} />}
   </section>)}
