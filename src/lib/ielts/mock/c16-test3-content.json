@@ -1,0 +1,5561 @@
+{
+  "source": {
+    "book": 16,
+    "test": 3,
+    "questionPages": {
+      "l": [
+        [
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          62
+        ]
+      ],
+      "r": [
+        [
+          63,
+          64
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          71,
+          72
+        ]
+      ],
+      "q": [
+        [
+          65,
+          66
+        ],
+        [
+          69,
+          70
+        ],
+        [
+          73,
+          74
+        ]
+      ],
+      "w": [
+        75,
+        76
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "11675fa3dcb124e93afbf44371c174f676a78a260b01ebc190aae5f5fed3912e"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-3/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-3/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-3/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-3/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-3/page-63.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.418176,
+                "y": 0.017954,
+                "w": 0.146271,
+                "h": 0.022843
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.043099,
+                "y": 0.090575,
+                "w": 0.328984,
+                "h": 0.018761
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.043099,
+                "y": 0.134573,
+                "w": 0.874346,
+                "h": 0.020602
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.043099,
+                "y": 0.155023,
+                "w": 0.181051,
+                "h": 0.018852
+              },
+              {
+                "text": "Roman shipbuilding and navigation",
+                "x": 0.250646,
+                "y": 0.199374,
+                "w": 0.481332,
+                "h": 0.025702
+              },
+              {
+                "text": "Shipbuilding today is based on science and ships are built using computers and sophisticated",
+                "x": 0.040891,
+                "y": 0.245092,
+                "w": 0.852266,
+                "h": 0.020582
+              },
+              {
+                "text": "tools. Shipbuilding in ancient Rome, however, was more of an art relying on estimation, inheritec",
+                "x": 0.040891,
+                "y": 0.269023,
+                "w": 0.892009,
+                "h": 0.01535
+              },
+              {
+                "text": "techniques and personal experience. The Romans were not traditionally sailors but mostly land-",
+                "x": 0.040891,
+                "y": 0.284252,
+                "w": 0.876554,
+                "h": 0.020521
+              },
+              {
+                "text": "based people, who learned to build ships from the people that they conquered, namely the Greeks",
+                "x": 0.040891,
+                "y": 0.306443,
+                "w": 0.894217,
+                "h": 0.02045
+              },
+              {
+                "text": "and the Egyptians.",
+                "x": 0.038683,
+                "y": 0.330273,
+                "w": 0.176636,
+                "h": 0.018811
+              },
+              {
+                "text": "There are a few surviving written documents that give descriptions and representations of ancient",
+                "x": 0.040891,
+                "y": 0.371073,
+                "w": 0.894217,
+                "h": 0.018912
+              },
+              {
+                "text": "Roman ships, including the sails and rigging. Excavated vessels also provide some clues about",
+                "x": 0.040891,
+                "y": 0.391291,
+                "w": 0.86993,
+                "h": 0.020582
+              },
+              {
+                "text": "ancient shipbuilding techniques. Studies of these have taught us that ancient Roman shipbuilders",
+                "x": 0.038683,
+                "y": 0.413482,
+                "w": 0.892009,
+                "h": 0.018791
+              },
+              {
+                "text": "built the outer hull first, then proceeded with the frame and the rest of the ship. Planks used to",
+                "x": 0.040891,
+                "y": 0.433932,
+                "w": 0.863306,
+                "h": 0.01874
+              },
+              {
+                "text": "build the outer hull were initially sewn together. Starting from the 6th century BCE, they were",
+                "x": 0.040891,
+                "y": 0.454372,
+                "w": 0.863306,
+                "h": 0.020461
+              },
+              {
+                "text": "fixed using a method called mortise and tenon, whereby one plank locked into another without",
+                "x": 0.040891,
+                "y": 0.474772,
+                "w": 0.867722,
+                "h": 0.020511
+              },
+              {
+                "text": "the need for stitching. Then in the first centuries of the current era, Mediterranean shipbuilders",
+                "x": 0.038683,
+                "y": 0.495172,
+                "w": 0.86993,
+                "h": 0.020562
+              },
+              {
+                "text": "shifted to another shipbuilding method, still in use today, which consisted of building the frame",
+                "x": 0.038683,
+                "y": 0.517272,
+                "w": 0.876554,
+                "h": 0.0204
+              },
+              {
+                "text": "first and then proceeding with the hull and the other components of the ship. This method was",
+                "x": 0.040891,
+                "y": 0.53749,
+                "w": 0.863306,
+                "h": 0.018882
+              },
+              {
+                "text": "more systematic and dramatically shortened ship construction times. The ancient Romans built",
+                "x": 0.038683,
+                "y": 0.55794,
+                "w": 0.874346,
+                "h": 0.018831
+              },
+              {
+                "text": "large merchant ships and warships whose size and technology were unequalled until the 16th",
+                "x": 0.038683,
+                "y": 0.57839,
+                "w": 0.854474,
+                "h": 0.020481
+              },
+              {
+                "text": "century CE.",
+                "x": 0.038619,
+                "y": 0.600305,
+                "w": 0.11715,
+                "h": 0.017532
+              },
+              {
+                "text": "Warships were built to be lightweight and very speedy. They had to be able to sail near the coast,",
+                "x": 0.040891,
+                "y": 0.639671,
+                "w": 0.887594,
+                "h": 0.020521
+              },
+              {
+                "text": "which is why they had no ballast or excess load and were built with a long, narrow hull. They did",
+                "x": 0.040891,
+                "y": 0.661771,
+                "w": 0.889802,
+                "h": 0.018872
+              },
+              {
+                "text": "not sink when damaged and often would lie crippled on the sea's surface following naval battles.",
+                "x": 0.038683,
+                "y": 0.682171,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "They had a bronze battering ram, which was used to pierce the timber hulls or break the oars of",
+                "x": 0.038683,
+                "y": 0.702398,
+                "w": 0.878762,
+                "h": 0.020572
+              },
+              {
+                "text": "enemy vessels. Warships used both wind (sails) and human power (oarsmen) and were therefore",
+                "x": 0.038683,
+                "y": 0.724589,
+                "w": 0.88097,
+                "h": 0.018781
+              },
+              {
+                "text": "very fast. Eventually, Rome's navy became the largest and most powerful in the Mediterranean,",
+                "x": 0.038683,
+                "y": 0.74504,
+                "w": 0.876554,
+                "h": 0.02045
+              },
+              {
+                "text": "and the Romans had control over what they therefore called Mare Nostrum meaning 'our sea'.",
+                "x": 0.040891,
+                "y": 0.76547,
+                "w": 0.865514,
+                "h": 0.01873
+              },
+              {
+                "text": "There were many kinds of warship. The 'trireme' was the dominant warship from the 7th to 4th",
+                "x": 0.038683,
+                "y": 0.80627,
+                "w": 0.874346,
+                "h": 0.020572
+              },
+              {
+                "text": "century BCE. It had rowers in the top, middle and lower levels, and approximately 50 rowers in",
+                "x": 0.038683,
+                "y": 0.828369,
+                "w": 0.874346,
+                "h": 0.0204
+              },
+              {
+                "text": "each bank. The rowers at the bottom had the most uncomfortable position as they were under the",
+                "x": 0.043099,
+                "y": 0.848597,
+                "w": 0.883178,
+                "h": 0.017172
+              },
+              {
+                "text": "other rowers and were exposed to the water entering through the oar-holes. It is worth noting that",
+                "x": 0.040891,
+                "y": 0.869048,
+                "w": 0.889801,
+                "h": 0.017121
+              },
+              {
+                "text": "contrary to popular perception, rowers were not slaves but mostly Roman citizens enrolled in the",
+                "x": 0.043099,
+                "y": 0.891239,
+                "w": 0.883178,
+                "h": 0.01703
+              },
+              {
+                "text": "military. The trireme was superseded by larger ships with even more rowers.",
+                "x": 0.040891,
+                "y": 0.911669,
+                "w": 0.699918,
+                "h": 0.01873
+              },
+              {
+                "text": "61",
+                "x": 0.910821,
+                "y": 0.986468,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-3/page-64.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Merchant ships were built to transport lots of cargo over long distances and at a reasonable cost.",
+                "x": 0.049723,
+                "y": 0.019176,
+                "w": 0.878762,
+                "h": 0.018801
+              },
+              {
+                "text": "They had a wider hull, double planking and a solid interior for added stability. Unlike warships,",
+                "x": 0.047515,
+                "y": 0.039576,
+                "w": 0.878762,
+                "h": 0.020592
+              },
+              {
+                "text": "their V-shaped hull was deep underwater, meaning that they could not sail too close to the coast.",
+                "x": 0.047515,
+                "y": 0.061473,
+                "w": 0.88097,
+                "h": 0.018902
+              },
+              {
+                "text": "They usually had two huge side rudders located off the stern and controlled by a small tiller bar",
+                "x": 0.047515,
+                "y": 0.081924,
+                "w": 0.874346,
+                "h": 0.018852
+              },
+              {
+                "text": "connected to a system of cables. They had from one to three masts with large square sails and a",
+                "x": 0.049723,
+                "y": 0.102374,
+                "w": 0.872138,
+                "h": 0.017101
+              },
+              {
+                "text": "small triangular sail at the bow. Just like warships, merchant ships used oarsmen, but coordinating",
+                "x": 0.047515,
+                "y": 0.124565,
+                "w": 0.898633,
+                "h": 0.01871
+              },
+              {
+                "text": "the hundreds of rowers in both types of ship was not an easy task. In order to assist them, music",
+                "x": 0.045307,
+                "y": 0.144975,
+                "w": 0.88097,
+                "h": 0.01875
+              },
+              {
+                "text": "would be played on an instrument, and oars would then keep time with this.",
+                "x": 0.047515,
+                "y": 0.165375,
+                "w": 0.695502,
+                "h": 0.018801
+              },
+              {
+                "text": "The cargo on merchant ships included raw materials (e.g. iron bars, copper, marble and granite),",
+                "x": 0.047515,
+                "y": 0.206174,
+                "w": 0.885386,
+                "h": 0.0204
+              },
+              {
+                "text": "and agricultural products (e.g. grain from Egypt's Nile valley). During the Empire, Rome was a",
+                "x": 0.047515,
+                "y": 0.226382,
+                "w": 0.874346,
+                "h": 0.020592
+              },
+              {
+                "text": "huge city by ancient standards of about one million inhabitants. Goods from all over the world",
+                "x": 0.047515,
+                "y": 0.248573,
+                "w": 0.865514,
+                "h": 0.018801
+              },
+              {
+                "text": "would come to the city through the port of Pozzuoli situated west of the bay of Naples in Italy and",
+                "x": 0.047515,
+                "y": 0.269023,
+                "w": 0.898633,
+                "h": 0.01875
+              },
+              {
+                "text": "through the gigantic port of Ostia situated at the mouth of the Tiber River. Large merchant ships",
+                "x": 0.047515,
+                "y": 0.289474,
+                "w": 0.88097,
+                "h": 0.02045
+              },
+              {
+                "text": "would approach the destination port and, just like today, be intercepted by a number of towboats",
+                "x": 0.047515,
+                "y": 0.304703,
+                "w": 0.88097,
+                "h": 0.025672
+              },
+              {
+                "text": "that would drag them to the quay.",
+                "x": 0.047515,
+                "y": 0.331973,
+                "w": 0.309112,
+                "h": 0.018852
+              },
+              {
+                "text": "The time of travel along the many sailing routes could vary widely. Navigation in ancient",
+                "x": 0.047515,
+                "y": 0.372581,
+                "w": 0.819147,
+                "h": 0.018892
+              },
+              {
+                "text": "Rome did not rely on sophisticated instruments such as compasses but on experience, local",
+                "x": 0.049723,
+                "y": 0.393031,
+                "w": 0.834603,
+                "h": 0.020542
+              },
+              {
+                "text": "knowledge and observation of natural phenomena. In conditions of good visibility, seamen in the",
+                "x": 0.047515,
+                "y": 0.413482,
+                "w": 0.892009,
+                "h": 0.020491
+              },
+              {
+                "text": "Mediterranean often had the mainland or islands in sight, which greatly facilitated navigation. They",
+                "x": 0.047515,
+                "y": 0.433932,
+                "w": 0.892009,
+                "h": 0.02045
+              },
+              {
+                "text": "sailed by noting their position relative to a succession of recognisable landmarks. When weather",
+                "x": 0.047515,
+                "y": 0.456072,
+                "w": 0.883178,
+                "h": 0.018761
+              },
+              {
+                "text": "conditions were not good or where land was no longer visible, Roman mariners estimated directions",
+                "x": 0.047515,
+                "y": 0.476472,
+                "w": 0.896425,
+                "h": 0.018811
+              },
+              {
+                "text": "from the pole star or, with less accuracy, from the Sun at noon. They also estimated directions",
+                "x": 0.047515,
+                "y": 0.496872,
+                "w": 0.861098,
+                "h": 0.020602
+              },
+              {
+                "text": "relative to the wind and swell. Overall, shipping in ancient Roman times resembled shipping",
+                "x": 0.047515,
+                "y": 0.515572,
+                "w": 0.850058,
+                "h": 0.020612
+              },
+              {
+                "text": "today with large vessels regularly crossing the seas and bringing supplies from their Empire.",
+                "x": 0.047515,
+                "y": 0.53749,
+                "w": 0.850058,
+                "h": 0.020582
+              },
+              {
+                "text": "62",
+                "x": 0.049723,
+                "y": 0.983068,
+                "w": 0.030911,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-3/page-67.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.040891,
+                "y": 0.017476,
+                "w": 0.331192,
+                "h": 0.018761
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.040789,
+                "y": 0.059932,
+                "w": 0.887793,
+                "h": 0.023156
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.040891,
+                "y": 0.081924,
+                "w": 0.181051,
+                "h": 0.018852
+              },
+              {
+                "text": "Climate change reveals ancient artefacts in Norway's glaciers",
+                "x": 0.082842,
+                "y": 0.127975,
+                "w": 0.810316,
+                "h": 0.0255
+              },
+              {
+                "text": "A",
+                "x": 0.038683,
+                "y": 0.172175,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "Well above the treeline in Norway's highest mountains, ancient fields of ice are shrinking",
+                "x": 0.089466,
+                "y": 0.173733,
+                "w": 0.814731,
+                "h": 0.020542
+              },
+              {
+                "text": "as Earth's climate warms. As the ice has vanished, it has been giving up the treasures it has",
+                "x": 0.087077,
+                "y": 0.190421,
+                "w": 0.832779,
+                "h": 0.026605
+              },
+              {
+                "text": "preserved in cold storage for the last 6,000 years - items such as ancient arrows and skis",
+                "x": 0.089466,
+                "y": 0.214634,
+                "w": 0.810316,
+                "h": 0.01874
+              },
+              {
+                "text": "from Viking Age* traders. And those artefacts have provided archaeologists with some",
+                "x": 0.087258,
+                "y": 0.235074,
+                "w": 0.797068,
+                "h": 0.020461
+              },
+              {
+                "text": "surprising insights into how ancient Norwegians made their livings.",
+                "x": 0.087258,
+                "y": 0.257174,
+                "w": 0.624848,
+                "h": 0.020552
+              },
+              {
+                "text": "B",
+                "x": 0.038683,
+                "y": 0.287774,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "Urganic materlals lıke textiles and hides are relatıvely rare finds at archaeological sites.",
+                "x": 0.089466,
+                "y": 0.291174,
+                "w": 0.797068,
+                "h": 0.0153
+              },
+              {
+                "text": "This 1s because unless they're protected from the microorganisms that cause decay, they",
+                "x": 0.091674,
+                "y": 0.311574,
+                "w": 0.799276,
+                "h": 0.01532
+              },
+              {
+                "text": "tend not to last long. Extreme cold is one reliable way to keep artefacts relatively fresh",
+                "x": 0.084969,
+                "y": 0.329806,
+                "w": 0.797218,
+                "h": 0.021829
+              },
+              {
+                "text": "for a few thousand years, but once thawed out, these materials experience degradation",
+                "x": 0.084967,
+                "y": 0.35049,
+                "w": 0.790602,
+                "h": 0.022538
+              },
+              {
+                "text": "relatively swiftly.",
+                "x": 0.08505,
+                "y": 0.372581,
+                "w": 0.16118,
+                "h": 0.017405
+              },
+              {
+                "text": "With climate change shrinking ice cover around the world, glacial archaeologists need to",
+                "x": 0.087258,
+                "y": 0.405073,
+                "w": 0.812523,
+                "h": 0.020592
+              },
+              {
+                "text": "race the clock to find newly revealed artefacts, preserve them, and study them. If something",
+                "x": 0.08505,
+                "y": 0.425473,
+                "w": 0.843435,
+                "h": 0.0204
+              },
+              {
+                "text": "fragile dries and is windblown it might very soon be lost to science, or an arrow might",
+                "x": 0.089466,
+                "y": 0.44568,
+                "w": 0.792652,
+                "h": 0.018892
+              },
+              {
+                "text": "be exposed and then covered again by the next snow and remain well-preserved. The",
+                "x": 0.087128,
+                "y": 0.46572,
+                "w": 0.777422,
+                "h": 0.023196
+              },
+              {
+                "text": "unpredictability means that glacial archaeologists have to be systematic in their approach",
+                "x": 0.08505,
+                "y": 0.488321,
+                "w": 0.819147,
+                "h": 0.02045
+              },
+              {
+                "text": "to fieldwork.",
+                "x": 0.08505,
+                "y": 0.508772,
+                "w": 0.119229,
+                "h": 0.0153
+              },
+              {
+                "text": "C Over a nine-year period, a team of archaeologists, which included Lars Pilø of Oppland",
+                "x": 0.03636,
+                "y": 0.539315,
+                "w": 0.852469,
+                "h": 0.023458
+              },
+              {
+                "text": "County Council, Norway, and James Barrett of the McDonald Institute for Archaeological",
+                "x": 0.087258,
+                "y": 0.561421,
+                "w": 0.825771,
+                "h": 0.02045
+              },
+              {
+                "text": "Research, surveyed patches of ice in Oppland, an area of south-central Norway that is home",
+                "x": 0.087258,
+                "y": 0.581871,
+                "w": 0.841227,
+                "h": 0.02045
+              },
+              {
+                "text": "to some of the country's highest mountains. Reindeer once congregated on these icy patches",
+                "x": 0.082776,
+                "y": 0.602,
+                "w": 0.850199,
+                "h": 0.022601
+              },
+              {
+                "text": "in the later summer months to escape biting insects, and from the late Stone Age**, hunters",
+                "x": 0.082724,
+                "y": 0.622616,
+                "w": 0.845857,
+                "h": 0.023726
+              },
+              {
+                "text": "followed. In addition, trade routes threaded through the mountain passes of Oppland, linking",
+                "x": 0.084919,
+                "y": 0.643025,
+                "w": 0.850321,
+                "h": 0.023892
+              },
+              {
+                "text": "settlements in Norway to the rest of Europe.",
+                "x": 0.084738,
+                "y": 0.661741,
+                "w": 0.409185,
+                "h": 0.025333
+              },
+              {
+                "text": "The slow but steady movement of glaciers tends to destroy anything at their bases, so the",
+                "x": 0.084904,
+                "y": 0.696042,
+                "w": 0.815004,
+                "h": 0.024091
+              },
+              {
+                "text": "team focused on stationary patches of ice, mostly above 1,400 metres. That ice is found",
+                "x": 0.082842,
+                "y": 0.719368,
+                "w": 0.8059,
+                "h": 0.018902
+              },
+              {
+                "text": "amid fields of frost-weathered boulders, fallen rocks, and exposed bedrock that for nine",
+                "x": 0.084922,
+                "y": 0.737593,
+                "w": 0.803954,
+                "h": 0.024477
+              },
+              {
+                "text": "months of the year is buried beneath snow.",
+                "x": 0.087258,
+                "y": 0.760269,
+                "w": 0.393014,
+                "h": 0.017101
+              },
+              {
+                "text": "'Fieldwork is hard work - hiking with all our equipment, often camping on permafrost-",
+                "x": 0.082726,
+                "y": 0.790919,
+                "w": 0.817145,
+                "h": 0.022895
+              },
+              {
+                "text": "but very rewarding. You're rescuing the archaeology, bringing the melting ice to wider",
+                "x": 0.08505,
+                "y": 0.812918,
+                "w": 0.790444,
+                "h": 0.020552
+              },
+              {
+                "text": "attention, discovering a unique environmental history and really connecting with the natural",
+                "x": 0.082842,
+                "y": 0.833368,
+                "w": 0.845643,
+                "h": 0.020501
+              },
+              {
+                "text": "environment,' says Barrett.",
+                "x": 0.087258,
+                "y": 0.853819,
+                "w": 0.245082,
+                "h": 0.01705
+              },
+              {
+                "text": "*Viking Age: a period of European history from around 700 CE to around 1050 CE when Scandinavian Vikings migrated throughout",
+                "x": 0.043099,
+                "y": 0.926918,
+                "w": 0.845643,
+                "h": 0.01365
+              },
+              {
+                "text": "Europe by means of trade and warfare",
+                "x": 0.051931,
+                "y": 0.943887,
+                "w": 0.251706,
+                "h": 0.012183
+              },
+              {
+                "text": "** The Stone Age: a period in early history that began about 3.4 million years ago",
+                "x": 0.034117,
+                "y": 0.957467,
+                "w": 0.525745,
+                "h": 0.017407
+              },
+              {
+                "text": "65",
+                "x": 0.904197,
+                "y": 0.986468,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-3/page-68.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "D At the edges of the contracting ice patches, archaeologists found more than 2,000",
+                "x": 0.060763,
+                "y": 0.019176,
+                "w": 0.797068,
+                "h": 0.020542
+              },
+              {
+                "text": "artefacts, which formed a material record that ran from 4,000 BCE to the beginnings of the",
+                "x": 0.111472,
+                "y": 0.0392,
+                "w": 0.836956,
+                "h": 0.02273
+              },
+              {
+                "text": "Renaissance in the 14th century. Many of the artefacts are associated with hunting. Hunters",
+                "x": 0.113753,
+                "y": 0.059976,
+                "w": 0.836811,
+                "h": 0.018902
+              },
+              {
+                "text": "would have easily misplaced arrows and they often discarded broken bows rather than take",
+                "x": 0.111545,
+                "y": 0.081924,
+                "w": 0.832395,
+                "h": 0.020552
+              },
+              {
+                "text": "them all the way home. Other items could have been used by hunters traversing the high",
+                "x": 0.111545,
+                "y": 0.102374,
+                "w": 0.808108,
+                "h": 0.020501
+              },
+              {
+                "text": "mountain passes of Oppland: all-purpose items like tools, skis, and horse tack.",
+                "x": 0.111545,
+                "y": 0.122824,
+                "w": 0.724206,
+                "h": 0.02045
+              },
+              {
+                "text": "E Barrett's team radiocarbon-dated 153 of the artefacts and compared those dates to the timing",
+                "x": 0.062971,
+                "y": 0.155023,
+                "w": 0.898633,
+                "h": 0.018852
+              },
+              {
+                "text": "of major environmental changes in the region - such as periods of cooling or warming - and",
+                "x": 0.113753,
+                "y": 0.175473,
+                "w": 0.836811,
+                "h": 0.018801
+              },
+              {
+                "text": "major social and economic shifts - such as the growth of farming settlements and the spread",
+                "x": 0.111545,
+                "y": 0.195924,
+                "w": 0.839019,
+                "h": 0.02045
+              },
+              {
+                "text": "of international trade networks leading up to the Viking Age. They found that some periods",
+                "x": 0.111545,
+                "y": 0.218074,
+                "w": 0.827979,
+                "h": 0.020491
+              },
+              {
+                "text": "had produced lots of artefacts, which indicates that people had been pretty active in the",
+                "x": 0.111545,
+                "y": 0.238474,
+                "w": 0.790444,
+                "h": 0.020542
+              },
+              {
+                "text": "mountains during those times. But there were few or no signs of activity during other periods.",
+                "x": 0.111545,
+                "y": 0.258874,
+                "w": 0.852266,
+                "h": 0.020592
+              },
+              {
+                "text": "F",
+                "x": 0.062971,
+                "y": 0.294574,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "What was surprising, according to Barrett, was the timing of these periods. Oppland's",
+                "x": 0.113678,
+                "y": 0.290747,
+                "w": 0.786186,
+                "h": 0.022921
+              },
+              {
+                "text": "mountains present daunting terrain and in periods of extreme cold, glaciers could block the",
+                "x": 0.111545,
+                "y": 0.313273,
+                "w": 0.836811,
+                "h": 0.020582
+              },
+              {
+                "text": "higher mountain passes and make travel in the upper reaches of the mountains extremely",
+                "x": 0.111477,
+                "y": 0.331587,
+                "w": 0.814878,
+                "h": 0.023007
+              },
+              {
+                "text": "difficult. Archaeologists assumed people would stick to lower elevations during a time",
+                "x": 0.113753,
+                "y": 0.353871,
+                "w": 0.788236,
+                "h": 0.020602
+              },
+              {
+                "text": "like the Late Antique Little Ice Age, a short period of deeper-than-usual cold from about",
+                "x": 0.111545,
+                "y": 0.374321,
+                "w": 0.814731,
+                "h": 0.020552
+              },
+              {
+                "text": "536-600 CE. But it turned out that hunters kept regularly venturing into the mountains",
+                "x": 0.113753,
+                "y": 0.394772,
+                "w": 0.79486,
+                "h": 0.020501
+              },
+              {
+                "text": "even when the climate turned cold, based on the amount of stuff they had apparently",
+                "x": 0.113753,
+                "y": 0.415222,
+                "w": 0.770572,
+                "h": 0.02045
+              },
+              {
+                "text": "dropped there.",
+                "x": 0.11373,
+                "y": 0.438972,
+                "w": 0.136939,
+                "h": 0.018901
+              },
+              {
+                "text": "'Remarkably, though, the finds from the ice may have continued through this period,",
+                "x": 0.113753,
+                "y": 0.478172,
+                "w": 0.77278,
+                "h": 0.020592
+              },
+              {
+                "text": "perhaps suggesting that the importance of mountain hunting increased to supplement",
+                "x": 0.11367,
+                "y": 0.497986,
+                "w": 0.78177,
+                "h": 0.022846
+              },
+              {
+                "text": "failing agricultural harvests in times of low temperatures,' says Barrett. A colder turn in the",
+                "x": 0.113606,
+                "y": 0.516977,
+                "w": 0.839312,
+                "h": 0.025991
+              },
+              {
+                "text": "Scandinavian climate would likely have meant widespread crop failures, so more people",
+                "x": 0.113753,
+                "y": 0.54097,
+                "w": 0.810316,
+                "h": 0.018801
+              },
+              {
+                "text": "would have depended on hunting to make up for those losses.",
+                "x": 0.113753,
+                "y": 0.563161,
+                "w": 0.567442,
+                "h": 0.01871
+              },
+              {
+                "text": "Many of the artefacts Barrett's team recovered date from the beginning of the Viking Age,",
+                "x": 0.113753,
+                "y": 0.593619,
+                "w": 0.827979,
+                "h": 0.020552
+              },
+              {
+                "text": "the 700s through to the 900s CE. Trade networks connecting Scandinavia with Europe and",
+                "x": 0.113753,
+                "y": 0.61407,
+                "w": 0.830187,
+                "h": 0.020501
+              },
+              {
+                "text": "the Middle East were expanding around this time. Although we usually think of ships when",
+                "x": 0.113753,
+                "y": 0.63452,
+                "w": 0.839019,
+                "h": 0.02045
+              },
+              {
+                "text": "we think of Scandinavian expansion, these recent discoveries show that plenty of goods",
+                "x": 0.115961,
+                "y": 0.656671,
+                "w": 0.801484,
+                "h": 0.01875
+              },
+              {
+                "text": "travelled on overland routes, like the mountain passes of Oppland. And growing Norwegian",
+                "x": 0.113665,
+                "y": 0.675213,
+                "w": 0.843612,
+                "h": 0.024185
+              },
+              {
+                "text": "towns, along with export markets, would have created a booming demand for hides to fight",
+                "x": 0.113753,
+                "y": 0.69747,
+                "w": 0.839019,
+                "h": 0.020592
+              },
+              {
+                "text": "off the cold, as well as antlers to make useful things like combs. Business must have been",
+                "x": 0.115961,
+                "y": 0.719368,
+                "w": 0.816939,
+                "h": 0.020602
+              },
+              {
+                "text": "good for hunters.",
+                "x": 0.118169,
+                "y": 0.741559,
+                "w": 0.158972,
+                "h": 0.017111
+              },
+              {
+                "text": "Norway's mountains are probably still hiding a lot of history - and prehistory - in remote",
+                "x": 0.115856,
+                "y": 0.769706,
+                "w": 0.819399,
+                "h": 0.025107
+              },
+              {
+                "text": "ice patches. When Barrett's team looked at the dates for their sample of 153 artefacts,",
+                "x": 0.113753,
+                "y": 0.792467,
+                "w": 0.790444,
+                "h": 0.020602
+              },
+              {
+                "text": "they noticed a gap with almost no artefacts from about 3,800 to 2,200 BCE. In fact,",
+                "x": 0.115961,
+                "y": 0.812918,
+                "w": 0.768365,
+                "h": 0.020552
+              },
+              {
+                "text": "archaeological finds from that period are rare all over Norway. The researchers say that",
+                "x": 0.115961,
+                "y": 0.835109,
+                "w": 0.797068,
+                "h": 0.018761
+              },
+              {
+                "text": "could be because many of those artefacts have already disintegrated or are still frozen in the",
+                "x": 0.115961,
+                "y": 0.855559,
+                "w": 0.843435,
+                "h": 0.01871
+              },
+              {
+                "text": "ice. That means archaeologists could be extracting some of those artefacts from retreating",
+                "x": 0.113753,
+                "y": 0.875969,
+                "w": 0.827979,
+                "h": 0.020491
+              },
+              {
+                "text": "ice in years to come.",
+                "x": 0.115284,
+                "y": 0.896614,
+                "w": 0.19777,
+                "h": 0.024851
+              },
+              {
+                "text": "66",
+                "x": 0.067386,
+                "y": 0.986468,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-3/page-71.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.047343,
+                "y": 0.01183,
+                "w": 0.331542,
+                "h": 0.021037
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.047279,
+                "y": 0.05477,
+                "w": 0.88808,
+                "h": 0.02806
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.047515,
+                "y": 0.076975,
+                "w": 0.178843,
+                "h": 0.018872
+              },
+              {
+                "text": "Plant 'thermometer' triggers springtime growth by",
+                "x": 0.089011,
+                "y": 0.11728,
+                "w": 0.813477,
+                "h": 0.041319
+              },
+              {
+                "text": "measuring night-time heat",
+                "x": 0.281557,
+                "y": 0.156763,
+                "w": 0.428341,
+                "h": 0.029153
+              },
+              {
+                "text": "A photoreceptor molecule in plant cells has been found to have a second job",
+                "x": 0.06944,
+                "y": 0.201253,
+                "w": 0.848141,
+                "h": 0.025522
+              },
+              {
+                "text": "as a thermometer after dark - allowing plants to read seasonal temperature",
+                "x": 0.075968,
+                "y": 0.219475,
+                "w": 0.835142,
+                "h": 0.031034
+              },
+              {
+                "text": "changes. Scientists say the discovery could help breed crops that are more",
+                "x": 0.076218,
+                "y": 0.243574,
+                "w": 0.834603,
+                "h": 0.0238
+              },
+              {
+                "text": "resilient to the temperatures expected to result from climate change",
+                "x": 0.117995,
+                "y": 0.264526,
+                "w": 0.748853,
+                "h": 0.025121
+              },
+              {
+                "text": "A An international team of scientists led by the University of Cambridge has",
+                "x": 0.042867,
+                "y": 0.306329,
+                "w": 0.795311,
+                "h": 0.026794
+              },
+              {
+                "text": "discovered that the 'thermometer' molecule in plants enables them to develop",
+                "x": 0.091414,
+                "y": 0.326379,
+                "w": 0.777787,
+                "h": 0.02957
+              },
+              {
+                "text": "according to seasonal temperature changes. Researchers have revealed that",
+                "x": 0.091478,
+                "y": 0.351888,
+                "w": 0.751109,
+                "h": 0.026875
+              },
+              {
+                "text": "molecules called phytochromes - used by plants to detect light during the day -",
+                "x": 0.091475,
+                "y": 0.374619,
+                "w": 0.799654,
+                "h": 0.026843
+              },
+              {
+                "text": "actually change their function in darkness to become cellular temperature gauges",
+                "x": 0.091462,
+                "y": 0.395916,
+                "w": 0.812926,
+                "h": 0.028391
+              },
+              {
+                "text": "that measure the heat of the night.",
+                "x": 0.089024,
+                "y": 0.413864,
+                "w": 0.345527,
+                "h": 0.029456
+              },
+              {
+                "text": "The new findings, published in the journal Science, show that phytochromes control",
+                "x": 0.089271,
+                "y": 0.453678,
+                "w": 0.801857,
+                "h": 0.026652
+              },
+              {
+                "text": "genetic switches in response to temperature as well as light to dictate plant development.",
+                "x": 0.089306,
+                "y": 0.473897,
+                "w": 0.843859,
+                "h": 0.029652
+              },
+              {
+                "text": "B Atnight, these molecules change states, and the pace at which they change is",
+                "x": 0.040635,
+                "y": 0.508646,
+                "w": 0.824011,
+                "h": 0.028754
+              },
+              {
+                "text": "\"directly proportional to temperature', say scientists, who compare phytochromes",
+                "x": 0.086935,
+                "y": 0.53075,
+                "w": 0.817492,
+                "h": 0.030069
+              },
+              {
+                "text": "to mercury in a thermometer. The warmer it is, the faster the molecular change -",
+                "x": 0.08709,
+                "y": 0.55514,
+                "w": 0.812821,
+                "h": 0.02529
+              },
+              {
+                "text": "stimulating plant growth.",
+                "x": 0.087258,
+                "y": 0.57665,
+                "w": 0.256122,
+                "h": 0.022221
+              },
+              {
+                "text": "Farmers and gardeners have known for hundreds of years how responsive plants are",
+                "x": 0.087043,
+                "y": 0.60921,
+                "w": 0.819584,
+                "h": 0.028147
+              },
+              {
+                "text": "to temperature: warm winters cause many trees and flowers to bud early, something",
+                "x": 0.087042,
+                "y": 0.633043,
+                "w": 0.815161,
+                "h": 0.027096
+              },
+              {
+                "text": "humans have long used to predict weather and harvest times for the coming year. The",
+                "x": 0.087149,
+                "y": 0.656242,
+                "w": 0.834805,
+                "h": 0.024551
+              },
+              {
+                "text": "latest research pinpoints for the first time a molecular mechanism in plants that reacts",
+                "x": 0.084871,
+                "y": 0.677856,
+                "w": 0.839373,
+                "h": 0.025862
+              },
+              {
+                "text": "to temperature - often triggering the buds of spring we long to see at the end of winter.",
+                "x": 0.0848,
+                "y": 0.698649,
+                "w": 0.852796,
+                "h": 0.029739
+              },
+              {
+                "text": "D",
+                "x": 0.038683,
+                "y": 0.73317,
+                "w": 0.030911,
+                "h": 0.017
+              },
+              {
+                "text": "With weather and temperatures set to become ever more unpredictable due to",
+                "x": 0.07375,
+                "y": 0.733821,
+                "w": 0.786499,
+                "h": 0.027733
+              },
+              {
+                "text": "climate change, researchers say the discovery that this light-sensing molecule also",
+                "x": 0.087073,
+                "y": 0.756345,
+                "w": 0.821707,
+                "h": 0.026859
+              },
+              {
+                "text": "functions as the internal thermometer in plant cells could help us breed tougher",
+                "x": 0.086927,
+                "y": 0.775567,
+                "w": 0.79766,
+                "h": 0.030643
+              },
+              {
+                "text": "crops. 'It is estimated that agricultural yields will need to double by 2050, but",
+                "x": 0.087036,
+                "y": 0.800544,
+                "w": 0.782036,
+                "h": 0.028236
+              },
+              {
+                "text": "climate change is a major threat to achieving this. Key crops such as wheat and rice",
+                "x": 0.084868,
+                "y": 0.823685,
+                "w": 0.837189,
+                "h": 0.026991
+              },
+              {
+                "text": "are sensıtıve to high temperatures. Thermal stress reduces crop yields by around",
+                "x": 0.08505,
+                "y": 0.848597,
+                "w": 0.801484,
+                "h": 0.022272
+              },
+              {
+                "text": "10% for every one degree increase in temperature,' says lead researcher Dr Philip",
+                "x": 0.087105,
+                "y": 0.868589,
+                "w": 0.812832,
+                "h": 0.026138
+              },
+              {
+                "text": "Wigge from Cambridge's Sainsbury Laboratory. 'Discovering the molecules that",
+                "x": 0.087121,
+                "y": 0.892622,
+                "w": 0.806159,
+                "h": 0.024988
+              },
+              {
+                "text": "allow plants to sense temperature has the potential to accelerate the breeding of",
+                "x": 0.08505,
+                "y": 0.916769,
+                "w": 0.797068,
+                "h": 0.0238
+              },
+              {
+                "text": "crops resilient to thermal stress and climate change'",
+                "x": 0.08505,
+                "y": 0.938666,
+                "w": 0.527699,
+                "h": 0.022302
+              },
+              {
+                "text": "69",
+                "x": 0.904197,
+                "y": 0.986468,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-3/page-72.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "E In their active state, phytochrome molecules bind themselves to DNA to restrict",
+                "x": 0.047515,
+                "y": 0.017476,
+                "w": 0.847851,
+                "h": 0.020501
+              },
+              {
+                "text": "plant growth. During the day, sunlight activates the molecules, slowing down",
+                "x": 0.09609,
+                "y": 0.039576,
+                "w": 0.770572,
+                "h": 0.0221
+              },
+              {
+                "text": "growth. If a plant finds itself in shade, phytochromes are quickly inactivated -",
+                "x": 0.09609,
+                "y": 0.061473,
+                "w": 0.781612,
+                "h": 0.022302
+              },
+              {
+                "text": "enabling it to grow faster to find sunlight again. This is how plants compete to",
+                "x": 0.09609,
+                "y": 0.085404,
+                "w": 0.781612,
+                "h": 0.020471
+              },
+              {
+                "text": "escape each other's shade. 'Light-driven changes to phytochrome activity occur very",
+                "x": 0.09609,
+                "y": 0.105855,
+                "w": 0.845643,
+                "h": 0.022191
+              },
+              {
+                "text": "fast, in less than a second,' says Wigge.",
+                "x": 0.09609,
+                "y": 0.129675,
+                "w": 0.395222,
+                "h": 0.022302
+              },
+              {
+                "text": "At night, however, it's a different story. Instead of a rapid deactivation following",
+                "x": 0.098298,
+                "y": 0.163675,
+                "w": 0.797068,
+                "h": 0.020501
+              },
+              {
+                "text": "sundown, the molecules gradually change from their active to inactive state. This is",
+                "x": 0.09609,
+                "y": 0.185775,
+                "w": 0.834603,
+                "h": 0.0221
+              },
+              {
+                "text": "called 'dark reversion'.",
+                "x": 0.09609,
+                "y": 0.207672,
+                "w": 0.234042,
+                "h": 0.018902
+              },
+              {
+                "text": ". 'Just as mercury rises in a thermometer, the rate at which",
+                "x": 0.325716,
+                "y": 0.207672,
+                "w": 0.582897,
+                "h": 0.020602
+              },
+              {
+                "text": "phytochromes revert to their inactive state during the night is a direct measure of",
+                "x": 0.09609,
+                "y": 0.229863,
+                "w": 0.812523,
+                "h": 0.022211
+              },
+              {
+                "text": "temperature,' says Wigge.",
+                "x": 0.093882,
+                "y": 0.252054,
+                "w": 0.262745,
+                "h": 0.022191
+              },
+              {
+                "text": "F",
+                "x": 0.047515,
+                "y": 0.287774,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "\"The lower the temperature, the slower the rate at which phytochromes revert to",
+                "x": 0.091674,
+                "y": 0.285993,
+                "w": 0.801484,
+                "h": 0.022191
+              },
+              {
+                "text": "inactivity, so the molecules spend more time in their active, growth-suppressing",
+                "x": 0.09609,
+                "y": 0.308174,
+                "w": 0.799276,
+                "h": 0.022201
+              },
+              {
+                "text": "state. This is why plants are slower to grow in winter. Warm temperatures accelerate",
+                "x": 0.09609,
+                "y": 0.331973,
+                "w": 0.841227,
+                "h": 0.020592
+              },
+              {
+                "text": "dark reversion, so that phytochromes rapidly reach an inactive state and detach",
+                "x": 0.098197,
+                "y": 0.351657,
+                "w": 0.788425,
+                "h": 0.025051
+              },
+              {
+                "text": "themselves from the plant's DNA - allowing genes to be expressed and plant growth",
+                "x": 0.09609,
+                "y": 0.376062,
+                "w": 0.845643,
+                "h": 0.020511
+              },
+              {
+                "text": "to resume.' Wigge believes phytochrome thermo-sensing evolved at a later stage,",
+                "x": 0.09609,
+                "y": 0.398253,
+                "w": 0.810316,
+                "h": 0.022191
+              },
+              {
+                "text": "and co-opted the biological network already used for light-based growth during the",
+                "x": 0.09609,
+                "y": 0.420373,
+                "w": 0.832395,
+                "h": 0.022262
+              },
+              {
+                "text": "downtime of night.",
+                "x": 0.098298,
+                "y": 0.44568,
+                "w": 0.192091,
+                "h": 0.018892
+              },
+              {
+                "text": "G Some plants mainly use day length as an indicator of the season. Other species, such",
+                "x": 0.049723,
+                "y": 0.476472,
+                "w": 0.883178,
+                "h": 0.022292
+              },
+              {
+                "text": "as daffodils, have considerable temperature sensitivity, and can flower months in",
+                "x": 0.098298,
+                "y": 0.50007,
+                "w": 0.790444,
+                "h": 0.022302
+              },
+              {
+                "text": "advance during a warm winter. In fact, the discovery of the dual role of phytochromes",
+                "x": 0.098298,
+                "y": 0.522261,
+                "w": 0.850058,
+                "h": 0.022211
+              },
+              {
+                "text": "provides the science behind a well-known rhyme long used to predict the coming",
+                "x": 0.098298,
+                "y": 0.544451,
+                "w": 0.801484,
+                "h": 0.022191
+              },
+              {
+                "text": "season: oak before ash we'll have a splash, ash before oak we're in for a soak.",
+                "x": 0.098298,
+                "y": 0.566571,
+                "w": 0.768365,
+                "h": 0.022262
+              },
+              {
+                "text": "Wigge explains: 'Oak trees rely much more on temperature, likely using",
+                "x": 0.098298,
+                "y": 0.600571,
+                "w": 0.724206,
+                "h": 0.022201
+              },
+              {
+                "text": "phytochromes as thermometers to dictate development, whereas ash trees rely on",
+                "x": 0.098298,
+                "y": 0.624371,
+                "w": 0.810316,
+                "h": 0.020592
+              },
+              {
+                "text": "measuring day length to determine their seasonal timing. A warmer spring, and",
+                "x": 0.098298,
+                "y": 0.644771,
+                "w": 0.79486,
+                "h": 0.0238
+              },
+              {
+                "text": "consequently a higher likeliness of a hot summer, will result in oak leafing before",
+                "x": 0.098298,
+                "y": 0.666719,
+                "w": 0.816939,
+                "h": 0.023952
+              },
+              {
+                "text": "ash. A cold spring will see the opposite. As the British know only too well, a colder",
+                "x": 0.098298,
+                "y": 0.69065,
+                "w": 0.836811,
+                "h": 0.022191
+              },
+              {
+                "text": "summer is likely to be a rain-soaked one?",
+                "x": 0.097984,
+                "y": 0.709439,
+                "w": 0.422454,
+                "h": 0.027928
+              },
+              {
+                "text": "The new findings are the culmination of twelve years of research involving scientists",
+                "x": 0.087258,
+                "y": 0.74677,
+                "w": 0.85889,
+                "h": 0.022201
+              },
+              {
+                "text": "from Germany, Argentina and the US, as well as the Cambridge team. The work was",
+                "x": 0.098298,
+                "y": 0.77057,
+                "w": 0.847851,
+                "h": 0.020592
+              },
+              {
+                "text": "done in a model system, using a mustard plant called Arabidopsis, but Wigge says",
+                "x": 0.100506,
+                "y": 0.792467,
+                "w": 0.821355,
+                "h": 0.020602
+              },
+              {
+                "text": "the phytochrome genes necessary for temperature sensing are found in crop plants as",
+                "x": 0.098298,
+                "y": 0.814658,
+                "w": 0.852266,
+                "h": 0.022211
+              },
+              {
+                "text": "well. 'Recent advances in plant genetics now mean that scientists are able to rapidly",
+                "x": 0.098298,
+                "y": 0.836849,
+                "w": 0.839019,
+                "h": 0.02045
+              },
+              {
+                "text": "identify the genes controlling these processes in crop plants, and even alter their",
+                "x": 0.09609,
+                "y": 0.858969,
+                "w": 0.808108,
+                "h": 0.022262
+              },
+              {
+                "text": "activity using precise molecular \"scalpels\", adds Wigge. 'Cambridge is uniquely",
+                "x": 0.098298,
+                "y": 0.881069,
+                "w": 0.810316,
+                "h": 0.0238
+              },
+              {
+                "text": "well-positioned to do this kind of research as we have outstanding collaborators",
+                "x": 0.100506,
+                "y": 0.906468,
+                "w": 0.797068,
+                "h": 0.020501
+              },
+              {
+                "text": "nearby who work on more applied aspects of plant biology, and can help us transfer",
+                "x": 0.100506,
+                "y": 0.926918,
+                "w": 0.836811,
+                "h": 0.022191
+              },
+              {
+                "text": "this new knowledge into the field.'",
+                "x": 0.100506,
+                "y": 0.950768,
+                "w": 0.348855,
+                "h": 0.020531
+              },
+              {
+                "text": "70",
+                "x": 0.051931,
+                "y": 0.984768,
+                "w": 0.026495,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-3/page-75.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.409618,
+                "y": 0.014076,
+                "w": 0.136893,
+                "h": 0.0221
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.029851,
+                "y": 0.080183,
+                "w": 0.253914,
+                "h": 0.018892
+              },
+              {
+                "text": "You should spend about 20 minutes on this task",
+                "x": 0.027643,
+                "y": 0.124565,
+                "w": 0.490164,
+                "h": 0.01871
+              },
+              {
+                "text": "The plans below show the site of an airport now and how it will look after",
+                "x": 0.054139,
+                "y": 0.178954,
+                "w": 0.797068,
+                "h": 0.02045
+              },
+              {
+                "text": "redevelopment next year.",
+                "x": 0.051615,
+                "y": 0.199844,
+                "w": 0.276598,
+                "h": 0.020632
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.051931,
+                "y": 0.241874,
+                "w": 0.841227,
+                "h": 0.0221
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.051931,
+                "y": 0.262061,
+                "w": 0.381974,
+                "h": 0.018912
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.025195,
+                "y": 0.314653,
+                "w": 0.256605,
+                "h": 0.020815
+              },
+              {
+                "text": "SOUTHWEST AIRPORT",
+                "x": 0.312468,
+                "y": 0.352373,
+                "w": 0.328984,
+                "h": 0.0221
+              },
+              {
+                "text": "NOW",
+                "x": 0.279349,
+                "y": 0.398273,
+                "w": 0.041951,
+                "h": 0.0153
+              },
+              {
+                "text": "AFTER DEVELOPMENT",
+                "x": 0.542094,
+                "y": 0.399973,
+                "w": 0.167804,
+                "h": 0.0119
+              },
+              {
+                "text": "8",
+                "x": 0.55755,
+                "y": 0.442472,
+                "w": 0.01104,
+                "h": 0.0102
+              },
+              {
+                "text": "11",
+                "x": 0.670155,
+                "y": 0.442472,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "7",
+                "x": 0.495728,
+                "y": 0.449272,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "12",
+                "x": 0.731978,
+                "y": 0.450972,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "9",
+                "x": 0.581837,
+                "y": 0.459472,
+                "w": 0.013248,
+                "h": 0.0102
+              },
+              {
+                "text": "10",
+                "x": 0.64366,
+                "y": 0.459472,
+                "w": 0.024287,
+                "h": 0.0119
+              },
+              {
+                "text": "6",
+                "x": 0.49352,
+                "y": 0.484972,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "13",
+                "x": 0.740809,
+                "y": 0.484972,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "5",
+                "x": 0.515599,
+                "y": 0.500272,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "14",
+                "x": 0.712106,
+                "y": 0.501972,
+                "w": 0.024287,
+                "h": 0.0136
+              },
+              {
+                "text": "4",
+                "x": 0.272725,
+                "y": 0.512172,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "5",
+                "x": 0.31026,
+                "y": 0.513872,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "4",
+                "x": 0.544302,
+                "y": 0.518972,
+                "w": 0.013248,
+                "h": 0.0102
+              },
+              {
+                "text": "3",
+                "x": 0.244022,
+                "y": 0.530872,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "2",
+                "x": 0.244022,
+                "y": 0.556372,
+                "w": 0.015456,
+                "h": 0.017
+              },
+              {
+                "text": "1",
+                "x": 0.24623,
+                "y": 0.583571,
+                "w": 0.01104,
+                "h": 0.0136
+              },
+              {
+                "text": "6",
+                "x": 0.341172,
+                "y": 0.532572,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "15",
+                "x": 0.687819,
+                "y": 0.517272,
+                "w": 0.024287,
+                "h": 0.0153
+              },
+              {
+                "text": "3",
+                "x": 0.56859,
+                "y": 0.534272,
+                "w": 0.013248,
+                "h": 0.0119
+              },
+              {
+                "text": "16",
+                "x": 0.665739,
+                "y": 0.534272,
+                "w": 0.017664,
+                "h": 0.0102
+              },
+              {
+                "text": "E",
+                "x": 0.268309,
+                "y": 0.576771,
+                "w": 0.026495,
+                "h": 0.0204
+              },
+              {
+                "text": "8",
+                "x": 0.336756,
+                "y": 0.585271,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "2",
+                "x": 0.570798,
+                "y": 0.559772,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "1",
+                "x": 0.570798,
+                "y": 0.583571,
+                "w": 0.01104,
+                "h": 0.0136
+              },
+              {
+                "text": "17",
+                "x": 0.663531,
+                "y": 0.559772,
+                "w": 0.019871,
+                "h": 0.0136
+              },
+              {
+                "text": "18",
+                "x": 0.661323,
+                "y": 0.586971,
+                "w": 0.024287,
+                "h": 0.0119
+              },
+              {
+                "text": "SECURITY",
+                "x": 0.164429,
+                "y": 0.641058,
+                "w": 0.066452,
+                "h": 0.014226
+              },
+              {
+                "text": "PASSPORT CONTROL",
+                "x": 0.303636,
+                "y": 0.641371,
+                "w": 0.130269,
+                "h": 0.01534
+              },
+              {
+                "text": "PASSPORT CONTROL",
+                "x": 0.164536,
+                "y": 0.656671,
+                "w": 0.130269,
+                "h": 0.0153
+              },
+              {
+                "text": "CUSTOMS",
+                "x": 0.299221,
+                "y": 0.656671,
+                "w": 0.068446,
+                "h": 0.0153
+              },
+              {
+                "text": "SHOPS",
+                "x": 0.517807,
+                "y": 0.610771,
+                "w": 0.059614,
+                "h": 0.0238
+              },
+              {
+                "text": "SECURITY",
+                "x": 0.488923,
+                "y": 0.642329,
+                "w": 0.066599,
+                "h": 0.011685
+              },
+              {
+                "text": "PASSPORT CONTROL",
+                "x": 0.486896,
+                "y": 0.658371,
+                "w": 0.132477,
+                "h": 0.0136
+              },
+              {
+                "text": "PASSPORT CONTROL",
+                "x": 0.625996,
+                "y": 0.643071,
+                "w": 0.132477,
+                "h": 0.01364
+              },
+              {
+                "text": "CUSTOMS",
+                "x": 0.628054,
+                "y": 0.657891,
+                "w": 0.062124,
+                "h": 0.012859
+              },
+              {
+                "text": "1 L",
+                "x": 0.213111,
+                "y": 0.74677,
+                "w": 0.041951,
+                "h": 0.0102
+              },
+              {
+                "text": "DEPARTURES",
+                "x": 0.188823,
+                "y": 0.76207,
+                "w": 0.083902,
+                "h": 0.0102
+              },
+              {
+                "text": "1 L",
+                "x": 0.350003,
+                "y": 0.74677,
+                "w": 0.039743,
+                "h": 0.0102
+              },
+              {
+                "text": "ARRIVALS",
+                "x": 0.338964,
+                "y": 0.76377,
+                "w": 0.059614,
+                "h": 0.0085
+              },
+              {
+                "text": "DEPARTURES",
+                "x": 0.513391,
+                "y": 0.76377,
+                "w": 0.08611,
+                "h": 0.0102
+              },
+              {
+                "text": "( L",
+                "x": 0.663531,
+                "y": 0.74677,
+                "w": 0.061822,
+                "h": 0.0136
+              },
+              {
+                "text": "ARRIVALS",
+                "x": 0.661241,
+                "y": 0.763514,
+                "w": 0.061986,
+                "h": 0.012412
+              },
+              {
+                "text": "C",
+                "x": 0.25727,
+                "y": 0.813069,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "Check-in",
+                "x": 0.294671,
+                "y": 0.812703,
+                "w": 0.062089,
+                "h": 0.014333
+              },
+              {
+                "text": "Café",
+                "x": 0.292597,
+                "y": 0.835169,
+                "w": 0.037535,
+                "h": 0.0119
+              },
+              {
+                "text": "Walkway",
+                "x": 0.294721,
+                "y": 0.855334,
+                "w": 0.064197,
+                "h": 0.014069
+              },
+              {
+                "text": "8",
+                "x": 0.270517,
+                "y": 0.874269,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Gates",
+                "x": 0.290204,
+                "y": 0.873722,
+                "w": 0.048945,
+                "h": 0.011294
+              },
+              {
+                "text": "C",
+                "x": 0.577422,
+                "y": 0.813069,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "B",
+                "x": 0.577422,
+                "y": 0.831769,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Check-in",
+                "x": 0.614957,
+                "y": 0.813069,
+                "w": 0.06403,
+                "h": 0.017
+              },
+              {
+                "text": "Bag drop",
+                "x": 0.614816,
+                "y": 0.829772,
+                "w": 0.066519,
+                "h": 0.019294
+              },
+              {
+                "text": "Café",
+                "x": 0.614957,
+                "y": 0.852169,
+                "w": 0.037535,
+                "h": 0.0136
+              },
+              {
+                "text": "ATM",
+                "x": 0.614957,
+                "y": 0.872569,
+                "w": 0.035327,
+                "h": 0.0136
+              },
+              {
+                "text": "A",
+                "x": 0.577422,
+                "y": 0.894669,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "|Sky train",
+                "x": 0.592711,
+                "y": 0.894037,
+                "w": 0.084234,
+                "h": 0.014863
+              },
+              {
+                "text": "Car hire",
+                "x": 0.614957,
+                "y": 0.916769,
+                "w": 0.059614,
+                "h": 0.01363
+              },
+              {
+                "text": "O-1 Gates",
+                "x": 0.561966,
+                "y": 0.935469,
+                "w": 0.099357,
+                "h": 0.017121
+              },
+              {
+                "text": "→",
+                "x": 0.723146,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.0187
+              },
+              {
+                "text": "p. 135",
+                "x": 0.789384,
+                "y": 0.983048,
+                "w": 0.070654,
+                "h": 0.02045
+              },
+              {
+                "text": "73",
+                "x": 0.895366,
+                "y": 0.981368,
+                "w": 0.033119,
+                "h": 0.0238
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-3/page-76.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.040891,
+                "y": 0.017476,
+                "w": 0.260537,
+                "h": 0.018761
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.040785,
+                "y": 0.058478,
+                "w": 0.497052,
+                "h": 0.021951
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.040891,
+                "y": 0.102374,
+                "w": 0.315736,
+                "h": 0.018801
+              },
+              {
+                "text": "Many manufactured food and drink products contain high levels of sugar,",
+                "x": 0.065179,
+                "y": 0.153283,
+                "w": 0.808108,
+                "h": 0.020592
+              },
+              {
+                "text": "which causes many health problems. Sugary products should be made more",
+                "x": 0.067386,
+                "y": 0.175473,
+                "w": 0.839019,
+                "h": 0.018801
+              },
+              {
+                "text": "expensive to encourage people to consume less sugar.",
+                "x": 0.069594,
+                "y": 0.192443,
+                "w": 0.602769,
+                "h": 0.023931
+              },
+              {
+                "text": "Do you agree or disagree?",
+                "x": 0.067207,
+                "y": 0.237605,
+                "w": 0.291879,
+                "h": 0.021723
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.043099,
+                "y": 0.291174,
+                "w": 0.812523,
+                "h": 0.022231
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.043099,
+                "y": 0.314973,
+                "w": 0.264953,
+                "h": 0.018882
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.043099,
+                "y": 0.355611,
+                "w": 0.256122,
+                "h": 0.017162
+              },
+              {
+                "text": "74",
+                "x": 0.049723,
+                "y": 0.984768,
+                "w": 0.041951,
+                "h": 0.0136
+              },
+              {
+                "text": "→ • p. 136",
+                "x": 0.104764,
+                "y": 0.982374,
+                "w": 0.148246,
+                "h": 0.021788
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-57.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.047515,
+                "y": 0.014046,
+                "w": 0.136893,
+                "h": 0.03233
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.40958,
+                "y": 0.088709,
+                "w": 0.174504,
+                "h": 0.024132
+              },
+              {
+                "text": "PART 1",
+                "x": 0.047489,
+                "y": 0.158484,
+                "w": 0.112656,
+                "h": 0.018882
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.221943,
+                "y": 0.160244,
+                "w": 0.203131,
+                "h": 0.02045
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.049723,
+                "y": 0.202774,
+                "w": 0.269369,
+                "h": 0.018821
+              },
+              {
+                "text": "Write ONE WORD ANDIOR A NUMBER for each answer.",
+                "x": 0.047515,
+                "y": 0.243574,
+                "w": 0.589521,
+                "h": 0.0204
+              },
+              {
+                "text": "JUNIOR CYCLE CAMP",
+                "x": 0.327924,
+                "y": 0.301222,
+                "w": 0.340023,
+                "h": 0.025672
+              },
+              {
+                "text": "The course focuses on skills and safety.",
+                "x": 0.071441,
+                "y": 0.338553,
+                "w": 0.406982,
+                "h": 0.024336
+              },
+              {
+                "text": "Charlie would be placed in Level 5.",
+                "x": 0.120175,
+                "y": 0.370918,
+                "w": 0.360387,
+                "h": 0.022389
+              },
+              {
+                "text": "•",
+                "x": 0.067386,
+                "y": 0.401673,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "First of all, children at this level are taken to practise in a 1",
+                "x": 0.120228,
+                "y": 0.399545,
+                "w": 0.591984,
+                "h": 0.023222
+              },
+              {
+                "text": "Instructors",
+                "x": 0.069535,
+                "y": 0.435391,
+                "w": 0.121555,
+                "h": 0.015863
+              },
+              {
+                "text": "• Instructors wear 2",
+                "x": 0.069594,
+                "y": 0.46439,
+                "w": 0.234042,
+                "h": 0.015664
+              },
+              {
+                "text": "• А3",
+                "x": 0.065087,
+                "y": 0.493179,
+                "w": 0.090709,
+                "h": 0.017586
+              },
+              {
+                "text": ".......shirts.",
+                "x": 0.449361,
+                "y": 0.466272,
+                "w": 0.105981,
+                "h": 0.0187
+              },
+              {
+                "text": "is required and training is given.",
+                "x": 0.336756,
+                "y": 0.495172,
+                "w": 0.331192,
+                "h": 0.020562
+              },
+              {
+                "text": "Classes",
+                "x": 0.069535,
+                "y": 0.530669,
+                "w": 0.088436,
+                "h": 0.015706
+              },
+              {
+                "text": "• The size of the classes is limited.",
+                "x": 0.065179,
+                "y": 0.55794,
+                "w": 0.390806,
+                "h": 0.020531
+              },
+              {
+                "text": "• There are quiet times during the morning for a 4",
+                "x": 0.06498,
+                "y": 0.584795,
+                "w": 0.541311,
+                "h": 0.024101
+              },
+              {
+                "text": "•",
+                "x": 0.067386,
+                "y": 0.614171,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "Classes are held even if there is 5....",
+                "x": 0.106925,
+                "y": 0.608801,
+                "w": 0.382529,
+                "h": 0.024456
+              },
+              {
+                "text": "What to bring",
+                "x": 0.067078,
+                "y": 0.646996,
+                "w": 0.14867,
+                "h": 0.018286
+              },
+              {
+                "text": "a change of clothing",
+                "x": 0.109337,
+                "y": 0.675371,
+                "w": 0.214171,
+                "h": 0.020501
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.70087,
+                "w": 0.022079,
+                "h": 0.0187
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.73147,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "a 6",
+                "x": 0.115961,
+                "y": 0.702398,
+                "w": 0.035327,
+                "h": 0.017172
+              },
+              {
+                "text": "shoes (not sandals)",
+                "x": 0.115961,
+                "y": 0.73147,
+                "w": 0.203131,
+                "h": 0.018791
+              },
+              {
+                "text": "Charlie's 7",
+                "x": 0.115838,
+                "y": 0.758185,
+                "w": 0.110644,
+                "h": 0.017969
+              },
+              {
+                "text": "Day 1",
+                "x": 0.065179,
+                "y": 0.792467,
+                "w": 0.061822,
+                "h": 0.018902
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.821569,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.848769,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.879369,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Charlie should arrive at 9.20 am on the first day.",
+                "x": 0.115585,
+                "y": 0.81474,
+                "w": 0.486622,
+                "h": 0.029154
+              },
+              {
+                "text": "Before the class, his 8",
+                "x": 0.115961,
+                "y": 0.848597,
+                "w": 0.22521,
+                "h": 0.020572
+              },
+              {
+                "text": "He should then go to the 9",
+                "x": 0.113753,
+                "y": 0.877669,
+                "w": 0.271577,
+                "h": 0.022272
+              },
+              {
+                "text": "....•••• •",
+                "x": 0.612749,
+                "y": 0.627558,
+                "w": 0.046367,
+                "h": 0.005312
+              },
+              {
+                "text": ". or a game.",
+                "x": 0.782603,
+                "y": 0.591436,
+                "w": 0.12396,
+                "h": 0.01997
+              },
+              {
+                "text": "........ will be checked.",
+                "x": 0.451569,
+                "y": 0.848597,
+                "w": 0.227418,
+                "h": 0.020572
+              },
+              {
+                "text": ".t meet his class instructor.",
+                "x": 0.517807,
+                "y": 0.881069,
+                "w": 0.335608,
+                "h": 0.020612
+              },
+              {
+                "text": "Cost",
+                "x": 0.064983,
+                "y": 0.914688,
+                "w": 0.055589,
+                "h": 0.017762
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.942268,
+                "w": 0.022079,
+                "h": 0.0187
+              },
+              {
+                "text": "The course costs 10 $",
+                "x": 0.107129,
+                "y": 0.942147,
+                "w": 0.234042,
+                "h": 0.018821
+              },
+              {
+                "text": ".. per week.",
+                "x": 0.517693,
+                "y": 0.943584,
+                "w": 0.115041,
+                "h": 0.021169
+              },
+              {
+                "text": "→ O p. 125",
+                "x": 0.616974,
+                "y": 0.980681,
+                "w": 0.14169,
+                "h": 0.025173
+              },
+              {
+                "text": "• p. 110",
+                "x": 0.778344,
+                "y": 0.983048,
+                "w": 0.099357,
+                "h": 0.022191
+              },
+              {
+                "text": "55",
+                "x": 0.906405,
+                "y": 0.983068,
+                "w": 0.035327,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-58.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.056311,
+                "y": 0.01904,
+                "w": 0.110468,
+                "h": 0.017272
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.228566,
+                "y": 0.019176,
+                "w": 0.214171,
+                "h": 0.017061
+              },
+              {
+                "text": "Questions 11 and 12",
+                "x": 0.056347,
+                "y": 0.059976,
+                "w": 0.229626,
+                "h": 0.017162
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.056347,
+                "y": 0.102374,
+                "w": 0.271577,
+                "h": 0.020501
+              },
+              {
+                "text": "According to Megan, what are the TWO main advantages of working in the agriculture",
+                "x": 0.056347,
+                "y": 0.143275,
+                "w": 0.86993,
+                "h": 0.02045
+              },
+              {
+                "text": "and horticulture sectors?",
+                "x": 0.056347,
+                "y": 0.165375,
+                "w": 0.251706,
+                "h": 0.01532
+              },
+              {
+                "text": "A",
+                "x": 0.104922,
+                "y": 0.197674,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "B",
+                "x": 0.104922,
+                "y": 0.218074,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "the active lifestyle",
+                "x": 0.153496,
+                "y": 0.197664,
+                "w": 0.183259,
+                "h": 0.01701
+              },
+              {
+                "text": "the above-average salaries",
+                "x": 0.155704,
+                "y": 0.218074,
+                "w": 0.278201,
+                "h": 0.01701
+              },
+              {
+                "text": "the flexible working opportunities",
+                "x": 0.153496,
+                "y": 0.238474,
+                "w": 0.335608,
+                "h": 0.018801
+              },
+              {
+                "text": "D",
+                "x": 0.107129,
+                "y": 0.260574,
+                "w": 0.030911,
+                "h": 0.0136
+              },
+              {
+                "text": "the opportunities for overseas travel",
+                "x": 0.151288,
+                "y": 0.260574,
+                "w": 0.370935,
+                "h": 0.017152
+              },
+              {
+                "text": "Ethe chance to be in a natural environment",
+                "x": 0.107129,
+                "y": 0.280771,
+                "w": 0.474708,
+                "h": 0.013924
+              },
+              {
+                "text": "Questions 13 and 14",
+                "x": 0.058555,
+                "y": 0.352373,
+                "w": 0.229626,
+                "h": 0.017162
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.056347,
+                "y": 0.394772,
+                "w": 0.273785,
+                "h": 0.020501
+              },
+              {
+                "text": "Which TWO of the following are likely to be disadvantages for people working outdoors?",
+                "x": 0.056347,
+                "y": 0.435673,
+                "w": 0.894217,
+                "h": 0.01871
+              },
+              {
+                "text": "A the increasing risk of accidents",
+                "x": 0.109337,
+                "y": 0.467871,
+                "w": 0.362103,
+                "h": 0.017101
+              },
+              {
+                "text": "B being in a very quiet location",
+                "x": 0.107129,
+                "y": 0.490062,
+                "w": 0.342231,
+                "h": 0.01871
+              },
+              {
+                "text": "difficult weather conditions at times",
+                "x": 0.153496,
+                "y": 0.510472,
+                "w": 0.359895,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.109337,
+                "y": 0.530872,
+                "w": 0.044159,
+                "h": 0.0136
+              },
+              {
+                "text": "the cost of housing",
+                "x": 0.151288,
+                "y": 0.530872,
+                "w": 0.198715,
+                "h": 0.020542
+              },
+              {
+                "text": "E the level of physical fitness required",
+                "x": 0.107129,
+                "y": 0.551272,
+                "w": 0.412886,
+                "h": 0.018852
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-59.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.025436,
+                "y": 0.019176,
+                "w": 0.189883,
+                "h": 0.017061
+              },
+              {
+                "text": "What information does Megan give about each of the following job opportunities?",
+                "x": 0.023228,
+                "y": 0.059976,
+                "w": 0.821355,
+                "h": 0.0204
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.02522,
+                "y": 0.097118,
+                "w": 0.757743,
+                "h": 0.026953
+              },
+              {
+                "text": "Questions 15-20.",
+                "x": 0.025436,
+                "y": 0.122824,
+                "w": 0.181051,
+                "h": 0.01705
+              },
+              {
+                "text": "A",
+                "x": 0.250646,
+                "y": 0.212974,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.250646,
+                "y": 0.245274,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.250646,
+                "y": 0.277574,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "D",
+                "x": 0.250646,
+                "y": 0.309874,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.250646,
+                "y": 0.342173,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.248438,
+                "y": 0.374473,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "G",
+                "x": 0.250646,
+                "y": 0.406773,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "H",
+                "x": 0.250646,
+                "y": 0.439072,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "Information",
+                "x": 0.407239,
+                "y": 0.179948,
+                "w": 0.130609,
+                "h": 0.020154
+              },
+              {
+                "text": "not a permanent job",
+                "x": 0.301429,
+                "y": 0.212893,
+                "w": 0.205339,
+                "h": 0.018781
+              },
+              {
+                "text": "involves leading a team",
+                "x": 0.297013,
+                "y": 0.245092,
+                "w": 0.245082,
+                "h": 0.020582
+              },
+              {
+                "text": "experience not essential",
+                "x": 0.301201,
+                "y": 0.277212,
+                "w": 0.252138,
+                "h": 0.019831
+              },
+              {
+                "text": "intensive work but also fun",
+                "x": 0.294805,
+                "y": 0.309874,
+                "w": 0.278201,
+                "h": 0.01702
+              },
+              {
+                "text": "chance to earn more through overtime",
+                "x": 0.299221,
+                "y": 0.342123,
+                "w": 0.390806,
+                "h": 0.01875
+              },
+              {
+                "text": "chance for rapid promotion",
+                "x": 0.301429,
+                "y": 0.372581,
+                "w": 0.273785,
+                "h": 0.022292
+              },
+              {
+                "text": "accommodation available",
+                "x": 0.297013,
+                "y": 0.405073,
+                "w": 0.264953,
+                "h": 0.018852
+              },
+              {
+                "text": "local travel involved",
+                "x": 0.294805,
+                "y": 0.439072,
+                "w": 0.207547,
+                "h": 0.01705
+              },
+              {
+                "text": "Job opportunities",
+                "x": 0.071802,
+                "y": 0.512172,
+                "w": 0.196507,
+                "h": 0.018791
+              },
+              {
+                "text": "15",
+                "x": 0.02102,
+                "y": 0.544472,
+                "w": 0.039743,
+                "h": 0.0153
+              },
+              {
+                "text": "Fresh food commercial manager",
+                "x": 0.062971,
+                "y": 0.544451,
+                "w": 0.342231,
+                "h": 0.01702
+              },
+              {
+                "text": "16 Agronomist",
+                "x": 0.023228,
+                "y": 0.574909,
+                "w": 0.170012,
+                "h": 0.020562
+              },
+              {
+                "text": "17 Fresh produce buyer",
+                "x": 0.02102,
+                "y": 0.607371,
+                "w": 0.267161,
+                "h": 0.018882
+              },
+              {
+                "text": "18 Garden centre sales manager",
+                "x": 0.02102,
+                "y": 0.639671,
+                "w": 0.357687,
+                "h": 0.018781
+              },
+              {
+                "text": "19",
+                "x": 0.023228,
+                "y": 0.670271,
+                "w": 0.028703,
+                "h": 0.0187
+              },
+              {
+                "text": "Tree technician",
+                "x": 0.071802,
+                "y": 0.67194,
+                "w": 0.158972,
+                "h": 0.01703
+              },
+              {
+                "text": "20 Farm worker",
+                "x": 0.02102,
+                "y": 0.704139,
+                "w": 0.185467,
+                "h": 0.015431
+              },
+              {
+                "text": "→ О р. 125",
+                "x": 0.601668,
+                "y": 0.97951,
+                "w": 0.143598,
+                "h": 0.022416
+              },
+              {
+                "text": "Op.111",
+                "x": 0.751809,
+                "y": 0.979544,
+                "w": 0.114894,
+                "h": 0.022348
+              },
+              {
+                "text": "57",
+                "x": 0.893158,
+                "y": 0.981368,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            11,
+            12
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            13,
+            14
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-60.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.051846,
+                "y": 0.020544,
+                "w": 0.110567,
+                "h": 0.017663
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.22415,
+                "y": 0.019176,
+                "w": 0.216379,
+                "h": 0.018801
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.051931,
+                "y": 0.063214,
+                "w": 0.214171,
+                "h": 0.017162
+              },
+              {
+                "text": "Choose TWO letters, A-E",
+                "x": 0.051931,
+                "y": 0.104114,
+                "w": 0.267161,
+                "h": 0.018761
+              },
+              {
+                "text": "Which TWO points does Adam make about his experiment on artificial sweeteners?",
+                "x": 0.051815,
+                "y": 0.141524,
+                "w": 0.845891,
+                "h": 0.022818
+              },
+              {
+                "text": "A The results were what he had predicted.",
+                "x": 0.102714,
+                "y": 0.177214,
+                "w": 0.459252,
+                "h": 0.017061
+              },
+              {
+                "text": "B The experiment was simple to set up.",
+                "x": 0.102714,
+                "y": 0.197664,
+                "w": 0.432757,
+                "h": 0.01871
+              },
+              {
+                "text": "CAlarge sample of people was tested.",
+                "x": 0.102714,
+                "y": 0.218074,
+                "w": 0.426133,
+                "h": 0.020491
+              },
+              {
+                "text": "D The subjects were unaware of what they were drinking.",
+                "x": 0.102714,
+                "y": 0.231603,
+                "w": 0.611601,
+                "h": 0.025672
+              },
+              {
+                "text": "E The test was repeated several times for each person.",
+                "x": 0.102714,
+                "y": 0.258874,
+                "w": 0.593937,
+                "h": 0.020592
+              },
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.056347,
+                "y": 0.333673,
+                "w": 0.229626,
+                "h": 0.017152
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.056347,
+                "y": 0.374321,
+                "w": 0.271577,
+                "h": 0.020552
+              },
+              {
+                "text": "Which TWO problems did Rosie have when measuring the fat content of nuts?",
+                "x": 0.051845,
+                "y": 0.413265,
+                "w": 0.799484,
+                "h": 0.022995
+              },
+              {
+                "text": "A She used the wrong sort of nuts.",
+                "x": 0.102714,
+                "y": 0.449161,
+                "w": 0.38639,
+                "h": 0.017111
+              },
+              {
+                "text": "B She used an unsuitable chemical.",
+                "x": 0.107129,
+                "y": 0.469612,
+                "w": 0.393014,
+                "h": 0.015361
+              },
+              {
+                "text": "C She did not grind the nuts finely enough.",
+                "x": 0.104922,
+                "y": 0.490062,
+                "w": 0.46146,
+                "h": 0.01871
+              },
+              {
+                "text": "The information on the nut package was incorrect.",
+                "x": 0.157912,
+                "y": 0.510472,
+                "w": 0.505619,
+                "h": 0.01701
+              },
+              {
+                "text": "E The weighing scales may have been unsuitable.",
+                "x": 0.104922,
+                "y": 0.530872,
+                "w": 0.540946,
+                "h": 0.020542
+              },
+              {
+                "text": "58",
+                "x": 0.056347,
+                "y": 0.984768,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-61.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.036475,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.036475,
+                "y": 0.059976,
+                "w": 0.364311,
+                "h": 0.018902
+              },
+              {
+                "text": "25 Adam suggests that restaurants could reduce obesity if their menus",
+                "x": 0.032059,
+                "y": 0.100634,
+                "w": 0.735245,
+                "h": 0.020542
+              },
+              {
+                "text": "A",
+                "x": 0.082842,
+                "y": 0.133075,
+                "w": 0.033119,
+                "h": 0.0153
+              },
+              {
+                "text": "offered fewer options.",
+                "x": 0.126691,
+                "y": 0.130653,
+                "w": 0.230408,
+                "h": 0.020877
+              },
+              {
+                "text": "had more low-calorie foods.",
+                "x": 0.133625,
+                "y": 0.155023,
+                "w": 0.284825,
+                "h": 0.015664
+              },
+              {
+                "text": "were organised in a particular way.",
+                "x": 0.131417,
+                "y": 0.173733,
+                "w": 0.357687,
+                "h": 0.018842
+              },
+              {
+                "text": "26 The students agree that foodmanufacturers deliberately",
+                "x": 0.032059,
+                "y": 0.207672,
+                "w": 0.62264,
+                "h": 0.018902
+              },
+              {
+                "text": "make calorie counts hard to understand.",
+                "x": 0.129209,
+                "y": 0.240174,
+                "w": 0.415094,
+                "h": 0.017101
+              },
+              {
+                "text": "B fail to provide accurate calorie counts.",
+                "x": 0.08505,
+                "y": 0.260574,
+                "w": 0.434965,
+                "h": 0.018892
+              },
+              {
+                "text": "C use ineffective methods to reduce calories.",
+                "x": 0.08505,
+                "y": 0.280771,
+                "w": 0.485748,
+                "h": 0.018902
+              },
+              {
+                "text": "27 What does Rosie say about levels of exercise in England?",
+                "x": 0.032059,
+                "y": 0.311574,
+                "w": 0.642512,
+                "h": 0.020542
+              },
+              {
+                "text": "A The amount recommended is much too low.",
+                "x": 0.08505,
+                "y": 0.345573,
+                "w": 0.494579,
+                "h": 0.0153
+              },
+              {
+                "text": "B Most people overestimate how much they do.",
+                "x": 0.082842,
+                "y": 0.365973,
+                "w": 0.514451,
+                "h": 0.018791
+              },
+              {
+                "text": "C Women now exercise more than they used to.",
+                "x": 0.082653,
+                "y": 0.383965,
+                "w": 0.519291,
+                "h": 0.023644
+              },
+              {
+                "text": "28 Adam refers to the location and width of stairs in a train station to illustrate",
+                "x": 0.032059,
+                "y": 0.418673,
+                "w": 0.801484,
+                "h": 0.017
+              },
+              {
+                "text": "A practical changes that can influence people's behaviour.",
+                "x": 0.082842,
+                "y": 0.450902,
+                "w": 0.618224,
+                "h": 0.020471
+              },
+              {
+                "text": "methods of helping people who have mobility problems.",
+                "x": 0.129111,
+                "y": 0.47086,
+                "w": 0.572065,
+                "h": 0.021444
+              },
+              {
+                "text": "C ways of preventing accidents by controlling crowd movement.",
+                "x": 0.082842,
+                "y": 0.493472,
+                "w": 0.673423,
+                "h": 0.020521
+              },
+              {
+                "text": "29 What do the students agree about including reference to exercise in their",
+                "x": 0.032059,
+                "y": 0.524001,
+                "w": 0.792652,
+                "h": 0.020471
+              },
+              {
+                "text": "presentation?",
+                "x": 0.082449,
+                "y": 0.545926,
+                "w": 0.142106,
+                "h": 0.017743
+              },
+              {
+                "text": "A They should probably leave it out.",
+                "x": 0.082842,
+                "y": 0.57839,
+                "w": 0.395222,
+                "h": 0.018781
+              },
+              {
+                "text": "B They need to do more research on it.",
+                "x": 0.08505,
+                "y": 0.598841,
+                "w": 0.423925,
+                "h": 0.01703
+              },
+              {
+                "text": "C They should discuss this with their tutor.",
+                "x": 0.082842,
+                "y": 0.619271,
+                "w": 0.457044,
+                "h": 0.01873
+              },
+              {
+                "text": "30 What are the students going to do next for their presentation?",
+                "x": 0.032059,
+                "y": 0.65149,
+                "w": 0.673423,
+                "h": 0.018781
+              },
+              {
+                "text": "A prepare some slides for it",
+                "x": 0.080634,
+                "y": 0.683688,
+                "w": 0.313528,
+                "h": 0.018882
+              },
+              {
+                "text": "B",
+                "x": 0.082842,
+                "y": 0.70427,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "find out how long they have for it",
+                "x": 0.129209,
+                "y": 0.704139,
+                "w": 0.335608,
+                "h": 0.018831
+              },
+              {
+                "text": "decide on its content and organisation",
+                "x": 0.131417,
+                "y": 0.724589,
+                "w": 0.388598,
+                "h": 0.018781
+              },
+              {
+                "text": "→ 0 p. 125",
+                "x": 0.610394,
+                "y": 0.979103,
+                "w": 0.141601,
+                "h": 0.02323
+              },
+              {
+                "text": "p.112",
+                "x": 0.769513,
+                "y": 0.977968,
+                "w": 0.105981,
+                "h": 0.0238
+              },
+              {
+                "text": "59",
+                "x": 0.901989,
+                "y": 0.981368,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-62.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.056313,
+                "y": 0.015663,
+                "w": 0.114881,
+                "h": 0.020625
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.228566,
+                "y": 0.015776,
+                "w": 0.220794,
+                "h": 0.022201
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.056347,
+                "y": 0.059976,
+                "w": 0.271577,
+                "h": 0.0204
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.056347,
+                "y": 0.100634,
+                "w": 0.432757,
+                "h": 0.018842
+              },
+              {
+                "text": "Hand knitting",
+                "x": 0.409618,
+                "y": 0.167075,
+                "w": 0.189883,
+                "h": 0.0238
+              },
+              {
+                "text": "Interest in knitting",
+                "x": 0.071802,
+                "y": 0.212893,
+                "w": 0.203131,
+                "h": 0.020481
+              },
+              {
+                "text": "•",
+                "x": 0.07401,
+                "y": 0.246974,
+                "w": 0.044159,
+                "h": 0.0153
+              },
+              {
+                "text": "Knitting has a long history around the world.",
+                "x": 0.113753,
+                "y": 0.243574,
+                "w": 0.459252,
+                "h": 0.0221
+              },
+              {
+                "text": "We imagine someone like a........",
+                "x": 0.122585,
+                "y": 0.279274,
+                "w": 0.362103,
+                "h": 0.018902
+              },
+              {
+                "text": "... knitting.",
+                "x": 0.520015,
+                "y": 0.279274,
+                "w": 0.189883,
+                "h": 0.017162
+              },
+              {
+                "text": "A 32",
+                "x": 0.115961,
+                "y": 0.313273,
+                "w": 0.057407,
+                "h": 0.017101
+              },
+              {
+                "text": "ago, knitting was expected to disappear.",
+                "x": 0.356464,
+                "y": 0.31079,
+                "w": 0.41536,
+                "h": 0.023945
+              },
+              {
+                "text": "The number of knitting classes is now increasing.",
+                "x": 0.124793,
+                "y": 0.345573,
+                "w": 0.503411,
+                "h": 0.01874
+              },
+              {
+                "text": "People are buying more 33",
+                "x": 0.113753,
+                "y": 0.379543,
+                "w": 0.289241,
+                "h": 0.01873
+              },
+              {
+                "text": "....for knitting nowadays.",
+                "x": 0.517807,
+                "y": 0.377802,
+                "w": 0.295865,
+                "h": 0.020471
+              },
+              {
+                "text": "Benefits of knitting",
+                "x": 0.076218,
+                "y": 0.420373,
+                "w": 0.207547,
+                "h": 0.018781
+              },
+              {
+                "text": "•",
+                "x": 0.07401,
+                "y": 0.456072,
+                "w": 0.044159,
+                "h": 0.0136
+              },
+              {
+                "text": "gives support in times of 34",
+                "x": 0.115961,
+                "y": 0.454372,
+                "w": 0.291449,
+                "h": 0.01872
+              },
+              {
+                "text": "•",
+                "x": 0.07401,
+                "y": 0.490072,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "requires only 35",
+                "x": 0.122585,
+                "y": 0.488321,
+                "w": 0.167804,
+                "h": 0.01875
+              },
+              {
+                "text": "• reduces stress in a busy life",
+                "x": 0.071802,
+                "y": 0.52052,
+                "w": 0.337815,
+                "h": 0.018852
+              },
+              {
+                "text": "diffculty",
+                "x": 0.451569,
+                "y": 0.454372,
+                "w": 0.227418,
+                "h": 0.017
+              },
+              {
+                "text": "... skills and little money to start",
+                "x": 0.447153,
+                "y": 0.486581,
+                "w": 0.326776,
+                "h": 0.020491
+              },
+              {
+                "text": "Early knitting",
+                "x": 0.076185,
+                "y": 0.561319,
+                "w": 0.14579,
+                "h": 0.019005
+              },
+              {
+                "text": "The origins are not known.",
+                "x": 0.124793,
+                "y": 0.593619,
+                "w": 0.273785,
+                "h": 0.018852
+              },
+              {
+                "text": "Findings show early knitted items to be 36",
+                "x": 0.124793,
+                "y": 0.626071,
+                "w": 0.428341,
+                "h": 0.0204
+              },
+              {
+                "text": ".. in shape.",
+                "x": 0.729676,
+                "y": 0.625747,
+                "w": 0.108376,
+                "h": 0.019347
+              },
+              {
+                "text": "The first needles were made of natural materials such as wood and",
+                "x": 0.124793,
+                "y": 0.658371,
+                "w": 0.684463,
+                "h": 0.01705
+              },
+              {
+                "text": "37 ...",
+                "x": 0.124793,
+                "y": 0.680471,
+                "w": 0.044159,
+                "h": 0.018882
+              },
+              {
+                "text": "Early yarns felt 38",
+                "x": 0.124793,
+                "y": 0.71447,
+                "w": 0.185467,
+                "h": 0.020562
+              },
+              {
+                "text": "..to touch.",
+                "x": 0.486896,
+                "y": 0.71447,
+                "w": 0.101565,
+                "h": 0.017081
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.74677,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.78077,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "Wool became the most popular yarn for spinning.",
+                "x": 0.122585,
+                "y": 0.74677,
+                "w": 0.503411,
+                "h": 0.01872
+              },
+              {
+                "text": "Geographical areas had their own 39",
+                "x": 0.118169,
+                "y": 0.780719,
+                "w": 0.384182,
+                "h": 0.01875
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.816469,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Everyday tasks like looking after 40",
+                "x": 0.124793,
+                "y": 0.812918,
+                "w": 0.364311,
+                "h": 0.020552
+              },
+              {
+                "text": "... of knitting.",
+                "x": 0.670155,
+                "y": 0.780719,
+                "w": 0.128061,
+                "h": 0.01875
+              },
+              {
+                "text": ".... were done while knitting.",
+                "x": 0.64366,
+                "y": 0.812918,
+                "w": 0.282617,
+                "h": 0.020552
+              },
+              {
+                "text": "60",
+                "x": 0.056347,
+                "y": 0.979668,
+                "w": 0.030911,
+                "h": 0.0204
+              },
+              {
+                "text": "→",
+                "x": 0.127001,
+                "y": 0.979668,
+                "w": 0.026495,
+                "h": 0.0204
+              },
+              {
+                "text": "p. 125",
+                "x": 0.193239,
+                "y": 0.981307,
+                "w": 0.070654,
+                "h": 0.018761
+              },
+              {
+                "text": "p. 113",
+                "x": 0.312468,
+                "y": 0.981307,
+                "w": 0.068446,
+                "h": 0.018761
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-65.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 1-5",
+                "x": 0.047515,
+                "y": 0.017476,
+                "w": 0.16118,
+                "h": 0.01702
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.045307,
+                "y": 0.059976,
+                "w": 0.856682,
+                "h": 0.018902
+              },
+              {
+                "text": "In boxes 1-5 on your answer sheet, write",
+                "x": 0.043099,
+                "y": 0.100634,
+                "w": 0.421717,
+                "h": 0.018842
+              },
+              {
+                "text": "3",
+                "x": 0.043099,
+                "y": 0.299674,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "TRUE",
+                "x": 0.122355,
+                "y": 0.139384,
+                "w": 0.066698,
+                "h": 0.019682
+              },
+              {
+                "text": "FALSE",
+                "x": 0.122493,
+                "y": 0.160061,
+                "w": 0.07967,
+                "h": 0.020827
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.268309,
+                "y": 0.141534,
+                "w": 0.441589,
+                "h": 0.02045
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.268309,
+                "y": 0.161975,
+                "w": 0.434965,
+                "h": 0.01872
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.120377,
+                "y": 0.182375,
+                "w": 0.470292,
+                "h": 0.018771
+              },
+              {
+                "text": "The Romans'shipbuilding skills were passed on to the Greeks and the Egyptians.",
+                "x": 0.091674,
+                "y": 0.235074,
+                "w": 0.832395,
+                "h": 0.020461
+              },
+              {
+                "text": "Skilled craftsmen were needed for the mortise and tenon method of fixing planks.",
+                "x": 0.08505,
+                "y": 0.269023,
+                "w": 0.834603,
+                "h": 0.01875
+              },
+              {
+                "text": "The later practice used by Mediterranean shipbuilders involved building the hull",
+                "x": 0.091674,
+                "y": 0.301222,
+                "w": 0.808108,
+                "h": 0.018852
+              },
+              {
+                "text": "before the frame.",
+                "x": 0.093882,
+                "y": 0.321672,
+                "w": 0.178843,
+                "h": 0.018801
+              },
+              {
+                "text": "The Romans called the Mediterranean Sea Mare Nostrum because they dominated",
+                "x": 0.093882,
+                "y": 0.353871,
+                "w": 0.845643,
+                "h": 0.018902
+              },
+              {
+                "text": "its use.",
+                "x": 0.092787,
+                "y": 0.373843,
+                "w": 0.079507,
+                "h": 0.01957
+              },
+              {
+                "text": "Most rowers on ships were people from the Roman army.",
+                "x": 0.09609,
+                "y": 0.406773,
+                "w": 0.580689,
+                "h": 0.018892
+              },
+              {
+                "text": "63",
+                "x": 0.915237,
+                "y": 0.981368,
+                "w": 0.026495,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-66.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 6-13",
+                "x": 0.062971,
+                "y": 0.017476,
+                "w": 0.174428,
+                "h": 0.0153
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.062971,
+                "y": 0.058276,
+                "w": 0.306904,
+                "h": 0.018862
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.062971,
+                "y": 0.100634,
+                "w": 0.640304,
+                "h": 0.018842
+              },
+              {
+                "text": "Write your answers in boxes 6-13 on your answer sheet.",
+                "x": 0.060763,
+                "y": 0.141534,
+                "w": 0.576273,
+                "h": 0.01874
+              },
+              {
+                "text": "Warships and merchant ships",
+                "x": 0.288181,
+                "y": 0.187475,
+                "w": 0.446005,
+                "h": 0.0255
+              },
+              {
+                "text": "Warships were designed so that they were 6",
+                "x": 0.078426,
+                "y": 0.241874,
+                "w": 0.452629,
+                "h": 0.018882
+              },
+              {
+                "text": ".... and moved",
+                "x": 0.756265,
+                "y": 0.241874,
+                "w": 0.136893,
+                "h": 0.017142
+              },
+              {
+                "text": "quickly. They often remained afloat after battles and were able to sail close to land as",
+                "x": 0.078426,
+                "y": 0.267283,
+                "w": 0.863306,
+                "h": 0.018791
+              },
+              {
+                "text": "they lacked any additional weight. A battering ram made of 7...",
+                "x": 0.076218,
+                "y": 0.294574,
+                "w": 0.631472,
+                "h": 0.020572
+              },
+              {
+                "text": "was included in the design for attacking and damaging the timber and oars of",
+                "x": 0.076218,
+                "y": 0.321672,
+                "w": 0.788236,
+                "h": 0.020501
+              },
+              {
+                "text": "enemy ships. Warships, such as the 'trireme', had rowers on three different",
+                "x": 0.078426,
+                "y": 0.348973,
+                "w": 0.763949,
+                "h": 0.020562
+              },
+              {
+                "text": "8",
+                "x": 0.078426,
+                "y": 0.376173,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "Unlike warships, merchant ships had a broad 9",
+                "x": 0.078426,
+                "y": 0.423773,
+                "w": 0.476916,
+                "h": 0.018862
+              },
+              {
+                "text": "that lay far",
+                "x": 0.798163,
+                "y": 0.425279,
+                "w": 0.114919,
+                "h": 0.019087
+              },
+              {
+                "text": "below the surface of the sea. Merchant ships were steered through the water with",
+                "x": 0.078426,
+                "y": 0.450902,
+                "w": 0.827979,
+                "h": 0.020471
+              },
+              {
+                "text": "the help of large rudders and a tiller bar. They had both square and 10....",
+                "x": 0.076218,
+                "y": 0.478172,
+                "w": 0.748493,
+                "h": 0.020592
+              },
+              {
+                "text": "sails. On merchant ships and warships, 11.",
+                "x": 0.078426,
+                "y": 0.505291,
+                "w": 0.439381,
+                "h": 0.020481
+              },
+              {
+                "text": "was used to",
+                "x": 0.754057,
+                "y": 0.507031,
+                "w": 0.125853,
+                "h": 0.01534
+              },
+              {
+                "text": "ensure rowers moved their oars in and out of the water at the same time.",
+                "x": 0.078348,
+                "y": 0.529647,
+                "w": 0.739856,
+                "h": 0.021665
+              },
+              {
+                "text": "Quantities of agricultural goods such as 12",
+                "x": 0.078426,
+                "y": 0.580131,
+                "w": 0.434965,
+                "h": 0.01874
+              },
+              {
+                "text": "... were transported",
+                "x": 0.745225,
+                "y": 0.581871,
+                "w": 0.187675,
+                "h": 0.01871
+              },
+              {
+                "text": "by merchant ships to two main ports in Italy. The ships were pulled to the shore by",
+                "x": 0.078426,
+                "y": 0.607371,
+                "w": 0.832395,
+                "h": 0.0204
+              },
+              {
+                "text": "13",
+                "x": 0.078426,
+                "y": 0.634571,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "....When the weather was clear and they could see islands",
+                "x": 0.332291,
+                "y": 0.634364,
+                "w": 0.600684,
+                "h": 0.021242
+              },
+              {
+                "text": "or land, sailors used landmarks that they knew to help them navigate their route.",
+                "x": 0.078426,
+                "y": 0.661771,
+                "w": 0.814731,
+                "h": 0.020612
+              },
+              {
+                "text": "64",
+                "x": 0.058555,
+                "y": 0.979668,
+                "w": 0.030911,
+                "h": 0.0153
+              },
+              {
+                "text": "→ • p. 126",
+                "x": 0.120377,
+                "y": 0.977827,
+                "w": 0.154556,
+                "h": 0.020542
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-69.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 14-19",
+                "x": 0.032059,
+                "y": 0.019176,
+                "w": 0.189883,
+                "h": 0.017061
+              },
+              {
+                "text": "Reading Passage 2 has eight sections, A-H.",
+                "x": 0.029851,
+                "y": 0.061473,
+                "w": 0.459252,
+                "h": 0.020602
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.029851,
+                "y": 0.102374,
+                "w": 0.503411,
+                "h": 0.018801
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 14-19 on your answer sheet.",
+                "x": 0.032059,
+                "y": 0.143275,
+                "w": 0.680047,
+                "h": 0.02045
+              },
+              {
+                "text": "14 an explanation for weapons being left behind in the mountains",
+                "x": 0.029851,
+                "y": 0.185775,
+                "w": 0.682255,
+                "h": 0.018852
+              },
+              {
+                "text": "15 a reference to the physical difficulties involved in an archaeological expedition",
+                "x": 0.029851,
+                "y": 0.218074,
+                "w": 0.839019,
+                "h": 0.01875
+              },
+              {
+                "text": "16 an explanation of why less food may have been available",
+                "x": 0.029851,
+                "y": 0.250313,
+                "w": 0.631472,
+                "h": 0.018761
+              },
+              {
+                "text": "17 a reference to the possibility of future archaeological discoveries",
+                "x": 0.029851,
+                "y": 0.280771,
+                "w": 0.702126,
+                "h": 0.020602
+              },
+              {
+                "text": "18 examples of items that would have been traded",
+                "x": 0.029851,
+                "y": 0.313273,
+                "w": 0.532115,
+                "h": 0.018842
+              },
+              {
+                "text": "19 a reference to the pressure archaeologists are under to work quickly",
+                "x": 0.029851,
+                "y": 0.345573,
+                "w": 0.741869,
+                "h": 0.020481
+              },
+              {
+                "text": "Questions 20-22",
+                "x": 0.032059,
+                "y": 0.416963,
+                "w": 0.189883,
+                "h": 0.01701
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.029851,
+                "y": 0.459472,
+                "w": 0.309112,
+                "h": 0.018842
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.029851,
+                "y": 0.50007,
+                "w": 0.642512,
+                "h": 0.020602
+              },
+              {
+                "text": "Write your answers in boxes 20-22 on your answer sheet.",
+                "x": 0.029851,
+                "y": 0.54097,
+                "w": 0.589521,
+                "h": 0.020501
+              },
+              {
+                "text": "Interesting finds at an archaeological site",
+                "x": 0.168952,
+                "y": 0.593619,
+                "w": 0.620432,
+                "h": 0.025672
+              },
+              {
+                "text": "Organic materials such as animal skins and textiles are not discovered very often at",
+                "x": 0.047515,
+                "y": 0.646268,
+                "w": 0.852266,
+                "h": 0.020602
+              },
+              {
+                "text": "archaeological sites. They have little protection against 20",
+                "x": 0.047515,
+                "y": 0.67194,
+                "w": 0.589521,
+                "h": 0.023931
+              },
+              {
+                "text": "...,",
+                "x": 0.86887,
+                "y": 0.683871,
+                "w": 0.024287,
+                "h": 0.0102
+              },
+              {
+                "text": "which means that they decay relatively quickly. But this is not always the case.",
+                "x": 0.047515,
+                "y": 0.700658,
+                "w": 0.797068,
+                "h": 0.020612
+              },
+              {
+                "text": "If temperatures are low enough, fragile artefacts can be preserved for thousands",
+                "x": 0.047515,
+                "y": 0.72807,
+                "w": 0.816939,
+                "h": 0.02045
+              },
+              {
+                "text": "of years.",
+                "x": 0.047515,
+                "y": 0.75527,
+                "w": 0.092734,
+                "h": 0.0204
+              },
+              {
+                "text": "A team of archaeologists have been working in the mountains in Oppland in Norway",
+                "x": 0.047515,
+                "y": 0.80287,
+                "w": 0.852266,
+                "h": 0.020491
+              },
+              {
+                "text": "to recover artefacts revealed by shrinking ice cover. In the past, there were trade",
+                "x": 0.045307,
+                "y": 0.831628,
+                "w": 0.821355,
+                "h": 0.018842
+              },
+              {
+                "text": "routes through these mountains and 21 ......",
+                "x": 0.049723,
+                "y": 0.858969,
+                "w": 0.432757,
+                "h": 0.01704
+              },
+              {
+                "text": "gathered there in",
+                "x": 0.694443,
+                "y": 0.858969,
+                "w": 0.176636,
+                "h": 0.018781
+              },
+              {
+                "text": "the summer months to avoid being attacked by 22",
+                "x": 0.047515,
+                "y": 0.886017,
+                "w": 0.510035,
+                "h": 0.020552
+              },
+              {
+                "text": ".. on lower",
+                "x": 0.7893,
+                "y": 0.887553,
+                "w": 0.10615,
+                "h": 0.017633
+              },
+              {
+                "text": "ground. The people who used these mountains left things behind and it is those",
+                "x": 0.047515,
+                "y": 0.915069,
+                "w": 0.8059,
+                "h": 0.018811
+              },
+              {
+                "text": "objects that are of interest to archaeologists.",
+                "x": 0.047515,
+                "y": 0.942147,
+                "w": 0.452629,
+                "h": 0.020521
+              },
+              {
+                "text": "67",
+                "x": 0.897573,
+                "y": 0.983068,
+                "w": 0.035327,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-70.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.065179,
+                "y": 0.019176,
+                "w": 0.231834,
+                "h": 0.017061
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.065179,
+                "y": 0.061473,
+                "w": 0.271577,
+                "h": 0.018902
+              },
+              {
+                "text": "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.102374,
+                "w": 0.664591,
+                "h": 0.020501
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make about the discoveries of",
+                "x": 0.060641,
+                "y": 0.139353,
+                "w": 0.874584,
+                "h": 0.025951
+              },
+              {
+                "text": "Barrett's team?",
+                "x": 0.062971,
+                "y": 0.165375,
+                "w": 0.156764,
+                "h": 0.01532
+              },
+              {
+                "text": "A Artefacts found in the higher mountain passes were limited to",
+                "x": 0.115961,
+                "y": 0.197664,
+                "w": 0.666799,
+                "h": 0.01701
+              },
+              {
+                "text": "skiing equipment.",
+                "x": 0.162328,
+                "y": 0.218074,
+                "w": 0.181051,
+                "h": 0.01875
+              },
+              {
+                "text": "B",
+                "x": 0.113753,
+                "y": 0.238474,
+                "w": 0.030911,
+                "h": 0.0136
+              },
+              {
+                "text": "Hunters went into the mountains even during periods of extreme cold.",
+                "x": 0.164536,
+                "y": 0.238474,
+                "w": 0.706542,
+                "h": 0.018801
+              },
+              {
+                "text": "C The number of artefacts from certain time periods was relatively low.",
+                "x": 0.11142,
+                "y": 0.256576,
+                "w": 0.742155,
+                "h": 0.023021
+              },
+              {
+                "text": "D",
+                "x": 0.111545,
+                "y": 0.280974,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Radiocarbon dating of artefacts produced some unreliable results.",
+                "x": 0.162328,
+                "y": 0.280771,
+                "w": 0.671215,
+                "h": 0.018902
+              },
+              {
+                "text": "E",
+                "x": 0.111545,
+                "y": 0.301374,
+                "w": 0.030911,
+                "h": 0.0136
+              },
+              {
+                "text": "More artefacts were found in Oppland than at any other mountain site.",
+                "x": 0.16012,
+                "y": 0.301222,
+                "w": 0.715374,
+                "h": 0.018852
+              },
+              {
+                "text": "Questions 25 and 26",
+                "x": 0.062971,
+                "y": 0.382973,
+                "w": 0.231834,
+                "h": 0.01702
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.062971,
+                "y": 0.425473,
+                "w": 0.271577,
+                "h": 0.018902
+              },
+              {
+                "text": "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+                "x": 0.062971,
+                "y": 0.466131,
+                "w": 0.666799,
+                "h": 0.018842
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make about the Viking Age?",
+                "x": 0.060763,
+                "y": 0.507031,
+                "w": 0.850058,
+                "h": 0.02045
+              },
+              {
+                "text": "A Hunters at this time benefited from an increased demand for goods.",
+                "x": 0.111369,
+                "y": 0.535584,
+                "w": 0.737847,
+                "h": 0.024711
+              },
+              {
+                "text": "B The beginning of the periodsaw the greatest growth in the wealth of Vikings.",
+                "x": 0.111545,
+                "y": 0.561421,
+                "w": 0.827979,
+                "h": 0.01875
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.581871,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "Vikings did not rely on ships alone to transport goods.",
+                "x": 0.16012,
+                "y": 0.581871,
+                "w": 0.54757,
+                "h": 0.01871
+              },
+              {
+                "text": "Norwegian towns at this time attracted traders from around the world.",
+                "x": 0.16012,
+                "y": 0.602271,
+                "w": 0.706542,
+                "h": 0.018761
+              },
+              {
+                "text": "E Vikings were primarily interested in their trading links with the Middle East.",
+                "x": 0.111545,
+                "y": 0.622671,
+                "w": 0.803692,
+                "h": 0.018811
+              },
+              {
+                "text": "68",
+                "x": 0.060763,
+                "y": 0.984768,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "→Op.126",
+                "x": 0.126825,
+                "y": 0.978994,
+                "w": 0.150493,
+                "h": 0.025147
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-73.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 27-32",
+                "x": 0.029851,
+                "y": 0.015776,
+                "w": 0.189883,
+                "h": 0.017
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 3?",
+                "x": 0.027643,
+                "y": 0.058276,
+                "w": 0.856682,
+                "h": 0.020602
+              },
+              {
+                "text": "In boxes 27-32 on your answer sheet, write",
+                "x": 0.027643,
+                "y": 0.098893,
+                "w": 0.446005,
+                "h": 0.018882
+              },
+              {
+                "text": "TRUE",
+                "x": 0.107064,
+                "y": 0.139729,
+                "w": 0.064161,
+                "h": 0.017292
+              },
+              {
+                "text": "FALSE",
+                "x": 0.104848,
+                "y": 0.161741,
+                "w": 0.081841,
+                "h": 0.015768
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.248438,
+                "y": 0.139794,
+                "w": 0.443797,
+                "h": 0.020481
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.248438,
+                "y": 0.160244,
+                "w": 0.437173,
+                "h": 0.01873
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.104922,
+                "y": 0.182375,
+                "w": 0.468084,
+                "h": 0.01703
+              },
+              {
+                "text": "27 The Cambridge scientists' discovery of the 'thermometer molecule' caused surprise",
+                "x": 0.025436,
+                "y": 0.233344,
+                "w": 0.894217,
+                "h": 0.022191
+              },
+              {
+                "text": "among other scientists.",
+                "x": 0.078426,
+                "y": 0.257174,
+                "w": 0.238458,
+                "h": 0.01533
+              },
+              {
+                "text": "28 The target for agricultural production by 2050 could be missed.",
+                "x": 0.025436,
+                "y": 0.287733,
+                "w": 0.688879,
+                "h": 0.02045
+              },
+              {
+                "text": "29 Wheat and rice suffer from a rise in temperatures.",
+                "x": 0.025436,
+                "y": 0.319932,
+                "w": 0.55861,
+                "h": 0.018842
+              },
+              {
+                "text": "30 It may be possible to develop crops that require less water.",
+                "x": 0.025436,
+                "y": 0.352373,
+                "w": 0.651343,
+                "h": 0.0204
+              },
+              {
+                "text": "31",
+                "x": 0.025436,
+                "y": 0.384673,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "Plants grow faster in sunlight than in shade.",
+                "x": 0.076218,
+                "y": 0.384673,
+                "w": 0.446005,
+                "h": 0.018801
+              },
+              {
+                "text": "32 Phytochromes change their state at the same speed day and night.",
+                "x": 0.025436,
+                "y": 0.416963,
+                "w": 0.73083,
+                "h": 0.02045
+              },
+              {
+                "text": "Questions 33-37",
+                "x": 0.027643,
+                "y": 0.488321,
+                "w": 0.192091,
+                "h": 0.01705
+              },
+              {
+                "text": "Reading Passage 3 has eight sections, A-H.",
+                "x": 0.025436,
+                "y": 0.530872,
+                "w": 0.46146,
+                "h": 0.020542
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.025436,
+                "y": 0.571671,
+                "w": 0.503411,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 33-37 on your answer sheet.",
+                "x": 0.027643,
+                "y": 0.61407,
+                "w": 0.684463,
+                "h": 0.020501
+              },
+              {
+                "text": "33 mention of specialists who can make use of the research findings",
+                "x": 0.025436,
+                "y": 0.654971,
+                "w": 0.713166,
+                "h": 0.02045
+              },
+              {
+                "text": "34 a reference to a potential benefit of the research findings",
+                "x": 0.023228,
+                "y": 0.685429,
+                "w": 0.627056,
+                "h": 0.020542
+              },
+              {
+                "text": "35",
+                "x": 0.025436,
+                "y": 0.71957,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "36",
+                "x": 0.025436,
+                "y": 0.75187,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "37",
+                "x": 0.025436,
+                "y": 0.78417,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "scientific support for a traditional saying",
+                "x": 0.069594,
+                "y": 0.719368,
+                "w": 0.40847,
+                "h": 0.020602
+              },
+              {
+                "text": "a reference to people traditionally making plans based on plant behaviour",
+                "x": 0.07401,
+                "y": 0.75187,
+                "w": 0.748493,
+                "h": 0.018842
+              },
+              {
+                "text": "a reference to where the research has been reported",
+                "x": 0.065055,
+                "y": 0.781168,
+                "w": 0.547869,
+                "h": 0.022162
+              },
+              {
+                "text": "71",
+                "x": 0.895366,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-3/page-74.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 38-40",
+                "x": 0.067386,
+                "y": 0.015776,
+                "w": 0.189883,
+                "h": 0.017
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.067227,
+                "y": 0.058179,
+                "w": 0.318281,
+                "h": 0.018852
+              },
+              {
+                "text": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+                "x": 0.067386,
+                "y": 0.098893,
+                "w": 0.777196,
+                "h": 0.020582
+              },
+              {
+                "text": "Write your answers in boxes 38-40 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.139794,
+                "w": 0.587313,
+                "h": 0.020481
+              },
+              {
+                "text": "38 Daffodils are likely to flower early in response to",
+                "x": 0.065179,
+                "y": 0.187475,
+                "w": 0.53653,
+                "h": 0.0204
+              },
+              {
+                "text": "39 If ash trees come into leaf before oak trees, the weather in",
+                "x": 0.06289,
+                "y": 0.226532,
+                "w": 0.644871,
+                "h": 0.022579
+              },
+              {
+                "text": "will probably be wet.",
+                "x": 0.113753,
+                "y": 0.248573,
+                "w": 0.209755,
+                "h": 0.018801
+              },
+              {
+                "text": "40 The research was carried out using a particular species of",
+                "x": 0.062971,
+                "y": 0.285993,
+                "w": 0.642512,
+                "h": 0.020481
+              },
+              {
+                "text": "weather.",
+                "x": 0.844493,
+                "y": 0.190548,
+                "w": 0.092913,
+                "h": 0.015953
+              },
+              {
+                "text": "....",
+                "x": 0.926277,
+                "y": 0.299674,
+                "w": 0.030911,
+                "h": 0.0051
+              },
+              {
+                "text": "72",
+                "x": 0.062971,
+                "y": 0.981368,
+                "w": 0.037535,
+                "h": 0.0136
+              },
+              {
+                "text": "→ O p. 126",
+                "x": 0.115863,
+                "y": 0.977582,
+                "w": 0.15696,
+                "h": 0.024572
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 27,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 28,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 29,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 30,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 31,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 32,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "park",
+      "blue",
+      "reference",
+      "story",
+      "rain",
+      "snack",
+      "medication",
+      "helmet",
+      "tent",
+      "199",
+      "A",
+      "C",
+      "B",
+      "C",
+      "D",
+      "E",
+      "A",
+      "H",
+      "C",
+      "G",
+      "C",
+      "D",
+      "C",
+      "E",
+      "C",
+      "A",
+      "B",
+      "A",
+      "A",
+      "C",
+      "grandmother",
+      "decade",
+      "equipment",
+      "economic",
+      "basic",
+      "round",
+      "bone",
+      "rough",
+      "style",
+      "sheep"
+    ],
+    "reading": [
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "TRUE",
+      "lightweight",
+      "bronze",
+      "levels",
+      "hull",
+      "triangular",
+      "music",
+      "grain",
+      "towboats",
+      "D",
+      "C",
+      "F",
+      "H",
+      "G",
+      "B",
+      "microorganisms|micro-organisms",
+      "reindeer",
+      "insects",
+      "B",
+      "C",
+      "A",
+      "C",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "NOT GIVEN",
+      "FALSE",
+      "FALSE",
+      "H",
+      "D",
+      "G",
+      "C",
+      "A",
+      "warm|warm winter",
+      "summer",
+      "mustard plant|mustard plants|mustard"
+    ]
+  },
+  "completionOptions": {}
+}

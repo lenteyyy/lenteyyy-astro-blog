@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/verify-ielts-csp.mjs",
     "check": "astro check",
     "lint": "astro check",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",

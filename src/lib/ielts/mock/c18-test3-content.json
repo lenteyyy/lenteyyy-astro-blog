@@ -1,0 +1,6067 @@
+{
+  "source": {
+    "book": 18,
+    "test": 3,
+    "questionPages": {
+      "l": [
+        [
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          62
+        ]
+      ],
+      "r": [
+        [
+          63,
+          64
+        ],
+        [
+          68,
+          69
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "q": [
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          70,
+          71
+        ],
+        [
+          74,
+          75,
+          76
+        ]
+      ],
+      "w": [
+        77,
+        78
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "7f2fdefa5af7b6b75640eec3b0e65c1d49ecb7bd311e1293d53b6377acacbe75"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-3/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-3/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-3/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-3/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-3/page-63.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.369501,
+                "y": 0.019176,
+                "w": 0.130987,
+                "h": 0.0238
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.029326,
+                "y": 0.093804,
+                "w": 0.29912,
+                "h": 0.020675
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.031281,
+                "y": 0.136475,
+                "w": 0.787879,
+                "h": 0.022306
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.029326,
+                "y": 0.160258,
+                "w": 0.164223,
+                "h": 0.018717
+              },
+              {
+                "text": "Materials to take us beyond concrete",
+                "x": 0.168133,
+                "y": 0.201074,
+                "w": 0.533724,
+                "h": 0.029083
+              },
+              {
+                "text": "Concrete is everywhere, but it's bad for the planet, generating large amounts of carbon",
+                "x": 0.039101,
+                "y": 0.248674,
+                "w": 0.791789,
+                "h": 0.02234
+              },
+              {
+                "text": "dioxide - alternatives are being developed",
+                "x": 0.240469,
+                "y": 0.272474,
+                "w": 0.391007,
+                "h": 0.0204
+              },
+              {
+                "text": "A Concrete is the second most used substance in the global economy, after water - and one",
+                "x": 0.029326,
+                "y": 0.314825,
+                "w": 0.780059,
+                "h": 0.020675
+              },
+              {
+                "text": "of the world's biggest single sources of greenhouse gas emissions. The chemical process",
+                "x": 0.074291,
+                "y": 0.336976,
+                "w": 0.733138,
+                "h": 0.020675
+              },
+              {
+                "text": "by which cement, the key ingredient of concrete, is created results in large quantities of",
+                "x": 0.074291,
+                "y": 0.357473,
+                "w": 0.725318,
+                "h": 0.022329
+              },
+              {
+                "text": "carbon dioxide. The UN estimates that there will be 9.8 billion people living on the planet",
+                "x": 0.074291,
+                "y": 0.377833,
+                "w": 0.746823,
+                "h": 0.022151
+              },
+              {
+                "text": "by mid-century. They will need somewhere to live. If concrete is the only answer to the",
+                "x": 0.074238,
+                "y": 0.399376,
+                "w": 0.725428,
+                "h": 0.022759
+              },
+              {
+                "text": "construction of new cities, then carbon emissions will soar, aggravating global warming.",
+                "x": 0.074237,
+                "y": 0.420288,
+                "w": 0.731281,
+                "h": 0.02279
+              },
+              {
+                "text": "And so scientists have started innovating with other materials, in a scramble for alternatives",
+                "x": 0.074291,
+                "y": 0.440772,
+                "w": 0.762463,
+                "h": 0.02222
+              },
+              {
+                "text": "to a universal commodity that has underpinned our modern life for many years.",
+                "x": 0.074291,
+                "y": 0.462872,
+                "w": 0.660802,
+                "h": 0.022272
+              },
+              {
+                "text": "B The problem with replacing concrete is that it is so very good at what it does.",
+                "x": 0.031281,
+                "y": 0.505326,
+                "w": 0.686217,
+                "h": 0.022151
+              },
+              {
+                "text": "Chris Cheeseman, an engineering professor at Imperial College London, says the key",
+                "x": 0.076246,
+                "y": 0.527472,
+                "w": 0.705767,
+                "h": 0.022157
+              },
+              {
+                "text": "thing to consider is the extent to which concrete is used around the world, and is likely to",
+                "x": 0.074291,
+                "y": 0.54766,
+                "w": 0.739003,
+                "h": 0.022312
+              },
+              {
+                "text": "continue to be used. 'Concrete is not a high-carbon product. Cement is high carbon, but",
+                "x": 0.074291,
+                "y": 0.568271,
+                "w": 0.727273,
+                "h": 0.022214
+              },
+              {
+                "text": "concrete is not. But it is the scale on which it is used that makes it high carbon. The sheer",
+                "x": 0.074291,
+                "y": 0.590371,
+                "w": 0.742913,
+                "h": 0.01882
+              },
+              {
+                "text": "scale of manufacture is so huge, that is the issue.\"",
+                "x": 0.074291,
+                "y": 0.610668,
+                "w": 0.412512,
+                "h": 0.020675
+              },
+              {
+                "text": "Not only are the ingredients of concrete relatively cheap and found in abundance in most",
+                "x": 0.074291,
+                "y": 0.653271,
+                "w": 0.739003,
+                "h": 0.020406
+              },
+              {
+                "text": "places around the globe, the stuff itself has marvellous properties: Portland cement, the",
+                "x": 0.074291,
+                "y": 0.673671,
+                "w": 0.723363,
+                "h": 0.022157
+              },
+              {
+                "text": "vital component of concrete, is mouldable and pourable, but quickly sets hard. Cheeseman",
+                "x": 0.074291,
+                "y": 0.693859,
+                "w": 0.750733,
+                "h": 0.022312
+              },
+              {
+                "text": "also notes another advantage: concrete and steel have similar thermal expansion properties,",
+                "x": 0.074291,
+                "y": 0.71447,
+                "w": 0.758553,
+                "h": 0.022214
+              },
+              {
+                "text": "so steel can be used to reinforce concrete, making it far stronger and more flexible as a",
+                "x": 0.074291,
+                "y": 0.73657,
+                "w": 0.717498,
+                "h": 0.022266
+              },
+              {
+                "text": "building material than it could be on its own. According to Cheeseman, all these factors",
+                "x": 0.076246,
+                "y": 0.75867,
+                "w": 0.725318,
+                "h": 0.0204
+              },
+              {
+                "text": "together make concrete hard to beat. 'Concrete is amazing stuff. Making anything with",
+                "x": 0.074291,
+                "y": 0.77737,
+                "w": 0.721408,
+                "h": 0.022323
+              },
+              {
+                "text": "similar properties is going to be very difficult.\"",
+                "x": 0.074291,
+                "y": 0.79947,
+                "w": 0.391007,
+                "h": 0.0221
+              },
+              {
+                "text": "D A possible alternative to concrete is wood. Making buildings from wood may seem like a",
+                "x": 0.031281,
+                "y": 0.841969,
+                "w": 0.783969,
+                "h": 0.0204
+              },
+              {
+                "text": "rather medieval idea, but climate change is driving architects to turn to treated timber as",
+                "x": 0.074291,
+                "y": 0.862209,
+                "w": 0.731183,
+                "h": 0.02226
+              },
+              {
+                "text": "a possible resource. Recent years have seen the emergence of tall buildings constructed",
+                "x": 0.076246,
+                "y": 0.88436,
+                "w": 0.721408,
+                "h": 0.022209
+              },
+              {
+                "text": "almost entirely from timber. Vancouver, Vienna and Brumunddal in Norway are all home to",
+                "x": 0.074291,
+                "y": 0.904869,
+                "w": 0.760508,
+                "h": 0.022317
+              },
+              {
+                "text": "constructed tall, wooden buildings.",
+                "x": 0.076047,
+                "y": 0.926499,
+                "w": 0.293596,
+                "h": 0.023982
+              },
+              {
+                "text": "61",
+                "x": 0.811339,
+                "y": 0.994968,
+                "w": 0.035191,
+                "h": 0.0255
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-3/page-64.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.146628,
+                "y": 0.012376,
+                "w": 0.056696,
+                "h": 0.017
+              },
+              {
+                "text": "E Using wood to construct buildings, however, is not straightforward. Wood expands as it",
+                "x": 0.144673,
+                "y": 0.06673,
+                "w": 0.772238,
+                "h": 0.020675
+              },
+              {
+                "text": "absorbs moisture from the air and is susceptible to pests, not to mention fire. But treating",
+                "x": 0.187683,
+                "y": 0.087175,
+                "w": 0.737048,
+                "h": 0.020411
+              },
+              {
+                "text": "wood and combining it with other materials can improve its properties. Cross-laminated",
+                "x": 0.189638,
+                "y": 0.107575,
+                "w": 0.729228,
+                "h": 0.022163
+              },
+              {
+                "text": "timber is engineered wood. An adhesive is used to stick layers of solid-sawn timber",
+                "x": 0.189638,
+                "y": 0.129675,
+                "w": 0.692082,
+                "h": 0.0204
+              },
+              {
+                "text": "together, crosswise, to form building blocks. This material is light but has the strength of",
+                "x": 0.187683,
+                "y": 0.14992,
+                "w": 0.737048,
+                "h": 0.022254
+              },
+              {
+                "text": "concrete and steel. Construction experts say that wooden buildings can be constructed at a",
+                "x": 0.187683,
+                "y": 0.172072,
+                "w": 0.746823,
+                "h": 0.020675
+              },
+              {
+                "text": "greater speed than ones of concrete and steel and the process, it seems, is quieter.",
+                "x": 0.189638,
+                "y": 0.190777,
+                "w": 0.670577,
+                "h": 0.02412
+              },
+              {
+                "text": "F",
+                "x": 0.144673,
+                "y": 0.236774,
+                "w": 0.013685,
+                "h": 0.017
+              },
+              {
+                "text": "Stora Enso is Europe's biggest supplier of cross-laminated timber, and its vice-president",
+                "x": 0.177852,
+                "y": 0.232951,
+                "w": 0.743038,
+                "h": 0.023688
+              },
+              {
+                "text": "Markus Mannström reports that the company is seeing increasing demand globally for",
+                "x": 0.189638,
+                "y": 0.255262,
+                "w": 0.715543,
+                "h": 0.020675
+              },
+              {
+                "text": "building in wood, with climate change concerns the key driver. Finland, with its large",
+                "x": 0.189572,
+                "y": 0.275668,
+                "w": 0.707852,
+                "h": 0.023235
+              },
+              {
+                "text": "forests, where Stora Enso is based, has been leading the way, but the company is seeing",
+                "x": 0.187683,
+                "y": 0.296119,
+                "w": 0.727273,
+                "h": 0.022254
+              },
+              {
+                "text": "a rise in demand for its timber products across the world, including in Asia. Of course,",
+                "x": 0.187683,
+                "y": 0.31827,
+                "w": 0.719453,
+                "h": 0.020675
+              },
+              {
+                "text": "using timber in a building also locks away the carbon that it absorbed as it grew. But even",
+                "x": 0.189562,
+                "y": 0.338281,
+                "w": 0.74306,
+                "h": 0.023793
+              },
+              {
+                "text": "treated wood has its limitations and only when a wider range of construction projects has",
+                "x": 0.189638,
+                "y": 0.359127,
+                "w": 0.737048,
+                "h": 0.022151
+              },
+              {
+                "text": "been proven in practice will it be possible to see wood as a real alternative to concrete in",
+                "x": 0.189569,
+                "y": 0.380764,
+                "w": 0.733271,
+                "h": 0.023614
+              },
+              {
+                "text": "constructing tall buildings.",
+                "x": 0.189638,
+                "y": 0.404907,
+                "w": 0.226784,
+                "h": 0.018866
+              },
+              {
+                "text": "G Fly ash and siag from iron ore are possible alternatives to cement in a concrete mix. Fly ash,",
+                "x": 0.146579,
+                "y": 0.44394,
+                "w": 0.801652,
+                "h": 0.022758
+              },
+              {
+                "text": "a byproduct of coal-burning power plants, can be incorporated into concrete mixes to make",
+                "x": 0.189638,
+                "y": 0.464469,
+                "w": 0.748778,
+                "h": 0.022203
+              },
+              {
+                "text": "up as much as 15 to 30% of the cement, without harming the strength or durability of the",
+                "x": 0.189638,
+                "y": 0.486621,
+                "w": 0.729228,
+                "h": 0.020675
+              },
+              {
+                "text": "resulting mix. Iron-ore slag, a byproduct of the iron-ore smelting process, can be used in a",
+                "x": 0.189638,
+                "y": 0.507072,
+                "w": 0.739003,
+                "h": 0.0221
+              },
+              {
+                "text": "similar way. Their incorporation into concrete mixes has the potential to reduce greenhouse",
+                "x": 0.189638,
+                "y": 0.528954,
+                "w": 0.750733,
+                "h": 0.022317
+              },
+              {
+                "text": "gas emissions.",
+                "x": 0.189638,
+                "y": 0.552972,
+                "w": 0.125122,
+                "h": 0.018809
+              },
+              {
+                "text": "But Anna Surgenor, of the UK's Green Building Council, notes that although these waste",
+                "x": 0.189638,
+                "y": 0.591963,
+                "w": 0.739003,
+                "h": 0.020675
+              },
+              {
+                "text": "products can save carbon in the concrete mix, their use is not always straightforward.",
+                "x": 0.189638,
+                "y": 0.612471,
+                "w": 0.707722,
+                "h": 0.022317
+              },
+              {
+                "text": "*It's possible to replace the cement content in concrete with waste products to lower the",
+                "x": 0.189638,
+                "y": 0.632819,
+                "w": 0.727273,
+                "h": 0.022151
+              },
+              {
+                "text": "overall carbon impact. But there are several calculations that need to be considered across",
+                "x": 0.189456,
+                "y": 0.649584,
+                "w": 0.745187,
+                "h": 0.028842
+              },
+              {
+                "text": "the entire life cycle of the building - these include factoring in where these materials are",
+                "x": 0.189638,
+                "y": 0.677071,
+                "w": 0.733138,
+                "h": 0.022203
+              },
+              {
+                "text": "being shipped from. If they are transported over long distances, using fossil fuels, the use of",
+                "x": 0.189638,
+                "y": 0.697304,
+                "w": 0.766373,
+                "h": 0.022266
+              },
+              {
+                "text": "alternative materials might not make sense from an overall carbon reduction perspective.?",
+                "x": 0.189582,
+                "y": 0.717842,
+                "w": 0.745006,
+                "h": 0.023961
+              },
+              {
+                "text": "H",
+                "x": 0.146628,
+                "y": 0.76207,
+                "w": 0.029326,
+                "h": 0.017
+              },
+              {
+                "text": "While these technologies are all promising ideas, they are either unproven or based on",
+                "x": 0.179863,
+                "y": 0.760313,
+                "w": 0.725318,
+                "h": 0.020675
+              },
+              {
+                "text": "materials that are not abundant. In their overview of innovation in the concrete industry,",
+                "x": 0.189638,
+                "y": 0.78077,
+                "w": 0.731183,
+                "h": 0.0204
+              },
+              {
+                "text": "Felix Preston and Johanna Lehne of the UK's Royal Institute of International Affairs",
+                "x": 0.191593,
+                "y": 0.802646,
+                "w": 0.699902,
+                "h": 0.020675
+              },
+              {
+                "text": "reached the conclusion that, 'Some novel cements have been discussed for more than",
+                "x": 0.189432,
+                "y": 0.818171,
+                "w": 0.708075,
+                "h": 0.029736
+              },
+              {
+                "text": "a decade within the research community, without breaking through. At present, these",
+                "x": 0.189638,
+                "y": 0.843503,
+                "w": 0.703812,
+                "h": 0.022266
+              },
+              {
+                "text": "alternatives are rarely as cost-effective as conventional cement, and they face raw-material",
+                "x": 0.191593,
+                "y": 0.865655,
+                "w": 0.750733,
+                "h": 0.020675
+              },
+              {
+                "text": "shortages and resistance from customers.'",
+                "x": 0.189638,
+                "y": 0.887806,
+                "w": 0.349951,
+                "h": 0.020675
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-3/page-68.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.146504,
+                "y": 0.01371,
+                "w": 0.058898,
+                "h": 0.016031
+              },
+              {
+                "text": "The steam car",
+                "x": 0.453568,
+                "y": 0.06673,
+                "w": 0.193548,
+                "h": 0.020675
+              },
+              {
+                "text": "The successes and failures of the Doble brothers and their steam cars",
+                "x": 0.230694,
+                "y": 0.110975,
+                "w": 0.641251,
+                "h": 0.0204
+              },
+              {
+                "text": "A",
+                "x": 0.144673,
+                "y": 0.156875,
+                "w": 0.017595,
+                "h": 0.0187
+              },
+              {
+                "text": "When primitive automobiles first began to appear in the 1800s, their engines were based",
+                "x": 0.179863,
+                "y": 0.153366,
+                "w": 0.742913,
+                "h": 0.022209
+              },
+              {
+                "text": "on steam power. Steam had already enjoyed a long and successful career in the railways,",
+                "x": 0.189507,
+                "y": 0.173428,
+                "w": 0.735316,
+                "h": 0.025555
+              },
+              {
+                "text": "so it was only natural that the technology evolved into a miniaturized version which was",
+                "x": 0.189638,
+                "y": 0.195974,
+                "w": 0.735093,
+                "h": 0.0221
+              },
+              {
+                "text": "separate from the trains. But these early cars inherited steam's weaknesses along with its",
+                "x": 0.189525,
+                "y": 0.215123,
+                "w": 0.735311,
+                "h": 0.025207
+              },
+              {
+                "text": "strengths. The boilers had to be lit by hand, and they required about twenty minutes to build",
+                "x": 0.189638,
+                "y": 0.238474,
+                "w": 0.762463,
+                "h": 0.022203
+              },
+              {
+                "text": "up pressure before they could be driven. Furthermore, their water reservoirs only lasted for",
+                "x": 0.191423,
+                "y": 0.256738,
+                "w": 0.753008,
+                "h": 0.025981
+              },
+              {
+                "text": "about thirty miles before needing replenishment. Despite such shortcomings, these newly",
+                "x": 0.191593,
+                "y": 0.279274,
+                "w": 0.739003,
+                "h": 0.02226
+              },
+              {
+                "text": "designed self-propelled carriages offered quick transportation, and by the early 1900s it was",
+                "x": 0.191484,
+                "y": 0.299323,
+                "w": 0.762707,
+                "h": 0.026092
+              },
+              {
+                "text": "not uncommon to see such machines shuttling wealthy citizens around town.",
+                "x": 0.191593,
+                "y": 0.323473,
+                "w": 0.637341,
+                "h": 0.0204
+              },
+              {
+                "text": "But the glory days of steam cars were few. A new technology called the Internal",
+                "x": 0.177833,
+                "y": 0.363776,
+                "w": 0.676634,
+                "h": 0.023303
+              },
+              {
+                "text": "Combustion Engine soon appeared, which offered the ability to drive down the road just",
+                "x": 0.193548,
+                "y": 0.384673,
+                "w": 0.731183,
+                "h": 0.022203
+              },
+              {
+                "text": "moments after starting up. At first, these noisy gasoline cars were unpopular because they",
+                "x": 0.191593,
+                "y": 0.406773,
+                "w": 0.740958,
+                "h": 0.0204
+              },
+              {
+                "text": "were more complicated to operate and they had difficult hand-crank starters, which were",
+                "x": 0.193548,
+                "y": 0.427058,
+                "w": 0.733138,
+                "h": 0.022214
+              },
+              {
+                "text": "known to break arms when the engines backfired. But in 1912 General Motors introduced",
+                "x": 0.193548,
+                "y": 0.447572,
+                "w": 0.742913,
+                "h": 0.022312
+              },
+              {
+                "text": "the electric starter, and over the following few years steam power was gradually phased out.",
+                "x": 0.191593,
+                "y": 0.469672,
+                "w": 0.764418,
+                "h": 0.0221
+              },
+              {
+                "text": "C",
+                "x": 0.148583,
+                "y": 0.515572,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Even as the market was declining, four brothers made one last effort to rekindle the",
+                "x": 0.1934,
+                "y": 0.509863,
+                "w": 0.690423,
+                "h": 0.025034
+              },
+              {
+                "text": "technology. Between 1906 and 1909, while still attending high school, Abner Doble and his",
+                "x": 0.191449,
+                "y": 0.530299,
+                "w": 0.760815,
+                "h": 0.026769
+              },
+              {
+                "text": "three brothers built their first steam car in their parents' basement. It comprised parts taken",
+                "x": 0.191467,
+                "y": 0.551926,
+                "w": 0.752949,
+                "h": 0.026706
+              },
+              {
+                "text": "from a wrecked early steam car but reconfigured to drive an engine of their own design.",
+                "x": 0.193397,
+                "y": 0.572333,
+                "w": 0.729491,
+                "h": 0.027429
+              },
+              {
+                "text": "Though it did not run well, the Doble brothers went on to build a second and third prototype",
+                "x": 0.193435,
+                "y": 0.594338,
+                "w": 0.764653,
+                "h": 0.025289
+              },
+              {
+                "text": "in the following years. Though the Doble boys' third prototype, nicknamed the Model B,",
+                "x": 0.191593,
+                "y": 0.61756,
+                "w": 0.733138,
+                "h": 0.022151
+              },
+              {
+                "text": "still lacked the convenience of an internal combustion engine, it drew the attention of",
+                "x": 0.193548,
+                "y": 0.637742,
+                "w": 0.709677,
+                "h": 0.020675
+              },
+              {
+                "text": "automobile trade magazines due to its numerous improvements over previous steam cars.",
+                "x": 0.193548,
+                "y": 0.658371,
+                "w": 0.740958,
+                "h": 0.022197
+              },
+              {
+                "text": "The Model B proved to be superior to gasoline automobiles in many ways. Its high-pressure",
+                "x": 0.193548,
+                "y": 0.680471,
+                "w": 0.764418,
+                "h": 0.022249
+              },
+              {
+                "text": "steam drove the engine pistons in virtual silence, in contrast to clattering gas engines which",
+                "x": 0.193362,
+                "y": 0.697973,
+                "w": 0.758913,
+                "h": 0.028397
+              },
+              {
+                "text": "emitted the aroma of burned hydrocarbons. Perhaps most impressively, the Model B was",
+                "x": 0.195503,
+                "y": 0.72127,
+                "w": 0.735093,
+                "h": 0.022306
+              },
+              {
+                "text": "amazingly swift. It could accelerate from zero to sixty miles per hour in just fifteen seconds,",
+                "x": 0.193424,
+                "y": 0.742193,
+                "w": 0.766582,
+                "h": 0.02477
+              },
+              {
+                "text": "a feat described as 'remarkable acceleration' by Automobile magazine in 1914.",
+                "x": 0.195362,
+                "y": 0.763113,
+                "w": 0.655179,
+                "h": 0.026951
+              },
+              {
+                "text": "D The following year Abner Doble drove the Model B from Massachusetts to Detroit in order",
+                "x": 0.150369,
+                "y": 0.80214,
+                "w": 0.803848,
+                "h": 0.027904
+              },
+              {
+                "text": "to seek investment in his automobile design, which he used to open the General Engineering",
+                "x": 0.193548,
+                "y": 0.826669,
+                "w": 0.768328,
+                "h": 0.022249
+              },
+              {
+                "text": "Company. He and his brothers immediately began working on the Model C, which was",
+                "x": 0.197458,
+                "y": 0.848769,
+                "w": 0.721408,
+                "h": 0.0223
+              },
+              {
+                "text": "intended to expand upon the innovations of the Model B. The brothers added features such",
+                "x": 0.193406,
+                "y": 0.864641,
+                "w": 0.753032,
+                "h": 0.028588
+              },
+              {
+                "text": "as a key-based ignition in the cabin, eliminating the need for the operator to manually",
+                "x": 0.195503,
+                "y": 0.891252,
+                "w": 0.709677,
+                "h": 0.022151
+              },
+              {
+                "text": "ignite the boiler. With these enhancements, the Dobles' new car company promised a steam",
+                "x": 0.193426,
+                "y": 0.909145,
+                "w": 0.760778,
+                "h": 0.027794
+              },
+              {
+                "text": "vehicle which would provide all of the convenience of a gasoline car, but with much greater",
+                "x": 0.195503,
+                "y": 0.933585,
+                "w": 0.764418,
+                "h": 0.020675
+              },
+              {
+                "text": "speed, much simpler driving controls, and a virtually silent powerplant. By the following",
+                "x": 0.195503,
+                "y": 0.954168,
+                "w": 0.739003,
+                "h": 0.022243
+              },
+              {
+                "text": "April, the General Engineering Company had received 5,390 deposits for Doble Detroits,",
+                "x": 0.197325,
+                "y": 0.97348,
+                "w": 0.741175,
+                "h": 0.025526
+              },
+              {
+                "text": "which were scheduled for delivery in early 1918.",
+                "x": 0.195503,
+                "y": 0.996594,
+                "w": 0.410557,
+                "h": 0.022174
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-3/page-69.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "E Later that year Abner Doble delivered unhappy news to those eagerly awaiting the delivery",
+                "x": 0.017549,
+                "y": 0.02053,
+                "w": 0.799707,
+                "h": 0.022802
+              },
+              {
+                "text": "of their modern new cars. Those buyers who received the handful of completed cars",
+                "x": 0.062561,
+                "y": 0.042976,
+                "w": 0.695992,
+                "h": 0.0204
+              },
+              {
+                "text": "complained that the vehicles were sluggish and erratic, sometimes going in reverse when",
+                "x": 0.062561,
+                "y": 0.063284,
+                "w": 0.737048,
+                "h": 0.022191
+              },
+              {
+                "text": "they should go forward. The new engine design, though innovative, was still plagued with",
+                "x": 0.060606,
+                "y": 0.083775,
+                "w": 0.746823,
+                "h": 0.022335
+              },
+              {
+                "text": "serious glitches.",
+                "x": 0.060606,
+                "y": 0.107575,
+                "w": 0.138807,
+                "h": 0.018717
+              },
+              {
+                "text": "The brothers made one final attempt to produce a viable steam automobile. In early",
+                "x": 0.054741,
+                "y": 0.148375,
+                "w": 0.695992,
+                "h": 0.0204
+              },
+              {
+                "text": "1924, the Doble brothers shipped a Model E to New York City to be road-tested by the",
+                "x": 0.062507,
+                "y": 0.168598,
+                "w": 0.717605,
+                "h": 0.022406
+              },
+              {
+                "text": "Automobile Club of America. After sitting overnight in freezing temperatures, the car was",
+                "x": 0.062561,
+                "y": 0.189174,
+                "w": 0.744868,
+                "h": 0.0204
+              },
+              {
+                "text": "pushed out into the road and left to sit for over an hour in the frosty morning air. At the",
+                "x": 0.060606,
+                "y": 0.211274,
+                "w": 0.721408,
+                "h": 0.0204
+              },
+              {
+                "text": "turn of the key, the boiler lit and reached its operating pressure inside of forty seconds.",
+                "x": 0.060542,
+                "y": 0.230955,
+                "w": 0.721518,
+                "h": 0.023285
+              },
+              {
+                "text": "As they drove the test vehicle further, they found that its evenly distributed weight lent it",
+                "x": 0.062561,
+                "y": 0.252074,
+                "w": 0.737048,
+                "h": 0.0221
+              },
+              {
+                "text": "surprisingly good handling, even though it was so heavy. As the new Doble steamer was",
+                "x": 0.060606,
+                "y": 0.273968,
+                "w": 0.733138,
+                "h": 0.020675
+              },
+              {
+                "text": "further developed and tested, its maximum speed was pushed to over a hundred miles per",
+                "x": 0.060606,
+                "y": 0.296119,
+                "w": 0.742913,
+                "h": 0.020675
+              },
+              {
+                "text": "hour, and it achieved about fifteen miles per gallon of kerosene with negligible emissions.",
+                "x": 0.060558,
+                "y": 0.314856,
+                "w": 0.746914,
+                "h": 0.024046
+              },
+              {
+                "text": "G Sadly, the Dobles\" brilliant steam car never was a financial success. Priced at around",
+                "x": 0.017494,
+                "y": 0.354494,
+                "w": 0.743135,
+                "h": 0.025615
+              },
+              {
+                "text": "$18,000 in 1924, it was popular only among the very wealthy. Plus, it is said that no two",
+                "x": 0.062561,
+                "y": 0.379573,
+                "w": 0.733138,
+                "h": 0.020411
+              },
+              {
+                "text": "Model Es were quite the same, because Abner Doble tinkered endlessly with the design. By",
+                "x": 0.064516,
+                "y": 0.399973,
+                "w": 0.758553,
+                "h": 0.022163
+              },
+              {
+                "text": "the time the company folded in 1931, fewer than fifty of the amazing Model E steam cars",
+                "x": 0.062561,
+                "y": 0.420167,
+                "w": 0.740958,
+                "h": 0.022306
+              },
+              {
+                "text": "had been produced. For his whole career, until his death in 1961, Abner Doble remained",
+                "x": 0.062561,
+                "y": 0.442318,
+                "w": 0.731183,
+                "h": 0.022254
+              },
+              {
+                "text": "adamant that steam-powered automobiles were at least equal to gasoline cars, if not",
+                "x": 0.062561,
+                "y": 0.462872,
+                "w": 0.694037,
+                "h": 0.022272
+              },
+              {
+                "text": "superior. Given the evidence, he may have been right. Many of the Model E Dobles which",
+                "x": 0.062561,
+                "y": 0.484972,
+                "w": 0.748778,
+                "h": 0.022323
+              },
+              {
+                "text": "have survived are still in good working condition, some having been driven over half a",
+                "x": 0.062561,
+                "y": 0.507072,
+                "w": 0.719453,
+                "h": 0.020406
+              },
+              {
+                "text": "million miles with only normal maintenance. Astonishingly, an unmodified Doble Model E",
+                "x": 0.062561,
+                "y": 0.527472,
+                "w": 0.752688,
+                "h": 0.0204
+              },
+              {
+                "text": "runs clean enough to pass the emissions laws in California today, and they are pretty strict.",
+                "x": 0.062561,
+                "y": 0.54766,
+                "w": 0.750733,
+                "h": 0.022312
+              },
+              {
+                "text": "It is true that the technology poses some difficult problems, but you cannot help but wonder",
+                "x": 0.060606,
+                "y": 0.569811,
+                "w": 0.762463,
+                "h": 0.020675
+              },
+              {
+                "text": "how efficient a steam car might be with the benefit of modern materials and computers.",
+                "x": 0.060606,
+                "y": 0.590371,
+                "w": 0.727273,
+                "h": 0.0204
+              },
+              {
+                "text": "Under the current pressure to improve automotive performance and reduce emissions, it is",
+                "x": 0.062521,
+                "y": 0.610679,
+                "w": 0.748869,
+                "h": 0.02331
+              },
+              {
+                "text": "not unthinkable that the steam car may rise again.",
+                "x": 0.062561,
+                "y": 0.632819,
+                "w": 0.416422,
+                "h": 0.020675
+              },
+              {
+                "text": "67",
+                "x": 0.803519,
+                "y": 0.998368,
+                "w": 0.02346,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-3/page-72.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.158358,
+                "y": 0.017476,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.158358,
+                "y": 0.068475,
+                "w": 0.29912,
+                "h": 0.0221
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.158358,
+                "y": 0.112509,
+                "w": 0.799609,
+                "h": 0.022266
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.158358,
+                "y": 0.138106,
+                "w": 0.162268,
+                "h": 0.018769
+              },
+              {
+                "text": "Picture this scene. It's an English literature",
+                "x": 0.156403,
+                "y": 0.228188,
+                "w": 0.357771,
+                "h": 0.018786
+              },
+              {
+                "text": "lesson in a UK school, and the teacher has just",
+                "x": 0.156403,
+                "y": 0.248674,
+                "w": 0.389052,
+                "h": 0.0204
+              },
+              {
+                "text": "read an extract from Shakespeare's Romea",
+                "x": 0.156403,
+                "y": 0.269045,
+                "w": 0.353861,
+                "h": 0.018728
+              },
+              {
+                "text": "and Juliet with a class of 15-year-olds. He's",
+                "x": 0.158358,
+                "y": 0.289474,
+                "w": 0.365591,
+                "h": 0.020428
+              },
+              {
+                "text": "given some of the students copies of No Fear",
+                "x": 0.158358,
+                "y": 0.309874,
+                "w": 0.379277,
+                "h": 0.02218
+              },
+              {
+                "text": "Shakespeare, a kid-friendly translation of the",
+                "x": 0.158358,
+                "y": 0.331973,
+                "w": 0.375367,
+                "h": 0.0204
+              },
+              {
+                "text": "original. For three students, even these literacy",
+                "x": 0.158358,
+                "y": 0.352236,
+                "w": 0.389052,
+                "h": 0.020675
+              },
+              {
+                "text": "demands are beyond them. Another girl",
+                "x": 0.158151,
+                "y": 0.370859,
+                "w": 0.330829,
+                "h": 0.023701
+              },
+              {
+                "text": "simply can't focus and he gives her pens and",
+                "x": 0.158358,
+                "y": 0.393093,
+                "w": 0.373412,
+                "h": 0.02218
+              },
+              {
+                "text": "paper to draw with. The teacher can askthe",
+                "x": 0.158358,
+                "y": 0.415244,
+                "w": 0.363636,
+                "h": 0.020428
+              },
+              {
+                "text": "No Fear group to identify the key characters",
+                "x": 0.158358,
+                "y": 0.435673,
+                "w": 0.371457,
+                "h": 0.020428
+              },
+              {
+                "text": "and maybe provide a tentative plot summary.",
+                "x": 0.158358,
+                "y": 0.456072,
+                "w": 0.375367,
+                "h": 0.0204
+              },
+              {
+                "text": "He can ask most of the class about character",
+                "x": 0.158358,
+                "y": 0.476283,
+                "w": 0.371457,
+                "h": 0.018889
+              },
+              {
+                "text": "development, and five of them might be able to",
+                "x": 0.158161,
+                "y": 0.495357,
+                "w": 0.395337,
+                "h": 0.025081
+              },
+              {
+                "text": "support their statements with textual evidence.",
+                "x": 0.158358,
+                "y": 0.518972,
+                "w": 0.391007,
+                "h": 0.0204
+              },
+              {
+                "text": "Now two curious students are wondering",
+                "x": 0.158196,
+                "y": 0.534354,
+                "w": 0.342567,
+                "h": 0.025518
+              },
+              {
+                "text": "whether Shakespeare advocates living a life of",
+                "x": 0.158358,
+                "y": 0.557997,
+                "w": 0.391007,
+                "h": 0.022174
+              },
+              {
+                "text": "moderation or one of passionate engagement.",
+                "x": 0.158358,
+                "y": 0.581871,
+                "w": 0.381232,
+                "h": 0.0187
+              },
+              {
+                "text": "As a teacher myself, I'd think my lesson would",
+                "x": 0.160176,
+                "y": 0.6175,
+                "w": 0.39328,
+                "h": 0.023414
+              },
+              {
+                "text": "be going rather well if the discussion went as",
+                "x": 0.159932,
+                "y": 0.633072,
+                "w": 0.376062,
+                "h": 0.029399
+              },
+              {
+                "text": "described above. But wouldn't this kind of",
+                "x": 0.160313,
+                "y": 0.659893,
+                "w": 0.357771,
+                "h": 0.018877
+              },
+              {
+                "text": "class work better if there weren't such a huge",
+                "x": 0.160313,
+                "y": 0.680471,
+                "w": 0.379277,
+                "h": 0.0204
+              },
+              {
+                "text": "gap between the top and the bottom? If we put",
+                "x": 0.160313,
+                "y": 0.70075,
+                "w": 0.389052,
+                "h": 0.02222
+              },
+              {
+                "text": "all the kids who needed literacy support into",
+                "x": 0.160102,
+                "y": 0.720902,
+                "w": 0.369938,
+                "h": 0.025682
+              },
+              {
+                "text": "one class, and all the students who want to",
+                "x": 0.162268,
+                "y": 0.745053,
+                "w": 0.353861,
+                "h": 0.018717
+              },
+              {
+                "text": "discuss the virtue of moderation into another?",
+                "x": 0.162268,
+                "y": 0.76207,
+                "w": 0.381232,
+                "h": 0.0204
+              },
+              {
+                "text": "The practice of \"streaming', or 'tracking'",
+                "x": 0.162109,
+                "y": 0.799387,
+                "w": 0.342516,
+                "h": 0.024987
+              },
+              {
+                "text": "involves separating students into classes",
+                "x": 0.159871,
+                "y": 0.815906,
+                "w": 0.338957,
+                "h": 0.03003
+              },
+              {
+                "text": "depending on their diagnosed levels of",
+                "x": 0.162268,
+                "y": 0.843503,
+                "w": 0.324536,
+                "h": 0.020675
+              },
+              {
+                "text": "attainment. At a macro level, it requires the",
+                "x": 0.162268,
+                "y": 0.864069,
+                "w": 0.359726,
+                "h": 0.0204
+              },
+              {
+                "text": "establishment of academically selective",
+                "x": 0.162268,
+                "y": 0.88436,
+                "w": 0.330401,
+                "h": 0.018809
+              },
+              {
+                "text": "schools for the brightest students, and",
+                "x": 0.162268,
+                "y": 0.904869,
+                "w": 0.314761,
+                "h": 0.0204
+              },
+              {
+                "text": "comprehensive schools for the rest. Within",
+                "x": 0.162268,
+                "y": 0.926969,
+                "w": 0.357771,
+                "h": 0.0204
+              },
+              {
+                "text": "schools, it means selecting students into a",
+                "x": 0.162268,
+                "y": 0.945668,
+                "w": 0.347996,
+                "h": 0.0221
+              },
+              {
+                "text": "\"stream' of general ability, or \"sets' of subject-",
+                "x": 0.162268,
+                "y": 0.966068,
+                "w": 0.385142,
+                "h": 0.022157
+              },
+              {
+                "text": "specific ability. The practice is intuitively",
+                "x": 0.162268,
+                "y": 0.988168,
+                "w": 0.344086,
+                "h": 0.022209
+              },
+              {
+                "text": "The case for mixed-ability classes",
+                "x": 0.361681,
+                "y": 0.182375,
+                "w": 0.402737,
+                "h": 0.0238
+              },
+              {
+                "text": "I have heard the mixed-ability model attacked",
+                "x": 0.57087,
+                "y": 0.224743,
+                "w": 0.383187,
+                "h": 0.020675
+              },
+              {
+                "text": "by way of analogy: a group hike. The fittest",
+                "x": 0.572825,
+                "y": 0.246894,
+                "w": 0.365591,
+                "h": 0.020675
+              },
+              {
+                "text": "in the group take the lead and set a brisk pace,",
+                "x": 0.57087,
+                "y": 0.269045,
+                "w": 0.387097,
+                "h": 0.018728
+              },
+              {
+                "text": "only to have to stop and wait every 20 minutes.",
+                "x": 0.572825,
+                "y": 0.289474,
+                "w": 0.396872,
+                "h": 0.0221
+              },
+              {
+                "text": "This is frustrating, and their enthusiasm wanes.",
+                "x": 0.572825,
+                "y": 0.309874,
+                "w": 0.394917,
+                "h": 0.0204
+              },
+              {
+                "text": "Meanwhile, the slowest ones are not only",
+                "x": 0.574652,
+                "y": 0.330159,
+                "w": 0.342406,
+                "h": 0.022873
+              },
+              {
+                "text": "embarrassed but physically struggling to keep",
+                "x": 0.572825,
+                "y": 0.350673,
+                "w": 0.383187,
+                "h": 0.022237
+              },
+              {
+                "text": "up. What's worse, they never get a long enough",
+                "x": 0.572632,
+                "y": 0.37094,
+                "w": 0.397281,
+                "h": 0.025785
+              },
+              {
+                "text": "break. They honestly just want to quit. Hiking,",
+                "x": 0.57478,
+                "y": 0.391473,
+                "w": 0.389052,
+                "h": 0.0238
+              },
+              {
+                "text": "they feel, is not for them.",
+                "x": 0.57478,
+                "y": 0.415244,
+                "w": 0.213099,
+                "h": 0.020428
+              },
+              {
+                "text": "Mixed-ability classes bore students, frustrate",
+                "x": 0.57478,
+                "y": 0.452655,
+                "w": 0.371457,
+                "h": 0.020417
+              },
+              {
+                "text": "parents and burn out teachers. The brightest",
+                "x": 0.57478,
+                "y": 0.474772,
+                "w": 0.365591,
+                "h": 0.0204
+              },
+              {
+                "text": "ones will never summit Mount Qomolangma, and",
+                "x": 0.574655,
+                "y": 0.489694,
+                "w": 0.410869,
+                "h": 0.026275
+              },
+              {
+                "text": "the stragglers won't enjoy the lovely stroll in the",
+                "x": 0.572825,
+                "y": 0.515572,
+                "w": 0.396872,
+                "h": 0.022243
+              },
+              {
+                "text": "park they are perhaps more suited to. Individuals",
+                "x": 0.574529,
+                "y": 0.53551,
+                "w": 0.397347,
+                "h": 0.024362
+              },
+              {
+                "text": "suffer at the demands of the collective, mediocrity",
+                "x": 0.57478,
+                "y": 0.556372,
+                "w": 0.394917,
+                "h": 0.0204
+              },
+              {
+                "text": "prevails. So: is learning like hiking?",
+                "x": 0.57478,
+                "y": 0.578471,
+                "w": 0.293255,
+                "h": 0.0221
+              },
+              {
+                "text": "The current pedagogical paradigm is arguably",
+                "x": 0.57478,
+                "y": 0.61756,
+                "w": 0.383187,
+                "h": 0.020411
+              },
+              {
+                "text": "that of constructivism, which emerged out of",
+                "x": 0.57478,
+                "y": 0.637742,
+                "w": 0.377322,
+                "h": 0.020675
+              },
+              {
+                "text": "the work of psychologist Lev Vygotsky. In the",
+                "x": 0.57478,
+                "y": 0.658371,
+                "w": 0.387097,
+                "h": 0.022197
+              },
+              {
+                "text": "1930s, Vygotsky emphasised the importance of",
+                "x": 0.576332,
+                "y": 0.674424,
+                "w": 0.395818,
+                "h": 0.030988
+              },
+              {
+                "text": "targeting a student's specific 'zone of proximal",
+                "x": 0.57478,
+                "y": 0.69917,
+                "w": 0.392962,
+                "h": 0.0238
+              },
+              {
+                "text": "development' (ZPD). This is the gap between",
+                "x": 0.576735,
+                "y": 0.72127,
+                "w": 0.377322,
+                "h": 0.022306
+              },
+              {
+                "text": "what they can achieve only with support",
+                "x": 0.576735,
+                "y": 0.745053,
+                "w": 0.336266,
+                "h": 0.018717
+              },
+              {
+                "text": "- teachers, textbooks, worked examples,",
+                "x": 0.576735,
+                "y": 0.765235,
+                "w": 0.340176,
+                "h": 0.020675
+              },
+              {
+                "text": "parents and so on - and what they can achieve",
+                "x": 0.576735,
+                "y": 0.78587,
+                "w": 0.385142,
+                "h": 0.0204
+              },
+              {
+                "text": "independently. The purpose of teaching is",
+                "x": 0.57478,
+                "y": 0.80797,
+                "w": 0.349951,
+                "h": 0.0204
+              },
+              {
+                "text": "to provide and then gradually remove this",
+                "x": 0.57478,
+                "y": 0.828243,
+                "w": 0.351906,
+                "h": 0.020675
+              },
+              {
+                "text": "*scaffolding' until they are autonomous. If we",
+                "x": 0.576735,
+                "y": 0.848769,
+                "w": 0.383187,
+                "h": 0.0204
+              },
+              {
+                "text": "accept this model, it follows that streaming",
+                "x": 0.576735,
+                "y": 0.8691,
+                "w": 0.359726,
+                "h": 0.022169
+              },
+              {
+                "text": "students with similar ZPDs would be an",
+                "x": 0.576735,
+                "y": 0.891252,
+                "w": 0.334311,
+                "h": 0.017229
+              },
+              {
+                "text": "efficient and effective solution. And that",
+                "x": 0.576735,
+                "y": 0.911434,
+                "w": 0.338221,
+                "h": 0.020675
+              },
+              {
+                "text": "forcing everyone on the same hike - regardless",
+                "x": 0.576735,
+                "y": 0.933585,
+                "w": 0.392962,
+                "h": 0.020675
+              },
+              {
+                "text": "of aptitude - would be madness.",
+                "x": 0.57869,
+                "y": 0.955737,
+                "w": 0.27175,
+                "h": 0.020675
+              },
+              {
+                "text": "Despite all this, there is limited empirical",
+                "x": 0.57869,
+                "y": 0.993148,
+                "w": 0.344086,
+                "h": 0.020675
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-3/page-73.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "better outcomes for students. Professor John",
+                "x": 0.029326,
+                "y": 0.024276,
+                "w": 0.365591,
+                "h": 0.01538
+              },
+              {
+                "text": "Hattie, director of the Melbourne Education",
+                "x": 0.02737,
+                "y": 0.044578,
+                "w": 0.363636,
+                "h": 0.018797
+              },
+              {
+                "text": "Research Institute, notes that 'tracking has",
+                "x": 0.029326,
+                "y": 0.065075,
+                "w": 0.351906,
+                "h": 0.0204
+              },
+              {
+                "text": "minimal effects on learning outcomes'. What",
+                "x": 0.02737,
+                "y": 0.085435,
+                "w": 0.377322,
+                "h": 0.022151
+              },
+              {
+                "text": "is more, streaming appears to significantly",
+                "x": 0.025415,
+                "y": 0.107575,
+                "w": 0.353861,
+                "h": 0.0204
+              },
+              {
+                "text": "- and negatively - affect those students",
+                "x": 0.025415,
+                "y": 0.129675,
+                "w": 0.328446,
+                "h": 0.018769
+              },
+              {
+                "text": "assigned to the lowest sets. These students",
+                "x": 0.025415,
+                "y": 0.14992,
+                "w": 0.353861,
+                "h": 0.018854
+              },
+              {
+                "text": "tend to have much higher representation of low",
+                "x": 0.025415,
+                "y": 0.172072,
+                "w": 0.392962,
+                "h": 0.018803
+              },
+              {
+                "text": "socioeconomic class. Less significant is the",
+                "x": 0.025191,
+                "y": 0.187449,
+                "w": 0.362193,
+                "h": 0.02558
+              },
+              {
+                "text": "small benefit for those lucky clever students",
+                "x": 0.025415,
+                "y": 0.212929,
+                "w": 0.367546,
+                "h": 0.018746
+              },
+              {
+                "text": "in the higher sets. The overall result is that the",
+                "x": 0.025415,
+                "y": 0.233374,
+                "w": 0.385142,
+                "h": 0.020411
+              },
+              {
+                "text": "smart stay smart and the dumb get dumber,",
+                "x": 0.025415,
+                "y": 0.255262,
+                "w": 0.361681,
+                "h": 0.020675
+              },
+              {
+                "text": "further entrenching the social divide.",
+                "x": 0.025415,
+                "y": 0.275874,
+                "w": 0.308895,
+                "h": 0.0204
+              },
+              {
+                "text": "In the latest update of Hattie's influential",
+                "x": 0.025415,
+                "y": 0.31827,
+                "w": 0.342131,
+                "h": 0.020675
+              },
+              {
+                "text": "meta-analysis of factors influencing",
+                "x": 0.025415,
+                "y": 0.338773,
+                "w": 0.29912,
+                "h": 0.0204
+              },
+              {
+                "text": "student achievement, one of the most",
+                "x": 0.02737,
+                "y": 0.360873,
+                "w": 0.31085,
+                "h": 0.017
+              },
+              {
+                "text": "significant factors is the teachers' estimate",
+                "x": 0.025415,
+                "y": 0.381273,
+                "w": 0.353861,
+                "h": 0.0204
+              },
+              {
+                "text": "of achievement. Streaming students by",
+                "x": 0.02737,
+                "y": 0.403373,
+                "w": 0.320626,
+                "h": 0.018763
+              },
+              {
+                "text": "diagnosed achievement automatically limits",
+                "x": 0.02737,
+                "y": 0.423612,
+                "w": 0.365591,
+                "h": 0.020675
+              },
+              {
+                "text": "what the teacher feels the student is capable of.",
+                "x": 0.025415,
+                "y": 0.445764,
+                "w": 0.392962,
+                "h": 0.018809
+              },
+              {
+                "text": "Meanwhile, in a mixed environment, teachers'",
+                "x": 0.02737,
+                "y": 0.466272,
+                "w": 0.387097,
+                "h": 0.0204
+              },
+              {
+                "text": "estimates need to be more diverse and flexible.",
+                "x": 0.025415,
+                "y": 0.488372,
+                "w": 0.391007,
+                "h": 0.018923
+              },
+              {
+                "text": "While streaming might seem to help teachers",
+                "x": 0.02737,
+                "y": 0.528954,
+                "w": 0.373412,
+                "h": 0.020675
+              },
+              {
+                "text": "effectively target a student's ZPD, it can",
+                "x": 0.025415,
+                "y": 0.551106,
+                "w": 0.334311,
+                "h": 0.018866
+              },
+              {
+                "text": "underestimate the importance of peer-to-peer",
+                "x": 0.025415,
+                "y": 0.571671,
+                "w": 0.375367,
+                "h": 0.018814
+              },
+              {
+                "text": "learning. A crucial aspect of constructivist",
+                "x": 0.02346,
+                "y": 0.591963,
+                "w": 0.353861,
+                "h": 0.020675
+              },
+              {
+                "text": "theory is the role of the MKO - 'more-",
+                "x": 0.025193,
+                "y": 0.61019,
+                "w": 0.326852,
+                "h": 0.023311
+              },
+              {
+                "text": "knowledgeable other' - in knowledge",
+                "x": 0.025415,
+                "y": 0.634571,
+                "w": 0.314761,
+                "h": 0.0204
+              },
+              {
+                "text": "construction. While teachers are traditionally",
+                "x": 0.025415,
+                "y": 0.656448,
+                "w": 0.375367,
+                "h": 0.018923
+              },
+              {
+                "text": "the MKOs in classrooms, the value of",
+                "x": 0.441838,
+                "y": 0.024276,
+                "w": 0.318671,
+                "h": 0.018826
+              },
+              {
+                "text": "knowledgeable student peers must not go",
+                "x": 0.441838,
+                "y": 0.046376,
+                "w": 0.344086,
+                "h": 0.018877
+              },
+              {
+                "text": "unrecognised either.",
+                "x": 0.441838,
+                "y": 0.065075,
+                "w": 0.168133,
+                "h": 0.0204
+              },
+              {
+                "text": "I find it amazing to watch students get over an",
+                "x": 0.441838,
+                "y": 0.109063,
+                "w": 0.383187,
+                "h": 0.018912
+              },
+              {
+                "text": "idea to their peers in ways that Iwould never",
+                "x": 0.439883,
+                "y": 0.127769,
+                "w": 0.379277,
+                "h": 0.022306
+              },
+              {
+                "text": "think of. They operate with different language",
+                "x": 0.439735,
+                "y": 0.148183,
+                "w": 0.38545,
+                "h": 0.023016
+              },
+              {
+                "text": "tools and different social tools from teachers",
+                "x": 0.439883,
+                "y": 0.170475,
+                "w": 0.373412,
+                "h": 0.018826
+              },
+              {
+                "text": "and, having just learnt it themselves, they",
+                "x": 0.439883,
+                "y": 0.190777,
+                "w": 0.347996,
+                "h": 0.022197
+              },
+              {
+                "text": "possess similar cognitive structures to their",
+                "x": 0.439563,
+                "y": 0.209712,
+                "w": 0.362271,
+                "h": 0.026453
+              },
+              {
+                "text": "struggling classmates. There is also something",
+                "x": 0.439883,
+                "y": 0.233374,
+                "w": 0.389052,
+                "h": 0.020411
+              },
+              {
+                "text": "exciting about passing on skills and knowledge",
+                "x": 0.441838,
+                "y": 0.255262,
+                "w": 0.392962,
+                "h": 0.018912
+              },
+              {
+                "text": "that you yourself have just mastered - a certain",
+                "x": 0.439883,
+                "y": 0.275874,
+                "w": 0.392962,
+                "h": 0.0204
+              },
+              {
+                "text": "pride and zeal, a certain freshness to the",
+                "x": 0.439883,
+                "y": 0.296119,
+                "w": 0.336266,
+                "h": 0.022254
+              },
+              {
+                "text": "interaction between 'teacher' and 'learner' that",
+                "x": 0.439883,
+                "y": 0.31827,
+                "w": 0.392962,
+                "h": 0.017229
+              },
+              {
+                "text": "is often lost by the expert for whom the steps",
+                "x": 0.439883,
+                "y": 0.338773,
+                "w": 0.377322,
+                "h": 0.0204
+              },
+              {
+                "text": "are obvious and the joy of discovery forgotten.",
+                "x": 0.441838,
+                "y": 0.360873,
+                "w": 0.389052,
+                "h": 0.020406
+              },
+              {
+                "text": "Having a variety of different abilities in a",
+                "x": 0.441838,
+                "y": 0.401461,
+                "w": 0.344086,
+                "h": 0.020675
+              },
+              {
+                "text": "collaborative learning environment provides",
+                "x": 0.441838,
+                "y": 0.423612,
+                "w": 0.369501,
+                "h": 0.020675
+              },
+              {
+                "text": "valuable resources for helping students meet",
+                "x": 0.439883,
+                "y": 0.445764,
+                "w": 0.373412,
+                "h": 0.018809
+              },
+              {
+                "text": "their learning needs, not to mention improving",
+                "x": 0.439883,
+                "y": 0.466272,
+                "w": 0.389052,
+                "h": 0.0204
+              },
+              {
+                "text": "their communication and social skills. And",
+                "x": 0.439684,
+                "y": 0.484432,
+                "w": 0.358169,
+                "h": 0.023181
+              },
+              {
+                "text": "today, more than ever, we need the many to",
+                "x": 0.439883,
+                "y": 0.508772,
+                "w": 0.363636,
+                "h": 0.0204
+              },
+              {
+                "text": "flourish - not suffer at the expense of a few",
+                "x": 0.439883,
+                "y": 0.528954,
+                "w": 0.361681,
+                "h": 0.020675
+              },
+              {
+                "text": "bright stars. Once a year, I go on a hike with",
+                "x": 0.439883,
+                "y": 0.551106,
+                "w": 0.369501,
+                "h": 0.020675
+              },
+              {
+                "text": "my class, a mixed bunch of students. It is",
+                "x": 0.439883,
+                "y": 0.571671,
+                "w": 0.346041,
+                "h": 0.0204
+              },
+              {
+                "text": "challenging. The fittest students realise they",
+                "x": 0.439883,
+                "y": 0.591963,
+                "w": 0.363636,
+                "h": 0.022209
+              },
+              {
+                "text": "need to encourage the reluetant. There are",
+                "x": 0.439883,
+                "y": 0.614114,
+                "w": 0.349951,
+                "h": 0.020675
+              },
+              {
+                "text": "lookouts who report back, and extra items to",
+                "x": 0.437928,
+                "y": 0.636265,
+                "w": 0.373412,
+                "h": 0.018706
+              },
+              {
+                "text": "carry for others. We make it - together.",
+                "x": 0.439883,
+                "y": 0.656448,
+                "w": 0.326491,
+                "h": 0.018923
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-3/page-77.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.363636,
+                "y": 0.015776,
+                "w": 0.125122,
+                "h": 0.0255
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.01955,
+                "y": 0.087175,
+                "w": 0.234604,
+                "h": 0.0221
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.01955,
+                "y": 0.133075,
+                "w": 0.445748,
+                "h": 0.018814
+              },
+              {
+                "text": "The diagram below shows the floor plan of a public library 20 years ago and",
+                "x": 0.044966,
+                "y": 0.178963,
+                "w": 0.744868,
+                "h": 0.022151
+              },
+              {
+                "text": "how itlooksnow.",
+                "x": 0.043011,
+                "y": 0.202591,
+                "w": 0.173998,
+                "h": 0.017229
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.043011,
+                "y": 0.240002,
+                "w": 0.760508,
+                "h": 0.02412
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.043011,
+                "y": 0.262154,
+                "w": 0.346041,
+                "h": 0.02222
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.01955,
+                "y": 0.316673,
+                "w": 0.230694,
+                "h": 0.0204
+              },
+              {
+                "text": "Central Library 20 years ago",
+                "x": 0.2913,
+                "y": 0.342173,
+                "w": 0.269795,
+                "h": 0.0221
+              },
+              {
+                "text": "CDs, videos,",
+                "x": 0.1758,
+                "y": 0.384038,
+                "w": 0.127384,
+                "h": 0.02507
+              },
+              {
+                "text": "computer games",
+                "x": 0.164223,
+                "y": 0.404907,
+                "w": 0.156403,
+                "h": 0.020675
+              },
+              {
+                "text": "Children's books",
+                "x": 0.535679,
+                "y": 0.396538,
+                "w": 0.150538,
+                "h": 0.017229
+              },
+              {
+                "text": "Adult fiction books",
+                "x": 0.158358,
+                "y": 0.484972,
+                "w": 0.168133,
+                "h": 0.022323
+              },
+              {
+                "text": "Adult non-fiction books",
+                "x": 0.508309,
+                "y": 0.486621,
+                "w": 0.207234,
+                "h": 0.018751
+              },
+              {
+                "text": "Reading room",
+                "x": 0.177908,
+                "y": 0.569811,
+                "w": 0.127077,
+                "h": 0.01886
+              },
+              {
+                "text": "(newspapers & magazines)",
+                "x": 0.115347,
+                "y": 0.588517,
+                "w": 0.248289,
+                "h": 0.017229
+              },
+              {
+                "text": "Tables &",
+                "x": 0.385142,
+                "y": 0.552972,
+                "w": 0.084066,
+                "h": 0.0204
+              },
+              {
+                "text": "chairs",
+                "x": 0.391007,
+                "y": 0.573371,
+                "w": 0.064516,
+                "h": 0.017
+              },
+              {
+                "text": "Entrance",
+                "x": 0.385142,
+                "y": 0.634571,
+                "w": 0.082111,
+                "h": 0.017
+              },
+              {
+                "text": "Central Library today",
+                "x": 0.326491,
+                "y": 0.678599,
+                "w": 0.203324,
+                "h": 0.022272
+              },
+              {
+                "text": "Enquiry desk",
+                "x": 0.557185,
+                "y": 0.569811,
+                "w": 0.117302,
+                "h": 0.017229
+              },
+              {
+                "text": "(tickets, book returns, etc.)",
+                "x": 0.494624,
+                "y": 0.586971,
+                "w": 0.240469,
+                "h": 0.018774
+              },
+              {
+                "text": "Sofa",
+                "x": 0.138807,
+                "y": 0.71277,
+                "w": 0.046921,
+                "h": 0.017
+              },
+              {
+                "text": "Storytelling",
+                "x": 0.220822,
+                "y": 0.710699,
+                "w": 0.101855,
+                "h": 0.021142
+              },
+              {
+                "text": "events",
+                "x": 0.240469,
+                "y": 0.73147,
+                "w": 0.062561,
+                "h": 0.0153
+              },
+              {
+                "text": "Sofa",
+                "x": 0.291131,
+                "y": 0.759948,
+                "w": 0.05508,
+                "h": 0.017844
+              },
+              {
+                "text": "Children's fiction books..",
+                "x": 0.121212,
+                "y": 0.78927,
+                "w": 0.220919,
+                "h": 0.025683
+              },
+              {
+                "text": "All reference books",
+                "x": 0.154448,
+                "y": 0.845369,
+                "w": 0.173998,
+                "h": 0.017
+              },
+              {
+                "text": "Lecture room",
+                "x": 0.55132,
+                "y": 0.73317,
+                "w": 0.119257,
+                "h": 0.015328
+              },
+              {
+                "text": "Adult fiction books",
+                "x": 0.527859,
+                "y": 0.78587,
+                "w": 0.170088,
+                "h": 0.0204
+              },
+              {
+                "text": "(Information desk)",
+                "x": 0.531769,
+                "y": 0.816429,
+                "w": 0.158358,
+                "h": 0.020675
+              },
+              {
+                "text": "Self-service machines",
+                "x": 0.514174,
+                "y": 0.845369,
+                "w": 0.197458,
+                "h": 0.017
+              },
+              {
+                "text": "Computer room",
+                "x": 0.172043,
+                "y": 0.916769,
+                "w": 0.138807,
+                "h": 0.017
+              },
+              {
+                "text": "Café",
+                "x": 0.59042,
+                "y": 0.913369,
+                "w": 0.044966,
+                "h": 0.0204
+              },
+              {
+                "text": "Entrance",
+                "x": 0.385112,
+                "y": 0.971056,
+                "w": 0.084126,
+                "h": 0.017225
+              },
+              {
+                "text": "p. 132",
+                "x": 0.711632,
+                "y": 0.996594,
+                "w": 0.068426,
+                "h": 0.022174
+              },
+              {
+                "text": "75",
+                "x": 0.803519,
+                "y": 0.996668,
+                "w": 0.031281,
+                "h": 0.0204
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-3/page-78.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.156283,
+                "y": 0.01372,
+                "w": 0.058891,
+                "h": 0.016012
+              },
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.152493,
+                "y": 0.06673,
+                "w": 0.236559,
+                "h": 0.020675
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.154448,
+                "y": 0.110975,
+                "w": 0.445748,
+                "h": 0.0204
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.154448,
+                "y": 0.153366,
+                "w": 0.28348,
+                "h": 0.020675
+              },
+              {
+                "text": "In many countries around the world, rural people are moving to cities, so the",
+                "x": 0.175953,
+                "y": 0.206037,
+                "w": 0.752688,
+                "h": 0.022237
+              },
+              {
+                "text": "population in the countryside is decreasing.",
+                "x": 0.177908,
+                "y": 0.229974,
+                "w": 0.434018,
+                "h": 0.0204
+              },
+              {
+                "text": "Do you think this is a positive or a negative development?",
+                "x": 0.177908,
+                "y": 0.270774,
+                "w": 0.57087,
+                "h": 0.020423
+              },
+              {
+                "text": "Give reasonsfor your answer and include any relevant examples from your own",
+                "x": 0.156403,
+                "y": 0.323473,
+                "w": 0.729228,
+                "h": 0.0221
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.154448,
+                "y": 0.347273,
+                "w": 0.238514,
+                "h": 0.0204
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.156403,
+                "y": 0.389647,
+                "w": 0.228739,
+                "h": 0.017229
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-57.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.021505,
+                "y": 0.018981,
+                "w": 0.123167,
+                "h": 0.034194
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.351906,
+                "y": 0.092275,
+                "w": 0.152493,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.02342,
+                "y": 0.177135,
+                "w": 0.099788,
+                "h": 0.022379
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.179863,
+                "y": 0.177275,
+                "w": 0.183773,
+                "h": 0.0221
+              },
+              {
+                "text": "Questions 1-4",
+                "x": 0.025415,
+                "y": 0.221297,
+                "w": 0.146628,
+                "h": 0.018877
+              },
+              {
+                "text": "Complete the form below.",
+                "x": 0.02346,
+                "y": 0.263974,
+                "w": 0.234604,
+                "h": 0.0204
+              },
+              {
+                "text": "Write ONE WORD ANDIOR A NUMBER for each answer.",
+                "x": 0.025415,
+                "y": 0.301374,
+                "w": 0.531769,
+                "h": 0.0238
+              },
+              {
+                "text": "Wayside Camera Club",
+                "x": 0.318671,
+                "y": 0.36405,
+                "w": 0.220919,
+                "h": 0.02412
+              },
+              {
+                "text": "membership form",
+                "x": 0.338221,
+                "y": 0.386201,
+                "w": 0.179863,
+                "h": 0.022272
+              },
+              {
+                "text": "Dan Green",
+                "x": 0.437928,
+                "y": 0.430504,
+                "w": 0.103617,
+                "h": 0.015369
+              },
+              {
+                "text": "dan1068@market.com",
+                "x": 0.437928,
+                "y": 0.459472,
+                "w": 0.209189,
+                "h": 0.0204
+              },
+              {
+                "text": "521",
+                "x": 0.437928,
+                "y": 0.490072,
+                "w": 0.041056,
+                "h": 0.017
+              },
+              {
+                "text": "from a 2",
+                "x": 0.435802,
+                "y": 0.52004,
+                "w": 0.080498,
+                "h": 0.018264
+              },
+              {
+                "text": "to enter competitions",
+                "x": 0.435973,
+                "y": 0.551106,
+                "w": 0.195503,
+                "h": 0.018866
+              },
+              {
+                "text": "to 3",
+                "x": 0.435973,
+                "y": 0.573257,
+                "w": 0.037146,
+                "h": 0.017229
+              },
+              {
+                "text": "4",
+                "x": 0.437928,
+                "y": 0.602271,
+                "w": 0.013685,
+                "h": 0.017
+              },
+              {
+                "text": "Name:",
+                "x": 0.035171,
+                "y": 0.428819,
+                "w": 0.066511,
+                "h": 0.018807
+              },
+              {
+                "text": "Email address:",
+                "x": 0.035191,
+                "y": 0.459472,
+                "w": 0.138807,
+                "h": 0.01878
+              },
+              {
+                "text": "Home address:",
+                "x": 0.035191,
+                "y": 0.490066,
+                "w": 0.142717,
+                "h": 0.018706
+              },
+              {
+                "text": "Heard about us:",
+                "x": 0.035191,
+                "y": 0.520586,
+                "w": 0.150538,
+                "h": 0.018786
+              },
+              {
+                "text": "Reasons for joining:",
+                "x": 0.035191,
+                "y": 0.551106,
+                "w": 0.185728,
+                "h": 0.020675
+              },
+              {
+                "text": "Street, Peacetown",
+                "x": 0.649071,
+                "y": 0.490066,
+                "w": 0.170088,
+                "h": 0.020406
+              },
+              {
+                "text": "Type of membership:",
+                "x": 0.035191,
+                "y": 0.602271,
+                "w": 0.195503,
+                "h": 0.0204
+              },
+              {
+                "text": "....... membership (£30)",
+                "x": 0.580645,
+                "y": 0.602271,
+                "w": 0.209189,
+                "h": 0.018734
+              },
+              {
+                "text": "Questions 5-10",
+                "x": 0.025415,
+                "y": 0.644633,
+                "w": 0.160313,
+                "h": 0.022237
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.02346,
+                "y": 0.688936,
+                "w": 0.240469,
+                "h": 0.022151
+              },
+              {
+                "text": "Write NO MORE THAN TWO WORDS for each answer.",
+                "x": 0.025415,
+                "y": 0.73127,
+                "w": 0.512219,
+                "h": 0.020675
+              },
+              {
+                "text": "Title of competition",
+                "x": 0.076246,
+                "y": 0.80797,
+                "w": 0.191593,
+                "h": 0.018797
+              },
+              {
+                "text": "5'",
+                "x": 0.031281,
+                "y": 0.835169,
+                "w": 0.025415,
+                "h": 0.0187
+              },
+              {
+                "text": "Photography competitions",
+                "x": 0.318671,
+                "y": 0.779018,
+                "w": 0.265885,
+                "h": 0.022151
+              },
+              {
+                "text": "Instructions",
+                "x": 0.34199,
+                "y": 0.803885,
+                "w": 0.127359,
+                "h": 0.02177
+              },
+              {
+                "text": "A scene in the home",
+                "x": 0.29912,
+                "y": 0.831689,
+                "w": 0.191593,
+                "h": 0.01878
+              },
+              {
+                "text": "'Beautiful Sunsets'",
+                "x": 0.02737,
+                "y": 0.879369,
+                "w": 0.177908,
+                "h": 0.018774
+              },
+              {
+                "text": "Feedback to Dan",
+                "x": 0.572825,
+                "y": 0.80117,
+                "w": 0.172043,
+                "h": 0.0238
+              },
+              {
+                "text": "The picture's composition was",
+                "x": 0.529814,
+                "y": 0.831689,
+                "w": 0.277615,
+                "h": 0.020675
+              },
+              {
+                "text": "not good.",
+                "x": 0.529783,
+                "y": 0.853755,
+                "w": 0.089994,
+                "h": 0.018928
+              },
+              {
+                "text": "The 7",
+                "x": 0.529814,
+                "y": 0.88436,
+                "w": 0.056696,
+                "h": 0.017229
+              },
+              {
+                "text": "...was wrong.",
+                "x": 0.699902,
+                "y": 0.886169,
+                "w": 0.123167,
+                "h": 0.017
+              },
+              {
+                "text": "8'",
+                "x": 0.031281,
+                "y": 0.930369,
+                "w": 0.025415,
+                "h": 0.0187
+              },
+              {
+                "text": "Scene must show",
+                "x": 0.301075,
+                "y": 0.875969,
+                "w": 0.166178,
+                "h": 0.022174
+              },
+              {
+                "text": "some 6.",
+                "x": 0.300937,
+                "y": 0.899382,
+                "w": 0.074567,
+                "h": 0.021173
+              },
+              {
+                "text": "•Scene mustshow",
+                "x": 0.277615,
+                "y": 0.925217,
+                "w": 0.189638,
+                "h": 0.020675
+              },
+              {
+                "text": "9",
+                "x": 0.29912,
+                "y": 0.947368,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "banaanaaaaaaal",
+                "x": 0.392962,
+                "y": 0.959268,
+                "w": 0.050831,
+                "h": 0.0034
+              },
+              {
+                "text": "The photograph was too",
+                "x": 0.529814,
+                "y": 0.925217,
+                "w": 0.226784,
+                "h": 0.022151
+              },
+              {
+                "text": "10",
+                "x": 0.527859,
+                "y": 0.947368,
+                "w": 0.029326,
+                "h": 0.0187
+              },
+              {
+                "text": "9 p. 123",
+                "x": 0.57869,
+                "y": 0.993148,
+                "w": 0.095797,
+                "h": 0.02222
+              },
+              {
+                "text": "p.109",
+                "x": 0.709677,
+                "y": 0.993268,
+                "w": 0.070381,
+                "h": 0.0221
+              },
+              {
+                "text": "55",
+                "x": 0.807429,
+                "y": 0.993268,
+                "w": 0.02737,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-58.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.150413,
+                "y": 0.010346,
+                "w": 0.0589,
+                "h": 0.01766
+              },
+              {
+                "text": "PART 2",
+                "x": 0.150538,
+                "y": 0.06673,
+                "w": 0.099707,
+                "h": 0.018746
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.30694,
+                "y": 0.065075,
+                "w": 0.193548,
+                "h": 0.0204
+              },
+              {
+                "text": "Questions 11 and 12",
+                "x": 0.152493,
+                "y": 0.109063,
+                "w": 0.207234,
+                "h": 0.018912
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.152493,
+                "y": 0.151775,
+                "w": 0.246334,
+                "h": 0.0204
+              },
+              {
+                "text": "Which TWO warnings does Dan give about picking mushrooms?",
+                "x": 0.148494,
+                "y": 0.19345,
+                "w": 0.592578,
+                "h": 0.0239
+              },
+              {
+                "text": "A",
+                "x": 0.193548,
+                "y": 0.228274,
+                "w": 0.01955,
+                "h": 0.0187
+              },
+              {
+                "text": "Don't pick more than one variety of mushroom at a time.",
+                "x": 0.230694,
+                "y": 0.228188,
+                "w": 0.525904,
+                "h": 0.018786
+              },
+              {
+                "text": "B",
+                "x": 0.195503,
+                "y": 0.250374,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "Don't pick mushrooms near busy roads.",
+                "x": 0.240469,
+                "y": 0.248674,
+                "w": 0.367546,
+                "h": 0.0204
+              },
+              {
+                "text": "C Don't eat mushrooms given to you.",
+                "x": 0.195503,
+                "y": 0.270774,
+                "w": 0.367546,
+                "h": 0.0187
+              },
+              {
+                "text": "D",
+                "x": 0.195503,
+                "y": 0.292874,
+                "w": 0.033236,
+                "h": 0.0153
+              },
+              {
+                "text": "Don't eat mushrooms while picking them.",
+                "x": 0.226784,
+                "y": 0.291174,
+                "w": 0.392962,
+                "h": 0.0204
+              },
+              {
+                "text": "E Don't pick old mushrooms.",
+                "x": 0.195503,
+                "y": 0.311379,
+                "w": 0.2913,
+                "h": 0.020675
+              },
+              {
+                "text": "Questions 13 and 14",
+                "x": 0.154448,
+                "y": 0.376173,
+                "w": 0.209189,
+                "h": 0.018889
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.152493,
+                "y": 0.420167,
+                "w": 0.246334,
+                "h": 0.022306
+              },
+              {
+                "text": "Which TWO ideas about wild mushrooms does Dan say are correct?",
+                "x": 0.150538,
+                "y": 0.464469,
+                "w": 0.627566,
+                "h": 0.018803
+              },
+              {
+                "text": "A Mushrooms should always be peeled before eating.",
+                "x": 0.197458,
+                "y": 0.496872,
+                "w": 0.520039,
+                "h": 0.0204
+              },
+              {
+                "text": "B Mushrooms eaten by animals may be unsafe.",
+                "x": 0.197458,
+                "y": 0.51714,
+                "w": 0.465298,
+                "h": 0.020675
+              },
+              {
+                "text": "C Cooking destroys toxins in mushrooms.",
+                "x": 0.197458,
+                "y": 0.539292,
+                "w": 0.406647,
+                "h": 0.020675
+              },
+              {
+                "text": "D Brightly coloured mushrooms can be edible.",
+                "x": 0.197458,
+                "y": 0.559772,
+                "w": 0.449658,
+                "h": 0.0204
+              },
+              {
+                "text": "E All poisonous mushrooms have a bad smell.",
+                "x": 0.197458,
+                "y": 0.581871,
+                "w": 0.451613,
+                "h": 0.020428
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-59.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.02346,
+                "y": 0.022427,
+                "w": 0.172043,
+                "h": 0.018849
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.021505,
+                "y": 0.065075,
+                "w": 0.330401,
+                "h": 0.0204
+              },
+              {
+                "text": "15 What advice does Dan give about picking mushrooms in parks?",
+                "x": 0.021505,
+                "y": 0.107575,
+                "w": 0.627566,
+                "h": 0.0204
+              },
+              {
+                "text": "A Choose wooded areas.",
+                "x": 0.066471,
+                "y": 0.141552,
+                "w": 0.261975,
+                "h": 0.018723
+              },
+              {
+                "text": "B Don't disturb wildlife.",
+                "x": 0.066471,
+                "y": 0.161734,
+                "w": 0.238514,
+                "h": 0.01894
+              },
+              {
+                "text": "C Get there early.",
+                "x": 0.066113,
+                "y": 0.183999,
+                "w": 0.190438,
+                "h": 0.022526
+              },
+              {
+                "text": "16 Dan says it is a good idea for beginners to",
+                "x": 0.021505,
+                "y": 0.219774,
+                "w": 0.432063,
+                "h": 0.0204
+              },
+              {
+                "text": "A",
+                "x": 0.068426,
+                "y": 0.253774,
+                "w": 0.02737,
+                "h": 0.0153
+              },
+              {
+                "text": "use a mushroom app.",
+                "x": 0.111437,
+                "y": 0.253774,
+                "w": 0.203324,
+                "h": 0.018717
+              },
+              {
+                "text": "B join a group.",
+                "x": 0.065962,
+                "y": 0.273846,
+                "w": 0.16326,
+                "h": 0.023605
+              },
+              {
+                "text": "take a reference book.",
+                "x": 0.099707,
+                "y": 0.297974,
+                "w": 0.220919,
+                "h": 0.01882
+              },
+              {
+                "text": "17. What does Dan say is important for conservation?",
+                "x": 0.021505,
+                "y": 0.331973,
+                "w": 0.504399,
+                "h": 0.0204
+              },
+              {
+                "text": "A selecting only fully grown mushrooms",
+                "x": 0.066471,
+                "y": 0.365973,
+                "w": 0.391007,
+                "h": 0.018751
+              },
+              {
+                "text": "B picking a limited amount of mushrooms",
+                "x": 0.068426,
+                "y": 0.386201,
+                "w": 0.402737,
+                "h": 0.020675
+              },
+              {
+                "text": "avoiding areas where rare mushroom species grow",
+                "x": 0.109398,
+                "y": 0.408092,
+                "w": 0.473298,
+                "h": 0.022861
+              },
+              {
+                "text": "18 According to Dan, some varieties of wild mushrooms are in decline because there is",
+                "x": 0.02139,
+                "y": 0.438951,
+                "w": 0.811589,
+                "h": 0.027443
+              },
+              {
+                "text": "A a huge demand for them from restaurants.",
+                "x": 0.066471,
+                "y": 0.476283,
+                "w": 0.435973,
+                "h": 0.020675
+              },
+              {
+                "text": "B a lack of rain in this part of the country.",
+                "x": 0.068426,
+                "y": 0.496872,
+                "w": 0.400782,
+                "h": 0.0204
+              },
+              {
+                "text": "C arise in building developments locally.",
+                "x": 0.068426,
+                "y": 0.520586,
+                "w": 0.396872,
+                "h": 0.020675
+              },
+              {
+                "text": "19 Dan says that when storing mushrooms, people should",
+                "x": 0.021505,
+                "y": 0.556372,
+                "w": 0.549365,
+                "h": 0.0204
+              },
+              {
+                "text": "A keep them in the fridge for no more than two days.",
+                "x": 0.066471,
+                "y": 0.588517,
+                "w": 0.510264,
+                "h": 0.020675
+              },
+              {
+                "text": "B keep them in a brown bag in a dark room.",
+                "x": 0.068426,
+                "y": 0.609071,
+                "w": 0.428152,
+                "h": 0.0204
+              },
+              {
+                "text": "C leave them for a period after washing them.",
+                "x": 0.068426,
+                "y": 0.631171,
+                "w": 0.443793,
+                "h": 0.018877
+              },
+              {
+                "text": "20 What does Dan say about trying new varieties of mushrooms?",
+                "x": 0.021505,
+                "y": 0.665171,
+                "w": 0.615836,
+                "h": 0.0204
+              },
+              {
+                "text": "A Experiment with different recipes.",
+                "x": 0.068426,
+                "y": 0.697304,
+                "w": 0.353861,
+                "h": 0.018866
+              },
+              {
+                "text": "B",
+                "x": 0.068426,
+                "y": 0.71957,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "Expect some to have a strong taste.",
+                "x": 0.105572,
+                "y": 0.719456,
+                "w": 0.340176,
+                "h": 0.018814
+              },
+              {
+                "text": "C Cook them for a long time.",
+                "x": 0.068426,
+                "y": 0.73997,
+                "w": 0.2913,
+                "h": 0.0204
+              },
+              {
+                "text": "→ 3 p. 123",
+                "x": 0.549365,
+                "y": 0.994968,
+                "w": 0.130987,
+                "h": 0.0238
+              },
+              {
+                "text": "Ü p. 110",
+                "x": 0.690127,
+                "y": 0.998368,
+                "w": 0.095797,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            11,
+            12
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            13,
+            14
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-60.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.15618,
+                "y": 0.013477,
+                "w": 0.059096,
+                "h": 0.018198
+              },
+              {
+                "text": "PART 3",
+                "x": 0.154407,
+                "y": 0.068321,
+                "w": 0.101743,
+                "h": 0.020709
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.31085,
+                "y": 0.068475,
+                "w": 0.195503,
+                "h": 0.020406
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.156403,
+                "y": 0.112509,
+                "w": 0.209189,
+                "h": 0.018866
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.156403,
+                "y": 0.156812,
+                "w": 0.246334,
+                "h": 0.020675
+              },
+              {
+                "text": "Which TWO opinions about the Luddites do the students express?",
+                "x": 0.154384,
+                "y": 0.199332,
+                "w": 0.608161,
+                "h": 0.020957
+              },
+              {
+                "text": "A",
+                "x": 0.201369,
+                "y": 0.235074,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.201369,
+                "y": 0.255474,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.201369,
+                "y": 0.277574,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.201369,
+                "y": 0.291174,
+                "w": 0.01564,
+                "h": 0.0238
+              },
+              {
+                "text": "E",
+                "x": 0.201369,
+                "y": 0.318373,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "Their actions were ineffective.",
+                "x": 0.244379,
+                "y": 0.233374,
+                "w": 0.277615,
+                "h": 0.018935
+              },
+              {
+                "text": "They are still influential today.",
+                "x": 0.244379,
+                "y": 0.255262,
+                "w": 0.269795,
+                "h": 0.018912
+              },
+              {
+                "text": "They have received unfair criticism.",
+                "x": 0.244379,
+                "y": 0.275874,
+                "w": 0.328446,
+                "h": 0.0204
+              },
+              {
+                "text": "They were proved right.",
+                "x": 0.234604,
+                "y": 0.296119,
+                "w": 0.230694,
+                "h": 0.020675
+              },
+              {
+                "text": "Their attitude is understandable.",
+                "x": 0.244379,
+                "y": 0.316673,
+                "w": 0.29912,
+                "h": 0.018826
+              },
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.158358,
+                "y": 0.381273,
+                "w": 0.209189,
+                "h": 0.018711
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.158145,
+                "y": 0.425343,
+                "w": 0.244809,
+                "h": 0.024386
+              },
+              {
+                "text": "Which TWO predictions about the future of work are the students doubtful about?",
+                "x": 0.154344,
+                "y": 0.466473,
+                "w": 0.74507,
+                "h": 0.024465
+              },
+              {
+                "text": "A",
+                "x": 0.201369,
+                "y": 0.503672,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.201369,
+                "y": 0.525772,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Work will be more rewarding.",
+                "x": 0.246334,
+                "y": 0.503672,
+                "w": 0.26784,
+                "h": 0.018883
+              },
+              {
+                "text": "Unemployment will fall.",
+                "x": 0.246334,
+                "y": 0.524032,
+                "w": 0.215054,
+                "h": 0.01874
+              },
+              {
+                "text": "People will want to delay retiring.",
+                "x": 0.246334,
+                "y": 0.544472,
+                "w": 0.30303,
+                "h": 0.020417
+              },
+              {
+                "text": "D",
+                "x": 0.201369,
+                "y": 0.568271,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "E",
+                "x": 0.201369,
+                "y": 0.588671,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Working hours will be shorter.",
+                "x": 0.236559,
+                "y": 0.566365,
+                "w": 0.281525,
+                "h": 0.020675
+              },
+              {
+                "text": "People will change jobs more frequently.",
+                "x": 0.246334,
+                "y": 0.586971,
+                "w": 0.371457,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-61.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.031281,
+                "y": 0.022427,
+                "w": 0.172043,
+                "h": 0.018849
+              },
+              {
+                "text": "What comment do the students make about each of the following jobs?",
+                "x": 0.029326,
+                "y": 0.065075,
+                "w": 0.649071,
+                "h": 0.0204
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-G, next to",
+                "x": 0.031281,
+                "y": 0.107575,
+                "w": 0.684262,
+                "h": 0.0204
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.031281,
+                "y": 0.131215,
+                "w": 0.164223,
+                "h": 0.01886
+              },
+              {
+                "text": "Comments",
+                "x": 0.381232,
+                "y": 0.189174,
+                "w": 0.107527,
+                "h": 0.0153
+              },
+              {
+                "text": "A These jobs are likely to be at risk.",
+                "x": 0.168133,
+                "y": 0.221297,
+                "w": 0.351906,
+                "h": 0.020675
+              },
+              {
+                "text": "B Their role has become more interesting in",
+                "x": 0.168133,
+                "y": 0.252074,
+                "w": 0.428152,
+                "h": 0.020417
+              },
+              {
+                "text": "recent years.",
+                "x": 0.212958,
+                "y": 0.275145,
+                "w": 0.123449,
+                "h": 0.020157
+              },
+              {
+                "text": "C The number of people working in this sector has",
+                "x": 0.170088,
+                "y": 0.306456,
+                "w": 0.484848,
+                "h": 0.020417
+              },
+              {
+                "text": "fallen dramatically.",
+                "x": 0.211144,
+                "y": 0.328573,
+                "w": 0.175953,
+                "h": 0.01874
+              },
+              {
+                "text": "D This job will require more qualifications.",
+                "x": 0.170088,
+                "y": 0.360873,
+                "w": 0.408602,
+                "h": 0.020406
+              },
+              {
+                "text": "E",
+                "x": 0.170088,
+                "y": 0.394873,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "Higher disposable income has led to a huge increase",
+                "x": 0.199413,
+                "y": 0.391473,
+                "w": 0.502444,
+                "h": 0.022294
+              },
+              {
+                "text": "in jobs.",
+                "x": 0.213099,
+                "y": 0.415244,
+                "w": 0.070381,
+                "h": 0.020675
+              },
+              {
+                "text": "F There is likely to be a significant rise in demand for",
+                "x": 0.169941,
+                "y": 0.445561,
+                "w": 0.512505,
+                "h": 0.023643
+              },
+              {
+                "text": "this service.",
+                "x": 0.213099,
+                "y": 0.469672,
+                "w": 0.115347,
+                "h": 0.017
+              },
+              {
+                "text": "Both employment and productivity have risen.",
+                "x": 0.201369,
+                "y": 0.500272,
+                "w": 0.434018,
+                "h": 0.022283
+              },
+              {
+                "text": "Jobs",
+                "x": 0.076143,
+                "y": 0.579936,
+                "w": 0.051037,
+                "h": 0.017472
+              },
+              {
+                "text": "25 Accountants",
+                "x": 0.031281,
+                "y": 0.612471,
+                "w": 0.162268,
+                "h": 0.017
+              },
+              {
+                "text": "26 Hairdressers",
+                "x": 0.031281,
+                "y": 0.644633,
+                "w": 0.166178,
+                "h": 0.017229
+              },
+              {
+                "text": "27 Administrative staff",
+                "x": 0.031281,
+                "y": 0.677071,
+                "w": 0.222874,
+                "h": 0.017
+              },
+              {
+                "text": "28 Agricultural workers",
+                "x": 0.029326,
+                "y": 0.70937,
+                "w": 0.232649,
+                "h": 0.020423
+              },
+              {
+                "text": "29 Care workers",
+                "x": 0.031281,
+                "y": 0.741607,
+                "w": 0.172043,
+                "h": 0.018763
+              },
+              {
+                "text": "30 Bank clerks",
+                "x": 0.033236,
+                "y": 0.77397,
+                "w": 0.154448,
+                "h": 0.017
+              },
+              {
+                "text": "→ 0 p. 123",
+                "x": 0.559097,
+                "y": 0.994797,
+                "w": 0.125208,
+                "h": 0.024142
+              },
+              {
+                "text": "• p. 111",
+                "x": 0.701597,
+                "y": 0.994183,
+                "w": 0.092408,
+                "h": 0.025369
+              },
+              {
+                "text": "59",
+                "x": 0.819159,
+                "y": 0.998368,
+                "w": 0.025415,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-62.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.144518,
+                "y": 0.008603,
+                "w": 0.05896,
+                "h": 0.019447
+              },
+              {
+                "text": "PART 4",
+                "x": 0.144673,
+                "y": 0.063284,
+                "w": 0.103617,
+                "h": 0.022191
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.301075,
+                "y": 0.065075,
+                "w": 0.197458,
+                "h": 0.0204
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.146628,
+                "y": 0.109063,
+                "w": 0.242424,
+                "h": 0.018912
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.144673,
+                "y": 0.14992,
+                "w": 0.391007,
+                "h": 0.020675
+              },
+              {
+                "text": "Space Traffic Management",
+                "x": 0.371457,
+                "y": 0.209483,
+                "w": 0.359726,
+                "h": 0.027291
+              },
+              {
+                "text": "A Space Traffic Management system",
+                "x": 0.160313,
+                "y": 0.257174,
+                "w": 0.357771,
+                "h": 0.0204
+              },
+              {
+                "text": "is a concept similar to Air Traffic Control, but for satellites rather than planes.",
+                "x": 0.179863,
+                "y": 0.289474,
+                "w": 0.725318,
+                "h": 0.0221
+              },
+              {
+                "text": "• would aim to set up legal and 31",
+                "x": 0.158358,
+                "y": 0.331973,
+                "w": 0.344086,
+                "h": 0.0204
+              },
+              {
+                "text": ".ways of improving safety.",
+                "x": 0.660802,
+                "y": 0.330084,
+                "w": 0.244379,
+                "h": 0.022289
+              },
+              {
+                "text": "• does not actually exist at present.",
+                "x": 0.158358,
+                "y": 0.374387,
+                "w": 0.357771,
+                "h": 0.018786
+              },
+              {
+                "text": "Problems in developing effective Space Traffic Management",
+                "x": 0.162268,
+                "y": 0.413573,
+                "w": 0.59042,
+                "h": 0.0221
+              },
+              {
+                "text": "• Satellites are now quite 32",
+                "x": 0.160313,
+                "y": 0.447572,
+                "w": 0.289345,
+                "h": 0.0204
+              },
+              {
+                "text": "(e.g. there are constellations made up of 33",
+                "x": 0.203228,
+                "y": 0.466145,
+                "w": 0.402965,
+                "h": 0.024129
+              },
+              {
+                "text": ".and therefore more widespread",
+                "x": 0.608016,
+                "y": 0.445764,
+                "w": 0.301075,
+                "h": 0.020675
+              },
+              {
+                "text": "... of satellites).",
+                "x": 0.75843,
+                "y": 0.46568,
+                "w": 0.137099,
+                "h": 0.023283
+              },
+              {
+                "text": "At present, satellites are not required to transmit information to help with their",
+                "x": 0.205279,
+                "y": 0.510249,
+                "w": 0.707722,
+                "h": 0.020675
+              },
+              {
+                "text": "34",
+                "x": 0.205279,
+                "y": 0.532572,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "• There are few systems for 35",
+                "x": 0.158358,
+                "y": 0.573257,
+                "w": 0.316716,
+                "h": 0.020675
+              },
+              {
+                "text": ". satellites.",
+                "x": 0.633431,
+                "y": 0.573257,
+                "w": 0.099707,
+                "h": 0.018814
+              },
+              {
+                "text": "• Small pieces of debris may be difficult to identify.",
+                "x": 0.158258,
+                "y": 0.613881,
+                "w": 0.492849,
+                "h": 0.022883
+              },
+              {
+                "text": "• Operators may be unwilling to share details of satellites used for",
+                "x": 0.158358,
+                "y": 0.656448,
+                "w": 0.635386,
+                "h": 0.020675
+              },
+              {
+                "text": ". or commercial reasons.",
+                "x": 0.391007,
+                "y": 0.680471,
+                "w": 0.226784,
+                "h": 0.017
+              },
+              {
+                "text": "• Itmay be hard to collect details of the object's 37",
+                "x": 0.158358,
+                "y": 0.72127,
+                "w": 0.494624,
+                "h": 0.01886
+              },
+              {
+                "text": ". at a given",
+                "x": 0.81324,
+                "y": 0.719365,
+                "w": 0.10177,
+                "h": 0.020811
+              },
+              {
+                "text": "time.",
+                "x": 0.205279,
+                "y": 0.74337,
+                "w": 0.050831,
+                "h": 0.017
+              },
+              {
+                "text": "• Scientists can only make a 38",
+                "x": 0.160313,
+                "y": 0.783941,
+                "w": 0.316716,
+                "h": 0.018929
+              },
+              {
+                "text": "about where the satellite will go.",
+                "x": 0.647116,
+                "y": 0.782464,
+                "w": 0.2913,
+                "h": 0.020406
+              },
+              {
+                "text": "Solutions",
+                "x": 0.160272,
+                "y": 0.82479,
+                "w": 0.097833,
+                "h": 0.017358
+              },
+              {
+                "text": "• Common standards should be agreed on for the presentation of information.",
+                "x": 0.156403,
+                "y": 0.857269,
+                "w": 0.746823,
+                "h": 0.0204
+              },
+              {
+                "text": "• The information should be combined in one 39",
+                "x": 0.158273,
+                "y": 0.897961,
+                "w": 0.475234,
+                "h": 0.020698
+              },
+              {
+                "text": "A coordinated system must be designed to create 40.",
+                "x": 0.195503,
+                "y": 0.940477,
+                "w": 0.500489,
+                "h": 0.020675
+              },
+              {
+                "text": "in",
+                "x": 0.852395,
+                "y": 0.940568,
+                "w": 0.02346,
+                "h": 0.0187
+              },
+              {
+                "text": "its users.",
+                "x": 0.203049,
+                "y": 0.964247,
+                "w": 0.090723,
+                "h": 0.016964
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-65.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 1-4",
+                "x": 0.021505,
+                "y": 0.018981,
+                "w": 0.146628,
+                "h": 0.018894
+              },
+              {
+                "text": "Reading Passage 1 has eight sections, A-H.",
+                "x": 0.021407,
+                "y": 0.06326,
+                "w": 0.412689,
+                "h": 0.022582
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.017595,
+                "y": 0.107575,
+                "w": 0.453568,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 1-4 on your answer sheet.",
+                "x": 0.021505,
+                "y": 0.151775,
+                "w": 0.59042,
+                "h": 0.0204
+              },
+              {
+                "text": "1",
+                "x": 0.021505,
+                "y": 0.197674,
+                "w": 0.009775,
+                "h": 0.0136
+              },
+              {
+                "text": "an explanation of the industrial processes that create potential raw materials for",
+                "x": 0.064516,
+                "y": 0.194223,
+                "w": 0.729228,
+                "h": 0.020675
+              },
+              {
+                "text": "3",
+                "x": 0.021505,
+                "y": 0.286074,
+                "w": 0.01173,
+                "h": 0.0136
+              },
+              {
+                "text": "4",
+                "x": 0.021505,
+                "y": 0.318373,
+                "w": 0.013685,
+                "h": 0.0153
+              },
+              {
+                "text": "concrete",
+                "x": 0.064389,
+                "y": 0.217599,
+                "w": 0.082365,
+                "h": 0.01795
+              },
+              {
+                "text": "a reference to the various locations where high-rise wooden buildings can be found",
+                "x": 0.064516,
+                "y": 0.248674,
+                "w": 0.760508,
+                "h": 0.0204
+              },
+              {
+                "text": "an indication of how widely available the raw materials of concrete are",
+                "x": 0.064516,
+                "y": 0.282674,
+                "w": 0.641251,
+                "h": 0.022306
+              },
+              {
+                "text": "the belief that more high-rise wooden buildings are needed before wood can be",
+                "x": 0.050831,
+                "y": 0.314825,
+                "w": 0.740958,
+                "h": 0.022249
+              },
+              {
+                "text": "regarded as a viable construction material",
+                "x": 0.064299,
+                "y": 0.335451,
+                "w": 0.389563,
+                "h": 0.024179
+              },
+              {
+                "text": "Questions 5-8",
+                "x": 0.02346,
+                "y": 0.401461,
+                "w": 0.146628,
+                "h": 0.017229
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.02346,
+                "y": 0.442318,
+                "w": 0.277615,
+                "h": 0.022254
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.02346,
+                "y": 0.483175,
+                "w": 0.580645,
+                "h": 0.020675
+              },
+              {
+                "text": "Write your answers in boxes 5-8 on your answer sheet.",
+                "x": 0.02346,
+                "y": 0.525772,
+                "w": 0.508309,
+                "h": 0.020411
+              },
+              {
+                "text": "Making buildings with wood",
+                "x": 0.240469,
+                "y": 0.576703,
+                "w": 0.377322,
+                "h": 0.027268
+              },
+              {
+                "text": "Wood is a traditional building material, but current environmental concerns are",
+                "x": 0.039101,
+                "y": 0.631171,
+                "w": 0.715543,
+                "h": 0.0204
+              },
+              {
+                "text": "encouraging 5....",
+                "x": 0.041056,
+                "y": 0.659893,
+                "w": 0.152493,
+                "h": 0.020675
+              },
+              {
+                "text": "..to use wood in modern construction projects.",
+                "x": 0.328446,
+                "y": 0.658371,
+                "w": 0.426197,
+                "h": 0.018751
+              },
+              {
+                "text": "Using wood, however, has its challenges. For example, as 6",
+                "x": 0.040923,
+                "y": 0.68378,
+                "w": 0.551583,
+                "h": 0.025538
+              },
+              {
+                "text": "....in",
+                "x": 0.737048,
+                "y": 0.683871,
+                "w": 0.041056,
+                "h": 0.0187
+              },
+              {
+                "text": "the atmosphere enters wood, it increases in size. In addition, wood is prone to pests",
+                "x": 0.038998,
+                "y": 0.711935,
+                "w": 0.770478,
+                "h": 0.023972
+              },
+              {
+                "text": "and the risk of fire is greater. However, wood can be turned into a better construction",
+                "x": 0.041056,
+                "y": 0.73997,
+                "w": 0.772238,
+                "h": 0.022312
+              },
+              {
+                "text": "material if it is treated and combined with other materials. In one process,",
+                "x": 0.041056,
+                "y": 0.768681,
+                "w": 0.672532,
+                "h": 0.018889
+              },
+              {
+                "text": "7",
+                "x": 0.043011,
+                "y": 0.79947,
+                "w": 0.01173,
+                "h": 0.0136
+              },
+              {
+                "text": "... of solid wood are glued together to create building blocks. These",
+                "x": 0.209023,
+                "y": 0.793436,
+                "w": 0.606369,
+                "h": 0.024974
+              },
+              {
+                "text": "blocks are lighter than concrete and steel but equal them in strength. Experts say",
+                "x": 0.040911,
+                "y": 0.820707,
+                "w": 0.743202,
+                "h": 0.027209
+              },
+              {
+                "text": "that wooden buildings are an improvement on those made of concrete and steel in",
+                "x": 0.040808,
+                "y": 0.844618,
+                "w": 0.753153,
+                "h": 0.030248
+              },
+              {
+                "text": "terms of the 8..",
+                "x": 0.039101,
+                "y": 0.880914,
+                "w": 0.142717,
+                "h": 0.017229
+              },
+              {
+                "text": "...with which they can be constructed and how much",
+                "x": 0.324297,
+                "y": 0.875226,
+                "w": 0.475567,
+                "h": 0.024643
+              },
+              {
+                "text": "noise is generated by the process.",
+                "x": 0.041056,
+                "y": 0.908269,
+                "w": 0.318671,
+                "h": 0.0204
+              },
+              {
+                "text": "63",
+                "x": 0.811339,
+                "y": 0.993268,
+                "w": 0.02737,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-66.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.154246,
+                "y": 0.008454,
+                "w": 0.057099,
+                "h": 0.018043
+              },
+              {
+                "text": "Questions 9-13",
+                "x": 0.154448,
+                "y": 0.065075,
+                "w": 0.158358,
+                "h": 0.017
+              },
+              {
+                "text": "Look at the following statements (Questions 9-13) and the list of people below.",
+                "x": 0.152417,
+                "y": 0.104879,
+                "w": 0.721549,
+                "h": 0.023792
+              },
+              {
+                "text": "Match each statement with the correct person, A, B, C or D.",
+                "x": 0.152493,
+                "y": 0.14992,
+                "w": 0.549365,
+                "h": 0.022254
+              },
+              {
+                "text": "Write the correct letter, A, B, C or D, in boxes 9-13 on your answer sheet.",
+                "x": 0.152493,
+                "y": 0.190777,
+                "w": 0.676442,
+                "h": 0.022197
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.152493,
+                "y": 0.233374,
+                "w": 0.412512,
+                "h": 0.020411
+              },
+              {
+                "text": "9 The environmental advantage of cement alternatives may not be as great as",
+                "x": 0.162268,
+                "y": 0.282674,
+                "w": 0.731183,
+                "h": 0.0204
+              },
+              {
+                "text": "initially assumed.",
+                "x": 0.19323,
+                "y": 0.30216,
+                "w": 0.164952,
+                "h": 0.023176
+              },
+              {
+                "text": "10 It would be hard to create a construction alternative to concrete that offers so many",
+                "x": 0.150538,
+                "y": 0.336976,
+                "w": 0.805474,
+                "h": 0.018797
+              },
+              {
+                "text": "comparable benefits.",
+                "x": 0.197458,
+                "y": 0.359127,
+                "w": 0.195503,
+                "h": 0.017229
+              },
+              {
+                "text": "11",
+                "x": 0.146628,
+                "y": 0.386373,
+                "w": 0.033236,
+                "h": 0.0272
+              },
+              {
+                "text": "Worries about the environment have led to increased interest in wood as a",
+                "x": 0.195503,
+                "y": 0.391473,
+                "w": 0.680352,
+                "h": 0.017
+              },
+              {
+                "text": "construction material.",
+                "x": 0.197458,
+                "y": 0.411798,
+                "w": 0.199413,
+                "h": 0.018774
+              },
+              {
+                "text": "12 Expense has been a factor in the negative response to the development of",
+                "x": 0.150538,
+                "y": 0.442318,
+                "w": 0.729228,
+                "h": 0.022254
+              },
+              {
+                "text": "new cements.",
+                "x": 0.195503,
+                "y": 0.466272,
+                "w": 0.130987,
+                "h": 0.017
+              },
+              {
+                "text": "13 The environmental damage caused by concrete is due to it being produced in",
+                "x": 0.148583,
+                "y": 0.494989,
+                "w": 0.754643,
+                "h": 0.022283
+              },
+              {
+                "text": "large quantities.",
+                "x": 0.193548,
+                "y": 0.520586,
+                "w": 0.152493,
+                "h": 0.018786
+              },
+              {
+                "text": "List of People",
+                "x": 0.486804,
+                "y": 0.578471,
+                "w": 0.138807,
+                "h": 0.0204
+              },
+              {
+                "text": "A Chris Cheeseman",
+                "x": 0.346041,
+                "y": 0.610668,
+                "w": 0.213099,
+                "h": 0.017229
+              },
+              {
+                "text": "BMarkus Mannström",
+                "x": 0.346041,
+                "y": 0.643071,
+                "w": 0.222874,
+                "h": 0.018791
+              },
+              {
+                "text": "C Anna Surgenor",
+                "x": 0.346041,
+                "y": 0.677071,
+                "w": 0.187683,
+                "h": 0.018757
+              },
+              {
+                "text": "D",
+                "x": 0.347996,
+                "y": 0.70937,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Felix Preston and Johanna Lehne",
+                "x": 0.391007,
+                "y": 0.707642,
+                "w": 0.31085,
+                "h": 0.018728
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-67.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.02737,
+                "y": 0.018981,
+                "w": 0.29912,
+                "h": 0.022294
+              },
+              {
+                "text": "You should spend about 20minutes on Questions 14-26, which are based on Reading",
+                "x": 0.02737,
+                "y": 0.063284,
+                "w": 0.801564,
+                "h": 0.02412
+              },
+              {
+                "text": "Passage 2 on pages 66 and 67.",
+                "x": 0.025415,
+                "y": 0.087175,
+                "w": 0.29521,
+                "h": 0.018935
+              },
+              {
+                "text": "Questions 14-20",
+                "x": 0.02737,
+                "y": 0.127769,
+                "w": 0.170088,
+                "h": 0.018906
+              },
+              {
+                "text": "Reading Passage 2 has seven paragraphs, A-G.",
+                "x": 0.025415,
+                "y": 0.170475,
+                "w": 0.453568,
+                "h": 0.0204
+              },
+              {
+                "text": "Choose the correct heading for each paragraph from the list of headings below.",
+                "x": 0.025415,
+                "y": 0.211274,
+                "w": 0.725318,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct number, i-viii, in boxes 14-20 on your answer sheet.",
+                "x": 0.025415,
+                "y": 0.252074,
+                "w": 0.647116,
+                "h": 0.020417
+              },
+              {
+                "text": "List of Headings",
+                "x": 0.349951,
+                "y": 0.307933,
+                "w": 0.164223,
+                "h": 0.02412
+              },
+              {
+                "text": "i A period in cold conditions before the technology",
+                "x": 0.203324,
+                "y": 0.340422,
+                "w": 0.475073,
+                "h": 0.022151
+              },
+              {
+                "text": "is assessed",
+                "x": 0.224693,
+                "y": 0.36356,
+                "w": 0.113663,
+                "h": 0.018426
+              },
+              {
+                "text": "ii Marketing issues lead to failure",
+                "x": 0.197458,
+                "y": 0.393093,
+                "w": 0.318671,
+                "h": 0.020675
+              },
+              {
+                "text": "iii Good and bad aspects of steam technology are",
+                "x": 0.191593,
+                "y": 0.423612,
+                "w": 0.473118,
+                "h": 0.020675
+              },
+              {
+                "text": "passed on",
+                "x": 0.227684,
+                "y": 0.443581,
+                "w": 0.099736,
+                "h": 0.023368
+              },
+              {
+                "text": "iv A possible solution to the issues of today",
+                "x": 0.191593,
+                "y": 0.476283,
+                "w": 0.412512,
+                "h": 0.018889
+              },
+              {
+                "text": "v Further improvements lead to commercial orders",
+                "x": 0.197284,
+                "y": 0.502643,
+                "w": 0.479314,
+                "h": 0.024488
+              },
+              {
+                "text": "vi Positive publicity at last for this quiet, clean, fast",
+                "x": 0.191593,
+                "y": 0.535846,
+                "w": 0.478983,
+                "h": 0.022226
+              },
+              {
+                "text": "vehicle",
+                "x": 0.228707,
+                "y": 0.557976,
+                "w": 0.066535,
+                "h": 0.017191
+              },
+              {
+                "text": "vii A disappointing outcome for customers",
+                "x": 0.187683,
+                "y": 0.588517,
+                "w": 0.400782,
+                "h": 0.018854
+              },
+              {
+                "text": "viii A better option than the steam car arises",
+                "x": 0.179863,
+                "y": 0.619036,
+                "w": 0.422287,
+                "h": 0.018935
+              },
+              {
+                "text": "14 Paragraph A",
+                "x": 0.025415,
+                "y": 0.693859,
+                "w": 0.164223,
+                "h": 0.020675
+              },
+              {
+                "text": "15 Paragraph B",
+                "x": 0.025415,
+                "y": 0.72807,
+                "w": 0.164223,
+                "h": 0.020428
+              },
+              {
+                "text": "16 Paragraph C",
+                "x": 0.025415,
+                "y": 0.760313,
+                "w": 0.164223,
+                "h": 0.020675
+              },
+              {
+                "text": "17 Paragraph D",
+                "x": 0.025415,
+                "y": 0.794278,
+                "w": 0.162268,
+                "h": 0.018791
+              },
+              {
+                "text": "18 Paragraph E",
+                "x": 0.025415,
+                "y": 0.826669,
+                "w": 0.162268,
+                "h": 0.018803
+              },
+              {
+                "text": "19",
+                "x": 0.025415,
+                "y": 0.857269,
+                "w": 0.02737,
+                "h": 0.0187
+              },
+              {
+                "text": "Paragraph F",
+                "x": 0.070211,
+                "y": 0.858124,
+                "w": 0.117643,
+                "h": 0.02039
+              },
+              {
+                "text": "20 Paragraph G",
+                "x": 0.02346,
+                "y": 0.891252,
+                "w": 0.166178,
+                "h": 0.018717
+              },
+              {
+                "text": "65",
+                "x": 0.809384,
+                "y": 0.998368,
+                "w": 0.025415,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-70.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.158358,
+                "y": 0.014059,
+                "w": 0.056696,
+                "h": 0.017229
+              },
+              {
+                "text": "Questions 21-23",
+                "x": 0.156403,
+                "y": 0.068475,
+                "w": 0.172043,
+                "h": 0.018929
+              },
+              {
+                "text": "Choose the correct letter, A, B, Cor D.",
+                "x": 0.156403,
+                "y": 0.114375,
+                "w": 0.355816,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct letter in boxes 21-23 on your answer sheet.",
+                "x": 0.156403,
+                "y": 0.156812,
+                "w": 0.55914,
+                "h": 0.018763
+              },
+              {
+                "text": "21 What point does the writer make about the steam car in Paragraph B?",
+                "x": 0.154448,
+                "y": 0.199145,
+                "w": 0.688172,
+                "h": 0.020675
+              },
+              {
+                "text": "A",
+                "x": 0.201369,
+                "y": 0.233374,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.201369,
+                "y": 0.253774,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.201369,
+                "y": 0.275874,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.201369,
+                "y": 0.297974,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Its success was short-lived.",
+                "x": 0.242424,
+                "y": 0.233374,
+                "w": 0.258065,
+                "h": 0.017
+              },
+              {
+                "text": "Not enough cars were made.",
+                "x": 0.246334,
+                "y": 0.253774,
+                "w": 0.26784,
+                "h": 0.018717
+              },
+              {
+                "text": "Car companies found them hard to sell.",
+                "x": 0.246334,
+                "y": 0.273968,
+                "w": 0.361681,
+                "h": 0.018906
+              },
+              {
+                "text": "People found them hard to drive.",
+                "x": 0.242424,
+                "y": 0.296119,
+                "w": 0.304985,
+                "h": 0.018854
+              },
+              {
+                "text": "22 |",
+                "x": 0.154448,
+                "y": 0.33353,
+                "w": 0.050831,
+                "h": 0.017229
+              },
+              {
+                "text": "When building their first steam car, the Doble brothers",
+                "x": 0.201369,
+                "y": 0.33353,
+                "w": 0.494624,
+                "h": 0.018843
+              },
+              {
+                "text": "A",
+                "x": 0.201369,
+                "y": 0.364273,
+                "w": 0.017595,
+                "h": 0.0187
+              },
+              {
+                "text": "B",
+                "x": 0.201369,
+                "y": 0.386373,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.201369,
+                "y": 0.408473,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.201369,
+                "y": 0.428873,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "constructed all the parts themselves.",
+                "x": 0.246334,
+                "y": 0.365973,
+                "w": 0.338221,
+                "h": 0.018751
+              },
+              {
+                "text": "made written notes at each stage of the construction.",
+                "x": 0.246334,
+                "y": 0.386201,
+                "w": 0.486804,
+                "h": 0.018872
+              },
+              {
+                "text": "needed several attempts to achieve a competitive model.",
+                "x": 0.246334,
+                "y": 0.406773,
+                "w": 0.523949,
+                "h": 0.0204
+              },
+              {
+                "text": "sought the advice of experienced people in the car industry.",
+                "x": 0.234604,
+                "y": 0.428873,
+                "w": 0.557185,
+                "h": 0.0204
+              },
+              {
+                "text": "23",
+                "x": 0.154448,
+                "y": 0.464572,
+                "w": 0.031281,
+                "h": 0.0187
+              },
+              {
+                "text": "In order to produce the Model C, the Doble brothers",
+                "x": 0.193548,
+                "y": 0.466272,
+                "w": 0.482893,
+                "h": 0.0204
+              },
+              {
+                "text": "moved production to a different city.",
+                "x": 0.246334,
+                "y": 0.498435,
+                "w": 0.328446,
+                "h": 0.018837
+              },
+              {
+                "text": "raised financial capital.",
+                "x": 0.244379,
+                "y": 0.520586,
+                "w": 0.213099,
+                "h": 0.018786
+              },
+              {
+                "text": "employed an additional worker.",
+                "x": 0.240469,
+                "y": 0.541072,
+                "w": 0.2913,
+                "h": 0.018894
+              },
+              {
+                "text": "D",
+                "x": 0.201369,
+                "y": 0.563171,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "abandoned their earlier designs.",
+                "x": 0.240469,
+                "y": 0.563171,
+                "w": 0.304985,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-71.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 24-26",
+                "x": 0.01955,
+                "y": 0.022427,
+                "w": 0.172043,
+                "h": 0.018849
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.017595,
+                "y": 0.065075,
+                "w": 0.27957,
+                "h": 0.0204
+              },
+              {
+                "text": "Choose ONE WORD ANDIOR A NUMBER from the passage for each answer.",
+                "x": 0.017595,
+                "y": 0.107575,
+                "w": 0.717498,
+                "h": 0.0204
+              },
+              {
+                "text": "Write your answers in boxes 24-26 on your answer sheet.",
+                "x": 0.017595,
+                "y": 0.14992,
+                "w": 0.529814,
+                "h": 0.018854
+              },
+              {
+                "text": "The Model E",
+                "x": 0.338221,
+                "y": 0.201074,
+                "w": 0.168133,
+                "h": 0.022191
+              },
+              {
+                "text": "The Model Ewas road-tested in 1924 by the Automobile Club of America. They",
+                "x": 0.033236,
+                "y": 0.243448,
+                "w": 0.723363,
+                "h": 0.02412
+              },
+              {
+                "text": "found it easy to drive, despite its weight, and it impressed the spectators. A later",
+                "x": 0.031281,
+                "y": 0.272474,
+                "w": 0.733138,
+                "h": 0.022169
+              },
+              {
+                "text": "version of the Model E raised its 24....",
+                "x": 0.031281,
+                "y": 0.299565,
+                "w": 0.349951,
+                "h": 0.018809
+              },
+              {
+                "text": "..,while keeping its emissions",
+                "x": 0.512219,
+                "y": 0.301374,
+                "w": 0.273705,
+                "h": 0.0204
+              },
+              {
+                "text": "extremelylow.",
+                "x": 0.033236,
+                "y": 0.326873,
+                "w": 0.134897,
+                "h": 0.0204
+              },
+              {
+                "text": "The steam car was too expensive for many people and its design was constantly",
+                "x": 0.033236,
+                "y": 0.376173,
+                "w": 0.739003,
+                "h": 0.0204
+              },
+              {
+                "text": "being altered. Under 25",
+                "x": 0.033236,
+                "y": 0.404907,
+                "w": 0.218964,
+                "h": 0.018866
+              },
+              {
+                "text": "......cars were produced before the company",
+                "x": 0.391007,
+                "y": 0.404907,
+                "w": 0.400782,
+                "h": 0.020675
+              },
+              {
+                "text": "went out of business. However, even today, there are Model Es on the road in the",
+                "x": 0.033236,
+                "y": 0.432273,
+                "w": 0.744868,
+                "h": 0.0204
+              },
+              {
+                "text": "US. They are straightforward to maintain, and they satisfy California's",
+                "x": 0.033236,
+                "y": 0.459472,
+                "w": 0.635386,
+                "h": 0.022226
+              },
+              {
+                "text": "26",
+                "x": 0.031281,
+                "y": 0.484972,
+                "w": 0.029326,
+                "h": 0.0187
+              },
+              {
+                "text": "..emissions laws. Perhaps today's technology and materials",
+                "x": 0.211144,
+                "y": 0.486621,
+                "w": 0.55132,
+                "h": 0.022151
+              },
+              {
+                "text": "would help us revive the steam car.",
+                "x": 0.031281,
+                "y": 0.515572,
+                "w": 0.326491,
+                "h": 0.018797
+              },
+              {
+                "text": "→0 p. 124",
+                "x": 0.646868,
+                "y": 0.995573,
+                "w": 0.133438,
+                "h": 0.02599
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-74.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.148583,
+                "y": 0.015535,
+                "w": 0.058651,
+                "h": 0.01724
+              },
+              {
+                "text": "Questions 27-30",
+                "x": 0.148583,
+                "y": 0.070175,
+                "w": 0.172043,
+                "h": 0.018706
+              },
+              {
+                "text": "Choose the correct letter, A, B, Cor D.",
+                "x": 0.148583,
+                "y": 0.114375,
+                "w": 0.357771,
+                "h": 0.022254
+              },
+              {
+                "text": "Write the correct letter in boxes 27-30 on your answer sheet.",
+                "x": 0.148583,
+                "y": 0.158575,
+                "w": 0.557185,
+                "h": 0.018912
+              },
+              {
+                "text": "27 The writer describes the Romeo and Juliet lesson in order to demonstrate",
+                "x": 0.146483,
+                "y": 0.199361,
+                "w": 0.719721,
+                "h": 0.023451
+              },
+              {
+                "text": "A",
+                "x": 0.193548,
+                "y": 0.236774,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "how few students are interested in literature.",
+                "x": 0.236559,
+                "y": 0.236557,
+                "w": 0.410557,
+                "h": 0.017229
+              },
+              {
+                "text": "B",
+                "x": 0.193548,
+                "y": 0.258874,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "how a teacher handles a range of learning needs.",
+                "x": 0.236559,
+                "y": 0.257174,
+                "w": 0.457478,
+                "h": 0.018763
+              },
+              {
+                "text": "C",
+                "x": 0.193548,
+                "y": 0.279274,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "how unsuitable Shakespeare is for most teenagers.",
+                "x": 0.236559,
+                "y": 0.277414,
+                "w": 0.475073,
+                "h": 0.01886
+              },
+              {
+                "text": "D how weaker students can disrupt their classmates' learning.",
+                "x": 0.193548,
+                "y": 0.296119,
+                "w": 0.59433,
+                "h": 0.022254
+              },
+              {
+                "text": "28 What does the writer say about streaming in the third paragraph?",
+                "x": 0.146541,
+                "y": 0.331834,
+                "w": 0.64537,
+                "h": 0.023939
+              },
+              {
+                "text": "A Ithas a very broad appeal.",
+                "x": 0.193548,
+                "y": 0.365973,
+                "w": 0.293255,
+                "h": 0.0204
+              },
+              {
+                "text": "B Itfavours cleverer students.",
+                "x": 0.193548,
+                "y": 0.388073,
+                "w": 0.30303,
+                "h": 0.017
+              },
+              {
+                "text": "C Itis relatively simple to implement.",
+                "x": 0.195503,
+                "y": 0.408353,
+                "w": 0.361681,
+                "h": 0.020675
+              },
+              {
+                "text": "D Itworks better in some schools than others.",
+                "x": 0.193548,
+                "y": 0.428873,
+                "w": 0.447703,
+                "h": 0.01886
+              },
+              {
+                "text": "29 What idea is suggested by the reference to Mount Qomolangma in the fifth paragraph?",
+                "x": 0.148435,
+                "y": 0.457772,
+                "w": 0.842944,
+                "h": 0.026932
+              },
+              {
+                "text": "A students following unsuitable paths",
+                "x": 0.193548,
+                "y": 0.494989,
+                "w": 0.369501,
+                "h": 0.018883
+              },
+              {
+                "text": "B students attempting interesting tasks",
+                "x": 0.193548,
+                "y": 0.515572,
+                "w": 0.383187,
+                "h": 0.0204
+              },
+              {
+                "text": "C",
+                "x": 0.195503,
+                "y": 0.539372,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "students not achieving their full potential",
+                "x": 0.238514,
+                "y": 0.535846,
+                "w": 0.371457,
+                "h": 0.020675
+              },
+              {
+                "text": "D",
+                "x": 0.195503,
+                "y": 0.559772,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "students not being aware of their limitations",
+                "x": 0.230694,
+                "y": 0.557997,
+                "w": 0.408602,
+                "h": 0.020675
+              },
+              {
+                "text": "30 What does the word 'scaffolding' in the sixth paragraph refer to?",
+                "x": 0.148583,
+                "y": 0.590371,
+                "w": 0.633431,
+                "h": 0.022266
+              },
+              {
+                "text": "A the factors which prevent a student from learning effectively",
+                "x": 0.195361,
+                "y": 0.622313,
+                "w": 0.592673,
+                "h": 0.02575
+              },
+              {
+                "text": "the environment where most of a student's learning takes place",
+                "x": 0.236559,
+                "y": 0.644633,
+                "w": 0.584555,
+                "h": 0.020675
+              },
+              {
+                "text": "C",
+                "x": 0.195503,
+                "y": 0.670271,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.197458,
+                "y": 0.69067,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "the assistance given to a student in their initial stages of learning",
+                "x": 0.238514,
+                "y": 0.665171,
+                "w": 0.59433,
+                "h": 0.022289
+              },
+              {
+                "text": "the setting of appropriate learning targets for a student's aptitude",
+                "x": 0.238514,
+                "y": 0.687271,
+                "w": 0.596285,
+                "h": 0.02234
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-75.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 31-35",
+                "x": 0.025415,
+                "y": 0.020876,
+                "w": 0.170088,
+                "h": 0.017
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-l, below.",
+                "x": 0.02346,
+                "y": 0.061676,
+                "w": 0.549365,
+                "h": 0.022283
+              },
+              {
+                "text": "Write the correct letter, A-l, in boxes 31-35 on your answer sheet.",
+                "x": 0.02335,
+                "y": 0.102176,
+                "w": 0.606236,
+                "h": 0.023943
+              },
+              {
+                "text": "Is streaming effective?",
+                "x": 0.27175,
+                "y": 0.156812,
+                "w": 0.30694,
+                "h": 0.025597
+              },
+              {
+                "text": "According to Professor John Hattie of the Melbourne Education Research Institute,",
+                "x": 0.039101,
+                "y": 0.209483,
+                "w": 0.756598,
+                "h": 0.020675
+              },
+              {
+                "text": "there is very little indication that streaming leads to 31",
+                "x": 0.037146,
+                "y": 0.236557,
+                "w": 0.492669,
+                "h": 0.020675
+              },
+              {
+                "text": "..... He points",
+                "x": 0.680303,
+                "y": 0.236534,
+                "w": 0.121309,
+                "h": 0.019181
+              },
+              {
+                "text": "out that, in schools which use streaming, the most significant impact is on those",
+                "x": 0.038996,
+                "y": 0.26201,
+                "w": 0.729452,
+                "h": 0.024891
+              },
+              {
+                "text": "students placed in the 32",
+                "x": 0.039101,
+                "y": 0.292673,
+                "w": 0.230694,
+                "h": 0.0189
+              },
+              {
+                "text": ".., especially where a large proportion of",
+                "x": 0.417841,
+                "y": 0.283644,
+                "w": 0.382343,
+                "h": 0.034999
+              },
+              {
+                "text": "them have 33",
+                "x": 0.037146,
+                "y": 0.31827,
+                "w": 0.132942,
+                "h": 0.020675
+              },
+              {
+                "text": "..... Meanwhile, for the 34.",
+                "x": 0.31085,
+                "y": 0.31827,
+                "w": 0.240469,
+                "h": 0.022203
+              },
+              {
+                "text": ".., there",
+                "x": 0.674487,
+                "y": 0.31827,
+                "w": 0.099707,
+                "h": 0.022203
+              },
+              {
+                "text": "appears to be only minimal advantage. A further issue is that teachers tend to",
+                "x": 0.039038,
+                "y": 0.345484,
+                "w": 0.707836,
+                "h": 0.023948
+              },
+              {
+                "text": "have 35...",
+                "x": 0.039024,
+                "y": 0.372536,
+                "w": 0.090084,
+                "h": 0.022574
+              },
+              {
+                "text": "... of students in streamed groups.",
+                "x": 0.26784,
+                "y": 0.374387,
+                "w": 0.308895,
+                "h": 0.020675
+              },
+              {
+                "text": "wrong classes",
+                "x": 0.109411,
+                "y": 0.462702,
+                "w": 0.14501,
+                "h": 0.020645
+              },
+              {
+                "text": "D bottom sets",
+                "x": 0.074291,
+                "y": 0.510249,
+                "w": 0.154448,
+                "h": 0.017229
+              },
+              {
+                "text": "G weaker students",
+                "x": 0.074291,
+                "y": 0.556372,
+                "w": 0.197458,
+                "h": 0.018854
+              },
+              {
+                "text": "lower",
+                "x": 0.373412,
+                "y": 0.459472,
+                "w": 0.066471,
+                "h": 0.0221
+              },
+              {
+                "text": "expectations",
+                "x": 0.379169,
+                "y": 0.482767,
+                "w": 0.123383,
+                "h": 0.021411
+              },
+              {
+                "text": "E brightest pupils",
+                "x": 0.340176,
+                "y": 0.508772,
+                "w": 0.185728,
+                "h": 0.0204
+              },
+              {
+                "text": "H higher",
+                "x": 0.340152,
+                "y": 0.554584,
+                "w": 0.10562,
+                "h": 0.022276
+              },
+              {
+                "text": "achievements",
+                "x": 0.379277,
+                "y": 0.578471,
+                "w": 0.134897,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.56696,
+                "y": 0.505372,
+                "w": 0.025415,
+                "h": 0.0221
+              },
+              {
+                "text": "average learners",
+                "x": 0.606061,
+                "y": 0.462872,
+                "w": 0.164223,
+                "h": 0.018826
+              },
+              {
+                "text": "disadvantaged",
+                "x": 0.606061,
+                "y": 0.508772,
+                "w": 0.142717,
+                "h": 0.0204
+              },
+              {
+                "text": "backgrounds",
+                "x": 0.607923,
+                "y": 0.528731,
+                "w": 0.125308,
+                "h": 0.021281
+              },
+              {
+                "text": "positive",
+                "x": 0.605984,
+                "y": 0.55446,
+                "w": 0.080309,
+                "h": 0.022523
+              },
+              {
+                "text": "impressions",
+                "x": 0.609971,
+                "y": 0.576771,
+                "w": 0.115347,
+                "h": 0.0204
+              },
+              {
+                "text": "73",
+                "x": 0.807429,
+                "y": 0.996668,
+                "w": 0.025415,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-3/page-76.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.156309,
+                "y": 0.012099,
+                "w": 0.058839,
+                "h": 0.015854
+              },
+              {
+                "text": "Questions 36-40",
+                "x": 0.156403,
+                "y": 0.06673,
+                "w": 0.170088,
+                "h": 0.018746
+              },
+              {
+                "text": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+                "x": 0.154448,
+                "y": 0.107575,
+                "w": 0.780059,
+                "h": 0.0204
+              },
+              {
+                "text": "In boxes 36-40 on your answer sheet, write",
+                "x": 0.152493,
+                "y": 0.14992,
+                "w": 0.402737,
+                "h": 0.020675
+              },
+              {
+                "text": "if the statement agrees with the views of the writer",
+                "x": 0.357771,
+                "y": 0.190777,
+                "w": 0.461388,
+                "h": 0.022197
+              },
+              {
+                "text": "if the statement contradicts the views of the writer",
+                "x": 0.357771,
+                "y": 0.212929,
+                "w": 0.455523,
+                "h": 0.017229
+              },
+              {
+                "text": "NOT GIVEN",
+                "x": 0.224829,
+                "y": 0.235074,
+                "w": 0.115347,
+                "h": 0.017235
+              },
+              {
+                "text": "if it is impossible to say what the writer thinks about this",
+                "x": 0.342131,
+                "y": 0.233374,
+                "w": 0.523949,
+                "h": 0.020411
+              },
+              {
+                "text": "36 The Vygotsky model of education supports the concept of a mixed-ability class.",
+                "x": 0.154448,
+                "y": 0.275874,
+                "w": 0.768328,
+                "h": 0.0204
+              },
+              {
+                "text": "37 Some teachers are uncertain about allowing students to take on MKO roles in the",
+                "x": 0.154367,
+                "y": 0.306263,
+                "w": 0.789986,
+                "h": 0.024033
+              },
+              {
+                "text": "classroom.",
+                "x": 0.201369,
+                "y": 0.335373,
+                "w": 0.101662,
+                "h": 0.0153
+              },
+              {
+                "text": "It can be rewarding to teach knowledge which you have only recently acquired.",
+                "x": 0.197458,
+                "y": 0.365973,
+                "w": 0.725318,
+                "h": 0.0204
+              },
+              {
+                "text": "39 The priority should be to ensure that the highest-achieving students attain their",
+                "x": 0.154448,
+                "y": 0.398273,
+                "w": 0.766373,
+                "h": 0.020417
+              },
+              {
+                "text": "goals.",
+                "x": 0.201369,
+                "y": 0.425473,
+                "w": 0.056696,
+                "h": 0.017
+              },
+              {
+                "text": "40",
+                "x": 0.154448,
+                "y": 0.456072,
+                "w": 0.033236,
+                "h": 0.017
+              },
+              {
+                "text": "Taking part in collaborative outdoor activities with teachers and classmates can",
+                "x": 0.187613,
+                "y": 0.45227,
+                "w": 0.735247,
+                "h": 0.022978
+              },
+              {
+                "text": "improve student outcomes in the classroom.",
+                "x": 0.199413,
+                "y": 0.476283,
+                "w": 0.408602,
+                "h": 0.018889
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 38,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 40,
+              "text": ""
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "Marrowfield",
+      "relative",
+      "socialise|socialize",
+      "full",
+      "Domestic Life",
+      "clouds",
+      "timing",
+      "Animal Magic",
+      "animal movement|movement",
+      "dark",
+      "B",
+      "C",
+      "B",
+      "D",
+      "C",
+      "B",
+      "B",
+      "C",
+      "A",
+      "A",
+      "A",
+      "E",
+      "B",
+      "D",
+      "G",
+      "E",
+      "B",
+      "C",
+      "F",
+      "A",
+      "technical",
+      "cheap",
+      "thousands",
+      "identification",
+      "tracking",
+      "military",
+      "location",
+      "prediction",
+      "database",
+      "trust"
+    ],
+    "reading": [
+      "G",
+      "D",
+      "C",
+      "F",
+      "architects",
+      "moisture",
+      "layers",
+      "speed",
+      "C",
+      "A",
+      "B",
+      "D",
+      "A",
+      "iii",
+      "viii",
+      "vi",
+      "v",
+      "vii",
+      "i",
+      "iv",
+      "A",
+      "C",
+      "B",
+      "speed",
+      "fifty|50",
+      "strict",
+      "B",
+      "A",
+      "C",
+      "C",
+      "H",
+      "D",
+      "F",
+      "E",
+      "B",
+      "NO",
+      "NOT GIVEN",
+      "YES",
+      "NO",
+      "NOT GIVEN"
+    ]
+  },
+  "completionOptions": {}
+}

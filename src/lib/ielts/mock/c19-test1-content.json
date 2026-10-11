@@ -1,0 +1,5294 @@
+{
+  "source": {
+    "book": 19,
+    "test": 1,
+    "questionPages": {
+      "l": [
+        [
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14
+        ]
+      ],
+      "r": [
+        [
+          15,
+          16
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          24,
+          25
+        ]
+      ],
+      "q": [
+        [
+          17,
+          18
+        ],
+        [
+          21,
+          22,
+          23
+        ],
+        [
+          26,
+          27,
+          28
+        ]
+      ],
+      "w": [
+        29,
+        30
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "5b460d32f81cba72576e097dba82d8817717f8ae6a261b428916b49dcbdb86c2"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-1/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-1/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-1/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-1/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-1/page-15.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.416214,
+                "y": 0.029266,
+                "w": 0.150195,
+                "h": 0.02232
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.045307,
+                "y": 0.102475,
+                "w": 0.328984,
+                "h": 0.018903
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.045307,
+                "y": 0.146652,
+                "w": 0.876554,
+                "h": 0.018738
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.045307,
+                "y": 0.167075,
+                "w": 0.181051,
+                "h": 0.018796
+              },
+              {
+                "text": "How tennis rackets have changed",
+                "x": 0.228566,
+                "y": 0.218074,
+                "w": 0.534322,
+                "h": 0.0289
+              },
+              {
+                "text": "In 2016, the British professional tennis player Andy Murray was ranked as the world's number",
+                "x": 0.043099,
+                "y": 0.267359,
+                "w": 0.872138,
+                "h": 0.018738
+              },
+              {
+                "text": "one. It was an incredible achievement by any standard - made even more remarkable by the",
+                "x": 0.043099,
+                "y": 0.286074,
+                "w": 0.847851,
+                "h": 0.020504
+              },
+              {
+                "text": "fact that he did this during a period considered to be one of the strongest in the sport's history,",
+                "x": 0.043099,
+                "y": 0.306474,
+                "w": 0.865514,
+                "h": 0.0221
+              },
+              {
+                "text": "competing against the likes of Rafael Nadal, Roger Federer and Novak Djokovic, to name just a",
+                "x": 0.043099,
+                "y": 0.330109,
+                "w": 0.883178,
+                "h": 0.018865
+              },
+              {
+                "text": "few. Yet five years previously, he had been regarded as a talented outsider who entered but never",
+                "x": 0.043099,
+                "y": 0.35059,
+                "w": 0.889801,
+                "h": 0.020483
+              },
+              {
+                "text": "won the major tournaments.",
+                "x": 0.045307,
+                "y": 0.372773,
+                "w": 0.260537,
+                "h": 0.017035
+              },
+              {
+                "text": "Of the changes that account for this transformation, one was visible and widely publicised: in",
+                "x": 0.045307,
+                "y": 0.411873,
+                "w": 0.85889,
+                "h": 0.0204
+              },
+              {
+                "text": "2011, Murray invited former number one player Ivan Lendl onto his coaching team - a valuable",
+                "x": 0.043099,
+                "y": 0.432077,
+                "w": 0.885386,
+                "h": 0.022295
+              },
+              {
+                "text": "addition that had a visible impact on the player's playing style. Another change was so subtle",
+                "x": 0.043099,
+                "y": 0.454301,
+                "w": 0.85889,
+                "h": 0.020481
+              },
+              {
+                "text": "as to pass more or less unnoticed. Like many players, Murray has long preferred a racket",
+                "x": 0.045307,
+                "y": 0.476472,
+                "w": 0.819147,
+                "h": 0.017048
+              },
+              {
+                "text": "that consists of two types of string: one for the mains (verticals) and another for the crosses",
+                "x": 0.045307,
+                "y": 0.496872,
+                "w": 0.839019,
+                "h": 0.017129
+              },
+              {
+                "text": "(horizontals). While he continued to use natural string in the crosses, in 2012 he switched",
+                "x": 0.043099,
+                "y": 0.517272,
+                "w": 0.823563,
+                "h": 0.0187
+              },
+              {
+                "text": "to a synthetic string for the mains. A small change, perhaps, but its importance should not",
+                "x": 0.043099,
+                "y": 0.537532,
+                "w": 0.825771,
+                "h": 0.020539
+              },
+              {
+                "text": "be underestimated.",
+                "x": 0.043099,
+                "y": 0.558013,
+                "w": 0.174428,
+                "h": 0.017058
+              },
+              {
+                "text": "The modification that Murray made is just one of a number of options available to players",
+                "x": 0.045307,
+                "y": 0.600571,
+                "w": 0.827979,
+                "h": 0.018885
+              },
+              {
+                "text": "looking to tweak their rackets in order to improve their games. \"Touring professionals have their",
+                "x": 0.043099,
+                "y": 0.620763,
+                "w": 0.887594,
+                "h": 0.020608
+              },
+              {
+                "text": "rackets customised to their specific needs,' says Colin Triplow, a UK-based professional racket",
+                "x": 0.043099,
+                "y": 0.639501,
+                "w": 0.874346,
+                "h": 0.02227
+              },
+              {
+                "text": "stringer. 'It's a highly important part of performance maximisation.' Consequently, the specific",
+                "x": 0.043099,
+                "y": 0.661725,
+                "w": 0.872138,
+                "h": 0.020481
+              },
+              {
+                "text": "rackets used by the world's elite are not actually readily available to the public; rather, each",
+                "x": 0.043099,
+                "y": 0.683871,
+                "w": 0.843435,
+                "h": 0.018816
+              },
+              {
+                "text": "racket is individually made to suit the player who uses it. Take the US professional tennis players",
+                "x": 0.043099,
+                "y": 0.70427,
+                "w": 0.896425,
+                "h": 0.018897
+              },
+              {
+                "text": "Mike and Bob Bryan, for example: \"We're very particular with our racket specifications,' they",
+                "x": 0.047515,
+                "y": 0.724475,
+                "w": 0.861098,
+                "h": 0.020595
+              },
+              {
+                "text": "say. 'All our rackets are sent from our manufacturer to Tampa, Florida, where our frames go",
+                "x": 0.047515,
+                "y": 0.744956,
+                "w": 0.845643,
+                "h": 0.018814
+              },
+              {
+                "text": "through a ... thorough customisation process.' They explain how they have adjusted not",
+                "x": 0.045307,
+                "y": 0.765437,
+                "w": 0.814731,
+                "h": 0.022224
+              },
+              {
+                "text": "only racket length, but even experimented with different kinds of paint. The rackets they use",
+                "x": 0.045307,
+                "y": 0.78757,
+                "w": 0.850058,
+                "h": 0.018829
+              },
+              {
+                "text": "now weigh more than the average model and also have a denser string pattern (i.e. more crosses",
+                "x": 0.047515,
+                "y": 0.80967,
+                "w": 0.878762,
+                "h": 0.015467
+              },
+              {
+                "text": "and mains).",
+                "x": 0.045282,
+                "y": 0.829974,
+                "w": 0.110446,
+                "h": 0.01719
+              },
+              {
+                "text": "The primary reason for these modifications is simple: as the line between winning and losing",
+                "x": 0.047515,
+                "y": 0.870869,
+                "w": 0.852266,
+                "h": 0.017018
+              },
+              {
+                "text": "becomes thinner and thinner, even these slight changes become more and more important. As a",
+                "x": 0.047482,
+                "y": 0.890939,
+                "w": 0.872213,
+                "h": 0.019653
+              },
+              {
+                "text": "result, players and their teams are becoming increasingly creative with the modifications to their",
+                "x": 0.042936,
+                "y": 0.906699,
+                "w": 0.887925,
+                "h": 0.028961
+              },
+              {
+                "text": "rackets as they look to maximise their competitive advantage.",
+                "x": 0.043099,
+                "y": 0.933642,
+                "w": 0.574065,
+                "h": 0.018827
+              },
+              {
+                "text": "16",
+                "x": 0.047515,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-1/page-16.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Racket modifications mainly date back to the 1970s, when the amateur German tennis player",
+                "x": 0.045307,
+                "y": 0.029376,
+                "w": 0.854474,
+                "h": 0.018794
+              },
+              {
+                "text": "Werner Fischer started playing with the so-called spaghetti-strung racket. It created a string bed",
+                "x": 0.045307,
+                "y": 0.049776,
+                "w": 0.874346,
+                "h": 0.018875
+              },
+              {
+                "text": "that generated so much topspin that it was quickly banned by the International Tennis Federation.",
+                "x": 0.045307,
+                "y": 0.070175,
+                "w": 0.894217,
+                "h": 0.0204
+              },
+              {
+                "text": "However, within a decade or two, racket modification became a regularity. Today it is, in many",
+                "x": 0.047515,
+                "y": 0.092182,
+                "w": 0.86993,
+                "h": 0.018794
+              },
+              {
+                "text": "ways, an aspect of the game that is equal in significance to nutrition or training.",
+                "x": 0.047515,
+                "y": 0.112662,
+                "w": 0.726414,
+                "h": 0.018738
+              },
+              {
+                "text": "Modifications can be divided into two categories: those to the string bed and those to the racket",
+                "x": 0.047515,
+                "y": 0.153475,
+                "w": 0.872138,
+                "h": 0.018887
+              },
+              {
+                "text": "frame. The former is far more common than the latter: the choice of the strings and the tension",
+                "x": 0.045307,
+                "y": 0.175412,
+                "w": 0.867722,
+                "h": 0.018862
+              },
+              {
+                "text": "with which they are installed is something that nearly all professional players experiment with.",
+                "x": 0.045307,
+                "y": 0.195893,
+                "w": 0.86993,
+                "h": 0.018781
+              },
+              {
+                "text": "They will continually change it depending on various factors including the court surface, climatic",
+                "x": 0.045307,
+                "y": 0.216374,
+                "w": 0.894217,
+                "h": 0.018738
+              },
+              {
+                "text": "conditions, and game styles. Some will even change it depending on how they feel at the time.",
+                "x": 0.045307,
+                "y": 0.236774,
+                "w": 0.86993,
+                "h": 0.020562
+              },
+              {
+                "text": "At one time, all tennis rackets were strung with natural gut made from the outer layer of sheep or",
+                "x": 0.049723,
+                "y": 0.279124,
+                "w": 0.885386,
+                "h": 0.017149
+              },
+              {
+                "text": "cow intestines. This all changed in the early 1990s with the development of synthetic strings that",
+                "x": 0.045307,
+                "y": 0.297862,
+                "w": 0.887594,
+                "h": 0.020511
+              },
+              {
+                "text": "were cheaper and more durable. They are made from three materials: nylon (relatively durable",
+                "x": 0.045307,
+                "y": 0.320073,
+                "w": 0.865514,
+                "h": 0.018751
+              },
+              {
+                "text": "and affordable), Kevlar (too stiff to be used alone) or co-polyester (polyester combined with",
+                "x": 0.045307,
+                "y": 0.340473,
+                "w": 0.845643,
+                "h": 0.0221
+              },
+              {
+                "text": "additives that enhance its performance). Even so, many professional players continue to use a",
+                "x": 0.045307,
+                "y": 0.362573,
+                "w": 0.856682,
+                "h": 0.0187
+              },
+              {
+                "text": "'hybrid set-up', where a combination of both synthetic and natural strings are used.",
+                "x": 0.043099,
+                "y": 0.381093,
+                "w": 0.766157,
+                "h": 0.02228
+              },
+              {
+                "text": "Of the synthetics, co-polyester is by far the most widely used. It's a perfect fit for the style of",
+                "x": 0.045307,
+                "y": 0.423773,
+                "w": 0.852266,
+                "h": 0.020506
+              },
+              {
+                "text": "tennis now played, where players tend to battle it out from the back of the court rather than",
+                "x": 0.043099,
+                "y": 0.445872,
+                "w": 0.836811,
+                "h": 0.018887
+              },
+              {
+                "text": "coming to the net. Studies indicate that the average spin from a co-polyester string is 25% greater",
+                "x": 0.045307,
+                "y": 0.466067,
+                "w": 0.892009,
+                "h": 0.018905
+              },
+              {
+                "text": "than that from natural string or other synthetics. In a sense, the development of co-polyester",
+                "x": 0.045307,
+                "y": 0.486548,
+                "w": 0.841227,
+                "h": 0.020524
+              },
+              {
+                "text": "strings has revolutionised the game.",
+                "x": 0.043099,
+                "y": 0.508772,
+                "w": 0.3334,
+                "h": 0.018738
+              },
+              {
+                "text": "However, many players go beyond these basic adjustments to the strings and make changes",
+                "x": 0.045307,
+                "y": 0.549572,
+                "w": 0.836811,
+                "h": 0.0204
+              },
+              {
+                "text": "to the racket frame itself. For example, much of the serving power of US professional player",
+                "x": 0.043099,
+                "y": 0.569779,
+                "w": 0.852266,
+                "h": 0.020592
+              },
+              {
+                "text": "Pete Sampras was attributed to the addition of four to five lead weights onto his rackets, and",
+                "x": 0.045307,
+                "y": 0.592003,
+                "w": 0.843435,
+                "h": 0.018768
+              },
+              {
+                "text": "today many professionals have the weight adjusted during the manufacturing process.",
+                "x": 0.043099,
+                "y": 0.612471,
+                "w": 0.788236,
+                "h": 0.018751
+              },
+              {
+                "text": "Other changes to the frame involve the handle. Players have individual preferences for the",
+                "x": 0.045307,
+                "y": 0.653271,
+                "w": 0.825771,
+                "h": 0.0204
+              },
+              {
+                "text": "shape of the handle and some will have the handle of one racket moulded onto the frame of",
+                "x": 0.043099,
+                "y": 0.675234,
+                "w": 0.841227,
+                "h": 0.018837
+              },
+              {
+                "text": "a different racket. Other players make different changes. The professional Portuguese player",
+                "x": 0.043099,
+                "y": 0.695715,
+                "w": 0.847851,
+                "h": 0.018756
+              },
+              {
+                "text": "Gonçalo Oliveira replaced the original grips of his rackets with something thinner because they",
+                "x": 0.045307,
+                "y": 0.71617,
+                "w": 0.872138,
+                "h": 0.020506
+              },
+              {
+                "text": "had previously felt uncomfortable to hold.",
+                "x": 0.045307,
+                "y": 0.73827,
+                "w": 0.388598,
+                "h": 0.018887
+              },
+              {
+                "text": "Racket customisation and modification have pushed the standards of the game to greater levels",
+                "x": 0.047515,
+                "y": 0.778946,
+                "w": 0.865514,
+                "h": 0.017124
+              },
+              {
+                "text": "that few could have anticipated in the days of natural strings and heavy, wooden frames, and it's",
+                "x": 0.045307,
+                "y": 0.799427,
+                "w": 0.878762,
+                "h": 0.017043
+              },
+              {
+                "text": "exciting to see what further developments there will be in the future.",
+                "x": 0.047515,
+                "y": 0.821569,
+                "w": 0.627056,
+                "h": 0.017076
+              },
+              {
+                "text": "17",
+                "x": 0.913029,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-1/page-19.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.045307,
+                "y": 0.032776,
+                "w": 0.331192,
+                "h": 0.01888
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.045247,
+                "y": 0.075249,
+                "w": 0.887711,
+                "h": 0.021051
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.045307,
+                "y": 0.097375,
+                "w": 0.181051,
+                "h": 0.018773
+              },
+              {
+                "text": "The pirates of the ancient Mediterranean",
+                "x": 0.164536,
+                "y": 0.148375,
+                "w": 0.660175,
+                "h": 0.0272
+              },
+              {
+                "text": "In the first and second millennia BCE, pirates sailed around",
+                "x": 0.188823,
+                "y": 0.195893,
+                "w": 0.607185,
+                "h": 0.022224
+              },
+              {
+                "text": "the Mediterranean, attacking ships and avoiding pursuers",
+                "x": 0.199863,
+                "y": 0.218074,
+                "w": 0.585105,
+                "h": 0.018781
+              },
+              {
+                "text": "A When one mentions pirates, an image springs to most people's minds of a crew of misfits,",
+                "x": 0.045307,
+                "y": 0.258874,
+                "w": 0.874346,
+                "h": 0.0204
+              },
+              {
+                "text": "daredevils and adventurers in command of a tall sailing ship in the Caribbean Sea. Yet from",
+                "x": 0.09162,
+                "y": 0.279244,
+                "w": 0.841344,
+                "h": 0.02119
+              },
+              {
+                "text": "the first to the third millennium BCE, thousands of years before these swashbucklers began",
+                "x": 0.091674,
+                "y": 0.301348,
+                "w": 0.839019,
+                "h": 0.020481
+              },
+              {
+                "text": "spreading fear across the Caribbean, pirates prowled the Mediterranean, raiding merchant",
+                "x": 0.091674,
+                "y": 0.321773,
+                "w": 0.825771,
+                "h": 0.020537
+              },
+              {
+                "text": "ships and threatening vital trade routes. However, despite all efforts and the might of",
+                "x": 0.091674,
+                "y": 0.342173,
+                "w": 0.781612,
+                "h": 0.0204
+              },
+              {
+                "text": "various ancient states, piracy could not be stopped. The situation remained unchanged for",
+                "x": 0.091674,
+                "y": 0.364098,
+                "w": 0.825771,
+                "h": 0.018875
+              },
+              {
+                "text": "thousands of years. Only when the pirates directly threatened the interests of ancient Rome",
+                "x": 0.091674,
+                "y": 0.384579,
+                "w": 0.836811,
+                "h": 0.018794
+              },
+              {
+                "text": "did the Roman Republic organise a massive fleet to eliminate piracy. Under the command of",
+                "x": 0.091674,
+                "y": 0.40506,
+                "w": 0.852266,
+                "h": 0.020481
+              },
+              {
+                "text": "the Roman general Pompey, Rome eradicated piracy, transforming the Mediterranean into",
+                "x": 0.091674,
+                "y": 0.427173,
+                "w": 0.827979,
+                "h": 0.020592
+              },
+              {
+                "text": "'Mare Nostrum' (Our Sea).",
+                "x": 0.093882,
+                "y": 0.445872,
+                "w": 0.251706,
+                "h": 0.018887
+              },
+              {
+                "text": "B",
+                "x": 0.043099,
+                "y": 0.488372,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Although piracy in the Mediterranean is first recorded in ancient Egypt during the reign",
+                "x": 0.093882,
+                "y": 0.488291,
+                "w": 0.801484,
+                "h": 0.020481
+              },
+              {
+                "text": "of Pharaoh Amenhotep III (c 1390-1353 BCE), it is reasonable to assume it predated this",
+                "x": 0.091674,
+                "y": 0.508772,
+                "w": 0.823563,
+                "h": 0.020481
+              },
+              {
+                "text": "powerful civilisation. This is partly due to the great importance the Mediterranean held at",
+                "x": 0.091674,
+                "y": 0.529172,
+                "w": 0.823563,
+                "h": 0.020562
+              },
+              {
+                "text": "this time, and partly due to its geography. While the Mediterranean region is predominantly",
+                "x": 0.091603,
+                "y": 0.549491,
+                "w": 0.841356,
+                "h": 0.02221
+              },
+              {
+                "text": "fertile, some parts are rugged and hilly, even mountainous. In the ancient times, the",
+                "x": 0.091674,
+                "y": 0.571522,
+                "w": 0.766157,
+                "h": 0.020549
+              },
+              {
+                "text": "inhabitants of these areas relied heavily on marine resources, including fish and salt. Most",
+                "x": 0.089466,
+                "y": 0.592003,
+                "w": 0.830187,
+                "h": 0.020481
+              },
+              {
+                "text": "had their own boats, possessed good seafaring skills, and unsurpassed knowledge of the",
+                "x": 0.091674,
+                "y": 0.612471,
+                "w": 0.808108,
+                "h": 0.020494
+              },
+              {
+                "text": "local coastline and sailing routes. Thus, it is not surprising that during hardships, these men",
+                "x": 0.089466,
+                "y": 0.632871,
+                "w": 0.841227,
+                "h": 0.0221
+              },
+              {
+                "text": "turned to piracy. Geography itself further benefited the pirates, with the numerous coves",
+                "x": 0.091488,
+                "y": 0.65258,
+                "w": 0.808447,
+                "h": 0.026515
+              },
+              {
+                "text": "along the coast providing places for them to hide their boats and strike undetected. Before",
+                "x": 0.091674,
+                "y": 0.676977,
+                "w": 0.825771,
+                "h": 0.018794
+              },
+              {
+                "text": "the invention of ocean-going caravels\" in the 15th century, ships could not easily cross long",
+                "x": 0.091674,
+                "y": 0.692229,
+                "w": 0.841227,
+                "h": 0.023967
+              },
+              {
+                "text": "distances over open water. Thus, in the ancient world most were restricted to a few well-",
+                "x": 0.093882,
+                "y": 0.71787,
+                "w": 0.812523,
+                "h": 0.017063
+              },
+              {
+                "text": "known navigable routes that followed the coastline. Caught in a trap, a slow merchant ship",
+                "x": 0.091608,
+                "y": 0.738242,
+                "w": 0.832521,
+                "h": 0.020456
+              },
+              {
+                "text": "laden with goods had no other option but to surrender. In addition, knowledge of the local",
+                "x": 0.089466,
+                "y": 0.760208,
+                "w": 0.827979,
+                "h": 0.018862
+              },
+              {
+                "text": "area helped the pirates to avoid retaliation once a state fleet arrived.",
+                "x": 0.093882,
+                "y": 0.780689,
+                "w": 0.618224,
+                "h": 0.017081
+              },
+              {
+                "text": "C One should also add that it was not unknown in the first and second millennia BCE for",
+                "x": 0.043099,
+                "y": 0.811192,
+                "w": 0.845643,
+                "h": 0.015688
+              },
+              {
+                "text": "governments to resort to pirates' services, especially during wartime, employing their",
+                "x": 0.091674,
+                "y": 0.831673,
+                "w": 0.786028,
+                "h": 0.020496
+              },
+              {
+                "text": "skills and numbers against their opponents. A pirate fleet would serve in the first wave of",
+                "x": 0.093882,
+                "y": 0.853869,
+                "w": 0.814731,
+                "h": 0.017023
+              },
+              {
+                "text": "attack, preparing the way for the navy. Some of the regions were known for providing safe",
+                "x": 0.093882,
+                "y": 0.874269,
+                "w": 0.830187,
+                "h": 0.017104
+              },
+              {
+                "text": "harbours to pirates, who, in return, boosted the local economy.",
+                "x": 0.091674,
+                "y": 0.894669,
+                "w": 0.574065,
+                "h": 0.0187
+              },
+              {
+                "text": "* caravel: a small, highly manoeuvrable sailing ship developed by the Portuguese",
+                "x": 0.040891,
+                "y": 0.971118,
+                "w": 0.525491,
+                "h": 0.013651
+              },
+              {
+                "text": "20",
+                "x": 0.040891,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-1/page-20.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "D The first known record of a named group of Mediterranean pirates, made during the rule of",
+                "x": 0.047515,
+                "y": 0.032776,
+                "w": 0.876554,
+                "h": 0.0204
+              },
+              {
+                "text": "ancient Egyptian Pharaoh Akhenaten (c 1353-1336 BCE), was in the Amarna Letters. These",
+                "x": 0.09609,
+                "y": 0.052963,
+                "w": 0.839019,
+                "h": 0.020613
+              },
+              {
+                "text": "were extracts of diplomatic correspondence between the pharaoh and his allies, and covered",
+                "x": 0.09602,
+                "y": 0.072649,
+                "w": 0.834745,
+                "h": 0.02173
+              },
+              {
+                "text": "many pressing issues, including piracy. It seems the pharaoh was troubled by two distinct",
+                "x": 0.09609,
+                "y": 0.095668,
+                "w": 0.810316,
+                "h": 0.018738
+              },
+              {
+                "text": "pirate groups, the Lukka and the Sherden. Despite the Egyptian fleet's best efforts, the pirates",
+                "x": 0.09609,
+                "y": 0.116075,
+                "w": 0.845643,
+                "h": 0.020554
+              },
+              {
+                "text": "continued to cause substantial disruption to regional commerce. In the letters, the king of",
+                "x": 0.09609,
+                "y": 0.136475,
+                "w": 0.808108,
+                "h": 0.0204
+              },
+              {
+                "text": "Alashiya (modern Cyprus) rejected Akhenaten's claims of a connection with the Lukka",
+                "x": 0.09609,
+                "y": 0.156675,
+                "w": 0.790444,
+                "h": 0.0189
+              },
+              {
+                "text": "(based in modern-day Turkey). The king assured Akhenaten he was prepared to punish any",
+                "x": 0.093882,
+                "y": 0.178899,
+                "w": 0.825771,
+                "h": 0.020481
+              },
+              {
+                "text": "of his subjects involved in piracy.",
+                "x": 0.093882,
+                "y": 0.199374,
+                "w": 0.309112,
+                "h": 0.018743
+              },
+              {
+                "text": "E The ancient Greek world's experience of piracy was different from that of Egyptian rulers.",
+                "x": 0.045307,
+                "y": 0.231626,
+                "w": 0.86993,
+                "h": 0.020481
+              },
+              {
+                "text": "While Egypt's power was land-based, the ancient Greeks relied on the Mediterranean in",
+                "x": 0.09609,
+                "y": 0.253774,
+                "w": 0.79486,
+                "h": 0.018814
+              },
+              {
+                "text": "almost all aspects of life, from trade to warfare. Interestingly, in his works the Iliad and",
+                "x": 0.093882,
+                "y": 0.274174,
+                "w": 0.792652,
+                "h": 0.018895
+              },
+              {
+                "text": "the Odyssey, the ancient Greek writer Homer not only condones, but praises the lifestyle",
+                "x": 0.093882,
+                "y": 0.294376,
+                "w": 0.801484,
+                "h": 0.020597
+              },
+              {
+                "text": "and actions of pirates. The opinion remained unchanged in the following centuries. The",
+                "x": 0.093882,
+                "y": 0.314857,
+                "w": 0.792652,
+                "h": 0.020516
+              },
+              {
+                "text": "ancient Greek historian Thucydides, for instance, glorified pirates' daring attacks on ships",
+                "x": 0.093882,
+                "y": 0.335338,
+                "w": 0.814731,
+                "h": 0.020481
+              },
+              {
+                "text": "or even cities. For Greeks, piracy was a part of everyday life. Even high-ranking members",
+                "x": 0.093882,
+                "y": 0.357473,
+                "w": 0.819147,
+                "h": 0.02057
+              },
+              {
+                "text": "of the state were not beyond engaging in such activities. According to the Greek orator",
+                "x": 0.093882,
+                "y": 0.377873,
+                "w": 0.786028,
+                "h": 0.0204
+              },
+              {
+                "text": "Demosthenes, in 355 BCE, Athenian ambassadors made a detour from their official travel",
+                "x": 0.093882,
+                "y": 0.398088,
+                "w": 0.814731,
+                "h": 0.020585
+              },
+              {
+                "text": "to capture a ship sailing from Egypt, taking the wealth found onboard for themselves!",
+                "x": 0.091674,
+                "y": 0.420312,
+                "w": 0.779404,
+                "h": 0.020481
+              },
+              {
+                "text": "The Greeks' liberal approach towards piracy does not mean they always tolerated it,",
+                "x": 0.093732,
+                "y": 0.438457,
+                "w": 0.76206,
+                "h": 0.024706
+              },
+              {
+                "text": "but attempts to curtail piracy were hampered by the large number of pirates operating in",
+                "x": 0.093882,
+                "y": 0.462872,
+                "w": 0.797068,
+                "h": 0.018882
+              },
+              {
+                "text": "the Mediterranean.",
+                "x": 0.091674,
+                "y": 0.483062,
+                "w": 0.176636,
+                "h": 0.01721
+              },
+              {
+                "text": "F",
+                "x": 0.043099,
+                "y": 0.513872,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "The rising power of ancient Rome required the Roman Republic to deal with piracy in the",
+                "x": 0.093882,
+                "y": 0.515572,
+                "w": 0.814731,
+                "h": 0.01891
+              },
+              {
+                "text": "Mediterranean. While piracy was a serious issue for the Republic, Rome profited greatly",
+                "x": 0.093882,
+                "y": 0.535789,
+                "w": 0.801484,
+                "h": 0.020582
+              },
+              {
+                "text": "from its existence. Pirate raids provided a steady source of slaves, essential for Rome's",
+                "x": 0.093882,
+                "y": 0.55627,
+                "w": 0.788236,
+                "h": 0.020501
+              },
+              {
+                "text": "agriculture and mining industries. But this arrangement could work only while the pirates left",
+                "x": 0.091674,
+                "y": 0.576751,
+                "w": 0.847851,
+                "h": 0.020481
+              },
+              {
+                "text": "Roman interests alone. Pirate attacks on grain ships, which were essential to Roman citizens,",
+                "x": 0.091674,
+                "y": 0.598871,
+                "w": 0.845643,
+                "h": 0.020585
+              },
+              {
+                "text": "led to angry voices in the Senate, demanding punishment of the culprits. Rome, however, did",
+                "x": 0.091674,
+                "y": 0.619271,
+                "w": 0.845643,
+                "h": 0.0204
+              },
+              {
+                "text": "nothing, further encouraging piracy. By the Ist century BCE, emboldened pirates kidnapped",
+                "x": 0.091674,
+                "y": 0.639501,
+                "w": 0.836811,
+                "h": 0.02227
+              },
+              {
+                "text": "prominent Roman dignitaries, asking for a large ransom to be paid. Their most famous",
+                "x": 0.091553,
+                "y": 0.659731,
+                "w": 0.786264,
+                "h": 0.025114
+              },
+              {
+                "text": "hostage was none other than Julius Caesar, captured in 75 BCE.",
+                "x": 0.091674,
+                "y": 0.682171,
+                "w": 0.580689,
+                "h": 0.020516
+              },
+              {
+                "text": "G By now, Rome was well aware that pirates had outlived their usefulness. The time had",
+                "x": 0.045307,
+                "y": 0.714453,
+                "w": 0.830187,
+                "h": 0.017018
+              },
+              {
+                "text": "come for concerted action. In 67 BCE, a new law granted Pompey vast funds to combat the",
+                "x": 0.091674,
+                "y": 0.73487,
+                "w": 0.830187,
+                "h": 0.020544
+              },
+              {
+                "text": "Mediterranean menace. Taking personal command, Pompey divided the entire Mediterranean",
+                "x": 0.091674,
+                "y": 0.75697,
+                "w": 0.847851,
+                "h": 0.0187
+              },
+              {
+                "text": "into 13 districts, assigning a fleet and commander to each. After cleansing one district of",
+                "x": 0.091674,
+                "y": 0.77546,
+                "w": 0.803692,
+                "h": 0.02061
+              },
+              {
+                "text": "pirates, the fleet would join another in the next district. The process continued until the",
+                "x": 0.091674,
+                "y": 0.797683,
+                "w": 0.786028,
+                "h": 0.020486
+              },
+              {
+                "text": "entire Mediterranean was free of pirates. Although thousands of pirates died at the hands of",
+                "x": 0.091674,
+                "y": 0.819869,
+                "w": 0.830187,
+                "h": 0.018776
+              },
+              {
+                "text": "Pompey's troops, as a long-term solution to the problem, many more were offered land in",
+                "x": 0.093882,
+                "y": 0.840269,
+                "w": 0.810316,
+                "h": 0.018857
+              },
+              {
+                "text": "fertile areas located far from the sea. Instead of a maritime menace, Rome got productive",
+                "x": 0.093882,
+                "y": 0.862177,
+                "w": 0.808108,
+                "h": 0.017192
+              },
+              {
+                "text": "farmers that further boosted its economy.",
+                "x": 0.091674,
+                "y": 0.882657,
+                "w": 0.37535,
+                "h": 0.018811
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-1/page-24.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.045307,
+                "y": 0.034476,
+                "w": 0.326776,
+                "h": 0.01718
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.045307,
+                "y": 0.07693,
+                "w": 0.883178,
+                "h": 0.020481
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.043099,
+                "y": 0.099075,
+                "w": 0.181051,
+                "h": 0.018816
+              },
+              {
+                "text": "The persistence and peril of misinformation",
+                "x": 0.142457,
+                "y": 0.150075,
+                "w": 0.69771,
+                "h": 0.0289
+              },
+              {
+                "text": "Brian Southwell looks at how human brains verify information and",
+                "x": 0.157912,
+                "y": 0.197636,
+                "w": 0.664591,
+                "h": 0.020481
+              },
+              {
+                "text": "discusses some of the challenges of battling widespread falsehoods",
+                "x": 0.146872,
+                "y": 0.219774,
+                "w": 0.686671,
+                "h": 0.018824
+              },
+              {
+                "text": "Misinformation - both deliberately promoted and accidentally shared - is perhaps an inevitable",
+                "x": 0.043099,
+                "y": 0.260386,
+                "w": 0.872138,
+                "h": 0.018887
+              },
+              {
+                "text": "part of the world in which we live, but it is not a new problem. People likely have lied to one",
+                "x": 0.043099,
+                "y": 0.28261,
+                "w": 0.850058,
+                "h": 0.018763
+              },
+              {
+                "text": "another for roughly as long as verbal communication has existed. Deceiving others can offer an",
+                "x": 0.040891,
+                "y": 0.303074,
+                "w": 0.874346,
+                "h": 0.018756
+              },
+              {
+                "text": "apparent opportunity to gain strategic advantage, to motivate others to action, or even to protect",
+                "x": 0.040891,
+                "y": 0.323473,
+                "w": 0.878762,
+                "h": 0.02058
+              },
+              {
+                "text": "interpersonal bonds. Moreover, people inadvertently have been sharing inaccurate information",
+                "x": 0.038683,
+                "y": 0.343873,
+                "w": 0.867722,
+                "h": 0.0204
+              },
+              {
+                "text": "with one another for thousands of years.",
+                "x": 0.040891,
+                "y": 0.365841,
+                "w": 0.370935,
+                "h": 0.018832
+              },
+              {
+                "text": "However, we currently live in an era in which technology enables information to reach large",
+                "x": 0.043099,
+                "y": 0.406773,
+                "w": 0.843435,
+                "h": 0.020511
+              },
+              {
+                "text": "audiences distributed across the globe, and thus the potential for immediate and widespread",
+                "x": 0.040891,
+                "y": 0.427173,
+                "w": 0.839019,
+                "h": 0.020592
+              },
+              {
+                "text": "effects from misinformation now looms larger than in the past. Yet the means to correct",
+                "x": 0.043099,
+                "y": 0.449072,
+                "w": 0.799276,
+                "h": 0.0172
+              },
+              {
+                "text": "misinformation might, over time, be found in those same patterns of mass communication and of",
+                "x": 0.040891,
+                "y": 0.469553,
+                "w": 0.889801,
+                "h": 0.018819
+              },
+              {
+                "text": "the facilitated spread of information.",
+                "x": 0.040891,
+                "y": 0.490034,
+                "w": 0.337815,
+                "h": 0.018738
+              },
+              {
+                "text": "The main worry regarding misinformation is its potential to unduly influence attitudes and",
+                "x": 0.040891,
+                "y": 0.532572,
+                "w": 0.825771,
+                "h": 0.018905
+              },
+              {
+                "text": "behavior, leading people to think and act differently than they would if they were correctly",
+                "x": 0.040891,
+                "y": 0.552784,
+                "w": 0.830187,
+                "h": 0.020587
+              },
+              {
+                "text": "informed, as suggested by the research teams of Stephan Lewandowsky of the University",
+                "x": 0.038683,
+                "y": 0.575008,
+                "w": 0.819147,
+                "h": 0.018763
+              },
+              {
+                "text": "of Bristol and Elizabeth Marsh of Duke University, among others. In other words, we worry",
+                "x": 0.040891,
+                "y": 0.595471,
+                "w": 0.841227,
+                "h": 0.018756
+              },
+              {
+                "text": "that misinformation might lead people to hold misperceptions (or false beliefs) and that these",
+                "x": 0.040891,
+                "y": 0.615871,
+                "w": 0.854474,
+                "h": 0.018837
+              },
+              {
+                "text": "misperceptions, especially when they occur among large groups of people, may have detrimental,",
+                "x": 0.040891,
+                "y": 0.636271,
+                "w": 0.894217,
+                "h": 0.0204
+              },
+              {
+                "text": "downstream consequences for health, social harmony, and the political climate.",
+                "x": 0.040891,
+                "y": 0.658239,
+                "w": 0.726414,
+                "h": 0.018832
+              },
+              {
+                "text": "At least three observations related to misinformation in the contemporary mass-media",
+                "x": 0.043099,
+                "y": 0.697458,
+                "w": 0.78382,
+                "h": 0.020481
+              },
+              {
+                "text": "environment warrant the attention of researchers, policy makers, and really everyone who",
+                "x": 0.043099,
+                "y": 0.71957,
+                "w": 0.819147,
+                "h": 0.018849
+              },
+              {
+                "text": "watches television, listens to the radio, or reads information online. First of all, people who",
+                "x": 0.040891,
+                "y": 0.73997,
+                "w": 0.834603,
+                "h": 0.0204
+              },
+              {
+                "text": "encounter misinformation tend to believe it, at least initially. Secondly, electronic and print",
+                "x": 0.040891,
+                "y": 0.761951,
+                "w": 0.832395,
+                "h": 0.018819
+              },
+              {
+                "text": "media often do not block many types of misinformation before it appears in content available to",
+                "x": 0.043099,
+                "y": 0.782432,
+                "w": 0.876554,
+                "h": 0.018738
+              },
+              {
+                "text": "large audiences. Thirdly, countering misinformation once it has enjoyed wide exposure can be a",
+                "x": 0.038683,
+                "y": 0.80287,
+                "w": 0.878762,
+                "h": 0.020524
+              },
+              {
+                "text": "resource-intensive effort.",
+                "x": 0.043099,
+                "y": 0.824969,
+                "w": 0.231834,
+                "h": 0.015419
+              },
+              {
+                "text": "Knowing what happens when people initially encounter misinformation holds tremendous",
+                "x": 0.043099,
+                "y": 0.865663,
+                "w": 0.825771,
+                "h": 0.020506
+              },
+              {
+                "text": "importance for estimating the potential for subsequent problems. Although it is fairly routine for",
+                "x": 0.038683,
+                "y": 0.886144,
+                "w": 0.885386,
+                "h": 0.020481
+              },
+              {
+                "text": "individuals to come across information that is false, the question of exactly how - and when - we",
+                "x": 0.040891,
+                "y": 0.908269,
+                "w": 0.894217,
+                "h": 0.017094
+              },
+              {
+                "text": "mentally label information as true or false has garnered philosophical debate. The dilemma is",
+                "x": 0.040891,
+                "y": 0.928669,
+                "w": 0.854474,
+                "h": 0.0187
+              },
+              {
+                "text": "neatly summarized by a contrast between how the 17th-century philosophers René Descartes and",
+                "x": 0.043099,
+                "y": 0.950637,
+                "w": 0.885386,
+                "h": 0.017132
+              },
+              {
+                "text": "Baruch Spinoza described human information engagement, with conflicting predictions that only",
+                "x": 0.043099,
+                "y": 0.971118,
+                "w": 0.885386,
+                "h": 0.018751
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-1/page-25.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "recently have been empirically tested in robust ways. Descartes argued that a person only accepts",
+                "x": 0.049723,
+                "y": 0.035968,
+                "w": 0.894217,
+                "h": 0.018908
+              },
+              {
+                "text": "or rejects information after considering its truth or falsehood; Spinoza argued that people accept",
+                "x": 0.049723,
+                "y": 0.056449,
+                "w": 0.883178,
+                "h": 0.020527
+              },
+              {
+                "text": "all encountered information (or misinformation) by default and then subsequently verify or reject",
+                "x": 0.049723,
+                "y": 0.078673,
+                "w": 0.894217,
+                "h": 0.018738
+              },
+              {
+                "text": "it through a separate cognitive process. In recent decades, empirical evidence from the research",
+                "x": 0.051931,
+                "y": 0.099075,
+                "w": 0.874346,
+                "h": 0.017073
+              },
+              {
+                "text": "teams of Erik Asp of the University of Chicago and Daniel Gilbert at Harvard University, among",
+                "x": 0.047515,
+                "y": 0.119475,
+                "w": 0.892009,
+                "h": 0.0204
+              },
+              {
+                "text": "others, has supported Spinoza's account: people appear to encode all new information as if it",
+                "x": 0.051931,
+                "y": 0.141423,
+                "w": 0.852266,
+                "h": 0.017152
+              },
+              {
+                "text": "were true, even if only momentarily, and later tag the information as being either true or false, a",
+                "x": 0.051931,
+                "y": 0.161904,
+                "w": 0.876554,
+                "h": 0.018771
+              },
+              {
+                "text": "pattern that seems consistent with the observation that mental resources for skepticism physically",
+                "x": 0.051931,
+                "y": 0.182375,
+                "w": 0.892009,
+                "h": 0.018748
+              },
+              {
+                "text": "reside in a different part of the brain than the resources used in perceiving and encoding.",
+                "x": 0.049723,
+                "y": 0.202774,
+                "w": 0.814731,
+                "h": 0.018829
+              },
+              {
+                "text": "What about our second observation that misinformation often can appear in electronic or print",
+                "x": 0.054139,
+                "y": 0.245135,
+                "w": 0.861098,
+                "h": 0.017139
+              },
+              {
+                "text": "media without being preemptively blocked? In support of this, one might consider the nature",
+                "x": 0.051931,
+                "y": 0.265616,
+                "w": 0.852266,
+                "h": 0.018758
+              },
+              {
+                "text": "of regulatory structures in the United States: regulatory agencies here tend to focus on post hoc",
+                "x": 0.054139,
+                "y": 0.286074,
+                "w": 0.86993,
+                "h": 0.017018
+              },
+              {
+                "text": "detection of broadcast information. Organizations such as the Food and Drug Administration",
+                "x": 0.051931,
+                "y": 0.306474,
+                "w": 0.850058,
+                "h": 0.020585
+              },
+              {
+                "text": "(FDA) offer considerable monitoring and notification functions, but these roles typically do",
+                "x": 0.049723,
+                "y": 0.326873,
+                "w": 0.841227,
+                "h": 0.0204
+              },
+              {
+                "text": "not involve preemptive censoring. The FDA oversees direct-to-consumer prescription drug",
+                "x": 0.051931,
+                "y": 0.347103,
+                "w": 0.832395,
+                "h": 0.02057
+              },
+              {
+                "text": "advertising, for example, and has developed mechanisms such as the 'Bad Ad' program, through",
+                "x": 0.049723,
+                "y": 0.367584,
+                "w": 0.887594,
+                "h": 0.022224
+              },
+              {
+                "text": "which people can report advertising in apparent violation of FDA guidelines on drug risks.",
+                "x": 0.051931,
+                "y": 0.389773,
+                "w": 0.832395,
+                "h": 0.020516
+              },
+              {
+                "text": "Such programs, although laudable and useful, do not keep false advertising off the airwaves. In",
+                "x": 0.051931,
+                "y": 0.411873,
+                "w": 0.872138,
+                "h": 0.0204
+              },
+              {
+                "text": "addition, even misinformation that is successfully corrected can continue to affect attitudes.",
+                "x": 0.049723,
+                "y": 0.432077,
+                "w": 0.843435,
+                "h": 0.018895
+              },
+              {
+                "text": "This leads us to our third observation: a campaign to correct misinformation, even if rhetorically",
+                "x": 0.051931,
+                "y": 0.473039,
+                "w": 0.883178,
+                "h": 0.018738
+              },
+              {
+                "text": "compelling, requires resources and planning to accomplish necessary reach and frequency. For",
+                "x": 0.051931,
+                "y": 0.495172,
+                "w": 0.86993,
+                "h": 0.020572
+              },
+              {
+                "text": "corrective campaigns to be persuasive, audiences need to be able to comprehend them, which",
+                "x": 0.051931,
+                "y": 0.515572,
+                "w": 0.856682,
+                "h": 0.01891
+              },
+              {
+                "text": "requires either effort to frame messages in ways that are accessible or effort to educate and",
+                "x": 0.049723,
+                "y": 0.535789,
+                "w": 0.834603,
+                "h": 0.018882
+              },
+              {
+                "text": "sensitize audiences to the possibility of misinformation. That some audiences might be unaware",
+                "x": 0.049723,
+                "y": 0.55627,
+                "w": 0.88097,
+                "h": 0.018801
+              },
+              {
+                "text": "of the potential for misinformation also suggests the utility of media literacy efforts as early",
+                "x": 0.049723,
+                "y": 0.578471,
+                "w": 0.843435,
+                "h": 0.018761
+              },
+              {
+                "text": "as elementary school. Even with journalists and scholars pointing to the phenomenon of \"fake",
+                "x": 0.049723,
+                "y": 0.598871,
+                "w": 0.861098,
+                "h": 0.018842
+              },
+              {
+                "text": ", people do not distinguish between demonstrably false stories and those based in fact when",
+                "x": 0.104922,
+                "y": 0.619271,
+                "w": 0.841227,
+                "h": 0.0187
+              },
+              {
+                "text": "scanning and processing written information.",
+                "x": 0.049723,
+                "y": 0.637758,
+                "w": 0.421717,
+                "h": 0.022313
+              },
+              {
+                "text": "We live at a time when widespread misinformation is common. Yet at this time many people also",
+                "x": 0.051931,
+                "y": 0.682171,
+                "w": 0.889801,
+                "h": 0.018773
+              },
+              {
+                "text": "are passionately developing potential solutions and remedies. The journey forward undoubtedly",
+                "x": 0.049723,
+                "y": 0.70087,
+                "w": 0.88097,
+                "h": 0.020554
+              },
+              {
+                "text": "will be a long and arduous one. Future remedies will require not only continued theoretical",
+                "x": 0.054139,
+                "y": 0.72297,
+                "w": 0.832395,
+                "h": 0.017192
+              },
+              {
+                "text": "consideration but also the development and maintenance of consistent monitoring tools - and a",
+                "x": 0.054139,
+                "y": 0.743213,
+                "w": 0.86993,
+                "h": 0.017157
+              },
+              {
+                "text": "recognition among fellow members of society that claims which find prominence in the media",
+                "x": 0.054139,
+                "y": 0.765437,
+                "w": 0.861098,
+                "h": 0.017033
+              },
+              {
+                "text": "that are insufficiently based in scientific consensus and social reality should be countered.",
+                "x": 0.054139,
+                "y": 0.78587,
+                "w": 0.819147,
+                "h": 0.017043
+              },
+              {
+                "text": "Misinformation arises as a result of human fallibility and human information needs. To overcome",
+                "x": 0.054139,
+                "y": 0.80627,
+                "w": 0.892009,
+                "h": 0.017124
+              },
+              {
+                "text": "the worst effects of the phenomenon, we will need coordinated efforts over time, rather than any",
+                "x": 0.054139,
+                "y": 0.828187,
+                "w": 0.88097,
+                "h": 0.017182
+              },
+              {
+                "text": "singular one-time panacea we could hope to offer.",
+                "x": 0.054139,
+                "y": 0.848668,
+                "w": 0.457044,
+                "h": 0.017101
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-1/page-29.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.431697,
+                "y": 0.032776,
+                "w": 0.1391,
+                "h": 0.0204
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.049723,
+                "y": 0.100775,
+                "w": 0.258329,
+                "h": 0.018859
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.049723,
+                "y": 0.144909,
+                "w": 0.496787,
+                "h": 0.018766
+              },
+              {
+                "text": "The graph below gives information on the numbers of participants for",
+                "x": 0.078426,
+                "y": 0.19415,
+                "w": 0.768365,
+                "h": 0.023967
+              },
+              {
+                "text": "different activities at one social centre in Melbourne, Australia for the period",
+                "x": 0.076218,
+                "y": 0.216374,
+                "w": 0.832395,
+                "h": 0.023967
+              },
+              {
+                "text": "2000 to 2020.",
+                "x": 0.076218,
+                "y": 0.238474,
+                "w": 0.15014,
+                "h": 0.020605
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.076218,
+                "y": 0.280867,
+                "w": 0.841227,
+                "h": 0.020506
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.076218,
+                "y": 0.297862,
+                "w": 0.384182,
+                "h": 0.023967
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.049723,
+                "y": 0.355773,
+                "w": 0.258329,
+                "h": 0.018783
+              },
+              {
+                "text": "Number of participants, by activity 2000-2020",
+                "x": 0.162328,
+                "y": 0.399831,
+                "w": 0.680047,
+                "h": 0.029196
+              },
+              {
+                "text": "Number of participants",
+                "x": 0.051931,
+                "y": 0.517272,
+                "w": 0.022079,
+                "h": 0.178499
+              },
+              {
+                "text": "70",
+                "x": 0.109337,
+                "y": 0.444172,
+                "w": 0.028703,
+                "h": 0.017
+              },
+              {
+                "text": "60",
+                "x": 0.109337,
+                "y": 0.490072,
+                "w": 0.026495,
+                "h": 0.0136
+              },
+              {
+                "text": "50",
+                "x": 0.109337,
+                "y": 0.532572,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "40",
+                "x": 0.109337,
+                "y": 0.575071,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "30-",
+                "x": 0.109337,
+                "y": 0.619271,
+                "w": 0.033119,
+                "h": 0.0153
+              },
+              {
+                "text": "20-",
+                "x": 0.107129,
+                "y": 0.661771,
+                "w": 0.035327,
+                "h": 0.017
+              },
+              {
+                "text": "10-",
+                "x": 0.109337,
+                "y": 0.70597,
+                "w": 0.033119,
+                "h": 0.0136
+              },
+              {
+                "text": "0*",
+                "x": 0.120377,
+                "y": 0.74337,
+                "w": 0.039743,
+                "h": 0.0221
+              },
+              {
+                "text": "2000",
+                "x": 0.124713,
+                "y": 0.770428,
+                "w": 0.050942,
+                "h": 0.017284
+              },
+              {
+                "text": "A",
+                "x": 0.380915,
+                "y": 0.586971,
+                "w": 0.019871,
+                "h": 0.0136
+              },
+              {
+                "text": "•",
+                "x": 0.266101,
+                "y": 0.629471,
+                "w": 0.01104,
+                "h": 0.0102
+              },
+              {
+                "text": "_••",
+                "x": 0.244022,
+                "y": 0.663471,
+                "w": 0.048575,
+                "h": 0.0119
+              },
+              {
+                "text": "Film club",
+                "x": 0.754057,
+                "y": 0.535789,
+                "w": 0.077278,
+                "h": 0.012201
+              },
+              {
+                "text": "• - Martial arts",
+                "x": 0.736394,
+                "y": 0.568271,
+                "w": 0.112605,
+                "h": 0.011966
+              },
+              {
+                "text": "•.......... Amateur dramatics",
+                "x": 0.685611,
+                "y": 0.598871,
+                "w": 0.223002,
+                "h": 0.0119
+              },
+              {
+                "text": "---- Table tennis",
+                "x": 0.683403,
+                "y": 0.627736,
+                "w": 0.17222,
+                "h": 0.011935
+              },
+              {
+                "text": "x",
+                "x": 0.70769,
+                "y": 0.654971,
+                "w": 0.026495,
+                "h": 0.0204
+              },
+              {
+                "text": "- Musical performances",
+                "x": 0.736394,
+                "y": 0.658239,
+                "w": 0.196507,
+                "h": 0.013944
+              },
+              {
+                "text": "x",
+                "x": 0.619373,
+                "y": 0.666871,
+                "w": 0.022079,
+                "h": 0.0204
+              },
+              {
+                "text": "•...А",
+                "x": 0.462608,
+                "y": 0.683871,
+                "w": 0.055199,
+                "h": 0.0187
+              },
+              {
+                "text": "2005",
+                "x": 0.246183,
+                "y": 0.770487,
+                "w": 0.050876,
+                "h": 0.017166
+              },
+              {
+                "text": "T",
+                "x": 0.387538,
+                "y": 0.75527,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "2010",
+                "x": 0.365459,
+                "y": 0.76887,
+                "w": 0.052991,
+                "h": 0.0187
+              },
+              {
+                "text": "Year",
+                "x": 0.367667,
+                "y": 0.80457,
+                "w": 0.048575,
+                "h": 0.017
+              },
+              {
+                "text": "T",
+                "x": 0.504559,
+                "y": 0.75527,
+                "w": 0.01104,
+                "h": 0.0102
+              },
+              {
+                "text": "2015",
+                "x": 0.484688,
+                "y": 0.77057,
+                "w": 0.050783,
+                "h": 0.0153
+              },
+              {
+                "text": "2020",
+                "x": 0.606108,
+                "y": 0.772233,
+                "w": 0.048609,
+                "h": 0.013673
+              },
+              {
+                "text": "30",
+                "x": 0.049723,
+                "y": 0.998368,
+                "w": 0.033119,
+                "h": 0.0187
+              },
+              {
+                "text": "→",
+                "x": 0.122585,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.0204
+              },
+              {
+                "text": "• p. 128",
+                "x": 0.157757,
+                "y": 0.999577,
+                "w": 0.09746,
+                "h": 0.019682
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-1/page-30.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.043099,
+                "y": 0.031076,
+                "w": 0.256122,
+                "h": 0.018837
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.040891,
+                "y": 0.073444,
+                "w": 0.494579,
+                "h": 0.020532
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.040891,
+                "y": 0.116075,
+                "w": 0.313528,
+                "h": 0.018811
+              },
+              {
+                "text": "Some people think that competition at work, at school and in daily life is a",
+                "x": 0.067386,
+                "y": 0.168775,
+                "w": 0.808108,
+                "h": 0.018839
+              },
+              {
+                "text": "good thing. Others believe that we should try to cooperate more, rather than",
+                "x": 0.067386,
+                "y": 0.185775,
+                "w": 0.830187,
+                "h": 0.0221
+              },
+              {
+                "text": "competing against each other.",
+                "x": 0.067386,
+                "y": 0.211145,
+                "w": 0.328984,
+                "h": 0.020529
+              },
+              {
+                "text": "Discuss both these views and give your own opinion.",
+                "x": 0.067386,
+                "y": 0.252074,
+                "w": 0.580689,
+                "h": 0.020514
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.043099,
+                "y": 0.304774,
+                "w": 0.808108,
+                "h": 0.020542
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.043099,
+                "y": 0.328366,
+                "w": 0.262745,
+                "h": 0.018908
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.043099,
+                "y": 0.369327,
+                "w": 0.253914,
+                "h": 0.018745
+              },
+              {
+                "text": "→ &p. 129",
+                "x": 0.74734,
+                "y": 0.992924,
+                "w": 0.145911,
+                "h": 0.024487
+              },
+              {
+                "text": "31",
+                "x": 0.906405,
+                "y": 0.998368,
+                "w": 0.030911,
+                "h": 0.0119
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-9.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.040709,
+                "y": 0.035719,
+                "w": 0.13505,
+                "h": 0.033214
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.402994,
+                "y": 0.105875,
+                "w": 0.174428,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.045307,
+                "y": 0.19415,
+                "w": 0.108189,
+                "h": 0.018824
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.217527,
+                "y": 0.19415,
+                "w": 0.203131,
+                "h": 0.018824
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.047515,
+                "y": 0.238474,
+                "w": 0.269369,
+                "h": 0.017119
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.047515,
+                "y": 0.277381,
+                "w": 0.585105,
+                "h": 0.018892
+              },
+              {
+                "text": "Hinchingbrooke Country Park",
+                "x": 0.274933,
+                "y": 0.326873,
+                "w": 0.446005,
+                "h": 0.027202
+              },
+              {
+                "text": "The park",
+                "x": 0.065138,
+                "y": 0.364135,
+                "w": 0.09723,
+                "h": 0.017276
+              },
+              {
+                "text": "Area: 1",
+                "x": 0.067386,
+                "y": 0.391473,
+                "w": 0.070654,
+                "h": 0.01533
+              },
+              {
+                "text": "hectares",
+                "x": 0.329992,
+                "y": 0.390913,
+                "w": 0.088597,
+                "h": 0.014719
+              },
+              {
+                "text": "Habitats: wetland, grassland and woodland",
+                "x": 0.064977,
+                "y": 0.416507,
+                "w": 0.439804,
+                "h": 0.022633
+              },
+              {
+                "text": "Wetland: lakes, ponds and a 2",
+                "x": 0.065179,
+                "y": 0.445872,
+                "w": 0.309112,
+                "h": 0.0204
+              },
+              {
+                "text": "Wildlife includes birds, insects and animals",
+                "x": 0.064988,
+                "y": 0.471152,
+                "w": 0.437626,
+                "h": 0.024231
+              },
+              {
+                "text": "Subjects studied in educational visits include",
+                "x": 0.065002,
+                "y": 0.511617,
+                "w": 0.499369,
+                "h": 0.023041
+              },
+              {
+                "text": "Science: Children look at 3",
+                "x": 0.065179,
+                "y": 0.542762,
+                "w": 0.275993,
+                "h": 0.018738
+              },
+              {
+                "text": ". about plants, etc.",
+                "x": 0.517807,
+                "y": 0.537532,
+                "w": 0.189883,
+                "h": 0.022239
+              },
+              {
+                "text": "Geography: includes learning to use a 4...",
+                "x": 0.065005,
+                "y": 0.568024,
+                "w": 0.424247,
+                "h": 0.024313
+              },
+              {
+                "text": "and compass",
+                "x": 0.658997,
+                "y": 0.567736,
+                "w": 0.139337,
+                "h": 0.019771
+              },
+              {
+                "text": "History: changes in land use",
+                "x": 0.065179,
+                "y": 0.598871,
+                "w": 0.291449,
+                "h": 0.018842
+              },
+              {
+                "text": "Leisure and tourism: mostly concentrates on the park's 5",
+                "x": 0.065179,
+                "y": 0.624249,
+                "w": 0.576273,
+                "h": 0.020521
+              },
+              {
+                "text": "Music: Children make 6 ..",
+                "x": 0.065179,
+                "y": 0.653271,
+                "w": 0.256122,
+                "h": 0.01717
+              },
+              {
+                "text": "with natural materials, and experiment",
+                "x": 0.489104,
+                "y": 0.651571,
+                "w": 0.39743,
+                "h": 0.020613
+              },
+              {
+                "text": "with rhythm and speed.",
+                "x": 0.065179,
+                "y": 0.675234,
+                "w": 0.240666,
+                "h": 0.018837
+              },
+              {
+                "text": "Benefits of outdoor educational visits",
+                "x": 0.067386,
+                "y": 0.714453,
+                "w": 0.410678,
+                "h": 0.018738
+              },
+              {
+                "text": "They give children a feeling of 7",
+                "x": 0.067386,
+                "y": 0.743213,
+                "w": 0.32236,
+                "h": 0.020557
+              },
+              {
+                "text": "Children learn new 8",
+                "x": 0.067386,
+                "y": 0.77227,
+                "w": 0.211963,
+                "h": 0.015391
+              },
+              {
+                "text": ".... that they may not have elsewhere.",
+                "x": 0.550926,
+                "y": 0.74147,
+                "w": 0.373143,
+                "h": 0.0189
+              },
+              {
+                "text": "...and gain self-confidence.",
+                "x": 0.447153,
+                "y": 0.76887,
+                "w": 0.278201,
+                "h": 0.020534
+              },
+              {
+                "text": "Practical issues",
+                "x": 0.069594,
+                "y": 0.812935,
+                "w": 0.17222,
+                "h": 0.013944
+              },
+              {
+                "text": "Cost per child: 9 €",
+                "x": 0.067386,
+                "y": 0.840269,
+                "w": 0.187675,
+                "h": 0.018857
+              },
+              {
+                "text": "Adults, such as 10",
+                "x": 0.067386,
+                "y": 0.869149,
+                "w": 0.189883,
+                "h": 0.018738
+              },
+              {
+                "text": ", free",
+                "x": 0.442737,
+                "y": 0.867406,
+                "w": 0.057407,
+                "h": 0.018763
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-10.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.040891,
+                "y": 0.031076,
+                "w": 0.112605,
+                "h": 0.017094
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.213111,
+                "y": 0.029376,
+                "w": 0.214171,
+                "h": 0.018794
+              },
+              {
+                "text": "Questions 11-15",
+                "x": 0.043099,
+                "y": 0.073444,
+                "w": 0.187675,
+                "h": 0.015432
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.043099,
+                "y": 0.114375,
+                "w": 0.362103,
+                "h": 0.020511
+              },
+              {
+                "text": "Stanthorpe Twinning Association",
+                "x": 0.241814,
+                "y": 0.178899,
+                "w": 0.490164,
+                "h": 0.023967
+              },
+              {
+                "text": "11 During the visit to Malatte, in France, members especially enjoyed",
+                "x": 0.040891,
+                "y": 0.224874,
+                "w": 0.715374,
+                "h": 0.0221
+              },
+              {
+                "text": "A going to a theme park.",
+                "x": 0.089466,
+                "y": 0.258874,
+                "w": 0.280409,
+                "h": 0.0187
+              },
+              {
+                "text": "B experiencing a river trip.",
+                "x": 0.091674,
+                "y": 0.279124,
+                "w": 0.293657,
+                "h": 0.018849
+              },
+              {
+                "text": "C visiting a cheese factory.",
+                "x": 0.087258,
+                "y": 0.299605,
+                "w": 0.304696,
+                "h": 0.020481
+              },
+              {
+                "text": "12 What will happen in Stanthorpe to mark the 25th anniversary of the",
+                "x": 0.040891,
+                "y": 0.342173,
+                "w": 0.724206,
+                "h": 0.018875
+              },
+              {
+                "text": "Twinning Association?",
+                "x": 0.089466,
+                "y": 0.362573,
+                "w": 0.227418,
+                "h": 0.0187
+              },
+              {
+                "text": "A Atree will be planted.",
+                "x": 0.089466,
+                "y": 0.394873,
+                "w": 0.269369,
+                "h": 0.018903
+              },
+              {
+                "text": "B Agarden seat will be bought.",
+                "x": 0.091674,
+                "y": 0.415083,
+                "w": 0.342231,
+                "h": 0.02059
+              },
+              {
+                "text": "C A footbridge will be built.",
+                "x": 0.091674,
+                "y": 0.437307,
+                "w": 0.298072,
+                "h": 0.018766
+              },
+              {
+                "text": "13 Which event raised most funds this year?",
+                "x": 0.040891,
+                "y": 0.478172,
+                "w": 0.468084,
+                "h": 0.018834
+              },
+              {
+                "text": "A",
+                "x": 0.091674,
+                "y": 0.510472,
+                "w": 0.035327,
+                "h": 0.0136
+              },
+              {
+                "text": "the film show",
+                "x": 0.129209,
+                "y": 0.512172,
+                "w": 0.147932,
+                "h": 0.0119
+              },
+              {
+                "text": "B the pancake evening",
+                "x": 0.093882,
+                "y": 0.532572,
+                "w": 0.258329,
+                "h": 0.017162
+              },
+              {
+                "text": "C the cookery demonstration",
+                "x": 0.089466,
+                "y": 0.552784,
+                "w": 0.320152,
+                "h": 0.018887
+              },
+              {
+                "text": "14 For the first evening with the French visitors host families are advised to",
+                "x": 0.038683,
+                "y": 0.593746,
+                "w": 0.777196,
+                "h": 0.018738
+              },
+              {
+                "text": "A take them for a walk round the town.",
+                "x": 0.091674,
+                "y": 0.625992,
+                "w": 0.417301,
+                "h": 0.015378
+              },
+              {
+                "text": "B go to a local restaurant.",
+                "x": 0.091674,
+                "y": 0.648171,
+                "w": 0.287033,
+                "h": 0.01704
+              },
+              {
+                "text": "C have a meal at home.",
+                "x": 0.091674,
+                "y": 0.668571,
+                "w": 0.271577,
+                "h": 0.015378
+              },
+              {
+                "text": "15 On Saturday evening there will be the chance to",
+                "x": 0.038683,
+                "y": 0.709223,
+                "w": 0.538738,
+                "h": 0.018847
+              },
+              {
+                "text": "A",
+                "x": 0.089466,
+                "y": 0.74167,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.089466,
+                "y": 0.76207,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "listen to a concert.",
+                "x": 0.135833,
+                "y": 0.74147,
+                "w": 0.192091,
+                "h": 0.015688
+              },
+              {
+                "text": "watch a match.",
+                "x": 0.138041,
+                "y": 0.761951,
+                "w": 0.158972,
+                "h": 0.018819
+              },
+              {
+                "text": "take part in a competition.",
+                "x": 0.122585,
+                "y": 0.78417,
+                "w": 0.280409,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-11.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 16-20",
+                "x": 0.047515,
+                "y": 0.031076,
+                "w": 0.192091,
+                "h": 0.017094
+              },
+              {
+                "text": "Label the map below.",
+                "x": 0.047515,
+                "y": 0.073444,
+                "w": 0.216379,
+                "h": 0.018832
+              },
+              {
+                "text": "Write the correct letter, A-H, next to Questions 16-20.",
+                "x": 0.047515,
+                "y": 0.116075,
+                "w": 0.554194,
+                "h": 0.018811
+              },
+              {
+                "text": "Farley House",
+                "x": 0.398529,
+                "y": 0.160032,
+                "w": 0.196605,
+                "h": 0.024285
+              },
+              {
+                "text": "A",
+                "x": 0.504559,
+                "y": 0.233374,
+                "w": 0.035327,
+                "h": 0.0289
+              },
+              {
+                "text": "N",
+                "x": 0.866662,
+                "y": 0.216374,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "wafor",
+                "x": 0.822503,
+                "y": 0.231674,
+                "w": 0.105981,
+                "h": 0.062899
+              },
+              {
+                "text": "m m",
+                "x": 0.784919,
+                "y": 0.31315,
+                "w": 0.064129,
+                "h": 0.015546
+              },
+              {
+                "text": "Lake",
+                "x": 0.780552,
+                "y": 0.331973,
+                "w": 0.050783,
+                "h": 0.0153
+              },
+              {
+                "text": "m m",
+                "x": 0.135833,
+                "y": 0.348847,
+                "w": 0.061822,
+                "h": 0.013727
+              },
+              {
+                "text": "Lake",
+                "x": 0.124517,
+                "y": 0.375613,
+                "w": 0.051334,
+                "h": 0.016419
+              },
+              {
+                "text": "vn",
+                "x": 0.080634,
+                "y": 0.427173,
+                "w": 0.026495,
+                "h": 0.0085
+              },
+              {
+                "text": "House",
+                "x": 0.391919,
+                "y": 0.442389,
+                "w": 0.068516,
+                "h": 0.017167
+              },
+              {
+                "text": "G Old stables",
+                "x": 0.32558,
+                "y": 0.543908,
+                "w": 0.139372,
+                "h": 0.021528
+              },
+              {
+                "text": "H",
+                "x": 0.462608,
+                "y": 0.620971,
+                "w": 0.028703,
+                "h": 0.0221
+              },
+              {
+                "text": "Car park",
+                "x": 0.303568,
+                "y": 0.698951,
+                "w": 0.090663,
+                "h": 0.017439
+              },
+              {
+                "text": "16 Farm shop",
+                "x": 0.047515,
+                "y": 0.777203,
+                "w": 0.16118,
+                "h": 0.018867
+              },
+              {
+                "text": "17 Disabled entry",
+                "x": 0.047515,
+                "y": 0.80967,
+                "w": 0.198715,
+                "h": 0.0187
+              },
+              {
+                "text": "18 Adventure playground",
+                "x": 0.047515,
+                "y": 0.841969,
+                "w": 0.275993,
+                "h": 0.0189
+              },
+              {
+                "text": "19 Kitchen gardens",
+                "x": 0.045307,
+                "y": 0.874269,
+                "w": 0.220794,
+                "h": 0.017104
+              },
+              {
+                "text": "20 The Temple of the Four Winds",
+                "x": 0.045307,
+                "y": 0.904869,
+                "w": 0.359895,
+                "h": 0.018751
+              },
+              {
+                "text": "12",
+                "x": 0.045307,
+                "y": 0.996668,
+                "w": 0.033119,
+                "h": 0.0187
+              },
+              {
+                "text": "→",
+                "x": 0.118169,
+                "y": 0.996668,
+                "w": 0.024287,
+                "h": 0.0187
+              },
+              {
+                "text": "p.120",
+                "x": 0.1822,
+                "y": 0.996668,
+                "w": 0.08611,
+                "h": 0.0204
+              },
+              {
+                "text": "p100",
+                "x": 0.265972,
+                "y": 0.99622,
+                "w": 0.117279,
+                "h": 0.021296
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-12.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.045307,
+                "y": 0.029376,
+                "w": 0.134685,
+                "h": 0.018794
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.217527,
+                "y": 0.031076,
+                "w": 0.216379,
+                "h": 0.017094
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.045307,
+                "y": 0.075187,
+                "w": 0.231834,
+                "h": 0.017089
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.045307,
+                "y": 0.119475,
+                "w": 0.269369,
+                "h": 0.018897
+              },
+              {
+                "text": "Which TWO things did Colin find most satisfying about his bread reuse project?",
+                "x": 0.043034,
+                "y": 0.160236,
+                "w": 0.801598,
+                "h": 0.021149
+              },
+              {
+                "text": "A receiving support from local restaurants",
+                "x": 0.093882,
+                "y": 0.192407,
+                "w": 0.450421,
+                "h": 0.020567
+              },
+              {
+                "text": "B finding a good way to prevent waste",
+                "x": 0.093882,
+                "y": 0.214631,
+                "w": 0.415094,
+                "h": 0.018743
+              },
+              {
+                "text": "overcoming problems in a basic process",
+                "x": 0.138041,
+                "y": 0.235074,
+                "w": 0.412886,
+                "h": 0.018776
+              },
+              {
+                "text": "D",
+                "x": 0.093882,
+                "y": 0.255474,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "E",
+                "x": 0.093882,
+                "y": 0.277574,
+                "w": 0.028703,
+                "h": 0.0136
+              },
+              {
+                "text": "experimenting with designs and colours",
+                "x": 0.140249,
+                "y": 0.255474,
+                "w": 0.404054,
+                "h": 0.018857
+              },
+              {
+                "text": "learning how to apply 3-D printing",
+                "x": 0.135833,
+                "y": 0.277381,
+                "w": 0.353271,
+                "h": 0.018892
+              },
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.043099,
+                "y": 0.340473,
+                "w": 0.231834,
+                "h": 0.017089
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.043099,
+                "y": 0.384579,
+                "w": 0.271577,
+                "h": 0.020494
+              },
+              {
+                "text": "Which TWO ways do the students agree that touch-sensitive sensors for food labels",
+                "x": 0.043099,
+                "y": 0.425473,
+                "w": 0.847851,
+                "h": 0.020549
+              },
+              {
+                "text": "could be developed in future?",
+                "x": 0.040891,
+                "y": 0.449072,
+                "w": 0.302488,
+                "h": 0.0189
+              },
+              {
+                "text": "A for use on medical products",
+                "x": 0.091674,
+                "y": 0.481572,
+                "w": 0.3334,
+                "h": 0.0187
+              },
+              {
+                "text": "B to show that food is no longer fit to eat",
+                "x": 0.091674,
+                "y": 0.503543,
+                "w": 0.439381,
+                "h": 0.017129
+              },
+              {
+                "text": "for use with drinks as well as foods",
+                "x": 0.135833,
+                "y": 0.524024,
+                "w": 0.359895,
+                "h": 0.017048
+              },
+              {
+                "text": "D",
+                "x": 0.093882,
+                "y": 0.544472,
+                "w": 0.028703,
+                "h": 0.0136
+              },
+              {
+                "text": "to provide applications for blind people",
+                "x": 0.120377,
+                "y": 0.544472,
+                "w": 0.412886,
+                "h": 0.018771
+              },
+              {
+                "text": "E to indicate the weight of certain foods",
+                "x": 0.091674,
+                "y": 0.564871,
+                "w": 0.428341,
+                "h": 0.018852
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-13.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.051931,
+                "y": 0.032776,
+                "w": 0.194299,
+                "h": 0.01888
+              },
+              {
+                "text": "What is the students'opinion about each of the following food trends?",
+                "x": 0.049723,
+                "y": 0.071701,
+                "w": 0.77278,
+                "h": 0.022275
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.054139,
+                "y": 0.116075,
+                "w": 0.757325,
+                "h": 0.018811
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.051931,
+                "y": 0.136475,
+                "w": 0.183259,
+                "h": 0.018892
+              },
+              {
+                "text": "Opinions",
+                "x": 0.447032,
+                "y": 0.193868,
+                "w": 0.104016,
+                "h": 0.019513
+              },
+              {
+                "text": "A This is only relevant to young people.",
+                "x": 0.228566,
+                "y": 0.226397,
+                "w": 0.432757,
+                "h": 0.018877
+              },
+              {
+                "text": "B",
+                "x": 0.230774,
+                "y": 0.260574,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "This may have disappointing results.",
+                "x": 0.268309,
+                "y": 0.258874,
+                "w": 0.38639,
+                "h": 0.0187
+              },
+              {
+                "text": "C This already seems to be widespread.",
+                "x": 0.230774,
+                "y": 0.291174,
+                "w": 0.437173,
+                "h": 0.01889
+              },
+              {
+                "text": "D Retailers should do more to encourage this.",
+                "x": 0.230774,
+                "y": 0.323473,
+                "w": 0.496787,
+                "h": 0.018837
+              },
+              {
+                "text": "E More financial support is needed for this.",
+                "x": 0.230774,
+                "y": 0.355773,
+                "w": 0.465876,
+                "h": 0.018783
+              },
+              {
+                "text": "F Most people know little about this.",
+                "x": 0.230774,
+                "y": 0.388065,
+                "w": 0.39743,
+                "h": 0.018738
+              },
+              {
+                "text": "G There should be stricter regulations about this.",
+                "x": 0.230774,
+                "y": 0.420312,
+                "w": 0.523283,
+                "h": 0.018761
+              },
+              {
+                "text": "H This could be dangerous.",
+                "x": 0.230774,
+                "y": 0.452558,
+                "w": 0.31132,
+                "h": 0.018814
+              },
+              {
+                "text": "Food trends",
+                "x": 0.104922,
+                "y": 0.527472,
+                "w": 0.134685,
+                "h": 0.0153
+              },
+              {
+                "text": "25 Use of local products",
+                "x": 0.051931,
+                "y": 0.559756,
+                "w": 0.269369,
+                "h": 0.018738
+              },
+              {
+                "text": "26 Reduction in unnecessary packaging",
+                "x": 0.054139,
+                "y": 0.592003,
+                "w": 0.426133,
+                "h": 0.018768
+              },
+              {
+                "text": "27 Gluten-free and lactose-free food",
+                "x": 0.051931,
+                "y": 0.622506,
+                "w": 0.390806,
+                "h": 0.017165
+              },
+              {
+                "text": "28",
+                "x": 0.054139,
+                "y": 0.656671,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "Use of branded products related to celebrity chefs",
+                "x": 0.082842,
+                "y": 0.654971,
+                "w": 0.529907,
+                "h": 0.0187
+              },
+              {
+                "text": "29 Development of 'ghost kitchens' for takeaway food",
+                "x": 0.054139,
+                "y": 0.685571,
+                "w": 0.563026,
+                "h": 0.0221
+              },
+              {
+                "text": "30 Use of mushrooms for common health concerns",
+                "x": 0.054139,
+                "y": 0.71957,
+                "w": 0.538738,
+                "h": 0.017106
+              },
+              {
+                "text": "→",
+                "x": 0.127001,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.017
+              },
+              {
+                "text": "p. 120",
+                "x": 0.191031,
+                "y": 0.998368,
+                "w": 0.072862,
+                "h": 0.0187
+              },
+              {
+                "text": "U p. 101",
+                "x": 0.285973,
+                "y": 0.998368,
+                "w": 0.101565,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-14.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.049723,
+                "y": 0.027676,
+                "w": 0.110397,
+                "h": 0.018751
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.221943,
+                "y": 0.027676,
+                "w": 0.214171,
+                "h": 0.018751
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.049723,
+                "y": 0.071701,
+                "w": 0.267161,
+                "h": 0.017175
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.049723,
+                "y": 0.112662,
+                "w": 0.428341,
+                "h": 0.017013
+              },
+              {
+                "text": "Céide Fields",
+                "x": 0.420658,
+                "y": 0.167075,
+                "w": 0.185467,
+                "h": 0.0238
+              },
+              {
+                "text": "an important Neolithic archaeological site in the northwest of Ireland",
+                "x": 0.151288,
+                "y": 0.206174,
+                "w": 0.686671,
+                "h": 0.0204
+              },
+              {
+                "text": "Discovery",
+                "x": 0.102141,
+                "y": 0.248885,
+                "w": 0.111392,
+                "h": 0.017364
+              },
+              {
+                "text": "In the 1930s, a local teacher realised that stones beneath the bog surface",
+                "x": 0.146872,
+                "y": 0.279124,
+                "w": 0.748493,
+                "h": 0.020549
+              },
+              {
+                "text": "were once 31",
+                "x": 0.14908,
+                "y": 0.306474,
+                "w": 0.1391,
+                "h": 0.017099
+              },
+              {
+                "text": "His 32",
+                "x": 0.148892,
+                "y": 0.336559,
+                "w": 0.068822,
+                "h": 0.016329
+              },
+              {
+                "text": "became an archaeologist and undertook an",
+                "x": 0.405202,
+                "y": 0.337073,
+                "w": 0.439381,
+                "h": 0.018745
+              },
+              {
+                "text": "investigation of the site:",
+                "x": 0.146872,
+                "y": 0.357473,
+                "w": 0.245082,
+                "h": 0.018827
+              },
+              {
+                "text": "- a traditional method used by local people to dig for 33",
+                "x": 0.14908,
+                "y": 0.386322,
+                "w": 0.56965,
+                "h": 0.020481
+              },
+              {
+                "text": "was used to identify where stones were located",
+                "x": 0.17539,
+                "y": 0.406792,
+                "w": 0.481703,
+                "h": 0.023779
+              },
+              {
+                "text": "- carbon dating later proved the site was Neolithic.",
+                "x": 0.14908,
+                "y": 0.437307,
+                "w": 0.518867,
+                "h": 0.020481
+              },
+              {
+                "text": "• Items are well preserved in the bog because of a lack of 34",
+                "x": 0.100506,
+                "y": 0.46781,
+                "w": 0.629264,
+                "h": 0.020562
+              },
+              {
+                "text": "Neolithic farmers",
+                "x": 0.100506,
+                "y": 0.510472,
+                "w": 0.187675,
+                "h": 0.0153
+              },
+              {
+                "text": "• Houses were 35",
+                "x": 0.100506,
+                "y": 0.541018,
+                "w": 0.218586,
+                "h": 0.013653
+              },
+              {
+                "text": "in shape and had a hole in the roof.",
+                "x": 0.500144,
+                "y": 0.539275,
+                "w": 0.364311,
+                "h": 0.018796
+              },
+              {
+                "text": "• Neolithic innovations include:",
+                "x": 0.098298,
+                "y": 0.569779,
+                "w": 0.348855,
+                "h": 0.017192
+              },
+              {
+                "text": "- cooking indoors",
+                "x": 0.148633,
+                "y": 0.598173,
+                "w": 0.188716,
+                "h": 0.022783
+              },
+              {
+                "text": "- pots used for storage and to make .....",
+                "x": 0.146752,
+                "y": 0.629103,
+                "w": 0.439579,
+                "h": 0.02224
+              },
+              {
+                "text": ".....",
+                "x": 0.71873,
+                "y": 0.639671,
+                "w": 0.030911,
+                "h": 0.0051
+              },
+              {
+                "text": "• Each field at Céide was large enough to support a big 37",
+                "x": 0.098298,
+                "y": 0.658239,
+                "w": 0.627056,
+                "h": 0.022232
+              },
+              {
+                "text": "• The fields were probably used to restrict the grazing of animals - no",
+                "x": 0.098298,
+                "y": 0.693972,
+                "w": 0.739661,
+                "h": 0.022224
+              },
+              {
+                "text": "evidence of structures to house them during 38",
+                "x": 0.151288,
+                "y": 0.72127,
+                "w": 0.479124,
+                "h": 0.0221
+              },
+              {
+                "text": "....",
+                "x": 0.7938,
+                "y": 0.73487,
+                "w": 0.028703,
+                "h": 0.0051
+              },
+              {
+                "text": "Reasons for the decline in farming",
+                "x": 0.100506,
+                "y": 0.765437,
+                "w": 0.377558,
+                "h": 0.020481
+              },
+              {
+                "text": "a decline in 39",
+                "x": 0.144665,
+                "y": 0.79594,
+                "w": 0.154556,
+                "h": 0.015429
+              },
+              {
+                "text": "an increase in 40",
+                "x": 0.14908,
+                "y": 0.824969,
+                "w": 0.176636,
+                "h": 0.017162
+              },
+              {
+                "text": "... quality",
+                "x": 0.449361,
+                "y": 0.794197,
+                "w": 0.105981,
+                "h": 0.020572
+              },
+              {
+                "text": "→ O p. 120",
+                "x": 0.628204,
+                "y": 0.993268,
+                "w": 0.1391,
+                "h": 0.022297
+              },
+              {
+                "text": "• p. 102",
+                "x": 0.782676,
+                "y": 0.99303,
+                "w": 0.103943,
+                "h": 0.022576
+              },
+              {
+                "text": "15",
+                "x": 0.913029,
+                "y": 0.993268,
+                "w": 0.035327,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-17.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 1-7",
+                "x": 0.049723,
+                "y": 0.031076,
+                "w": 0.163388,
+                "h": 0.017094
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.047515,
+                "y": 0.073444,
+                "w": 0.85889,
+                "h": 0.020532
+              },
+              {
+                "text": "In boxes 1-/ on your answer sheet, write",
+                "x": 0.045307,
+                "y": 0.119475,
+                "w": 0.423925,
+                "h": 0.018897
+              },
+              {
+                "text": "TRUE",
+                "x": 0.126915,
+                "y": 0.160058,
+                "w": 0.064203,
+                "h": 0.015734
+              },
+              {
+                "text": "FALSE",
+                "x": 0.126975,
+                "y": 0.180606,
+                "w": 0.075122,
+                "h": 0.017137
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.272725,
+                "y": 0.158418,
+                "w": 0.441589,
+                "h": 0.020557
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.272725,
+                "y": 0.178899,
+                "w": 0.434965,
+                "h": 0.018776
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.127001,
+                "y": 0.201074,
+                "w": 0.468084,
+                "h": 0.017043
+              },
+              {
+                "text": "1",
+                "x": 0.049723,
+                "y": 0.241874,
+                "w": 0.013248,
+                "h": 0.0153
+              },
+              {
+                "text": "People had expected Andy Murray to become the world's top tennis player for at",
+                "x": 0.098298,
+                "y": 0.241874,
+                "w": 0.814731,
+                "h": 0.0204
+              },
+              {
+                "text": "least five years before 2016.",
+                "x": 0.09609,
+                "y": 0.263873,
+                "w": 0.293657,
+                "h": 0.018801
+              },
+              {
+                "text": "2",
+                "x": 0.047515,
+                "y": 0.304774,
+                "w": 0.015456,
+                "h": 0.017
+              },
+              {
+                "text": "The change that Andy Murray made to his rackets attracted a lot of attention.",
+                "x": 0.09609,
+                "y": 0.303074,
+                "w": 0.781612,
+                "h": 0.020499
+              },
+              {
+                "text": "3 Most of the world's top players take a professional racket stringer on tour with them.",
+                "x": 0.047515,
+                "y": 0.34536,
+                "w": 0.900841,
+                "h": 0.018913
+              },
+              {
+                "text": "Mike and Bob Bryan use rackets that are light in comparison to the majority",
+                "x": 0.098298,
+                "y": 0.388065,
+                "w": 0.763949,
+                "h": 0.018738
+              },
+              {
+                "text": "of rackets.",
+                "x": 0.100459,
+                "y": 0.408275,
+                "w": 0.108282,
+                "h": 0.015694
+              },
+              {
+                "text": "5 Werner Fischer played with a spaghetti-strung racket that he designed himself.",
+                "x": 0.049723,
+                "y": 0.449072,
+                "w": 0.847851,
+                "h": 0.0189
+              },
+              {
+                "text": "6 The weather can affect how professional players adjust the strings on their rackets.",
+                "x": 0.047515,
+                "y": 0.490034,
+                "w": 0.894217,
+                "h": 0.018738
+              },
+              {
+                "text": "7 It was believed that the change Pete Sampras made to his rackets contributed to",
+                "x": 0.047515,
+                "y": 0.530872,
+                "w": 0.86993,
+                "h": 0.020605
+              },
+              {
+                "text": "his strong serve.",
+                "x": 0.097796,
+                "y": 0.552728,
+                "w": 0.173289,
+                "h": 0.020814
+              },
+              {
+                "text": "18",
+                "x": 0.047515,
+                "y": 0.996668,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-18.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 8-13",
+                "x": 0.051931,
+                "y": 0.031076,
+                "w": 0.176636,
+                "h": 0.017094
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.051931,
+                "y": 0.073444,
+                "w": 0.267161,
+                "h": 0.017132
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.051931,
+                "y": 0.112662,
+                "w": 0.638096,
+                "h": 0.018738
+              },
+              {
+                "text": "Write your answers in boxes 8-13 on your answer sheet.",
+                "x": 0.051931,
+                "y": 0.155175,
+                "w": 0.576273,
+                "h": 0.0187
+              },
+              {
+                "text": "The tennis racket and how it has changed",
+                "x": 0.188823,
+                "y": 0.216374,
+                "w": 0.618224,
+                "h": 0.023967
+              },
+              {
+                "text": "Mike and Bob Bryan made changes to the types of 8",
+                "x": 0.118169,
+                "y": 0.267359,
+                "w": 0.532115,
+                "h": 0.020481
+              },
+              {
+                "text": ".. used on",
+                "x": 0.822425,
+                "y": 0.268798,
+                "w": 0.099514,
+                "h": 0.017551
+              },
+              {
+                "text": "their racket frames.",
+                "x": 0.118169,
+                "y": 0.296119,
+                "w": 0.198715,
+                "h": 0.018854
+              },
+              {
+                "text": "Players were not allowed to use the spaghetti-strung racket because of the",
+                "x": 0.118169,
+                "y": 0.331852,
+                "w": 0.757325,
+                "h": 0.020521
+              },
+              {
+                "text": "amount of 9",
+                "x": 0.118169,
+                "y": 0.360873,
+                "w": 0.123645,
+                "h": 0.015427
+              },
+              {
+                "text": "it created.",
+                "x": 0.427155,
+                "y": 0.358704,
+                "w": 0.104026,
+                "h": 0.017938
+              },
+              {
+                "text": "Changes to rackets can be regarded as being as important as players' diets or",
+                "x": 0.118089,
+                "y": 0.394515,
+                "w": 0.795024,
+                "h": 0.023291
+              },
+              {
+                "text": "the 10",
+                "x": 0.11578,
+                "y": 0.42333,
+                "w": 0.068808,
+                "h": 0.017885
+              },
+              {
+                "text": "they do.",
+                "x": 0.369813,
+                "y": 0.425284,
+                "w": 0.086234,
+                "h": 0.017376
+              },
+              {
+                "text": "All rackets used to have natural strings made from the 11",
+                "x": 0.120377,
+                "y": 0.459472,
+                "w": 0.578481,
+                "h": 0.020539
+              },
+              {
+                "text": "of animals.",
+                "x": 0.11787,
+                "y": 0.487081,
+                "w": 0.115411,
+                "h": 0.019582
+              },
+              {
+                "text": "Pete Sampras had metal 12",
+                "x": 0.118169,
+                "y": 0.524024,
+                "w": 0.287033,
+                "h": 0.018748
+              },
+              {
+                "text": "his rackets.",
+                "x": 0.118169,
+                "y": 0.552784,
+                "w": 0.119229,
+                "h": 0.015688
+              },
+              {
+                "text": "put into the frames of",
+                "x": 0.588461,
+                "y": 0.520538,
+                "w": 0.223002,
+                "h": 0.022234
+              },
+              {
+                "text": "Gonçalo Oliveira changed the 13",
+                "x": 0.118169,
+                "y": 0.588517,
+                "w": 0.335608,
+                "h": 0.018854
+              },
+              {
+                "text": "on his racket handles.",
+                "x": 0.637036,
+                "y": 0.586774,
+                "w": 0.229626,
+                "h": 0.018897
+              },
+              {
+                "text": "→ S p. 121 19",
+                "x": 0.754057,
+                "y": 0.993268,
+                "w": 0.194299,
+                "h": 0.022297
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-21.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 14-19",
+                "x": 0.043099,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.017208
+              },
+              {
+                "text": "Reading Passage 2 has seven paragraphs, A-G.",
+                "x": 0.043099,
+                "y": 0.07693,
+                "w": 0.501203,
+                "h": 0.020481
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.040891,
+                "y": 0.119475,
+                "w": 0.53653,
+                "h": 0.018897
+              },
+              {
+                "text": "Write the correct letter, A-G, in boxes 14-19 on your answer sheet.",
+                "x": 0.043099,
+                "y": 0.160161,
+                "w": 0.682255,
+                "h": 0.020514
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.043099,
+                "y": 0.202774,
+                "w": 0.457044,
+                "h": 0.018829
+              },
+              {
+                "text": "14 a reference to a denial of involvement in piracy",
+                "x": 0.043099,
+                "y": 0.253774,
+                "w": 0.525491,
+                "h": 0.018814
+              },
+              {
+                "text": "15 details of how a campaign to eradicate piracy was carried out",
+                "x": 0.040891,
+                "y": 0.286074,
+                "w": 0.675631,
+                "h": 0.018761
+              },
+              {
+                "text": "16 a mention of the circumstances in which states in the ancient world would make",
+                "x": 0.040891,
+                "y": 0.318343,
+                "w": 0.85889,
+                "h": 0.01703
+              },
+              {
+                "text": "use of pirates",
+                "x": 0.09161,
+                "y": 0.340182,
+                "w": 0.141437,
+                "h": 0.019283
+              },
+              {
+                "text": "17 a reference to how people today commonly view pirates",
+                "x": 0.043099,
+                "y": 0.37107,
+                "w": 0.618224,
+                "h": 0.020481
+              },
+              {
+                "text": "18 an explanation of how some people were encouraged not to return to piracy",
+                "x": 0.043099,
+                "y": 0.403317,
+                "w": 0.819147,
+                "h": 0.020481
+              },
+              {
+                "text": "19 a mention of the need for many sailing vessels to stay relatively close to land",
+                "x": 0.043099,
+                "y": 0.435564,
+                "w": 0.827979,
+                "h": 0.018809
+              },
+              {
+                "text": "Questions 20 and 21",
+                "x": 0.045307,
+                "y": 0.5018,
+                "w": 0.231834,
+                "h": 0.017172
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.045307,
+                "y": 0.544472,
+                "w": 0.273785,
+                "h": 0.018771
+              },
+              {
+                "text": "Write the correct letters in boxes 20 and 21 on your answer sheet.",
+                "x": 0.045307,
+                "y": 0.585271,
+                "w": 0.666799,
+                "h": 0.0187
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make about inhabitants of the",
+                "x": 0.043099,
+                "y": 0.625992,
+                "w": 0.865514,
+                "h": 0.018778
+              },
+              {
+                "text": "Mediterranean region in the ancient world?",
+                "x": 0.043099,
+                "y": 0.648171,
+                "w": 0.437173,
+                "h": 0.018783
+              },
+              {
+                "text": "A They often used stolen vessels to carry out pirate attacks.",
+                "x": 0.091674,
+                "y": 0.680463,
+                "w": 0.642512,
+                "h": 0.018738
+              },
+              {
+                "text": "They managed to escape capture by the authorities because they knew the",
+                "x": 0.144665,
+                "y": 0.70087,
+                "w": 0.761741,
+                "h": 0.020554
+              },
+              {
+                "text": "area so well.",
+                "x": 0.144665,
+                "y": 0.72127,
+                "w": 0.132477,
+                "h": 0.017149
+              },
+              {
+                "text": "They paid for information about the routes merchant ships would take.",
+                "x": 0.144665,
+                "y": 0.74147,
+                "w": 0.710958,
+                "h": 0.0206
+              },
+              {
+                "text": "They depended more on the sea for their livelihood than on farming.",
+                "x": 0.144665,
+                "y": 0.761951,
+                "w": 0.691087,
+                "h": 0.020519
+              },
+              {
+                "text": "E",
+                "x": 0.093882,
+                "y": 0.78417,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "They stored many of the goods taken in pirate attacks in coves along",
+                "x": 0.144664,
+                "y": 0.782432,
+                "w": 0.69771,
+                "h": 0.020481
+              },
+              {
+                "text": "the coastline.",
+                "x": 0.142457,
+                "y": 0.80457,
+                "w": 0.141308,
+                "h": 0.018824
+              },
+              {
+                "text": "22",
+                "x": 0.038683,
+                "y": 0.996668,
+                "w": 0.039743,
+                "h": 0.0272
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-22.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 22 and 23",
+                "x": 0.043099,
+                "y": 0.035968,
+                "w": 0.229626,
+                "h": 0.015688
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.040891,
+                "y": 0.07693,
+                "w": 0.273785,
+                "h": 0.020481
+              },
+              {
+                "text": "Write the correct letters in boxes 22 and 23 on your answer sheet.",
+                "x": 0.043099,
+                "y": 0.119475,
+                "w": 0.662383,
+                "h": 0.017154
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make about piracy and",
+                "x": 0.040891,
+                "y": 0.160161,
+                "w": 0.792652,
+                "h": 0.018814
+              },
+              {
+                "text": "ancient Greece?",
+                "x": 0.040891,
+                "y": 0.180642,
+                "w": 0.170012,
+                "h": 0.017033
+              },
+              {
+                "text": "A The state estimated that very few people were involved in piracy.",
+                "x": 0.091674,
+                "y": 0.212888,
+                "w": 0.702126,
+                "h": 0.020486
+              },
+              {
+                "text": "B Attitudes towards piracy changed shortly after the lliad and the Odyssey",
+                "x": 0.091674,
+                "y": 0.235074,
+                "w": 0.777196,
+                "h": 0.018776
+              },
+              {
+                "text": "were written.",
+                "x": 0.138041,
+                "y": 0.255474,
+                "w": 0.134685,
+                "h": 0.017114
+              },
+              {
+                "text": "CImportant officials were known to occasionally take part in piracy.",
+                "x": 0.089466,
+                "y": 0.275874,
+                "w": 0.706542,
+                "h": 0.0187
+              },
+              {
+                "text": "D Every citizen regarded pirate attacks on cities as unacceptable.",
+                "x": 0.089466,
+                "y": 0.296119,
+                "w": 0.691087,
+                "h": 0.018854
+              },
+              {
+                "text": "E A favourable view of piracy is evident in certain ancient Greek texts.",
+                "x": 0.089466,
+                "y": 0.3166,
+                "w": 0.735245,
+                "h": 0.020481
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-23.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 24-26",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.192091,
+                "h": 0.017208
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.049723,
+                "y": 0.078673,
+                "w": 0.304696,
+                "h": 0.017002
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.047515,
+                "y": 0.119475,
+                "w": 0.642512,
+                "h": 0.018897
+              },
+              {
+                "text": "Write your answers in boxes 24-26 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.160161,
+                "w": 0.591729,
+                "h": 0.020514
+              },
+              {
+                "text": "Ancient Rome and piracy",
+                "x": 0.309892,
+                "y": 0.217011,
+                "w": 0.376232,
+                "h": 0.030183
+              },
+              {
+                "text": "Piracy was an issue ancient Rome had to deal with, but it also brought some benefits",
+                "x": 0.065179,
+                "y": 0.274174,
+                "w": 0.863306,
+                "h": 0.0204
+              },
+              {
+                "text": "for Rome. For example, pirates supplied slaves that were important for Rome's",
+                "x": 0.062971,
+                "y": 0.299605,
+                "w": 0.8059,
+                "h": 0.020481
+              },
+              {
+                "text": "industries. However, attacks on vessels transporting 24",
+                "x": 0.062971,
+                "y": 0.325173,
+                "w": 0.565234,
+                "h": 0.0238
+              },
+              {
+                "text": "to Rome",
+                "x": 0.809256,
+                "y": 0.325173,
+                "w": 0.09715,
+                "h": 0.0204
+              },
+              {
+                "text": "resulted in calls for 25",
+                "x": 0.065179,
+                "y": 0.357473,
+                "w": 0.227418,
+                "h": 0.01534
+              },
+              {
+                "text": "....f or the pirates responsible. Nevertheless,",
+                "x": 0.447153,
+                "y": 0.348847,
+                "w": 0.454837,
+                "h": 0.027453
+              },
+              {
+                "text": "piracy continued, with some pirates demanding a 26",
+                "x": 0.065179,
+                "y": 0.379573,
+                "w": 0.534322,
+                "h": 0.0238
+              },
+              {
+                "text": "for the return",
+                "x": 0.780552,
+                "y": 0.382836,
+                "w": 0.136893,
+                "h": 0.017137
+              },
+              {
+                "text": "of the Roman officials they captured.",
+                "x": 0.065179,
+                "y": 0.410173,
+                "w": 0.373143,
+                "h": 0.020597
+              },
+              {
+                "text": "→Op. 121",
+                "x": 0.102714,
+                "y": 0.996668,
+                "w": 0.16118,
+                "h": 0.0255
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            20,
+            21
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            22,
+            23
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-26.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.040891,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.017208
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.040891,
+                "y": 0.080375,
+                "w": 0.393014,
+                "h": 0.018778
+              },
+              {
+                "text": "Write the correct letter in boxes 27-30 on your answer sheet.",
+                "x": 0.040891,
+                "y": 0.122685,
+                "w": 0.611601,
+                "h": 0.01889
+              },
+              {
+                "text": "27 What point does the writer make about misinformation in the first paragraph?",
+                "x": 0.038683,
+                "y": 0.168775,
+                "w": 0.825771,
+                "h": 0.018839
+              },
+              {
+                "text": "A Misinformation is a relatively recent phenomenon.",
+                "x": 0.08936,
+                "y": 0.201021,
+                "w": 0.5544,
+                "h": 0.019674
+              },
+              {
+                "text": "B Some people find it easy to identify misinformation.",
+                "x": 0.089466,
+                "y": 0.221474,
+                "w": 0.565234,
+                "h": 0.02061
+              },
+              {
+                "text": "C Misinformation changes as it is passed from one person to another.",
+                "x": 0.089466,
+                "y": 0.243392,
+                "w": 0.728622,
+                "h": 0.018882
+              },
+              {
+                "text": "D There may be a number of reasons for the spread of misinformation.",
+                "x": 0.089466,
+                "y": 0.263873,
+                "w": 0.741869,
+                "h": 0.020501
+              },
+              {
+                "text": "28 What does the writer say about the role of technology?",
+                "x": 0.038683,
+                "y": 0.296119,
+                "w": 0.602769,
+                "h": 0.018854
+              },
+              {
+                "text": "A It may at some point provide us with a solution to misinformation.",
+                "x": 0.089466,
+                "y": 0.328366,
+                "w": 0.704334,
+                "h": 0.018908
+              },
+              {
+                "text": "It could fundamentally alter the way in which people regard information.",
+                "x": 0.133573,
+                "y": 0.34865,
+                "w": 0.72872,
+                "h": 0.02183
+              },
+              {
+                "text": "C It has changed the way in which organisations use misinformation.",
+                "x": 0.089466,
+                "y": 0.369327,
+                "w": 0.721998,
+                "h": 0.020481
+              },
+              {
+                "text": "D It has made it easier for people to check whether information is accurate.",
+                "x": 0.089466,
+                "y": 0.391473,
+                "w": 0.788236,
+                "h": 0.018816
+              },
+              {
+                "text": "29 What is the writer doing in the fourth paragraph?",
+                "x": 0.038683,
+                "y": 0.422055,
+                "w": 0.540946,
+                "h": 0.020481
+              },
+              {
+                "text": "A comparing the different opinions people have of misinformation",
+                "x": 0.089466,
+                "y": 0.456044,
+                "w": 0.684463,
+                "h": 0.018738
+              },
+              {
+                "text": "B explaining how the effects of misinformation have changed over time",
+                "x": 0.089466,
+                "y": 0.476472,
+                "w": 0.741869,
+                "h": 0.020534
+              },
+              {
+                "text": "outlining which issues connected with misinformation are significant today",
+                "x": 0.135833,
+                "y": 0.496872,
+                "w": 0.748493,
+                "h": 0.020615
+              },
+              {
+                "text": "D describing the attitude of policy makers towards misinformation in the media",
+                "x": 0.089466,
+                "y": 0.518795,
+                "w": 0.816939,
+                "h": 0.018877
+              },
+              {
+                "text": "30 What point does the writer make about regulation in the USA?",
+                "x": 0.038683,
+                "y": 0.551272,
+                "w": 0.675631,
+                "h": 0.0187
+              },
+              {
+                "text": "A The guidelines issued by the FDA need to be simplified.",
+                "x": 0.089466,
+                "y": 0.583571,
+                "w": 0.613808,
+                "h": 0.01889
+              },
+              {
+                "text": "B Regulation does not affect people's opinions of new prescription drugs.",
+                "x": 0.089466,
+                "y": 0.602271,
+                "w": 0.766157,
+                "h": 0.0221
+              },
+              {
+                "text": "C The USA has more regulatory bodies than most other countries.",
+                "x": 0.089466,
+                "y": 0.625992,
+                "w": 0.69771,
+                "h": 0.018778
+              },
+              {
+                "text": "D Regulation fails to prevent misinformation from appearing in the media.",
+                "x": 0.089466,
+                "y": 0.646471,
+                "w": 0.768365,
+                "h": 0.01874
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-27.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 31-36",
+                "x": 0.051931,
+                "y": 0.035968,
+                "w": 0.192091,
+                "h": 0.017208
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-J, below.",
+                "x": 0.051931,
+                "y": 0.078673,
+                "w": 0.616016,
+                "h": 0.020481
+              },
+              {
+                "text": "Write the correct letter, A-J, in boxes 31-36 on your answer sheet.",
+                "x": 0.051931,
+                "y": 0.119475,
+                "w": 0.677839,
+                "h": 0.0204
+              },
+              {
+                "text": "What happens when people encounter misinformation?",
+                "x": 0.087258,
+                "y": 0.172175,
+                "w": 0.825771,
+                "h": 0.0238
+              },
+              {
+                "text": "Although people have 31",
+                "x": 0.069594,
+                "y": 0.223174,
+                "w": 0.260537,
+                "h": 0.01891
+              },
+              {
+                "text": "....to misinformation, there is debate about",
+                "x": 0.497936,
+                "y": 0.224874,
+                "w": 0.434965,
+                "h": 0.0187
+              },
+              {
+                "text": "precisely how and when we label something as true or untrue. The philosophers",
+                "x": 0.069594,
+                "y": 0.252074,
+                "w": 0.827979,
+                "h": 0.018771
+              },
+              {
+                "text": "Descartes and Spinoza had 32",
+                "x": 0.069594,
+                "y": 0.279124,
+                "w": 0.32236,
+                "h": 0.017149
+              },
+              {
+                "text": "..... about how people engage with",
+                "x": 0.517807,
+                "y": 0.279124,
+                "w": 0.381974,
+                "h": 0.018849
+              },
+              {
+                "text": "information. While Descartes believed that people accept or reject information",
+                "x": 0.065179,
+                "y": 0.306474,
+                "w": 0.810316,
+                "h": 0.018842
+              },
+              {
+                "text": "after considering whether it is true or not, Spinoza argued that people accepted",
+                "x": 0.069594,
+                "y": 0.333595,
+                "w": 0.821355,
+                "h": 0.020481
+              },
+              {
+                "text": "all information they encountered (and by default misinformation) and did not",
+                "x": 0.069594,
+                "y": 0.360873,
+                "w": 0.788236,
+                "h": 0.018913
+              },
+              {
+                "text": "verify or reject it until afterwards. Moreover, Spinoza believed that a distinct",
+                "x": 0.067386,
+                "y": 0.388065,
+                "w": 0.78382,
+                "h": 0.018738
+              },
+              {
+                "text": "33",
+                "x": 0.069594,
+                "y": 0.415273,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "... is involved in these stages. Recent research has provided",
+                "x": 0.270517,
+                "y": 0.415083,
+                "w": 0.616016,
+                "h": 0.01719
+              },
+              {
+                "text": "34",
+                "x": 0.069594,
+                "y": 0.442472,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "...for Spinoza's theory and it would appear that people accept",
+                "x": 0.266101,
+                "y": 0.440772,
+                "w": 0.638096,
+                "h": 0.020501
+              },
+              {
+                "text": "all encountered information as if it were true, even if this is for an extremely",
+                "x": 0.071802,
+                "y": 0.469553,
+                "w": 0.777196,
+                "h": 0.018819
+              },
+              {
+                "text": "35",
+                "x": 0.069594,
+                "y": 0.496872,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": ".., and do not label the information as true or false until later.",
+                "x": 0.270517,
+                "y": 0.496872,
+                "w": 0.627056,
+                "h": 0.017129
+              },
+              {
+                "text": "This is consistent with the fact that the resources for scepticism and the resources",
+                "x": 0.071802,
+                "y": 0.524024,
+                "w": 0.847851,
+                "h": 0.017048
+              },
+              {
+                "text": "for perceiving and encoding are in 36 ….....",
+                "x": 0.069594,
+                "y": 0.551272,
+                "w": 0.419509,
+                "h": 0.0172
+              },
+              {
+                "text": "in the brain.",
+                "x": 0.639108,
+                "y": 0.550683,
+                "w": 0.132748,
+                "h": 0.019876
+              },
+              {
+                "text": "A constant conflict",
+                "x": 0.109337,
+                "y": 0.636271,
+                "w": 0.275993,
+                "h": 0.015432
+              },
+              {
+                "text": "B additional evidence C",
+                "x": 0.383122,
+                "y": 0.636271,
+                "w": 0.298072,
+                "h": 0.017175
+              },
+              {
+                "text": "D experimental subjects E short period",
+                "x": 0.109337,
+                "y": 0.663468,
+                "w": 0.446005,
+                "h": 0.018738
+              },
+              {
+                "text": "F",
+                "x": 0.645868,
+                "y": 0.663471,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "G frequent exposure H mental operation",
+                "x": 0.109337,
+                "y": 0.68897,
+                "w": 0.494579,
+                "h": 0.0187
+              },
+              {
+                "text": "J",
+                "x": 0.109337,
+                "y": 0.71447,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "different ideas",
+                "x": 0.157912,
+                "y": 0.714453,
+                "w": 0.145724,
+                "h": 0.017018
+              },
+              {
+                "text": "different locations",
+                "x": 0.690027,
+                "y": 0.637758,
+                "w": 0.187675,
+                "h": 0.015688
+              },
+              {
+                "text": "extreme distrust",
+                "x": 0.698858,
+                "y": 0.665171,
+                "w": 0.165596,
+                "h": 0.0119
+              },
+              {
+                "text": "dubious reason",
+                "x": 0.696651,
+                "y": 0.68897,
+                "w": 0.158972,
+                "h": 0.015459
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-1/page-28.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 37-40",
+                "x": 0.040891,
+                "y": 0.032776,
+                "w": 0.189883,
+                "h": 0.017137
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.038683,
+                "y": 0.07693,
+                "w": 0.86993,
+                "h": 0.020481
+              },
+              {
+                "text": "In boxes 37-40 on your answer sheet, write",
+                "x": 0.038559,
+                "y": 0.121013,
+                "w": 0.441812,
+                "h": 0.020839
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.259478,
+                "y": 0.161904,
+                "w": 0.518867,
+                "h": 0.020481
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.259478,
+                "y": 0.180642,
+                "w": 0.516659,
+                "h": 0.022224
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.115724,
+                "y": 0.197045,
+                "w": 0.707032,
+                "h": 0.030923
+              },
+              {
+                "text": "37 Campaigns designed to correct misinformation will fail to achieve their purpose",
+                "x": 0.038683,
+                "y": 0.245135,
+                "w": 0.845643,
+                "h": 0.020539
+              },
+              {
+                "text": "if people are unable to understand them.",
+                "x": 0.08505,
+                "y": 0.267359,
+                "w": 0.415094,
+                "h": 0.018738
+              },
+              {
+                "text": "38 Attempts to teach elementary school students about misinformation have been",
+                "x": 0.036475,
+                "y": 0.308174,
+                "w": 0.845643,
+                "h": 0.018885
+              },
+              {
+                "text": "opposed.",
+                "x": 0.087258,
+                "y": 0.330273,
+                "w": 0.09715,
+                "h": 0.0187
+              },
+              {
+                "text": "39",
+                "x": 0.036475,
+                "y": 0.371073,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "It may be possible to overcome the problem of misinformation in a relatively",
+                "x": 0.087258,
+                "y": 0.37107,
+                "w": 0.763949,
+                "h": 0.018738
+              },
+              {
+                "text": "short period.",
+                "x": 0.087227,
+                "y": 0.391344,
+                "w": 0.130331,
+                "h": 0.018957
+              },
+              {
+                "text": "40",
+                "x": 0.036475,
+                "y": 0.432273,
+                "w": 0.030911,
+                "h": 0.017
+              },
+              {
+                "text": "The need to keep up with new information is hugely exaggerated in today's world.",
+                "x": 0.08505,
+                "y": 0.432077,
+                "w": 0.827979,
+                "h": 0.020595
+              },
+              {
+                "text": "→ S p. 121 29",
+                "x": 0.738601,
+                "y": 0.998368,
+                "w": 0.198715,
+                "h": 0.0221
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 38,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 40,
+              "text": ""
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "69|sixty-nine",
+      "stream",
+      "data",
+      "map",
+      "visitors",
+      "sounds",
+      "freedom",
+      "skills",
+      "4.95",
+      "leaders",
+      "B",
+      "A",
+      "B",
+      "C",
+      "A",
+      "G",
+      "C",
+      "B",
+      "D",
+      "A",
+      "B",
+      "D",
+      "A",
+      "E",
+      "D",
+      "G",
+      "C",
+      "B",
+      "F",
+      "H",
+      "walls",
+      "son",
+      "fuel",
+      "oxygen",
+      "rectangular",
+      "lamps",
+      "family",
+      "winter",
+      "soil",
+      "rain"
+    ],
+    "reading": [
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "paint",
+      "topspin",
+      "training",
+      "intestines|gut",
+      "weights",
+      "grips",
+      "D",
+      "G",
+      "C",
+      "A",
+      "G",
+      "B",
+      "B",
+      "D",
+      "C",
+      "E",
+      "grain",
+      "punishment",
+      "ransom",
+      "D",
+      "A",
+      "C",
+      "D",
+      "G",
+      "J",
+      "H",
+      "B",
+      "E",
+      "C",
+      "YES",
+      "NOT GIVEN",
+      "NO",
+      "NOT GIVEN"
+    ]
+  },
+  "completionOptions": {}
+}

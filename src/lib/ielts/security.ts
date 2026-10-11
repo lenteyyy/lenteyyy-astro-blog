@@ -28,10 +28,11 @@ export const createSixDigitCode = (): string => {
 type RateLimitKey = 'combined' | 'identity' | 'request';
 
 export async function claimRateLimit(request: Request, scope: string, identity: string, limit: number, windowSeconds: number, key: RateLimitKey = 'combined'): Promise<boolean> {
-	const bucket = Math.floor(Date.now() / 1000 / windowSeconds);
 	const requestFingerprint = rateLimitAddress(request);
 	const subject = key === 'identity' ? identity : key === 'request' ? requestFingerprint : `${requestFingerprint}|${identity}`;
-	const fingerprint = await sha256(`${scope}|${bucket}|${subject}`);
+	// The database atomically expires the window from the first request.
+	// A wall-clock bucket would permit another code one second before/after its boundary.
+	const fingerprint = await sha256(`${scope}|${windowSeconds}|${subject}`);
 	const { data, error } = await createServiceClient().rpc('claim_ielts_rate_limit', {
 		p_key_hash: fingerprint,
 		p_limit: limit,
@@ -43,5 +44,6 @@ export async function claimRateLimit(request: Request, scope: string, identity: 
 
 export const safeFileName = (name: string): string => {
 	const normalized = name.normalize('NFKC').replace(/[\u0000-\u001f\u007f/\\]/g, '-').replace(/\s+/g, ' ').trim();
-	return normalized.slice(0, 180) || 'material';
+	const result = normalized.slice(0, 180);
+	return !result || result === '.' || result === '..' ? 'material' : result;
 };

@@ -1,0 +1,5885 @@
+{
+  "source": {
+    "book": 19,
+    "test": 2,
+    "questionPages": {
+      "l": [
+        [
+          32,
+          33
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38
+        ]
+      ],
+      "r": [
+        [
+          39,
+          40
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          47,
+          48
+        ]
+      ],
+      "q": [
+        [
+          41,
+          42
+        ],
+        [
+          45,
+          46
+        ],
+        [
+          49,
+          50
+        ]
+      ],
+      "w": [
+        51,
+        52
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "5b460d32f81cba72576e097dba82d8817717f8ae6a261b428916b49dcbdb86c2"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-2/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-2/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-2/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-2/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-2/page-39.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.429359,
+                "y": 0.033919,
+                "w": 0.143776,
+                "h": 0.021514
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.049723,
+                "y": 0.107433,
+                "w": 0.331192,
+                "h": 0.017142
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.051931,
+                "y": 0.150075,
+                "w": 0.874346,
+                "h": 0.018801
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.049723,
+                "y": 0.170475,
+                "w": 0.183259,
+                "h": 0.018882
+              },
+              {
+                "text": "The Industrial Revolution in Britain",
+                "x": 0.239606,
+                "y": 0.216374,
+                "w": 0.518867,
+                "h": 0.020481
+              },
+              {
+                "text": "The Industrial Revolution began in Britain in the mid-1700s and by the 1830s and 1840s",
+                "x": 0.049723,
+                "y": 0.262129,
+                "w": 0.863306,
+                "h": 0.018844
+              },
+              {
+                "text": "had spread to many other parts of the world, including the United States. In Britain, it was a",
+                "x": 0.049723,
+                "y": 0.28261,
+                "w": 0.892009,
+                "h": 0.018763
+              },
+              {
+                "text": "period when a largely rural, agrarian* society was transformed into an industrialised, urban",
+                "x": 0.047515,
+                "y": 0.303074,
+                "w": 0.889801,
+                "h": 0.018756
+              },
+              {
+                "text": "one. Goods that had once been crafted by hand started to be produced in mass quantities",
+                "x": 0.047515,
+                "y": 0.323473,
+                "w": 0.885386,
+                "h": 0.02058
+              },
+              {
+                "text": "by machines in factories, thanks to the invention of steam power and the introduction of",
+                "x": 0.047515,
+                "y": 0.343873,
+                "w": 0.861098,
+                "h": 0.0204
+              },
+              {
+                "text": "new machines and manufacturing techniques in textiles, iron-making and other industries.",
+                "x": 0.047515,
+                "y": 0.365841,
+                "w": 0.883178,
+                "h": 0.020532
+              },
+              {
+                "text": "The foundations of the Industrial Revolution date back to the early 1700s, when the",
+                "x": 0.049723,
+                "y": 0.406773,
+                "w": 0.843435,
+                "h": 0.020511
+              },
+              {
+                "text": "English inventor Thomas Newcomen designed the first modern steam engine. Called the",
+                "x": 0.049723,
+                "y": 0.427173,
+                "w": 0.88097,
+                "h": 0.020592
+              },
+              {
+                "text": "'atmospheric steam engine', Newcomen's invention was originally used to power machines",
+                "x": 0.045307,
+                "y": 0.447572,
+                "w": 0.903049,
+                "h": 0.0204
+              },
+              {
+                "text": "that pumped water out of mines. In the 1760s, the Scottish engineer James Watt",
+                "x": 0.047515,
+                "y": 0.469553,
+                "w": 0.821355,
+                "h": 0.018819
+              },
+              {
+                "text": "started to adapt one of Newcomen's models, and succeeded in making it far more",
+                "x": 0.047515,
+                "y": 0.490034,
+                "w": 0.832395,
+                "h": 0.020481
+              },
+              {
+                "text": "efficient. Watt later worked with the English manufacturer Matthew Boulton to invent a",
+                "x": 0.047515,
+                "y": 0.510472,
+                "w": 0.86993,
+                "h": 0.018781
+              },
+              {
+                "text": "new steam engine driven by both the forward and backward strokes of the piston, while",
+                "x": 0.047515,
+                "y": 0.532572,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "the gear mechanism it was connected to produced rotary motion. It was a key innovation",
+                "x": 0.047515,
+                "y": 0.552784,
+                "w": 0.900841,
+                "h": 0.018887
+              },
+              {
+                "text": "that would allow steam power to spread across British industries.",
+                "x": 0.047515,
+                "y": 0.575008,
+                "w": 0.662383,
+                "h": 0.018763
+              },
+              {
+                "text": "The demand for coal, which was a relatively cheap energy source, grew rapidly during",
+                "x": 0.049723,
+                "y": 0.615871,
+                "w": 0.872138,
+                "h": 0.018837
+              },
+              {
+                "text": "the Industrial Revolution, as it was needed to run not only the factories used to produce",
+                "x": 0.047515,
+                "y": 0.636271,
+                "w": 0.887594,
+                "h": 0.0187
+              },
+              {
+                "text": "manufactured goods, but also steam-powered transportation. In the early 1800s, the",
+                "x": 0.049723,
+                "y": 0.656496,
+                "w": 0.854474,
+                "h": 0.020575
+              },
+              {
+                "text": "English engineer Richard Trevithick built a steam-powered locomotive, and by 1830",
+                "x": 0.049723,
+                "y": 0.67872,
+                "w": 0.847851,
+                "h": 0.018751
+              },
+              {
+                "text": "goods and passengers were being transported between the industrial centres of",
+                "x": 0.047515,
+                "y": 0.69917,
+                "w": 0.816939,
+                "h": 0.018768
+              },
+              {
+                "text": "Manchester and Liverpool. In addition, steam-powered boats and ships were widely",
+                "x": 0.047515,
+                "y": 0.71957,
+                "w": 0.850058,
+                "h": 0.018849
+              },
+              {
+                "text": "used to carry goods along Britain's canals as well as across the Atlantic.",
+                "x": 0.049723,
+                "y": 0.73997,
+                "w": 0.733037,
+                "h": 0.0204
+              },
+              {
+                "text": "Britain had produced textiles like wool, linen and cotton, for hundreds of years, but prior",
+                "x": 0.049723,
+                "y": 0.782432,
+                "w": 0.887594,
+                "h": 0.018738
+              },
+              {
+                "text": "to the Industrial Revolution, the British textile business was a true 'cottage industry', with",
+                "x": 0.047515,
+                "y": 0.80117,
+                "w": 0.896425,
+                "h": 0.022224
+              },
+              {
+                "text": "the work performed in small workshops or even homes by individual spinners, weavers",
+                "x": 0.047515,
+                "y": 0.823269,
+                "w": 0.883178,
+                "h": 0.018862
+              },
+              {
+                "text": "and dyers. Starting in the mid-1700s, innovations like the spinning jenny and the power",
+                "x": 0.049723,
+                "y": 0.843669,
+                "w": 0.883178,
+                "h": 0.0204
+              },
+              {
+                "text": "loom made weaving cloth and spinning yarn and thread much easier. With these",
+                "x": 0.045307,
+                "y": 0.86392,
+                "w": 0.819147,
+                "h": 0.020549
+              },
+              {
+                "text": "machines, relatively little labour was required to produce cloth, and the new, mechanised",
+                "x": 0.049723,
+                "y": 0.886144,
+                "w": 0.898633,
+                "h": 0.018738
+              },
+              {
+                "text": "textile factories that opened around the country were quickly able to meet customer",
+                "x": 0.047515,
+                "y": 0.906569,
+                "w": 0.847851,
+                "h": 0.020537
+              },
+              {
+                "text": "demand for cloth both at home and abroad.",
+                "x": 0.047515,
+                "y": 0.928669,
+                "w": 0.446005,
+                "h": 0.017175
+              },
+              {
+                "text": "*agrarian: relating to the land, especially the use of land for farming",
+                "x": 0.047515,
+                "y": 0.976268,
+                "w": 0.441589,
+                "h": 0.0119
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-2/page-40.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "The British iron industry also underwent major change as it adopted new innovations.",
+                "x": 0.038683,
+                "y": 0.034476,
+                "w": 0.861098,
+                "h": 0.0187
+              },
+              {
+                "text": "Chief among the new techniques was the smelting of iron ore with coke (a material",
+                "x": 0.038683,
+                "y": 0.054706,
+                "w": 0.836811,
+                "h": 0.01887
+              },
+              {
+                "text": "made by heating coal) instead of the traditional charcoal. This method was cheaper",
+                "x": 0.038683,
+                "y": 0.075187,
+                "w": 0.843435,
+                "h": 0.018789
+              },
+              {
+                "text": "and produced metals that were of a higher quality, enabling Britain's iron and steel",
+                "x": 0.038683,
+                "y": 0.095668,
+                "w": 0.830187,
+                "h": 0.022224
+              },
+              {
+                "text": "production to expand in response to demand created by the Napoleonic Wars (1803-15)",
+                "x": 0.038683,
+                "y": 0.117775,
+                "w": 0.894217,
+                "h": 0.018854
+              },
+              {
+                "text": "and the expansion of the railways from the 1830s.",
+                "x": 0.038683,
+                "y": 0.138175,
+                "w": 0.505619,
+                "h": 0.0187
+              },
+              {
+                "text": "The latter part of the Industrial Revolution also saw key advances in communication",
+                "x": 0.038606,
+                "y": 0.177428,
+                "w": 0.843593,
+                "h": 0.022388
+              },
+              {
+                "text": "methods, as people increasingly saw the need to communicate efficiently over long",
+                "x": 0.038683,
+                "y": 0.201074,
+                "w": 0.836811,
+                "h": 0.018786
+              },
+              {
+                "text": "distances. In 1837, British inventors William Cooke and Charles Wheatstone patented",
+                "x": 0.038683,
+                "y": 0.221474,
+                "w": 0.865514,
+                "h": 0.02061
+              },
+              {
+                "text": "the first commercial telegraphy system. In the 1830s and 1840s, Samuel Morse",
+                "x": 0.036372,
+                "y": 0.240335,
+                "w": 0.803904,
+                "h": 0.022638
+              },
+              {
+                "text": "and other inventors worked on their own versions in the United States. Cooke and",
+                "x": 0.038683,
+                "y": 0.263873,
+                "w": 0.825771,
+                "h": 0.017101
+              },
+              {
+                "text": "Wheatstone's system was soon used for railway signalling in the UK. As the speed of",
+                "x": 0.038683,
+                "y": 0.28261,
+                "w": 0.861098,
+                "h": 0.020481
+              },
+              {
+                "text": "the new locomotives increased, it was essential to have a fast and effective means of",
+                "x": 0.036339,
+                "y": 0.300269,
+                "w": 0.863607,
+                "h": 0.026972
+              },
+              {
+                "text": "avoiding collisions.",
+                "x": 0.036475,
+                "y": 0.326873,
+                "w": 0.194299,
+                "h": 0.0187
+              },
+              {
+                "text": "The impact of the Industrial Revolution on people's lives was immense. Although",
+                "x": 0.038683,
+                "y": 0.367584,
+                "w": 0.812523,
+                "h": 0.018789
+              },
+              {
+                "text": "many people in Britain had begun moving to the cities from rural areas before the",
+                "x": 0.038683,
+                "y": 0.388065,
+                "w": 0.819147,
+                "h": 0.020481
+              },
+              {
+                "text": "Industrial Revolution, this accelerated dramatically with industrialisation, as the rise",
+                "x": 0.034267,
+                "y": 0.408473,
+                "w": 0.841227,
+                "h": 0.020554
+              },
+              {
+                "text": "of large factories turned smaller towns into major cities in just a few decades. This",
+                "x": 0.036475,
+                "y": 0.430573,
+                "w": 0.827979,
+                "h": 0.0187
+              },
+              {
+                "text": "rapid urbanisation brought significant challenges, as overcrowded cities suffered from",
+                "x": 0.036475,
+                "y": 0.450815,
+                "w": 0.863306,
+                "h": 0.020557
+              },
+              {
+                "text": "pollution and inadequate sanitation.",
+                "x": 0.036475,
+                "y": 0.473039,
+                "w": 0.362103,
+                "h": 0.018738
+              },
+              {
+                "text": "Although industrialisation increased the country's economic output overall and improved",
+                "x": 0.036475,
+                "y": 0.513872,
+                "w": 0.887594,
+                "h": 0.018867
+              },
+              {
+                "text": "the standard of living for the middle and upper classes, many poor people continued to",
+                "x": 0.036475,
+                "y": 0.534272,
+                "w": 0.876554,
+                "h": 0.0204
+              },
+              {
+                "text": "struggle. Factory workers had to work long hours in dangerous conditions for extremely",
+                "x": 0.036475,
+                "y": 0.554527,
+                "w": 0.883178,
+                "h": 0.020544
+              },
+              {
+                "text": "low wages. These conditions along with the rapid pace of change fuelled opposition",
+                "x": 0.034267,
+                "y": 0.575008,
+                "w": 0.847851,
+                "h": 0.020481
+              },
+              {
+                "text": "to industrialisation. A group of British workers who became known as 'Luddites' were",
+                "x": 0.034267,
+                "y": 0.595471,
+                "w": 0.854474,
+                "h": 0.020499
+              },
+              {
+                "text": "British weavers and textile workers who objected to the increased use of mechanised",
+                "x": 0.036475,
+                "y": 0.617571,
+                "w": 0.861098,
+                "h": 0.01888
+              },
+              {
+                "text": "looms and knitting frames. Many had spent years learning their craft, and they feared",
+                "x": 0.034267,
+                "y": 0.639501,
+                "w": 0.861098,
+                "h": 0.01887
+              },
+              {
+                "text": "that unskilled machine operators were robbing them of their livelihood. A few desperate",
+                "x": 0.036475,
+                "y": 0.659982,
+                "w": 0.878762,
+                "h": 0.018789
+              },
+              {
+                "text": "weavers began breaking into factories and smashing textile machines. They called",
+                "x": 0.034267,
+                "y": 0.680463,
+                "w": 0.836811,
+                "h": 0.020481
+              },
+              {
+                "text": "themselves Luddites after Ned Ludd, a young apprentice who was rumoured to have",
+                "x": 0.034267,
+                "y": 0.70257,
+                "w": 0.856682,
+                "h": 0.018854
+              },
+              {
+                "text": "wrecked a textile machine in 1779.",
+                "x": 0.034267,
+                "y": 0.72297,
+                "w": 0.357687,
+                "h": 0.0187
+              },
+              {
+                "text": "The first major instances of machine breaking took place in 1811 in the city of",
+                "x": 0.036475,
+                "y": 0.763694,
+                "w": 0.781612,
+                "h": 0.018776
+              },
+              {
+                "text": "Nottingham, and the practice soon spread across the country. Machine-breaking",
+                "x": 0.038683,
+                "y": 0.78417,
+                "w": 0.808108,
+                "h": 0.020486
+              },
+              {
+                "text": "Luddites attacked and burned factories, and in some cases they even exchanged",
+                "x": 0.036475,
+                "y": 0.80627,
+                "w": 0.821355,
+                "h": 0.018867
+              },
+              {
+                "text": "gunfire with company guards and soldiers. The workers wanted employers to stop",
+                "x": 0.036475,
+                "y": 0.826669,
+                "w": 0.827979,
+                "h": 0.0187
+              },
+              {
+                "text": "installing new machinery, but the British government responded to the uprisings by",
+                "x": 0.034267,
+                "y": 0.846925,
+                "w": 0.836811,
+                "h": 0.020544
+              },
+              {
+                "text": "making machine-breaking punishable by death. The unrest finally reached its peak in",
+                "x": 0.036475,
+                "y": 0.869149,
+                "w": 0.856682,
+                "h": 0.018738
+              },
+              {
+                "text": "April 1812, when a few Luddites were shot during an attack on a mill near Huddersfield.",
+                "x": 0.036475,
+                "y": 0.889569,
+                "w": 0.887594,
+                "h": 0.018799
+              },
+              {
+                "text": "In the days that followed, other Luddites were arrested, and dozens were hanged or",
+                "x": 0.034267,
+                "y": 0.909969,
+                "w": 0.852266,
+                "h": 0.0204
+              },
+              {
+                "text": "transported to Australia. By 1813, the Luddite resistance had all but vanished.",
+                "x": 0.034267,
+                "y": 0.930156,
+                "w": 0.788236,
+                "h": 0.020613
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-2/page-43.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.056347,
+                "y": 0.034476,
+                "w": 0.3334,
+                "h": 0.0187
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.056347,
+                "y": 0.078673,
+                "w": 0.887594,
+                "h": 0.018738
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.056347,
+                "y": 0.099075,
+                "w": 0.181051,
+                "h": 0.018816
+              },
+              {
+                "text": "B",
+                "x": 0.054139,
+                "y": 0.347273,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.054139,
+                "y": 0.828369,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Athletes and stress",
+                "x": 0.356627,
+                "y": 0.151775,
+                "w": 0.298072,
+                "h": 0.0221
+              },
+              {
+                "text": "It isn't easy being a professional athlete. Not only are the physical demands greater",
+                "x": 0.100506,
+                "y": 0.190664,
+                "w": 0.850058,
+                "h": 0.01891
+              },
+              {
+                "text": "than most people could handle, athletes also face intense psychological pressure",
+                "x": 0.104922,
+                "y": 0.211145,
+                "w": 0.823563,
+                "h": 0.018829
+              },
+              {
+                "text": "during competition. This is something that British tennis player Emma Raducanu",
+                "x": 0.104922,
+                "y": 0.231626,
+                "w": 0.812523,
+                "h": 0.018748
+              },
+              {
+                "text": "wrote about on social media following her withdrawal from the 2021 Wimbledon",
+                "x": 0.104922,
+                "y": 0.252074,
+                "w": 0.8059,
+                "h": 0.018771
+              },
+              {
+                "text": "tournament. Though the young player had been doing well in the tournament, she",
+                "x": 0.102714,
+                "y": 0.274174,
+                "w": 0.830187,
+                "h": 0.018895
+              },
+              {
+                "text": "began having difficulty regulating her breathing and heart rate during a match,",
+                "x": 0.104922,
+                "y": 0.294376,
+                "w": 0.790444,
+                "h": 0.020597
+              },
+              {
+                "text": "which she later attributed to 'the accumulation of the excitement and the buzz'.",
+                "x": 0.102714,
+                "y": 0.314857,
+                "w": 0.797068,
+                "h": 0.017116
+              },
+              {
+                "text": "For athletes, some level of performance stress is almost unavoidable. But there are",
+                "x": 0.104922,
+                "y": 0.347103,
+                "w": 0.843435,
+                "h": 0.01887
+              },
+              {
+                "text": "many different factors that dictate just how people's minds and bodies respond to",
+                "x": 0.104921,
+                "y": 0.367584,
+                "w": 0.821355,
+                "h": 0.020489
+              },
+              {
+                "text": "stressful events. Typically, stress is the result of an exchange between two factors:",
+                "x": 0.104921,
+                "y": 0.388065,
+                "w": 0.836811,
+                "h": 0.020481
+              },
+              {
+                "text": "demands and resources. An athlete may feel stressed about an event if they feel",
+                "x": 0.104922,
+                "y": 0.410173,
+                "w": 0.816939,
+                "h": 0.018854
+              },
+              {
+                "text": "the demands on them are greater than they can handle. These demands include",
+                "x": 0.102714,
+                "y": 0.430573,
+                "w": 0.816939,
+                "h": 0.0187
+              },
+              {
+                "text": "the high level of physical and mental effort required to succeed, and also the",
+                "x": 0.102714,
+                "y": 0.450815,
+                "w": 0.774988,
+                "h": 0.020557
+              },
+              {
+                "text": "athlete's concerns about the difficulty of the event, their chance of succeeding, and",
+                "x": 0.104921,
+                "y": 0.473039,
+                "w": 0.836811,
+                "h": 0.020481
+              },
+              {
+                "text": "any potential dangers such as injury. Resources, on the other hand, are a person's",
+                "x": 0.104922,
+                "y": 0.493472,
+                "w": 0.836811,
+                "h": 0.020529
+              },
+              {
+                "text": "ability to cope with these demands. These include factors such as the competitor's",
+                "x": 0.104922,
+                "y": 0.513872,
+                "w": 0.834603,
+                "h": 0.02061
+              },
+              {
+                "text": "degree of confidence, how much they believe they can control the situation's",
+                "x": 0.104922,
+                "y": 0.534272,
+                "w": 0.774988,
+                "h": 0.0204
+              },
+              {
+                "text": "outcome, and whether they're looking forward to the event or not.",
+                "x": 0.104922,
+                "y": 0.554527,
+                "w": 0.664591,
+                "h": 0.020544
+              },
+              {
+                "text": "Each new demand or change in circumstances affects whether a person responds",
+                "x": 0.104922,
+                "y": 0.588517,
+                "w": 0.832395,
+                "h": 0.018854
+              },
+              {
+                "text": "positively or negatively to stress. Typically, the more resources a person feels they",
+                "x": 0.104922,
+                "y": 0.608998,
+                "w": 0.832395,
+                "h": 0.020481
+              },
+              {
+                "text": "have in handling the situation, the more positive their stress response. This positive",
+                "x": 0.104922,
+                "y": 0.629471,
+                "w": 0.843435,
+                "h": 0.018745
+              },
+              {
+                "text": "stress response is called a challenge state. But should the person feel there are too",
+                "x": 0.102714,
+                "y": 0.651571,
+                "w": 0.847851,
+                "h": 0.01887
+              },
+              {
+                "text": "many demands placed on them, the more likely they are to experience a negative",
+                "x": 0.104922,
+                "y": 0.671971,
+                "w": 0.825771,
+                "h": 0.0204
+              },
+              {
+                "text": "stress response - known as a threat state. Research shows that the challenge",
+                "x": 0.102656,
+                "y": 0.685925,
+                "w": 0.79721,
+                "h": 0.026918
+              },
+              {
+                "text": "states lead to good performance, while threat states lead to poorer performance.",
+                "x": 0.104922,
+                "y": 0.714453,
+                "w": 0.814731,
+                "h": 0.018738
+              },
+              {
+                "text": "So, in Emma Raducanu's case, a much larger audience, higher expectations and",
+                "x": 0.104922,
+                "y": 0.73487,
+                "w": 0.821355,
+                "h": 0.018801
+              },
+              {
+                "text": "facing a more skilful opponent, may all have led her to feel there were greater",
+                "x": 0.102714,
+                "y": 0.75527,
+                "w": 0.790444,
+                "h": 0.018882
+              },
+              {
+                "text": "demands being placed on her at Wimbledon - but she didn't have the resources to",
+                "x": 0.104922,
+                "y": 0.77546,
+                "w": 0.836811,
+                "h": 0.01891
+              },
+              {
+                "text": "tackle them. This led to her experiencing a threat response.",
+                "x": 0.102714,
+                "y": 0.79594,
+                "w": 0.607185,
+                "h": 0.018829
+              },
+              {
+                "text": "Our challenge and threat responses essentially influence how our body responds",
+                "x": 0.102652,
+                "y": 0.828143,
+                "w": 0.821478,
+                "h": 0.020894
+              },
+              {
+                "text": "to stressful situations, as both affect the production of adrenaline and cortisol -",
+                "x": 0.100506,
+                "y": 0.850411,
+                "w": 0.8059,
+                "h": 0.017058
+              },
+              {
+                "text": "also known as 'stress hormones'. During a challenge state, adrenaline increases",
+                "x": 0.104798,
+                "y": 0.864605,
+                "w": 0.815042,
+                "h": 0.026892
+              },
+              {
+                "text": "the amount of blood pumped from the heart and expands the blood vessels, which",
+                "x": 0.102714,
+                "y": 0.891269,
+                "w": 0.834603,
+                "h": 0.020585
+              },
+              {
+                "text": "allows more energy to be delivered to the muscles and brain. This increase of",
+                "x": 0.102714,
+                "y": 0.911669,
+                "w": 0.790444,
+                "h": 0.0187
+              },
+              {
+                "text": "blood and decrease of pressure in the blood vessels has been consistently related",
+                "x": 0.104793,
+                "y": 0.930464,
+                "w": 0.832627,
+                "h": 0.023166
+              },
+              {
+                "text": "to superior sport performance in everything from cricket batting, to golf putting and",
+                "x": 0.100506,
+                "y": 0.95238,
+                "w": 0.834603,
+                "h": 0.020489
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-2/page-44.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "football penalty taking. But during a threat state, cortisol inhibits the positive effect",
+                "x": 0.08505,
+                "y": 0.032776,
+                "w": 0.827979,
+                "h": 0.0204
+              },
+              {
+                "text": "of adrenaline, resulting in tighter blood vessels, higher blood pressure, slower",
+                "x": 0.087258,
+                "y": 0.054706,
+                "w": 0.78382,
+                "h": 0.02057
+              },
+              {
+                "text": "psychological responses, and a faster heart rate. In short, a threat state makes",
+                "x": 0.087258,
+                "y": 0.075187,
+                "w": 0.79486,
+                "h": 0.020489
+              },
+              {
+                "text": "people more anxious - they make worse decisions and perform more poorly. In",
+                "x": 0.08498,
+                "y": 0.095614,
+                "w": 0.801619,
+                "h": 0.02125
+              },
+              {
+                "text": "tennis players, cortisol has been associated with more unsuccessful serves and",
+                "x": 0.082842,
+                "y": 0.117775,
+                "w": 0.808108,
+                "h": 0.020597
+              },
+              {
+                "text": "greater anxiety.",
+                "x": 0.08505,
+                "y": 0.141423,
+                "w": 0.158972,
+                "h": 0.017152
+              },
+              {
+                "text": "E That said, anxiety is also a common experience for athletes when they're under",
+                "x": 0.038683,
+                "y": 0.170475,
+                "w": 0.852266,
+                "h": 0.0204
+              },
+              {
+                "text": "pressure. Anxiety can increase heart rate and perspiration, cause heart palpitations,",
+                "x": 0.087258,
+                "y": 0.190664,
+                "w": 0.847851,
+                "h": 0.02061
+              },
+              {
+                "text": "muscle tremors and shortness of breath, as well as headaches, nausea, stomach",
+                "x": 0.08505,
+                "y": 0.212888,
+                "w": 0.823563,
+                "h": 0.018786
+              },
+              {
+                "text": "pain, weakness and a desire to escape in more extreme cases. Anxiety can also",
+                "x": 0.08505,
+                "y": 0.233369,
+                "w": 0.812523,
+                "h": 0.020481
+              },
+              {
+                "text": "reduce concentration and self-control and cause overthinking. The intensity with",
+                "x": 0.08505,
+                "y": 0.253774,
+                "w": 0.808108,
+                "h": 0.018814
+              },
+              {
+                "text": "which a person experiences anxiety depends on the demands and resources they",
+                "x": 0.087258,
+                "y": 0.275874,
+                "w": 0.827979,
+                "h": 0.0187
+              },
+              {
+                "text": "have. Anxiety may also manifest itself in the form of excitement or nervousness",
+                "x": 0.082842,
+                "y": 0.296119,
+                "w": 0.803692,
+                "h": 0.018854
+              },
+              {
+                "text": "depending on the stress response. Negative stress responses can be damaging to",
+                "x": 0.085002,
+                "y": 0.316376,
+                "w": 0.834713,
+                "h": 0.020958
+              },
+              {
+                "text": "both physical and mental health-and repeated episodes of anxiety coupled with",
+                "x": 0.087258,
+                "y": 0.338773,
+                "w": 0.816939,
+                "h": 0.018789
+              },
+              {
+                "text": "negative responses can increase risk of heart disease and depression.",
+                "x": 0.087258,
+                "y": 0.357473,
+                "w": 0.715374,
+                "h": 0.022313
+              },
+              {
+                "text": "F",
+                "x": 0.038683,
+                "y": 0.393173,
+                "w": 0.048575,
+                "h": 0.0136
+              },
+              {
+                "text": "But there are many ways athletes can ensure they respond positively under",
+                "x": 0.08505,
+                "y": 0.391473,
+                "w": 0.766157,
+                "h": 0.018816
+              },
+              {
+                "text": "pressure. Positive stress responses can be promoted through the language that",
+                "x": 0.087258,
+                "y": 0.411873,
+                "w": 0.808108,
+                "h": 0.0204
+              },
+              {
+                "text": "they and others - such as coaches or parents - use. Psychologists can also help",
+                "x": 0.08505,
+                "y": 0.432077,
+                "w": 0.821355,
+                "h": 0.020595
+              },
+              {
+                "text": "athletes change how they see their physiological responses - such as helping them",
+                "x": 0.087258,
+                "y": 0.454301,
+                "w": 0.843435,
+                "h": 0.018771
+              },
+              {
+                "text": "see a higher heart rate as excitement, rather than nerves. Developing psychological",
+                "x": 0.087258,
+                "y": 0.474772,
+                "w": 0.845643,
+                "h": 0.020491
+              },
+              {
+                "text": "skills, such as visualisation, can also help decrease physiological responses to",
+                "x": 0.087175,
+                "y": 0.494596,
+                "w": 0.795027,
+                "h": 0.021891
+              },
+              {
+                "text": "threat. Visualisation may involve the athlete recreating a mental picture of a time",
+                "x": 0.08505,
+                "y": 0.517272,
+                "w": 0.812523,
+                "h": 0.0187
+              },
+              {
+                "text": "when they performed well, or picturing themselves doing well in the future. This",
+                "x": 0.087258,
+                "y": 0.535789,
+                "w": 0.799276,
+                "h": 0.022282
+              },
+              {
+                "text": "can help create a feeling of control over the stressful event. Recreating competitive",
+                "x": 0.087258,
+                "y": 0.558013,
+                "w": 0.836811,
+                "h": 0.020481
+              },
+              {
+                "text": "pressure during training can also help athletes learn how to deal with stress. An",
+                "x": 0.087258,
+                "y": 0.578471,
+                "w": 0.803692,
+                "h": 0.020504
+              },
+              {
+                "text": "example of this might be scoring athletes against their peers to create a sense of",
+                "x": 0.087258,
+                "y": 0.598871,
+                "w": 0.819147,
+                "h": 0.020585
+              },
+              {
+                "text": "competition. This would increase the demands which players experience compared",
+                "x": 0.087186,
+                "y": 0.620492,
+                "w": 0.841377,
+                "h": 0.021029
+              },
+              {
+                "text": "to a normal training session, while still allowing them to practise coping with stress.",
+                "x": 0.08505,
+                "y": 0.641244,
+                "w": 0.841227,
+                "h": 0.020527
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-2/page-47.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.051931,
+                "y": 0.032776,
+                "w": 0.331192,
+                "h": 0.017137
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.051803,
+                "y": 0.07521,
+                "w": 0.887853,
+                "h": 0.023463
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.051931,
+                "y": 0.097375,
+                "w": 0.178843,
+                "h": 0.018773
+              },
+              {
+                "text": "An inquiry into the existence of the",
+                "x": 0.113753,
+                "y": 0.131375,
+                "w": 0.777196,
+                "h": 0.037501
+              },
+              {
+                "text": "gifted child",
+                "x": 0.371723,
+                "y": 0.179167,
+                "w": 0.254633,
+                "h": 0.040414
+              },
+              {
+                "text": "Let us start by looking at a modern 'genius',",
+                "x": 0.051931,
+                "y": 0.236774,
+                "w": 0.426133,
+                "h": 0.017076
+              },
+              {
+                "text": "Maryam Mirzakhani, who died at the early",
+                "x": 0.051931,
+                "y": 0.257174,
+                "w": 0.399638,
+                "h": 0.017157
+              },
+              {
+                "text": "age of 40. She was the only woman to win the",
+                "x": 0.049723,
+                "y": 0.277381,
+                "w": 0.439381,
+                "h": 0.017192
+              },
+              {
+                "text": "Fields Medal - the mathematical equivalent",
+                "x": 0.047515,
+                "y": 0.297862,
+                "w": 0.419509,
+                "h": 0.018811
+              },
+              {
+                "text": "of a Nobel prize. It would be easy to assume",
+                "x": 0.047515,
+                "y": 0.318343,
+                "w": 0.421717,
+                "h": 0.018738
+              },
+              {
+                "text": "that someone as special as Mirzakhani must",
+                "x": 0.049723,
+                "y": 0.338773,
+                "w": 0.415094,
+                "h": 0.015302
+              },
+              {
+                "text": "have been one of those 'gifted' children,",
+                "x": 0.049723,
+                "y": 0.359173,
+                "w": 0.381974,
+                "h": 0.01887
+              },
+              {
+                "text": "those who have an extraordinary ability in a",
+                "x": 0.049443,
+                "y": 0.376475,
+                "w": 0.415615,
+                "h": 0.021604
+              },
+              {
+                "text": "specific sphere of activity or knowledge. But",
+                "x": 0.047515,
+                "y": 0.399831,
+                "w": 0.426133,
+                "h": 0.018842
+              },
+              {
+                "text": "look closer and a different story emerges.",
+                "x": 0.047308,
+                "y": 0.419591,
+                "w": 0.393489,
+                "h": 0.019049
+              },
+              {
+                "text": "Mirzakhani was born in Tehran, Iran. She",
+                "x": 0.049488,
+                "y": 0.437802,
+                "w": 0.391312,
+                "h": 0.021112
+              },
+              {
+                "text": "went to a highly selective girls' school but",
+                "x": 0.047515,
+                "y": 0.461172,
+                "w": 0.401846,
+                "h": 0.018839
+              },
+              {
+                "text": "maths wasn't her interest - reading was. She",
+                "x": 0.049449,
+                "y": 0.477015,
+                "w": 0.420137,
+                "h": 0.024838
+              },
+              {
+                "text": "loved novels and would read anything she",
+                "x": 0.047395,
+                "y": 0.501932,
+                "w": 0.397654,
+                "h": 0.019182
+              },
+              {
+                "text": "could lay her hands on. As for maths, she did",
+                "x": 0.047515,
+                "y": 0.524024,
+                "w": 0.426133,
+                "h": 0.018748
+              },
+              {
+                "text": "rather poorly at it for the first couple of years",
+                "x": 0.047515,
+                "y": 0.544472,
+                "w": 0.426133,
+                "h": 0.017028
+              },
+              {
+                "text": "in her middle school, but became interested",
+                "x": 0.047515,
+                "y": 0.563171,
+                "w": 0.412886,
+                "h": 0.017066
+              },
+              {
+                "text": "when her elder brother told her about what",
+                "x": 0.047515,
+                "y": 0.585271,
+                "w": 0.404054,
+                "h": 0.013704
+              },
+              {
+                "text": "he'd learned. He shared a famous maths",
+                "x": 0.047419,
+                "y": 0.603823,
+                "w": 0.379972,
+                "h": 0.0172
+              },
+              {
+                "text": "problem from a magazine that fascinated",
+                "x": 0.047515,
+                "y": 0.625992,
+                "w": 0.38639,
+                "h": 0.017078
+              },
+              {
+                "text": "her - and she was hooked.",
+                "x": 0.04718,
+                "y": 0.643236,
+                "w": 0.25241,
+                "h": 0.020365
+              },
+              {
+                "text": "In adult life it is clear that she was curious,",
+                "x": 0.043099,
+                "y": 0.687271,
+                "w": 0.399638,
+                "h": 0.0204
+              },
+              {
+                "text": "excited by what she did and also resolute in",
+                "x": 0.045307,
+                "y": 0.70748,
+                "w": 0.404054,
+                "h": 0.01889
+              },
+              {
+                "text": "the face of setbacks. One of her comments",
+                "x": 0.045307,
+                "y": 0.727961,
+                "w": 0.395222,
+                "h": 0.015409
+              },
+              {
+                "text": "sums it up. 'Of course, the most rewarding",
+                "x": 0.047515,
+                "y": 0.748442,
+                "w": 0.393014,
+                "h": 0.018738
+              },
+              {
+                "text": "part is the \"Aha\" moment, the excitement of",
+                "x": 0.045307,
+                "y": 0.76887,
+                "w": 0.412886,
+                "h": 0.018791
+              },
+              {
+                "text": "discovery and enjoyment of understanding",
+                "x": 0.045307,
+                "y": 0.78757,
+                "w": 0.395222,
+                "h": 0.022315
+              },
+              {
+                "text": "something new ... But most of the time, doing",
+                "x": 0.047415,
+                "y": 0.809303,
+                "w": 0.433,
+                "h": 0.0194
+              },
+              {
+                "text": "mathematics for me is like being on a long hike",
+                "x": 0.045307,
+                "y": 0.831673,
+                "w": 0.439381,
+                "h": 0.018796
+              },
+              {
+                "text": "with no trail and no end in sight.' That trail",
+                "x": 0.045307,
+                "y": 0.850411,
+                "w": 0.39743,
+                "h": 0.020481
+              },
+              {
+                "text": "took her to the heights of original research",
+                "x": 0.043099,
+                "y": 0.872569,
+                "w": 0.395222,
+                "h": 0.018804
+              },
+              {
+                "text": "into mathematics.",
+                "x": 0.042801,
+                "y": 0.891141,
+                "w": 0.168434,
+                "h": 0.018957
+              },
+              {
+                "text": "Is her background unusual? Apparently not.",
+                "x": 0.043099,
+                "y": 0.933642,
+                "w": 0.40847,
+                "h": 0.020527
+              },
+              {
+                "text": "Most Nobel prize winners were unexceptional",
+                "x": 0.049723,
+                "y": 0.954123,
+                "w": 0.421717,
+                "h": 0.017045
+              },
+              {
+                "text": "48",
+                "x": 0.043099,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "in childhood. Einstein was slow to talk as a",
+                "x": 0.506767,
+                "y": 0.236774,
+                "w": 0.401846,
+                "h": 0.015333
+              },
+              {
+                "text": "baby. He failed the general part of the entry test",
+                "x": 0.511183,
+                "y": 0.258874,
+                "w": 0.437173,
+                "h": 0.0187
+              },
+              {
+                "text": "to Zurich Polytechnic - though they let him in",
+                "x": 0.502351,
+                "y": 0.279124,
+                "w": 0.434965,
+                "h": 0.018849
+              },
+              {
+                "text": "because of high physics and maths scores.",
+                "x": 0.508975,
+                "y": 0.299605,
+                "w": 0.388598,
+                "h": 0.018768
+              },
+              {
+                "text": "He struggled at work initially, but he kept",
+                "x": 0.508975,
+                "y": 0.320073,
+                "w": 0.38639,
+                "h": 0.018751
+              },
+              {
+                "text": "plugging away and eventually rewrote the",
+                "x": 0.508975,
+                "y": 0.340473,
+                "w": 0.388598,
+                "h": 0.018832
+              },
+              {
+                "text": "laws of Newtonian mechanics with his theory",
+                "x": 0.506572,
+                "y": 0.358626,
+                "w": 0.422138,
+                "h": 0.021079
+              },
+              {
+                "text": "of relativity.",
+                "x": 0.508865,
+                "y": 0.380862,
+                "w": 0.115034,
+                "h": 0.019523
+              },
+              {
+                "text": "There has been a considerable amount of",
+                "x": 0.511183,
+                "y": 0.422055,
+                "w": 0.377558,
+                "h": 0.015318
+              },
+              {
+                "text": "research on high performance over the last",
+                "x": 0.508975,
+                "y": 0.442472,
+                "w": 0.393014,
+                "h": 0.018801
+              },
+              {
+                "text": "century that suggests it goes way beyond tested",
+                "x": 0.508975,
+                "y": 0.462872,
+                "w": 0.437173,
+                "h": 0.0204
+              },
+              {
+                "text": "intelligence. On top of that, research is clear",
+                "x": 0.506437,
+                "y": 0.481456,
+                "w": 0.411235,
+                "h": 0.024706
+              },
+              {
+                "text": "that brains are flexible, new neural pathways",
+                "x": 0.506767,
+                "y": 0.503543,
+                "w": 0.412886,
+                "h": 0.020529
+              },
+              {
+                "text": "can be created, and IQ isn't fixed. For example,",
+                "x": 0.506767,
+                "y": 0.524024,
+                "w": 0.439381,
+                "h": 0.020481
+              },
+              {
+                "text": "just because you can read stories with hundreds",
+                "x": 0.50445,
+                "y": 0.544414,
+                "w": 0.441798,
+                "h": 0.021866
+              },
+              {
+                "text": "of pages at the age of five doesn't mean you",
+                "x": 0.508975,
+                "y": 0.564871,
+                "w": 0.404054,
+                "h": 0.018852
+              },
+              {
+                "text": "will still be ahead of your contemporaries in",
+                "x": 0.506767,
+                "y": 0.586774,
+                "w": 0.40847,
+                "h": 0.018897
+              },
+              {
+                "text": "your teens.",
+                "x": 0.508885,
+                "y": 0.608651,
+                "w": 0.103954,
+                "h": 0.01444
+              },
+              {
+                "text": "While the jury is out on giftedness being",
+                "x": 0.506767,
+                "y": 0.648171,
+                "w": 0.37535,
+                "h": 0.018783
+              },
+              {
+                "text": "innate and other factors potentially making",
+                "x": 0.506446,
+                "y": 0.666335,
+                "w": 0.395841,
+                "h": 0.022751
+              },
+              {
+                "text": "the difference, what is certain is that the",
+                "x": 0.506767,
+                "y": 0.68897,
+                "w": 0.368727,
+                "h": 0.0187
+              },
+              {
+                "text": "behaviours associated with high levels of",
+                "x": 0.504559,
+                "y": 0.709223,
+                "w": 0.384182,
+                "h": 0.018847
+              },
+              {
+                "text": "performance are replicable and most can be",
+                "x": 0.506767,
+                "y": 0.729704,
+                "w": 0.401846,
+                "h": 0.018766
+              },
+              {
+                "text": "taught - even traits such as curiosity.",
+                "x": 0.506767,
+                "y": 0.75187,
+                "w": 0.340023,
+                "h": 0.017053
+              },
+              {
+                "text": "According to my colleague Prof Deborah",
+                "x": 0.508975,
+                "y": 0.792454,
+                "w": 0.377558,
+                "h": 0.018915
+              },
+              {
+                "text": "Eyre, with whom l've collaborated on the",
+                "x": 0.506767,
+                "y": 0.812935,
+                "w": 0.384182,
+                "h": 0.017134
+              },
+              {
+                "text": "book Great Minds and How to Grow Them,",
+                "x": 0.506767,
+                "y": 0.833416,
+                "w": 0.401846,
+                "h": 0.018753
+              },
+              {
+                "text": "the latest neuroscience and psychological",
+                "x": 0.506767,
+                "y": 0.853869,
+                "w": 0.384182,
+                "h": 0.017023
+              },
+              {
+                "text": "research suggests most individuals can reach",
+                "x": 0.506767,
+                "y": 0.874269,
+                "w": 0.410678,
+                "h": 0.017104
+              },
+              {
+                "text": "levels of performance associated in school with",
+                "x": 0.506767,
+                "y": 0.894669,
+                "w": 0.437173,
+                "h": 0.015442
+              },
+              {
+                "text": "the gifted and talented. However, they must",
+                "x": 0.504559,
+                "y": 0.914904,
+                "w": 0.404054,
+                "h": 0.018865
+              },
+              {
+                "text": "be taught the right attitudes and approaches",
+                "x": 0.506767,
+                "y": 0.935385,
+                "w": 0.399638,
+                "h": 0.018783
+              },
+              {
+                "text": "to their learning and develop the attributes of",
+                "x": 0.504559,
+                "y": 0.955866,
+                "w": 0.417301,
+                "h": 0.018738
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-2/page-48.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "high performers - curiosity, persistence and",
+                "x": 0.043099,
+                "y": 0.032776,
+                "w": 0.404054,
+                "h": 0.01888
+              },
+              {
+                "text": "they enjoyed themselves. Bloom's outstanding",
+                "x": 0.504559,
+                "y": 0.032776,
+                "w": 0.430549,
+                "h": 0.01888
+              },
+              {
+                "text": "hard work, for example - an approach Eyre",
+                "x": 0.043099,
+                "y": 0.052963,
+                "w": 0.404054,
+                "h": 0.018913
+              },
+              {
+                "text": "people had worked very hard and consistently",
+                "x": 0.504559,
+                "y": 0.052963,
+                "w": 0.423925,
+                "h": 0.018913
+              },
+              {
+                "text": "calls 'high performance learning'. Critically,",
+                "x": 0.045307,
+                "y": 0.071701,
+                "w": 0.410678,
+                "h": 0.020575
+              },
+              {
+                "text": "at something they had become hooked on when",
+                "x": 0.502351,
+                "y": 0.073444,
+                "w": 0.441589,
+                "h": 0.018832
+              },
+              {
+                "text": "they need the right support in developing those at a young age, and their parents all emerged as",
+                "x": 0.045307,
+                "y": 0.093925,
+                "w": 0.898633,
+                "h": 0.018751
+              },
+              {
+                "text": "approaches at home as well as at school.",
+                "x": 0.043099,
+                "y": 0.116075,
+                "w": 0.377558,
+                "h": 0.017068
+              },
+              {
+                "text": "having strong work ethics themselves.",
+                "x": 0.504559,
+                "y": 0.112662,
+                "w": 0.357687,
+                "h": 0.020481
+              },
+              {
+                "text": "Prof Anders Ericsson, an eminent education",
+                "x": 0.045307,
+                "y": 0.155175,
+                "w": 0.404054,
+                "h": 0.0187
+              },
+              {
+                "text": "Eyre says we know how high performers",
+                "x": 0.502351,
+                "y": 0.155175,
+                "w": 0.379766,
+                "h": 0.0187
+              },
+              {
+                "text": "psychologist at Florida State University, US,",
+                "x": 0.045307,
+                "y": 0.175412,
+                "w": 0.412886,
+                "h": 0.020562
+              },
+              {
+                "text": "learn. From that she has developed a high",
+                "x": 0.500144,
+                "y": 0.177156,
+                "w": 0.390806,
+                "h": 0.018819
+              },
+              {
+                "text": "is the co-author of Peak: Secrets from the New performing learning approach. She is working",
+                "x": 0.043099,
+                "y": 0.195893,
+                "w": 0.885386,
+                "h": 0.020481
+              },
+              {
+                "text": "Science of Expertise. After research going",
+                "x": 0.045307,
+                "y": 0.218074,
+                "w": 0.38639,
+                "h": 0.018781
+              },
+              {
+                "text": "on this with a group of schools, both in Britain",
+                "x": 0.502351,
+                "y": 0.218074,
+                "w": 0.432757,
+                "h": 0.018781
+              },
+              {
+                "text": "back to 1980 into diverse achievements, from",
+                "x": 0.045307,
+                "y": 0.238474,
+                "w": 0.428341,
+                "h": 0.018862
+              },
+              {
+                "text": "and abroad. Some spin-off research, which",
+                "x": 0.502351,
+                "y": 0.238474,
+                "w": 0.39743,
+                "h": 0.018862
+              },
+              {
+                "text": "music to memory to sport, he doesn't think",
+                "x": 0.045307,
+                "y": 0.258874,
+                "w": 0.395222,
+                "h": 0.0187
+              },
+              {
+                "text": "looked in detail at 24 of the 3,000 children",
+                "x": 0.502351,
+                "y": 0.258874,
+                "w": 0.395222,
+                "h": 0.0172
+              },
+              {
+                "text": "unique and innate talents are at the heart of",
+                "x": 0.043099,
+                "y": 0.279124,
+                "w": 0.401846,
+                "h": 0.018849
+              },
+              {
+                "text": "being studied who were succeeding despite",
+                "x": 0.502351,
+                "y": 0.279124,
+                "w": 0.401846,
+                "h": 0.018849
+              },
+              {
+                "text": "performance. Deliberate practice, that stretches",
+                "x": 0.043099,
+                "y": 0.299605,
+                "w": 0.437173,
+                "h": 0.018768
+              },
+              {
+                "text": "difficult circumstances, found something",
+                "x": 0.500144,
+                "y": 0.299605,
+                "w": 0.381974,
+                "h": 0.020481
+              },
+              {
+                "text": "you every step of the way, and around 10,000",
+                "x": 0.043099,
+                "y": 0.320073,
+                "w": 0.421717,
+                "h": 0.018751
+              },
+              {
+                "text": "remarkable. Half were getting free school",
+                "x": 0.502351,
+                "y": 0.320073,
+                "w": 0.38639,
+                "h": 0.018751
+              },
+              {
+                "text": "hours of it, is what produces the goods. It's",
+                "x": 0.043099,
+                "y": 0.340473,
+                "w": 0.39743,
+                "h": 0.018832
+              },
+              {
+                "text": "meals because of poverty, more than half were",
+                "x": 0.502351,
+                "y": 0.340473,
+                "w": 0.430549,
+                "h": 0.020575
+              },
+              {
+                "text": "not a magic number - the highest performers",
+                "x": 0.045307,
+                "y": 0.362573,
+                "w": 0.412886,
+                "h": 0.017213
+              },
+              {
+                "text": "living with a single parent, and four in five",
+                "x": 0.502351,
+                "y": 0.360873,
+                "w": 0.395222,
+                "h": 0.0204
+              },
+              {
+                "text": "move on to doing a whole lot more, of course.",
+                "x": 0.045307,
+                "y": 0.381093,
+                "w": 0.426133,
+                "h": 0.02058
+              },
+              {
+                "text": "were living in disadvantaged areas. Interviews",
+                "x": 0.502351,
+                "y": 0.381093,
+                "w": 0.428341,
+                "h": 0.02058
+              },
+              {
+                "text": "Ericsson's memory research is particularly",
+                "x": 0.045121,
+                "y": 0.39954,
+                "w": 0.391205,
+                "h": 0.022637
+              },
+              {
+                "text": "uncovered strong evidence of an adult or adults",
+                "x": 0.502351,
+                "y": 0.401574,
+                "w": 0.439381,
+                "h": 0.018799
+              },
+              {
+                "text": "interesting because random students, trained",
+                "x": 0.043099,
+                "y": 0.423773,
+                "w": 0.410678,
+                "h": 0.018763
+              },
+              {
+                "text": "in the child's life who valued and supported",
+                "x": 0.502081,
+                "y": 0.420536,
+                "w": 0.406755,
+                "h": 0.022727
+              },
+              {
+                "text": "in memory techniques for the study, went on",
+                "x": 0.043099,
+                "y": 0.444172,
+                "w": 0.410678,
+                "h": 0.018844
+              },
+              {
+                "text": "education, either in the immediate or extended",
+                "x": 0.502001,
+                "y": 0.437741,
+                "w": 0.429047,
+                "h": 0.028368
+              },
+              {
+                "text": "to outperform others thought to have innately",
+                "x": 0.043099,
+                "y": 0.464572,
+                "w": 0.419509,
+                "h": 0.0204
+              },
+              {
+                "text": "family or in the child's wider community.",
+                "x": 0.504559,
+                "y": 0.464572,
+                "w": 0.384182,
+                "h": 0.0187
+              },
+              {
+                "text": "superior memories - those who you might",
+                "x": 0.043099,
+                "y": 0.484805,
+                "w": 0.390806,
+                "h": 0.018867
+              },
+              {
+                "text": "Children talked about the need to work hard at",
+                "x": 0.502351,
+                "y": 0.484805,
+                "w": 0.430549,
+                "h": 0.017167
+              },
+              {
+                "text": "call gifted.",
+                "x": 0.043099,
+                "y": 0.507029,
+                "w": 0.101565,
+                "h": 0.017043
+              },
+              {
+                "text": "school, to listen in class and keep trying.",
+                "x": 0.502351,
+                "y": 0.505286,
+                "w": 0.377558,
+                "h": 0.020486
+              },
+              {
+                "text": "But it is perhaps the work of Benjamin Bloom,",
+                "x": 0.045307,
+                "y": 0.546172,
+                "w": 0.432757,
+                "h": 0.020557
+              },
+              {
+                "text": "another distinguished American educationist",
+                "x": 0.043099,
+                "y": 0.566571,
+                "w": 0.412886,
+                "h": 0.018895
+              },
+              {
+                "text": "working in the 1980s, that gives the most",
+                "x": 0.043099,
+                "y": 0.588517,
+                "w": 0.381974,
+                "h": 0.018854
+              },
+              {
+                "text": "pause for thought. Bloom's team looked at a",
+                "x": 0.043099,
+                "y": 0.608998,
+                "w": 0.40847,
+                "h": 0.018773
+              },
+              {
+                "text": "group of extraordinarily high achieving people",
+                "x": 0.043099,
+                "y": 0.629471,
+                "w": 0.430549,
+                "h": 0.018745
+              },
+              {
+                "text": "in disciplines as varied as ballet, swimming,",
+                "x": 0.043099,
+                "y": 0.649871,
+                "w": 0.410678,
+                "h": 0.018827
+              },
+              {
+                "text": "piano, tennis, maths, sculpture and neurology.",
+                "x": 0.043099,
+                "y": 0.670271,
+                "w": 0.423925,
+                "h": 0.0204
+              },
+              {
+                "text": "He found a pattern of parents encouraging",
+                "x": 0.043099,
+                "y": 0.68897,
+                "w": 0.390806,
+                "h": 0.0204
+              },
+              {
+                "text": "and supporting their children, often in areas",
+                "x": 0.045307,
+                "y": 0.710966,
+                "w": 0.401846,
+                "h": 0.017104
+              },
+              {
+                "text": "Let us end with Einstein, the epitome of a",
+                "x": 0.504559,
+                "y": 0.546172,
+                "w": 0.384182,
+                "h": 0.020557
+              },
+              {
+                "text": "genius. He clearly had curiosity, character and",
+                "x": 0.502351,
+                "y": 0.568271,
+                "w": 0.426133,
+                "h": 0.0187
+              },
+              {
+                "text": "determination. He struggled against rejection",
+                "x": 0.502351,
+                "y": 0.588517,
+                "w": 0.417301,
+                "h": 0.018854
+              },
+              {
+                "text": "in early life but was undeterred. Did he think",
+                "x": 0.502351,
+                "y": 0.608998,
+                "w": 0.415094,
+                "h": 0.018773
+              },
+              {
+                "text": "he was a genius or even gifted? He once wrote:",
+                "x": 0.504559,
+                "y": 0.629471,
+                "w": 0.434965,
+                "h": 0.017002
+              },
+              {
+                "text": "'It's not that I'm so smart, it's just that I stay",
+                "x": 0.501965,
+                "y": 0.646006,
+                "w": 0.411395,
+                "h": 0.025263
+              },
+              {
+                "text": "with problems longer. Most people say it is the",
+                "x": 0.502351,
+                "y": 0.670271,
+                "w": 0.432757,
+                "h": 0.018908
+              },
+              {
+                "text": "intellect which makes a great scientist. They",
+                "x": 0.500144,
+                "y": 0.687271,
+                "w": 0.410678,
+                "h": 0.0221
+              },
+              {
+                "text": "are wrong: it is character:'",
+                "x": 0.50418,
+                "y": 0.709478,
+                "w": 0.243863,
+                "h": 0.022463
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-2/page-51.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.42282,
+                "y": 0.034303,
+                "w": 0.141399,
+                "h": 0.022444
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.043099,
+                "y": 0.102475,
+                "w": 0.258329,
+                "h": 0.018903
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.043099,
+                "y": 0.146652,
+                "w": 0.496787,
+                "h": 0.018738
+              },
+              {
+                "text": "The plans below show a harbour in 2000 and how it looks today.",
+                "x": 0.069594,
+                "y": 0.201074,
+                "w": 0.69771,
+                "h": 0.018786
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.069594,
+                "y": 0.241874,
+                "w": 0.841227,
+                "h": 0.0221
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.067386,
+                "y": 0.262129,
+                "w": 0.384182,
+                "h": 0.018844
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.042739,
+                "y": 0.313367,
+                "w": 0.256917,
+                "h": 0.02216
+              },
+              {
+                "text": "Porth Harbour (in 2000)",
+                "x": 0.402994,
+                "y": 0.35059,
+                "w": 0.187675,
+                "h": 0.013683
+              },
+              {
+                "text": "W-",
+                "x": 0.25727,
+                "y": 0.394873,
+                "w": 0.019871,
+                "h": 0.0102
+              },
+              {
+                "text": "›each",
+                "x": 0.561966,
+                "y": 0.384673,
+                "w": 0.030911,
+                "h": 0.0102
+              },
+              {
+                "text": "→ E",
+                "x": 0.301429,
+                "y": 0.393173,
+                "w": 0.026495,
+                "h": 0.01363
+              },
+              {
+                "text": "Showers",
+                "x": 0.294805,
+                "y": 0.442472,
+                "w": 0.044159,
+                "h": 0.0085
+              },
+              {
+                "text": "S toilets",
+                "x": 0.294805,
+                "y": 0.452558,
+                "w": 0.044159,
+                "h": 0.008715
+              },
+              {
+                "text": "Car",
+                "x": 0.303636,
+                "y": 0.473072,
+                "w": 0.024287,
+                "h": 0.0102
+              },
+              {
+                "text": "park",
+                "x": 0.301429,
+                "y": 0.483272,
+                "w": 0.028703,
+                "h": 0.0085
+              },
+              {
+                "text": "Car",
+                "x": 0.303636,
+                "y": 0.554672,
+                "w": 0.024287,
+                "h": 0.0102
+              },
+              {
+                "text": "park",
+                "x": 0.299221,
+                "y": 0.564871,
+                "w": 0.030911,
+                "h": 0.0102
+              },
+              {
+                "text": "Marina",
+                "x": 0.35882,
+                "y": 0.450936,
+                "w": 0.04198,
+                "h": 0.010272
+              },
+              {
+                "text": "(private",
+                "x": 0.356627,
+                "y": 0.461172,
+                "w": 0.046367,
+                "h": 0.0102
+              },
+              {
+                "text": "yachts)",
+                "x": 0.356627,
+                "y": 0.469672,
+                "w": 0.046367,
+                "h": 0.0102
+              },
+              {
+                "text": "Fishing",
+                "x": 0.365459,
+                "y": 0.537672,
+                "w": 0.046367,
+                "h": 0.0102
+              },
+              {
+                "text": "boats",
+                "x": 0.369875,
+                "y": 0.547872,
+                "w": 0.035327,
+                "h": 0.0085
+              },
+              {
+                "text": "Dock",
+                "x": 0.526639,
+                "y": 0.442472,
+                "w": 0.035327,
+                "h": 0.0119
+              },
+              {
+                "text": "-Passenger",
+                "x": 0.539887,
+                "y": 0.484972,
+                "w": 0.07507,
+                "h": 0.0119
+              },
+              {
+                "text": "terries",
+                "x": 0.55755,
+                "y": 0.495172,
+                "w": 0.046367,
+                "h": 0.0153
+              },
+              {
+                "text": "[Lifeboat]",
+                "x": 0.528847,
+                "y": 0.552972,
+                "w": 0.06403,
+                "h": 0.0187
+              },
+              {
+                "text": "Road",
+                "x": 0.433905,
+                "y": 0.578471,
+                "w": 0.039743,
+                "h": 0.017
+              },
+              {
+                "text": "-ePublic beach",
+                "x": 0.524431,
+                "y": 0.595071,
+                "w": 0.105462,
+                "h": 0.0398
+              },
+              {
+                "text": "Porth Harbour (today)",
+                "x": 0.405202,
+                "y": 0.682171,
+                "w": 0.178843,
+                "h": 0.0136
+              },
+              {
+                "text": "Public +/-",
+                "x": 0.55755,
+                "y": 0.70597,
+                "w": 0.090526,
+                "h": 0.015454
+              },
+              {
+                "text": "beach",
+                "x": 0.55755,
+                "y": 0.71447,
+                "w": 0.037535,
+                "h": 0.0102
+              },
+              {
+                "text": "Castle",
+                "x": 0.650284,
+                "y": 0.592071,
+                "w": 0.039743,
+                "h": 0.0102
+              },
+              {
+                "text": "(disused)",
+                "x": 0.639244,
+                "y": 0.602271,
+                "w": 0.059614,
+                "h": 0.0085
+              },
+              {
+                "text": "Main roa",
+                "x": 0.232982,
+                "y": 0.826669,
+                "w": 0.01104,
+                "h": 0.0374
+              },
+              {
+                "text": "Showers",
+                "x": 0.288151,
+                "y": 0.772178,
+                "w": 0.05305,
+                "h": 0.010384
+              },
+              {
+                "text": "& toilets",
+                "x": 0.290389,
+                "y": 0.782432,
+                "w": 0.050783,
+                "h": 0.008715
+              },
+              {
+                "text": "Car",
+                "x": 0.303636,
+                "y": 0.80287,
+                "w": 0.022079,
+                "h": 0.0102
+              },
+              {
+                "text": "park",
+                "x": 0.299221,
+                "y": 0.813069,
+                "w": 0.030911,
+                "h": 0.0102
+              },
+              {
+                "text": "Showers",
+                "x": 0.285973,
+                "y": 0.843669,
+                "w": 0.057407,
+                "h": 0.0102
+              },
+              {
+                "text": "& toilets",
+                "x": 0.290389,
+                "y": 0.853869,
+                "w": 0.050783,
+                "h": 0.0102
+              },
+              {
+                "text": "Car",
+                "x": 0.303636,
+                "y": 0.884469,
+                "w": 0.024287,
+                "h": 0.0102
+              },
+              {
+                "text": "park",
+                "x": 0.299221,
+                "y": 0.894669,
+                "w": 0.030911,
+                "h": 0.0102
+              },
+              {
+                "text": "Fishing",
+                "x": 0.358835,
+                "y": 0.78757,
+                "w": 0.044159,
+                "h": 0.0102
+              },
+              {
+                "text": "boats",
+                "x": 0.363251,
+                "y": 0.79777,
+                "w": 0.035327,
+                "h": 0.0085
+              },
+              {
+                "text": "Marina",
+                "x": 0.365459,
+                "y": 0.862369,
+                "w": 0.044159,
+                "h": 0.0102
+              },
+              {
+                "text": "(private",
+                "x": 0.363251,
+                "y": 0.872569,
+                "w": 0.048575,
+                "h": 0.0102
+              },
+              {
+                "text": "yachts)",
+                "x": 0.363251,
+                "y": 0.881069,
+                "w": 0.046367,
+                "h": 0.0102
+              },
+              {
+                "text": "- Passenger",
+                "x": 0.533263,
+                "y": 0.816421,
+                "w": 0.079486,
+                "h": 0.010458
+              },
+              {
+                "text": "ferries",
+                "x": 0.559758,
+                "y": 0.826669,
+                "w": 0.041951,
+                "h": 0.0102
+              },
+              {
+                "text": "Cales & shops |(Leb",
+                "x": 0.429251,
+                "y": 0.871747,
+                "w": 0.163865,
+                "h": 0.030544
+              },
+              {
+                "text": "Road",
+                "x": 0.436113,
+                "y": 0.909969,
+                "w": 0.039743,
+                "h": 0.0119
+              },
+              {
+                "text": "_Pivalie trene",
+                "x": 0.531055,
+                "y": 0.935385,
+                "w": 0.094942,
+                "h": 0.029196
+              },
+              {
+                "text": "(or the hotel)",
+                "x": 0.537679,
+                "y": 0.950637,
+                "w": 0.081694,
+                "h": 0.027453
+              },
+              {
+                "text": "Hotel",
+                "x": 0.652492,
+                "y": 0.926969,
+                "w": 0.033119,
+                "h": 0.0102
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-2/page-52.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.047515,
+                "y": 0.032776,
+                "w": 0.256122,
+                "h": 0.01888
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.047515,
+                "y": 0.07693,
+                "w": 0.492372,
+                "h": 0.017045
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.047515,
+                "y": 0.117775,
+                "w": 0.31132,
+                "h": 0.018854
+              },
+              {
+                "text": "The working week should be shorter and workers should have a",
+                "x": 0.07401,
+                "y": 0.172175,
+                "w": 0.693294,
+                "h": 0.0187
+              },
+              {
+                "text": "longer weekend.",
+                "x": 0.071802,
+                "y": 0.19415,
+                "w": 0.181051,
+                "h": 0.018824
+              },
+              {
+                "text": "Do you agree or disagree?",
+                "x": 0.07401,
+                "y": 0.235074,
+                "w": 0.287033,
+                "h": 0.018776
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.047515,
+                "y": 0.287774,
+                "w": 0.808108,
+                "h": 0.018804
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.047515,
+                "y": 0.309874,
+                "w": 0.262745,
+                "h": 0.0187
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.047515,
+                "y": 0.35059,
+                "w": 0.253914,
+                "h": 0.018783
+              },
+              {
+                "text": "→ &p. 131|",
+                "x": 0.749452,
+                "y": 0.995962,
+                "w": 0.146102,
+                "h": 0.025212
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-32.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.040891,
+                "y": 0.032776,
+                "w": 0.1391,
+                "h": 0.030645
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.39637,
+                "y": 0.102475,
+                "w": 0.181051,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.043004,
+                "y": 0.176937,
+                "w": 0.110587,
+                "h": 0.019376
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.217527,
+                "y": 0.177156,
+                "w": 0.198715,
+                "h": 0.018819
+              },
+              {
+                "text": "Questions 1-6",
+                "x": 0.047515,
+                "y": 0.219774,
+                "w": 0.16118,
+                "h": 0.017081
+              },
+              {
+                "text": "Complete the form below.",
+                "x": 0.045307,
+                "y": 0.262129,
+                "w": 0.258329,
+                "h": 0.017144
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.043099,
+                "y": 0.301348,
+                "w": 0.589521,
+                "h": 0.020481
+              },
+              {
+                "text": "Guitar Group",
+                "x": 0.394162,
+                "y": 0.355773,
+                "w": 0.198715,
+                "h": 0.0255
+              },
+              {
+                "text": "Coordinator:",
+                "x": 0.069426,
+                "y": 0.399185,
+                "w": 0.128398,
+                "h": 0.018576
+              },
+              {
+                "text": "Level:",
+                "x": 0.069594,
+                "y": 0.432273,
+                "w": 0.06403,
+                "h": 0.017
+              },
+              {
+                "text": "Place:",
+                "x": 0.069594,
+                "y": 0.464572,
+                "w": 0.066238,
+                "h": 0.017
+              },
+              {
+                "text": "Gary 1 ....",
+                "x": 0.394162,
+                "y": 0.398088,
+                "w": 0.094942,
+                "h": 0.018885
+              },
+              {
+                "text": "Time:",
+                "x": 0.069594,
+                "y": 0.561472,
+                "w": 0.059614,
+                "h": 0.0153
+              },
+              {
+                "text": "Recommended website:",
+                "x": 0.069594,
+                "y": 0.592003,
+                "w": 0.249498,
+                "h": 0.018768
+              },
+              {
+                "text": "2",
+                "x": 0.394162,
+                "y": 0.430573,
+                "w": 0.017664,
+                "h": 0.0187
+              },
+              {
+                "text": "the 3",
+                "x": 0.391954,
+                "y": 0.462872,
+                "w": 0.055199,
+                "h": 0.017139
+              },
+              {
+                "text": "4.....",
+                "x": 0.39637,
+                "y": 0.495172,
+                "w": 0.050783,
+                "h": 0.017
+              },
+              {
+                "text": "First floor, Room T347",
+                "x": 0.394162,
+                "y": 0.527472,
+                "w": 0.229626,
+                "h": 0.022262
+              },
+              {
+                "text": "Thursday morning at 5",
+                "x": 0.394162,
+                "y": 0.559756,
+                "w": 0.234042,
+                "h": 0.020481
+              },
+              {
+                "text": "The perfect 6",
+                "x": 0.39637,
+                "y": 0.588517,
+                "w": 0.145724,
+                "h": 0.022254
+              },
+              {
+                "text": "Street",
+                "x": 0.597272,
+                "y": 0.495117,
+                "w": 0.066281,
+                "h": 0.01541
+              },
+              {
+                "text": "33",
+                "x": 0.915237,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-33.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 7-10",
+                "x": 0.049723,
+                "y": 0.031076,
+                "w": 0.176636,
+                "h": 0.018837
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.049723,
+                "y": 0.073444,
+                "w": 0.262745,
+                "h": 0.018832
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.049723,
+                "y": 0.112662,
+                "w": 0.441589,
+                "h": 0.020481
+              },
+              {
+                "text": "Time",
+                "x": 0.100506,
+                "y": 0.201074,
+                "w": 0.061822,
+                "h": 0.0187
+              },
+              {
+                "text": "A typical 45-minute guitar lesson",
+                "x": 0.252854,
+                "y": 0.165375,
+                "w": 0.490164,
+                "h": 0.0255
+              },
+              {
+                "text": "Activity",
+                "x": 0.372083,
+                "y": 0.201074,
+                "w": 0.090526,
+                "h": 0.0238
+              },
+              {
+                "text": "Notes",
+                "x": 0.747277,
+                "y": 0.202459,
+                "w": 0.068759,
+                "h": 0.021031
+              },
+              {
+                "text": "using an app or by",
+                "x": 0.62158,
+                "y": 0.229883,
+                "w": 0.192091,
+                "h": 0.020491
+              },
+              {
+                "text": "5 minutes",
+                "x": 0.069564,
+                "y": 0.241765,
+                "w": 0.101627,
+                "h": 0.017218
+              },
+              {
+                "text": "tuning guitars",
+                "x": 0.219735,
+                "y": 0.245135,
+                "w": 0.141308,
+                "h": 0.017139
+              },
+              {
+                "text": "10 minutes",
+                "x": 0.054139,
+                "y": 0.296119,
+                "w": 0.117021,
+                "h": 0.015454
+              },
+              {
+                "text": "strumming chords using our thumbs",
+                "x": 0.219735,
+                "y": 0.292874,
+                "w": 0.368727,
+                "h": 0.0221
+              },
+              {
+                "text": "15 minutes",
+                "x": 0.056111,
+                "y": 0.347974,
+                "w": 0.115284,
+                "h": 0.018999
+              },
+              {
+                "text": "playing songs",
+                "x": 0.219735,
+                "y": 0.347103,
+                "w": 0.145724,
+                "h": 0.02057
+              },
+              {
+                "text": "10 minutes",
+                "x": 0.054052,
+                "y": 0.401313,
+                "w": 0.117194,
+                "h": 0.017719
+              },
+              {
+                "text": "playing single notes and simple tunes",
+                "x": 0.219735,
+                "y": 0.401574,
+                "w": 0.384182,
+                "h": 0.020499
+              },
+              {
+                "text": "7",
+                "x": 0.623788,
+                "y": 0.257174,
+                "w": 0.015456,
+                "h": 0.0187
+              },
+              {
+                "text": "keeping time while the teacher",
+                "x": 0.62158,
+                "y": 0.28261,
+                "w": 0.313528,
+                "h": 0.018763
+              },
+              {
+                "text": "is 8...",
+                "x": 0.619373,
+                "y": 0.308174,
+                "w": 0.057407,
+                "h": 0.0204
+              },
+              {
+                "text": "often listening to a",
+                "x": 0.62158,
+                "y": 0.335338,
+                "w": 0.187675,
+                "h": 0.020481
+              },
+              {
+                "text": "9",
+                "x": 0.62158,
+                "y": 0.362573,
+                "w": 0.017664,
+                "h": 0.0187
+              },
+              {
+                "text": "of a song",
+                "x": 0.822503,
+                "y": 0.364098,
+                "w": 0.099357,
+                "h": 0.018875
+              },
+              {
+                "text": "playing together, then",
+                "x": 0.62158,
+                "y": 0.389773,
+                "w": 0.223002,
+                "h": 0.020516
+              },
+              {
+                "text": "10.",
+                "x": 0.623788,
+                "y": 0.415273,
+                "w": 0.037535,
+                "h": 0.0187
+              },
+              {
+                "text": "5 minutes",
+                "x": 0.067353,
+                "y": 0.454251,
+                "w": 0.10384,
+                "h": 0.017242
+              },
+              {
+                "text": "noting things to practise at home",
+                "x": 0.219735,
+                "y": 0.454301,
+                "w": 0.3334,
+                "h": 0.020481
+              },
+              {
+                "text": "34",
+                "x": 0.043099,
+                "y": 0.994968,
+                "w": 0.033119,
+                "h": 0.0204
+              },
+              {
+                "text": "→p.122 Ü p. 103",
+                "x": 0.104922,
+                "y": 0.996668,
+                "w": 0.273785,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-34.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.047515,
+                "y": 0.032776,
+                "w": 0.132477,
+                "h": 0.017137
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.219735,
+                "y": 0.031076,
+                "w": 0.214171,
+                "h": 0.018837
+              },
+              {
+                "text": "Questions 11-16",
+                "x": 0.047515,
+                "y": 0.075187,
+                "w": 0.189883,
+                "h": 0.017089
+              },
+              {
+                "text": "Choosethe correct letter, A, B or C.",
+                "x": 0.049723,
+                "y": 0.116075,
+                "w": 0.362103,
+                "h": 0.020554
+              },
+              {
+                "text": "Working as a lifeboat volunteer",
+                "x": 0.279349,
+                "y": 0.161904,
+                "w": 0.430549,
+                "h": 0.022224
+              },
+              {
+                "text": "11 What made David leave London and move to Northsea?",
+                "x": 0.047515,
+                "y": 0.197636,
+                "w": 0.618224,
+                "h": 0.017038
+              },
+              {
+                "text": "A He was eager to develop a hobby.",
+                "x": 0.098298,
+                "y": 0.231626,
+                "w": 0.393014,
+                "h": 0.017048
+              },
+              {
+                "text": "B He wanted to work shorter hours.",
+                "x": 0.098298,
+                "y": 0.252074,
+                "w": 0.390806,
+                "h": 0.0153
+              },
+              {
+                "text": "C He found his job in website design unsatisfying.",
+                "x": 0.098298,
+                "y": 0.270774,
+                "w": 0.529907,
+                "h": 0.020552
+              },
+              {
+                "text": "12 The Lifeboat Institution in Northsea was built with money provided by",
+                "x": 0.047515,
+                "y": 0.303074,
+                "w": 0.746285,
+                "h": 0.018756
+              },
+              {
+                "text": "A a local organisation.",
+                "x": 0.100506,
+                "y": 0.337073,
+                "w": 0.253914,
+                "h": 0.017002
+              },
+              {
+                "text": "B a local resident.",
+                "x": 0.100506,
+                "y": 0.359173,
+                "w": 0.209755,
+                "h": 0.01364
+              },
+              {
+                "text": "C the local council.",
+                "x": 0.100506,
+                "y": 0.379573,
+                "w": 0.218586,
+                "h": 0.015465
+              },
+              {
+                "text": "13 In his health assessment, the doctor was concerned about the fact that David",
+                "x": 0.047515,
+                "y": 0.408473,
+                "w": 0.830187,
+                "h": 0.020554
+              },
+              {
+                "text": "A might be colour blind.",
+                "x": 0.098298,
+                "y": 0.444172,
+                "w": 0.269369,
+                "h": 0.018844
+              },
+              {
+                "text": "B was rather short-sighted.",
+                "x": 0.098298,
+                "y": 0.464572,
+                "w": 0.304696,
+                "h": 0.0187
+              },
+              {
+                "text": "C had undergone eye surgery.",
+                "x": 0.098298,
+                "y": 0.486548,
+                "w": 0.335608,
+                "h": 0.017124
+              },
+              {
+                "text": "14 After arriving at the lifeboat station, they aim to launch the boat within",
+                "x": 0.047515,
+                "y": 0.515572,
+                "w": 0.748493,
+                "h": 0.0204
+              },
+              {
+                "text": "A five minutes.",
+                "x": 0.100506,
+                "y": 0.549572,
+                "w": 0.178843,
+                "h": 0.015414
+              },
+              {
+                "text": "B",
+                "x": 0.100506,
+                "y": 0.571671,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "six to eight minutes.",
+                "x": 0.144665,
+                "y": 0.571522,
+                "w": 0.207547,
+                "h": 0.017149
+              },
+              {
+                "text": "C eight and a half minutes.",
+                "x": 0.098298,
+                "y": 0.592003,
+                "w": 0.302488,
+                "h": 0.018768
+              },
+              {
+                "text": "15 As a 'helmsman', David has the responsibility of deciding",
+                "x": 0.049723,
+                "y": 0.622506,
+                "w": 0.624848,
+                "h": 0.020565
+              },
+              {
+                "text": "A who will be the members of his crew.",
+                "x": 0.098298,
+                "y": 0.656496,
+                "w": 0.423925,
+                "h": 0.017175
+              },
+              {
+                "text": "B what equipment it will be necessary to take.",
+                "x": 0.098298,
+                "y": 0.676977,
+                "w": 0.494579,
+                "h": 0.018794
+              },
+              {
+                "text": "C if the lifeboat should be launched.",
+                "x": 0.100506,
+                "y": 0.697458,
+                "w": 0.390806,
+                "h": 0.017013
+              },
+              {
+                "text": "16 As well as going out on the lifeboat, David",
+                "x": 0.049723,
+                "y": 0.729704,
+                "w": 0.474708,
+                "h": 0.020481
+              },
+              {
+                "text": "A gives talks on safety at sea.",
+                "x": 0.100506,
+                "y": 0.761951,
+                "w": 0.331192,
+                "h": 0.017119
+              },
+              {
+                "text": "helps with fundraising.",
+                "x": 0.144665,
+                "y": 0.782432,
+                "w": 0.231834,
+                "h": 0.018738
+              },
+              {
+                "text": "recruits new volunteers.",
+                "x": 0.146872,
+                "y": 0.80627,
+                "w": 0.24729,
+                "h": 0.015381
+              },
+              {
+                "text": "35",
+                "x": 0.919653,
+                "y": 0.996668,
+                "w": 0.026495,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-35.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 17 and 18",
+                "x": 0.047515,
+                "y": 0.032776,
+                "w": 0.231834,
+                "h": 0.015394
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.047515,
+                "y": 0.075187,
+                "w": 0.271577,
+                "h": 0.018789
+              },
+              {
+                "text": "Which TWO things does David say about the lifeboat volunteer training?",
+                "x": 0.045307,
+                "y": 0.116075,
+                "w": 0.733037,
+                "h": 0.020554
+              },
+              {
+                "text": "A The residential course developed his leadership skills.",
+                "x": 0.095922,
+                "y": 0.146596,
+                "w": 0.598691,
+                "h": 0.021961
+              },
+              {
+                "text": "B The training in use of ropes and knots was quite brief.",
+                "x": 0.09609,
+                "y": 0.168775,
+                "w": 0.593937,
+                "h": 0.018839
+              },
+              {
+                "text": "C The training exercises have built up his mental strength.",
+                "x": 0.09609,
+                "y": 0.189174,
+                "w": 0.618224,
+                "h": 0.0204
+              },
+              {
+                "text": "D The casualty care activities were particularly challenging for him.",
+                "x": 0.09609,
+                "y": 0.209402,
+                "w": 0.704334,
+                "h": 0.020572
+              },
+              {
+                "text": "E The wave tank activities provided practice in survival techniques.",
+                "x": 0.09609,
+                "y": 0.231626,
+                "w": 0.706542,
+                "h": 0.020481
+              },
+              {
+                "text": "Questions 19 and 20",
+                "x": 0.047515,
+                "y": 0.286074,
+                "w": 0.231834,
+                "h": 0.0153
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.045307,
+                "y": 0.326873,
+                "w": 0.273785,
+                "h": 0.0204
+              },
+              {
+                "text": "Which TWO things does David find most motivating about the work he does?",
+                "x": 0.043099,
+                "y": 0.369327,
+                "w": 0.781612,
+                "h": 0.018745
+              },
+              {
+                "text": "A working as part of a team",
+                "x": 0.09609,
+                "y": 0.401574,
+                "w": 0.306904,
+                "h": 0.017099
+              },
+              {
+                "text": "B experiences when working in winter",
+                "x": 0.09609,
+                "y": 0.422055,
+                "w": 0.412886,
+                "h": 0.017018
+              },
+              {
+                "text": "Cbeing thanked by those he has helped",
+                "x": 0.093882,
+                "y": 0.442472,
+                "w": 0.439381,
+                "h": 0.020544
+              },
+              {
+                "text": "the fact that it keeps him fit",
+                "x": 0.122585,
+                "y": 0.464572,
+                "w": 0.298072,
+                "h": 0.015439
+              },
+              {
+                "text": "E the chance to develop new equipment",
+                "x": 0.093882,
+                "y": 0.484805,
+                "w": 0.439381,
+                "h": 0.018867
+              },
+              {
+                "text": "36",
+                "x": 0.038683,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "→ O p. 122 p. 105|",
+                "x": 0.104922,
+                "y": 0.993268,
+                "w": 0.271577,
+                "h": 0.0238
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            17,
+            18
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            19,
+            20
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-36.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.125853,
+                "h": 0.017208
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.206487,
+                "y": 0.035968,
+                "w": 0.227418,
+                "h": 0.017208
+              },
+              {
+                "text": "Questions 21-24",
+                "x": 0.047515,
+                "y": 0.078673,
+                "w": 0.187675,
+                "h": 0.017002
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.047515,
+                "y": 0.124428,
+                "w": 0.362103,
+                "h": 0.018847
+              },
+              {
+                "text": "21 At first, Don thought the topic of recycling footwear might be too",
+                "x": 0.045307,
+                "y": 0.156675,
+                "w": 0.691087,
+                "h": 0.0189
+              },
+              {
+                "text": "A limited in scope.",
+                "x": 0.098298,
+                "y": 0.189174,
+                "w": 0.214171,
+                "h": 0.015434
+              },
+              {
+                "text": "B hard to research.",
+                "x": 0.098298,
+                "y": 0.209402,
+                "w": 0.223002,
+                "h": 0.015688
+              },
+              {
+                "text": "C boring for listeners.",
+                "x": 0.09609,
+                "y": 0.231626,
+                "w": 0.245082,
+                "h": 0.018748
+              },
+              {
+                "text": "22 When discussing trainers, Bella and Don disagree about",
+                "x": 0.045307,
+                "y": 0.262129,
+                "w": 0.620432,
+                "h": 0.020544
+              },
+              {
+                "text": "A how popular they are among young people.",
+                "x": 0.093882,
+                "y": 0.294376,
+                "w": 0.492372,
+                "h": 0.020597
+              },
+              {
+                "text": "B how suitable they are for school.",
+                "x": 0.09609,
+                "y": 0.3166,
+                "w": 0.379766,
+                "h": 0.018773
+              },
+              {
+                "text": "Chow quickly they wear out.",
+                "x": 0.09609,
+                "y": 0.337073,
+                "w": 0.317944,
+                "h": 0.018745
+              },
+              {
+                "text": "23 Bella says that she sometimes recycles shoes because",
+                "x": 0.045307,
+                "y": 0.369327,
+                "w": 0.609393,
+                "h": 0.017045
+              },
+              {
+                "text": "A they no longer fit.",
+                "x": 0.09609,
+                "y": 0.401574,
+                "w": 0.22521,
+                "h": 0.018799
+              },
+              {
+                "text": "B she no longer likes them.",
+                "x": 0.098137,
+                "y": 0.422014,
+                "w": 0.3028,
+                "h": 0.018049
+              },
+              {
+                "text": "C they are no longer in fashion.",
+                "x": 0.09609,
+                "y": 0.444172,
+                "w": 0.344439,
+                "h": 0.018844
+              },
+              {
+                "text": "24 What did the article say that confused Don?",
+                "x": 0.043099,
+                "y": 0.474772,
+                "w": 0.494579,
+                "h": 0.020491
+              },
+              {
+                "text": "A Public consumption of footwear has risen.",
+                "x": 0.09609,
+                "y": 0.508772,
+                "w": 0.4725,
+                "h": 0.017
+              },
+              {
+                "text": "B Less footwear is recycled now than in the past.",
+                "x": 0.098298,
+                "y": 0.529172,
+                "w": 0.521075,
+                "h": 0.017076
+              },
+              {
+                "text": "C People dispose of more footwear than they used to.",
+                "x": 0.093882,
+                "y": 0.549572,
+                "w": 0.574065,
+                "h": 0.0189
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-37.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 25-28",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.194299,
+                "h": 0.017208
+              },
+              {
+                "text": "What reasons did the recycling manager give for rejecting footwear, according to",
+                "x": 0.045307,
+                "y": 0.078673,
+                "w": 0.816939,
+                "h": 0.020481
+              },
+              {
+                "text": "the students?",
+                "x": 0.043099,
+                "y": 0.099075,
+                "w": 0.143516,
+                "h": 0.017073
+              },
+              {
+                "text": "Choose FOUR answers from the box and write the correct letter, A-F, next to",
+                "x": 0.047332,
+                "y": 0.135526,
+                "w": 0.784206,
+                "h": 0.027573
+              },
+              {
+                "text": "Questions 25-28.",
+                "x": 0.047515,
+                "y": 0.161904,
+                "w": 0.183259,
+                "h": 0.018771
+              },
+              {
+                "text": "Reasons",
+                "x": 0.447153,
+                "y": 0.214674,
+                "w": 0.099357,
+                "h": 0.0187
+              },
+              {
+                "text": "A one shoe was missing",
+                "x": 0.219735,
+                "y": 0.246878,
+                "w": 0.278201,
+                "h": 0.020496
+              },
+              {
+                "text": "B",
+                "x": 0.219735,
+                "y": 0.279274,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "the colour of one shoe had faded",
+                "x": 0.263893,
+                "y": 0.277381,
+                "w": 0.344439,
+                "h": 0.020592
+              },
+              {
+                "text": "one shoe had a hole in it",
+                "x": 0.261686,
+                "y": 0.311371,
+                "w": 0.262745,
+                "h": 0.018903
+              },
+              {
+                "text": "D",
+                "x": 0.219735,
+                "y": 0.343873,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.219735,
+                "y": 0.376173,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.219735,
+                "y": 0.408473,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "the shoes were brand new",
+                "x": 0.266101,
+                "y": 0.343873,
+                "w": 0.273785,
+                "h": 0.017175
+              },
+              {
+                "text": "the shoes were too dirty",
+                "x": 0.268309,
+                "y": 0.376173,
+                "w": 0.245082,
+                "h": 0.020608
+              },
+              {
+                "text": "the stitching on the shoes was broken",
+                "x": 0.266101,
+                "y": 0.408473,
+                "w": 0.388598,
+                "h": 0.020554
+              },
+              {
+                "text": "Footwear",
+                "x": 0.096031,
+                "y": 0.472853,
+                "w": 0.106098,
+                "h": 0.017438
+              },
+              {
+                "text": "25 the high-heeled shoes",
+                "x": 0.045307,
+                "y": 0.507029,
+                "w": 0.278201,
+                "h": 0.018743
+              },
+              {
+                "text": "26 the ankle boots",
+                "x": 0.045307,
+                "y": 0.542762,
+                "w": 0.207547,
+                "h": 0.01701
+              },
+              {
+                "text": "27 the baby shoes",
+                "x": 0.045021,
+                "y": 0.576628,
+                "w": 0.21025,
+                "h": 0.019728
+              },
+              {
+                "text": "28 the trainers",
+                "x": 0.043099,
+                "y": 0.608998,
+                "w": 0.170012,
+                "h": 0.015373
+              },
+              {
+                "text": "Questions 29-30",
+                "x": 0.045307,
+                "y": 0.663468,
+                "w": 0.192091,
+                "h": 0.017002
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.045307,
+                "y": 0.70748,
+                "w": 0.368727,
+                "h": 0.02059
+              },
+              {
+                "text": "29 Why did the project to make 'new' shoes out of old shoes fail?",
+                "x": 0.045146,
+                "y": 0.735205,
+                "w": 0.678141,
+                "h": 0.024815
+              },
+              {
+                "text": "A People believed the 'new' pairs of shoes were unhygienic.",
+                "x": 0.09609,
+                "y": 0.77057,
+                "w": 0.638096,
+                "h": 0.020577
+              },
+              {
+                "text": "B There were not enough good parts to use in the old shoes.",
+                "x": 0.098298,
+                "y": 0.792454,
+                "w": 0.642512,
+                "h": 0.017431
+              },
+              {
+                "text": "C The shoes in the 'new' pairs were not completely alike.",
+                "x": 0.09609,
+                "y": 0.812935,
+                "w": 0.604977,
+                "h": 0.018834
+              },
+              {
+                "text": "30 Bella and Don agree that they can present their topic",
+                "x": 0.045307,
+                "y": 0.846925,
+                "w": 0.587313,
+                "h": 0.018844
+              },
+              {
+                "text": "A from a new angle.",
+                "x": 0.097951,
+                "y": 0.877212,
+                "w": 0.234731,
+                "h": 0.018105
+              },
+              {
+                "text": "B with relevant images.",
+                "x": 0.097932,
+                "y": 0.897453,
+                "w": 0.267883,
+                "h": 0.020196
+              },
+              {
+                "text": "in a straightforward way.",
+                "x": 0.126808,
+                "y": 0.921629,
+                "w": 0.26758,
+                "h": 0.018679
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-38.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.042892,
+                "y": 0.032006,
+                "w": 0.113019,
+                "h": 0.02024
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.215319,
+                "y": 0.034476,
+                "w": 0.216379,
+                "h": 0.01718
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.045307,
+                "y": 0.07693,
+                "w": 0.269369,
+                "h": 0.017045
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.045307,
+                "y": 0.117775,
+                "w": 0.428341,
+                "h": 0.017111
+              },
+              {
+                "text": "Tardigrades",
+                "x": 0.400675,
+                "y": 0.163197,
+                "w": 0.181274,
+                "h": 0.026456
+              },
+              {
+                "text": "more than 1,000 species, 0.05-1.2 millimetres long",
+                "x": 0.111353,
+                "y": 0.208735,
+                "w": 0.519228,
+                "h": 0.02561
+              },
+              {
+                "text": "also known as water 'bears' (due to how they 31",
+                "x": 0.111392,
+                "y": 0.234873,
+                "w": 0.48614,
+                "h": 0.026003
+              },
+              {
+                "text": "'moss piglets'",
+                "x": 0.109337,
+                "y": 0.262129,
+                "w": 0.143516,
+                "h": 0.018844
+              },
+              {
+                "text": "....) and",
+                "x": 0.740739,
+                "y": 0.241693,
+                "w": 0.073003,
+                "h": 0.017362
+              },
+              {
+                "text": "Physical appearance",
+                "x": 0.060763,
+                "y": 0.303074,
+                "w": 0.227418,
+                "h": 0.020499
+              },
+              {
+                "text": "a 32",
+                "x": 0.111545,
+                "y": 0.333595,
+                "w": 0.046367,
+                "h": 0.017078
+              },
+              {
+                "text": "claws or 33",
+                "x": 0.111545,
+                "y": 0.364098,
+                "w": 0.117021,
+                "h": 0.015688
+              },
+              {
+                "text": "round body and four pairs of legs",
+                "x": 0.323508,
+                "y": 0.331852,
+                "w": 0.337815,
+                "h": 0.020521
+              },
+              {
+                "text": "for gripping",
+                "x": 0.394,
+                "y": 0.360342,
+                "w": 0.119553,
+                "h": 0.023162
+              },
+              {
+                "text": "absence of respiratory organs",
+                "x": 0.111053,
+                "y": 0.390755,
+                "w": 0.303444,
+                "h": 0.026026
+              },
+              {
+                "text": "body filled with a liquid that carries both 34",
+                "x": 0.111545,
+                "y": 0.422055,
+                "w": 0.432757,
+                "h": 0.020481
+              },
+              {
+                "text": "mouth shaped like a 35",
+                "x": 0.109337,
+                "y": 0.454301,
+                "w": 0.240666,
+                "h": 0.018771
+              },
+              {
+                "text": ".with teeth called stylets",
+                "x": 0.447153,
+                "y": 0.450815,
+                "w": 0.306904,
+                "h": 0.020557
+              },
+              {
+                "text": "..and blood",
+                "x": 0.696651,
+                "y": 0.420312,
+                "w": 0.117021,
+                "h": 0.020481
+              },
+              {
+                "text": "Habitat",
+                "x": 0.060417,
+                "y": 0.494128,
+                "w": 0.082385,
+                "h": 0.019088
+              },
+              {
+                "text": "• often found at the bottom of a lake or on plants",
+                "x": 0.05838,
+                "y": 0.522127,
+                "w": 0.525934,
+                "h": 0.02613
+              },
+              {
+                "text": "very resilient and can exist in very low or high 36",
+                "x": 0.109149,
+                "y": 0.552217,
+                "w": 0.495059,
+                "h": 0.026297
+              },
+              {
+                "text": "Cryptobiosis",
+                "x": 0.060763,
+                "y": 0.597171,
+                "w": 0.141308,
+                "h": 0.0187
+              },
+              {
+                "text": "In dry conditions, they roll into a ball called a 'tun'.",
+                "x": 0.109337,
+                "y": 0.625992,
+                "w": 0.505619,
+                "h": 0.020481
+              },
+              {
+                "text": "They stay alive with a much lower metabolism than usual.",
+                "x": 0.111545,
+                "y": 0.654971,
+                "w": 0.582897,
+                "h": 0.0204
+              },
+              {
+                "text": "• Atype of 37",
+                "x": 0.058555,
+                "y": 0.687271,
+                "w": 0.176636,
+                "h": 0.018903
+              },
+              {
+                "text": "ensures their DNA is not damaged.",
+                "x": 0.400786,
+                "y": 0.682171,
+                "w": 0.357687,
+                "h": 0.024002
+              },
+              {
+                "text": "Research is underway to find out how many days they can stay",
+                "x": 0.109337,
+                "y": 0.72297,
+                "w": 0.642512,
+                "h": 0.0204
+              },
+              {
+                "text": "alive in 38",
+                "x": 0.109119,
+                "y": 0.749321,
+                "w": 0.106419,
+                "h": 0.018698
+              },
+              {
+                "text": "Feeding",
+                "x": 0.060616,
+                "y": 0.792239,
+                "w": 0.090819,
+                "h": 0.019561
+              },
+              {
+                "text": "consume liquids, e.g., those found in moss or 39",
+                "x": 0.109337,
+                "y": 0.821569,
+                "w": 0.492372,
+                "h": 0.020562
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.853869,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "may eat other tardigrades",
+                "x": 0.109337,
+                "y": 0.852154,
+                "w": 0.264953,
+                "h": 0.018738
+              },
+              {
+                "text": "Conservation status",
+                "x": 0.060763,
+                "y": 0.892969,
+                "w": 0.220794,
+                "h": 0.017142
+              },
+              {
+                "text": "• They are not considered to be 40",
+                "x": 0.058555,
+                "y": 0.923569,
+                "w": 0.388598,
+                "h": 0.018789
+              },
+              {
+                "text": "→ О p. 122",
+                "x": 0.623788,
+                "y": 0.999878,
+                "w": 0.143516,
+                "h": 0.02059
+              },
+              {
+                "text": "p. 107",
+                "x": 0.780418,
+                "y": 0.999663,
+                "w": 0.101835,
+                "h": 0.021211
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-41.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 1-7",
+                "x": 0.056347,
+                "y": 0.035968,
+                "w": 0.163388,
+                "h": 0.017208
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.056347,
+                "y": 0.078673,
+                "w": 0.267161,
+                "h": 0.017002
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.056347,
+                "y": 0.119475,
+                "w": 0.638096,
+                "h": 0.018897
+              },
+              {
+                "text": "Write your answers in boxes 1-7 on your answer sheet.",
+                "x": 0.056347,
+                "y": 0.160161,
+                "w": 0.560818,
+                "h": 0.020514
+              },
+              {
+                "text": "Britain's Industrial Revolution",
+                "x": 0.281557,
+                "y": 0.211145,
+                "w": 0.446005,
+                "h": 0.022229
+              },
+              {
+                "text": "Steam power",
+                "x": 0.073633,
+                "y": 0.258437,
+                "w": 0.146337,
+                "h": 0.017757
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.297974,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "Newcomen's steam engine was used in mines to remove water.",
+                "x": 0.120377,
+                "y": 0.296119,
+                "w": 0.651343,
+                "h": 0.020554
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.345573,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "In Watt and Boulton's steam engine, the movement of the 1 ....",
+                "x": 0.120377,
+                "y": 0.343873,
+                "w": 0.629264,
+                "h": 0.0221
+              },
+              {
+                "text": "was linked to a gear system.",
+                "x": 0.122585,
+                "y": 0.372773,
+                "w": 0.295865,
+                "h": 0.018778
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.413573,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "A greater supply of 2",
+                "x": 0.124793,
+                "y": 0.411873,
+                "w": 0.211963,
+                "h": 0.018897
+              },
+              {
+                "text": "... as required to power steam engines.",
+                "x": 0.447153,
+                "y": 0.411873,
+                "w": 0.465876,
+                "h": 0.018897
+              },
+              {
+                "text": "Textile industry",
+                "x": 0.07401,
+                "y": 0.452558,
+                "w": 0.170012,
+                "h": 0.018814
+              },
+              {
+                "text": "3",
+                "x": 0.124793,
+                "y": 0.517272,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "Before the Industrial Revolution, spinners and weavers worked at home and in",
+                "x": 0.124793,
+                "y": 0.488291,
+                "w": 0.792652,
+                "h": 0.022224
+              },
+              {
+                "text": "Not as much 4",
+                "x": 0.124793,
+                "y": 0.55627,
+                "w": 0.15014,
+                "h": 0.017101
+              },
+              {
+                "text": ".. was needed to produce cloth once the",
+                "x": 0.446846,
+                "y": 0.55207,
+                "w": 0.411182,
+                "h": 0.024815
+              },
+              {
+                "text": "spinning jenny and power loom were invented.",
+                "x": 0.122585,
+                "y": 0.575008,
+                "w": 0.474708,
+                "h": 0.020481
+              },
+              {
+                "text": "Iron industry",
+                "x": 0.071556,
+                "y": 0.615206,
+                "w": 0.146298,
+                "h": 0.018215
+              },
+              {
+                "text": "Smelting of iron ore with coke resulted in material that was better",
+                "x": 0.124793,
+                "y": 0.654971,
+                "w": 0.660175,
+                "h": 0.0187
+              },
+              {
+                "text": "5",
+                "x": 0.122585,
+                "y": 0.682171,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "Demand for iron increased with the growth of the 6",
+                "x": 0.124793,
+                "y": 0.72127,
+                "w": 0.514451,
+                "h": 0.018892
+              },
+              {
+                "text": "Communications",
+                "x": 0.07401,
+                "y": 0.76207,
+                "w": 0.187675,
+                "h": 0.0153
+              },
+              {
+                "text": "• Cooke and Wheatstone patented the first telegraphy system.",
+                "x": 0.071802,
+                "y": 0.799427,
+                "w": 0.669007,
+                "h": 0.018743
+              },
+              {
+                "text": "• The telegraphy system was used to prevent locomotives colliding.",
+                "x": 0.071802,
+                "y": 0.838569,
+                "w": 0.721998,
+                "h": 0.020557
+              },
+              {
+                "text": "Urbanisation",
+                "x": 0.07401,
+                "y": 0.879369,
+                "w": 0.141308,
+                "h": 0.0153
+              },
+              {
+                "text": "• Small towns turned into cities very quickly.",
+                "x": 0.071802,
+                "y": 0.91839,
+                "w": 0.481332,
+                "h": 0.018778
+              },
+              {
+                "text": "• The new cities were dirty, crowded and lacked sufficient 7",
+                "x": 0.071802,
+                "y": 0.957568,
+                "w": 0.635888,
+                "h": 0.020521
+              },
+              {
+                "text": "...",
+                "x": 0.829127,
+                "y": 0.967768,
+                "w": 0.07507,
+                "h": 0.0051
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-42.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 8-13",
+                "x": 0.038683,
+                "y": 0.034476,
+                "w": 0.174428,
+                "h": 0.01718
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.036475,
+                "y": 0.07693,
+                "w": 0.852266,
+                "h": 0.020481
+              },
+              {
+                "text": "In boxes 8-13 on your answer sheet, write",
+                "x": 0.034267,
+                "y": 0.122685,
+                "w": 0.432757,
+                "h": 0.01889
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.25727,
+                "y": 0.161904,
+                "w": 0.439381,
+                "h": 0.020481
+              },
+              {
+                "text": "FALSE",
+                "x": 0.113633,
+                "y": 0.183744,
+                "w": 0.077519,
+                "h": 0.017661
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.25727,
+                "y": 0.182375,
+                "w": 0.434965,
+                "h": 0.018748
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.113753,
+                "y": 0.197636,
+                "w": 0.465876,
+                "h": 0.023967
+              },
+              {
+                "text": "8 Britain's canal network grew rapidly so that more goods could be transported",
+                "x": 0.047515,
+                "y": 0.236774,
+                "w": 0.812523,
+                "h": 0.018819
+              },
+              {
+                "text": "around the country.",
+                "x": 0.087258,
+                "y": 0.262129,
+                "w": 0.196507,
+                "h": 0.015444
+              },
+              {
+                "text": "9 Costs in the iron industry rose when the technique of smelting iron ore with coke",
+                "x": 0.047515,
+                "y": 0.291174,
+                "w": 0.847851,
+                "h": 0.0204
+              },
+              {
+                "text": "was introduced.",
+                "x": 0.08505,
+                "y": 0.3166,
+                "w": 0.163388,
+                "h": 0.017073
+              },
+              {
+                "text": "10 Samuel Morse's communication system was more reliable than that developed by",
+                "x": 0.036475,
+                "y": 0.347103,
+                "w": 0.874346,
+                "h": 0.01887
+              },
+              {
+                "text": "William Cooke and Charles Wheatstone.",
+                "x": 0.08505,
+                "y": 0.37107,
+                "w": 0.412886,
+                "h": 0.018738
+              },
+              {
+                "text": "11 The economic benefits of industrialisation were limited to certain sectors of society.",
+                "x": 0.036475,
+                "y": 0.40506,
+                "w": 0.885386,
+                "h": 0.018738
+              },
+              {
+                "text": "12 Some skilled weavers believed that the introduction of the new textile machines",
+                "x": 0.036475,
+                "y": 0.437307,
+                "w": 0.852266,
+                "h": 0.017066
+              },
+              {
+                "text": "would lead to job losses.",
+                "x": 0.08505,
+                "y": 0.459472,
+                "w": 0.253914,
+                "h": 0.018796
+              },
+              {
+                "text": "13 There was some sympathy among local people for the Luddites who were arrested",
+                "x": 0.036475,
+                "y": 0.490034,
+                "w": 0.885386,
+                "h": 0.020481
+              },
+              {
+                "text": "near Huddersfield.",
+                "x": 0.08472,
+                "y": 0.509244,
+                "w": 0.190796,
+                "h": 0.02184
+              },
+              {
+                "text": "→ S p. 123",
+                "x": 0.736354,
+                "y": 0.996521,
+                "w": 0.150218,
+                "h": 0.024094
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-45.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 14-18",
+                "x": 0.056347,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.015688
+              },
+              {
+                "text": "Reading Passage 2 has six paragraphs, A-F.",
+                "x": 0.056347,
+                "y": 0.07693,
+                "w": 0.46146,
+                "h": 0.020481
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.051931,
+                "y": 0.119475,
+                "w": 0.53653,
+                "h": 0.018897
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 14-18 on your answer sheet.",
+                "x": 0.056347,
+                "y": 0.160161,
+                "w": 0.682255,
+                "h": 0.020514
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.054139,
+                "y": 0.201074,
+                "w": 0.457044,
+                "h": 0.018786
+              },
+              {
+                "text": "14",
+                "x": 0.051931,
+                "y": 0.252074,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "reference to two chemical compounds which impact on performance",
+                "x": 0.093882,
+                "y": 0.252074,
+                "w": 0.704334,
+                "h": 0.017028
+              },
+              {
+                "text": "15 examples of strategies for minimising the effects of stress",
+                "x": 0.051931,
+                "y": 0.292874,
+                "w": 0.635888,
+                "h": 0.0204
+              },
+              {
+                "text": "16 how a sportsperson accounted for their own experience of stress",
+                "x": 0.056347,
+                "y": 0.333595,
+                "w": 0.704334,
+                "h": 0.018778
+              },
+              {
+                "text": "17 study results indicating links between stress responses and performance",
+                "x": 0.054139,
+                "y": 0.374473,
+                "w": 0.788236,
+                "h": 0.020565
+              },
+              {
+                "text": "18 mention of people who can influence how athletes perceive their stress responses",
+                "x": 0.054054,
+                "y": 0.416675,
+                "w": 0.881123,
+                "h": 0.020964
+              },
+              {
+                "text": "Questions 19-22",
+                "x": 0.054139,
+                "y": 0.479872,
+                "w": 0.194299,
+                "h": 0.017134
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.054139,
+                "y": 0.522281,
+                "w": 0.317944,
+                "h": 0.018791
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.054139,
+                "y": 0.563171,
+                "w": 0.640304,
+                "h": 0.020552
+              },
+              {
+                "text": "Write your answers in boxes 19-22 on your answer sheet.",
+                "x": 0.056219,
+                "y": 0.602916,
+                "w": 0.585346,
+                "h": 0.0207
+              },
+              {
+                "text": "19 Performance stress involves many demands on the athlete, for example, coping",
+                "x": 0.054139,
+                "y": 0.658239,
+                "w": 0.85889,
+                "h": 0.018832
+              },
+              {
+                "text": "with the possible risk of......",
+                "x": 0.100506,
+                "y": 0.683871,
+                "w": 0.275993,
+                "h": 0.020559
+              },
+              {
+                "text": "• Cortisol can cause tennis players to produce fewer good",
+                "x": 0.076043,
+                "y": 0.720535,
+                "w": 0.598667,
+                "h": 0.023263
+              },
+              {
+                "text": "21 Psychologists can help athletes to view their physiological responses as the effect",
+                "x": 0.051931,
+                "y": 0.75527,
+                "w": 0.883178,
+                "h": 0.0204
+              },
+              {
+                "text": "of a positive feeling such as",
+                "x": 0.102714,
+                "y": 0.782432,
+                "w": 0.282617,
+                "h": 0.018738
+              },
+              {
+                "text": "22",
+                "x": 0.049723,
+                "y": 0.818169,
+                "w": 0.035327,
+                "h": 0.0204
+              },
+              {
+                "text": ".. is an example of a psychological technique which can reduce an",
+                "x": 0.270517,
+                "y": 0.821569,
+                "w": 0.669007,
+                "h": 0.018819
+              },
+              {
+                "text": "athlete's stress responses.",
+                "x": 0.100506,
+                "y": 0.848668,
+                "w": 0.275993,
+                "h": 0.018801
+              },
+              {
+                "text": "46",
+                "x": 0.047515,
+                "y": 0.996668,
+                "w": 0.035327,
+                "h": 0.0238
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-46.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.040697,
+                "y": 0.032552,
+                "w": 0.230037,
+                "h": 0.019054
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.040891,
+                "y": 0.075187,
+                "w": 0.271577,
+                "h": 0.018789
+              },
+              {
+                "text": "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+                "x": 0.040891,
+                "y": 0.114375,
+                "w": 0.662383,
+                "h": 0.018768
+              },
+              {
+                "text": "Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament",
+                "x": 0.038593,
+                "y": 0.153813,
+                "w": 0.889992,
+                "h": 0.02103
+              },
+              {
+                "text": "are mentioned in the text?",
+                "x": 0.038683,
+                "y": 0.178899,
+                "w": 0.267161,
+                "h": 0.017076
+              },
+              {
+                "text": "A the stage at which she dropped out of the tournament",
+                "x": 0.091674,
+                "y": 0.209402,
+                "w": 0.591729,
+                "h": 0.020572
+              },
+              {
+                "text": "B symptoms of her performance stress at the tournament",
+                "x": 0.091405,
+                "y": 0.225993,
+                "w": 0.607631,
+                "h": 0.02701
+              },
+              {
+                "text": "measures which she had taken to manage her stress levels",
+                "x": 0.118169,
+                "y": 0.250364,
+                "w": 0.62264,
+                "h": 0.020481
+              },
+              {
+                "text": "D aspects of the Wimbledon tournament which increased her stress levels",
+                "x": 0.091512,
+                "y": 0.268716,
+                "w": 0.775295,
+                "h": 0.024766
+              },
+              {
+                "text": "E reactions to her social media posts about her experience at Wimbledon",
+                "x": 0.091534,
+                "y": 0.290789,
+                "w": 0.768644,
+                "h": 0.024482
+              },
+              {
+                "text": "Questions 25 and 26",
+                "x": 0.043099,
+                "y": 0.357473,
+                "w": 0.229626,
+                "h": 0.018827
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.043099,
+                "y": 0.399831,
+                "w": 0.269369,
+                "h": 0.018842
+              },
+              {
+                "text": "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+                "x": 0.043099,
+                "y": 0.43905,
+                "w": 0.662383,
+                "h": 0.020481
+              },
+              {
+                "text": "Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
+                "x": 0.040891,
+                "y": 0.479872,
+                "w": 0.750701,
+                "h": 0.0204
+              },
+              {
+                "text": "A the factors which determine how severe it may be",
+                "x": 0.091674,
+                "y": 0.513872,
+                "w": 0.551986,
+                "h": 0.018867
+              },
+              {
+                "text": "Bhow long it takes for its effects to become apparent",
+                "x": 0.091674,
+                "y": 0.535789,
+                "w": 0.567442,
+                "h": 0.020582
+              },
+              {
+                "text": "C which of its symptoms is most frequently encountered",
+                "x": 0.091674,
+                "y": 0.554527,
+                "w": 0.591729,
+                "h": 0.020544
+              },
+              {
+                "text": "D",
+                "x": 0.093882,
+                "y": 0.578471,
+                "w": 0.028703,
+                "h": 0.0136
+              },
+              {
+                "text": "the types of athletes who are most likely to suffer from it",
+                "x": 0.138041,
+                "y": 0.576751,
+                "w": 0.56965,
+                "h": 0.020481
+              },
+              {
+                "text": "E the harm that can result if athletes experience it too often",
+                "x": 0.091674,
+                "y": 0.597171,
+                "w": 0.624848,
+                "h": 0.018799
+              },
+              {
+                "text": "→Sp. 123",
+                "x": 0.740668,
+                "y": 0.992688,
+                "w": 0.161462,
+                "h": 0.02496
+              },
+              {
+                "text": "47",
+                "x": 0.899781,
+                "y": 0.998368,
+                "w": 0.039743,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-49.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 27-32",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.015688
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-K, below.",
+                "x": 0.047515,
+                "y": 0.07693,
+                "w": 0.618224,
+                "h": 0.020481
+              },
+              {
+                "text": "Write the correct letter, A-K, in boxes 27-32 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.119475,
+                "w": 0.682255,
+                "h": 0.018897
+              },
+              {
+                "text": "Maryam Mirzakhani",
+                "x": 0.352211,
+                "y": 0.170475,
+                "w": 0.289241,
+                "h": 0.0238
+              },
+              {
+                "text": "Maryam Mirzakhani is regarded as 27 .....",
+                "x": 0.065179,
+                "y": 0.214631,
+                "w": 0.410678,
+                "h": 0.018743
+              },
+              {
+                "text": "..in the field of mathematics",
+                "x": 0.623788,
+                "y": 0.212888,
+                "w": 0.280409,
+                "h": 0.018786
+              },
+              {
+                "text": "because she was the only female holder of the prestigious Fields Medal -",
+                "x": 0.062971,
+                "y": 0.241874,
+                "w": 0.750701,
+                "h": 0.0187
+              },
+              {
+                "text": "a record that she retained at the time of her death. However, maths held little",
+                "x": 0.062971,
+                "y": 0.269074,
+                "w": 0.779404,
+                "h": 0.018766
+              },
+              {
+                "text": "28",
+                "x": 0.062971,
+                "y": 0.296274,
+                "w": 0.030911,
+                "h": 0.0153
+              },
+              {
+                "text": "for her as a child and in fact her performance was below",
+                "x": 0.274933,
+                "y": 0.294376,
+                "w": 0.576273,
+                "h": 0.020597
+              },
+              {
+                "text": "average until she was 29",
+                "x": 0.062971,
+                "y": 0.323473,
+                "w": 0.258329,
+                "h": 0.018837
+              },
+              {
+                "text": "........ by a difficult puzzle that one of her",
+                "x": 0.453777,
+                "y": 0.318343,
+                "w": 0.40847,
+                "h": 0.023967
+              },
+              {
+                "text": "siblings showed her.",
+                "x": 0.062971,
+                "y": 0.35059,
+                "w": 0.211963,
+                "h": 0.018783
+              },
+              {
+                "text": "Later, as a professional mathematician, she had an inquiring mind and proved",
+                "x": 0.065179,
+                "y": 0.388065,
+                "w": 0.788236,
+                "h": 0.020481
+              },
+              {
+                "text": "herself to be 30 ...",
+                "x": 0.064903,
+                "y": 0.415155,
+                "w": 0.174978,
+                "h": 0.018959
+              },
+              {
+                "text": "when things did not go smoothly. She said she",
+                "x": 0.409618,
+                "y": 0.413573,
+                "w": 0.474708,
+                "h": 0.0221
+              },
+              {
+                "text": "got the greatest 31...",
+                "x": 0.062971,
+                "y": 0.444172,
+                "w": 0.211963,
+                "h": 0.018844
+              },
+              {
+                "text": "...f.rom making ground-breaking discoveries",
+                "x": 0.422865,
+                "y": 0.437307,
+                "w": 0.443797,
+                "h": 0.02571
+              },
+              {
+                "text": "and in fact she was responsible for some extremely 32",
+                "x": 0.065179,
+                "y": 0.469553,
+                "w": 0.554194,
+                "h": 0.020519
+              },
+              {
+                "text": "mathematical studies.",
+                "x": 0.065179,
+                "y": 0.498572,
+                "w": 0.22521,
+                "h": 0.017172
+              },
+              {
+                "text": "A appeal",
+                "x": 0.09609,
+                "y": 0.578471,
+                "w": 0.110397,
+                "h": 0.018761
+              },
+              {
+                "text": "D",
+                "x": 0.09609,
+                "y": 0.607371,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "single",
+                "x": 0.113689,
+                "y": 0.607204,
+                "w": 0.081822,
+                "h": 0.019034
+              },
+              {
+                "text": "G",
+                "x": 0.09609,
+                "y": 0.632871,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "involved",
+                "x": 0.129111,
+                "y": 0.63252,
+                "w": 0.090721,
+                "h": 0.016002
+              },
+              {
+                "text": "J",
+                "x": 0.098298,
+                "y": 0.658371,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "satisfaction",
+                "x": 0.133625,
+                "y": 0.658371,
+                "w": 0.117021,
+                "h": 0.017
+              },
+              {
+                "text": "B determined",
+                "x": 0.376499,
+                "y": 0.578471,
+                "w": 0.154556,
+                "h": 0.0153
+              },
+              {
+                "text": "E achievement",
+                "x": 0.376499,
+                "y": 0.607255,
+                "w": 0.17222,
+                "h": 0.015416
+              },
+              {
+                "text": "H unique",
+                "x": 0.376408,
+                "y": 0.632541,
+                "w": 0.112787,
+                "h": 0.01936
+              },
+              {
+                "text": "K intent",
+                "x": 0.376499,
+                "y": 0.658239,
+                "w": 0.09715,
+                "h": 0.017132
+              },
+              {
+                "text": "C intrigued",
+                "x": 0.645723,
+                "y": 0.574553,
+                "w": 0.130559,
+                "h": 0.023137
+              },
+              {
+                "text": "F devoted",
+                "x": 0.645813,
+                "y": 0.605456,
+                "w": 0.121547,
+                "h": 0.019129
+              },
+              {
+                "text": "1 innovative",
+                "x": 0.643402,
+                "y": 0.630017,
+                "w": 0.14624,
+                "h": 0.022708
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-2/page-50.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 33-37",
+                "x": 0.049723,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.017208
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.047515,
+                "y": 0.07693,
+                "w": 0.86993,
+                "h": 0.020481
+              },
+              {
+                "text": "In boxes 33-37 on your answer sheet, write",
+                "x": 0.049723,
+                "y": 0.119475,
+                "w": 0.441589,
+                "h": 0.017154
+              },
+              {
+                "text": "YES",
+                "x": 0.127001,
+                "y": 0.161975,
+                "w": 0.046367,
+                "h": 0.0153
+              },
+              {
+                "text": "NO",
+                "x": 0.127001,
+                "y": 0.182375,
+                "w": 0.033119,
+                "h": 0.0153
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.268309,
+                "y": 0.160161,
+                "w": 0.521075,
+                "h": 0.018814
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.268309,
+                "y": 0.180642,
+                "w": 0.514451,
+                "h": 0.018738
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.124793,
+                "y": 0.201074,
+                "w": 0.706542,
+                "h": 0.020529
+              },
+              {
+                "text": "33 Many people who ended up winning prestigious intellectual prizes only reached an",
+                "x": 0.047515,
+                "y": 0.243392,
+                "w": 0.88097,
+                "h": 0.018882
+              },
+              {
+                "text": "average standard when young.",
+                "x": 0.098298,
+                "y": 0.269074,
+                "w": 0.315736,
+                "h": 0.017023
+              },
+              {
+                "text": "34 Einstein's failures as a young man were due to his lack of confidence.",
+                "x": 0.047515,
+                "y": 0.301348,
+                "w": 0.755117,
+                "h": 0.018738
+              },
+              {
+                "text": "35 It is difficult to reach agreement on whether some children are actually born gifted.",
+                "x": 0.047515,
+                "y": 0.335338,
+                "w": 0.88097,
+                "h": 0.018738
+              },
+              {
+                "text": "36 Einstein was upset by the public's view of his life's work.",
+                "x": 0.047515,
+                "y": 0.369327,
+                "w": 0.618224,
+                "h": 0.020481
+              },
+              {
+                "text": "37 Einstein put his success down to the speed at which he dealt with",
+                "x": 0.047405,
+                "y": 0.399962,
+                "w": 0.711198,
+                "h": 0.022833
+              },
+              {
+                "text": "scientific questions.",
+                "x": 0.098298,
+                "y": 0.423773,
+                "w": 0.200923,
+                "h": 0.018763
+              },
+              {
+                "text": "Questions 38-40",
+                "x": 0.049723,
+                "y": 0.478172,
+                "w": 0.189883,
+                "h": 0.017091
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.049723,
+                "y": 0.522281,
+                "w": 0.393014,
+                "h": 0.020491
+              },
+              {
+                "text": "Write the correct letter in boxes 38-40 on your answer sheet.",
+                "x": 0.049723,
+                "y": 0.566571,
+                "w": 0.613808,
+                "h": 0.018895
+              },
+              {
+                "text": "38 What does Eyre believe is needed for children to equal 'gifted' standards?",
+                "x": 0.047515,
+                "y": 0.610741,
+                "w": 0.79486,
+                "h": 0.020481
+              },
+              {
+                "text": "A strict discipline from the teaching staff",
+                "x": 0.098298,
+                "y": 0.642987,
+                "w": 0.434965,
+                "h": 0.020483
+              },
+              {
+                "text": "B assistance from their peers in the classroom",
+                "x": 0.100506,
+                "y": 0.665171,
+                "w": 0.494579,
+                "h": 0.017035
+              },
+              {
+                "text": "C the development of a spirit of inquiry towards their studies",
+                "x": 0.098107,
+                "y": 0.68153,
+                "w": 0.634028,
+                "h": 0.026001
+              },
+              {
+                "text": "D the determination to surpass everyone else's achievements",
+                "x": 0.098298,
+                "y": 0.70597,
+                "w": 0.651343,
+                "h": 0.0204
+              },
+              {
+                "text": "39 What is the result of Ericsson's research?",
+                "x": 0.047515,
+                "y": 0.74147,
+                "w": 0.4725,
+                "h": 0.015688
+              },
+              {
+                "text": "A Very gifted students do not need to work on improving memory skills.",
+                "x": 0.098298,
+                "y": 0.77227,
+                "w": 0.746285,
+                "h": 0.0204
+              },
+              {
+                "text": "B Being born with a special gift is not the key factor in becoming expert",
+                "x": 0.098298,
+                "y": 0.794197,
+                "w": 0.746285,
+                "h": 0.018872
+              },
+              {
+                "text": "C Including time for physical exercise is crucial in raising performance.",
+                "x": 0.098243,
+                "y": 0.814477,
+                "w": 0.739755,
+                "h": 0.021074
+              },
+              {
+                "text": "D 10,000 hours of relevant and demanding work will create a genius.",
+                "x": 0.098298,
+                "y": 0.835159,
+                "w": 0.724206,
+                "h": 0.022224
+              },
+              {
+                "text": "40 In the penultimate paragraph, it is stated the key to some deprived children's success is",
+                "x": 0.047515,
+                "y": 0.867406,
+                "w": 0.894217,
+                "h": 0.020481
+              },
+              {
+                "text": "A a regular and nourishing diet at home.",
+                "x": 0.100506,
+                "y": 0.901395,
+                "w": 0.434965,
+                "h": 0.017073
+              },
+              {
+                "text": "the loving support of more than one parent.",
+                "x": 0.146872,
+                "y": 0.921869,
+                "w": 0.439381,
+                "h": 0.017002
+              },
+              {
+                "text": "C a community which has well-funded facilities for learning.",
+                "x": 0.098298,
+                "y": 0.942268,
+                "w": 0.624848,
+                "h": 0.018827
+              },
+              {
+                "text": "D the guidance of someone who recognises the benefits of learning.",
+                "x": 0.102714,
+                "y": 0.962668,
+                "w": 0.713166,
+                "h": 0.018908
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "Mathieson",
+      "beginners",
+      "college",
+      "New",
+      "11|eleven|11 am|eleven am",
+      "instrument",
+      "ear",
+      "clapping",
+      "recording",
+      "alone",
+      "A",
+      "B",
+      "A",
+      "B",
+      "C",
+      "A",
+      "C",
+      "E",
+      "A",
+      "B",
+      "A",
+      "B",
+      "B",
+      "B",
+      "E",
+      "B",
+      "A",
+      "C",
+      "C",
+      "A",
+      "move",
+      "short",
+      "discs",
+      "oxygen",
+      "tube",
+      "temperatures",
+      "protein",
+      "space",
+      "seaweed",
+      "endangered"
+    ],
+    "reading": [
+      "piston",
+      "coal",
+      "workshops",
+      "labour|labor",
+      "quality",
+      "railway|railways",
+      "sanitation",
+      "NOT GIVEN",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "NOT GIVEN",
+      "D",
+      "F",
+      "A",
+      "C",
+      "F",
+      "injury",
+      "serves",
+      "excitement",
+      "visualisation|visualization",
+      "B",
+      "D",
+      "A",
+      "E",
+      "H",
+      "A",
+      "C",
+      "B",
+      "J",
+      "I",
+      "YES",
+      "NOT GIVEN",
+      "YES",
+      "NOT GIVEN",
+      "NO",
+      "C",
+      "B",
+      "D"
+    ]
+  },
+  "completionOptions": {}
+}

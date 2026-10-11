@@ -8,7 +8,7 @@ export const prerender = false;
 
 export const GET: APIRoute = async ({ params, request, cookies }) => {
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
 		if (!(await claimRateLimit(request, 'material-download', auth.user.id, 90, 60))) return json({ error: 'rate_limited' }, 429);
 		const id = params.id || '';

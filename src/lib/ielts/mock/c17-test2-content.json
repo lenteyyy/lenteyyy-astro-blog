@@ -1,0 +1,5580 @@
+{
+  "source": {
+    "book": 17,
+    "test": 2,
+    "questionPages": {
+      "l": [
+        [
+          24
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          29
+        ]
+      ],
+      "r": [
+        [
+          30,
+          31
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          38,
+          39
+        ]
+      ],
+      "q": [
+        [
+          32,
+          33
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          40,
+          41,
+          42
+        ]
+      ],
+      "w": [
+        43,
+        44
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "73b39f0fb941a647267c9907407af1cc34a81d66864da8a06759aa869d63794d"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-2/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-2/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-2/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-2/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-2/page-30.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.416242,
+                "y": 0.017234,
+                "w": 0.136893,
+                "h": 0.022494
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.065179,
+                "y": 0.086345,
+                "w": 0.309112,
+                "h": 0.019137
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.065179,
+                "y": 0.127976,
+                "w": 0.816939,
+                "h": 0.020816
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.065179,
+                "y": 0.14701,
+                "w": 0.170012,
+                "h": 0.019054
+              },
+              {
+                "text": "The Dead Sea Scrolls",
+                "x": 0.325716,
+                "y": 0.193523,
+                "w": 0.320152,
+                "h": 0.024431
+              },
+              {
+                "text": "In late 1946 or early 1947, three Bedouin teenagers were tending their goats and sheep",
+                "x": 0.060763,
+                "y": 0.240449,
+                "w": 0.834603,
+                "h": 0.020836
+              },
+              {
+                "text": "near the ancient settlement of Qumran, located on the northwest shore of the Dead",
+                "x": 0.062971,
+                "y": 0.259482,
+                "w": 0.790444,
+                "h": 0.020847
+              },
+              {
+                "text": "Sea in what is now known as the West Bank. One of these young shepherds tossed a",
+                "x": 0.065179,
+                "y": 0.278516,
+                "w": 0.812523,
+                "h": 0.020857
+              },
+              {
+                "text": "rock into an opening on the side of a cliff and was surprised to hear a shattering sound.",
+                "x": 0.062971,
+                "y": 0.294058,
+                "w": 0.827979,
+                "h": 0.024359
+              },
+              {
+                "text": "He and his companions later entered the cave and stumbled across a collection of",
+                "x": 0.067386,
+                "y": 0.320044,
+                "w": 0.777196,
+                "h": 0.015645
+              },
+              {
+                "text": "large clay jars, seven of which contained scrolls with writing on them. The teenagers",
+                "x": 0.065179,
+                "y": 0.340808,
+                "w": 0.79486,
+                "h": 0.015697
+              },
+              {
+                "text": "took the seven scrolls to a nearby town where they were sold for a small sum to a local",
+                "x": 0.065179,
+                "y": 0.359842,
+                "w": 0.823563,
+                "h": 0.017479
+              },
+              {
+                "text": "antiquities dealer. Word of the find spread, and Bedouins and archaeologists eventually",
+                "x": 0.065179,
+                "y": 0.380421,
+                "w": 0.825771,
+                "h": 0.017489
+              },
+              {
+                "text": "unearthed tens of thousands of additional scroll fragments from 10 nearby caves;",
+                "x": 0.065179,
+                "y": 0.399465,
+                "w": 0.768365,
+                "h": 0.019209
+              },
+              {
+                "text": "together they make up between 800 and 900 manuscripts. It soon became clear that this",
+                "x": 0.065091,
+                "y": 0.416006,
+                "w": 0.836986,
+                "h": 0.021043
+              },
+              {
+                "text": "was one of the greatest archaeological discoveries ever made.",
+                "x": 0.067386,
+                "y": 0.439325,
+                "w": 0.591729,
+                "h": 0.015686
+              },
+              {
+                "text": "The origin of the Dead Sea Scrolls, which were written around 2,000 years ago between",
+                "x": 0.067386,
+                "y": 0.479184,
+                "w": 0.830187,
+                "h": 0.015625
+              },
+              {
+                "text": "150 BCE and 70 CE, is still the subject of scholarly debate even today. According to the",
+                "x": 0.065179,
+                "y": 0.498228,
+                "w": 0.825771,
+                "h": 0.019075
+              },
+              {
+                "text": "prevailing theory, they are the work of a population that inhabited the area until Roman",
+                "x": 0.065179,
+                "y": 0.517273,
+                "w": 0.816939,
+                "h": 0.019065
+              },
+              {
+                "text": "troops destroyed the settlement around 70 CE. The area was known as Judea at that",
+                "x": 0.062971,
+                "y": 0.538068,
+                "w": 0.810316,
+                "h": 0.017303
+              },
+              {
+                "text": "time, and the people are thought to have belonged to a group called the Essenes, a",
+                "x": 0.065179,
+                "y": 0.557101,
+                "w": 0.790444,
+                "h": 0.017303
+              },
+              {
+                "text": "devout Jewish sect.",
+                "x": 0.065179,
+                "y": 0.577865,
+                "w": 0.189883,
+                "h": 0.015583
+              },
+              {
+                "text": "The majority of the texts on the Dead Sea Scrolls are in Hebrew, with some fragments",
+                "x": 0.067386,
+                "y": 0.615933,
+                "w": 0.810316,
+                "h": 0.017376
+              },
+              {
+                "text": "written in an ancient version of its alphabet thought to have fallen out of use in the fifth",
+                "x": 0.062971,
+                "y": 0.636697,
+                "w": 0.816939,
+                "h": 0.017427
+              },
+              {
+                "text": "century BCE. But there are other languages as well. Some scrolls are in Aramaic, the",
+                "x": 0.067386,
+                "y": 0.655731,
+                "w": 0.803692,
+                "h": 0.017437
+              },
+              {
+                "text": "language spoken by many inhabitants of the region from the sixth century BCE to the",
+                "x": 0.060763,
+                "y": 0.676495,
+                "w": 0.808108,
+                "h": 0.017489
+              },
+              {
+                "text": "siege of Jerusalem in 70 CE. In addition, several texts feature translations of the Hebrew",
+                "x": 0.065179,
+                "y": 0.695313,
+                "w": 0.839019,
+                "h": 0.01925
+              },
+              {
+                "text": "Bible into Greek.",
+                "x": 0.064918,
+                "y": 0.714436,
+                "w": 0.161733,
+                "h": 0.017532
+              },
+              {
+                "text": "The Dead Sea Scrolls include fragments from every book of the Old Testament of the",
+                "x": 0.065179,
+                "y": 0.754216,
+                "w": 0.8059,
+                "h": 0.017448
+              },
+              {
+                "text": "Bible except for the Book of Esther. The only entire book of the Hebrew Bible preserved",
+                "x": 0.065179,
+                "y": 0.77326,
+                "w": 0.827979,
+                "h": 0.019168
+              },
+              {
+                "text": "among the manuscripts from Qumran is Isaiah; this copy, dated to the first century BCE,",
+                "x": 0.065179,
+                "y": 0.792304,
+                "w": 0.832395,
+                "h": 0.020888
+              },
+              {
+                "text": "is considered the earliest biblical manuscript still in existence. Along with biblical texts,",
+                "x": 0.060763,
+                "y": 0.811348,
+                "w": 0.819147,
+                "h": 0.020877
+              },
+              {
+                "text": "the scrolls include documents about sectarian regulations and religious writings that do",
+                "x": 0.062971,
+                "y": 0.832164,
+                "w": 0.823563,
+                "h": 0.019096
+              },
+              {
+                "text": "not appear in the Old Testament.",
+                "x": 0.067386,
+                "y": 0.85298,
+                "w": 0.309112,
+                "h": 0.017314
+              },
+              {
+                "text": "37",
+                "x": 0.875494,
+                "y": 0.932586,
+                "w": 0.030911,
+                "h": 0.022494
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-2/page-31.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "The writing on the Dead Sea Scrolls is mostly in black or occasionally red ink, and",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.770572,
+                "h": 0.015604
+              },
+              {
+                "text": "the scrolls themselves are nearly all made of either parchment (animal skin) or an",
+                "x": 0.082842,
+                "y": 0.039729,
+                "w": 0.770572,
+                "h": 0.017386
+              },
+              {
+                "text": "early form of paper called 'papyrus'. The only exception is the scroll numbered 3Q15,",
+                "x": 0.082842,
+                "y": 0.058762,
+                "w": 0.8059,
+                "h": 0.017396
+              },
+              {
+                "text": "which was created out of a combination of copper and tin. Known as the Copper",
+                "x": 0.082842,
+                "y": 0.079527,
+                "w": 0.759533,
+                "h": 0.015676
+              },
+              {
+                "text": "Scroll, this curious document features letters chiselled onto metal - perhaps, as some",
+                "x": 0.08505,
+                "y": 0.100074,
+                "w": 0.8059,
+                "h": 0.015944
+              },
+              {
+                "text": "have theorized, to better withstand the passage of time. One of the most intriguing",
+                "x": 0.08505,
+                "y": 0.119118,
+                "w": 0.77278,
+                "h": 0.015944
+              },
+              {
+                "text": "manuscripts from Qumran, this is a sort of ancient treasure map that lists dozens of gold",
+                "x": 0.08505,
+                "y": 0.138163,
+                "w": 0.830187,
+                "h": 0.017715
+              },
+              {
+                "text": "and silver caches. Using an unconventional vocabulary and odd spelling, it describes 64",
+                "x": 0.082842,
+                "y": 0.158978,
+                "w": 0.832395,
+                "h": 0.015717
+              },
+              {
+                "text": "underground hiding places that supposedly contain riches buried for safekeeping. None",
+                "x": 0.082842,
+                "y": 0.178022,
+                "w": 0.825771,
+                "h": 0.019168
+              },
+              {
+                "text": "of these hoards have been recovered, possibly because the Romans pillaged Judea",
+                "x": 0.082842,
+                "y": 0.198838,
+                "w": 0.79486,
+                "h": 0.015655
+              },
+              {
+                "text": "during the first century CE. According to various hypotheses, the treasure belonged to",
+                "x": 0.082842,
+                "y": 0.217882,
+                "w": 0.810316,
+                "h": 0.017376
+              },
+              {
+                "text": "local people, or was rescued from the Second Temple before its destruction or never",
+                "x": 0.080634,
+                "y": 0.238698,
+                "w": 0.801484,
+                "h": 0.015594
+              },
+              {
+                "text": "existed to begin with.",
+                "x": 0.080634,
+                "y": 0.257742,
+                "w": 0.205339,
+                "h": 0.019044
+              },
+              {
+                "text": "Some of the Dead Sea Scrolls have been on interesting journeys. In 1948, a Syrian",
+                "x": 0.082842,
+                "y": 0.29755,
+                "w": 0.786028,
+                "h": 0.017324
+              },
+              {
+                "text": "Orthodox archbishop known as Mar Samuel acquired four of the original seven scrolls",
+                "x": 0.082842,
+                "y": 0.316584,
+                "w": 0.810316,
+                "h": 0.019106
+              },
+              {
+                "text": "from a Jerusalem shoemaker and part-time antiquity dealer, paying less than $100",
+                "x": 0.082842,
+                "y": 0.335617,
+                "w": 0.777196,
+                "h": 0.017345
+              },
+              {
+                "text": "for them. He then travelled to the United States and unsuccessfully offered them to a",
+                "x": 0.080634,
+                "y": 0.356382,
+                "w": 0.801484,
+                "h": 0.015625
+              },
+              {
+                "text": "number of universities, including Yale. Finally, in 1954, he placed an advertisement in",
+                "x": 0.080634,
+                "y": 0.375415,
+                "w": 0.8059,
+                "h": 0.019178
+              },
+              {
+                "text": "the business newspaper The Wall Street Journal - under the category 'Miscellaneous",
+                "x": 0.082842,
+                "y": 0.396179,
+                "w": 0.808108,
+                "h": 0.015686
+              },
+              {
+                "text": "Items for Sale' - that read: 'Biblical Manuscripts dating back to at least 200 B.C. are for",
+                "x": 0.080634,
+                "y": 0.415213,
+                "w": 0.823563,
+                "h": 0.01924
+              },
+              {
+                "text": "sale. This would be an ideal gift to an educational or religious institution by an individual",
+                "x": 0.080634,
+                "y": 0.435782,
+                "w": 0.830187,
+                "h": 0.017715
+              },
+              {
+                "text": "or group.' Fortunately, Israeli archaeologist and statesman Yigael Yadin negotiated their",
+                "x": 0.080634,
+                "y": 0.453281,
+                "w": 0.830187,
+                "h": 0.019034
+              },
+              {
+                "text": "purchase and brought the scrolls back to Jerusalem, where they remain to this day.",
+                "x": 0.080634,
+                "y": 0.475641,
+                "w": 0.788236,
+                "h": 0.019168
+              },
+              {
+                "text": "In 2017, researchers from the University of Haifa restored and deciphered one of the last",
+                "x": 0.082842,
+                "y": 0.513729,
+                "w": 0.839019,
+                "h": 0.017417
+              },
+              {
+                "text": "untranslated scrolls. The university's Eshbal Ratson and Jonathan Ben-Dov spent one",
+                "x": 0.082842,
+                "y": 0.534545,
+                "w": 0.812523,
+                "h": 0.015635
+              },
+              {
+                "text": "year reassembling the 60 fragments that make up the scroll. Deciphered from a band",
+                "x": 0.080634,
+                "y": 0.553589,
+                "w": 0.8059,
+                "h": 0.019085
+              },
+              {
+                "text": "of coded text on parchment, the find provides insight into the community of people who",
+                "x": 0.080634,
+                "y": 0.574405,
+                "w": 0.823563,
+                "h": 0.017303
+              },
+              {
+                "text": "wrote it and the 364-day calendar they would have used. The scroll names celebrations",
+                "x": 0.082842,
+                "y": 0.593439,
+                "w": 0.825771,
+                "h": 0.017303
+              },
+              {
+                "text": "that indicate shifts in seasons and details two yearly religious events known from",
+                "x": 0.082842,
+                "y": 0.612472,
+                "w": 0.761741,
+                "h": 0.017303
+              },
+              {
+                "text": "another Dead Sea Scroll. Only one more known scroll remains untranslated.",
+                "x": 0.082842,
+                "y": 0.633236,
+                "w": 0.721998,
+                "h": 0.017345
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-2/page-34.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.31132,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.827979,
+                "h": 0.02098
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.067386,
+                "y": 0.081257,
+                "w": 0.167804,
+                "h": 0.019034
+              },
+              {
+                "text": "B",
+                "x": 0.065179,
+                "y": 0.596899,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "A second attempt at domesticating the tomato",
+                "x": 0.142457,
+                "y": 0.129707,
+                "w": 0.686671,
+                "h": 0.027685
+              },
+              {
+                "text": "It took at least 3,000 years for humans to learn how to domesticate the wild tomato",
+                "x": 0.100506,
+                "y": 0.174479,
+                "w": 0.78382,
+                "h": 0.01925
+              },
+              {
+                "text": "and cultivate it for food. Now two separate teams in Brazil and China have done it all",
+                "x": 0.111545,
+                "y": 0.195295,
+                "w": 0.790444,
+                "h": 0.019199
+              },
+              {
+                "text": "over again in less than three years. And they have done it better in some ways, as",
+                "x": 0.111545,
+                "y": 0.214339,
+                "w": 0.768365,
+                "h": 0.019188
+              },
+              {
+                "text": "the re-domesticated tomatoes are more nutritious than the ones we eat at present.",
+                "x": 0.111432,
+                "y": 0.232576,
+                "w": 0.773027,
+                "h": 0.022105
+              },
+              {
+                "text": "This approach relies on the revolutionary CRISPR genome editing technique, in",
+                "x": 0.111545,
+                "y": 0.267928,
+                "w": 0.752909,
+                "h": 0.01924
+              },
+              {
+                "text": "which changes are deliberately made to the DNA of a living cell, allowing genetic",
+                "x": 0.109337,
+                "y": 0.286972,
+                "w": 0.763949,
+                "h": 0.019229
+              },
+              {
+                "text": "material to be added, removed or altered. The technique could not only improve",
+                "x": 0.111545,
+                "y": 0.307788,
+                "w": 0.755117,
+                "h": 0.019178
+              },
+              {
+                "text": "existing crops, but could also be used to turn thousands of wild plants into useful",
+                "x": 0.111545,
+                "y": 0.328603,
+                "w": 0.763949,
+                "h": 0.017396
+              },
+              {
+                "text": "and appealing foods. In fact, a third team in the US has already begun to do this",
+                "x": 0.111545,
+                "y": 0.347647,
+                "w": 0.757325,
+                "h": 0.019116
+              },
+              {
+                "text": "with a relative of the tomato called the groundcherry.",
+                "x": 0.113753,
+                "y": 0.368463,
+                "w": 0.496787,
+                "h": 0.015604
+              },
+              {
+                "text": "This fast-track domestication could help make the world's food supply healthier and",
+                "x": 0.111545,
+                "y": 0.399465,
+                "w": 0.788236,
+                "h": 0.019209
+              },
+              {
+                "text": "far more resistant to diseases, such as the rust fungus devastating wheat crops.",
+                "x": 0.111545,
+                "y": 0.418509,
+                "w": 0.759533,
+                "h": 0.017468
+              },
+              {
+                "text": "'This could transform what we eat,' says Jorg Kudla at the University of Munster in",
+                "x": 0.113753,
+                "y": 0.45155,
+                "w": 0.774988,
+                "h": 0.019219
+              },
+              {
+                "text": "Germany, a member of the Brazilian team. 'There are 50,000 edible plants in the",
+                "x": 0.111545,
+                "y": 0.472098,
+                "w": 0.761741,
+                "h": 0.01925
+              },
+              {
+                "text": "world, but 90 percent of our energy comes from just 15 crops.'",
+                "x": 0.113753,
+                "y": 0.489618,
+                "w": 0.589521,
+                "h": 0.01924
+              },
+              {
+                "text": "'We can now mimic the known domestication course of major crops like rice, maize,",
+                "x": 0.113753,
+                "y": 0.524225,
+                "w": 0.78382,
+                "h": 0.017406
+              },
+              {
+                "text": "sorghum or others,' says Caixia Gao of the Chinese Academy of Sciences in Beijing.",
+                "x": 0.111545,
+                "y": 0.543259,
+                "w": 0.792652,
+                "h": 0.019188
+              },
+              {
+                "text": "'Then we might try to domesticate plants that have never been domesticated.'",
+                "x": 0.111545,
+                "y": 0.564023,
+                "w": 0.737453,
+                "h": 0.017468
+              },
+              {
+                "text": "Wild tomatoes, which are native to the Andes region in South America, produce",
+                "x": 0.102714,
+                "y": 0.596899,
+                "w": 0.759533,
+                "h": 0.019137
+              },
+              {
+                "text": "pea-sized fruits. Over many generations, peoples such as the Aztecs and Incas",
+                "x": 0.113753,
+                "y": 0.617663,
+                "w": 0.748493,
+                "h": 0.015645
+              },
+              {
+                "text": "transformed the plant by selecting and breeding plants with mutations* in their",
+                "x": 0.109337,
+                "y": 0.636697,
+                "w": 0.741869,
+                "h": 0.019199
+              },
+              {
+                "text": "genetic structure, which resulted in desirable traits such as larger fruit.",
+                "x": 0.111545,
+                "y": 0.657461,
+                "w": 0.662383,
+                "h": 0.017479
+              },
+              {
+                "text": "But every time a single plant with a mutation is taken from a larger population for",
+                "x": 0.111545,
+                "y": 0.688607,
+                "w": 0.763949,
+                "h": 0.019106
+              },
+              {
+                "text": "breeding, much genetic diversity is lost. And sometimes the desirable mutations",
+                "x": 0.111545,
+                "y": 0.709372,
+                "w": 0.752909,
+                "h": 0.017386
+              },
+              {
+                "text": "come with less desirable traits. For instance, the tomato strains grown for",
+                "x": 0.113753,
+                "y": 0.728405,
+                "w": 0.693294,
+                "h": 0.019168
+              },
+              {
+                "text": "supermarkets have lost much of their flavour.",
+                "x": 0.113753,
+                "y": 0.749169,
+                "w": 0.423925,
+                "h": 0.015676
+              },
+              {
+                "text": "By comparing the genomes of modern plants to those of their wild relatives,",
+                "x": 0.111545,
+                "y": 0.782046,
+                "w": 0.715374,
+                "h": 0.017345
+              },
+              {
+                "text": "biologists have been working out what genetic changes occurred as plants were",
+                "x": 0.111545,
+                "y": 0.80108,
+                "w": 0.757325,
+                "h": 0.019126
+              },
+              {
+                "text": "domesticated. The teams in Brazil and China have now used this knowledge to",
+                "x": 0.111545,
+                "y": 0.820114,
+                "w": 0.748493,
+                "h": 0.019137
+              },
+              {
+                "text": "reintroduce these changes from scratch while maintaining or even enhancing the",
+                "x": 0.109337,
+                "y": 0.840878,
+                "w": 0.766157,
+                "h": 0.017417
+              },
+              {
+                "text": "desirable traits of wild strains.",
+                "x": 0.113753,
+                "y": 0.859911,
+                "w": 0.282617,
+                "h": 0.015655
+              },
+              {
+                "text": "* mutations: changes in an organism's genetic structure that can be passed down to later generations",
+                "x": 0.065179,
+                "y": 0.911822,
+                "w": 0.611601,
+                "h": 0.012112
+              },
+              {
+                "text": "41",
+                "x": 0.875494,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.017303
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-2/page-35.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "C Kudla's team made six changes altogether. For instance, they tripled the size",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.770572,
+                "h": 0.017376
+              },
+              {
+                "text": "of fruit by editing a gene called FRUIT WEIGHT, and increased the number of",
+                "x": 0.131417,
+                "y": 0.039729,
+                "w": 0.733037,
+                "h": 0.017386
+              },
+              {
+                "text": "tomatoes per truss by editing another called MULTIFLORA.",
+                "x": 0.127001,
+                "y": 0.060493,
+                "w": 0.565234,
+                "h": 0.017437
+              },
+              {
+                "text": "While the historical domestication of tomatoes reduced levels of the red pigment",
+                "x": 0.131417,
+                "y": 0.09856,
+                "w": 0.757325,
+                "h": 0.015686
+              },
+              {
+                "text": "lycopene - thought to have potential health benefits - the team in Brazil managed",
+                "x": 0.129209,
+                "y": 0.117594,
+                "w": 0.77278,
+                "h": 0.017468
+              },
+              {
+                "text": "to boost it instead. The wild tomato has twice as much lycopene as cultivated ones;",
+                "x": 0.129114,
+                "y": 0.136863,
+                "w": 0.788429,
+                "h": 0.019816
+              },
+              {
+                "text": "the newly domesticated one has five times as much.",
+                "x": 0.129209,
+                "y": 0.158978,
+                "w": 0.496787,
+                "h": 0.015717
+              },
+              {
+                "text": "'They are quite tasty,' says Kudla. \"A little bit strong. And very aromatic.'",
+                "x": 0.131417,
+                "y": 0.195295,
+                "w": 0.673423,
+                "h": 0.019199
+              },
+              {
+                "text": "The team in China re-domesticated several strains of wild tomatoes with desirable",
+                "x": 0.131417,
+                "y": 0.236926,
+                "w": 0.77278,
+                "h": 0.013905
+              },
+              {
+                "text": "traits lost in domesticated tomatoes. In this way they managed to create a strain",
+                "x": 0.129209,
+                "y": 0.25597,
+                "w": 0.755117,
+                "h": 0.017355
+              },
+              {
+                "text": "resistant to a common disease called bacterial spot race, which can devastate",
+                "x": 0.129209,
+                "y": 0.276786,
+                "w": 0.737453,
+                "h": 0.017303
+              },
+              {
+                "text": "yields. They also created another strain that is more salt tolerant - and has higher",
+                "x": 0.127001,
+                "y": 0.295819,
+                "w": 0.777196,
+                "h": 0.017303
+              },
+              {
+                "text": "levels of vitamin C.",
+                "x": 0.124405,
+                "y": 0.313126,
+                "w": 0.188554,
+                "h": 0.020976
+              },
+              {
+                "text": "D",
+                "x": 0.082842,
+                "y": 0.354651,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "Meanwhile, Joyce Van Eck at the Boyce Thompson Institute in New York state",
+                "x": 0.129209,
+                "y": 0.354651,
+                "w": 0.737453,
+                "h": 0.019126
+              },
+              {
+                "text": "decided to use the same approach to domesticate the groundcherry or goldenberry",
+                "x": 0.129209,
+                "y": 0.375415,
+                "w": 0.786028,
+                "h": 0.017406
+              },
+              {
+                "text": "(Physalis pruinosa) for the first time. This fruit looks similar to the closely related",
+                "x": 0.127001,
+                "y": 0.394449,
+                "w": 0.755117,
+                "h": 0.019188
+              },
+              {
+                "text": "Cape gooseberry (Physalis peruviana).",
+                "x": 0.129209,
+                "y": 0.413483,
+                "w": 0.370935,
+                "h": 0.019199
+              },
+              {
+                "text": "Groundcherries are already sold to a limited extent in the US but they are hard to",
+                "x": 0.131417,
+                "y": 0.453281,
+                "w": 0.761741,
+                "h": 0.017489
+              },
+              {
+                "text": "produce because the plant has a sprawling growth habit and the small fruits fall",
+                "x": 0.127001,
+                "y": 0.47387,
+                "w": 0.750701,
+                "h": 0.017479
+              },
+              {
+                "text": "off the branches when ripe. Van Eck's team has edited the plants to increase fruit",
+                "x": 0.129209,
+                "y": 0.492914,
+                "w": 0.768365,
+                "h": 0.015944
+              },
+              {
+                "text": "size, make their growth more compact and to stop fruits dropping. 'There's potential",
+                "x": 0.126939,
+                "y": 0.511578,
+                "w": 0.792803,
+                "h": 0.021861
+              },
+              {
+                "text": "for this to be a commercial crop,' says Van Eck. But she adds that taking the",
+                "x": 0.127001,
+                "y": 0.531002,
+                "w": 0.721998,
+                "h": 0.019178
+              },
+              {
+                "text": "work further would be expensive because of the need to pay for a licence for the",
+                "x": 0.129209,
+                "y": 0.551818,
+                "w": 0.759533,
+                "h": 0.017396
+              },
+              {
+                "text": "CRISPR technology and get regulatory approval.",
+                "x": 0.129209,
+                "y": 0.572633,
+                "w": 0.463668,
+                "h": 0.017345
+              },
+              {
+                "text": "E This approach could boost the use of many obscure plants, says Jonathan Jones",
+                "x": 0.08505,
+                "y": 0.610721,
+                "w": 0.810316,
+                "h": 0.017324
+              },
+              {
+                "text": "of the Sainsbury Lab in the UK. But it will be hard for new foods to grow so popular",
+                "x": 0.129209,
+                "y": 0.631506,
+                "w": 0.78382,
+                "h": 0.017303
+              },
+              {
+                "text": "with farmers and consumers that they become new staple crops, he thinks.",
+                "x": 0.129209,
+                "y": 0.65054,
+                "w": 0.710958,
+                "h": 0.017314
+              },
+              {
+                "text": "The three teams already have their eye on other plants that could be 'catapulted",
+                "x": 0.129209,
+                "y": 0.688607,
+                "w": 0.757325,
+                "h": 0.020877
+              },
+              {
+                "text": "into the mainstream, including foxtail, oat-grass and cowpea. By choosing wild",
+                "x": 0.124793,
+                "y": 0.711102,
+                "w": 0.748493,
+                "h": 0.017427
+              },
+              {
+                "text": "plants that are drought or heat tolerant, says Gao, we could create crops that will",
+                "x": 0.129209,
+                "y": 0.728405,
+                "w": 0.763949,
+                "h": 0.020939
+              },
+              {
+                "text": "thrive even as the planet warms.",
+                "x": 0.129209,
+                "y": 0.749169,
+                "w": 0.31132,
+                "h": 0.015676
+              },
+              {
+                "text": "But Kudla didn't want to reveal which species were in his team's sights, because",
+                "x": 0.127001,
+                "y": 0.788761,
+                "w": 0.761741,
+                "h": 0.01924
+              },
+              {
+                "text": "CRISPR has made the process so easy. \"Any one with the right skills could go to",
+                "x": 0.129209,
+                "y": 0.807805,
+                "w": 0.761741,
+                "h": 0.019229
+              },
+              {
+                "text": "their lab and do this.'",
+                "x": 0.127001,
+                "y": 0.826849,
+                "w": 0.203131,
+                "h": 0.017489
+              },
+              {
+                "text": "42",
+                "x": 0.080634,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.020764
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-2/page-38.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.31132,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.067386,
+                "y": 0.062223,
+                "w": 0.827979,
+                "h": 0.01925
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.067386,
+                "y": 0.081257,
+                "w": 0.167804,
+                "h": 0.019034
+              },
+              {
+                "text": "Insight or evolution?",
+                "x": 0.327924,
+                "y": 0.129707,
+                "w": 0.31132,
+                "h": 0.027685
+              },
+              {
+                "text": "Iwo scientists consider the origins of discoveries and other innovative behavior",
+                "x": 0.082842,
+                "y": 0.178022,
+                "w": 0.8059,
+                "h": 0.020898
+              },
+              {
+                "text": "Scientific discovery is popularly believed to result from the sheer genius of such intellectual",
+                "x": 0.067386,
+                "y": 0.219653,
+                "w": 0.786028,
+                "h": 0.015604
+              },
+              {
+                "text": "stars as naturalist Charles Darwin and theoretical physicist Albert Einstein. Our view of such",
+                "x": 0.065178,
+                "y": 0.238698,
+                "w": 0.79486,
+                "h": 0.017324
+              },
+              {
+                "text": "unique contributions to science often disregards the person's prior experience and the efforts of",
+                "x": 0.067386,
+                "y": 0.259482,
+                "w": 0.812523,
+                "h": 0.015573
+              },
+              {
+                "text": "their lesser-known predecessors. Conventional wisdom also places great weight on insight in",
+                "x": 0.067386,
+                "y": 0.280246,
+                "w": 0.790444,
+                "h": 0.013843
+              },
+              {
+                "text": "promoting breakthrough scientific achievements, as if ideas spontaneously pop into someone's",
+                "x": 0.067386,
+                "y": 0.29928,
+                "w": 0.803692,
+                "h": 0.015594
+              },
+              {
+                "text": "head - fully formed and functional.",
+                "x": 0.067386,
+                "y": 0.318314,
+                "w": 0.302488,
+                "h": 0.017376
+              },
+              {
+                "text": "There may be some limited truth to this view. However, we believe that it largely misrepresents",
+                "x": 0.067386,
+                "y": 0.356382,
+                "w": 0.810316,
+                "h": 0.017396
+              },
+              {
+                "text": "the real nature of scientific discovery, as well as that of creativity and innovation in many other",
+                "x": 0.065179,
+                "y": 0.377146,
+                "w": 0.812523,
+                "h": 0.017448
+              },
+              {
+                "text": "realms of human endeavor.",
+                "x": 0.065179,
+                "y": 0.397693,
+                "w": 0.234042,
+                "h": 0.014172
+              },
+              {
+                "text": "Setting aside such greats as Darwin and Einstein - whose monumental contributions are duly",
+                "x": 0.067386,
+                "y": 0.435782,
+                "w": 0.79486,
+                "h": 0.017715
+              },
+              {
+                "text": "celebrated - we suggest that innovation is more a process of trial and error, where two steps",
+                "x": 0.067386,
+                "y": 0.456597,
+                "w": 0.781612,
+                "h": 0.015717
+              },
+              {
+                "text": "forward may sometimes come with one step back, as well as one or more steps to the right or",
+                "x": 0.065179,
+                "y": 0.475641,
+                "w": 0.797068,
+                "h": 0.017437
+              },
+              {
+                "text": "left. This evolutionary view of human innovation undermines the notion of creative genius and",
+                "x": 0.065179,
+                "y": 0.494685,
+                "w": 0.808108,
+                "h": 0.017427
+              },
+              {
+                "text": "recognizes the cumulative nature of scientific progress.",
+                "x": 0.065179,
+                "y": 0.515501,
+                "w": 0.4725,
+                "h": 0.015645
+              },
+              {
+                "text": "Consider one unheralded scientist: John Nicholson, a mathematical physicist working in the",
+                "x": 0.065179,
+                "y": 0.555361,
+                "w": 0.786028,
+                "h": 0.017314
+              },
+              {
+                "text": "1910s who postulated the existence of 'proto-elements' in outer space. By combining different",
+                "x": 0.067386,
+                "y": 0.574405,
+                "w": 0.808108,
+                "h": 0.017303
+              },
+              {
+                "text": "numbers of weights of these proto-elements' atoms, Nicholson could recover the weights of all",
+                "x": 0.067386,
+                "y": 0.591677,
+                "w": 0.808108,
+                "h": 0.019065
+              },
+              {
+                "text": "the elements in the then-known periodic table. These successes are all the more noteworthy given",
+                "x": 0.065179,
+                "y": 0.612472,
+                "w": 0.830187,
+                "h": 0.017303
+              },
+              {
+                "text": "the fact that Nicholson was wrong about the presence of proto-elements: they do not actually",
+                "x": 0.065179,
+                "y": 0.633236,
+                "w": 0.79486,
+                "h": 0.017345
+              },
+              {
+                "text": "exist. Yet, amid his often fanciful theories and wild speculations, Nicholson also proposed a novel",
+                "x": 0.067386,
+                "y": 0.65227,
+                "w": 0.834603,
+                "h": 0.017355
+              },
+              {
+                "text": "theory about the structure of atoms. Niels Bohr, the Nobel prize-winning father of modern atomic",
+                "x": 0.065179,
+                "y": 0.673034,
+                "w": 0.839019,
+                "h": 0.017406
+              },
+              {
+                "text": "theory, jumped off from this interesting idea to conceive his now-famous model of the atom.",
+                "x": 0.062971,
+                "y": 0.693798,
+                "w": 0.792652,
+                "h": 0.019229
+              },
+              {
+                "text": "What are we to make of this story? One might simply conclude that science is a collective and",
+                "x": 0.067386,
+                "y": 0.731866,
+                "w": 0.803692,
+                "h": 0.017479
+              },
+              {
+                "text": "cumulative enterprise. That may be true, but there may be a deeper insight to be gleaned. We",
+                "x": 0.067386,
+                "y": 0.752445,
+                "w": 0.790444,
+                "h": 0.015944
+              },
+              {
+                "text": "propose that science is constantly evolving, much as species of animals do. In biological systems,",
+                "x": 0.067386,
+                "y": 0.771489,
+                "w": 0.832395,
+                "h": 0.017479
+              },
+              {
+                "text": "organisms may display new characteristics that result from random genetic mutations. In the same",
+                "x": 0.067386,
+                "y": 0.792304,
+                "w": 0.836811,
+                "h": 0.015697
+              },
+              {
+                "text": "way, random, arbitrary or accidental mutations of ideas may help pave the way for advances in",
+                "x": 0.067386,
+                "y": 0.811348,
+                "w": 0.8059,
+                "h": 0.017417
+              },
+              {
+                "text": "science. If mutations prove beneficial, then the animal or the scientific theory will continue to",
+                "x": 0.067386,
+                "y": 0.830393,
+                "w": 0.799276,
+                "h": 0.017406
+              },
+              {
+                "text": "thrive and perhaps reproduce.",
+                "x": 0.067386,
+                "y": 0.851208,
+                "w": 0.256122,
+                "h": 0.017355
+              },
+              {
+                "text": "45",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-2/page-39.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Support for this evolutionary view of behavioral innovation comes from many domains. Consider",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.834603,
+                "h": 0.017376
+              },
+              {
+                "text": "one example of an influential innovation in US horseracing. The so-called 'acey-deucy' stirrup",
+                "x": 0.082842,
+                "y": 0.039729,
+                "w": 0.8059,
+                "h": 0.017386
+              },
+              {
+                "text": "placement, in which the rider's foot in his left stirrup is placed as much as 25 centimeters lower",
+                "x": 0.082842,
+                "y": 0.062223,
+                "w": 0.814731,
+                "h": 0.015707
+              },
+              {
+                "text": "than the right, is believed to confer important speed advantages when turning on oval tracks. It",
+                "x": 0.082842,
+                "y": 0.079527,
+                "w": 0.808108,
+                "h": 0.017448
+              },
+              {
+                "text": "was developed by a relatively unknown jockey named Jackie Westrope. Had Westrope conducted",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.825771,
+                "h": 0.017715
+              },
+              {
+                "text": "methodical investigations or examined extensive film records in a shrewd plan to outrun his",
+                "x": 0.082842,
+                "y": 0.12089,
+                "w": 0.781612,
+                "h": 0.015944
+              },
+              {
+                "text": "rivals? Had he foreseen the speed advantage that would be conferred by riding acey-deucy? No.",
+                "x": 0.080634,
+                "y": 0.139934,
+                "w": 0.819147,
+                "h": 0.019188
+              },
+              {
+                "text": "He suffered a leg injury, which left him unable to fully bend his left knee. His modification just",
+                "x": 0.08505,
+                "y": 0.158978,
+                "w": 0.810316,
+                "h": 0.017448
+              },
+              {
+                "text": "happened to coincide with enhanced left-hand turning performance. This led to the rapid and",
+                "x": 0.082842,
+                "y": 0.179794,
+                "w": 0.792652,
+                "h": 0.015666
+              },
+              {
+                "text": "widespread adoption of riding acey-deucy by many riders, a racing style which continues in",
+                "x": 0.082842,
+                "y": 0.198838,
+                "w": 0.78382,
+                "h": 0.017386
+              },
+              {
+                "text": "today's thoroughbred racing.",
+                "x": 0.080634,
+                "y": 0.219653,
+                "w": 0.24729,
+                "h": 0.017334
+              },
+              {
+                "text": "Plenty of other stories show that fresh advances can arise from error, misadventure, and also",
+                "x": 0.082842,
+                "y": 0.257742,
+                "w": 0.788236,
+                "h": 0.017314
+              },
+              {
+                "text": "pure serendipity - a happy accident. For example, in the early 1970s, two employees of the",
+                "x": 0.082842,
+                "y": 0.278516,
+                "w": 0.774988,
+                "h": 0.020857
+              },
+              {
+                "text": "company 3M each had a problem: Spencer Silver had a product - a glue which was only slightly",
+                "x": 0.080634,
+                "y": 0.295819,
+                "w": 0.825771,
+                "h": 0.022597
+              },
+              {
+                "text": "sticky - and no use for it, while his colleague Art Fry was trying to figure out how to affix",
+                "x": 0.082842,
+                "y": 0.318314,
+                "w": 0.768365,
+                "h": 0.015604
+              },
+              {
+                "text": "temporary bookmarks in his hymn book without damaging its pages. The solution to both these",
+                "x": 0.080634,
+                "y": 0.337348,
+                "w": 0.816939,
+                "h": 0.017386
+              },
+              {
+                "text": "problems was the invention of the brilliantly simple yet phenomenally successful Post-It note.",
+                "x": 0.082842,
+                "y": 0.358112,
+                "w": 0.801484,
+                "h": 0.017437
+              },
+              {
+                "text": "Such examples give lie to the claim that ingenious, designing minds are responsible for human",
+                "x": 0.082842,
+                "y": 0.377146,
+                "w": 0.808108,
+                "h": 0.017448
+              },
+              {
+                "text": "creativity and invention. Far more banal and mechanical forces may be at work; forces that are",
+                "x": 0.082842,
+                "y": 0.396179,
+                "w": 0.8059,
+                "h": 0.017458
+              },
+              {
+                "text": "fundamentally connected to the laws of science.",
+                "x": 0.082842,
+                "y": 0.416738,
+                "w": 0.410678,
+                "h": 0.015944
+              },
+              {
+                "text": "The notions of insight, creativity and genius are often invoked, but they remain vague and of",
+                "x": 0.08505,
+                "y": 0.454826,
+                "w": 0.790444,
+                "h": 0.017489
+              },
+              {
+                "text": "doubtful scientific utility, especially when one considers the diverse and enduring contributions of",
+                "x": 0.080634,
+                "y": 0.475641,
+                "w": 0.841227,
+                "h": 0.019168
+              },
+              {
+                "text": "individuals such as Plato, Leonardo da Vinci, Shakespeare, Beethoven, Galileo, Newton, Kepler,",
+                "x": 0.082842,
+                "y": 0.496457,
+                "w": 0.825771,
+                "h": 0.015655
+              },
+              {
+                "text": "Curie, Pasteur and Edison. These notions merely label rather than explain the evolution of human",
+                "x": 0.082842,
+                "y": 0.515501,
+                "w": 0.830187,
+                "h": 0.017376
+              },
+              {
+                "text": "innovations. We need another approach, and there is a promising candidate.",
+                "x": 0.082842,
+                "y": 0.534545,
+                "w": 0.64472,
+                "h": 0.017365
+              },
+              {
+                "text": "The Law of Effect was advanced by psychologist Edward Thorndike in 1898, some 40 years",
+                "x": 0.082842,
+                "y": 0.574405,
+                "w": 0.786028,
+                "h": 0.015573
+              },
+              {
+                "text": "after Charles Darwin published his groundbreaking work on biological evolution, On the Origin",
+                "x": 0.080634,
+                "y": 0.593439,
+                "w": 0.823563,
+                "h": 0.020826
+              },
+              {
+                "text": "of Species. This simple law holds that organisms tend to repeat successful behaviors and to",
+                "x": 0.080634,
+                "y": 0.612472,
+                "w": 0.777196,
+                "h": 0.019065
+              },
+              {
+                "text": "refrain from performing unsuccessful ones. Just like Darwin's Law of Natural Selection, the Law",
+                "x": 0.082842,
+                "y": 0.633236,
+                "w": 0.827979,
+                "h": 0.017345
+              },
+              {
+                "text": "of Effect involves an entirely mechanical process of variation and selection, without any end",
+                "x": 0.082842,
+                "y": 0.654001,
+                "w": 0.788236,
+                "h": 0.017396
+              },
+              {
+                "text": "objective in sight.",
+                "x": 0.080634,
+                "y": 0.673034,
+                "w": 0.154556,
+                "h": 0.017406
+              },
+              {
+                "text": "Of course, the origin of human innovation demands much further study. In particular, the",
+                "x": 0.08505,
+                "y": 0.712832,
+                "w": 0.759533,
+                "h": 0.017468
+              },
+              {
+                "text": "provenance of the raw material on which the Law of Effect operates is not as clearly known as",
+                "x": 0.082842,
+                "y": 0.733401,
+                "w": 0.803692,
+                "h": 0.015944
+              },
+              {
+                "text": "that of the genetic mutations on which the Law of Natural Selection operates. The generation of",
+                "x": 0.082842,
+                "y": 0.7509,
+                "w": 0.821355,
+                "h": 0.017489
+              },
+              {
+                "text": "novel ideas and behaviors may not be entirely random, but constrained by prior successes and",
+                "x": 0.082842,
+                "y": 0.771489,
+                "w": 0.799276,
+                "h": 0.017479
+              },
+              {
+                "text": "failures - of the current individual (such as Bohr) or of predecessors (such as Nicholson).",
+                "x": 0.082842,
+                "y": 0.792304,
+                "w": 0.766157,
+                "h": 0.015697
+              },
+              {
+                "text": "The time seems right for abandoning the naive notions of intelligent design and genius, and for",
+                "x": 0.08505,
+                "y": 0.830393,
+                "w": 0.810316,
+                "h": 0.017406
+              },
+              {
+                "text": "scientifically exploring the true origins of creative behavior.",
+                "x": 0.082842,
+                "y": 0.851208,
+                "w": 0.512243,
+                "h": 0.015625
+              },
+              {
+                "text": "46",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.017303
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-2/page-43.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.435968,
+                "y": 0.016663,
+                "w": 0.130559,
+                "h": 0.021906
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.080634,
+                "y": 0.082802,
+                "w": 0.240666,
+                "h": 0.019219
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.080634,
+                "y": 0.124433,
+                "w": 0.463668,
+                "h": 0.017386
+              },
+              {
+                "text": "The table and charts below give information on the police budget for 2017 and",
+                "x": 0.104922,
+                "y": 0.172965,
+                "w": 0.799276,
+                "h": 0.022494
+              },
+              {
+                "text": "2018 in one area of Britain. The table shows where the money came from and",
+                "x": 0.104922,
+                "y": 0.190269,
+                "w": 0.788236,
+                "h": 0.024225
+              },
+              {
+                "text": "the charts show how it was distributed.",
+                "x": 0.102714,
+                "y": 0.209302,
+                "w": 0.406262,
+                "h": 0.022494
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.102579,
+                "y": 0.248873,
+                "w": 0.790711,
+                "h": 0.026745
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.104922,
+                "y": 0.271471,
+                "w": 0.359895,
+                "h": 0.022618
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.080634,
+                "y": 0.323289,
+                "w": 0.238458,
+                "h": 0.01925
+              },
+              {
+                "text": "Police Budget 2017-2018 (in £m)",
+                "x": 0.274933,
+                "y": 0.36492,
+                "w": 0.457044,
+                "h": 0.02613
+              },
+              {
+                "text": "Sources",
+                "x": 0.24392,
+                "y": 0.408026,
+                "w": 0.073066,
+                "h": 0.017836
+              },
+              {
+                "text": "National Government",
+                "x": 0.24623,
+                "y": 0.430786,
+                "w": 0.165596,
+                "h": 0.019168
+              },
+              {
+                "text": "Local Taxes",
+                "x": 0.243802,
+                "y": 0.455876,
+                "w": 0.095382,
+                "h": 0.017303
+              },
+              {
+                "text": "Other sources (eg grants)",
+                "x": 0.244022,
+                "y": 0.477413,
+                "w": 0.200923,
+                "h": 0.020857
+              },
+              {
+                "text": "Total",
+                "x": 0.244022,
+                "y": 0.503461,
+                "w": 0.046367,
+                "h": 0.017303
+              },
+              {
+                "text": "2017",
+                "x": 0.517807,
+                "y": 0.408292,
+                "w": 0.052991,
+                "h": 0.017303
+              },
+              {
+                "text": "175.5m",
+                "x": 0.517807,
+                "y": 0.432517,
+                "w": 0.061822,
+                "h": 0.015573
+              },
+              {
+                "text": "91.2m",
+                "x": 0.517807,
+                "y": 0.456741,
+                "w": 0.057407,
+                "h": 0.015573
+              },
+              {
+                "text": "38m",
+                "x": 0.517807,
+                "y": 0.480966,
+                "w": 0.050783,
+                "h": 0.015573
+              },
+              {
+                "text": "304.7m",
+                "x": 0.517807,
+                "y": 0.503461,
+                "w": 0.06403,
+                "h": 0.019034
+              },
+              {
+                "text": "2018",
+                "x": 0.683403,
+                "y": 0.406561,
+                "w": 0.048575,
+                "h": 0.019034
+              },
+              {
+                "text": "177.8m",
+                "x": 0.676779,
+                "y": 0.432517,
+                "w": 0.061822,
+                "h": 0.017303
+              },
+              {
+                "text": "102.3m",
+                "x": 0.676779,
+                "y": 0.456741,
+                "w": 0.061822,
+                "h": 0.017303
+              },
+              {
+                "text": "38.5m",
+                "x": 0.681195,
+                "y": 0.480966,
+                "w": 0.052991,
+                "h": 0.015573
+              },
+              {
+                "text": "318.6m",
+                "x": 0.676779,
+                "y": 0.503461,
+                "w": 0.06403,
+                "h": 0.019034
+              },
+              {
+                "text": "How the money was spent",
+                "x": 0.378707,
+                "y": 0.558832,
+                "w": 0.251706,
+                "h": 0.020888
+              },
+              {
+                "text": "17%",
+                "x": 0.268309,
+                "y": 0.619394,
+                "w": 0.039743,
+                "h": 0.017303
+              },
+              {
+                "text": "17%",
+                "x": 0.601709,
+                "y": 0.621124,
+                "w": 0.039743,
+                "h": 0.015573
+              },
+              {
+                "text": "8%",
+                "x": 0.230774,
+                "y": 0.655731,
+                "w": 0.033119,
+                "h": 0.019034
+              },
+              {
+                "text": "14%",
+                "x": 0.566382,
+                "y": 0.673034,
+                "w": 0.037535,
+                "h": 0.015573
+              },
+              {
+                "text": "75%",
+                "x": 0.354419,
+                "y": 0.697259,
+                "w": 0.044159,
+                "h": 0.020764
+              },
+              {
+                "text": "69%",
+                "x": 0.694443,
+                "y": 0.697259,
+                "w": 0.044159,
+                "h": 0.019034
+              },
+              {
+                "text": "2017",
+                "x": 0.305844,
+                "y": 0.787237,
+                "w": 0.050783,
+                "h": 0.015573
+              },
+              {
+                "text": "2018",
+                "x": 0.643608,
+                "y": 0.785417,
+                "w": 0.048679,
+                "h": 0.017483
+              },
+              {
+                "text": "• Salaries (officers and staff)",
+                "x": 0.389746,
+                "y": 0.832164,
+                "w": 0.231834,
+                "h": 0.020826
+              },
+              {
+                "text": "•Technology",
+                "x": 0.387368,
+                "y": 0.859357,
+                "w": 0.117362,
+                "h": 0.023602
+              },
+              {
+                "text": "Buildings and transport",
+                "x": 0.405202,
+                "y": 0.892788,
+                "w": 0.185467,
+                "h": 0.019096
+              },
+              {
+                "text": "50",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "→ • p. 130",
+                "x": 0.149037,
+                "y": 0.935872,
+                "w": 0.123732,
+                "h": 0.019383
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-2/page-44.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.065179,
+                "y": 0.018965,
+                "w": 0.242874,
+                "h": 0.019106
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.46146,
+                "h": 0.019209
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.293657,
+                "h": 0.01925
+              },
+              {
+                "text": "Some children spend hours every day on their smartphones.",
+                "x": 0.089466,
+                "y": 0.150471,
+                "w": 0.618224,
+                "h": 0.020908
+              },
+              {
+                "text": "Why is this the case? Do you think this is a positive or a negative",
+                "x": 0.089466,
+                "y": 0.190269,
+                "w": 0.664591,
+                "h": 0.02097
+              },
+              {
+                "text": "development?",
+                "x": 0.087258,
+                "y": 0.207572,
+                "w": 0.152348,
+                "h": 0.020764
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.065179,
+                "y": 0.261213,
+                "w": 0.757325,
+                "h": 0.019116
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.065179,
+                "y": 0.281977,
+                "w": 0.24729,
+                "h": 0.019168
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.067386,
+                "y": 0.321775,
+                "w": 0.23625,
+                "h": 0.015686
+              },
+              {
+                "text": "→ • p. 131 51",
+                "x": 0.725354,
+                "y": 0.934316,
+                "w": 0.178843,
+                "h": 0.02097
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-24.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.065179,
+                "y": 0.063758,
+                "w": 0.128061,
+                "h": 0.031445
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.405202,
+                "y": 0.133167,
+                "w": 0.16118,
+                "h": 0.019034
+              },
+              {
+                "text": "PART 1",
+                "x": 0.065117,
+                "y": 0.202154,
+                "w": 0.103896,
+                "h": 0.017758
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.228566,
+                "y": 0.202381,
+                "w": 0.187675,
+                "h": 0.017303
+              },
+              {
+                "text": "Questions 1-7",
+                "x": 0.067386,
+                "y": 0.242179,
+                "w": 0.152348,
+                "h": 0.017334
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.283707,
+                "w": 0.251706,
+                "h": 0.017437
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.065179,
+                "y": 0.321775,
+                "w": 0.404054,
+                "h": 0.017458
+              },
+              {
+                "text": "Opportunities for voluntary work in Southoe village",
+                "x": 0.129209,
+                "y": 0.370224,
+                "w": 0.715374,
+                "h": 0.027685
+              },
+              {
+                "text": "Library",
+                "x": 0.089466,
+                "y": 0.410022,
+                "w": 0.07507,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.087258,
+                "y": 0.435977,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "Help with 1",
+                "x": 0.135833,
+                "y": 0.434247,
+                "w": 0.108189,
+                "h": 0.01925
+              },
+              {
+                "text": "•",
+                "x": 0.089466,
+                "y": 0.461932,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "Help needed to keep 2",
+                "x": 0.135833,
+                "y": 0.461912,
+                "w": 0.218586,
+                "h": 0.019054
+              },
+              {
+                "text": "Library is in the 3",
+                "x": 0.135833,
+                "y": 0.487888,
+                "w": 0.167804,
+                "h": 0.017427
+              },
+              {
+                "text": "books (times to be arranged)",
+                "x": 0.41845,
+                "y": 0.434247,
+                "w": 0.278201,
+                "h": 0.01925
+              },
+              {
+                "text": "...... of books up to date",
+                "x": 0.495728,
+                "y": 0.46014,
+                "w": 0.218586,
+                "h": 0.019096
+              },
+              {
+                "text": "....Room in the village hall",
+                "x": 0.449361,
+                "y": 0.486157,
+                "w": 0.253914,
+                "h": 0.020929
+              },
+              {
+                "text": "Lunch club",
+                "x": 0.091674,
+                "y": 0.527685,
+                "w": 0.114813,
+                "h": 0.015717
+              },
+              {
+                "text": "Help by providing 4",
+                "x": 0.138041,
+                "y": 0.553589,
+                "w": 0.183259,
+                "h": 0.019085
+              },
+              {
+                "text": "•",
+                "x": 0.087258,
+                "y": 0.579596,
+                "w": 0.022079,
+                "h": 0.017303
+              },
+              {
+                "text": "Help with hobbies such as 5",
+                "x": 0.138041,
+                "y": 0.579596,
+                "w": 0.269369,
+                "h": 0.019168
+              },
+              {
+                "text": "Help for individuals needed next week",
+                "x": 0.091674,
+                "y": 0.619394,
+                "w": 0.39743,
+                "h": 0.017458
+              },
+              {
+                "text": "•",
+                "x": 0.087258,
+                "y": 0.645349,
+                "w": 0.019871,
+                "h": 0.019034
+              },
+              {
+                "text": "Taking Mrs Carroll to 6",
+                "x": 0.138041,
+                "y": 0.645266,
+                "w": 0.216379,
+                "h": 0.019116
+              },
+              {
+                "text": "Work in the 7",
+                "x": 0.135833,
+                "y": 0.671304,
+                "w": 0.130269,
+                "h": 0.017365
+              },
+              {
+                "text": "..at Mr Selsbury's house",
+                "x": 0.429489,
+                "y": 0.671304,
+                "w": 0.231834,
+                "h": 0.019137
+              },
+              {
+                "text": "Questions 8-10",
+                "x": 0.067386,
+                "y": 0.719671,
+                "w": 0.165596,
+                "h": 0.019116
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.067386,
+                "y": 0.759531,
+                "w": 0.245082,
+                "h": 0.019054
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.065179,
+                "y": 0.797619,
+                "w": 0.404054,
+                "h": 0.019044
+              },
+              {
+                "text": "Date",
+                "x": 0.071802,
+                "y": 0.863372,
+                "w": 0.052991,
+                "h": 0.019034
+              },
+              {
+                "text": "19 Oct",
+                "x": 0.06945,
+                "y": 0.885578,
+                "w": 0.073151,
+                "h": 0.023072
+              },
+              {
+                "text": "18 Nov",
+                "x": 0.069557,
+                "y": 0.915198,
+                "w": 0.077352,
+                "h": 0.020933
+              },
+              {
+                "text": "31 Dec",
+                "x": 0.069443,
+                "y": 0.942619,
+                "w": 0.077581,
+                "h": 0.021462
+              },
+              {
+                "text": "Event",
+                "x": 0.155501,
+                "y": 0.862917,
+                "w": 0.068852,
+                "h": 0.019944
+              },
+              {
+                "text": "dance",
+                "x": 0.157912,
+                "y": 0.917013,
+                "w": 0.066238,
+                "h": 0.017303
+              },
+              {
+                "text": "New Year's Eve party",
+                "x": 0.157912,
+                "y": 0.944657,
+                "w": 0.211963,
+                "h": 0.020816
+              },
+              {
+                "text": "Village social events",
+                "x": 0.374291,
+                "y": 0.837417,
+                "w": 0.216379,
+                "h": 0.022649
+              },
+              {
+                "text": "Location",
+                "x": 0.402919,
+                "y": 0.861448,
+                "w": 0.095091,
+                "h": 0.022882
+              },
+              {
+                "text": "Help needed",
+                "x": 0.568454,
+                "y": 0.861152,
+                "w": 0.13054,
+                "h": 0.023473
+              },
+              {
+                "text": "Village hall",
+                "x": 0.402837,
+                "y": 0.885423,
+                "w": 0.110711,
+                "h": 0.025113
+              },
+              {
+                "text": "providing refreshments",
+                "x": 0.566382,
+                "y": 0.885753,
+                "w": 0.223002,
+                "h": 0.024359
+              },
+              {
+                "text": "Village hall",
+                "x": 0.402742,
+                "y": 0.912832,
+                "w": 0.110901,
+                "h": 0.025666
+              },
+              {
+                "text": "checking 9....",
+                "x": 0.566238,
+                "y": 0.918213,
+                "w": 0.132765,
+                "h": 0.023555
+              },
+              {
+                "text": "Mountfort Hotel designing the 10...",
+                "x": 0.402994,
+                "y": 0.942885,
+                "w": 0.335608,
+                "h": 0.02613
+              },
+              {
+                "text": "→ O p. 121",
+                "x": 0.610541,
+                "y": 0.980974,
+                "w": 0.123645,
+                "h": 0.020826
+              },
+              {
+                "text": "• p. 101",
+                "x": 0.755971,
+                "y": 0.978431,
+                "w": 0.097737,
+                "h": 0.022512
+              },
+              {
+                "text": "31",
+                "x": 0.877702,
+                "y": 0.979305,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-25.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.082736,
+                "y": 0.018598,
+                "w": 0.106193,
+                "h": 0.019766
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.200923,
+                "h": 0.019147
+              },
+              {
+                "text": "Questions 11-14",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.176636,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.342231,
+                "h": 0.02098
+              },
+              {
+                "text": "Oniton Hall",
+                "x": 0.422795,
+                "y": 0.141505,
+                "w": 0.161322,
+                "h": 0.023123
+              },
+              {
+                "text": "11",
+                "x": 0.080634,
+                "y": 0.186808,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Many past owners made changes to",
+                "x": 0.127001,
+                "y": 0.186808,
+                "w": 0.346647,
+                "h": 0.019116
+              },
+              {
+                "text": "A the gardens.",
+                "x": 0.129209,
+                "y": 0.217882,
+                "w": 0.167804,
+                "h": 0.017376
+              },
+              {
+                "text": "B the house.",
+                "x": 0.129209,
+                "y": 0.236926,
+                "w": 0.15014,
+                "h": 0.017365
+              },
+              {
+                "text": "C the farm.",
+                "x": 0.129046,
+                "y": 0.255291,
+                "w": 0.13501,
+                "h": 0.020495
+              },
+              {
+                "text": "12 Sir Edward Downes built Oniton Hall because he wanted",
+                "x": 0.080634,
+                "y": 0.285437,
+                "w": 0.585105,
+                "h": 0.01925
+              },
+              {
+                "text": "A a place for discussing politics.",
+                "x": 0.129209,
+                "y": 0.318314,
+                "w": 0.3334,
+                "h": 0.019147
+              },
+              {
+                "text": "B a place to display his wealth.",
+                "x": 0.129209,
+                "y": 0.337348,
+                "w": 0.32236,
+                "h": 0.017386
+              },
+              {
+                "text": "C a place for artists and writers.",
+                "x": 0.131417,
+                "y": 0.358112,
+                "w": 0.326776,
+                "h": 0.015666
+              },
+              {
+                "text": "13",
+                "x": 0.082842,
+                "y": 0.387528,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Visitors can learn about the work of servants in the past from",
+                "x": 0.120377,
+                "y": 0.387507,
+                "w": 0.582897,
+                "h": 0.015594
+              },
+              {
+                "text": "A audio guides.",
+                "x": 0.131417,
+                "y": 0.418509,
+                "w": 0.174428,
+                "h": 0.015944
+              },
+              {
+                "text": "B photographs.",
+                "x": 0.129209,
+                "y": 0.437553,
+                "w": 0.17222,
+                "h": 0.019188
+              },
+              {
+                "text": "people in costume.",
+                "x": 0.175576,
+                "y": 0.458369,
+                "w": 0.183259,
+                "h": 0.015676
+              },
+              {
+                "text": "14 What is new for children at Oniton Hall?",
+                "x": 0.082842,
+                "y": 0.487888,
+                "w": 0.421717,
+                "h": 0.015655
+              },
+              {
+                "text": "A clothes for dressing up",
+                "x": 0.131145,
+                "y": 0.517304,
+                "w": 0.261118,
+                "h": 0.019154
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.539798,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "mini tractors",
+                "x": 0.175576,
+                "y": 0.539798,
+                "w": 0.119229,
+                "h": 0.015573
+              },
+              {
+                "text": "C the adventure playground",
+                "x": 0.131417,
+                "y": 0.558832,
+                "w": 0.287033,
+                "h": 0.017345
+              },
+              {
+                "text": "32",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.714314,
+                "y": 0.093369,
+                "w": 0.17222,
+                "h": 0.017334
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-26.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Which activity is offered at each of the following locations on the farm?",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.666799,
+                "h": 0.019209
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.706542,
+                "h": 0.020764
+              },
+              {
+                "text": "Questions 15-20.",
+                "x": 0.067386,
+                "y": 0.119118,
+                "w": 0.167804,
+                "h": 0.017715
+              },
+              {
+                "text": "Activities",
+                "x": 0.436034,
+                "y": 0.17271,
+                "w": 0.099515,
+                "h": 0.019543
+              },
+              {
+                "text": "A",
+                "x": 0.312468,
+                "y": 0.205842,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "shopping",
+                "x": 0.356526,
+                "y": 0.205511,
+                "w": 0.090729,
+                "h": 0.017964
+              },
+              {
+                "text": "B",
+                "x": 0.312468,
+                "y": 0.235257,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "watching cows being milked",
+                "x": 0.356627,
+                "y": 0.233383,
+                "w": 0.269369,
+                "h": 0.020908
+              },
+              {
+                "text": "C",
+                "x": 0.312468,
+                "y": 0.266404,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "seeing old farming equipment",
+                "x": 0.358835,
+                "y": 0.264673,
+                "w": 0.284825,
+                "h": 0.02097
+              },
+              {
+                "text": "D",
+                "x": 0.312468,
+                "y": 0.295819,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "eating and drinking",
+                "x": 0.35867,
+                "y": 0.291633,
+                "w": 0.186123,
+                "h": 0.024628
+              },
+              {
+                "text": "E",
+                "x": 0.312468,
+                "y": 0.326966,
+                "w": 0.015456,
+                "h": 0.017303
+              },
+              {
+                "text": "starting a trip",
+                "x": 0.358698,
+                "y": 0.326376,
+                "w": 0.130543,
+                "h": 0.020214
+              },
+              {
+                "text": "F",
+                "x": 0.31026,
+                "y": 0.358112,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "seeing rare breeds of animals",
+                "x": 0.358835,
+                "y": 0.358112,
+                "w": 0.282617,
+                "h": 0.019209
+              },
+              {
+                "text": "G",
+                "x": 0.312468,
+                "y": 0.387528,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "helping to look after animals",
+                "x": 0.354419,
+                "y": 0.387507,
+                "w": 0.271577,
+                "h": 0.019054
+              },
+              {
+                "text": "H",
+                "x": 0.314676,
+                "y": 0.418674,
+                "w": 0.037535,
+                "h": 0.015573
+              },
+              {
+                "text": "using farming tools",
+                "x": 0.354419,
+                "y": 0.418509,
+                "w": 0.185467,
+                "h": 0.019199
+              },
+              {
+                "text": "Locations on the farm",
+                "x": 0.111545,
+                "y": 0.489618,
+                "w": 0.22521,
+                "h": 0.015697
+              },
+              {
+                "text": "15 dairy",
+                "x": 0.065179,
+                "y": 0.519034,
+                "w": 0.094942,
+                "h": 0.019054
+              },
+              {
+                "text": "16",
+                "x": 0.067386,
+                "y": 0.55018,
+                "w": 0.039743,
+                "h": 0.013843
+              },
+              {
+                "text": "large barn",
+                "x": 0.104922,
+                "y": 0.550046,
+                "w": 0.105981,
+                "h": 0.019168
+              },
+              {
+                "text": "17",
+                "x": 0.065179,
+                "y": 0.581326,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "small barn",
+                "x": 0.10926,
+                "y": 0.581003,
+                "w": 0.103929,
+                "h": 0.016218
+              },
+              {
+                "text": "18",
+                "x": 0.065179,
+                "y": 0.610742,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "stables",
+                "x": 0.096061,
+                "y": 0.610654,
+                "w": 0.086167,
+                "h": 0.017479
+              },
+              {
+                "text": "19 shed",
+                "x": 0.065036,
+                "y": 0.641388,
+                "w": 0.097434,
+                "h": 0.018305
+              },
+              {
+                "text": "20 parkland",
+                "x": 0.062851,
+                "y": 0.670782,
+                "w": 0.132716,
+                "h": 0.020079
+              },
+              {
+                "text": "→ O p. 121",
+                "x": 0.610541,
+                "y": 0.936047,
+                "w": 0.123645,
+                "h": 0.01924
+              },
+              {
+                "text": "• p. 102",
+                "x": 0.753928,
+                "y": 0.935646,
+                "w": 0.095199,
+                "h": 0.019834
+              },
+              {
+                "text": "33",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.028703,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-27.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.082788,
+                "y": 0.020496,
+                "w": 0.103881,
+                "h": 0.017701
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.203131,
+                "h": 0.017376
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.216379,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.253914,
+                "h": 0.01925
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.716522,
+                "y": 0.093369,
+                "w": 0.170012,
+                "h": 0.015573
+              },
+              {
+                "text": "Which TWO things do the students agree they need to include in their reviews of",
+                "x": 0.082842,
+                "y": 0.139934,
+                "w": 0.763949,
+                "h": 0.017458
+              },
+              {
+                "text": "Romeo and Juliet?",
+                "x": 0.082842,
+                "y": 0.158978,
+                "w": 0.178843,
+                "h": 0.017448
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.190269,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.209302,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "analysis of the text",
+                "x": 0.175576,
+                "y": 0.190269,
+                "w": 0.181051,
+                "h": 0.017427
+              },
+              {
+                "text": "a summary of the plot",
+                "x": 0.175576,
+                "y": 0.211033,
+                "w": 0.209755,
+                "h": 0.017479
+              },
+              {
+                "text": "a description of the theatre",
+                "x": 0.175576,
+                "y": 0.230066,
+                "w": 0.253914,
+                "h": 0.017489
+              },
+              {
+                "text": "D",
+                "x": 0.129209,
+                "y": 0.2491,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.129209,
+                "y": 0.269864,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "a personal reaction",
+                "x": 0.177784,
+                "y": 0.250655,
+                "w": 0.181051,
+                "h": 0.015944
+              },
+              {
+                "text": "a reference to particular scenes",
+                "x": 0.177784,
+                "y": 0.2697,
+                "w": 0.298072,
+                "h": 0.015944
+              },
+              {
+                "text": "Questions 23-27",
+                "x": 0.082842,
+                "y": 0.320044,
+                "w": 0.178843,
+                "h": 0.017417
+              },
+              {
+                "text": "Which opinion do the speakers give about each of the following aspects of",
+                "x": 0.080634,
+                "y": 0.359842,
+                "w": 0.706542,
+                "h": 0.01925
+              },
+              {
+                "text": "The Emporium's production of Romeo and Juliet?",
+                "x": 0.082842,
+                "y": 0.380421,
+                "w": 0.470292,
+                "h": 0.017489
+              },
+              {
+                "text": "Choose FIVE answers from the box and write the correct letter, A-G, next to",
+                "x": 0.082842,
+                "y": 0.418509,
+                "w": 0.721998,
+                "h": 0.020929
+              },
+              {
+                "text": "Questions 23-27.",
+                "x": 0.082842,
+                "y": 0.439325,
+                "w": 0.170012,
+                "h": 0.017417
+              },
+              {
+                "text": "A",
+                "x": 0.244022,
+                "y": 0.520764,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.244022,
+                "y": 0.55191,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "C",
+                "x": 0.244022,
+                "y": 0.581326,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "D",
+                "x": 0.244022,
+                "y": 0.612472,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.244022,
+                "y": 0.643618,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "F",
+                "x": 0.241814,
+                "y": 0.673034,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "G",
+                "x": 0.244022,
+                "y": 0.70245,
+                "w": 0.022079,
+                "h": 0.017303
+              },
+              {
+                "text": "Opinions",
+                "x": 0.447098,
+                "y": 0.489438,
+                "w": 0.101675,
+                "h": 0.019394
+              },
+              {
+                "text": "They both expected this to be more traditional.",
+                "x": 0.283765,
+                "y": 0.520764,
+                "w": 0.450421,
+                "h": 0.019096
+              },
+              {
+                "text": "They both thought this was original.",
+                "x": 0.277141,
+                "y": 0.551818,
+                "w": 0.353271,
+                "h": 0.019126
+              },
+              {
+                "text": "They agree this created the right atmosphere.",
+                "x": 0.290389,
+                "y": 0.583056,
+                "w": 0.434965,
+                "h": 0.017479
+              },
+              {
+                "text": "They agree this was a major strength.",
+                "x": 0.290389,
+                "y": 0.612472,
+                "w": 0.362103,
+                "h": 0.017303
+              },
+              {
+                "text": "They were both disappointed by this.",
+                "x": 0.272725,
+                "y": 0.641723,
+                "w": 0.368727,
+                "h": 0.019199
+              },
+              {
+                "text": "They disagree about why this was an issue.",
+                "x": 0.288181,
+                "y": 0.673034,
+                "w": 0.419509,
+                "h": 0.02095
+              },
+              {
+                "text": "They disagree about how this could be improved.",
+                "x": 0.281557,
+                "y": 0.70417,
+                "w": 0.476916,
+                "h": 0.019044
+              },
+              {
+                "text": "Aspects of the production",
+                "x": 0.129209,
+                "y": 0.752445,
+                "w": 0.267161,
+                "h": 0.019219
+              },
+              {
+                "text": "23 the set",
+                "x": 0.080634,
+                "y": 0.780316,
+                "w": 0.119229,
+                "h": 0.020847
+              },
+              {
+                "text": "24 the lighting",
+                "x": 0.080555,
+                "y": 0.811123,
+                "w": 0.154715,
+                "h": 0.023172
+              },
+              {
+                "text": "25 the costume design",
+                "x": 0.07603,
+                "y": 0.842443,
+                "w": 0.241041,
+                "h": 0.021149
+              },
+              {
+                "text": "26 the music",
+                "x": 0.07833,
+                "y": 0.871597,
+                "w": 0.148125,
+                "h": 0.021618
+              },
+              {
+                "text": "27 the actors' delivery",
+                "x": 0.078426,
+                "y": 0.903026,
+                "w": 0.229626,
+                "h": 0.020908
+              },
+              {
+                "text": "34",
+                "x": 0.078426,
+                "y": 0.934316,
+                "w": 0.033119,
+                "h": 0.019034
+              },
+              {
+                "text": ". . . .",
+                "x": 0.429489,
+                "y": 0.792304,
+                "w": 0.08611,
+                "h": 0.005315
+              },
+              {
+                "text": "...",
+                "x": 0.429489,
+                "y": 0.821844,
+                "w": 0.088318,
+                "h": 0.008652
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-28.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 28-30",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose the correct letter,A, B or C.",
+                "x": 0.069594,
+                "y": 0.060493,
+                "w": 0.340023,
+                "h": 0.017437
+              },
+              {
+                "text": "28 The students think the story of Romeo and Juliet is still relevant for young people",
+                "x": 0.065179,
+                "y": 0.089888,
+                "w": 0.812523,
+                "h": 0.019054
+              },
+              {
+                "text": "today because",
+                "x": 0.111545,
+                "y": 0.110673,
+                "w": 0.141308,
+                "h": 0.015573
+              },
+              {
+                "text": "A it illustrates how easily conflict can start.",
+                "x": 0.113753,
+                "y": 0.141706,
+                "w": 0.428341,
+                "h": 0.017417
+              },
+              {
+                "text": "it deals with problems that families experience.",
+                "x": 0.138041,
+                "y": 0.158978,
+                "w": 0.465876,
+                "h": 0.020908
+              },
+              {
+                "text": "it teaches them about relationships.",
+                "x": 0.140249,
+                "y": 0.181565,
+                "w": 0.357687,
+                "h": 0.015625
+              },
+              {
+                "text": "29 The students found watching Romeo and Juliet in another language",
+                "x": 0.065179,
+                "y": 0.209302,
+                "w": 0.688879,
+                "h": 0.02098
+              },
+              {
+                "text": "A frustrating.",
+                "x": 0.115961,
+                "y": 0.242179,
+                "w": 0.147932,
+                "h": 0.015573
+              },
+              {
+                "text": "B demanding.",
+                "x": 0.115961,
+                "y": 0.262943,
+                "w": 0.158972,
+                "h": 0.015614
+              },
+              {
+                "text": "C moving.",
+                "x": 0.111438,
+                "y": 0.281485,
+                "w": 0.126068,
+                "h": 0.018287
+              },
+              {
+                "text": "30 Why do the students think Shakespeare's plays have such international appeal?",
+                "x": 0.065179,
+                "y": 0.311331,
+                "w": 0.803692,
+                "h": 0.019096
+              },
+              {
+                "text": "A The stories are exciting.",
+                "x": 0.113638,
+                "y": 0.342449,
+                "w": 0.276262,
+                "h": 0.015799
+              },
+              {
+                "text": "There are recognisable characters.",
+                "x": 0.157912,
+                "y": 0.361377,
+                "w": 0.335608,
+                "h": 0.019229
+              },
+              {
+                "text": "They can be interpreted in many ways.",
+                "x": 0.138041,
+                "y": 0.382192,
+                "w": 0.390806,
+                "h": 0.019178
+              },
+              {
+                "text": "→ O p. 121",
+                "x": 0.610541,
+                "y": 0.936047,
+                "w": 0.123645,
+                "h": 0.01924
+              },
+              {
+                "text": "•p. 103",
+                "x": 0.753904,
+                "y": 0.935545,
+                "w": 0.099664,
+                "h": 0.020036
+              },
+              {
+                "text": "35",
+                "x": 0.871078,
+                "y": 0.937777,
+                "w": 0.035327,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-29.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.082719,
+                "y": 0.016844,
+                "w": 0.106227,
+                "h": 0.021545
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.241814,
+                "y": 0.017234,
+                "w": 0.207547,
+                "h": 0.020836
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.082842,
+                "y": 0.058762,
+                "w": 0.256122,
+                "h": 0.020939
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.082842,
+                "y": 0.0951,
+                "w": 0.551986,
+                "h": 0.02269
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.712106,
+                "y": 0.093369,
+                "w": 0.170012,
+                "h": 0.015573
+              },
+              {
+                "text": "The impact of digital technology on the Icelandic language",
+                "x": 0.102714,
+                "y": 0.155662,
+                "w": 0.799276,
+                "h": 0.025955
+              },
+              {
+                "text": "The Icelandic language",
+                "x": 0.098298,
+                "y": 0.195295,
+                "w": 0.240666,
+                "h": 0.022659
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.236988,
+                "w": 0.019871,
+                "h": 0.020764
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.301011,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.332157,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "has approximately 31",
+                "x": 0.135833,
+                "y": 0.235154,
+                "w": 0.216379,
+                "h": 0.020867
+              },
+              {
+                "text": "speakers",
+                "x": 0.508829,
+                "y": 0.236554,
+                "w": 0.090818,
+                "h": 0.019902
+              },
+              {
+                "text": "has a 32",
+                "x": 0.144446,
+                "y": 0.265782,
+                "w": 0.086547,
+                "h": 0.020278
+              },
+              {
+                "text": "..that is still growing",
+                "x": 0.376499,
+                "y": 0.267928,
+                "w": 0.187675,
+                "h": 0.01924
+              },
+              {
+                "text": "has not changed a lot over the last thousand years",
+                "x": 0.144665,
+                "y": 0.295819,
+                "w": 0.485748,
+                "h": 0.022597
+              },
+              {
+                "text": "has its own words for computer-based concepts, such as web browser",
+                "x": 0.144665,
+                "y": 0.330375,
+                "w": 0.671215,
+                "h": 0.019085
+              },
+              {
+                "text": "and 33",
+                "x": 0.14459,
+                "y": 0.350963,
+                "w": 0.068595,
+                "h": 0.014298
+              },
+              {
+                "text": "Young speakers",
+                "x": 0.100506,
+                "y": 0.389258,
+                "w": 0.163388,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.429056,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.456741,
+                "w": 0.022079,
+                "h": 0.022494
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.484427,
+                "w": 0.019871,
+                "h": 0.022494
+              },
+              {
+                "text": "•",
+                "x": 0.093882,
+                "y": 0.536337,
+                "w": 0.024287,
+                "h": 0.022494
+              },
+              {
+                "text": "are big users of digital technology, such as 34",
+                "x": 0.144665,
+                "y": 0.427326,
+                "w": 0.439381,
+                "h": 0.020857
+              },
+              {
+                "text": "are becoming 35",
+                "x": 0.144665,
+                "y": 0.458369,
+                "w": 0.163388,
+                "h": 0.019137
+              },
+              {
+                "text": ".... very quickly",
+                "x": 0.44712,
+                "y": 0.45661,
+                "w": 0.13475,
+                "h": 0.021026
+              },
+              {
+                "text": "are having discussions using only English while they are in the",
+                "x": 0.144665,
+                "y": 0.487888,
+                "w": 0.593937,
+                "h": 0.02097
+              },
+              {
+                "text": "36",
+                "x": 0.144665,
+                "y": 0.510382,
+                "w": 0.028703,
+                "h": 0.013843
+              },
+              {
+                "text": "at school",
+                "x": 0.327867,
+                "y": 0.51015,
+                "w": 0.09064,
+                "h": 0.014307
+              },
+              {
+                "text": "are better able to identify the content of a 37.",
+                "x": 0.144665,
+                "y": 0.538068,
+                "w": 0.434965,
+                "h": 0.019065
+              },
+              {
+                "text": "Icelandic",
+                "x": 0.144665,
+                "y": 0.560562,
+                "w": 0.090526,
+                "h": 0.015573
+              },
+              {
+                "text": "... in English than",
+                "x": 0.709898,
+                "y": 0.538068,
+                "w": 0.154556,
+                "h": 0.019065
+              },
+              {
+                "text": "Technology and internet companies",
+                "x": 0.098298,
+                "y": 0.59863,
+                "w": 0.368727,
+                "h": 0.019178
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.636697,
+                "w": 0.022079,
+                "h": 0.020764
+              },
+              {
+                "text": "write very little in Icelandic because of the small number of speakers and",
+                "x": 0.144665,
+                "y": 0.636697,
+                "w": 0.688879,
+                "h": 0.019199
+              },
+              {
+                "text": "because of how complicated its 38.",
+                "x": 0.146872,
+                "y": 0.657461,
+                "w": 0.342231,
+                "h": 0.017479
+              },
+              {
+                "text": "…... is",
+                "x": 0.610541,
+                "y": 0.657461,
+                "w": 0.039743,
+                "h": 0.015707
+              },
+              {
+                "text": "The Icelandic government",
+                "x": 0.098298,
+                "y": 0.697084,
+                "w": 0.269369,
+                "h": 0.017479
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.737057,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.768203,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.797619,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.828765,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "has set up a fund to support the production of more digital content in the language",
+                "x": 0.144665,
+                "y": 0.735172,
+                "w": 0.741869,
+                "h": 0.019188
+              },
+              {
+                "text": "believes that Icelandic has a secure future",
+                "x": 0.144665,
+                "y": 0.766473,
+                "w": 0.404054,
+                "h": 0.017417
+              },
+              {
+                "text": "is worried that young Icelanders may lose their 39",
+                "x": 0.142457,
+                "y": 0.795848,
+                "w": 0.463668,
+                "h": 0.019075
+              },
+              {
+                "text": ".... as Icelanders",
+                "x": 0.747433,
+                "y": 0.797619,
+                "w": 0.143516,
+                "h": 0.015573
+              },
+              {
+                "text": "is worried about the consequences of children not being 40",
+                "x": 0.142457,
+                "y": 0.826849,
+                "w": 0.563026,
+                "h": 0.019219
+              },
+              {
+                "text": "in either Icelandic or English",
+                "x": 0.142457,
+                "y": 0.847665,
+                "w": 0.273785,
+                "h": 0.017437
+              },
+              {
+                "text": "36",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.017303
+              },
+              {
+                "text": "→ • p. 121",
+                "x": 0.146767,
+                "y": 0.937289,
+                "w": 0.128271,
+                "h": 0.01828
+              },
+              {
+                "text": "• p. 105",
+                "x": 0.294713,
+                "y": 0.935775,
+                "w": 0.09071,
+                "h": 0.019576
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-32.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 1-5",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.152348,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.598353,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 1-5 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.138163,
+                "w": 0.525491,
+                "h": 0.017715
+              },
+              {
+                "text": "The Dead Sea Scrolls",
+                "x": 0.334548,
+                "y": 0.193523,
+                "w": 0.30028,
+                "h": 0.024431
+              },
+              {
+                "text": "Discovery",
+                "x": 0.082842,
+                "y": 0.238718,
+                "w": 0.103773,
+                "h": 0.017303
+              },
+              {
+                "text": "Qumran, 1946/7",
+                "x": 0.082842,
+                "y": 0.276786,
+                "w": 0.156764,
+                "h": 0.019044
+              },
+              {
+                "text": "three Bedouin shepherds in their teens were near an opening on side of cliff",
+                "x": 0.127001,
+                "y": 0.316584,
+                "w": 0.721998,
+                "h": 0.019106
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.354651,
+                "w": 0.017664,
+                "h": 0.019034
+              },
+              {
+                "text": "heard a noise of breaking when one teenager threw a 1",
+                "x": 0.127001,
+                "y": 0.354651,
+                "w": 0.527699,
+                "h": 0.019126
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.396179,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "teenagers went into the 2",
+                "x": 0.124793,
+                "y": 0.394449,
+                "w": 0.24729,
+                "h": 0.019188
+              },
+              {
+                "text": "made of 3",
+                "x": 0.129176,
+                "y": 0.413369,
+                "w": 0.097216,
+                "h": 0.017532
+              },
+              {
+                "text": "..... and found a number of containers",
+                "x": 0.517807,
+                "y": 0.392719,
+                "w": 0.351063,
+                "h": 0.019147
+              },
+              {
+                "text": "The scrolls",
+                "x": 0.082842,
+                "y": 0.453281,
+                "w": 0.114813,
+                "h": 0.015717
+              },
+              {
+                "text": "date from between 150 BCE and 70 CE",
+                "x": 0.124793,
+                "y": 0.491142,
+                "w": 0.381974,
+                "h": 0.01924
+              },
+              {
+                "text": "thought to have been written by group of people known as the",
+                "x": 0.127001,
+                "y": 0.531002,
+                "w": 0.589521,
+                "h": 0.019178
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.591708,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.631506,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "written mainly in the 5",
+                "x": 0.127001,
+                "y": 0.591677,
+                "w": 0.211963,
+                "h": 0.019065
+              },
+              {
+                "text": ".language",
+                "x": 0.504456,
+                "y": 0.591337,
+                "w": 0.099565,
+                "h": 0.018045
+              },
+              {
+                "text": "most are on religious topics, written using ink on parchment or papyrus",
+                "x": 0.127001,
+                "y": 0.629765,
+                "w": 0.673423,
+                "h": 0.019044
+              },
+              {
+                "text": "39",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-33.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 6-13",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.165596,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.082842,
+                "y": 0.058762,
+                "w": 0.799276,
+                "h": 0.020939
+              },
+              {
+                "text": "In boxes 6-13 on your answer sheet, write",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.406262,
+                "h": 0.015944
+              },
+              {
+                "text": "TRUE",
+                "x": 0.155515,
+                "y": 0.137905,
+                "w": 0.059993,
+                "h": 0.016481
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.290389,
+                "y": 0.138163,
+                "w": 0.410678,
+                "h": 0.019229
+              },
+              {
+                "text": "FALSE",
+                "x": 0.153477,
+                "y": 0.159066,
+                "w": 0.072902,
+                "h": 0.015686
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.290389,
+                "y": 0.157207,
+                "w": 0.406262,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.153496,
+                "y": 0.176251,
+                "w": 0.437173,
+                "h": 0.017479
+              },
+              {
+                "text": "6 The Bedouin teenagers who found the scrolls were disappointed by how little",
+                "x": 0.093882,
+                "y": 0.209302,
+                "w": 0.761741,
+                "h": 0.017437
+              },
+              {
+                "text": "money they received for them.",
+                "x": 0.131417,
+                "y": 0.228336,
+                "w": 0.287033,
+                "h": 0.017448
+              },
+              {
+                "text": "7 There is agreement among academics about the origin of the Dead Sea Scrolls.",
+                "x": 0.09609,
+                "y": 0.259482,
+                "w": 0.790444,
+                "h": 0.015573
+              },
+              {
+                "text": "8",
+                "x": 0.091674,
+                "y": 0.290628,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "Most of the books of the Bible written on the scrolls are incomplete.",
+                "x": 0.127001,
+                "y": 0.290515,
+                "w": 0.638096,
+                "h": 0.017417
+              },
+              {
+                "text": "9 The information on the Copper Scroll is written in an unusual way.",
+                "x": 0.096016,
+                "y": 0.319909,
+                "w": 0.655902,
+                "h": 0.018579
+              },
+              {
+                "text": "10 Mar Samuel was given some of the scrolls as a gift.",
+                "x": 0.08505,
+                "y": 0.35119,
+                "w": 0.534322,
+                "h": 0.017303
+              },
+              {
+                "text": "11",
+                "x": 0.082842,
+                "y": 0.382337,
+                "w": 0.024287,
+                "h": 0.013843
+              },
+              {
+                "text": "In the early 1950s, a number of educational establishments in the US were keen to",
+                "x": 0.127001,
+                "y": 0.382192,
+                "w": 0.78382,
+                "h": 0.015717
+              },
+              {
+                "text": "buy scrolls from Mar Samuel.",
+                "x": 0.129209,
+                "y": 0.401237,
+                "w": 0.278201,
+                "h": 0.017437
+              },
+              {
+                "text": "12 The scroll that was pieced together in 2017 contains information about annual",
+                "x": 0.08505,
+                "y": 0.432517,
+                "w": 0.781612,
+                "h": 0.015666
+              },
+              {
+                "text": "occasions in the Qumran area 2,000 years ago.",
+                "x": 0.131417,
+                "y": 0.45155,
+                "w": 0.450421,
+                "h": 0.017448
+              },
+              {
+                "text": "Academics at the University of Haifa are currently researching how to decipher the",
+                "x": 0.113753,
+                "y": 0.480956,
+                "w": 0.79486,
+                "h": 0.017314
+              },
+              {
+                "text": "final scroll.",
+                "x": 0.128844,
+                "y": 0.501644,
+                "w": 0.104565,
+                "h": 0.015656
+              },
+              {
+                "text": "40",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.035327,
+                "h": 0.013843
+              },
+              {
+                "text": "→ 0 p. 122",
+                "x": 0.137948,
+                "y": 0.93391,
+                "w": 0.14591,
+                "h": 0.021577
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-36.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 14-18",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Reading Passage 2 has five sections, A-E.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.410678,
+                "h": 0.017437
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.465876,
+                "h": 0.017458
+              },
+              {
+                "text": "Write the correct letter, A-E, in boxes 14-18 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.138163,
+                "w": 0.63368,
+                "h": 0.019229
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.067386,
+                "y": 0.178022,
+                "w": 0.426133,
+                "h": 0.017437
+              },
+              {
+                "text": "14 a reference to a type of tomato that can resist a dangerous infection",
+                "x": 0.065179,
+                "y": 0.21611,
+                "w": 0.688879,
+                "h": 0.019147
+              },
+              {
+                "text": "15",
+                "x": 0.065179,
+                "y": 0.24737,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "an explanation of how problems can arise from focusing only on a certain type of",
+                "x": 0.093882,
+                "y": 0.24737,
+                "w": 0.78382,
+                "h": 0.019229
+              },
+              {
+                "text": "tomato plant.",
+                "x": 0.111545,
+                "y": 0.267928,
+                "w": 0.128061,
+                "h": 0.015944
+              },
+              {
+                "text": "16 a number of examples of plants that are not cultivated at present but could be",
+                "x": 0.065179,
+                "y": 0.29755,
+                "w": 0.779404,
+                "h": 0.019096
+              },
+              {
+                "text": "useful as food sources",
+                "x": 0.113753,
+                "y": 0.318314,
+                "w": 0.214171,
+                "h": 0.013843
+              },
+              {
+                "text": "17 a comparison between the early domestication of the tomato and more recent research",
+                "x": 0.067386,
+                "y": 0.349419,
+                "w": 0.832395,
+                "h": 0.015614
+              },
+              {
+                "text": "18 a personal reaction to the flavour of a tomato that has been genetically edited",
+                "x": 0.065179,
+                "y": 0.378876,
+                "w": 0.779404,
+                "h": 0.019034
+              },
+              {
+                "text": "Questions 19-23",
+                "x": 0.067386,
+                "y": 0.444629,
+                "w": 0.176636,
+                "h": 0.017303
+              },
+              {
+                "text": "Look at the following statements (Questions 19-23) and the list of researchers below.",
+                "x": 0.065179,
+                "y": 0.486157,
+                "w": 0.8059,
+                "h": 0.017386
+              },
+              {
+                "text": "Match each statement with the correct researcher, A-D.",
+                "x": 0.065179,
+                "y": 0.524225,
+                "w": 0.532115,
+                "h": 0.017406
+              },
+              {
+                "text": "Write the correct letter, A-D, in boxes 19-23 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.564023,
+                "w": 0.635888,
+                "h": 0.01924
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.067386,
+                "y": 0.60209,
+                "w": 0.423925,
+                "h": 0.017489
+              },
+              {
+                "text": "19 Domestication of certain plants could allow them to adapt to future environmental",
+                "x": 0.065179,
+                "y": 0.641723,
+                "w": 0.814731,
+                "h": 0.015944
+              },
+              {
+                "text": "challenges.",
+                "x": 0.113708,
+                "y": 0.662453,
+                "w": 0.110488,
+                "h": 0.015972
+              },
+              {
+                "text": "The idea of growing and eating unusual plants may not be accepted on a large scale.",
+                "x": 0.093882,
+                "y": 0.692068,
+                "w": 0.808108,
+                "h": 0.019188
+              },
+              {
+                "text": "21",
+                "x": 0.065179,
+                "y": 0.723214,
+                "w": 0.035327,
+                "h": 0.015573
+              },
+              {
+                "text": "It is not advisable for the future direction of certain research to be made public.",
+                "x": 0.100506,
+                "y": 0.721443,
+                "w": 0.757325,
+                "h": 0.019075
+              },
+              {
+                "text": "22 Present efforts to domesticate one wild fruit are limited by the costs involved.",
+                "x": 0.065179,
+                "y": 0.7509,
+                "w": 0.774988,
+                "h": 0.020764
+              },
+              {
+                "text": "23 Humans only make use of a small proportion of the plant food available on Earth.",
+                "x": 0.062971,
+                "y": 0.782046,
+                "w": 0.816939,
+                "h": 0.020888
+              },
+              {
+                "text": "List of Researchers",
+                "x": 0.383122,
+                "y": 0.839147,
+                "w": 0.200923,
+                "h": 0.017376
+              },
+              {
+                "text": "A Jorg Kudla",
+                "x": 0.380915,
+                "y": 0.870252,
+                "w": 0.152348,
+                "h": 0.019075
+              },
+              {
+                "text": "B Caixia Gao",
+                "x": 0.383122,
+                "y": 0.889296,
+                "w": 0.154556,
+                "h": 0.017334
+              },
+              {
+                "text": "Joyce Van Eck",
+                "x": 0.411826,
+                "y": 0.90834,
+                "w": 0.16118,
+                "h": 0.019054
+              },
+              {
+                "text": "D",
+                "x": 0.383122,
+                "y": 0.929125,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "Jonathan Jones",
+                "x": 0.427281,
+                "y": 0.927384,
+                "w": 0.156764,
+                "h": 0.019044
+              },
+              {
+                "text": "43",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-37.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 24-26",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.015604
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.298072,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.09856,
+                "w": 0.600561,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 24-26 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.549778,
+                "h": 0.019229
+              },
+              {
+                "text": "24 An undesirable trait such as loss of .....",
+                "x": 0.082842,
+                "y": 0.178022,
+                "w": 0.406262,
+                "h": 0.015707
+              },
+              {
+                "text": "... may be caused by a mutation",
+                "x": 0.62158,
+                "y": 0.178022,
+                "w": 0.295865,
+                "h": 0.017437
+              },
+              {
+                "text": "in a tomato gene.",
+                "x": 0.127001,
+                "y": 0.198838,
+                "w": 0.170012,
+                "h": 0.015655
+              },
+              {
+                "text": "By modifying one gene in a tomato plant, researchers made the tomato three times",
+                "x": 0.109337,
+                "y": 0.228336,
+                "w": 0.803692,
+                "h": 0.019219
+              },
+              {
+                "text": "its original",
+                "x": 0.126869,
+                "y": 0.248604,
+                "w": 0.104037,
+                "h": 0.018295
+              },
+              {
+                "text": "26",
+                "x": 0.080634,
+                "y": 0.278516,
+                "w": 0.030911,
+                "h": 0.015573
+              },
+              {
+                "text": "Atype of tomato which was not badly affected by…",
+                "x": 0.111545,
+                "y": 0.280246,
+                "w": 0.554194,
+                "h": 0.013843
+              },
+              {
+                "text": "…..., and was rich",
+                "x": 0.745225,
+                "y": 0.278516,
+                "w": 0.156764,
+                "h": 0.019085
+              },
+              {
+                "text": "in vitamin C, was produced by a team of researchers in China.",
+                "x": 0.124793,
+                "y": 0.295819,
+                "w": 0.593937,
+                "h": 0.020826
+              },
+              {
+                "text": "44",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.033119,
+                "h": 0.013843
+              },
+              {
+                "text": "→ O p. 122",
+                "x": 0.137955,
+                "y": 0.935637,
+                "w": 0.145896,
+                "h": 0.019852
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-40.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 27-31",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.069594,
+                "y": 0.060493,
+                "w": 0.366519,
+                "h": 0.017437
+              },
+              {
+                "text": "Write the correct letter in boxes 27-31 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.578481,
+                "h": 0.017715
+              },
+              {
+                "text": "27 The purpose of the first paragraph is to",
+                "x": 0.067386,
+                "y": 0.138163,
+                "w": 0.415094,
+                "h": 0.017715
+              },
+              {
+                "text": "A defend particular ideas.",
+                "x": 0.115961,
+                "y": 0.169504,
+                "w": 0.267161,
+                "h": 0.015604
+              },
+              {
+                "text": "B compare certain beliefs.",
+                "x": 0.115843,
+                "y": 0.188386,
+                "w": 0.271779,
+                "h": 0.018114
+              },
+              {
+                "text": "C disprove a widely held view.",
+                "x": 0.115961,
+                "y": 0.209302,
+                "w": 0.309112,
+                "h": 0.015666
+              },
+              {
+                "text": "outline a common assumption.",
+                "x": 0.16012,
+                "y": 0.228336,
+                "w": 0.291449,
+                "h": 0.015676
+              },
+              {
+                "text": "28 What are the writers doing in the second paragraph?",
+                "x": 0.065179,
+                "y": 0.266404,
+                "w": 0.54757,
+                "h": 0.020764
+              },
+              {
+                "text": "A criticising an opinion",
+                "x": 0.113753,
+                "y": 0.29928,
+                "w": 0.238458,
+                "h": 0.015594
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.318314,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "justifying a standpoint",
+                "x": 0.153496,
+                "y": 0.318314,
+                "w": 0.214171,
+                "h": 0.019147
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.339078,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "explaining an approach",
+                "x": 0.157912,
+                "y": 0.339078,
+                "w": 0.22521,
+                "h": 0.017427
+              },
+              {
+                "text": "D supporting an argument",
+                "x": 0.113753,
+                "y": 0.358112,
+                "w": 0.273785,
+                "h": 0.017437
+              },
+              {
+                "text": "29 In the third paragraph, what do the writers suggest about Darwin and Einstein?",
+                "x": 0.065179,
+                "y": 0.397693,
+                "w": 0.790444,
+                "h": 0.01925
+              },
+              {
+                "text": "A They represent an exception to a general rule.",
+                "x": 0.111545,
+                "y": 0.427326,
+                "w": 0.487956,
+                "h": 0.019085
+              },
+              {
+                "text": "B Their way of working has been misunderstood.",
+                "x": 0.111545,
+                "y": 0.44809,
+                "w": 0.492372,
+                "h": 0.017365
+              },
+              {
+                "text": "They are an ideal which others should aspire to.",
+                "x": 0.138041,
+                "y": 0.467123,
+                "w": 0.476916,
+                "h": 0.019147
+              },
+              {
+                "text": "D Their achievements deserve greater recognition.",
+                "x": 0.111545,
+                "y": 0.486157,
+                "w": 0.507827,
+                "h": 0.019157
+              },
+              {
+                "text": "30 John Nicholson is an example of a person whose idea",
+                "x": 0.067386,
+                "y": 0.525955,
+                "w": 0.556402,
+                "h": 0.015676
+              },
+              {
+                "text": "A established his reputation as an influential scientist.",
+                "x": 0.113753,
+                "y": 0.557101,
+                "w": 0.534322,
+                "h": 0.015573
+              },
+              {
+                "text": "was only fully understood at a later point in history.",
+                "x": 0.157912,
+                "y": 0.576135,
+                "w": 0.481332,
+                "h": 0.019085
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.596899,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "D",
+                "x": 0.111545,
+                "y": 0.615933,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "laid the foundations for someone else's breakthrough.",
+                "x": 0.153496,
+                "y": 0.596899,
+                "w": 0.516659,
+                "h": 0.017365
+              },
+              {
+                "text": "initially met with scepticism from the scientific community.",
+                "x": 0.151288,
+                "y": 0.615933,
+                "w": 0.551986,
+                "h": 0.019147
+              },
+              {
+                "text": "31 What is the key point of interest about the 'acey-deucy' stirrup placement?",
+                "x": 0.065179,
+                "y": 0.654001,
+                "w": 0.746285,
+                "h": 0.019168
+              },
+              {
+                "text": "A the simple reason why it was invented",
+                "x": 0.111545,
+                "y": 0.685126,
+                "w": 0.40847,
+                "h": 0.019054
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.705911,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "the enthusiasm with which it was adopted",
+                "x": 0.157912,
+                "y": 0.705911,
+                "w": 0.395222,
+                "h": 0.019075
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.726675,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "the research that went into its development",
+                "x": 0.157912,
+                "y": 0.724945,
+                "w": 0.412886,
+                "h": 0.017314
+              },
+              {
+                "text": "D",
+                "x": 0.111545,
+                "y": 0.745709,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "the cleverness of the person who first used it",
+                "x": 0.157912,
+                "y": 0.745709,
+                "w": 0.426133,
+                "h": 0.013843
+              },
+              {
+                "text": "47",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-41.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 32-36",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.814731,
+                "h": 0.019209
+              },
+              {
+                "text": "In boxes 32-36 on your answer sheet, write",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.415094,
+                "h": 0.015944
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.290389,
+                "y": 0.138163,
+                "w": 0.485748,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.290389,
+                "y": 0.157207,
+                "w": 0.481332,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.153496,
+                "y": 0.176251,
+                "w": 0.664591,
+                "h": 0.020939
+              },
+              {
+                "text": "32 Acknowledging people such as Plato or da Vinci as geniuses will help us",
+                "x": 0.080634,
+                "y": 0.21611,
+                "w": 0.735245,
+                "h": 0.020877
+              },
+              {
+                "text": "understand the process by which great minds create new ideas.",
+                "x": 0.129209,
+                "y": 0.236926,
+                "w": 0.604977,
+                "h": 0.019096
+              },
+              {
+                "text": "33 The Law of Effect was discovered at a time when psychologists were seeking a",
+                "x": 0.078426,
+                "y": 0.267928,
+                "w": 0.799276,
+                "h": 0.017715
+              },
+              {
+                "text": "scientific reason why creativity occurs.",
+                "x": 0.126633,
+                "y": 0.283629,
+                "w": 0.369521,
+                "h": 0.025948
+              },
+              {
+                "text": "34",
+                "x": 0.078426,
+                "y": 0.314853,
+                "w": 0.033119,
+                "h": 0.019034
+              },
+              {
+                "text": "The Law of Effect states that no planning is involved in the behaviour of organisms.",
+                "x": 0.122495,
+                "y": 0.315019,
+                "w": 0.792865,
+                "h": 0.022708
+              },
+              {
+                "text": "35 The Law of Effect sets out clear explanations about the sources of new ideas and",
+                "x": 0.076218,
+                "y": 0.347647,
+                "w": 0.821355,
+                "h": 0.019116
+              },
+              {
+                "text": "behaviours.",
+                "x": 0.126965,
+                "y": 0.366629,
+                "w": 0.114885,
+                "h": 0.019302
+              },
+              {
+                "text": "36 Many scientists are now turning away from the notion of intelligent design",
+                "x": 0.078426,
+                "y": 0.399465,
+                "w": 0.744077,
+                "h": 0.019209
+              },
+              {
+                "text": "and genius.",
+                "x": 0.129142,
+                "y": 0.42013,
+                "w": 0.114946,
+                "h": 0.017852
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-2/page-42.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 37-40",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the summary using the list of words, A-G, below.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.560818,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter, A-G, in boxes 37-40 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.638096,
+                "h": 0.01925
+              },
+              {
+                "text": "The origins of creative behaviour",
+                "x": 0.255062,
+                "y": 0.14874,
+                "w": 0.46146,
+                "h": 0.022639
+              },
+              {
+                "text": "The traditional view of scientific discovery is that breakthroughs happen when a",
+                "x": 0.082842,
+                "y": 0.191999,
+                "w": 0.750701,
+                "h": 0.01924
+              },
+              {
+                "text": "single great mind has sudden 37",
+                "x": 0.08505,
+                "y": 0.217882,
+                "w": 0.309112,
+                "h": 0.015645
+              },
+              {
+                "text": ". Although this can occur, it is",
+                "x": 0.566382,
+                "y": 0.217882,
+                "w": 0.280409,
+                "h": 0.019106
+              },
+              {
+                "text": "not often the case. Advances are more likely to be the result of a longer process.",
+                "x": 0.082842,
+                "y": 0.243909,
+                "w": 0.763949,
+                "h": 0.019147
+              },
+              {
+                "text": "In some cases, this process involves 38",
+                "x": 0.080634,
+                "y": 0.2697,
+                "w": 0.381974,
+                "h": 0.017468
+              },
+              {
+                "text": ".., such as Nicholson's",
+                "x": 0.62158,
+                "y": 0.2697,
+                "w": 0.216379,
+                "h": 0.019199
+              },
+              {
+                "text": "theory about proto-elements. In others, simple necessity may provoke innovation,",
+                "x": 0.080634,
+                "y": 0.290515,
+                "w": 0.77278,
+                "h": 0.024359
+              },
+              {
+                "text": "as with Westrope's decision to modify the position of his riding stirrups. There is also",
+                "x": 0.082842,
+                "y": 0.318314,
+                "w": 0.797068,
+                "h": 0.02269
+              },
+              {
+                "text": "often an element of 39 ......",
+                "x": 0.08505,
+                "y": 0.347647,
+                "w": 0.249498,
+                "h": 0.015655
+              },
+              {
+                "text": "...,, for example, the coincidence of ideas that",
+                "x": 0.447153,
+                "y": 0.342333,
+                "w": 0.437173,
+                "h": 0.024431
+              },
+              {
+                "text": "led to the invention of the Post-It note. With both the Law of Natural Selection and",
+                "x": 0.080549,
+                "y": 0.370178,
+                "w": 0.775194,
+                "h": 0.022354
+              },
+              {
+                "text": "the Law of Effect, there may be no clear 40...",
+                "x": 0.080634,
+                "y": 0.397693,
+                "w": 0.430549,
+                "h": 0.02098
+              },
+              {
+                "text": "involved, but merely a",
+                "x": 0.661323,
+                "y": 0.397693,
+                "w": 0.214171,
+                "h": 0.01925
+              },
+              {
+                "text": "process of variation and selection.",
+                "x": 0.082842,
+                "y": 0.425595,
+                "w": 0.326776,
+                "h": 0.017303
+              },
+              {
+                "text": "A",
+                "x": 0.151288,
+                "y": 0.49827,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.151288,
+                "y": 0.522494,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "G",
+                "x": 0.151288,
+                "y": 0.546719,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "invention",
+                "x": 0.193239,
+                "y": 0.49827,
+                "w": 0.092734,
+                "h": 0.015573
+              },
+              {
+                "text": "mistakes",
+                "x": 0.197655,
+                "y": 0.524225,
+                "w": 0.08611,
+                "h": 0.013843
+              },
+              {
+                "text": "experiments",
+                "x": 0.197606,
+                "y": 0.546511,
+                "w": 0.119327,
+                "h": 0.01772
+              },
+              {
+                "text": "B goals",
+                "x": 0.402841,
+                "y": 0.496082,
+                "w": 0.099664,
+                "h": 0.021679
+              },
+              {
+                "text": "E luck",
+                "x": 0.402959,
+                "y": 0.520664,
+                "w": 0.088388,
+                "h": 0.019233
+              },
+              {
+                "text": "C",
+                "x": 0.648076,
+                "y": 0.496539,
+                "w": 0.019871,
+                "h": 0.019034
+              },
+              {
+                "text": "F",
+                "x": 0.648076,
+                "y": 0.520764,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "compromise",
+                "x": 0.685536,
+                "y": 0.494525,
+                "w": 0.12821,
+                "h": 0.021333
+              },
+              {
+                "text": "inspiration",
+                "x": 0.689976,
+                "y": 0.517156,
+                "w": 0.106083,
+                "h": 0.022788
+              },
+              {
+                "text": "→ O p. 122",
+                "x": 0.711725,
+                "y": 0.933123,
+                "w": 0.142027,
+                "h": 0.022056
+              },
+              {
+                "text": "49",
+                "x": 0.875494,
+                "y": 0.936047,
+                "w": 0.028703,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 32,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "collecting",
+      "records",
+      "West",
+      "transport",
+      "art",
+      "hospital",
+      "garden",
+      "quiz",
+      "tickets",
+      "poster",
+      "B",
+      "C",
+      "C",
+      "B",
+      "D",
+      "C",
+      "G",
+      "A",
+      "E",
+      "F",
+      "D",
+      "E",
+      "D",
+      "C",
+      "A",
+      "E",
+      "F",
+      "B",
+      "C",
+      "C",
+      "321,000|321000",
+      "vocabulary",
+      "podcast",
+      "smartphones",
+      "bilingual",
+      "playground",
+      "picture",
+      "grammar",
+      "identity",
+      "fluent"
+    ],
+    "reading": [
+      "rock",
+      "cave",
+      "clay",
+      "Essenes",
+      "Hebrew",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "TRUE",
+      "FALSE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "C",
+      "B",
+      "E",
+      "A",
+      "C",
+      "B",
+      "D",
+      "A",
+      "C",
+      "A",
+      "flavour|flavor",
+      "size",
+      "salt",
+      "D",
+      "A",
+      "A",
+      "C",
+      "A",
+      "NO",
+      "NOT GIVEN",
+      "YES",
+      "NO",
+      "NOT GIVEN",
+      "F",
+      "D",
+      "E",
+      "B"
+    ]
+  },
+  "completionOptions": {}
+}

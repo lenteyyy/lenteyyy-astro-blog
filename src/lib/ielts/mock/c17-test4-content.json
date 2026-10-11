@@ -1,0 +1,5423 @@
+{
+  "source": {
+    "book": 17,
+    "test": 4,
+    "questionPages": {
+      "l": [
+        [
+          68
+        ],
+        [
+          69,
+          70
+        ],
+        [
+          71,
+          72
+        ],
+        [
+          73
+        ]
+      ],
+      "r": [
+        [
+          74,
+          75
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          82,
+          83
+        ]
+      ],
+      "q": [
+        [
+          76,
+          77
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          84,
+          85
+        ]
+      ],
+      "w": [
+        86,
+        87
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "73b39f0fb941a647267c9907407af1cc34a81d66864da8a06759aa869d63794d"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-4/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-4/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-4/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-4/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-4/page-74.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.416177,
+                "y": 0.01699,
+                "w": 0.137023,
+                "h": 0.022983
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.065179,
+                "y": 0.086345,
+                "w": 0.306904,
+                "h": 0.019137
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.065179,
+                "y": 0.127976,
+                "w": 0.816939,
+                "h": 0.020816
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.065179,
+                "y": 0.14874,
+                "w": 0.170012,
+                "h": 0.017324
+              },
+              {
+                "text": "Bats to the rescue",
+                "x": 0.352211,
+                "y": 0.188538,
+                "w": 0.267161,
+                "h": 0.0227
+              },
+              {
+                "text": "How Madagascar's bats are helping to save the rainforest",
+                "x": 0.210903,
+                "y": 0.233383,
+                "w": 0.549778,
+                "h": 0.019178
+              },
+              {
+                "text": "There are few places in the world where relations between agriculture and conservation are more",
+                "x": 0.065179,
+                "y": 0.273243,
+                "w": 0.827979,
+                "h": 0.019116
+              },
+              {
+                "text": "strained. Madagascar's forests are being converted to agricultural land at a rate of one percent",
+                "x": 0.065179,
+                "y": 0.294058,
+                "w": 0.801484,
+                "h": 0.017334
+              },
+              {
+                "text": "every year. Much of this destruction is fuelled by the cultivation of the country's main staple",
+                "x": 0.065179,
+                "y": 0.311331,
+                "w": 0.788236,
+                "h": 0.019096
+              },
+              {
+                "text": "crop: rice. And a key reason for this destruction is that insect pests are destroying vast quantities",
+                "x": 0.067386,
+                "y": 0.332146,
+                "w": 0.821355,
+                "h": 0.017314
+              },
+              {
+                "text": "of what is grown by local subsistence farmers, leading them to clear forest to create new paddy",
+                "x": 0.067386,
+                "y": 0.352921,
+                "w": 0.810316,
+                "h": 0.017314
+              },
+              {
+                "text": "fields. The result is devastating habitat and biodiversity loss on the island, but not all species",
+                "x": 0.067386,
+                "y": 0.373685,
+                "w": 0.786028,
+                "h": 0.015594
+              },
+              {
+                "text": "are suffering. In fact, some of the island's insectivorous bats are currently thriving and this has",
+                "x": 0.062971,
+                "y": 0.390988,
+                "w": 0.810316,
+                "h": 0.020877
+              },
+              {
+                "text": "important implications for farmers and conservationists alike.",
+                "x": 0.065179,
+                "y": 0.411752,
+                "w": 0.532115,
+                "h": 0.017386
+              },
+              {
+                "text": "Enter University of Cambridge zoologist Ricardo Rocha. He's passionate about conservation,",
+                "x": 0.067386,
+                "y": 0.44982,
+                "w": 0.797068,
+                "h": 0.019178
+              },
+              {
+                "text": "and bats. More specifically, he's interested in how bats are responding to human activity and",
+                "x": 0.065179,
+                "y": 0.472098,
+                "w": 0.786028,
+                "h": 0.015944
+              },
+              {
+                "text": "deforestation in particular. Rocha's new study shows that several species of bats are giving",
+                "x": 0.067386,
+                "y": 0.491142,
+                "w": 0.770572,
+                "h": 0.017715
+              },
+              {
+                "text": "Madagascar's rice farmers a vital pest control service by feasting on plagues of insects. And this,",
+                "x": 0.067386,
+                "y": 0.510186,
+                "w": 0.825771,
+                "h": 0.017715
+              },
+              {
+                "text": "he believes, can ease the financial pressure on farmers to turn forest into fields.",
+                "x": 0.065179,
+                "y": 0.531002,
+                "w": 0.677839,
+                "h": 0.015717
+              },
+              {
+                "text": "Bats comprise roughly one-fifth of all mammal species in Madagascar and thirty-six recorded bat",
+                "x": 0.067386,
+                "y": 0.56909,
+                "w": 0.832395,
+                "h": 0.017427
+              },
+              {
+                "text": "species are native to the island, making it one of the most important regions for conservation of",
+                "x": 0.065179,
+                "y": 0.589906,
+                "w": 0.816939,
+                "h": 0.017376
+              },
+              {
+                "text": "this animal group anywhere in the world.",
+                "x": 0.065179,
+                "y": 0.60895,
+                "w": 0.353271,
+                "h": 0.017365
+              },
+              {
+                "text": "Co-leading an international team of scientists, Rocha found that several species of indigenous",
+                "x": 0.065179,
+                "y": 0.64881,
+                "w": 0.803692,
+                "h": 0.019044
+              },
+              {
+                "text": "bats are taking advantage of habitat modification to hunt insects swarming above the country's",
+                "x": 0.065179,
+                "y": 0.667843,
+                "w": 0.8059,
+                "h": 0.019054
+              },
+              {
+                "text": "rice fields. They include the Malagasy mouse-eared bat, Major's long-fingered bat, the Malagasy",
+                "x": 0.065179,
+                "y": 0.688607,
+                "w": 0.825771,
+                "h": 0.019106
+              },
+              {
+                "text": "white-bellied free-tailed bat and Peters' wrinkle-lipped bat.",
+                "x": 0.065179,
+                "y": 0.707641,
+                "w": 0.505619,
+                "h": 0.019116
+              },
+              {
+                "text": "\"These winner species are providing a valuable free service to Madagascar as biological pest",
+                "x": 0.065179,
+                "y": 0.747439,
+                "w": 0.792652,
+                "h": 0.017406
+              },
+              {
+                "text": "suppressors,' says Rocha. 'We found that six species of bat are preying on rice pests, including the",
+                "x": 0.067386,
+                "y": 0.766473,
+                "w": 0.836811,
+                "h": 0.017417
+              },
+              {
+                "text": "paddy swarming caterpillar and grass webworm. The damage which these insects cause puts the",
+                "x": 0.065179,
+                "y": 0.787237,
+                "w": 0.821355,
+                "h": 0.01924
+              },
+              {
+                "text": "island's farmers under huge financial pressure and that encourages deforestation.'",
+                "x": 0.065179,
+                "y": 0.806271,
+                "w": 0.69771,
+                "h": 0.017479
+              },
+              {
+                "text": "The study, now published in the journal Agriculture, Ecosystems and Environment, set out to",
+                "x": 0.067386,
+                "y": 0.845894,
+                "w": 0.790444,
+                "h": 0.015944
+              },
+              {
+                "text": "investigate the feeding activity of insectivorous bats in the farmland bordering the Ranomafana",
+                "x": 0.062971,
+                "y": 0.866709,
+                "w": 0.816939,
+                "h": 0.015697
+              },
+              {
+                "text": "National Park in the southeast of the country.",
+                "x": 0.067386,
+                "y": 0.885753,
+                "w": 0.388598,
+                "h": 0.015686
+              },
+              {
+                "text": "81",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.024287,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-4/page-75.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Rocha and his team used state-of-the-art ultrasonic recorders to record over a thousand bat",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.77278,
+                "h": 0.013843
+              },
+              {
+                "text": "'feeding buzzes' (echolocation sequences used by bats to target their prey) at 54 sites, in order",
+                "x": 0.082842,
+                "y": 0.039729,
+                "w": 0.8059,
+                "h": 0.019157
+              },
+              {
+                "text": "to identify the favourite feeding spots of the bats. They next used DNA barcoding techniques to",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.816939,
+                "h": 0.017437
+              },
+              {
+                "text": "analyse droppings collected from bats at the different sites.",
+                "x": 0.080634,
+                "y": 0.081257,
+                "w": 0.507827,
+                "h": 0.019034
+              },
+              {
+                "text": "The recordings revealed that bat activity over rice fields was much higher than it was in",
+                "x": 0.082842,
+                "y": 0.119118,
+                "w": 0.746285,
+                "h": 0.017715
+              },
+              {
+                "text": "continuous forest - seven times higher over rice fields which were on flat ground, and sixteen",
+                "x": 0.082842,
+                "y": 0.139934,
+                "w": 0.79486,
+                "h": 0.015944
+              },
+              {
+                "text": "times higher over fields on the sides of hills - leaving no doubt that the animals are preferentially",
+                "x": 0.082842,
+                "y": 0.158978,
+                "w": 0.827979,
+                "h": 0.017448
+              },
+              {
+                "text": "foraging in these man-made ecosystems. The researchers suggest that the bats favour these fields",
+                "x": 0.082842,
+                "y": 0.179794,
+                "w": 0.825771,
+                "h": 0.017396
+              },
+              {
+                "text": "because lack of water and nutrient run-off make these crops more susceptible to insect pest",
+                "x": 0.082842,
+                "y": 0.198838,
+                "w": 0.779404,
+                "h": 0.015655
+              },
+              {
+                "text": "infestations. DNA analysis showed that all six species of bat had fed on economically important",
+                "x": 0.082842,
+                "y": 0.217882,
+                "w": 0.821355,
+                "h": 0.017376
+              },
+              {
+                "text": "insect pests. While the findings indicated that rice farming benefits most from the bats, the",
+                "x": 0.080634,
+                "y": 0.236926,
+                "w": 0.774988,
+                "h": 0.019096
+              },
+              {
+                "text": "scientists also found indications that the bats were consuming pests of other crops, including the",
+                "x": 0.082842,
+                "y": 0.257742,
+                "w": 0.821355,
+                "h": 0.017314
+              },
+              {
+                "text": "black twig borer (which infests coffee plants), the sugarcane cicada, the macadamia nut-borer, and",
+                "x": 0.080634,
+                "y": 0.276786,
+                "w": 0.839019,
+                "h": 0.019044
+              },
+              {
+                "text": "the sober tabby (a pest of citrus fruits).",
+                "x": 0.080634,
+                "y": 0.29755,
+                "w": 0.3334,
+                "h": 0.019096
+              },
+              {
+                "text": "\"The effectiveness of bats as pest controllers has already been proven in the USA and Catalonia,'",
+                "x": 0.082842,
+                "y": 0.335617,
+                "w": 0.825771,
+                "h": 0.017345
+              },
+              {
+                "text": "said co-author James Kemp, from the University of Lisbon. 'But our study is the first to show this",
+                "x": 0.082842,
+                "y": 0.356382,
+                "w": 0.834603,
+                "h": 0.017396
+              },
+              {
+                "text": "happening in Madagascar, where the stakes for both farmers and conservationists are so high.?",
+                "x": 0.082842,
+                "y": 0.375415,
+                "w": 0.8059,
+                "h": 0.017406
+              },
+              {
+                "text": "Local people may have a further reason to be grateful to their bats. While the animal is often",
+                "x": 0.082842,
+                "y": 0.416738,
+                "w": 0.790444,
+                "h": 0.015944
+              },
+              {
+                "text": "associated with spreading disease, Rocha and his team found evidence that Malagasy bats feed",
+                "x": 0.082842,
+                "y": 0.435782,
+                "w": 0.808108,
+                "h": 0.017715
+              },
+              {
+                "text": "not just on crop pests but also on mosquitoes - carriers of malaria, Rift Valley fever virus and",
+                "x": 0.082842,
+                "y": 0.454826,
+                "w": 0.799276,
+                "h": 0.017489
+              },
+              {
+                "text": "elephantiasis - as well as blackflies, which spread river blindness.",
+                "x": 0.080634,
+                "y": 0.475641,
+                "w": 0.565234,
+                "h": 0.019168
+              },
+              {
+                "text": "Rocha points out that the relationship is complicated. When food is scarce, bats become a crucial",
+                "x": 0.082842,
+                "y": 0.513729,
+                "w": 0.830187,
+                "h": 0.017417
+              },
+              {
+                "text": "source of protein for local people. Even the children will hunt them. And as well as roosting in",
+                "x": 0.082842,
+                "y": 0.534545,
+                "w": 0.808108,
+                "h": 0.017365
+              },
+              {
+                "text": "trees, the bats sometimes roost in buildings, but are not welcomed there because they make them",
+                "x": 0.082842,
+                "y": 0.553589,
+                "w": 0.825771,
+                "h": 0.019085
+              },
+              {
+                "text": "unclean. At the same time, however, they are associated with sacred caves and the ancestors, so",
+                "x": 0.082842,
+                "y": 0.574405,
+                "w": 0.812523,
+                "h": 0.017303
+              },
+              {
+                "text": "they can be viewed as beings between worlds, which makes them very significant in the culture of",
+                "x": 0.082842,
+                "y": 0.593439,
+                "w": 0.839019,
+                "h": 0.017303
+              },
+              {
+                "text": "the people. And one potential problem is that while these bats are benefiting from farming, at the",
+                "x": 0.082842,
+                "y": 0.614203,
+                "w": 0.827979,
+                "h": 0.015573
+              },
+              {
+                "text": "same time deforestation is reducing the places where they can roost, which could have long-term",
+                "x": 0.082842,
+                "y": 0.633236,
+                "w": 0.825771,
+                "h": 0.017345
+              },
+              {
+                "text": "effects on their numbers. Rocha says, 'With the right help, we hope that farmers can promote this",
+                "x": 0.082842,
+                "y": 0.65227,
+                "w": 0.832395,
+                "h": 0.017355
+              },
+              {
+                "text": "mutually beneficial relationship by installing bat houses.'",
+                "x": 0.080634,
+                "y": 0.671304,
+                "w": 0.492372,
+                "h": 0.019137
+              },
+              {
+                "text": "Rocha and his colleagues believe that maximising bat populations can help to boost crop yields",
+                "x": 0.082842,
+                "y": 0.712832,
+                "w": 0.814731,
+                "h": 0.015697
+              },
+              {
+                "text": "and promote sustainable livelihoods. The team is now calling for further research to quantify this",
+                "x": 0.080634,
+                "y": 0.733401,
+                "w": 0.830187,
+                "h": 0.014172
+              },
+              {
+                "text": "contribution. 'I'm very optimistic,' says Rocha. 'If we give nature a hand, we can speed up the",
+                "x": 0.082842,
+                "y": 0.7509,
+                "w": 0.803692,
+                "h": 0.015717
+              },
+              {
+                "text": "process of regeneration.?",
+                "x": 0.082842,
+                "y": 0.768203,
+                "w": 0.214171,
+                "h": 0.020764
+              },
+              {
+                "text": "82",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-4/page-78.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.31132,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.067386,
+                "y": 0.062223,
+                "w": 0.827979,
+                "h": 0.017479
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.067386,
+                "y": 0.081257,
+                "w": 0.167804,
+                "h": 0.019034
+              },
+              {
+                "text": "Does education fuel economic growth?",
+                "x": 0.199702,
+                "y": 0.119213,
+                "w": 0.572261,
+                "h": 0.032443
+              },
+              {
+                "text": "A Over the last decade, a huge database about the lives of southwest German villagers",
+                "x": 0.067386,
+                "y": 0.167774,
+                "w": 0.761741,
+                "h": 0.015573
+              },
+              {
+                "text": "between 1600 and 1900 has been compiled by a team led by Professor Sheilagh Ogilvie",
+                "x": 0.113753,
+                "y": 0.186808,
+                "w": 0.748493,
+                "h": 0.017345
+              },
+              {
+                "text": "at Cambridge University's Faculty of Economics. It includes court records, guild ledgers,",
+                "x": 0.111545,
+                "y": 0.207572,
+                "w": 0.763949,
+                "h": 0.019168
+              },
+              {
+                "text": "parish registers, village censuses, tax lists and - the most recent addition - 9,000 handwritten",
+                "x": 0.111545,
+                "y": 0.226606,
+                "w": 0.788236,
+                "h": 0.019178
+              },
+              {
+                "text": "inventories listing over a million personal possessions belonging to ordinary women and",
+                "x": 0.111545,
+                "y": 0.24737,
+                "w": 0.757325,
+                "h": 0.015686
+              },
+              {
+                "text": "men across three centuries. Ogilvie, who discovered the inventories in the archives of two",
+                "x": 0.113753,
+                "y": 0.266404,
+                "w": 0.763949,
+                "h": 0.017468
+              },
+              {
+                "text": "German communities 30 years ago, believes they may hold the answer to a conundrum that",
+                "x": 0.111545,
+                "y": 0.286972,
+                "w": 0.781612,
+                "h": 0.017715
+              },
+              {
+                "text": "has long puzzled economists: the lack of evidence for a causal link between education and a",
+                "x": 0.111545,
+                "y": 0.306016,
+                "w": 0.788236,
+                "h": 0.017489
+              },
+              {
+                "text": "country's economic growth.",
+                "x": 0.113753,
+                "y": 0.326832,
+                "w": 0.240666,
+                "h": 0.015707
+              },
+              {
+                "text": "B As Ogilvie explains, 'Education helps us to work more productively, invent better",
+                "x": 0.065179,
+                "y": 0.363148,
+                "w": 0.746285,
+                "h": 0.020919
+              },
+              {
+                "text": "technology, and earn more ... surely it must be critical for economic growth? But, if you",
+                "x": 0.111545,
+                "y": 0.383964,
+                "w": 0.757325,
+                "h": 0.017406
+              },
+              {
+                "text": "look back through history, there's no evidence that having a high literacy rate made a",
+                "x": 0.111545,
+                "y": 0.403008,
+                "w": 0.726414,
+                "h": 0.019126
+              },
+              {
+                "text": "country industrialise earlier.' Between 1600 and 1900, England had only mediocre literacy",
+                "x": 0.113753,
+                "y": 0.423824,
+                "w": 0.770572,
+                "h": 0.017345
+              },
+              {
+                "text": "rates by European standards, yet its economy grew fast and it was the first country to",
+                "x": 0.113753,
+                "y": 0.444629,
+                "w": 0.724206,
+                "h": 0.017303
+              },
+              {
+                "text": "industrialise. During this period, Germany and Scandinavia had excellent literacy rates, but",
+                "x": 0.109337,
+                "y": 0.463663,
+                "w": 0.78382,
+                "h": 0.019065
+              },
+              {
+                "text": "their economies grew slowly and they industrialised late. 'Modern cross-country analyses",
+                "x": 0.113753,
+                "y": 0.484427,
+                "w": 0.766157,
+                "h": 0.015573
+              },
+              {
+                "text": "have also struggled to find evidence that education causes economic growth, even though",
+                "x": 0.113753,
+                "y": 0.503461,
+                "w": 0.761741,
+                "h": 0.017355
+              },
+              {
+                "text": "there is plenty of evidence that growth increases education,' she adds.",
+                "x": 0.113753,
+                "y": 0.522494,
+                "w": 0.593937,
+                "h": 0.017365
+              },
+              {
+                "text": "C",
+                "x": 0.065179,
+                "y": 0.562292,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "In the handwritten inventories that Ogilvie is analysing are the belongings of women and",
+                "x": 0.111545,
+                "y": 0.562292,
+                "w": 0.759533,
+                "h": 0.017427
+              },
+              {
+                "text": "men at marriage, remarriage and death. From badger skins to Bibles, sewing machines to",
+                "x": 0.113753,
+                "y": 0.583056,
+                "w": 0.761741,
+                "h": 0.015707
+              },
+              {
+                "text": "scarlet bodices - the villagers' entire worldly goods are included. Inventories of agricultural",
+                "x": 0.113753,
+                "y": 0.60209,
+                "w": 0.78382,
+                "h": 0.017489
+              },
+              {
+                "text": "equipment and craft tools reveal economic activities; ownership of books and education-",
+                "x": 0.113753,
+                "y": 0.622679,
+                "w": 0.757325,
+                "h": 0.015944
+              },
+              {
+                "text": "related objects like pens and slates suggests how people learned. In addition, the tax lists",
+                "x": 0.109337,
+                "y": 0.641723,
+                "w": 0.761741,
+                "h": 0.019199
+              },
+              {
+                "text": "included in the database record the value of farms, workshops, assets and debts; signatures",
+                "x": 0.111545,
+                "y": 0.660767,
+                "w": 0.777196,
+                "h": 0.017458
+              },
+              {
+                "text": "and people's estimates of their age indicate literacy and numeracy levels; and court records",
+                "x": 0.111545,
+                "y": 0.681583,
+                "w": 0.779404,
+                "h": 0.019137
+              },
+              {
+                "text": "reveal obstacles (such as the activities of the guilds*) that stifled industry.",
+                "x": 0.109337,
+                "y": 0.700627,
+                "w": 0.63368,
+                "h": 0.019126
+              },
+              {
+                "text": "Previous studies usually had just one way of linking education with economic growth - the",
+                "x": 0.115961,
+                "y": 0.740487,
+                "w": 0.774988,
+                "h": 0.017334
+              },
+              {
+                "text": "presence of schools and printing presses, perhaps, or school enrolment, or the ability to",
+                "x": 0.111545,
+                "y": 0.759531,
+                "w": 0.748493,
+                "h": 0.019054
+              },
+              {
+                "text": "sign names. According to Ogilvie, the database provides multiple indicators for the same",
+                "x": 0.111545,
+                "y": 0.780316,
+                "w": 0.759533,
+                "h": 0.017303
+              },
+              {
+                "text": "individuals, making it possible to analyse links between literacy, numeracy, wealth, and",
+                "x": 0.109337,
+                "y": 0.799349,
+                "w": 0.748493,
+                "h": 0.019085
+              },
+              {
+                "text": "industriousness, for individual women and men over the long term.",
+                "x": 0.111545,
+                "y": 0.820114,
+                "w": 0.576273,
+                "h": 0.017365
+              },
+              {
+                "text": "* guild: an association of artisans or merchants which oversees the practice of their craft or trade in a particular area",
+                "x": 0.065179,
+                "y": 0.911822,
+                "w": 0.69771,
+                "h": 0.013843
+              },
+              {
+                "text": "85",
+                "x": 0.877702,
+                "y": 0.934316,
+                "w": 0.028703,
+                "h": 0.019034
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-4/page-79.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "D Ogilvie and her team have been building the vast database of material possessions on top",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.803692,
+                "h": 0.017376
+              },
+              {
+                "text": "of their full demographic reconstruction of the people who lived in these two German",
+                "x": 0.129209,
+                "y": 0.041459,
+                "w": 0.73083,
+                "h": 0.015655
+              },
+              {
+                "text": "communities. 'We can follow the same people - and their descendants - across 300 years",
+                "x": 0.129209,
+                "y": 0.060493,
+                "w": 0.763949,
+                "h": 0.017437
+              },
+              {
+                "text": "of educational and economic change,' she says. Individual lives have unfolded before their",
+                "x": 0.129209,
+                "y": 0.079527,
+                "w": 0.77278,
+                "h": 0.017448
+              },
+              {
+                "text": "eyes. Stories like that of the 24-year-olds Ana Regina and Magdalena Riethmüllerin, who",
+                "x": 0.129209,
+                "y": 0.100074,
+                "w": 0.763949,
+                "h": 0.017715
+              },
+              {
+                "text": "were chastised in 1707 for reading books in church instead of listening to the sermon. \"This",
+                "x": 0.131417,
+                "y": 0.119118,
+                "w": 0.781612,
+                "h": 0.017715
+              },
+              {
+                "text": "tells us they were continuing to develop their reading skills at least a decade after leaving",
+                "x": 0.129149,
+                "y": 0.138267,
+                "w": 0.761859,
+                "h": 0.020567
+              },
+              {
+                "text": "school,' explains Ogilvie. The database also reveals the case of Juliana Schweickherdt, a",
+                "x": 0.129209,
+                "y": 0.158978,
+                "w": 0.752909,
+                "h": 0.017448
+              },
+              {
+                "text": "50-year-old spinster living in the small Black Forest community of Wildberg, who was",
+                "x": 0.129209,
+                "y": 0.179794,
+                "w": 0.739661,
+                "h": 0.017396
+              },
+              {
+                "text": "reprimanded in 1752 by the local weavers' guild for 'weaving cloth and combing wool,",
+                "x": 0.129209,
+                "y": 0.197066,
+                "w": 0.744077,
+                "h": 0.019157
+              },
+              {
+                "text": "counter to the guild ordinance'. When Juliana continued taking jobs reserved for male guild",
+                "x": 0.129209,
+                "y": 0.219653,
+                "w": 0.786028,
+                "h": 0.015604
+              },
+              {
+                "text": "members, she was summoned before the guild court and told to pay a fine equivalent to one",
+                "x": 0.129209,
+                "y": 0.238698,
+                "w": 0.781612,
+                "h": 0.017324
+              },
+              {
+                "text": "third of a servant's annual wage. It was a small act of defiance by today's standards, but it",
+                "x": 0.129209,
+                "y": 0.259482,
+                "w": 0.763949,
+                "h": 0.017303
+              },
+              {
+                "text": "reflects a time when laws in Germany and elsewhere regulated people's access to labour",
+                "x": 0.129209,
+                "y": 0.278516,
+                "w": 0.750701,
+                "h": 0.019085
+              },
+              {
+                "text": "markets. The dominance of guilds not only prevented people from using their skills, but also",
+                "x": 0.127001,
+                "y": 0.29928,
+                "w": 0.790444,
+                "h": 0.017365
+              },
+              {
+                "text": "held back even the simplest industrial innovation.",
+                "x": 0.129209,
+                "y": 0.318314,
+                "w": 0.426133,
+                "h": 0.015604
+              },
+              {
+                "text": "E",
+                "x": 0.08505,
+                "y": 0.358112,
+                "w": 0.015456,
+                "h": 0.012112
+              },
+              {
+                "text": "F",
+                "x": 0.08505,
+                "y": 0.555371,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "The data-gathering phase of the project has been completed and now, according to Ogilvie,",
+                "x": 0.120377,
+                "y": 0.358112,
+                "w": 0.786028,
+                "h": 0.015666
+              },
+              {
+                "text": "it is time 'to ask the big questions'. One way to look at whether education causes economic",
+                "x": 0.129209,
+                "y": 0.377146,
+                "w": 0.779404,
+                "h": 0.015676
+              },
+              {
+                "text": "growth is to 'hold wealth constant'. This involves following the lives of different people with",
+                "x": 0.129209,
+                "y": 0.396179,
+                "w": 0.792652,
+                "h": 0.017458
+              },
+              {
+                "text": "the same level of wealth over a period of time. If wealth is constant, it is possible to discover",
+                "x": 0.127001,
+                "y": 0.416738,
+                "w": 0.790444,
+                "h": 0.017715
+              },
+              {
+                "text": "whether education was, for example, linked to the cultivation of new crops, or to the",
+                "x": 0.129209,
+                "y": 0.435782,
+                "w": 0.717582,
+                "h": 0.017715
+              },
+              {
+                "text": "adoption of industrial innovations like sewing machines. The team will also ask what aspect",
+                "x": 0.129209,
+                "y": 0.456597,
+                "w": 0.78382,
+                "h": 0.015717
+              },
+              {
+                "text": "of education helped people engage more with productive and innovative activities. Was it,",
+                "x": 0.127001,
+                "y": 0.475641,
+                "w": 0.768365,
+                "h": 0.019168
+              },
+              {
+                "text": "for instance, literacy, numeracy, book ownership, years of schooling? Was there a threshold",
+                "x": 0.129209,
+                "y": 0.494685,
+                "w": 0.777196,
+                "h": 0.017427
+              },
+              {
+                "text": "level - a tipping point - that needed to be reached to affect economic performance?",
+                "x": 0.129209,
+                "y": 0.515501,
+                "w": 0.713166,
+                "h": 0.017376
+              },
+              {
+                "text": "Ogilvie hopes to start finding answers to these questions over the next few years. One",
+                "x": 0.127001,
+                "y": 0.555361,
+                "w": 0.733037,
+                "h": 0.015583
+              },
+              {
+                "text": "thing is already clear, she says: the relationship between education and economic growth",
+                "x": 0.129209,
+                "y": 0.574405,
+                "w": 0.757325,
+                "h": 0.017303
+              },
+              {
+                "text": "is far from straightforward. 'German-speaking central Europe is an excellent laboratory",
+                "x": 0.129209,
+                "y": 0.593439,
+                "w": 0.750701,
+                "h": 0.019054
+              },
+              {
+                "text": "for testing theories of economic growth,' she explains. Between 1600 and 1900, literacy",
+                "x": 0.127001,
+                "y": 0.612472,
+                "w": 0.750701,
+                "h": 0.019065
+              },
+              {
+                "text": "rates and book ownership were high and yet the region remained poor. It was also the case",
+                "x": 0.129209,
+                "y": 0.633236,
+                "w": 0.770572,
+                "h": 0.017345
+              },
+              {
+                "text": "that local guilds and merchant associations were extremely powerful and legislated against",
+                "x": 0.129209,
+                "y": 0.654001,
+                "w": 0.774988,
+                "h": 0.017396
+              },
+              {
+                "text": "anything that undermined their monopolies. In villages throughout the region, guilds",
+                "x": 0.127001,
+                "y": 0.673034,
+                "w": 0.726414,
+                "h": 0.019178
+              },
+              {
+                "text": "blocked labour migration and resisted changes that might reduce their influence.",
+                "x": 0.127001,
+                "y": 0.693798,
+                "w": 0.691087,
+                "h": 0.017458
+              },
+              {
+                "text": "\"Early findings suggest that the potential benefits of education for the economy can be held",
+                "x": 0.127001,
+                "y": 0.731866,
+                "w": 0.779404,
+                "h": 0.01925
+              },
+              {
+                "text": "back by other barriers, and this has implications for today,' says Ogilvie. 'Huge amounts",
+                "x": 0.127001,
+                "y": 0.752445,
+                "w": 0.757325,
+                "h": 0.019219
+              },
+              {
+                "text": "are spent improving education in developing countries, but this spending can fail to deliver",
+                "x": 0.129209,
+                "y": 0.771489,
+                "w": 0.777196,
+                "h": 0.017479
+              },
+              {
+                "text": "economic growth if restrictions block people - especially women and the poor - from using",
+                "x": 0.127001,
+                "y": 0.792304,
+                "w": 0.786028,
+                "h": 0.019157
+              },
+              {
+                "text": "their education in economically productive ways. If economic institutions are poorly set up,",
+                "x": 0.126837,
+                "y": 0.807572,
+                "w": 0.784155,
+                "h": 0.026198
+              },
+              {
+                "text": "for instance, education can't lead to growth.'",
+                "x": 0.129209,
+                "y": 0.830393,
+                "w": 0.384182,
+                "h": 0.017406
+              },
+              {
+                "text": "86",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.017303
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-4/page-82.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.227418,
+                "h": 0.015604
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.067386,
+                "y": 0.058762,
+                "w": 0.827979,
+                "h": 0.019168
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.067386,
+                "y": 0.079527,
+                "w": 0.167804,
+                "h": 0.017448
+              },
+              {
+                "text": "Timur Gareyev - blindfold chess champion",
+                "x": 0.164536,
+                "y": 0.12089,
+                "w": 0.642512,
+                "h": 0.027902
+              },
+              {
+                "text": "A Next month, a chess player named Timur Gareyev will take on nearly 50 opponents",
+                "x": 0.065179,
+                "y": 0.167774,
+                "w": 0.836811,
+                "h": 0.019106
+              },
+              {
+                "text": "at once. But that is not the hard part. While his challengers will play the games as",
+                "x": 0.111545,
+                "y": 0.188538,
+                "w": 0.770572,
+                "h": 0.017386
+              },
+              {
+                "text": "normal, Gareyev himself will be blindfolded. Even by world record standards, it",
+                "x": 0.111478,
+                "y": 0.204566,
+                "w": 0.746444,
+                "h": 0.023092
+              },
+              {
+                "text": "sets a high bar for human performance. The 28-year-old already stands out in the",
+                "x": 0.111545,
+                "y": 0.228336,
+                "w": 0.77278,
+                "h": 0.017448
+              },
+              {
+                "text": "rarefied world of blindfold chess. He has a fondness for bright clothes and unusual",
+                "x": 0.111545,
+                "y": 0.24737,
+                "w": 0.781612,
+                "h": 0.017458
+              },
+              {
+                "text": "hairstyles, and he gets his kicks from the adventure sport of BASE jumping. He has",
+                "x": 0.111545,
+                "y": 0.266404,
+                "w": 0.788236,
+                "h": 0.01924
+              },
+              {
+                "text": "already proved himself a strong chess player, too. In a 10-hour chess marathon in",
+                "x": 0.111545,
+                "y": 0.286972,
+                "w": 0.774988,
+                "h": 0.019229
+              },
+              {
+                "text": "2013, Gareyev played 33 games in his head simultaneously. He won 29 and lost",
+                "x": 0.111545,
+                "y": 0.306016,
+                "w": 0.763949,
+                "h": 0.019219
+              },
+              {
+                "text": "none. The skill has become his brand: he calls himself the Blindfold King.",
+                "x": 0.111545,
+                "y": 0.326832,
+                "w": 0.693294,
+                "h": 0.017437
+              },
+              {
+                "text": "B But Gareyev's prowess has drawn interest from beyond the chess-playing",
+                "x": 0.067386,
+                "y": 0.36492,
+                "w": 0.741869,
+                "h": 0.017417
+              },
+              {
+                "text": "community. In the hope of understanding how he and others like him can perform",
+                "x": 0.113753,
+                "y": 0.385736,
+                "w": 0.763949,
+                "h": 0.015635
+              },
+              {
+                "text": "such mental feats, researchers at the University of California in Los Angeles",
+                "x": 0.113753,
+                "y": 0.40478,
+                "w": 0.715374,
+                "h": 0.017355
+              },
+              {
+                "text": "(UCLA) called him in for tests. They now have their first results. 'The ability to play",
+                "x": 0.109337,
+                "y": 0.425595,
+                "w": 0.777196,
+                "h": 0.017303
+              },
+              {
+                "text": "a game of chess with your eyes closed is not a far reach for most accomplished",
+                "x": 0.113753,
+                "y": 0.444629,
+                "w": 0.750701,
+                "h": 0.017303
+              },
+              {
+                "text": "players,' said Jesse Rissman, who runs a memory lab at UCLA. 'But the thing that's",
+                "x": 0.111545,
+                "y": 0.463663,
+                "w": 0.790444,
+                "h": 0.020836
+              },
+              {
+                "text": "so remarkable about Timur and a few other individuals is the number of games they",
+                "x": 0.113753,
+                "y": 0.484427,
+                "w": 0.790444,
+                "h": 0.017345
+              },
+              {
+                "text": "can keep active at once. To me it is simply astonishing.'",
+                "x": 0.111545,
+                "y": 0.50173,
+                "w": 0.527699,
+                "h": 0.020857
+              },
+              {
+                "text": "Gareyev learned to play chess in his native Uzbekistan when he was six years old.",
+                "x": 0.098298,
+                "y": 0.543259,
+                "w": 0.797068,
+                "h": 0.017417
+              },
+              {
+                "text": "Tutored by his grandfather, he entered his first tournament aged eight and soon",
+                "x": 0.111545,
+                "y": 0.564023,
+                "w": 0.752909,
+                "h": 0.017468
+              },
+              {
+                "text": "became obsessed with competitions. At 16, he was crowned Asia's youngest ever",
+                "x": 0.111545,
+                "y": 0.583056,
+                "w": 0.774988,
+                "h": 0.01925
+              },
+              {
+                "text": "chess grandmaster. He moved to the US soon after, and as a student helped his",
+                "x": 0.113753,
+                "y": 0.60209,
+                "w": 0.757325,
+                "h": 0.017489
+              },
+              {
+                "text": "university win its first national chess championship. In 2013, Gareyev was ranked",
+                "x": 0.111545,
+                "y": 0.622679,
+                "w": 0.768365,
+                "h": 0.019209
+              },
+              {
+                "text": "the third best chess player in the US.",
+                "x": 0.111545,
+                "y": 0.641723,
+                "w": 0.353271,
+                "h": 0.019199
+              },
+              {
+                "text": "D To the uninitiated, blindfold chess seems to call for superhuman skill. But displays",
+                "x": 0.065178,
+                "y": 0.681583,
+                "w": 0.816939,
+                "h": 0.019137
+              },
+              {
+                "text": "of the feat go back centuries. The first recorded game in Europe was played in",
+                "x": 0.111545,
+                "y": 0.700627,
+                "w": 0.741869,
+                "h": 0.019126
+              },
+              {
+                "text": "13th-century Florence. In 1947, the Argentinian grandmaster Miguel Najdorf played",
+                "x": 0.113753,
+                "y": 0.721443,
+                "w": 0.78382,
+                "h": 0.019075
+              },
+              {
+                "text": "45 simultaneous games in his mind, winning 39 in the 24-hour session.",
+                "x": 0.113753,
+                "y": 0.740487,
+                "w": 0.671215,
+                "h": 0.017334
+              },
+              {
+                "text": "E Accomplished players can develop the skill of playing blind even without realising",
+                "x": 0.065179,
+                "y": 0.780316,
+                "w": 0.814731,
+                "h": 0.019075
+              },
+              {
+                "text": "it. The nature of the game is to run through possible moves in the mind to see",
+                "x": 0.113753,
+                "y": 0.799349,
+                "w": 0.733037,
+                "h": 0.017314
+              },
+              {
+                "text": "how they play out. From this, regular players develop a memory for the patterns",
+                "x": 0.111545,
+                "y": 0.820114,
+                "w": 0.752909,
+                "h": 0.017365
+              },
+              {
+                "text": "the pieces make, the defences and attacks. 'You recreate it in your mind,' said",
+                "x": 0.113753,
+                "y": 0.837417,
+                "w": 0.735245,
+                "h": 0.019106
+              },
+              {
+                "text": "Gareyev. 'A lot of players are capable of doing what I'm doing.' The real mental",
+                "x": 0.113753,
+                "y": 0.858181,
+                "w": 0.744077,
+                "h": 0.019157
+              },
+              {
+                "text": "challenge comes from playing multiple games at once in the head. Not only must",
+                "x": 0.113753,
+                "y": 0.878945,
+                "w": 0.763949,
+                "h": 0.015666
+              },
+              {
+                "text": "the positions of each piece on every board be memorised, they must be recalled",
+                "x": 0.113753,
+                "y": 0.897979,
+                "w": 0.757325,
+                "h": 0.017448
+              },
+              {
+                "text": "89",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-4/page-83.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "faithfully when needed, updated with each player's moves, and then reliably stored",
+                "x": 0.129209,
+                "y": 0.020695,
+                "w": 0.781612,
+                "h": 0.017376
+              },
+              {
+                "text": "again, so the brain can move on to the next board. First moves can be tough to",
+                "x": 0.129209,
+                "y": 0.039729,
+                "w": 0.746285,
+                "h": 0.017386
+              },
+              {
+                "text": "remember because they are fairly uninteresting. But the ends of games are taxing",
+                "x": 0.129209,
+                "y": 0.060493,
+                "w": 0.77278,
+                "h": 0.015666
+              },
+              {
+                "text": "too, as exhaustion sets in. When Gareyev is tired, his recall can get patchy. He",
+                "x": 0.129209,
+                "y": 0.079527,
+                "w": 0.744077,
+                "h": 0.017448
+              },
+              {
+                "text": "sometimes makes moves based on only a fragmented memory of the pieces'",
+                "x": 0.131417,
+                "y": 0.09683,
+                "w": 0.726414,
+                "h": 0.019188
+              },
+              {
+                "text": "positions.",
+                "x": 0.131392,
+                "y": 0.119236,
+                "w": 0.090576,
+                "h": 0.015751
+              },
+              {
+                "text": "F The scientists first had Gareyev perform some standard memory tests. These",
+                "x": 0.08505,
+                "y": 0.158978,
+                "w": 0.777196,
+                "h": 0.015717
+              },
+              {
+                "text": "assessed his ability to hold numbers, pictures and words in mind. One classic test",
+                "x": 0.131417,
+                "y": 0.178022,
+                "w": 0.77278,
+                "h": 0.017437
+              },
+              {
+                "text": "measures how many numbers a person can repeat, both forwards and backwards,",
+                "x": 0.131417,
+                "y": 0.197066,
+                "w": 0.779404,
+                "h": 0.017427
+              },
+              {
+                "text": "soon after hearing them. Most people manage about seven. 'He was not",
+                "x": 0.129209,
+                "y": 0.217882,
+                "w": 0.686671,
+                "h": 0.015645
+              },
+              {
+                "text": "exceptional on any of these standard tests,' said Rissman. 'We didn't find anything",
+                "x": 0.129209,
+                "y": 0.235154,
+                "w": 0.777196,
+                "h": 0.020867
+              },
+              {
+                "text": "other than playing chess that he seems to be supremely gifted at.' But next came",
+                "x": 0.131417,
+                "y": 0.257742,
+                "w": 0.761741,
+                "h": 0.015583
+              },
+              {
+                "text": "the brain scans. With Gareyev lying down in the machine, Rissman looked at how",
+                "x": 0.129209,
+                "y": 0.276786,
+                "w": 0.77278,
+                "h": 0.017303
+              },
+              {
+                "text": "well connected the various regions of the chess player's brain were. Though the",
+                "x": 0.127001,
+                "y": 0.29755,
+                "w": 0.757325,
+                "h": 0.017324
+              },
+              {
+                "text": "results are tentative and as yet unpublished, the scans found much greater than",
+                "x": 0.127001,
+                "y": 0.314853,
+                "w": 0.757325,
+                "h": 0.020836
+              },
+              {
+                "text": "average communication between parts of Gareyev's brain that make up what is",
+                "x": 0.129209,
+                "y": 0.335617,
+                "w": 0.748493,
+                "h": 0.019116
+              },
+              {
+                "text": "called the frontoparietal control network. Of 63 people scanned alongside the chess",
+                "x": 0.129209,
+                "y": 0.356382,
+                "w": 0.788236,
+                "h": 0.019168
+              },
+              {
+                "text": "player, only one or two scored more highly on the measure. 'You use this network in",
+                "x": 0.131417,
+                "y": 0.375415,
+                "w": 0.788236,
+                "h": 0.017406
+              },
+              {
+                "text": "almost any complex task. It helps you to allocate attention, keep rules in mind, and",
+                "x": 0.127001,
+                "y": 0.396179,
+                "w": 0.781612,
+                "h": 0.017458
+              },
+              {
+                "text": "work out whether you should be responding or not,' said Rissman.",
+                "x": 0.129121,
+                "y": 0.412801,
+                "w": 0.627199,
+                "h": 0.021313
+              },
+              {
+                "text": "G",
+                "x": 0.082842,
+                "y": 0.455011,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "H",
+                "x": 0.08505,
+                "y": 0.593439,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "It was not the only hint of something special in Gareyev's brain. The scans also",
+                "x": 0.127001,
+                "y": 0.454826,
+                "w": 0.748493,
+                "h": 0.017489
+              },
+              {
+                "text": "suggest that Gareyev's visual network is more highly connected to other brain parts",
+                "x": 0.129209,
+                "y": 0.475641,
+                "w": 0.788236,
+                "h": 0.015707
+              },
+              {
+                "text": "than usual. Initial results suggest that the areas of his brain that process visual",
+                "x": 0.129209,
+                "y": 0.494685,
+                "w": 0.741869,
+                "h": 0.015697
+              },
+              {
+                "text": "images - such as chess boards - may have stronger links to other brain regions,",
+                "x": 0.129209,
+                "y": 0.513729,
+                "w": 0.763949,
+                "h": 0.017417
+              },
+              {
+                "text": "and so be more powerful than normal. While the analyses are not finalised yet, they",
+                "x": 0.129209,
+                "y": 0.534545,
+                "w": 0.790444,
+                "h": 0.015635
+              },
+              {
+                "text": "may hold the first clues to Gareyev's extraordinary ability.",
+                "x": 0.129209,
+                "y": 0.553589,
+                "w": 0.543154,
+                "h": 0.019085
+              },
+              {
+                "text": "For the world record attempt, Gareyev hopes to play 47 blindfold games at once in",
+                "x": 0.131417,
+                "y": 0.593439,
+                "w": 0.777196,
+                "h": 0.015573
+              },
+              {
+                "text": "about 16 hours. He will need to win 80% to claim the title. 'I don't worry too much",
+                "x": 0.131417,
+                "y": 0.612472,
+                "w": 0.761741,
+                "h": 0.017303
+              },
+              {
+                "text": "about the winning percentage, that's never been an issue for me,' he said. 'The",
+                "x": 0.129209,
+                "y": 0.631506,
+                "w": 0.748493,
+                "h": 0.019075
+              },
+              {
+                "text": "most important part of blindfold chess for me is that I have found the one thing that",
+                "x": 0.129209,
+                "y": 0.65227,
+                "w": 0.78382,
+                "h": 0.017355
+              },
+              {
+                "text": "I can fully dedicate myself to. I miss having an obsession.'",
+                "x": 0.124793,
+                "y": 0.671304,
+                "w": 0.554194,
+                "h": 0.019137
+              },
+              {
+                "text": "90",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-4/page-86.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.418397,
+                "y": 0.017045,
+                "w": 0.130375,
+                "h": 0.022872
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.065179,
+                "y": 0.082802,
+                "w": 0.240666,
+                "h": 0.017489
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.062971,
+                "y": 0.124433,
+                "w": 0.463668,
+                "h": 0.017386
+              },
+              {
+                "text": "The graph below shows the number of shops that closed and the number of",
+                "x": 0.089466,
+                "y": 0.172965,
+                "w": 0.777196,
+                "h": 0.022494
+              },
+              {
+                "text": "new shops that opened in one country between 2011 and 2018.",
+                "x": 0.089466,
+                "y": 0.190269,
+                "w": 0.640304,
+                "h": 0.024225
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.087258,
+                "y": 0.231611,
+                "w": 0.788236,
+                "h": 0.02268
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.087258,
+                "y": 0.254199,
+                "w": 0.359895,
+                "h": 0.017396
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.062971,
+                "y": 0.306016,
+                "w": 0.240666,
+                "h": 0.017489
+              },
+              {
+                "text": "Number of shop closures and openings 2011-2018",
+                "x": 0.164536,
+                "y": 0.344104,
+                "w": 0.635888,
+                "h": 0.020929
+              },
+              {
+                "text": "Closures",
+                "x": 0.383047,
+                "y": 0.390734,
+                "w": 0.075221,
+                "h": 0.014351
+              },
+              {
+                "text": "- Openings",
+                "x": 0.566272,
+                "y": 0.39051,
+                "w": 0.108408,
+                "h": 0.01653
+              },
+              {
+                "text": "9,000",
+                "x": 0.06512,
+                "y": 0.422035,
+                "w": 0.057525,
+                "h": 0.020964
+              },
+              {
+                "text": "8,000",
+                "x": 0.062971,
+                "y": 0.460202,
+                "w": 0.057407,
+                "h": 0.022494
+              },
+              {
+                "text": "7,000",
+                "x": 0.060763,
+                "y": 0.49827,
+                "w": 0.059614,
+                "h": 0.025955
+              },
+              {
+                "text": "6,000",
+                "x": 0.062861,
+                "y": 0.537881,
+                "w": 0.057626,
+                "h": 0.021137
+              },
+              {
+                "text": "5,000-",
+                "x": 0.062743,
+                "y": 0.574017,
+                "w": 0.062278,
+                "h": 0.02327
+              },
+              {
+                "text": "4,000-",
+                "x": 0.062603,
+                "y": 0.613542,
+                "w": 0.060349,
+                "h": 0.022086
+              },
+              {
+                "text": "3,000 -",
+                "x": 0.062971,
+                "y": 0.65227,
+                "w": 0.07507,
+                "h": 0.02267
+              },
+              {
+                "text": "2,000",
+                "x": 0.062971,
+                "y": 0.690338,
+                "w": 0.057407,
+                "h": 0.020764
+              },
+              {
+                "text": "1,000 -",
+                "x": 0.065179,
+                "y": 0.726675,
+                "w": 0.07507,
+                "h": 0.024441
+              },
+              {
+                "text": "o+",
+                "x": 0.100506,
+                "y": 0.761282,
+                "w": 0.048575,
+                "h": 0.031146
+              },
+              {
+                "text": "2011",
+                "x": 0.115961,
+                "y": 0.795889,
+                "w": 0.041951,
+                "h": 0.015573
+              },
+              {
+                "text": "T",
+                "x": 0.23519,
+                "y": 0.776855,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "2012",
+                "x": 0.219735,
+                "y": 0.794158,
+                "w": 0.048575,
+                "h": 0.017303
+              },
+              {
+                "text": "T",
+                "x": 0.341172,
+                "y": 0.775125,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "2013",
+                "x": 0.325716,
+                "y": 0.794158,
+                "w": 0.048575,
+                "h": 0.017303
+              },
+              {
+                "text": "T",
+                "x": 0.447153,
+                "y": 0.775125,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "2014",
+                "x": 0.431668,
+                "y": 0.795822,
+                "w": 0.057465,
+                "h": 0.015706
+              },
+              {
+                "text": "2015",
+                "x": 0.537594,
+                "y": 0.790565,
+                "w": 0.05316,
+                "h": 0.021029
+              },
+              {
+                "text": "2016",
+                "x": 0.645868,
+                "y": 0.792428,
+                "w": 0.050783,
+                "h": 0.019034
+              },
+              {
+                "text": "2017",
+                "x": 0.751849,
+                "y": 0.792428,
+                "w": 0.052991,
+                "h": 0.019034
+              },
+              {
+                "text": "2018",
+                "x": 0.860038,
+                "y": 0.792428,
+                "w": 0.048575,
+                "h": 0.019034
+              },
+              {
+                "text": "→",
+                "x": 0.716522,
+                "y": 0.934316,
+                "w": 0.028703,
+                "h": 0.019034
+              },
+              {
+                "text": "4 p. 137",
+                "x": 0.742911,
+                "y": 0.935694,
+                "w": 0.101778,
+                "h": 0.019738
+              },
+              {
+                "text": "93",
+                "x": 0.877702,
+                "y": 0.936047,
+                "w": 0.028703,
+                "h": 0.017303
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-4/page-87.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.080634,
+                "y": 0.018965,
+                "w": 0.245082,
+                "h": 0.019106
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.080634,
+                "y": 0.060493,
+                "w": 0.463668,
+                "h": 0.019209
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.080634,
+                "y": 0.100074,
+                "w": 0.295865,
+                "h": 0.01925
+              },
+              {
+                "text": "Nowadays, a growing number of people with health problems are trying",
+                "x": 0.104922,
+                "y": 0.14874,
+                "w": 0.73083,
+                "h": 0.022639
+              },
+              {
+                "text": "alternative medicines and treatments instead of visiting their usual doctor.",
+                "x": 0.104922,
+                "y": 0.169504,
+                "w": 0.759533,
+                "h": 0.02269
+              },
+              {
+                "text": "Do you think this is a positive or a negative development?",
+                "x": 0.104922,
+                "y": 0.209302,
+                "w": 0.593937,
+                "h": 0.02098
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.082842,
+                "y": 0.261213,
+                "w": 0.755117,
+                "h": 0.019116
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.080634,
+                "y": 0.281977,
+                "w": 0.249498,
+                "h": 0.019168
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.082842,
+                "y": 0.321775,
+                "w": 0.238458,
+                "h": 0.015686
+              },
+              {
+                "text": "94",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.037535,
+                "h": 0.013843
+              },
+              {
+                "text": "→ • p. 138",
+                "x": 0.133511,
+                "y": 0.933803,
+                "w": 0.13712,
+                "h": 0.02006
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-68.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Test 4",
+                "x": 0.065179,
+                "y": 0.062223,
+                "w": 0.128061,
+                "h": 0.03298
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.405032,
+                "y": 0.128939,
+                "w": 0.161519,
+                "h": 0.02403
+              },
+              {
+                "text": "PART 1",
+                "x": 0.065179,
+                "y": 0.200609,
+                "w": 0.101565,
+                "h": 0.017345
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.228566,
+                "y": 0.200609,
+                "w": 0.187675,
+                "h": 0.019075
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.240449,
+                "w": 0.273785,
+                "h": 0.019065
+              },
+              {
+                "text": "Write ONE WORD for each answer.",
+                "x": 0.065179,
+                "y": 0.280246,
+                "w": 0.340023,
+                "h": 0.017355
+              },
+              {
+                "text": "Easy Life Cleaning Services",
+                "x": 0.279349,
+                "y": 0.326832,
+                "w": 0.415094,
+                "h": 0.02613
+              },
+              {
+                "text": "Basic cleaning package offered",
+                "x": 0.093882,
+                "y": 0.378876,
+                "w": 0.32236,
+                "h": 0.019034
+              },
+              {
+                "text": "Cleaning all surfaces",
+                "x": 0.140249,
+                "y": 0.408292,
+                "w": 0.200923,
+                "h": 0.019075
+              },
+              {
+                "text": "•",
+                "x": 0.091674,
+                "y": 0.437708,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "Cleaning the 1",
+                "x": 0.140249,
+                "y": 0.437553,
+                "w": 0.1391,
+                "h": 0.017458
+              },
+              {
+                "text": ".throughout the apartment",
+                "x": 0.447153,
+                "y": 0.435782,
+                "w": 0.251706,
+                "h": 0.019229
+              },
+              {
+                "text": "Cleaning shower, sinks, toilet etc.",
+                "x": 0.140249,
+                "y": 0.465393,
+                "w": 0.320152,
+                "h": 0.019106
+              },
+              {
+                "text": "Additional services agreed",
+                "x": 0.093882,
+                "y": 0.492914,
+                "w": 0.273785,
+                "h": 0.019199
+              },
+              {
+                "text": "• Every week",
+                "x": 0.091674,
+                "y": 0.522494,
+                "w": 0.163388,
+                "h": 0.017365
+              },
+              {
+                "text": "- Cleaning the 2",
+                "x": 0.138041,
+                "y": 0.546503,
+                "w": 0.17222,
+                "h": 0.017715
+              },
+              {
+                "text": "- Ironing clothes - 3 ...",
+                "x": 0.140249,
+                "y": 0.570862,
+                "w": 0.218586,
+                "h": 0.015655
+              },
+              {
+                "text": "............ only",
+                "x": 0.449361,
+                "y": 0.570862,
+                "w": 0.108189,
+                "h": 0.015655
+              },
+              {
+                "text": "• Every month",
+                "x": 0.093882,
+                "y": 0.59863,
+                "w": 0.170012,
+                "h": 0.017406
+              },
+              {
+                "text": "- Cleaning all the 4 ...",
+                "x": 0.140249,
+                "y": 0.622679,
+                "w": 0.207547,
+                "h": 0.017479
+              },
+              {
+                "text": "- Washing down the 5 ..",
+                "x": 0.140249,
+                "y": 0.647038,
+                "w": 0.231834,
+                "h": 0.015614
+              },
+              {
+                "text": "from the inside",
+                "x": 0.502351,
+                "y": 0.620908,
+                "w": 0.147932,
+                "h": 0.017715
+              },
+              {
+                "text": "...",
+                "x": 0.520015,
+                "y": 0.654001,
+                "w": 0.013248,
+                "h": 0.010382
+              },
+              {
+                "text": "Other possibilities",
+                "x": 0.093599,
+                "y": 0.674585,
+                "w": 0.190392,
+                "h": 0.020659
+              },
+              {
+                "text": "They can organise a plumber or an 6....",
+                "x": 0.140188,
+                "y": 0.702178,
+                "w": 0.37328,
+                "h": 0.021296
+              },
+              {
+                "text": ".....if necessary.",
+                "x": 0.641452,
+                "y": 0.702399,
+                "w": 0.147932,
+                "h": 0.020816
+              },
+              {
+                "text": "• Aspecial cleaning service is available for customers who are allergic",
+                "x": 0.089466,
+                "y": 0.730136,
+                "w": 0.702126,
+                "h": 0.02098
+              },
+              {
+                "text": "to 7 ..",
+                "x": 0.140249,
+                "y": 0.752445,
+                "w": 0.052991,
+                "h": 0.014172
+              },
+              {
+                "text": "Information on the cleaners",
+                "x": 0.091674,
+                "y": 0.780316,
+                "w": 0.284825,
+                "h": 0.015573
+              },
+              {
+                "text": "• Before being hired, all cleaners have a background check carried out by",
+                "x": 0.089466,
+                "y": 0.806271,
+                "w": 0.735245,
+                "h": 0.020764
+              },
+              {
+                "text": "the 8",
+                "x": 0.138041,
+                "y": 0.828621,
+                "w": 0.052991,
+                "h": 0.015717
+              },
+              {
+                "text": "•",
+                "x": 0.091674,
+                "y": 0.858181,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.091674,
+                "y": 0.887597,
+                "w": 0.024287,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.089466,
+                "y": 0.915282,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.089466,
+                "y": 0.944698,
+                "w": 0.022079,
+                "h": 0.013843
+              },
+              {
+                "text": "References are required",
+                "x": 0.142457,
+                "y": 0.856451,
+                "w": 0.234042,
+                "h": 0.017345
+              },
+              {
+                "text": "All cleaners are given 9",
+                "x": 0.135833,
+                "y": 0.885753,
+                "w": 0.229626,
+                "h": 0.017417
+              },
+              {
+                "text": "...for two weeks.",
+                "x": 0.517807,
+                "y": 0.88221,
+                "w": 0.165596,
+                "h": 0.02269
+              },
+              {
+                "text": "Customers send a 10",
+                "x": 0.142457,
+                "y": 0.913552,
+                "w": 0.203131,
+                "h": 0.013843
+              },
+              {
+                "text": "..... after each visit.",
+                "x": 0.478064,
+                "y": 0.911822,
+                "w": 0.187675,
+                "h": 0.019106
+              },
+              {
+                "text": "Usually, each customer has one regular cleaner.",
+                "x": 0.140249,
+                "y": 0.939342,
+                "w": 0.46146,
+                "h": 0.020929
+              },
+              {
+                "text": "→ D p. 125",
+                "x": 0.610541,
+                "y": 0.977431,
+                "w": 0.125853,
+                "h": 0.024369
+              },
+              {
+                "text": "Op. 113",
+                "x": 0.753911,
+                "y": 0.977203,
+                "w": 0.09965,
+                "h": 0.024968
+              },
+              {
+                "text": "75",
+                "x": 0.87991,
+                "y": 0.979305,
+                "w": 0.028703,
+                "h": 0.020764
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-69.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.082757,
+                "y": 0.018669,
+                "w": 0.106152,
+                "h": 0.019624
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.200923,
+                "h": 0.019147
+              },
+              {
+                "text": "Questions 11-14",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.176636,
+                "h": 0.017437
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.712106,
+                "y": 0.093369,
+                "w": 0.170012,
+                "h": 0.015573
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.342231,
+                "h": 0.01925
+              },
+              {
+                "text": "11",
+                "x": 0.082842,
+                "y": 0.131437,
+                "w": 0.024287,
+                "h": 0.015573
+              },
+              {
+                "text": "Many hotel managers are unaware that their staff often leave because of",
+                "x": 0.131417,
+                "y": 0.131437,
+                "w": 0.686671,
+                "h": 0.017355
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.162583,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "a lack of training.",
+                "x": 0.162328,
+                "y": 0.162521,
+                "w": 0.178843,
+                "h": 0.015635
+              },
+              {
+                "text": "B long hours.",
+                "x": 0.131417,
+                "y": 0.181565,
+                "w": 0.152348,
+                "h": 0.017355
+              },
+              {
+                "text": "low pay.",
+                "x": 0.168952,
+                "y": 0.204111,
+                "w": 0.083902,
+                "h": 0.015573
+              },
+              {
+                "text": "12",
+                "x": 0.080634,
+                "y": 0.231797,
+                "w": 0.030911,
+                "h": 0.015573
+              },
+              {
+                "text": "What is the impact of high staff turnover on managers?",
+                "x": 0.127001,
+                "y": 0.231611,
+                "w": 0.521075,
+                "h": 0.019219
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.262943,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "an increased workload",
+                "x": 0.164536,
+                "y": 0.262943,
+                "w": 0.22521,
+                "h": 0.015614
+              },
+              {
+                "text": "low morale",
+                "x": 0.144665,
+                "y": 0.283707,
+                "w": 0.136893,
+                "h": 0.015666
+              },
+              {
+                "text": "C an inability to meet targets",
+                "x": 0.129209,
+                "y": 0.302741,
+                "w": 0.298072,
+                "h": 0.017448
+              },
+              {
+                "text": "13 What mistake should managers always avoid?",
+                "x": 0.08505,
+                "y": 0.332146,
+                "w": 0.48354,
+                "h": 0.017314
+              },
+              {
+                "text": "A failing to treat staff equally",
+                "x": 0.131417,
+                "y": 0.363148,
+                "w": 0.293657,
+                "h": 0.017458
+              },
+              {
+                "text": "reorganising shifts without warning",
+                "x": 0.16012,
+                "y": 0.383964,
+                "w": 0.344439,
+                "h": 0.015676
+              },
+              {
+                "text": "neglecting to have enough staff during busy periods",
+                "x": 0.173368,
+                "y": 0.403008,
+                "w": 0.492372,
+                "h": 0.017396
+              },
+              {
+                "text": "14 What unexpected benefit did Dunwich Hotel notice after improving staff",
+                "x": 0.08505,
+                "y": 0.432517,
+                "w": 0.717582,
+                "h": 0.017437
+              },
+              {
+                "text": "retention rates?",
+                "x": 0.129209,
+                "y": 0.453281,
+                "w": 0.15014,
+                "h": 0.013946
+              },
+              {
+                "text": "A a fall in customer complaints",
+                "x": 0.131417,
+                "y": 0.484427,
+                "w": 0.315736,
+                "h": 0.015573
+              },
+              {
+                "text": "B an increase in loyalty club membership",
+                "x": 0.129209,
+                "y": 0.503461,
+                "w": 0.415094,
+                "h": 0.017355
+              },
+              {
+                "text": "a rise in spending per customer",
+                "x": 0.16012,
+                "y": 0.524225,
+                "w": 0.315736,
+                "h": 0.015635
+              },
+              {
+                "text": "76",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-70.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Which way of reducing staff turnover was used in each of the following hotels?",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.741869,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter, A, B or C, next to Questions 15-20.",
+                "x": 0.065179,
+                "y": 0.09856,
+                "w": 0.563026,
+                "h": 0.020764
+              },
+              {
+                "text": "Ways of reducing staff turnover",
+                "x": 0.3213,
+                "y": 0.153931,
+                "w": 0.326776,
+                "h": 0.019219
+              },
+              {
+                "text": "A",
+                "x": 0.268309,
+                "y": 0.185078,
+                "w": 0.033119,
+                "h": 0.017303
+              },
+              {
+                "text": "improving relationships and teamwork",
+                "x": 0.308052,
+                "y": 0.185078,
+                "w": 0.368727,
+                "h": 0.019075
+              },
+              {
+                "text": "B",
+                "x": 0.268309,
+                "y": 0.216224,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "offering incentives and financial benefits",
+                "x": 0.312468,
+                "y": 0.214339,
+                "w": 0.381974,
+                "h": 0.019188
+              },
+              {
+                "text": "providing career opportunities",
+                "x": 0.312468,
+                "y": 0.24564,
+                "w": 0.287033,
+                "h": 0.019188
+              },
+              {
+                "text": "Hotels",
+                "x": 0.111524,
+                "y": 0.316533,
+                "w": 0.068488,
+                "h": 0.017405
+              },
+              {
+                "text": "15 The Sun Club",
+                "x": 0.065179,
+                "y": 0.347647,
+                "w": 0.178843,
+                "h": 0.015655
+              },
+              {
+                "text": "16 The Portland",
+                "x": 0.065179,
+                "y": 0.378876,
+                "w": 0.17222,
+                "h": 0.015717
+              },
+              {
+                "text": "17 Bluewater Hotels",
+                "x": 0.065179,
+                "y": 0.408292,
+                "w": 0.211963,
+                "h": 0.017303
+              },
+              {
+                "text": "18 Pentlow Hotels",
+                "x": 0.065179,
+                "y": 0.437553,
+                "w": 0.192091,
+                "h": 0.017458
+              },
+              {
+                "text": "19",
+                "x": 0.065179,
+                "y": 0.468854,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Green Planet",
+                "x": 0.102714,
+                "y": 0.468854,
+                "w": 0.141308,
+                "h": 0.017417
+              },
+              {
+                "text": "20",
+                "x": 0.065179,
+                "y": 0.5,
+                "w": 0.039743,
+                "h": 0.015573
+              },
+              {
+                "text": "The Amesbury",
+                "x": 0.102714,
+                "y": 0.5,
+                "w": 0.15014,
+                "h": 0.019044
+              },
+              {
+                "text": "→ O p. 125",
+                "x": 0.610541,
+                "y": 0.936047,
+                "w": 0.123645,
+                "h": 0.01924
+              },
+              {
+                "text": "8 p. 114",
+                "x": 0.754057,
+                "y": 0.936047,
+                "w": 0.09715,
+                "h": 0.01924
+              },
+              {
+                "text": "77",
+                "x": 0.873286,
+                "y": 0.937777,
+                "w": 0.033119,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-71.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.082757,
+                "y": 0.020376,
+                "w": 0.103944,
+                "h": 0.017941
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.200923,
+                "h": 0.017376
+              },
+              {
+                "text": "Questions 21-22",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.178843,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.253914,
+                "h": 0.01925
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.712106,
+                "y": 0.093369,
+                "w": 0.170012,
+                "h": 0.015573
+              },
+              {
+                "text": "Which TWO points do Thomas and Jeanne make about Thomas's sporting activities",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.79486,
+                "h": 0.019229
+              },
+              {
+                "text": "at school?",
+                "x": 0.080634,
+                "y": 0.16075,
+                "w": 0.101565,
+                "h": 0.013946
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.19719,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.216224,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.129209,
+                "y": 0.256022,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.129209,
+                "y": 0.276786,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "He should have felt more positive about them.",
+                "x": 0.175576,
+                "y": 0.197066,
+                "w": 0.439381,
+                "h": 0.017427
+              },
+              {
+                "text": "The training was too challenging for him.",
+                "x": 0.175576,
+                "y": 0.21611,
+                "w": 0.38639,
+                "h": 0.019147
+              },
+              {
+                "text": "He could have worked harder at them.",
+                "x": 0.173368,
+                "y": 0.236926,
+                "w": 0.368727,
+                "h": 0.013905
+              },
+              {
+                "text": "His parents were disappointed in him.",
+                "x": 0.175576,
+                "y": 0.25597,
+                "w": 0.359895,
+                "h": 0.017355
+              },
+              {
+                "text": "His fellow students admired him.",
+                "x": 0.175444,
+                "y": 0.274978,
+                "w": 0.313809,
+                "h": 0.017471
+              },
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.082842,
+                "y": 0.352921,
+                "w": 0.216379,
+                "h": 0.017314
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.392719,
+                "w": 0.256122,
+                "h": 0.020919
+              },
+              {
+                "text": "Which TWO feelings did Thomas experience when he was in Kenya?",
+                "x": 0.080634,
+                "y": 0.432517,
+                "w": 0.655759,
+                "h": 0.019209
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.468854,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "disbelief",
+                "x": 0.164536,
+                "y": 0.468854,
+                "w": 0.094942,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.489618,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "relief",
+                "x": 0.164536,
+                "y": 0.489618,
+                "w": 0.06403,
+                "h": 0.015573
+              },
+              {
+                "text": "C stress",
+                "x": 0.129161,
+                "y": 0.508469,
+                "w": 0.106078,
+                "h": 0.017668
+              },
+              {
+                "text": "D",
+                "x": 0.129209,
+                "y": 0.527685,
+                "w": 0.037535,
+                "h": 0.017303
+              },
+              {
+                "text": "gratitude",
+                "x": 0.164447,
+                "y": 0.525719,
+                "w": 0.097327,
+                "h": 0.022968
+              },
+              {
+                "text": "E homesickness",
+                "x": 0.129209,
+                "y": 0.548275,
+                "w": 0.183259,
+                "h": 0.015944
+              },
+              {
+                "text": "78",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-72.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "What comment do the students make about the development of each of the following",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.803692,
+                "h": 0.017437
+              },
+              {
+                "text": "items of sporting equipment?",
+                "x": 0.067386,
+                "y": 0.079527,
+                "w": 0.273785,
+                "h": 0.017448
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.067386,
+                "y": 0.119118,
+                "w": 0.706542,
+                "h": 0.01924
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.067386,
+                "y": 0.139934,
+                "w": 0.167804,
+                "h": 0.015944
+              },
+              {
+                "text": "Comments about the development of the equipment",
+                "x": 0.219735,
+                "y": 0.193523,
+                "w": 0.532115,
+                "h": 0.01924
+              },
+              {
+                "text": "A",
+                "x": 0.244022,
+                "y": 0.224875,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "It could cause excessive sweating.",
+                "x": 0.279349,
+                "y": 0.224875,
+                "w": 0.342231,
+                "h": 0.019137
+              },
+              {
+                "text": "B",
+                "x": 0.244022,
+                "y": 0.256022,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "The material was being mass produced for another",
+                "x": 0.259478,
+                "y": 0.254199,
+                "w": 0.514451,
+                "h": 0.019126
+              },
+              {
+                "text": "purpose.",
+                "x": 0.290389,
+                "y": 0.278516,
+                "w": 0.08611,
+                "h": 0.015573
+              },
+              {
+                "text": "C People often needed to make their own.",
+                "x": 0.241814,
+                "y": 0.304471,
+                "w": 0.428341,
+                "h": 0.019034
+              },
+              {
+                "text": "D",
+                "x": 0.244022,
+                "y": 0.335617,
+                "w": 0.015456,
+                "h": 0.017303
+              },
+              {
+                "text": "E",
+                "x": 0.244022,
+                "y": 0.366764,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "F",
+                "x": 0.241814,
+                "y": 0.396179,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "G",
+                "x": 0.241814,
+                "y": 0.425595,
+                "w": 0.022079,
+                "h": 0.020764
+              },
+              {
+                "text": "H",
+                "x": 0.241814,
+                "y": 0.458472,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "It often had to be replaced.",
+                "x": 0.283765,
+                "y": 0.335617,
+                "w": 0.262745,
+                "h": 0.017345
+              },
+              {
+                "text": "The material was expensive.",
+                "x": 0.288181,
+                "y": 0.366691,
+                "w": 0.275993,
+                "h": 0.015645
+              },
+              {
+                "text": "It was unpopular among spectators.",
+                "x": 0.288181,
+                "y": 0.397693,
+                "w": 0.344439,
+                "h": 0.015944
+              },
+              {
+                "text": "It caused injuries.",
+                "x": 0.283765,
+                "y": 0.429056,
+                "w": 0.176636,
+                "h": 0.019126
+              },
+              {
+                "text": "No one using it liked it at first.",
+                "x": 0.283765,
+                "y": 0.458369,
+                "w": 0.284825,
+                "h": 0.019137
+              },
+              {
+                "text": "25",
+                "x": 0.062971,
+                "y": 0.557101,
+                "w": 0.033119,
+                "h": 0.019034
+              },
+              {
+                "text": "26",
+                "x": 0.062971,
+                "y": 0.588248,
+                "w": 0.033119,
+                "h": 0.019034
+              },
+              {
+                "text": "27",
+                "x": 0.062971,
+                "y": 0.619394,
+                "w": 0.030911,
+                "h": 0.019034
+              },
+              {
+                "text": "28",
+                "x": 0.062971,
+                "y": 0.64881,
+                "w": 0.030911,
+                "h": 0.019034
+              },
+              {
+                "text": "29",
+                "x": 0.065179,
+                "y": 0.681686,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "30",
+                "x": 0.065179,
+                "y": 0.712832,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "Items of sporting equipment",
+                "x": 0.111545,
+                "y": 0.52923,
+                "w": 0.291449,
+                "h": 0.017489
+              },
+              {
+                "text": "the table tennis bat",
+                "x": 0.109337,
+                "y": 0.560562,
+                "w": 0.187675,
+                "h": 0.013843
+              },
+              {
+                "text": "the cricket helmet",
+                "x": 0.102714,
+                "y": 0.589906,
+                "w": 0.181051,
+                "h": 0.015645
+              },
+              {
+                "text": "the cycle helmet",
+                "x": 0.104922,
+                "y": 0.620908,
+                "w": 0.165596,
+                "h": 0.017715
+              },
+              {
+                "text": "the golf club",
+                "x": 0.109314,
+                "y": 0.652171,
+                "w": 0.119276,
+                "h": 0.017503
+              },
+              {
+                "text": "the hockey stick",
+                "x": 0.102714,
+                "y": 0.681583,
+                "w": 0.163388,
+                "h": 0.017406
+              },
+              {
+                "text": "the football",
+                "x": 0.107129,
+                "y": 0.712832,
+                "w": 0.112605,
+                "h": 0.015697
+              },
+              {
+                "text": "→ O p. 125",
+                "x": 0.610541,
+                "y": 0.936047,
+                "w": 0.123645,
+                "h": 0.01924
+              },
+              {
+                "text": "0 p. 115",
+                "x": 0.754057,
+                "y": 0.936047,
+                "w": 0.094942,
+                "h": 0.01924
+              },
+              {
+                "text": "79",
+                "x": 0.87991,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-73.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.082806,
+                "y": 0.018842,
+                "w": 0.106053,
+                "h": 0.01928
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.244022,
+                "y": 0.017234,
+                "w": 0.205339,
+                "h": 0.022608
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.019209
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.406262,
+                "h": 0.01925
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.709898,
+                "y": 0.093369,
+                "w": 0.17222,
+                "h": 0.015573
+              },
+              {
+                "text": "Maple syrup",
+                "x": 0.429489,
+                "y": 0.157207,
+                "w": 0.165596,
+                "h": 0.026141
+              },
+              {
+                "text": "What is maple syrup?",
+                "x": 0.102714,
+                "y": 0.195295,
+                "w": 0.22521,
+                "h": 0.017468
+              },
+              {
+                "text": "• made from the sap of the maple tree",
+                "x": 0.102714,
+                "y": 0.217882,
+                "w": 0.379766,
+                "h": 0.029673
+              },
+              {
+                "text": "• added to food or used in cooking",
+                "x": 0.102714,
+                "y": 0.242179,
+                "w": 0.344439,
+                "h": 0.020877
+              },
+              {
+                "text": "colour described as 31",
+                "x": 0.522223,
+                "y": 0.219653,
+                "w": 0.227418,
+                "h": 0.015604
+              },
+              {
+                "text": "very 32",
+                "x": 0.535445,
+                "y": 0.243842,
+                "w": 0.081745,
+                "h": 0.019168
+              },
+              {
+                "text": "refined sugar",
+                "x": 0.535437,
+                "y": 0.262803,
+                "w": 0.130335,
+                "h": 0.019314
+              },
+              {
+                "text": "compared to",
+                "x": 0.754057,
+                "y": 0.243909,
+                "w": 0.123645,
+                "h": 0.017376
+              },
+              {
+                "text": "The maple tree",
+                "x": 0.103942,
+                "y": 0.288756,
+                "w": 0.156302,
+                "h": 0.025619
+              },
+              {
+                "text": "• has many species",
+                "x": 0.102714,
+                "y": 0.314853,
+                "w": 0.205339,
+                "h": 0.017303
+              },
+              {
+                "text": "• needs moist soil but does not need",
+                "x": 0.504559,
+                "y": 0.311331,
+                "w": 0.368727,
+                "h": 0.022587
+              },
+              {
+                "text": "• needs sunny days and cool nights",
+                "x": 0.102714,
+                "y": 0.339078,
+                "w": 0.357687,
+                "h": 0.017427
+              },
+              {
+                "text": "fertiliser as well",
+                "x": 0.535396,
+                "y": 0.328372,
+                "w": 0.156914,
+                "h": 0.023142
+              },
+              {
+                "text": "• maple leaf has been on the Canadian •",
+                "x": 0.102714,
+                "y": 0.359842,
+                "w": 0.419509,
+                "h": 0.01925
+              },
+              {
+                "text": "best growing conditions and",
+                "x": 0.524431,
+                "y": 0.354651,
+                "w": 0.271577,
+                "h": 0.02267
+              },
+              {
+                "text": "flag since 1964",
+                "x": 0.135682,
+                "y": 0.381604,
+                "w": 0.146026,
+                "h": 0.020499
+              },
+              {
+                "text": "33.",
+                "x": 0.537679,
+                "y": 0.377146,
+                "w": 0.035327,
+                "h": 0.017303
+              },
+              {
+                "text": ".... are in Canada and",
+                "x": 0.690027,
+                "y": 0.375415,
+                "w": 0.189883,
+                "h": 0.02095
+              },
+              {
+                "text": "North America",
+                "x": 0.537679,
+                "y": 0.394449,
+                "w": 0.134685,
+                "h": 0.02096
+              },
+              {
+                "text": "Early maple sugar producers",
+                "x": 0.104922,
+                "y": 0.437553,
+                "w": 0.295865,
+                "h": 0.017458
+              },
+              {
+                "text": "• made holes in the tree trunks",
+                "x": 0.102714,
+                "y": 0.461912,
+                "w": 0.31132,
+                "h": 0.015594
+              },
+              {
+                "text": "• used hot 34",
+                "x": 0.102714,
+                "y": 0.486157,
+                "w": 0.147932,
+                "h": 0.015614
+              },
+              {
+                "text": "the sap",
+                "x": 0.133201,
+                "y": 0.505881,
+                "w": 0.075913,
+                "h": 0.015999
+              },
+              {
+                "text": "... to heat",
+                "x": 0.380915,
+                "y": 0.486157,
+                "w": 0.08611,
+                "h": 0.013843
+              },
+              {
+                "text": "• used tree bark to make containers",
+                "x": 0.502351,
+                "y": 0.46014,
+                "w": 0.359895,
+                "h": 0.019096
+              },
+              {
+                "text": "for collection",
+                "x": 0.535471,
+                "y": 0.480956,
+                "w": 0.123645,
+                "h": 0.017314
+              },
+              {
+                "text": "•",
+                "x": 0.504559,
+                "y": 0.506921,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "sweetened food and drink with sugar",
+                "x": 0.524431,
+                "y": 0.505191,
+                "w": 0.364311,
+                "h": 0.019168
+              },
+              {
+                "text": "Today's maple syrup",
+                "x": 0.102714,
+                "y": 0.548275,
+                "w": 0.214171,
+                "h": 0.019209
+              },
+              {
+                "text": "The trees",
+                "x": 0.10701,
+                "y": 0.575747,
+                "w": 0.090764,
+                "h": 0.01808
+              },
+              {
+                "text": "• Tree trunks may not have the correct 35",
+                "x": 0.102714,
+                "y": 0.603635,
+                "w": 0.412886,
+                "h": 0.019219
+              },
+              {
+                "text": "until they have been",
+                "x": 0.663531,
+                "y": 0.603635,
+                "w": 0.192091,
+                "h": 0.019219
+              },
+              {
+                "text": "growing for 40 years.",
+                "x": 0.135833,
+                "y": 0.626222,
+                "w": 0.203131,
+                "h": 0.017396
+              },
+              {
+                "text": "• The changing temperature and movement of water within the tree produces the sap.",
+                "x": 0.102714,
+                "y": 0.65227,
+                "w": 0.788236,
+                "h": 0.019126
+              },
+              {
+                "text": "The production",
+                "x": 0.107129,
+                "y": 0.683355,
+                "w": 0.143516,
+                "h": 0.017365
+              },
+              {
+                "text": "• A tap is drilled into the trunk and a 36..",
+                "x": 0.102714,
+                "y": 0.711102,
+                "w": 0.38639,
+                "h": 0.019199
+              },
+              {
+                "text": "..carries the sap into a bucket.",
+                "x": 0.608333,
+                "y": 0.712832,
+                "w": 0.271577,
+                "h": 0.017468
+              },
+              {
+                "text": "• Large pans of sap called evaporators are heated by means of a 37",
+                "x": 0.102714,
+                "y": 0.738715,
+                "w": 0.653551,
+                "h": 0.020836
+              },
+              {
+                "text": "• A lot of 38",
+                "x": 0.102714,
+                "y": 0.769717,
+                "w": 0.130269,
+                "h": 0.017715
+              },
+              {
+                "text": "is produced during the evaporation process.",
+                "x": 0.376499,
+                "y": 0.768203,
+                "w": 0.421717,
+                "h": 0.019229
+              },
+              {
+                "text": "• 'Sugar sand' is removed because it makes the syrup look 39 ...",
+                "x": 0.102714,
+                "y": 0.795848,
+                "w": 0.627056,
+                "h": 0.020816
+              },
+              {
+                "text": "... and",
+                "x": 0.837959,
+                "y": 0.797619,
+                "w": 0.055199,
+                "h": 0.015573
+              },
+              {
+                "text": "affects the taste.",
+                "x": 0.135833,
+                "y": 0.818383,
+                "w": 0.16118,
+                "h": 0.015573
+              },
+              {
+                "text": "• The syrup is ready for use.",
+                "x": 0.102714,
+                "y": 0.845894,
+                "w": 0.289241,
+                "h": 0.017479
+              },
+              {
+                "text": "• A huge quantity of sap is needed to make a 40",
+                "x": 0.102714,
+                "y": 0.873754,
+                "w": 0.474708,
+                "h": 0.017314
+              },
+              {
+                "text": "..of maple syrup.",
+                "x": 0.743017,
+                "y": 0.873754,
+                "w": 0.158972,
+                "h": 0.019085
+              },
+              {
+                "text": "80",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "→",
+                "x": 0.146872,
+                "y": 0.936047,
+                "w": 0.026495,
+                "h": 0.019034
+              },
+              {
+                "text": "р. 125",
+                "x": 0.213088,
+                "y": 0.937725,
+                "w": 0.064076,
+                "h": 0.017407
+              },
+              {
+                "text": "p. 117",
+                "x": 0.3213,
+                "y": 0.936047,
+                "w": 0.068446,
+                "h": 0.01924
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-76.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 1-6",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.152348,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.799276,
+                "h": 0.019209
+              },
+              {
+                "text": "In boxes 1-6 on your answer sheet, write",
+                "x": 0.062971,
+                "y": 0.100074,
+                "w": 0.395222,
+                "h": 0.017715
+              },
+              {
+                "text": "1",
+                "x": 0.067386,
+                "y": 0.228336,
+                "w": 0.01104,
+                "h": 0.013843
+              },
+              {
+                "text": "2",
+                "x": 0.067386,
+                "y": 0.259482,
+                "w": 0.013248,
+                "h": 0.013843
+              },
+              {
+                "text": "3",
+                "x": 0.062971,
+                "y": 0.288898,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "4",
+                "x": 0.062971,
+                "y": 0.320044,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "5",
+                "x": 0.065179,
+                "y": 0.370224,
+                "w": 0.015456,
+                "h": 0.017303
+              },
+              {
+                "text": "6",
+                "x": 0.065179,
+                "y": 0.420404,
+                "w": 0.015456,
+                "h": 0.017303
+              },
+              {
+                "text": "TRUE",
+                "x": 0.138041,
+                "y": 0.136628,
+                "w": 0.06403,
+                "h": 0.019034
+              },
+              {
+                "text": "FALSE",
+                "x": 0.138018,
+                "y": 0.15561,
+                "w": 0.072907,
+                "h": 0.019138
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.272725,
+                "y": 0.138163,
+                "w": 0.412886,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.272725,
+                "y": 0.157207,
+                "w": 0.406262,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.138041,
+                "y": 0.176251,
+                "w": 0.437173,
+                "h": 0.019209
+              },
+              {
+                "text": "Many Madagascan forests are being destroyed by attacks from insects.",
+                "x": 0.113753,
+                "y": 0.228336,
+                "w": 0.675631,
+                "h": 0.019219
+              },
+              {
+                "text": "Loss of habitat has badly affected insectivorous bats in Madagascar.",
+                "x": 0.111545,
+                "y": 0.257742,
+                "w": 0.649136,
+                "h": 0.019044
+              },
+              {
+                "text": "Ricardo Rocha has carried out studies of bats in different parts of the world.",
+                "x": 0.109337,
+                "y": 0.288744,
+                "w": 0.71979,
+                "h": 0.019188
+              },
+              {
+                "text": "Habitat modification has resulted in indigenous bats in Madagascar becoming",
+                "x": 0.111545,
+                "y": 0.320044,
+                "w": 0.733037,
+                "h": 0.019188
+              },
+              {
+                "text": "useful to farmers.",
+                "x": 0.111545,
+                "y": 0.339078,
+                "w": 0.170012,
+                "h": 0.019199
+              },
+              {
+                "text": "The Malagasy mouse-eared bat is more common than other indigenous bat species",
+                "x": 0.107129,
+                "y": 0.368463,
+                "w": 0.797068,
+                "h": 0.020816
+              },
+              {
+                "text": "in Madagascar.",
+                "x": 0.109337,
+                "y": 0.389258,
+                "w": 0.152348,
+                "h": 0.019065
+              },
+              {
+                "text": "Bats may feed on paddy swarming caterpillars and grass webworms.",
+                "x": 0.107129,
+                "y": 0.416738,
+                "w": 0.657967,
+                "h": 0.0227
+              },
+              {
+                "text": "83",
+                "x": 0.875494,
+                "y": 0.937777,
+                "w": 0.028703,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-77.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 7-13",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.165596,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.082842,
+                "y": 0.058762,
+                "w": 0.249498,
+                "h": 0.019168
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.09856,
+                "w": 0.600561,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 7-13 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.538738,
+                "h": 0.019229
+              },
+              {
+                "text": "Aim",
+                "x": 0.091674,
+                "y": 0.231797,
+                "w": 0.044159,
+                "h": 0.020764
+              },
+              {
+                "text": "Method",
+                "x": 0.089385,
+                "y": 0.274875,
+                "w": 0.081856,
+                "h": 0.022856
+              },
+              {
+                "text": "Findings",
+                "x": 0.08944,
+                "y": 0.332083,
+                "w": 0.094994,
+                "h": 0.020911
+              },
+              {
+                "text": "Recommendation",
+                "x": 0.091674,
+                "y": 0.633236,
+                "w": 0.181051,
+                "h": 0.015573
+              },
+              {
+                "text": "The study carried out by Rocha's team",
+                "x": 0.232982,
+                "y": 0.190269,
+                "w": 0.53653,
+                "h": 0.029416
+              },
+              {
+                "text": "•",
+                "x": 0.305844,
+                "y": 0.235257,
+                "w": 0.017664,
+                "h": 0.019034
+              },
+              {
+                "text": "to investigate the feeding habits of bats in farmland near",
+                "x": 0.347795,
+                "y": 0.231611,
+                "w": 0.543154,
+                "h": 0.02268
+              },
+              {
+                "text": "the Ranomafana National Park",
+                "x": 0.352211,
+                "y": 0.250655,
+                "w": 0.30028,
+                "h": 0.020939
+              },
+              {
+                "text": "ultrasonic recording to identify favourite feeding spots",
+                "x": 0.345282,
+                "y": 0.271735,
+                "w": 0.519495,
+                "h": 0.031691
+              },
+              {
+                "text": "DNA analysis of bat 7",
+                "x": 0.354419,
+                "y": 0.304471,
+                "w": 0.209755,
+                "h": 0.022494
+              },
+              {
+                "text": "•",
+                "x": 0.305844,
+                "y": 0.335617,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "the bats",
+                "x": 0.352211,
+                "y": 0.333887,
+                "w": 0.081694,
+                "h": 0.017303
+              },
+              {
+                "text": "- were most active in rice fields located on hills",
+                "x": 0.350003,
+                "y": 0.363148,
+                "w": 0.457044,
+                "h": 0.019188
+              },
+              {
+                "text": "- ate pests of rice, 8",
+                "x": 0.350003,
+                "y": 0.392719,
+                "w": 0.205339,
+                "h": 0.02269
+              },
+              {
+                "text": ".., sugarcane, nuts",
+                "x": 0.716522,
+                "y": 0.396179,
+                "w": 0.178843,
+                "h": 0.019229
+              },
+              {
+                "text": "and fruit",
+                "x": 0.376412,
+                "y": 0.409817,
+                "w": 0.086284,
+                "h": 0.022905
+              },
+              {
+                "text": "- prevent the spread of dislase bysating",
+                "x": 0.350003,
+                "y": 0.441096,
+                "w": 0.406262,
+                "h": 0.03987
+              },
+              {
+                "text": "......... and blackflies",
+                "x": 0.517807,
+                "y": 0.465393,
+                "w": 0.181051,
+                "h": 0.017334
+              },
+              {
+                "text": "•",
+                "x": 0.305844,
+                "y": 0.496539,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "local attitudes to bats are mixed:",
+                "x": 0.350003,
+                "y": 0.496457,
+                "w": 0.313528,
+                "h": 0.017386
+              },
+              {
+                "text": "they provide food rich in 10",
+                "x": 0.369875,
+                "y": 0.525955,
+                "w": 0.267161,
+                "h": 0.019219
+              },
+              {
+                "text": "- the buildings where they roost become",
+                "x": 0.350003,
+                "y": 0.555361,
+                "w": 0.395222,
+                "h": 0.020816
+              },
+              {
+                "text": "11",
+                "x": 0.378707,
+                "y": 0.576135,
+                "w": 0.024287,
+                "h": 0.017303
+              },
+              {
+                "text": "- they play an important role in local 12",
+                "x": 0.350003,
+                "y": 0.603635,
+                "w": 0.38639,
+                "h": 0.02268
+              },
+              {
+                "text": "•",
+                "x": 0.308052,
+                "y": 0.638427,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "farmers should provide special 13",
+                "x": 0.352211,
+                "y": 0.636697,
+                "w": 0.32236,
+                "h": 0.015655
+              },
+              {
+                "text": ". to",
+                "x": 0.844583,
+                "y": 0.634967,
+                "w": 0.028703,
+                "h": 0.019157
+              },
+              {
+                "text": "support the bat population",
+                "x": 0.354419,
+                "y": 0.654001,
+                "w": 0.249498,
+                "h": 0.017396
+              },
+              {
+                "text": "84",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.013843
+              },
+              {
+                "text": "→ Op.126",
+                "x": 0.144562,
+                "y": 0.93558,
+                "w": 0.139305,
+                "h": 0.019967
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-80.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 14-18",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Reading Passage 2 has six sections, A-F.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.404054,
+                "h": 0.017437
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.465876,
+                "h": 0.017458
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 14-18 on your answer sheet",
+                "x": 0.067386,
+                "y": 0.138163,
+                "w": 0.631472,
+                "h": 0.019229
+              },
+              {
+                "text": "14 an explanation of the need for research to focus on individuals with a fairly",
+                "x": 0.065179,
+                "y": 0.178022,
+                "w": 0.750701,
+                "h": 0.019168
+              },
+              {
+                "text": "consistent income",
+                "x": 0.113753,
+                "y": 0.198838,
+                "w": 0.17222,
+                "h": 0.012401
+              },
+              {
+                "text": "15 examples of the sources the database has been compiled from",
+                "x": 0.065179,
+                "y": 0.228336,
+                "w": 0.64472,
+                "h": 0.017448
+              },
+              {
+                "text": "16 an account of one individual's refusal to obey an order",
+                "x": 0.065179,
+                "y": 0.259482,
+                "w": 0.563026,
+                "h": 0.017303
+              },
+              {
+                "text": "17 a reference to a region being particularly suited to research into the link between",
+                "x": 0.062971,
+                "y": 0.288744,
+                "w": 0.810316,
+                "h": 0.019188
+              },
+              {
+                "text": "education and economic growth",
+                "x": 0.113753,
+                "y": 0.309559,
+                "w": 0.302488,
+                "h": 0.015676
+              },
+              {
+                "text": "18 examples of the items included in a list of personal possessions",
+                "x": 0.065179,
+                "y": 0.339078,
+                "w": 0.649136,
+                "h": 0.019199
+              },
+              {
+                "text": "Questions 19-22",
+                "x": 0.067386,
+                "y": 0.406551,
+                "w": 0.176636,
+                "h": 0.017314
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.067386,
+                "y": 0.446359,
+                "w": 0.287033,
+                "h": 0.019096
+              },
+              {
+                "text": "Choose ONE WORD from the passage for each answer.",
+                "x": 0.067386,
+                "y": 0.486157,
+                "w": 0.532115,
+                "h": 0.017386
+              },
+              {
+                "text": "Write your answers in boxes 19-22 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.524225,
+                "w": 0.549778,
+                "h": 0.019178
+              },
+              {
+                "text": "Demographic reconstruction of two German communities",
+                "x": 0.087258,
+                "y": 0.577865,
+                "w": 0.799276,
+                "h": 0.025955
+              },
+              {
+                "text": "The database that Ogilvie and her team has compiled sheds light on the lives of a",
+                "x": 0.082842,
+                "y": 0.622679,
+                "w": 0.77278,
+                "h": 0.019209
+              },
+              {
+                "text": "range of individuals, as well as those of their 19",
+                "x": 0.080634,
+                "y": 0.64881,
+                "w": 0.454837,
+                "h": 0.019044
+              },
+              {
+                "text": "..., over a 300-year",
+                "x": 0.681195,
+                "y": 0.64881,
+                "w": 0.189883,
+                "h": 0.019044
+              },
+              {
+                "text": "period. For example, Ana Regina and Magdalena Riethmüllerin were reprimanded",
+                "x": 0.08271,
+                "y": 0.67256,
+                "w": 0.77746,
+                "h": 0.025075
+              },
+              {
+                "text": "for reading while they should have been paying attention to a 20",
+                "x": 0.080634,
+                "y": 0.700627,
+                "w": 0.611601,
+                "h": 0.019126
+              },
+              {
+                "text": "There was also Juliana Schweickherdt, who came to the notice of the weavers' guild",
+                "x": 0.082842,
+                "y": 0.726675,
+                "w": 0.797068,
+                "h": 0.019126
+              },
+              {
+                "text": "in the year 1752 for breaking guild rules. As a punishment, she was later given a",
+                "x": 0.078426,
+                "y": 0.752445,
+                "w": 0.763949,
+                "h": 0.019219
+              },
+              {
+                "text": "21",
+                "x": 0.082842,
+                "y": 0.778585,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": ". Cases like this illustrate how the guilds could prevent",
+                "x": 0.279349,
+                "y": 0.775032,
+                "w": 0.516659,
+                "h": 0.022587
+              },
+              {
+                "text": "22..",
+                "x": 0.080634,
+                "y": 0.80454,
+                "w": 0.044159,
+                "h": 0.017303
+              },
+              {
+                "text": "..and stop skilled people from working.",
+                "x": 0.268309,
+                "y": 0.80281,
+                "w": 0.370935,
+                "h": 0.020939
+              },
+              {
+                "text": "87",
+                "x": 0.873286,
+                "y": 0.934316,
+                "w": 0.033119,
+                "h": 0.022494
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-81.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.216379,
+                "h": 0.015604
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.624848,
+                "h": 0.017715
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make about literacy rates in",
+                "x": 0.080634,
+                "y": 0.138163,
+                "w": 0.790444,
+                "h": 0.019229
+              },
+              {
+                "text": "Section B?",
+                "x": 0.082807,
+                "y": 0.158974,
+                "w": 0.106052,
+                "h": 0.015869
+              },
+              {
+                "text": "A Very little research has been done into the link between high literacy rates and",
+                "x": 0.129209,
+                "y": 0.190269,
+                "w": 0.786028,
+                "h": 0.019199
+              },
+              {
+                "text": "improved earnings.",
+                "x": 0.173368,
+                "y": 0.211033,
+                "w": 0.187675,
+                "h": 0.017479
+              },
+              {
+                "text": "Literacy rates in Germany between 1600 and 1900 were very good.",
+                "x": 0.173368,
+                "y": 0.230066,
+                "w": 0.642512,
+                "h": 0.019034
+              },
+              {
+                "text": "C There is strong evidence that high literacy rates in the modern world result in",
+                "x": 0.129209,
+                "y": 0.248884,
+                "w": 0.770572,
+                "h": 0.01925
+              },
+              {
+                "text": "economic growth.",
+                "x": 0.177784,
+                "y": 0.271471,
+                "w": 0.170012,
+                "h": 0.015697
+              },
+              {
+                "text": "D England is a good example of how high literacy rates helped a country",
+                "x": 0.129209,
+                "y": 0.290515,
+                "w": 0.710958,
+                "h": 0.017417
+              },
+              {
+                "text": "industrialise.",
+                "x": 0.171102,
+                "y": 0.309404,
+                "w": 0.125968,
+                "h": 0.017821
+              },
+              {
+                "text": "Economic growth can help to improve literacy rates.",
+                "x": 0.177784,
+                "y": 0.330375,
+                "w": 0.490164,
+                "h": 0.015625
+              },
+              {
+                "text": "Questions 25 and 26",
+                "x": 0.082842,
+                "y": 0.406551,
+                "w": 0.216379,
+                "h": 0.017314
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.44809,
+                "w": 0.253914,
+                "h": 0.019137
+              },
+              {
+                "text": "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+                "x": 0.08505,
+                "y": 0.486157,
+                "w": 0.620432,
+                "h": 0.017386
+              },
+              {
+                "text": "Which TWO of the following statements does the writer make in Section F about guilds",
+                "x": 0.080634,
+                "y": 0.525955,
+                "w": 0.821355,
+                "h": 0.019219
+              },
+              {
+                "text": "in German-speaking Central Europe between 1600 and 1900?",
+                "x": 0.078426,
+                "y": 0.544989,
+                "w": 0.596145,
+                "h": 0.019229
+              },
+              {
+                "text": "A They helped young people to learn a skill.",
+                "x": 0.131417,
+                "y": 0.577865,
+                "w": 0.441589,
+                "h": 0.017355
+              },
+              {
+                "text": "They were opposed to people moving to an area for work.",
+                "x": 0.177784,
+                "y": 0.59863,
+                "w": 0.545362,
+                "h": 0.019178
+              },
+              {
+                "text": "C They kept better records than guilds in other parts of the world.",
+                "x": 0.129209,
+                "y": 0.617663,
+                "w": 0.642512,
+                "h": 0.019188
+              },
+              {
+                "text": "D They opposed practices that threatened their control over a trade.",
+                "x": 0.131417,
+                "y": 0.636697,
+                "w": 0.666799,
+                "h": 0.017427
+              },
+              {
+                "text": "E They predominantly consisted of wealthy merchants.",
+                "x": 0.131417,
+                "y": 0.657461,
+                "w": 0.545362,
+                "h": 0.017479
+              },
+              {
+                "text": "88",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "→ O p. 126",
+                "x": 0.142338,
+                "y": 0.93381,
+                "w": 0.141546,
+                "h": 0.021776
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-84.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 27-32",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Reading Passage 3 has eight paragraphs, A-H.",
+                "x": 0.065179,
+                "y": 0.058762,
+                "w": 0.459252,
+                "h": 0.020939
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.065179,
+                "y": 0.09856,
+                "w": 0.498995,
+                "h": 0.019229
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 27-32 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.138163,
+                "w": 0.635888,
+                "h": 0.019229
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.067386,
+                "y": 0.178022,
+                "w": 0.426133,
+                "h": 0.017437
+              },
+              {
+                "text": "27 a reference to earlier examples of blindfold chess",
+                "x": 0.065179,
+                "y": 0.207572,
+                "w": 0.514451,
+                "h": 0.019168
+              },
+              {
+                "text": "28 an outline of what blindfold chess involves",
+                "x": 0.067386,
+                "y": 0.238698,
+                "w": 0.443797,
+                "h": 0.013863
+              },
+              {
+                "text": "29 a claim that Gareyev's skill is limited to chess",
+                "x": 0.065179,
+                "y": 0.267928,
+                "w": 0.476916,
+                "h": 0.01924
+              },
+              {
+                "text": "30 why Gareyev's skill is of interest to scientists",
+                "x": 0.065179,
+                "y": 0.29928,
+                "w": 0.468084,
+                "h": 0.019137
+              },
+              {
+                "text": "31",
+                "x": 0.065179,
+                "y": 0.330426,
+                "w": 0.024287,
+                "h": 0.015573
+              },
+              {
+                "text": "an outline of Gareyev's priorities",
+                "x": 0.111545,
+                "y": 0.330375,
+                "w": 0.306904,
+                "h": 0.019085
+              },
+              {
+                "text": "32 a reason why the last part of a game may be difficult",
+                "x": 0.065179,
+                "y": 0.361377,
+                "w": 0.545362,
+                "h": 0.019229
+              },
+              {
+                "text": "Questions 33-36",
+                "x": 0.067386,
+                "y": 0.427326,
+                "w": 0.176636,
+                "h": 0.017314
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 3?",
+                "x": 0.065179,
+                "y": 0.467123,
+                "w": 0.799276,
+                "h": 0.019147
+              },
+              {
+                "text": "In boxes 33-36 on your answer sheet, write",
+                "x": 0.062971,
+                "y": 0.506921,
+                "w": 0.417301,
+                "h": 0.019209
+              },
+              {
+                "text": "TRUE",
+                "x": 0.137947,
+                "y": 0.543064,
+                "w": 0.064218,
+                "h": 0.019423
+              },
+              {
+                "text": "FALSE",
+                "x": 0.138,
+                "y": 0.565652,
+                "w": 0.070735,
+                "h": 0.017506
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.274933,
+                "y": 0.544989,
+                "w": 0.410678,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.274933,
+                "y": 0.564023,
+                "w": 0.404054,
+                "h": 0.01924
+              },
+              {
+                "text": "NOT GIVEN if there is no information about this",
+                "x": 0.138041,
+                "y": 0.584591,
+                "w": 0.465876,
+                "h": 0.017715
+              },
+              {
+                "text": "33",
+                "x": 0.065179,
+                "y": 0.636697,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "34",
+                "x": 0.065179,
+                "y": 0.666113,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "In the forthcoming games, all the participants will be blindfolded.",
+                "x": 0.104922,
+                "y": 0.636697,
+                "w": 0.616016,
+                "h": 0.019199
+              },
+              {
+                "text": "Gareyev has won competitions in BASE jumping.",
+                "x": 0.111545,
+                "y": 0.666082,
+                "w": 0.468084,
+                "h": 0.019065
+              },
+              {
+                "text": "35 UCLA is the first university to carry out research into blindfold chess players.",
+                "x": 0.065179,
+                "y": 0.697084,
+                "w": 0.770572,
+                "h": 0.017479
+              },
+              {
+                "text": "36 Good chess players are likely to be able to play blindfold chess.",
+                "x": 0.067386,
+                "y": 0.728405,
+                "w": 0.649136,
+                "h": 0.015625
+              },
+              {
+                "text": "91",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-4/page-85.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 37-40",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.015604
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.289241,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.09856,
+                "w": 0.600561,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 37-40 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.549778,
+                "h": 0.019229
+              },
+              {
+                "text": "How the research was carried out",
+                "x": 0.268309,
+                "y": 0.186808,
+                "w": 0.470292,
+                "h": 0.022659
+              },
+              {
+                "text": "The researchers started by testing Gareyev's 37",
+                "x": 0.100506,
+                "y": 0.230066,
+                "w": 0.459252,
+                "h": 0.019034
+              },
+              {
+                "text": ".; for example, he",
+                "x": 0.723146,
+                "y": 0.231611,
+                "w": 0.170012,
+                "h": 0.019219
+              },
+              {
+                "text": "was required to recall a string of 38.......",
+                "x": 0.100506,
+                "y": 0.257742,
+                "w": 0.388598,
+                "h": 0.015583
+              },
+              {
+                "text": "... in order and also in reverse",
+                "x": 0.581837,
+                "y": 0.25597,
+                "w": 0.287033,
+                "h": 0.019085
+              },
+              {
+                "text": "order. Although his performance was normal, scans showed an unusual amount of",
+                "x": 0.09609,
+                "y": 0.281977,
+                "w": 0.78382,
+                "h": 0.020939
+              },
+              {
+                "text": ".... within the areas of Gareyev's brain that are concerned with",
+                "x": 0.277141,
+                "y": 0.302741,
+                "w": 0.585105,
+                "h": 0.024225
+              },
+              {
+                "text": "directing attention. In addition, the scans raised the possibility of unusual strength in",
+                "x": 0.098203,
+                "y": 0.327501,
+                "w": 0.792841,
+                "h": 0.028221
+              },
+              {
+                "text": "the parts of his brain that deal with 40....",
+                "x": 0.09609,
+                "y": 0.358112,
+                "w": 0.393014,
+                "h": 0.02098
+              },
+              {
+                "text": "...input.",
+                "x": 0.614957,
+                "y": 0.356382,
+                "w": 0.070654,
+                "h": 0.020764
+              },
+              {
+                "text": "92",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.035327,
+                "h": 0.013843
+              },
+              {
+                "text": "→ O p.126",
+                "x": 0.137931,
+                "y": 0.93553,
+                "w": 0.143735,
+                "h": 0.020068
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "floor|floors",
+      "fridge",
+      "shirts",
+      "windows",
+      "balcony",
+      "electrician",
+      "dust",
+      "police",
+      "training",
+      "review",
+      "A",
+      "A",
+      "A",
+      "C",
+      "A",
+      "C",
+      "B",
+      "C",
+      "B",
+      "A",
+      "C",
+      "E",
+      "A",
+      "D",
+      "B",
+      "F",
+      "A",
+      "D",
+      "C",
+      "G",
+      "golden",
+      "healthy",
+      "climate",
+      "rock|rocks",
+      "diameter",
+      "tube",
+      "fire",
+      "steam",
+      "cloudy",
+      "litre|liter"
+    ],
+    "reading": [
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "NOT GIVEN",
+      "TRUE",
+      "droppings",
+      "coffee",
+      "mosquitoes",
+      "protein",
+      "unclean",
+      "culture",
+      "houses",
+      "E",
+      "A",
+      "D",
+      "F",
+      "C",
+      "descendants",
+      "sermon",
+      "fine",
+      "innovation",
+      "B",
+      "E",
+      "B",
+      "D",
+      "D",
+      "E",
+      "F",
+      "B",
+      "H",
+      "E",
+      "FALSE",
+      "NOT GIVEN",
+      "NOT GIVEN",
+      "TRUE",
+      "memory",
+      "numbers",
+      "communication",
+      "visual"
+    ]
+  },
+  "completionOptions": {}
+}

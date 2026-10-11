@@ -31,12 +31,12 @@ const unpackNotes = (booking: BookingRecord) => {
 
 export const GET: APIRoute = async ({ request, cookies }) => {
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
 		const mineOnly = new URL(request.url).searchParams.get('scope') === 'mine';
 		const adminView = auth.role === 'admin' && !mineOnly;
 		let query = createServiceClient().from('ielts_bookings')
-			.select('id, email, name, contact, lesson_date, lesson_time, lesson_subject, notes, status, created_at')
+			.select(adminView ? 'id, email, name, contact, lesson_date, lesson_time, lesson_subject, notes, status, created_at' : 'id, lesson_date, lesson_time, lesson_subject, notes, status, created_at')
 			.order('created_at', { ascending: false })
 			.limit(20);
 		if (!adminView) query = query.eq('user_id', auth.user.id);
@@ -60,7 +60,7 @@ export const GET: APIRoute = async ({ request, cookies }) => {
 export const PATCH: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
 		if (!(await claimRateLimit(request, 'booking-update', auth.user.id, 20, 3600, 'identity'))) return json({ error: 'rate_limited' }, 429);
 		const body = await readJson<Record<string, unknown>>(request);
@@ -75,7 +75,7 @@ export const PATCH: APIRoute = async ({ request, cookies }) => {
 			.maybeSingle();
 		if (lookupError) throw lookupError;
 		if (!existing) return json({ error: 'booking_not_found' }, 404);
-		const ownsBooking = existing.user_id === auth.user.id || String(existing.email).trim().toLowerCase() === auth.email;
+		const ownsBooking = existing.user_id === auth.user.id;
 		if (auth.role !== 'admin' && !ownsBooking) return json({ error: 'forbidden' }, 403);
 		const allowedStatuses = action === 'confirm' ? ['pending'] : ['pending', 'confirmed'];
 		if (!allowedStatuses.includes(existing.status)) return json({ error: 'booking_not_active' }, 409);
@@ -84,6 +84,7 @@ export const PATCH: APIRoute = async ({ request, cookies }) => {
 			.update({ status: nextStatus, updated_at: new Date().toISOString() })
 			.eq('id', id)
 			.eq('status', existing.status)
+			.eq('user_id', existing.user_id)
 			.select('id, status')
 			.maybeSingle();
 		if (error) throw error;
@@ -98,7 +99,7 @@ export const PATCH: APIRoute = async ({ request, cookies }) => {
 export const POST: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
 		if (!(await claimRateLimit(request, 'booking-user', auth.user.id, 5, 86400, 'identity'))
 			|| !(await claimRateLimit(request, 'booking-ip', '', 20, 86400, 'request'))) return json({ error: 'rate_limited' }, 429);

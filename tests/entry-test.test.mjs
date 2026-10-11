@@ -20,7 +20,7 @@ test('student content excludes reference keys, transcript and timer', () => {
   assert.doesNotMatch(JSON.stringify(content), /Listening Script|Reference Answers|answerKey|answerKeys|Good afternoon, everyone\. Today/);
   assert.doesNotMatch(source, /data-clock|deadline|setInterval|answerKey|data-submit|score/);
   assert.match(source, /import\.meta\.env\.DEV &&/);
-  assert.match(source, /getAuthContext\(Astro\.cookies\)/);
+  assert.match(source, /getAuthContext\(Astro\.cookies, Astro\.request\)/);
   assert.match(source, /private, no-store/);
   assert.match(source, /telemetry=\{false\}/);
 });

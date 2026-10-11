@@ -1,0 +1,5347 @@
+{
+  "source": {
+    "book": 16,
+    "test": 1,
+    "questionPages": {
+      "l": [
+        [
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          17
+        ]
+      ],
+      "r": [
+        [
+          18,
+          19
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          26,
+          27
+        ]
+      ],
+      "q": [
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          28,
+          29,
+          30
+        ]
+      ],
+      "w": [
+        31,
+        32
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "11675fa3dcb124e93afbf44371c174f676a78a260b01ebc190aae5f5fed3912e"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-1/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-1/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-1/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-1/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-1/page-18.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.416242,
+                "y": 0.017476,
+                "w": 0.15014,
+                "h": 0.0204
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.045307,
+                "y": 0.087145,
+                "w": 0.328984,
+                "h": 0.02045
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.045215,
+                "y": 0.131049,
+                "w": 0.874527,
+                "h": 0.023314
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.043099,
+                "y": 0.151775,
+                "w": 0.181051,
+                "h": 0.0204
+              },
+              {
+                "text": "Why we need to protect polar bears",
+                "x": 0.208695,
+                "y": 0.204474,
+                "w": 0.56965,
+                "h": 0.0289
+              },
+              {
+                "text": "Polar bears are being increasingly threatened by the effects of climate change, but their disappearance",
+                "x": 0.043029,
+                "y": 0.251936,
+                "w": 0.889936,
+                "h": 0.022441
+              },
+              {
+                "text": "could have far-reaching consequences. They are uniquely adapted to the extreme conditions of",
+                "x": 0.043099,
+                "y": 0.275874,
+                "w": 0.832395,
+                "h": 0.01534
+              },
+              {
+                "text": "the Arctic Circle, where temperatures can reach -40°C. One reason for this is that they have up to",
+                "x": 0.043099,
+                "y": 0.292874,
+                "w": 0.856682,
+                "h": 0.020531
+              },
+              {
+                "text": "11 centimetres of fat underneath their skin. Humans with comparative levels of adipose tissue would",
+                "x": 0.043099,
+                "y": 0.314973,
+                "w": 0.88097,
+                "h": 0.018882
+              },
+              {
+                "text": "be considered obese and would be likely to suffer from diabetes and heart disease. Yet the polar bear",
+                "x": 0.040891,
+                "y": 0.336901,
+                "w": 0.88097,
+                "h": 0.020572
+              },
+              {
+                "text": "experiences no such consequences.",
+                "x": 0.043099,
+                "y": 0.357352,
+                "w": 0.31132,
+                "h": 0.017121
+              },
+              {
+                "text": "A 2014 study by Shi Ping Liu and colleagues sheds light on this mystery. They compared the genetic",
+                "x": 0.043099,
+                "y": 0.398253,
+                "w": 0.885386,
+                "h": 0.02045
+              },
+              {
+                "text": "structure of polar bears with that of their closest relatives from a warmer climate, the brown bears.",
+                "x": 0.040827,
+                "y": 0.418371,
+                "w": 0.863458,
+                "h": 0.021162
+              },
+              {
+                "text": "This allowed them to determine the genes that have allowed polar bears to survive in one of the",
+                "x": 0.040891,
+                "y": 0.439072,
+                "w": 0.839019,
+                "h": 0.020531
+              },
+              {
+                "text": "toughest environments on Earth. Liu and his colleagues found the polar bears had a gene known as",
+                "x": 0.040891,
+                "y": 0.461172,
+                "w": 0.86993,
+                "h": 0.0204
+              },
+              {
+                "text": "APoB, which reduces levels of low-density lipoproteins (LDLs) - a form of 'bad' cholesterol. In",
+                "x": 0.043099,
+                "y": 0.48136,
+                "w": 0.845643,
+                "h": 0.020612
+              },
+              {
+                "text": "humans, mutations of this gene are associated with increased risk of heart disease. Polar bears may",
+                "x": 0.040891,
+                "y": 0.50181,
+                "w": 0.867722,
+                "h": 0.020562
+              },
+              {
+                "text": "therefore be an important study model to understand heart disease in humans.",
+                "x": 0.040891,
+                "y": 0.522261,
+                "w": 0.686671,
+                "h": 0.020511
+              },
+              {
+                "text": "The genome of the polar bear may also provide the solution for another condition, one that particularly",
+                "x": 0.040891,
+                "y": 0.564871,
+                "w": 0.900841,
+                "h": 0.020481
+              },
+              {
+                "text": "affects our older generation: osteoporosis. This is a disease where bones show reduced density, usually",
+                "x": 0.040891,
+                "y": 0.583571,
+                "w": 0.896425,
+                "h": 0.022231
+              },
+              {
+                "text": "caused by insufficient exercise, reduced calcium intake or food starvation. Bone tissue is constantly",
+                "x": 0.040793,
+                "y": 0.603549,
+                "w": 0.87232,
+                "h": 0.024996
+              },
+              {
+                "text": "being remodelled, meaning that bone is added or removed, depending on nutrient availability and the",
+                "x": 0.040891,
+                "y": 0.626071,
+                "w": 0.885386,
+                "h": 0.0204
+              },
+              {
+                "text": "stress that the bone is under. Female polar bears, however, undergo extreme conditions during every",
+                "x": 0.040891,
+                "y": 0.646268,
+                "w": 0.874346,
+                "h": 0.022302
+              },
+              {
+                "text": "pregnancy. Once autumn comes around, these females will dig maternity dens in the snow and will",
+                "x": 0.040837,
+                "y": 0.668311,
+                "w": 0.870036,
+                "h": 0.02141
+              },
+              {
+                "text": "remain there throughout the winter, both before and after the birth of their cubs. This process results",
+                "x": 0.038602,
+                "y": 0.687959,
+                "w": 0.881121,
+                "h": 0.022334
+              },
+              {
+                "text": "in about six months of fasting, where the female bears have to keep themselves and their cubs alive,",
+                "x": 0.040891,
+                "y": 0.70936,
+                "w": 0.876554,
+                "h": 0.02045
+              },
+              {
+                "text": "depleting their own calcium and calorie reserves. Despite this, their bones remain strong and dense.",
+                "x": 0.040891,
+                "y": 0.73147,
+                "w": 0.874346,
+                "h": 0.020531
+              },
+              {
+                "text": "Physiologists Alanda Lennox and Allen Goodship found an explanation for this paradox in 2008.",
+                "x": 0.040891,
+                "y": 0.77227,
+                "w": 0.852266,
+                "h": 0.0204
+              },
+              {
+                "text": "They discovered that pregnant bears were able to increase the density of their bones before they",
+                "x": 0.040891,
+                "y": 0.792467,
+                "w": 0.839019,
+                "h": 0.018902
+              },
+              {
+                "text": "started to build their dens. In addition, six months later, when they finally emerged from the den with",
+                "x": 0.040891,
+                "y": 0.814658,
+                "w": 0.887594,
+                "h": 0.020511
+              },
+              {
+                "text": "their cubs, there was no evidence of significant loss of bone density. Hibernating brown bears do not",
+                "x": 0.040891,
+                "y": 0.835109,
+                "w": 0.883178,
+                "h": 0.018761
+              },
+              {
+                "text": "have this capacity and must therefore resort to major bone reformation in the following spring. If the",
+                "x": 0.040891,
+                "y": 0.855559,
+                "w": 0.883178,
+                "h": 0.02045
+              },
+              {
+                "text": "mechanism of bone remodelling in polar bears can be understood, many bedridden humans, and even",
+                "x": 0.040891,
+                "y": 0.875969,
+                "w": 0.892009,
+                "h": 0.020491
+              },
+              {
+                "text": "astronauts, could potentially benefit.",
+                "x": 0.040891,
+                "y": 0.896369,
+                "w": 0.320152,
+                "h": 0.020542
+              },
+              {
+                "text": "16",
+                "x": 0.040891,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-1/page-19.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "The medical benefits of the polar bear for humanity certainly have their importance in our",
+                "x": 0.040891,
+                "y": 0.019176,
+                "w": 0.788236,
+                "h": 0.020542
+              },
+              {
+                "text": "conservation efforts, but these should not be the only factors taken into consideration. We tend to",
+                "x": 0.040755,
+                "y": 0.037902,
+                "w": 0.8481,
+                "h": 0.024785
+              },
+              {
+                "text": "want to protect animals we think are intelligent and possess emotions, such as elephants and primates.",
+                "x": 0.040891,
+                "y": 0.061473,
+                "w": 0.894217,
+                "h": 0.020602
+              },
+              {
+                "text": "Bears, on the other hand, seem to be perceived as stupid and in many cases violent. And yet anecdotal",
+                "x": 0.040891,
+                "y": 0.081924,
+                "w": 0.892009,
+                "h": 0.020552
+              },
+              {
+                "text": "evidence from the field challenges those assumptions, suggesting for example that polar bears have",
+                "x": 0.040891,
+                "y": 0.102374,
+                "w": 0.86993,
+                "h": 0.020501
+              },
+              {
+                "text": "good problem-solving abilities. A male bear called GoGo in Tennoji Zoo, Osaka, has even been",
+                "x": 0.038683,
+                "y": 0.124565,
+                "w": 0.841227,
+                "h": 0.02045
+              },
+              {
+                "text": "observed making use of a tool to manipulate his environment. The bear used a tree branch on multiple",
+                "x": 0.040891,
+                "y": 0.144975,
+                "w": 0.894217,
+                "h": 0.020491
+              },
+              {
+                "text": "occasions to dislodge a piece of meat hung out of his reach. Problem-solving ability has also been",
+                "x": 0.040891,
+                "y": 0.167075,
+                "w": 0.85889,
+                "h": 0.018842
+              },
+              {
+                "text": "witnessed in wild polar bears, although not as obviously as with GoGo. A calculated move by a male",
+                "x": 0.038683,
+                "y": 0.187475,
+                "w": 0.885386,
+                "h": 0.018892
+              },
+              {
+                "text": "bear involved running and jumping onto barrels in an attempt to get to a photographer standing on a",
+                "x": 0.038683,
+                "y": 0.207672,
+                "w": 0.878762,
+                "h": 0.018902
+              },
+              {
+                "text": "platform four metres high.",
+                "x": 0.038683,
+                "y": 0.229863,
+                "w": 0.23625,
+                "h": 0.017111
+              },
+              {
+                "text": "In other studies, such as one by Alison Ames in 2008, polar bears showed deliberate and focussed",
+                "x": 0.038683,
+                "y": 0.270764,
+                "w": 0.856682,
+                "h": 0.01871
+              },
+              {
+                "text": "manipulation. For example, Ames observed bears putting objects in piles and then knocking them over",
+                "x": 0.038683,
+                "y": 0.291174,
+                "w": 0.903049,
+                "h": 0.023972
+              },
+              {
+                "text": "in what appeared to be a game. The study demonstrates that bears are capable of agile and thought-out",
+                "x": 0.038634,
+                "y": 0.309646,
+                "w": 0.900946,
+                "h": 0.022521
+              },
+              {
+                "text": "behaviours. These examples suggest bears have greater creativity and problem-solving abilities than",
+                "x": 0.040797,
+                "y": 0.328954,
+                "w": 0.876719,
+                "h": 0.024496
+              },
+              {
+                "text": "previously thought.",
+                "x": 0.038683,
+                "y": 0.353871,
+                "w": 0.174428,
+                "h": 0.018902
+              },
+              {
+                "text": "As for emotions, while the evidence is once again anecdotal, many bears have been seen to hit out",
+                "x": 0.043099,
+                "y": 0.394772,
+                "w": 0.85889,
+                "h": 0.017101
+              },
+              {
+                "text": "at ice and snow - seemingly out of frustration - when they have just missed out on a kill. Moreover,",
+                "x": 0.038683,
+                "y": 0.415222,
+                "w": 0.876554,
+                "h": 0.02045
+              },
+              {
+                "text": "polar bears can form unusual relationships with other species, including playing with the dogs used",
+                "x": 0.038683,
+                "y": 0.435673,
+                "w": 0.872138,
+                "h": 0.02045
+              },
+              {
+                "text": "to pull sleds in the Arctic. Remarkably, one hand-raised polar bear called Agee has formed a close",
+                "x": 0.038683,
+                "y": 0.456072,
+                "w": 0.861098,
+                "h": 0.020501
+              },
+              {
+                "text": "relationship with her owner Mark Dumas to the point where they even swim together. This is even",
+                "x": 0.038683,
+                "y": 0.478172,
+                "w": 0.863306,
+                "h": 0.018852
+              },
+              {
+                "text": "more astonishing since polar bears are known to actively hunt humans in the wild.",
+                "x": 0.040891,
+                "y": 0.498572,
+                "w": 0.721998,
+                "h": 0.018902
+              },
+              {
+                "text": "If climate change were to lead to their extinction, this would mean not only the loss of potential",
+                "x": 0.038683,
+                "y": 0.53923,
+                "w": 0.839019,
+                "h": 0.020542
+              },
+              {
+                "text": "breakthroughs in human medicine, but more importantly, the disappearance of an intelligent,",
+                "x": 0.040891,
+                "y": 0.561421,
+                "w": 0.814731,
+                "h": 0.01875
+              },
+              {
+                "text": "majestic animal.",
+                "x": 0.040891,
+                "y": 0.581871,
+                "w": 0.147932,
+                "h": 0.017
+              },
+              {
+                "text": "17",
+                "x": 0.913029,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-1/page-23.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "The Step Pyramid of Djoser",
+                "x": 0.303636,
+                "y": 0.017476,
+                "w": 0.37535,
+                "h": 0.0255
+              },
+              {
+                "text": "A The pyramids are the most famous monuments of ancient Egypt and still hold",
+                "x": 0.040829,
+                "y": 0.061639,
+                "w": 0.83031,
+                "h": 0.02257
+              },
+              {
+                "text": "enormous interest for people in the present day. These grand, impressive tributes to",
+                "x": 0.091674,
+                "y": 0.083664,
+                "w": 0.830187,
+                "h": 0.022211
+              },
+              {
+                "text": "the memory of the Egyptian kings have become linked with the country even though",
+                "x": 0.091674,
+                "y": 0.107575,
+                "w": 0.847851,
+                "h": 0.020471
+              },
+              {
+                "text": "other cultures, such as the Chinese and Mayan, also built pyramids. The evolution of",
+                "x": 0.091674,
+                "y": 0.129675,
+                "w": 0.847851,
+                "h": 0.022302
+              },
+              {
+                "text": "the pyramid form has been written and argued about for centuries. However, there",
+                "x": 0.089466,
+                "y": 0.151775,
+                "w": 0.823563,
+                "h": 0.0221
+              },
+              {
+                "text": "is no question that, as far as Egypt is concerned, it began with one monument to one",
+                "x": 0.089466,
+                "y": 0.175473,
+                "w": 0.845643,
+                "h": 0.020501
+              },
+              {
+                "text": "king designed by one brilliant architect: the Step Pyramid of Djoser at Saqqara.",
+                "x": 0.091674,
+                "y": 0.197664,
+                "w": 0.799276,
+                "h": 0.02045
+              },
+              {
+                "text": "B",
+                "x": 0.043099,
+                "y": 0.231674,
+                "w": 0.022079,
+                "h": 0.0153
+              },
+              {
+                "text": "Djoser was the first king of the Third Dynasty of Egypt and the first to build in",
+                "x": 0.089466,
+                "y": 0.231603,
+                "w": 0.788236,
+                "h": 0.020471
+              },
+              {
+                "text": "stone. Prior to Djoser's reign, tombs were rectangular monuments made of dried clay",
+                "x": 0.091674,
+                "y": 0.253774,
+                "w": 0.850058,
+                "h": 0.022211
+              },
+              {
+                "text": "brick, which covered underground passages where the deceased person was buried.",
+                "x": 0.091674,
+                "y": 0.275874,
+                "w": 0.832395,
+                "h": 0.022302
+              },
+              {
+                "text": "For reasons which remain unclear, Djoser's main official, whose name was Imhotep,",
+                "x": 0.091674,
+                "y": 0.299481,
+                "w": 0.841227,
+                "h": 0.020592
+              },
+              {
+                "text": "conceived of building a taller, more impressive tomb for his king by stacking stone",
+                "x": 0.089466,
+                "y": 0.319932,
+                "w": 0.832395,
+                "h": 0.022241
+              },
+              {
+                "text": "slabs on top of one another, progressively making them smaller, to form the shape",
+                "x": 0.091674,
+                "y": 0.343863,
+                "w": 0.821355,
+                "h": 0.02045
+              },
+              {
+                "text": "now known as the Step Pyramid. Djoser is thought to have reigned for 19 years, but",
+                "x": 0.089466,
+                "y": 0.365973,
+                "w": 0.841227,
+                "h": 0.022272
+              },
+              {
+                "text": "some historians and scholars attribute a much longer time for his rule, owing to the",
+                "x": 0.091674,
+                "y": 0.388073,
+                "w": 0.832395,
+                "h": 0.0221
+              },
+              {
+                "text": "number and size of the monuments he built.",
+                "x": 0.091674,
+                "y": 0.411741,
+                "w": 0.439381,
+                "h": 0.017131
+              },
+              {
+                "text": "C",
+                "x": 0.040891,
+                "y": 0.445872,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "The Step Pyramid has been thoroughly examined and investigated over the",
+                "x": 0.091674,
+                "y": 0.444172,
+                "w": 0.748493,
+                "h": 0.0221
+              },
+              {
+                "text": "last century, and it is now known that the building process went through many",
+                "x": 0.089466,
+                "y": 0.467871,
+                "w": 0.781612,
+                "h": 0.020501
+              },
+              {
+                "text": "different stages. Historian Marc Van de Mieroop comments on this, writing 'Much",
+                "x": 0.091674,
+                "y": 0.488321,
+                "w": 0.823563,
+                "h": 0.022191
+              },
+              {
+                "text": "experimentation was involved, which is especially clear in the construction of the",
+                "x": 0.091674,
+                "y": 0.512172,
+                "w": 0.812523,
+                "h": 0.020531
+              },
+              {
+                "text": "pyramid in the center of the complex. It had several plans ... before it became the",
+                "x": 0.089466,
+                "y": 0.534272,
+                "w": 0.819147,
+                "h": 0.0221
+              },
+              {
+                "text": "first Step Pyramid in history, piling six levels on top of one another ... The weight",
+                "x": 0.091674,
+                "y": 0.5562,
+                "w": 0.821355,
+                "h": 0.022272
+              },
+              {
+                "text": "of the enormous mass was a challenge for the builders, who placed the stones at an",
+                "x": 0.089466,
+                "y": 0.580131,
+                "w": 0.832395,
+                "h": 0.02045
+              },
+              {
+                "text": "inward incline in order to prevent the monument breaking up?",
+                "x": 0.089466,
+                "y": 0.600571,
+                "w": 0.627056,
+                "h": 0.022201
+              },
+              {
+                "text": "D When finally completed, the Step Pyramid rose 62 meters high and was the tallest",
+                "x": 0.040891,
+                "y": 0.636261,
+                "w": 0.86993,
+                "h": 0.02045
+              },
+              {
+                "text": "structure of its time. The complex in which it was built was the size of a city in",
+                "x": 0.091674,
+                "y": 0.656671,
+                "w": 0.790444,
+                "h": 0.022231
+              },
+              {
+                "text": "ancient Egypt and included a temple, courtyards, shrines, and living quarters for the",
+                "x": 0.089466,
+                "y": 0.680471,
+                "w": 0.843435,
+                "h": 0.0221
+              },
+              {
+                "text": "priests. It covered a region of 16 hectares and was surrounded by a wall 10.5 meters",
+                "x": 0.089466,
+                "y": 0.702398,
+                "w": 0.841227,
+                "h": 0.020572
+              },
+              {
+                "text": "high. The wall had 13 false doors cut into it with only one true entrance cut into the",
+                "x": 0.089466,
+                "y": 0.724589,
+                "w": 0.839019,
+                "h": 0.020481
+              },
+              {
+                "text": "south-east corner; the entire wall was then ringed by a trench 750 meters long and",
+                "x": 0.091674,
+                "y": 0.74677,
+                "w": 0.819147,
+                "h": 0.020461
+              },
+              {
+                "text": "40 meters wide. The false doors and the trench were incorporated into the complex",
+                "x": 0.091674,
+                "y": 0.77057,
+                "w": 0.830187,
+                "h": 0.018852
+              },
+              {
+                "text": "to discourage unwanted visitors. If someone wished to enter, he or she would have",
+                "x": 0.089466,
+                "y": 0.792467,
+                "w": 0.825771,
+                "h": 0.020602
+              },
+              {
+                "text": "needed to know in advance how to find the location of the true opening in the wall.",
+                "x": 0.091674,
+                "y": 0.814658,
+                "w": 0.830187,
+                "h": 0.020511
+              },
+              {
+                "text": "Djoser was so proud of his accomplishment that he broke the tradition of having",
+                "x": 0.091674,
+                "y": 0.836849,
+                "w": 0.8059,
+                "h": 0.02045
+              },
+              {
+                "text": "only his own name on the monument and had Imhotep's name carved on it as well.",
+                "x": 0.093882,
+                "y": 0.860669,
+                "w": 0.825771,
+                "h": 0.017081
+              },
+              {
+                "text": "21",
+                "x": 0.913029,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-1/page-24.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "E The burial chamber of the tomb, where the king's body was laid to rest, was dug",
+                "x": 0.056347,
+                "y": 0.017476,
+                "w": 0.850058,
+                "h": 0.020501
+              },
+              {
+                "text": "beneath the base of the pyramid, surrounded by a vast maze of long tunnels that",
+                "x": 0.104922,
+                "y": 0.039576,
+                "w": 0.799276,
+                "h": 0.020592
+              },
+              {
+                "text": "had rooms off them to discourage robbers. One of the most mysterious discoveries",
+                "x": 0.104922,
+                "y": 0.061473,
+                "w": 0.823563,
+                "h": 0.020602
+              },
+              {
+                "text": "found inside the pyramid was a large number of stone vessels. Over 40,000 of",
+                "x": 0.104922,
+                "y": 0.083664,
+                "w": 0.78382,
+                "h": 0.022211
+              },
+              {
+                "text": "these vessels, of various forms and shapes, were discovered in storerooms off the",
+                "x": 0.104922,
+                "y": 0.107575,
+                "w": 0.810316,
+                "h": 0.01873
+              },
+              {
+                "text": "pyramid's underground passages. They are inscribed with the names of rulers from",
+                "x": 0.104922,
+                "y": 0.127975,
+                "w": 0.827979,
+                "h": 0.022262
+              },
+              {
+                "text": "the First and Second Dynasties of Egypt and made from different kinds of stone.",
+                "x": 0.104922,
+                "y": 0.151775,
+                "w": 0.8059,
+                "h": 0.0204
+              },
+              {
+                "text": "There is no agreement among scholars and archaeologists on why the vessels",
+                "x": 0.104922,
+                "y": 0.173733,
+                "w": 0.77278,
+                "h": 0.020542
+              },
+              {
+                "text": "were placed in the tomb of Djoser or what they were supposed to represent. The",
+                "x": 0.104922,
+                "y": 0.195924,
+                "w": 0.801484,
+                "h": 0.02045
+              },
+              {
+                "text": "archaeologist Jean-Philippe Lauer, who excavated most of the pyramid and complex,",
+                "x": 0.104922,
+                "y": 0.218074,
+                "w": 0.850058,
+                "h": 0.022231
+              },
+              {
+                "text": "believes they were originally stored and then given a 'proper burial' by Djoser in his",
+                "x": 0.104922,
+                "y": 0.240174,
+                "w": 0.843435,
+                "h": 0.0221
+              },
+              {
+                "text": "pyramid to honor his predecessors. There are other historians, however, who claim",
+                "x": 0.104922,
+                "y": 0.263802,
+                "w": 0.823563,
+                "h": 0.020572
+              },
+              {
+                "text": "the vessels were dumped into the shafts as yet another attempt to prevent grave",
+                "x": 0.104922,
+                "y": 0.285993,
+                "w": 0.790444,
+                "h": 0.020481
+              },
+              {
+                "text": "robbers from getting to the king's burial chamber.",
+                "x": 0.104922,
+                "y": 0.308174,
+                "w": 0.498995,
+                "h": 0.020461
+              },
+              {
+                "text": "F Unfortunately, all of the precautions and intricate design of the underground network",
+                "x": 0.056347,
+                "y": 0.342123,
+                "w": 0.898633,
+                "h": 0.02045
+              },
+              {
+                "text": "did not prevent ancient robbers from finding a way in. Djoser's grave goods, and",
+                "x": 0.104922,
+                "y": 0.364273,
+                "w": 0.803692,
+                "h": 0.020491
+              },
+              {
+                "text": "even his body, were stolen at some point in the past and all archaeologists found",
+                "x": 0.104922,
+                "y": 0.386373,
+                "w": 0.801484,
+                "h": 0.020582
+              },
+              {
+                "text": "were a small number of his valuables overlooked by the thieves. There was enough",
+                "x": 0.104922,
+                "y": 0.40826,
+                "w": 0.827979,
+                "h": 0.020612
+              },
+              {
+                "text": "left throughout the pyramid and its complex, however, to astonish and amaze the",
+                "x": 0.102714,
+                "y": 0.432192,
+                "w": 0.808108,
+                "h": 0.020481
+              },
+              {
+                "text": "archaeologists who excavated it.",
+                "x": 0.104922,
+                "y": 0.454372,
+                "w": 0.324568,
+                "h": 0.01872
+              },
+              {
+                "text": "G Egyptologist Miroslav Verner writes, 'Few monuments hold a place in human",
+                "x": 0.056347,
+                "y": 0.486581,
+                "w": 0.825771,
+                "h": 0.022191
+              },
+              {
+                "text": "history as significant as that of the Step Pyramid in Saqgara ... It can be said",
+                "x": 0.104922,
+                "y": 0.510472,
+                "w": 0.768365,
+                "h": 0.020491
+              },
+              {
+                "text": "without exaggeration that this pyramid complex constitutes a milestone in the",
+                "x": 0.104922,
+                "y": 0.532572,
+                "w": 0.777196,
+                "h": 0.020582
+              },
+              {
+                "text": "evolution of monumental stone architecture in Egypt and in the world as a whole.'",
+                "x": 0.104921,
+                "y": 0.554459,
+                "w": 0.821355,
+                "h": 0.020612
+              },
+              {
+                "text": "The Step Pyramid was a revolutionary advance in architecture and became the",
+                "x": 0.10477,
+                "y": 0.571486,
+                "w": 0.786326,
+                "h": 0.028916
+              },
+              {
+                "text": "archetype which all the other great pyramid builders of Egypt would follow.",
+                "x": 0.104922,
+                "y": 0.600571,
+                "w": 0.761741,
+                "h": 0.020461
+              },
+              {
+                "text": "22",
+                "x": 0.054139,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-1/page-26.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.051931,
+                "y": 0.017476,
+                "w": 0.331192,
+                "h": 0.01702
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.051931,
+                "y": 0.059976,
+                "w": 0.889801,
+                "h": 0.0204
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.051931,
+                "y": 0.081924,
+                "w": 0.181051,
+                "h": 0.017152
+              },
+              {
+                "text": "The future of work",
+                "x": 0.374291,
+                "y": 0.127975,
+                "w": 0.253914,
+                "h": 0.018781
+              },
+              {
+                "text": "According to a leading business consultancy, 3-14% of the global workforce will need to switch",
+                "x": 0.051931,
+                "y": 0.171992,
+                "w": 0.883178,
+                "h": 0.020582
+              },
+              {
+                "text": "to a different occupation within the next 10-15 years, and all workers will need to adapt as",
+                "x": 0.049723,
+                "y": 0.192443,
+                "w": 0.832395,
+                "h": 0.020531
+              },
+              {
+                "text": "their occupations evolve alongside increasingly capable machines. Automation - or 'embodied",
+                "x": 0.049723,
+                "y": 0.212893,
+                "w": 0.86993,
+                "h": 0.020481
+              },
+              {
+                "text": "artificial intelligence' (AI) - is one aspect of the disruptive effects of technology on the labour",
+                "x": 0.049723,
+                "y": 0.233344,
+                "w": 0.865514,
+                "h": 0.02045
+              },
+              {
+                "text": "market. 'Disembodied Al', like the algorithms running in our smartphones, is another.",
+                "x": 0.049723,
+                "y": 0.255474,
+                "w": 0.797068,
+                "h": 0.018771
+              },
+              {
+                "text": "Dr Stella Pachidi from Cambridge Judge Business School believes that some of the most",
+                "x": 0.049723,
+                "y": 0.296274,
+                "w": 0.819147,
+                "h": 0.018872
+              },
+              {
+                "text": "fundamental changes are happening as a result of the 'algorithmication' of jobs that are dependent",
+                "x": 0.049723,
+                "y": 0.316673,
+                "w": 0.903049,
+                "h": 0.0204
+              },
+              {
+                "text": "on data rather than on production - the so-called knowledge economy. Algorithms are capable of",
+                "x": 0.051879,
+                "y": 0.337051,
+                "w": 0.889918,
+                "h": 0.020855
+              },
+              {
+                "text": "learning from data to undertake tasks that previously needed human judgement, such as reading",
+                "x": 0.049723,
+                "y": 0.357352,
+                "w": 0.88097,
+                "h": 0.020521
+              },
+              {
+                "text": "legal contracts, analysing medical scans and gathering market intelligence.",
+                "x": 0.049723,
+                "y": 0.379543,
+                "w": 0.688879,
+                "h": 0.02045
+              },
+              {
+                "text": "'In many cases, they can outperform humans,' says Pachidi. 'Organisations are attracted to",
+                "x": 0.049723,
+                "y": 0.418673,
+                "w": 0.832395,
+                "h": 0.022221
+              },
+              {
+                "text": "using algorithms because they want to make choices based on what they consider is \"perfect",
+                "x": 0.049723,
+                "y": 0.440772,
+                "w": 0.850058,
+                "h": 0.020572
+              },
+              {
+                "text": "information\", as well as to reduce costs and enhance productivity.'",
+                "x": 0.049723,
+                "y": 0.461172,
+                "w": 0.611601,
+                "h": 0.0204
+              },
+              {
+                "text": "'But these enhancements are not without consequences,' says Pachidi. If routine cognitive tasks",
+                "x": 0.051931,
+                "y": 0.50181,
+                "w": 0.883178,
+                "h": 0.018862
+              },
+              {
+                "text": "are taken over by AI, how do professions develop their future experts?' she asks. 'One way of",
+                "x": 0.049723,
+                "y": 0.522261,
+                "w": 0.861098,
+                "h": 0.022211
+              },
+              {
+                "text": "learning about a job is \"legitimate peripheral participation\" - a novice stands next to experts and",
+                "x": 0.049723,
+                "y": 0.544451,
+                "w": 0.887594,
+                "h": 0.02045
+              },
+              {
+                "text": "learns by observation. If this isn't happening, then you need to find new ways to learn.'",
+                "x": 0.049723,
+                "y": 0.564871,
+                "w": 0.799276,
+                "h": 0.020481
+              },
+              {
+                "text": "Another issue is the extent to which the technology influences or even controls the workforce.",
+                "x": 0.051931,
+                "y": 0.607371,
+                "w": 0.863306,
+                "h": 0.018882
+              },
+              {
+                "text": "For over two years, Pachidi monitored a telecommunications company. \"The way telecoms",
+                "x": 0.051834,
+                "y": 0.625374,
+                "w": 0.830372,
+                "h": 0.024009
+              },
+              {
+                "text": "salespeople work is through personal and frequent contact with clients, using the benefit of",
+                "x": 0.051931,
+                "y": 0.648009,
+                "w": 0.836811,
+                "h": 0.020562
+              },
+              {
+                "text": "experience to assess a situation and reach a decision. However, the company had started using",
+                "x": 0.051931,
+                "y": 0.668459,
+                "w": 0.863306,
+                "h": 0.020511
+              },
+              {
+                "text": "a[n] ... algorithm that defined when account managers should contact certain customers about",
+                "x": 0.051931,
+                "y": 0.69065,
+                "w": 0.865514,
+                "h": 0.01872
+              },
+              {
+                "text": "which kinds of campaigns and what to offer them.",
+                "x": 0.051931,
+                "y": 0.71107,
+                "w": 0.468084,
+                "h": 0.01874
+              },
+              {
+                "text": "The algorithm - usually built by external designers - often becomes the keeper of knowledge,",
+                "x": 0.051931,
+                "y": 0.75187,
+                "w": 0.863306,
+                "h": 0.020582
+              },
+              {
+                "text": "she explains. In cases like this, Pachidi believes, a short-sighted view begins to creep into",
+                "x": 0.051931,
+                "y": 0.77227,
+                "w": 0.821355,
+                "h": 0.0204
+              },
+              {
+                "text": "working practices whereby workers learn through the 'algorithm's eyes' and become dependent",
+                "x": 0.051931,
+                "y": 0.792467,
+                "w": 0.876554,
+                "h": 0.020602
+              },
+              {
+                "text": "on its instructions. Alternative explorations - where experimentation and human instinct lead to",
+                "x": 0.051931,
+                "y": 0.812918,
+                "w": 0.878762,
+                "h": 0.020552
+              },
+              {
+                "text": "progress and new ideas - are effectively discouraged.",
+                "x": 0.051931,
+                "y": 0.836849,
+                "w": 0.490164,
+                "h": 0.01872
+              },
+              {
+                "text": "Pachidi and colleagues even observed people developing strategies to make the algorithm work",
+                "x": 0.051931,
+                "y": 0.877669,
+                "w": 0.874346,
+                "h": 0.020531
+              },
+              {
+                "text": "to their own advantage. 'We are seeing cases where workers feed the algorithm with false data to",
+                "x": 0.051931,
+                "y": 0.898069,
+                "w": 0.887594,
+                "h": 0.020582
+              },
+              {
+                "text": "reach their targets,' she reports.",
+                "x": 0.051931,
+                "y": 0.919956,
+                "w": 0.293657,
+                "h": 0.018912
+              },
+              {
+                "text": "24",
+                "x": 0.054139,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.017
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-1/page-27.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "It's scenarios like these that many researchers are working to avoid. Their objective is to make Al",
+                "x": 0.038683,
+                "y": 0.019176,
+                "w": 0.889802,
+                "h": 0.018801
+              },
+              {
+                "text": "technologies more trustworthy and transparent, so that organisations and individuals understand",
+                "x": 0.038683,
+                "y": 0.039576,
+                "w": 0.88097,
+                "h": 0.020592
+              },
+              {
+                "text": "how AI decisions are made. In the meantime, says Pachidi, 'We need to make sure we fully",
+                "x": 0.038683,
+                "y": 0.059976,
+                "w": 0.839019,
+                "h": 0.0204
+              },
+              {
+                "text": "understand the dilemmas that this new world raises regarding expertise, occupational boundaries",
+                "x": 0.040891,
+                "y": 0.080183,
+                "w": 0.885386,
+                "h": 0.020592
+              },
+              {
+                "text": "and control.",
+                "x": 0.040891,
+                "y": 0.102374,
+                "w": 0.119229,
+                "h": 0.012183
+              },
+              {
+                "text": "Economist Professor Hamish Low believes that the future of work will involve major transitions",
+                "x": 0.042994,
+                "y": 0.139379,
+                "w": 0.881165,
+                "h": 0.021488
+              },
+              {
+                "text": "across the whole life course for everyone: \"The traditional trajectory of full-time education",
+                "x": 0.040891,
+                "y": 0.163675,
+                "w": 0.832395,
+                "h": 0.018761
+              },
+              {
+                "text": "followed by full-time work followed by a pensioned retirement is a thing of the past,' says Low.",
+                "x": 0.038683,
+                "y": 0.184075,
+                "w": 0.874346,
+                "h": 0.020552
+              },
+              {
+                "text": "Instead, he envisages a multistage employment life: one where retraining happens across the life",
+                "x": 0.038683,
+                "y": 0.206174,
+                "w": 0.883178,
+                "h": 0.018902
+              },
+              {
+                "text": "course, and where multiple jobs and no job happen by choice at different stages.",
+                "x": 0.038683,
+                "y": 0.226382,
+                "w": 0.737453,
+                "h": 0.018892
+              },
+              {
+                "text": "On the subject of job losses, Low believes the predictions are founded on a fallacy: 'It assumes",
+                "x": 0.040891,
+                "y": 0.267283,
+                "w": 0.872138,
+                "h": 0.020491
+              },
+              {
+                "text": "that the number of jobs is fixed. If in 30 years, half of 100 jobs are being carried out by robots,",
+                "x": 0.038683,
+                "y": 0.289474,
+                "w": 0.86993,
+                "h": 0.01871
+              },
+              {
+                "text": "that doesn't mean we are left with just 50 jobs for humans. The number of jobs will increase: we",
+                "x": 0.038683,
+                "y": 0.309874,
+                "w": 0.885386,
+                "h": 0.018761
+              },
+              {
+                "text": "would expect there to be 150 jobs.'",
+                "x": 0.040891,
+                "y": 0.328573,
+                "w": 0.32236,
+                "h": 0.020511
+              },
+              {
+                "text": "Dr Ewan McGaughey, at Cambridge's Centre for Business Research and King's College London,",
+                "x": 0.040891,
+                "y": 0.371073,
+                "w": 0.889802,
+                "h": 0.0204
+              },
+              {
+                "text": "agrees that 'apocalyptic' views about the future of work are misguided. 'It's the laws that",
+                "x": 0.038683,
+                "y": 0.391291,
+                "w": 0.816939,
+                "h": 0.020582
+              },
+              {
+                "text": "restrict the supply of capital to the job market, not the advent of new technologies that causes",
+                "x": 0.038683,
+                "y": 0.413482,
+                "w": 0.856682,
+                "h": 0.020491
+              },
+              {
+                "text": "unemployment.'",
+                "x": 0.038646,
+                "y": 0.432105,
+                "w": 0.15463,
+                "h": 0.020734
+              },
+              {
+                "text": "His recently published research answers the question of whether automation, AI and robotics will",
+                "x": 0.038683,
+                "y": 0.474772,
+                "w": 0.894217,
+                "h": 0.020511
+              },
+              {
+                "text": "mean a \"jobless future' by looking at the causes of unemployment. 'History is clear that change",
+                "x": 0.038683,
+                "y": 0.495172,
+                "w": 0.876554,
+                "h": 0.020562
+              },
+              {
+                "text": "can mean redundancies. But social policies can tackle this through retraining and redeployment.?",
+                "x": 0.038683,
+                "y": 0.515572,
+                "w": 0.889801,
+                "h": 0.020612
+              },
+              {
+                "text": "He adds: 'If there is going to be change to jobs as a result of AI and robotics then I'd like to see",
+                "x": 0.040891,
+                "y": 0.5562,
+                "w": 0.872138,
+                "h": 0.018872
+              },
+              {
+                "text": "governments seizing the opportunity to improve policy to enforce good job security. We can",
+                "x": 0.038683,
+                "y": 0.57839,
+                "w": 0.845643,
+                "h": 0.020481
+              },
+              {
+                "text": "\"reprogramme\" the law to prepare for a fairer future of work and leisure.' McGaughey's findings",
+                "x": 0.038683,
+                "y": 0.5971,
+                "w": 0.885386,
+                "h": 0.022191
+              },
+              {
+                "text": "are a call to arms to leaders of organisations, governments and banks to pre-empt the coming",
+                "x": 0.038683,
+                "y": 0.620971,
+                "w": 0.854474,
+                "h": 0.018771
+              },
+              {
+                "text": "changes with bold new policies that guarantee full employment, fair incomes and a thriving",
+                "x": 0.040891,
+                "y": 0.641371,
+                "w": 0.839019,
+                "h": 0.020562
+              },
+              {
+                "text": "economic democracy.",
+                "x": 0.040891,
+                "y": 0.660071,
+                "w": 0.203131,
+                "h": 0.020572
+              },
+              {
+                "text": "*The promises of these new technologies are astounding. They deliver humankind the capacity",
+                "x": 0.038683,
+                "y": 0.702398,
+                "w": 0.872138,
+                "h": 0.020572
+              },
+              {
+                "text": "to live in a way that nobody could have once imagined,' he adds. 'Just as the industrial revolution",
+                "x": 0.038683,
+                "y": 0.722849,
+                "w": 0.889801,
+                "h": 0.020521
+              },
+              {
+                "text": "brought people past subsistence agriculture, and the corporate revolution enabled mass",
+                "x": 0.040891,
+                "y": 0.74504,
+                "w": 0.797068,
+                "h": 0.01873
+              },
+              {
+                "text": "production, a third revolution has been pronounced. But it will not only be one of technology. The",
+                "x": 0.040891,
+                "y": 0.76547,
+                "w": 0.898633,
+                "h": 0.017
+              },
+              {
+                "text": "next revolution will be social.'",
+                "x": 0.040891,
+                "y": 0.78587,
+                "w": 0.280409,
+                "h": 0.0153
+              },
+              {
+                "text": "25",
+                "x": 0.910821,
+                "y": 0.984768,
+                "w": 0.030911,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-1/page-31.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.411779,
+                "y": 0.0156,
+                "w": 0.141401,
+                "h": 0.022452
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.034267,
+                "y": 0.083664,
+                "w": 0.258329,
+                "h": 0.018811
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.034267,
+                "y": 0.127975,
+                "w": 0.496787,
+                "h": 0.020521
+              },
+              {
+                "text": "The charts below show the changes in ownership of electrical appliances and",
+                "x": 0.060763,
+                "y": 0.178954,
+                "w": 0.850058,
+                "h": 0.023931
+              },
+              {
+                "text": "amount of time spent doing housework in households in one country between",
+                "x": 0.058555,
+                "y": 0.201074,
+                "w": 0.856682,
+                "h": 0.022262
+              },
+              {
+                "text": "1920 and 2019.",
+                "x": 0.060763,
+                "y": 0.223174,
+                "w": 0.163388,
+                "h": 0.018872
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.060763,
+                "y": 0.263802,
+                "w": 0.841227,
+                "h": 0.022272
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.058555,
+                "y": 0.284252,
+                "w": 0.384182,
+                "h": 0.020521
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.034267,
+                "y": 0.338642,
+                "w": 0.256122,
+                "h": 0.018831
+              },
+              {
+                "text": "100",
+                "x": 0.228566,
+                "y": 0.432273,
+                "w": 0.033119,
+                "h": 0.0136
+              },
+              {
+                "text": "90",
+                "x": 0.237398,
+                "y": 0.447572,
+                "w": 0.024287,
+                "h": 0.0136
+              },
+              {
+                "text": "Percentage of households with electrical appliances",
+                "x": 0.25727,
+                "y": 0.382973,
+                "w": 0.452629,
+                "h": 0.018761
+              },
+              {
+                "text": "(1920-2019)",
+                "x": 0.431612,
+                "y": 0.397972,
+                "w": 0.110568,
+                "h": 0.019302
+              },
+              {
+                "text": "-0-------0",
+                "x": 0.63262,
+                "y": 0.433973,
+                "w": 0.105981,
+                "h": 0.0085
+              },
+              {
+                "text": "--0---",
+                "x": 0.53609,
+                "y": 0.439938,
+                "w": 0.066165,
+                "h": 0.02826
+              },
+              {
+                "text": "20",
+                "x": 0.239606,
+                "y": 0.554672,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "10",
+                "x": 0.239606,
+                "y": 0.569971,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "0",
+                "x": 0.248438,
+                "y": 0.583571,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "1920",
+                "x": 0.292597,
+                "y": 0.598871,
+                "w": 0.037535,
+                "h": 0.0119
+              },
+              {
+                "text": "1940",
+                "x": 0.376499,
+                "y": 0.598871,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "- Washing machine",
+                "x": 0.283765,
+                "y": 0.649749,
+                "w": 0.16118,
+                "h": 0.015421
+              },
+              {
+                "text": "1960",
+                "x": 0.460401,
+                "y": 0.598871,
+                "w": 0.039743,
+                "h": 0.0119
+              },
+              {
+                "text": "1980",
+                "x": 0.544302,
+                "y": 0.598871,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "Year",
+                "x": 0.502351,
+                "y": 0.622671,
+                "w": 0.041951,
+                "h": 0.0153
+              },
+              {
+                "text": "-o- Refrigerator",
+                "x": 0.462548,
+                "y": 0.647897,
+                "w": 0.128182,
+                "h": 0.017548
+              },
+              {
+                "text": "2000",
+                "x": 0.625996,
+                "y": 0.597171,
+                "w": 0.041951,
+                "h": 0.0153
+              },
+              {
+                "text": "2019",
+                "x": 0.709898,
+                "y": 0.597171,
+                "w": 0.044159,
+                "h": 0.0153
+              },
+              {
+                "text": "-O- Vacuum cleaner",
+                "x": 0.606125,
+                "y": 0.649749,
+                "w": 0.158972,
+                "h": 0.013924
+              },
+              {
+                "text": "Number of hours of housework* per week,",
+                "x": 0.303636,
+                "y": 0.704139,
+                "w": 0.368727,
+                "h": 0.018831
+              },
+              {
+                "text": "per household (1920-2019)",
+                "x": 0.367667,
+                "y": 0.71787,
+                "w": 0.242874,
+                "h": 0.018902
+              },
+              {
+                "text": "Number of hours",
+                "x": 0.186615,
+                "y": 0.75867,
+                "w": 0.019872,
+                "h": 0.098599
+              },
+              {
+                "text": "per week",
+                "x": 0.202885,
+                "y": 0.778889,
+                "w": 0.016378,
+                "h": 0.056515
+              },
+              {
+                "text": "60",
+                "x": 0.239606,
+                "y": 0.75527,
+                "w": 0.022079,
+                "h": 0.0119
+              },
+              {
+                "text": "50",
+                "x": 0.239606,
+                "y": 0.76717,
+                "w": 0.024287,
+                "h": 0.017
+              },
+              {
+                "text": "10",
+                "x": 0.239606,
+                "y": 0.830069,
+                "w": 0.022079,
+                "h": 0.0136
+              },
+              {
+                "text": "1920",
+                "x": 0.292597,
+                "y": 0.858969,
+                "w": 0.039743,
+                "h": 0.0153
+              },
+              {
+                "text": "1940",
+                "x": 0.376499,
+                "y": 0.858969,
+                "w": 0.039743,
+                "h": 0.0153
+              },
+              {
+                "text": "1960",
+                "x": 0.460401,
+                "y": 0.858969,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "1980",
+                "x": 0.544302,
+                "y": 0.855569,
+                "w": 0.041951,
+                "h": 0.0187
+              },
+              {
+                "text": "Year",
+                "x": 0.495683,
+                "y": 0.884394,
+                "w": 0.048663,
+                "h": 0.01715
+              },
+              {
+                "text": "-o Hours per week",
+                "x": 0.447153,
+                "y": 0.913369,
+                "w": 0.152348,
+                "h": 0.01703
+              },
+              {
+                "text": "*housework = washing clothes, preparing meals, cleaning",
+                "x": 0.186615,
+                "y": 0.943887,
+                "w": 0.368727,
+                "h": 0.017081
+              },
+              {
+                "text": "2000",
+                "x": 0.628204,
+                "y": 0.858969,
+                "w": 0.041951,
+                "h": 0.0136
+              },
+              {
+                "text": "2019",
+                "x": 0.712106,
+                "y": 0.857269,
+                "w": 0.044159,
+                "h": 0.017
+              },
+              {
+                "text": "→",
+                "x": 0.72977,
+                "y": 0.984768,
+                "w": 0.028703,
+                "h": 0.0204
+              },
+              {
+                "text": "p. 129",
+                "x": 0.797959,
+                "y": 0.982543,
+                "w": 0.075584,
+                "h": 0.023151
+              },
+              {
+                "text": "29",
+                "x": 0.906405,
+                "y": 0.983068,
+                "w": 0.035327,
+                "h": 0.0204
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-1/page-32.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.051931,
+                "y": 0.015776,
+                "w": 0.262745,
+                "h": 0.022201
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.051931,
+                "y": 0.061473,
+                "w": 0.496787,
+                "h": 0.018902
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.051931,
+                "y": 0.102374,
+                "w": 0.315736,
+                "h": 0.018801
+              },
+              {
+                "text": "In some countries, more and more people are becoming interested in finding",
+                "x": 0.07401,
+                "y": 0.158504,
+                "w": 0.841227,
+                "h": 0.020471
+              },
+              {
+                "text": "out about the history of the house or building they live in.",
+                "x": 0.078426,
+                "y": 0.178954,
+                "w": 0.629264,
+                "h": 0.02045
+              },
+              {
+                "text": "What are the reasons for this?",
+                "x": 0.078426,
+                "y": 0.219774,
+                "w": 0.335608,
+                "h": 0.020531
+              },
+              {
+                "text": "How can people research this?",
+                "x": 0.076218,
+                "y": 0.262061,
+                "w": 0.344439,
+                "h": 0.022312
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.051931,
+                "y": 0.318191,
+                "w": 0.814731,
+                "h": 0.020582
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.051931,
+                "y": 0.340382,
+                "w": 0.264953,
+                "h": 0.018791
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.051931,
+                "y": 0.381273,
+                "w": 0.256122,
+                "h": 0.017
+              },
+              {
+                "text": "30",
+                "x": 0.051931,
+                "y": 0.984768,
+                "w": 0.035327,
+                "h": 0.017
+              },
+              {
+                "text": "→ &p. 131",
+                "x": 0.111465,
+                "y": 0.981044,
+                "w": 0.1503,
+                "h": 0.022749
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-12.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.045307,
+                "y": 0.017476,
+                "w": 0.132477,
+                "h": 0.0323
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.411826,
+                "y": 0.088875,
+                "w": 0.170012,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.047485,
+                "y": 0.175471,
+                "w": 0.110457,
+                "h": 0.018908
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.219735,
+                "y": 0.175473,
+                "w": 0.203131,
+                "h": 0.020501
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.047515,
+                "y": 0.219774,
+                "w": 0.269369,
+                "h": 0.018791
+              },
+              {
+                "text": "Write ONE WORD ANDIOR A NUMBER for each answer.",
+                "x": 0.047515,
+                "y": 0.260574,
+                "w": 0.589521,
+                "h": 0.018892
+              },
+              {
+                "text": "Children's Engineering Workshops",
+                "x": 0.237398,
+                "y": 0.314973,
+                "w": 0.523283,
+                "h": 0.0272
+              },
+              {
+                "text": "Tiny Engineers (ages 4-5)",
+                "x": 0.065179,
+                "y": 0.364273,
+                "w": 0.287033,
+                "h": 0.01875
+              },
+              {
+                "text": "Activities",
+                "x": 0.067256,
+                "y": 0.391042,
+                "w": 0.092996,
+                "h": 0.017863
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.420373,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "Create a cover for an 1",
+                "x": 0.120377,
+                "y": 0.418673,
+                "w": 0.231834,
+                "h": 0.0153
+              },
+              {
+                "text": "without breaking it.",
+                "x": 0.115961,
+                "y": 0.440772,
+                "w": 0.194299,
+                "h": 0.017091
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.467972,
+                "w": 0.022079,
+                "h": 0.0187
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.496872,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Take part in a competition to build the tallest 2",
+                "x": 0.118169,
+                "y": 0.466131,
+                "w": 0.468084,
+                "h": 0.020542
+              },
+              {
+                "text": "Make a 3",
+                "x": 0.118108,
+                "y": 0.494968,
+                "w": 0.095064,
+                "h": 0.017407
+              },
+              {
+                "text": "powered by a balloon.",
+                "x": 0.400786,
+                "y": 0.493472,
+                "w": 0.229626,
+                "h": 0.020521
+              },
+              {
+                "text": "... so they can drop it from a height",
+                "x": 0.517807,
+                "y": 0.416963,
+                "w": 0.355479,
+                "h": 0.02045
+              },
+              {
+                "text": "Junior Engineers (ages 6-8)",
+                "x": 0.067386,
+                "y": 0.535972,
+                "w": 0.309112,
+                "h": 0.0187
+              },
+              {
+                "text": "Activities:",
+                "x": 0.06734,
+                "y": 0.564688,
+                "w": 0.101658,
+                "h": 0.015667
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.590371,
+                "w": 0.019871,
+                "h": 0.0204
+              },
+              {
+                "text": "Build model cars, trucks and 4",
+                "x": 0.107129,
+                "y": 0.590371,
+                "w": 0.320152,
+                "h": 0.0204
+              },
+              {
+                "text": "them so they can move.",
+                "x": 0.118169,
+                "y": 0.61407,
+                "w": 0.245082,
+                "h": 0.015401
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.637971,
+                "w": 0.024287,
+                "h": 0.0221
+              },
+              {
+                "text": "Take part in a competition to build the longest 5",
+                "x": 0.118169,
+                "y": 0.637971,
+                "w": 0.481332,
+                "h": 0.020481
+              },
+              {
+                "text": "and wood.",
+                "x": 0.118068,
+                "y": 0.661373,
+                "w": 0.1106,
+                "h": 0.017795
+              },
+              {
+                "text": "..",
+                "x": 0.065179,
+                "y": 0.687271,
+                "w": 0.019872,
+                "h": 0.0459
+              },
+              {
+                "text": "Create a short 6",
+                "x": 0.118169,
+                "y": 0.68891,
+                "w": 0.167804,
+                "h": 0.017061
+              },
+              {
+                "text": "Build, 7",
+                "x": 0.118013,
+                "y": 0.715805,
+                "w": 0.079799,
+                "h": 0.021131
+              },
+              {
+                "text": "....with special software.",
+                "x": 0.447153,
+                "y": 0.683688,
+                "w": 0.249498,
+                "h": 0.022282
+              },
+              {
+                "text": "and program a humanoid robot.",
+                "x": 0.383122,
+                "y": 0.71447,
+                "w": 0.32236,
+                "h": 0.020562
+              },
+              {
+                "text": "and learn how to program",
+                "x": 0.612749,
+                "y": 0.590371,
+                "w": 0.264953,
+                "h": 0.018912
+              },
+              {
+                "text": "using card",
+                "x": 0.784821,
+                "y": 0.637456,
+                "w": 0.108484,
+                "h": 0.019731
+              },
+              {
+                "text": "Cost for a five-week block: £50",
+                "x": 0.069594,
+                "y": 0.756788,
+                "w": 0.313528,
+                "h": 0.017182
+              },
+              {
+                "text": "Held on 8",
+                "x": 0.069489,
+                "y": 0.783834,
+                "w": 0.099568,
+                "h": 0.019372
+              },
+              {
+                "text": "from 10 am to 11 am",
+                "x": 0.352211,
+                "y": 0.78417,
+                "w": 0.214171,
+                "h": 0.017
+              },
+              {
+                "text": "Location",
+                "x": 0.069418,
+                "y": 0.825978,
+                "w": 0.097503,
+                "h": 0.016683
+              },
+              {
+                "text": "Building 10A, 9",
+                "x": 0.069594,
+                "y": 0.853819,
+                "w": 0.156764,
+                "h": 0.01875
+              },
+              {
+                "text": "Plenty of 10",
+                "x": 0.069482,
+                "y": 0.878986,
+                "w": 0.126077,
+                "h": 0.022866
+              },
+              {
+                "text": "Industrial Estate, Grasford",
+                "x": 0.414034,
+                "y": 0.852078,
+                "w": 0.273785,
+                "h": 0.020491
+              },
+              {
+                "text": "is available.",
+                "x": 0.376499,
+                "y": 0.877669,
+                "w": 0.128061,
+                "h": 0.020531
+              },
+              {
+                "text": "10",
+                "x": 0.045541,
+                "y": 0.976608,
+                "w": 0.037951,
+                "h": 0.02924
+              },
+              {
+                "text": "→",
+                "x": 0.122585,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.0187
+              },
+              {
+                "text": "p. 121",
+                "x": 0.191031,
+                "y": 0.984768,
+                "w": 0.068446,
+                "h": 0.01873
+              },
+              {
+                "text": "p. 98",
+                "x": 0.308052,
+                "y": 0.983048,
+                "w": 0.055199,
+                "h": 0.02045
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-13.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.043099,
+                "y": 0.019176,
+                "w": 0.110397,
+                "h": 0.017061
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.215319,
+                "y": 0.019176,
+                "w": 0.214171,
+                "h": 0.018801
+              },
+              {
+                "text": "Questions 11-14",
+                "x": 0.043099,
+                "y": 0.061473,
+                "w": 0.189883,
+                "h": 0.017405
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.043099,
+                "y": 0.102374,
+                "w": 0.366519,
+                "h": 0.018801
+              },
+              {
+                "text": "11",
+                "x": 0.043099,
+                "y": 0.153475,
+                "w": 0.024287,
+                "h": 0.0153
+              },
+              {
+                "text": "Stevenson's was founded in",
+                "x": 0.093882,
+                "y": 0.153283,
+                "w": 0.284825,
+                "h": 0.013924
+              },
+              {
+                "text": "A",
+                "x": 0.093882,
+                "y": 0.185775,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "1923.",
+                "x": 0.133625,
+                "y": 0.185775,
+                "w": 0.068446,
+                "h": 0.017
+              },
+              {
+                "text": "В 1924.",
+                "x": 0.093843,
+                "y": 0.206026,
+                "w": 0.108268,
+                "h": 0.017296
+              },
+              {
+                "text": "С 1926.",
+                "x": 0.093805,
+                "y": 0.227976,
+                "w": 0.11055,
+                "h": 0.017596
+              },
+              {
+                "text": "12 Originally, Stevenson's manufactured goods for",
+                "x": 0.040891,
+                "y": 0.258874,
+                "w": 0.534322,
+                "h": 0.020592
+              },
+              {
+                "text": "A the healthcare industry.",
+                "x": 0.093882,
+                "y": 0.292874,
+                "w": 0.287033,
+                "h": 0.020531
+              },
+              {
+                "text": "B the automotive industry.",
+                "x": 0.093882,
+                "y": 0.313273,
+                "w": 0.293657,
+                "h": 0.017101
+              },
+              {
+                "text": "C the machine tools industry.",
+                "x": 0.093882,
+                "y": 0.333673,
+                "w": 0.32236,
+                "h": 0.018892
+              },
+              {
+                "text": "13 What does the speaker say about the company premises?",
+                "x": 0.043099,
+                "y": 0.364273,
+                "w": 0.640304,
+                "h": 0.020491
+              },
+              {
+                "text": "A The company has recently moved.",
+                "x": 0.093882,
+                "y": 0.398253,
+                "w": 0.401846,
+                "h": 0.01872
+              },
+              {
+                "text": "B The company has no plans to move.",
+                "x": 0.093882,
+                "y": 0.418673,
+                "w": 0.419509,
+                "h": 0.01874
+              },
+              {
+                "text": "C The company is going to move shortly.",
+                "x": 0.093882,
+                "y": 0.439072,
+                "w": 0.439381,
+                "h": 0.018791
+              },
+              {
+                "text": "14 The programme for the work experience group includes",
+                "x": 0.043099,
+                "y": 0.469612,
+                "w": 0.613808,
+                "h": 0.020461
+              },
+              {
+                "text": "A time to do research.",
+                "x": 0.09609,
+                "y": 0.503551,
+                "w": 0.253914,
+                "h": 0.015421
+              },
+              {
+                "text": "meetings with a teacher.",
+                "x": 0.140249,
+                "y": 0.524001,
+                "w": 0.253914,
+                "h": 0.017071
+              },
+              {
+                "text": "talks by staff.",
+                "x": 0.127001,
+                "y": 0.544451,
+                "w": 0.152348,
+                "h": 0.01872
+              },
+              {
+                "text": "11",
+                "x": 0.915237,
+                "y": 0.979668,
+                "w": 0.028703,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-14.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.051931,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Label the map below.",
+                "x": 0.049723,
+                "y": 0.059976,
+                "w": 0.216379,
+                "h": 0.017162
+              },
+              {
+                "text": "Write the correct letter, A-J, next to Questions 15-20.",
+                "x": 0.051931,
+                "y": 0.100634,
+                "w": 0.54757,
+                "h": 0.018842
+              },
+              {
+                "text": "Plan of Stevenson's site",
+                "x": 0.3213,
+                "y": 0.143275,
+                "w": 0.357687,
+                "h": 0.023931
+              },
+              {
+                "text": "FACTORY",
+                "x": 0.4471,
+                "y": 0.289267,
+                "w": 0.099464,
+                "h": 0.015713
+              },
+              {
+                "text": "A",
+                "x": 0.301429,
+                "y": 0.413573,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "B",
+                "x": 0.449361,
+                "y": 0.411873,
+                "w": 0.024287,
+                "h": 0.0136
+              },
+              {
+                "text": "E",
+                "x": 0.449361,
+                "y": 0.471372,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "F",
+                "x": 0.301429,
+                "y": 0.532572,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "OPEN",
+                "x": 0.447153,
+                "y": 0.544472,
+                "w": 0.06403,
+                "h": 0.0153
+              },
+              {
+                "text": "COURTYARD",
+                "x": 0.420658,
+                "y": 0.556372,
+                "w": 0.123645,
+                "h": 0.017
+              },
+              {
+                "text": "G",
+                "x": 0.608333,
+                "y": 0.569971,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "ACCESS ROAD",
+                "x": 0.681195,
+                "y": 0.510472,
+                "w": 0.022079,
+                "h": 0.110499
+              },
+              {
+                "text": "H",
+                "x": 0.292597,
+                "y": 0.673671,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "J",
+                "x": 0.480272,
+                "y": 0.671971,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "MAIN ROAD",
+                "x": 0.422789,
+                "y": 0.717609,
+                "w": 0.117173,
+                "h": 0.020922
+              },
+              {
+                "text": "RECEPTION",
+                "x": 0.546421,
+                "y": 0.671609,
+                "w": 0.114991,
+                "h": 0.017722
+              },
+              {
+                "text": "15 coffee room",
+                "x": 0.051931,
+                "y": 0.76717,
+                "w": 0.17222,
+                "h": 0.01703
+              },
+              {
+                "text": "16 warehouse",
+                "x": 0.051931,
+                "y": 0.799429,
+                "w": 0.163388,
+                "h": 0.01704
+              },
+              {
+                "text": "17 staff canteen",
+                "x": 0.051931,
+                "y": 0.831628,
+                "w": 0.183259,
+                "h": 0.017142
+              },
+              {
+                "text": "18 meeting room",
+                "x": 0.049723,
+                "y": 0.864069,
+                "w": 0.192091,
+                "h": 0.018902
+              },
+              {
+                "text": "19 human resources",
+                "x": 0.051931,
+                "y": 0.896369,
+                "w": 0.229626,
+                "h": 0.017061
+              },
+              {
+                "text": "20 boardroom",
+                "x": 0.051931,
+                "y": 0.928658,
+                "w": 0.163388,
+                "h": 0.01701
+              },
+              {
+                "text": "12",
+                "x": 0.051931,
+                "y": 0.981368,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "→",
+                "x": 0.124793,
+                "y": 0.981368,
+                "w": 0.026495,
+                "h": 0.0187
+              },
+              {
+                "text": "p. 121",
+                "x": 0.191031,
+                "y": 0.981307,
+                "w": 0.068446,
+                "h": 0.020461
+              },
+              {
+                "text": "p. 99",
+                "x": 0.303636,
+                "y": 0.983048,
+                "w": 0.061822,
+                "h": 0.01702
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-15.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.040687,
+                "y": 0.021838,
+                "w": 0.110805,
+                "h": 0.020176
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.215319,
+                "y": 0.022576,
+                "w": 0.216379,
+                "h": 0.018882
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.043099,
+                "y": 0.064954,
+                "w": 0.231834,
+                "h": 0.017121
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.043099,
+                "y": 0.107575,
+                "w": 0.271577,
+                "h": 0.020471
+              },
+              {
+                "text": "Which TWO parts of the introductory stage to their art projects do Jess and Tom agree",
+                "x": 0.040891,
+                "y": 0.146675,
+                "w": 0.874346,
+                "h": 0.020531
+              },
+              {
+                "text": "were useful?",
+                "x": 0.040891,
+                "y": 0.170475,
+                "w": 0.132477,
+                "h": 0.015442
+              },
+              {
+                "text": "A",
+                "x": 0.091674,
+                "y": 0.201074,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.091674,
+                "y": 0.223174,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "C",
+                "x": 0.091674,
+                "y": 0.243574,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.091674,
+                "y": 0.263974,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.091674,
+                "y": 0.286074,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "the Bird Park visit",
+                "x": 0.140249,
+                "y": 0.202774,
+                "w": 0.183259,
+                "h": 0.01534
+              },
+              {
+                "text": "the workshop sessions",
+                "x": 0.138041,
+                "y": 0.221474,
+                "w": 0.23625,
+                "h": 0.018831
+              },
+              {
+                "text": "the Natural History Museum visit",
+                "x": 0.120377,
+                "y": 0.243574,
+                "w": 0.353271,
+                "h": 0.0187
+              },
+              {
+                "text": "the projects done in previous years",
+                "x": 0.138041,
+                "y": 0.265542,
+                "w": 0.359895,
+                "h": 0.017131
+              },
+              {
+                "text": "the handouts with research sources",
+                "x": 0.138041,
+                "y": 0.285993,
+                "w": 0.366519,
+                "h": 0.015381
+              },
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.043099,
+                "y": 0.365973,
+                "w": 0.231834,
+                "h": 0.01705
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.043099,
+                "y": 0.40826,
+                "w": 0.271577,
+                "h": 0.018912
+              },
+              {
+                "text": "In which TWO ways do both Jess and Tom decide to change their proposals?",
+                "x": 0.038607,
+                "y": 0.447514,
+                "w": 0.788446,
+                "h": 0.023117
+              },
+              {
+                "text": "AV by giving a rationale for their action plans",
+                "x": 0.093882,
+                "y": 0.48136,
+                "w": 0.465876,
+                "h": 0.018912
+              },
+              {
+                "text": "BAby being less specific about the outcome",
+                "x": 0.093882,
+                "y": 0.50181,
+                "w": 0.463668,
+                "h": 0.018862
+              },
+              {
+                "text": "C by adding a video diary presentation",
+                "x": 0.093882,
+                "y": 0.522261,
+                "w": 0.419509,
+                "h": 0.020511
+              },
+              {
+                "text": "D by providing a timeline and a mind map",
+                "x": 0.093882,
+                "y": 0.53923,
+                "w": 0.448213,
+                "h": 0.023941
+              },
+              {
+                "text": "E by making their notes more evaluative",
+                "x": 0.093882,
+                "y": 0.564871,
+                "w": 0.437173,
+                "h": 0.01874
+              },
+              {
+                "text": "13",
+                "x": 0.915237,
+                "y": 0.984768,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-16.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.049723,
+                "y": 0.020876,
+                "w": 0.189883,
+                "h": 0.018842
+              },
+              {
+                "text": "Which personal meaning do the students decide to give to each of the following",
+                "x": 0.047515,
+                "y": 0.063214,
+                "w": 0.803692,
+                "h": 0.018862
+              },
+              {
+                "text": "pictures?",
+                "x": 0.047413,
+                "y": 0.083466,
+                "w": 0.095145,
+                "h": 0.019319
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.049579,
+                "y": 0.122127,
+                "w": 0.757596,
+                "h": 0.023646
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.049723,
+                "y": 0.146675,
+                "w": 0.181051,
+                "h": 0.01705
+              },
+              {
+                "text": "Personal meanings",
+                "x": 0.391954,
+                "y": 0.202774,
+                "w": 0.211963,
+                "h": 0.020562
+              },
+              {
+                "text": "A",
+                "x": 0.323508,
+                "y": 0.236774,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "a childhood memory",
+                "x": 0.367667,
+                "y": 0.235074,
+                "w": 0.214171,
+                "h": 0.020461
+              },
+              {
+                "text": "B hope for the future",
+                "x": 0.323508,
+                "y": 0.267283,
+                "w": 0.240666,
+                "h": 0.018791
+              },
+              {
+                "text": "C",
+                "x": 0.323508,
+                "y": 0.301374,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "fast movement",
+                "x": 0.369875,
+                "y": 0.301222,
+                "w": 0.158972,
+                "h": 0.017152
+              },
+              {
+                "text": "D a potential threat",
+                "x": 0.325716,
+                "y": 0.331973,
+                "w": 0.223002,
+                "h": 0.018852
+              },
+              {
+                "text": "E the power of colour",
+                "x": 0.325716,
+                "y": 0.364273,
+                "w": 0.24729,
+                "h": 0.01875
+              },
+              {
+                "text": "F",
+                "x": 0.325716,
+                "y": 0.396573,
+                "w": 0.039743,
+                "h": 0.0153
+              },
+              {
+                "text": "the continuity of life",
+                "x": 0.369875,
+                "y": 0.396512,
+                "w": 0.203131,
+                "h": 0.018761
+              },
+              {
+                "text": "G protection of nature",
+                "x": 0.325716,
+                "y": 0.428711,
+                "w": 0.249498,
+                "h": 0.020562
+              },
+              {
+                "text": "H",
+                "x": 0.325716,
+                "y": 0.461172,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "a confused attitude to nature",
+                "x": 0.374291,
+                "y": 0.459472,
+                "w": 0.293657,
+                "h": 0.018842
+              },
+              {
+                "text": "Pictures",
+                "x": 0.098268,
+                "y": 0.535866,
+                "w": 0.092792,
+                "h": 0.015511
+              },
+              {
+                "text": "25 Falcon (Landseer)",
+                "x": 0.047515,
+                "y": 0.568271,
+                "w": 0.238458,
+                "h": 0.017081
+              },
+              {
+                "text": "26 Fish hawk (Audubon)",
+                "x": 0.047515,
+                "y": 0.598841,
+                "w": 0.269369,
+                "h": 0.01873
+              },
+              {
+                "text": "27 Kingfisher (van Gogh)",
+                "x": 0.047515,
+                "y": 0.631039,
+                "w": 0.275993,
+                "h": 0.018831
+              },
+              {
+                "text": "28 Portrait of William Wells",
+                "x": 0.047515,
+                "y": 0.663471,
+                "w": 0.295865,
+                "h": 0.017172
+              },
+              {
+                "text": "29 Vairumati (Gauguin)",
+                "x": 0.049723,
+                "y": 0.69577,
+                "w": 0.256122,
+                "h": 0.018811
+              },
+              {
+                "text": "30 Portrait of Giovanni de Medici",
+                "x": 0.049723,
+                "y": 0.72807,
+                "w": 0.353271,
+                "h": 0.017
+              },
+              {
+                "text": "14",
+                "x": 0.051931,
+                "y": 0.986468,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "→ • р. 121",
+                "x": 0.122585,
+                "y": 0.986468,
+                "w": 0.136893,
+                "h": 0.01703
+              },
+              {
+                "text": "p. 100",
+                "x": 0.303636,
+                "y": 0.984768,
+                "w": 0.079486,
+                "h": 0.020471
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-17.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.040832,
+                "y": 0.018992,
+                "w": 0.114932,
+                "h": 0.022467
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.215319,
+                "y": 0.020876,
+                "w": 0.216379,
+                "h": 0.020582
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.043099,
+                "y": 0.063214,
+                "w": 0.271577,
+                "h": 0.018862
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.043099,
+                "y": 0.100634,
+                "w": 0.430549,
+                "h": 0.018842
+              },
+              {
+                "text": "Stoicism",
+                "x": 0.427281,
+                "y": 0.161975,
+                "w": 0.132477,
+                "h": 0.0238
+              },
+              {
+                "text": "Stoicism is still relevant today because of its 31",
+                "x": 0.060763,
+                "y": 0.195924,
+                "w": 0.481332,
+                "h": 0.01875
+              },
+              {
+                "text": "..... appeal.",
+                "x": 0.698858,
+                "y": 0.194183,
+                "w": 0.108189,
+                "h": 0.018791
+              },
+              {
+                "text": "Ancient Stoics",
+                "x": 0.062971,
+                "y": 0.236774,
+                "w": 0.158972,
+                "h": 0.01702
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.265674,
+                "w": 0.015456,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.291174,
+                "w": 0.019871,
+                "h": 0.0204
+              },
+              {
+                "text": "Stoicism was founded over 2,000 years ago in Greece.",
+                "x": 0.102714,
+                "y": 0.262061,
+                "w": 0.567442,
+                "h": 0.018912
+              },
+              {
+                "text": "The Stoics' ideas are surprisingly well known, despite not being intended",
+                "x": 0.111545,
+                "y": 0.289474,
+                "w": 0.737453,
+                "h": 0.02045
+              },
+              {
+                "text": "for 32",
+                "x": 0.109337,
+                "y": 0.304703,
+                "w": 0.066238,
+                "h": 0.023931
+              },
+              {
+                "text": "Stoic principles",
+                "x": 0.062971,
+                "y": 0.352373,
+                "w": 0.17222,
+                "h": 0.018902
+              },
+              {
+                "text": "• Happiness could be achieved by leading a virtuous life.",
+                "x": 0.060763,
+                "y": 0.377802,
+                "w": 0.613808,
+                "h": 0.022191
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.408473,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "Controlling emotions was essential.",
+                "x": 0.104922,
+                "y": 0.406773,
+                "w": 0.370935,
+                "h": 0.018892
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.435673,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "Epictetus said that external events cannot be controlled but the",
+                "x": 0.113622,
+                "y": 0.43178,
+                "w": 0.640548,
+                "h": 0.021052
+              },
+              {
+                "text": "people make in response can be controlled.",
+                "x": 0.330132,
+                "y": 0.452642,
+                "w": 0.443797,
+                "h": 0.02045
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.484972,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "A Stoic is someone who has a different view on experiences which others would",
+                "x": 0.113753,
+                "y": 0.479872,
+                "w": 0.810316,
+                "h": 0.0204
+              },
+              {
+                "text": "consider as 34",
+                "x": 0.113753,
+                "y": 0.503551,
+                "w": 0.152348,
+                "h": 0.017121
+              },
+              {
+                "text": "The influence of Stoicism",
+                "x": 0.065179,
+                "y": 0.542711,
+                "w": 0.278201,
+                "h": 0.017061
+              },
+              {
+                "text": "• George Washington organised a 35..",
+                "x": 0.060763,
+                "y": 0.569971,
+                "w": 0.428341,
+                "h": 0.020602
+              },
+              {
+                "text": "....... about Cato to motivate",
+                "x": 0.625578,
+                "y": 0.56589,
+                "w": 0.272285,
+                "h": 0.021589
+              },
+              {
+                "text": "his men.",
+                "x": 0.115939,
+                "y": 0.591995,
+                "w": 0.088362,
+                "h": 0.015453
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.622671,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.649871,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.677071,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.70427,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "The French artist Delacroix was a Stoic.",
+                "x": 0.113753,
+                "y": 0.619271,
+                "w": 0.40847,
+                "h": 0.017
+              },
+              {
+                "text": "Adam Smith's ideas on 36",
+                "x": 0.113753,
+                "y": 0.646268,
+                "w": 0.269369,
+                "h": 0.017405
+              },
+              {
+                "text": "....were influenced by Stoicism.",
+                "x": 0.517807,
+                "y": 0.644771,
+                "w": 0.346647,
+                "h": 0.018902
+              },
+              {
+                "text": "Some of today's political leaders are inspired by the Stoics.",
+                "x": 0.115961,
+                "y": 0.673671,
+                "w": 0.600561,
+                "h": 0.020461
+              },
+              {
+                "text": "Cognitive Behaviour Therapy (CBT)",
+                "x": 0.115961,
+                "y": 0.700658,
+                "w": 0.373143,
+                "h": 0.020612
+              },
+              {
+                "text": "- the treatment for 37",
+                "x": 0.111545,
+                "y": 0.72977,
+                "w": 0.22521,
+                "h": 0.01701
+              },
+              {
+                "text": "... is based on ideas from Stoicism",
+                "x": 0.506767,
+                "y": 0.724589,
+                "w": 0.344439,
+                "h": 0.020481
+              },
+              {
+                "text": "- people learn to base their thinking on 38.",
+                "x": 0.111545,
+                "y": 0.75357,
+                "w": 0.443797,
+                "h": 0.0221
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.78757,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "In business, people benefit from Stoicism by identifying obstacles as",
+                "x": 0.113753,
+                "y": 0.780719,
+                "w": 0.695502,
+                "h": 0.022191
+              },
+              {
+                "text": "39",
+                "x": 0.115961,
+                "y": 0.80627,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "Relevance of Stoicism",
+                "x": 0.067386,
+                "y": 0.845369,
+                "w": 0.245082,
+                "h": 0.017152
+              },
+              {
+                "text": "• It requires a lot of 40",
+                "x": 0.062971,
+                "y": 0.872529,
+                "w": 0.264953,
+                "h": 0.01874
+              },
+              {
+                "text": "but Stoicism can help people to lead a",
+                "x": 0.515599,
+                "y": 0.869048,
+                "w": 0.388598,
+                "h": 0.018821
+              },
+              {
+                "text": "good life.",
+                "x": 0.117949,
+                "y": 0.89397,
+                "w": 0.09759,
+                "h": 0.020097
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.925269,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "It teaches people that having a strong character is more important than",
+                "x": 0.115814,
+                "y": 0.917239,
+                "w": 0.722366,
+                "h": 0.026475
+              },
+              {
+                "text": "anything else.",
+                "x": 0.118169,
+                "y": 0.943887,
+                "w": 0.143516,
+                "h": 0.017081
+              },
+              {
+                "text": "→ 0 p. 121",
+                "x": 0.632373,
+                "y": 0.98034,
+                "w": 0.137387,
+                "h": 0.022456
+              },
+              {
+                "text": "• p. 101",
+                "x": 0.784601,
+                "y": 0.978579,
+                "w": 0.106717,
+                "h": 0.024279
+              },
+              {
+                "text": "15",
+                "x": 0.919653,
+                "y": 0.979668,
+                "w": 0.035327,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-20.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 1-7",
+                "x": 0.060763,
+                "y": 0.019176,
+                "w": 0.16118,
+                "h": 0.017061
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.058555,
+                "y": 0.061473,
+                "w": 0.856682,
+                "h": 0.020602
+              },
+              {
+                "text": "In boxes 1-7 on your answer sheet, write",
+                "x": 0.058555,
+                "y": 0.102374,
+                "w": 0.419509,
+                "h": 0.018801
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.281557,
+                "y": 0.143275,
+                "w": 0.439381,
+                "h": 0.02045
+              },
+              {
+                "text": "FALSE",
+                "x": 0.135833,
+                "y": 0.165375,
+                "w": 0.07507,
+                "h": 0.017
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.281557,
+                "y": 0.165375,
+                "w": 0.434965,
+                "h": 0.017061
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.135833,
+                "y": 0.184075,
+                "w": 0.465876,
+                "h": 0.018811
+              },
+              {
+                "text": "Polar bears suffer from various health problems due to the build-up of fat under",
+                "x": 0.107129,
+                "y": 0.236774,
+                "w": 0.803692,
+                "h": 0.022241
+              },
+              {
+                "text": "their skin.",
+                "x": 0.104724,
+                "y": 0.258206,
+                "w": 0.104168,
+                "h": 0.020036
+              },
+              {
+                "text": "The study done by Liu and his colleagues compared different groups of polar bears.",
+                "x": 0.104922,
+                "y": 0.291174,
+                "w": 0.854474,
+                "h": 0.020491
+              },
+              {
+                "text": "3 Liu and colleagues were the first researchers to compare polar bears and brown",
+                "x": 0.056347,
+                "y": 0.323413,
+                "w": 0.863306,
+                "h": 0.020461
+              },
+              {
+                "text": "bears genetically.",
+                "x": 0.107129,
+                "y": 0.345573,
+                "w": 0.178843,
+                "h": 0.01874
+              },
+              {
+                "text": "4 Polar bears are able to control their levels of 'bad' cholesterol by genetic means.",
+                "x": 0.056193,
+                "y": 0.3712,
+                "w": 0.865864,
+                "h": 0.026483
+              },
+              {
+                "text": "Female polar bears are able to survive for about six months without food.",
+                "x": 0.104922,
+                "y": 0.40826,
+                "w": 0.746285,
+                "h": 0.018912
+              },
+              {
+                "text": "6 It was found that the bones of female polar bears were very weak when they came",
+                "x": 0.058555,
+                "y": 0.440772,
+                "w": 0.885386,
+                "h": 0.018831
+              },
+              {
+                "text": "out of their dens in spring.",
+                "x": 0.107129,
+                "y": 0.461172,
+                "w": 0.267161,
+                "h": 0.018882
+              },
+              {
+                "text": "The polar bear's mechanism for increasing bone density could also be used by",
+                "x": 0.10259,
+                "y": 0.490992,
+                "w": 0.803957,
+                "h": 0.024826
+              },
+              {
+                "text": "people one day.",
+                "x": 0.107129,
+                "y": 0.515572,
+                "w": 0.163388,
+                "h": 0.017131
+              },
+              {
+                "text": "18",
+                "x": 0.056347,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-21.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 8-13",
+                "x": 0.047515,
+                "y": 0.019176,
+                "w": 0.176636,
+                "h": 0.017061
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.047515,
+                "y": 0.061473,
+                "w": 0.262745,
+                "h": 0.015664
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.047515,
+                "y": 0.102374,
+                "w": 0.640304,
+                "h": 0.020501
+              },
+              {
+                "text": "Write your answers in boxes 8-13 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.143275,
+                "w": 0.576273,
+                "h": 0.01871
+              },
+              {
+                "text": "Reasons why polar bears should be protected",
+                "x": 0.153496,
+                "y": 0.228122,
+                "w": 0.684463,
+                "h": 0.025672
+              },
+              {
+                "text": "People think of bears as unintelligent and 8",
+                "x": 0.065061,
+                "y": 0.263921,
+                "w": 0.439591,
+                "h": 0.020895
+              },
+              {
+                "text": "However, this may not be correct. For example:",
+                "x": 0.060763,
+                "y": 0.296274,
+                "w": 0.485748,
+                "h": 0.020612
+              },
+              {
+                "text": "• In Tennoji Zoo, a bear has been seen using a branch as a 9",
+                "x": 0.060763,
+                "y": 0.328573,
+                "w": 0.657967,
+                "h": 0.020511
+              },
+              {
+                "text": "This allowed him to knock down some 10",
+                "x": 0.113753,
+                "y": 0.350673,
+                "w": 0.419509,
+                "h": 0.017121
+              },
+              {
+                "text": "• A wild polar bear worked out a method of reaching a platform where a",
+                "x": 0.060763,
+                "y": 0.381273,
+                "w": 0.759533,
+                "h": 0.020461
+              },
+              {
+                "text": "11 ..",
+                "x": 0.115961,
+                "y": 0.403373,
+                "w": 0.037535,
+                "h": 0.01533
+              },
+              {
+                "text": "... was located.",
+                "x": 0.308052,
+                "y": 0.405073,
+                "w": 0.15014,
+                "h": 0.015371
+              },
+              {
+                "text": "• Polar bears have displayed behaviour such as conscious manipulation of",
+                "x": 0.060763,
+                "y": 0.433932,
+                "w": 0.79486,
+                "h": 0.02045
+              },
+              {
+                "text": "objects and activity similar to a 12.....",
+                "x": 0.113753,
+                "y": 0.456072,
+                "w": 0.37535,
+                "h": 0.018761
+              },
+              {
+                "text": "Bears may also display emotions. For example:",
+                "x": 0.062971,
+                "y": 0.488321,
+                "w": 0.485748,
+                "h": 0.01875
+              },
+              {
+                "text": "• They may make movements suggesting 13",
+                "x": 0.060763,
+                "y": 0.51878,
+                "w": 0.492372,
+                "h": 0.020592
+              },
+              {
+                "text": "if disappointed",
+                "x": 0.736394,
+                "y": 0.52052,
+                "w": 0.152348,
+                "h": 0.018852
+              },
+              {
+                "text": "when hunting.",
+                "x": 0.113589,
+                "y": 0.540283,
+                "w": 0.146054,
+                "h": 0.020278
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.575071,
+                "w": 0.041951,
+                "h": 0.0119
+              },
+              {
+                "text": "They may form relationships with other species.",
+                "x": 0.102714,
+                "y": 0.573169,
+                "w": 0.496787,
+                "h": 0.018902
+              },
+              {
+                "text": "→ 0 p. 122",
+                "x": 0.747349,
+                "y": 0.98105,
+                "w": 0.139269,
+                "h": 0.022736
+              },
+              {
+                "text": "19",
+                "x": 0.915237,
+                "y": 0.984768,
+                "w": 0.030911,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-22.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.047515,
+                "y": 0.022576,
+                "w": 0.331192,
+                "h": 0.018882
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.049723,
+                "y": 0.064954,
+                "w": 0.887594,
+                "h": 0.020521
+              },
+              {
+                "text": "Passage 2 on pages 21 and 22.",
+                "x": 0.047515,
+                "y": 0.087145,
+                "w": 0.324568,
+                "h": 0.01873
+              },
+              {
+                "text": "Questions 14-20",
+                "x": 0.047515,
+                "y": 0.127975,
+                "w": 0.189883,
+                "h": 0.01704
+              },
+              {
+                "text": "Reading Passage 2 has seven paragraphs, A-G.",
+                "x": 0.047443,
+                "y": 0.168688,
+                "w": 0.501349,
+                "h": 0.020787
+              },
+              {
+                "text": "Choose the correct heading for each paragraph from the list of headings below.",
+                "x": 0.047515,
+                "y": 0.209412,
+                "w": 0.803692,
+                "h": 0.020562
+              },
+              {
+                "text": "Write the correct number, i-ix, in boxes 14-20 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.252054,
+                "w": 0.704334,
+                "h": 0.01872
+              },
+              {
+                "text": "List of Headings",
+                "x": 0.40741,
+                "y": 0.309874,
+                "w": 0.178843,
+                "h": 0.018761
+              },
+              {
+                "text": "i The areas and artefacts within the pyramid itself",
+                "x": 0.232982,
+                "y": 0.342123,
+                "w": 0.518867,
+                "h": 0.01875
+              },
+              {
+                "text": "ii A difficult task for those involved",
+                "x": 0.228566,
+                "y": 0.374321,
+                "w": 0.359895,
+                "h": 0.017152
+              },
+              {
+                "text": "ili A king who saved his people",
+                "x": 0.219735,
+                "y": 0.406773,
+                "w": 0.3334,
+                "h": 0.017152
+              },
+              {
+                "text": "iv A single certainty among other less definite facts",
+                "x": 0.221943,
+                "y": 0.437373,
+                "w": 0.532115,
+                "h": 0.01875
+              },
+              {
+                "text": "v An overview of the external buildings and areas",
+                "x": 0.228566,
+                "y": 0.469612,
+                "w": 0.516659,
+                "h": 0.018761
+              },
+              {
+                "text": "vi A pyramid design that others copied",
+                "x": 0.221943,
+                "y": 0.50181,
+                "w": 0.406262,
+                "h": 0.020562
+              },
+              {
+                "text": "vii An idea for changing the design of burial structures",
+                "x": 0.215319,
+                "y": 0.534272,
+                "w": 0.565234,
+                "h": 0.018882
+              },
+              {
+                "text": "vili An incredible experience despite the few remains",
+                "x": 0.210903,
+                "y": 0.564871,
+                "w": 0.551986,
+                "h": 0.020481
+              },
+              {
+                "text": "ix The answers to some unexpected questions",
+                "x": 0.219735,
+                "y": 0.598841,
+                "w": 0.492372,
+                "h": 0.01873
+              },
+              {
+                "text": "14 Paragraph A",
+                "x": 0.045307,
+                "y": 0.661771,
+                "w": 0.185467,
+                "h": 0.020612
+              },
+              {
+                "text": "15 Paragraph B",
+                "x": 0.047515,
+                "y": 0.69577,
+                "w": 0.181051,
+                "h": 0.018811
+              },
+              {
+                "text": "16 Paragraph C",
+                "x": 0.047515,
+                "y": 0.72807,
+                "w": 0.181051,
+                "h": 0.01871
+              },
+              {
+                "text": "17 Paragraph D",
+                "x": 0.047515,
+                "y": 0.760269,
+                "w": 0.181051,
+                "h": 0.017101
+              },
+              {
+                "text": "18 Paragraph E",
+                "x": 0.049723,
+                "y": 0.792467,
+                "w": 0.178843,
+                "h": 0.017405
+              },
+              {
+                "text": "19 Paragraph F",
+                "x": 0.047515,
+                "y": 0.823269,
+                "w": 0.178843,
+                "h": 0.018801
+              },
+              {
+                "text": "20 Paragraph G",
+                "x": 0.047515,
+                "y": 0.857269,
+                "w": 0.183259,
+                "h": 0.017
+              },
+              {
+                "text": "20",
+                "x": 0.043099,
+                "y": 0.984768,
+                "w": 0.037535,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-25.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 21-24",
+                "x": 0.038683,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.040891,
+                "y": 0.058276,
+                "w": 0.267161,
+                "h": 0.015381
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.038683,
+                "y": 0.098893,
+                "w": 0.638096,
+                "h": 0.018882
+              },
+              {
+                "text": "Write your answers in boxes 21-24 on your answer sheet.",
+                "x": 0.038683,
+                "y": 0.139794,
+                "w": 0.587313,
+                "h": 0.020481
+              },
+              {
+                "text": "The Step Pyramid of Djoser",
+                "x": 0.281557,
+                "y": 0.185775,
+                "w": 0.412886,
+                "h": 0.0272
+              },
+              {
+                "text": "The complex that includes the Step Pyramid and its surroundings is considered to be",
+                "x": 0.056347,
+                "y": 0.238474,
+                "w": 0.861098,
+                "h": 0.020542
+              },
+              {
+                "text": "as big as an Egyptian 21",
+                "x": 0.056347,
+                "y": 0.265542,
+                "w": 0.249498,
+                "h": 0.018831
+              },
+              {
+                "text": ".... of the past. The area outside the pyramid",
+                "x": 0.451569,
+                "y": 0.257174,
+                "w": 0.465876,
+                "h": 0.0272
+              },
+              {
+                "text": "included accommodation that was occupied by 22",
+                "x": 0.051931,
+                "y": 0.289474,
+                "w": 0.518867,
+                "h": 0.022191
+              },
+              {
+                "text": ".., along with",
+                "x": 0.690027,
+                "y": 0.289474,
+                "w": 0.178843,
+                "h": 0.02045
+              },
+              {
+                "text": "many other buildings and features.",
+                "x": 0.056347,
+                "y": 0.316673,
+                "w": 0.353271,
+                "h": 0.0187
+              },
+              {
+                "text": "A wall ran around the outside of the complex and a number of false entrances were",
+                "x": 0.056347,
+                "y": 0.362573,
+                "w": 0.843435,
+                "h": 0.01871
+              },
+              {
+                "text": "built into this. In addition, a long 23",
+                "x": 0.054139,
+                "y": 0.388073,
+                "w": 0.357687,
+                "h": 0.0204
+              },
+              {
+                "text": "...... encircled the wall. As a result,",
+                "x": 0.561966,
+                "y": 0.388073,
+                "w": 0.340023,
+                "h": 0.018882
+              },
+              {
+                "text": "any visitors who had not been invited were cleverly prevented from entering the",
+                "x": 0.056347,
+                "y": 0.413482,
+                "w": 0.8059,
+                "h": 0.018791
+              },
+              {
+                "text": "pyramid grounds unless they knew the 24...",
+                "x": 0.056347,
+                "y": 0.439072,
+                "w": 0.441589,
+                "h": 0.018791
+              },
+              {
+                "text": ".... of the real entrance.",
+                "x": 0.64366,
+                "y": 0.439072,
+                "w": 0.231834,
+                "h": 0.018791
+              },
+              {
+                "text": "Questions 25-26",
+                "x": 0.038683,
+                "y": 0.529172,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.038683,
+                "y": 0.571671,
+                "w": 0.271577,
+                "h": 0.018902
+              },
+              {
+                "text": "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+                "x": 0.038683,
+                "y": 0.612329,
+                "w": 0.666799,
+                "h": 0.018842
+              },
+              {
+                "text": "Which TWO of the following points does the writer make about King Djoser?",
+                "x": 0.036475,
+                "y": 0.65323,
+                "w": 0.77278,
+                "h": 0.01874
+              },
+              {
+                "text": "A Initially he had to be persuaded to build in stone rather than clay.",
+                "x": 0.08505,
+                "y": 0.683688,
+                "w": 0.70875,
+                "h": 0.022282
+              },
+              {
+                "text": "B There is disagreement concerning the length of his reign.",
+                "x": 0.087258,
+                "y": 0.705879,
+                "w": 0.631472,
+                "h": 0.020491
+              },
+              {
+                "text": "C He failed to appreciate Imhotep's part in the design of the Step Pyramid.",
+                "x": 0.087258,
+                "y": 0.72807,
+                "w": 0.78382,
+                "h": 0.01871
+              },
+              {
+                "text": "D Afew of his possessions were still in his tomb when archaeologists found it.",
+                "x": 0.087258,
+                "y": 0.74847,
+                "w": 0.814731,
+                "h": 0.018761
+              },
+              {
+                "text": "E He criticised the design and construction of other pyramids in Egypt.",
+                "x": 0.087258,
+                "y": 0.76887,
+                "w": 0.744077,
+                "h": 0.020552
+              },
+              {
+                "text": "→ • р. 122",
+                "x": 0.738601,
+                "y": 0.983048,
+                "w": 0.134685,
+                "h": 0.01872
+              },
+              {
+                "text": "23",
+                "x": 0.908613,
+                "y": 0.981368,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-28.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.065179,
+                "y": 0.019176,
+                "w": 0.189883,
+                "h": 0.017061
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.065179,
+                "y": 0.061473,
+                "w": 0.393014,
+                "h": 0.020602
+              },
+              {
+                "text": "Write the correct letter in boxes 27-30 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.102374,
+                "w": 0.616016,
+                "h": 0.020501
+              },
+              {
+                "text": "27 The first paragraph tells us about",
+                "x": 0.060763,
+                "y": 0.144975,
+                "w": 0.390806,
+                "h": 0.01875
+              },
+              {
+                "text": "A the kinds of jobs that will be most affected by the growth of Al.",
+                "x": 0.113753,
+                "y": 0.175473,
+                "w": 0.677839,
+                "h": 0.020501
+              },
+              {
+                "text": "B the extent to which Al will alter the nature of the work that people do.",
+                "x": 0.113753,
+                "y": 0.197664,
+                "w": 0.744077,
+                "h": 0.01871
+              },
+              {
+                "text": "C the proportion of the world's labour force who will have jobs in Al in the future.",
+                "x": 0.115961,
+                "y": 0.218074,
+                "w": 0.834603,
+                "h": 0.01701
+              },
+              {
+                "text": "D the difference between ways that embodied and disembodied Al will impact",
+                "x": 0.113753,
+                "y": 0.238474,
+                "w": 0.812523,
+                "h": 0.018801
+              },
+              {
+                "text": "on workers.",
+                "x": 0.164536,
+                "y": 0.262061,
+                "w": 0.121437,
+                "h": 0.013924
+              },
+              {
+                "text": "28 According to the second paragraph, what is Stella Pachidi's view of the 'knowledge",
+                "x": 0.062971,
+                "y": 0.291174,
+                "w": 0.889801,
+                "h": 0.020491
+              },
+              {
+                "text": "economy'?",
+                "x": 0.110959,
+                "y": 0.312824,
+                "w": 0.116343,
+                "h": 0.022381
+              },
+              {
+                "text": "A Itis having an influence on the number of jobs available.",
+                "x": 0.113632,
+                "y": 0.34229,
+                "w": 0.625039,
+                "h": 0.022821
+              },
+              {
+                "text": "B Itis changing people's attitudes towards their occupations.",
+                "x": 0.113753,
+                "y": 0.365973,
+                "w": 0.64472,
+                "h": 0.018791
+              },
+              {
+                "text": "It is the main reason why the production sector is declining.",
+                "x": 0.16012,
+                "y": 0.386373,
+                "w": 0.604977,
+                "h": 0.018842
+              },
+              {
+                "text": "D It is a key factor driving current developments in the workplace.",
+                "x": 0.113753,
+                "y": 0.406773,
+                "w": 0.693294,
+                "h": 0.0204
+              },
+              {
+                "text": "29 What did Pachidi observe at the telecommunications company?",
+                "x": 0.062971,
+                "y": 0.439072,
+                "w": 0.695502,
+                "h": 0.018791
+              },
+              {
+                "text": "A staff disagreeing with the recommendations of Al",
+                "x": 0.111545,
+                "y": 0.471352,
+                "w": 0.54757,
+                "h": 0.01872
+              },
+              {
+                "text": "B staff feeling resentful about the intrusion of Al in their work",
+                "x": 0.113753,
+                "y": 0.491772,
+                "w": 0.640304,
+                "h": 0.020481
+              },
+              {
+                "text": "C",
+                "x": 0.113753,
+                "y": 0.513872,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "staff making sure that Al produces the results that they want",
+                "x": 0.162328,
+                "y": 0.513872,
+                "w": 0.611601,
+                "h": 0.018831
+              },
+              {
+                "text": "D",
+                "x": 0.113753,
+                "y": 0.534272,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "staff allowing Al to carry out tasks they ought to do themselves",
+                "x": 0.16012,
+                "y": 0.534272,
+                "w": 0.638096,
+                "h": 0.018882
+              },
+              {
+                "text": "30 In his recently published research, Ewan McGaughey",
+                "x": 0.062971,
+                "y": 0.566571,
+                "w": 0.593937,
+                "h": 0.018781
+              },
+              {
+                "text": "A challenges the idea that redundancy is a negative thing.",
+                "x": 0.111545,
+                "y": 0.598841,
+                "w": 0.620432,
+                "h": 0.01873
+              },
+              {
+                "text": "shows the profound effect of mass unemployment on society.",
+                "x": 0.162242,
+                "y": 0.61739,
+                "w": 0.625009,
+                "h": 0.022358
+              },
+              {
+                "text": "Chighlights some differences between past and future job losses.",
+                "x": 0.113753,
+                "y": 0.639671,
+                "w": 0.695502,
+                "h": 0.020521
+              },
+              {
+                "text": "D illustrates how changes in the job market can be successfully handled.",
+                "x": 0.113753,
+                "y": 0.660071,
+                "w": 0.766157,
+                "h": 0.018831
+              },
+              {
+                "text": "26",
+                "x": 0.062971,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-29.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 31-34",
+                "x": 0.045307,
+                "y": 0.019176,
+                "w": 0.189883,
+                "h": 0.017061
+              },
+              {
+                "text": "Complete the summary using the list of words, A-G, below.",
+                "x": 0.043099,
+                "y": 0.061473,
+                "w": 0.600561,
+                "h": 0.020602
+              },
+              {
+                "text": "Write the correct letter, A-G, in boxes 31-34 on your answer sheet.",
+                "x": 0.043099,
+                "y": 0.102374,
+                "w": 0.686671,
+                "h": 0.018801
+              },
+              {
+                "text": "The 'algorithmication' of jobs",
+                "x": 0.274933,
+                "y": 0.161975,
+                "w": 0.434965,
+                "h": 0.025682
+              },
+              {
+                "text": "Stella Pachidi of Cambridge Judge Business School has been focusing on the",
+                "x": 0.043099,
+                "y": 0.216374,
+                "w": 0.790444,
+                "h": 0.01871
+              },
+              {
+                "text": "'algorithmication' of jobs which rely not on production but on 31",
+                "x": 0.038683,
+                "y": 0.241874,
+                "w": 0.642512,
+                "h": 0.0204
+              },
+              {
+                "text": "While monitoring a telecommunications company, Pachidi observed a growing",
+                "x": 0.043099,
+                "y": 0.291174,
+                "w": 0.766157,
+                "h": 0.020491
+              },
+              {
+                "text": "332 o• the recommendations made by Al, as workers begin to learn",
+                "x": 0.040891,
+                "y": 0.318191,
+                "w": 0.839019,
+                "h": 0.018882
+              },
+              {
+                "text": "through the 'algorithm's eyes'. Meanwhile, staff are deterred from experimenting and using",
+                "x": 0.038683,
+                "y": 0.343863,
+                "w": 0.889801,
+                "h": 0.022191
+              },
+              {
+                "text": "their own 33",
+                "x": 0.040891,
+                "y": 0.372581,
+                "w": 0.123645,
+                "h": 0.015664
+              },
+              {
+                "text": "..., and are therefore prevented from achieving innovation.",
+                "x": 0.33234,
+                "y": 0.372581,
+                "w": 0.574065,
+                "h": 0.020592
+              },
+              {
+                "text": "To avoid the kind of situations which Pachidi observed, researchers are trying to",
+                "x": 0.040891,
+                "y": 0.420373,
+                "w": 0.812523,
+                "h": 0.020521
+              },
+              {
+                "text": "make Al's decision-making process easier to comprehend, and to increase users'",
+                "x": 0.040891,
+                "y": 0.447421,
+                "w": 0.827979,
+                "h": 0.020552
+              },
+              {
+                "text": "34",
+                "x": 0.040891,
+                "y": 0.473072,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "...with regard to the technology.",
+                "x": 0.239606,
+                "y": 0.476472,
+                "w": 0.320152,
+                "h": 0.017071
+              },
+              {
+                "text": "A",
+                "x": 0.133625,
+                "y": 0.534272,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "D",
+                "x": 0.133625,
+                "y": 0.559772,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "G",
+                "x": 0.133625,
+                "y": 0.586971,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "pressure",
+                "x": 0.179922,
+                "y": 0.537412,
+                "w": 0.095081,
+                "h": 0.01582
+              },
+              {
+                "text": "promotion",
+                "x": 0.18436,
+                "y": 0.5613,
+                "w": 0.103868,
+                "h": 0.017342
+              },
+              {
+                "text": "information",
+                "x": 0.179835,
+                "y": 0.584598,
+                "w": 0.119542,
+                "h": 0.018347
+              },
+              {
+                "text": "B satisfaction",
+                "x": 0.422865,
+                "y": 0.534272,
+                "w": 0.170012,
+                "h": 0.017142
+              },
+              {
+                "text": "E reliance",
+                "x": 0.425073,
+                "y": 0.55968,
+                "w": 0.132477,
+                "h": 0.017091
+              },
+              {
+                "text": "C",
+                "x": 0.687819,
+                "y": 0.535972,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.687819,
+                "y": 0.559772,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "intuition",
+                "x": 0.727508,
+                "y": 0.535776,
+                "w": 0.092842,
+                "h": 0.015692
+              },
+              {
+                "text": "confidence",
+                "x": 0.736394,
+                "y": 0.561472,
+                "w": 0.114813,
+                "h": 0.0153
+              },
+              {
+                "text": "27",
+                "x": 0.913029,
+                "y": 0.983068,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-1/page-30.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 35-40",
+                "x": 0.078426,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Look at the following statements (Questions 35-40) and the list of people below.",
+                "x": 0.076131,
+                "y": 0.059566,
+                "w": 0.812717,
+                "h": 0.022828
+              },
+              {
+                "text": "Match each statement with the correct person, A, B or C.",
+                "x": 0.076104,
+                "y": 0.10052,
+                "w": 0.583135,
+                "h": 0.02284
+              },
+              {
+                "text": "Write the correct letter, A, B or C, in boxes 35-40 on your answer sheet.",
+                "x": 0.078268,
+                "y": 0.141424,
+                "w": 0.731128,
+                "h": 0.024596
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.076218,
+                "y": 0.182375,
+                "w": 0.457044,
+                "h": 0.020511
+              },
+              {
+                "text": "35 Greater levels of automation will not result in lower employment.",
+                "x": 0.075939,
+                "y": 0.220786,
+                "w": 0.702713,
+                "h": 0.026949
+              },
+              {
+                "text": "36 There are several reasons why Al is appealing to businesses.",
+                "x": 0.076218,
+                "y": 0.257174,
+                "w": 0.675631,
+                "h": 0.018811
+              },
+              {
+                "text": "37 Al's potential to transform people's lives has parallels with major cultural shifts",
+                "x": 0.07401,
+                "y": 0.289474,
+                "w": 0.841227,
+                "h": 0.022191
+              },
+              {
+                "text": "which occurred in previous eras.",
+                "x": 0.122228,
+                "y": 0.307207,
+                "w": 0.334282,
+                "h": 0.025373
+              },
+              {
+                "text": "38",
+                "x": 0.07401,
+                "y": 0.340473,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "It is important to be aware of the range of problems that Al causes.",
+                "x": 0.122442,
+                "y": 0.341473,
+                "w": 0.680355,
+                "h": 0.022862
+              },
+              {
+                "text": "39 People are going to follow a less conventional career path than in the past.",
+                "x": 0.073794,
+                "y": 0.372684,
+                "w": 0.810723,
+                "h": 0.026215
+              },
+              {
+                "text": "40",
+                "x": 0.07401,
+                "y": 0.403373,
+                "w": 0.030911,
+                "h": 0.0204
+              },
+              {
+                "text": "Authorities should take measures to ensure that there will be adequately paid work",
+                "x": 0.115853,
+                "y": 0.406403,
+                "w": 0.848065,
+                "h": 0.023174
+              },
+              {
+                "text": "for everyone.",
+                "x": 0.12186,
+                "y": 0.426833,
+                "w": 0.140497,
+                "h": 0.020624
+              },
+              {
+                "text": "A",
+                "x": 0.376499,
+                "y": 0.515572,
+                "w": 0.019871,
+                "h": 0.0187
+              },
+              {
+                "text": "B",
+                "x": 0.376499,
+                "y": 0.546172,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.376499,
+                "y": 0.576771,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "List of people",
+                "x": 0.447153,
+                "y": 0.484841,
+                "w": 0.152348,
+                "h": 0.018831
+              },
+              {
+                "text": "Stella Pachidi",
+                "x": 0.427281,
+                "y": 0.517272,
+                "w": 0.143516,
+                "h": 0.017172
+              },
+              {
+                "text": "Hamish Low",
+                "x": 0.42713,
+                "y": 0.545472,
+                "w": 0.128363,
+                "h": 0.018399
+              },
+              {
+                "text": "Ewan McGaughey",
+                "x": 0.427281,
+                "y": 0.57665,
+                "w": 0.189883,
+                "h": 0.020521
+              },
+              {
+                "text": "28",
+                "x": 0.069594,
+                "y": 0.983068,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "→O p. 122",
+                "x": 0.131137,
+                "y": 0.978546,
+                "w": 0.155116,
+                "h": 0.026044
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "egg",
+      "tower",
+      "car",
+      "animals",
+      "bridge",
+      "movie|film",
+      "decorate",
+      "Wednesdays",
+      "Fradstone",
+      "parking",
+      "C",
+      "A",
+      "B",
+      "C",
+      "H",
+      "C",
+      "G",
+      "B",
+      "I",
+      "A",
+      "C",
+      "E",
+      "B",
+      "E",
+      "D",
+      "C",
+      "A",
+      "H",
+      "F",
+      "G",
+      "practical",
+      "publication",
+      "choices",
+      "negative",
+      "play",
+      "capitalism",
+      "depression",
+      "logic",
+      "opportunity",
+      "practice|practise"
+    ],
+    "reading": [
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "FALSE",
+      "TRUE",
+      "violent",
+      "tool",
+      "meat",
+      "photographer",
+      "game",
+      "frustration",
+      "iv",
+      "vii",
+      "ii",
+      "v",
+      "i",
+      "viii",
+      "vi",
+      "city",
+      "priests",
+      "trench",
+      "location",
+      "B",
+      "D",
+      "B",
+      "D",
+      "C",
+      "D",
+      "G",
+      "E",
+      "C",
+      "F",
+      "B",
+      "A",
+      "C",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "completionOptions": {}
+}

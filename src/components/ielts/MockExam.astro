@@ -47,14 +47,17 @@ const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds
   </main>
 
   <div class="overlay" data-start><section class="modal" role="dialog" aria-modal="true" aria-labelledby="start-title"><div class="modal-head"><h2 id="start-title">剑雅{bookNumber} Test {testNumber} · {mode==='simulation'?'仿真模考':mode==='custom'?'自选模考':labels[subject]}</h2></div><div class="modal-body"><p>答案、计时和高亮仅保存在本机浏览器。</p><p>{subject === 'listening' ? `点击开始即连续播放四段录音，不能暂停或跳转，可调整速度。标准速度下约 ${formatExamDuration(initialSeconds)}，Part 4 检查提示语结束后计时 2 分钟。` : '60 分钟计时。'}{mode!=='single'?'完成当前科目后自动进入下一科。':''}写作需人工评阅。</p><label><input type="checkbox" data-ready /> 准备开始</label></div><div class="modal-actions"><button type="button" data-resume disabled>继续上次练习</button><button type="button" class="primary" data-start-button disabled>确认开始考试</button>{mode==='custom'&&<button type="button" data-exit>关闭</button>}</div></section></div>
-  <dialog class="result-dialog" data-dialog><div data-dialog-body></div><form method="dialog"><button type="button" data-reset>重新开始</button><button>关闭</button><a href="/ielts#mock">返回模考页面</a></form></dialog>
+  <dialog class="result-dialog" data-dialog><div data-dialog-body></div><p data-notebook-status role="status"></p><form method="dialog"><button type="button" data-reset>重新开始</button><button>关闭</button><a href="/ielts/mistakes">查看错题本</a><a href="/ielts#mock">返回模考页面</a></form></dialog>
   <script is:inline type="application/json" id="exam-payload" set:html={payload} />
 
   <script>
     import { setupReadingTools } from '../../lib/ielts/mock/reading-tools';
     import { setupTextHighlights } from '../../lib/ielts/mock/text-highlights';
+    import { renderScanPage } from '../../lib/ielts/mock/scan-page';
     import { setupListeningPlayer, cleanPlayback, type Playback } from '../../lib/ielts/mock/listening-player';
     import { scoreAnswers } from '../../lib/ielts/mock/scoring';
+    import {examMistakes,mergeMistakes} from '../../lib/ielts/notebooks';
+    import {loadNotebook,saveNotebook} from '../../lib/ielts/notebook-store';
     import { examFontSize, normalizeHighlights, type HighlightRange } from '../../lib/ielts/mock/reading-state';
     import type { Choice } from '../../lib/ielts/mock/test1-questions';
     import type {ExamPayload} from '../../lib/ielts/mock/papers';
@@ -128,6 +131,7 @@ const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds
       const runSummary=()=>`模考已完成。${data.subjects.map(subject=>subject==='writing'?'Writing：人工评阅':`${subject==='listening'?'Listening':'Reading'}：${run.scores[subject]??0} / 40`).join('；')}`;
       const finishStage=()=>{
         if(state.finished)return;
+        if(data.subject!=='writing')try{const mistakes=examMistakes(data,state.answers);saveNotebook(data.accountId,mergeMistakes(loadNotebook(data.accountId),mistakes));const message=document.querySelector<HTMLElement>('[data-notebook-status]');if(message)message.textContent=`${mistakes.length} 项错题已收录到本机错题本。`;}catch{const message=document.querySelector<HTMLElement>('[data-notebook-status]');if(message)message.textContent='错题本保存失败，请检查本机存储空间；本次考试结果仍可查看。';}
         state.finished=true;state.deadline=Date.now();save();
         const score=data.subject==='writing'?undefined:scoreAnswers(state.answers,data.answerKey,data.blocks);
         if(data.mode!=='single'){
@@ -190,6 +194,7 @@ const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds
       const renderBlocks = () => {
         const target = $<HTMLElement>('[data-question-content]'); target?.replaceChildren(); if (!target) return;
         for (const block of data.blocks[state.active] || []) {
+          if(block.type==='scan')target.append(renderScanPage(block.page));
           if(block.type==='image'){const img=element('img','question-image');img.src=block.url;img.alt=block.alt;target.append(img);}
           if (block.type === 'heading') target.append(element('h3', 'question-heading', block.text));
           if (block.type === 'subheading') target.append(element('h4', 'question-subheading', block.text));
@@ -260,9 +265,10 @@ const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds
         const section = data.sections[state.active]; if (!section) return;
         const title = $<HTMLElement>('[data-section-title]'); if (title) title.textContent = section.title;
         const range = $<HTMLElement>('[data-section-range]'); if (range) range.textContent = data.subject === 'writing' ? `Task ${state.active + 1}` : `Questions ${section.first}–${section.last}`;
-        const instructions = $<HTMLElement>('[data-instructions]'); if (instructions) instructions.textContent = section.instructions;
+        const instructions = $<HTMLElement>('[data-instructions]'); if (instructions) { instructions.textContent = section.instructions; instructions.hidden = !section.instructions.trim(); }
         const passage = $<HTMLElement>('[data-passage]'); passage?.replaceChildren();
-        if (data.subject === 'reading' && passage) {
+        for(const page of section.scans||[])passage?.append(renderScanPage(page));
+        if (data.subject === 'reading' && passage && !section.scans?.length) {
           passage.append(element('p', 'passage-intro', `You should spend about 20 minutes on Questions ${section.first}–${section.last}, which are based on Reading Passage ${state.active + 1} below.`));
           passage.append(element('h2', 'passage-title', section.title));
         }
@@ -352,6 +358,12 @@ const initialClock = `${Math.floor(initialSeconds / 60)}:${String(initialSeconds
   .highlight-tools [data-highlight-add="blue"] { background: #bce4ff; }
   [data-highlight-region] :global(mark[data-reading-highlight]) { background: #fff09a; color: inherit; padding: 0; }
   [data-highlight-region] :global(mark[data-color="blue"]) { background: #bce4ff; }
+  :global(.scan-page) { position: relative; container-type: inline-size; margin: 0 0 24px; background: #fff; }
+  :global(.scan-page > img) { display: block; width: 100%; height: auto; pointer-events: none; user-select: none; }
+  :global(.scan-text-layer) { position: absolute; inset: 0; }
+  :global(.scan-text-line) { position: absolute; color: transparent; white-space: pre; line-height: 1; font-family: Arial, sans-serif; transform-origin: left top; }
+  :global(.scan-text-line mark[data-reading-highlight]) { color: transparent !important; background: #fff09a88; }
+  :global(.scan-text-line mark[data-color="blue"]) { background: #bce4ff88; }
   .exam :global(.question-image) { display:block;max-width:100%;height:auto;margin:20px auto; }
   .audio-speed { grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:end;align-items:center;gap:8px;min-width:0;padding:0 0 2px;color:#fff;font-size:12px; }
   .test-nav .audio-speed label { font-size:12px; }

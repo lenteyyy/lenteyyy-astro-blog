@@ -5,6 +5,9 @@ export const json = (body: unknown, status = 200, headers: Record<string, string
 	headers: {
 		'content-type': 'application/json; charset=utf-8',
 		'cache-control': 'no-store, private',
+		'cdn-cache-control': 'no-store',
+		'vercel-cdn-cache-control': 'no-store',
+		'vary': 'Cookie',
 		...headers,
 	},
 });
@@ -16,7 +19,7 @@ export const sameOrigin = (request: Request): boolean => {
 };
 
 export async function readJson<T>(request: Request, maxBytes = 12_000): Promise<T> {
-	if (!request.headers.get('content-type')?.toLowerCase().startsWith('application/json')) throw new Error('invalid_content_type');
+	if (request.headers.get('content-type')?.split(';')[0].trim().toLowerCase() !== 'application/json') throw new Error('invalid_content_type');
 	const statedSize = Number(request.headers.get('content-length') || 0);
 	if (statedSize > maxBytes) throw new Error('payload_too_large');
 	const reader = request.body?.getReader();

@@ -1,128 +1,62 @@
 ---
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import IeltsIcon from '../../components/ielts/IeltsIcon.astro';
-import { DICTATION_KINDS, DICTATION_LABELS } from '../../lib/ielts/dictation';
+import { dictationBooks, P1_CATEGORIES } from '../../lib/ielts/dictation-library';
 export const prerender = true;
 ---
-<IeltsLayout title="单词听写 · Lenteyyy IELTS" description="练习 IELTS Part 1 中的车牌、航班号与电话号码听写。" telemetry={false}>
+<IeltsLayout title="单词听写 · Lenteyyy IELTS" description="IELTS机经答案词、易错词、地图词、Part 1与九分学长词表听写练习。" telemetry={false}>
   <main data-dictation>
-    <a class="back" href="/ielts#notes">← 返回学习中心</a>
+    <header><a class="back" href="/ielts#notes">← 学习中心</a><div class="tools"><button type="button" data-fullscreen>全屏</button><button type="button" data-open-settings>设置</button></div></header>
     <h1>单词听写</h1>
-    <div class="banks"><span aria-current="page">Part 1</span><button type="button" disabled>其他词库 · 待更新</button></div>
-    <div class="settings"><label>内容<select data-kind aria-label="听写内容">{DICTATION_KINDS.map(kind => <option value={kind}>{DICTATION_LABELS[kind]}</option>)}</select></label><label>速度<select data-rate aria-label="听写速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select></label><button type="button" class="primary" data-start disabled>开始听写</button></div>
-    <p class="speech-status" data-speech-status role="status">录音待更新</p>
-    <section class="practice" data-practice hidden aria-label="听写练习">
-      <audio controls preload="none" data-audio aria-label="听写录音"></audio>
-      <div class="practice-head"><span data-progress>1 / 10</span><button type="button" class="play" data-play aria-label="重播录音"><IeltsIcon name="play" size={22} />重播</button></div>
-      <form data-answer-form><label for="dictation-answer">你的答案</label><div class="answer-row"><input id="dictation-answer" data-answer maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" required /><button class="primary" type="submit" data-check disabled>检查</button></div></form>
-      <p class="feedback" data-feedback role="status"></p>
-      <button type="button" class="next" data-next hidden>下一题 →</button>
+    <section data-library aria-label="选择词书">
+      <div class="books">{dictationBooks.map((book, i) => <button type="button" data-book={book.id} aria-pressed={i === 0 ? 'true' : 'false'}><IeltsIcon name="book" /><span>{book.title}<small>{book.items.length} 条</small></span></button>)}</div>
+      <div class="setup">
+        <label data-category-label hidden>内容<select data-category><option value="all">全部</option>{Object.entries(P1_CATEGORIES).map(([id, title]) => <option value={id}>{title}</option>)}</select></label>
+        <label>每组词数<select data-size><option value="10">10</option><option value="20" selected>20</option><option value="50">50</option><option value="all">全部</option></select></label>
+        <button class="primary" type="button" data-start>开始听写</button><button type="button" data-review disabled>复习错词 <span data-wrong-count>0</span></button><button class="quiet" type="button" data-clear-wrong disabled>清空错词</button>
+      </div>
+      <p class="muted" data-book-status>英语发音 · 错词仅保存在当前浏览器</p>
     </section>
-    <p class="summary" data-summary role="status" hidden></p>
+    <section class="practice" data-practice hidden aria-label="听写练习">
+      <div class="practice-head"><span data-book-title></span><span data-progress></span><button type="button" data-exit>结束练习</button></div>
+      <div class="stage">
+        <p class="prompt" data-prompt>根据发音写出答案</p>
+        <form data-answer-form><label class="sr-only" for="dictation-answer">你的答案</label><input id="dictation-answer" data-answer maxlength="128" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="dictation-feedback" /><div class="actions"><button type="button" data-play aria-label="重播录音"><IeltsIcon name="play" size={24} />重播</button><button class="primary" type="submit" data-check>检查</button><button type="button" data-next hidden>下一词 →</button><button type="button" data-save-word>收藏单词</button></div></form><p data-word-save-status role="status"></p>
+        <p id="dictation-feedback" class="feedback" data-feedback role="status"></p><p class="muted audio-status" data-audio-status role="status"></p>
+      </div>
+      <progress data-progress-bar max="100" value="0" aria-label="听写进度"></progress>
+      <div class="practice-foot"><span>Enter 检查 / 下一词 · Alt + R 重播</span><label>速度<select data-quick-rate aria-label="播放速度"><option value="0.75">0.75×</option><option value="0.9">0.9×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label></div>
+    </section>
+    <section class="result" data-result hidden aria-label="练习结果"><h2>本组完成</h2><p data-summary></p><div class="actions"><button class="primary" type="button" data-again>再练一组</button><button type="button" data-result-review>复习错词</button><button type="button" data-library-button>选择词书</button></div></section>
+    <audio data-audio preload="none" aria-hidden="true"></audio>
+    <dialog data-settings aria-labelledby="settings-title"><div class="dialog-head"><h2 id="settings-title">设置</h2><button type="button" data-close-settings aria-label="关闭设置">×</button></div><div class="settings-grid">
+      <label>播放速度<select data-setting="rate"><option value="0.75">0.75×</option><option value="0.9">0.9×</option><option value="1">1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label>
+      <label>播放遍数<select data-setting="repeats"><option value="1">1遍</option><option value="2">2遍</option><option value="3">3遍</option></select></label>
+      <label>音量<input type="range" data-setting="volume" min="0" max="1" step="0.1" aria-label="录音音量" /></label>
+      <label>答题字号<select data-setting="fontSize"><option value="24">标准</option><option value="30">大</option><option value="36">更大</option></select></label>
+      <label class="toggle">乱序播放<input type="checkbox" data-setting="shuffle" /></label>
+      <label class="toggle">错词循环<small>连续正确两次后通过</small><input type="checkbox" data-setting="loopWrong" /></label>
+      <label class="toggle">错后改对才继续<input type="checkbox" data-setting="requireCorrection" /></label>
+      <label class="toggle">拼写正确自动提交<input type="checkbox" data-setting="autoSubmit" /></label>
+      <label class="toggle">显示答案<input type="checkbox" data-setting="showWord" /></label>
+      <label class="toggle">连续听写<input type="checkbox" data-setting="continuous" /></label>
+      <label>答题间隔<select data-setting="interval"><option value="3">3秒</option><option value="5">5秒</option><option value="8">8秒</option><option value="10">10秒</option></select></label>
+    </div><p class="muted">乱序与错词循环在下一组生效。Esc 关闭设置。</p></dialog>
   </main>
-  <script>
-    import { randomIndex, normalizeDictation, DICTATION_KINDS, type DictationKind } from '../../lib/ielts/dictation';
-    import { recordedDictations, readyDictations, type RecordedDictation } from '../../lib/ielts/dictation-bank';
-    const root = document.querySelector<HTMLElement>('[data-dictation]');
-    if (root) {
-      const $ = <T extends Element>(selector: string) => root.querySelector<T>(selector)!;
-      const kind = $<HTMLSelectElement>('[data-kind]');
-      const rate = $<HTMLSelectElement>('[data-rate]');
-      const start = $<HTMLButtonElement>('[data-start]');
-      const input = $<HTMLInputElement>('[data-answer]');
-      const check = $<HTMLButtonElement>('[data-check]');
-      const next = $<HTMLButtonElement>('[data-next]');
-      const play = $<HTMLButtonElement>('[data-play]');
-      const status = $<HTMLElement>('[data-speech-status]');
-      const feedback = $<HTMLElement>('[data-feedback]');
-      const practice = $<HTMLElement>('[data-practice]');
-      const summary = $<HTMLElement>('[data-summary]');
-      const audio = $<HTMLAudioElement>('[data-audio]');
-      let current = '', index = 0, correct = 0, checked = false;
-      let questions: RecordedDictation[] = [];
-      const selectedKind = () => DICTATION_KINDS.includes(kind.value as DictationKind) ? kind.value as DictationKind : 'plate';
-      const availability = () => {
-        const ready = readyDictations(recordedDictations[selectedKind()]);
-        start.disabled = ready.length === 0;
-        status.textContent = ready.length ? '' : '录音待更新';
-      };
-      const applyRate = () => { const speed = Number(rate.value); audio.playbackRate = [0.75, 1, 1.25].includes(speed) ? speed : 1; };
-      const replay = () => { if (!current || !audio.src) return; audio.currentTime = 0; applyRate(); void audio.play().catch(() => { status.textContent = '播放失败，请重播。'; }); };
-      const newQuestion = () => {
-        audio.pause(); checked = false; input.value = ''; input.disabled = false; check.disabled = true;
-        feedback.textContent = ''; feedback.removeAttribute('data-correct'); next.hidden = true;
-        current = questions[index].answer; audio.src = questions[index].audio!;
-        $<HTMLElement>('[data-progress]').textContent = `${index + 1} / ${questions.length}`;
-        input.inputMode = selectedKind() === 'phone' ? 'tel' : 'text';
-        input.focus(); replay();
-      };
-      start.addEventListener('click', () => {
-        questions = readyDictations(recordedDictations[selectedKind()]);
-        if (!questions.length) return;
-        try { for (let i = questions.length - 1; i > 0; i--) { const j = randomIndex(i + 1); [questions[i], questions[j]] = [questions[j], questions[i]]; } }
-        catch { status.textContent = '无法生成题目，请使用安全连接后重试。'; return; }
-        questions = questions.slice(0, 10);
-        index = 0; correct = 0; summary.hidden = true; practice.hidden = false;
-        kind.disabled = true; start.textContent = '重新开始'; newQuestion();
-      });
-      input.addEventListener('input', () => { check.disabled = checked || !input.value.trim(); });
-      play.addEventListener('click', replay);
-      $<HTMLFormElement>('[data-answer-form]').addEventListener('submit', event => {
-        event.preventDefault();
-        if (checked || !current || !input.value.trim()) return;
-        checked = true; audio.pause(); status.textContent = '';
-        const match = normalizeDictation(input.value) === normalizeDictation(current);
-        if (match) correct++;
-        feedback.textContent = match ? `正确：${current}` : `正确答案：${current}`;
-        feedback.dataset.correct = String(match);
-        input.disabled = true; check.disabled = true; next.hidden = false;
-        next.textContent = index === questions.length - 1 ? '查看结果' : '下一题 →'; next.focus();
-      });
-      next.addEventListener('click', () => {
-        if (!checked) return;
-        index++;
-        if (index === questions.length) {
-          audio.pause(); status.textContent = ''; practice.hidden = true; summary.hidden = false;
-          summary.textContent = `完成 · ${correct} / ${questions.length}`; kind.disabled = false; start.textContent = '再练一组'; start.focus();
-        } else newQuestion();
-      });
-      kind.addEventListener('change', availability); availability();
-      rate.addEventListener('change', applyRate);
-      audio.addEventListener('playing', () => { status.textContent = '正在播放'; });
-      audio.addEventListener('pause', () => { status.textContent = ''; });
-      audio.addEventListener('ended', () => { status.textContent = ''; });
-      audio.addEventListener('error', () => { status.textContent = '录音无法加载，请稍后重试。'; });
-      window.addEventListener('pagehide', () => audio.pause());
-    }
-  </script>
+  <script>import '../../lib/ielts/dictation-client';</script>
 </IeltsLayout>
 <style>
-  main { width: 100%; max-width: 960px; margin: 0 auto; padding: 48px 28px 56px; font-size: 17px; }
-  .back { font-size: 16px; color: var(--ielts-muted); text-decoration: none; }
-  h1 { font-size: clamp(25px, 2.2vw, 36px); letter-spacing: -.035em; margin: 32px 0 28px; }
-  .banks { display: flex; gap: 28px; align-items: center; border-bottom: 1px solid var(--ielts-line); margin-bottom: 28px; }
-  .banks span { padding: 12px 0; border-bottom: 2px solid var(--ielts-ink); font-weight: 600; }
-  button, select, input { font: inherit; color: var(--ielts-ink); border: 1px solid var(--ielts-line); background: var(--ielts-card); border-radius: 5px; padding: 10px 14px; }
-  button { cursor: pointer; }
-  button:disabled { color: var(--ielts-muted); cursor: default; }
-  .banks button { border: 0; padding: 12px 0; background: none; }
-  .settings { display: flex; align-items: flex-end; gap: 18px; flex-wrap: wrap; }
-  .settings label { display: grid; gap: 10px; }
-  .primary { background: var(--ielts-ink); color: var(--ielts-card); border-color: var(--ielts-ink); }
-  .primary:disabled { opacity: .45; color: var(--ielts-card); }
-  .speech-status { min-height: 1.5em; margin: 18px 0; color: var(--ielts-muted); font-size: 15px; }
-  .practice { border-top: 1px solid var(--ielts-line); padding-top: 28px; }
-  audio { display: block; width: 100%; margin-bottom: 24px; }
-  .practice-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; font-variant-numeric: tabular-nums; }
-  .play { display: flex; align-items: center; gap: 8px; }
-  form > label { display: block; margin-bottom: 12px; }
-  .answer-row { display: flex; gap: 12px; }
-  input { width: 100%; min-width: 0; font-size: 22px; letter-spacing: .07em; }
-  .answer-row button { flex-shrink: 0; }
-  .feedback { min-height: 1.6em; margin: 22px 0; }
-  .next { display: block; margin-left: auto; }
-  .summary { padding: 32px 0; border-top: 1px solid var(--ielts-line); font-size: 26px; }
-  button:hover:not(:disabled) { filter: brightness(.9); }
-  :is(button, select, input, a):focus-visible { outline: 2px solid var(--ielts-ink); outline-offset: 4px; }
-  @media (max-width: 600px) { main { padding: 28px 20px 40px; } .settings { gap: 12px; } .banks { gap: 20px; } }
+  main { width:100%; max-width:1120px; margin:auto; padding:36px 32px 48px; font-size:18px; }
+  header,.tools,.actions,.practice-head,.practice-foot,.setup { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  header { justify-content:space-between; } .back,.muted { color:var(--ielts-muted); } h1 { color:var(--ielts-ink); font-size:clamp(30px,3vw,44px); letter-spacing:-.035em; margin:38px 0 32px; }
+  button,select,input { font:inherit; color:var(--ielts-ink); background:var(--ielts-card); border:1px solid var(--ielts-line); border-radius:var(--ielts-radius); padding:10px 16px; }
+  button { cursor:pointer; } button:disabled { opacity:.4; cursor:default; } .primary { background:var(--ielts-ink); color:var(--ielts-card); border-color:var(--ielts-ink); } .quiet { border-color:transparent; color:var(--ielts-muted); }
+  .books { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .books button { display:flex; align-items:center; gap:18px; padding:24px; text-align:left; } .books button[aria-pressed='true'] { border-color:var(--ielts-ink); background:var(--ielts-panel); } .books small { display:block; font-size:15px; color:var(--ielts-muted); margin-top:8px; } .books svg { flex-shrink:0; }
+  .setup { margin-top:28px; align-items:flex-end; } label { display:grid; gap:8px; } .muted { font-size:15px; line-height:1.7; } .practice { border-top:1px solid var(--ielts-line); } .practice-head { padding:20px 0; justify-content:space-between; font-size:16px; } .practice-head span { min-width:0; overflow-wrap:anywhere; }
+  .stage { max-width:740px; margin:0 auto; min-height:400px; display:flex; flex-direction:column; justify-content:center; padding:48px 0; text-align:center; } .prompt { color:var(--ielts-ink); font-size:24px; overflow-wrap:anywhere; line-height:1.6; }
+  form input { width:100%; padding:16px 12px; font-size:var(--dictation-font-size,24px); text-align:center; border:0; border-bottom:1px solid var(--ielts-ink); border-radius:0; background:transparent; } .actions { justify-content:center; margin-top:26px; } [data-play] { display:flex; align-items:center; gap:8px; } .feedback { min-height:1.7em; line-height:1.7; overflow-wrap:anywhere; margin:24px 0 0; } .audio-status { min-height:1.7em; margin:8px 0 0; }
+  progress { width:100%; height:4px; accent-color:var(--ielts-ink); border:0; } .practice-foot { justify-content:space-between; font-size:14px; color:var(--ielts-muted); margin-top:18px; } .practice-foot label { display:flex; align-items:center; gap:10px; } .result { text-align:center; border-top:1px solid var(--ielts-line); padding:70px 0; } .result h2 { font-size:30px; } .result p { line-height:1.8; }
+  dialog { max-width:720px; width:calc(100% - 32px); max-height:85dvh; overflow:auto; padding:28px; border:1px solid var(--ielts-line); border-radius:8px; background:var(--ielts-card); color:var(--ielts-text); } dialog::backdrop { background:#0006; } .dialog-head { display:flex; justify-content:space-between; align-items:center; } .dialog-head h2 { margin:0 0 24px; font-size:26px; } .dialog-head button { border:0; align-self:flex-start; font-size:24px; padding:0 6px; } .settings-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } .toggle { grid-template-columns:1fr auto; align-items:center; gap:4px 12px; } .toggle small { grid-column:1; color:var(--ielts-muted); font-size:13px; } .toggle input { grid-column:2; grid-row:1 / span 2; width:20px; height:20px; accent-color:var(--ielts-ink); }
+  .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; } main:fullscreen { max-width:none; background:var(--ielts-bg); overflow:auto; } :global(body.ielts-site) { animation:none; }
+  @media(max-width:640px) { main { padding:24px 20px 36px; } .books { grid-template-columns:1fr; gap:10px; } .books button { padding:18px; } .stage { min-height:350px; padding:32px 0; } .practice-foot span { width:100%; } .settings-grid { grid-template-columns:1fr; } .tools { gap:8px; } header button { padding:8px 10px; } }
 </style>

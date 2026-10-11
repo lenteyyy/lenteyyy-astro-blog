@@ -1,0 +1,5980 @@
+{
+  "source": {
+    "book": 17,
+    "test": 1,
+    "questionPages": {
+      "l": [
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "r": [
+        [
+          9,
+          10
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      "q": [
+        [
+          11,
+          12
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          19,
+          20
+        ]
+      ],
+      "w": [
+        21,
+        22
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "73b39f0fb941a647267c9907407af1cc34a81d66864da8a06759aa869d63794d"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-1/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-1/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-1/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-1/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-1/page-9.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.429376,
+                "y": 0.016791,
+                "w": 0.141535,
+                "h": 0.023381
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.082842,
+                "y": 0.086345,
+                "w": 0.306904,
+                "h": 0.019137
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.082842,
+                "y": 0.127976,
+                "w": 0.816939,
+                "h": 0.019044
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.082842,
+                "y": 0.14874,
+                "w": 0.167804,
+                "h": 0.017324
+              },
+              {
+                "text": "The development of the London underground railway",
+                "x": 0.102714,
+                "y": 0.197066,
+                "w": 0.799276,
+                "h": 0.02613
+              },
+              {
+                "text": "In the first half of the 1800s, London's population grew at an astonishing rate, and the central",
+                "x": 0.080634,
+                "y": 0.24564,
+                "w": 0.799276,
+                "h": 0.015645
+              },
+              {
+                "text": "area became increasingly congested. In addition, the expansion of the overground railway",
+                "x": 0.087258,
+                "y": 0.261213,
+                "w": 0.757325,
+                "h": 0.019116
+              },
+              {
+                "text": "etwork resulted in more and more passengers arriving in the capital. However, in 1846, a Roya",
+                "x": 0.087258,
+                "y": 0.278516,
+                "w": 0.814731,
+                "h": 0.020857
+              },
+              {
+                "text": "Commission decided that the railways should not be allowed to enter the City, the capital's",
+                "x": 0.082842,
+                "y": 0.295819,
+                "w": 0.77278,
+                "h": 0.022597
+              },
+              {
+                "text": "historic and business centre. The result was that the overground railway stations formed a ring",
+                "x": 0.082842,
+                "y": 0.321775,
+                "w": 0.801484,
+                "h": 0.017458
+              },
+              {
+                "text": "around the City. The area within consisted of poorly built, overcrowded slums and the streets were",
+                "x": 0.082842,
+                "y": 0.342333,
+                "w": 0.839019,
+                "h": 0.017715
+              },
+              {
+                "text": "full of horse-drawn traffic. Crossing the City became a nightmare. It could take an hour and a half",
+                "x": 0.082842,
+                "y": 0.361377,
+                "w": 0.839019,
+                "h": 0.019229
+              },
+              {
+                "text": "to travel 8 km by horse-drawn carriage or bus. Numerous schemes were proposed to resolve these",
+                "x": 0.082842,
+                "y": 0.382192,
+                "w": 0.834603,
+                "h": 0.017448
+              },
+              {
+                "text": "problems, but few succeeded.",
+                "x": 0.082842,
+                "y": 0.403008,
+                "w": 0.253914,
+                "h": 0.015666
+              },
+              {
+                "text": "Amongst the most vocal advocates for a solution to London's traffic problems was Charles",
+                "x": 0.08505,
+                "y": 0.441096,
+                "w": 0.770572,
+                "h": 0.015645
+              },
+              {
+                "text": "Pearson, who worked as a solicitor for the City of London. He saw both social and economic",
+                "x": 0.082842,
+                "y": 0.46014,
+                "w": 0.792652,
+                "h": 0.017365
+              },
+              {
+                "text": "advantages in building an underground railway that would link the overground railway stations",
+                "x": 0.082842,
+                "y": 0.480956,
+                "w": 0.808108,
+                "h": 0.017314
+              },
+              {
+                "text": "together and clear London slums at the same time. His idea was to relocate the poor workers who",
+                "x": 0.082842,
+                "y": 0.5,
+                "w": 0.830187,
+                "h": 0.017303
+              },
+              {
+                "text": "lived in the inner-city slums to newly constructed suburbs, and to provide cheap rail travel for",
+                "x": 0.080634,
+                "y": 0.519034,
+                "w": 0.803692,
+                "h": 0.017303
+              },
+              {
+                "text": "them to get to work. Pearson's ideas gained support amongst some businessmen and in 1851 he",
+                "x": 0.082842,
+                "y": 0.539798,
+                "w": 0.812523,
+                "h": 0.017334
+              },
+              {
+                "text": "submitted a plan to Parliament. It was rejected, but coincided with a proposal from another group",
+                "x": 0.082842,
+                "y": 0.560562,
+                "w": 0.830187,
+                "h": 0.015614
+              },
+              {
+                "text": "for an underground connecting line, which Parliament passed.",
+                "x": 0.080634,
+                "y": 0.579596,
+                "w": 0.534322,
+                "h": 0.019168
+              },
+              {
+                "text": "The two groups merged and established the Metropolitan Railway Company in August 1854. The",
+                "x": 0.08505,
+                "y": 0.619394,
+                "w": 0.827979,
+                "h": 0.017458
+              },
+              {
+                "text": "company's plan was to construct an underground railway line from the Great Western Railway's",
+                "x": 0.082842,
+                "y": 0.636697,
+                "w": 0.814731,
+                "h": 0.019199
+              },
+              {
+                "text": "(GWR) station at Paddington to the edge of the City at Farringdon Street - a distance of almost",
+                "x": 0.082842,
+                "y": 0.657461,
+                "w": 0.814731,
+                "h": 0.01925
+              },
+              {
+                "text": "5 km. The organisation had difficulty in raising the funding for such a radical and expensive",
+                "x": 0.080634,
+                "y": 0.67804,
+                "w": 0.788236,
+                "h": 0.019219
+              },
+              {
+                "text": "scheme, not least because of the critical articles printed by the press. Objectors argued that the",
+                "x": 0.080634,
+                "y": 0.697084,
+                "w": 0.808108,
+                "h": 0.019209
+              },
+              {
+                "text": "tunnels would collapse under the weight of traffic overhead, buildings would be shaken and",
+                "x": 0.082842,
+                "y": 0.7179,
+                "w": 0.779404,
+                "h": 0.015697
+              },
+              {
+                "text": "passengers would be poisoned by the emissions from the train engines. However, Pearson and his",
+                "x": 0.082842,
+                "y": 0.736944,
+                "w": 0.830187,
+                "h": 0.017417
+              },
+              {
+                "text": "partners persisted.",
+                "x": 0.08505,
+                "y": 0.757759,
+                "w": 0.156764,
+                "h": 0.015635
+              },
+              {
+                "text": "The GWR, aware that the new line would finally enable them to run trains into the heart of",
+                "x": 0.085012,
+                "y": 0.795869,
+                "w": 0.77288,
+                "h": 0.018249
+              },
+              {
+                "text": "the City, invested almost £250,000 in the scheme. Eventually, over a five-year period, £1m",
+                "x": 0.082842,
+                "y": 0.816653,
+                "w": 0.770572,
+                "h": 0.017303
+              },
+              {
+                "text": "was raised. The chosen route ran beneath existing main roads to minimise the expense of",
+                "x": 0.080634,
+                "y": 0.835687,
+                "w": 0.763949,
+                "h": 0.019065
+              },
+              {
+                "text": "16",
+                "x": 0.082842,
+                "y": 0.937777,
+                "w": 0.024287,
+                "h": 0.013843
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-1/page-10.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "demolishing buildings. Originally scheduled to be completed in 21 months, the construction of",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.812523,
+                "h": 0.017376
+              },
+              {
+                "text": "the underground line took three years. It was built just below street level using a technique known",
+                "x": 0.065179,
+                "y": 0.041459,
+                "w": 0.834603,
+                "h": 0.015655
+              },
+              {
+                "text": "as 'cut and cover'. A trench about ten metres wide and six metres deep was dug, and the sides",
+                "x": 0.065127,
+                "y": 0.059152,
+                "w": 0.801613,
+                "h": 0.019466
+              },
+              {
+                "text": "temporarily held up with timber beams. Brick walls were then constructed, and finally a brick",
+                "x": 0.062971,
+                "y": 0.081257,
+                "w": 0.801484,
+                "h": 0.017489
+              },
+              {
+                "text": "arch was added to create a tunnel. A two-metre-deep layer of soil was laid on top of the tunnel",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.8059,
+                "h": 0.017715
+              },
+              {
+                "text": "and the road above rebuilt.",
+                "x": 0.067386,
+                "y": 0.12089,
+                "w": 0.229626,
+                "h": 0.014172
+              },
+              {
+                "text": "The Metropolitan line, which opened on 10 January 1863, was the world's first underground",
+                "x": 0.067386,
+                "y": 0.158978,
+                "w": 0.78382,
+                "h": 0.017448
+              },
+              {
+                "text": "railway. On its first day, almost 40,000 passengers were carried between Paddington and",
+                "x": 0.067386,
+                "y": 0.179794,
+                "w": 0.750701,
+                "h": 0.015666
+              },
+              {
+                "text": "Farringdon, the journey taking about 18 minutes. By the end of the Metropolitan's first year of",
+                "x": 0.065179,
+                "y": 0.198838,
+                "w": 0.808108,
+                "h": 0.019116
+              },
+              {
+                "text": "operation, 9.5 million journeys had been made.",
+                "x": 0.067386,
+                "y": 0.219653,
+                "w": 0.406262,
+                "h": 0.015604
+              },
+              {
+                "text": "Even as the Metropolitan began operation, the first extensions to the line were being authorised;",
+                "x": 0.067386,
+                "y": 0.257742,
+                "w": 0.819147,
+                "h": 0.017314
+              },
+              {
+                "text": "these were built over the next five years, reaching Moorgate in the east of London and",
+                "x": 0.065178,
+                "y": 0.278516,
+                "w": 0.733037,
+                "h": 0.015573
+              },
+              {
+                "text": "Hammersmith in the west. The original plan was to pull the trains with steam locomotives, using",
+                "x": 0.067386,
+                "y": 0.29755,
+                "w": 0.823563,
+                "h": 0.017324
+              },
+              {
+                "text": "firebricks in the boilers to provide steam, but these engines were never introduced. Instead, the",
+                "x": 0.067386,
+                "y": 0.318314,
+                "w": 0.8059,
+                "h": 0.015604
+              },
+              {
+                "text": "line used specially designed locomotives that were fitted with water tanks in which steam could",
+                "x": 0.062971,
+                "y": 0.337348,
+                "w": 0.816939,
+                "h": 0.019157
+              },
+              {
+                "text": "be condensed. However, smoke and fumes remained a problem, even though ventilation shafts",
+                "x": 0.067386,
+                "y": 0.356382,
+                "w": 0.803692,
+                "h": 0.017396
+              },
+              {
+                "text": "were added to the tunnels.",
+                "x": 0.067386,
+                "y": 0.377146,
+                "w": 0.22521,
+                "h": 0.013905
+              },
+              {
+                "text": "Despite the extension of the underground railway, by the 1880s, congestion on London's streets",
+                "x": 0.067386,
+                "y": 0.416738,
+                "w": 0.812523,
+                "h": 0.015944
+              },
+              {
+                "text": "had become worse. The problem was partly that the existing underground lines formed a circuit",
+                "x": 0.067386,
+                "y": 0.435782,
+                "w": 0.814731,
+                "h": 0.017715
+              },
+              {
+                "text": "around the centre of London and extended to the suburbs, but did not cross the capital's centre.",
+                "x": 0.067386,
+                "y": 0.456597,
+                "w": 0.810316,
+                "h": 0.015717
+              },
+              {
+                "text": "The 'cut and cover' method of construction was not an option in this part of the capital. The only",
+                "x": 0.067386,
+                "y": 0.47387,
+                "w": 0.825771,
+                "h": 0.017479
+              },
+              {
+                "text": "alternative was to tunnel deep underground.",
+                "x": 0.067145,
+                "y": 0.491288,
+                "w": 0.375912,
+                "h": 0.022711
+              },
+              {
+                "text": "Although the technology to create these tunnels existed, steam locomotives could not be used in",
+                "x": 0.067386,
+                "y": 0.534545,
+                "w": 0.816939,
+                "h": 0.015635
+              },
+              {
+                "text": "such a confined space. It wasn't until the development of a reliable electric motor, and a means of",
+                "x": 0.065179,
+                "y": 0.553589,
+                "w": 0.836811,
+                "h": 0.017355
+              },
+              {
+                "text": "transferring power from the generator to a moving train, that the world's first deep-level electric",
+                "x": 0.065179,
+                "y": 0.574405,
+                "w": 0.816939,
+                "h": 0.017303
+              },
+              {
+                "text": "railway, the City & South London, became possible. The line opened in 1890, and ran from the",
+                "x": 0.065179,
+                "y": 0.593439,
+                "w": 0.812523,
+                "h": 0.019054
+              },
+              {
+                "text": "City to Stockwell, south of the River Thames. The trains were made up of three carriages and",
+                "x": 0.067386,
+                "y": 0.612472,
+                "w": 0.79486,
+                "h": 0.017303
+              },
+              {
+                "text": "driven by electric engines. The carriages were narrow and had tiny windows just below the roof",
+                "x": 0.067386,
+                "y": 0.633236,
+                "w": 0.816939,
+                "h": 0.017345
+              },
+              {
+                "text": "because it was thought that passengers would not want to look out at the tunnel walls. The line",
+                "x": 0.067386,
+                "y": 0.65227,
+                "w": 0.8059,
+                "h": 0.017355
+              },
+              {
+                "text": "was not without its problems, mainly caused by an unreliable power supply. Although the City &",
+                "x": 0.065179,
+                "y": 0.673034,
+                "w": 0.825771,
+                "h": 0.019178
+              },
+              {
+                "text": "South London Railway was a great technical achievement, it did not make a profit. Then, in 1900,",
+                "x": 0.065179,
+                "y": 0.692068,
+                "w": 0.836811,
+                "h": 0.019188
+              },
+              {
+                "text": "the Central London Railway, known as the 'Tuppenny Tube', began operation using new electric",
+                "x": 0.065178,
+                "y": 0.712832,
+                "w": 0.821355,
+                "h": 0.015697
+              },
+              {
+                "text": "locomotives. It was very popular and soon afterwards new railways and extensions were added to",
+                "x": 0.065179,
+                "y": 0.731866,
+                "w": 0.830187,
+                "h": 0.017479
+              },
+              {
+                "text": "the growing tube network. By 1907, the heart of today's Underground system was in place.",
+                "x": 0.067386,
+                "y": 0.752445,
+                "w": 0.779404,
+                "h": 0.017489
+              },
+              {
+                "text": "17",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-1/page-13.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.227418,
+                "h": 0.015604
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.08505,
+                "y": 0.058762,
+                "w": 0.825771,
+                "h": 0.019168
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.082842,
+                "y": 0.079527,
+                "w": 0.170012,
+                "h": 0.017448
+              },
+              {
+                "text": "Stadiums: past, present and future",
+                "x": 0.244022,
+                "y": 0.127976,
+                "w": 0.516659,
+                "h": 0.027902
+              },
+              {
+                "text": "A Stadiums are among the oldest forms of urban architecture: vast stadiums where the public",
+                "x": 0.082842,
+                "y": 0.174479,
+                "w": 0.821355,
+                "h": 0.017715
+              },
+              {
+                "text": "could watch sporting events were at the centre of western city life as far back as the ancient",
+                "x": 0.127001,
+                "y": 0.193523,
+                "w": 0.786028,
+                "h": 0.017715
+              },
+              {
+                "text": "Greek and Roman Empires, well before the construction of the great medieval cathedrals and",
+                "x": 0.129209,
+                "y": 0.212567,
+                "w": 0.788236,
+                "h": 0.019229
+              },
+              {
+                "text": "the grand 19th- and 20th-century railway stations which dominated urban skylines in later eras.",
+                "x": 0.127001,
+                "y": 0.233383,
+                "w": 0.788236,
+                "h": 0.019178
+              },
+              {
+                "text": "Today, however, stadiums are regarded with growing scepticism. Construction costs can soar",
+                "x": 0.129209,
+                "y": 0.262943,
+                "w": 0.792652,
+                "h": 0.019157
+              },
+              {
+                "text": "above £1 billion, and stadiums finished for major events such as the Olympic Games or the",
+                "x": 0.127001,
+                "y": 0.281977,
+                "w": 0.781612,
+                "h": 0.019168
+              },
+              {
+                "text": "FIFA World Cup have notably fallen into disuse and disrepair.",
+                "x": 0.129209,
+                "y": 0.302741,
+                "w": 0.527699,
+                "h": 0.019219
+              },
+              {
+                "text": "But this need not be the case. History shows that stadiums can drive urban development and",
+                "x": 0.131417,
+                "y": 0.332146,
+                "w": 0.78382,
+                "h": 0.017314
+              },
+              {
+                "text": "adapt to the culture of every age. Even today, architects and planners are finding new ways",
+                "x": 0.129209,
+                "y": 0.352921,
+                "w": 0.774988,
+                "h": 0.015573
+              },
+              {
+                "text": "to adapt the mono-functional sports arenas which became emblematic of modernisation",
+                "x": 0.129209,
+                "y": 0.371955,
+                "w": 0.748493,
+                "h": 0.017324
+              },
+              {
+                "text": "during the 20th century.",
+                "x": 0.127001,
+                "y": 0.392719,
+                "w": 0.209755,
+                "h": 0.017376
+              },
+              {
+                "text": "B",
+                "x": 0.082842,
+                "y": 0.422135,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "The amphitheatre* of Arles in southwest France, with a capacity of 25,000 spectators,",
+                "x": 0.129209,
+                "y": 0.422052,
+                "w": 0.735245,
+                "h": 0.017386
+              },
+              {
+                "text": "is perhaps the best example of just how versatile stadiums can be. Built by the Romans in",
+                "x": 0.129209,
+                "y": 0.439325,
+                "w": 0.763949,
+                "h": 0.019147
+              },
+              {
+                "text": "90 AD, it became a fortress with four towers after the fifth century, and was then",
+                "x": 0.129209,
+                "y": 0.46014,
+                "w": 0.686671,
+                "h": 0.017365
+              },
+              {
+                "text": "transformed into a village containing more than 200 houses. With the growing interest in",
+                "x": 0.129209,
+                "y": 0.480956,
+                "w": 0.759533,
+                "h": 0.017314
+              },
+              {
+                "text": "conservation during the 19th century, it was converted back into an arena for the staging of",
+                "x": 0.129209,
+                "y": 0.5,
+                "w": 0.779404,
+                "h": 0.017303
+              },
+              {
+                "text": "bullfights, thereby returning the structure to its original use as a venue for public spectacles.",
+                "x": 0.129209,
+                "y": 0.520764,
+                "w": 0.78382,
+                "h": 0.017324
+              },
+              {
+                "text": "Another example is the imposing arena of Verona in northern Italy, with space for 30,000",
+                "x": 0.131417,
+                "y": 0.550046,
+                "w": 0.759533,
+                "h": 0.017437
+              },
+              {
+                "text": "spectators, which was built 60 years before the Arles amphitheatre and 40 years before",
+                "x": 0.129209,
+                "y": 0.570862,
+                "w": 0.739661,
+                "h": 0.015655
+              },
+              {
+                "text": "Rome's famous Colosseum. It has endured the centuries and is currently considered one of",
+                "x": 0.131417,
+                "y": 0.589906,
+                "w": 0.774988,
+                "h": 0.015645
+              },
+              {
+                "text": "the world's prime sites for opera, thanks to its outstanding acoustics.",
+                "x": 0.129209,
+                "y": 0.60895,
+                "w": 0.582897,
+                "h": 0.017365
+              },
+              {
+                "text": "C",
+                "x": 0.082842,
+                "y": 0.640158,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "The area in the centre of the Italian town of Lucca, known as the Piazza dell'Anfiteatro,",
+                "x": 0.129209,
+                "y": 0.638427,
+                "w": 0.750701,
+                "h": 0.017468
+              },
+              {
+                "text": "is yet another impressive example of an amphitheatre becoming absorbed into the fabric",
+                "x": 0.129209,
+                "y": 0.658996,
+                "w": 0.752909,
+                "h": 0.017715
+              },
+              {
+                "text": "of the city. The site evolved in a similar way to Arles and was progressively filled with",
+                "x": 0.127001,
+                "y": 0.67804,
+                "w": 0.737453,
+                "h": 0.019219
+              },
+              {
+                "text": "buildings from the Middle Ages until the 19th century, variously used as houses, a salt depot",
+                "x": 0.127001,
+                "y": 0.698856,
+                "w": 0.79486,
+                "h": 0.017437
+              },
+              {
+                "text": "and a prison. But rather than reverting to an arena, it became a market square, designed",
+                "x": 0.129209,
+                "y": 0.719671,
+                "w": 0.746285,
+                "h": 0.015655
+              },
+              {
+                "text": "by Romanticist architect Lorenzo Nottolini. Today, the ruins of the amphitheatre remain",
+                "x": 0.127001,
+                "y": 0.738715,
+                "w": 0.752909,
+                "h": 0.019106
+              },
+              {
+                "text": "embedded in the various shops and residences surrounding the public square.",
+                "x": 0.129209,
+                "y": 0.757759,
+                "w": 0.662383,
+                "h": 0.017365
+              },
+              {
+                "text": "D",
+                "x": 0.082842,
+                "y": 0.787237,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "There are many similarities between modern stadiums and the ancient amphitheatres",
+                "x": 0.129209,
+                "y": 0.788761,
+                "w": 0.724206,
+                "h": 0.015944
+              },
+              {
+                "text": "intended for games. But some of the flexibility was lost at the beginning of the 20th century,",
+                "x": 0.129209,
+                "y": 0.807805,
+                "w": 0.790444,
+                "h": 0.015944
+              },
+              {
+                "text": "as stadiums were developed using new products such as steel and reinforced concrete, and",
+                "x": 0.129209,
+                "y": 0.826849,
+                "w": 0.770572,
+                "h": 0.017489
+              },
+              {
+                "text": "made use of bright lights for night-time matches.",
+                "x": 0.129209,
+                "y": 0.847665,
+                "w": 0.421717,
+                "h": 0.015707
+              },
+              {
+                "text": "*amphitheatre: (especially in Greek and Roman architecture) an open circular or oval building with a central space surrounded by tiers of",
+                "x": 0.082842,
+                "y": 0.897979,
+                "w": 0.825771,
+                "h": 0.012133
+              },
+              {
+                "text": "seats for spectators, for the presentation of dramatic or sporting events",
+                "x": 0.091674,
+                "y": 0.913552,
+                "w": 0.428341,
+                "h": 0.012112
+              },
+              {
+                "text": "20",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-1/page-14.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "E",
+                "x": 0.065179,
+                "y": 0.091639,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "F",
+                "x": 0.067386,
+                "y": 0.361573,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "Many such stadiums are situated in suburban areas, designed for sporting use only and",
+                "x": 0.113753,
+                "y": 0.020695,
+                "w": 0.739661,
+                "h": 0.017376
+              },
+              {
+                "text": "surrounded by parking lots. These factors mean that they may not be as accessible to the",
+                "x": 0.113753,
+                "y": 0.041459,
+                "w": 0.752909,
+                "h": 0.017427
+              },
+              {
+                "text": "general public, require more energy to run and contribute to urban heat.",
+                "x": 0.113753,
+                "y": 0.062223,
+                "w": 0.613808,
+                "h": 0.015707
+              },
+              {
+                "text": "But many of today's most innovative architects see scope for the stadium to help improve the",
+                "x": 0.113753,
+                "y": 0.091639,
+                "w": 0.790444,
+                "h": 0.015573
+              },
+              {
+                "text": "city. Among the current strategies, two seem to be having particular success: the stadium as",
+                "x": 0.113753,
+                "y": 0.110673,
+                "w": 0.781612,
+                "h": 0.017303
+              },
+              {
+                "text": "an urban hub, and as a power plant.",
+                "x": 0.113753,
+                "y": 0.131437,
+                "w": 0.302488,
+                "h": 0.015583
+              },
+              {
+                "text": "There's a growing trend for stadiums to be equipped with public spaces and services that",
+                "x": 0.113753,
+                "y": 0.16075,
+                "w": 0.757325,
+                "h": 0.017406
+              },
+              {
+                "text": "serve a function beyond sport, such as hotels, retail outlets, conference centres, restaurants",
+                "x": 0.113753,
+                "y": 0.181565,
+                "w": 0.77278,
+                "h": 0.015625
+              },
+              {
+                "text": "and bars, children's playgrounds and green space. Creating mixed-use developments such as",
+                "x": 0.111545,
+                "y": 0.202381,
+                "w": 0.790444,
+                "h": 0.015573
+              },
+              {
+                "text": "this reinforces compactness and multi-functionality, making more efficient use of land and",
+                "x": 0.111545,
+                "y": 0.221415,
+                "w": 0.774988,
+                "h": 0.017303
+              },
+              {
+                "text": "helping to regenerate urban spaces.",
+                "x": 0.113753,
+                "y": 0.240449,
+                "w": 0.302488,
+                "h": 0.017303
+              },
+              {
+                "text": "This opens the space up to families and a wider cross-section of society, instead of catering",
+                "x": 0.113753,
+                "y": 0.271471,
+                "w": 0.777196,
+                "h": 0.017427
+              },
+              {
+                "text": "only to sportspeople and supporters. There have been many examples of this in the UK: the",
+                "x": 0.111545,
+                "y": 0.290515,
+                "w": 0.781612,
+                "h": 0.019147
+              },
+              {
+                "text": "mixed-use facilities at Wembley and Old Trafford have become a blueprint for many other",
+                "x": 0.109337,
+                "y": 0.311331,
+                "w": 0.774988,
+                "h": 0.017365
+              },
+              {
+                "text": "stadiums in the world.",
+                "x": 0.113753,
+                "y": 0.330375,
+                "w": 0.192091,
+                "h": 0.015625
+              },
+              {
+                "text": "The phenomenon of stadiums as power stations has arisen from the idea that energy",
+                "x": 0.113753,
+                "y": 0.361377,
+                "w": 0.713166,
+                "h": 0.017715
+              },
+              {
+                "text": "problems can be overcome by integrating interconnected buildings by means of a smart grid,",
+                "x": 0.113753,
+                "y": 0.382192,
+                "w": 0.790444,
+                "h": 0.015717
+              },
+              {
+                "text": "which is an electricity supply network that uses digital communications technology to detect",
+                "x": 0.113753,
+                "y": 0.401237,
+                "w": 0.790444,
+                "h": 0.015707
+              },
+              {
+                "text": "and react to local changes in usage, without significant energy losses. Stadiums are ideal",
+                "x": 0.113753,
+                "y": 0.420281,
+                "w": 0.757325,
+                "h": 0.017427
+              },
+              {
+                "text": "for these purposes, because their canopies have a large surface area for fitting photovoltaic",
+                "x": 0.113753,
+                "y": 0.439325,
+                "w": 0.77278,
+                "h": 0.017417
+              },
+              {
+                "text": "panels and rise high enough (more than 40 metres) to make use of micro wind turbines.",
+                "x": 0.113753,
+                "y": 0.46014,
+                "w": 0.748493,
+                "h": 0.017365
+              },
+              {
+                "text": "Freiburg Mage Solar Stadium in Germany is the first of a new wave of stadiums as power",
+                "x": 0.113753,
+                "y": 0.491142,
+                "w": 0.763949,
+                "h": 0.015944
+              },
+              {
+                "text": "plants, which also includes the Amsterdam Arena and the Kaohsiung Stadium. The latter,",
+                "x": 0.111545,
+                "y": 0.510186,
+                "w": 0.763949,
+                "h": 0.019229
+              },
+              {
+                "text": "inaugurated in 2009, has 8,844 photovoltaic panels producing up to 1.14 GWh of electricity",
+                "x": 0.109337,
+                "y": 0.52923,
+                "w": 0.788236,
+                "h": 0.019219
+              },
+              {
+                "text": "annually. This reduces the annual output of carbon dioxide by 660 tons and supplies up",
+                "x": 0.113753,
+                "y": 0.550046,
+                "w": 0.741869,
+                "h": 0.017437
+              },
+              {
+                "text": "to 80 percent of the surrounding area when the stadium is not in use. This is proof that a",
+                "x": 0.111545,
+                "y": 0.56909,
+                "w": 0.755117,
+                "h": 0.017427
+              },
+              {
+                "text": "stadium can serve its city, and have a decidedly positive impact in terms of reduction of CO2",
+                "x": 0.111545,
+                "y": 0.589906,
+                "w": 0.792652,
+                "h": 0.019106
+              },
+              {
+                "text": "emissions.",
+                "x": 0.113677,
+                "y": 0.610423,
+                "w": 0.092886,
+                "h": 0.014481
+              },
+              {
+                "text": "Sporting arenas have always been central to the life and culture of cities. In every era, the",
+                "x": 0.113753,
+                "y": 0.639952,
+                "w": 0.761741,
+                "h": 0.017715
+              },
+              {
+                "text": "stadium has acquired new value and uses: from military fortress to residential village, public",
+                "x": 0.113753,
+                "y": 0.660767,
+                "w": 0.790444,
+                "h": 0.015944
+              },
+              {
+                "text": "space to theatre and most recently a field for experimentation in advanced engineering.",
+                "x": 0.111545,
+                "y": 0.67804,
+                "w": 0.741869,
+                "h": 0.02095
+              },
+              {
+                "text": "The stadium of today now brings together multiple functions, thus helping cities to create a",
+                "x": 0.111545,
+                "y": 0.698856,
+                "w": 0.779404,
+                "h": 0.019168
+              },
+              {
+                "text": "sustainable future.",
+                "x": 0.113492,
+                "y": 0.717216,
+                "w": 0.159712,
+                "h": 0.018313
+              },
+              {
+                "text": "21",
+                "x": 0.877702,
+                "y": 0.936047,
+                "w": 0.024287,
+                "h": 0.017303
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-1/page-17.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.309112,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.827979,
+                "h": 0.02098
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.082842,
+                "y": 0.081257,
+                "w": 0.170012,
+                "h": 0.019034
+              },
+              {
+                "text": "To catch a king",
+                "x": 0.387538,
+                "y": 0.12089,
+                "w": 0.229626,
+                "h": 0.027902
+              },
+              {
+                "text": "Anna Keay reviews Charles Spencer's book about the hunt for King Charles II",
+                "x": 0.107129,
+                "y": 0.167774,
+                "w": 0.790444,
+                "h": 0.022649
+              },
+              {
+                "text": "during the English Civil War of the seventeenth century",
+                "x": 0.221943,
+                "y": 0.193523,
+                "w": 0.560818,
+                "h": 0.02097
+              },
+              {
+                "text": "Charles Spencer's latest book, To Catch a",
+                "x": 0.08505,
+                "y": 0.240449,
+                "w": 0.353271,
+                "h": 0.017303
+              },
+              {
+                "text": "King, tells us the story of the hunt for King",
+                "x": 0.08505,
+                "y": 0.261213,
+                "w": 0.368727,
+                "h": 0.015573
+              },
+              {
+                "text": "Charles II in the six weeks after his resounding",
+                "x": 0.08505,
+                "y": 0.280246,
+                "w": 0.404054,
+                "h": 0.017355
+              },
+              {
+                "text": "defeat at the Battle of Worcester in September",
+                "x": 0.080634,
+                "y": 0.29928,
+                "w": 0.399638,
+                "h": 0.017365
+              },
+              {
+                "text": "1651. And what a story it is. After his father",
+                "x": 0.08505,
+                "y": 0.320044,
+                "w": 0.377558,
+                "h": 0.015645
+              },
+              {
+                "text": "was executed by the Parliamentarians in 1649,",
+                "x": 0.082842,
+                "y": 0.339078,
+                "w": 0.39743,
+                "h": 0.017427
+              },
+              {
+                "text": "the young Charles II sacrificed one of the",
+                "x": 0.082842,
+                "y": 0.359842,
+                "w": 0.355479,
+                "h": 0.015707
+              },
+              {
+                "text": "very principles his father had died for and",
+                "x": 0.080634,
+                "y": 0.378876,
+                "w": 0.362103,
+                "h": 0.017489
+              },
+              {
+                "text": "did a deal with the Scots, thereby accepting",
+                "x": 0.08505,
+                "y": 0.399465,
+                "w": 0.370935,
+                "h": 0.015944
+              },
+              {
+                "text": "Presbyterianism* as the national religion in",
+                "x": 0.08505,
+                "y": 0.418509,
+                "w": 0.370935,
+                "h": 0.015944
+              },
+              {
+                "text": "return for being crowned King of Scots. His",
+                "x": 0.082842,
+                "y": 0.439325,
+                "w": 0.377558,
+                "h": 0.015686
+              },
+              {
+                "text": "arrival in Edinburgh prompted the English",
+                "x": 0.080634,
+                "y": 0.458369,
+                "w": 0.366519,
+                "h": 0.017406
+              },
+              {
+                "text": "Parliamentary army to invade Scotland in a",
+                "x": 0.08505,
+                "y": 0.477413,
+                "w": 0.368727,
+                "h": 0.017396
+              },
+              {
+                "text": "pre-emptive strike. This was followed by a",
+                "x": 0.082842,
+                "y": 0.498228,
+                "w": 0.364311,
+                "h": 0.015614
+              },
+              {
+                "text": "Scottish invasion of England. The two sides",
+                "x": 0.08505,
+                "y": 0.517273,
+                "w": 0.373143,
+                "h": 0.017334
+              },
+              {
+                "text": "finally faced one another at Worcester in",
+                "x": 0.082643,
+                "y": 0.532307,
+                "w": 0.34698,
+                "h": 0.021957
+              },
+              {
+                "text": "the west of England in 1651. After being",
+                "x": 0.082842,
+                "y": 0.557101,
+                "w": 0.348855,
+                "h": 0.017303
+              },
+              {
+                "text": "comprehensively defeated on the meadows",
+                "x": 0.082842,
+                "y": 0.577865,
+                "w": 0.366519,
+                "h": 0.015583
+              },
+              {
+                "text": "outside the city by the Parliamentarian army,",
+                "x": 0.080634,
+                "y": 0.596899,
+                "w": 0.384182,
+                "h": 0.017365
+              },
+              {
+                "text": "the 21-year-old king found himself the subject",
+                "x": 0.082842,
+                "y": 0.615933,
+                "w": 0.399638,
+                "h": 0.017376
+              },
+              {
+                "text": "of a national manhunt, with a huge sum",
+                "x": 0.082842,
+                "y": 0.636697,
+                "w": 0.340023,
+                "h": 0.015655
+              },
+              {
+                "text": "offered for his capture. Over the following",
+                "x": 0.080634,
+                "y": 0.655731,
+                "w": 0.366519,
+                "h": 0.019209
+              },
+              {
+                "text": "six weeks he managed, through a series of",
+                "x": 0.080634,
+                "y": 0.674765,
+                "w": 0.364311,
+                "h": 0.019219
+              },
+              {
+                "text": "heart-poundingly close escapes, to evade the",
+                "x": 0.080634,
+                "y": 0.695313,
+                "w": 0.384182,
+                "h": 0.01925
+              },
+              {
+                "text": "Parliamentarians before seeking refuge in",
+                "x": 0.08505,
+                "y": 0.716128,
+                "w": 0.355479,
+                "h": 0.015944
+              },
+              {
+                "text": "France. For the next nine years, the penniless",
+                "x": 0.082842,
+                "y": 0.735172,
+                "w": 0.38639,
+                "h": 0.017458
+              },
+              {
+                "text": "and defeated Charles wandered around Europe",
+                "x": 0.082842,
+                "y": 0.755988,
+                "w": 0.401846,
+                "h": 0.015676
+              },
+              {
+                "text": "with only a small group of loyal supporters.",
+                "x": 0.080634,
+                "y": 0.775032,
+                "w": 0.377558,
+                "h": 0.017396
+              },
+              {
+                "text": "Years later, after his restoration as king, the",
+                "x": 0.08505,
+                "y": 0.814892,
+                "w": 0.368727,
+                "h": 0.015604
+              },
+              {
+                "text": "50-year-old Charles II requested a meeting",
+                "x": 0.08505,
+                "y": 0.833936,
+                "w": 0.364311,
+                "h": 0.015594
+              },
+              {
+                "text": "with the writer and diarist Samuel Pepys. His",
+                "x": 0.508975,
+                "y": 0.240449,
+                "w": 0.390806,
+                "h": 0.017303
+              },
+              {
+                "text": "intention when asking Pepys to commit his",
+                "x": 0.508975,
+                "y": 0.259482,
+                "w": 0.373143,
+                "h": 0.019075
+              },
+              {
+                "text": "story to paper was to ensure that this most",
+                "x": 0.508975,
+                "y": 0.278516,
+                "w": 0.366519,
+                "h": 0.020857
+              },
+              {
+                "text": "extraordinary episode was never forgotten.",
+                "x": 0.511183,
+                "y": 0.29928,
+                "w": 0.368727,
+                "h": 0.019137
+              },
+              {
+                "text": "Over two three-hour sittings, the king related",
+                "x": 0.511183,
+                "y": 0.320044,
+                "w": 0.38639,
+                "h": 0.019188
+              },
+              {
+                "text": "to him in great detail his personal recollections",
+                "x": 0.511098,
+                "y": 0.338888,
+                "w": 0.404246,
+                "h": 0.018631
+              },
+              {
+                "text": "of the six weeks he had spent as a fugitive. As",
+                "x": 0.513391,
+                "y": 0.359842,
+                "w": 0.393014,
+                "h": 0.015707
+              },
+              {
+                "text": "the king and secretary settled down (a scene",
+                "x": 0.511044,
+                "y": 0.378611,
+                "w": 0.380008,
+                "h": 0.019577
+              },
+              {
+                "text": "that is surely a gift for a future scriptwriter),",
+                "x": 0.511183,
+                "y": 0.397693,
+                "w": 0.379766,
+                "h": 0.017715
+              },
+              {
+                "text": "Charles commenced his story: \"After the battle",
+                "x": 0.513391,
+                "y": 0.418509,
+                "w": 0.399638,
+                "h": 0.015944
+              },
+              {
+                "text": "was so absolutely lost as to be beyond hope of",
+                "x": 0.513391,
+                "y": 0.439325,
+                "w": 0.39743,
+                "h": 0.015686
+              },
+              {
+                "text": "recovery, I began to think of the best way of",
+                "x": 0.508975,
+                "y": 0.458369,
+                "w": 0.381974,
+                "h": 0.017406
+              },
+              {
+                "text": "saving myself",
+                "x": 0.508902,
+                "y": 0.477183,
+                "w": 0.134831,
+                "h": 0.019678
+              },
+              {
+                "text": "One of the joys of Spencer's book, a result not",
+                "x": 0.511183,
+                "y": 0.517273,
+                "w": 0.39743,
+                "h": 0.017334
+              },
+              {
+                "text": "least of its use of Charles II's own narrative",
+                "x": 0.511183,
+                "y": 0.536317,
+                "w": 0.373143,
+                "h": 0.015594
+              },
+              {
+                "text": "as well as those of his supporters, is just how",
+                "x": 0.513391,
+                "y": 0.557101,
+                "w": 0.384182,
+                "h": 0.017303
+              },
+              {
+                "text": "close the reader gets to the action. The day-by-",
+                "x": 0.511183,
+                "y": 0.576135,
+                "w": 0.401846,
+                "h": 0.019085
+              },
+              {
+                "text": "day retelling of the fugitives' doings provides",
+                "x": 0.511183,
+                "y": 0.595169,
+                "w": 0.388598,
+                "h": 0.019096
+              },
+              {
+                "text": "delicious details: the cutting of the king's long",
+                "x": 0.511183,
+                "y": 0.615933,
+                "w": 0.39743,
+                "h": 0.019147
+              },
+              {
+                "text": "hair with agricultural shears, the use of walnut",
+                "x": 0.513391,
+                "y": 0.636697,
+                "w": 0.39743,
+                "h": 0.015655
+              },
+              {
+                "text": "leaves to dye his pale skin, and the day Charles",
+                "x": 0.508975,
+                "y": 0.655731,
+                "w": 0.406262,
+                "h": 0.019209
+              },
+              {
+                "text": "spent lying on a branch of the great oak tree in",
+                "x": 0.508975,
+                "y": 0.674765,
+                "w": 0.401846,
+                "h": 0.019219
+              },
+              {
+                "text": "Boscobel Wood as the Parliamentary soldiers",
+                "x": 0.511183,
+                "y": 0.695312,
+                "w": 0.388598,
+                "h": 0.017715
+              },
+              {
+                "text": "scoured the forest floor below. Spencer draws",
+                "x": 0.513178,
+                "y": 0.711892,
+                "w": 0.38905,
+                "h": 0.021384
+              },
+              {
+                "text": "out both the humour - such as the preposterous",
+                "x": 0.513391,
+                "y": 0.735172,
+                "w": 0.404054,
+                "h": 0.015944
+              },
+              {
+                "text": "refusal of Charles's friend Henry Wilmot",
+                "x": 0.513391,
+                "y": 0.754216,
+                "w": 0.351063,
+                "h": 0.015717
+              },
+              {
+                "text": "to adopt disguise on the grounds that it was",
+                "x": 0.511183,
+                "y": 0.775032,
+                "w": 0.37535,
+                "h": 0.015666
+              },
+              {
+                "text": "beneath his dignity - and the emotional tension",
+                "x": 0.511183,
+                "y": 0.794076,
+                "w": 0.406262,
+                "h": 0.019116
+              },
+              {
+                "text": "when the secret of the king's presence was",
+                "x": 0.513169,
+                "y": 0.810738,
+                "w": 0.362597,
+                "h": 0.02197
+              },
+              {
+                "text": "cautiously revealed to his supporters.",
+                "x": 0.513391,
+                "y": 0.833936,
+                "w": 0.317944,
+                "h": 0.015594
+              },
+              {
+                "text": "* Presbyterianism: part of the reformed Protestant religion",
+                "x": 0.08272,
+                "y": 0.911758,
+                "w": 0.349071,
+                "h": 0.014627
+              },
+              {
+                "text": "24",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-1/page-18.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Charles's adventures after losing the Battle of",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.390806,
+                "h": 0.017376
+              },
+              {
+                "text": "Worcester hide the uncomfortable truth that",
+                "x": 0.067386,
+                "y": 0.041459,
+                "w": 0.37535,
+                "h": 0.013884
+              },
+              {
+                "text": "whilst almost everyone in England had been",
+                "x": 0.067386,
+                "y": 0.062223,
+                "w": 0.377558,
+                "h": 0.015707
+              },
+              {
+                "text": "appalled by the execution of his father, they",
+                "x": 0.062971,
+                "y": 0.081257,
+                "w": 0.377558,
+                "h": 0.017489
+              },
+              {
+                "text": "had not welcomed the arrival of his son with",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.379766,
+                "h": 0.014172
+              },
+              {
+                "text": "the Scots army, but had instead firmly bolted",
+                "x": 0.065179,
+                "y": 0.12089,
+                "w": 0.384182,
+                "h": 0.015944
+              },
+              {
+                "text": "their doors. This was partly because he rode at",
+                "x": 0.065179,
+                "y": 0.139934,
+                "w": 0.399638,
+                "h": 0.017458
+              },
+              {
+                "text": "the head of what looked like a foreign invasion",
+                "x": 0.065179,
+                "y": 0.16075,
+                "w": 0.401846,
+                "h": 0.015676
+              },
+              {
+                "text": "force and partly because, after almost a decade",
+                "x": 0.065179,
+                "y": 0.179794,
+                "w": 0.401846,
+                "h": 0.017396
+              },
+              {
+                "text": "of civil war, people were desperate to avoid",
+                "x": 0.067386,
+                "y": 0.198838,
+                "w": 0.370935,
+                "h": 0.017386
+              },
+              {
+                "text": "it beginning again. This makes it all the more",
+                "x": 0.065179,
+                "y": 0.217882,
+                "w": 0.388598,
+                "h": 0.017376
+              },
+              {
+                "text": "interesting that Charles II himself loved the",
+                "x": 0.065179,
+                "y": 0.238698,
+                "w": 0.373143,
+                "h": 0.017324
+              },
+              {
+                "text": "story so much ever after. As well as retelling",
+                "x": 0.067386,
+                "y": 0.259482,
+                "w": 0.379766,
+                "h": 0.015573
+              },
+              {
+                "text": "it to anyone who would listen, causing eye-",
+                "x": 0.065179,
+                "y": 0.278516,
+                "w": 0.373143,
+                "h": 0.017314
+              },
+              {
+                "text": "rolling among courtiers, he set in train a series",
+                "x": 0.065179,
+                "y": 0.29928,
+                "w": 0.399638,
+                "h": 0.015594
+              },
+              {
+                "text": "of initiatives to memorialise it. There was to",
+                "x": 0.067386,
+                "y": 0.318314,
+                "w": 0.377558,
+                "h": 0.013843
+              },
+              {
+                "text": "be a new order of chivalry, the Knights of the",
+                "x": 0.065179,
+                "y": 0.339078,
+                "w": 0.390806,
+                "h": 0.015655
+              },
+              {
+                "text": "Royal Oak. A series of enormous oil paintings",
+                "x": 0.067386,
+                "y": 0.358112,
+                "w": 0.395222,
+                "h": 0.015666
+              },
+              {
+                "text": "depicting the episode were produced, including",
+                "x": 0.065179,
+                "y": 0.377146,
+                "w": 0.406262,
+                "h": 0.019219
+              },
+              {
+                "text": "a two-metre-wide canvas of Boscobel Wood",
+                "x": 0.067386,
+                "y": 0.397693,
+                "w": 0.37535,
+                "h": 0.014172
+              },
+              {
+                "text": "and a set of six similarly enormous paintings",
+                "x": 0.067252,
+                "y": 0.413799,
+                "w": 0.384524,
+                "h": 0.020637
+              },
+              {
+                "text": "of the king on the run. In 1660, Charles II",
+                "x": 0.065179,
+                "y": 0.437553,
+                "w": 0.359895,
+                "h": 0.017458
+              },
+              {
+                "text": "commissioned the artist John Michael Wright",
+                "x": 0.065179,
+                "y": 0.456597,
+                "w": 0.393014,
+                "h": 0.019178
+              },
+              {
+                "text": "to paint a flying squadron of cherubs* carrying",
+                "x": 0.062971,
+                "y": 0.475641,
+                "w": 0.406262,
+                "h": 0.019168
+              },
+              {
+                "text": "an oak tree to the heavens on the ceiling of his",
+                "x": 0.065179,
+                "y": 0.496457,
+                "w": 0.399638,
+                "h": 0.015655
+              },
+              {
+                "text": "bedchamber. It is hard to imagine many other",
+                "x": 0.062971,
+                "y": 0.515501,
+                "w": 0.395222,
+                "h": 0.017376
+              },
+              {
+                "text": "kings marking the lowest point in their life so",
+                "x": 0.067386,
+                "y": 0.536317,
+                "w": 0.388598,
+                "h": 0.015594
+              },
+              {
+                "text": "enthusiastically, or indeed pulling off such an",
+                "x": 0.065179,
+                "y": 0.555361,
+                "w": 0.390806,
+                "h": 0.017314
+              },
+              {
+                "text": "escape in the first place.",
+                "x": 0.067386,
+                "y": 0.576135,
+                "w": 0.207547,
+                "h": 0.015573
+              },
+              {
+                "text": "Charles Spencer is the perfect person to",
+                "x": 0.06475,
+                "y": 0.611321,
+                "w": 0.343028,
+                "h": 0.025042
+              },
+              {
+                "text": "pass the story on to a new generation. His",
+                "x": 0.067386,
+                "y": 0.634967,
+                "w": 0.357687,
+                "h": 0.015614
+              },
+              {
+                "text": "* cherub: an image of angelic children used in paintings",
+                "x": 0.062971,
+                "y": 0.911822,
+                "w": 0.335607,
+                "h": 0.013843
+              },
+              {
+                "text": "pacey, readable prose steers deftly clear of",
+                "x": 0.495728,
+                "y": 0.022425,
+                "w": 0.364311,
+                "h": 0.015645
+              },
+              {
+                "text": "modern idioms and elegantly brings to life the",
+                "x": 0.495728,
+                "y": 0.041459,
+                "w": 0.395222,
+                "h": 0.017427
+              },
+              {
+                "text": "details of the great tale. He has even-handed",
+                "x": 0.495728,
+                "y": 0.062223,
+                "w": 0.379766,
+                "h": 0.015707
+              },
+              {
+                "text": "sympathy for both the fugitive king and the",
+                "x": 0.49352,
+                "y": 0.081257,
+                "w": 0.373143,
+                "h": 0.017489
+              },
+              {
+                "text": "fierce republican regime that hunted him,",
+                "x": 0.495728,
+                "y": 0.100074,
+                "w": 0.355479,
+                "h": 0.017715
+              },
+              {
+                "text": "and he succeeds in his desire to explore far",
+                "x": 0.495728,
+                "y": 0.12089,
+                "w": 0.368727,
+                "h": 0.015944
+              },
+              {
+                "text": "more of the background of the story than",
+                "x": 0.495728,
+                "y": 0.139934,
+                "w": 0.351063,
+                "h": 0.015944
+              },
+              {
+                "text": "previous books on the subject have done. Indeed,",
+                "x": 0.495728,
+                "y": 0.16075,
+                "w": 0.404054,
+                "h": 0.015676
+              },
+              {
+                "text": "the opening third of the book is about how",
+                "x": 0.495728,
+                "y": 0.179794,
+                "w": 0.364311,
+                "h": 0.015666
+              },
+              {
+                "text": "Charles II found himself at Worcester in the first",
+                "x": 0.495728,
+                "y": 0.200609,
+                "w": 0.406262,
+                "h": 0.013884
+              },
+              {
+                "text": "place, which for some will be reason alone to",
+                "x": 0.495728,
+                "y": 0.219653,
+                "w": 0.388598,
+                "h": 0.017334
+              },
+              {
+                "text": "read To Catch a King.",
+                "x": 0.495728,
+                "y": 0.240449,
+                "w": 0.189883,
+                "h": 0.015573
+              },
+              {
+                "text": "The tantalising question left, in the end, is that",
+                "x": 0.495728,
+                "y": 0.278516,
+                "w": 0.399638,
+                "h": 0.015573
+              },
+              {
+                "text": "of what it all meant. Would Charles II have",
+                "x": 0.49352,
+                "y": 0.29755,
+                "w": 0.370935,
+                "h": 0.017324
+              },
+              {
+                "text": "been a different king had these six weeks never",
+                "x": 0.495728,
+                "y": 0.318314,
+                "w": 0.406262,
+                "h": 0.017376
+              },
+              {
+                "text": "happened? The days and nights spent in hiding",
+                "x": 0.49352,
+                "y": 0.339078,
+                "w": 0.401846,
+                "h": 0.017427
+              },
+              {
+                "text": "must have affected him in some way. Did the",
+                "x": 0.495728,
+                "y": 0.358112,
+                "w": 0.38639,
+                "h": 0.015666
+              },
+              {
+                "text": "need to assume disguises, to survive on wit and",
+                "x": 0.495539,
+                "y": 0.374576,
+                "w": 0.406693,
+                "h": 0.021856
+              },
+              {
+                "text": "charm alone, to use trickery and subterfuge to",
+                "x": 0.495728,
+                "y": 0.397693,
+                "w": 0.395222,
+                "h": 0.015944
+              },
+              {
+                "text": "escape from tight corners help form him? This",
+                "x": 0.49352,
+                "y": 0.416738,
+                "w": 0.401846,
+                "h": 0.017715
+              },
+              {
+                "text": "is the one area where the book doesn't quite hit",
+                "x": 0.495728,
+                "y": 0.437553,
+                "w": 0.406262,
+                "h": 0.014172
+              },
+              {
+                "text": "the mark. Instead its depiction of Charles II in",
+                "x": 0.495728,
+                "y": 0.456597,
+                "w": 0.395222,
+                "h": 0.015717
+              },
+              {
+                "text": "his final years as an ineffective, pleasure-loving",
+                "x": 0.49352,
+                "y": 0.475641,
+                "w": 0.40847,
+                "h": 0.019168
+              },
+              {
+                "text": "monarch doesn't do justice to the man (neither",
+                "x": 0.495728,
+                "y": 0.496457,
+                "w": 0.399638,
+                "h": 0.015655
+              },
+              {
+                "text": "is it accurate), or to the complexity of his",
+                "x": 0.495728,
+                "y": 0.515501,
+                "w": 0.355479,
+                "h": 0.017376
+              },
+              {
+                "text": "character. But this one niggle aside, To Catch a",
+                "x": 0.495728,
+                "y": 0.536317,
+                "w": 0.404054,
+                "h": 0.015594
+              },
+              {
+                "text": "King is an excellent read, and those who come",
+                "x": 0.497723,
+                "y": 0.551976,
+                "w": 0.395573,
+                "h": 0.021085
+              },
+              {
+                "text": "to it knowing little of the famous tale will find",
+                "x": 0.495728,
+                "y": 0.576135,
+                "w": 0.395222,
+                "h": 0.015573
+              },
+              {
+                "text": "they have a treat in store.",
+                "x": 0.495728,
+                "y": 0.595169,
+                "w": 0.216379,
+                "h": 0.017324
+              },
+              {
+                "text": "25",
+                "x": 0.875494,
+                "y": 0.936047,
+                "w": 0.028703,
+                "h": 0.017303
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-1/page-21.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.435988,
+                "y": 0.016784,
+                "w": 0.130519,
+                "h": 0.023395
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.080634,
+                "y": 0.079527,
+                "w": 0.242874,
+                "h": 0.022494
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.080634,
+                "y": 0.12089,
+                "w": 0.465876,
+                "h": 0.020929
+              },
+              {
+                "text": "The maps below show an industrial area in the town of Norbiton, and planned",
+                "x": 0.104922,
+                "y": 0.171235,
+                "w": 0.792652,
+                "h": 0.024225
+              },
+              {
+                "text": "future development of the site.",
+                "x": 0.102714,
+                "y": 0.190269,
+                "w": 0.320152,
+                "h": 0.022494
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.098298,
+                "y": 0.230066,
+                "w": 0.79486,
+                "h": 0.024225
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.102714,
+                "y": 0.252427,
+                "w": 0.362103,
+                "h": 0.020898
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.080634,
+                "y": 0.304471,
+                "w": 0.240666,
+                "h": 0.019034
+              },
+              {
+                "text": "Norbiton industrial area now",
+                "x": 0.394162,
+                "y": 0.342333,
+                "w": 0.214171,
+                "h": 0.010629
+              },
+              {
+                "text": "Farmland",
+                "x": 0.444916,
+                "y": 0.385683,
+                "w": 0.055257,
+                "h": 0.008881
+              },
+              {
+                "text": "mafoc",
+                "x": 0.696651,
+                "y": 0.352921,
+                "w": 0.068446,
+                "h": 0.041528
+              },
+              {
+                "text": "River",
+                "x": 0.387538,
+                "y": 0.404831,
+                "w": 0.030911,
+                "h": 0.008652
+              },
+              {
+                "text": "Town 1",
+                "x": 0.243913,
+                "y": 0.482437,
+                "w": 0.046585,
+                "h": 0.012632
+              },
+              {
+                "text": "WIII = Factory",
+                "x": 0.239606,
+                "y": 0.595169,
+                "w": 0.114813,
+                "h": 0.015573
+              },
+              {
+                "text": "Planned future development",
+                "x": 0.391954,
+                "y": 0.638427,
+                "w": 0.218586,
+                "h": 0.015697
+              },
+              {
+                "text": "Farmland",
+                "x": 0.601646,
+                "y": 0.671096,
+                "w": 0.055325,
+                "h": 0.010799
+              },
+              {
+                "text": "River",
+                "x": 0.387538,
+                "y": 0.70072,
+                "w": 0.030911,
+                "h": 0.008652
+              },
+              {
+                "text": "Town |",
+                "x": 0.244022,
+                "y": 0.780316,
+                "w": 0.046367,
+                "h": 0.010382
+              },
+              {
+                "text": "Shops",
+                "x": 0.390833,
+                "y": 0.799349,
+                "w": 0.041985,
+                "h": 0.032877
+              },
+              {
+                "text": "School",
+                "x": 0.723146,
+                "y": 0.785507,
+                "w": 0.01104,
+                "h": 0.029416
+              },
+              {
+                "text": "Medical",
+                "x": 0.49571,
+                "y": 0.817518,
+                "w": 0.044193,
+                "h": 0.034607
+              },
+              {
+                "text": "centre",
+                "x": 0.506752,
+                "y": 0.827035,
+                "w": 0.037566,
+                "h": 0.029416
+              },
+              {
+                "text": "EX = Housing",
+                "x": 0.239606,
+                "y": 0.892788,
+                "w": 0.114813,
+                "h": 0.015573
+              },
+              {
+                "text": "28",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.026495,
+                "h": 0.017303
+              },
+              {
+                "text": "→",
+                "x": 0.146872,
+                "y": 0.934316,
+                "w": 0.026495,
+                "h": 0.019034
+              },
+              {
+                "text": "1 p. 127",
+                "x": 0.171096,
+                "y": 0.935835,
+                "w": 0.101694,
+                "h": 0.019456
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-1/page-22.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.065179,
+                "y": 0.017234,
+                "w": 0.242874,
+                "h": 0.020836
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.46146,
+                "h": 0.019209
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.293657,
+                "h": 0.01925
+              },
+              {
+                "text": "It is important for people to take risks, both in their professional lives and",
+                "x": 0.08505,
+                "y": 0.14874,
+                "w": 0.755117,
+                "h": 0.022639
+              },
+              {
+                "text": "their personal lives.",
+                "x": 0.087258,
+                "y": 0.171235,
+                "w": 0.205339,
+                "h": 0.019188
+              },
+              {
+                "text": "Do you think the advantages of taking risks outweigh the disadvantages?",
+                "x": 0.087258,
+                "y": 0.207572,
+                "w": 0.752909,
+                "h": 0.022711
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.065179,
+                "y": 0.261213,
+                "w": 0.757325,
+                "h": 0.019116
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.065179,
+                "y": 0.281977,
+                "w": 0.24729,
+                "h": 0.019168
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.067386,
+                "y": 0.321775,
+                "w": 0.23625,
+                "h": 0.015686
+              },
+              {
+                "text": "→ • p. 128",
+                "x": 0.714314,
+                "y": 0.936047,
+                "w": 0.130269,
+                "h": 0.020764
+              },
+              {
+                "text": "29",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-3.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.082842,
+                "y": 0.063758,
+                "w": 0.121437,
+                "h": 0.033216
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.422865,
+                "y": 0.131437,
+                "w": 0.158972,
+                "h": 0.020764
+              },
+              {
+                "text": "PART 1",
+                "x": 0.082777,
+                "y": 0.21428,
+                "w": 0.101695,
+                "h": 0.01946
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.244022,
+                "y": 0.21611,
+                "w": 0.189883,
+                "h": 0.017417
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.082842,
+                "y": 0.25597,
+                "w": 0.251706,
+                "h": 0.017355
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.082842,
+                "y": 0.295819,
+                "w": 0.551986,
+                "h": 0.019054
+              },
+              {
+                "text": "Buckworth Conservation Group",
+                "x": 0.28121,
+                "y": 0.337948,
+                "w": 0.444613,
+                "h": 0.032493
+              },
+              {
+                "text": "10",
+                "x": 0.082842,
+                "y": 0.982766,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Regular activities",
+                "x": 0.100506,
+                "y": 0.389258,
+                "w": 0.178843,
+                "h": 0.017303
+              },
+              {
+                "text": "Beach",
+                "x": 0.100418,
+                "y": 0.414998,
+                "w": 0.061998,
+                "h": 0.016003
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.442899,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "no 2",
+                "x": 0.144665,
+                "y": 0.467123,
+                "w": 0.046367,
+                "h": 0.015604
+              },
+              {
+                "text": "making sure the beach does not have 1",
+                "x": 0.142356,
+                "y": 0.440783,
+                "w": 0.380002,
+                "h": 0.019858
+              },
+              {
+                "text": "Nature reserve",
+                "x": 0.102714,
+                "y": 0.50173,
+                "w": 0.141308,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.527685,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.553641,
+                "w": 0.019871,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.579596,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.607281,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.633236,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "maintaining paths",
+                "x": 0.144665,
+                "y": 0.527685,
+                "w": 0.17222,
+                "h": 0.017489
+              },
+              {
+                "text": "nesting boxes for birds installed",
+                "x": 0.144335,
+                "y": 0.549473,
+                "w": 0.303155,
+                "h": 0.022524
+              },
+              {
+                "text": "next task is taking action to attract 3",
+                "x": 0.144665,
+                "y": 0.579596,
+                "w": 0.344439,
+                "h": 0.019168
+              },
+              {
+                "text": "identifying types of 4",
+                "x": 0.142457,
+                "y": 0.605407,
+                "w": 0.200923,
+                "h": 0.019178
+              },
+              {
+                "text": "building a new 5...",
+                "x": 0.146872,
+                "y": 0.631506,
+                "w": 0.176636,
+                "h": 0.017303
+              },
+              {
+                "text": "....",
+                "x": 0.449361,
+                "y": 0.640158,
+                "w": 0.028703,
+                "h": 0.006921
+              },
+              {
+                "text": "Forthcoming events",
+                "x": 0.100506,
+                "y": 0.667843,
+                "w": 0.205339,
+                "h": 0.019054
+              },
+              {
+                "text": "Saturday",
+                "x": 0.100506,
+                "y": 0.693798,
+                "w": 0.088318,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.721484,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "meet at Dunsmore Beach car park",
+                "x": 0.144665,
+                "y": 0.719671,
+                "w": 0.328984,
+                "h": 0.019116
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.747439,
+                "w": 0.019871,
+                "h": 0.013843
+              },
+              {
+                "text": "walk across the sands and reach the 6",
+                "x": 0.144665,
+                "y": 0.745709,
+                "w": 0.368727,
+                "h": 0.015594
+              },
+              {
+                "text": "take a picnic",
+                "x": 0.142279,
+                "y": 0.770919,
+                "w": 0.126208,
+                "h": 0.020523
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.80108,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "wear appropriate 7",
+                "x": 0.144665,
+                "y": 0.799349,
+                "w": 0.185467,
+                "h": 0.017314
+              },
+              {
+                "text": "Woodwork session",
+                "x": 0.102714,
+                "y": 0.833936,
+                "w": 0.176636,
+                "h": 0.013863
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.861642,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.889327,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.913552,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "suitable for 8",
+                "x": 0.144665,
+                "y": 0.861642,
+                "w": 0.125853,
+                "h": 0.015697
+              },
+              {
+                "text": "making 9...",
+                "x": 0.144665,
+                "y": 0.887525,
+                "w": 0.105981,
+                "h": 0.017376
+              },
+              {
+                "text": "17th, from 10 a.m. to 3 p.m.",
+                "x": 0.144665,
+                "y": 0.913552,
+                "w": 0.267161,
+                "h": 0.017376
+              },
+              {
+                "text": "cost of session (no camping): 10 €...",
+                "x": 0.144665,
+                "y": 0.937571,
+                "w": 0.344439,
+                "h": 0.02097
+              },
+              {
+                "text": "..to participate in",
+                "x": 0.433905,
+                "y": 0.859911,
+                "w": 0.158972,
+                "h": 0.019199
+              },
+              {
+                "text": "..... out of wood",
+                "x": 0.38533,
+                "y": 0.887525,
+                "w": 0.136893,
+                "h": 0.015645
+              },
+              {
+                "text": "→",
+                "x": 0.14908,
+                "y": 0.981035,
+                "w": 0.024287,
+                "h": 0.017303
+              },
+              {
+                "text": "p. 119",
+                "x": 0.213111,
+                "y": 0.982745,
+                "w": 0.061822,
+                "h": 0.017324
+              },
+              {
+                "text": "p. 96",
+                "x": 0.3213,
+                "y": 0.982745,
+                "w": 0.052991,
+                "h": 0.017324
+              },
+              {
+                "text": "...on it",
+                "x": 0.678987,
+                "y": 0.441096,
+                "w": 0.06403,
+                "h": 0.017376
+              },
+              {
+                "text": "... to the place",
+                "x": 0.645804,
+                "y": 0.577596,
+                "w": 0.130396,
+                "h": 0.019572
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-4.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.065179,
+                "y": 0.017234,
+                "w": 0.105981,
+                "h": 0.022608
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.22415,
+                "y": 0.017234,
+                "w": 0.205339,
+                "h": 0.022608
+              },
+              {
+                "text": "Questions 11-14",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.176636,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.340023,
+                "h": 0.02098
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.694443,
+                "y": 0.093369,
+                "w": 0.17222,
+                "h": 0.015573
+              },
+              {
+                "text": "Boat trip round Tasmania",
+                "x": 0.31026,
+                "y": 0.158978,
+                "w": 0.351063,
+                "h": 0.024369
+              },
+              {
+                "text": "11 What is the maximum number of people who can stand on each side of the boat?",
+                "x": 0.065179,
+                "y": 0.202381,
+                "w": 0.816939,
+                "h": 0.019044
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.235257,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "9",
+                "x": 0.146872,
+                "y": 0.233527,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.254291,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "15",
+                "x": 0.14908,
+                "y": 0.254291,
+                "w": 0.035327,
+                "h": 0.017303
+              },
+              {
+                "text": "C 18",
+                "x": 0.111545,
+                "y": 0.271471,
+                "w": 0.072862,
+                "h": 0.019157
+              },
+              {
+                "text": "12 What colour are the tour boats?",
+                "x": 0.062971,
+                "y": 0.302741,
+                "w": 0.351063,
+                "h": 0.019219
+              },
+              {
+                "text": "A dark red",
+                "x": 0.113753,
+                "y": 0.335617,
+                "w": 0.125853,
+                "h": 0.013843
+              },
+              {
+                "text": "B jet black",
+                "x": 0.115961,
+                "y": 0.356382,
+                "w": 0.123645,
+                "h": 0.013853
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.375415,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "light green",
+                "x": 0.155476,
+                "y": 0.374536,
+                "w": 0.10423,
+                "h": 0.019061
+              },
+              {
+                "text": "Which lunchbox is suitable for someone who doesn't eat meat or fish?",
+                "x": 0.100506,
+                "y": 0.40478,
+                "w": 0.673423,
+                "h": 0.013894
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.435977,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.456741,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.475775,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "Lunchbox 1",
+                "x": 0.157912,
+                "y": 0.435782,
+                "w": 0.112605,
+                "h": 0.014172
+              },
+              {
+                "text": "Lunchbox 2",
+                "x": 0.157912,
+                "y": 0.454826,
+                "w": 0.112605,
+                "h": 0.017489
+              },
+              {
+                "text": "Lunchbox 3",
+                "x": 0.157912,
+                "y": 0.475641,
+                "w": 0.112605,
+                "h": 0.015707
+              },
+              {
+                "text": "14",
+                "x": 0.065179,
+                "y": 0.506921,
+                "w": 0.026495,
+                "h": 0.013843
+              },
+              {
+                "text": "What should people do with their litter?",
+                "x": 0.102714,
+                "y": 0.506921,
+                "w": 0.379766,
+                "h": 0.017437
+              },
+              {
+                "text": "A take it home",
+                "x": 0.113753,
+                "y": 0.536317,
+                "w": 0.163388,
+                "h": 0.015594
+              },
+              {
+                "text": "hand it to a member of staff",
+                "x": 0.155704,
+                "y": 0.557101,
+                "w": 0.267161,
+                "h": 0.015573
+              },
+              {
+                "text": "C put it in the bins provided on the boat",
+                "x": 0.111545,
+                "y": 0.576135,
+                "w": 0.401846,
+                "h": 0.017314
+              },
+              {
+                "text": "11",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-5.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 15 and 16",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.216379,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.019209
+              },
+              {
+                "text": "Which TWO features of the lighthouse does Lou mention?",
+                "x": 0.080634,
+                "y": 0.100074,
+                "w": 0.551986,
+                "h": 0.017715
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.129707,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "why it was built",
+                "x": 0.162328,
+                "y": 0.129707,
+                "w": 0.16118,
+                "h": 0.017314
+              },
+              {
+                "text": "B who built it",
+                "x": 0.129209,
+                "y": 0.14874,
+                "w": 0.152348,
+                "h": 0.017324
+              },
+              {
+                "text": "C how long it took to build",
+                "x": 0.129209,
+                "y": 0.169504,
+                "w": 0.271577,
+                "h": 0.019147
+              },
+              {
+                "text": "D who staffed it",
+                "x": 0.129209,
+                "y": 0.188538,
+                "w": 0.178843,
+                "h": 0.017386
+              },
+              {
+                "text": "E what it was built with",
+                "x": 0.129209,
+                "y": 0.207572,
+                "w": 0.242874,
+                "h": 0.017396
+              },
+              {
+                "text": "Questions 17 and 18",
+                "x": 0.082842,
+                "y": 0.286972,
+                "w": 0.216379,
+                "h": 0.017715
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.326832,
+                "w": 0.253914,
+                "h": 0.019168
+              },
+              {
+                "text": "Which TWO types of creature might come close to the boat?",
+                "x": 0.080634,
+                "y": 0.36492,
+                "w": 0.574065,
+                "h": 0.019147
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.396179,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "sea eagles",
+                "x": 0.164536,
+                "y": 0.397693,
+                "w": 0.117021,
+                "h": 0.017715
+              },
+              {
+                "text": "fur seals",
+                "x": 0.164456,
+                "y": 0.414942,
+                "w": 0.095101,
+                "h": 0.017846
+              },
+              {
+                "text": "c dolphins",
+                "x": 0.12915,
+                "y": 0.43058,
+                "w": 0.128178,
+                "h": 0.022907
+              },
+              {
+                "text": "D whales",
+                "x": 0.129209,
+                "y": 0.454826,
+                "w": 0.117021,
+                "h": 0.017489
+              },
+              {
+                "text": "E penguins",
+                "x": 0.129209,
+                "y": 0.475641,
+                "w": 0.134685,
+                "h": 0.017437
+              },
+              {
+                "text": "Questions 19 and 20",
+                "x": 0.082842,
+                "y": 0.553589,
+                "w": 0.216379,
+                "h": 0.015625
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.593439,
+                "w": 0.253914,
+                "h": 0.019054
+              },
+              {
+                "text": "Which TWO points does Lou make about the caves?",
+                "x": 0.080634,
+                "y": 0.633236,
+                "w": 0.501203,
+                "h": 0.017345
+              },
+              {
+                "text": "A Only large tourist boats can visit them.",
+                "x": 0.131417,
+                "y": 0.664311,
+                "w": 0.406262,
+                "h": 0.015645
+              },
+              {
+                "text": "The entrances to them are often blocked.",
+                "x": 0.175576,
+                "y": 0.681583,
+                "w": 0.390806,
+                "h": 0.019137
+              },
+              {
+                "text": "C Itis too dangerous for individuals to go near them.",
+                "x": 0.129209,
+                "y": 0.702399,
+                "w": 0.521075,
+                "h": 0.017355
+              },
+              {
+                "text": "D",
+                "x": 0.129209,
+                "y": 0.723214,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "Someone will explain what is inside them.",
+                "x": 0.164536,
+                "y": 0.719671,
+                "w": 0.40847,
+                "h": 0.019116
+              },
+              {
+                "text": "E They cannot be reached on foot.",
+                "x": 0.129209,
+                "y": 0.740487,
+                "w": 0.359895,
+                "h": 0.019065
+              },
+              {
+                "text": "12",
+                "x": 0.082842,
+                "y": 0.936047,
+                "w": 0.028703,
+                "h": 0.019034
+              },
+              {
+                "text": "→ • p. 119",
+                "x": 0.149047,
+                "y": 0.935907,
+                "w": 0.128128,
+                "h": 0.019312
+              },
+              {
+                "text": "0 p. 97",
+                "x": 0.294569,
+                "y": 0.935481,
+                "w": 0.079958,
+                "h": 0.021894
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            15,
+            16
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            17,
+            18
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            19,
+            20
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-6.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.103773,
+                "h": 0.017376
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.228566,
+                "y": 0.020695,
+                "w": 0.200923,
+                "h": 0.019147
+              },
+              {
+                "text": "Questions 21-26",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.176636,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.069594,
+                "y": 0.100074,
+                "w": 0.337815,
+                "h": 0.017715
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.698858,
+                "y": 0.093369,
+                "w": 0.167804,
+                "h": 0.013843
+              },
+              {
+                "text": "Work experience for veterinary science students",
+                "x": 0.14908,
+                "y": 0.143477,
+                "w": 0.669007,
+                "h": 0.022587
+              },
+              {
+                "text": "21 What problem did both Diana and Tim have when arranging their work experience?",
+                "x": 0.067386,
+                "y": 0.186808,
+                "w": 0.830187,
+                "h": 0.017345
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.217954,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "B",
+                "x": 0.113753,
+                "y": 0.236988,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "making initial contact with suitable farms",
+                "x": 0.16012,
+                "y": 0.217882,
+                "w": 0.381974,
+                "h": 0.015645
+              },
+              {
+                "text": "organising transport to and from the farm",
+                "x": 0.155704,
+                "y": 0.236926,
+                "w": 0.390806,
+                "h": 0.019096
+              },
+              {
+                "text": "finding a placement for the required length of time",
+                "x": 0.157912,
+                "y": 0.257742,
+                "w": 0.4725,
+                "h": 0.015583
+              },
+              {
+                "text": "22 Tim was pleased to be able to help",
+                "x": 0.065179,
+                "y": 0.286972,
+                "w": 0.377558,
+                "h": 0.017715
+              },
+              {
+                "text": "A a lamb that had a broken leg.",
+                "x": 0.111545,
+                "y": 0.318314,
+                "w": 0.328984,
+                "h": 0.017376
+              },
+              {
+                "text": "B a sheep that was having difficulty giving birth.",
+                "x": 0.111545,
+                "y": 0.335617,
+                "w": 0.479124,
+                "h": 0.020888
+              },
+              {
+                "text": "C a newly born lamb that was having trouble feeding.",
+                "x": 0.111545,
+                "y": 0.356382,
+                "w": 0.529907,
+                "h": 0.019168
+              },
+              {
+                "text": "23 Diana says the sheep on her farm",
+                "x": 0.067386,
+                "y": 0.387507,
+                "w": 0.366519,
+                "h": 0.017324
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.418674,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "were of various different varieties.",
+                "x": 0.16012,
+                "y": 0.418509,
+                "w": 0.320152,
+                "h": 0.015944
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.439438,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "were mainly reared for their meat.",
+                "x": 0.16012,
+                "y": 0.439325,
+                "w": 0.317944,
+                "h": 0.015686
+              },
+              {
+                "text": "had better quality wool than sheep on the hills.",
+                "x": 0.155704,
+                "y": 0.458369,
+                "w": 0.446005,
+                "h": 0.017406
+              },
+              {
+                "text": "24 What did the students learn about adding supplements to chicken feed?",
+                "x": 0.062971,
+                "y": 0.486157,
+                "w": 0.728622,
+                "h": 0.020929
+              },
+              {
+                "text": "A These should only be given if specially needed.",
+                "x": 0.111545,
+                "y": 0.515501,
+                "w": 0.496787,
+                "h": 0.022587
+              },
+              {
+                "text": "B Itis worth paying extra for the most effective ones.",
+                "x": 0.111545,
+                "y": 0.536317,
+                "w": 0.525491,
+                "h": 0.020816
+              },
+              {
+                "text": "C The amount given at one time should be limited.",
+                "x": 0.111545,
+                "y": 0.557101,
+                "w": 0.505619,
+                "h": 0.020847
+              },
+              {
+                "text": "25 What happened when Diana was working with dairy cows?",
+                "x": 0.065179,
+                "y": 0.586363,
+                "w": 0.604977,
+                "h": 0.020919
+              },
+              {
+                "text": "A She identified some cows incorrectly.",
+                "x": 0.113753,
+                "y": 0.619394,
+                "w": 0.39743,
+                "h": 0.017458
+              },
+              {
+                "text": "B She accidentally threw some milk away.",
+                "x": 0.111545,
+                "y": 0.639952,
+                "w": 0.423925,
+                "h": 0.01924
+              },
+              {
+                "text": "C She made a mistake when storing milk.",
+                "x": 0.11138,
+                "y": 0.654002,
+                "w": 0.422175,
+                "h": 0.024846
+              },
+              {
+                "text": "26 What did both farmers mention about vets and farming?",
+                "x": 0.062846,
+                "y": 0.685453,
+                "w": 0.578761,
+                "h": 0.024071
+              },
+              {
+                "text": "A Vets are failing to cope with some aspects of animal health.",
+                "x": 0.115961,
+                "y": 0.719671,
+                "w": 0.607185,
+                "h": 0.017386
+              },
+              {
+                "text": "B There needs to be a fundamental change in the training of vets.",
+                "x": 0.115961,
+                "y": 0.740487,
+                "w": 0.64472,
+                "h": 0.017334
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.761282,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "Some jobs could be done by the farmer rather than by a vet.",
+                "x": 0.157912,
+                "y": 0.761282,
+                "w": 0.571858,
+                "h": 0.017303
+              },
+              {
+                "text": "13",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-7.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.017376
+              },
+              {
+                "text": "What opinion do the students give about each of the following modules on their",
+                "x": 0.080634,
+                "y": 0.060493,
+                "w": 0.750701,
+                "h": 0.017437
+              },
+              {
+                "text": "veterinary science course?",
+                "x": 0.080634,
+                "y": 0.081257,
+                "w": 0.258329,
+                "h": 0.017489
+              },
+              {
+                "text": "Choose FOUR answers from the box and write the correct letter, A-F, next to",
+                "x": 0.082842,
+                "y": 0.119118,
+                "w": 0.73083,
+                "h": 0.02097
+              },
+              {
+                "text": "questions 27-30.",
+                "x": 0.082842,
+                "y": 0.139934,
+                "w": 0.16118,
+                "h": 0.017458
+              },
+              {
+                "text": "Opinions",
+                "x": 0.446814,
+                "y": 0.190912,
+                "w": 0.10445,
+                "h": 0.022937
+              },
+              {
+                "text": "A Tim found this easier than expected.",
+                "x": 0.131417,
+                "y": 0.224875,
+                "w": 0.393014,
+                "h": 0.019137
+              },
+              {
+                "text": "B Tim thought this was not very clearly organised.",
+                "x": 0.131417,
+                "y": 0.254199,
+                "w": 0.501203,
+                "h": 0.019126
+              },
+              {
+                "text": "C",
+                "x": 0.131417,
+                "y": 0.285437,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.131417,
+                "y": 0.316584,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.131417,
+                "y": 0.34773,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "Diana may do some further study on this.",
+                "x": 0.177784,
+                "y": 0.285437,
+                "w": 0.393014,
+                "h": 0.01925
+              },
+              {
+                "text": "They both found the reading required for this was difficult.",
+                "x": 0.177784,
+                "y": 0.316584,
+                "w": 0.545362,
+                "h": 0.019106
+              },
+              {
+                "text": "Tim was shocked at something he learned on this module.",
+                "x": 0.175576,
+                "y": 0.347647,
+                "w": 0.556402,
+                "h": 0.019116
+              },
+              {
+                "text": "F They were both surprised how little is known about some aspects of this.",
+                "x": 0.131417,
+                "y": 0.377146,
+                "w": 0.735245,
+                "h": 0.019219
+              },
+              {
+                "text": "Modules on Veterinary Science course",
+                "x": 0.131417,
+                "y": 0.44809,
+                "w": 0.388598,
+                "h": 0.015594
+              },
+              {
+                "text": "27",
+                "x": 0.080634,
+                "y": 0.479236,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Medical terminology",
+                "x": 0.129209,
+                "y": 0.479184,
+                "w": 0.192091,
+                "h": 0.017355
+              },
+              {
+                "text": "28 Diet and nutrition",
+                "x": 0.082842,
+                "y": 0.508652,
+                "w": 0.209755,
+                "h": 0.013935
+              },
+              {
+                "text": "29 Animal disease",
+                "x": 0.080634,
+                "y": 0.539798,
+                "w": 0.194299,
+                "h": 0.017334
+              },
+              {
+                "text": "30 Wildlife medication",
+                "x": 0.080634,
+                "y": 0.570862,
+                "w": 0.227418,
+                "h": 0.015655
+              },
+              {
+                "text": "14",
+                "x": 0.082842,
+                "y": 0.937777,
+                "w": 0.024287,
+                "h": 0.015573
+              },
+              {
+                "text": "→ O p.119 • p. 98",
+                "x": 0.140249,
+                "y": 0.936047,
+                "w": 0.240666,
+                "h": 0.01924
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-8.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.065153,
+                "y": 0.01716,
+                "w": 0.106033,
+                "h": 0.022644
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.226358,
+                "y": 0.017234,
+                "w": 0.205339,
+                "h": 0.022608
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.058762,
+                "w": 0.256122,
+                "h": 0.020939
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.065179,
+                "y": 0.09683,
+                "w": 0.40847,
+                "h": 0.02096
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.694443,
+                "y": 0.093369,
+                "w": 0.17222,
+                "h": 0.015573
+              },
+              {
+                "text": "Labyrinths",
+                "x": 0.427281,
+                "y": 0.153931,
+                "w": 0.152348,
+                "h": 0.024225
+              },
+              {
+                "text": "Definition",
+                "x": 0.113688,
+                "y": 0.181399,
+                "w": 0.103903,
+                "h": 0.01947
+              },
+              {
+                "text": "• a winding spiral path leading to a central area",
+                "x": 0.113753,
+                "y": 0.209302,
+                "w": 0.479124,
+                "h": 0.02098
+              },
+              {
+                "text": "Labyrinths compared with mazes",
+                "x": 0.115961,
+                "y": 0.24737,
+                "w": 0.342231,
+                "h": 0.020764
+              },
+              {
+                "text": "• Mazes are a type of 31",
+                "x": 0.111545,
+                "y": 0.273243,
+                "w": 0.271577,
+                "h": 0.022587
+              },
+              {
+                "text": "- 32.",
+                "x": 0.157912,
+                "y": 0.29928,
+                "w": 0.061822,
+                "h": 0.020908
+              },
+              {
+                "text": "is needed to navigate through a maze",
+                "x": 0.380915,
+                "y": 0.29928,
+                "w": 0.366519,
+                "h": 0.02268
+              },
+              {
+                "text": "- the word 'maze' is derived from a word meaning a feeling of",
+                "x": 0.16012,
+                "y": 0.326832,
+                "w": 0.563026,
+                "h": 0.020898
+              },
+              {
+                "text": "33",
+                "x": 0.184407,
+                "y": 0.34946,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Labyrinths represent a journey through life",
+                "x": 0.162328,
+                "y": 0.373685,
+                "w": 0.401846,
+                "h": 0.019137
+              },
+              {
+                "text": "- they have frequently been used in 34.",
+                "x": 0.157912,
+                "y": 0.399465,
+                "w": 0.390806,
+                "h": 0.020939
+              },
+              {
+                "text": "..and prayer",
+                "x": 0.700976,
+                "y": 0.400987,
+                "w": 0.117203,
+                "h": 0.01807
+              },
+              {
+                "text": "Early examples of the labyrinth spiral",
+                "x": 0.115961,
+                "y": 0.439325,
+                "w": 0.381974,
+                "h": 0.019147
+              },
+              {
+                "text": "• Ancient carvings on 35",
+                "x": 0.115961,
+                "y": 0.467123,
+                "w": 0.260537,
+                "h": 0.015604
+              },
+              {
+                "text": "...have been found across",
+                "x": 0.537679,
+                "y": 0.465393,
+                "w": 0.238458,
+                "h": 0.017334
+              },
+              {
+                "text": "many cultures",
+                "x": 0.162328,
+                "y": 0.487888,
+                "w": 0.132477,
+                "h": 0.017427
+              },
+              {
+                "text": "• The Pima, a Native American tribe, wove the symbol on baskets",
+                "x": 0.113753,
+                "y": 0.511958,
+                "w": 0.655759,
+                "h": 0.019188
+              },
+              {
+                "text": "• Ancient Greeks used the symbol on 36 .",
+                "x": 0.113753,
+                "y": 0.538068,
+                "w": 0.426133,
+                "h": 0.019065
+              },
+              {
+                "text": "Walking labyrinths",
+                "x": 0.115961,
+                "y": 0.577865,
+                "w": 0.189883,
+                "h": 0.019126
+              },
+              {
+                "text": "The largest surviving example of a turf labyrinth once had a big",
+                "x": 0.16012,
+                "y": 0.603635,
+                "w": 0.598353,
+                "h": 0.02095
+              },
+              {
+                "text": "37",
+                "x": 0.162328,
+                "y": 0.624585,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "at its centre",
+                "x": 0.361043,
+                "y": 0.626222,
+                "w": 0.114813,
+                "h": 0.015666
+              },
+              {
+                "text": "Labyrinths nowadays",
+                "x": 0.115961,
+                "y": 0.664311,
+                "w": 0.220794,
+                "h": 0.017376
+              },
+              {
+                "text": "•",
+                "x": 0.113753,
+                "y": 0.692068,
+                "w": 0.017664,
+                "h": 0.019034
+              },
+              {
+                "text": "Believed to have a beneficial impact on mental and physical health,",
+                "x": 0.162328,
+                "y": 0.690338,
+                "w": 0.638096,
+                "h": 0.017376
+              },
+              {
+                "text": "e.g., walking a maze can reduce a person's 38",
+                "x": 0.164536,
+                "y": 0.707641,
+                "w": 0.441589,
+                "h": 0.019116
+              },
+              {
+                "text": "...... rate",
+                "x": 0.751849,
+                "y": 0.709372,
+                "w": 0.066238,
+                "h": 0.017386
+              },
+              {
+                "text": "Used in medical and health and fitness settings and also prisons",
+                "x": 0.162328,
+                "y": 0.731866,
+                "w": 0.611601,
+                "h": 0.022494
+              },
+              {
+                "text": "•",
+                "x": 0.113753,
+                "y": 0.764743,
+                "w": 0.015456,
+                "h": 0.012112
+              },
+              {
+                "text": "Popular with patients, visitors and staff in hospitals",
+                "x": 0.162109,
+                "y": 0.756853,
+                "w": 0.479734,
+                "h": 0.029164
+              },
+              {
+                "text": "- patients who can't walk can use 'finger labyrinths' made from",
+                "x": 0.157912,
+                "y": 0.785507,
+                "w": 0.602769,
+                "h": 0.02097
+              },
+              {
+                "text": "39.",
+                "x": 0.186615,
+                "y": 0.808001,
+                "w": 0.039743,
+                "h": 0.013843
+              },
+              {
+                "text": "- research has shown that Alzheimer's sufferers experience",
+                "x": 0.162328,
+                "y": 0.832164,
+                "w": 0.571858,
+                "h": 0.019096
+              },
+              {
+                "text": "less 40",
+                "x": 0.182158,
+                "y": 0.854586,
+                "w": 0.072945,
+                "h": 0.014111
+              },
+              {
+                "text": "→ O p. 119",
+                "x": 0.608333,
+                "y": 0.934316,
+                "w": 0.128061,
+                "h": 0.022494
+              },
+              {
+                "text": "• p. 100",
+                "x": 0.753925,
+                "y": 0.933972,
+                "w": 0.095205,
+                "h": 0.023183
+              },
+              {
+                "text": "15",
+                "x": 0.877702,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-11.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 1-6",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.152348,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.09856,
+                "w": 0.598353,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 1-6 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.527699,
+                "h": 0.019229
+              },
+              {
+                "text": "The London underground railway",
+                "x": 0.268309,
+                "y": 0.181565,
+                "w": 0.465876,
+                "h": 0.02613
+              },
+              {
+                "text": "The problem",
+                "x": 0.098268,
+                "y": 0.226482,
+                "w": 0.130328,
+                "h": 0.019282
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.259482,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "The 1",
+                "x": 0.144665,
+                "y": 0.257742,
+                "w": 0.057407,
+                "h": 0.015583
+              },
+              {
+                "text": "..... of London increased rapidly between 1800 and 1850",
+                "x": 0.345587,
+                "y": 0.25597,
+                "w": 0.532115,
+                "h": 0.020816
+              },
+              {
+                "text": "The streets were full of horse-drawn vehicles",
+                "x": 0.144664,
+                "y": 0.286972,
+                "w": 0.428341,
+                "h": 0.017715
+              },
+              {
+                "text": "The proposed solution",
+                "x": 0.098298,
+                "y": 0.328603,
+                "w": 0.234042,
+                "h": 0.017396
+              },
+              {
+                "text": "• Charles Pearson, a solicitor, suggested building an underground railway",
+                "x": 0.09609,
+                "y": 0.358112,
+                "w": 0.73083,
+                "h": 0.019209
+              },
+              {
+                "text": "Building the railway would make it possible to move people to better housing in",
+                "x": 0.144665,
+                "y": 0.387507,
+                "w": 0.748493,
+                "h": 0.020816
+              },
+              {
+                "text": "the 2",
+                "x": 0.144665,
+                "y": 0.410022,
+                "w": 0.050783,
+                "h": 0.013843
+              },
+              {
+                "text": "• A number of 3",
+                "x": 0.100506,
+                "y": 0.439325,
+                "w": 0.181051,
+                "h": 0.014172
+              },
+              {
+                "text": ". agreed with Pearson's idea",
+                "x": 0.449361,
+                "y": 0.439325,
+                "w": 0.264953,
+                "h": 0.017417
+              },
+              {
+                "text": "• The company initially had problems getting the 4.",
+                "x": 0.09609,
+                "y": 0.468854,
+                "w": 0.518867,
+                "h": 0.019188
+              },
+              {
+                "text": "needed for",
+                "x": 0.780528,
+                "y": 0.468763,
+                "w": 0.10603,
+                "h": 0.017486
+              },
+              {
+                "text": "the project",
+                "x": 0.144521,
+                "y": 0.489065,
+                "w": 0.106268,
+                "h": 0.018409
+              },
+              {
+                "text": "Negative articles about the project appeared in the 5 ...",
+                "x": 0.146872,
+                "y": 0.520764,
+                "w": 0.516659,
+                "h": 0.017324
+              },
+              {
+                "text": "The construction",
+                "x": 0.100506,
+                "y": 0.558832,
+                "w": 0.174428,
+                "h": 0.013843
+              },
+              {
+                "text": "• The chosen route did not require many buildings to be pulled down",
+                "x": 0.09609,
+                "y": 0.589906,
+                "w": 0.682255,
+                "h": 0.017376
+              },
+              {
+                "text": "• The 'cut and cover' method was used to construct the tunnels",
+                "x": 0.098298,
+                "y": 0.619394,
+                "w": 0.631472,
+                "h": 0.015686
+              },
+              {
+                "text": "With the completion of the brick arch, the tunnel was covered with",
+                "x": 0.144664,
+                "y": 0.65054,
+                "w": 0.624848,
+                "h": 0.019085
+              },
+              {
+                "text": "18",
+                "x": 0.082842,
+                "y": 0.937777,
+                "w": 0.024287,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-12.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 7-13",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.163388,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.799276,
+                "h": 0.019209
+              },
+              {
+                "text": "In boxes 7-13 on your answer sheet, write",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.404054,
+                "h": 0.015944
+              },
+              {
+                "text": "TRUE",
+                "x": 0.137974,
+                "y": 0.138211,
+                "w": 0.061956,
+                "h": 0.017598
+              },
+              {
+                "text": "FALSE",
+                "x": 0.138041,
+                "y": 0.157392,
+                "w": 0.070654,
+                "h": 0.017303
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.272725,
+                "y": 0.138163,
+                "w": 0.412886,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.274933,
+                "y": 0.157207,
+                "w": 0.404054,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.138041,
+                "y": 0.178022,
+                "w": 0.437173,
+                "h": 0.017437
+              },
+              {
+                "text": "7 Other countries had built underground railways before the Metropolitan line",
+                "x": 0.076218,
+                "y": 0.228336,
+                "w": 0.746285,
+                "h": 0.017448
+              },
+              {
+                "text": "opened.",
+                "x": 0.111545,
+                "y": 0.2491,
+                "w": 0.081694,
+                "h": 0.017303
+              },
+              {
+                "text": "8 More people than predicted travelled on the Metropolitan line on the first",
+                "x": 0.076218,
+                "y": 0.278516,
+                "w": 0.71979,
+                "h": 0.020857
+              },
+              {
+                "text": "day.",
+                "x": 0.111545,
+                "y": 0.29928,
+                "w": 0.041951,
+                "h": 0.017303
+              },
+              {
+                "text": "9 The use of ventilation shafts failed to prevent pollution in the tunnels.",
+                "x": 0.078426,
+                "y": 0.328603,
+                "w": 0.684463,
+                "h": 0.017396
+              },
+              {
+                "text": "10 A different approach from the 'cut and cover' technique was required in London's",
+                "x": 0.067386,
+                "y": 0.358112,
+                "w": 0.8059,
+                "h": 0.017437
+              },
+              {
+                "text": "central area.",
+                "x": 0.113753,
+                "y": 0.380421,
+                "w": 0.121437,
+                "h": 0.014172
+              },
+              {
+                "text": "11 The windows on City & South London trains were at eye level.",
+                "x": 0.067386,
+                "y": 0.410022,
+                "w": 0.63368,
+                "h": 0.015573
+              },
+              {
+                "text": "12 The City & South London Railway was a financial success.",
+                "x": 0.067386,
+                "y": 0.441096,
+                "w": 0.602769,
+                "h": 0.015645
+              },
+              {
+                "text": "13 Trains on the 'Tuppenny Tube' nearly always ran on time.",
+                "x": 0.067386,
+                "y": 0.470584,
+                "w": 0.589521,
+                "h": 0.017458
+              },
+              {
+                "text": "→ 0 р. 120",
+                "x": 0.720847,
+                "y": 0.93567,
+                "w": 0.126036,
+                "h": 0.019786
+              },
+              {
+                "text": "19",
+                "x": 0.875494,
+                "y": 0.937777,
+                "w": 0.028703,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-15.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 14-17",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.015604
+              },
+              {
+                "text": "Reading Passage 2 has seven sections, A-G.",
+                "x": 0.08505,
+                "y": 0.060493,
+                "w": 0.437173,
+                "h": 0.017437
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.080634,
+                "y": 0.09856,
+                "w": 0.470292,
+                "h": 0.019229
+              },
+              {
+                "text": "Write the correct letter, A-G, in boxes 14-17 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.635888,
+                "h": 0.019229
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.08505,
+                "y": 0.178022,
+                "w": 0.423925,
+                "h": 0.015707
+              },
+              {
+                "text": "14 a mention of negative attitudes towards stadium building projects",
+                "x": 0.082842,
+                "y": 0.209302,
+                "w": 0.660175,
+                "h": 0.017437
+              },
+              {
+                "text": "15 figures demonstrating the environmental benefits of a certain stadium",
+                "x": 0.082842,
+                "y": 0.238698,
+                "w": 0.702126,
+                "h": 0.019054
+              },
+              {
+                "text": "16 examples of the wide range of facilities available at some new stadiums",
+                "x": 0.082842,
+                "y": 0.267928,
+                "w": 0.724206,
+                "h": 0.01924
+              },
+              {
+                "text": "17 reference to the disadvantages of the stadiums built during a certain era",
+                "x": 0.082842,
+                "y": 0.29928,
+                "w": 0.726414,
+                "h": 0.019137
+              },
+              {
+                "text": "Questions 18-22",
+                "x": 0.082842,
+                "y": 0.36492,
+                "w": 0.178843,
+                "h": 0.017417
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.082842,
+                "y": 0.40478,
+                "w": 0.289241,
+                "h": 0.019085
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.444629,
+                "w": 0.598353,
+                "h": 0.019054
+              },
+              {
+                "text": "Write your answers in boxes 18-22 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.484427,
+                "w": 0.549778,
+                "h": 0.017345
+              },
+              {
+                "text": "Roman amphitheatres",
+                "x": 0.347795,
+                "y": 0.538068,
+                "w": 0.309112,
+                "h": 0.024379
+              },
+              {
+                "text": "The Roman stadiums of Europe have proved very versatile. The amphitheatre of",
+                "x": 0.100506,
+                "y": 0.583056,
+                "w": 0.761741,
+                "h": 0.017479
+              },
+              {
+                "text": "Arles, for example, was converted first into a 18",
+                "x": 0.100506,
+                "y": 0.60895,
+                "w": 0.452629,
+                "h": 0.019096
+              },
+              {
+                "text": ".., then into",
+                "x": 0.771591,
+                "y": 0.608534,
+                "w": 0.101825,
+                "h": 0.018258
+              },
+              {
+                "text": "a residential area and finally into an arena where spectators could watch",
+                "x": 0.098298,
+                "y": 0.634967,
+                "w": 0.686671,
+                "h": 0.017386
+              },
+              {
+                "text": "19",
+                "x": 0.098298,
+                "y": 0.660922,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": ".. Meanwhile, the arena in Verona, one of the oldest",
+                "x": 0.347795,
+                "y": 0.658996,
+                "w": 0.490164,
+                "h": 0.02096
+              },
+              {
+                "text": "Roman amphitheatres, is famous today as a venue where 20",
+                "x": 0.100506,
+                "y": 0.685126,
+                "w": 0.576273,
+                "h": 0.020816
+              },
+              {
+                "text": "is performed. The site of Lucca's amphitheatre has also been used for many",
+                "x": 0.09609,
+                "y": 0.709372,
+                "w": 0.724206,
+                "h": 0.0227
+              },
+              {
+                "text": "purposes over the centuries, including the storage of 21",
+                "x": 0.098298,
+                "y": 0.731866,
+                "w": 0.529907,
+                "h": 0.024225
+              },
+              {
+                "text": "is now a market square with 22",
+                "x": 0.093882,
+                "y": 0.763012,
+                "w": 0.302488,
+                "h": 0.017334
+              },
+              {
+                "text": ".....It",
+                "x": 0.837959,
+                "y": 0.738787,
+                "w": 0.044159,
+                "h": 0.015573
+              },
+              {
+                "text": "..and homes incorporated into",
+                "x": 0.614957,
+                "y": 0.763012,
+                "w": 0.284825,
+                "h": 0.019106
+              },
+              {
+                "text": "the remains of the Roman amphitheatre.",
+                "x": 0.098298,
+                "y": 0.790533,
+                "w": 0.390806,
+                "h": 0.017468
+              },
+              {
+                "text": "22",
+                "x": 0.078426,
+                "y": 0.932586,
+                "w": 0.035327,
+                "h": 0.025955
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-16.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 23 and 24",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.216379,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.62264,
+                "h": 0.017715
+              },
+              {
+                "text": "When comparing twentieth-century stadiums to ancient amphitheatres in Section D,",
+                "x": 0.065179,
+                "y": 0.138163,
+                "w": 0.792652,
+                "h": 0.019229
+              },
+              {
+                "text": "which TWO negative features does the writer mention?",
+                "x": 0.065094,
+                "y": 0.157209,
+                "w": 0.523465,
+                "h": 0.019791
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.190269,
+                "w": 0.019871,
+                "h": 0.013843
+              },
+              {
+                "text": "They are less imaginatively designed.",
+                "x": 0.142457,
+                "y": 0.188538,
+                "w": 0.37535,
+                "h": 0.019157
+              },
+              {
+                "text": "B They are less spacious.",
+                "x": 0.115961,
+                "y": 0.209302,
+                "w": 0.271577,
+                "h": 0.015666
+              },
+              {
+                "text": "C They are in less convenient locations.",
+                "x": 0.113753,
+                "y": 0.228336,
+                "w": 0.404054,
+                "h": 0.017448
+              },
+              {
+                "text": "D They are less versatile.",
+                "x": 0.113753,
+                "y": 0.248884,
+                "w": 0.269369,
+                "h": 0.015944
+              },
+              {
+                "text": "E They are made of less durable materials.",
+                "x": 0.111545,
+                "y": 0.267928,
+                "w": 0.439381,
+                "h": 0.01924
+              },
+              {
+                "text": "Questions 25 and 26",
+                "x": 0.067386,
+                "y": 0.333887,
+                "w": 0.216379,
+                "h": 0.017303
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.067386,
+                "y": 0.373685,
+                "w": 0.253914,
+                "h": 0.019137
+              },
+              {
+                "text": "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+                "x": 0.069594,
+                "y": 0.413483,
+                "w": 0.618224,
+                "h": 0.015655
+              },
+              {
+                "text": "Which TWO advantages of modern stadium design does the writer mention?",
+                "x": 0.067386,
+                "y": 0.45155,
+                "w": 0.721998,
+                "h": 0.017448
+              },
+              {
+                "text": "A offering improved amenities for the enjoyment of sports events",
+                "x": 0.115961,
+                "y": 0.482697,
+                "w": 0.635888,
+                "h": 0.017303
+              },
+              {
+                "text": "B bringing community life back into the city environment",
+                "x": 0.115961,
+                "y": 0.503461,
+                "w": 0.554194,
+                "h": 0.015583
+              },
+              {
+                "text": "facilitating research into solar and wind energy solutions",
+                "x": 0.155704,
+                "y": 0.522494,
+                "w": 0.534322,
+                "h": 0.015594
+              },
+              {
+                "text": "D",
+                "x": 0.115961,
+                "y": 0.541528,
+                "w": 0.024287,
+                "h": 0.013843
+              },
+              {
+                "text": "enabling local residents to reduce their consumption of electricity",
+                "x": 0.151288,
+                "y": 0.541528,
+                "w": 0.620432,
+                "h": 0.017376
+              },
+              {
+                "text": "E providing a suitable site for the installation of renewable power generators",
+                "x": 0.115961,
+                "y": 0.562292,
+                "w": 0.741869,
+                "h": 0.015655
+              },
+              {
+                "text": "→ 0 р. 120",
+                "x": 0.720938,
+                "y": 0.936047,
+                "w": 0.125853,
+                "h": 0.01924
+              },
+              {
+                "text": "23",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.028703,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-19.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 27-31",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.015604
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-J, below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.576273,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter, A-J, in boxes 27-31 on your answer sheet.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.63368,
+                "h": 0.01925
+              },
+              {
+                "text": "The story behind the hunt for Charles II",
+                "x": 0.228566,
+                "y": 0.14874,
+                "w": 0.545362,
+                "h": 0.02441
+              },
+              {
+                "text": "Charles II's father was executed by the Parliamentarian forces in 1649. Charles II",
+                "x": 0.100506,
+                "y": 0.191999,
+                "w": 0.768365,
+                "h": 0.01924
+              },
+              {
+                "text": "then formed a 27",
+                "x": 0.100506,
+                "y": 0.217882,
+                "w": 0.163388,
+                "h": 0.013915
+              },
+              {
+                "text": "with the Scots, and in order to become King of",
+                "x": 0.436113,
+                "y": 0.217882,
+                "w": 0.443797,
+                "h": 0.019106
+              },
+              {
+                "text": "Scots, he abandoned an important 28 .....",
+                "x": 0.102714,
+                "y": 0.243909,
+                "w": 0.38639,
+                "h": 0.015604
+              },
+              {
+                "text": "..that was held by his father",
+                "x": 0.619373,
+                "y": 0.243909,
+                "w": 0.264953,
+                "h": 0.019147
+              },
+              {
+                "text": "and had contributed to his father's death. The opposing sides then met outside",
+                "x": 0.100506,
+                "y": 0.2697,
+                "w": 0.741869,
+                "h": 0.015944
+              },
+              {
+                "text": "Worcester in 1651. The battle led to a 29",
+                "x": 0.100506,
+                "y": 0.295819,
+                "w": 0.388598,
+                "h": 0.017303
+              },
+              {
+                "text": "...for the Parliamentarians",
+                "x": 0.64366,
+                "y": 0.288744,
+                "w": 0.249498,
+                "h": 0.024379
+              },
+              {
+                "text": "and Charles had to flee for his life. A 30..",
+                "x": 0.098298,
+                "y": 0.320044,
+                "w": 0.390806,
+                "h": 0.019188
+              },
+              {
+                "text": "was offered for Charles's",
+                "x": 0.645868,
+                "y": 0.318314,
+                "w": 0.242874,
+                "h": 0.020919
+              },
+              {
+                "text": "capture, but after six weeks spent in hiding, he eventually managed to reach the",
+                "x": 0.098298,
+                "y": 0.345876,
+                "w": 0.759533,
+                "h": 0.020888
+              },
+              {
+                "text": "31",
+                "x": 0.098298,
+                "y": 0.371955,
+                "w": 0.026495,
+                "h": 0.017303
+              },
+              {
+                "text": "..of continental Europe.",
+                "x": 0.288181,
+                "y": 0.371955,
+                "w": 0.22521,
+                "h": 0.019096
+              },
+              {
+                "text": "A",
+                "x": 0.124793,
+                "y": 0.446359,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "D",
+                "x": 0.124793,
+                "y": 0.468854,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "G",
+                "x": 0.124793,
+                "y": 0.494809,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "J",
+                "x": 0.122585,
+                "y": 0.519034,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "military innovation",
+                "x": 0.17116,
+                "y": 0.446359,
+                "w": 0.174428,
+                "h": 0.017324
+              },
+              {
+                "text": "relative safety",
+                "x": 0.168872,
+                "y": 0.470223,
+                "w": 0.139259,
+                "h": 0.019756
+              },
+              {
+                "text": "political debate",
+                "x": 0.168952,
+                "y": 0.494685,
+                "w": 0.147932,
+                "h": 0.019157
+              },
+              {
+                "text": "religious conviction",
+                "x": 0.168952,
+                "y": 0.519034,
+                "w": 0.185467,
+                "h": 0.019054
+              },
+              {
+                "text": "B",
+                "x": 0.367667,
+                "y": 0.446359,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.367667,
+                "y": 0.470584,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "H",
+                "x": 0.367667,
+                "y": 0.494809,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "large reward",
+                "x": 0.407276,
+                "y": 0.442409,
+                "w": 0.132743,
+                "h": 0.023474
+              },
+              {
+                "text": "new government",
+                "x": 0.413966,
+                "y": 0.466814,
+                "w": 0.165732,
+                "h": 0.023114
+              },
+              {
+                "text": "strategic alliance",
+                "x": 0.414034,
+                "y": 0.491142,
+                "w": 0.165596,
+                "h": 0.0227
+              },
+              {
+                "text": "F",
+                "x": 0.588461,
+                "y": 0.468854,
+                "w": 0.024287,
+                "h": 0.017303
+              },
+              {
+                "text": "widespread conspiracy",
+                "x": 0.639244,
+                "y": 0.442868,
+                "w": 0.227418,
+                "h": 0.022587
+              },
+              {
+                "text": "decisive victory",
+                "x": 0.639056,
+                "y": 0.466307,
+                "w": 0.154931,
+                "h": 0.024127
+              },
+              {
+                "text": "popular solution",
+                "x": 0.643626,
+                "y": 0.491201,
+                "w": 0.156833,
+                "h": 0.022788
+              },
+              {
+                "text": "Questions 32-35",
+                "x": 0.082842,
+                "y": 0.576135,
+                "w": 0.178843,
+                "h": 0.017314
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.082842,
+                "y": 0.614203,
+                "w": 0.814731,
+                "h": 0.020877
+              },
+              {
+                "text": "In boxes 32-35 on your answer sheet, write",
+                "x": 0.080634,
+                "y": 0.654001,
+                "w": 0.417301,
+                "h": 0.019168
+              },
+              {
+                "text": "YES",
+                "x": 0.155704,
+                "y": 0.692068,
+                "w": 0.046367,
+                "h": 0.019034
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.290389,
+                "y": 0.693798,
+                "w": 0.485748,
+                "h": 0.019229
+              },
+              {
+                "text": "NO",
+                "x": 0.153496,
+                "y": 0.711102,
+                "w": 0.039743,
+                "h": 0.019034
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.288181,
+                "y": 0.712832,
+                "w": 0.48354,
+                "h": 0.017468
+              },
+              {
+                "text": "NOT GIVEN",
+                "x": 0.153326,
+                "y": 0.73118,
+                "w": 0.121777,
+                "h": 0.020405
+              },
+              {
+                "text": "if it is impossible to say what the writer thinks about this",
+                "x": 0.272725,
+                "y": 0.731866,
+                "w": 0.543154,
+                "h": 0.01925
+              },
+              {
+                "text": "32 Charles chose Pepys for the task because he considered him to be trustworthy.",
+                "x": 0.082842,
+                "y": 0.771489,
+                "w": 0.797068,
+                "h": 0.017479
+              },
+              {
+                "text": "33",
+                "x": 0.080634,
+                "y": 0.811462,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "Charles's personal recollection of the escape lacked sufficient detail.",
+                "x": 0.120377,
+                "y": 0.811348,
+                "w": 0.657967,
+                "h": 0.015686
+              },
+              {
+                "text": "34 Charles indicated to Pepys that he had planned his escape before the battle.",
+                "x": 0.080634,
+                "y": 0.851208,
+                "w": 0.774988,
+                "h": 0.017355
+              },
+              {
+                "text": "35 The inclusion of Charles's account is a positive aspect of the book.",
+                "x": 0.082842,
+                "y": 0.889296,
+                "w": 0.680047,
+                "h": 0.017334
+              },
+              {
+                "text": "26",
+                "x": 0.078426,
+                "y": 0.932586,
+                "w": 0.033119,
+                "h": 0.022494
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-1/page-20.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 36-40",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.368727,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter in boxes 36-40 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.576273,
+                "h": 0.017715
+              },
+              {
+                "text": "36 What is the reviewer's main purpose in the first paragraph?",
+                "x": 0.065179,
+                "y": 0.129707,
+                "w": 0.607185,
+                "h": 0.019085
+              },
+              {
+                "text": "A",
+                "x": 0.113753,
+                "y": 0.160853,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "to describe what happened during the Battle of Worcester",
+                "x": 0.153496,
+                "y": 0.16075,
+                "w": 0.554194,
+                "h": 0.017406
+              },
+              {
+                "text": "to give an account of the circumstances leading to Charles Il's escape",
+                "x": 0.153496,
+                "y": 0.179794,
+                "w": 0.669007,
+                "h": 0.019126
+              },
+              {
+                "text": "C",
+                "x": 0.113753,
+                "y": 0.200651,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "to provide details of the Parliamentarians' political views",
+                "x": 0.155704,
+                "y": 0.198838,
+                "w": 0.532115,
+                "h": 0.019116
+              },
+              {
+                "text": "to compare Charles II's beliefs with those of his father",
+                "x": 0.153352,
+                "y": 0.217052,
+                "w": 0.516991,
+                "h": 0.023978
+              },
+              {
+                "text": "37 Why does the reviewer include examples of the fugitives' behaviour in the third",
+                "x": 0.065179,
+                "y": 0.248884,
+                "w": 0.790444,
+                "h": 0.01925
+              },
+              {
+                "text": "paragraph?",
+                "x": 0.113585,
+                "y": 0.270829,
+                "w": 0.110734,
+                "h": 0.017105
+              },
+              {
+                "text": "A to explain how close Charles Il came to losing his life",
+                "x": 0.111545,
+                "y": 0.301011,
+                "w": 0.549778,
+                "h": 0.019178
+              },
+              {
+                "text": "to suggest that Charles II's supporters were badly prepared",
+                "x": 0.155704,
+                "y": 0.321775,
+                "w": 0.565234,
+                "h": 0.017458
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.340808,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "to illustrate how the events of the six weeks are brought to life",
+                "x": 0.157912,
+                "y": 0.340808,
+                "w": 0.585105,
+                "h": 0.017468
+              },
+              {
+                "text": "D to argue that certain aspects are not as well known as they should be",
+                "x": 0.113753,
+                "y": 0.361377,
+                "w": 0.699918,
+                "h": 0.015944
+              },
+              {
+                "text": "38 What point does the reviewer make about Charles II in the fourth paragraph?",
+                "x": 0.067386,
+                "y": 0.390988,
+                "w": 0.77278,
+                "h": 0.015573
+              },
+              {
+                "text": "A He chose to celebrate what was essentially a defeat.",
+                "x": 0.113753,
+                "y": 0.422052,
+                "w": 0.545362,
+                "h": 0.015655
+              },
+              {
+                "text": "B He misunderstood the motives of his opponents.",
+                "x": 0.113753,
+                "y": 0.441096,
+                "w": 0.505619,
+                "h": 0.015645
+              },
+              {
+                "text": "C He aimed to restore people's faith in the monarchy.",
+                "x": 0.111545,
+                "y": 0.46014,
+                "w": 0.529907,
+                "h": 0.019096
+              },
+              {
+                "text": "D He was driven by a desire to be popular.",
+                "x": 0.113753,
+                "y": 0.480956,
+                "w": 0.430549,
+                "h": 0.017314
+              },
+              {
+                "text": "39 What does the reviewer say about Charles Spencer in the fifth paragraph?",
+                "x": 0.065179,
+                "y": 0.510186,
+                "w": 0.750701,
+                "h": 0.019229
+              },
+              {
+                "text": "A His decision to write the book comes as a surprise.",
+                "x": 0.113691,
+                "y": 0.541318,
+                "w": 0.527844,
+                "h": 0.015977
+              },
+              {
+                "text": "B He takes an unbiased approach to the subject matter.",
+                "x": 0.113753,
+                "y": 0.562292,
+                "w": 0.554194,
+                "h": 0.015655
+              },
+              {
+                "text": "His descriptions of events would be better if they included more detail.",
+                "x": 0.146872,
+                "y": 0.581326,
+                "w": 0.675631,
+                "h": 0.017437
+              },
+              {
+                "text": "D He chooses language that is suitable for a twenty-first-century audience.",
+                "x": 0.113753,
+                "y": 0.60209,
+                "w": 0.73083,
+                "h": 0.015717
+              },
+              {
+                "text": "40 When the reviewer says the book 'doesn't quite hit the mark', she is making the",
+                "x": 0.062971,
+                "y": 0.629765,
+                "w": 0.799276,
+                "h": 0.020816
+              },
+              {
+                "text": "point that",
+                "x": 0.111284,
+                "y": 0.651369,
+                "w": 0.093257,
+                "h": 0.019105
+              },
+              {
+                "text": "A it overlooks the impact of events on ordinary people.",
+                "x": 0.113753,
+                "y": 0.681583,
+                "w": 0.540946,
+                "h": 0.015676
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.70245,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "it lacks an analysis of prevalent views on monarchy.",
+                "x": 0.155704,
+                "y": 0.698856,
+                "w": 0.494579,
+                "h": 0.019168
+              },
+              {
+                "text": "it omits any references to the deceit practised by Charles Il during his time",
+                "x": 0.155704,
+                "y": 0.719671,
+                "w": 0.704334,
+                "h": 0.020847
+              },
+              {
+                "text": "in hiding.",
+                "x": 0.155704,
+                "y": 0.742248,
+                "w": 0.092734,
+                "h": 0.017303
+              },
+              {
+                "text": "D",
+                "x": 0.111545,
+                "y": 0.761282,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "it fails to address whether Charles II's experiences had a lasting influence",
+                "x": 0.155704,
+                "y": 0.761282,
+                "w": 0.69771,
+                "h": 0.019065
+              },
+              {
+                "text": "on him.",
+                "x": 0.157912,
+                "y": 0.782046,
+                "w": 0.07507,
+                "h": 0.015573
+              },
+              {
+                "text": "→ O p. 120",
+                "x": 0.720758,
+                "y": 0.933618,
+                "w": 0.12842,
+                "h": 0.022161
+              },
+              {
+                "text": "27",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.033119,
+                "h": 0.020764
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 32,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "litter",
+      "dogs",
+      "insects",
+      "butterflies",
+      "wall",
+      "island",
+      "boots",
+      "beginners",
+      "spoons",
+      "35|thirty five|thirty-five",
+      "A",
+      "C",
+      "B",
+      "B",
+      "A",
+      "D",
+      "B",
+      "C",
+      "D",
+      "E",
+      "A",
+      "B",
+      "B",
+      "A",
+      "C",
+      "C",
+      "A",
+      "E",
+      "F",
+      "C",
+      "puzzle",
+      "logic",
+      "confusion",
+      "meditation",
+      "stone",
+      "coins",
+      "tree",
+      "breathing",
+      "paper",
+      "anxiety"
+    ],
+    "reading": [
+      "population",
+      "suburbs",
+      "businessmen",
+      "funding",
+      "press",
+      "soil",
+      "FALSE",
+      "NOT GIVEN",
+      "TRUE",
+      "TRUE",
+      "FALSE",
+      "FALSE",
+      "NOT GIVEN",
+      "A",
+      "F",
+      "E",
+      "D",
+      "fortress",
+      "bullfights",
+      "opera",
+      "salt",
+      "shops",
+      "C",
+      "D",
+      "B",
+      "E",
+      "H",
+      "J",
+      "F",
+      "B",
+      "D",
+      "NOT GIVEN",
+      "NO",
+      "NO",
+      "YES",
+      "B",
+      "C",
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  "completionOptions": {}
+}

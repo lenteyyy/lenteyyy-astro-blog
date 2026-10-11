@@ -1,7 +1,9 @@
 // Text recognised from Cambridge IELTS 21 Test 1, then proofread against the source pages.
 // {{n}} marks the exact numbered gap in a completion question.
+import type { ScanPage } from './scan-page';
 export type Choice = { letter: string; text: string };
 export type QuestionBlock =
+  | { type: 'scan'; page: ScanPage }
   | { type: 'image'; url: string; alt: string }
   | { type: 'heading' | 'instruction' | 'subheading' | 'paragraph'; text: string }
   | { type: 'table'; title: string; columns: string[]; rows: string[][] }

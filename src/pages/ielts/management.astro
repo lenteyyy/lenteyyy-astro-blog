@@ -4,8 +4,12 @@ import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import { getAuthContext } from '../../lib/ielts/auth';
 
 export const prerender = false;
+Astro.response.headers.set("Cache-Control","private, no-store");
+Astro.response.headers.set("CDN-Cache-Control","no-store");
+Astro.response.headers.set("Vercel-CDN-Cache-Control","no-store");
+Astro.response.headers.set("Vary","Cookie");
 
-const auth = await getAuthContext(Astro.cookies);
+const auth = await getAuthContext(Astro.cookies, Astro.request);
 if (!auth) return Astro.redirect('/ielts?login=1&next=%2Fielts%2Fmanagement');
 if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
 Astro.response.headers.set('Cache-Control', 'private, no-store');
@@ -47,9 +51,21 @@ Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 	</main>
 
 	<script>
+		import { PrivateRequestScope } from '../../lib/ielts/private-request-scope';
 		import { createClient } from '@supabase/supabase-js';
 
 		const page = document.querySelector<HTMLElement>('[data-management-page]');
+		const privateScope = new PrivateRequestScope();
+		const authEvents = typeof BroadcastChannel === 'function' ? new BroadcastChannel('ielts-auth-events') : undefined;
+		const invalidate = () => {
+			privateScope.invalidate();
+			if (page) page.hidden = true;
+			page?.querySelectorAll<HTMLFormElement>('form').forEach(form => form.reset());
+			page?.querySelectorAll<HTMLElement>('[data-material-list], [data-booking-list], [data-cancelled-list]').forEach(list => list.replaceChildren());
+		};
+		authEvents?.addEventListener('message', event => { if (event.data === 'changed') { invalidate(); location.replace('/ielts'); } });
+		window.addEventListener('pagehide', invalidate);
+		window.addEventListener('pageshow', event => { if (event.persisted) { invalidate(); location.reload(); } });
 		const list = page?.querySelector<HTMLElement>('[data-material-list]');
 		const count = page?.querySelector<HTMLElement>('[data-material-count]');
 		const bookingList = page?.querySelector<HTMLElement>('[data-booking-list]');
@@ -58,8 +74,10 @@ Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 		const cancelledList = page?.querySelector<HTMLElement>('[data-cancelled-list]');
 		const cancelledCount = page?.querySelector<HTMLElement>('[data-cancelled-count]');
 		const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
-			const response = await fetch(path, { credentials: 'same-origin', cache: 'no-store', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
+			const snapshot = privateScope.capture();
+			const response = await fetch(path, { credentials: 'same-origin', cache: 'no-store', ...init, signal: snapshot.signal, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
 			const body = await response.json().catch(() => ({}));
+			if (!privateScope.current(snapshot)) throw new Error('session_changed');
 			if (!response.ok) throw new Error(String(body.error || `http_${response.status}`));
 			return body as T;
 		};
@@ -156,8 +174,14 @@ Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 		});
 
 		page?.querySelector<HTMLButtonElement>('[data-logout]')?.addEventListener('click', async () => {
+			invalidate();
 			await api('/api/ielts/auth/logout', { method: 'POST', body: '{}' }).catch(() => undefined);
+			authEvents?.postMessage('changed');
 			location.assign('/ielts');
+		});
+		window.addEventListener('focus', async () => {
+			try { const result = await api<{ authenticated: boolean; role?: string }>('/api/ielts/auth/me'); if (!result.authenticated || result.role !== 'admin') { invalidate(); location.replace('/ielts'); } }
+			catch { invalidate(); location.replace('/ielts'); }
 		});
 		const themeButtons = [...(page?.querySelectorAll<HTMLButtonElement>('[data-theme-choice]') || [])];
 		const syncTheme = (theme: 'light' | 'dark') => {

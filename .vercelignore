@@ -1,0 +1,17 @@
+# Upload source and prepared public assets, never local credentials or logs.
+.git
+.vercel
+node_modules
+dist
+.astro
+.env*
+!.env.example
+**/.env*
+**/.DS_Store
+**/*.log
+.idea
+:memory:.ses
+content/_attachments
+content/drafts
+content/templates
+content/.obsidian

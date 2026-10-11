@@ -13,7 +13,7 @@ test('each listening clock ends two minutes after the spoken checking cue, not a
 	assert.equal(subjectDurationSeconds('reading',21,1),3600);
 	assert.equal(subjectDurationSeconds('writing',20,4),3600);
 	assert.equal(LISTENING_CHECK_SECONDS,120);
-	for(const book of [20,21])for(let paper=1;paper<=4;paper++){
+	for(const book of [16,17,18,19,20,21])for(let paper=1;paper<=4;paper++){
 		const audio=LISTENING_AUDIO_SECONDS[`${book}-${paper}`];assert.equal(audio.length,4);
 		const seconds=subjectDurationSeconds('listening',book,paper);
 		assert.equal(seconds,Math.ceil(audio.slice(0,3).reduce((total,part)=>total+part,0)+listeningCheckCueSeconds(book,paper))+120);
@@ -32,9 +32,9 @@ test('each listening clock ends two minutes after the spoken checking cue, not a
 	assert.match(exam,/state\.deadline=listeningCheckDeadline\(Date\.now\(\)-elapsedSeconds\*1000\);save\(\)/);
 });
 
-test('all eight papers start exactly two minutes of checking only after Part 4, at every playback rate',async()=>{
-	for(const book of [20,21])for(let paper=1;paper<=4;paper++)for(const rate of LISTENING_RATES){
-		const content=JSON.parse(read(`src/lib/ielts/mock/${book===20?'c20-':''}test${paper}-content.json`));
+test('all twenty-four papers start exactly two minutes of checking only after Part 4, at every playback rate',async()=>{
+	for(const book of [16,17,18,19,20,21])for(let paper=1;paper<=4;paper++)for(const rate of LISTENING_RATES){
+		const content=JSON.parse(read(`src/lib/ielts/mock/${book===21?'':`c${book}-`}test${paper}-content.json`));
 		const urls=content.sections.listening.map(section=>section.audioUrl);
 		assert.equal(urls.length,4);
 		const events=new Map();let playback=cleanPlayback({rate}),deadline=0,checks=0,now=1000000;
@@ -80,7 +80,7 @@ test('real exam callbacks count down 02:00, survive refresh, then submit or adva
 	const end=page.indexOf('const element =',start);
 	assert.ok(start>0&&end>start);
 	const code=ts.transpileModule(page.slice(start,end)+'\nexports.exam={player,updateClock,syncAudioControls,getState:()=>state};',{compilerOptions:{target:ts.ScriptTarget.ES2022}}).outputText;
-	for(const mode of ['single','custom','simulation'])for(const book of [20,21])for(let paper=1;paper<=4;paper++){
+	for(const mode of ['single','custom','simulation'])for(const book of [16,17,18,19,20,21])for(let paper=1;paper<=4;paper++){
 		let now=1000000,navigations=0;
 		const subjects=mode==='single'?['listening']:['listening','reading','writing'];
 		const mount=saved=>{
@@ -95,6 +95,7 @@ test('real exam callbacks count down 02:00, survive refresh, then submit or adva
 				data:{subject:'listening',mode,subjects,bookNumber:book,testNumber:paper,sections:[1,2,3,4].map(n=>({audioUrl:`/${n}.mp3`})),answerKey:[],blocks:[]},
 				duration:subjectDurationSeconds('listening',book,paper),
 				$:selector=>nodes.get(selector),root:{querySelectorAll:()=>[]},
+				document:{querySelector:()=>undefined},examMistakes:()=>[],loadNotebook:()=>({version:1,mistakes:[],words:[]}),mergeMistakes:(book)=>book,saveNotebook:()=>{},
 				save:()=>{},saveRun:()=>{},render:()=>{},
 				scoreAnswers:answers=>{assert.equal(answers['1'],'sample answer');return 30;},
 				navigateStage:subject=>{assert.equal(subject,'reading');navigations++;},
