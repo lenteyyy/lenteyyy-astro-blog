@@ -98,5 +98,7 @@ test('private screens invalidate on navigation/BFCache and cross-tab session cha
  }
  for(const path of ['src/pages/ielts/management.astro','src/pages/ielts/entry-test.astro','src/pages/ielts/mock/[paper].astro']){
   const s=source(path);assert.ok(s.indexOf('"CDN-Cache-Control"')<s.indexOf('getAuthContext(Astro.cookies'));
+  assert.doesNotMatch(s,/Astro\.redirect\(/);
+  assert.match(s,/new Response\(null,\s*\{\s*status:\s*302,\s*headers:\s*Astro\.response\.headers\s*\}\)/);
  }
 });

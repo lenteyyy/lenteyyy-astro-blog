@@ -21,7 +21,8 @@ if(!auth&&!demo){
  const redirect=new URL('/ielts',Astro.url);
  redirect.searchParams.set('login','1');
  redirect.searchParams.set('next',workflowUrl(book,test,mode,subjects,subject));
- return Astro.redirect(redirect.pathname+redirect.search);
+ Astro.response.headers.set('Location',redirect.pathname+redirect.search);
+ return new Response(null,{status:302,headers:Astro.response.headers});
 }
 Astro.response.headers.set('Cache-Control','private, no-store');
 Astro.response.headers.set('X-Robots-Tag','noindex, nofollow');

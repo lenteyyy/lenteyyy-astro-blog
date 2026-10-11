@@ -10,8 +10,10 @@ Astro.response.headers.set("Vercel-CDN-Cache-Control","no-store");
 Astro.response.headers.set("Vary","Cookie");
 
 const auth = await getAuthContext(Astro.cookies, Astro.request);
-if (!auth) return Astro.redirect('/ielts?login=1&next=%2Fielts%2Fmanagement');
-if (auth.role !== 'admin') return Astro.redirect('/ielts?forbidden=1');
+if (!auth || auth.role !== 'admin') {
+	Astro.response.headers.set('Location', !auth ? '/ielts?login=1&next=%2Fielts%2Fmanagement' : '/ielts?forbidden=1');
+	return new Response(null, { status: 302, headers: Astro.response.headers });
+}
 Astro.response.headers.set('Cache-Control', 'private, no-store');
 Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 ---
