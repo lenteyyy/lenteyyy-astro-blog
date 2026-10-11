@@ -1,0 +1,5357 @@
+{
+  "source": {
+    "book": 18,
+    "test": 2,
+    "questionPages": {
+      "l": [
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          40
+        ]
+      ],
+      "r": [
+        [
+          41,
+          42
+        ],
+        [
+          45,
+          46
+        ],
+        [
+          50,
+          51
+        ]
+      ],
+      "q": [
+        [
+          43,
+          44
+        ],
+        [
+          47,
+          48,
+          49
+        ],
+        [
+          52,
+          53
+        ]
+      ],
+      "w": [
+        54,
+        55
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "7f2fdefa5af7b6b75640eec3b0e65c1d49ecb7bd311e1293d53b6377acacbe75"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-2/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-2/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-2/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-2/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-2/page-41.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.365421,
+                "y": 0.014995,
+                "w": 0.129374,
+                "h": 0.023662
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.025415,
+                "y": 0.088875,
+                "w": 0.29912,
+                "h": 0.022157
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.025415,
+                "y": 0.13466,
+                "w": 0.787879,
+                "h": 0.022214
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.02346,
+                "y": 0.156812,
+                "w": 0.164223,
+                "h": 0.018763
+              },
+              {
+                "text": "Stonehenge",
+                "x": 0.347996,
+                "y": 0.199374,
+                "w": 0.162268,
+                "h": 0.0272
+              },
+              {
+                "text": "For centuries, historians and archaeologists have puzzled over the many mysteries",
+                "x": 0.02346,
+                "y": 0.246894,
+                "w": 0.758553,
+                "h": 0.020675
+              },
+              {
+                "text": "of Stonehenge, a prehistoric monument that took an estimated 1,500 years to erect.",
+                "x": 0.02346,
+                "y": 0.269045,
+                "w": 0.766373,
+                "h": 0.020428
+              },
+              {
+                "text": "Located on Salisbury Plain in southern England, it is comprised of roughly 100 massive",
+                "x": 0.02346,
+                "y": 0.289474,
+                "w": 0.795699,
+                "h": 0.020428
+              },
+              {
+                "text": "upright stones placed in a circular layout.",
+                "x": 0.02346,
+                "y": 0.309874,
+                "w": 0.377322,
+                "h": 0.02218
+              },
+              {
+                "text": "Archaeologists believe England's most iconic prehistoric ruin was built in several stages,",
+                "x": 0.02346,
+                "y": 0.352236,
+                "w": 0.807429,
+                "h": 0.020675
+              },
+              {
+                "text": "with the earliest constructed 5,000 or more years ago. First, Neolithic* Britons used",
+                "x": 0.02346,
+                "y": 0.372773,
+                "w": 0.758553,
+                "h": 0.0204
+              },
+              {
+                "text": "primitive tools, which may have been fashioned out of deer antlers, to dig a massive",
+                "x": 0.02346,
+                "y": 0.394873,
+                "w": 0.766373,
+                "h": 0.0204
+              },
+              {
+                "text": "circular ditch and bank, or henge. Deep pits dating back to that era and located within",
+                "x": 0.025415,
+                "y": 0.415244,
+                "w": 0.778104,
+                "h": 0.020428
+              },
+              {
+                "text": "the circle may have once held a ring of timber posts, according to some scholars.",
+                "x": 0.02346,
+                "y": 0.437373,
+                "w": 0.742913,
+                "h": 0.0204
+              },
+              {
+                "text": "Several hundred years later, it is thought, Stonehenge's builders hoisted an estimated",
+                "x": 0.02346,
+                "y": 0.478172,
+                "w": 0.782014,
+                "h": 0.022231
+              },
+              {
+                "text": "80 bluestones, 43 of which remain today, into standing positions and placed them in",
+                "x": 0.02346,
+                "y": 0.500272,
+                "w": 0.764418,
+                "h": 0.0204
+              },
+              {
+                "text": "either a horseshoe or circular formation. These stones have been traced all the way",
+                "x": 0.023401,
+                "y": 0.518476,
+                "w": 0.764568,
+                "h": 0.022647
+              },
+              {
+                "text": "to the Preseli Hills in Wales, some 300 kilometres from Stonehenge. How, then, did",
+                "x": 0.021505,
+                "y": 0.542737,
+                "w": 0.760508,
+                "h": 0.020675
+              },
+              {
+                "text": "prehistoric builders without sophisticated tools or engineering haul these boulders, which",
+                "x": 0.02346,
+                "y": 0.563171,
+                "w": 0.807429,
+                "h": 0.020423
+              },
+              {
+                "text": "weigh up to four tons, over such a great distance?",
+                "x": 0.02346,
+                "y": 0.583571,
+                "w": 0.459433,
+                "h": 0.0204
+              },
+              {
+                "text": "According to one long-standing theory among archaeologists, Stonehenge's builders",
+                "x": 0.02346,
+                "y": 0.625928,
+                "w": 0.770283,
+                "h": 0.020675
+              },
+              {
+                "text": "fashioned sledges and rollers out of tree trunks to lug the bluestones from the Preseli",
+                "x": 0.021505,
+                "y": 0.646471,
+                "w": 0.780059,
+                "h": 0.0204
+              },
+              {
+                "text": "Hills. They then transferred the boulders onto rafts and floated them first along the",
+                "x": 0.02346,
+                "y": 0.666785,
+                "w": 0.748778,
+                "h": 0.020675
+              },
+              {
+                "text": "Welsh coast and then up the River Avon toward Salisbury Plain; alternatively, they may",
+                "x": 0.02346,
+                "y": 0.68549,
+                "w": 0.791789,
+                "h": 0.02412
+              },
+              {
+                "text": "have towed each stone with a fleet of vessels. More recent archaeological hypotheses",
+                "x": 0.023339,
+                "y": 0.705318,
+                "w": 0.788107,
+                "h": 0.025284
+              },
+              {
+                "text": "have them transporting the bluestones with supersized wicker baskets on a combination",
+                "x": 0.02346,
+                "y": 0.72977,
+                "w": 0.803519,
+                "h": 0.0204
+              },
+              {
+                "text": "of ball bearings and long grooved planks, hauled by oxen.",
+                "x": 0.023381,
+                "y": 0.751787,
+                "w": 0.529979,
+                "h": 0.02281
+              },
+              {
+                "text": "As early as the 1970s, geologists have been adding their voices to the debate over",
+                "x": 0.02346,
+                "y": 0.794278,
+                "w": 0.758553,
+                "h": 0.020675
+              },
+              {
+                "text": "how Stonehenge came into being. Challenging the classic image of industrious builders",
+                "x": 0.02346,
+                "y": 0.812984,
+                "w": 0.797654,
+                "h": 0.022186
+              },
+              {
+                "text": "pushing, carting, rolling or hauling giant stones from faraway Wales, some scientists",
+                "x": 0.02346,
+                "y": 0.835135,
+                "w": 0.766373,
+                "h": 0.020675
+              },
+              {
+                "text": "have suggested that it was glaciers, not humans, that carried the bluestones to Salisbury",
+                "x": 0.02346,
+                "y": 0.855569,
+                "w": 0.811339,
+                "h": 0.0221
+              },
+              {
+                "text": "Plain. Most archaeologists have remained sceptical about this theory, however,",
+                "x": 0.02346,
+                "y": 0.877469,
+                "w": 0.721408,
+                "h": 0.020675
+              },
+              {
+                "text": "wondering how the forces of nature could possibly have delivered the exact number of",
+                "x": 0.021433,
+                "y": 0.896249,
+                "w": 0.790024,
+                "h": 0.024378
+              },
+              {
+                "text": "stones needed to complete the circle.",
+                "x": 0.02346,
+                "y": 0.921771,
+                "w": 0.344086,
+                "h": 0.018797
+              },
+              {
+                "text": "*Neolithic- The era, also known as the New Stone Age, which began around 12,000 years ago and ended around 3500 BCE",
+                "x": 0.021505,
+                "y": 0.969468,
+                "w": 0.731183,
+                "h": 0.015311
+              },
+              {
+                "text": "39",
+                "x": 0.801564,
+                "y": 0.993268,
+                "w": 0.035191,
+                "h": 0.0221
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-2/page-42.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.152344,
+                "y": 0.010318,
+                "w": 0.058948,
+                "h": 0.019416
+              },
+              {
+                "text": "The third phase of construction took place around 2000 BCE. At this point, sandstone",
+                "x": 0.150538,
+                "y": 0.065075,
+                "w": 0.778104,
+                "h": 0.022329
+              },
+              {
+                "text": "slabs - known as 'sarsens' - were arranged into an outer crescent or ring; some were",
+                "x": 0.150392,
+                "y": 0.08157,
+                "w": 0.782327,
+                "h": 0.029838
+              },
+              {
+                "text": "assembled into the iconic three-pieced structures called trilithons that stand tall in the",
+                "x": 0.150538,
+                "y": 0.107575,
+                "w": 0.776149,
+                "h": 0.0204
+              },
+              {
+                "text": "centre of Stonehenge. Some 50 of these stones are now visible on the site, which",
+                "x": 0.150471,
+                "y": 0.127834,
+                "w": 0.746958,
+                "h": 0.022906
+              },
+              {
+                "text": "may once have contained many more. Radiocarbon dating has revealed that work",
+                "x": 0.150538,
+                "y": 0.14992,
+                "w": 0.750733,
+                "h": 0.022254
+              },
+              {
+                "text": "continued at Stonehenge until roughly 1600 BCE, with the bluestones in particular being",
+                "x": 0.15042,
+                "y": 0.169349,
+                "w": 0.803753,
+                "h": 0.02589
+              },
+              {
+                "text": "repositioned multiple times.",
+                "x": 0.150538,
+                "y": 0.194223,
+                "w": 0.254154,
+                "h": 0.020675
+              },
+              {
+                "text": "But who were the builders of Stonehenge? In the 17th century, archaeologist John",
+                "x": 0.150538,
+                "y": 0.233374,
+                "w": 0.750733,
+                "h": 0.020411
+              },
+              {
+                "text": "Aubrey made the claim that Stonehenge was the work of druids, who had important",
+                "x": 0.152493,
+                "y": 0.255262,
+                "w": 0.762463,
+                "h": 0.020675
+              },
+              {
+                "text": "religious, judicial and political roles in Celtic*",
+                "x": 0.150236,
+                "y": 0.27226,
+                "w": 0.411269,
+                "h": 0.028542
+              },
+              {
+                "text": "society. This theory was widely popularized",
+                "x": 0.553275,
+                "y": 0.275874,
+                "w": 0.404692,
+                "h": 0.0204
+              },
+              {
+                "text": "by the antiquarian William Stukeley, who had unearthed primitive graves at the site.",
+                "x": 0.150538,
+                "y": 0.297974,
+                "w": 0.762463,
+                "h": 0.0204
+              },
+              {
+                "text": "Even today, people who identify as modern druids continue to gather at Stonehenge for",
+                "x": 0.152403,
+                "y": 0.316543,
+                "w": 0.797842,
+                "h": 0.023869
+              },
+              {
+                "text": "the summer solstice. However, in the mid-20th century, radiocarbon dating demonstrated",
+                "x": 0.15047,
+                "y": 0.338207,
+                "w": 0.809536,
+                "h": 0.023645
+              },
+              {
+                "text": "that Stonehenge stood more than 1,000 years before the Celts inhabited the region.",
+                "x": 0.150538,
+                "y": 0.360873,
+                "w": 0.768328,
+                "h": 0.020406
+              },
+              {
+                "text": "Many modern historians and archaeologists now agree that several distinct tribes",
+                "x": 0.152493,
+                "y": 0.401461,
+                "w": 0.739003,
+                "h": 0.022312
+              },
+              {
+                "text": "of people contributed to Stonehenge, each undertaking a different phase of its",
+                "x": 0.152364,
+                "y": 0.420973,
+                "w": 0.713855,
+                "h": 0.025424
+              },
+              {
+                "text": "construction. Bones, tools and other artefacts found on the site seem to support this",
+                "x": 0.152493,
+                "y": 0.444172,
+                "w": 0.764418,
+                "h": 0.0204
+              },
+              {
+                "text": "hypothesis. The first stage was achieved by Neolithic agrarians who were likely to have",
+                "x": 0.152419,
+                "y": 0.463904,
+                "w": 0.795837,
+                "h": 0.023118
+              },
+              {
+                "text": "been indigenous to the British Isles. Later, it is believed, groups with advanced tools and",
+                "x": 0.152449,
+                "y": 0.484951,
+                "w": 0.803616,
+                "h": 0.022326
+              },
+              {
+                "text": "a more communal way of life left their mark on the site. Some believe that they were",
+                "x": 0.152493,
+                "y": 0.507072,
+                "w": 0.766373,
+                "h": 0.020406
+              },
+              {
+                "text": "immigrants from the European continent, while others maintain that they were probably",
+                "x": 0.150538,
+                "y": 0.527472,
+                "w": 0.795699,
+                "h": 0.022157
+              },
+              {
+                "text": "native Britons, descended from the original builders.",
+                "x": 0.152493,
+                "y": 0.549572,
+                "w": 0.477028,
+                "h": 0.022209
+              },
+              {
+                "text": "If the facts surrounding the architects and construction of Stonehenge remain shadowy",
+                "x": 0.150538,
+                "y": 0.590371,
+                "w": 0.793744,
+                "h": 0.0204
+              },
+              {
+                "text": "at best, the purpose of the striking monument is even more of a mystery. While there is",
+                "x": 0.152346,
+                "y": 0.608712,
+                "w": 0.792056,
+                "h": 0.026616
+              },
+              {
+                "text": "consensus among the majority of modern scholars that Stonehenge once served the",
+                "x": 0.152493,
+                "y": 0.632819,
+                "w": 0.772238,
+                "h": 0.022151
+              },
+              {
+                "text": "function of burial ground, they have yet to determine what other purposes it had.",
+                "x": 0.150538,
+                "y": 0.654971,
+                "w": 0.735093,
+                "h": 0.0204
+              },
+              {
+                "text": "In the 1960s, the astronomer Gerald Hawkins suggested that the cluster of megalithic",
+                "x": 0.152388,
+                "y": 0.694351,
+                "w": 0.7803,
+                "h": 0.025901
+              },
+              {
+                "text": "stones operated as a form of calendar, with different points corresponding to astrological",
+                "x": 0.152493,
+                "y": 0.71601,
+                "w": 0.807429,
+                "h": 0.02226
+              },
+              {
+                "text": "phenomena such as solstices, equinoxes and eclipses occurring at different times of",
+                "x": 0.154448,
+                "y": 0.738161,
+                "w": 0.770283,
+                "h": 0.022209
+              },
+              {
+                "text": "the year. While his theory has received a considerable amount of attention over the",
+                "x": 0.152354,
+                "y": 0.756113,
+                "w": 0.758828,
+                "h": 0.025292
+              },
+              {
+                "text": "decades, critics maintain that Stonehenge's builders probably lacked the knowledge",
+                "x": 0.154448,
+                "y": 0.78077,
+                "w": 0.764418,
+                "h": 0.0204
+              },
+              {
+                "text": "necessary to predict such events or that England's dense cloud cover would have",
+                "x": 0.15433,
+                "y": 0.799251,
+                "w": 0.745094,
+                "h": 0.024843
+              },
+              {
+                "text": "obscured their view of the skies.",
+                "x": 0.154448,
+                "y": 0.824798,
+                "w": 0.297165,
+                "h": 0.017229
+              },
+              {
+                "text": "More recently, signs of illness and injury in the human remains unearthed at Stonehenge",
+                "x": 0.154448,
+                "y": 0.864069,
+                "w": 0.807429,
+                "h": 0.0204
+              },
+              {
+                "text": "led a group of British archaeologists to speculate that it was considered a place of",
+                "x": 0.152389,
+                "y": 0.883557,
+                "w": 0.750985,
+                "h": 0.024723
+              },
+              {
+                "text": "healing, perhaps because bluestones were thought to have curative powers.",
+                "x": 0.154448,
+                "y": 0.906512,
+                "w": 0.697947,
+                "h": 0.022157
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-2/page-45.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.02346,
+                "y": 0.018981,
+                "w": 0.301075,
+                "h": 0.020675
+              },
+              {
+                "text": "You should spend about 20minutes on Questions 14-26, which are based on Reading",
+                "x": 0.025415,
+                "y": 0.065075,
+                "w": 0.797654,
+                "h": 0.022329
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.02346,
+                "y": 0.085435,
+                "w": 0.164223,
+                "h": 0.020675
+              },
+              {
+                "text": "Living with artificial intelligence",
+                "x": 0.215054,
+                "y": 0.129675,
+                "w": 0.428152,
+                "h": 0.0272
+              },
+              {
+                "text": "Powerful artificial intelligence (Al) needs to be reliably aligned with human values, but",
+                "x": 0.037146,
+                "y": 0.177275,
+                "w": 0.782014,
+                "h": 0.0221
+              },
+              {
+                "text": "does this mean Al will eventually have to",
+                "x": 0.240469,
+                "y": 0.199145,
+                "w": 0.373412,
+                "h": 0.020675
+              },
+              {
+                "text": "police those values?",
+                "x": 0.332356,
+                "y": 0.221297,
+                "w": 0.189638,
+                "h": 0.018877
+              },
+              {
+                "text": "This has been the decade of Al, with one astonishing feat after another. A chess-",
+                "x": 0.021505,
+                "y": 0.260574,
+                "w": 0.739003,
+                "h": 0.022254
+              },
+              {
+                "text": "playing Al that can defeat not only all human chess players, but also all previous",
+                "x": 0.021505,
+                "y": 0.282674,
+                "w": 0.733138,
+                "h": 0.022306
+              },
+              {
+                "text": "human-programmed chess machines, after learning the game in just four hours? That's",
+                "x": 0.02346,
+                "y": 0.303011,
+                "w": 0.793744,
+                "h": 0.020675
+              },
+              {
+                "text": "yesterday's news, what's next? True, these prodigious accomplishments are all in so-",
+                "x": 0.021505,
+                "y": 0.325162,
+                "w": 0.780059,
+                "h": 0.018711
+              },
+              {
+                "text": "called narrow Al, where machines perform highly specialised tasks. But many experts",
+                "x": 0.021505,
+                "y": 0.345344,
+                "w": 0.780059,
+                "h": 0.022329
+              },
+              {
+                "text": "believe this restriction is very temporary. By mid-century, we may have artificial general",
+                "x": 0.021505,
+                "y": 0.367496,
+                "w": 0.793744,
+                "h": 0.020675
+              },
+              {
+                "text": "intelligence (AGI) - machines that can achieve human-level performance on the full",
+                "x": 0.01955,
+                "y": 0.388073,
+                "w": 0.766373,
+                "h": 0.0204
+              },
+              {
+                "text": "range of tasks that we ourselves can tackle.",
+                "x": 0.021505,
+                "y": 0.408353,
+                "w": 0.406647,
+                "h": 0.020675
+              },
+              {
+                "text": "If so, there's little reason to think it will stop there. Machines will be free of many of",
+                "x": 0.01955,
+                "y": 0.450972,
+                "w": 0.754643,
+                "h": 0.0204
+              },
+              {
+                "text": "the physical constraints on human intelligence. Our brains run at slow biochemical",
+                "x": 0.01955,
+                "y": 0.472838,
+                "w": 0.754643,
+                "h": 0.020675
+              },
+              {
+                "text": "processing speeds on the power of a light bulb, and their size is restricted by the",
+                "x": 0.021505,
+                "y": 0.493472,
+                "w": 0.733138,
+                "h": 0.0204
+              },
+              {
+                "text": "dimensions of the human birth canal. It is remarkable what they accomplish, given these",
+                "x": 0.02144,
+                "y": 0.513491,
+                "w": 0.805597,
+                "h": 0.023169
+              },
+              {
+                "text": "handicaps. But they may be as far from the physical limits of thought as our eyes are",
+                "x": 0.021505,
+                "y": 0.535846,
+                "w": 0.772238,
+                "h": 0.020675
+              },
+              {
+                "text": "from the incredibly powerful Webb Space Telescope.",
+                "x": 0.01955,
+                "y": 0.556372,
+                "w": 0.484848,
+                "h": 0.0204
+              },
+              {
+                "text": "Once machines are better than us at designing even smarter machines, progress",
+                "x": 0.021505,
+                "y": 0.598854,
+                "w": 0.740958,
+                "h": 0.022151
+              },
+              {
+                "text": "towards these limits could accelerate. What would this mean for us? Could we ensure",
+                "x": 0.01955,
+                "y": 0.619036,
+                "w": 0.783969,
+                "h": 0.018935
+              },
+              {
+                "text": "a safe and worthwhile coexistence with such machines? On the plus side, Al is already",
+                "x": 0.021382,
+                "y": 0.6366,
+                "w": 0.792066,
+                "h": 0.026685
+              },
+              {
+                "text": "useful and profitable for many things, and super Al might be expected to be super useful,",
+                "x": 0.021505,
+                "y": 0.661771,
+                "w": 0.809384,
+                "h": 0.022243
+              },
+              {
+                "text": "and super profitable. But the more powerful Al becomes, the more important it will be to",
+                "x": 0.01955,
+                "y": 0.683871,
+                "w": 0.797654,
+                "h": 0.018849
+              },
+              {
+                "text": "specify its goals with great care. Folklore is full of tales of people who ask for the wrong",
+                "x": 0.01955,
+                "y": 0.704196,
+                "w": 0.797654,
+                "h": 0.020675
+              },
+              {
+                "text": "thing, with disastrous consequences - King Midas, for example, might have wished",
+                "x": 0.01955,
+                "y": 0.72467,
+                "w": 0.760508,
+                "h": 0.0221
+              },
+              {
+                "text": "that everything he touched turned to gold, but didn't really intend this to apply to his",
+                "x": 0.01955,
+                "y": 0.74653,
+                "w": 0.760508,
+                "h": 0.020675
+              },
+              {
+                "text": "breakfast.",
+                "x": 0.02147,
+                "y": 0.767033,
+                "w": 0.093913,
+                "h": 0.018973
+              },
+              {
+                "text": "So we need to create powerful Al machines that are 'human-friendly' - that have goals",
+                "x": 0.021505,
+                "y": 0.80797,
+                "w": 0.785924,
+                "h": 0.022243
+              },
+              {
+                "text": "reliably aligned with our own values. One thing that makes this task difficult is that",
+                "x": 0.01955,
+                "y": 0.830069,
+                "w": 0.748778,
+                "h": 0.018849
+              },
+              {
+                "text": "we are far from reliably human-friendly ourselves. We do many terrible things to each",
+                "x": 0.01955,
+                "y": 0.850395,
+                "w": 0.778104,
+                "h": 0.020675
+              },
+              {
+                "text": "other and to many other creatures with whom we share the planet. If superintelligent",
+                "x": 0.01955,
+                "y": 0.872546,
+                "w": 0.770283,
+                "h": 0.020423
+              },
+              {
+                "text": "machines don't do a lot better than us, we'll be in deep trouble. We'll have powerful new",
+                "x": 0.01955,
+                "y": 0.894669,
+                "w": 0.801564,
+                "h": 0.018734
+              },
+              {
+                "text": "intelligence amplifying the dark sides of our own fallible natures.",
+                "x": 0.017595,
+                "y": 0.91488,
+                "w": 0.588465,
+                "h": 0.018889
+              },
+              {
+                "text": "43",
+                "x": 0.803519,
+                "y": 0.996668,
+                "w": 0.029326,
+                "h": 0.0221
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-2/page-46.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.150331,
+                "y": 0.015221,
+                "w": 0.059064,
+                "h": 0.01811
+              },
+              {
+                "text": "For safety's sake, then, we want the machines to be ethically as well as cognitively",
+                "x": 0.150425,
+                "y": 0.065994,
+                "w": 0.754883,
+                "h": 0.025776
+              },
+              {
+                "text": "superhuman. We want them to aim for the moral high ground, not for the troughs in",
+                "x": 0.150396,
+                "y": 0.085936,
+                "w": 0.758813,
+                "h": 0.025238
+              },
+              {
+                "text": "which many of us spend some of our time. Luckily they'll be smart enough for the job.",
+                "x": 0.148394,
+                "y": 0.105524,
+                "w": 0.782369,
+                "h": 0.029583
+              },
+              {
+                "text": "If there are routes to the moral high ground, they'll be better than us at finding them, and",
+                "x": 0.148583,
+                "y": 0.129675,
+                "w": 0.807429,
+                "h": 0.022214
+              },
+              {
+                "text": "steering us in the right direction.",
+                "x": 0.15036,
+                "y": 0.153145,
+                "w": 0.29745,
+                "h": 0.023012
+              },
+              {
+                "text": "However, there are two big problems with this utopian vision. One is how we get",
+                "x": 0.152321,
+                "y": 0.191469,
+                "w": 0.731546,
+                "h": 0.026176
+              },
+              {
+                "text": "the machines started on the journey, the other is what it would mean to reach this",
+                "x": 0.150378,
+                "y": 0.212644,
+                "w": 0.743239,
+                "h": 0.026885
+              },
+              {
+                "text": "destination. The 'getting started' problem is that we need to tell the machines what",
+                "x": 0.152355,
+                "y": 0.233925,
+                "w": 0.75102,
+                "h": 0.025966
+              },
+              {
+                "text": "they're looking for with sufficient clarity that we can be confident they will find it -",
+                "x": 0.150418,
+                "y": 0.255094,
+                "w": 0.737287,
+                "h": 0.026091
+              },
+              {
+                "text": "whatever 'it' actually turns out to be. This won't be easy, given that we are tribal",
+                "x": 0.15038,
+                "y": 0.275794,
+                "w": 0.725678,
+                "h": 0.02648
+              },
+              {
+                "text": "creatures and conflicted about the ideals ourselves. We often ignore the suffering of",
+                "x": 0.152493,
+                "y": 0.297974,
+                "w": 0.766373,
+                "h": 0.022266
+              },
+              {
+                "text": "strangers, and even contribute to it, at least indirectly. How then, do we point machines",
+                "x": 0.152275,
+                "y": 0.316124,
+                "w": 0.792215,
+                "h": 0.029311
+              },
+              {
+                "text": "in the direction of something better?",
+                "x": 0.150538,
+                "y": 0.342173,
+                "w": 0.332356,
+                "h": 0.0204
+              },
+              {
+                "text": "As for the 'destination' problem, we might, by putting ourselves in the hands of these",
+                "x": 0.152493,
+                "y": 0.381273,
+                "w": 0.770283,
+                "h": 0.022157
+              },
+              {
+                "text": "moral guides and gatekeepers, be sacrificing our own autonomy - an important part",
+                "x": 0.152355,
+                "y": 0.401768,
+                "w": 0.76667,
+                "h": 0.02588
+              },
+              {
+                "text": "of what makes us human. Machines who are better than us at sticking to the moral",
+                "x": 0.152493,
+                "y": 0.423612,
+                "w": 0.754643,
+                "h": 0.02226
+              },
+              {
+                "text": "high ground may be expected to discourage some of the lapses we presently take for",
+                "x": 0.15431,
+                "y": 0.443987,
+                "w": 0.778395,
+                "h": 0.026057
+              },
+              {
+                "text": "granted. We might lose our freedom to discriminate in favour of our own communities,",
+                "x": 0.152357,
+                "y": 0.465101,
+                "w": 0.786144,
+                "h": 0.025784
+              },
+              {
+                "text": "for example.",
+                "x": 0.152493,
+                "y": 0.491543,
+                "w": 0.119257,
+                "h": 0.018929
+              },
+              {
+                "text": "Loss of freedom to behave badly isn't always a bad thing, of course: denying ourselves",
+                "x": 0.154258,
+                "y": 0.526418,
+                "w": 0.766733,
+                "h": 0.027573
+              },
+              {
+                "text": "the freedom to put children to work in factories, or to smoke in restaurants are signs of",
+                "x": 0.152295,
+                "y": 0.546437,
+                "w": 0.762933,
+                "h": 0.029958
+              },
+              {
+                "text": "progress. But are we ready for ethical silicon police limiting our options? They might be so",
+                "x": 0.154448,
+                "y": 0.571671,
+                "w": 0.789834,
+                "h": 0.0238
+              },
+              {
+                "text": "good at doing it that we won't notice them; but few of us are likely to welcome such a future.",
+                "x": 0.154281,
+                "y": 0.590901,
+                "w": 0.809666,
+                "h": 0.026732
+              },
+              {
+                "text": "These issues might seem far-fetched, but they are to some extent already here. Al",
+                "x": 0.154293,
+                "y": 0.632333,
+                "w": 0.739333,
+                "h": 0.02694
+              },
+              {
+                "text": "already has some input into how resources are used in our National Health Service (NHS)",
+                "x": 0.154258,
+                "y": 0.652421,
+                "w": 0.807826,
+                "h": 0.0287
+              },
+              {
+                "text": "here in the UK, for example. If it was given a greater role, it might do so much more",
+                "x": 0.154316,
+                "y": 0.675601,
+                "w": 0.747112,
+                "h": 0.026177
+              },
+              {
+                "text": "efficiently than humans can manage, and act in the interests of taxpayers and those who",
+                "x": 0.156142,
+                "y": 0.693307,
+                "w": 0.794183,
+                "h": 0.030091
+              },
+              {
+                "text": "use the health system. However, we'd be depriving some humans (e.g. senior doctors) of",
+                "x": 0.156235,
+                "y": 0.716916,
+                "w": 0.799951,
+                "h": 0.026425
+              },
+              {
+                "text": "the control they presently enjoy. Since we'd want to ensure that people are treated equally",
+                "x": 0.154259,
+                "y": 0.736422,
+                "w": 0.809755,
+                "h": 0.028759
+              },
+              {
+                "text": "and that policies are fair, the goals of Al would need to be specified correctly.",
+                "x": 0.156403,
+                "y": 0.76207,
+                "w": 0.688172,
+                "h": 0.0221
+              },
+              {
+                "text": "We have a new powerful technology to deal with - itself, literally, a new way of thinking.",
+                "x": 0.156403,
+                "y": 0.802646,
+                "w": 0.797654,
+                "h": 0.022323
+              },
+              {
+                "text": "For our own safety, we need to point these new thinkers in the right direction, and get",
+                "x": 0.156235,
+                "y": 0.820862,
+                "w": 0.78041,
+                "h": 0.02819
+              },
+              {
+                "text": "them to act well for us. It is not yet clear whether this is possible, but if it is, it will require",
+                "x": 0.156403,
+                "y": 0.843503,
+                "w": 0.801564,
+                "h": 0.022266
+              },
+              {
+                "text": "a cooperative spirit, and a willingness to set aside self-interest.",
+                "x": 0.156403,
+                "y": 0.867469,
+                "w": 0.57478,
+                "h": 0.022306
+              },
+              {
+                "text": "Both general intelligence and moral reasoning are often thought to be uniquely human",
+                "x": 0.15821,
+                "y": 0.905955,
+                "w": 0.784279,
+                "h": 0.026542
+              },
+              {
+                "text": "capacities. But safety seems to require that we think of them as a package: if we are to",
+                "x": 0.156257,
+                "y": 0.926835,
+                "w": 0.794042,
+                "h": 0.026379
+              },
+              {
+                "text": "give general intelligence to machines, we'll need to give them moral authority, too. And",
+                "x": 0.156231,
+                "y": 0.948356,
+                "w": 0.790192,
+                "h": 0.026639
+              },
+              {
+                "text": "where exactly would that leave human beings? All the more reason to think about the",
+                "x": 0.156403,
+                "y": 0.970997,
+                "w": 0.778104,
+                "h": 0.022272
+              },
+              {
+                "text": "destination now, and to be careful about what we wish for.",
+                "x": 0.158358,
+                "y": 0.993148,
+                "w": 0.529814,
+                "h": 0.02222
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-2/page-50.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.152493,
+                "y": 0.015535,
+                "w": 0.058651,
+                "h": 0.01724
+              },
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.150538,
+                "y": 0.068475,
+                "w": 0.301075,
+                "h": 0.020406
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.150538,
+                "y": 0.112509,
+                "w": 0.801564,
+                "h": 0.022266
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.152493,
+                "y": 0.136475,
+                "w": 0.162268,
+                "h": 0.01886
+              },
+              {
+                "text": "An ideal city",
+                "x": 0.473082,
+                "y": 0.178804,
+                "w": 0.168206,
+                "h": 0.027541
+              },
+              {
+                "text": "Leonardo da Vinci's ideal city was centuries ahead of its time",
+                "x": 0.256109,
+                "y": 0.228188,
+                "w": 0.602151,
+                "h": 0.022186
+              },
+              {
+                "text": "The word 'genius' is universally associated with the name of Leonardo da Vinci. A true",
+                "x": 0.150538,
+                "y": 0.272474,
+                "w": 0.723363,
+                "h": 0.0204
+              },
+              {
+                "text": "Renaissance man, he embodied scientific spirit, artistic talent and humanist sensibilities.",
+                "x": 0.148583,
+                "y": 0.291174,
+                "w": 0.733138,
+                "h": 0.0238
+              },
+              {
+                "text": "Five hundred years have passed since Leonardo died in his home at Château du Clos Lucé,",
+                "x": 0.150538,
+                "y": 0.314825,
+                "w": 0.754643,
+                "h": 0.020675
+              },
+              {
+                "text": "outside Tours, France. Yet far from fading into insignificance, his thinking has carried down the",
+                "x": 0.150477,
+                "y": 0.335038,
+                "w": 0.789955,
+                "h": 0.0228
+              },
+              {
+                "text": "centuries and still surprises today.",
+                "x": 0.150538,
+                "y": 0.359127,
+                "w": 0.281525,
+                "h": 0.018746
+              },
+              {
+                "text": "The Renaissance marked the transition from the 15th century to modernity and took place after",
+                "x": 0.150538,
+                "y": 0.398273,
+                "w": 0.787879,
+                "h": 0.020417
+              },
+              {
+                "text": "the spread of the plague in the 14th century, which caused a global crisis resulting in some",
+                "x": 0.150538,
+                "y": 0.418673,
+                "w": 0.748778,
+                "h": 0.022169
+              },
+              {
+                "text": "200 million deaths across Europe and Asia. Today, the world is on the cusp of a climate crisis,",
+                "x": 0.150538,
+                "y": 0.440772,
+                "w": 0.780059,
+                "h": 0.0204
+              },
+              {
+                "text": "which is predicted to cause widespread displacement, extinctions and death, if left unaddressed.",
+                "x": 0.150538,
+                "y": 0.462872,
+                "w": 0.793744,
+                "h": 0.0204
+              },
+              {
+                "text": "Then, as now, radical solutions were called for to revolutionise the way people lived and",
+                "x": 0.152493,
+                "y": 0.483175,
+                "w": 0.731183,
+                "h": 0.020675
+              },
+              {
+                "text": "safeguard humanity against catastrophe.",
+                "x": 0.150538,
+                "y": 0.503672,
+                "w": 0.334311,
+                "h": 0.022329
+              },
+              {
+                "text": "Around 1486 - after a pestilence that killed half the population in Milan, Italy - Leonardo turned",
+                "x": 0.152493,
+                "y": 0.546172,
+                "w": 0.801564,
+                "h": 0.0204
+              },
+              {
+                "text": "his thoughts to urban planning problems. Following a typical Renaissance trend, he began to",
+                "x": 0.150538,
+                "y": 0.568271,
+                "w": 0.766373,
+                "h": 0.0204
+              },
+              {
+                "text": "work on an \"ideal city\"",
+                "x": 0.152493,
+                "y": 0.588517,
+                "w": 0.191593,
+                "h": 0.020675
+              },
+              {
+                "text": "project, which - due to its excessive costs - would remain unfulfilled. Yet",
+                "x": 0.340053,
+                "y": 0.585907,
+                "w": 0.614136,
+                "h": 0.023618
+              },
+              {
+                "text": "given that unsustainable urban models are a key cause of global climate change today, it's only",
+                "x": 0.150538,
+                "y": 0.609071,
+                "w": 0.785924,
+                "h": 0.022272
+              },
+              {
+                "text": "natural to wonder how Leonardo might have changed the shape of modern cities.",
+                "x": 0.150538,
+                "y": 0.629374,
+                "w": 0.672532,
+                "h": 0.022197
+              },
+              {
+                "text": "Although the Renaissance is renowned as an era of incredible progress in art and architecture,",
+                "x": 0.152427,
+                "y": 0.671419,
+                "w": 0.776258,
+                "h": 0.02285
+              },
+              {
+                "text": "it is rarely noted that the 15th century also marked the birth of urbanism as a true academic",
+                "x": 0.150421,
+                "y": 0.689187,
+                "w": 0.754883,
+                "h": 0.025842
+              },
+              {
+                "text": "discipline. The rigour and method behind the conscious conception of a city had been largely",
+                "x": 0.152493,
+                "y": 0.71447,
+                "w": 0.770283,
+                "h": 0.0204
+              },
+              {
+                "text": "missing in Western thought until the moment when prominent Renaissance men pushed forward",
+                "x": 0.152493,
+                "y": 0.734716,
+                "w": 0.795699,
+                "h": 0.022254
+              },
+              {
+                "text": "large-scale urban projects in Italy, such as the reconfiguration of the town of Pienza and the",
+                "x": 0.150538,
+                "y": 0.756867,
+                "w": 0.758553,
+                "h": 0.020675
+              },
+              {
+                "text": "expansion of the city of Ferrara. These works surely inspired Leonardo's decision to rethink the",
+                "x": 0.152493,
+                "y": 0.775572,
+                "w": 0.791789,
+                "h": 0.022197
+              },
+              {
+                "text": "design of medieval cities, with their winding and overcrowded streets and with houses piled",
+                "x": 0.152493,
+                "y": 0.797724,
+                "w": 0.760508,
+                "h": 0.022151
+              },
+              {
+                "text": "against one another.",
+                "x": 0.152493,
+                "y": 0.821352,
+                "w": 0.168133,
+                "h": 0.018917
+              },
+              {
+                "text": "It is not easy to identify a coordinated vision of Leonardo's ideal city because of his disordered",
+                "x": 0.152493,
+                "y": 0.860669,
+                "w": 0.785924,
+                "h": 0.0204
+              },
+              {
+                "text": "way of working with notes and sketches. But from the largest collection of Leonardo's papers",
+                "x": 0.152493,
+                "y": 0.882769,
+                "w": 0.776149,
+                "h": 0.0204
+              },
+              {
+                "text": "ever assembled, a series of innovative thoughts can be reconstructed regarding the foundation of",
+                "x": 0.152493,
+                "y": 0.903066,
+                "w": 0.799609,
+                "h": 0.020675
+              },
+              {
+                "text": "a new city along the Ticino River, which runs from Switzerland into Italy and is 248 kilometres",
+                "x": 0.152493,
+                "y": 0.923569,
+                "w": 0.789834,
+                "h": 0.022323
+              },
+              {
+                "text": "long. He designed the city for the easy transport of goods and clean urban spaces, and he wanted",
+                "x": 0.150538,
+                "y": 0.945668,
+                "w": 0.801564,
+                "h": 0.020406
+              },
+              {
+                "text": "a comfortable and spacious city, with well-ordered streets and architecture. He recommended",
+                "x": 0.152493,
+                "y": 0.966068,
+                "w": 0.772238,
+                "h": 0.022157
+              },
+              {
+                "text": "\"high, strong walls\", with \"towers and battlements of all necessary and pleasant beauty'.",
+                "x": 0.152449,
+                "y": 0.98643,
+                "w": 0.727356,
+                "h": 0.022555
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-2/page-51.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "His plans for a modern and 'rational' city were consistent with Renaissance ideals. But, in",
+                "x": 0.02346,
+                "y": 0.022427,
+                "w": 0.744868,
+                "h": 0.022249
+              },
+              {
+                "text": "keeping with his personality, Leonardo included several innovations in his urban design.",
+                "x": 0.02346,
+                "y": 0.044578,
+                "w": 0.733138,
+                "h": 0.022197
+              },
+              {
+                "text": "Leonardo wanted the city to be built on several levels, linked with vertical outdoor staircases.",
+                "x": 0.025345,
+                "y": 0.064858,
+                "w": 0.774311,
+                "h": 0.023787
+              },
+              {
+                "text": "This design can be seen in some of today's high-rise buildings but was unconventional at the",
+                "x": 0.025415,
+                "y": 0.087175,
+                "w": 0.766373,
+                "h": 0.0221
+              },
+              {
+                "text": "time. Indeed, this idea of taking full advantage of the interior spaces wasn't implemented until the",
+                "x": 0.025294,
+                "y": 0.105532,
+                "w": 0.809633,
+                "h": 0.027122
+              },
+              {
+                "text": "1920s and 1930s, with the birth of the Modernist movement.",
+                "x": 0.025254,
+                "y": 0.128735,
+                "w": 0.502717,
+                "h": 0.025878
+              },
+              {
+                "text": "While in the upper layers of the city, people could walk undisturbed between elegant palaces",
+                "x": 0.025415,
+                "y": 0.172072,
+                "w": 0.766373,
+                "h": 0.020675
+              },
+              {
+                "text": "and streets, the lower layer was the place for services, trade, transport and industry. But the",
+                "x": 0.02346,
+                "y": 0.192574,
+                "w": 0.754643,
+                "h": 0.022323
+              },
+              {
+                "text": "true originality of Leonardo's vision was its fusion of architecture and engineering. Leonardo",
+                "x": 0.025333,
+                "y": 0.213653,
+                "w": 0.770443,
+                "h": 0.021471
+              },
+              {
+                "text": "designed extensive hydraulic plants to create artificial canals throughout the city. The canals,",
+                "x": 0.025415,
+                "y": 0.236557,
+                "w": 0.768328,
+                "h": 0.017229
+              },
+              {
+                "text": "regulated by clocks and basins, were supposed to make it easier for boats to navigate inland.",
+                "x": 0.02346,
+                "y": 0.255262,
+                "w": 0.766373,
+                "h": 0.022312
+              },
+              {
+                "text": "Leonardo also thought that the width of the streets ought to match the average height of the",
+                "x": 0.025415,
+                "y": 0.277414,
+                "w": 0.756598,
+                "h": 0.020675
+              },
+              {
+                "text": "adjacent houses: a rule still followed in many contemporary cities across Italy, to allow access to",
+                "x": 0.023349,
+                "y": 0.294763,
+                "w": 0.801794,
+                "h": 0.027668
+              },
+              {
+                "text": "sun and reduce the risk of damage from earthquakes.",
+                "x": 0.025415,
+                "y": 0.320073,
+                "w": 0.441838,
+                "h": 0.0204
+              },
+              {
+                "text": "Although some of these features existed in Roman cities, before Leonardo's drawings there had",
+                "x": 0.025415,
+                "y": 0.360873,
+                "w": 0.791789,
+                "h": 0.0221
+              },
+              {
+                "text": "never been a multi-level, compact modern city which was thoroughly technically conceived.",
+                "x": 0.025415,
+                "y": 0.381273,
+                "w": 0.766373,
+                "h": 0.022157
+              },
+              {
+                "text": "Indeed, it wasn't until the 19th century that some of his ideas were applied. For example, the",
+                "x": 0.025415,
+                "y": 0.403373,
+                "w": 0.768328,
+                "h": 0.0204
+              },
+              {
+                "text": "subdivision of the city by function - with services and infrastructures located in the lower levels",
+                "x": 0.025228,
+                "y": 0.419181,
+                "w": 0.797997,
+                "h": 0.028518
+              },
+              {
+                "text": "and wide and well-ventilated boulevards and walkways above for residents - is an idea that can",
+                "x": 0.025305,
+                "y": 0.443357,
+                "w": 0.790078,
+                "h": 0.025381
+              },
+              {
+                "text": "be found in Georges-Eugène Haussmann's renovation of Paris under Emperor Napoleon III",
+                "x": 0.025415,
+                "y": 0.466272,
+                "w": 0.758553,
+                "h": 0.022317
+              },
+              {
+                "text": "between 1853 and 1870.",
+                "x": 0.025415,
+                "y": 0.490066,
+                "w": 0.207234,
+                "h": 0.018706
+              },
+              {
+                "text": "Today, Leonardo's ideas are not simply valid, they actually suggest a way forward for urban",
+                "x": 0.027309,
+                "y": 0.528714,
+                "w": 0.760644,
+                "h": 0.024433
+              },
+              {
+                "text": "planning. Many scholars think that the compact city, built upwards instead of outwards,",
+                "x": 0.025415,
+                "y": 0.54766,
+                "w": 0.727273,
+                "h": 0.02412
+              },
+              {
+                "text": "integrated with nature (especially water systems), with efficient transport infrastructure, could",
+                "x": 0.025302,
+                "y": 0.56902,
+                "w": 0.778365,
+                "h": 0.027057
+              },
+              {
+                "text": "help modern cities become more efficient and sustainable. This is yet another reason why",
+                "x": 0.025415,
+                "y": 0.591963,
+                "w": 0.740958,
+                "h": 0.022209
+              },
+              {
+                "text": "Leonardo was aligned so closely with modern urban planning and centuries ahead of his time.",
+                "x": 0.02737,
+                "y": 0.614114,
+                "w": 0.778104,
+                "h": 0.020675
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-2/page-54.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.154448,
+                "y": 0.012376,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "WRITING",
+                "x": 0.494624,
+                "y": 0.066775,
+                "w": 0.125122,
+                "h": 0.0204
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.150538,
+                "y": 0.136475,
+                "w": 0.230694,
+                "h": 0.01886
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.150538,
+                "y": 0.18044,
+                "w": 0.447703,
+                "h": 0.020675
+              },
+              {
+                "text": "The chart below shows the number of households in the US by their annual",
+                "x": 0.175953,
+                "y": 0.231634,
+                "w": 0.742913,
+                "h": 0.02384
+              },
+              {
+                "text": "income in 2007, 2011 and 2015.",
+                "x": 0.172043,
+                "y": 0.255262,
+                "w": 0.308895,
+                "h": 0.022312
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.173998,
+                "y": 0.296119,
+                "w": 0.760508,
+                "h": 0.022254
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.173998,
+                "y": 0.31827,
+                "w": 0.346041,
+                "h": 0.020675
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.150538,
+                "y": 0.372773,
+                "w": 0.232649,
+                "h": 0.018843
+              },
+              {
+                "text": "Number of households (millions)",
+                "x": 0.199413,
+                "y": 0.420373,
+                "w": 0.021505,
+                "h": 0.282198
+              },
+              {
+                "text": "35",
+                "x": 0.224829,
+                "y": 0.430573,
+                "w": 0.02737,
+                "h": 0.0153
+              },
+              {
+                "text": "30",
+                "x": 0.224829,
+                "y": 0.466272,
+                "w": 0.02737,
+                "h": 0.0153
+              },
+              {
+                "text": "25",
+                "x": 0.224829,
+                "y": 0.500272,
+                "w": 0.025415,
+                "h": 0.017
+              },
+              {
+                "text": "20",
+                "x": 0.224829,
+                "y": 0.535972,
+                "w": 0.025415,
+                "h": 0.017
+              },
+              {
+                "text": "15",
+                "x": 0.226784,
+                "y": 0.571671,
+                "w": 0.02346,
+                "h": 0.0153
+              },
+              {
+                "text": "10",
+                "x": 0.226784,
+                "y": 0.607371,
+                "w": 0.02346,
+                "h": 0.0153
+              },
+              {
+                "text": "5",
+                "x": 0.236559,
+                "y": 0.641371,
+                "w": 0.013685,
+                "h": 0.017
+              },
+              {
+                "text": "Number of US households (in millions), by annual income",
+                "x": 0.30694,
+                "y": 0.411798,
+                "w": 0.56696,
+                "h": 0.022174
+              },
+              {
+                "text": "2007",
+                "x": 0.342102,
+                "y": 0.694017,
+                "w": 0.054798,
+                "h": 0.022207
+              },
+              {
+                "text": "2011",
+                "x": 0.562965,
+                "y": 0.692209,
+                "w": 0.051001,
+                "h": 0.020723
+              },
+              {
+                "text": "2015",
+                "x": 0.78185,
+                "y": 0.692046,
+                "w": 0.053113,
+                "h": 0.021048
+              },
+              {
+                "text": "Year",
+                "x": 0.565005,
+                "y": 0.71617,
+                "w": 0.050831,
+                "h": 0.0204
+              },
+              {
+                "text": "Less than $25,000",
+                "x": 0.312805,
+                "y": 0.756867,
+                "w": 0.183773,
+                "h": 0.020675
+              },
+              {
+                "text": "•$25,000-$49,999",
+                "x": 0.496579,
+                "y": 0.75357,
+                "w": 0.197458,
+                "h": 0.0204
+              },
+              {
+                "text": "•$50,000-$74,999",
+                "x": 0.688172,
+                "y": 0.75697,
+                "w": 0.197458,
+                "h": 0.0187
+              },
+              {
+                "text": "$75,000-$99,999",
+                "x": 0.314761,
+                "y": 0.78077,
+                "w": 0.164223,
+                "h": 0.0204
+              },
+              {
+                "text": "I $100,000 or more",
+                "x": 0.514174,
+                "y": 0.782464,
+                "w": 0.175953,
+                "h": 0.020406
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-2/page-55.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.02346,
+                "y": 0.020876,
+                "w": 0.230694,
+                "h": 0.01878
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.021505,
+                "y": 0.063284,
+                "w": 0.443793,
+                "h": 0.020675
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.021505,
+                "y": 0.107575,
+                "w": 0.28348,
+                "h": 0.018717
+              },
+              {
+                "text": "Some university students want to learn about other subjects in addition to",
+                "x": 0.044966,
+                "y": 0.155175,
+                "w": 0.731183,
+                "h": 0.0255
+              },
+              {
+                "text": "their main subjects. Others believe it is more important to give all their time",
+                "x": 0.044966,
+                "y": 0.18044,
+                "w": 0.739003,
+                "h": 0.018935
+              },
+              {
+                "text": "and attention to studying for a qualification.",
+                "x": 0.046681,
+                "y": 0.200595,
+                "w": 0.430609,
+                "h": 0.024189
+              },
+              {
+                "text": "Discuss both these views and give your own opinion.",
+                "x": 0.044966,
+                "y": 0.243448,
+                "w": 0.525904,
+                "h": 0.020675
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.023294,
+                "y": 0.293515,
+                "w": 0.729592,
+                "h": 0.029977
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.021505,
+                "y": 0.321716,
+                "w": 0.240469,
+                "h": 0.018757
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.02346,
+                "y": 0.362573,
+                "w": 0.230694,
+                "h": 0.018706
+              },
+              {
+                "text": "→ ° p. 131",
+                "x": 0.664712,
+                "y": 0.996594,
+                "w": 0.119257,
+                "h": 0.020675
+              },
+              {
+                "text": "53",
+                "x": 0.811339,
+                "y": 0.998368,
+                "w": 0.02346,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-34.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.148583,
+                "y": 0.068475,
+                "w": 0.125122,
+                "h": 0.0323
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.478983,
+                "y": 0.141575,
+                "w": 0.152493,
+                "h": 0.0204
+              },
+              {
+                "text": "PART 1",
+                "x": 0.152493,
+                "y": 0.216374,
+                "w": 0.097752,
+                "h": 0.018706
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.308895,
+                "y": 0.216374,
+                "w": 0.179863,
+                "h": 0.018706
+              },
+              {
+                "text": "Questions 1-5",
+                "x": 0.154448,
+                "y": 0.258708,
+                "w": 0.144673,
+                "h": 0.018866
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.152493,
+                "y": 0.301374,
+                "w": 0.244379,
+                "h": 0.018866
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.154448,
+                "y": 0.342173,
+                "w": 0.387097,
+                "h": 0.017
+              },
+              {
+                "text": "Working at Milo's Restaurants",
+                "x": 0.353861,
+                "y": 0.394873,
+                "w": 0.404692,
+                "h": 0.027263
+              },
+              {
+                "text": "Benefits",
+                "x": 0.173998,
+                "y": 0.435673,
+                "w": 0.084066,
+                "h": 0.017
+              },
+              {
+                "text": "1",
+                "x": 0.218964,
+                "y": 0.467972,
+                "w": 0.01173,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.172043,
+                "y": 0.501972,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "2",
+                "x": 0.217009,
+                "y": 0.500272,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "3",
+                "x": 0.218964,
+                "y": 0.532572,
+                "w": 0.013685,
+                "h": 0.017
+              },
+              {
+                "text": ". provided for all staff",
+                "x": 0.388765,
+                "y": 0.466116,
+                "w": 0.196058,
+                "h": 0.021262
+              },
+              {
+                "text": ". during weekdays at all Milo's Restaurants",
+                "x": 0.391007,
+                "y": 0.498435,
+                "w": 0.391007,
+                "h": 0.020675
+              },
+              {
+                "text": ".provided after midnight",
+                "x": 0.389052,
+                "y": 0.5324,
+                "w": 0.224829,
+                "h": 0.020675
+              },
+              {
+                "text": "Person specification",
+                "x": 0.173998,
+                "y": 0.575071,
+                "w": 0.203324,
+                "h": 0.0204
+              },
+              {
+                "text": "•",
+                "x": 0.170088,
+                "y": 0.605671,
+                "w": 0.021505,
+                "h": 0.0204
+              },
+              {
+                "text": "must be prepared to work well in a team",
+                "x": 0.218964,
+                "y": 0.607222,
+                "w": 0.367546,
+                "h": 0.020675
+              },
+              {
+                "text": "must care about maintaining a high standard of 4",
+                "x": 0.218964,
+                "y": 0.637742,
+                "w": 0.449658,
+                "h": 0.020675
+              },
+              {
+                "text": "must have a qualification in 5...",
+                "x": 0.218964,
+                "y": 0.671971,
+                "w": 0.281525,
+                "h": 0.018935
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-35.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 6-10",
+                "x": 0.02737,
+                "y": 0.020876,
+                "w": 0.160313,
+                "h": 0.0204
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.02737,
+                "y": 0.063284,
+                "w": 0.238514,
+                "h": 0.022191
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.025415,
+                "y": 0.104141,
+                "w": 0.531769,
+                "h": 0.022151
+              },
+              {
+                "text": "Location",
+                "x": 0.078064,
+                "y": 0.159796,
+                "w": 0.092162,
+                "h": 0.021357
+              },
+              {
+                "text": "6.........",
+                "x": 0.033236,
+                "y": 0.199374,
+                "w": 0.080156,
+                "h": 0.0153
+              },
+              {
+                "text": "City Road",
+                "x": 0.033126,
+                "y": 0.326484,
+                "w": 0.094061,
+                "h": 0.021178
+              },
+              {
+                "text": "Job title",
+                "x": 0.279436,
+                "y": 0.158166,
+                "w": 0.088244,
+                "h": 0.022917
+              },
+              {
+                "text": "Responsibilities",
+                "x": 0.439883,
+                "y": 0.150075,
+                "w": 0.164223,
+                "h": 0.0221
+              },
+              {
+                "text": "include",
+                "x": 0.475073,
+                "y": 0.170475,
+                "w": 0.084066,
+                "h": 0.0204
+              },
+              {
+                "text": "Pay and conditions",
+                "x": 0.625611,
+                "y": 0.156812,
+                "w": 0.195503,
+                "h": 0.027263
+              },
+              {
+                "text": ".. Street Breakfast supervisor Checking portions,",
+                "x": 0.138807,
+                "y": 0.194223,
+                "w": 0.471163,
+                "h": 0.027251
+              },
+              {
+                "text": "Starting salary",
+                "x": 0.607957,
+                "y": 0.195678,
+                "w": 0.146744,
+                "h": 0.022692
+              },
+              {
+                "text": "etc. are correct",
+                "x": 0.43201,
+                "y": 0.217811,
+                "w": 0.144778,
+                "h": 0.022626
+              },
+              {
+                "text": "8 €....",
+                "x": 0.617791,
+                "y": 0.216374,
+                "w": 0.060606,
+                "h": 0.022151
+              },
+              {
+                "text": ".......per",
+                "x": 0.709677,
+                "y": 0.221474,
+                "w": 0.086022,
+                "h": 0.017
+              },
+              {
+                "text": "Making sure",
+                "x": 0.432063,
+                "y": 0.258708,
+                "w": 0.117302,
+                "h": 0.022266
+              },
+              {
+                "text": "7...",
+                "x": 0.432063,
+                "y": 0.282674,
+                "w": 0.035191,
+                "h": 0.0187
+              },
+              {
+                "text": "clean",
+                "x": 0.432063,
+                "y": 0.301374,
+                "w": 0.054741,
+                "h": 0.0204
+              },
+              {
+                "text": "...is",
+                "x": 0.533724,
+                "y": 0.282674,
+                "w": 0.041056,
+                "h": 0.0187
+              },
+              {
+                "text": "Junior chef",
+                "x": 0.226708,
+                "y": 0.329909,
+                "w": 0.105724,
+                "h": 0.017728
+              },
+              {
+                "text": "Supporting senior",
+                "x": 0.432063,
+                "y": 0.326639,
+                "w": 0.168133,
+                "h": 0.022335
+              },
+              {
+                "text": "Start work at",
+                "x": 0.619746,
+                "y": 0.280859,
+                "w": 0.121212,
+                "h": 0.020675
+              },
+              {
+                "text": "5.30 a.m.",
+                "x": 0.617791,
+                "y": 0.301374,
+                "w": 0.091887,
+                "h": 0.0204
+              },
+              {
+                "text": "Annual salary £23,000",
+                "x": 0.619746,
+                "y": 0.326639,
+                "w": 0.209189,
+                "h": 0.02412
+              },
+              {
+                "text": "chefs",
+                "x": 0.43184,
+                "y": 0.348469,
+                "w": 0.055186,
+                "h": 0.019708
+              },
+              {
+                "text": "No work on a",
+                "x": 0.619746,
+                "y": 0.370941,
+                "w": 0.123167,
+                "h": 0.018831
+              },
+              {
+                "text": "Maintaining stock 10..",
+                "x": 0.432063,
+                "y": 0.393093,
+                "w": 0.242424,
+                "h": 0.01878
+              },
+              {
+                "text": "and organising",
+                "x": 0.431885,
+                "y": 0.409363,
+                "w": 0.139163,
+                "h": 0.02542
+              },
+              {
+                "text": "monti.......... once a",
+                "x": 0.619443,
+                "y": 0.395095,
+                "w": 0.200019,
+                "h": 0.035256
+              },
+              {
+                "text": "→ 0 p. 121 p.104",
+                "x": 0.553275,
+                "y": 0.996594,
+                "w": 0.232649,
+                "h": 0.022174
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-36.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.150538,
+                "y": 0.017476,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "PART 2",
+                "x": 0.148583,
+                "y": 0.070175,
+                "w": 0.103617,
+                "h": 0.0204
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.304985,
+                "y": 0.068475,
+                "w": 0.195503,
+                "h": 0.0221
+              },
+              {
+                "text": "Questions 11 and 12",
+                "x": 0.150538,
+                "y": 0.112509,
+                "w": 0.207234,
+                "h": 0.020675
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.150538,
+                "y": 0.160258,
+                "w": 0.246334,
+                "h": 0.020417
+              },
+              {
+                "text": "What are the TWO main reasons why this site has been chosen for the housing",
+                "x": 0.148583,
+                "y": 0.197669,
+                "w": 0.725318,
+                "h": 0.022151
+              },
+              {
+                "text": "development?",
+                "x": 0.148456,
+                "y": 0.224239,
+                "w": 0.131241,
+                "h": 0.021671
+              },
+              {
+                "text": "A It has suitable geographical features.",
+                "x": 0.195503,
+                "y": 0.257174,
+                "w": 0.383187,
+                "h": 0.018763
+              },
+              {
+                "text": "B",
+                "x": 0.195503,
+                "y": 0.277574,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "There is easy access to local facilities.",
+                "x": 0.232649,
+                "y": 0.277414,
+                "w": 0.357771,
+                "h": 0.020675
+              },
+              {
+                "text": "C Ithas good connections with the airport.",
+                "x": 0.195503,
+                "y": 0.297974,
+                "w": 0.412512,
+                "h": 0.022266
+              },
+              {
+                "text": "D The land is of little agricultural value.",
+                "x": 0.195503,
+                "y": 0.31827,
+                "w": 0.381232,
+                "h": 0.020675
+              },
+              {
+                "text": "E It will be convenient for workers.",
+                "x": 0.195503,
+                "y": 0.340422,
+                "w": 0.342131,
+                "h": 0.018751
+              },
+              {
+                "text": "Questions 13 and 14",
+                "x": 0.152493,
+                "y": 0.404907,
+                "w": 0.207234,
+                "h": 0.018866
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.152493,
+                "y": 0.449209,
+                "w": 0.246334,
+                "h": 0.022163
+              },
+              {
+                "text": "Which TWO aspects of the planned housing development have people given positive",
+                "x": 0.150538,
+                "y": 0.488372,
+                "w": 0.776149,
+                "h": 0.0221
+              },
+              {
+                "text": "feedback about?",
+                "x": 0.148583,
+                "y": 0.515572,
+                "w": 0.156403,
+                "h": 0.017
+              },
+              {
+                "text": "A the facilities for cyclists",
+                "x": 0.195503,
+                "y": 0.546172,
+                "w": 0.256109,
+                "h": 0.0204
+              },
+              {
+                "text": "the impact on the environment",
+                "x": 0.236559,
+                "y": 0.568271,
+                "w": 0.285435,
+                "h": 0.018769
+              },
+              {
+                "text": "the encouragement of good relations between residents",
+                "x": 0.23835,
+                "y": 0.586478,
+                "w": 0.512594,
+                "h": 0.024806
+              },
+              {
+                "text": "D the low cost of all the accommodation",
+                "x": 0.197458,
+                "y": 0.610668,
+                "w": 0.391007,
+                "h": 0.017229
+              },
+              {
+                "text": "E the rural location",
+                "x": 0.197458,
+                "y": 0.632819,
+                "w": 0.197458,
+                "h": 0.017229
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-37.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.035191,
+                "y": 0.024276,
+                "w": 0.170088,
+                "h": 0.018826
+              },
+              {
+                "text": "Label the map below.",
+                "x": 0.033236,
+                "y": 0.068475,
+                "w": 0.197458,
+                "h": 0.018929
+              },
+              {
+                "text": "Write the correct letter, A-l, next to Questions 15-20.",
+                "x": 0.033236,
+                "y": 0.109063,
+                "w": 0.488759,
+                "h": 0.020675
+              },
+              {
+                "text": "N",
+                "x": 0.760508,
+                "y": 0.139875,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "w<{=E",
+                "x": 0.721333,
+                "y": 0.155048,
+                "w": 0.088125,
+                "h": 0.039353
+              },
+              {
+                "text": "S",
+                "x": 0.760508,
+                "y": 0.194274,
+                "w": 0.013685,
+                "h": 0.017
+              },
+              {
+                "text": "Apartment",
+                "x": 0.248187,
+                "y": 0.195542,
+                "w": 0.101867,
+                "h": 0.019564
+              },
+              {
+                "text": "blocks",
+                "x": 0.265885,
+                "y": 0.214674,
+                "w": 0.064516,
+                "h": 0.0153
+              },
+              {
+                "text": "Housing for",
+                "x": 0.617748,
+                "y": 0.207698,
+                "w": 0.111522,
+                "h": 0.020754
+              },
+              {
+                "text": "the elderly",
+                "x": 0.6196,
+                "y": 0.227589,
+                "w": 0.101953,
+                "h": 0.018371
+              },
+              {
+                "text": "London Road",
+                "x": 0.164487,
+                "y": 0.228013,
+                "w": 0.02169,
+                "h": 0.10931
+              },
+              {
+                "text": "Lake",
+                "x": 0.432063,
+                "y": 0.275874,
+                "w": 0.046921,
+                "h": 0.017
+              },
+              {
+                "text": "West",
+                "x": 0.084066,
+                "y": 0.326873,
+                "w": 0.054741,
+                "h": 0.017
+              },
+              {
+                "text": "Entrance",
+                "x": 0.068351,
+                "y": 0.345231,
+                "w": 0.090082,
+                "h": 0.015984
+              },
+              {
+                "text": "H",
+                "x": 0.226784,
+                "y": 0.479872,
+                "w": 0.01955,
+                "h": 0.017
+              },
+              {
+                "text": "Key",
+                "x": 0.097752,
+                "y": 0.576771,
+                "w": 0.041056,
+                "h": 0.0187
+              },
+              {
+                "text": "To Nunston <",
+                "x": 0.127204,
+                "y": 0.5379,
+                "w": 0.150029,
+                "h": 0.031398
+              },
+              {
+                "text": "IHousing",
+                "x": 0.181708,
+                "y": 0.595063,
+                "w": 0.097973,
+                "h": 0.021217
+              },
+              {
+                "text": "Main Road",
+                "x": 0.467211,
+                "y": 0.539181,
+                "w": 0.101745,
+                "h": 0.017381
+              },
+              {
+                "text": "South",
+                "x": 0.561095,
+                "y": 0.568271,
+                "w": 0.060606,
+                "h": 0.017
+              },
+              {
+                "text": "Entrance",
+                "x": 0.547297,
+                "y": 0.584809,
+                "w": 0.090157,
+                "h": 0.017925
+              },
+              {
+                "text": "15 School",
+                "x": 0.031281,
+                "y": 0.634571,
+                "w": 0.113392,
+                "h": 0.017
+              },
+              {
+                "text": "16",
+                "x": 0.033236,
+                "y": 0.666871,
+                "w": 0.037146,
+                "h": 0.0153
+              },
+              {
+                "text": "Sports centre",
+                "x": 0.066471,
+                "y": 0.666785,
+                "w": 0.134897,
+                "h": 0.018786
+              },
+              {
+                "text": "17 Clinic",
+                "x": 0.031281,
+                "y": 0.697304,
+                "w": 0.103617,
+                "h": 0.018866
+              },
+              {
+                "text": "18 Community centre",
+                "x": 0.031281,
+                "y": 0.72807,
+                "w": 0.217009,
+                "h": 0.023874
+              },
+              {
+                "text": "19 Supermarket",
+                "x": 0.031281,
+                "y": 0.763758,
+                "w": 0.170088,
+                "h": 0.020411
+              },
+              {
+                "text": "20 Playground",
+                "x": 0.031109,
+                "y": 0.793497,
+                "w": 0.154791,
+                "h": 0.025546
+              },
+              {
+                "text": "→ O p. 121",
+                "x": 0.558933,
+                "y": 0.99584,
+                "w": 0.1314,
+                "h": 0.027155
+              },
+              {
+                "text": "E p. 105",
+                "x": 0.699778,
+                "y": 0.996302,
+                "w": 0.092134,
+                "h": 0.024533
+              },
+              {
+                "text": "35",
+                "x": 0.817204,
+                "y": 0.998368,
+                "w": 0.029326,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            11,
+            12
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            13,
+            14
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-38.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.142717,
+                "y": 0.015535,
+                "w": 0.058651,
+                "h": 0.01724
+              },
+              {
+                "text": "PART 3",
+                "x": 0.140723,
+                "y": 0.068322,
+                "w": 0.103696,
+                "h": 0.020706
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.297165,
+                "y": 0.068475,
+                "w": 0.197458,
+                "h": 0.0221
+              },
+              {
+                "text": "Questions 21-24",
+                "x": 0.142717,
+                "y": 0.115955,
+                "w": 0.172043,
+                "h": 0.01882
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.142717,
+                "y": 0.160258,
+                "w": 0.328446,
+                "h": 0.022151
+              },
+              {
+                "text": "21 Why do the students think the Laki eruption of 1783 is so important?",
+                "x": 0.140762,
+                "y": 0.194223,
+                "w": 0.666667,
+                "h": 0.022151
+              },
+              {
+                "text": "A",
+                "x": 0.185728,
+                "y": 0.228274,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "It was the most severe eruption in modern times.",
+                "x": 0.228739,
+                "y": 0.228188,
+                "w": 0.449658,
+                "h": 0.018786
+              },
+              {
+                "text": "B",
+                "x": 0.185728,
+                "y": 0.250374,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "It led to the formal study of volcanoes.",
+                "x": 0.228739,
+                "y": 0.248674,
+                "w": 0.351906,
+                "h": 0.018894
+              },
+              {
+                "text": "C Ithad a profound effect on society.",
+                "x": 0.185728,
+                "y": 0.269045,
+                "w": 0.361681,
+                "h": 0.020428
+              },
+              {
+                "text": "22 What surprised Adam about observations made at the time?",
+                "x": 0.140594,
+                "y": 0.300625,
+                "w": 0.596607,
+                "h": 0.025611
+              },
+              {
+                "text": "A the number of places producing them",
+                "x": 0.185728,
+                "y": 0.336976,
+                "w": 0.387097,
+                "h": 0.020675
+              },
+              {
+                "text": "the contradictions in them",
+                "x": 0.228739,
+                "y": 0.357473,
+                "w": 0.240469,
+                "h": 0.018883
+              },
+              {
+                "text": "C the lack of scientific data to support them",
+                "x": 0.187683,
+                "y": 0.379573,
+                "w": 0.420332,
+                "h": 0.018935
+              },
+              {
+                "text": "23 According to Michelle, what did the contemporary sources say about the Laki haze?",
+                "x": 0.140666,
+                "y": 0.411404,
+                "w": 0.809604,
+                "h": 0.025467
+              },
+              {
+                "text": "A People thought it was similar to ordinary fog.",
+                "x": 0.185728,
+                "y": 0.445764,
+                "w": 0.455523,
+                "h": 0.020675
+              },
+              {
+                "text": "B Itwas associated with health issues.",
+                "x": 0.187683,
+                "y": 0.467915,
+                "w": 0.379277,
+                "h": 0.017229
+              },
+              {
+                "text": "C It completely blocked out the sun for weeks.",
+                "x": 0.187683,
+                "y": 0.488372,
+                "w": 0.447703,
+                "h": 0.0204
+              },
+              {
+                "text": "24 Adam corrects Michelle when she claims that Benjamin Franklin",
+                "x": 0.138807,
+                "y": 0.522372,
+                "w": 0.633431,
+                "h": 0.0204
+              },
+              {
+                "text": "A came to the wrong conclusion about the cause of the haze.",
+                "x": 0.185728,
+                "y": 0.554551,
+                "w": 0.588465,
+                "h": 0.02222
+              },
+              {
+                "text": "B was the first to identify the reason for the haze.",
+                "x": 0.187516,
+                "y": 0.574389,
+                "w": 0.475368,
+                "h": 0.024942
+              },
+              {
+                "text": "supported the opinions of other observers about the haze.",
+                "x": 0.222874,
+                "y": 0.597171,
+                "w": 0.541544,
+                "h": 0.0221
+              },
+              {
+                "text": "Questions 25 and 26",
+                "x": 0.144673,
+                "y": 0.659893,
+                "w": 0.209189,
+                "h": 0.018877
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.142718,
+                "y": 0.70257,
+                "w": 0.246334,
+                "h": 0.0204
+              },
+              {
+                "text": "Which TWO issues following the Laki eruption surprised the students?",
+                "x": 0.142717,
+                "y": 0.74337,
+                "w": 0.641251,
+                "h": 0.0204
+              },
+              {
+                "text": "A",
+                "x": 0.187683,
+                "y": 0.77567,
+                "w": 0.01955,
+                "h": 0.0187
+              },
+              {
+                "text": "B",
+                "x": 0.187683,
+                "y": 0.79777,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "how widespread the effects were",
+                "x": 0.230694,
+                "y": 0.77737,
+                "w": 0.30303,
+                "h": 0.017
+              },
+              {
+                "text": "how long-lasting the effects were",
+                "x": 0.232649,
+                "y": 0.797724,
+                "w": 0.30303,
+                "h": 0.020675
+              },
+              {
+                "text": "the number of deaths it caused",
+                "x": 0.230694,
+                "y": 0.819869,
+                "w": 0.28739,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.187683,
+                "y": 0.840269,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.187683,
+                "y": 0.862369,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "the speed at which the volcanic ash cloud spread",
+                "x": 0.230694,
+                "y": 0.838569,
+                "w": 0.453568,
+                "h": 0.0204
+              },
+              {
+                "text": "how people ignored the warning signs",
+                "x": 0.232649,
+                "y": 0.860669,
+                "w": 0.347996,
+                "h": 0.018769
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-39.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.035191,
+                "y": 0.022427,
+                "w": 0.170088,
+                "h": 0.018849
+              },
+              {
+                "text": "What comment do the students make about the impact of the Laki eruption on the",
+                "x": 0.031281,
+                "y": 0.063284,
+                "w": 0.746823,
+                "h": 0.020675
+              },
+              {
+                "text": "following countries?",
+                "x": 0.031281,
+                "y": 0.085435,
+                "w": 0.185728,
+                "h": 0.020675
+              },
+              {
+                "text": "Choose FOUR answers from the box and write the correct letter, A-F, next to",
+                "x": 0.033236,
+                "y": 0.126275,
+                "w": 0.705767,
+                "h": 0.022169
+              },
+              {
+                "text": "Questions 27-30.",
+                "x": 0.033236,
+                "y": 0.148375,
+                "w": 0.164223,
+                "h": 0.0204
+              },
+              {
+                "text": "Comments",
+                "x": 0.383083,
+                "y": 0.200612,
+                "w": 0.107735,
+                "h": 0.019625
+              },
+              {
+                "text": "A This country suffered the most severe loss of life.",
+                "x": 0.187683,
+                "y": 0.233374,
+                "w": 0.498534,
+                "h": 0.020411
+              },
+              {
+                "text": "B The impact on agriculture was predictable.",
+                "x": 0.189638,
+                "y": 0.265599,
+                "w": 0.435973,
+                "h": 0.020675
+              },
+              {
+                "text": "There was a significant increase in deaths of",
+                "x": 0.218964,
+                "y": 0.297974,
+                "w": 0.426197,
+                "h": 0.022266
+              },
+              {
+                "text": "young people.",
+                "x": 0.232649,
+                "y": 0.320073,
+                "w": 0.136852,
+                "h": 0.022317
+              },
+              {
+                "text": "D Animals suffered from a sickness.",
+                "x": 0.189638,
+                "y": 0.352236,
+                "w": 0.355816,
+                "h": 0.020675
+              },
+              {
+                "text": "E This country saw the highest rise in food prices",
+                "x": 0.189638,
+                "y": 0.386201,
+                "w": 0.475073,
+                "h": 0.018872
+              },
+              {
+                "text": "in the world.",
+                "x": 0.230661,
+                "y": 0.404924,
+                "w": 0.121278,
+                "h": 0.020697
+              },
+              {
+                "text": "F",
+                "x": 0.189638,
+                "y": 0.439072,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "It caused a particularly harsh winter.",
+                "x": 0.226784,
+                "y": 0.437373,
+                "w": 0.342131,
+                "h": 0.022174
+              },
+              {
+                "text": "Countries",
+                "x": 0.078109,
+                "y": 0.503317,
+                "w": 0.101847,
+                "h": 0.02111
+              },
+              {
+                "text": "27 Iceland",
+                "x": 0.031248,
+                "y": 0.53754,
+                "w": 0.119321,
+                "h": 0.022364
+              },
+              {
+                "text": "28 Egypt",
+                "x": 0.03109,
+                "y": 0.572647,
+                "w": 0.107909,
+                "h": 0.023549
+              },
+              {
+                "text": "29 UK",
+                "x": 0.031247,
+                "y": 0.608969,
+                "w": 0.082178,
+                "h": 0.020603
+              },
+              {
+                "text": "30 USA",
+                "x": 0.031202,
+                "y": 0.641093,
+                "w": 0.093999,
+                "h": 0.020955
+              },
+              {
+                "text": "→ O p. 121 Ü p. 106",
+                "x": 0.561095,
+                "y": 0.996594,
+                "w": 0.228739,
+                "h": 0.022174
+              },
+              {
+                "text": "37",
+                "x": 0.817204,
+                "y": 0.998368,
+                "w": 0.025415,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            25,
+            26
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-40.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.142551,
+                "y": 0.010261,
+                "w": 0.060938,
+                "h": 0.01953
+              },
+              {
+                "text": "PART 4",
+                "x": 0.142717,
+                "y": 0.063284,
+                "w": 0.103617,
+                "h": 0.022191
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.29912,
+                "y": 0.063284,
+                "w": 0.197458,
+                "h": 0.022191
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.144673,
+                "y": 0.109063,
+                "w": 0.242424,
+                "h": 0.018912
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.142718,
+                "y": 0.148375,
+                "w": 0.391007,
+                "h": 0.02222
+              },
+              {
+                "text": "Pockets",
+                "x": 0.488571,
+                "y": 0.210566,
+                "w": 0.115723,
+                "h": 0.025217
+              },
+              {
+                "text": "Reason for choice of subject",
+                "x": 0.160313,
+                "y": 0.258708,
+                "w": 0.285435,
+                "h": 0.018866
+              },
+              {
+                "text": "They are 31",
+                "x": 0.193453,
+                "y": 0.300897,
+                "w": 0.121402,
+                "h": 0.019654
+              },
+              {
+                "text": "..but can be overlooked by consumers and designers.",
+                "x": 0.453568,
+                "y": 0.297974,
+                "w": 0.482893,
+                "h": 0.022266
+              },
+              {
+                "text": "Pockets in men's clothes",
+                "x": 0.160313,
+                "y": 0.342173,
+                "w": 0.248289,
+                "h": 0.018923
+              },
+              {
+                "text": "• Men started to wear 32..",
+                "x": 0.156403,
+                "y": 0.384673,
+                "w": 0.27175,
+                "h": 0.0204
+              },
+              {
+                "text": "in the 18th century.",
+                "x": 0.56696,
+                "y": 0.381273,
+                "w": 0.181818,
+                "h": 0.022157
+              },
+              {
+                "text": "• A 33",
+                "x": 0.156403,
+                "y": 0.427058,
+                "w": 0.093842,
+                "h": 0.020675
+              },
+              {
+                "text": "..sewed pockets into the lining of the garments.",
+                "x": 0.387097,
+                "y": 0.425473,
+                "w": 0.435973,
+                "h": 0.0204
+              },
+              {
+                "text": "• The wearer could use the pockets for small items.",
+                "x": 0.156403,
+                "y": 0.467915,
+                "w": 0.506354,
+                "h": 0.018757
+              },
+              {
+                "text": "• Bigger pockets might be made for men who belonged to a certain type of",
+                "x": 0.158358,
+                "y": 0.508772,
+                "w": 0.715543,
+                "h": 0.022151
+              },
+              {
+                "text": "34",
+                "x": 0.205279,
+                "y": 0.532572,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "Pockets in women's clothes",
+                "x": 0.160313,
+                "y": 0.571671,
+                "w": 0.27566,
+                "h": 0.018814
+              },
+              {
+                "text": "• Women's pockets were less 35",
+                "x": 0.158358,
+                "y": 0.614114,
+                "w": 0.332356,
+                "h": 0.020675
+              },
+              {
+                "text": "than men's.",
+                "x": 0.639199,
+                "y": 0.613717,
+                "w": 0.113585,
+                "h": 0.019608
+              },
+              {
+                "text": "• Women were very concerned about pickpockets.",
+                "x": 0.158358,
+                "y": 0.656448,
+                "w": 0.494624,
+                "h": 0.020675
+              },
+              {
+                "text": "• Pockets were produced in pairs usi.....................",
+                "x": 0.158358,
+                "y": 0.697304,
+                "w": 0.518084,
+                "h": 0.020675
+              },
+              {
+                "text": "..to link them together.",
+                "x": 0.717498,
+                "y": 0.697304,
+                "w": 0.207234,
+                "h": 0.018866
+              },
+              {
+                "text": "• Pockets hung from the women's 37",
+                "x": 0.15998,
+                "y": 0.736062,
+                "w": 0.370185,
+                "h": 0.027297
+              },
+              {
+                "text": ".. under skirts and petticoats.",
+                "x": 0.668622,
+                "y": 0.738161,
+                "w": 0.261975,
+                "h": 0.020675
+              },
+              {
+                "text": "• Items such as 38",
+                "x": 0.162268,
+                "y": 0.782464,
+                "w": 0.203324,
+                "h": 0.015306
+              },
+              {
+                "text": "material.",
+                "x": 0.207234,
+                "y": 0.80457,
+                "w": 0.082111,
+                "h": 0.017
+              },
+              {
+                "text": "could be reached through a gap in the",
+                "x": 0.516129,
+                "y": 0.78077,
+                "w": 0.349951,
+                "h": 0.0204
+              },
+              {
+                "text": "• Pockets, of various sizes, stayed inside clothing for many decades.",
+                "x": 0.160313,
+                "y": 0.843503,
+                "w": 0.660802,
+                "h": 0.022266
+              },
+              {
+                "text": "• When dresses changed shape, hidden pockets had a negative effect on the",
+                "x": 0.160313,
+                "y": 0.88436,
+                "w": 0.737048,
+                "h": 0.022209
+              },
+              {
+                "text": "39",
+                "x": 0.207234,
+                "y": 0.908269,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "of women.",
+                "x": 0.383095,
+                "y": 0.90785,
+                "w": 0.099891,
+                "h": 0.017838
+              },
+              {
+                "text": "•",
+                "x": 0.160313,
+                "y": 0.952468,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "Bags called 'pouches' became popular, before women carried a",
+                "x": 0.205279,
+                "y": 0.947368,
+                "w": 0.5826,
+                "h": 0.022151
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-43.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 1-8",
+                "x": 0.025415,
+                "y": 0.020876,
+                "w": 0.144673,
+                "h": 0.017
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.02346,
+                "y": 0.063284,
+                "w": 0.244379,
+                "h": 0.018791
+              },
+              {
+                "text": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+                "x": 0.02346,
+                "y": 0.104141,
+                "w": 0.699902,
+                "h": 0.020675
+              },
+              {
+                "text": "Write your answers in boxes 1-8 on your answer sheet.",
+                "x": 0.02346,
+                "y": 0.146474,
+                "w": 0.506354,
+                "h": 0.020675
+              },
+              {
+                "text": "Stonehenge",
+                "x": 0.345866,
+                "y": 0.205349,
+                "w": 0.164574,
+                "h": 0.028851
+              },
+              {
+                "text": "Construction",
+                "x": 0.039101,
+                "y": 0.243574,
+                "w": 0.130987,
+                "h": 0.0187
+              },
+              {
+                "text": "Stage 1:",
+                "x": 0.039033,
+                "y": 0.273951,
+                "w": 0.080292,
+                "h": 0.019145
+              },
+              {
+                "text": "• the ditch and hengewere dug, possibly using tools made from 1",
+                "x": 0.037146,
+                "y": 0.313273,
+                "w": 0.611926,
+                "h": 0.022226
+              },
+              {
+                "text": "2",
+                "x": 0.074291,
+                "y": 0.354073,
+                "w": 0.02346,
+                "h": 0.017
+              },
+              {
+                "text": "may have been arranged in deep pits inside the circle",
+                "x": 0.26784,
+                "y": 0.354073,
+                "w": 0.488759,
+                "h": 0.0204
+              },
+              {
+                "text": "Stage 2:",
+                "x": 0.038993,
+                "y": 0.394518,
+                "w": 0.080372,
+                "h": 0.01941
+              },
+              {
+                "text": "• bluestones from the Preseli Hills were placed in standing position",
+                "x": 0.037146,
+                "y": 0.43395,
+                "w": 0.641251,
+                "h": 0.020423
+              },
+              {
+                "text": "• theories about the transportation of the bluestones:",
+                "x": 0.037146,
+                "y": 0.474772,
+                "w": 0.516129,
+                "h": 0.0204
+              },
+              {
+                "text": "- archaeological:",
+                "x": 0.097752,
+                "y": 0.513694,
+                "w": 0.181818,
+                "h": 0.018877
+              },
+              {
+                "text": "• builders used 3",
+                "x": 0.172043,
+                "y": 0.551106,
+                "w": 0.173998,
+                "h": 0.017229
+              },
+              {
+                "text": "• 4",
+                "x": 0.172043,
+                "y": 0.588517,
+                "w": 0.046921,
+                "h": 0.017229
+              },
+              {
+                "text": "to make sledges and rollers",
+                "x": 0.512219,
+                "y": 0.551106,
+                "w": 0.256109,
+                "h": 0.020675
+              },
+              {
+                "text": ". pulled them on giant baskets",
+                "x": 0.373412,
+                "y": 0.588517,
+                "w": 0.27566,
+                "h": 0.018854
+              },
+              {
+                "text": "- geological:",
+                "x": 0.097752,
+                "y": 0.625928,
+                "w": 0.142717,
+                "h": 0.018843
+              },
+              {
+                "text": "• they were brought from Wales by 5",
+                "x": 0.172043,
+                "y": 0.663339,
+                "w": 0.351906,
+                "h": 0.018831
+              },
+              {
+                "text": "Stage 3:",
+                "x": 0.038979,
+                "y": 0.700511,
+                "w": 0.078445,
+                "h": 0.021118
+              },
+              {
+                "text": "sandstone slabs were arranged into an outer crescent or ring",
+                "x": 0.074291,
+                "y": 0.741607,
+                "w": 0.56696,
+                "h": 0.020675
+              },
+              {
+                "text": "Builders",
+                "x": 0.039076,
+                "y": 0.782378,
+                "w": 0.084116,
+                "h": 0.017184
+              },
+              {
+                "text": "• a theory arose in the 17th century that its builders were Celtic 6",
+                "x": 0.037146,
+                "y": 0.821352,
+                "w": 0.611926,
+                "h": 0.022317
+              },
+              {
+                "text": "Purpose",
+                "x": 0.039101,
+                "y": 0.864069,
+                "w": 0.084066,
+                "h": 0.0187
+              },
+              {
+                "text": "•",
+                "x": 0.037146,
+                "y": 0.906569,
+                "w": 0.013685,
+                "h": 0.0153
+              },
+              {
+                "text": "many experts agree it has been used as a 7",
+                "x": 0.076246,
+                "y": 0.904869,
+                "w": 0.408602,
+                "h": 0.0204
+              },
+              {
+                "text": "in the 1960s, it was suggested that it worked as a kind of 8",
+                "x": 0.076246,
+                "y": 0.947368,
+                "w": 0.541544,
+                "h": 0.0204
+              },
+              {
+                "text": "...site",
+                "x": 0.635386,
+                "y": 0.904869,
+                "w": 0.054741,
+                "h": 0.0187
+              },
+              {
+                "text": "41",
+                "x": 0.803519,
+                "y": 0.996668,
+                "w": 0.031281,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-44.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.154152,
+                "y": 0.008275,
+                "w": 0.057288,
+                "h": 0.020102
+              },
+              {
+                "text": "Questions 9-13",
+                "x": 0.154448,
+                "y": 0.06673,
+                "w": 0.158358,
+                "h": 0.017229
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.152493,
+                "y": 0.107575,
+                "w": 0.772238,
+                "h": 0.022163
+              },
+              {
+                "text": "In boxes 9-13 on your answer sheet, write",
+                "x": 0.150538,
+                "y": 0.155175,
+                "w": 0.391007,
+                "h": 0.018866
+              },
+              {
+                "text": "TRUE",
+                "x": 0.222874,
+                "y": 0.194274,
+                "w": 0.060606,
+                "h": 0.0204
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.351906,
+                "y": 0.195974,
+                "w": 0.398827,
+                "h": 0.018923
+              },
+              {
+                "text": "FALSE",
+                "x": 0.222833,
+                "y": 0.216268,
+                "w": 0.070462,
+                "h": 0.020612
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.353647,
+                "y": 0.213683,
+                "w": 0.39143,
+                "h": 0.023738
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.222874,
+                "y": 0.235074,
+                "w": 0.420332,
+                "h": 0.022157
+              },
+              {
+                "text": "9 During the third phase of construction, sandstone slabs were placed in both the",
+                "x": 0.158358,
+                "y": 0.269045,
+                "w": 0.762463,
+                "h": 0.022151
+              },
+              {
+                "text": "outer areas and the middle of the Stonehenge site.",
+                "x": 0.197458,
+                "y": 0.294574,
+                "w": 0.467253,
+                "h": 0.018774
+              },
+              {
+                "text": "10",
+                "x": 0.152493,
+                "y": 0.326873,
+                "w": 0.025415,
+                "h": 0.017
+              },
+              {
+                "text": "There is scientific proof that the bluestones stood in the same spot until",
+                "x": 0.197458,
+                "y": 0.323473,
+                "w": 0.654936,
+                "h": 0.0221
+              },
+              {
+                "text": "approximately 1600 BCE.",
+                "x": 0.197458,
+                "y": 0.350673,
+                "w": 0.236559,
+                "h": 0.0204
+              },
+              {
+                "text": "11",
+                "x": 0.152493,
+                "y": 0.386373,
+                "w": 0.033236,
+                "h": 0.017
+              },
+              {
+                "text": "John Aubrey's claim about Stonehenge was supported by 20th-century findings.",
+                "x": 0.187683,
+                "y": 0.382755,
+                "w": 0.740958,
+                "h": 0.020675
+              },
+              {
+                "text": "12 Objects discovered at Stonehenge seem to indicate that it was constructed by a",
+                "x": 0.152493,
+                "y": 0.415244,
+                "w": 0.774194,
+                "h": 0.022151
+              },
+              {
+                "text": "number of different groups of people.",
+                "x": 0.199414,
+                "y": 0.440772,
+                "w": 0.340176,
+                "h": 0.018774
+              },
+              {
+                "text": "13 Criticism of Gerald Hawkins' theory about Stonehenge has come mainly from other",
+                "x": 0.152493,
+                "y": 0.471361,
+                "w": 0.803519,
+                "h": 0.020411
+              },
+              {
+                "text": "astronomers.",
+                "x": 0.199413,
+                "y": 0.496872,
+                "w": 0.123167,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-47.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 14-19",
+                "x": 0.02737,
+                "y": 0.025873,
+                "w": 0.170088,
+                "h": 0.017229
+              },
+              {
+                "text": "Choose the correct letter, A, B, Cor D.",
+                "x": 0.025415,
+                "y": 0.070175,
+                "w": 0.357771,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct letter in boxes 14-19 on your answer sheet.",
+                "x": 0.025415,
+                "y": 0.114375,
+                "w": 0.557185,
+                "h": 0.018809
+              },
+              {
+                "text": "14 What point does the writer make about Al in the first paragraph?",
+                "x": 0.02346,
+                "y": 0.160258,
+                "w": 0.631476,
+                "h": 0.020417
+              },
+              {
+                "text": "A Itis difficult to predict how quickly Al will progress.",
+                "x": 0.068426,
+                "y": 0.192574,
+                "w": 0.504399,
+                "h": 0.0204
+              },
+              {
+                "text": "B Much can be learned about the use of Al in chess machines.",
+                "x": 0.070381,
+                "y": 0.212929,
+                "w": 0.59824,
+                "h": 0.018746
+              },
+              {
+                "text": "C The future is unlikely to see limitations on the capabilities of Al.",
+                "x": 0.070319,
+                "y": 0.233301,
+                "w": 0.617904,
+                "h": 0.022895
+              },
+              {
+                "text": "D Experts disagree on which specialised tasks Al will be able to perform.",
+                "x": 0.070381,
+                "y": 0.257174,
+                "w": 0.688172,
+                "h": 0.0204
+              },
+              {
+                "text": "15 What is the writer doing in the second paragraph?",
+                "x": 0.02346,
+                "y": 0.292673,
+                "w": 0.502444,
+                "h": 0.020675
+              },
+              {
+                "text": "A explaining why machines will be able to outperform humans",
+                "x": 0.068426,
+                "y": 0.325162,
+                "w": 0.592375,
+                "h": 0.020411
+              },
+              {
+                "text": "B describing the characteristics that humans and machines share",
+                "x": 0.070281,
+                "y": 0.34338,
+                "w": 0.621893,
+                "h": 0.023242
+              },
+              {
+                "text": "C giving information about the development of machine intelligence",
+                "x": 0.070381,
+                "y": 0.365973,
+                "w": 0.639296,
+                "h": 0.022197
+              },
+              {
+                "text": "D indicating which aspects of humans are the most advanced",
+                "x": 0.070381,
+                "y": 0.391473,
+                "w": 0.58651,
+                "h": 0.0204
+              },
+              {
+                "text": "16 Why does the writer mention the story of King Midas?",
+                "x": 0.025415,
+                "y": 0.425473,
+                "w": 0.535679,
+                "h": 0.0204
+              },
+              {
+                "text": "A to compare different visions of progress",
+                "x": 0.068426,
+                "y": 0.459472,
+                "w": 0.408602,
+                "h": 0.01878
+              },
+              {
+                "text": "to illustrate that poorly defined objectives can go wrong",
+                "x": 0.109482,
+                "y": 0.479729,
+                "w": 0.508309,
+                "h": 0.020675
+              },
+              {
+                "text": "C to emphasise the need for cooperation",
+                "x": 0.070381,
+                "y": 0.50188,
+                "w": 0.398827,
+                "h": 0.018791
+              },
+              {
+                "text": "D to point out the financial advantages of a course of action",
+                "x": 0.070381,
+                "y": 0.524032,
+                "w": 0.568915,
+                "h": 0.020675
+              },
+              {
+                "text": "17 What challenge does the writer refer to in the fourth paragraph?",
+                "x": 0.02346,
+                "y": 0.557997,
+                "w": 0.627566,
+                "h": 0.022174
+              },
+              {
+                "text": "A encouraging humans to behave in a more principled way",
+                "x": 0.068426,
+                "y": 0.591963,
+                "w": 0.565005,
+                "h": 0.020675
+              },
+              {
+                "text": "B deciding which values we want Al to share with us",
+                "x": 0.070381,
+                "y": 0.614114,
+                "w": 0.502444,
+                "h": 0.018757
+              },
+              {
+                "text": "creating a better world for all creatures on the planet",
+                "x": 0.105572,
+                "y": 0.632819,
+                "w": 0.490714,
+                "h": 0.020675
+              },
+              {
+                "text": "D ensuring Al is more human-friendly than we are ourselves",
+                "x": 0.070381,
+                "y": 0.656448,
+                "w": 0.572825,
+                "h": 0.020675
+              },
+              {
+                "text": "18 What does the writer suggest about the future of Al in the fifth paragraph?",
+                "x": 0.025415,
+                "y": 0.69067,
+                "w": 0.717498,
+                "h": 0.020417
+              },
+              {
+                "text": "A The safety of machines will become a key issue.",
+                "x": 0.070381,
+                "y": 0.72467,
+                "w": 0.490714,
+                "h": 0.018906
+              },
+              {
+                "text": "B Itis hard to know what impact machines will have on the world.",
+                "x": 0.070381,
+                "y": 0.74337,
+                "w": 0.621701,
+                "h": 0.0204
+              },
+              {
+                "text": "C Machines will be superior to humans in certain respects.",
+                "x": 0.070381,
+                "y": 0.765235,
+                "w": 0.561095,
+                "h": 0.018935
+              },
+              {
+                "text": "D Many humans will oppose machines having a wider role.",
+                "x": 0.070381,
+                "y": 0.78927,
+                "w": 0.565005,
+                "h": 0.0204
+              },
+              {
+                "text": "19 Which of the following best summarises the writer's argument in the sixth paragraph?",
+                "x": 0.02346,
+                "y": 0.819869,
+                "w": 0.811339,
+                "h": 0.022157
+              },
+              {
+                "text": "A More intelligent machines will result in greater abuses of power.",
+                "x": 0.068426,
+                "y": 0.852169,
+                "w": 0.627566,
+                "h": 0.0221
+              },
+              {
+                "text": "B Machine learning will share very few features with human learning.",
+                "x": 0.072336,
+                "y": 0.875969,
+                "w": 0.652981,
+                "h": 0.017
+              },
+              {
+                "text": "C There are a limited number of people with the knowledge to program machines.",
+                "x": 0.072336,
+                "y": 0.894669,
+                "w": 0.760508,
+                "h": 0.0204
+              },
+              {
+                "text": "D Human shortcomings will make creating the machines we need more difficult.",
+                "x": 0.070381,
+                "y": 0.916769,
+                "w": 0.752688,
+                "h": 0.022231
+              },
+              {
+                "text": "45",
+                "x": 0.805474,
+                "y": 0.998368,
+                "w": 0.033236,
+                "h": 0.0238
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-48.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.152493,
+                "y": 0.017476,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "Questions 20-23",
+                "x": 0.152493,
+                "y": 0.071652,
+                "w": 0.172043,
+                "h": 0.018923
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+                "x": 0.150459,
+                "y": 0.114324,
+                "w": 0.788065,
+                "h": 0.023722
+              },
+              {
+                "text": "In boxes 20-23 on your answer sheet, write",
+                "x": 0.150538,
+                "y": 0.161734,
+                "w": 0.400782,
+                "h": 0.020675
+              },
+              {
+                "text": "YES",
+                "x": 0.222874,
+                "y": 0.202774,
+                "w": 0.043011,
+                "h": 0.0187
+              },
+              {
+                "text": "NO",
+                "x": 0.220919,
+                "y": 0.223174,
+                "w": 0.035191,
+                "h": 0.0187
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.351906,
+                "y": 0.202591,
+                "w": 0.469208,
+                "h": 0.018883
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.351906,
+                "y": 0.223174,
+                "w": 0.465298,
+                "h": 0.018797
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.220919,
+                "y": 0.243448,
+                "w": 0.645161,
+                "h": 0.020675
+              },
+              {
+                "text": "20 Machines with the ability to make moral decisions may prevent us from promoting",
+                "x": 0.150538,
+                "y": 0.286074,
+                "w": 0.789834,
+                "h": 0.0204
+              },
+              {
+                "text": "the interests of our communities.",
+                "x": 0.195503,
+                "y": 0.307933,
+                "w": 0.30303,
+                "h": 0.01894
+              },
+              {
+                "text": "21",
+                "x": 0.150538,
+                "y": 0.338773,
+                "w": 0.02737,
+                "h": 0.0187
+              },
+              {
+                "text": "Silicon police would need to exist in large numbers in order to be effective.",
+                "x": 0.197402,
+                "y": 0.33857,
+                "w": 0.678498,
+                "h": 0.022523
+              },
+              {
+                "text": "22 Many people are comfortable with the prospect of their independence being",
+                "x": 0.150538,
+                "y": 0.370941,
+                "w": 0.737048,
+                "h": 0.022231
+              },
+              {
+                "text": "restricted by machines.",
+                "x": 0.195503,
+                "y": 0.394873,
+                "w": 0.217009,
+                "h": 0.018894
+              },
+              {
+                "text": "23 If we want to ensure that machines act in our best interests, we all need to",
+                "x": 0.150538,
+                "y": 0.425473,
+                "w": 0.723363,
+                "h": 0.0204
+              },
+              {
+                "text": "work together.",
+                "x": 0.195503,
+                "y": 0.449209,
+                "w": 0.132942,
+                "h": 0.018763
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-49.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 24-26",
+                "x": 0.025415,
+                "y": 0.027676,
+                "w": 0.172043,
+                "h": 0.017
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-F, below.",
+                "x": 0.025415,
+                "y": 0.068475,
+                "w": 0.55523,
+                "h": 0.020406
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 24-26 on your answer sheet.",
+                "x": 0.025347,
+                "y": 0.109081,
+                "w": 0.61399,
+                "h": 0.023184
+              },
+              {
+                "text": "Using Al in the UK health system",
+                "x": 0.224829,
+                "y": 0.16518,
+                "w": 0.410557,
+                "h": 0.025694
+              },
+              {
+                "text": "Al currently has a limited role in the way 24....",
+                "x": 0.041056,
+                "y": 0.211274,
+                "w": 0.414467,
+                "h": 0.018883
+              },
+              {
+                "text": ".... are allocated in the",
+                "x": 0.57869,
+                "y": 0.209483,
+                "w": 0.201369,
+                "h": 0.018791
+              },
+              {
+                "text": "health service. The positive aspect of Al having a bigger role is that it would be",
+                "x": 0.041056,
+                "y": 0.236557,
+                "w": 0.715543,
+                "h": 0.020675
+              },
+              {
+                "text": "more efficient and lead to patient benefits. However, such a change would result, for",
+                "x": 0.041056,
+                "y": 0.262154,
+                "w": 0.768328,
+                "h": 0.02222
+              },
+              {
+                "text": "example, in certain 25",
+                "x": 0.040711,
+                "y": 0.291802,
+                "w": 0.205994,
+                "h": 0.023404
+              },
+              {
+                "text": "...not having their current level of",
+                "x": 0.391007,
+                "y": 0.289474,
+                "w": 0.31085,
+                "h": 0.023874
+              },
+              {
+                "text": "26",
+                "x": 0.041056,
+                "y": 0.318373,
+                "w": 0.02737,
+                "h": 0.0204
+              },
+              {
+                "text": ".... It is therefore important that Al goals are appropriate so that",
+                "x": 0.213099,
+                "y": 0.316673,
+                "w": 0.5826,
+                "h": 0.0238
+              },
+              {
+                "text": "discriminatory practices could be avoided.",
+                "x": 0.041056,
+                "y": 0.345344,
+                "w": 0.389052,
+                "h": 0.02412
+              },
+              {
+                "text": "A medical practitioners",
+                "x": 0.070381,
+                "y": 0.427058,
+                "w": 0.226784,
+                "h": 0.018814
+              },
+              {
+                "text": "D reduced illness",
+                "x": 0.070381,
+                "y": 0.469672,
+                "w": 0.173998,
+                "h": 0.017
+              },
+              {
+                "text": "B specialised tasks",
+                "x": 0.320626,
+                "y": 0.427058,
+                "w": 0.193548,
+                "h": 0.017229
+              },
+              {
+                "text": "E professional authority",
+                "x": 0.322581,
+                "y": 0.467915,
+                "w": 0.230694,
+                "h": 0.020675
+              },
+              {
+                "text": "C available resources",
+                "x": 0.57869,
+                "y": 0.425473,
+                "w": 0.215054,
+                "h": 0.018814
+              },
+              {
+                "text": "Ftechnology experts",
+                "x": 0.57087,
+                "y": 0.467915,
+                "w": 0.217009,
+                "h": 0.020675
+              },
+              {
+                "text": "→O p. 122 47",
+                "x": 0.650879,
+                "y": 0.994268,
+                "w": 0.187979,
+                "h": 0.032
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 20,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 21,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 22,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 23,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-52.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 2",
+                "x": 0.150538,
+                "y": 0.015535,
+                "w": 0.060606,
+                "h": 0.01724
+              },
+              {
+                "text": "Questions 27-33",
+                "x": 0.150538,
+                "y": 0.070175,
+                "w": 0.172043,
+                "h": 0.018706
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 3?",
+                "x": 0.150456,
+                "y": 0.110877,
+                "w": 0.770485,
+                "h": 0.02517
+              },
+              {
+                "text": "In boxes 27-33 on your answer sheet, write",
+                "x": 0.148583,
+                "y": 0.155175,
+                "w": 0.400782,
+                "h": 0.0204
+              },
+              {
+                "text": "TRUE",
+                "x": 0.220784,
+                "y": 0.193978,
+                "w": 0.05892,
+                "h": 0.020993
+              },
+              {
+                "text": "FALSE",
+                "x": 0.218871,
+                "y": 0.21613,
+                "w": 0.070566,
+                "h": 0.020888
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.347996,
+                "y": 0.195974,
+                "w": 0.400782,
+                "h": 0.0204
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.347996,
+                "y": 0.216374,
+                "w": 0.394917,
+                "h": 0.0204
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.218964,
+                "y": 0.238474,
+                "w": 0.422287,
+                "h": 0.018757
+              },
+              {
+                "text": "27 People first referred to Leonardo da Vinci as a genius 500 years ago.",
+                "x": 0.148583,
+                "y": 0.282674,
+                "w": 0.678397,
+                "h": 0.0204
+              },
+              {
+                "text": "28 The current climate crisis is predicted to cause more deaths than the plague.",
+                "x": 0.148583,
+                "y": 0.316673,
+                "w": 0.746823,
+                "h": 0.0204
+              },
+              {
+                "text": "29 Some of the challenges we face today can be compared to those of earlier times.",
+                "x": 0.148583,
+                "y": 0.352236,
+                "w": 0.787879,
+                "h": 0.020675
+              },
+              {
+                "text": "30 Leonardo da Vinci's 'ideal city' was constructed in the 15th century.",
+                "x": 0.148583,
+                "y": 0.386201,
+                "w": 0.656892,
+                "h": 0.020675
+              },
+              {
+                "text": "31",
+                "x": 0.150538,
+                "y": 0.422073,
+                "w": 0.033236,
+                "h": 0.017
+              },
+              {
+                "text": "Poor town planning is a major contributor to climate change.",
+                "x": 0.183773,
+                "y": 0.422073,
+                "w": 0.561095,
+                "h": 0.018769
+              },
+              {
+                "text": "32 In Renaissance times, local people fought against the changes to Pienza and",
+                "x": 0.150445,
+                "y": 0.452628,
+                "w": 0.748986,
+                "h": 0.02422
+              },
+              {
+                "text": "Ferrara.",
+                "x": 0.195477,
+                "y": 0.476381,
+                "w": 0.0763,
+                "h": 0.017182
+              },
+              {
+                "text": "33 Leonardo da Vinci kept a neat, organised record of his designs.",
+                "x": 0.150538,
+                "y": 0.508772,
+                "w": 0.623656,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-2/page-53.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 34-40",
+                "x": 0.025415,
+                "y": 0.025873,
+                "w": 0.170088,
+                "h": 0.018803
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.025415,
+                "y": 0.06673,
+                "w": 0.27566,
+                "h": 0.022151
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.025415,
+                "y": 0.109063,
+                "w": 0.576735,
+                "h": 0.020675
+              },
+              {
+                "text": "Write your answers in boxes 34-40 on your answer sheet.",
+                "x": 0.025415,
+                "y": 0.14992,
+                "w": 0.527859,
+                "h": 0.020675
+              },
+              {
+                "text": "Leonardo da Vinci's ideal city",
+                "x": 0.234604,
+                "y": 0.212929,
+                "w": 0.394917,
+                "h": 0.025597
+              },
+              {
+                "text": "A collection of Leonardo da Vinci's paperwork reveals his design of a new city",
+                "x": 0.044966,
+                "y": 0.265599,
+                "w": 0.709677,
+                "h": 0.020675
+              },
+              {
+                "text": "beside the Ticino River. This was to provide better 34",
+                "x": 0.044966,
+                "y": 0.294574,
+                "w": 0.486804,
+                "h": 0.0204
+              },
+              {
+                "text": "...... for trade",
+                "x": 0.672501,
+                "y": 0.292739,
+                "w": 0.105634,
+                "h": 0.018968
+              },
+              {
+                "text": "and a less polluted environment. Although Leonardo da Vinci's city shared many of",
+                "x": 0.044966,
+                "y": 0.320073,
+                "w": 0.758553,
+                "h": 0.022317
+              },
+              {
+                "text": "the ideals of his time, some of his innovations were considered unconventional in",
+                "x": 0.044966,
+                "y": 0.34879,
+                "w": 0.740958,
+                "h": 0.022283
+              },
+              {
+                "text": "their design. They included features that can be seen in some tower blocks today,",
+                "x": 0.044966,
+                "y": 0.376173,
+                "w": 0.746823,
+                "h": 0.022335
+              },
+              {
+                "text": "such as 35",
+                "x": 0.046827,
+                "y": 0.406337,
+                "w": 0.10185,
+                "h": 0.017872
+              },
+              {
+                "text": "on the exterior of a building.",
+                "x": 0.316716,
+                "y": 0.404907,
+                "w": 0.258065,
+                "h": 0.018866
+              },
+              {
+                "text": "Leonardo da Vinci wasn't only an architect. His expertise in 36...",
+                "x": 0.046921,
+                "y": 0.452655,
+                "w": 0.584555,
+                "h": 0.020417
+              },
+              {
+                "text": "was evident in his plans for artificial canals within his ideal city. He also believed",
+                "x": 0.046921,
+                "y": 0.479729,
+                "w": 0.729228,
+                "h": 0.022243
+              },
+              {
+                "text": "that the height of houses should relate to the width of streets in case earthquakes",
+                "x": 0.044869,
+                "y": 0.505919,
+                "w": 0.745086,
+                "h": 0.024094
+              },
+              {
+                "text": "occurred. The design of many cities in Italy today follows this 37...",
+                "x": 0.046921,
+                "y": 0.535846,
+                "w": 0.596285,
+                "h": 0.020675
+              },
+              {
+                "text": "While some cities from 38",
+                "x": 0.046921,
+                "y": 0.585071,
+                "w": 0.238514,
+                "h": 0.017229
+              },
+              {
+                "text": "times have aspects that can also be",
+                "x": 0.451613,
+                "y": 0.583571,
+                "w": 0.332356,
+                "h": 0.0204
+              },
+              {
+                "text": "found in Leonardo's designs, his ideas weren't put into practice until long after his",
+                "x": 0.044966,
+                "y": 0.610668,
+                "w": 0.744868,
+                "h": 0.022203
+              },
+              {
+                "text": "death. 39",
+                "x": 0.046885,
+                "y": 0.64123,
+                "w": 0.088048,
+                "h": 0.017281
+              },
+              {
+                "text": ". is one example of a city that was redesigned in the",
+                "x": 0.2913,
+                "y": 0.637742,
+                "w": 0.477028,
+                "h": 0.020675
+              },
+              {
+                "text": "19th century in the way that Leonardo had envisaged. His ideas are also relevant to",
+                "x": 0.046921,
+                "y": 0.666785,
+                "w": 0.764418,
+                "h": 0.020675
+              },
+              {
+                "text": "today's world, where building 40",
+                "x": 0.044966,
+                "y": 0.693859,
+                "w": 0.297165,
+                "h": 0.020675
+              },
+              {
+                "text": ". no longer seems to be the best",
+                "x": 0.500489,
+                "y": 0.69237,
+                "w": 0.297165,
+                "h": 0.0204
+              },
+              {
+                "text": "approach.",
+                "x": 0.04673,
+                "y": 0.723902,
+                "w": 0.096178,
+                "h": 0.020236
+              },
+              {
+                "text": "p. 122",
+                "x": 0.719453,
+                "y": 0.998368,
+                "w": 0.068426,
+                "h": 0.0221
+              },
+              {
+                "text": "51",
+                "x": 0.813294,
+                "y": 0.998368,
+                "w": 0.025415,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 27,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 28,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 29,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 30,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 31,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 32,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "training",
+      "discount",
+      "taxi",
+      "service",
+      "English",
+      "Wivenhoe",
+      "equipment",
+      "9.75",
+      "deliveries",
+      "Sunday",
+      "B",
+      "E",
+      "B",
+      "C",
+      "G",
+      "C",
+      "D",
+      "B",
+      "H",
+      "A",
+      "C",
+      "A",
+      "B",
+      "B",
+      "A",
+      "B",
+      "D",
+      "A",
+      "C",
+      "F",
+      "convenient",
+      "suits",
+      "tailor",
+      "profession",
+      "visible",
+      "string|strings",
+      "waist|waists",
+      "perfume",
+      "image",
+      "handbag"
+    ],
+    "reading": [
+      "deer antlers|antlers",
+      "timber posts|posts",
+      "tree trunks",
+      "oxen",
+      "glaciers",
+      "druids",
+      "burial",
+      "calendar",
+      "TRUE",
+      "FALSE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "C",
+      "A",
+      "B",
+      "D",
+      "C",
+      "D",
+      "YES",
+      "NOT GIVEN",
+      "NO",
+      "YES",
+      "C",
+      "A",
+      "E",
+      "NOT GIVEN",
+      "NOT GIVEN",
+      "TRUE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "FALSE",
+      "transport",
+      "staircases",
+      "engineering",
+      "rule",
+      "Roman",
+      "Paris",
+      "outwards"
+    ]
+  },
+  "completionOptions": {}
+}

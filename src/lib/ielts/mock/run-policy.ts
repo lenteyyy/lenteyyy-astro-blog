@@ -2,8 +2,8 @@ export type Subject = 'listening' | 'reading' | 'writing';
 export type ExamMode = 'single' | 'custom' | 'simulation';
 export const subjectOrder: Subject[] = ['listening', 'reading', 'writing'];
 export function examPath(book: number, test: number): string {
-  if (![20, 21].includes(book) || !Number.isInteger(test) || test < 1 || test > 4) throw new RangeError('Unknown paper');
-  return `/ielts/mock/${book === 20 ? 'c20-' : ''}test-${test}`;
+  if (![16, 17, 18, 19, 20, 21].includes(book) || !Number.isInteger(test) || test < 1 || test > 4) throw new RangeError('Unknown paper');
+  return `/ielts/mock/${book === 21 ? '' : `c${book}-`}test-${test}`;
 }
 export function readWorkflow(params: URLSearchParams): { mode: ExamMode; subjects: Subject[]; subject: Subject } | undefined {
   for (const key of ['mode', 'subjects', 'subject']) if (params.getAll(key).length > 1) return undefined;

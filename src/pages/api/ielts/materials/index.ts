@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { getAuthContext } from '../../../../lib/ielts/auth';
 import { cleanText, json, readJson, sameOrigin } from '../../../../lib/ielts/http';
 import { createServiceClient } from '../../../../lib/ielts/supabase';
+import { claimRateLimit } from '../../../../lib/ielts/security';
 
 export const prerender = false;
 
@@ -12,16 +13,15 @@ const mimeTypes = new Set([
 	'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 	'audio/mpeg', 'audio/mp4', 'audio/x-m4a', 'video/mp4', 'image/jpeg', 'image/png', 'image/webp',
 ]);
-const managedStoragePath = /^[\d-]{10}\/[a-f0-9-]{36}\/[^/]{1,180}$/i;
+const managedStoragePath = /^\d{4}-\d{2}-\d{2}\/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\/(?!\.{1,2}$)[^/\\\x00-\x1f\x7f]{1,180}$/i;
 
-const removeUploadedFile = async (storagePath: string) => {
-	if (!managedStoragePath.test(storagePath)) return;
-	await createServiceClient().storage.from('ielts-materials').remove([storagePath]).catch(() => undefined);
-};
+// Do not delete on a failed/retried publish: a concurrent successful request may
+// reference the same object after a reference check. Retain unpublished uploads
+// in the private bucket for explicit owner cleanup instead of racing publication.
 
-export const GET: APIRoute = async ({ cookies }) => {
+export const GET: APIRoute = async ({ request, cookies }) => {
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth) return json({ error: 'unauthorized' }, 401);
 		let query = createServiceClient().from('ielts_materials')
 			.select('id, title, category, description, file_name, mime_type, size_bytes, created_at, published')
@@ -39,8 +39,9 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	let storagePath = '';
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth || auth.role !== 'admin') return json({ error: 'forbidden' }, 403);
+		if (!(await claimRateLimit(request, 'material-create', auth.user.id, 60, 3600, 'identity'))) return json({ error: 'rate_limited' }, 429);
 		const body = await readJson<Record<string, unknown>>(request);
 		const title = cleanText(body.title, 120);
 		const description = cleanText(body.description, 300);
@@ -50,7 +51,6 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		const mimeType = String(body.mimeType || '').toLowerCase();
 		const sizeBytes = Number(body.sizeBytes || 0);
 		if (!title || !categories.has(category) || !managedStoragePath.test(storagePath) || !fileName || !mimeTypes.has(mimeType) || !Number.isSafeInteger(sizeBytes) || sizeBytes < 1 || sizeBytes > 104857600) {
-			await removeUploadedFile(storagePath);
 			return json({ error: 'invalid_material' }, 400);
 		}
 		const client = createServiceClient();
@@ -64,7 +64,6 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		if (error || !data) throw error || new Error('material_insert_failed');
 		return json({ ok: true, material: data }, 201);
 	} catch (error) {
-		await removeUploadedFile(storagePath);
 		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);
 		return json({ error: 'material_unavailable' }, 503);
 	}

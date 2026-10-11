@@ -1,18 +1,23 @@
 ---
 import IeltsLayout from '../../layouts/IeltsLayout.astro';
 import EntryQuestions from '../../components/ielts/EntryQuestions.astro';
-import { getAuthContext } from '../../lib/ielts/auth';
+import { authCookieNames, getAuthContext } from '../../lib/ielts/auth';
 import content from '../../lib/ielts/entry-test/content.json';
 import type { EntryContent } from '../../lib/ielts/entry-test/answers';
 import { LISTENING_RATES } from '../../lib/ielts/mock/listening-player';
 export const prerender = false;
+Astro.response.headers.set("Cache-Control","private, no-store");
+Astro.response.headers.set("CDN-Cache-Control","no-store");
+Astro.response.headers.set("Vercel-CDN-Cache-Control","no-store");
+Astro.response.headers.set("Vary","Cookie");
 const test: EntryContent = content;
 type Subject = 'listening' | 'reading' | 'writing';
 const requested = Astro.url.searchParams.get('subject');
 const subject: Subject = requested === 'reading' || requested === 'writing' ? requested : 'listening';
 const demo = import.meta.env.DEV && Astro.url.searchParams.get('demo') === '1';
-if (!demo && !Astro.cookies.has('ielts_access') && !Astro.cookies.has('ielts_refresh')) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
-const auth = demo ? undefined : await getAuthContext(Astro.cookies);
+const cookieNames=authCookieNames();
+if (!demo && !Astro.cookies.has(cookieNames.access) && !Astro.cookies.has(cookieNames.refresh)) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+const auth = demo ? undefined : await getAuthContext(Astro.cookies, Astro.request);
 if (!demo && !auth) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
 Astro.response.headers.set('Cache-Control', 'private, no-store');
 Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');

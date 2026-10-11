@@ -1,0 +1,5095 @@
+{
+  "source": {
+    "book": 19,
+    "test": 3,
+    "questionPages": {
+      "l": [
+        [
+          54,
+          55
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60
+        ]
+      ],
+      "r": [
+        [
+          61,
+          62
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          69,
+          70
+        ]
+      ],
+      "q": [
+        [
+          63,
+          64
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          71,
+          72,
+          73
+        ]
+      ],
+      "w": [
+        74,
+        75
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "5b460d32f81cba72576e097dba82d8817717f8ae6a261b428916b49dcbdb86c2"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-3/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-3/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-3/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-3/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-3/page-61.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.431568,
+                "y": 0.030559,
+                "w": 0.145983,
+                "h": 0.023133
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.056347,
+                "y": 0.104175,
+                "w": 0.328984,
+                "h": 0.0187
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.058555,
+                "y": 0.148375,
+                "w": 0.872138,
+                "h": 0.018758
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.056347,
+                "y": 0.168775,
+                "w": 0.181051,
+                "h": 0.018839
+              },
+              {
+                "text": "Archaeologists discover evidence of",
+                "x": 0.232982,
+                "y": 0.214631,
+                "w": 0.545362,
+                "h": 0.022224
+              },
+              {
+                "text": "prehistoric island settlers",
+                "x": 0.316884,
+                "y": 0.243392,
+                "w": 0.377558,
+                "h": 0.022282
+              },
+              {
+                "text": "In early April 2019, Dr Ceri Shipton and his colleagues from Australian National",
+                "x": 0.051931,
+                "y": 0.287774,
+                "w": 0.808108,
+                "h": 0.020547
+              },
+              {
+                "text": "University became the first archaeologists to explore Obi, one of many tropical islands",
+                "x": 0.056347,
+                "y": 0.308174,
+                "w": 0.86993,
+                "h": 0.0204
+              },
+              {
+                "text": "in Indonesia's Maluku Utara province. The research team's discoveries suggest that",
+                "x": 0.051931,
+                "y": 0.330109,
+                "w": 0.854474,
+                "h": 0.018865
+              },
+              {
+                "text": "the prehistoric people who lived on Obi were adept on both land and sea, hunting",
+                "x": 0.054139,
+                "y": 0.35059,
+                "w": 0.825771,
+                "h": 0.018783
+              },
+              {
+                "text": "in the dense rainforest, foraging on the seashore, and possibly even voyaging",
+                "x": 0.051931,
+                "y": 0.37107,
+                "w": 0.792652,
+                "h": 0.020481
+              },
+              {
+                "text": "between islands.",
+                "x": 0.054139,
+                "y": 0.393173,
+                "w": 0.176636,
+                "h": 0.017116
+              },
+              {
+                "text": "The excavations were part of a project to learn more about how people first dispersed",
+                "x": 0.054139,
+                "y": 0.433821,
+                "w": 0.867722,
+                "h": 0.018852
+              },
+              {
+                "text": "from mainland Asia, through the Indonesian archipelago and into the prehistoric",
+                "x": 0.054139,
+                "y": 0.454301,
+                "w": 0.808108,
+                "h": 0.020481
+              },
+              {
+                "text": "continent that once connected Australia and New Guinea. The team's earlier research",
+                "x": 0.054139,
+                "y": 0.474772,
+                "w": 0.86993,
+                "h": 0.018748
+              },
+              {
+                "text": "suggested that the northernmost islands in the group, known as the Wallacean islands,",
+                "x": 0.054139,
+                "y": 0.496872,
+                "w": 0.88097,
+                "h": 0.018872
+              },
+              {
+                "text": "including Obi, would have offered the easiest migration route. It also seemed likely that",
+                "x": 0.051931,
+                "y": 0.517272,
+                "w": 0.883178,
+                "h": 0.0187
+              },
+              {
+                "text": "these islands were crucial 'stepping stones' on humans' island-hopping voyages through",
+                "x": 0.054139,
+                "y": 0.537532,
+                "w": 0.894217,
+                "h": 0.018839
+              },
+              {
+                "text": "this region millennia ago. But to support this idea, they needed archaeological evidence",
+                "x": 0.054139,
+                "y": 0.558013,
+                "w": 0.887594,
+                "h": 0.020481
+              },
+              {
+                "text": "for humans living in this remote area in the ancient past. So, they travelled to Obi to look",
+                "x": 0.051931,
+                "y": 0.580171,
+                "w": 0.898633,
+                "h": 0.018804
+              },
+              {
+                "text": "for sites that might reveal evidence of early occupation.",
+                "x": 0.051931,
+                "y": 0.598871,
+                "w": 0.565234,
+                "h": 0.020585
+              },
+              {
+                "text": "Just inland from the village of Kelo on Obi's northern coast, Shipton and his colleagues",
+                "x": 0.054139,
+                "y": 0.641244,
+                "w": 0.88097,
+                "h": 0.020527
+              },
+              {
+                "text": "found two caves containing prehistoric rock shelters that were suitable for excavation.",
+                "x": 0.051931,
+                "y": 0.663468,
+                "w": 0.872138,
+                "h": 0.018738
+              },
+              {
+                "text": "With the permission and help of the local people of Kelo, they dug a small test",
+                "x": 0.054139,
+                "y": 0.683871,
+                "w": 0.792652,
+                "h": 0.018816
+              },
+              {
+                "text": "excavation in each shelter. There they found numerous artefacts, including fragments",
+                "x": 0.054139,
+                "y": 0.70427,
+                "w": 0.865514,
+                "h": 0.018897
+              },
+              {
+                "text": "of axes, some dating to about 14,000 years ago. The earliest axes at Kelo were made",
+                "x": 0.054139,
+                "y": 0.724475,
+                "w": 0.86993,
+                "h": 0.020595
+              },
+              {
+                "text": "using clam shells. Axes made from clam shells from roughly the same time had also",
+                "x": 0.054139,
+                "y": 0.744956,
+                "w": 0.852266,
+                "h": 0.020514
+              },
+              {
+                "text": "previously been found elsewhere in this region, including on the nearby island of",
+                "x": 0.054139,
+                "y": 0.76717,
+                "w": 0.819147,
+                "h": 0.018748
+              },
+              {
+                "text": "Gebe to the northeast. As on Gebe, it is highly likely that Obi's axes were used in the",
+                "x": 0.056347,
+                "y": 0.78757,
+                "w": 0.856682,
+                "h": 0.018829
+              },
+              {
+                "text": "construction of canoes, thus allowing these early peoples to maintain connections",
+                "x": 0.054139,
+                "y": 0.80797,
+                "w": 0.830187,
+                "h": 0.0204
+              },
+              {
+                "text": "between communities on neighbouring islands.",
+                "x": 0.054139,
+                "y": 0.82993,
+                "w": 0.481332,
+                "h": 0.018839
+              },
+              {
+                "text": "The oldest cultural layers from the Kelo site provided the team with the earliest record",
+                "x": 0.056347,
+                "y": 0.870869,
+                "w": 0.865514,
+                "h": 0.018761
+              },
+              {
+                "text": "for human occupation on Obi, dating back around 18,000 years. At this time the climate",
+                "x": 0.051931,
+                "y": 0.891269,
+                "w": 0.885386,
+                "h": 0.020585
+              },
+              {
+                "text": "was drier and colder than today, and the island's dense rainforests would likely have",
+                "x": 0.051866,
+                "y": 0.909463,
+                "w": 0.856835,
+                "h": 0.022859
+              },
+              {
+                "text": "been much less impenetrable than they are now. Sea levels were about 120 metres",
+                "x": 0.054139,
+                "y": 0.933642,
+                "w": 0.850058,
+                "h": 0.018827
+              },
+              {
+                "text": "lower, meaning Obi was a much larger island, encompassing what is today the separate",
+                "x": 0.051931,
+                "y": 0.954123,
+                "w": 0.894217,
+                "h": 0.020481
+              },
+              {
+                "text": "island of Bisa, as well as several other small islands nearby.",
+                "x": 0.051931,
+                "y": 0.974568,
+                "w": 0.611601,
+                "h": 0.020516
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-3/page-62.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Roughly 11,700 years ago, as the most recent ice age ended, the climate became",
+                "x": 0.043099,
+                "y": 0.031076,
+                "w": 0.827979,
+                "h": 0.018837
+              },
+              {
+                "text": "significantly warmer and wetter, no doubt making Obi's jungle much thicker. According",
+                "x": 0.043099,
+                "y": 0.051476,
+                "w": 0.867722,
+                "h": 0.0204
+              },
+              {
+                "text": "to the researchers, it is no coincidence that around this time the first axes crafted from",
+                "x": 0.040828,
+                "y": 0.071264,
+                "w": 0.870056,
+                "h": 0.021555
+              },
+              {
+                "text": "stone rather than sea shells appear, likely in response to their heavy-duty use for",
+                "x": 0.043099,
+                "y": 0.093925,
+                "w": 0.816939,
+                "h": 0.018751
+              },
+              {
+                "text": "clearing and modification of the increasingly dense rainforest. While stone takes about",
+                "x": 0.043099,
+                "y": 0.114375,
+                "w": 0.872138,
+                "h": 0.018768
+              },
+              {
+                "text": "twice as long to grind into an axe compared to shell, the harder material keeps its sharp",
+                "x": 0.043099,
+                "y": 0.134775,
+                "w": 0.883178,
+                "h": 0.020592
+              },
+              {
+                "text": "edge for longer.",
+                "x": 0.043099,
+                "y": 0.156675,
+                "w": 0.163388,
+                "h": 0.0189
+              },
+              {
+                "text": "Judging by the bones which the researchers unearthed in the Kelo caves, people living",
+                "x": 0.043099,
+                "y": 0.197636,
+                "w": 0.876554,
+                "h": 0.018738
+              },
+              {
+                "text": "there mainly hunted the Rothschild's cuscus, a possum-like creature that still lives on",
+                "x": 0.040891,
+                "y": 0.218074,
+                "w": 0.85889,
+                "h": 0.020524
+              },
+              {
+                "text": "Obi today. As the forest grew more dense, people probably used axes to clear patches",
+                "x": 0.045307,
+                "y": 0.238474,
+                "w": 0.86993,
+                "h": 0.020605
+              },
+              {
+                "text": "of forest and make hunting easier.",
+                "x": 0.043099,
+                "y": 0.260386,
+                "w": 0.346647,
+                "h": 0.018887
+              },
+              {
+                "text": "Shipton's team's excavation of the shelters at the Kelo site unearthed a volcanic glass",
+                "x": 0.043099,
+                "y": 0.301348,
+                "w": 0.867722,
+                "h": 0.018738
+              },
+              {
+                "text": "substance called obsidian, which must have been brought over from another island, as",
+                "x": 0.043099,
+                "y": 0.321773,
+                "w": 0.876554,
+                "h": 0.020537
+              },
+              {
+                "text": "there is no known source on Obi. It also revealed particular types of beads, similar to",
+                "x": 0.040891,
+                "y": 0.343873,
+                "w": 0.85889,
+                "h": 0.0187
+              },
+              {
+                "text": "those previously found on islands in southern Wallacea. These finds again support the",
+                "x": 0.040891,
+                "y": 0.364098,
+                "w": 0.872138,
+                "h": 0.018875
+              },
+              {
+                "text": "idea that Obi islanders routinely travelled to other islands.",
+                "x": 0.040891,
+                "y": 0.384579,
+                "w": 0.585105,
+                "h": 0.018794
+              },
+              {
+                "text": "The excavations suggest people successfully lived in the two Kelo shelters for about",
+                "x": 0.043099,
+                "y": 0.425473,
+                "w": 0.852266,
+                "h": 0.020549
+              },
+              {
+                "text": "10,000 years. But then, about 8,000 years ago, both were abandoned. Did the residents",
+                "x": 0.043099,
+                "y": 0.447572,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "leave Obi completely, or move elsewhere on the island? Perhaps the jungle had grown",
+                "x": 0.038683,
+                "y": 0.46781,
+                "w": 0.88097,
+                "h": 0.018862
+              },
+              {
+                "text": "so thick that axes were no longer a match for the dense undergrowth. Perhaps people",
+                "x": 0.043034,
+                "y": 0.487975,
+                "w": 0.867854,
+                "h": 0.021591
+              },
+              {
+                "text": "simply moved to the coast and turned to fishing rather than hunting as a means",
+                "x": 0.043099,
+                "y": 0.510472,
+                "w": 0.801484,
+                "h": 0.018781
+              },
+              {
+                "text": "of survival.",
+                "x": 0.043099,
+                "y": 0.532572,
+                "w": 0.112605,
+                "h": 0.015419
+              },
+              {
+                "text": "Whatever the reason for the departure, there is no evidence for use of the Kelo shelters",
+                "x": 0.043099,
+                "y": 0.571522,
+                "w": 0.883178,
+                "h": 0.020549
+              },
+              {
+                "text": "after this time, until about 1,000 years ago, when they were re-occupied by people who",
+                "x": 0.043099,
+                "y": 0.592003,
+                "w": 0.878762,
+                "h": 0.020481
+              },
+              {
+                "text": "owned pottery as well as items made out of gold and silver. It seems likely, in view of",
+                "x": 0.043099,
+                "y": 0.612471,
+                "w": 0.856682,
+                "h": 0.020494
+              },
+              {
+                "text": "Obi's location, that this final phase of occupation also saw the Kelo shelters used by",
+                "x": 0.043099,
+                "y": 0.634571,
+                "w": 0.847851,
+                "h": 0.020618
+              },
+              {
+                "text": "people involved in the historic trade in spices between the Maluku islands and the rest of",
+                "x": 0.043099,
+                "y": 0.656496,
+                "w": 0.896425,
+                "h": 0.018875
+              },
+              {
+                "text": "the world.",
+                "x": 0.040723,
+                "y": 0.678063,
+                "w": 0.104109,
+                "h": 0.016715
+              },
+              {
+                "text": "63",
+                "x": 0.910821,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-3/page-65.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.051931,
+                "y": 0.031076,
+                "w": 0.3334,
+                "h": 0.018837
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.054139,
+                "y": 0.075187,
+                "w": 0.887594,
+                "h": 0.020489
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.051931,
+                "y": 0.095668,
+                "w": 0.183259,
+                "h": 0.018738
+              },
+              {
+                "text": "The global importance of wetlands",
+                "x": 0.224151,
+                "y": 0.148375,
+                "w": 0.554194,
+                "h": 0.0272
+              },
+              {
+                "text": "A Wetlands are areas where water covers the soil, or is present either at or near the surface",
+                "x": 0.054139,
+                "y": 0.195893,
+                "w": 0.854474,
+                "h": 0.017081
+              },
+              {
+                "text": "of the soil, for all or part of the year. These are complex ecosystems, rich in unique plant",
+                "x": 0.102714,
+                "y": 0.218074,
+                "w": 0.812523,
+                "h": 0.017038
+              },
+              {
+                "text": "and animal life. But according to the World Wide Fund for Nature (WWFN), half of the",
+                "x": 0.100506,
+                "y": 0.238474,
+                "w": 0.8059,
+                "h": 0.018862
+              },
+              {
+                "text": "world's wetlands have disappeared since 1990 - converted or destroyed for commercial",
+                "x": 0.100506,
+                "y": 0.258874,
+                "w": 0.8059,
+                "h": 0.0187
+              },
+              {
+                "text": "development, drainage schemes and the extraction of minerals and peat\". Many of those that",
+                "x": 0.100506,
+                "y": 0.275874,
+                "w": 0.850058,
+                "h": 0.0221
+              },
+              {
+                "text": "remain have been damaged by agricultural pesticides and fertilisers, industrial pollutants,",
+                "x": 0.098298,
+                "y": 0.299605,
+                "w": 0.821355,
+                "h": 0.020481
+              },
+              {
+                "text": "and construction works.",
+                "x": 0.098298,
+                "y": 0.321773,
+                "w": 0.227418,
+                "h": 0.017051
+              },
+              {
+                "text": "B Throughout history, humans have gathered around wetlands, and their fertile ecosystems",
+                "x": 0.051931,
+                "y": 0.362573,
+                "w": 0.861098,
+                "h": 0.0204
+              },
+              {
+                "text": "have played an important part in human development. Consequently, they are of",
+                "x": 0.100506,
+                "y": 0.382836,
+                "w": 0.739661,
+                "h": 0.020537
+              },
+              {
+                "text": "considerable religious, historical and archacological value to many communities around",
+                "x": 0.102714,
+                "y": 0.40506,
+                "w": 0.803692,
+                "h": 0.017013
+              },
+              {
+                "text": "the world. \"Wetlands directly support the livelihoods and well-being of millions of people,'",
+                "x": 0.100506,
+                "y": 0.423773,
+                "w": 0.836811,
+                "h": 0.020506
+              },
+              {
+                "text": "says Dr Matthew McCartney, principal researcher and hydrologist at the International Water",
+                "x": 0.100506,
+                "y": 0.447572,
+                "w": 0.845643,
+                "h": 0.017187
+              },
+              {
+                "text": "Management Institute (IWMI). 'In many developing countries, large numbers of people are",
+                "x": 0.100506,
+                "y": 0.466067,
+                "w": 0.839019,
+                "h": 0.020605
+              },
+              {
+                "text": "dependent on wetland agriculture for their livelihoods.'",
+                "x": 0.100506,
+                "y": 0.486548,
+                "w": 0.510035,
+                "h": 0.020524
+              },
+              {
+                "text": "C They also serve a crucial environmental purpose. 'Wetlands are one of the key tools",
+                "x": 0.051931,
+                "y": 0.529172,
+                "w": 0.816939,
+                "h": 0.018819
+              },
+              {
+                "text": "in mitigating climate change across the planet,' says Pieter van Eijk, head of Climate",
+                "x": 0.098298,
+                "y": 0.549572,
+                "w": 0.779404,
+                "h": 0.0204
+              },
+              {
+                "text": "Adaptation at Wetlands International (WI), pointing to their use as buffers that protect",
+                "x": 0.100506,
+                "y": 0.571522,
+                "w": 0.788236,
+                "h": 0.018849
+              },
+              {
+                "text": "coastal areas from sea-level rise and extreme weather events such as hurricanes and",
+                "x": 0.102714,
+                "y": 0.592003,
+                "w": 0.763949,
+                "h": 0.015368
+              },
+              {
+                "text": "flooding. Wetland coastal forests provide food and water, as well as shelter from storms,",
+                "x": 0.102714,
+                "y": 0.612471,
+                "w": 0.808108,
+                "h": 0.017007
+              },
+              {
+                "text": "and WI and other agencies are working to restore those forests which have been lost. 'It can",
+                "x": 0.100506,
+                "y": 0.632871,
+                "w": 0.841227,
+                "h": 0.017089
+              },
+              {
+                "text": "be as simple as planting a few trees per hectare to create shade and substantially change a",
+                "x": 0.100506,
+                "y": 0.653271,
+                "w": 0.819147,
+                "h": 0.0204
+              },
+              {
+                "text": "microclimate,' he says. 'Implementing climate change projects isn't so much about money.'",
+                "x": 0.100506,
+                "y": 0.673491,
+                "w": 0.841227,
+                "h": 0.02058
+              },
+              {
+                "text": "D The world's wetlands are, unfortunately, rich sources for in-demand commodities, such as",
+                "x": 0.051874,
+                "y": 0.714446,
+                "w": 0.874453,
+                "h": 0.020601
+              },
+              {
+                "text": "palm oil and pulpwood. Peatlands - wetlands with a waterlogged organic soil layer - are",
+                "x": 0.100448,
+                "y": 0.736494,
+                "w": 0.812644,
+                "h": 0.021109
+              },
+              {
+                "text": "particularly targeted. When peatlands are drained for cultivation, they become net carbon",
+                "x": 0.100506,
+                "y": 0.75697,
+                "w": 0.819147,
+                "h": 0.0204
+              },
+              {
+                "text": "emitters instead of active carbon stores, and, according to Marcel Silvius, head of Climate-",
+                "x": 0.100506,
+                "y": 0.778946,
+                "w": 0.834603,
+                "h": 0.017124
+              },
+              {
+                "text": "smart Land-use at WI, this practice causes six per cent of all global carbon emissions. The",
+                "x": 0.100506,
+                "y": 0.799427,
+                "w": 0.827979,
+                "h": 0.017043
+              },
+              {
+                "text": "clearance of peatlands for planting also increases the risk of forest fires, which release huge",
+                "x": 0.100506,
+                "y": 0.819869,
+                "w": 0.841227,
+                "h": 0.020519
+              },
+              {
+                "text": "amounts of CO2. \"We're seeing huge peatland forests with extremely high biodiversity",
+                "x": 0.098298,
+                "y": 0.840269,
+                "w": 0.79486,
+                "h": 0.0206
+              },
+              {
+                "text": "value being lost for a few decades of oil palm revenues,' says Silvius.",
+                "x": 0.102714,
+                "y": 0.860669,
+                "w": 0.638096,
+                "h": 0.0187
+              },
+              {
+                "text": "*peat: a brown deposit formed by the partial decomposition of vegetation in wet acidic conditions, often cut out and dried for use as fuel",
+                "x": 0.049723,
+                "y": 0.969375,
+                "w": 0.874346,
+                "h": 0.013694
+              },
+              {
+                "text": "66",
+                "x": 0.049723,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-3/page-66.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "E The damage starts when logging companies arrive to clear the trees. They dig ditches to",
+                "x": 0.045307,
+                "y": 0.031076,
+                "w": 0.854474,
+                "h": 0.018837
+              },
+              {
+                "text": "enter the peat swamps by boat and then float the logs out the same way. These are then used",
+                "x": 0.09609,
+                "y": 0.051476,
+                "w": 0.839019,
+                "h": 0.018918
+              },
+              {
+                "text": "to drain water out of the peatlands to allow for the planting of corn, oil palms or pulpwood",
+                "x": 0.091674,
+                "y": 0.071701,
+                "w": 0.832395,
+                "h": 0.018875
+              },
+              {
+                "text": "trees. Once the water has drained away, bacteria and fungi then break down the carbon in",
+                "x": 0.091674,
+                "y": 0.092182,
+                "w": 0.821355,
+                "h": 0.020494
+              },
+              {
+                "text": "the peat and turn it into CO2 and methane. Meanwhile, the remainder of the solid matter",
+                "x": 0.093882,
+                "y": 0.114375,
+                "w": 0.810316,
+                "h": 0.018768
+              },
+              {
+                "text": "in the peat starts to move downwards, in a process known as subsidence**.",
+                "x": 0.093734,
+                "y": 0.12947,
+                "w": 0.6805,
+                "h": 0.026479
+              },
+              {
+                "text": ".Peat comprises",
+                "x": 0.760681,
+                "y": 0.134775,
+                "w": 0.158972,
+                "h": 0.018849
+              },
+              {
+                "text": "90 per cent water, so this is one of the most alarming consequences of peatland clearances.",
+                "x": 0.096019,
+                "y": 0.152154,
+                "w": 0.830304,
+                "h": 0.0223
+              },
+              {
+                "text": "'In the tropics, peat subsides at about four centimetres a year, so within half a century, very",
+                "x": 0.091674,
+                "y": 0.175412,
+                "w": 0.836811,
+                "h": 0.020562
+              },
+              {
+                "text": "large landscapes on Sumatra and Borneo will become flooded as the peat drops below water",
+                "x": 0.091674,
+                "y": 0.197636,
+                "w": 0.847851,
+                "h": 0.018738
+              },
+              {
+                "text": "level,' says Silvius. 'It's a huge catastrophe that's in preparation. Some provinces will lose",
+                "x": 0.091674,
+                "y": 0.218074,
+                "w": 0.830187,
+                "h": 0.020524
+              },
+              {
+                "text": "40 per cent of their landmass.'",
+                "x": 0.093736,
+                "y": 0.238362,
+                "w": 0.287381,
+                "h": 0.020779
+              },
+              {
+                "text": "F And while these industries affect wetlands in ways that can easily be documented,",
+                "x": 0.045307,
+                "y": 0.280867,
+                "w": 0.803692,
+                "h": 0.018806
+              },
+              {
+                "text": "Dr Dave Tickner of the WWFN believes that more subtle impacts can be even more",
+                "x": 0.093882,
+                "y": 0.301348,
+                "w": 0.770572,
+                "h": 0.018738
+              },
+              {
+                "text": "devastating. 'Sediment run-off and fertilisers can be pretty invisible,' says Tickner.",
+                "x": 0.093882,
+                "y": 0.321773,
+                "w": 0.759533,
+                "h": 0.020537
+              },
+              {
+                "text": "'Over-extraction of water is equally invisible. You do get shock stories about rivers running",
+                "x": 0.091674,
+                "y": 0.343873,
+                "w": 0.841227,
+                "h": 0.0187
+              },
+              {
+                "text": "red, or even catching fire, but there's seldom one big impact that really hurts a wetland.'",
+                "x": 0.091603,
+                "y": 0.362529,
+                "w": 0.812684,
+                "h": 0.02283
+              },
+              {
+                "text": "Tickner does not blame anyone for deliberate damage, however. 'I've worked on wetland",
+                "x": 0.093882,
+                "y": 0.384579,
+                "w": 0.819147,
+                "h": 0.020494
+              },
+              {
+                "text": "issues for 20 years and have never met anybody who wanted to damage a wetland,' he says.",
+                "x": 0.091674,
+                "y": 0.40506,
+                "w": 0.843435,
+                "h": 0.020481
+              },
+              {
+                "text": "'It isn't something that people generally set out to do. Quite often, the effects simply come",
+                "x": 0.093882,
+                "y": 0.425473,
+                "w": 0.830187,
+                "h": 0.022292
+              },
+              {
+                "text": "from people trying to make a living.'",
+                "x": 0.093882,
+                "y": 0.447572,
+                "w": 0.342231,
+                "h": 0.0204
+              },
+              {
+                "text": "G",
+                "x": 0.047515,
+                "y": 0.490072,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Silvius also acknowledges the importance of income generation. 'It's not that we just want",
+                "x": 0.093831,
+                "y": 0.487678,
+                "w": 0.832495,
+                "h": 0.020049
+              },
+              {
+                "text": "to restore the biodiversity of wetlands - which we do - but we recognise there's a need",
+                "x": 0.091592,
+                "y": 0.507594,
+                "w": 0.799476,
+                "h": 0.022593
+              },
+              {
+                "text": "to provide an income for local people.' This approach is supported by IWMI. \"The idea is",
+                "x": 0.093882,
+                "y": 0.529172,
+                "w": 0.821355,
+                "h": 0.022305
+              },
+              {
+                "text": "that people in a developing country will only protect wetlands if they value and profit from",
+                "x": 0.093882,
+                "y": 0.551272,
+                "w": 0.834603,
+                "h": 0.0204
+              },
+              {
+                "text": "them,' says McCartney. 'For sustainability, it's essential that local people are involved in",
+                "x": 0.093882,
+                "y": 0.571522,
+                "w": 0.812523,
+                "h": 0.020549
+              },
+              {
+                "text": "wetland planning and decision making and have clear rights to use wetlands.'",
+                "x": 0.093793,
+                "y": 0.592031,
+                "w": 0.711169,
+                "h": 0.02247
+              },
+              {
+                "text": "H The fortunes of wetlands would be improved, Silvius suggests, if more governments",
+                "x": 0.045307,
+                "y": 0.634571,
+                "w": 0.823563,
+                "h": 0.0204
+              },
+              {
+                "text": "recognised their long-term value. 'Different governments have different attitudes,' he says,",
+                "x": 0.093882,
+                "y": 0.654971,
+                "w": 0.834603,
+                "h": 0.0204
+              },
+              {
+                "text": "and goes on to explain that some countries place a high priority on restoring wetlands,",
+                "x": 0.093882,
+                "y": 0.676977,
+                "w": 0.792652,
+                "h": 0.020494
+              },
+              {
+                "text": "while others still deny the issue. McCartney is cautiously optimistic, however. \"Awareness",
+                "x": 0.093882,
+                "y": 0.697458,
+                "w": 0.827979,
+                "h": 0.018738
+              },
+              {
+                "text": "of the importance of wetlands is growing,' he says. 'It's true that wetland degradation still",
+                "x": 0.093882,
+                "y": 0.71787,
+                "w": 0.825771,
+                "h": 0.020549
+              },
+              {
+                "text": "continues at a rapid pace, but my impression is that things are slowly changing.'",
+                "x": 0.093882,
+                "y": 0.73827,
+                "w": 0.737453,
+                "h": 0.0204
+              },
+              {
+                "text": "**subsidence: the sinking of the Earth's surface, most often caused by the removal of resources from the ground",
+                "x": 0.047515,
+                "y": 0.971118,
+                "w": 0.724206,
+                "h": 0.013651
+              },
+              {
+                "text": "67",
+                "x": 0.913029,
+                "y": 0.994968,
+                "w": 0.033119,
+                "h": 0.0204
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-3/page-69.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.331192,
+                "h": 0.018908
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.047424,
+                "y": 0.078633,
+                "w": 0.887779,
+                "h": 0.023115
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.047515,
+                "y": 0.100775,
+                "w": 0.181051,
+                "h": 0.018859
+              },
+              {
+                "text": "Is the era of artificial speech translation upon us?",
+                "x": 0.100506,
+                "y": 0.151775,
+                "w": 0.792652,
+                "h": 0.03061
+              },
+              {
+                "text": "Once the stuff of science fiction, technology that enables people to talk using",
+                "x": 0.09609,
+                "y": 0.199374,
+                "w": 0.797068,
+                "h": 0.023972
+              },
+              {
+                "text": "different languages is now here. But how effective is it?",
+                "x": 0.206487,
+                "y": 0.221474,
+                "w": 0.578481,
+                "h": 0.02061
+              },
+              {
+                "text": "Noise, Alex Waibel tells me, is one of the major challenges that artificial speech translation",
+                "x": 0.047397,
+                "y": 0.262219,
+                "w": 0.834816,
+                "h": 0.022017
+              },
+              {
+                "text": "has to meet. A device may be able to recognise speech in a laboratory, or a meeting room, but",
+                "x": 0.045307,
+                "y": 0.284353,
+                "w": 0.85889,
+                "h": 0.018738
+              },
+              {
+                "text": "will struggle to cope with the kind of background noise 1 can hear in my office surrounding",
+                "x": 0.045178,
+                "y": 0.302908,
+                "w": 0.839261,
+                "h": 0.026271
+              },
+              {
+                "text": "Professor Waibel as he speaks to me from Kyoto station in Japan. I'm struggling to follow him",
+                "x": 0.045307,
+                "y": 0.325173,
+                "w": 0.867722,
+                "h": 0.0204
+              },
+              {
+                "text": "in English, on a scratchy line that reminds me we are nearly 10,000 kilometres apart - and that",
+                "x": 0.043099,
+                "y": 0.34536,
+                "w": 0.872138,
+                "h": 0.020613
+              },
+              {
+                "text": "distance is still an obstacle to communication even if you're speaking the same language, as we",
+                "x": 0.045307,
+                "y": 0.367584,
+                "w": 0.876554,
+                "h": 0.020489
+              },
+              {
+                "text": "are. We haven't reached the future yet. If we had, Waibel would have been able to speak more",
+                "x": 0.043099,
+                "y": 0.388065,
+                "w": 0.863306,
+                "h": 0.022224
+              },
+              {
+                "text": "comfortably in his native German and I would have been able to hear his words in English.",
+                "x": 0.043099,
+                "y": 0.408473,
+                "w": 0.839019,
+                "h": 0.020554
+              },
+              {
+                "text": "At Karlsruhe Institute of Technology, where he is a professor of computer science, Waibel and",
+                "x": 0.045307,
+                "y": 0.450815,
+                "w": 0.863306,
+                "h": 0.020557
+              },
+              {
+                "text": "his colleagues already give lectures in German that their students can follow in English via an",
+                "x": 0.042915,
+                "y": 0.468291,
+                "w": 0.863641,
+                "h": 0.026429
+              },
+              {
+                "text": "electronic translator. The system generates text that students can read on their laptops or phones,",
+                "x": 0.043033,
+                "y": 0.491544,
+                "w": 0.885534,
+                "h": 0.022516
+              },
+              {
+                "text": "so the process is somewhat similar to subtitling. It helps that lecturers speak clearly, don't have to",
+                "x": 0.043035,
+                "y": 0.511811,
+                "w": 0.896553,
+                "h": 0.0228
+              },
+              {
+                "text": "compete with background chatter, and say much the same thing each year.",
+                "x": 0.043099,
+                "y": 0.534272,
+                "w": 0.682255,
+                "h": 0.0204
+              },
+              {
+                "text": "The idea of artificial speech translation has been around for a long time. Douglas Adams' science",
+                "x": 0.043099,
+                "y": 0.575008,
+                "w": 0.892009,
+                "h": 0.020481
+              },
+              {
+                "text": "fiction novel, The Hitchhiker's Guide to the Galaxy, published in 1979, featured a life form called",
+                "x": 0.043009,
+                "y": 0.595065,
+                "w": 0.896587,
+                "h": 0.023229
+              },
+              {
+                "text": "the 'Babel fish' which, when placed in the ear, enabled a listener to understand any language in",
+                "x": 0.043099,
+                "y": 0.615871,
+                "w": 0.872138,
+                "h": 0.0221
+              },
+              {
+                "text": "the universe. It came to represent one of those devices that technology enthusiasts dream of long",
+                "x": 0.045307,
+                "y": 0.637758,
+                "w": 0.883178,
+                "h": 0.018913
+              },
+              {
+                "text": "before they become practically realisable, like TVs flat enough to hang on walls: objects that",
+                "x": 0.043099,
+                "y": 0.658239,
+                "w": 0.852266,
+                "h": 0.020532
+              },
+              {
+                "text": "we once could only dream of having but that are now commonplace. Now devices that look like",
+                "x": 0.043033,
+                "y": 0.678391,
+                "w": 0.883315,
+                "h": 0.021657
+              },
+              {
+                "text": "prototype Babel fish have started to appear, riding a wave of advances in artificial translation and",
+                "x": 0.043099,
+                "y": 0.70087,
+                "w": 0.889802,
+                "h": 0.018811
+              },
+              {
+                "text": "voice recognition.",
+                "x": 0.045307,
+                "y": 0.71957,
+                "w": 0.167804,
+                "h": 0.018849
+              },
+              {
+                "text": "At this stage, however, they seem to be regarded as eye-catching novelties rather than steps",
+                "x": 0.045235,
+                "y": 0.761636,
+                "w": 0.836954,
+                "h": 0.019767
+              },
+              {
+                "text": "towards what Waibel calls 'making a language-transparent society'. They tend to be domestic",
+                "x": 0.040891,
+                "y": 0.782432,
+                "w": 0.861098,
+                "h": 0.020481
+              },
+              {
+                "text": "devices or applications suitable for hotel check-ins, for example, providing a practical alternative",
+                "x": 0.042952,
+                "y": 0.802329,
+                "w": 0.892267,
+                "h": 0.024175
+              },
+              {
+                "text": "to speaking traveller's English. The efficiency of the translator is less important than the social",
+                "x": 0.040891,
+                "y": 0.824969,
+                "w": 0.86993,
+                "h": 0.0204
+              },
+              {
+                "text": "function. However, 'Professionals are less inclined to be patient in a conversation,' founder and",
+                "x": 0.043099,
+                "y": 0.845182,
+                "w": 0.874346,
+                "h": 0.020587
+              },
+              {
+                "text": "CEO at Waverly Labs, Andrew Ochoa, observes. To redress this, Waverly is now preparing a",
+                "x": 0.043099,
+                "y": 0.867406,
+                "w": 0.850058,
+                "h": 0.018763
+              },
+              {
+                "text": "new model for professional applications, which entails performance improvements in speech",
+                "x": 0.043021,
+                "y": 0.885482,
+                "w": 0.852425,
+                "h": 0.022964
+              },
+              {
+                "text": "recognition, translation accuracy and the time it takes to deliver the translated speech.",
+                "x": 0.043037,
+                "y": 0.907735,
+                "w": 0.788378,
+                "h": 0.019872
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-3/page-70.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "For a conversation, both speakers need to have devices called Pilots (translator earpieces) in",
+                "x": 0.038581,
+                "y": 0.03241,
+                "w": 0.84363,
+                "h": 0.023266
+              },
+              {
+                "text": "their ears. 'We find that there's a barrier with sharing one of the earphones with a stranger,'",
+                "x": 0.038683,
+                "y": 0.052963,
+                "w": 0.834603,
+                "h": 0.020613
+              },
+              {
+                "text": "says Ochoa. That can't have been totally unexpected. The problem would be solved if earpiece",
+                "x": 0.038606,
+                "y": 0.075159,
+                "w": 0.867864,
+                "h": 0.021535
+              },
+              {
+                "text": "translators became sufficiently prevalent that strangers would be likely to already have their own",
+                "x": 0.036475,
+                "y": 0.095668,
+                "w": 0.887594,
+                "h": 0.020481
+              },
+              {
+                "text": "in their ears. Whether that happens, and how quickly, will probably depend not so much on the",
+                "x": 0.036475,
+                "y": 0.117775,
+                "w": 0.86993,
+                "h": 0.020597
+              },
+              {
+                "text": "earpieces themselves, but on the prevalence of voice-controlled devices and artificial translation",
+                "x": 0.038683,
+                "y": 0.138175,
+                "w": 0.878762,
+                "h": 0.0204
+              },
+              {
+                "text": "in general.",
+                "x": 0.038683,
+                "y": 0.161904,
+                "w": 0.099357,
+                "h": 0.015371
+              },
+              {
+                "text": "Waibel highlights the significance of certain Asian nations, noting that voice translation has",
+                "x": 0.040891,
+                "y": 0.201074,
+                "w": 0.814731,
+                "h": 0.020529
+              },
+              {
+                "text": "really taken off in countries such as Japan with a range of systems. There is still a long way to go,",
+                "x": 0.038603,
+                "y": 0.22078,
+                "w": 0.872274,
+                "h": 0.022192
+              },
+              {
+                "text": "though. A translation system needs to be simultaneous, like the translator's voice speaking over the",
+                "x": 0.036475,
+                "y": 0.241874,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "foreign politician being interviewed on the TV, rather than in sections that oblige speakers to pause",
+                "x": 0.036475,
+                "y": 0.263873,
+                "w": 0.885386,
+                "h": 0.018801
+              },
+              {
+                "text": "after every few remarks and wait for the translation to be delivered. It needs to work offline, for",
+                "x": 0.038683,
+                "y": 0.284353,
+                "w": 0.856682,
+                "h": 0.020481
+              },
+              {
+                "text": "situations where internet access isn't possible, and to address apprehensions about the amount of",
+                "x": 0.038683,
+                "y": 0.304774,
+                "w": 0.865514,
+                "h": 0.020542
+              },
+              {
+                "text": "private speech data accumulating in the cloud, having been sent to servers for processing.",
+                "x": 0.038683,
+                "y": 0.325173,
+                "w": 0.801484,
+                "h": 0.0221
+              },
+              {
+                "text": "Systems not only need to cope with physical challenges such as noise, they will also need to be",
+                "x": 0.038683,
+                "y": 0.367584,
+                "w": 0.872138,
+                "h": 0.020489
+              },
+              {
+                "text": "socially aware by addressing people in the right way. Some cultural traditions demand solemn",
+                "x": 0.038683,
+                "y": 0.388065,
+                "w": 0.861098,
+                "h": 0.020481
+              },
+              {
+                "text": "respect for academic status, for example, and it is only polite to respect this. Etiquette-sensitive",
+                "x": 0.038597,
+                "y": 0.407991,
+                "w": 0.872301,
+                "h": 0.022822
+              },
+              {
+                "text": "artificial translators could relieve people of the need to know these differing cultural norms. At",
+                "x": 0.038683,
+                "y": 0.430573,
+                "w": 0.867722,
+                "h": 0.0187
+              },
+              {
+                "text": "the same time, they might help to preserve local customs, slowing the spread of habits associated",
+                "x": 0.038683,
+                "y": 0.450815,
+                "w": 0.889801,
+                "h": 0.020557
+              },
+              {
+                "text": "with international English, such as its readiness to get on first-name terms.",
+                "x": 0.038683,
+                "y": 0.473039,
+                "w": 0.682255,
+                "h": 0.018738
+              },
+              {
+                "text": "Professors and other professionals will not outsource language awareness to software, though. If",
+                "x": 0.040891,
+                "y": 0.513872,
+                "w": 0.883178,
+                "h": 0.017124
+              },
+              {
+                "text": "the technology matures into seamless, ubiquitous artificial speech translation, it will actually add",
+                "x": 0.038683,
+                "y": 0.534272,
+                "w": 0.885386,
+                "h": 0.0204
+              },
+              {
+                "text": "value to language skills. Whether it will help people conduct their family lives or relationships",
+                "x": 0.040891,
+                "y": 0.55627,
+                "w": 0.865514,
+                "h": 0.018801
+              },
+              {
+                "text": "is open to question - though one noteworthy possibility is that it could overcome the language",
+                "x": 0.038683,
+                "y": 0.576751,
+                "w": 0.865514,
+                "h": 0.020481
+              },
+              {
+                "text": "barriers that often arise between generations after migration, leaving children and their",
+                "x": 0.038683,
+                "y": 0.597171,
+                "w": 0.79486,
+                "h": 0.018799
+              },
+              {
+                "text": "grandparents without a shared language.",
+                "x": 0.038683,
+                "y": 0.619271,
+                "w": 0.373143,
+                "h": 0.0204
+              },
+              {
+                "text": "Whatever uses it is put to, though, it will never be as good as the real thing. Even if voice-",
+                "x": 0.040891,
+                "y": 0.659982,
+                "w": 0.825771,
+                "h": 0.020489
+              },
+              {
+                "text": "morphing technology simulates the speaker's voice, their lip movements won't match, and",
+                "x": 0.038683,
+                "y": 0.680463,
+                "w": 0.830187,
+                "h": 0.020481
+              },
+              {
+                "text": "they will look like they are in a dubbed movie. The contrast will underline the value of shared",
+                "x": 0.038573,
+                "y": 0.697535,
+                "w": 0.86136,
+                "h": 0.025297
+              },
+              {
+                "text": "languages, and the value of learning them. Sharing a language can promote a sense of belonging",
+                "x": 0.038626,
+                "y": 0.721184,
+                "w": 0.8833,
+                "h": 0.022296
+              },
+              {
+                "text": "and community, as with the international scientists who use English as a lingua franca, where",
+                "x": 0.038683,
+                "y": 0.743213,
+                "w": 0.856682,
+                "h": 0.020557
+              },
+              {
+                "text": "their predecessors used Latin. Though the practical need for a common language will diminish,",
+                "x": 0.038683,
+                "y": 0.763694,
+                "w": 0.874346,
+                "h": 0.020481
+              },
+              {
+                "text": "the social value of sharing one will persist. And software will never be a substitute for the subtle",
+                "x": 0.040891,
+                "y": 0.78587,
+                "w": 0.88097,
+                "h": 0.018786
+              },
+              {
+                "text": "but vital understanding that comes with knowledge of a language.",
+                "x": 0.043099,
+                "y": 0.80797,
+                "w": 0.602769,
+                "h": 0.017167
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-3/page-74.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.411779,
+                "y": 0.034284,
+                "w": 0.139195,
+                "h": 0.020784
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.034267,
+                "y": 0.104175,
+                "w": 0.253914,
+                "h": 0.0187
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.032059,
+                "y": 0.146652,
+                "w": 0.494579,
+                "h": 0.020481
+              },
+              {
+                "text": "The diagram below shows how a biofuel called ethanol is produced.",
+                "x": 0.058555,
+                "y": 0.192407,
+                "w": 0.737453,
+                "h": 0.020567
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.058555,
+                "y": 0.235074,
+                "w": 0.839019,
+                "h": 0.020519
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.056347,
+                "y": 0.257174,
+                "w": 0.381974,
+                "h": 0.017157
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.032059,
+                "y": 0.308174,
+                "w": 0.256122,
+                "h": 0.018885
+              },
+              {
+                "text": "Biofuel production: how ethanol is made",
+                "x": 0.277141,
+                "y": 0.360873,
+                "w": 0.393014,
+                "h": 0.01717
+              },
+              {
+                "text": "Energy",
+                "x": 0.239606,
+                "y": 0.408473,
+                "w": 0.057407,
+                "h": 0.0136
+              },
+              {
+                "text": "(sunlight + carbon dioxide)",
+                "x": 0.166744,
+                "y": 0.422055,
+                "w": 0.207547,
+                "h": 0.013618
+              },
+              {
+                "text": "Plants and",
+                "x": 0.160094,
+                "y": 0.493365,
+                "w": 0.081746,
+                "h": 0.012114
+              },
+              {
+                "text": "trees grow",
+                "x": 0.15785,
+                "y": 0.508506,
+                "w": 0.084027,
+                "h": 0.012433
+              },
+              {
+                "text": "Harvesting",
+                "x": 0.499937,
+                "y": 0.547169,
+                "w": 0.084315,
+                "h": 0.016705
+              },
+              {
+                "text": "Carbon",
+                "x": 0.718656,
+                "y": 0.559558,
+                "w": 0.057554,
+                "h": 0.012328
+              },
+              {
+                "text": "Dioxide",
+                "x": 0.716522,
+                "y": 0.573371,
+                "w": 0.059614,
+                "h": 0.0102
+              },
+              {
+                "text": "Pre-processing",
+                "x": 0.610541,
+                "y": 0.668571,
+                "w": 0.117021,
+                "h": 0.0136
+              },
+              {
+                "text": "Processing",
+                "x": 0.208497,
+                "y": 0.700162,
+                "w": 0.088713,
+                "h": 0.016716
+              },
+              {
+                "text": "Cellulose",
+                "x": 0.416157,
+                "y": 0.697221,
+                "w": 0.075239,
+                "h": 0.015799
+              },
+              {
+                "text": "Carbon",
+                "x": 0.776098,
+                "y": 0.695659,
+                "w": 0.057484,
+                "h": 0.012123
+              },
+              {
+                "text": "Dioxide",
+                "x": 0.776107,
+                "y": 0.707581,
+                "w": 0.059674,
+                "h": 0.012079
+              },
+              {
+                "text": "Ethanol",
+                "x": 0.350003,
+                "y": 0.77057,
+                "w": 0.121437,
+                "h": 0.0221
+              },
+              {
+                "text": "Sugars",
+                "x": 0.208675,
+                "y": 0.840221,
+                "w": 0.055238,
+                "h": 0.013695
+              },
+              {
+                "text": "Carbon",
+                "x": 0.658991,
+                "y": 0.790587,
+                "w": 0.059864,
+                "h": 0.012664
+              },
+              {
+                "text": "Dioxide",
+                "x": 0.656873,
+                "y": 0.802776,
+                "w": 0.061891,
+                "h": 0.013787
+              },
+              {
+                "text": "Carbon",
+                "x": 0.645745,
+                "y": 0.838242,
+                "w": 0.059861,
+                "h": 0.014254
+              },
+              {
+                "text": "Dioxide",
+                "x": 0.643569,
+                "y": 0.851919,
+                "w": 0.062005,
+                "h": 0.0141
+              },
+              {
+                "text": "Carbon",
+                "x": 0.597231,
+                "y": 0.885982,
+                "w": 0.059738,
+                "h": 0.012273
+              },
+              {
+                "text": "Dioxide",
+                "x": 0.595047,
+                "y": 0.899665,
+                "w": 0.061899,
+                "h": 0.013808
+              },
+              {
+                "text": "Microbes",
+                "x": 0.323508,
+                "y": 0.937169,
+                "w": 0.070654,
+                "h": 0.0119
+              },
+              {
+                "text": "added",
+                "x": 0.334548,
+                "y": 0.950768,
+                "w": 0.048575,
+                "h": 0.0119
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-3/page-75.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.058555,
+                "y": 0.037711,
+                "w": 0.258329,
+                "h": 0.018865
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.058555,
+                "y": 0.082075,
+                "w": 0.494579,
+                "h": 0.018821
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.056347,
+                "y": 0.122685,
+                "w": 0.315736,
+                "h": 0.01889
+              },
+              {
+                "text": "It is important for everyone, including young people, to save money for",
+                "x": 0.080634,
+                "y": 0.177156,
+                "w": 0.779404,
+                "h": 0.020519
+              },
+              {
+                "text": "their future.",
+                "x": 0.082842,
+                "y": 0.197636,
+                "w": 0.130269,
+                "h": 0.017038
+              },
+              {
+                "text": "To what extent do you agree or disagree with this statement?",
+                "x": 0.082842,
+                "y": 0.238474,
+                "w": 0.666799,
+                "h": 0.020605
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.056269,
+                "y": 0.291588,
+                "w": 0.812675,
+                "h": 0.021982
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.056347,
+                "y": 0.314857,
+                "w": 0.264953,
+                "h": 0.018816
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.060763,
+                "y": 0.355773,
+                "w": 0.251706,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-54.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.043099,
+                "y": 0.034476,
+                "w": 0.136893,
+                "h": 0.032431
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.394162,
+                "y": 0.105875,
+                "w": 0.185467,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.045307,
+                "y": 0.19415,
+                "w": 0.108189,
+                "h": 0.017124
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.217527,
+                "y": 0.192407,
+                "w": 0.200923,
+                "h": 0.020567
+              },
+              {
+                "text": "Questions 1-6",
+                "x": 0.047515,
+                "y": 0.235074,
+                "w": 0.16118,
+                "h": 0.018776
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.044983,
+                "y": 0.274947,
+                "w": 0.270019,
+                "h": 0.02399
+              },
+              {
+                "text": "Write ONE WORD ANDIOR A NUMBER for each answer.",
+                "x": 0.045307,
+                "y": 0.3166,
+                "w": 0.585105,
+                "h": 0.020481
+              },
+              {
+                "text": "Local food shops",
+                "x": 0.363251,
+                "y": 0.376173,
+                "w": 0.258329,
+                "h": 0.0255
+              },
+              {
+                "text": "Where to go",
+                "x": 0.060472,
+                "y": 0.424417,
+                "w": 0.137417,
+                "h": 0.018471
+              },
+              {
+                "text": "Kite Place - near the 1",
+                "x": 0.102714,
+                "y": 0.464572,
+                "w": 0.242874,
+                "h": 0.0187
+              },
+              {
+                "text": "....",
+                "x": 0.449361,
+                "y": 0.473072,
+                "w": 0.081694,
+                "h": 0.0136
+              },
+              {
+                "text": "Fish market",
+                "x": 0.060763,
+                "y": 0.505286,
+                "w": 0.136893,
+                "h": 0.020486
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.549572,
+                "w": 0.019871,
+                "h": 0.0187
+              },
+              {
+                "text": "cross the 2",
+                "x": 0.10259,
+                "y": 0.547376,
+                "w": 0.123891,
+                "h": 0.019691
+              },
+              {
+                "text": "and turn right",
+                "x": 0.411703,
+                "y": 0.547314,
+                "w": 0.139346,
+                "h": 0.019815
+              },
+              {
+                "text": "best to go before 3",
+                "x": 0.107129,
+                "y": 0.59026,
+                "w": 0.198715,
+                "h": 0.018811
+              },
+              {
+                "text": "........pm, earlier than closing time",
+                "x": 0.447153,
+                "y": 0.59026,
+                "w": 0.331192,
+                "h": 0.018811
+              },
+              {
+                "text": "Organic shop",
+                "x": 0.0629,
+                "y": 0.630857,
+                "w": 0.150282,
+                "h": 0.021028
+              },
+              {
+                "text": "called 4",
+                "x": 0.104922,
+                "y": 0.671971,
+                "w": 0.101565,
+                "h": 0.0187
+              },
+              {
+                "text": "..!'",
+                "x": 0.367667,
+                "y": 0.670271,
+                "w": 0.019871,
+                "h": 0.0204
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.71277,
+                "w": 0.024287,
+                "h": 0.0204
+              },
+              {
+                "text": "below a restaurant in the large, grey building",
+                "x": 0.109337,
+                "y": 0.714453,
+                "w": 0.454837,
+                "h": 0.018738
+              },
+              {
+                "text": "look for the large 5",
+                "x": 0.109337,
+                "y": 0.75527,
+                "w": 0.196507,
+                "h": 0.0204
+              },
+              {
+                "text": "….... outside",
+                "x": 0.44903,
+                "y": 0.756473,
+                "w": 0.117478,
+                "h": 0.01431
+              },
+              {
+                "text": "Supermarket",
+                "x": 0.062877,
+                "y": 0.797335,
+                "w": 0.143703,
+                "h": 0.019568
+              },
+              {
+                "text": "•",
+                "x": 0.060763,
+                "y": 0.840269,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "take a 6",
+                "x": 0.107129,
+                "y": 0.838569,
+                "w": 0.090526,
+                "h": 0.017071
+              },
+              {
+                "text": "minibus, number 289",
+                "x": 0.383122,
+                "y": 0.838569,
+                "w": 0.214171,
+                "h": 0.018814
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-55.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 7-10",
+                "x": 0.047515,
+                "y": 0.035968,
+                "w": 0.178843,
+                "h": 0.017208
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.047515,
+                "y": 0.080375,
+                "w": 0.262745,
+                "h": 0.017035
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.047515,
+                "y": 0.119475,
+                "w": 0.441589,
+                "h": 0.018897
+              },
+              {
+                "text": "Shopping",
+                "x": 0.466955,
+                "y": 0.170267,
+                "w": 0.110536,
+                "h": 0.022515
+              },
+              {
+                "text": "To buy",
+                "x": 0.383122,
+                "y": 0.202774,
+                "w": 0.081694,
+                "h": 0.0272
+              },
+              {
+                "text": "Fish market",
+                "x": 0.054079,
+                "y": 0.236535,
+                "w": 0.137011,
+                "h": 0.020877
+              },
+              {
+                "text": "a dozen prawns",
+                "x": 0.255062,
+                "y": 0.240174,
+                "w": 0.165596,
+                "h": 0.018905
+              },
+              {
+                "text": "Other ideas",
+                "x": 0.707512,
+                "y": 0.205337,
+                "w": 0.128418,
+                "h": 0.018675
+              },
+              {
+                "text": "a handful of 7....",
+                "x": 0.603917,
+                "y": 0.241874,
+                "w": 0.165596,
+                "h": 0.0204
+              },
+              {
+                "text": "(type of seaweed)",
+                "x": 0.601709,
+                "y": 0.260386,
+                "w": 0.189883,
+                "h": 0.023987
+              },
+              {
+                "text": "Organic shop",
+                "x": 0.054111,
+                "y": 0.323358,
+                "w": 0.154612,
+                "h": 0.022331
+              },
+              {
+                "text": "beans and a ..",
+                "x": 0.255062,
+                "y": 0.328366,
+                "w": 0.293657,
+                "h": 0.020608
+              },
+              {
+                "text": "for dessert",
+                "x": 0.252794,
+                "y": 0.348748,
+                "w": 0.117141,
+                "h": 0.019151
+              },
+              {
+                "text": "spices and 9.......",
+                "x": 0.603917,
+                "y": 0.330109,
+                "w": 0.176636,
+                "h": 0.018865
+              },
+              {
+                "text": "Bakery",
+                "x": 0.056347,
+                "y": 0.411873,
+                "w": 0.077278,
+                "h": 0.0187
+              },
+              {
+                "text": "a brown loaf",
+                "x": 0.255062,
+                "y": 0.411873,
+                "w": 0.130269,
+                "h": 0.017154
+              },
+              {
+                "text": "a 10.",
+                "x": 0.601709,
+                "y": 0.413573,
+                "w": 0.057407,
+                "h": 0.0221
+              },
+              {
+                "text": ". tart",
+                "x": 0.787176,
+                "y": 0.418569,
+                "w": 0.048575,
+                "h": 0.015404
+              },
+              {
+                "text": "→ O p. 124 U p. 108",
+                "x": 0.100506,
+                "y": 0.998368,
+                "w": 0.275993,
+                "h": 0.0221
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-56.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.04085,
+                "y": 0.036031,
+                "w": 0.110479,
+                "h": 0.01899
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.213111,
+                "y": 0.037711,
+                "w": 0.214171,
+                "h": 0.017165
+              },
+              {
+                "text": "Questions 11-16",
+                "x": 0.040891,
+                "y": 0.078673,
+                "w": 0.187675,
+                "h": 0.017002
+              },
+              {
+                "text": "What information is given about each of the following",
+                "x": 0.038683,
+                "y": 0.119475,
+                "w": 0.53653,
+                "h": 0.0221
+              },
+              {
+                "text": "festival workshops?",
+                "x": 0.036475,
+                "y": 0.141423,
+                "w": 0.203131,
+                "h": 0.018852
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.040891,
+                "y": 0.184075,
+                "w": 0.755117,
+                "h": 0.020534
+              },
+              {
+                "text": "Questions 11-16.",
+                "x": 0.040891,
+                "y": 0.204474,
+                "w": 0.17222,
+                "h": 0.017129
+              },
+              {
+                "text": "B",
+                "x": 0.191031,
+                "y": 0.326873,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.191031,
+                "y": 0.360873,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.191031,
+                "y": 0.393173,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "E",
+                "x": 0.191031,
+                "y": 0.425473,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "F",
+                "x": 0.188823,
+                "y": 0.457772,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "H",
+                "x": 0.188823,
+                "y": 0.520672,
+                "w": 0.019871,
+                "h": 0.0187
+              },
+              {
+                "text": "Information",
+                "x": 0.420464,
+                "y": 0.259799,
+                "w": 0.132865,
+                "h": 0.02195
+              },
+              {
+                "text": "involves painting and drawing",
+                "x": 0.23519,
+                "y": 0.294376,
+                "w": 0.306904,
+                "h": 0.020597
+              },
+              {
+                "text": "will be led by a prize-winning author",
+                "x": 0.239606,
+                "y": 0.326873,
+                "w": 0.366519,
+                "h": 0.0204
+              },
+              {
+                "text": "is aimed at children with a disability",
+                "x": 0.232982,
+                "y": 0.360873,
+                "w": 0.366519,
+                "h": 0.018913
+              },
+              {
+                "text": "involves a drama activity",
+                "x": 0.232645,
+                "y": 0.38961,
+                "w": 0.259088,
+                "h": 0.022493
+              },
+              {
+                "text": "focuses on new relationships",
+                "x": 0.23725,
+                "y": 0.423687,
+                "w": 0.298386,
+                "h": 0.018957
+              },
+              {
+                "text": "is aimed at a specific age group",
+                "x": 0.23519,
+                "y": 0.456044,
+                "w": 0.328984,
+                "h": 0.020481
+              },
+              {
+                "text": "explores an unhappy feeling",
+                "x": 0.237398,
+                "y": 0.490034,
+                "w": 0.291449,
+                "h": 0.020481
+              },
+              {
+                "text": "raises awareness of a particular culture",
+                "x": 0.237398,
+                "y": 0.522281,
+                "w": 0.401846,
+                "h": 0.018791
+              },
+              {
+                "text": "Festival workshops",
+                "x": 0.087022,
+                "y": 0.59705,
+                "w": 0.214589,
+                "h": 0.019063
+              },
+              {
+                "text": "11",
+                "x": 0.036475,
+                "y": 0.627771,
+                "w": 0.028703,
+                "h": 0.0187
+              },
+              {
+                "text": "Superheroes",
+                "x": 0.087198,
+                "y": 0.629217,
+                "w": 0.132596,
+                "h": 0.019207
+              },
+              {
+                "text": "12 Just do it",
+                "x": 0.036475,
+                "y": 0.661725,
+                "w": 0.145724,
+                "h": 0.017045
+              },
+              {
+                "text": "13 Count on me",
+                "x": 0.036475,
+                "y": 0.693972,
+                "w": 0.183259,
+                "h": 0.017099
+              },
+              {
+                "text": "14 Speak up",
+                "x": 0.034267,
+                "y": 0.726218,
+                "w": 0.15014,
+                "h": 0.018852
+              },
+              {
+                "text": "15 Jump for joy",
+                "x": 0.034267,
+                "y": 0.758465,
+                "w": 0.178843,
+                "h": 0.020605
+              },
+              {
+                "text": "16",
+                "x": 0.036475,
+                "y": 0.79097,
+                "w": 0.028703,
+                "h": 0.017
+              },
+              {
+                "text": "Sticks and stones",
+                "x": 0.07401,
+                "y": 0.79097,
+                "w": 0.192091,
+                "h": 0.017172
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-57.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 17 and 18",
+                "x": 0.051931,
+                "y": 0.041197,
+                "w": 0.231834,
+                "h": 0.017078
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.051931,
+                "y": 0.083775,
+                "w": 0.271577,
+                "h": 0.018865
+              },
+              {
+                "text": "Which TWO reasons does the speaker give for recommending Alive and Kicking?",
+                "x": 0.051931,
+                "y": 0.122685,
+                "w": 0.825771,
+                "h": 0.02059
+              },
+              {
+                "text": "A",
+                "x": 0.102714,
+                "y": 0.156875,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "It will appeal to both boys and girls.",
+                "x": 0.146872,
+                "y": 0.156675,
+                "w": 0.364311,
+                "h": 0.0189
+              },
+              {
+                "text": "B The author is well known.",
+                "x": 0.104807,
+                "y": 0.177199,
+                "w": 0.309358,
+                "h": 0.015438
+              },
+              {
+                "text": "It has colourful illustrations.",
+                "x": 0.14908,
+                "y": 0.197636,
+                "w": 0.282617,
+                "h": 0.017038
+              },
+              {
+                "text": "D",
+                "x": 0.102714,
+                "y": 0.219774,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "E",
+                "x": 0.102714,
+                "y": 0.240174,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "It is funny.",
+                "x": 0.146467,
+                "y": 0.219297,
+                "w": 0.111567,
+                "h": 0.017488
+              },
+              {
+                "text": "It deals with an important topic.",
+                "x": 0.14908,
+                "y": 0.240174,
+                "w": 0.32236,
+                "h": 0.017162
+              },
+              {
+                "text": "Questions 19 and 20",
+                "x": 0.054139,
+                "y": 0.294376,
+                "w": 0.231834,
+                "h": 0.017197
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.054139,
+                "y": 0.337073,
+                "w": 0.269369,
+                "h": 0.018745
+              },
+              {
+                "text": "Which TWO pieces of advice does the speaker give to parents about reading?",
+                "x": 0.051931,
+                "y": 0.376173,
+                "w": 0.792652,
+                "h": 0.018865
+              },
+              {
+                "text": "A Encourage children to write down new vocabulary.",
+                "x": 0.104852,
+                "y": 0.408242,
+                "w": 0.558741,
+                "h": 0.019438
+              },
+              {
+                "text": "Allow children to listen to audio books.",
+                "x": 0.151288,
+                "y": 0.430573,
+                "w": 0.393014,
+                "h": 0.017192
+              },
+              {
+                "text": "Get recommendations from librarians.",
+                "x": 0.153496,
+                "y": 0.450815,
+                "w": 0.38639,
+                "h": 0.017157
+              },
+              {
+                "text": "Give children a choice about what they read.",
+                "x": 0.151288,
+                "y": 0.471296,
+                "w": 0.457044,
+                "h": 0.018776
+              },
+              {
+                "text": "E Only read aloud to children until they can read independently.",
+                "x": 0.104922,
+                "y": 0.491772,
+                "w": 0.671215,
+                "h": 0.020486
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            17,
+            18
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            19,
+            20
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-58.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.036386,
+                "y": 0.039226,
+                "w": 0.110575,
+                "h": 0.017699
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.208695,
+                "y": 0.039454,
+                "w": 0.214171,
+                "h": 0.018821
+              },
+              {
+                "text": "Questions 21-25",
+                "x": 0.036475,
+                "y": 0.082075,
+                "w": 0.189883,
+                "h": 0.015335
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.036475,
+                "y": 0.122685,
+                "w": 0.362103,
+                "h": 0.02059
+              },
+              {
+                "text": "Science experiment for Year 12 students",
+                "x": 0.184407,
+                "y": 0.187475,
+                "w": 0.593937,
+                "h": 0.0238
+              },
+              {
+                "text": "21 How does Clare feel about the students in her Year 12 science class?",
+                "x": 0.034267,
+                "y": 0.233369,
+                "w": 0.750701,
+                "h": 0.017005
+              },
+              {
+                "text": "A worried that they are not making progress",
+                "x": 0.082842,
+                "y": 0.265616,
+                "w": 0.4725,
+                "h": 0.018758
+              },
+              {
+                "text": "B challenged by their poor behaviour in class",
+                "x": 0.082842,
+                "y": 0.286074,
+                "w": 0.48354,
+                "h": 0.018761
+              },
+              {
+                "text": "C frustrated at their lack of interest in the subject",
+                "x": 0.082842,
+                "y": 0.306474,
+                "w": 0.521075,
+                "h": 0.018842
+              },
+              {
+                "text": "22 How does Jake react to Clare's suggestion about an experiment based on",
+                "x": 0.032059,
+                "y": 0.348847,
+                "w": 0.797068,
+                "h": 0.018827
+              },
+              {
+                "text": "children's diet?",
+                "x": 0.082842,
+                "y": 0.369327,
+                "w": 0.154556,
+                "h": 0.015345
+              },
+              {
+                "text": "A He is concerned that the results might not be meaningful.",
+                "x": 0.082842,
+                "y": 0.401574,
+                "w": 0.629264,
+                "h": 0.020499
+              },
+              {
+                "text": "B He feels some of the data might be difficult to obtain.",
+                "x": 0.082842,
+                "y": 0.422055,
+                "w": 0.582897,
+                "h": 0.018738
+              },
+              {
+                "text": "C He suspects that the conclusions might be upsetting.",
+                "x": 0.082842,
+                "y": 0.444172,
+                "w": 0.585105,
+                "h": 0.018844
+              },
+              {
+                "text": "23 What problem do they agree may be involved in an experiment involving animals?",
+                "x": 0.032059,
+                "y": 0.484805,
+                "w": 0.878762,
+                "h": 0.020567
+              },
+              {
+                "text": "A Any results may not apply to humans.",
+                "x": 0.082842,
+                "y": 0.517272,
+                "w": 0.432757,
+                "h": 0.0187
+              },
+              {
+                "text": "B It may be complicated to get permission.",
+                "x": 0.082842,
+                "y": 0.537532,
+                "w": 0.459252,
+                "h": 0.020539
+              },
+              {
+                "text": "C Students may not be happy about animal experiments.",
+                "x": 0.082842,
+                "y": 0.558013,
+                "w": 0.602769,
+                "h": 0.020481
+              },
+              {
+                "text": "24 What question do they decide the experiment should address?",
+                "x": 0.029851,
+                "y": 0.600571,
+                "w": 0.684463,
+                "h": 0.018885
+              },
+              {
+                "text": "A Are mice capable of controlling their food intake?",
+                "x": 0.080634,
+                "y": 0.632871,
+                "w": 0.545362,
+                "h": 0.018832
+              },
+              {
+                "text": "B Does an increase in sugar lead to health problems?",
+                "x": 0.080634,
+                "y": 0.653271,
+                "w": 0.571858,
+                "h": 0.0204
+              },
+              {
+                "text": "C How much do supplements of different kinds affect health?",
+                "x": 0.080634,
+                "y": 0.673491,
+                "w": 0.642512,
+                "h": 0.02058
+              },
+              {
+                "text": "25 Clare might also consider doing another experiment involving",
+                "x": 0.029851,
+                "y": 0.71617,
+                "w": 0.669007,
+                "h": 0.020506
+              },
+              {
+                "text": "A other types of food supplement.",
+                "x": 0.080634,
+                "y": 0.748442,
+                "w": 0.368727,
+                "h": 0.018738
+              },
+              {
+                "text": "B",
+                "x": 0.080634,
+                "y": 0.76887,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "different genetic strains of mice.",
+                "x": 0.124793,
+                "y": 0.76887,
+                "w": 0.331192,
+                "h": 0.018791
+              },
+              {
+                "text": "C",
+                "x": 0.080634,
+                "y": 0.78927,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "varying amounts of exercise.",
+                "x": 0.129209,
+                "y": 0.78927,
+                "w": 0.293657,
+                "h": 0.018872
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-59.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 26-30",
+                "x": 0.056347,
+                "y": 0.04294,
+                "w": 0.189883,
+                "h": 0.017035
+              },
+              {
+                "text": "Complete the flowchart below.",
+                "x": 0.054139,
+                "y": 0.087175,
+                "w": 0.309112,
+                "h": 0.0187
+              },
+              {
+                "text": "Choose FIVE answers from the box and write the correct letter, A-H, next to",
+                "x": 0.056347,
+                "y": 0.126171,
+                "w": 0.77278,
+                "h": 0.020504
+              },
+              {
+                "text": "Questions 26-30.",
+                "x": 0.056347,
+                "y": 0.148375,
+                "w": 0.181051,
+                "h": 0.018758
+              },
+              {
+                "text": "A",
+                "x": 0.383122,
+                "y": 0.206174,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.383122,
+                "y": 0.226574,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.383122,
+                "y": 0.248674,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.383122,
+                "y": 0.269074,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.383122,
+                "y": 0.289474,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.383122,
+                "y": 0.309874,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "G",
+                "x": 0.383122,
+                "y": 0.328573,
+                "w": 0.022079,
+                "h": 0.0204
+              },
+              {
+                "text": "H",
+                "x": 0.383122,
+                "y": 0.352373,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "size",
+                "x": 0.431697,
+                "y": 0.202774,
+                "w": 0.048575,
+                "h": 0.0204
+              },
+              {
+                "text": "escape",
+                "x": 0.427281,
+                "y": 0.224874,
+                "w": 0.08611,
+                "h": 0.0204
+              },
+              {
+                "text": "age",
+                "x": 0.429489,
+                "y": 0.246974,
+                "w": 0.059614,
+                "h": 0.0204
+              },
+              {
+                "text": "water",
+                "x": 0.42938,
+                "y": 0.265462,
+                "w": 0.066456,
+                "h": 0.020823
+              },
+              {
+                "text": "cereal",
+                "x": 0.429267,
+                "y": 0.287292,
+                "w": 0.073307,
+                "h": 0.021363
+              },
+              {
+                "text": "calculations",
+                "x": 0.431561,
+                "y": 0.306003,
+                "w": 0.126126,
+                "h": 0.02304
+              },
+              {
+                "text": "changes",
+                "x": 0.431665,
+                "y": 0.331881,
+                "w": 0.09059,
+                "h": 0.018885
+              },
+              {
+                "text": "colour",
+                "x": 0.431697,
+                "y": 0.352373,
+                "w": 0.068446,
+                "h": 0.017
+              },
+              {
+                "text": "Choose mice which are all the same 26",
+                "x": 0.127001,
+                "y": 0.433821,
+                "w": 0.401846,
+                "h": 0.018852
+              },
+              {
+                "text": "Divide the mice into two groups, each with a different 27",
+                "x": 0.127001,
+                "y": 0.529172,
+                "w": 0.556402,
+                "h": 0.022305
+              },
+              {
+                "text": "Put each group in a separate cage.",
+                "x": 0.127001,
+                "y": 0.620763,
+                "w": 0.362103,
+                "h": 0.018908
+              },
+              {
+                "text": "Feed group A commercial mouse food.",
+                "x": 0.127001,
+                "y": 0.648171,
+                "w": 0.395222,
+                "h": 0.020527
+              },
+              {
+                "text": "Feed group B the same, but also sugar contained in 28",
+                "x": 0.124793,
+                "y": 0.673491,
+                "w": 0.563026,
+                "h": 0.02228
+              },
+              {
+                "text": "Take measurements using an electronic scale.",
+                "x": 0.127001,
+                "y": 0.765437,
+                "w": 0.474708,
+                "h": 0.018738
+              },
+              {
+                "text": "Place them in a weighing chamber to prevent 29 ..",
+                "x": 0.127001,
+                "y": 0.792454,
+                "w": 0.507827,
+                "h": 0.018915
+              },
+              {
+                "text": "Do all necessary 30",
+                "x": 0.129209,
+                "y": 0.887869,
+                "w": 0.203131,
+                "h": 0.018756
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-60.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.038683,
+                "y": 0.032776,
+                "w": 0.110397,
+                "h": 0.017137
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.210903,
+                "y": 0.032776,
+                "w": 0.216379,
+                "h": 0.01888
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.038683,
+                "y": 0.075187,
+                "w": 0.271577,
+                "h": 0.018789
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.038683,
+                "y": 0.116075,
+                "w": 0.430549,
+                "h": 0.018811
+              },
+              {
+                "text": "Microplastics",
+                "x": 0.387356,
+                "y": 0.169604,
+                "w": 0.199079,
+                "h": 0.027241
+              },
+              {
+                "text": "Where microplastics come from",
+                "x": 0.054139,
+                "y": 0.216374,
+                "w": 0.351063,
+                "h": 0.018738
+              },
+              {
+                "text": "•",
+                "x": 0.054139,
+                "y": 0.255474,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "fibres from some 31",
+                "x": 0.104922,
+                "y": 0.253774,
+                "w": 0.203131,
+                "h": 0.015328
+              },
+              {
+                "text": "the breakdown of large pieces of plastic",
+                "x": 0.104922,
+                "y": 0.286074,
+                "w": 0.404054,
+                "h": 0.018761
+              },
+              {
+                "text": "• waste from industry",
+                "x": 0.051931,
+                "y": 0.318343,
+                "w": 0.253914,
+                "h": 0.018738
+              },
+              {
+                "text": "the action of vehicle tyres on roads",
+                "x": 0.102714,
+                "y": 0.348847,
+                "w": 0.359895,
+                "h": 0.018827
+              },
+              {
+                "text": "…....... during washing",
+                "x": 0.449361,
+                "y": 0.253774,
+                "w": 0.200923,
+                "h": 0.017071
+              },
+              {
+                "text": "Effects of microplastics",
+                "x": 0.056347,
+                "y": 0.391473,
+                "w": 0.258329,
+                "h": 0.018816
+              },
+              {
+                "text": "• They cause injuries to the 32",
+                "x": 0.054139,
+                "y": 0.423773,
+                "w": 0.348855,
+                "h": 0.01702
+              },
+              {
+                "text": "of wildlife and affect their",
+                "x": 0.586253,
+                "y": 0.422055,
+                "w": 0.253914,
+                "h": 0.017018
+              },
+              {
+                "text": "digestive systems.",
+                "x": 0.107129,
+                "y": 0.450815,
+                "w": 0.189883,
+                "h": 0.018857
+              },
+              {
+                "text": "• They enter the food chain, e.g., in bottled and tap water, 33",
+                "x": 0.054139,
+                "y": 0.481572,
+                "w": 0.649136,
+                "h": 0.0204
+              },
+              {
+                "text": "and seafood.",
+                "x": 0.107129,
+                "y": 0.510472,
+                "w": 0.134685,
+                "h": 0.0153
+              },
+              {
+                "text": "• They may not affect human health, but they are already banned in skin cleaning",
+                "x": 0.054139,
+                "y": 0.541018,
+                "w": 0.856682,
+                "h": 0.020481
+              },
+              {
+                "text": "products and 34",
+                "x": 0.104226,
+                "y": 0.565622,
+                "w": 0.169166,
+                "h": 0.023482
+              },
+              {
+                "text": "... in some countries.",
+                "x": 0.442737,
+                "y": 0.568271,
+                "w": 0.203131,
+                "h": 0.017195
+              },
+              {
+                "text": "• Microplastics enter the soil through the air, rain and 35",
+                "x": 0.054139,
+                "y": 0.600571,
+                "w": 0.602769,
+                "h": 0.0204
+              },
+              {
+                "text": "Microplastics in the soil - a study by Anglia Ruskin University",
+                "x": 0.056347,
+                "y": 0.641244,
+                "w": 0.673423,
+                "h": 0.020527
+              },
+              {
+                "text": "• Earthworms are important because they add 36",
+                "x": 0.054139,
+                "y": 0.670271,
+                "w": 0.53653,
+                "h": 0.0221
+              },
+              {
+                "text": "The study aimed to find whether microplastics in earthworms affect the",
+                "x": 0.104922,
+                "y": 0.70257,
+                "w": 0.715374,
+                "h": 0.0221
+              },
+              {
+                "text": "37..",
+                "x": 0.104922,
+                "y": 0.73317,
+                "w": 0.041951,
+                "h": 0.017
+              },
+              {
+                "text": "... of plants.",
+                "x": 0.303565,
+                "y": 0.732884,
+                "w": 0.112748,
+                "h": 0.017571
+              },
+              {
+                "text": "The study found that microplastics caused:",
+                "x": 0.106919,
+                "y": 0.761484,
+                "w": 0.435391,
+                "h": 0.023596
+              },
+              {
+                "text": "- 38",
+                "x": 0.104922,
+                "y": 0.797683,
+                "w": 0.052991,
+                "h": 0.013686
+              },
+              {
+                "text": "loss in earthworms",
+                "x": 0.341172,
+                "y": 0.797683,
+                "w": 0.196507,
+                "h": 0.015386
+              },
+              {
+                "text": "to the soil.",
+                "x": 0.76929,
+                "y": 0.672749,
+                "w": 0.11305,
+                "h": 0.018843
+              },
+              {
+                "text": "- fewer seeds to germinate",
+                "x": 0.102714,
+                "y": 0.82993,
+                "w": 0.287033,
+                "h": 0.017139
+              },
+              {
+                "text": "- a rise in the level of 39",
+                "x": 0.104922,
+                "y": 0.860669,
+                "w": 0.256122,
+                "h": 0.015452
+              },
+              {
+                "text": ".....in the soil.",
+                "x": 0.517749,
+                "y": 0.858717,
+                "w": 0.134801,
+                "h": 0.019205
+              },
+              {
+                "text": "The study concluded:",
+                "x": 0.056347,
+                "y": 0.892969,
+                "w": 0.220794,
+                "h": 0.018885
+              },
+              {
+                "text": "- soil should be seen as an important natural process.",
+                "x": 0.104792,
+                "y": 0.918165,
+                "w": 0.556788,
+                "h": 0.026463
+              },
+              {
+                "text": "- changes to soil damage both ecosystems and 40",
+                "x": 0.102714,
+                "y": 0.954123,
+                "w": 0.525491,
+                "h": 0.020481
+              },
+              {
+                "text": "....",
+                "x": 0.765097,
+                "y": 0.966068,
+                "w": 0.057407,
+                "h": 0.0051
+              },
+              {
+                "text": "→ Sp. 124Üp. 112",
+                "x": 0.62158,
+                "y": 0.996668,
+                "w": 0.267161,
+                "h": 0.0221
+              },
+              {
+                "text": "61",
+                "x": 0.899781,
+                "y": 0.998368,
+                "w": 0.035327,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-63.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 1-7",
+                "x": 0.051931,
+                "y": 0.034476,
+                "w": 0.163388,
+                "h": 0.015437
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.051931,
+                "y": 0.075187,
+                "w": 0.854474,
+                "h": 0.020489
+              },
+              {
+                "text": "In boxes 1-7 on your answer sheet, write",
+                "x": 0.047515,
+                "y": 0.117775,
+                "w": 0.421717,
+                "h": 0.018854
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.272725,
+                "y": 0.158418,
+                "w": 0.441589,
+                "h": 0.018857
+              },
+              {
+                "text": "FALSE",
+                "x": 0.126905,
+                "y": 0.178712,
+                "w": 0.07747,
+                "h": 0.017525
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.272725,
+                "y": 0.180642,
+                "w": 0.434965,
+                "h": 0.015333
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.127001,
+                "y": 0.201074,
+                "w": 0.468084,
+                "h": 0.0153
+              },
+              {
+                "text": "Archaeological research had taken place on the island of Obi before the arrival of",
+                "x": 0.100506,
+                "y": 0.241874,
+                "w": 0.823563,
+                "h": 0.0187
+              },
+              {
+                "text": "Ceri Shipton and his colleagues.",
+                "x": 0.100506,
+                "y": 0.265616,
+                "w": 0.331192,
+                "h": 0.017058
+              },
+              {
+                "text": "2",
+                "x": 0.049723,
+                "y": 0.296274,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "At the Kelo sites, the researchers found the first clam shell axes ever to be",
+                "x": 0.098298,
+                "y": 0.296119,
+                "w": 0.757325,
+                "h": 0.020554
+              },
+              {
+                "text": "discovered in the region.",
+                "x": 0.100506,
+                "y": 0.318343,
+                "w": 0.251706,
+                "h": 0.018738
+              },
+              {
+                "text": "3 The size of Obi today is less than it was 18,000 years ago.",
+                "x": 0.049723,
+                "y": 0.348847,
+                "w": 0.64472,
+                "h": 0.020527
+              },
+              {
+                "text": "4 A change in the climate around 11,700 years ago had a greater impact on Obi than",
+                "x": 0.049723,
+                "y": 0.381093,
+                "w": 0.887594,
+                "h": 0.02058
+              },
+              {
+                "text": "on the surrounding islands.",
+                "x": 0.100506,
+                "y": 0.403317,
+                "w": 0.278201,
+                "h": 0.018756
+              },
+              {
+                "text": "5 The researchers believe there is a connection between warmer, wetter weather and",
+                "x": 0.049609,
+                "y": 0.429775,
+                "w": 0.896666,
+                "h": 0.025653
+              },
+              {
+                "text": "a change in the material used to make axes.",
+                "x": 0.102714,
+                "y": 0.456044,
+                "w": 0.450421,
+                "h": 0.017028
+              },
+              {
+                "text": "6 Shipton's team were surprised to find evidence of the Obi islanders'",
+                "x": 0.049669,
+                "y": 0.486646,
+                "w": 0.737584,
+                "h": 0.021146
+              },
+              {
+                "text": "hunting practices.",
+                "x": 0.100506,
+                "y": 0.508772,
+                "w": 0.183259,
+                "h": 0.018738
+              },
+              {
+                "text": "7",
+                "x": 0.051931,
+                "y": 0.541072,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "It is thought that the Kelo shelters were occupied continuously until about",
+                "x": 0.093882,
+                "y": 0.541018,
+                "w": 0.748493,
+                "h": 0.018753
+              },
+              {
+                "text": "1,000 years ago.",
+                "x": 0.100506,
+                "y": 0.563171,
+                "w": 0.174428,
+                "h": 0.018809
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-64.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 8-13",
+                "x": 0.043099,
+                "y": 0.031076,
+                "w": 0.176636,
+                "h": 0.017094
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.043099,
+                "y": 0.073444,
+                "w": 0.267161,
+                "h": 0.018832
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.043099,
+                "y": 0.114375,
+                "w": 0.638096,
+                "h": 0.018768
+              },
+              {
+                "text": "Write your answers in boxes 8-13 on your answer sheet.",
+                "x": 0.043099,
+                "y": 0.155175,
+                "w": 0.574065,
+                "h": 0.0187
+              },
+              {
+                "text": "Archaeological findings on Obi",
+                "x": 0.259478,
+                "y": 0.214631,
+                "w": 0.463668,
+                "h": 0.02571
+              },
+              {
+                "text": "Excavations of rock shelters inside 8",
+                "x": 0.062971,
+                "y": 0.263873,
+                "w": 0.357687,
+                "h": 0.013701
+              },
+              {
+                "text": "Kelo revealed:",
+                "x": 0.060763,
+                "y": 0.284353,
+                "w": 0.143516,
+                "h": 0.01702
+              },
+              {
+                "text": "............... near the village of",
+                "x": 0.520015,
+                "y": 0.262129,
+                "w": 0.262745,
+                "h": 0.017144
+              },
+              {
+                "text": "axes from around 14,000 years ago, probably used to make canoes",
+                "x": 0.109337,
+                "y": 0.323473,
+                "w": 0.664591,
+                "h": 0.02058
+              },
+              {
+                "text": "axes made out of 9",
+                "x": 0.109337,
+                "y": 0.364098,
+                "w": 0.189883,
+                "h": 0.017175
+              },
+              {
+                "text": "...... , dating from around 11,700 years ago",
+                "x": 0.447153,
+                "y": 0.362573,
+                "w": 0.415094,
+                "h": 0.0204
+              },
+              {
+                "text": "10",
+                "x": 0.104922,
+                "y": 0.403373,
+                "w": 0.033119,
+                "h": 0.017
+              },
+              {
+                "text": "of an animal: evidence of what ancient islanders ate",
+                "x": 0.3213,
+                "y": 0.403317,
+                "w": 0.510035,
+                "h": 0.017056
+              },
+              {
+                "text": "evidence of travel between islands:",
+                "x": 0.107129,
+                "y": 0.444172,
+                "w": 0.348855,
+                "h": 0.017101
+              },
+              {
+                "text": "- obsidian: a material that is not found naturally on Obi",
+                "x": 0.129209,
+                "y": 0.484805,
+                "w": 0.55861,
+                "h": 0.018867
+              },
+              {
+                "text": "- 11",
+                "x": 0.127001,
+                "y": 0.527472,
+                "w": 0.068446,
+                "h": 0.0153
+              },
+              {
+                "text": "which resembled ones found on other islands.",
+                "x": 0.380915,
+                "y": 0.525767,
+                "w": 0.454837,
+                "h": 0.018738
+              },
+              {
+                "text": "It is thought that from 8,000 years ago, Obi islanders:",
+                "x": 0.058555,
+                "y": 0.566571,
+                "w": 0.523283,
+                "h": 0.0204
+              },
+              {
+                "text": "may have switched from hunting to fishing",
+                "x": 0.107129,
+                "y": 0.605512,
+                "w": 0.417301,
+                "h": 0.020559
+              },
+              {
+                "text": "had 12",
+                "x": 0.109247,
+                "y": 0.646218,
+                "w": 0.070836,
+                "h": 0.015805
+              },
+              {
+                "text": "as well as items made out of metal",
+                "x": 0.365459,
+                "y": 0.64473,
+                "w": 0.344439,
+                "h": 0.01704
+              },
+              {
+                "text": "probably took part in the production and sale of 13...",
+                "x": 0.109337,
+                "y": 0.683871,
+                "w": 0.514451,
+                "h": 0.022303
+              },
+              {
+                "text": "› О р. 125",
+                "x": 0.745225,
+                "y": 0.996668,
+                "w": 0.136893,
+                "h": 0.0204
+              },
+              {
+                "text": "65",
+                "x": 0.910821,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-67.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 14-17",
+                "x": 0.049723,
+                "y": 0.032776,
+                "w": 0.194299,
+                "h": 0.017137
+              },
+              {
+                "text": "Reading Passage 2 has eight paragraphs, A-H.",
+                "x": 0.047515,
+                "y": 0.07693,
+                "w": 0.490164,
+                "h": 0.020481
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.047515,
+                "y": 0.121175,
+                "w": 0.534322,
+                "h": 0.0187
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 14-17 on your answer sheet.",
+                "x": 0.049723,
+                "y": 0.163647,
+                "w": 0.682255,
+                "h": 0.020481
+              },
+              {
+                "text": "14",
+                "x": 0.047515,
+                "y": 0.207874,
+                "w": 0.030911,
+                "h": 0.0153
+              },
+              {
+                "text": "reference to the need to ensure that inhabitants of wetland regions continue to",
+                "x": 0.082764,
+                "y": 0.204281,
+                "w": 0.808303,
+                "h": 0.021537
+              },
+              {
+                "text": "benefit from them",
+                "x": 0.100506,
+                "y": 0.22814,
+                "w": 0.178843,
+                "h": 0.015434
+              },
+              {
+                "text": "15 the proportion of wetlands which have already been lost",
+                "x": 0.047515,
+                "y": 0.260386,
+                "w": 0.620432,
+                "h": 0.018887
+              },
+              {
+                "text": "16 reference to the idea that people are beginning to appreciate the value of wetlands",
+                "x": 0.047515,
+                "y": 0.292874,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "17 mention of the cultural significance of wetlands",
+                "x": 0.045307,
+                "y": 0.325173,
+                "w": 0.527699,
+                "h": 0.01888
+              },
+              {
+                "text": "Questions 18-22",
+                "x": 0.049723,
+                "y": 0.398088,
+                "w": 0.192091,
+                "h": 0.017185
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.049723,
+                "y": 0.43905,
+                "w": 0.317944,
+                "h": 0.018738
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.049723,
+                "y": 0.481572,
+                "w": 0.640304,
+                "h": 0.0187
+              },
+              {
+                "text": "Write your answers in boxes 18-22 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.522281,
+                "w": 0.591729,
+                "h": 0.018791
+              },
+              {
+                "text": "18 Peatlands which have been drained begin to release",
+                "x": 0.047515,
+                "y": 0.561472,
+                "w": 0.585105,
+                "h": 0.018766
+              },
+              {
+                "text": "storing it.",
+                "x": 0.095746,
+                "y": 0.587549,
+                "w": 0.097837,
+                "h": 0.020945
+              },
+              {
+                "text": "instead of",
+                "x": 0.81572,
+                "y": 0.560861,
+                "w": 0.1063,
+                "h": 0.018221
+              },
+              {
+                "text": "19 Once peatland areas have been cleared,",
+                "x": 0.049723,
+                "y": 0.627736,
+                "w": 0.463668,
+                "h": 0.015335
+              },
+              {
+                "text": "are more likely to occur.",
+                "x": 0.701066,
+                "y": 0.627736,
+                "w": 0.242874,
+                "h": 0.018738
+              },
+              {
+                "text": "20 Clearing peatland forests to make way for oil palm plantations destroys the",
+                "x": 0.045307,
+                "y": 0.665171,
+                "w": 0.810316,
+                "h": 0.020521
+              },
+              {
+                "text": ". of the local environment.",
+                "x": 0.270517,
+                "y": 0.693972,
+                "w": 0.260537,
+                "h": 0.022224
+              },
+              {
+                "text": "21",
+                "x": 0.045307,
+                "y": 0.73147,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "Water is drained out of peatlands through the",
+                "x": 0.093882,
+                "y": 0.731447,
+                "w": 0.46146,
+                "h": 0.018738
+              },
+              {
+                "text": "... which are created",
+                "x": 0.725354,
+                "y": 0.73317,
+                "w": 0.200923,
+                "h": 0.017015
+              },
+              {
+                "text": "by logging companies.",
+                "x": 0.09609,
+                "y": 0.758465,
+                "w": 0.231834,
+                "h": 0.018905
+              },
+              {
+                "text": "22 Draining peatlands leads to ...",
+                "x": 0.045307,
+                "y": 0.797683,
+                "w": 0.348855,
+                "h": 0.018786
+              },
+              {
+                "text": "eventually result in coastal flooding and land loss.",
+                "x": 0.09609,
+                "y": 0.824969,
+                "w": 0.505619,
+                "h": 0.018905
+              },
+              {
+                "text": "…..... : a serious problem which can",
+                "x": 0.520015,
+                "y": 0.797683,
+                "w": 0.348855,
+                "h": 0.018786
+              },
+              {
+                "text": "68",
+                "x": 0.045307,
+                "y": 0.996668,
+                "w": 0.030911,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-68.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 23-26",
+                "x": 0.045307,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.017208
+              },
+              {
+                "text": "Look at the following statements (Questions 23-26) and the list of experts below.",
+                "x": 0.043024,
+                "y": 0.0748,
+                "w": 0.814883,
+                "h": 0.021593
+              },
+              {
+                "text": "Match each statement with the correct expert, A-D.",
+                "x": 0.045307,
+                "y": 0.117775,
+                "w": 0.521075,
+                "h": 0.020597
+              },
+              {
+                "text": "Write the correct letter, A-D, in boxes 23-26 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.160161,
+                "w": 0.675631,
+                "h": 0.020514
+              },
+              {
+                "text": "23 Communities living in wetland regions must be included in discussions about the",
+                "x": 0.043099,
+                "y": 0.202774,
+                "w": 0.863306,
+                "h": 0.020572
+              },
+              {
+                "text": "future of these areas.",
+                "x": 0.093882,
+                "y": 0.226397,
+                "w": 0.220794,
+                "h": 0.013944
+              },
+              {
+                "text": "24 Official policies towards wetlands vary from one nation to the next.",
+                "x": 0.045307,
+                "y": 0.255474,
+                "w": 0.71979,
+                "h": 0.0206
+              },
+              {
+                "text": "25 People cause harm to wetlands without having any intention to do so.",
+                "x": 0.045307,
+                "y": 0.287774,
+                "w": 0.750701,
+                "h": 0.020547
+              },
+              {
+                "text": "26 Initiatives to reverse environmental damage need not be complex.",
+                "x": 0.045307,
+                "y": 0.321773,
+                "w": 0.717582,
+                "h": 0.017051
+              },
+              {
+                "text": "List of Experts",
+                "x": 0.411826,
+                "y": 0.379573,
+                "w": 0.16118,
+                "h": 0.0187
+              },
+              {
+                "text": "A",
+                "x": 0.261686,
+                "y": 0.411873,
+                "w": 0.033119,
+                "h": 0.017
+              },
+              {
+                "text": "Matthew McCartney",
+                "x": 0.297013,
+                "y": 0.411873,
+                "w": 0.218586,
+                "h": 0.018897
+              },
+              {
+                "text": "Pieter van Eijk",
+                "x": 0.31026,
+                "y": 0.444172,
+                "w": 0.15014,
+                "h": 0.018844
+              },
+              {
+                "text": "Marcel Silvius",
+                "x": 0.312468,
+                "y": 0.476472,
+                "w": 0.141308,
+                "h": 0.017048
+              },
+              {
+                "text": "D Dave Tickner",
+                "x": 0.261686,
+                "y": 0.508772,
+                "w": 0.187675,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.045307,
+                "y": 0.586971,
+                "w": 0.01104,
+                "h": 0.0136
+              },
+              {
+                "text": "→ O p.125",
+                "x": 0.749474,
+                "y": 0.996061,
+                "w": 0.152683,
+                "h": 0.026714
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-71.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.051931,
+                "y": 0.035968,
+                "w": 0.192091,
+                "h": 0.017208
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.051931,
+                "y": 0.080375,
+                "w": 0.395222,
+                "h": 0.020521
+              },
+              {
+                "text": "Write the correct letter in boxes 27-30 on your answer sheet.",
+                "x": 0.051931,
+                "y": 0.124428,
+                "w": 0.618224,
+                "h": 0.018847
+              },
+              {
+                "text": "27 What does the reader learn about the conversation in the first paragraph?",
+                "x": 0.049723,
+                "y": 0.165375,
+                "w": 0.797068,
+                "h": 0.020496
+              },
+              {
+                "text": "A The speakers are communicating in different languages.",
+                "x": 0.102714,
+                "y": 0.197636,
+                "w": 0.620432,
+                "h": 0.018738
+              },
+              {
+                "text": "B Neither of the speakers is familiar with their environment.",
+                "x": 0.100506,
+                "y": 0.218074,
+                "w": 0.629264,
+                "h": 0.018781
+              },
+              {
+                "text": "C The topic of the conversation is difficult for both speakers.",
+                "x": 0.100401,
+                "y": 0.237824,
+                "w": 0.638345,
+                "h": 0.021827
+              },
+              {
+                "text": "D Aspects of the conversation are challenging for both speakers.",
+                "x": 0.100506,
+                "y": 0.260386,
+                "w": 0.686671,
+                "h": 0.018887
+              },
+              {
+                "text": "28 What assists the electronic translator during lectures at Karlsruhe Institute",
+                "x": 0.047515,
+                "y": 0.301348,
+                "w": 0.801484,
+                "h": 0.020481
+              },
+              {
+                "text": "of Technology?",
+                "x": 0.100506,
+                "y": 0.321773,
+                "w": 0.156764,
+                "h": 0.018794
+              },
+              {
+                "text": "A the repeated content of lectures",
+                "x": 0.100506,
+                "y": 0.354073,
+                "w": 0.37535,
+                "h": 0.01874
+              },
+              {
+                "text": "B the students' reading skills",
+                "x": 0.100117,
+                "y": 0.370414,
+                "w": 0.321017,
+                "h": 0.025741
+              },
+              {
+                "text": "the languages used",
+                "x": 0.135833,
+                "y": 0.396573,
+                "w": 0.216379,
+                "h": 0.017203
+              },
+              {
+                "text": "D the lecturers' technical ability",
+                "x": 0.100267,
+                "y": 0.413344,
+                "w": 0.344977,
+                "h": 0.022489
+              },
+              {
+                "text": "29 When referring to The Hitchhiker's Guide to the Galaxy, the writer suggests that",
+                "x": 0.049723,
+                "y": 0.457772,
+                "w": 0.85889,
+                "h": 0.020496
+              },
+              {
+                "text": "A the Babel fish was considered undesirable at the time.",
+                "x": 0.100406,
+                "y": 0.489414,
+                "w": 0.600775,
+                "h": 0.019412
+              },
+              {
+                "text": "this book was not seriously intending to predict the future.",
+                "x": 0.146872,
+                "y": 0.512172,
+                "w": 0.589521,
+                "h": 0.018824
+              },
+              {
+                "text": "C artificial speech translation was not a surprising development.",
+                "x": 0.100506,
+                "y": 0.532572,
+                "w": 0.673423,
+                "h": 0.018905
+              },
+              {
+                "text": "D some speech translation techniques are better than others.",
+                "x": 0.100506,
+                "y": 0.552784,
+                "w": 0.649136,
+                "h": 0.018887
+              },
+              {
+                "text": "30 What does the writer say about sharing earpieces?",
+                "x": 0.049723,
+                "y": 0.593746,
+                "w": 0.567442,
+                "h": 0.020481
+              },
+              {
+                "text": "A Itis something people will get used to doing.",
+                "x": 0.098298,
+                "y": 0.625992,
+                "w": 0.503411,
+                "h": 0.020481
+              },
+              {
+                "text": "B The reluctance to do this is understandable.",
+                "x": 0.10038,
+                "y": 0.646224,
+                "w": 0.497028,
+                "h": 0.022663
+              },
+              {
+                "text": "C The equipment will be unnecessary in the future.",
+                "x": 0.100506,
+                "y": 0.666871,
+                "w": 0.545362,
+                "h": 0.020565
+              },
+              {
+                "text": "D It is something few people need to worry about.",
+                "x": 0.098298,
+                "y": 0.68897,
+                "w": 0.532115,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-72.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 31-34",
+                "x": 0.038683,
+                "y": 0.035968,
+                "w": 0.189883,
+                "h": 0.017208
+              },
+              {
+                "text": "Complete each sentence with the correct ending, A-F, below.",
+                "x": 0.038683,
+                "y": 0.07693,
+                "w": 0.618224,
+                "h": 0.018745
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 31-34 on your answer sheet.",
+                "x": 0.040891,
+                "y": 0.119475,
+                "w": 0.673423,
+                "h": 0.0204
+              },
+              {
+                "text": "31 Speech translation methods are developing fast in Japan",
+                "x": 0.038683,
+                "y": 0.161904,
+                "w": 0.624848,
+                "h": 0.018771
+              },
+              {
+                "text": "32 TV interviews that use translation voiceover methods are successful",
+                "x": 0.040891,
+                "y": 0.19415,
+                "w": 0.733037,
+                "h": 0.015424
+              },
+              {
+                "text": "33 Future translation systems should address people appropriately",
+                "x": 0.038683,
+                "y": 0.226397,
+                "w": 0.691087,
+                "h": 0.020577
+              },
+              {
+                "text": "34 Users may be able to maintain their local customs",
+                "x": 0.038683,
+                "y": 0.258874,
+                "w": 0.551986,
+                "h": 0.0204
+              },
+              {
+                "text": "A but there are concerns about this.",
+                "x": 0.164536,
+                "y": 0.3166,
+                "w": 0.393014,
+                "h": 0.018773
+              },
+              {
+                "text": "as systems do not need to conform to standard practices.",
+                "x": 0.213111,
+                "y": 0.348847,
+                "w": 0.580689,
+                "h": 0.020527
+              },
+              {
+                "text": "C",
+                "x": 0.164536,
+                "y": 0.382973,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "but they are far from perfect.",
+                "x": 0.213111,
+                "y": 0.381093,
+                "w": 0.287033,
+                "h": 0.02058
+              },
+              {
+                "text": "D despite the noise issues.",
+                "x": 0.166744,
+                "y": 0.415083,
+                "w": 0.30028,
+                "h": 0.01719
+              },
+              {
+                "text": "because translation is immediate.",
+                "x": 0.204279,
+                "y": 0.447572,
+                "w": 0.351063,
+                "h": 0.017187
+              },
+              {
+                "text": "F",
+                "x": 0.162328,
+                "y": 0.479872,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "and have an awareness of good manners.",
+                "x": 0.206277,
+                "y": 0.474095,
+                "w": 0.437745,
+                "h": 0.02638
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-3/page-73.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 35-40",
+                "x": 0.056347,
+                "y": 0.035968,
+                "w": 0.192091,
+                "h": 0.017208
+              },
+              {
+                "text": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+                "x": 0.056347,
+                "y": 0.078673,
+                "w": 0.863306,
+                "h": 0.018738
+              },
+              {
+                "text": "In boxes 35-40 on your answer sheet, write",
+                "x": 0.054139,
+                "y": 0.119475,
+                "w": 0.446005,
+                "h": 0.0204
+              },
+              {
+                "text": "if the statement agrees with the views of the writer",
+                "x": 0.281557,
+                "y": 0.161904,
+                "w": 0.512243,
+                "h": 0.018771
+              },
+              {
+                "text": "if the statement contradicts the views of the writer",
+                "x": 0.281557,
+                "y": 0.178899,
+                "w": 0.510035,
+                "h": 0.022224
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.131417,
+                "y": 0.197636,
+                "w": 0.713166,
+                "h": 0.023967
+              },
+              {
+                "text": "35 Language translation systems will be seen as very useful throughout the academic",
+                "x": 0.054139,
+                "y": 0.243392,
+                "w": 0.887594,
+                "h": 0.020582
+              },
+              {
+                "text": "and professional worlds.",
+                "x": 0.104922,
+                "y": 0.265616,
+                "w": 0.249498,
+                "h": 0.018758
+              },
+              {
+                "text": "36 The overall value of automated translation to family life is yet to be shown.",
+                "x": 0.054139,
+                "y": 0.306474,
+                "w": 0.803692,
+                "h": 0.018842
+              },
+              {
+                "text": "37 Automated translation could make life more difficult for immigrant families.",
+                "x": 0.054139,
+                "y": 0.347103,
+                "w": 0.801484,
+                "h": 0.02057
+              },
+              {
+                "text": "38 Visual aspects of language translation are being considered by scientists.",
+                "x": 0.054139,
+                "y": 0.388065,
+                "w": 0.797068,
+                "h": 0.020481
+              },
+              {
+                "text": "International scientists have found English easier to translate into other languages",
+                "x": 0.080634,
+                "y": 0.430573,
+                "w": 0.854474,
+                "h": 0.0187
+              },
+              {
+                "text": "than Latin.",
+                "x": 0.102555,
+                "y": 0.452024,
+                "w": 0.112923,
+                "h": 0.018296
+              },
+              {
+                "text": "40 As far as language is concerned, there is a difference between people's social and",
+                "x": 0.054139,
+                "y": 0.491772,
+                "w": 0.885386,
+                "h": 0.020486
+              },
+              {
+                "text": "practical needs.",
+                "x": 0.107129,
+                "y": 0.513872,
+                "w": 0.163388,
+                "h": 0.017124
+              },
+              {
+                "text": "74→ O p. 125",
+                "x": 0.051931,
+                "y": 0.999878,
+                "w": 0.216379,
+                "h": 0.02229
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 38,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 40,
+              "text": ""
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "harbour|harbor",
+      "bridge",
+      "3.30|three thirty|1/2|half|3|three",
+      "Rose",
+      "sign",
+      "purple",
+      "samphire",
+      "melon",
+      "coconut",
+      "strawberry",
+      "C",
+      "D",
+      "F",
+      "G",
+      "B",
+      "H",
+      "D",
+      "E",
+      "B",
+      "C",
+      "C",
+      "B",
+      "A",
+      "A",
+      "C",
+      "C",
+      "H",
+      "E",
+      "B",
+      "F",
+      "clothing",
+      "mouths",
+      "salt",
+      "toothpaste",
+      "fertilisers|fertilizers",
+      "nutrients",
+      "growth",
+      "weight",
+      "acid",
+      "society"
+    ],
+    "reading": [
+      "FALSE",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "TRUE",
+      "NOT GIVEN",
+      "FALSE",
+      "caves",
+      "stone",
+      "bones",
+      "beads",
+      "pottery",
+      "spices",
+      "G",
+      "A",
+      "H",
+      "B",
+      "carbon",
+      "fires",
+      "biodiversity",
+      "ditches",
+      "subsidence",
+      "A",
+      "C",
+      "D",
+      "B",
+      "D",
+      "A",
+      "C",
+      "B",
+      "C",
+      "E",
+      "F",
+      "B",
+      "NO",
+      "YES",
+      "NO",
+      "NOT GIVEN",
+      "NOT GIVEN",
+      "YES"
+    ]
+  },
+  "completionOptions": {}
+}

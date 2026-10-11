@@ -163,3 +163,128 @@ test('invalid, duplicated, distant and excessive batch bookings cause no writes 
   }
   assert.equal(effects, 0);
 });
+
+test('production session cookies are host-bound, secure, HttpOnly and strict', () => {
+ const auth=evaluate('src/lib/ielts/auth.ts');const sets=[],deletes=[];
+ const cookies={set:(...args)=>sets.push(args),delete:(...args)=>deletes.push(args)};
+ auth.setAuthSession(cookies,{access_token:'access-test',refresh_token:'refresh-test',expires_in:3600});
+ assert.deepEqual(sets.map(([name])=>name),['__Host-ielts_access','__Host-ielts_refresh']);
+ for(const [, , options] of sets){assert.equal(options.secure,true);assert.equal(options.httpOnly,true);assert.equal(options.sameSite,'strict');assert.equal(options.path,'/');assert.equal(options.domain,undefined);}
+ assert.deepEqual(deletes.map(([name])=>name),['ielts_access','ielts_refresh']);
+});
+
+test('logout revokes only the current refresh session, refreshing an expired access token if needed',async()=>{
+ for(const expired of [false,true]){
+  const calls=[];
+  const auth=evaluate('src/lib/ielts/auth.ts',{
+   createPublicClient:()=>({auth:{getUser:async()=>({data:{user:expired?null:{id:'u'}}}),refreshSession:async input=>{calls.push(input.refresh_token);return {data:{session:{access_token:'new-test'}},error:null};}}}),
+   createServiceClient:()=>({auth:{admin:{signOut:async(...args)=>{calls.push(args);return {error:null};}}}}),
+  });
+  await auth.revokeAuthSession({get:name=>({value:name.includes('refresh')?'refresh-test':'header.payload.signature'})});
+  assert.equal(calls.length,expired?2:1);assert.deepEqual(Array.from(calls.at(-1)),[expired?'new-test':'header.payload.signature','local']);
+ }
+});
+
+test('logout failure clears browser auth and PKCE cookies but reports failure; CSRF does neither',async()=>{
+ for(const forbidden of [false,true]){
+  let clears=0,revocations=0;
+  const handler=evaluate('src/pages/api/ielts/auth/logout.ts',{
+   sameOrigin:()=>!forbidden,revokeAuthSession:async()=>{revocations++;throw Error('provider unavailable');},
+   clearAuthSession:()=>clears++,clearOAuthPending:()=>clears++,json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+  });
+  assert.equal((await handler.POST({request:{},cookies:{}})).status,forbidden?403:503);
+  assert.equal(clears,forbidden?0:2);assert.equal(revocations,forbidden?0:1);
+ }
+});
+
+test('logout cannot report successful revocation when refresh produces no session',async()=>{
+ const auth=evaluate('src/lib/ielts/auth.ts',{
+  createPublicClient:()=>({auth:{getUser:async()=>({data:{user:null}}),refreshSession:async()=>({data:{session:null},error:null})}}),
+ });
+ await assert.rejects(auth.revokeAuthSession({get:name=>({value:name.includes('refresh')?'refresh-test':'header.payload.signature'})}),/logout_unavailable/);
+});
+
+test('a stale failed OTP cannot increment a replacement challenge or overwrite a newer attempt count',async()=>{
+ const filters=[];
+ const challenge={code_hash:'old-challenge',expires_at:new Date(Date.now()+60000).toISOString(),attempts:2};
+ const query={select(){return this;},eq(...args){filters.push(args);return this;},maybeSingle:async()=>({data:challenge,error:null}),update(){return this;},then(resolve){resolve({error:null});}};
+ const handler=evaluate('src/pages/api/ielts/auth/verify-code.ts',{
+  sameOrigin:()=>true,readJson:async()=>({email:'student@example.test',code:'123456',password:'Password123',legalConsent:true}),normalizeEmail:x=>x,
+  claimRateLimit:async()=>true,sha256:async()=> 'email-hash',verificationHash:async()=> 'different-challenge',constantTimeEqual:(a,b)=>a===b,ieltsConfig:()=>({secretKey:'test-secret'}),
+  createServiceClient:()=>({from:()=>query}),json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+ });
+ assert.equal((await handler.POST({request:{},cookies:{}})).status,401);
+ assert.deepEqual(filters,[['email_hash','email-hash'],['email_hash','email-hash'],['code_hash','old-challenge'],['attempts',2]]);
+});
+
+test('failed OTP delivery deletes only its exact challenge, never a later replacement',async()=>{
+ const filters=[];
+ const query={delete(){return this;},lt(){return Promise.resolve({error:null});},eq(...args){filters.push(args);return this;},upsert:async()=>({error:null}),then(resolve){resolve({error:null});}};
+ const handler=evaluate('src/pages/api/ielts/auth/request-code.ts',{
+  sameOrigin:()=>true,readJson:async()=>({email:'student@example.test',legalConsent:true}),normalizeEmail:x=>x,claimRateLimit:async()=>true,
+  createSixDigitCode:()=> '123456',sha256:async()=> 'email-hash',verificationHash:async()=> 'own-challenge',ieltsConfig:()=>({secretKey:'test-secret'}),sendLoginCode:async()=>{throw Error('mail offline');},
+  createServiceClient:()=>({from:()=>query}),json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+ });
+ assert.equal((await handler.POST({request:{}})).status,503);assert.deepEqual(filters,[['email_hash','email-hash'],['code_hash','own-challenge']]);
+});
+
+test('availability discloses only occupied times inside the current booking window',async()=>{
+ const filters=[];let queries=0;
+ const query={select(){return this;},gte(...args){filters.push(args);return this;},lte(...args){filters.push(args);return this;},lt(){return this;},neq(){return this;},in(){return Promise.resolve({data:[],error:null});}};
+ const handler=evaluate('src/pages/api/ielts/availability.ts',{
+  claimRateLimit:async()=>true,bookingWindow:()=>({first:'2026-10-11',last:'2026-12-11'}),
+  createServiceClient:()=>({from:()=>{queries++;return query;}}),json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+ });
+ for(const month of ['2025-10','2026-09','2027-01','2026-13','2026-10&scope=admin']){
+  const response=await handler.GET({request:new Request(`https://www.lenteyyy.com/api/ielts/availability?month=${encodeURIComponent(month)}`)});assert.equal(response.status,400);
+ }
+ assert.equal(queries,0);
+ assert.equal((await handler.GET({request:new Request('https://www.lenteyyy.com/api/ielts/availability?month=2026-10')})).status,200);
+ assert.deepEqual(filters,[['lesson_date','2026-10-01'],['lesson_date','2026-10-11'],['lesson_date','2026-12-11']]);
+});
+
+test('recreated email accounts cannot cancel records owned by an earlier user ID',async()=>{
+ let writes=0;
+ const query={select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{user_id:'old-id',email:'same@example.test',status:'pending'},error:null}),update(){writes++;return this;}};
+ const handler=evaluate('src/pages/api/ielts/bookings.ts',{
+  sameOrigin:()=>true,getAuthContext:async()=>({user:{id:'new-id'},email:'same@example.test',role:'student'}),claimRateLimit:async()=>true,
+  readJson:async()=>({id:'11111111-1111-4111-8111-111111111111',action:'cancel'}),createServiceClient:()=>({from:()=>query}),json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+ });
+ assert.equal((await handler.PATCH({request:{},cookies:{}})).status,403);assert.equal(writes,0);
+});
+
+test('failed upload cleanup never deletes an existing published file or a file whose references are unknown',async()=>{
+ for(const unavailable of [false,true]){
+  let removed=0;
+  const query={select(){return this;},eq(){return this;},limit:async()=>({data:unavailable?null:[{id:'published'}],error:unavailable?Error('offline'):null})};
+  const handler=evaluate('src/pages/api/ielts/materials/index.ts',{
+   sameOrigin:()=>true,getAuthContext:async()=>({role:'admin',user:{id:'owner'}}),claimRateLimit:async()=>true,
+   readJson:async()=>({storagePath:'2026-10-11/11111111-1111-4111-8111-111111111111/file.pdf'}),cleanText,
+   createServiceClient:()=>({from:()=>query,storage:{from:()=>({remove:async()=>{removed++;}})}}),json:(body,status=200)=>new Response(JSON.stringify(body),{status}),
+  });
+  assert.equal((await handler.POST({request:{},cookies:{}})).status,400);assert.equal(removed,0);
+ }
+});
+
+test('rate-limit keys cannot reset at a wall-clock boundary and DB failures fail closed',async()=>{
+ const keys=[];let failure=false;let time=59000;
+ const security=evaluate('src/lib/ielts/security.ts',{
+  Date:class extends Date{static now(){return time;}},rateLimitAddress:()=> '192.0.2.1',
+  createServiceClient:()=>({rpc:async(_name,args)=>{keys.push(args.p_key_hash);return {data:!failure,error:failure?Error('offline'):null};}}),
+ });
+ await security.claimRateLimit({},'otp-email-cooldown','same@example.test',1,60,'identity');time=61000;
+ await security.claimRateLimit({},'otp-email-cooldown','same@example.test',1,60,'identity');assert.equal(keys[0],keys[1]);
+ failure=true;await assert.rejects(security.claimRateLimit({},'otp-ip','',10,3600,'request'),/rate_limit_unavailable/);
+});
+
+test('JSON media type lookalikes cannot bypass the content type check',async()=>{
+ for(const type of ['application/json-evil','application/jsonp','application/json+xml'])await assert.rejects(readJson(new Request('https://www.lenteyyy.com',{method:'POST',headers:{'content-type':type},body:'{}'})),/invalid_content_type/);
+ assert.deepEqual(await readJson(new Request('https://www.lenteyyy.com',{method:'POST',headers:{'content-type':'Application/JSON; charset=utf-8'},body:'{}'})),{});
+});
+
+test('IELTS CSP blocks executable inline scripts and prevents framing without breaking inert exam JSON',()=>{
+ const config=JSON.parse(source('vercel.json'));const headers=config.headers.find(h=>h.source==='/ielts(.*)').headers;
+ const policy=headers.find(h=>h.key==='Content-Security-Policy').value;
+ assert.match(policy,/script-src 'self' 'sha256-/);assert.doesNotMatch(policy,/script-src[^;]*(?:unsafe-inline|unsafe-eval)/);assert.match(policy,/frame-ancestors 'none'/);assert.match(policy,/object-src 'none'/);
+ assert.match(source('src/layouts/IeltsLayout.astro'),/<script is:inline src="\/ielts\/theme\.js"><\/script>/);assert.match(source('src/pages/ielts/entry-test.astro'),/Astro\.cookies\.has\(cookieNames\.access\)/);
+});

@@ -1,4 +1,44 @@
 {
+  "18-1": {
+    "seconds": 452.124,
+    "sha256": "86bbf1a0df627958d7e09ef5b0917fa8aec0d5278e6c056807690cdc8e28a24e",
+    "text": "That is the end of part 4. You now have one minute to check your answers to part 4."
+  },
+  "18-2": {
+    "seconds": 350.484,
+    "sha256": "26f1d5ac456adc6e131e50884eb9b8d7dec799d59a92060ed65b90af859526ec",
+    "text": "That is the end of part four. You now have one minute to check your answers to part four."
+  },
+  "18-3": {
+    "seconds": 384.243,
+    "sha256": "4ce393cfa9230e509ead622ce583d8fefef74f59aaecbdce7806e25f8404250c",
+    "text": "That is the end of part 4. You now have one minute to check your answers to part 4."
+  },
+  "18-4": {
+    "seconds": 421.958,
+    "sha256": "dd775ed9c357fc152b0d300488a88eb2a7be95fd4e5b39b2c9cd5cabcabd4f83",
+    "text": "That is the end of part four. You now have one minute to check your answers to part four."
+  },
+  "19-1": {
+    "seconds": 377.883,
+    "sha256": "f994e83c01c7717e48fc26ca968a9eb5be8451ef0940b220ac95cac21423879b",
+    "text": "That is the end of part 4. You now have one minute to check your answers to part 4."
+  },
+  "19-2": {
+    "seconds": 418.544,
+    "sha256": "cd5da403eb625b5b4ac8639f6beeb75c76bbb8af20c54f6c3289900d19ed1fe4",
+    "text": "That is the end of part four. You now have one minute to check your answers to part four."
+  },
+  "19-3": {
+    "seconds": 392.232,
+    "sha256": "47431faf0f52c6eef434c490fabc51c9125de17cff1eced01546ac4c8c51f760",
+    "text": "That is the end of part four. You now have one minute to check your answers to part four."
+  },
+  "19-4": {
+    "seconds": 512.087,
+    "sha256": "628bb2fffbbc9c7a545655f19ed1e9c425fa982f32ab6c1a0a9956e131c2228a",
+    "text": "That is the end of part 4. You now have one minute to check your answers to part 4."
+  },
   "20-1": {
     "seconds": 396.505,
     "sha256": "fa48fa345dedaf67e13410a732de00419d73cde91f65215b202914b1bf4112f4",
@@ -38,5 +78,45 @@
     "seconds": 369.877,
     "sha256": "5cad2091fb50ab4bbf628e9456f759a9c19fada05e2ee148d0c5ad2dfd93081f",
     "text": "That is the end of part 4. You now have one minute to check your answers to part 4."
+  },
+  "16-1": {
+    "seconds": 430.763,
+    "sha256": "d0bf5304a995f4ebdbbe10216aa5d9013a68044651848eee07d25b38f1a8cc07",
+    "text": "You now have one minute to check your answers to part 4."
+  },
+  "16-2": {
+    "seconds": 451.684,
+    "sha256": "0ab1c9fcee87088c1895afa6fad8a09486b31004244b0900d621a235234e263c",
+    "text": "You now have one minute to check your answers to part 4."
+  },
+  "16-3": {
+    "seconds": 440.467,
+    "sha256": "ab3385acabd2ed789c390b7470d0d17634f84624cbacbfd8bbd9c15818b4b91b",
+    "text": "You now have one minute to check your answers to part 4."
+  },
+  "16-4": {
+    "seconds": 479.346,
+    "sha256": "4e2e4a89fb6d6adc5781345d11c2e24af57d1131e0e16380ea6ff1ce7d31e59f",
+    "text": "You now have one minute to check your answers to part four."
+  },
+  "17-1": {
+    "seconds": 381.134,
+    "sha256": "2d2619bf3a816eed840b4015980f52185f14080a30782473be6b09292dfb9f72",
+    "text": "You now have one minute to check your answers to part four."
+  },
+  "17-2": {
+    "seconds": 359.816,
+    "sha256": "6cddcdb202e0949247a3a1e1f682e11965d3d15a80b180314e3dfd3d04b11fa3",
+    "text": "You now have one minute to check your answers to part four."
+  },
+  "17-3": {
+    "seconds": 412.245,
+    "sha256": "2959572376f1550cbd462850e613fa3ebc2477bc34f4d0a883f941e914b020ff",
+    "text": "You now have one minute to check your answers to part 4."
+  },
+  "17-4": {
+    "seconds": 444.868,
+    "sha256": "bb26abc11cc83941b6a829be581c755a5f5d3fd03b989e352096aae1cfc8fd6b",
+    "text": "You now have one minute to check your answers to part four."
   }
 }

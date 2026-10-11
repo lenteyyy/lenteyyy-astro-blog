@@ -49,7 +49,8 @@ test('all social marks crossfade to brand colours with keyboard and reduced-moti
 });
 
 test('search finds sections and entrance test without sending queries elsewhere', () => {
-  assert.equal(searchStudy('').length, 7);
+  assert.equal(searchStudy('').length, 10);
+  assert.ok(searchStudy('打字').some(item => item.href === '/ielts/typing'));
   assert.ok(searchStudy('分数').some(item => item.href === '/ielts/score-calculator'));
   assert.ok(searchStudy('入学').some(item => item.href === '/ielts/entry-test'));
   assert.ok(searchStudy('预约 时间').some(item => item.section === 'booking'));
@@ -80,9 +81,12 @@ test('management requires the exact verified owner identity, never client roles'
   assert.match(management, /auth\.role !== 'admin'/);
   assert.match(management, /private, no-store/);
 });
-test('other contains entrance test, calculator and dictation, with management inside account menu', () => {
+test('other contains entrance test, calculator, dictation, typing and wordbook, with management inside account menu', () => {
   const other = home.slice(home.indexOf('<section class="module notes-module"'), home.indexOf('<dialog class="search-dialog"'));
-  assert.equal((other.match(/<article/g) || []).length, 3);
+  assert.equal((other.match(/<article/g) || []).length, 5);
+  assert.match(other, /href="\/ielts\/wordbook"/);
+  assert.match(home.slice(0,home.indexOf('<section class="module notes-module"')), /href="\/ielts\/mistakes"/);
+  assert.match(other, /href="\/ielts\/typing"/);
   assert.match(other, /href="\/ielts\/dictation"/);
   assert.match(other, /入学基础测试/);
   assert.match(other, /href="\/ielts\/score-calculator"/);

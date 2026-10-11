@@ -6,10 +6,10 @@ export const OAUTH_CALLBACK_PATH = '/api/ielts/auth/google/callback';
 export function safeIeltsNext(value: unknown): string {
 	if (typeof value !== 'string' || value.length > 250) return '/ielts';
 	// Exact paths only: never accept a host, encoded path, nested redirect or backslash.
-	if (/^\/ielts(?:\/management|\/entry-test|\/mock\/(?:c20-)?test-[1234])?(?:#[a-z-]+)?$/.test(value)) return value;
+	if (/^\/ielts(?:\/management|\/entry-test|\/mistakes|\/wordbook|\/mock\/(?:c(?:16|17|18|19|20)-)?test-[1234])?(?:#[a-z-]+)?$/.test(value)) return value;
 	// Preserve only the existing test subject selector, never arbitrary query parameters.
 	if (/^\/ielts\/(?:entry-test|mock\/test-[1234])\?subject=(?:listening|reading|writing)(?:#[a-z-]+)?$/.test(value)) return value;
-	if (/^\/ielts\/mock\/(?:c20-)?test-[1234]\?[a-zA-Z0-9%,=&-]+$/.test(value)) {
+	if (/^\/ielts\/mock\/(?:c(?:16|17|18|19|20)-)?test-[1234]\?[a-zA-Z0-9%,=&-]+$/.test(value)) {
 		const params = new URLSearchParams(value.split('?')[1]);
 		if ([...params.keys()].every(key => ['subject','mode','subjects'].includes(key)) && readWorkflow(params)) return value;
 	}

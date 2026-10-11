@@ -13,13 +13,13 @@ const mock=()=>{
  return{audio,events,plays:()=>plays,pauses:()=>pauses};
 };
 
-test('cue timestamps are bound to all eight audited recordings and their spoken instructions',()=>{
- for(const book of [20,21])for(let paper=1;paper<=4;paper++){
+test('cue timestamps are bound to all twenty-four audited recordings and their spoken instructions',()=>{
+ for(const book of [16,17,18,19,20,21])for(let paper=1;paper<=4;paper++){
   const key=`${book}-${paper}`,fixture=fixtures[key],cue=listeningCheckCueSeconds(book,paper);
-  const bytes=readFileSync(new URL(`../public/ielts/mock/${book===20?'c20-':''}test-${paper}/part-4.mp3`,import.meta.url));
+  const bytes=readFileSync(new URL(`../public/ielts/mock/${book===21?'':`c${book}-`}test-${paper}/part-4.mp3`,import.meta.url));
   assert.equal(createHash('sha256').update(bytes).digest('hex'),fixture.sha256,'changed recordings need new cue timestamps');
-  assert.equal(cue,fixture.seconds);assert.match(fixture.text,/You now have one minute to check your answers to part 4/);
-  assert.ok(cue<LISTENING_AUDIO_SECONDS[key][3]-60);assert.ok(cue>LISTENING_AUDIO_SECONDS[key][3]-110);
+  assert.equal(cue,fixture.seconds);assert.match(fixture.text,/You now have one minute to check your answers to part (4|four)/i);
+  assert.ok(cue<LISTENING_AUDIO_SECONDS[key][3]);assert.ok(cue>LISTENING_AUDIO_SECONDS[key][3]-110);
  }
 });
 

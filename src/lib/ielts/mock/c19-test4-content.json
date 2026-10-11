@@ -1,0 +1,5361 @@
+{
+  "source": {
+    "book": 19,
+    "test": 4,
+    "questionPages": {
+      "l": [
+        [
+          77
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          82
+        ]
+      ],
+      "r": [
+        [
+          83,
+          84
+        ],
+        [
+          87,
+          88
+        ],
+        [
+          91,
+          92
+        ]
+      ],
+      "q": [
+        [
+          85,
+          86
+        ],
+        [
+          89,
+          90
+        ],
+        [
+          93,
+          94
+        ]
+      ],
+      "w": [
+        95,
+        96
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "5b460d32f81cba72576e097dba82d8817717f8ae6a261b428916b49dcbdb86c2"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-4/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-4/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-4/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c19-test-4/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-4/page-83.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.427251,
+                "y": 0.030947,
+                "w": 0.143578,
+                "h": 0.020658
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.049723,
+                "y": 0.104175,
+                "w": 0.328984,
+                "h": 0.017203
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.049723,
+                "y": 0.146652,
+                "w": 0.874346,
+                "h": 0.020481
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.049723,
+                "y": 0.168775,
+                "w": 0.181051,
+                "h": 0.017096
+              },
+              {
+                "text": "The impact of climate change on butterflies in Britain",
+                "x": 0.069594,
+                "y": 0.214631,
+                "w": 0.854474,
+                "h": 0.027453
+              },
+              {
+                "text": "According to conservationists, populations of around two thirds of butterfly species",
+                "x": 0.047515,
+                "y": 0.262129,
+                "w": 0.834603,
+                "h": 0.018844
+              },
+              {
+                "text": "have declined in Britain over the past 40 years. If this trend continues, it might have",
+                "x": 0.047515,
+                "y": 0.28261,
+                "w": 0.845643,
+                "h": 0.018763
+              },
+              {
+                "text": "unpredictable knock-on effects for other species in the ecosystem. Butterfly eggs",
+                "x": 0.047515,
+                "y": 0.303074,
+                "w": 0.819147,
+                "h": 0.018756
+              },
+              {
+                "text": "develop into caterpillars and these insects, which are the second stage in a new",
+                "x": 0.047515,
+                "y": 0.323473,
+                "w": 0.812523,
+                "h": 0.02058
+              },
+              {
+                "text": "butterfly's lifecycle, consume vast quantities of plant material, and in turn act as prey",
+                "x": 0.047515,
+                "y": 0.34536,
+                "w": 0.854474,
+                "h": 0.018913
+              },
+              {
+                "text": "for birds as well as bats and other small mammals. Only by arming themselves with an",
+                "x": 0.045307,
+                "y": 0.365841,
+                "w": 0.878762,
+                "h": 0.018832
+              },
+              {
+                "text": "understanding of why butterfly numbers are down can conservationists hope to halt or",
+                "x": 0.047445,
+                "y": 0.385737,
+                "w": 0.872263,
+                "h": 0.021378
+              },
+              {
+                "text": "reverse the decline.",
+                "x": 0.049723,
+                "y": 0.408473,
+                "w": 0.203131,
+                "h": 0.015325
+              },
+              {
+                "text": "Butterflies prefer outdoor conditions to be \"just right', which means neither too hot nor",
+                "x": 0.047515,
+                "y": 0.449072,
+                "w": 0.863306,
+                "h": 0.0189
+              },
+              {
+                "text": "too cold. Under the conditions of climate change, the temperature at any given time in",
+                "x": 0.045307,
+                "y": 0.469553,
+                "w": 0.872138,
+                "h": 0.020519
+              },
+              {
+                "text": "summer is generally getting warmer, leaving butterflies with the challenge of how to deal",
+                "x": 0.047515,
+                "y": 0.490034,
+                "w": 0.894217,
+                "h": 0.020481
+              },
+              {
+                "text": "with this. One of the main ways in which species are ensuring conditions suit them is",
+                "x": 0.045307,
+                "y": 0.510472,
+                "w": 0.85889,
+                "h": 0.020524
+              },
+              {
+                "text": "by changing the time of year at which they are active and reproduce. Scientists refer",
+                "x": 0.047515,
+                "y": 0.532572,
+                "w": 0.856682,
+                "h": 0.018905
+              },
+              {
+                "text": "to the timing of such lifecycle events as 'phenology', so when an animal or plant starts",
+                "x": 0.045307,
+                "y": 0.551272,
+                "w": 0.872138,
+                "h": 0.0204
+              },
+              {
+                "text": "to do something earlier in the year than it usually does, it is said to be 'advancing",
+                "x": 0.045307,
+                "y": 0.573265,
+                "w": 0.821355,
+                "h": 0.020506
+              },
+              {
+                "text": "its phenology'.",
+                "x": 0.045307,
+                "y": 0.595471,
+                "w": 0.152348,
+                "h": 0.018756
+              },
+              {
+                "text": "These advances have been observed already in a wide range of butterflies - indeed,",
+                "x": 0.049723,
+                "y": 0.636271,
+                "w": 0.856682,
+                "h": 0.0187
+              },
+              {
+                "text": "most species are advancing their phenology to some extent. In Britain, as the average",
+                "x": 0.047515,
+                "y": 0.656496,
+                "w": 0.872138,
+                "h": 0.020575
+              },
+              {
+                "text": "spring temperature has increased by roughly 0.5 °C over the past 20 years, species",
+                "x": 0.047515,
+                "y": 0.676977,
+                "w": 0.850058,
+                "h": 0.020494
+              },
+              {
+                "text": "have advanced by between three days and a week on average, to keep in line with",
+                "x": 0.047515,
+                "y": 0.69917,
+                "w": 0.841227,
+                "h": 0.018768
+              },
+              {
+                "text": "cooler temperatures. Is this a sign that butterflies are well equipped to cope with climate",
+                "x": 0.047515,
+                "y": 0.71957,
+                "w": 0.889801,
+                "h": 0.018849
+              },
+              {
+                "text": "change, and readily adjust to new temperatures? Or are these populations under",
+                "x": 0.047515,
+                "y": 0.73997,
+                "w": 0.821355,
+                "h": 0.0204
+              },
+              {
+                "text": "stress, being dragged along unwillingly by unnaturally fast changes? The answer is still",
+                "x": 0.047515,
+                "y": 0.761951,
+                "w": 0.88097,
+                "h": 0.018819
+              },
+              {
+                "text": "unknown, but a new study is seeking to answer these questions.",
+                "x": 0.049723,
+                "y": 0.782432,
+                "w": 0.655759,
+                "h": 0.017038
+              },
+              {
+                "text": "First, the researchers pulled together data from millions of records that had been",
+                "x": 0.047515,
+                "y": 0.823269,
+                "w": 0.819147,
+                "h": 0.020605
+              },
+              {
+                "text": "submitted by butterfly enthusiasts - people who spend their free time observing the",
+                "x": 0.047515,
+                "y": 0.843669,
+                "w": 0.843435,
+                "h": 0.0187
+              },
+              {
+                "text": "activities of different species. This provided information on 130 species of butterflies in",
+                "x": 0.047468,
+                "y": 0.864028,
+                "w": 0.872234,
+                "h": 0.021179
+              },
+              {
+                "text": "Great Britain every year for a 20-year period. They then estimated the abundance and",
+                "x": 0.047515,
+                "y": 0.886144,
+                "w": 0.872138,
+                "h": 0.018738
+              },
+              {
+                "text": "distribution of each species across this time, along with how far north in the country they",
+                "x": 0.047515,
+                "y": 0.906569,
+                "w": 0.892009,
+                "h": 0.018794
+              },
+              {
+                "text": "had moved. The data also, crucially, allowed researchers to estimate subtle changes in",
+                "x": 0.047515,
+                "y": 0.926969,
+                "w": 0.88097,
+                "h": 0.0204
+              },
+              {
+                "text": "what time of the year each species was changing into an adult butterfly.",
+                "x": 0.047515,
+                "y": 0.948894,
+                "w": 0.726414,
+                "h": 0.018875
+              },
+              {
+                "text": "84",
+                "x": 0.047515,
+                "y": 0.998368,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-4/page-84.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Analysing the trends in each variable, the researchers discovered that species with",
+                "x": 0.043099,
+                "y": 0.035968,
+                "w": 0.836811,
+                "h": 0.018908
+              },
+              {
+                "text": "more flexible lifecycles were more likely to be able to benefit from an earlier emergence",
+                "x": 0.043099,
+                "y": 0.056449,
+                "w": 0.88097,
+                "h": 0.018827
+              },
+              {
+                "text": "driven by climate change. Some species are able to go from caterpillar to butterfly twice",
+                "x": 0.043099,
+                "y": 0.07693,
+                "w": 0.883178,
+                "h": 0.020481
+              },
+              {
+                "text": "or more per year, so that the individual butterflies you see flying in the spring are the",
+                "x": 0.043099,
+                "y": 0.099075,
+                "w": 0.847851,
+                "h": 0.018816
+              },
+              {
+                "text": "grandchildren or great-grandchildren of the individuals seen a year previously.",
+                "x": 0.043099,
+                "y": 0.119475,
+                "w": 0.786028,
+                "h": 0.018897
+              },
+              {
+                "text": "Among these species, researchers observed that those which have been advancing",
+                "x": 0.043099,
+                "y": 0.160161,
+                "w": 0.847851,
+                "h": 0.020514
+              },
+              {
+                "text": "their phenology the most over the 20-year study period also had the most positive trends",
+                "x": 0.040846,
+                "y": 0.180632,
+                "w": 0.896521,
+                "h": 0.020727
+              },
+              {
+                "text": "in abundance, distribution and northwards extent. For these species, such as Britain's",
+                "x": 0.038683,
+                "y": 0.202774,
+                "w": 0.86993,
+                "h": 0.018829
+              },
+              {
+                "text": "tiniest butterfly, the dainty Small Blue, whose colonies are up to a hundred strong, some",
+                "x": 0.040891,
+                "y": 0.223174,
+                "w": 0.887594,
+                "h": 0.01891
+              },
+              {
+                "text": "develop into butterflies early in spring, allowing their summer generations to complete",
+                "x": 0.043099,
+                "y": 0.243392,
+                "w": 0.863306,
+                "h": 0.020582
+              },
+              {
+                "text": "another reproductive cycle by autumn so that more population growth occurs.",
+                "x": 0.043099,
+                "y": 0.265616,
+                "w": 0.781612,
+                "h": 0.018758
+              },
+              {
+                "text": "Other species, however, are less flexible and restricted to a single reproductive cycle",
+                "x": 0.043099,
+                "y": 0.306474,
+                "w": 0.854474,
+                "h": 0.020585
+              },
+              {
+                "text": "per year. For these species, there was no evidence of any benefit to emerging earlier.",
+                "x": 0.043099,
+                "y": 0.326873,
+                "w": 0.863306,
+                "h": 0.0204
+              },
+              {
+                "text": "Indeed, worryingly, it was found that the species in this group that specialise in very",
+                "x": 0.040891,
+                "y": 0.347103,
+                "w": 0.843435,
+                "h": 0.02057
+              },
+              {
+                "text": "specific habitat types, often related to the caterpillar's preferred diet, actually tended",
+                "x": 0.040891,
+                "y": 0.367584,
+                "w": 0.847851,
+                "h": 0.022224
+              },
+              {
+                "text": "to be most at harm from advancing phenology. The beautiful High Brown Fritillary,",
+                "x": 0.040891,
+                "y": 0.389773,
+                "w": 0.825771,
+                "h": 0.018773
+              },
+              {
+                "text": "often described as Britain's most endangered butterfly, is in this group. It is found only",
+                "x": 0.043099,
+                "y": 0.410173,
+                "w": 0.865514,
+                "h": 0.020597
+              },
+              {
+                "text": "in coppiced woodland and limestone pavement habitats. It is also a single-generation",
+                "x": 0.038683,
+                "y": 0.432077,
+                "w": 0.863306,
+                "h": 0.018895
+              },
+              {
+                "text": "butterfly that has advanced its phenology. This suggests that climate change, while",
+                "x": 0.043099,
+                "y": 0.452558,
+                "w": 0.836811,
+                "h": 0.018814
+              },
+              {
+                "text": "undoubtedly not the sole cause, might have played a part in the downfall of this species.",
+                "x": 0.043099,
+                "y": 0.473039,
+                "w": 0.889801,
+                "h": 0.020481
+              },
+              {
+                "text": "All is not lost, however. Many of Britain's single-generation species show the capacity,",
+                "x": 0.043099,
+                "y": 0.515572,
+                "w": 0.867722,
+                "h": 0.01891
+              },
+              {
+                "text": "in continental Europe, to add a second generation in years that are sufficiently warm.",
+                "x": 0.038683,
+                "y": 0.535789,
+                "w": 0.861098,
+                "h": 0.020582
+              },
+              {
+                "text": "Therefore, as the climate continues to warm, species like the Silver-studded Blue might",
+                "x": 0.043099,
+                "y": 0.55627,
+                "w": 0.88097,
+                "h": 0.020501
+              },
+              {
+                "text": "be able to switch to multiple generations in the UK as well, and so begin to extract",
+                "x": 0.043099,
+                "y": 0.576751,
+                "w": 0.830187,
+                "h": 0.020481
+              },
+              {
+                "text": "benefits from the additional warmth, potentially leading to population increases.",
+                "x": 0.043099,
+                "y": 0.598871,
+                "w": 0.801484,
+                "h": 0.020585
+              },
+              {
+                "text": "More immediately, conservationists can arm themselves with all this knowledge to",
+                "x": 0.043099,
+                "y": 0.639501,
+                "w": 0.825771,
+                "h": 0.02057
+              },
+              {
+                "text": "spot the warning signs of species that may be at risk. The White Admiral of southern",
+                "x": 0.043099,
+                "y": 0.659982,
+                "w": 0.850058,
+                "h": 0.020489
+              },
+              {
+                "text": "England, a much sought-after butterfly, experienced a significant increase in numbers",
+                "x": 0.043099,
+                "y": 0.682171,
+                "w": 0.863306,
+                "h": 0.020516
+              },
+              {
+                "text": "from the 1920s but has shown a considerable decline in the past 20 years. This may be",
+                "x": 0.040891,
+                "y": 0.70257,
+                "w": 0.885386,
+                "h": 0.018854
+              },
+              {
+                "text": "because the caterpillar exists solely on a diet of a plant called honeysuckle. But it is also",
+                "x": 0.043099,
+                "y": 0.72297,
+                "w": 0.889801,
+                "h": 0.0204
+              },
+              {
+                "text": "likely to be due to climate change.",
+                "x": 0.040891,
+                "y": 0.744956,
+                "w": 0.348855,
+                "h": 0.018814
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-4/page-87.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.051931,
+                "y": 0.035968,
+                "w": 0.3334,
+                "h": 0.018908
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.054139,
+                "y": 0.080375,
+                "w": 0.887594,
+                "h": 0.020521
+              },
+              {
+                "text": "Passage 2.",
+                "x": 0.05407,
+                "y": 0.100516,
+                "w": 0.117159,
+                "h": 0.019218
+              },
+              {
+                "text": "Deep-sea mining",
+                "x": 0.372083,
+                "y": 0.143166,
+                "w": 0.267161,
+                "h": 0.027453
+              },
+              {
+                "text": "Bacteria from the ocean floor can beat superbugs and cancer. But habitats are at risk",
+                "x": 0.071802,
+                "y": 0.190664,
+                "w": 0.863306,
+                "h": 0.02061
+              },
+              {
+                "text": "from the hunger for marine minerals",
+                "x": 0.3213,
+                "y": 0.212888,
+                "w": 0.366519,
+                "h": 0.018786
+              },
+              {
+                "text": "A When Professor Mat Upton found that a microbe from a deep-sea sponge was killing",
+                "x": 0.056347,
+                "y": 0.252074,
+                "w": 0.801484,
+                "h": 0.017028
+              },
+              {
+                "text": "pathogenic bugs in his laboratory, he realised it could be a breakthrough in the fight against",
+                "x": 0.102714,
+                "y": 0.272474,
+                "w": 0.810316,
+                "h": 0.018852
+              },
+              {
+                "text": "antibiotic-resistant superbugs, which are responsible for thousands of deaths a year in the UK",
+                "x": 0.100506,
+                "y": 0.294376,
+                "w": 0.830187,
+                "h": 0.018897
+              },
+              {
+                "text": "alone. Further tests confirmed that an antibiotic from the sponge bacteria, found living more",
+                "x": 0.100506,
+                "y": 0.313114,
+                "w": 0.819147,
+                "h": 0.020559
+              },
+              {
+                "text": "than 700 metres under the sea at the Rockall trough in the north-east Atlantic, was previously",
+                "x": 0.102714,
+                "y": 0.335338,
+                "w": 0.825771,
+                "h": 0.018738
+              },
+              {
+                "text": "unknown to science, boosting its potential as a life-saving medicine. But Upton, and other",
+                "x": 0.102714,
+                "y": 0.355773,
+                "w": 0.801484,
+                "h": 0.020527
+              },
+              {
+                "text": "scientists who view the deep ocean and its wealth of unique and undocumented species as a",
+                "x": 0.104873,
+                "y": 0.376111,
+                "w": 0.810417,
+                "h": 0.019483
+              },
+              {
+                "text": "prospecting ground for new medicines, fear such potential will be lost in the rush to exploit the",
+                "x": 0.102714,
+                "y": 0.398088,
+                "w": 0.841227,
+                "h": 0.018885
+              },
+              {
+                "text": "deep sea's equally rich metal and mineral resources.",
+                "x": 0.104922,
+                "y": 0.418569,
+                "w": 0.46146,
+                "h": 0.017104
+              },
+              {
+                "text": "B",
+                "x": 0.054139,
+                "y": 0.459472,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "'We're looking at the bioactive potential of marine resources, to see if there are any more",
+                "x": 0.098298,
+                "y": 0.459472,
+                "w": 0.823563,
+                "h": 0.017053
+              },
+              {
+                "text": "medicines or drugs down there before we destroy it for ever,' says Upton, a medical",
+                "x": 0.102638,
+                "y": 0.479118,
+                "w": 0.770732,
+                "h": 0.021711
+              },
+              {
+                "text": "microbiologist at the University of Plymouth. He is among many scientists urging a halt to",
+                "x": 0.102714,
+                "y": 0.5018,
+                "w": 0.832395,
+                "h": 0.018872
+              },
+              {
+                "text": "deep-sea mining, asking for time to weigh up the pros and cons. 'In sustainability terms,",
+                "x": 0.102714,
+                "y": 0.520538,
+                "w": 0.812523,
+                "h": 0.020534
+              },
+              {
+                "text": "this could be a better way of exploiting the economic potential of the deep sea,' he argues.",
+                "x": 0.102714,
+                "y": 0.542762,
+                "w": 0.827979,
+                "h": 0.018738
+              },
+              {
+                "text": "Oceanographers using remotely operated vehicles have spotted many new species. Among",
+                "x": 0.104922,
+                "y": 0.563171,
+                "w": 0.827979,
+                "h": 0.018809
+              },
+              {
+                "text": "them have been sea cucumbers with tails allowing them to sail along the ocean floor,",
+                "x": 0.102714,
+                "y": 0.585271,
+                "w": 0.779404,
+                "h": 0.01719
+              },
+              {
+                "text": "and a rare 'Dumbo' octopus, found 3,000 metres under the Pacific Ocean, off the coast",
+                "x": 0.102714,
+                "y": 0.605512,
+                "w": 0.79486,
+                "h": 0.017159
+              },
+              {
+                "text": "of California. Any one of these could offer lifesaving potential. Upton estimates it could",
+                "x": 0.102714,
+                "y": 0.625992,
+                "w": 0.808108,
+                "h": 0.018778
+              },
+              {
+                "text": "take up to a decade for a newly discovered antibiotic to become a medicine - but the race",
+                "x": 0.100506,
+                "y": 0.646471,
+                "w": 0.823563,
+                "h": 0.020483
+              },
+              {
+                "text": "towards commercial mining in the ocean abyss has already begun.",
+                "x": 0.100506,
+                "y": 0.666871,
+                "w": 0.613808,
+                "h": 0.020565
+              },
+              {
+                "text": "C The deep sea contains more nickel, cobalt and rare earth metals than all land reserves",
+                "x": 0.056347,
+                "y": 0.709223,
+                "w": 0.810316,
+                "h": 0.017147
+              },
+              {
+                "text": "combined, according to the US Geological Survey. Mining corporations argue that deep-",
+                "x": 0.102714,
+                "y": 0.729704,
+                "w": 0.79486,
+                "h": 0.018766
+              },
+              {
+                "text": "sea exploration could help diversify the supply of metals and point to the fact that demand",
+                "x": 0.102714,
+                "y": 0.75187,
+                "w": 0.808108,
+                "h": 0.018796
+              },
+              {
+                "text": "for resources such as copper, aluminium, cobalt for electric car batteries and other metals to",
+                "x": 0.104922,
+                "y": 0.77227,
+                "w": 0.819147,
+                "h": 0.017134
+              },
+              {
+                "text": "power technology and smartphones, is soaring. They say that deep-sea mining could yield",
+                "x": 0.102714,
+                "y": 0.794197,
+                "w": 0.8059,
+                "h": 0.017172
+              },
+              {
+                "text": "far superior ore to land mining with little, if any, waste. Different methods of extraction exist,",
+                "x": 0.100506,
+                "y": 0.814678,
+                "w": 0.839019,
+                "h": 0.018791
+              },
+              {
+                "text": "but most involve employing some form of converted machinery previously used in terrestrial",
+                "x": 0.104922,
+                "y": 0.835159,
+                "w": 0.832395,
+                "h": 0.018738
+              },
+              {
+                "text": "mining to excavate materials from the sea floor, at depths of up to 6,000 metres, then drawing",
+                "x": 0.102714,
+                "y": 0.855569,
+                "w": 0.839019,
+                "h": 0.018809
+              },
+              {
+                "text": "a seawater slurry, containing rock and other solid particles, from the sea floor to ships on",
+                "x": 0.104922,
+                "y": 0.875969,
+                "w": 0.792652,
+                "h": 0.017147
+              },
+              {
+                "text": "the surface. The slurry is then 'de-watered' and transferred to another vessel for shipping.",
+                "x": 0.104922,
+                "y": 0.897909,
+                "w": 0.801484,
+                "h": 0.015459
+              },
+              {
+                "text": "Extracted seawater is pumped back down and discharged close to the sea floor.",
+                "x": 0.107129,
+                "y": 0.91839,
+                "w": 0.706542,
+                "h": 0.017078
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-4/page-88.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "D But environmental and legal groups have urged caution, arguing there are potentially massive",
+                "x": 0.036475,
+                "y": 0.034476,
+                "w": 0.896425,
+                "h": 0.0187
+              },
+              {
+                "text": "and unknown ramifications for the environment and for nearby communities, and that the",
+                "x": 0.082757,
+                "y": 0.052631,
+                "w": 0.812721,
+                "h": 0.023243
+              },
+              {
+                "text": "global regulatory framework is not yet drafted. 'Despite arising in the last half century,",
+                "x": 0.08505,
+                "y": 0.07693,
+                "w": 0.790444,
+                "h": 0.018745
+              },
+              {
+                "text": "the \"new global gold rush\" of deep-sea mining shares many features with past resource",
+                "x": 0.08505,
+                "y": 0.095668,
+                "w": 0.790444,
+                "h": 0.020481
+              },
+              {
+                "text": "scrambles - including a general disregard for environmental and social impacts, and the",
+                "x": 0.08505,
+                "y": 0.117775,
+                "w": 0.79486,
+                "h": 0.018854
+              },
+              {
+                "text": "marginalisation of indigenous peoples and their rights,' a paper, written by Julie Hunter",
+                "x": 0.08505,
+                "y": 0.138175,
+                "w": 0.792652,
+                "h": 0.0204
+              },
+              {
+                "text": "and Julian Aguon, from Blue Ocean Law, and Pradeep Singh, from the Center for Marine",
+                "x": 0.08505,
+                "y": 0.160161,
+                "w": 0.810316,
+                "h": 0.018814
+              },
+              {
+                "text": "Environmental Sciences, Bremen, argues. The authors say that knowledge of the deep seabed",
+                "x": 0.08505,
+                "y": 0.180642,
+                "w": 0.843435,
+                "h": 0.018738
+              },
+              {
+                "text": "remains extremely limited. \"The surface of the Moon, Mars and even Venus have all been",
+                "x": 0.082743,
+                "y": 0.198758,
+                "w": 0.812756,
+                "h": 0.024474
+              },
+              {
+                "text": "mapped and studied in much greater detail, leading marine scientists to commonly remark",
+                "x": 0.08505,
+                "y": 0.223174,
+                "w": 0.814731,
+                "h": 0.01891
+              },
+              {
+                "text": "that, with respect to the deep sea, \"We don't yet know what we need to know\"?",
+                "x": 0.08505,
+                "y": 0.243392,
+                "w": 0.721998,
+                "h": 0.020582
+              },
+              {
+                "text": "E Scientific research - including a recent paper in Marine Policy journal - has suggested the",
+                "x": 0.036475,
+                "y": 0.286074,
+                "w": 0.874346,
+                "h": 0.018761
+              },
+              {
+                "text": "deep seabed, and hydrothermal vents, which are created when seawater meets volcanic",
+                "x": 0.082842,
+                "y": 0.306474,
+                "w": 0.799276,
+                "h": 0.018842
+              },
+              {
+                "text": "magma, have crucial impacts upon biodiversity and the global climate. The mineral-rich",
+                "x": 0.082842,
+                "y": 0.325173,
+                "w": 0.810316,
+                "h": 0.0204
+              },
+              {
+                "text": "vents and their surrounds are also home to many well-known animals including crustaceans,",
+                "x": 0.08505,
+                "y": 0.347103,
+                "w": 0.845643,
+                "h": 0.01887
+              },
+              {
+                "text": "tubeworms, clams, slugs, anemones and fish. 'It is becoming increasingly clear that deep-",
+                "x": 0.082842,
+                "y": 0.367584,
+                "w": 0.825771,
+                "h": 0.020489
+              },
+              {
+                "text": "sea mining poses a grave threat to these vital seabed functions,' the paper says. 'Extraction",
+                "x": 0.082842,
+                "y": 0.389773,
+                "w": 0.832395,
+                "h": 0.018773
+              },
+              {
+                "text": "methods would produce large sediment plumes and involve the discharge of waste back into",
+                "x": 0.082842,
+                "y": 0.410173,
+                "w": 0.845643,
+                "h": 0.018854
+              },
+              {
+                "text": "the ocean, significantly disturbing seafloor environments,' the paper continues. 'On deep",
+                "x": 0.082842,
+                "y": 0.430573,
+                "w": 0.812523,
+                "h": 0.0204
+              },
+              {
+                "text": "sea vents, scientists are clear,' says Dr Jon Copley of the National Oceanography Centre,",
+                "x": 0.082842,
+                "y": 0.450815,
+                "w": 0.816939,
+                "h": 0.020557
+              },
+              {
+                "text": "Southampton: 'we don't want mining on them.'",
+                "x": 0.08505,
+                "y": 0.473039,
+                "w": 0.437173,
+                "h": 0.018738
+              },
+              {
+                "text": "F The oceans occupy around 70% of the planet and are relatively unexplored, says",
+                "x": 0.034267,
+                "y": 0.513872,
+                "w": 0.788236,
+                "h": 0.02061
+              },
+              {
+                "text": "Mike Johnston, chief executive of Nautilus, a Canadian underwater exploration company:",
+                "x": 0.08505,
+                "y": 0.535789,
+                "w": 0.823563,
+                "h": 0.018882
+              },
+              {
+                "text": "'It makes sense to explore this untapped potential in an environmentally sustainable way,",
+                "x": 0.082842,
+                "y": 0.55627,
+                "w": 0.819147,
+                "h": 0.020501
+              },
+              {
+                "text": "instead of continually looking at the fast depleting land resources of the planet to meet",
+                "x": 0.082842,
+                "y": 0.576751,
+                "w": 0.79486,
+                "h": 0.020481
+              },
+              {
+                "text": "society's rising needs.' Those leading the global rush to place giant mining machines",
+                "x": 0.082842,
+                "y": 0.597171,
+                "w": 0.777196,
+                "h": 0.020542
+              },
+              {
+                "text": "thousands of metres below the sea surface say the environmental impacts will be far",
+                "x": 0.08505,
+                "y": 0.619271,
+                "w": 0.770572,
+                "h": 0.01718
+              },
+              {
+                "text": "lower than on land. But critics say exotic and little-known ecosystems in the deep",
+                "x": 0.082842,
+                "y": 0.639501,
+                "w": 0.750701,
+                "h": 0.02057
+              },
+              {
+                "text": "oceans could be destroyed and must be protected. 'Mining will be the greatest assault on",
+                "x": 0.082842,
+                "y": 0.661725,
+                "w": 0.812523,
+                "h": 0.018745
+              },
+              {
+                "text": "deep-sea ecosystems ever inflicted by humans,' according to hydrothermal vent expert",
+                "x": 0.082842,
+                "y": 0.680463,
+                "w": 0.792652,
+                "h": 0.020481
+              },
+              {
+                "text": "Verena Tunnicliffe, at the University of Victoria in Canada. She argues that active vents",
+                "x": 0.082842,
+                "y": 0.70257,
+                "w": 0.803692,
+                "h": 0.020597
+              },
+              {
+                "text": "must be off-limits for mining to protect the new knowledge and biotechnology spin-offs",
+                "x": 0.082842,
+                "y": 0.72297,
+                "w": 0.808108,
+                "h": 0.0204
+              },
+              {
+                "text": "they can deliver, and that strict controls must be in place elsewhere.",
+                "x": 0.082842,
+                "y": 0.744956,
+                "w": 0.620432,
+                "h": 0.018814
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-4/page-91.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.056347,
+                "y": 0.035968,
+                "w": 0.3334,
+                "h": 0.018908
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.058555,
+                "y": 0.080375,
+                "w": 0.887594,
+                "h": 0.018778
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.058555,
+                "y": 0.100775,
+                "w": 0.181051,
+                "h": 0.018859
+              },
+              {
+                "text": "The Unselfish Gene",
+                "x": 0.350003,
+                "y": 0.144909,
+                "w": 0.315736,
+                "h": 0.023967
+              },
+              {
+                "text": "A psychologist gives his view on how humans became self-centred",
+                "x": 0.166744,
+                "y": 0.19415,
+                "w": 0.680047,
+                "h": 0.018824
+              },
+              {
+                "text": "There has long been a general assumption that human beings are essentially selfish.",
+                "x": 0.056347,
+                "y": 0.235074,
+                "w": 0.863306,
+                "h": 0.020519
+              },
+              {
+                "text": "We're apparently ruthless, with strong impulses to compete against each other for",
+                "x": 0.056347,
+                "y": 0.257174,
+                "w": 0.832395,
+                "h": 0.0189
+              },
+              {
+                "text": "resources and to accumulate power and possessions. If we are kind to one another, it's",
+                "x": 0.056347,
+                "y": 0.277381,
+                "w": 0.883178,
+                "h": 0.020592
+              },
+              {
+                "text": "usually because we have ulterior motives. If we are good, it's only because we have",
+                "x": 0.056347,
+                "y": 0.299605,
+                "w": 0.852266,
+                "h": 0.018768
+              },
+              {
+                "text": "managed to control and transcend our innate selfishness and brutality.",
+                "x": 0.056347,
+                "y": 0.318343,
+                "w": 0.713166,
+                "h": 0.020481
+              },
+              {
+                "text": "This bleak view of human nature is closely associated with the science writer",
+                "x": 0.056347,
+                "y": 0.360873,
+                "w": 0.779404,
+                "h": 0.018913
+              },
+              {
+                "text": "Richard Dawkins, whose 1976 book The Selfish Gene became popular because it fitted",
+                "x": 0.056347,
+                "y": 0.381093,
+                "w": 0.885386,
+                "h": 0.02058
+              },
+              {
+                "text": "so well with - and helped to justify - the competitive and individualistic ethos that was",
+                "x": 0.056347,
+                "y": 0.401574,
+                "w": 0.867722,
+                "h": 0.018799
+              },
+              {
+                "text": "so prevalent in late 20th-century societies. Like many others, Dawkins justifies his views",
+                "x": 0.056347,
+                "y": 0.422055,
+                "w": 0.892009,
+                "h": 0.020481
+              },
+              {
+                "text": "with reference to the field of evolutionary psychology. Evolutionary psychology theorises",
+                "x": 0.054139,
+                "y": 0.444172,
+                "w": 0.894217,
+                "h": 0.018844
+              },
+              {
+                "text": "that present-day human traits developed in prehistoric times, during what is termed the",
+                "x": 0.054139,
+                "y": 0.464572,
+                "w": 0.88097,
+                "h": 0.0204
+              },
+              {
+                "text": "'environment of evolutionary adaptedness'.",
+                "x": 0.051572,
+                "y": 0.481127,
+                "w": 0.439957,
+                "h": 0.026248
+              },
+              {
+                "text": "Prehistory is usually seen as a period of intense competition, when life was such a",
+                "x": 0.056347,
+                "y": 0.527472,
+                "w": 0.834603,
+                "h": 0.018776
+              },
+              {
+                "text": "brutal battle that only those with traits such as selfishness, aggression and ruthlessness",
+                "x": 0.056347,
+                "y": 0.547872,
+                "w": 0.887594,
+                "h": 0.0206
+              },
+              {
+                "text": "survived. And because survival depended on access to resources - such as rivers,",
+                "x": 0.056246,
+                "y": 0.566553,
+                "w": 0.84145,
+                "h": 0.022558
+              },
+              {
+                "text": "forests and animals - there was bound to be conflict between rival groups, which led to",
+                "x": 0.054139,
+                "y": 0.59026,
+                "w": 0.883178,
+                "h": 0.018811
+              },
+              {
+                "text": "the development of traits such as racism and warfare. This seems logical. But, in fact,",
+                "x": 0.054139,
+                "y": 0.610741,
+                "w": 0.86993,
+                "h": 0.020481
+              },
+              {
+                "text": "the assumption on which this all rests - that prehistoric life was a desperate struggle for",
+                "x": 0.054139,
+                "y": 0.631171,
+                "w": 0.889802,
+                "h": 0.018789
+              },
+              {
+                "text": "survival - is false.",
+                "x": 0.056347,
+                "y": 0.649871,
+                "w": 0.185467,
+                "h": 0.02057
+              },
+              {
+                "text": "It's important to remember that in the prehistoric era, the world was very sparsely",
+                "x": 0.054139,
+                "y": 0.693972,
+                "w": 0.814731,
+                "h": 0.018799
+              },
+              {
+                "text": "populated. According to some estimates, around 15,000 years ago, the population of",
+                "x": 0.056347,
+                "y": 0.714453,
+                "w": 0.850058,
+                "h": 0.018738
+              },
+              {
+                "text": "Europe was only 29,000, and the population of the whole world was less than half a",
+                "x": 0.056347,
+                "y": 0.73487,
+                "w": 0.836811,
+                "h": 0.020544
+              },
+              {
+                "text": "million. Humans at that time were hunter-gatherers: people who lived by hunting wild",
+                "x": 0.056347,
+                "y": 0.75527,
+                "w": 0.847851,
+                "h": 0.018882
+              },
+              {
+                "text": "animals and collecting wild plants. With such small population densities, it seems unlikely",
+                "x": 0.056347,
+                "y": 0.777203,
+                "w": 0.892009,
+                "h": 0.018867
+              },
+              {
+                "text": "that prehistoric hunter-gatherer groups had to compete against each other for resources",
+                "x": 0.056347,
+                "y": 0.797683,
+                "w": 0.88097,
+                "h": 0.018786
+              },
+              {
+                "text": "or had any need to develop ruthlessness and competitiveness, or to go to war.",
+                "x": 0.056347,
+                "y": 0.818164,
+                "w": 0.788236,
+                "h": 0.020481
+              },
+              {
+                "text": "There is significant evidence to back this notion from contemporary hunter-gatherer",
+                "x": 0.056347,
+                "y": 0.860669,
+                "w": 0.819147,
+                "h": 0.0187
+              },
+              {
+                "text": "groups, who live in the same way as prehistoric humans did. As the anthropologist",
+                "x": 0.056347,
+                "y": 0.880914,
+                "w": 0.808108,
+                "h": 0.018854
+              },
+              {
+                "text": "Bruce Knauft has remarked, hunter-gatherers are characterised by 'extreme political and",
+                "x": 0.056287,
+                "y": 0.899225,
+                "w": 0.867857,
+                "h": 0.02337
+              },
+              {
+                "text": "sexual egalitarianism'. Knauft has observed that individuals in such groups don't accumulate",
+                "x": 0.056347,
+                "y": 0.921869,
+                "w": 0.894217,
+                "h": 0.018745
+              },
+              {
+                "text": "property or possessions and have an ethical obligation to share everything. They also have",
+                "x": 0.056347,
+                "y": 0.943968,
+                "w": 0.88097,
+                "h": 0.01887
+              },
+              {
+                "text": "methods of preserving egalitarianism by ensuring that disparities of status don't arise.",
+                "x": 0.056347,
+                "y": 0.964368,
+                "w": 0.827979,
+                "h": 0.0187
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c19-test-4/page-92.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "The !Kung people of southern Africa, for example, swap arrows before going hunting",
+                "x": 0.034267,
+                "y": 0.031076,
+                "w": 0.854474,
+                "h": 0.018837
+              },
+              {
+                "text": "and when an animal is killed, the acclaim does not go to the person who fired the arrow,",
+                "x": 0.034267,
+                "y": 0.051476,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "but to the person the arrow belongs to. And if a person becomes too domineering, the",
+                "x": 0.034267,
+                "y": 0.073444,
+                "w": 0.865514,
+                "h": 0.018832
+              },
+              {
+                "text": "other members of the group ostracise them, exiling the offender from society. Typically",
+                "x": 0.034267,
+                "y": 0.093925,
+                "w": 0.872138,
+                "h": 0.018751
+              },
+              {
+                "text": "in such groups, men do not dictate what women do. Women in hunter-gatherer groups",
+                "x": 0.029851,
+                "y": 0.114375,
+                "w": 0.876554,
+                "h": 0.020511
+              },
+              {
+                "text": "worldwide often benefit from a high level of autonomy, being able to select their own",
+                "x": 0.034267,
+                "y": 0.134775,
+                "w": 0.847851,
+                "h": 0.020592
+              },
+              {
+                "text": "marriage partners, decide what work they do and work whenever they choose to. And if",
+                "x": 0.034267,
+                "y": 0.156675,
+                "w": 0.883178,
+                "h": 0.0189
+              },
+              {
+                "text": "a marriage breaks down, they have custody rights over their children.",
+                "x": 0.034267,
+                "y": 0.177156,
+                "w": 0.699918,
+                "h": 0.020519
+              },
+              {
+                "text": "Many anthropologists believe that societies such as the !Kung were normal until a few",
+                "x": 0.034267,
+                "y": 0.218074,
+                "w": 0.867722,
+                "h": 0.018781
+              },
+              {
+                "text": "thousand years ago,when population growth led to the development of agriculture and",
+                "x": 0.032059,
+                "y": 0.240174,
+                "w": 0.878762,
+                "h": 0.018905
+              },
+              {
+                "text": "a settled lifestyle. In view of the above, there seems little reason to assume that traits",
+                "x": 0.034267,
+                "y": 0.260386,
+                "w": 0.861098,
+                "h": 0.018887
+              },
+              {
+                "text": "such as racism, warfare and male domination should have been selected by evolution -",
+                "x": 0.034267,
+                "y": 0.280867,
+                "w": 0.887594,
+                "h": 0.018806
+              },
+              {
+                "text": "as they would have been of little benefit in the prehistoric era. Individuals who behaved",
+                "x": 0.032059,
+                "y": 0.303074,
+                "w": 0.878762,
+                "h": 0.018756
+              },
+              {
+                "text": "selfishly and ruthlessly would be less likely to survive, since they would have been",
+                "x": 0.032059,
+                "y": 0.323473,
+                "w": 0.832395,
+                "h": 0.02058
+              },
+              {
+                "text": "ostracised from their groups.",
+                "x": 0.032059,
+                "y": 0.343873,
+                "w": 0.293657,
+                "h": 0.0204
+              },
+              {
+                "text": "It makes more sense, then, to see traits such as cooperation, egalitarianism, altruism",
+                "x": 0.032059,
+                "y": 0.384579,
+                "w": 0.85889,
+                "h": 0.022224
+              },
+              {
+                "text": "and peacefulness as innate characteristics of human beings. These were the traits that",
+                "x": 0.032059,
+                "y": 0.406773,
+                "w": 0.88097,
+                "h": 0.018768
+              },
+              {
+                "text": "were prevalent in human life for tens of thousands of years. So presumably these traits",
+                "x": 0.032059,
+                "y": 0.427173,
+                "w": 0.878762,
+                "h": 0.018849
+              },
+              {
+                "text": "are still strong in us now.",
+                "x": 0.032059,
+                "y": 0.449072,
+                "w": 0.253914,
+                "h": 0.0189
+              },
+              {
+                "text": "But if prehistoric life wasn't really as brutal as has often been assumed, why do modern",
+                "x": 0.034267,
+                "y": 0.490034,
+                "w": 0.88097,
+                "h": 0.018738
+              },
+              {
+                "text": "humans behave so selfishly and ruthlessly? Perhaps these negative traits should be",
+                "x": 0.032059,
+                "y": 0.510472,
+                "w": 0.850058,
+                "h": 0.020524
+              },
+              {
+                "text": "seen as a later development, the result of environmental and psychological factors.",
+                "x": 0.032059,
+                "y": 0.530872,
+                "w": 0.841227,
+                "h": 0.020605
+              },
+              {
+                "text": "Research has shown repeatedly that when the natural habitats of primates such as apes",
+                "x": 0.034267,
+                "y": 0.552784,
+                "w": 0.894217,
+                "h": 0.018887
+              },
+              {
+                "text": "and gorillas are disrupted, they tend to become more violent and hierarchical.",
+                "x": 0.032059,
+                "y": 0.573265,
+                "w": 0.78382,
+                "h": 0.020506
+              },
+              {
+                "text": "So, it could well be that the same thing has happened to us. I believe that the end of the",
+                "x": 0.032059,
+                "y": 0.614171,
+                "w": 0.887594,
+                "h": 0.020537
+              },
+              {
+                "text": "hunter-gatherer lifestyle and the advent of farming was connected to a psychological",
+                "x": 0.032059,
+                "y": 0.636271,
+                "w": 0.856682,
+                "h": 0.0187
+              },
+              {
+                "text": "change that occurred in some groups of people. There was a new sense of individuality",
+                "x": 0.032059,
+                "y": 0.656496,
+                "w": 0.883178,
+                "h": 0.018875
+              },
+              {
+                "text": "and separateness, which led to a new selfishness, and ultimately to hierarchical",
+                "x": 0.032059,
+                "y": 0.676977,
+                "w": 0.808108,
+                "h": 0.020494
+              },
+              {
+                "text": "societies, patriarchy and warfare. At any rate, these negative traits appear to have",
+                "x": 0.032059,
+                "y": 0.697458,
+                "w": 0.827979,
+                "h": 0.020481
+              },
+              {
+                "text": "developed so recently that it doesn't seem feasible to explain them in adaptive or",
+                "x": 0.032059,
+                "y": 0.71787,
+                "w": 0.819147,
+                "h": 0.020549
+              },
+              {
+                "text": "evolutionary terms.",
+                "x": 0.031661,
+                "y": 0.738596,
+                "w": 0.197466,
+                "h": 0.02191
+              },
+              {
+                "text": "93",
+                "x": 0.901989,
+                "y": 0.998368,
+                "w": 0.030911,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-4/page-95.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.43388,
+                "y": 0.029275,
+                "w": 0.13915,
+                "h": 0.020601
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.051931,
+                "y": 0.097375,
+                "w": 0.258329,
+                "h": 0.018773
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.051931,
+                "y": 0.13968,
+                "w": 0.496787,
+                "h": 0.018895
+              },
+              {
+                "text": "The charts below give information on the location and types of dance classes",
+                "x": 0.078426,
+                "y": 0.19415,
+                "w": 0.845643,
+                "h": 0.018824
+              },
+              {
+                "text": "young people in a town in Australia are currently attending.",
+                "x": 0.078426,
+                "y": 0.216374,
+                "w": 0.649136,
+                "h": 0.018738
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.078426,
+                "y": 0.257174,
+                "w": 0.841227,
+                "h": 0.0204
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.078426,
+                "y": 0.277381,
+                "w": 0.381974,
+                "h": 0.018892
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.051931,
+                "y": 0.331852,
+                "w": 0.256122,
+                "h": 0.018821
+              },
+              {
+                "text": "Location of dance classes",
+                "x": 0.3213,
+                "y": 0.377873,
+                "w": 0.364311,
+                "h": 0.0204
+              },
+              {
+                "text": "Community",
+                "x": 0.336639,
+                "y": 0.413167,
+                "w": 0.097384,
+                "h": 0.017812
+              },
+              {
+                "text": "halls & other",
+                "x": 0.330132,
+                "y": 0.432077,
+                "w": 0.110397,
+                "h": 0.013944
+              },
+              {
+                "text": "18%",
+                "x": 0.365459,
+                "y": 0.450972,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "Private",
+                "x": 0.641452,
+                "y": 0.503672,
+                "w": 0.066238,
+                "h": 0.0187
+              },
+              {
+                "text": "- studios",
+                "x": 0.63032,
+                "y": 0.525498,
+                "w": 0.075255,
+                "h": 0.015847
+              },
+              {
+                "text": "48%",
+                "x": 0.652492,
+                "y": 0.544472,
+                "w": 0.041951,
+                "h": 0.0136
+              },
+              {
+                "text": "School halls",
+                "x": 0.23519,
+                "y": 0.566571,
+                "w": 0.103773,
+                "h": 0.013666
+              },
+              {
+                "text": "(after-school)",
+                "x": 0.228566,
+                "y": 0.585271,
+                "w": 0.117021,
+                "h": 0.0153
+              },
+              {
+                "text": "24%",
+                "x": 0.268309,
+                "y": 0.603971,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "College-based studios",
+                "x": 0.294805,
+                "y": 0.651571,
+                "w": 0.194299,
+                "h": 0.017127
+              },
+              {
+                "text": "10%",
+                "x": 0.369875,
+                "y": 0.670271,
+                "w": 0.039743,
+                "h": 0.0136
+              },
+              {
+                "text": "Types of dance classes (by age group)",
+                "x": 0.327924,
+                "y": 0.71787,
+                "w": 0.348855,
+                "h": 0.017063
+              },
+              {
+                "text": "• Under 11",
+                "x": 0.40069,
+                "y": 0.749807,
+                "w": 0.106174,
+                "h": 0.017725
+              },
+              {
+                "text": "11-16",
+                "x": 0.555322,
+                "y": 0.751816,
+                "w": 0.053031,
+                "h": 0.012008
+              },
+              {
+                "text": "Ballet",
+                "x": 0.186615,
+                "y": 0.79777,
+                "w": 0.052991,
+                "h": 0.0153
+              },
+              {
+                "text": "Tap",
+                "x": 0.202071,
+                "y": 0.845369,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "Modern",
+                "x": 0.166744,
+                "y": 0.891269,
+                "w": 0.070654,
+                "h": 0.0153
+              },
+              {
+                "text": "100",
+                "x": 0.316884,
+                "y": 0.933769,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "T",
+                "x": 0.411826,
+                "y": 0.923569,
+                "w": 0.01104,
+                "h": 0.0102
+              },
+              {
+                "text": "200",
+                "x": 0.398578,
+                "y": 0.933769,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "300",
+                "x": 0.478064,
+                "y": 0.933769,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "T",
+                "x": 0.570798,
+                "y": 0.923569,
+                "w": 0.01104,
+                "h": 0.0119
+              },
+              {
+                "text": "400",
+                "x": 0.55755,
+                "y": 0.933769,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "Number of students",
+                "x": 0.458193,
+                "y": 0.964368,
+                "w": 0.167804,
+                "h": 0.015465
+              },
+              {
+                "text": "500",
+                "x": 0.639244,
+                "y": 0.935469,
+                "w": 0.035327,
+                "h": 0.0136
+              },
+              {
+                "text": "T",
+                "x": 0.731978,
+                "y": 0.923569,
+                "w": 0.013248,
+                "h": 0.0119
+              },
+              {
+                "text": "600",
+                "x": 0.718686,
+                "y": 0.933708,
+                "w": 0.035415,
+                "h": 0.01542
+              },
+              {
+                "text": "700",
+                "x": 0.800424,
+                "y": 0.933769,
+                "w": 0.033119,
+                "h": 0.0153
+              },
+              {
+                "text": "96",
+                "x": 0.051931,
+                "y": 0.994968,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "→",
+                "x": 0.124793,
+                "y": 0.998368,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "р. 136",
+                "x": 0.188823,
+                "y": 0.998368,
+                "w": 0.066238,
+                "h": 0.017197
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c19-test-4/page-96.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.040891,
+                "y": 0.027676,
+                "w": 0.256122,
+                "h": 0.018751
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.040891,
+                "y": 0.071701,
+                "w": 0.492372,
+                "h": 0.018875
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.040891,
+                "y": 0.112662,
+                "w": 0.313528,
+                "h": 0.018738
+              },
+              {
+                "text": "In many countries nowadays, consumers can go to a supermarket and buy",
+                "x": 0.065106,
+                "y": 0.165189,
+                "w": 0.817088,
+                "h": 0.023212
+              },
+              {
+                "text": "food produced all overthe world.",
+                "x": 0.065179,
+                "y": 0.189174,
+                "w": 0.364311,
+                "h": 0.0187
+              },
+              {
+                "text": "Do you think this is a positive or negative development?",
+                "x": 0.067386,
+                "y": 0.22814,
+                "w": 0.611601,
+                "h": 0.020534
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.043099,
+                "y": 0.28261,
+                "w": 0.808108,
+                "h": 0.020481
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.040891,
+                "y": 0.304774,
+                "w": 0.264953,
+                "h": 0.018799
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.040891,
+                "y": 0.34536,
+                "w": 0.253914,
+                "h": 0.018913
+              },
+              {
+                "text": "→ 8 р. 137 97",
+                "x": 0.749478,
+                "y": 0.989111,
+                "w": 0.194625,
+                "h": 0.027014
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-77.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Test 4",
+                "x": 0.056347,
+                "y": 0.029376,
+                "w": 0.136893,
+                "h": 0.032302
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.411826,
+                "y": 0.102475,
+                "w": 0.178843,
+                "h": 0.0221
+              },
+              {
+                "text": "PART 1",
+                "x": 0.056271,
+                "y": 0.175284,
+                "w": 0.108341,
+                "h": 0.01758
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.230774,
+                "y": 0.175412,
+                "w": 0.203131,
+                "h": 0.018862
+              },
+              {
+                "text": "Questions 1-6",
+                "x": 0.058555,
+                "y": 0.218074,
+                "w": 0.16118,
+                "h": 0.017038
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.058555,
+                "y": 0.260386,
+                "w": 0.269369,
+                "h": 0.017187
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.056347,
+                "y": 0.297862,
+                "w": 0.591729,
+                "h": 0.022224
+              },
+              {
+                "text": "First day at work",
+                "x": 0.378707,
+                "y": 0.342173,
+                "w": 0.253914,
+                "h": 0.0289
+              },
+              {
+                "text": "•",
+                "x": 0.082842,
+                "y": 0.377873,
+                "w": 0.022079,
+                "h": 0.0221
+              },
+              {
+                "text": "Name of supervisor:",
+                "x": 0.129209,
+                "y": 0.379573,
+                "w": 0.214171,
+                "h": 0.017208
+              },
+              {
+                "text": "1",
+                "x": 0.548718,
+                "y": 0.381273,
+                "w": 0.01104,
+                "h": 0.0153
+              },
+              {
+                "text": "Where to leave coat and bag:",
+                "x": 0.124793,
+                "y": 0.413573,
+                "w": 0.313528,
+                "h": 0.0187
+              },
+              {
+                "text": "See Tiffany in HR:",
+                "x": 0.135833,
+                "y": 0.445872,
+                "w": 0.187675,
+                "h": 0.018887
+              },
+              {
+                "text": "use 2",
+                "x": 0.54651,
+                "y": 0.413573,
+                "w": 0.059614,
+                "h": 0.017197
+              },
+              {
+                "text": "•",
+                "x": 0.082842,
+                "y": 0.505372,
+                "w": 0.022079,
+                "h": 0.0238
+              },
+              {
+                "text": "Location of HR office:",
+                "x": 0.131417,
+                "y": 0.510472,
+                "w": 0.227418,
+                "h": 0.0153
+              },
+              {
+                "text": "Supervisor's mobile number:",
+                "x": 0.135833,
+                "y": 0.541018,
+                "w": 0.293657,
+                "h": 0.018753
+              },
+              {
+                "text": "to give 3",
+                "x": 0.542094,
+                "y": 0.447572,
+                "w": 0.092734,
+                "h": 0.017187
+              },
+              {
+                "text": "to collect 4",
+                "x": 0.542038,
+                "y": 0.477943,
+                "w": 0.114926,
+                "h": 0.017459
+              },
+              {
+                "text": "on 5",
+                "x": 0.544302,
+                "y": 0.510472,
+                "w": 0.048575,
+                "h": 0.017038
+              },
+              {
+                "text": "6",
+                "x": 0.544302,
+                "y": 0.541072,
+                "w": 0.017664,
+                "h": 0.0187
+              },
+              {
+                "text": "in staffroom",
+                "x": 0.78697,
+                "y": 0.414315,
+                "w": 0.126265,
+                "h": 0.018915
+              },
+              {
+                "text": "number",
+                "x": 0.820295,
+                "y": 0.447572,
+                "w": 0.083902,
+                "h": 0.017
+              },
+              {
+                "text": "floor",
+                "x": 0.778344,
+                "y": 0.512172,
+                "w": 0.048575,
+                "h": 0.0153
+              },
+              {
+                "text": "Questions 7-10",
+                "x": 0.056347,
+                "y": 0.612471,
+                "w": 0.176636,
+                "h": 0.017007
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.056347,
+                "y": 0.654971,
+                "w": 0.262745,
+                "h": 0.017213
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.054139,
+                "y": 0.693972,
+                "w": 0.437173,
+                "h": 0.022224
+              },
+              {
+                "text": "Responsibilities",
+                "x": 0.411826,
+                "y": 0.72977,
+                "w": 0.183259,
+                "h": 0.0221
+              },
+              {
+                "text": "Bakery section",
+                "x": 0.067386,
+                "y": 0.78757,
+                "w": 0.165596,
+                "h": 0.018829
+              },
+              {
+                "text": "Task 1",
+                "x": 0.330132,
+                "y": 0.761951,
+                "w": 0.070654,
+                "h": 0.017119
+              },
+              {
+                "text": "Check sell-by dates",
+                "x": 0.261686,
+                "y": 0.78757,
+                "w": 0.203131,
+                "h": 0.020572
+              },
+              {
+                "text": "Task 2",
+                "x": 0.559758,
+                "y": 0.760208,
+                "w": 0.079486,
+                "h": 0.020562
+              },
+              {
+                "text": "Change price labels",
+                "x": 0.484688,
+                "y": 0.78757,
+                "w": 0.205339,
+                "h": 0.020572
+              },
+              {
+                "text": "Notes",
+                "x": 0.804812,
+                "y": 0.763709,
+                "w": 0.064085,
+                "h": 0.017122
+              },
+              {
+                "text": "Sushi takeaway",
+                "x": 0.067386,
+                "y": 0.838569,
+                "w": 0.174428,
+                "h": 0.020557
+              },
+              {
+                "text": "counter",
+                "x": 0.067196,
+                "y": 0.858407,
+                "w": 0.090907,
+                "h": 0.019824
+              },
+              {
+                "text": "Use 7",
+                "x": 0.72977,
+                "y": 0.79097,
+                "w": 0.066238,
+                "h": 0.0204
+              },
+              {
+                "text": "labels",
+                "x": 0.727562,
+                "y": 0.813069,
+                "w": 0.068446,
+                "h": 0.0187
+              },
+              {
+                "text": "Wipe preparation area",
+                "x": 0.484688,
+                "y": 0.840269,
+                "w": 0.231834,
+                "h": 0.018857
+              },
+              {
+                "text": "Do not clean",
+                "x": 0.711986,
+                "y": 0.838039,
+                "w": 0.148173,
+                "h": 0.02146
+              },
+              {
+                "text": "and clean the sink",
+                "x": 0.484688,
+                "y": 0.860669,
+                "w": 0.187675,
+                "h": 0.017195
+              },
+              {
+                "text": "any knives",
+                "x": 0.72969,
+                "y": 0.858725,
+                "w": 0.112765,
+                "h": 0.022588
+              },
+              {
+                "text": "Meat and fish",
+                "x": 0.065179,
+                "y": 0.904869,
+                "w": 0.152348,
+                "h": 0.018751
+              },
+              {
+                "text": "counters",
+                "x": 0.065126,
+                "y": 0.928481,
+                "w": 0.10167,
+                "h": 0.017375
+              },
+              {
+                "text": "Re-stock with",
+                "x": 0.261686,
+                "y": 0.836869,
+                "w": 0.141308,
+                "h": 0.018771
+              },
+              {
+                "text": "8....",
+                "x": 0.261686,
+                "y": 0.860669,
+                "w": 0.048575,
+                "h": 0.0187
+              },
+              {
+                "text": "boxes if needed",
+                "x": 0.261686,
+                "y": 0.874269,
+                "w": 0.165596,
+                "h": 0.0255
+              },
+              {
+                "text": "Clean the serving",
+                "x": 0.261686,
+                "y": 0.903138,
+                "w": 0.183259,
+                "h": 0.023967
+              },
+              {
+                "text": "area, including the",
+                "x": 0.261686,
+                "y": 0.923569,
+                "w": 0.189883,
+                "h": 0.0238
+              },
+              {
+                "text": "weighing scales",
+                "x": 0.259478,
+                "y": 0.947368,
+                "w": 0.167804,
+                "h": 0.0204
+              },
+              {
+                "text": "Collect 9",
+                "x": 0.484543,
+                "y": 0.90957,
+                "w": 0.093024,
+                "h": 0.021196
+              },
+              {
+                "text": "for the fish from the",
+                "x": 0.480272,
+                "y": 0.928669,
+                "w": 0.205339,
+                "h": 0.0221
+              },
+              {
+                "text": "cold-room",
+                "x": 0.482383,
+                "y": 0.952131,
+                "w": 0.108383,
+                "h": 0.019375
+              },
+              {
+                "text": "Must wear special",
+                "x": 0.731978,
+                "y": 0.908269,
+                "w": 0.183259,
+                "h": 0.018837
+              },
+              {
+                "text": "10",
+                "x": 0.72977,
+                "y": 0.926969,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "78",
+                "x": 0.049723,
+                "y": 0.991568,
+                "w": 0.033119,
+                "h": 0.0221
+              },
+              {
+                "text": "p. 126",
+                "x": 0.186615,
+                "y": 0.996668,
+                "w": 0.072862,
+                "h": 0.017154
+              },
+              {
+                "text": "• p. 114",
+                "x": 0.281557,
+                "y": 0.996668,
+                "w": 0.099357,
+                "h": 0.018897
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-78.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 2 Questions 11-20",
+                "x": 0.040891,
+                "y": 0.029376,
+                "w": 0.384182,
+                "h": 0.020537
+              },
+              {
+                "text": "Questions 11 and 12",
+                "x": 0.043099,
+                "y": 0.073444,
+                "w": 0.227418,
+                "h": 0.017132
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.040891,
+                "y": 0.116075,
+                "w": 0.271577,
+                "h": 0.018811
+              },
+              {
+                "text": "Which TWO problems with some training programmes for",
+                "x": 0.040811,
+                "y": 0.155079,
+                "w": 0.583059,
+                "h": 0.020934
+              },
+              {
+                "text": "new runners does Liz mention?",
+                "x": 0.043099,
+                "y": 0.177156,
+                "w": 0.315736,
+                "h": 0.015419
+              },
+              {
+                "text": "A There is a risk of serious injury.",
+                "x": 0.091674,
+                "y": 0.209402,
+                "w": 0.364311,
+                "h": 0.017172
+              },
+              {
+                "text": "B They are unsuitable for certain age groups.",
+                "x": 0.091674,
+                "y": 0.231626,
+                "w": 0.485748,
+                "h": 0.018748
+              },
+              {
+                "text": "C They are unsuitable for people with health issues.",
+                "x": 0.091567,
+                "y": 0.249707,
+                "w": 0.55217,
+                "h": 0.021547
+              },
+              {
+                "text": "D It is difficult to stay motivated.",
+                "x": 0.091674,
+                "y": 0.272474,
+                "w": 0.348855,
+                "h": 0.018852
+              },
+              {
+                "text": "E",
+                "x": 0.093882,
+                "y": 0.294574,
+                "w": 0.028703,
+                "h": 0.0136
+              },
+              {
+                "text": "There is a lack of individual support.",
+                "x": 0.122585,
+                "y": 0.292874,
+                "w": 0.381974,
+                "h": 0.0187
+              },
+              {
+                "text": "Questions 13 and 14",
+                "x": 0.043099,
+                "y": 0.34536,
+                "w": 0.229626,
+                "h": 0.017213
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.043099,
+                "y": 0.388065,
+                "w": 0.271577,
+                "h": 0.018738
+              },
+              {
+                "text": "Which TWO tips does Liz recommend for new runners?",
+                "x": 0.04071,
+                "y": 0.424919,
+                "w": 0.563423,
+                "h": 0.023946
+              },
+              {
+                "text": "A doing two runs a week",
+                "x": 0.091674,
+                "y": 0.461172,
+                "w": 0.280409,
+                "h": 0.018839
+              },
+              {
+                "text": "running in the evening",
+                "x": 0.13777,
+                "y": 0.481074,
+                "w": 0.230243,
+                "h": 0.022661
+              },
+              {
+                "text": "C going on runs with a friend",
+                "x": 0.091674,
+                "y": 0.503543,
+                "w": 0.317944,
+                "h": 0.018829
+              },
+              {
+                "text": "D",
+                "x": 0.093882,
+                "y": 0.525772,
+                "w": 0.026495,
+                "h": 0.0119
+              },
+              {
+                "text": "listening to music during runs",
+                "x": 0.135833,
+                "y": 0.524024,
+                "w": 0.302488,
+                "h": 0.018748
+              },
+              {
+                "text": "E",
+                "x": 0.091674,
+                "y": 0.546172,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "running very slowly",
+                "x": 0.138041,
+                "y": 0.544472,
+                "w": 0.200923,
+                "h": 0.018771
+              },
+              {
+                "text": "79",
+                "x": 0.910821,
+                "y": 0.994968,
+                "w": 0.030911,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-79.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 15-18",
+                "x": 0.054139,
+                "y": 0.029376,
+                "w": 0.192091,
+                "h": 0.017051
+              },
+              {
+                "text": "What reason prevented each of the following members of the Compton Park Runners",
+                "x": 0.051931,
+                "y": 0.071701,
+                "w": 0.865514,
+                "h": 0.020575
+              },
+              {
+                "text": "Club from joining until recently?",
+                "x": 0.051931,
+                "y": 0.095668,
+                "w": 0.32236,
+                "h": 0.018738
+              },
+              {
+                "text": "Write the correct letter, A, B, or C next to Questions 15-18.",
+                "x": 0.051931,
+                "y": 0.136475,
+                "w": 0.602769,
+                "h": 0.0221
+              },
+              {
+                "text": "Reasons",
+                "x": 0.447108,
+                "y": 0.189014,
+                "w": 0.101655,
+                "h": 0.01732
+              },
+              {
+                "text": "A a lack of confidence",
+                "x": 0.316884,
+                "y": 0.219774,
+                "w": 0.253914,
+                "h": 0.018824
+              },
+              {
+                "text": "B",
+                "x": 0.316884,
+                "y": 0.252074,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "C",
+                "x": 0.316884,
+                "y": 0.280974,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "a dislike of running",
+                "x": 0.367285,
+                "y": 0.24828,
+                "w": 0.193022,
+                "h": 0.022745
+              },
+              {
+                "text": "a lack of time",
+                "x": 0.363138,
+                "y": 0.278753,
+                "w": 0.141535,
+                "h": 0.019741
+              },
+              {
+                "text": "Club members",
+                "x": 0.100506,
+                "y": 0.354073,
+                "w": 0.16118,
+                "h": 0.017
+              },
+              {
+                "text": "15 Ceri",
+                "x": 0.049689,
+                "y": 0.387946,
+                "w": 0.09501,
+                "h": 0.015554
+              },
+              {
+                "text": "16",
+                "x": 0.049723,
+                "y": 0.422073,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "James",
+                "x": 0.096019,
+                "y": 0.423569,
+                "w": 0.073004,
+                "h": 0.015707
+              },
+              {
+                "text": "17 Leo",
+                "x": 0.049723,
+                "y": 0.456044,
+                "w": 0.090526,
+                "h": 0.017028
+              },
+              {
+                "text": "18",
+                "x": 0.049723,
+                "y": 0.490072,
+                "w": 0.026495,
+                "h": 0.0153
+              },
+              {
+                "text": "Mark",
+                "x": 0.100417,
+                "y": 0.489888,
+                "w": 0.053168,
+                "h": 0.015668
+              },
+              {
+                "text": "Questions 19 and 20",
+                "x": 0.051931,
+                "y": 0.544472,
+                "w": 0.231834,
+                "h": 0.0153
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.049723,
+                "y": 0.585271,
+                "w": 0.366519,
+                "h": 0.0204
+              },
+              {
+                "text": "19",
+                "x": 0.047515,
+                "y": 0.629471,
+                "w": 0.030911,
+                "h": 0.0153
+              },
+              {
+                "text": "What does Liz say about running her first marathon?",
+                "x": 0.076218,
+                "y": 0.629471,
+                "w": 0.556402,
+                "h": 0.018745
+              },
+              {
+                "text": "A",
+                "x": 0.098298,
+                "y": 0.661771,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "It had always been her ambition.",
+                "x": 0.14908,
+                "y": 0.663468,
+                "w": 0.335608,
+                "h": 0.017002
+              },
+              {
+                "text": "B",
+                "x": 0.098298,
+                "y": 0.682171,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Her husband persuaded her to do it.",
+                "x": 0.144664,
+                "y": 0.682171,
+                "w": 0.368727,
+                "h": 0.020516
+              },
+              {
+                "text": "C She nearly gave up before the end.",
+                "x": 0.098298,
+                "y": 0.70257,
+                "w": 0.410678,
+                "h": 0.020597
+              },
+              {
+                "text": "20",
+                "x": 0.047515,
+                "y": 0.73317,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "Liz says new runners should sign up for a race",
+                "x": 0.082676,
+                "y": 0.733918,
+                "w": 0.488286,
+                "h": 0.022407
+              },
+              {
+                "text": "A every six months.",
+                "x": 0.100506,
+                "y": 0.76717,
+                "w": 0.229626,
+                "h": 0.017005
+              },
+              {
+                "text": "B",
+                "x": 0.098298,
+                "y": 0.78757,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "within a few weeks of taking up running.",
+                "x": 0.146872,
+                "y": 0.78927,
+                "w": 0.40847,
+                "h": 0.018872
+              },
+              {
+                "text": "after completing several practice runs.",
+                "x": 0.146612,
+                "y": 0.808018,
+                "w": 0.391361,
+                "h": 0.023535
+              },
+              {
+                "text": "80",
+                "x": 0.045307,
+                "y": 0.994968,
+                "w": 0.030911,
+                "h": 0.017
+              },
+              {
+                "text": "→",
+                "x": 0.115961,
+                "y": 0.994968,
+                "w": 0.026495,
+                "h": 0.0187
+              },
+              {
+                "text": "p. 126",
+                "x": 0.186615,
+                "y": 0.996668,
+                "w": 0.068446,
+                "h": 0.017154
+              },
+              {
+                "text": "p. 115",
+                "x": 0.303636,
+                "y": 0.996668,
+                "w": 0.070654,
+                "h": 0.018897
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            11,
+            12
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            13,
+            14
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-80.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.040891,
+                "y": 0.031076,
+                "w": 0.136893,
+                "h": 0.017094
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.204279,
+                "y": 0.031076,
+                "w": 0.22521,
+                "h": 0.018837
+              },
+              {
+                "text": "Questions 21-25",
+                "x": 0.043099,
+                "y": 0.075187,
+                "w": 0.189883,
+                "h": 0.017089
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.043099,
+                "y": 0.117775,
+                "w": 0.362103,
+                "h": 0.018854
+              },
+              {
+                "text": "21 Kieran thinks the packing advice given by Jane's grandfather is",
+                "x": 0.040891,
+                "y": 0.158418,
+                "w": 0.686671,
+                "h": 0.020557
+              },
+              {
+                "text": "A common sense.",
+                "x": 0.093686,
+                "y": 0.192461,
+                "w": 0.21233,
+                "h": 0.015507
+              },
+              {
+                "text": "B hard to follow.",
+                "x": 0.091674,
+                "y": 0.212888,
+                "w": 0.192091,
+                "h": 0.017086
+              },
+              {
+                "text": "Cover-protective.",
+                "x": 0.091674,
+                "y": 0.233374,
+                "w": 0.209755,
+                "h": 0.0187
+              },
+              {
+                "text": "22 How does Jane feel about the books her grandfather has given her?",
+                "x": 0.038683,
+                "y": 0.274174,
+                "w": 0.739661,
+                "h": 0.018895
+              },
+              {
+                "text": "A They are not worth keeping.",
+                "x": 0.089466,
+                "y": 0.306474,
+                "w": 0.335608,
+                "h": 0.018842
+              },
+              {
+                "text": "B They should go to a collector.",
+                "x": 0.089466,
+                "y": 0.326873,
+                "w": 0.348855,
+                "h": 0.0204
+              },
+              {
+                "text": "C They have sentimental value for her.",
+                "x": 0.091674,
+                "y": 0.348847,
+                "w": 0.417301,
+                "h": 0.018827
+              },
+              {
+                "text": "23 Jane and Kieran agree that hardback books should be",
+                "x": 0.038683,
+                "y": 0.389773,
+                "w": 0.600561,
+                "h": 0.018773
+              },
+              {
+                "text": "A put out on display.",
+                "x": 0.089466,
+                "y": 0.422055,
+                "w": 0.231834,
+                "h": 0.018738
+              },
+              {
+                "text": "B given as gifts to visitors.",
+                "x": 0.091674,
+                "y": 0.442472,
+                "w": 0.293657,
+                "h": 0.020544
+              },
+              {
+                "text": "C more attractively designed.",
+                "x": 0.091674,
+                "y": 0.464572,
+                "w": 0.324568,
+                "h": 0.0187
+              },
+              {
+                "text": "24 While talking about taking a book from a shelf, Jane",
+                "x": 0.038683,
+                "y": 0.505286,
+                "w": 0.574065,
+                "h": 0.018786
+              },
+              {
+                "text": "A describes the mistakes other people make doing it.",
+                "x": 0.093882,
+                "y": 0.537532,
+                "w": 0.560818,
+                "h": 0.017139
+              },
+              {
+                "text": "B reflects on a significant childhood experience.",
+                "x": 0.091674,
+                "y": 0.558013,
+                "w": 0.510035,
+                "h": 0.020481
+              },
+              {
+                "text": "C explains why some books are easier to remove than others.",
+                "x": 0.089466,
+                "y": 0.578471,
+                "w": 0.655759,
+                "h": 0.020504
+              },
+              {
+                "text": "25 What do Jane and Kieran suggest about new books?",
+                "x": 0.038683,
+                "y": 0.620763,
+                "w": 0.587313,
+                "h": 0.018908
+              },
+              {
+                "text": "A Their parents liked buying them as presents.",
+                "x": 0.091674,
+                "y": 0.653271,
+                "w": 0.498995,
+                "h": 0.01717
+              },
+              {
+                "text": "B They would like to buy more of them.",
+                "x": 0.091674,
+                "y": 0.673491,
+                "w": 0.423925,
+                "h": 0.02058
+              },
+              {
+                "text": "C Not everyone can afford them.",
+                "x": 0.089466,
+                "y": 0.695715,
+                "w": 0.357687,
+                "h": 0.017056
+              },
+              {
+                "text": "81",
+                "x": 0.908613,
+                "y": 0.998368,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-81.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 26-30",
+                "x": 0.051931,
+                "y": 0.032776,
+                "w": 0.192091,
+                "h": 0.017137
+              },
+              {
+                "text": "Where does Jane's grandfather keep each of the following types of books in his shop?",
+                "x": 0.049723,
+                "y": 0.075187,
+                "w": 0.876554,
+                "h": 0.018789
+              },
+              {
+                "text": "Choose FIVE answers from the box and write the correct letter, A-G, next to",
+                "x": 0.051931,
+                "y": 0.116075,
+                "w": 0.77278,
+                "h": 0.020554
+              },
+              {
+                "text": "Questions 26-30.",
+                "x": 0.051931,
+                "y": 0.136475,
+                "w": 0.183259,
+                "h": 0.018892
+              },
+              {
+                "text": "A",
+                "x": 0.299221,
+                "y": 0.226574,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "B",
+                "x": 0.299221,
+                "y": 0.260574,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.297013,
+                "y": 0.323473,
+                "w": 0.022079,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.299221,
+                "y": 0.355773,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.297013,
+                "y": 0.388073,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "G",
+                "x": 0.299221,
+                "y": 0.418673,
+                "w": 0.022079,
+                "h": 0.0187
+              },
+              {
+                "text": "Location of books",
+                "x": 0.400786,
+                "y": 0.19415,
+                "w": 0.198715,
+                "h": 0.017124
+              },
+              {
+                "text": "near the entrance",
+                "x": 0.347795,
+                "y": 0.22814,
+                "w": 0.183259,
+                "h": 0.017134
+              },
+              {
+                "text": "in the attic",
+                "x": 0.340825,
+                "y": 0.258957,
+                "w": 0.11562,
+                "h": 0.018408
+              },
+              {
+                "text": "at the back of the shop",
+                "x": 0.345587,
+                "y": 0.292874,
+                "w": 0.23625,
+                "h": 0.0187
+              },
+              {
+                "text": "on a high shelf",
+                "x": 0.345587,
+                "y": 0.323473,
+                "w": 0.156764,
+                "h": 0.018837
+              },
+              {
+                "text": "near the stairs",
+                "x": 0.347795,
+                "y": 0.355773,
+                "w": 0.147932,
+                "h": 0.01704
+              },
+              {
+                "text": "in a specially designed space",
+                "x": 0.336756,
+                "y": 0.386322,
+                "w": 0.31132,
+                "h": 0.022224
+              },
+              {
+                "text": "within the café",
+                "x": 0.343379,
+                "y": 0.420312,
+                "w": 0.154556,
+                "h": 0.017061
+              },
+              {
+                "text": "26",
+                "x": 0.100506,
+                "y": 0.520672,
+                "w": 0.030911,
+                "h": 0.017
+              },
+              {
+                "text": "Types of books",
+                "x": 0.151288,
+                "y": 0.488291,
+                "w": 0.167804,
+                "h": 0.018781
+              },
+              {
+                "text": "rare books",
+                "x": 0.146872,
+                "y": 0.522281,
+                "w": 0.114813,
+                "h": 0.015391
+              },
+              {
+                "text": "27 children's books",
+                "x": 0.100506,
+                "y": 0.55627,
+                "w": 0.216379,
+                "h": 0.017101
+              },
+              {
+                "text": "28",
+                "x": 0.100506,
+                "y": 0.588671,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "29",
+                "x": 0.100506,
+                "y": 0.620971,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "30",
+                "x": 0.098298,
+                "y": 0.653271,
+                "w": 0.033119,
+                "h": 0.0187
+              },
+              {
+                "text": "unwanted books",
+                "x": 0.151288,
+                "y": 0.592003,
+                "w": 0.170012,
+                "h": 0.015368
+              },
+              {
+                "text": "requested books",
+                "x": 0.144665,
+                "y": 0.622506,
+                "w": 0.178843,
+                "h": 0.018865
+              },
+              {
+                "text": "coursebooks",
+                "x": 0.14908,
+                "y": 0.656671,
+                "w": 0.134685,
+                "h": 0.0153
+              },
+              {
+                "text": "82",
+                "x": 0.051931,
+                "y": 0.998368,
+                "w": 0.044159,
+                "h": 0.0136
+              },
+              {
+                "text": "›O p. 126 Ü p. 116",
+                "x": 0.107129,
+                "y": 0.996668,
+                "w": 0.278201,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-82.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.043099,
+                "y": 0.031076,
+                "w": 0.112605,
+                "h": 0.017094
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.215319,
+                "y": 0.031076,
+                "w": 0.216379,
+                "h": 0.018837
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.045307,
+                "y": 0.075187,
+                "w": 0.267161,
+                "h": 0.017089
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.045307,
+                "y": 0.116075,
+                "w": 0.428341,
+                "h": 0.018811
+              },
+              {
+                "text": "Tree planting",
+                "x": 0.402885,
+                "y": 0.164897,
+                "w": 0.198932,
+                "h": 0.028156
+              },
+              {
+                "text": "Reforestation projects should:",
+                "x": 0.067386,
+                "y": 0.211145,
+                "w": 0.3334,
+                "h": 0.018829
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.241874,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "include a range of tree species",
+                "x": 0.109337,
+                "y": 0.241874,
+                "w": 0.320152,
+                "h": 0.0187
+              },
+              {
+                "text": "not include invasive species because of possible 31",
+                "x": 0.115961,
+                "y": 0.267359,
+                "w": 0.523283,
+                "h": 0.018738
+              },
+              {
+                "text": "... with",
+                "x": 0.780552,
+                "y": 0.267359,
+                "w": 0.059614,
+                "h": 0.017015
+              },
+              {
+                "text": "native species",
+                "x": 0.118169,
+                "y": 0.292874,
+                "w": 0.145724,
+                "h": 0.01719
+              },
+              {
+                "text": "aim to capture carbon, protect the environment and provide sustainable",
+                "x": 0.115961,
+                "y": 0.318343,
+                "w": 0.721998,
+                "h": 0.020481
+              },
+              {
+                "text": "sources of 32",
+                "x": 0.115961,
+                "y": 0.34536,
+                "w": 0.141308,
+                "h": 0.017213
+              },
+              {
+                "text": "for local people",
+                "x": 0.411826,
+                "y": 0.34536,
+                "w": 0.158972,
+                "h": 0.018913
+              },
+              {
+                "text": "use tree seeds with a high genetic diversity to increase resistance to",
+                "x": 0.115961,
+                "y": 0.372773,
+                "w": 0.691087,
+                "h": 0.020521
+              },
+              {
+                "text": "33",
+                "x": 0.118169,
+                "y": 0.399973,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "... and climate change",
+                "x": 0.281557,
+                "y": 0.399831,
+                "w": 0.220794,
+                "h": 0.018842
+              },
+              {
+                "text": "plant trees on previously forested land which is in a bad condition, not select",
+                "x": 0.118169,
+                "y": 0.427173,
+                "w": 0.770572,
+                "h": 0.020592
+              },
+              {
+                "text": "land which is being used for 34",
+                "x": 0.113753,
+                "y": 0.452558,
+                "w": 0.317944,
+                "h": 0.018814
+              },
+              {
+                "text": ".. . .",
+                "x": 0.520015,
+                "y": 0.461172,
+                "w": 0.068446,
+                "h": 0.0085
+              },
+              {
+                "text": "Large-scale reforestation projects",
+                "x": 0.067386,
+                "y": 0.491772,
+                "w": 0.368727,
+                "h": 0.018743
+              },
+              {
+                "text": "Base planning decisions on information from accurate 35",
+                "x": 0.118169,
+                "y": 0.524024,
+                "w": 0.576273,
+                "h": 0.022224
+              },
+              {
+                "text": "Drones are useful for identifying areas in Brazil which are endangered by",
+                "x": 0.118169,
+                "y": 0.552784,
+                "w": 0.737453,
+                "h": 0.020587
+              },
+              {
+                "text": "keeping 36",
+                "x": 0.118051,
+                "y": 0.579741,
+                "w": 0.112841,
+                "h": 0.01956
+              },
+              {
+                "text": "and illegal logging.",
+                "x": 0.387538,
+                "y": 0.580171,
+                "w": 0.192091,
+                "h": 0.020547
+              },
+              {
+                "text": "Lampang Province, Northern Thailand",
+                "x": 0.067386,
+                "y": 0.619271,
+                "w": 0.415094,
+                "h": 0.0204
+              },
+              {
+                "text": "A forest was restored in an area damaged by mining.",
+                "x": 0.118169,
+                "y": 0.648171,
+                "w": 0.534322,
+                "h": 0.020527
+              },
+              {
+                "text": "A variety of native fig trees were planted, which are important for",
+                "x": 0.115961,
+                "y": 0.673491,
+                "w": 0.653551,
+                "h": 0.02398
+              },
+              {
+                "text": "- supporting many wildlife species",
+                "x": 0.113753,
+                "y": 0.70257,
+                "w": 0.368727,
+                "h": 0.018854
+              },
+              {
+                "text": "- increasing the 37",
+                "x": 0.113753,
+                "y": 0.729704,
+                "w": 0.214171,
+                "h": 0.020481
+              },
+              {
+                "text": "..... of recovery by attracting animals and birds,",
+                "x": 0.447153,
+                "y": 0.727961,
+                "w": 0.479124,
+                "h": 0.023967
+              },
+              {
+                "text": "e.g., 38",
+                "x": 0.151288,
+                "y": 0.75697,
+                "w": 0.079486,
+                "h": 0.0187
+              },
+              {
+                "text": "were soon attracted to the area.",
+                "x": 0.38533,
+                "y": 0.75187,
+                "w": 0.328984,
+                "h": 0.0238
+              },
+              {
+                "text": "Involving local communities",
+                "x": 0.065179,
+                "y": 0.79594,
+                "w": 0.309112,
+                "h": 0.018829
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.828369,
+                "w": 0.017664,
+                "h": 0.0119
+              },
+              {
+                "text": "Destruction of mangrove forests in Madagascar made it difficult for people to",
+                "x": 0.118169,
+                "y": 0.823269,
+                "w": 0.77278,
+                "h": 0.020605
+              },
+              {
+                "text": "make a living from 39",
+                "x": 0.118169,
+                "y": 0.845182,
+                "w": 0.216379,
+                "h": 0.020587
+              },
+              {
+                "text": "•",
+                "x": 0.065179,
+                "y": 0.870869,
+                "w": 0.015456,
+                "h": 0.0119
+              },
+              {
+                "text": "The mangrove reforestation project:",
+                "x": 0.115961,
+                "y": 0.855569,
+                "w": 0.384182,
+                "h": 0.0306
+              },
+              {
+                "text": "- provided employment for local people",
+                "x": 0.115961,
+                "y": 0.889569,
+                "w": 0.417301,
+                "h": 0.018799
+              },
+              {
+                "text": "- restored a healthy ecosystem",
+                "x": 0.115961,
+                "y": 0.911669,
+                "w": 0.335608,
+                "h": 0.0187
+              },
+              {
+                "text": "- protects against the higher risk of 40",
+                "x": 0.113753,
+                "y": 0.933642,
+                "w": 0.40847,
+                "h": 0.018827
+              },
+              {
+                "text": "→ • p. 126",
+                "x": 0.625968,
+                "y": 0.996559,
+                "w": 0.143573,
+                "h": 0.022318
+              },
+              {
+                "text": "Up. 118",
+                "x": 0.78276,
+                "y": 0.994968,
+                "w": 0.103773,
+                "h": 0.0238
+              },
+              {
+                "text": "83",
+                "x": 0.910821,
+                "y": 0.996668,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-85.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 1-6",
+                "x": 0.049723,
+                "y": 0.037711,
+                "w": 0.163388,
+                "h": 0.017165
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.047515,
+                "y": 0.078673,
+                "w": 0.856682,
+                "h": 0.020481
+              },
+              {
+                "text": "In boxes 1-6 on your answer sheet, write",
+                "x": 0.049723,
+                "y": 0.121175,
+                "w": 0.419509,
+                "h": 0.017197
+              },
+              {
+                "text": "2",
+                "x": 0.049723,
+                "y": 0.286074,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "3",
+                "x": 0.049723,
+                "y": 0.328573,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "4",
+                "x": 0.049723,
+                "y": 0.389773,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "TRUE",
+                "x": 0.127001,
+                "y": 0.161975,
+                "w": 0.06403,
+                "h": 0.017
+              },
+              {
+                "text": "FALSE",
+                "x": 0.127001,
+                "y": 0.182375,
+                "w": 0.07507,
+                "h": 0.017
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.272725,
+                "y": 0.163647,
+                "w": 0.439381,
+                "h": 0.018738
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.272725,
+                "y": 0.184075,
+                "w": 0.434965,
+                "h": 0.015305
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.127001,
+                "y": 0.204474,
+                "w": 0.465876,
+                "h": 0.015386
+              },
+              {
+                "text": "Forty years ago, there were fewer butterflies in Britain than at present.",
+                "x": 0.09602,
+                "y": 0.245225,
+                "w": 0.713307,
+                "h": 0.020288
+              },
+              {
+                "text": "Caterpillars are eaten by a number of different predators.",
+                "x": 0.082842,
+                "y": 0.286074,
+                "w": 0.593937,
+                "h": 0.018761
+              },
+              {
+                "text": "'Phenology' is a term used to describe a creature's ability to alter the location",
+                "x": 0.093882,
+                "y": 0.326873,
+                "w": 0.781612,
+                "h": 0.0204
+              },
+              {
+                "text": "of a lifecycle event.",
+                "x": 0.098298,
+                "y": 0.348847,
+                "w": 0.198715,
+                "h": 0.018827
+              },
+              {
+                "text": "Some species of butterfly have a reduced lifespan due to spring",
+                "x": 0.09609,
+                "y": 0.389773,
+                "w": 0.649136,
+                "h": 0.020516
+              },
+              {
+                "text": "temperature increases.",
+                "x": 0.098298,
+                "y": 0.411873,
+                "w": 0.238458,
+                "h": 0.017154
+              },
+              {
+                "text": "There is a clear reason for the adaptations that butterflies are making to",
+                "x": 0.09609,
+                "y": 0.452558,
+                "w": 0.728622,
+                "h": 0.017114
+              },
+              {
+                "text": "climate change.",
+                "x": 0.100057,
+                "y": 0.472126,
+                "w": 0.162233,
+                "h": 0.018752
+              },
+              {
+                "text": "The data used in the study was taken from the work of amateur butterfly watchers.",
+                "x": 0.082842,
+                "y": 0.513872,
+                "w": 0.850058,
+                "h": 0.018867
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-86.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 7-13",
+                "x": 0.040891,
+                "y": 0.034476,
+                "w": 0.174428,
+                "h": 0.01718
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.040891,
+                "y": 0.07693,
+                "w": 0.269369,
+                "h": 0.018745
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.038683,
+                "y": 0.117775,
+                "w": 0.638096,
+                "h": 0.018854
+              },
+              {
+                "text": "Write your answers in boxes 7-13 on your answer sheet.",
+                "x": 0.038683,
+                "y": 0.158418,
+                "w": 0.574065,
+                "h": 0.020557
+              },
+              {
+                "text": "Butterflies in the UK",
+                "x": 0.334548,
+                "y": 0.219774,
+                "w": 0.304696,
+                "h": 0.02231
+              },
+              {
+                "text": "The Small Blue",
+                "x": 0.056347,
+                "y": 0.263873,
+                "w": 0.165596,
+                "h": 0.017101
+              },
+              {
+                "text": "lives in large 7...",
+                "x": 0.102714,
+                "y": 0.303074,
+                "w": 0.167804,
+                "h": 0.020499
+              },
+              {
+                "text": "first appears at the start of 8",
+                "x": 0.104922,
+                "y": 0.343873,
+                "w": 0.287033,
+                "h": 0.0187
+              },
+              {
+                "text": "completes more than one reproductive cycle per year",
+                "x": 0.107129,
+                "y": 0.384579,
+                "w": 0.540946,
+                "h": 0.018794
+              },
+              {
+                "text": "The High Brown Fritillary",
+                "x": 0.056347,
+                "y": 0.430573,
+                "w": 0.271577,
+                "h": 0.0204
+              },
+              {
+                "text": "has one reproductive cycle",
+                "x": 0.104637,
+                "y": 0.468685,
+                "w": 0.274404,
+                "h": 0.021973
+              },
+              {
+                "text": "is considered to be more 9",
+                "x": 0.104922,
+                "y": 0.510472,
+                "w": 0.271577,
+                "h": 0.0153
+              },
+              {
+                "text": ".. than other species",
+                "x": 0.553134,
+                "y": 0.508772,
+                "w": 0.200923,
+                "h": 0.020481
+              },
+              {
+                "text": "its caterpillars occupy a limited range of 10",
+                "x": 0.102714,
+                "y": 0.549572,
+                "w": 0.437173,
+                "h": 0.0204
+              },
+              {
+                "text": "The Silver-studded Blue",
+                "x": 0.056347,
+                "y": 0.597171,
+                "w": 0.262745,
+                "h": 0.017056
+              },
+              {
+                "text": "is already able to reproduce twice a year in warm areas of 11",
+                "x": 0.102714,
+                "y": 0.636271,
+                "w": 0.604977,
+                "h": 0.0204
+              },
+              {
+                "text": "The White Admiral",
+                "x": 0.051931,
+                "y": 0.683871,
+                "w": 0.207547,
+                "h": 0.01533
+              },
+              {
+                "text": "•",
+                "x": 0.054139,
+                "y": 0.72467,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "is found in 12..",
+                "x": 0.102714,
+                "y": 0.72297,
+                "w": 0.152348,
+                "h": 0.017192
+              },
+              {
+                "text": "areas of England",
+                "x": 0.429489,
+                "y": 0.72297,
+                "w": 0.176636,
+                "h": 0.0187
+              },
+              {
+                "text": "both climate change and the 13",
+                "x": 0.104922,
+                "y": 0.761951,
+                "w": 0.320152,
+                "h": 0.020519
+              },
+              {
+                "text": "reasons for decline",
+                "x": 0.104922,
+                "y": 0.782432,
+                "w": 0.194299,
+                "h": 0.017038
+              },
+              {
+                "text": "of the caterpillar are possible",
+                "x": 0.612749,
+                "y": 0.763694,
+                "w": 0.293657,
+                "h": 0.018776
+              },
+              {
+                "text": "→ O p. 127",
+                "x": 0.738601,
+                "y": 0.998368,
+                "w": 0.145724,
+                "h": 0.0238
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 3,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 4,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 5,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-89.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 14-17",
+                "x": 0.056347,
+                "y": 0.035968,
+                "w": 0.192091,
+                "h": 0.017208
+              },
+              {
+                "text": "Reading Passage 2 has six paragraphs, A-F.",
+                "x": 0.056347,
+                "y": 0.075187,
+                "w": 0.465876,
+                "h": 0.018789
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.056347,
+                "y": 0.110919,
+                "w": 0.534322,
+                "h": 0.020481
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 14-17 on your answer sheet.",
+                "x": 0.058555,
+                "y": 0.148375,
+                "w": 0.680047,
+                "h": 0.018758
+              },
+              {
+                "text": "14 reference to the rapidly increasing need for one raw material in the transport industry",
+                "x": 0.056347,
+                "y": 0.175412,
+                "w": 0.896425,
+                "h": 0.018862
+              },
+              {
+                "text": "15 a rough estimate of the area of the Earth covered by the oceans",
+                "x": 0.058555,
+                "y": 0.202774,
+                "w": 0.691087,
+                "h": 0.017086
+              },
+              {
+                "text": "16 how a particular underwater habitat, where minerals and organisms co-exist, is formed",
+                "x": 0.056347,
+                "y": 0.231626,
+                "w": 0.896425,
+                "h": 0.018748
+              },
+              {
+                "text": "17 reference to the fact that the countries of the world have yet to agree on rules for",
+                "x": 0.058555,
+                "y": 0.258874,
+                "w": 0.865514,
+                "h": 0.0172
+              },
+              {
+                "text": "the exploration of the seabed",
+                "x": 0.106838,
+                "y": 0.276677,
+                "w": 0.296452,
+                "h": 0.020685
+              },
+              {
+                "text": "Questions 18-23",
+                "x": 0.058555,
+                "y": 0.333595,
+                "w": 0.189883,
+                "h": 0.017078
+              },
+              {
+                "text": "Look at the following statements (Questions 18-23) and the list of people below.",
+                "x": 0.056347,
+                "y": 0.374473,
+                "w": 0.814731,
+                "h": 0.020565
+              },
+              {
+                "text": "Match each statement with the correct person or people, A-E.",
+                "x": 0.056347,
+                "y": 0.416826,
+                "w": 0.631472,
+                "h": 0.018847
+              },
+              {
+                "text": "Write the correct letter, A-E, in boxes 18-23 on your answer sheet.",
+                "x": 0.058555,
+                "y": 0.457772,
+                "w": 0.673423,
+                "h": 0.020496
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.056347,
+                "y": 0.507029,
+                "w": 0.459252,
+                "h": 0.018743
+              },
+              {
+                "text": "18 A move away from the exploration of heavily mined reserves on land is a good idea.",
+                "x": 0.056347,
+                "y": 0.544472,
+                "w": 0.898633,
+                "h": 0.018771
+              },
+              {
+                "text": "19 The negative effects of undersea exploration on local areas and their inhabitants are",
+                "x": 0.058555,
+                "y": 0.573265,
+                "w": 0.892009,
+                "h": 0.017106
+              },
+              {
+                "text": "being ignored.",
+                "x": 0.107099,
+                "y": 0.593628,
+                "w": 0.145786,
+                "h": 0.018987
+              },
+              {
+                "text": "20 There are more worthwhile things to extract from the sea than minerals.",
+                "x": 0.058555,
+                "y": 0.620763,
+                "w": 0.777196,
+                "h": 0.017208
+              },
+              {
+                "text": "21",
+                "x": 0.056347,
+                "y": 0.649871,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "No other form of human exploration will have such a destructive impact on marine",
+                "x": 0.091674,
+                "y": 0.649871,
+                "w": 0.843435,
+                "h": 0.01534
+              },
+              {
+                "text": "life as deep-sea mining.",
+                "x": 0.107129,
+                "y": 0.670271,
+                "w": 0.245082,
+                "h": 0.017165
+              },
+              {
+                "text": "22 More is known about outer space than about what lies beneath the oceans.",
+                "x": 0.056347,
+                "y": 0.697458,
+                "w": 0.814731,
+                "h": 0.018738
+              },
+              {
+                "text": "23",
+                "x": 0.056347,
+                "y": 0.72637,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "There is one marine life habitat where experts agree mining should not take place.",
+                "x": 0.107129,
+                "y": 0.724475,
+                "w": 0.834603,
+                "h": 0.018895
+              },
+              {
+                "text": "List of People",
+                "x": 0.405202,
+                "y": 0.76887,
+                "w": 0.207547,
+                "h": 0.0255
+              },
+              {
+                "text": "A",
+                "x": 0.210903,
+                "y": 0.80797,
+                "w": 0.033119,
+                "h": 0.017
+              },
+              {
+                "text": "Professor Mat Upton",
+                "x": 0.248438,
+                "y": 0.80797,
+                "w": 0.22521,
+                "h": 0.017167
+              },
+              {
+                "text": "B",
+                "x": 0.210903,
+                "y": 0.840269,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Julie Hunter, Julian Aguon and Pradeep Singh",
+                "x": 0.259478,
+                "y": 0.840269,
+                "w": 0.470292,
+                "h": 0.018857
+              },
+              {
+                "text": "C Dr Jon Copley",
+                "x": 0.210518,
+                "y": 0.871564,
+                "w": 0.197332,
+                "h": 0.020329
+              },
+              {
+                "text": "D Mike Johnston",
+                "x": 0.213111,
+                "y": 0.904869,
+                "w": 0.198715,
+                "h": 0.0136
+              },
+              {
+                "text": "E",
+                "x": 0.213111,
+                "y": 0.938868,
+                "w": 0.033119,
+                "h": 0.0136
+              },
+              {
+                "text": "Verena Tunnicliffe",
+                "x": 0.259478,
+                "y": 0.938868,
+                "w": 0.185467,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-90.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 24-26",
+                "x": 0.036475,
+                "y": 0.034476,
+                "w": 0.189883,
+                "h": 0.01718
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.036475,
+                "y": 0.07693,
+                "w": 0.304696,
+                "h": 0.018745
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.034267,
+                "y": 0.117775,
+                "w": 0.638096,
+                "h": 0.018854
+              },
+              {
+                "text": "Write your answers in boxes 24-26 on your answer sheet.",
+                "x": 0.034267,
+                "y": 0.160161,
+                "w": 0.574065,
+                "h": 0.018814
+              },
+              {
+                "text": "Mining the sea floor",
+                "x": 0.334548,
+                "y": 0.216374,
+                "w": 0.295865,
+                "h": 0.023967
+              },
+              {
+                "text": "Mining corporations believe that the mineral resources lying under the sea may",
+                "x": 0.051931,
+                "y": 0.255474,
+                "w": 0.799276,
+                "h": 0.0206
+              },
+              {
+                "text": "be superior to those found in the earth. They also say that these can be removed",
+                "x": 0.051931,
+                "y": 0.280867,
+                "w": 0.816939,
+                "h": 0.018806
+              },
+              {
+                "text": "without producing much 24....",
+                "x": 0.049723,
+                "y": 0.303074,
+                "w": 0.298072,
+                "h": 0.020499
+              },
+              {
+                "text": "................",
+                "x": 0.449361,
+                "y": 0.314973,
+                "w": 0.072862,
+                "h": 0.0034
+              },
+              {
+                "text": "The extraction is often done by adapting the 25",
+                "x": 0.051931,
+                "y": 0.338773,
+                "w": 0.476916,
+                "h": 0.020532
+              },
+              {
+                "text": "that has already",
+                "x": 0.712106,
+                "y": 0.340473,
+                "w": 0.170012,
+                "h": 0.018832
+              },
+              {
+                "text": "been used to work on land. The method of excavation involves removing the",
+                "x": 0.051931,
+                "y": 0.364098,
+                "w": 0.770572,
+                "h": 0.018875
+              },
+              {
+                "text": "seawater from the slurry that is brought up to ships and returning it to the seabed.",
+                "x": 0.051931,
+                "y": 0.386322,
+                "w": 0.825771,
+                "h": 0.020481
+              },
+              {
+                "text": "However, concerned groups strongly believe that 26",
+                "x": 0.051931,
+                "y": 0.411873,
+                "w": 0.527699,
+                "h": 0.0204
+              },
+              {
+                "text": "... is necessary",
+                "x": 0.743017,
+                "y": 0.411873,
+                "w": 0.152348,
+                "h": 0.018897
+              },
+              {
+                "text": "due to the possible number of unidentified consequences.",
+                "x": 0.051931,
+                "y": 0.435564,
+                "w": 0.587313,
+                "h": 0.018809
+              },
+              {
+                "text": "→ O p. 127 91",
+                "x": 0.736348,
+                "y": 0.996458,
+                "w": 0.196598,
+                "h": 0.02592
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-93.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 27-30",
+                "x": 0.058555,
+                "y": 0.032776,
+                "w": 0.189883,
+                "h": 0.017137
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.056347,
+                "y": 0.078673,
+                "w": 0.39743,
+                "h": 0.018738
+              },
+              {
+                "text": "Write the correct letter in boxes 27-30 on your answer sheet.",
+                "x": 0.058555,
+                "y": 0.119475,
+                "w": 0.616016,
+                "h": 0.017154
+              },
+              {
+                "text": "27 What is the writer doing in the first paragraph?",
+                "x": 0.056347,
+                "y": 0.160161,
+                "w": 0.521075,
+                "h": 0.018814
+              },
+              {
+                "text": "setting out two opposing views about human nature",
+                "x": 0.14908,
+                "y": 0.192407,
+                "w": 0.532115,
+                "h": 0.017167
+              },
+              {
+                "text": "B justifying his opinion about our tendency to be greedy",
+                "x": 0.107129,
+                "y": 0.212888,
+                "w": 0.593937,
+                "h": 0.018786
+              },
+              {
+                "text": "describing a commonly held belief about people's behaviour",
+                "x": 0.135833,
+                "y": 0.233369,
+                "w": 0.631472,
+                "h": 0.020481
+              },
+              {
+                "text": "Dexplaining why he thinks that humans act in a selfish manner",
+                "x": 0.107129,
+                "y": 0.255474,
+                "w": 0.669007,
+                "h": 0.018857
+              },
+              {
+                "text": "28 What point is made about Richard Dawkins' book The Selfish Gene?",
+                "x": 0.056347,
+                "y": 0.296119,
+                "w": 0.746285,
+                "h": 0.018854
+              },
+              {
+                "text": "A Its appeal lay in the radical nature of its ideas.",
+                "x": 0.107129,
+                "y": 0.326873,
+                "w": 0.516659,
+                "h": 0.0204
+              },
+              {
+                "text": "B",
+                "x": 0.107129,
+                "y": 0.350673,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "Its success was due to the scientific support it offered.",
+                "x": 0.153496,
+                "y": 0.348847,
+                "w": 0.551986,
+                "h": 0.018827
+              },
+              {
+                "text": "It presented a view that was in line with the attitudes of its time.",
+                "x": 0.151288,
+                "y": 0.37107,
+                "w": 0.649136,
+                "h": 0.018738
+              },
+              {
+                "text": "D Ittook an innovative approach to the analysis of human psychology.",
+                "x": 0.107129,
+                "y": 0.391473,
+                "w": 0.737453,
+                "h": 0.018816
+              },
+              {
+                "text": "29 What does the writer suggest about the prehistoric era in the fourth paragraph?",
+                "x": 0.056347,
+                "y": 0.432077,
+                "w": 0.852266,
+                "h": 0.018895
+              },
+              {
+                "text": "A Societies were more complex than many people believe.",
+                "x": 0.107129,
+                "y": 0.464572,
+                "w": 0.624848,
+                "h": 0.0187
+              },
+              {
+                "text": "B Supplies of natural resources were probably relatively plentiful.",
+                "x": 0.107129,
+                "y": 0.484805,
+                "w": 0.686671,
+                "h": 0.018867
+              },
+              {
+                "text": "C Most estimates about population sizes are likely to be inaccurate.",
+                "x": 0.107129,
+                "y": 0.507029,
+                "w": 0.713166,
+                "h": 0.018743
+              },
+              {
+                "text": "D Humans moved across continents more than was previously thought.",
+                "x": 0.109337,
+                "y": 0.527472,
+                "w": 0.748493,
+                "h": 0.017033
+              },
+              {
+                "text": "30 The writer refers to Bruce Knauft's work as support for the idea that",
+                "x": 0.056347,
+                "y": 0.568271,
+                "w": 0.735245,
+                "h": 0.0187
+              },
+              {
+                "text": "A selfishness is a relatively recent development in human societies.",
+                "x": 0.107129,
+                "y": 0.600571,
+                "w": 0.715374,
+                "h": 0.018885
+              },
+              {
+                "text": "B only people in isolated communities can live in an unselfish manner.",
+                "x": 0.107129,
+                "y": 0.620763,
+                "w": 0.737453,
+                "h": 0.018908
+              },
+              {
+                "text": "C very few lifestyles have survived unchanged since prehistoric times.",
+                "x": 0.107129,
+                "y": 0.641244,
+                "w": 0.737453,
+                "h": 0.020527
+              },
+              {
+                "text": "D hunter-gatherer cultures worldwide are declining in number.",
+                "x": 0.107129,
+                "y": 0.663468,
+                "w": 0.655759,
+                "h": 0.018738
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c19-test-4/page-94.webp",
+            "width": 1767,
+            "height": 2294,
+            "lines": [
+              {
+                "text": "Questions 31-35",
+                "x": 0.038683,
+                "y": 0.029376,
+                "w": 0.189883,
+                "h": 0.017051
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.038683,
+                "y": 0.063375,
+                "w": 0.304696,
+                "h": 0.01704
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.038683,
+                "y": 0.093925,
+                "w": 0.638096,
+                "h": 0.018751
+              },
+              {
+                "text": "Write your answers in boxes 31-35 on your answer sheet.",
+                "x": 0.038568,
+                "y": 0.125053,
+                "w": 0.583149,
+                "h": 0.021966
+              },
+              {
+                "text": "Contemporary hunter-gatherer societies",
+                "x": 0.188823,
+                "y": 0.172175,
+                "w": 0.591729,
+                "h": 0.0238
+              },
+              {
+                "text": "Bruce Knauft's research shows that contemporary hunter-gatherer societies tend",
+                "x": 0.056347,
+                "y": 0.211145,
+                "w": 0.812523,
+                "h": 0.018829
+              },
+              {
+                "text": "to exhibit a high level of1.....",
+                "x": 0.051931,
+                "y": 0.236774,
+                "w": 0.306904,
+                "h": 0.018819
+              },
+              {
+                "text": "............... in all areas of life. In these cultures,",
+                "x": 0.41845,
+                "y": 0.235074,
+                "w": 0.457044,
+                "h": 0.018776
+              },
+              {
+                "text": "distributing resources fairly among all members is a moral obligation. These societies",
+                "x": 0.056347,
+                "y": 0.258874,
+                "w": 0.856682,
+                "h": 0.0204
+              },
+              {
+                "text": "also employ strategies to prevent differences in 32",
+                "x": 0.056347,
+                "y": 0.284353,
+                "w": 0.510035,
+                "h": 0.020481
+              },
+              {
+                "text": "..... occurring: for",
+                "x": 0.714314,
+                "y": 0.284353,
+                "w": 0.174428,
+                "h": 0.01702
+              },
+              {
+                "text": "example, the !Kung follow a custom whereby the credit for one person's success",
+                "x": 0.054139,
+                "y": 0.308174,
+                "w": 0.814731,
+                "h": 0.0204
+              },
+              {
+                "text": "at 33",
+                "x": 0.056347,
+                "y": 0.333595,
+                "w": 0.052991,
+                "h": 0.015378
+              },
+              {
+                "text": "is given to another member of the group. Individuals who",
+                "x": 0.290389,
+                "y": 0.331852,
+                "w": 0.578481,
+                "h": 0.018821
+              },
+              {
+                "text": "behave in a 34",
+                "x": 0.056347,
+                "y": 0.357473,
+                "w": 0.152348,
+                "h": 0.01534
+              },
+              {
+                "text": "manner are punished by being excluded from the",
+                "x": 0.391954,
+                "y": 0.355773,
+                "w": 0.498995,
+                "h": 0.020527
+              },
+              {
+                "text": "group, and women have a considerable amount of 35",
+                "x": 0.056042,
+                "y": 0.376726,
+                "w": 0.543638,
+                "h": 0.025622
+              },
+              {
+                "text": "..in choices",
+                "x": 0.769427,
+                "y": 0.379218,
+                "w": 0.117192,
+                "h": 0.01771
+              },
+              {
+                "text": "regarding work and marriage.",
+                "x": 0.054139,
+                "y": 0.40506,
+                "w": 0.302488,
+                "h": 0.018738
+              },
+              {
+                "text": "Questions 36-40",
+                "x": 0.038683,
+                "y": 0.46781,
+                "w": 0.189883,
+                "h": 0.017162
+              },
+              {
+                "text": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+                "x": 0.038683,
+                "y": 0.500057,
+                "w": 0.861098,
+                "h": 0.018915
+              },
+              {
+                "text": "In boxes 36-40 on your answer sheet, write",
+                "x": 0.036475,
+                "y": 0.532572,
+                "w": 0.443797,
+                "h": 0.0204
+              },
+              {
+                "text": "YES",
+                "x": 0.113753,
+                "y": 0.573371,
+                "w": 0.050783,
+                "h": 0.017
+              },
+              {
+                "text": "NO",
+                "x": 0.113753,
+                "y": 0.593771,
+                "w": 0.037535,
+                "h": 0.017
+              },
+              {
+                "text": "if the statement agrees with the views of the writer",
+                "x": 0.259478,
+                "y": 0.573265,
+                "w": 0.512243,
+                "h": 0.020506
+              },
+              {
+                "text": "if the statement contradicts the views of the writer",
+                "x": 0.259478,
+                "y": 0.595471,
+                "w": 0.505619,
+                "h": 0.0153
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.113753,
+                "y": 0.615871,
+                "w": 0.706542,
+                "h": 0.018837
+              },
+              {
+                "text": "36 Some anthropologists are mistaken about the point when the number of societies",
+                "x": 0.036475,
+                "y": 0.656496,
+                "w": 0.86993,
+                "h": 0.018875
+              },
+              {
+                "text": "such as the !Kung began to decline.",
+                "x": 0.08505,
+                "y": 0.67872,
+                "w": 0.368727,
+                "h": 0.018751
+              },
+              {
+                "text": "Humans who developed warlike traits in prehistory would have had an advantage",
+                "x": 0.067386,
+                "y": 0.70597,
+                "w": 0.841227,
+                "h": 0.0204
+              },
+              {
+                "text": "over those who did not.",
+                "x": 0.087258,
+                "y": 0.729704,
+                "w": 0.23625,
+                "h": 0.017066
+              },
+              {
+                "text": "38 Being peaceful and cooperative is a natural way for people to behave.",
+                "x": 0.036475,
+                "y": 0.758465,
+                "w": 0.757325,
+                "h": 0.018905
+              },
+              {
+                "text": "39 Negative traits are more apparent in some modern cultures than in others.",
+                "x": 0.038683,
+                "y": 0.78927,
+                "w": 0.797068,
+                "h": 0.017129
+              },
+              {
+                "text": "40 Animal research has failed to reveal a link between changes in the environment",
+                "x": 0.036475,
+                "y": 0.819869,
+                "w": 0.854474,
+                "h": 0.017033
+              },
+              {
+                "text": "and the emergence of aggressive tendencies.",
+                "x": 0.089466,
+                "y": 0.840269,
+                "w": 0.463668,
+                "h": 0.017114
+              },
+              {
+                "text": "→ 0",
+                "x": 0.740809,
+                "y": 0.996668,
+                "w": 0.06403,
+                "h": 0.017154
+              },
+              {
+                "text": "р. 127",
+                "x": 0.809256,
+                "y": 0.996668,
+                "w": 0.068446,
+                "h": 0.018897
+              },
+              {
+                "text": "95",
+                "x": 0.906405,
+                "y": 0.996668,
+                "w": 0.028703,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 38,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 40,
+              "text": ""
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "Kaeden",
+      "locker|lockers",
+      "passport",
+      "uniform",
+      "third|3rd",
+      "0412 665 903|0412665903",
+      "yellow",
+      "plastic",
+      "ice",
+      "gloves",
+      "C",
+      "E",
+      "A",
+      "D",
+      "A",
+      "B",
+      "C",
+      "A",
+      "C",
+      "B",
+      "A",
+      "C",
+      "A",
+      "B",
+      "C",
+      "D",
+      "F",
+      "A",
+      "C",
+      "G",
+      "competition",
+      "food",
+      "disease",
+      "agriculture",
+      "maps",
+      "cattle",
+      "speed",
+      "monkeys",
+      "fishing",
+      "flooding"
+    ],
+    "reading": [
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "colonies",
+      "spring",
+      "endangered",
+      "habitat|habitats",
+      "Europe",
+      "southern",
+      "diet",
+      "C",
+      "F",
+      "E",
+      "D",
+      "D",
+      "B",
+      "A",
+      "E",
+      "B",
+      "C",
+      "waste",
+      "machinery",
+      "caution",
+      "C",
+      "C",
+      "B",
+      "A",
+      "egalitarianism",
+      "status",
+      "hunting",
+      "domineering",
+      "autonomy",
+      "NOT GIVEN",
+      "NO",
+      "YES",
+      "NOT GIVEN",
+      "NO"
+    ]
+  },
+  "completionOptions": {}
+}

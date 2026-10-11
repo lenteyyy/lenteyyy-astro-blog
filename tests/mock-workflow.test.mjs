@@ -5,8 +5,8 @@ import {readWorkflow,workflowUrl,cleanRun,completeStage,subjectOrder} from '../s
 import {safeIeltsNext} from '../src/lib/ielts/oauth-policy.ts';
 import {scoreAnswers} from '../src/lib/ielts/mock/scoring.ts';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
-test('all subject combinations produce safe round-tripping URLs for both books',()=>{
- for(let bits=1;bits<8;bits++)for(const book of [20,21])for(let paper=1;paper<=4;paper++){
+test('all subject combinations produce safe round-tripping URLs for all four books',()=>{
+ for(let bits=1;bits<8;bits++)for(const book of [16,17,18,19,20,21])for(let paper=1;paper<=4;paper++){
   const selected=subjectOrder.filter((_,i)=>bits&(1<<i));
   for(const subject of selected){const url=workflowUrl(book,paper,'custom',selected,subject);assert.equal(safeIeltsNext(url),url);assert.deepEqual(readWorkflow(new URL(url,'https://local.test').searchParams),{mode:'custom',subjects:selected,subject});}
  }

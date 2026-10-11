@@ -1,6 +1,6 @@
 import type {QuestionBlock} from './test1-questions';
 const normal=(s:string)=>s.normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
-const accepts=(given:string,expected:string)=>!!given&&expected.split('|').some(x=>normal(given)===normal(x));
+export const accepts=(given:string,expected:string)=>!!given&&expected.split('|').some(x=>normal(given)===normal(x));
 export function scoreAnswers(answers:Record<string,string>,keys:string[],blocks:QuestionBlock[][]){
  const pairs=blocks.flat().filter((b):b is Extract<QuestionBlock,{type:'pair'}>=>b.type==='pair');
  const paired=new Set(pairs.flatMap(b=>b.numbers));let score=0;

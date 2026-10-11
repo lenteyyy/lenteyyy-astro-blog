@@ -1,0 +1,5487 @@
+{
+  "source": {
+    "book": 17,
+    "test": 3,
+    "questionPages": {
+      "l": [
+        [
+          46
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          51
+        ]
+      ],
+      "r": [
+        [
+          52,
+          53
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          60,
+          61
+        ]
+      ],
+      "q": [
+        [
+          54,
+          55
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          62,
+          63,
+          64
+        ]
+      ],
+      "w": [
+        65,
+        66
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "73b39f0fb941a647267c9907407af1cc34a81d66864da8a06759aa869d63794d"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-3/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-3/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-3/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c17-test-3/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-3/page-52.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.416052,
+                "y": 0.016507,
+                "w": 0.137272,
+                "h": 0.02395
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.065179,
+                "y": 0.086345,
+                "w": 0.306904,
+                "h": 0.019137
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.065179,
+                "y": 0.127976,
+                "w": 0.816939,
+                "h": 0.020816
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.065179,
+                "y": 0.14874,
+                "w": 0.170012,
+                "h": 0.017324
+              },
+              {
+                "text": "The thylacine",
+                "x": 0.383061,
+                "y": 0.186542,
+                "w": 0.205462,
+                "h": 0.029947
+              },
+              {
+                "text": "The extinct thylacine, also known as the Tasmanian tiger, was a marsupial* that bore a superficial",
+                "x": 0.065055,
+                "y": 0.230094,
+                "w": 0.830465,
+                "h": 0.027245
+              },
+              {
+                "text": "resemblance to a dog. Its most distinguishing feature was the 13-19 dark brown stripes over its",
+                "x": 0.065068,
+                "y": 0.252482,
+                "w": 0.812738,
+                "h": 0.022091
+              },
+              {
+                "text": "back, beginning at the rear of the body and extending onto the tail. The thylacine's average nose-",
+                "x": 0.065179,
+                "y": 0.273243,
+                "w": 0.823563,
+                "h": 0.017386
+              },
+              {
+                "text": "to-tail length for adult males was 162.6 cm, compared to 153.7 cm for females.",
+                "x": 0.062971,
+                "y": 0.292287,
+                "w": 0.682255,
+                "h": 0.020836
+              },
+              {
+                "text": "The thylacine appeared to occupy most types of terrain except dense rainforest, with open",
+                "x": 0.067386,
+                "y": 0.333887,
+                "w": 0.766157,
+                "h": 0.015573
+              },
+              {
+                "text": "eucalyptus forest thought to be its prime habitat. In terms of feeding, it was exclusively",
+                "x": 0.067386,
+                "y": 0.352921,
+                "w": 0.741869,
+                "h": 0.017314
+              },
+              {
+                "text": "carnivorous, and its stomach was muscular with an ability to distend so that it could eat large",
+                "x": 0.067386,
+                "y": 0.373685,
+                "w": 0.792652,
+                "h": 0.015594
+              },
+              {
+                "text": "amounts of food at one time, probably an adaptation to compensate for long periods when",
+                "x": 0.062971,
+                "y": 0.392719,
+                "w": 0.77278,
+                "h": 0.019147
+              },
+              {
+                "text": "hunting was unsuccessful and food scarce. The thylacine was not a fast runner and probably",
+                "x": 0.067386,
+                "y": 0.411752,
+                "w": 0.78382,
+                "h": 0.017386
+              },
+              {
+                "text": "caught its prey by exhausting it during a long pursuit. During long-distance chases, thylacines",
+                "x": 0.067386,
+                "y": 0.432517,
+                "w": 0.801484,
+                "h": 0.015666
+              },
+              {
+                "text": "were likely to have relied more on scent than any other sense. They emerged to hunt during the",
+                "x": 0.067386,
+                "y": 0.453281,
+                "w": 0.808108,
+                "h": 0.015717
+              },
+              {
+                "text": "evening, night and early morning and tended to retreat to the hills and forest for shelter during the",
+                "x": 0.065178,
+                "y": 0.470584,
+                "w": 0.836811,
+                "h": 0.019229
+              },
+              {
+                "text": "day. Despite the common name 'tiger', the thylacine had a shy, nervous temperament. Although",
+                "x": 0.067386,
+                "y": 0.491142,
+                "w": 0.816939,
+                "h": 0.017715
+              },
+              {
+                "text": "mainly nocturnal, it was sighted moving during the day and some individuals were even recorded",
+                "x": 0.065179,
+                "y": 0.511958,
+                "w": 0.830187,
+                "h": 0.015944
+              },
+              {
+                "text": "basking in the sun.",
+                "x": 0.065179,
+                "y": 0.531002,
+                "w": 0.163388,
+                "h": 0.017448
+              },
+              {
+                "text": "The thylacine had an extended breeding season from winter to spring, with indications that",
+                "x": 0.067386,
+                "y": 0.570862,
+                "w": 0.777196,
+                "h": 0.017386
+              },
+              {
+                "text": "some breeding took place throughout the year. The thylacine, like all marsupials, was tiny and",
+                "x": 0.067386,
+                "y": 0.589906,
+                "w": 0.801484,
+                "h": 0.017376
+              },
+              {
+                "text": "hairless when born. Newborns crawled into the pouch on the belly of their mother, and attached",
+                "x": 0.067386,
+                "y": 0.610721,
+                "w": 0.816939,
+                "h": 0.015594
+              },
+              {
+                "text": "themselves to one of the four teats, remaining there for up to three months. When old enough to",
+                "x": 0.065179,
+                "y": 0.629765,
+                "w": 0.819147,
+                "h": 0.017314
+              },
+              {
+                "text": "leave the pouch, the young stayed in a lair such as a deep rocky cave, well-hidden nest or hollow",
+                "x": 0.065179,
+                "y": 0.64881,
+                "w": 0.823563,
+                "h": 0.017303
+              },
+              {
+                "text": "log, whilst the mother hunted",
+                "x": 0.060763,
+                "y": 0.669574,
+                "w": 0.258329,
+                "h": 0.019096
+              },
+              {
+                "text": "Approximately 4,000 years ago, the thylacine was widespread throughout New Guinea and most",
+                "x": 0.067386,
+                "y": 0.709372,
+                "w": 0.823563,
+                "h": 0.015614
+              },
+              {
+                "text": "of mainland Australia, as well as the island of Tasmania. The most recent, well-dated occurrence",
+                "x": 0.067386,
+                "y": 0.728405,
+                "w": 0.823563,
+                "h": 0.017396
+              },
+              {
+                "text": "of a thylacine on the mainland is a carbon-dated fossil from Murray Cave in Western Australia,",
+                "x": 0.067386,
+                "y": 0.749169,
+                "w": 0.812523,
+                "h": 0.015676
+              },
+              {
+                "text": "which is around 3,100 years old. Its extinction coincided closely with the arrival of wild dogs",
+                "x": 0.065179,
+                "y": 0.768203,
+                "w": 0.799276,
+                "h": 0.017458
+              },
+              {
+                "text": "called dingoes in Australia and a similar predator in New Guinea. Dingoes never reached",
+                "x": 0.065179,
+                "y": 0.788761,
+                "w": 0.761741,
+                "h": 0.017715
+              },
+              {
+                "text": "Tasmania, and most scientists see this as the main reason for the thylacine's survival there.",
+                "x": 0.067336,
+                "y": 0.806048,
+                "w": 0.772866,
+                "h": 0.01948
+              },
+              {
+                "text": "*marsupial: a mammal, such as a kangaroo, whose young are born incompletely developed and are typically carried and suckled in a",
+                "x": 0.065179,
+                "y": 0.897979,
+                "w": 0.803692,
+                "h": 0.012133
+              },
+              {
+                "text": "pouch on the mother's belly",
+                "x": 0.071802,
+                "y": 0.913552,
+                "w": 0.17222,
+                "h": 0.010382
+              },
+              {
+                "text": "59",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-3/page-53.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "The dramatic decline of the thylacine in Tasmania, which began in the 1830s and continued for",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.810316,
+                "h": 0.017376
+              },
+              {
+                "text": "a century, is generally attributed to the relentless efforts of sheep farmers and bounty hunters**",
+                "x": 0.082842,
+                "y": 0.039729,
+                "w": 0.810316,
+                "h": 0.017386
+              },
+              {
+                "text": "with shotguns. While this determined campaign undoubtedly played a large part, it is likely that",
+                "x": 0.080634,
+                "y": 0.060493,
+                "w": 0.819147,
+                "h": 0.019209
+              },
+              {
+                "text": "various other factors also contributed to the decline and eventual extinction of the species. These",
+                "x": 0.082842,
+                "y": 0.079527,
+                "w": 0.825771,
+                "h": 0.017448
+              },
+              {
+                "text": "include competition with wild dogs introduced by European settlers, loss of habitat along with",
+                "x": 0.080634,
+                "y": 0.100074,
+                "w": 0.808108,
+                "h": 0.017715
+              },
+              {
+                "text": "the disappearance of prey species, and a distemper-like disease which may also have affected",
+                "x": 0.082842,
+                "y": 0.119118,
+                "w": 0.79486,
+                "h": 0.017715
+              },
+              {
+                "text": "the thylacine.",
+                "x": 0.080524,
+                "y": 0.141341,
+                "w": 0.11945,
+                "h": 0.018259
+              },
+              {
+                "text": "There was only one successful attempt to breed a thylacine in captivity, at Melbourne Zoo in",
+                "x": 0.08505,
+                "y": 0.179794,
+                "w": 0.788236,
+                "h": 0.017396
+              },
+              {
+                "text": "1899. This was despite the large numbers that went through some zoos, particularly London Zoo",
+                "x": 0.08505,
+                "y": 0.198838,
+                "w": 0.821355,
+                "h": 0.017386
+              },
+              {
+                "text": "and Tasmania's Hobart Zoo. The famous naturalist John Gould foresaw the thylacine's demise",
+                "x": 0.082842,
+                "y": 0.217882,
+                "w": 0.801484,
+                "h": 0.017376
+              },
+              {
+                "text": "when he published his Mammals of Australia between 1848 and 1863, writing, \"The numbers of",
+                "x": 0.082842,
+                "y": 0.236926,
+                "w": 0.821355,
+                "h": 0.019096
+              },
+              {
+                "text": "this singular animal will speedily diminish, extermination will have its full sway, and it will then,",
+                "x": 0.082842,
+                "y": 0.257742,
+                "w": 0.830187,
+                "h": 0.017314
+              },
+              {
+                "text": "like the wolf of England and Scotland, be recorded as an animal of the past.'",
+                "x": 0.082842,
+                "y": 0.276786,
+                "w": 0.651343,
+                "h": 0.017303
+              },
+              {
+                "text": "However, there seems to have been little public pressure to preserve the thylacine, nor was much",
+                "x": 0.08505,
+                "y": 0.316584,
+                "w": 0.821355,
+                "h": 0.017334
+              },
+              {
+                "text": "concern expressed by scientists at the decline of this species in the decades that followed. A",
+                "x": 0.080634,
+                "y": 0.337348,
+                "w": 0.78382,
+                "h": 0.017386
+              },
+              {
+                "text": "notable exception was T.T. Flynn, Professor of Biology at the University of Tasmania. In 1914,",
+                "x": 0.082842,
+                "y": 0.356382,
+                "w": 0.808108,
+                "h": 0.017396
+              },
+              {
+                "text": "he was sufficiently concerned about the scarcity of the thylacine to suggest that some should be",
+                "x": 0.082842,
+                "y": 0.377146,
+                "w": 0.814731,
+                "h": 0.015676
+              },
+              {
+                "text": "captured and placed on a small island. But it was not until 1929, with the species on the very edge",
+                "x": 0.082842,
+                "y": 0.396179,
+                "w": 0.839019,
+                "h": 0.017458
+              },
+              {
+                "text": "of extinction, that Tasmania's Animals and Birds Protection Board passed a motion protecting",
+                "x": 0.082842,
+                "y": 0.416738,
+                "w": 0.801484,
+                "h": 0.015944
+              },
+              {
+                "text": "thylacines only for the month of December, which was thought to be their prime breeding season.",
+                "x": 0.082842,
+                "y": 0.435782,
+                "w": 0.834603,
+                "h": 0.017715
+              },
+              {
+                "text": "The last known wild thylacine to be killed was shot by a farmer in the north-east of Tasmania",
+                "x": 0.08505,
+                "y": 0.456597,
+                "w": 0.79486,
+                "h": 0.015717
+              },
+              {
+                "text": "in 1930, leaving just captive specimens. Official protection of the species by the Tasmanian",
+                "x": 0.078426,
+                "y": 0.475641,
+                "w": 0.78382,
+                "h": 0.019168
+              },
+              {
+                "text": "government was introduced in July 1936, 59 days before the last known individual died in Hobart",
+                "x": 0.082842,
+                "y": 0.496457,
+                "w": 0.834603,
+                "h": 0.015655
+              },
+              {
+                "text": "Zoo on 7th September, 1936.",
+                "x": 0.082842,
+                "y": 0.515501,
+                "w": 0.251706,
+                "h": 0.019106
+              },
+              {
+                "text": "There have been numerous expeditions and searches for the thylacine over the years, none of",
+                "x": 0.08505,
+                "y": 0.553589,
+                "w": 0.792652,
+                "h": 0.017355
+              },
+              {
+                "text": "which has produced definitive evidence that thylacines still exist. The species was declared extinct",
+                "x": 0.082842,
+                "y": 0.574405,
+                "w": 0.839019,
+                "h": 0.015573
+              },
+              {
+                "text": "by the Tasmanian government in 1986.",
+                "x": 0.082842,
+                "y": 0.595169,
+                "w": 0.335607,
+                "h": 0.015573
+              },
+              {
+                "text": "** bounty hunters: people who are paid a reward for killing a wild animal",
+                "x": 0.080558,
+                "y": 0.911764,
+                "w": 0.435102,
+                "h": 0.014297
+              },
+              {
+                "text": "60",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.013843
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-3/page-56.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.31132,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.827979,
+                "h": 0.02098
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.067386,
+                "y": 0.081257,
+                "w": 0.167804,
+                "h": 0.019034
+              },
+              {
+                "text": "Palm oil",
+                "x": 0.422865,
+                "y": 0.12089,
+                "w": 0.125853,
+                "h": 0.022659
+              },
+              {
+                "text": "A Palm oil is an edible oil derived from the fruit of the African oil palm tree, and is currently",
+                "x": 0.065179,
+                "y": 0.167774,
+                "w": 0.821355,
+                "h": 0.017334
+              },
+              {
+                "text": "the most consumed vegetable oil in the world. It's almost certainly in the soap we wash with",
+                "x": 0.111545,
+                "y": 0.186808,
+                "w": 0.788236,
+                "h": 0.019116
+              },
+              {
+                "text": "in the morning, the sandwich we have for lunch, and the biscuits we snack on during the",
+                "x": 0.109337,
+                "y": 0.205842,
+                "w": 0.759533,
+                "h": 0.020898
+              },
+              {
+                "text": "day. Why is palm oil so attractive for manufacturers? Primarily because its unique properties",
+                "x": 0.111545,
+                "y": 0.224875,
+                "w": 0.792652,
+                "h": 0.020908
+              },
+              {
+                "text": "- such as remaining solid at room temperature - make it an ideal ingredient for long-term",
+                "x": 0.113753,
+                "y": 0.24737,
+                "w": 0.766157,
+                "h": 0.017458
+              },
+              {
+                "text": "preservation, allowing many packaged foods on supermarket shelves to have 'best before'",
+                "x": 0.111545,
+                "y": 0.266404,
+                "w": 0.770572,
+                "h": 0.01924
+              },
+              {
+                "text": "dates of months, even years, into the future.",
+                "x": 0.111545,
+                "y": 0.286972,
+                "w": 0.377558,
+                "h": 0.015944
+              },
+              {
+                "text": "B Many farmers have seized the opportunity to maximise the planting of oil palm trees.",
+                "x": 0.067386,
+                "y": 0.32506,
+                "w": 0.774988,
+                "h": 0.017479
+              },
+              {
+                "text": "Between 1990 and 2012, the global land area devoted to growing oil palm trees grew from",
+                "x": 0.113753,
+                "y": 0.345876,
+                "w": 0.77278,
+                "h": 0.017427
+              },
+              {
+                "text": "6 to 17 million hectares, now accounting for around ten percent of total cropland in the",
+                "x": 0.113753,
+                "y": 0.36492,
+                "w": 0.748493,
+                "h": 0.017417
+              },
+              {
+                "text": "entire world. From a mere two million tonnes of palm oil being produced annually globally",
+                "x": 0.113753,
+                "y": 0.385736,
+                "w": 0.777196,
+                "h": 0.015635
+              },
+              {
+                "text": "50 years ago, there are now around 60 million tonnes produced every single year, a figure",
+                "x": 0.113753,
+                "y": 0.40478,
+                "w": 0.763949,
+                "h": 0.017355
+              },
+              {
+                "text": "looking likely to double or even triple by the middle of the century.",
+                "x": 0.109337,
+                "y": 0.425595,
+                "w": 0.578481,
+                "h": 0.017303
+              },
+              {
+                "text": "However, there are multiple reasons why conservationists cite the rapid spread of oil palm",
+                "x": 0.09609,
+                "y": 0.463663,
+                "w": 0.78382,
+                "h": 0.017303
+              },
+              {
+                "text": "plantations as a major concern. There are countless news stories of deforestation, habitat",
+                "x": 0.113753,
+                "y": 0.484427,
+                "w": 0.757325,
+                "h": 0.015573
+              },
+              {
+                "text": "destruction and dwindling species populations, all as a direct result of land clearing to",
+                "x": 0.111545,
+                "y": 0.50173,
+                "w": 0.737453,
+                "h": 0.020857
+              },
+              {
+                "text": "establish oil palm tree monoculture on an industrial scale, particularly in Malaysia and",
+                "x": 0.113753,
+                "y": 0.522494,
+                "w": 0.737453,
+                "h": 0.017365
+              },
+              {
+                "text": "Indonesia. Endangered species - most famously the Sumatran orangutan, but also rhinos,",
+                "x": 0.111545,
+                "y": 0.543259,
+                "w": 0.766157,
+                "h": 0.015645
+              },
+              {
+                "text": "elephants, tigers, and numerous other fauna - have suffered from the unstoppable spread of",
+                "x": 0.113753,
+                "y": 0.562292,
+                "w": 0.781612,
+                "h": 0.017427
+              },
+              {
+                "text": "oil palm plantations.",
+                "x": 0.113753,
+                "y": 0.583056,
+                "w": 0.176636,
+                "h": 0.015707
+              },
+              {
+                "text": "D",
+                "x": 0.065179,
+                "y": 0.621124,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "\"Palm oil is surely one of the greatest threats to global biodiversity,' declares Dr Farnon",
+                "x": 0.107129,
+                "y": 0.619394,
+                "w": 0.750701,
+                "h": 0.020764
+              },
+              {
+                "text": "Ellwood of the University of the West of England, Bristol. 'Palm oil is replacing rainforest,",
+                "x": 0.111545,
+                "y": 0.639952,
+                "w": 0.779404,
+                "h": 0.01924
+              },
+              {
+                "text": "and rainforest is where all the species are. That's a problem.' This has led to some radical",
+                "x": 0.113685,
+                "y": 0.659001,
+                "w": 0.757453,
+                "h": 0.020792
+              },
+              {
+                "text": "questions among environmentalists, such as whether consumers should try to boycott palm",
+                "x": 0.113753,
+                "y": 0.679812,
+                "w": 0.774988,
+                "h": 0.017448
+              },
+              {
+                "text": "oil entirely.",
+                "x": 0.111304,
+                "y": 0.699831,
+                "w": 0.09984,
+                "h": 0.019081
+              },
+              {
+                "text": "Meanwhile Bhavani Shankar, Professor at London's School of Oriental and African Studies,",
+                "x": 0.115961,
+                "y": 0.740487,
+                "w": 0.78382,
+                "h": 0.017334
+              },
+              {
+                "text": "argues, 'It's easy to say that palm oil is the enemy and we should be against it. It makes for",
+                "x": 0.111545,
+                "y": 0.759531,
+                "w": 0.777196,
+                "h": 0.019054
+              },
+              {
+                "text": "a more dramatic story, and it's very intuitive. But given the complexity of the argument, I",
+                "x": 0.113753,
+                "y": 0.778575,
+                "w": 0.761741,
+                "h": 0.017314
+              },
+              {
+                "text": "think a much more nuanced story is closer to the truth.\"",
+                "x": 0.113753,
+                "y": 0.797619,
+                "w": 0.474708,
+                "h": 0.017303
+              },
+              {
+                "text": "63",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-3/page-57.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "E One response to the boycott movement has been the argument for the vital role palm",
+                "x": 0.08505,
+                "y": 0.020695,
+                "w": 0.766157,
+                "h": 0.017376
+              },
+              {
+                "text": "oil plays in lifting many millions of people in the developing world out of poverty. Is it",
+                "x": 0.129209,
+                "y": 0.041459,
+                "w": 0.741869,
+                "h": 0.015655
+              },
+              {
+                "text": "desirable to have palm oil boycotted, replaced, eliminated from the global supply chain,",
+                "x": 0.127001,
+                "y": 0.062223,
+                "w": 0.750701,
+                "h": 0.017479
+              },
+              {
+                "text": "given how many low-income people in developing countries depend on it for their",
+                "x": 0.131417,
+                "y": 0.081257,
+                "w": 0.699918,
+                "h": 0.017489
+              },
+              {
+                "text": "livelihoods? How best to strike a utilitarian balance between these competing factors has",
+                "x": 0.129209,
+                "y": 0.100074,
+                "w": 0.757325,
+                "h": 0.017715
+              },
+              {
+                "text": "become a serious bone of contention.",
+                "x": 0.129209,
+                "y": 0.12089,
+                "w": 0.32236,
+                "h": 0.014172
+              },
+              {
+                "text": "F",
+                "x": 0.08505,
+                "y": 0.159122,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "Even the deforestation argument isn't as straightforward as it seems. Oil palm plantations",
+                "x": 0.127001,
+                "y": 0.158978,
+                "w": 0.766157,
+                "h": 0.017448
+              },
+              {
+                "text": "produce at least four and potentially up to ten times more oil per hectare than soybean,",
+                "x": 0.129209,
+                "y": 0.179794,
+                "w": 0.741869,
+                "h": 0.015666
+              },
+              {
+                "text": "rapeseed, sunflower or other competing oils. That immensely high yield - which is",
+                "x": 0.127001,
+                "y": 0.198838,
+                "w": 0.706542,
+                "h": 0.019116
+              },
+              {
+                "text": "predominantly what makes it so profitable - is potentially also an ecological benefit. If ten",
+                "x": 0.129209,
+                "y": 0.217882,
+                "w": 0.770572,
+                "h": 0.017376
+              },
+              {
+                "text": "times more palm oil can be produced from a patch of land than any competing oil, then ten",
+                "x": 0.129209,
+                "y": 0.238698,
+                "w": 0.777196,
+                "h": 0.017324
+              },
+              {
+                "text": "times more land would need to be cleared in order to produce the same volume of oil from",
+                "x": 0.129079,
+                "y": 0.253777,
+                "w": 0.773059,
+                "h": 0.023692
+              },
+              {
+                "text": "that competitor.",
+                "x": 0.129209,
+                "y": 0.278516,
+                "w": 0.134685,
+                "h": 0.015573
+              },
+              {
+                "text": "As for the question of carbon emissions, the issue really depends on what oil palm trees are",
+                "x": 0.131417,
+                "y": 0.318314,
+                "w": 0.779404,
+                "h": 0.015604
+              },
+              {
+                "text": "replacing. Crops vary in the degree to which they sequester carbon - in other words, the",
+                "x": 0.129209,
+                "y": 0.335617,
+                "w": 0.752909,
+                "h": 0.019116
+              },
+              {
+                "text": "amount of carbon they capture from the atmosphere and store within the plant. The more",
+                "x": 0.129209,
+                "y": 0.356382,
+                "w": 0.759533,
+                "h": 0.017396
+              },
+              {
+                "text": "carbon a plant sequesters, the more it reduces the effect of climate change. As Shankar",
+                "x": 0.129209,
+                "y": 0.377146,
+                "w": 0.741869,
+                "h": 0.015676
+              },
+              {
+                "text": "explains: '[Palm oil production] actually sequesters more carbon in some ways than other",
+                "x": 0.129209,
+                "y": 0.396179,
+                "w": 0.766157,
+                "h": 0.017458
+              },
+              {
+                "text": "alternatives. [...] Of course, if you're cutting down virgin forest it's terrible - that's what's",
+                "x": 0.129209,
+                "y": 0.416738,
+                "w": 0.766157,
+                "h": 0.015944
+              },
+              {
+                "text": "happening in Indonesia and Malaysia, it's been allowed to get out of hand. But if it's",
+                "x": 0.129209,
+                "y": 0.435782,
+                "w": 0.717582,
+                "h": 0.017715
+              },
+              {
+                "text": "replacing rice, for example, it might actually sequester more carbon.'",
+                "x": 0.129209,
+                "y": 0.454826,
+                "w": 0.591729,
+                "h": 0.017489
+              },
+              {
+                "text": "The industry is now regulated by a group called the Roundtable on Sustainable Palm Oil",
+                "x": 0.118169,
+                "y": 0.494685,
+                "w": 0.766157,
+                "h": 0.017427
+              },
+              {
+                "text": "(RSPO), consisting of palm growers, retailers, product manufacturers, and other interested",
+                "x": 0.129209,
+                "y": 0.513729,
+                "w": 0.77278,
+                "h": 0.019147
+              },
+              {
+                "text": "parties. Over the past decade or so, an agreement has gradually been reached regarding",
+                "x": 0.129209,
+                "y": 0.534545,
+                "w": 0.744077,
+                "h": 0.017365
+              },
+              {
+                "text": "standards that producers of palm oil have to meet in order for their product to be regarded",
+                "x": 0.129209,
+                "y": 0.553589,
+                "w": 0.766157,
+                "h": 0.017355
+              },
+              {
+                "text": "as officially 'sustainable'. The RSPO insists upon no virgin forest clearing, transparency and",
+                "x": 0.129209,
+                "y": 0.572633,
+                "w": 0.790444,
+                "h": 0.019075
+              },
+              {
+                "text": "regular assessment of carbon stocks, among other criteria. Only once these requirements are",
+                "x": 0.129209,
+                "y": 0.595169,
+                "w": 0.788236,
+                "h": 0.015573
+              },
+              {
+                "text": "fully satisfied is the oil allowed to be sold as certified sustainable palm oil (CSPO). Recent",
+                "x": 0.127001,
+                "y": 0.614203,
+                "w": 0.777196,
+                "h": 0.017334
+              },
+              {
+                "text": "figures show that the RSPO now certifies around 12 million tonnes of palm oil annually,",
+                "x": 0.129209,
+                "y": 0.633236,
+                "w": 0.752909,
+                "h": 0.017345
+              },
+              {
+                "text": "equivalent to roughly 21 percent of the world's total palm oil production.",
+                "x": 0.127001,
+                "y": 0.654001,
+                "w": 0.624848,
+                "h": 0.017396
+              },
+              {
+                "text": "H",
+                "x": 0.082842,
+                "y": 0.692068,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "There is even hope that oil palm plantations might not need to be such sterile monocultures,",
+                "x": 0.111545,
+                "y": 0.692068,
+                "w": 0.803692,
+                "h": 0.019188
+              },
+              {
+                "text": "or 'green deserts', as Ellwood describes them. New research at Ellwood's lab hints at one",
+                "x": 0.129209,
+                "y": 0.712832,
+                "w": 0.761741,
+                "h": 0.015697
+              },
+              {
+                "text": "plant which might make all the difference. The bird's nest fern (Asplenium nidus) grows on",
+                "x": 0.127001,
+                "y": 0.733401,
+                "w": 0.779404,
+                "h": 0.017715
+              },
+              {
+                "text": "trees in an epiphytic fashion (meaning it's dependent on the tree only for support, not for",
+                "x": 0.129209,
+                "y": 0.752445,
+                "w": 0.759533,
+                "h": 0.017489
+              },
+              {
+                "text": "nutrients), and is native to many tropical regions, where as a keystone species it performs a",
+                "x": 0.129209,
+                "y": 0.771489,
+                "w": 0.777196,
+                "h": 0.017479
+              },
+              {
+                "text": "vital ecological role. Ellwood believes that reintroducing the bird's nest fern into oil palm",
+                "x": 0.131417,
+                "y": 0.792304,
+                "w": 0.761741,
+                "h": 0.015697
+              },
+              {
+                "text": "plantations could potentially allow these areas to recover their biodiversity, providing a",
+                "x": 0.129209,
+                "y": 0.811348,
+                "w": 0.741869,
+                "h": 0.017417
+              },
+              {
+                "text": "home for all manner of species, from fungi and bacteria, to invertebrates such as insects,",
+                "x": 0.129099,
+                "y": 0.829569,
+                "w": 0.757533,
+                "h": 0.020733
+              },
+              {
+                "text": "amphibians, reptiles and even mammals.",
+                "x": 0.129209,
+                "y": 0.851208,
+                "w": 0.351063,
+                "h": 0.015625
+              },
+              {
+                "text": "64",
+                "x": 0.080634,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.020764
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-3/page-60.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.065179,
+                "y": 0.0518,
+                "w": 0.31132,
+                "h": 0.019075
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.065179,
+                "y": 0.091639,
+                "w": 0.830187,
+                "h": 0.020836
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.065179,
+                "y": 0.112403,
+                "w": 0.170012,
+                "h": 0.019116
+              },
+              {
+                "text": "Building the Skyline: The Birth and Growth of Manhattan's",
+                "x": 0.111545,
+                "y": 0.155662,
+                "w": 0.748493,
+                "h": 0.024225
+              },
+              {
+                "text": "Skyscrapers",
+                "x": 0.407307,
+                "y": 0.182934,
+                "w": 0.15697,
+                "h": 0.025051
+              },
+              {
+                "text": "Katharine L. Shester reviews a book by Jason Barr about the development of",
+                "x": 0.09609,
+                "y": 0.226606,
+                "w": 0.781612,
+                "h": 0.024225
+              },
+              {
+                "text": "New York City",
+                "x": 0.414034,
+                "y": 0.248884,
+                "w": 0.145724,
+                "h": 0.024441
+              },
+              {
+                "text": "In Building the Skyline, Jason Barr takes the reader through a detailed history of New York",
+                "x": 0.062971,
+                "y": 0.292287,
+                "w": 0.779404,
+                "h": 0.020836
+              },
+              {
+                "text": "City. The book combines geology, history, economics, and a lot of data to explain why business",
+                "x": 0.065179,
+                "y": 0.311331,
+                "w": 0.816939,
+                "h": 0.022587
+              },
+              {
+                "text": "clusters developed where they did and how the early decisions of workers and firms shaped",
+                "x": 0.065179,
+                "y": 0.333887,
+                "w": 0.779404,
+                "h": 0.019075
+              },
+              {
+                "text": "the skyline we see today. Building the Skyline is organized into two distinct parts. The first is",
+                "x": 0.062971,
+                "y": 0.352921,
+                "w": 0.792652,
+                "h": 0.019085
+              },
+              {
+                "text": "primarily historical and addresses New York's settlement and growth from 1609 to 1900; the",
+                "x": 0.065179,
+                "y": 0.373685,
+                "w": 0.788236,
+                "h": 0.019137
+              },
+              {
+                "text": "second deals primarily with the 20th century and is a compilation of chapters commenting",
+                "x": 0.065179,
+                "y": 0.392719,
+                "w": 0.77278,
+                "h": 0.019147
+              },
+              {
+                "text": "on different aspects of New York's urban development. The tone and organization of the book",
+                "x": 0.065179,
+                "y": 0.413483,
+                "w": 0.799276,
+                "h": 0.017427
+              },
+              {
+                "text": "changes somewhat between the first and second parts, as the latter chapters incorporate aspects of",
+                "x": 0.067386,
+                "y": 0.432517,
+                "w": 0.836811,
+                "h": 0.017437
+              },
+              {
+                "text": "Barr's related research papers.",
+                "x": 0.067035,
+                "y": 0.449507,
+                "w": 0.259059,
+                "h": 0.020446
+              },
+              {
+                "text": "Barr begins chapter one by taking the reader on a 'helicopter time-machine' ride - giving a",
+                "x": 0.067386,
+                "y": 0.491142,
+                "w": 0.774988,
+                "h": 0.017715
+              },
+              {
+                "text": "fascinating account of how the New York landscape in 1609 might have looked from the sky. He",
+                "x": 0.065179,
+                "y": 0.511958,
+                "w": 0.823563,
+                "h": 0.015944
+              },
+              {
+                "text": "then moves on to a subterranean walking tour of the city, indicating the location of rock and water",
+                "x": 0.065179,
+                "y": 0.531002,
+                "w": 0.839019,
+                "h": 0.017448
+              },
+              {
+                "text": "below the subsoil, before taking the reader back to the surface. His love of the city comes through",
+                "x": 0.067386,
+                "y": 0.550046,
+                "w": 0.834603,
+                "h": 0.017437
+              },
+              {
+                "text": "as he describes various fun facts about the location of the New York residence of early 19th-century",
+                "x": 0.065179,
+                "y": 0.570862,
+                "w": 0.830187,
+                "h": 0.017386
+              },
+              {
+                "text": "vice-president Aaron Burr as well as a number of legends about the city.",
+                "x": 0.067386,
+                "y": 0.589906,
+                "w": 0.618224,
+                "h": 0.017376
+              },
+              {
+                "text": "Chapters two and three take the reader up to the Civil War (1861-1865), with chapter two",
+                "x": 0.065179,
+                "y": 0.629765,
+                "w": 0.766157,
+                "h": 0.019044
+              },
+              {
+                "text": "focusing on the early development of land and the implementation of a grid system in 1811.",
+                "x": 0.065179,
+                "y": 0.65054,
+                "w": 0.788236,
+                "h": 0.015573
+              },
+              {
+                "text": "Chapter three focuses on land use before the Civil War. Both chapters are informative and well",
+                "x": 0.065179,
+                "y": 0.669574,
+                "w": 0.810316,
+                "h": 0.019096
+              },
+              {
+                "text": "researched and set the stage for the economic analysis that comes later in the book. I would",
+                "x": 0.062971,
+                "y": 0.688607,
+                "w": 0.78382,
+                "h": 0.019106
+              },
+              {
+                "text": "have liked Barr to expand upon his claim that existing tenements* prevented skyscrapers in",
+                "x": 0.062971,
+                "y": 0.707641,
+                "w": 0.781612,
+                "h": 0.024431
+              },
+              {
+                "text": "certain neighborhoods because 'likely no skyscraper developer was interested in performing the",
+                "x": 0.067386,
+                "y": 0.728405,
+                "w": 0.819147,
+                "h": 0.017396
+              },
+              {
+                "text": "necessary \"slum clearance\"\"'. Later in the book, Barr makes the claim that the depth of bedrock**",
+                "x": 0.065179,
+                "y": 0.747439,
+                "w": 0.830187,
+                "h": 0.019178
+              },
+              {
+                "text": "was not a limiting factor for developers, as foundation costs were a small fraction of the cost of",
+                "x": 0.067386,
+                "y": 0.768203,
+                "w": 0.814731,
+                "h": 0.017458
+              },
+              {
+                "text": "development. At first glance, it is not obvious why slum clearance would be limiting, while more",
+                "x": 0.062971,
+                "y": 0.788761,
+                "w": 0.830187,
+                "h": 0.017715
+              },
+              {
+                "text": "expensive foundations would not.",
+                "x": 0.065179,
+                "y": 0.807805,
+                "w": 0.289241,
+                "h": 0.017715
+              },
+              {
+                "text": "*a tenement: a multi-occupancy building of any sort, but particularly a run-down apartment building or slum building",
+                "x": 0.069594,
+                "y": 0.896249,
+                "w": 0.69771,
+                "h": 0.012112
+              },
+              {
+                "text": "** bedrock: the solid, hard rock in the ground that lies under a loose layer of soil",
+                "x": 0.065179,
+                "y": 0.913552,
+                "w": 0.481332,
+                "h": 0.012112
+              },
+              {
+                "text": "67",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c17-test-3/page-61.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Chapter four focuses on immigration and the location of neighborhoods and tenements in the",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.797068,
+                "h": 0.017376
+              },
+              {
+                "text": "late 19th century. Barr identifies four primary immigrant enclaves and analyzes their locations",
+                "x": 0.080634,
+                "y": 0.039729,
+                "w": 0.8059,
+                "h": 0.017386
+              },
+              {
+                "text": "in terms of the amenities available in the area. Most of these enclaves were located on the least",
+                "x": 0.080634,
+                "y": 0.060493,
+                "w": 0.812523,
+                "h": 0.015666
+              },
+              {
+                "text": "valuable land, between the industries located on the waterfront and the wealthy neighborhoods",
+                "x": 0.082842,
+                "y": 0.081257,
+                "w": 0.8059,
+                "h": 0.015717
+              },
+              {
+                "text": "bordering Central Park.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.205339,
+                "h": 0.017715
+              },
+              {
+                "text": "Part two of the book begins with a discussion of the economics of skyscraper height. In chapter",
+                "x": 0.082842,
+                "y": 0.139934,
+                "w": 0.814731,
+                "h": 0.015944
+              },
+              {
+                "text": "five, Barr distinguishes between engineering height, economic height, and developer height —",
+                "x": 0.082842,
+                "y": 0.158978,
+                "w": 0.803692,
+                "h": 0.017448
+              },
+              {
+                "text": "where engineering height is the tallest building that can be safely made at a given time, economic",
+                "x": 0.082842,
+                "y": 0.179794,
+                "w": 0.832395,
+                "h": 0.017396
+              },
+              {
+                "text": "height is the height that is most efficient from society's point of view, and developer height is the",
+                "x": 0.080634,
+                "y": 0.198838,
+                "w": 0.827979,
+                "h": 0.019116
+              },
+              {
+                "text": "actual height chosen by the developer, who is attempting to maximize return on investment.",
+                "x": 0.082842,
+                "y": 0.217882,
+                "w": 0.78382,
+                "h": 0.017376
+              },
+              {
+                "text": "Chapter five also has an interesting discussion of the technological advances that led to the",
+                "x": 0.082842,
+                "y": 0.257742,
+                "w": 0.774988,
+                "h": 0.017314
+              },
+              {
+                "text": "construction of skyscrapers. For example, the introduction of iron and steel skeletal frames made",
+                "x": 0.082842,
+                "y": 0.278516,
+                "w": 0.827979,
+                "h": 0.015573
+              },
+              {
+                "text": "thick, load-bearing walls unnecessary, expanding the usable square footage of buildings and",
+                "x": 0.080634,
+                "y": 0.29755,
+                "w": 0.788236,
+                "h": 0.017324
+              },
+              {
+                "text": "increasing the use of windows and availability of natural light. Chapter six then presents data on",
+                "x": 0.080634,
+                "y": 0.318314,
+                "w": 0.823563,
+                "h": 0.015604
+              },
+              {
+                "text": "building height throughout the 20th century and uses regression analysis to 'predict' building",
+                "x": 0.080634,
+                "y": 0.337348,
+                "w": 0.797068,
+                "h": 0.019157
+              },
+              {
+                "text": "construction. While less technical than the research paper on which the chapter is based, it is",
+                "x": 0.082842,
+                "y": 0.356382,
+                "w": 0.790444,
+                "h": 0.017396
+              },
+              {
+                "text": "probably more technical than would be preferred by a general audience.",
+                "x": 0.082842,
+                "y": 0.377146,
+                "w": 0.616016,
+                "h": 0.017448
+              },
+              {
+                "text": "Chapter seven tackles the \"bedrock myth', the assumption that the absence of bedrock close to the",
+                "x": 0.080634,
+                "y": 0.416738,
+                "w": 0.797068,
+                "h": 0.017715
+              },
+              {
+                "text": "surface between Downtown and Midtown New York is the reason for skyscrapers not being built",
+                "x": 0.082842,
+                "y": 0.435782,
+                "w": 0.786028,
+                "h": 0.017715
+              },
+              {
+                "text": "between the two urban centers. Rather, Barr argues that while deeper bedrock does increase foundation",
+                "x": 0.082842,
+                "y": 0.454826,
+                "w": 0.836811,
+                "h": 0.017489
+              },
+              {
+                "text": "costs, these costs were neither prohibitively high nor were they large compared to the overall cost",
+                "x": 0.080634,
+                "y": 0.475641,
+                "w": 0.792652,
+                "h": 0.017437
+              },
+              {
+                "text": "of building a skyscraper. What I enjoyed the most about this chapter was Barr's discussion of how",
+                "x": 0.082842,
+                "y": 0.494685,
+                "w": 0.79486,
+                "h": 0.017427
+              },
+              {
+                "text": "foundations are actually built. He describes the use of caissons, which enable workers to dig down",
+                "x": 0.082842,
+                "y": 0.515501,
+                "w": 0.797068,
+                "h": 0.015645
+              },
+              {
+                "text": "for considerable distances, often below the water table, until they reach bedrock. Barr's thorough",
+                "x": 0.080634,
+                "y": 0.534545,
+                "w": 0.786028,
+                "h": 0.019096
+              },
+              {
+                "text": "technological history discusses not only how caissons work, but also the dangers involved. While this",
+                "x": 0.080634,
+                "y": 0.553589,
+                "w": 0.825771,
+                "h": 0.019085
+              },
+              {
+                "text": "chapter references empirical research papers, it is a relatively easy read.",
+                "x": 0.080634,
+                "y": 0.574405,
+                "w": 0.585105,
+                "h": 0.019044
+              },
+              {
+                "text": "Chapters eight and nine focus on the birth of Midtown and the building boom of the 1920s.",
+                "x": 0.082842,
+                "y": 0.612472,
+                "w": 0.781612,
+                "h": 0.017303
+              },
+              {
+                "text": "Chapter eight contains lengthy discussions of urban economic theory that may serve as a",
+                "x": 0.082842,
+                "y": 0.631506,
+                "w": 0.757325,
+                "h": 0.019075
+              },
+              {
+                "text": "distraction to readers primarily interested in New York. However, they would be well-suited for",
+                "x": 0.082842,
+                "y": 0.65227,
+                "w": 0.812523,
+                "h": 0.017355
+              },
+              {
+                "text": "undergraduates learning about the economics of cities. In the next chapter, Barr considers two of",
+                "x": 0.080634,
+                "y": 0.673034,
+                "w": 0.830187,
+                "h": 0.017406
+              },
+              {
+                "text": "the primary explanations for the building boom of the 1920s — the first being exuberance, and",
+                "x": 0.080634,
+                "y": 0.692068,
+                "w": 0.812523,
+                "h": 0.019188
+              },
+              {
+                "text": "the second being financing. He uses data to assess the viability of these two explanations and",
+                "x": 0.082842,
+                "y": 0.712832,
+                "w": 0.79486,
+                "h": 0.015697
+              },
+              {
+                "text": "finds that supply and demand factors explain much of the development of the 1920s; though it",
+                "x": 0.08505,
+                "y": 0.731866,
+                "w": 0.803692,
+                "h": 0.017479
+              },
+              {
+                "text": "enabled the boom, cheap credit was not, he argues, the primary cause.",
+                "x": 0.082842,
+                "y": 0.752445,
+                "w": 0.600561,
+                "h": 0.015944
+              },
+              {
+                "text": "In the final chapter (chapter 10), Barr discusses another of his empirical papers that estimates",
+                "x": 0.082842,
+                "y": 0.790533,
+                "w": 0.799276,
+                "h": 0.017468
+              },
+              {
+                "text": "Manhattan land values from the mid-19th century to the present day. The data work that went into",
+                "x": 0.08505,
+                "y": 0.811348,
+                "w": 0.832395,
+                "h": 0.015686
+              },
+              {
+                "text": "these estimations is particularly impressive. Toward the end of the chapter, Barr assesses 'whether",
+                "x": 0.082842,
+                "y": 0.830393,
+                "w": 0.836811,
+                "h": 0.017406
+              },
+              {
+                "text": "skyscrapers are a cause or an effect of high land values'. He finds that changes in land values",
+                "x": 0.082842,
+                "y": 0.851208,
+                "w": 0.79486,
+                "h": 0.015625
+              },
+              {
+                "text": "predict future building height, but the reverse is not true. The book ends with an epilogue, in",
+                "x": 0.080634,
+                "y": 0.870252,
+                "w": 0.792652,
+                "h": 0.019075
+              },
+              {
+                "text": "which Barr discusses the impact of climate change on the city and makes policy suggestions for",
+                "x": 0.082842,
+                "y": 0.891058,
+                "w": 0.821355,
+                "h": 0.015573
+              },
+              {
+                "text": "New York going forward.",
+                "x": 0.08505,
+                "y": 0.910091,
+                "w": 0.216379,
+                "h": 0.015573
+              },
+              {
+                "text": "68",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-3/page-65.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.435968,
+                "y": 0.016663,
+                "w": 0.130559,
+                "h": 0.021906
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.080634,
+                "y": 0.081257,
+                "w": 0.242874,
+                "h": 0.020764
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.080634,
+                "y": 0.122662,
+                "w": 0.463668,
+                "h": 0.019157
+              },
+              {
+                "text": "The chart below gives information about how famillies in one country spent",
+                "x": 0.104922,
+                "y": 0.172965,
+                "w": 0.768365,
+                "h": 0.020764
+              },
+              {
+                "text": "their weekly income in 1968 and in 2018.",
+                "x": 0.104922,
+                "y": 0.190269,
+                "w": 0.415094,
+                "h": 0.024225
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.100506,
+                "y": 0.230066,
+                "w": 0.792652,
+                "h": 0.024225
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.102714,
+                "y": 0.252427,
+                "w": 0.364311,
+                "h": 0.020898
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.080634,
+                "y": 0.304471,
+                "w": 0.240666,
+                "h": 0.019034
+              },
+              {
+                "text": "1968 and 2018: average weekly spending by families",
+                "x": 0.191031,
+                "y": 0.366691,
+                "w": 0.629264,
+                "h": 0.020836
+              },
+              {
+                "text": "• 1968",
+                "x": 0.425073,
+                "y": 0.399465,
+                "w": 0.072862,
+                "h": 0.015944
+              },
+              {
+                "text": "• 2018",
+                "x": 0.517807,
+                "y": 0.399465,
+                "w": 0.077278,
+                "h": 0.017479
+              },
+              {
+                "text": "Food",
+                "x": 0.299073,
+                "y": 0.44435,
+                "w": 0.053285,
+                "h": 0.017861
+              },
+              {
+                "text": "Housing",
+                "x": 0.270444,
+                "y": 0.496351,
+                "w": 0.079632,
+                "h": 0.01941
+              },
+              {
+                "text": "Fuel and power",
+                "x": 0.199863,
+                "y": 0.546503,
+                "w": 0.152348,
+                "h": 0.01925
+              },
+              {
+                "text": "Clothing and footware",
+                "x": 0.140249,
+                "y": 0.59863,
+                "w": 0.211963,
+                "h": 0.019178
+              },
+              {
+                "text": "Household goods",
+                "x": 0.1822,
+                "y": 0.65054,
+                "w": 0.170012,
+                "h": 0.017314
+              },
+              {
+                "text": "Personal goods",
+                "x": 0.199863,
+                "y": 0.700627,
+                "w": 0.152348,
+                "h": 0.019126
+              },
+              {
+                "text": "Transport",
+                "x": 0.257247,
+                "y": 0.752552,
+                "w": 0.097195,
+                "h": 0.017461
+              },
+              {
+                "text": "Leisure",
+                "x": 0.277141,
+                "y": 0.80281,
+                "w": 0.07507,
+                "h": 0.017303
+              },
+              {
+                "text": "0",
+                "x": 0.352211,
+                "y": 0.863372,
+                "w": 0.013248,
+                "h": 0.012112
+              },
+              {
+                "text": "10",
+                "x": 0.464816,
+                "y": 0.85472,
+                "w": 0.041951,
+                "h": 0.024225
+              },
+              {
+                "text": "15 20",
+                "x": 0.517807,
+                "y": 0.85298,
+                "w": 0.117021,
+                "h": 0.02613
+              },
+              {
+                "text": "25",
+                "x": 0.639244,
+                "y": 0.859911,
+                "w": 0.050783,
+                "h": 0.020764
+              },
+              {
+                "text": "% of weekly income",
+                "x": 0.500144,
+                "y": 0.885753,
+                "w": 0.207547,
+                "h": 0.022608
+              },
+              {
+                "text": "30",
+                "x": 0.701066,
+                "y": 0.859911,
+                "w": 0.041951,
+                "h": 0.020764
+              },
+              {
+                "text": "35",
+                "x": 0.765097,
+                "y": 0.859911,
+                "w": 0.037535,
+                "h": 0.020764
+              },
+              {
+                "text": "40",
+                "x": 0.831335,
+                "y": 0.858181,
+                "w": 0.033119,
+                "h": 0.022494
+              },
+              {
+                "text": "72",
+                "x": 0.080634,
+                "y": 0.936047,
+                "w": 0.030911,
+                "h": 0.020764
+              },
+              {
+                "text": "→ 4 p. 133",
+                "x": 0.149026,
+                "y": 0.937552,
+                "w": 0.128169,
+                "h": 0.019482
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c17-test-3/page-66.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.065179,
+                "y": 0.020695,
+                "w": 0.240666,
+                "h": 0.017376
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.065179,
+                "y": 0.060493,
+                "w": 0.46146,
+                "h": 0.019209
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.065179,
+                "y": 0.100074,
+                "w": 0.293657,
+                "h": 0.01925
+              },
+              {
+                "text": "Some people believe that professionals, such as doctors and engineers,",
+                "x": 0.087258,
+                "y": 0.150471,
+                "w": 0.739661,
+                "h": 0.02268
+              },
+              {
+                "text": "should be required to work in the country where they did their training. Others",
+                "x": 0.087258,
+                "y": 0.171235,
+                "w": 0.797068,
+                "h": 0.019188
+              },
+              {
+                "text": "believe they should be free to work in another country if they wish.",
+                "x": 0.089466,
+                "y": 0.190269,
+                "w": 0.682255,
+                "h": 0.02097
+              },
+              {
+                "text": "Discuss both these views and give your own opinion.",
+                "x": 0.089466,
+                "y": 0.230066,
+                "w": 0.545362,
+                "h": 0.020764
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.065179,
+                "y": 0.281977,
+                "w": 0.757325,
+                "h": 0.019168
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.065179,
+                "y": 0.301011,
+                "w": 0.24729,
+                "h": 0.019178
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.067386,
+                "y": 0.340808,
+                "w": 0.23625,
+                "h": 0.015697
+              },
+              {
+                "text": "→ • p. 135",
+                "x": 0.71873,
+                "y": 0.934316,
+                "w": 0.134685,
+                "h": 0.02097
+              },
+              {
+                "text": "73",
+                "x": 0.871078,
+                "y": 0.937777,
+                "w": 0.033119,
+                "h": 0.013843
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-46.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Test 3",
+                "x": 0.065179,
+                "y": 0.063758,
+                "w": 0.128061,
+                "h": 0.031445
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.405202,
+                "y": 0.133167,
+                "w": 0.16118,
+                "h": 0.019034
+              },
+              {
+                "text": "PART 1",
+                "x": 0.065179,
+                "y": 0.21611,
+                "w": 0.103773,
+                "h": 0.017417
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.228566,
+                "y": 0.214339,
+                "w": 0.187675,
+                "h": 0.019188
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.25597,
+                "w": 0.251706,
+                "h": 0.017355
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.065179,
+                "y": 0.294058,
+                "w": 0.549778,
+                "h": 0.019065
+              },
+              {
+                "text": "Advice on surfing holidays",
+                "x": 0.297013,
+                "y": 0.35119,
+                "w": 0.377558,
+                "h": 0.02613
+              },
+              {
+                "text": "Jack's advice",
+                "x": 0.082842,
+                "y": 0.390988,
+                "w": 0.1391,
+                "h": 0.015573
+              },
+              {
+                "text": "Recommends surfing for 1",
+                "x": 0.131417,
+                "y": 0.416738,
+                "w": 0.249498,
+                "h": 0.017715
+              },
+              {
+                "text": "Need to be quite 2...",
+                "x": 0.129209,
+                "y": 0.442868,
+                "w": 0.194299,
+                "h": 0.019065
+              },
+              {
+                "text": "..••.",
+                "x": 0.449361,
+                "y": 0.45155,
+                "w": 0.033119,
+                "h": 0.008652
+              },
+              {
+                "text": "Irish surfing locations",
+                "x": 0.082842,
+                "y": 0.482697,
+                "w": 0.22521,
+                "h": 0.017303
+              },
+              {
+                "text": "• County Clare",
+                "x": 0.082842,
+                "y": 0.508652,
+                "w": 0.174428,
+                "h": 0.017479
+              },
+              {
+                "text": "- Lahinch has some good quality 3 ....",
+                "x": 0.127001,
+                "y": 0.534545,
+                "w": 0.362103,
+                "h": 0.017365
+              },
+              {
+                "text": "- There are famous cliffs nearby",
+                "x": 0.131417,
+                "y": 0.562292,
+                "w": 0.313528,
+                "h": 0.015655
+              },
+              {
+                "text": "•",
+                "x": 0.082842,
+                "y": 0.589978,
+                "w": 0.013248,
+                "h": 0.010382
+              },
+              {
+                "text": "County Mayo",
+                "x": 0.118169,
+                "y": 0.588134,
+                "w": 0.1391,
+                "h": 0.019147
+              },
+              {
+                "text": "- Good surf school at 4 ...",
+                "x": 0.129209,
+                "y": 0.614203,
+                "w": 0.245082,
+                "h": 0.015573
+              },
+              {
+                "text": "- Surf camp lasts for one 5",
+                "x": 0.131417,
+                "y": 0.639952,
+                "w": 0.262745,
+                "h": 0.017715
+              },
+              {
+                "text": "- Can also explore the local 6 ....",
+                "x": 0.129209,
+                "y": 0.667843,
+                "w": 0.309112,
+                "h": 0.015573
+              },
+              {
+                "text": "Weather",
+                "x": 0.082767,
+                "y": 0.705646,
+                "w": 0.088468,
+                "h": 0.016103
+              },
+              {
+                "text": "• Best month to go: 7",
+                "x": 0.082842,
+                "y": 0.731866,
+                "w": 0.234042,
+                "h": 0.017479
+              },
+              {
+                "text": "• Average temperature in summer: approx. 8",
+                "x": 0.080634,
+                "y": 0.757759,
+                "w": 0.459252,
+                "h": 0.019096
+              },
+              {
+                "text": "Costs",
+                "x": 0.082675,
+                "y": 0.797203,
+                "w": 0.062157,
+                "h": 0.016405
+              },
+              {
+                "text": "• Equipment",
+                "x": 0.082842,
+                "y": 0.825305,
+                "w": 0.152348,
+                "h": 0.015717
+              },
+              {
+                "text": "- Wetsuit and surfboard: 9",
+                "x": 0.129209,
+                "y": 0.851208,
+                "w": 0.258329,
+                "h": 0.013894
+              },
+              {
+                "text": "- Also advisable to hire 10",
+                "x": 0.129209,
+                "y": 0.877215,
+                "w": 0.258329,
+                "h": 0.013853
+              },
+              {
+                "text": "...... holidays in the summer",
+                "x": 0.517807,
+                "y": 0.415213,
+                "w": 0.262745,
+                "h": 0.020764
+              },
+              {
+                "text": "...and surf schools",
+                "x": 0.628204,
+                "y": 0.534545,
+                "w": 0.17222,
+                "h": 0.017365
+              },
+              {
+                "text": "...beach",
+                "x": 0.517807,
+                "y": 0.614203,
+                "w": 0.077278,
+                "h": 0.017303
+              },
+              {
+                "text": "............ by kayak",
+                "x": 0.517807,
+                "y": 0.666082,
+                "w": 0.163388,
+                "h": 0.019065
+              },
+              {
+                "text": "....degrees",
+                "x": 0.694272,
+                "y": 0.75557,
+                "w": 0.101906,
+                "h": 0.021806
+              },
+              {
+                "text": ".. euros per day",
+                "x": 0.550894,
+                "y": 0.845947,
+                "w": 0.147997,
+                "h": 0.024468
+              },
+              {
+                "text": "......for warmth",
+                "x": 0.522121,
+                "y": 0.873308,
+                "w": 0.145928,
+                "h": 0.021656
+              },
+              {
+                "text": "→ О p. 123",
+                "x": 0.610541,
+                "y": 0.979202,
+                "w": 0.125853,
+                "h": 0.022597
+              },
+              {
+                "text": "Đ p. 107",
+                "x": 0.756265,
+                "y": 0.980974,
+                "w": 0.092734,
+                "h": 0.020826
+              },
+              {
+                "text": "53",
+                "x": 0.873286,
+                "y": 0.979305,
+                "w": 0.035327,
+                "h": 0.020764
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-47.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.082763,
+                "y": 0.018693,
+                "w": 0.106139,
+                "h": 0.019578
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.200923,
+                "h": 0.019147
+              },
+              {
+                "text": "Questions 11 and 12",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.216379,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.253914,
+                "h": 0.01925
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.714314,
+                "y": 0.093369,
+                "w": 0.167804,
+                "h": 0.013843
+              },
+              {
+                "text": "Which TWO facts are given about the school's extended hours childcare service?",
+                "x": 0.082842,
+                "y": 0.139934,
+                "w": 0.768365,
+                "h": 0.017458
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.169504,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.188538,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "C",
+                "x": 0.129209,
+                "y": 0.209302,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.129209,
+                "y": 0.230066,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.129209,
+                "y": 0.2491,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "It started recently.",
+                "x": 0.173368,
+                "y": 0.171235,
+                "w": 0.17222,
+                "h": 0.017417
+              },
+              {
+                "text": "More children attend after school than before school.",
+                "x": 0.175576,
+                "y": 0.188538,
+                "w": 0.501203,
+                "h": 0.019157
+              },
+              {
+                "text": "An average of 50 children attend in the mornings.",
+                "x": 0.175576,
+                "y": 0.209302,
+                "w": 0.470292,
+                "h": 0.019209
+              },
+              {
+                "text": "A child cannot attend both the before and after school sessions.",
+                "x": 0.175576,
+                "y": 0.228336,
+                "w": 0.602769,
+                "h": 0.019219
+              },
+              {
+                "text": "The maximum number of children who can attend is 70.",
+                "x": 0.175576,
+                "y": 0.248884,
+                "w": 0.529907,
+                "h": 0.01925
+              },
+              {
+                "text": "Questions 13-15",
+                "x": 0.082842,
+                "y": 0.307788,
+                "w": 0.178843,
+                "h": 0.017448
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.08505,
+                "y": 0.349419,
+                "w": 0.340023,
+                "h": 0.017345
+              },
+              {
+                "text": "13 How much does childcare cost for a complete afternoon session per child?",
+                "x": 0.08505,
+                "y": 0.378876,
+                "w": 0.748493,
+                "h": 0.017489
+              },
+              {
+                "text": "A £3.50",
+                "x": 0.129209,
+                "y": 0.411752,
+                "w": 0.101565,
+                "h": 0.015614
+              },
+              {
+                "text": "В £5.70",
+                "x": 0.129129,
+                "y": 0.430463,
+                "w": 0.101725,
+                "h": 0.01622
+              },
+              {
+                "text": "С £7.20",
+                "x": 0.129167,
+                "y": 0.449668,
+                "w": 0.101649,
+                "h": 0.017607
+              },
+              {
+                "text": "14 What does the manager say about food?",
+                "x": 0.082842,
+                "y": 0.489618,
+                "w": 0.432757,
+                "h": 0.015697
+              },
+              {
+                "text": "A Children with allergies should bring their own food.",
+                "x": 0.131417,
+                "y": 0.519034,
+                "w": 0.523283,
+                "h": 0.017303
+              },
+              {
+                "text": "B Children may bring healthy snacks with them.",
+                "x": 0.129209,
+                "y": 0.539798,
+                "w": 0.479124,
+                "h": 0.019106
+              },
+              {
+                "text": "C Children are given a proper meal at 5 p.m.",
+                "x": 0.129209,
+                "y": 0.560562,
+                "w": 0.450421,
+                "h": 0.017386
+              },
+              {
+                "text": "15 What is different about arrangements in the school holidays?",
+                "x": 0.082842,
+                "y": 0.59863,
+                "w": 0.620432,
+                "h": 0.017406
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.629776,
+                "w": 0.030911,
+                "h": 0.015573
+              },
+              {
+                "text": "Children from other schools can attend.",
+                "x": 0.16012,
+                "y": 0.629765,
+                "w": 0.390806,
+                "h": 0.015583
+              },
+              {
+                "text": "B Older children can attend.",
+                "x": 0.131417,
+                "y": 0.65054,
+                "w": 0.291449,
+                "h": 0.013843
+              },
+              {
+                "text": "C A greater number of children can attend.",
+                "x": 0.129209,
+                "y": 0.669574,
+                "w": 0.430549,
+                "h": 0.017324
+              },
+              {
+                "text": "54",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-48.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 16-20",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "What information is given about each of the following activities on offer?",
+                "x": 0.062971,
+                "y": 0.060493,
+                "w": 0.682255,
+                "h": 0.019209
+              },
+              {
+                "text": "Choose FIVE answers from the box and write the correct letter, A-G, next to",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.721998,
+                "h": 0.020764
+              },
+              {
+                "text": "Questions 16-20.",
+                "x": 0.067386,
+                "y": 0.119118,
+                "w": 0.167804,
+                "h": 0.017715
+              },
+              {
+                "text": "Information",
+                "x": 0.422677,
+                "y": 0.173846,
+                "w": 0.121815,
+                "h": 0.019003
+              },
+              {
+                "text": "A",
+                "x": 0.277141,
+                "y": 0.204111,
+                "w": 0.039743,
+                "h": 0.019034
+              },
+              {
+                "text": "has limited availability",
+                "x": 0.314676,
+                "y": 0.205842,
+                "w": 0.218586,
+                "h": 0.019126
+              },
+              {
+                "text": "is no longer available",
+                "x": 0.319092,
+                "y": 0.233383,
+                "w": 0.207547,
+                "h": 0.020908
+              },
+              {
+                "text": "C is for over 8s only",
+                "x": 0.277141,
+                "y": 0.266404,
+                "w": 0.216379,
+                "h": 0.01924
+              },
+              {
+                "text": "D",
+                "x": 0.277141,
+                "y": 0.295819,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "E",
+                "x": 0.277141,
+                "y": 0.326966,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "F",
+                "x": 0.277141,
+                "y": 0.358112,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "G",
+                "x": 0.277141,
+                "y": 0.389258,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "requires help from parents",
+                "x": 0.316884,
+                "y": 0.292287,
+                "w": 0.260537,
+                "h": 0.022587
+              },
+              {
+                "text": "involves an additional fee",
+                "x": 0.319092,
+                "y": 0.32506,
+                "w": 0.24729,
+                "h": 0.019209
+              },
+              {
+                "text": "is a new activity",
+                "x": 0.3213,
+                "y": 0.358112,
+                "w": 0.154556,
+                "h": 0.019209
+              },
+              {
+                "text": "was requested by children",
+                "x": 0.323508,
+                "y": 0.387507,
+                "w": 0.249498,
+                "h": 0.019054
+              },
+              {
+                "text": "Activities",
+                "x": 0.111364,
+                "y": 0.456146,
+                "w": 0.09972,
+                "h": 0.020224
+              },
+              {
+                "text": "16 Spanish",
+                "x": 0.065115,
+                "y": 0.487626,
+                "w": 0.125981,
+                "h": 0.019557
+              },
+              {
+                "text": "17 Music",
+                "x": 0.065142,
+                "y": 0.518894,
+                "w": 0.106055,
+                "h": 0.017582
+              },
+              {
+                "text": "18 Painting",
+                "x": 0.065072,
+                "y": 0.549742,
+                "w": 0.126065,
+                "h": 0.019909
+              },
+              {
+                "text": "19 Yoga",
+                "x": 0.062949,
+                "y": 0.581251,
+                "w": 0.0994,
+                "h": 0.017454
+              },
+              {
+                "text": "20 Cooking",
+                "x": 0.062881,
+                "y": 0.610367,
+                "w": 0.12824,
+                "h": 0.019785
+              },
+              {
+                "text": "→ O p. 123",
+                "x": 0.610541,
+                "y": 0.936047,
+                "w": 0.123645,
+                "h": 0.01924
+              },
+              {
+                "text": "• p. 108",
+                "x": 0.753908,
+                "y": 0.935593,
+                "w": 0.093032,
+                "h": 0.019941
+              },
+              {
+                "text": "55",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.033119,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            11,
+            12
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-49.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.082741,
+                "y": 0.018616,
+                "w": 0.106183,
+                "h": 0.019731
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.244022,
+                "y": 0.020695,
+                "w": 0.203131,
+                "h": 0.019147
+              },
+              {
+                "text": "Questions 21-24",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.178843,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.082842,
+                "y": 0.101846,
+                "w": 0.342231,
+                "h": 0.017479
+              },
+              {
+                "text": "Holly's Work Placement Tutorial",
+                "x": 0.279349,
+                "y": 0.143477,
+                "w": 0.443797,
+                "h": 0.022587
+              },
+              {
+                "text": "21 Holly has chosen the Orion Stadium placement because",
+                "x": 0.080634,
+                "y": 0.178022,
+                "w": 0.580689,
+                "h": 0.017437
+              },
+              {
+                "text": "A",
+                "x": 0.129209,
+                "y": 0.209302,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "B",
+                "x": 0.129209,
+                "y": 0.228336,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "it involves children.",
+                "x": 0.173368,
+                "y": 0.209302,
+                "w": 0.185467,
+                "h": 0.013894
+              },
+              {
+                "text": "it is outdoors.",
+                "x": 0.173368,
+                "y": 0.228336,
+                "w": 0.132477,
+                "h": 0.015676
+              },
+              {
+                "text": "it sounds like fun.",
+                "x": 0.168952,
+                "y": 0.248884,
+                "w": 0.17222,
+                "h": 0.015944
+              },
+              {
+                "text": "22",
+                "x": 0.080634,
+                "y": 0.278516,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "Which aspect of safety does Dr Green emphasise most?",
+                "x": 0.124793,
+                "y": 0.278516,
+                "w": 0.538738,
+                "h": 0.019085
+              },
+              {
+                "text": "A ensuring children stay in the stadium",
+                "x": 0.129209,
+                "y": 0.309559,
+                "w": 0.395222,
+                "h": 0.017406
+              },
+              {
+                "text": "B checking the equipment children will use",
+                "x": 0.131417,
+                "y": 0.330375,
+                "w": 0.428341,
+                "h": 0.015625
+              },
+              {
+                "text": "C removing obstacles in changing rooms",
+                "x": 0.131417,
+                "y": 0.349419,
+                "w": 0.410678,
+                "h": 0.015614
+              },
+              {
+                "text": "23 What does Dr Green say about the spectators?",
+                "x": 0.082842,
+                "y": 0.378876,
+                "w": 0.494579,
+                "h": 0.017489
+              },
+              {
+                "text": "A They can be hard to manage.",
+                "x": 0.131201,
+                "y": 0.409438,
+                "w": 0.327176,
+                "h": 0.018628
+              },
+              {
+                "text": "B They make useful volunteers.",
+                "x": 0.131417,
+                "y": 0.430786,
+                "w": 0.326776,
+                "h": 0.015625
+              },
+              {
+                "text": "C They shouldn't take photographs.",
+                "x": 0.129209,
+                "y": 0.44982,
+                "w": 0.366519,
+                "h": 0.019178
+              },
+              {
+                "text": "24 What has affected the schedule in the past?",
+                "x": 0.080634,
+                "y": 0.479184,
+                "w": 0.463668,
+                "h": 0.019085
+              },
+              {
+                "text": "A bad weather",
+                "x": 0.131417,
+                "y": 0.510186,
+                "w": 0.165596,
+                "h": 0.014172
+              },
+              {
+                "text": "B an injury",
+                "x": 0.129209,
+                "y": 0.531002,
+                "w": 0.130269,
+                "h": 0.017448
+              },
+              {
+                "text": "C extra time",
+                "x": 0.131417,
+                "y": 0.550046,
+                "w": 0.1391,
+                "h": 0.014172
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.714314,
+                "y": 0.093369,
+                "w": 0.167804,
+                "h": 0.013843
+              },
+              {
+                "text": "56",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-50.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.067386,
+                "y": 0.018965,
+                "w": 0.178843,
+                "h": 0.019106
+              },
+              {
+                "text": "What do Holly and her tutor agree is an important aspect of each of the following events",
+                "x": 0.062971,
+                "y": 0.058762,
+                "w": 0.832395,
+                "h": 0.020939
+              },
+              {
+                "text": "management skills?",
+                "x": 0.064538,
+                "y": 0.07397,
+                "w": 0.195697,
+                "h": 0.026263
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-H, next to",
+                "x": 0.067386,
+                "y": 0.117594,
+                "w": 0.706542,
+                "h": 0.020764
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.067386,
+                "y": 0.136628,
+                "w": 0.170012,
+                "h": 0.01925
+              },
+              {
+                "text": "A",
+                "x": 0.277141,
+                "y": 0.224875,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "B",
+                "x": 0.277141,
+                "y": 0.256022,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.277141,
+                "y": 0.316584,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.277141,
+                "y": 0.34773,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "F",
+                "x": 0.277141,
+                "y": 0.378876,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "G",
+                "x": 0.277141,
+                "y": 0.408292,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "H",
+                "x": 0.277141,
+                "y": 0.437708,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "Important aspects",
+                "x": 0.389746,
+                "y": 0.191999,
+                "w": 0.189883,
+                "h": 0.020764
+              },
+              {
+                "text": "being flexible",
+                "x": 0.321237,
+                "y": 0.221184,
+                "w": 0.132604,
+                "h": 0.022955
+              },
+              {
+                "text": "focusing on details",
+                "x": 0.319092,
+                "y": 0.248884,
+                "w": 0.187675,
+                "h": 0.024441
+              },
+              {
+                "text": "having a smart appearance",
+                "x": 0.3213,
+                "y": 0.281977,
+                "w": 0.267161,
+                "h": 0.022711
+              },
+              {
+                "text": "hiding your emotions",
+                "x": 0.3213,
+                "y": 0.316584,
+                "w": 0.203131,
+                "h": 0.019106
+              },
+              {
+                "text": "relying on experts",
+                "x": 0.3213,
+                "y": 0.347647,
+                "w": 0.174428,
+                "h": 0.017386
+              },
+              {
+                "text": "trusting your own views",
+                "x": 0.3213,
+                "y": 0.378876,
+                "w": 0.227418,
+                "h": 0.017489
+              },
+              {
+                "text": "doing one thing at a time",
+                "x": 0.314676,
+                "y": 0.406551,
+                "w": 0.245082,
+                "h": 0.020816
+              },
+              {
+                "text": "thinking of the future",
+                "x": 0.3213,
+                "y": 0.435782,
+                "w": 0.198715,
+                "h": 0.02096
+              },
+              {
+                "text": "Events management skills",
+                "x": 0.111545,
+                "y": 0.508652,
+                "w": 0.269369,
+                "h": 0.01925
+              },
+              {
+                "text": "25 Communication",
+                "x": 0.062971,
+                "y": 0.548275,
+                "w": 0.198715,
+                "h": 0.017479
+              },
+              {
+                "text": "26",
+                "x": 0.065179,
+                "y": 0.579596,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "Organisation",
+                "x": 0.111489,
+                "y": 0.579344,
+                "w": 0.123759,
+                "h": 0.017806
+              },
+              {
+                "text": "27",
+                "x": 0.065179,
+                "y": 0.609012,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "Time management",
+                "x": 0.107129,
+                "y": 0.60895,
+                "w": 0.187675,
+                "h": 0.019096
+              },
+              {
+                "text": "28 Creativity",
+                "x": 0.064987,
+                "y": 0.637546,
+                "w": 0.137276,
+                "h": 0.020796
+              },
+              {
+                "text": "29 Leadership",
+                "x": 0.065179,
+                "y": 0.669574,
+                "w": 0.154556,
+                "h": 0.019096
+              },
+              {
+                "text": "30",
+                "x": 0.062971,
+                "y": 0.698989,
+                "w": 0.028703,
+                "h": 0.017303
+              },
+              {
+                "text": "Networking",
+                "x": 0.10919,
+                "y": 0.700184,
+                "w": 0.110692,
+                "h": 0.020106
+              },
+              {
+                "text": "→ • p. 123",
+                "x": 0.610373,
+                "y": 0.935358,
+                "w": 0.12398,
+                "h": 0.020411
+              },
+              {
+                "text": "• p. 109",
+                "x": 0.753975,
+                "y": 0.935806,
+                "w": 0.090689,
+                "h": 0.019515
+              },
+              {
+                "text": "57",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.028703,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-51.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.082787,
+                "y": 0.017076,
+                "w": 0.106091,
+                "h": 0.022811
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.241814,
+                "y": 0.017234,
+                "w": 0.207547,
+                "h": 0.022608
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.019209
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.406262,
+                "h": 0.01925
+              },
+              {
+                "text": "Listening test audio",
+                "x": 0.712106,
+                "y": 0.093369,
+                "w": 0.170012,
+                "h": 0.015573
+              },
+              {
+                "text": "Bird Migration Theory",
+                "x": 0.358835,
+                "y": 0.153931,
+                "w": 0.284825,
+                "h": 0.025955
+              },
+              {
+                "text": "Most birds are believed to migrate seasonally.",
+                "x": 0.100506,
+                "y": 0.191999,
+                "w": 0.434965,
+                "h": 0.020764
+              },
+              {
+                "text": "Hibernation theory",
+                "x": 0.097845,
+                "y": 0.22661,
+                "w": 0.197455,
+                "h": 0.02466
+              },
+              {
+                "text": "It was believed that birds hibernated underwater or buried themselves",
+                "x": 0.142457,
+                "y": 0.259482,
+                "w": 0.664591,
+                "h": 0.017303
+              },
+              {
+                "text": "in 31",
+                "x": 0.142457,
+                "y": 0.280246,
+                "w": 0.057407,
+                "h": 0.015583
+              },
+              {
+                "text": "• This theory was later disproved by experiments on caged birds.",
+                "x": 0.09609,
+                "y": 0.307788,
+                "w": 0.651343,
+                "h": 0.019178
+              },
+              {
+                "text": "Transmutation theory",
+                "x": 0.100506,
+                "y": 0.347647,
+                "w": 0.218586,
+                "h": 0.017386
+              },
+              {
+                "text": "• Aristotle believed birds changed from one species into another in summer",
+                "x": 0.09609,
+                "y": 0.375415,
+                "w": 0.750701,
+                "h": 0.019178
+              },
+              {
+                "text": "and winter.",
+                "x": 0.146834,
+                "y": 0.396022,
+                "w": 0.10385,
+                "h": 0.015888
+              },
+              {
+                "text": "- In autumn he observed that redstarts experience the loss of",
+                "x": 0.142457,
+                "y": 0.422052,
+                "w": 0.593937,
+                "h": 0.019116
+              },
+              {
+                "text": "... and thought they then turned into robins.",
+                "x": 0.352211,
+                "y": 0.441096,
+                "w": 0.404054,
+                "h": 0.022587
+              },
+              {
+                "text": "- Aristotle's assumptions were logical because the two species of birds had a",
+                "x": 0.142457,
+                "y": 0.470584,
+                "w": 0.741869,
+                "h": 0.019229
+              },
+              {
+                "text": "similar 33",
+                "x": 0.168952,
+                "y": 0.492914,
+                "w": 0.094942,
+                "h": 0.014172
+              },
+              {
+                "text": "17th century",
+                "x": 0.097924,
+                "y": 0.531073,
+                "w": 0.131078,
+                "h": 0.018041
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.560562,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "in winter.",
+                "x": 0.144531,
+                "y": 0.579119,
+                "w": 0.088585,
+                "h": 0.016526
+              },
+              {
+                "text": "Charles Morton popularised the idea that birds fly to the 34",
+                "x": 0.146872,
+                "y": 0.558832,
+                "w": 0.556402,
+                "h": 0.019116
+              },
+              {
+                "text": "Scientific developments",
+                "x": 0.100506,
+                "y": 0.619394,
+                "w": 0.245082,
+                "h": 0.017458
+              },
+              {
+                "text": "•",
+                "x": 0.098298,
+                "y": 0.64881,
+                "w": 0.015456,
+                "h": 0.015573
+              },
+              {
+                "text": "In 1822, a stork was killed in Germany which had an African spear in",
+                "x": 0.144665,
+                "y": 0.645266,
+                "w": 0.651343,
+                "h": 0.020847
+              },
+              {
+                "text": "its 35",
+                "x": 0.144522,
+                "y": 0.66753,
+                "w": 0.055483,
+                "h": 0.016199
+              },
+              {
+                "text": "- previously there had been no 36...",
+                "x": 0.142457,
+                "y": 0.695313,
+                "w": 0.346647,
+                "h": 0.01925
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.724945,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "Little was known about the 37",
+                "x": 0.144665,
+                "y": 0.723214,
+                "w": 0.284825,
+                "h": 0.015573
+              },
+              {
+                "text": ". that storks migrate to Africa",
+                "x": 0.637036,
+                "y": 0.692068,
+                "w": 0.262745,
+                "h": 0.02096
+              },
+              {
+                "text": "and journeys of migrating birds",
+                "x": 0.601709,
+                "y": 0.719671,
+                "w": 0.30028,
+                "h": 0.022587
+              },
+              {
+                "text": "until the practice of ringing was established.",
+                "x": 0.146872,
+                "y": 0.743978,
+                "w": 0.415094,
+                "h": 0.017324
+              },
+              {
+                "text": "- It was thought large birds carried small birds on some journeys because they",
+                "x": 0.142457,
+                "y": 0.769717,
+                "w": 0.755117,
+                "h": 0.02098
+              },
+              {
+                "text": "were considered incapable of travelling across huge 38",
+                "x": 0.168952,
+                "y": 0.788761,
+                "w": 0.523283,
+                "h": 0.02097
+              },
+              {
+                "text": "- Ringing depended on what is called the 39 :",
+                "x": 0.142457,
+                "y": 0.816653,
+                "w": 0.443797,
+                "h": 0.020826
+              },
+              {
+                "text": "of dead birds.",
+                "x": 0.745225,
+                "y": 0.818383,
+                "w": 0.145724,
+                "h": 0.019096
+              },
+              {
+                "text": "•",
+                "x": 0.09609,
+                "y": 0.849529,
+                "w": 0.019871,
+                "h": 0.015573
+              },
+              {
+                "text": "In 1931, the first 40",
+                "x": 0.144665,
+                "y": 0.849437,
+                "w": 0.185467,
+                "h": 0.017396
+              },
+              {
+                "text": "to show the migration of European birds",
+                "x": 0.502351,
+                "y": 0.847665,
+                "w": 0.384182,
+                "h": 0.019168
+              },
+              {
+                "text": "was printed.",
+                "x": 0.14685,
+                "y": 0.868471,
+                "w": 0.114858,
+                "h": 0.017488
+              },
+              {
+                "text": "58",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "→ 0",
+                "x": 0.146872,
+                "y": 0.937571,
+                "w": 0.06403,
+                "h": 0.017715
+              },
+              {
+                "text": "p. 123",
+                "x": 0.210903,
+                "y": 0.937571,
+                "w": 0.066238,
+                "h": 0.017715
+              },
+              {
+                "text": "p. 111",
+                "x": 0.3213,
+                "y": 0.936047,
+                "w": 0.068446,
+                "h": 0.01924
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-54.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 1-5",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.152348,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.253914,
+                "h": 0.017437
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.067386,
+                "y": 0.09856,
+                "w": 0.598353,
+                "h": 0.019229
+              },
+              {
+                "text": "Write your answers in boxes 1-5 on your answer sheet.",
+                "x": 0.065179,
+                "y": 0.138163,
+                "w": 0.525491,
+                "h": 0.017715
+              },
+              {
+                "text": "The thylacine",
+                "x": 0.396308,
+                "y": 0.193465,
+                "w": 0.178968,
+                "h": 0.026484
+              },
+              {
+                "text": "Appearance and behaviour",
+                "x": 0.082842,
+                "y": 0.231611,
+                "w": 0.278201,
+                "h": 0.019219
+              },
+              {
+                "text": "•",
+                "x": 0.082842,
+                "y": 0.262943,
+                "w": 0.044159,
+                "h": 0.015573
+              },
+              {
+                "text": "looked rather like a dog",
+                "x": 0.122267,
+                "y": 0.259414,
+                "w": 0.232558,
+                "h": 0.022775
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.292359,
+                "w": 0.017664,
+                "h": 0.019034
+              },
+              {
+                "text": "had a series of stripes along its body and tail",
+                "x": 0.127001,
+                "y": 0.292287,
+                "w": 0.428341,
+                "h": 0.020836
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.325235,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "ate an entirely 1",
+                "x": 0.129209,
+                "y": 0.323289,
+                "w": 0.154556,
+                "h": 0.01925
+              },
+              {
+                "text": "..diet",
+                "x": 0.447153,
+                "y": 0.323505,
+                "w": 0.050783,
+                "h": 0.017303
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.356382,
+                "w": 0.019871,
+                "h": 0.013843
+              },
+              {
+                "text": "probably depended mainly on 2",
+                "x": 0.129209,
+                "y": 0.354651,
+                "w": 0.30028,
+                "h": 0.019126
+              },
+              {
+                "text": "• young spent first months of life inside its mother's 3",
+                "x": 0.080634,
+                "y": 0.385736,
+                "w": 0.534322,
+                "h": 0.019096
+              },
+              {
+                "text": ".....when hunting",
+                "x": 0.520015,
+                "y": 0.354651,
+                "w": 0.211963,
+                "h": 0.017355
+              },
+              {
+                "text": "Decline and extinction",
+                "x": 0.08505,
+                "y": 0.425595,
+                "w": 0.22521,
+                "h": 0.012112
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.456741,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "•",
+                "x": 0.080634,
+                "y": 0.519034,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "last evidence in mainland Australia is a 3,100-year-old 4",
+                "x": 0.127001,
+                "y": 0.454826,
+                "w": 0.534322,
+                "h": 0.019219
+              },
+              {
+                "text": "probably went extinct in mainland Australia due to animals known as dingoes",
+                "x": 0.129209,
+                "y": 0.484427,
+                "w": 0.728622,
+                "h": 0.019116
+              },
+              {
+                "text": "reduction in 5",
+                "x": 0.127001,
+                "y": 0.517273,
+                "w": 0.132477,
+                "h": 0.015604
+              },
+              {
+                "text": "and available sources of food were partly",
+                "x": 0.433905,
+                "y": 0.513729,
+                "w": 0.390806,
+                "h": 0.020877
+              },
+              {
+                "text": "responsible for decline in Tasmania",
+                "x": 0.127001,
+                "y": 0.536317,
+                "w": 0.340023,
+                "h": 0.017324
+              },
+              {
+                "text": "61",
+                "x": 0.875494,
+                "y": 0.936047,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-55.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 6-13",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.165596,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.082842,
+                "y": 0.058762,
+                "w": 0.799276,
+                "h": 0.020939
+              },
+              {
+                "text": "In boxes 6-13 on your answer sheet, write",
+                "x": 0.080634,
+                "y": 0.100074,
+                "w": 0.40847,
+                "h": 0.017715
+              },
+              {
+                "text": "TRUE",
+                "x": 0.155527,
+                "y": 0.13627,
+                "w": 0.062177,
+                "h": 0.019749
+              },
+              {
+                "text": "FALSE",
+                "x": 0.153496,
+                "y": 0.155662,
+                "w": 0.07507,
+                "h": 0.019034
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.290389,
+                "y": 0.138163,
+                "w": 0.410678,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.290389,
+                "y": 0.157207,
+                "w": 0.406262,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.153496,
+                "y": 0.178022,
+                "w": 0.437173,
+                "h": 0.017437
+              },
+              {
+                "text": "6 Significant numbers of thylacines were killed by humans from the 1830s onwards.",
+                "x": 0.093882,
+                "y": 0.228336,
+                "w": 0.810316,
+                "h": 0.019219
+              },
+              {
+                "text": "7 Several thylacines were born in zoos during the late 1800s.",
+                "x": 0.093882,
+                "y": 0.259482,
+                "w": 0.596145,
+                "h": 0.017303
+              },
+              {
+                "text": "8",
+                "x": 0.093882,
+                "y": 0.288898,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "John Gould's prediction about the thylacine surprised some biologists.",
+                "x": 0.122585,
+                "y": 0.288744,
+                "w": 0.671215,
+                "h": 0.019188
+              },
+              {
+                "text": "9 In the early 1900s, many scientists became worried about the possible extinction of",
+                "x": 0.09609,
+                "y": 0.320044,
+                "w": 0.821355,
+                "h": 0.017417
+              },
+              {
+                "text": "the thylacine.",
+                "x": 0.129184,
+                "y": 0.338962,
+                "w": 0.130319,
+                "h": 0.017535
+              },
+              {
+                "text": "10 T. T. Flynn's proposal to rehome captive thylacines on an island proved to be",
+                "x": 0.08505,
+                "y": 0.370224,
+                "w": 0.768365,
+                "h": 0.017303
+              },
+              {
+                "text": "impractical.",
+                "x": 0.127001,
+                "y": 0.390988,
+                "w": 0.114813,
+                "h": 0.017303
+              },
+              {
+                "text": "11",
+                "x": 0.080634,
+                "y": 0.422135,
+                "w": 0.028703,
+                "h": 0.013843
+              },
+              {
+                "text": "There were still reasonable numbers of thylacines in existence when a piece of",
+                "x": 0.129209,
+                "y": 0.420281,
+                "w": 0.748493,
+                "h": 0.015697
+              },
+              {
+                "text": "legislation protecting the species during their breeding season was passed.",
+                "x": 0.129209,
+                "y": 0.441096,
+                "w": 0.713166,
+                "h": 0.015645
+              },
+              {
+                "text": "12 From 1930 to 1936, the only known living thylacines were all in captivity.",
+                "x": 0.082842,
+                "y": 0.472098,
+                "w": 0.726414,
+                "h": 0.015944
+              },
+              {
+                "text": "13 Attempts to find living thylacines are now rarely made.",
+                "x": 0.08505,
+                "y": 0.50173,
+                "w": 0.55861,
+                "h": 0.017314
+              },
+              {
+                "text": "62",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.039743,
+                "h": 0.015573
+              },
+              {
+                "text": "→ O p. 124",
+                "x": 0.133539,
+                "y": 0.935636,
+                "w": 0.145896,
+                "h": 0.019855
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 6,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-58.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 14-20",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Reading Passage 2 has eight sections, A-H.",
+                "x": 0.067386,
+                "y": 0.058762,
+                "w": 0.426133,
+                "h": 0.019168
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.065179,
+                "y": 0.09856,
+                "w": 0.470292,
+                "h": 0.019229
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 14-20 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.138163,
+                "w": 0.63368,
+                "h": 0.019229
+              },
+              {
+                "text": "14 examples of a range of potential environmental advantages of oil palm tree",
+                "x": 0.065179,
+                "y": 0.167774,
+                "w": 0.755117,
+                "h": 0.020877
+              },
+              {
+                "text": "cultivation",
+                "x": 0.113753,
+                "y": 0.190269,
+                "w": 0.094942,
+                "h": 0.012112
+              },
+              {
+                "text": "15 description of an organisation which controls the environmental impact of palm oil",
+                "x": 0.065179,
+                "y": 0.219653,
+                "w": 0.819147,
+                "h": 0.019065
+              },
+              {
+                "text": "production",
+                "x": 0.113557,
+                "y": 0.239643,
+                "w": 0.09975,
+                "h": 0.017184
+              },
+              {
+                "text": "16",
+                "x": 0.067386,
+                "y": 0.269864,
+                "w": 0.037535,
+                "h": 0.013843
+              },
+              {
+                "text": "examples of the widespread global use of palm oil",
+                "x": 0.100506,
+                "y": 0.2697,
+                "w": 0.487956,
+                "h": 0.017468
+              },
+              {
+                "text": "17",
+                "x": 0.065179,
+                "y": 0.301011,
+                "w": 0.044159,
+                "h": 0.015573
+              },
+              {
+                "text": "reference to a particular species which could benefit the ecosystem of oil palm",
+                "x": 0.104922,
+                "y": 0.29928,
+                "w": 0.746285,
+                "h": 0.020908
+              },
+              {
+                "text": "plantations",
+                "x": 0.111386,
+                "y": 0.321083,
+                "w": 0.1063,
+                "h": 0.016956
+              },
+              {
+                "text": "18 figures illustrating the rapid expansion of the palm oil industry",
+                "x": 0.065179,
+                "y": 0.35119,
+                "w": 0.627056,
+                "h": 0.019044
+              },
+              {
+                "text": "19",
+                "x": 0.065179,
+                "y": 0.380606,
+                "w": 0.026495,
+                "h": 0.017303
+              },
+              {
+                "text": "20",
+                "x": 0.065179,
+                "y": 0.411752,
+                "w": 0.026495,
+                "h": 0.015573
+              },
+              {
+                "text": "an economic justification for not opposing the palm oil industry",
+                "x": 0.111545,
+                "y": 0.380421,
+                "w": 0.589521,
+                "h": 0.019219
+              },
+              {
+                "text": "examples of creatures badly affected by the establishment of oil palm plantations",
+                "x": 0.102714,
+                "y": 0.411752,
+                "w": 0.774988,
+                "h": 0.019157
+              },
+              {
+                "text": "Questions 21 and 22",
+                "x": 0.067386,
+                "y": 0.472098,
+                "w": 0.216379,
+                "h": 0.017715
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.067386,
+                "y": 0.511958,
+                "w": 0.251706,
+                "h": 0.019188
+              },
+              {
+                "text": "Write the correct letters in boxes 21 and 22 on your answer sheet",
+                "x": 0.067386,
+                "y": 0.550046,
+                "w": 0.620432,
+                "h": 0.017437
+              },
+              {
+                "text": "Which TWO statements are made about the Roundtable on Sustainable Palm",
+                "x": 0.065179,
+                "y": 0.589906,
+                "w": 0.735245,
+                "h": 0.017376
+              },
+              {
+                "text": "Oil (RSPO)?",
+                "x": 0.065179,
+                "y": 0.610721,
+                "w": 0.121437,
+                "h": 0.017324
+              },
+              {
+                "text": "A",
+                "x": 0.111545,
+                "y": 0.643618,
+                "w": 0.019871,
+                "h": 0.017303
+              },
+              {
+                "text": "Its membership has grown steadily over the course of the last decade.",
+                "x": 0.157912,
+                "y": 0.643495,
+                "w": 0.666799,
+                "h": 0.017427
+              },
+              {
+                "text": "B",
+                "x": 0.111545,
+                "y": 0.662652,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "It demands that certified producers be open and honest about their practices.",
+                "x": 0.157912,
+                "y": 0.662539,
+                "w": 0.73083,
+                "h": 0.019147
+              },
+              {
+                "text": "It took several years to establish its set of criteria for sustainable palm oil",
+                "x": 0.146872,
+                "y": 0.681583,
+                "w": 0.699918,
+                "h": 0.019137
+              },
+              {
+                "text": "certification.",
+                "x": 0.157883,
+                "y": 0.702328,
+                "w": 0.119287,
+                "h": 0.017547
+              },
+              {
+                "text": "D Its regulations regarding sustainability are stricter than those governing other",
+                "x": 0.111545,
+                "y": 0.721443,
+                "w": 0.774988,
+                "h": 0.019075
+              },
+              {
+                "text": "industries.",
+                "x": 0.155704,
+                "y": 0.742248,
+                "w": 0.103773,
+                "h": 0.015573
+              },
+              {
+                "text": "E",
+                "x": 0.113753,
+                "y": 0.761282,
+                "w": 0.026495,
+                "h": 0.013843
+              },
+              {
+                "text": "It was formed at the request of environmentalists concerned about the loss of",
+                "x": 0.155704,
+                "y": 0.761282,
+                "w": 0.735245,
+                "h": 0.017303
+              },
+              {
+                "text": "virgin forests.",
+                "x": 0.157912,
+                "y": 0.782046,
+                "w": 0.132477,
+                "h": 0.017345
+              },
+              {
+                "text": "65",
+                "x": 0.875494,
+                "y": 0.934316,
+                "w": 0.030911,
+                "h": 0.019034
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-59.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 23-26",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.015604
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.08505,
+                "y": 0.060493,
+                "w": 0.295865,
+                "h": 0.015666
+              },
+              {
+                "text": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+                "x": 0.082842,
+                "y": 0.100074,
+                "w": 0.726414,
+                "h": 0.017715
+              },
+              {
+                "text": "Write your answers in boxes 23-26 on your answer sheet",
+                "x": 0.082842,
+                "y": 0.138163,
+                "w": 0.54757,
+                "h": 0.019229
+              },
+              {
+                "text": "23 One advantage of palm oil for manufacturers is that it stays.",
+                "x": 0.080634,
+                "y": 0.169504,
+                "w": 0.618224,
+                "h": 0.019147
+              },
+              {
+                "text": "even",
+                "x": 0.859963,
+                "y": 0.171063,
+                "w": 0.050934,
+                "h": 0.014186
+              },
+              {
+                "text": "when not refrigerated.",
+                "x": 0.131417,
+                "y": 0.188538,
+                "w": 0.207547,
+                "h": 0.017386
+              },
+              {
+                "text": "24 The...",
+                "x": 0.082658,
+                "y": 0.218882,
+                "w": 0.106349,
+                "h": 0.017179
+              },
+              {
+                "text": "is the best known of the animals suffering habitat loss as a",
+                "x": 0.336756,
+                "y": 0.219653,
+                "w": 0.55861,
+                "h": 0.019065
+              },
+              {
+                "text": "result of the spread of oil palm plantations.",
+                "x": 0.129042,
+                "y": 0.236337,
+                "w": 0.404469,
+                "h": 0.021163
+              },
+              {
+                "text": "25 As one of its criteria for the certification of sustainable palm oil, the RSPO insists",
+                "x": 0.080634,
+                "y": 0.2697,
+                "w": 0.808108,
+                "h": 0.019199
+              },
+              {
+                "text": "that growers check.",
+                "x": 0.124793,
+                "y": 0.290515,
+                "w": 0.198715,
+                "h": 0.017417
+              },
+              {
+                "text": ".... on a routine basis.",
+                "x": 0.453777,
+                "y": 0.288744,
+                "w": 0.209755,
+                "h": 0.019188
+              },
+              {
+                "text": "26 Ellwood and his researchers are looking into whether the bird's nest fern could",
+                "x": 0.07832,
+                "y": 0.317789,
+                "w": 0.790649,
+                "h": 0.022835
+              },
+              {
+                "text": "restore",
+                "x": 0.12697,
+                "y": 0.340714,
+                "w": 0.07734,
+                "h": 0.015762
+              },
+              {
+                "text": ".... in areas where oil palm trees are grown.",
+                "x": 0.347795,
+                "y": 0.339078,
+                "w": 0.40847,
+                "h": 0.017427
+              },
+              {
+                "text": "66",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.030911,
+                "h": 0.013843
+              },
+              {
+                "text": "→ O p.124",
+                "x": 0.137936,
+                "y": 0.935562,
+                "w": 0.141517,
+                "h": 0.020003
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-62.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 27-31",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Choose thecorrect letter, A, B, C or D.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.368727,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter in boxes 27-31 on your answer sheet.",
+                "x": 0.069594,
+                "y": 0.100074,
+                "w": 0.574065,
+                "h": 0.015944
+              },
+              {
+                "text": "27 What point does Shester make about Barr's book in the first paragraph?",
+                "x": 0.067386,
+                "y": 0.129707,
+                "w": 0.726414,
+                "h": 0.017314
+              },
+              {
+                "text": "A",
+                "x": 0.113753,
+                "y": 0.160853,
+                "w": 0.015456,
+                "h": 0.013843
+              },
+              {
+                "text": "It gives a highly original explanation for urban development.",
+                "x": 0.155704,
+                "y": 0.16075,
+                "w": 0.565234,
+                "h": 0.015676
+              },
+              {
+                "text": "B Elements of Barr's research papers are incorporated throughout the book.",
+                "x": 0.115961,
+                "y": 0.179794,
+                "w": 0.744077,
+                "h": 0.017396
+              },
+              {
+                "text": "Other books that are available on the subject have taken a different approach.",
+                "x": 0.162328,
+                "y": 0.200609,
+                "w": 0.735245,
+                "h": 0.015614
+              },
+              {
+                "text": "D It covers a range of factors that affected the development of New York.",
+                "x": 0.115961,
+                "y": 0.219653,
+                "w": 0.710958,
+                "h": 0.017334
+              },
+              {
+                "text": "28 How does Shester respond to the information in the book about tenements?",
+                "x": 0.067386,
+                "y": 0.250655,
+                "w": 0.761741,
+                "h": 0.015944
+              },
+              {
+                "text": "A She describes the reasons for Barr's interest.",
+                "x": 0.111545,
+                "y": 0.280246,
+                "w": 0.474708,
+                "h": 0.017355
+              },
+              {
+                "text": "B She indicates a potential problem with Barr's analysis.",
+                "x": 0.111545,
+                "y": 0.301011,
+                "w": 0.560818,
+                "h": 0.017406
+              },
+              {
+                "text": "C She compares Barr's conclusion with that of other writers.",
+                "x": 0.111545,
+                "y": 0.320044,
+                "w": 0.596145,
+                "h": 0.019188
+              },
+              {
+                "text": "D She provides details about the sources Barr used for his research.",
+                "x": 0.113753,
+                "y": 0.340808,
+                "w": 0.673423,
+                "h": 0.015697
+              },
+              {
+                "text": "29 What does Shester say about chapter six of the book?",
+                "x": 0.065179,
+                "y": 0.370224,
+                "w": 0.560818,
+                "h": 0.017303
+              },
+              {
+                "text": "A It contains conflicting data.",
+                "x": 0.113753,
+                "y": 0.401237,
+                "w": 0.30028,
+                "h": 0.017437
+              },
+              {
+                "text": "B It focuses too much on possible trends.",
+                "x": 0.113753,
+                "y": 0.422052,
+                "w": 0.419509,
+                "h": 0.015655
+              },
+              {
+                "text": "It is too specialised for most readers.",
+                "x": 0.142457,
+                "y": 0.441096,
+                "w": 0.368727,
+                "h": 0.015645
+              },
+              {
+                "text": "D It draws on research that is out of date.",
+                "x": 0.113753,
+                "y": 0.461912,
+                "w": 0.417301,
+                "h": 0.017324
+              },
+              {
+                "text": "30 What does Shester suggest about the chapters focusing on the 1920s building",
+                "x": 0.065179,
+                "y": 0.491142,
+                "w": 0.788236,
+                "h": 0.01924
+              },
+              {
+                "text": "boom?",
+                "x": 0.111545,
+                "y": 0.510382,
+                "w": 0.068446,
+                "h": 0.017303
+              },
+              {
+                "text": "A The information should have been organised differently.",
+                "x": 0.111545,
+                "y": 0.541528,
+                "w": 0.574065,
+                "h": 0.019147
+              },
+              {
+                "text": "B More facts are needed about the way construction was financed.",
+                "x": 0.113753,
+                "y": 0.562292,
+                "w": 0.657967,
+                "h": 0.015655
+              },
+              {
+                "text": "C The explanation that is given for the building boom is unlikely.",
+                "x": 0.111545,
+                "y": 0.581326,
+                "w": 0.629264,
+                "h": 0.019209
+              },
+              {
+                "text": "D Some parts will have limited appeal to certain people.",
+                "x": 0.111545,
+                "y": 0.60209,
+                "w": 0.556402,
+                "h": 0.017489
+              },
+              {
+                "text": "31 What impresses Shester the most about the chapter on land values?",
+                "x": 0.067386,
+                "y": 0.631506,
+                "w": 0.693294,
+                "h": 0.017303
+              },
+              {
+                "text": "A the broad time period that is covered",
+                "x": 0.113753,
+                "y": 0.662539,
+                "w": 0.393014,
+                "h": 0.015686
+              },
+              {
+                "text": "B the interesting questions that Barr asks",
+                "x": 0.111545,
+                "y": 0.679812,
+                "w": 0.417301,
+                "h": 0.020908
+              },
+              {
+                "text": "C",
+                "x": 0.111545,
+                "y": 0.70245,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "the nature of the research into the topic",
+                "x": 0.15557,
+                "y": 0.698651,
+                "w": 0.377828,
+                "h": 0.021255
+              },
+              {
+                "text": "D",
+                "x": 0.111545,
+                "y": 0.723214,
+                "w": 0.017664,
+                "h": 0.013843
+              },
+              {
+                "text": "the recommendations Barr makes for the future",
+                "x": 0.157912,
+                "y": 0.721443,
+                "w": 0.450421,
+                "h": 0.017345
+              },
+              {
+                "text": "69",
+                "x": 0.877702,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-63.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 32-35",
+                "x": 0.082842,
+                "y": 0.020695,
+                "w": 0.178843,
+                "h": 0.017376
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.082842,
+                "y": 0.060493,
+                "w": 0.814731,
+                "h": 0.019209
+              },
+              {
+                "text": "In boxes 32-35 on your answer sheet, write",
+                "x": 0.080634,
+                "y": 0.100074,
+                "w": 0.417301,
+                "h": 0.017715
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.290389,
+                "y": 0.138163,
+                "w": 0.485748,
+                "h": 0.019229
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.290389,
+                "y": 0.157207,
+                "w": 0.481332,
+                "h": 0.017489
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.153496,
+                "y": 0.176251,
+                "w": 0.664591,
+                "h": 0.019209
+              },
+              {
+                "text": "32 The description in the first chapter of how New York probably looked from the air in",
+                "x": 0.078426,
+                "y": 0.228336,
+                "w": 0.832395,
+                "h": 0.019219
+              },
+              {
+                "text": "the early 1600s lacks interest.",
+                "x": 0.127001,
+                "y": 0.248884,
+                "w": 0.284825,
+                "h": 0.017715
+              },
+              {
+                "text": "33 Chapters two and three prepare the reader well for material yet to come.",
+                "x": 0.080634,
+                "y": 0.278516,
+                "w": 0.733037,
+                "h": 0.019085
+              },
+              {
+                "text": "34",
+                "x": 0.080634,
+                "y": 0.307932,
+                "w": 0.030911,
+                "h": 0.015573
+              },
+              {
+                "text": "The biggest problem for many nineteenth-century New York immigrant",
+                "x": 0.127001,
+                "y": 0.307788,
+                "w": 0.669007,
+                "h": 0.019178
+              },
+              {
+                "text": "neighbourhoods was a lack of amenities.",
+                "x": 0.131285,
+                "y": 0.327951,
+                "w": 0.386618,
+                "h": 0.018928
+              },
+              {
+                "text": "35",
+                "x": 0.080634,
+                "y": 0.359842,
+                "w": 0.028703,
+                "h": 0.015573
+              },
+              {
+                "text": "In the nineteenth century, New York's immigrant neighbourhoods tended to",
+                "x": 0.122585,
+                "y": 0.359842,
+                "w": 0.713166,
+                "h": 0.017479
+              },
+              {
+                "text": "concentrate around the harbour.",
+                "x": 0.129209,
+                "y": 0.380421,
+                "w": 0.306904,
+                "h": 0.015944
+              },
+              {
+                "text": "70",
+                "x": 0.080634,
+                "y": 0.937777,
+                "w": 0.026495,
+                "h": 0.015573
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c17-test-3/page-64.webp",
+            "width": 1767,
+            "height": 2258,
+            "lines": [
+              {
+                "text": "Questions 36-40",
+                "x": 0.067386,
+                "y": 0.020695,
+                "w": 0.176636,
+                "h": 0.017376
+              },
+              {
+                "text": "Complete the summary using the list of phrases, A-J, below.",
+                "x": 0.067386,
+                "y": 0.060493,
+                "w": 0.574065,
+                "h": 0.019209
+              },
+              {
+                "text": "Write the correct letter, A-J, in boxes 36-40 on your answer sheet.",
+                "x": 0.067386,
+                "y": 0.100074,
+                "w": 0.63368,
+                "h": 0.01925
+              },
+              {
+                "text": "The bedrock myth",
+                "x": 0.358835,
+                "y": 0.14701,
+                "w": 0.253914,
+                "h": 0.026141
+              },
+              {
+                "text": "In chapter seven, Barr indicates how the lack of bedrock close to the surface does",
+                "x": 0.078426,
+                "y": 0.190269,
+                "w": 0.781612,
+                "h": 0.02097
+              },
+              {
+                "text": "not explain why skyscrapers are absent from 36",
+                "x": 0.08505,
+                "y": 0.217882,
+                "w": 0.457044,
+                "h": 0.017376
+              },
+              {
+                "text": ". He points out",
+                "x": 0.70769,
+                "y": 0.217882,
+                "w": 0.143516,
+                "h": 0.017376
+              },
+              {
+                "text": "that although the cost of foundations increases when bedrock is deep below the",
+                "x": 0.082842,
+                "y": 0.243909,
+                "w": 0.755117,
+                "h": 0.019147
+              },
+              {
+                "text": "surface, this cannot be regarded as 37 .…....",
+                "x": 0.08505,
+                "y": 0.2697,
+                "w": 0.399638,
+                "h": 0.015944
+              },
+              {
+                "text": ", especially when compared",
+                "x": 0.619373,
+                "y": 0.2697,
+                "w": 0.267161,
+                "h": 0.017468
+              },
+              {
+                "text": "to 38..",
+                "x": 0.082842,
+                "y": 0.295819,
+                "w": 0.066238,
+                "h": 0.013843
+              },
+              {
+                "text": "A particularly enjoyable part of the chapter was Barr's account of how foundations",
+                "x": 0.082842,
+                "y": 0.340808,
+                "w": 0.77278,
+                "h": 0.017468
+              },
+              {
+                "text": "are built. He describes not only how 39",
+                "x": 0.082842,
+                "y": 0.366691,
+                "w": 0.370935,
+                "h": 0.017376
+              },
+              {
+                "text": "are made possible by the",
+                "x": 0.625996,
+                "y": 0.363148,
+                "w": 0.245082,
+                "h": 0.020919
+              },
+              {
+                "text": "use of caissons, but he also discusses their 40....",
+                "x": 0.082842,
+                "y": 0.392719,
+                "w": 0.468084,
+                "h": 0.017376
+              },
+              {
+                "text": "..The chapter is",
+                "x": 0.694443,
+                "y": 0.390988,
+                "w": 0.152348,
+                "h": 0.019106
+              },
+              {
+                "text": "well researched but relatively easy to understand.",
+                "x": 0.082842,
+                "y": 0.416738,
+                "w": 0.4725,
+                "h": 0.02097
+              },
+              {
+                "text": "A",
+                "x": 0.118169,
+                "y": 0.5,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "D",
+                "x": 0.118169,
+                "y": 0.524225,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "G",
+                "x": 0.120377,
+                "y": 0.54845,
+                "w": 0.017664,
+                "h": 0.015573
+              },
+              {
+                "text": "J",
+                "x": 0.118169,
+                "y": 0.572674,
+                "w": 0.015456,
+                "h": 0.017303
+              },
+              {
+                "text": "development plans",
+                "x": 0.166744,
+                "y": 0.50173,
+                "w": 0.181051,
+                "h": 0.015573
+              },
+              {
+                "text": "excessive expense",
+                "x": 0.168952,
+                "y": 0.525955,
+                "w": 0.178843,
+                "h": 0.013905
+              },
+              {
+                "text": "water level",
+                "x": 0.168809,
+                "y": 0.549508,
+                "w": 0.101851,
+                "h": 0.015187
+              },
+              {
+                "text": "construction guidelines",
+                "x": 0.168952,
+                "y": 0.572633,
+                "w": 0.216379,
+                "h": 0.017345
+              },
+              {
+                "text": "B deep excavations",
+                "x": 0.394162,
+                "y": 0.5,
+                "w": 0.218586,
+                "h": 0.019044
+              },
+              {
+                "text": "E",
+                "x": 0.39637,
+                "y": 0.524225,
+                "w": 0.013248,
+                "h": 0.013843
+              },
+              {
+                "text": "H",
+                "x": 0.394162,
+                "y": 0.54845,
+                "w": 0.017664,
+                "h": 0.017303
+              },
+              {
+                "text": "impossible tasks",
+                "x": 0.436077,
+                "y": 0.520601,
+                "w": 0.165668,
+                "h": 0.022822
+              },
+              {
+                "text": "specific areas",
+                "x": 0.44047,
+                "y": 0.548197,
+                "w": 0.132594,
+                "h": 0.01954
+              },
+              {
+                "text": "F",
+                "x": 0.630412,
+                "y": 0.522494,
+                "w": 0.015456,
+                "h": 0.019034
+              },
+              {
+                "text": "great distance",
+                "x": 0.667884,
+                "y": 0.497989,
+                "w": 0.148059,
+                "h": 0.021325
+              },
+              {
+                "text": "associated risks",
+                "x": 0.670155,
+                "y": 0.520764,
+                "w": 0.163388,
+                "h": 0.020867
+              },
+              {
+                "text": "total expenditure",
+                "x": 0.672363,
+                "y": 0.546503,
+                "w": 0.167804,
+                "h": 0.02098
+              },
+              {
+                "text": "→ • p. 124",
+                "x": 0.712009,
+                "y": 0.933865,
+                "w": 0.141503,
+                "h": 0.019937
+              },
+              {
+                "text": "71",
+                "x": 0.875494,
+                "y": 0.936047,
+                "w": 0.028703,
+                "h": 0.013843
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 32,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 33,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 34,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 35,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "family",
+      "fit",
+      "hotels",
+      "Carrowniskey",
+      "week",
+      "bay",
+      "September",
+      "19|nineteen",
+      "30|thirty",
+      "boots",
+      "B",
+      "E",
+      "C",
+      "C",
+      "A",
+      "E",
+      "D",
+      "G",
+      "F",
+      "C",
+      "B",
+      "A",
+      "A",
+      "B",
+      "C",
+      "A",
+      "D",
+      "B",
+      "F",
+      "H",
+      "mud",
+      "feathers",
+      "shape",
+      "moon",
+      "neck",
+      "evidence",
+      "destinations",
+      "oceans",
+      "recovery",
+      "atlas"
+    ],
+    "reading": [
+      "carnivorous",
+      "scent",
+      "pouch",
+      "fossil",
+      "habitat",
+      "TRUE",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "NOT GIVEN",
+      "F",
+      "G",
+      "A",
+      "H",
+      "B",
+      "E",
+      "C",
+      "B",
+      "C",
+      "solid",
+      "Sumatran orangutan|orangutan|Sumatran orang-utan|orang-utan",
+      "carbon stocks",
+      "biodiversity",
+      "D",
+      "B",
+      "D",
+      "C",
+      "C",
+      "NO",
+      "YES",
+      "NOT GIVEN",
+      "NO",
+      "H",
+      "D",
+      "I",
+      "B",
+      "F"
+    ]
+  },
+  "completionOptions": {}
+}

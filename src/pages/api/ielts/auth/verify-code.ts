@@ -17,8 +17,8 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		const password = String(body.password || '');
 		if (!email || !/^\d{6}$/.test(code)) return json({ error: 'invalid_code' }, 400);
 		if (password.length < 10 || password.length > 72 || !/[A-Za-z]/.test(password) || !/\d/.test(password)) return json({ error: 'invalid_password' }, 400);
-		if (!(await claimRateLimit(request, 'otp-verify-email', email, 10, 900, 'identity'))
-			|| !(await claimRateLimit(request, 'otp-verify-ip', '', 30, 900, 'request'))) return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
+		if (!(await claimRateLimit(request, 'otp-verify-ip', '', 30, 900, 'request'))
+			|| !(await claimRateLimit(request, 'otp-verify-email', email, 10, 900, 'identity'))) return json({ error: 'rate_limited' }, 429, { 'retry-after': '900' });
 		const client = createServiceClient();
 		const emailHash = await sha256(email);
 		const { data: challenge, error: challengeError } = await client.from('ielts_verification_codes')
@@ -28,7 +28,8 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 		if (challengeError) throw challengeError;
 		const expected = await verificationHash(email, code, ieltsConfig().secretKey);
 		if (!challenge || challenge.attempts >= 5 || new Date(challenge.expires_at).getTime() < Date.now() || !constantTimeEqual(challenge.code_hash, expected)) {
-			if (challenge) await client.from('ielts_verification_codes').update({ attempts: Math.min(10, challenge.attempts + 1) }).eq('email_hash', emailHash);
+			if (challenge) await client.from('ielts_verification_codes').update({ attempts: Math.min(10, challenge.attempts + 1) })
+				.eq('email_hash', emailHash).eq('code_hash', challenge.code_hash).eq('attempts', challenge.attempts);
 			return json({ error: 'invalid_code' }, 401);
 		}
 		// Consume the exact challenge atomically: concurrent/replayed requests cannot reset twice.

@@ -1,0 +1,60 @@
+---
+import IeltsLayout from '../../layouts/IeltsLayout.astro';
+export const prerender = true;
+---
+<IeltsLayout title="打字速度练习 · Lenteyyy IELTS" description="英语打字练习，实时查看速度与准确率。" telemetry={false}>
+	<main>
+		<a class="back" href="/ielts#notes">← 返回学习中心</a>
+		<h1>打字速度练习</h1>
+		<section data-typing aria-label="英语打字练习">
+			<div class="toolbar">
+				<label>内容<select data-typing-mode><option value="words">英语词汇</option><option value="passage">英语短文</option></select></label>
+				<label>时长<select data-typing-duration><option value="30">30 秒</option><option value="60" selected>60 秒</option><option value="120">120 秒</option></select></label>
+			</div>
+			<div class="metrics" aria-label="实时成绩">
+				<div><strong data-typing-wpm>0</strong><span>WPM</span></div>
+				<div><strong data-typing-accuracy>100%</strong><span>准确率</span></div>
+				<div><strong data-typing-remaining role="timer" aria-live="off">60s</strong><span>剩余时间</span></div>
+			</div>
+			<div class="target" data-typing-target lang="en" role="region" aria-label="练习文本" tabindex="0"></div>
+			<label class="input-label" for="typing-answer">按上方文本输入</label>
+			<textarea id="typing-answer" data-typing-input lang="en" aria-describedby="typing-help typing-status" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="在这里开始输入…"></textarea>
+			<p id="typing-status" data-typing-status role="status">首次输入开始计时。</p>
+			<div class="actions"><button type="button" data-typing-restart>重新开始</button><button type="button" data-typing-new>换一组</button></div>
+			<p class="detail">字符/分钟 <span data-typing-cpm>0</span><span aria-hidden="true"> / </span>错误字符 <span data-typing-errors>0</span></p>
+			<p id="typing-help" class="help">WPM 按每 5 个正确字符计 1 词；准确率按当前输入计算。含空格，区分大小写。更换内容或时长会重新计时。</p>
+			<noscript><p>请启用 JavaScript 使用练习工具。</p></noscript>
+		</section>
+	</main>
+</IeltsLayout>
+<script>import '../../lib/ielts/typing-client';</script>
+<style>
+	:global(body.ielts-site) { animation: none; }
+	main { width: 100%; max-width: 960px; margin: 0 auto; padding: 48px 28px 56px; }
+	.back { font-size: 16px; color: var(--ielts-muted); text-decoration: none; }
+	.back:hover { color: var(--ielts-ink); }
+	h1 { font-size: clamp(30px, 3vw, 44px); letter-spacing: -.035em; margin: 32px 0 36px; }
+	section { font-size: 18px; }
+	.toolbar, .toolbar label, .actions { display: flex; align-items: center; gap: 16px; }
+	.toolbar { justify-content: space-between; flex-wrap: wrap; }
+	select, button, textarea { font: inherit; color: var(--ielts-ink); background: var(--ielts-card); border: 1px solid var(--ielts-line); border-radius: 6px; }
+	select { padding: 10px 32px 10px 12px; }
+	.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 28px 0; margin: 24px 0; border-top: 1px solid var(--ielts-line); border-bottom: 1px solid var(--ielts-line); }
+	.metrics div { display: flex; flex-direction: column; gap: 8px; }
+	.metrics strong { font-size: clamp(28px, 4vw, 40px); font-weight: 600; font-variant-numeric: tabular-nums; }
+	.metrics span, .detail, .help { color: var(--ielts-muted); }
+	.target { position: relative; height: 210px; overflow-y: auto; padding: 6px 4px; font: 22px/1.9 ui-monospace, SFMono-Regular, Consolas, monospace; color: var(--ielts-muted); overflow-wrap: anywhere; white-space: pre-wrap; overscroll-behavior: contain; }
+	.target :global(.correct) { color: var(--ielts-ink); }
+	.target :global(.wrong) { color: #b42318; background: #fef0ed; text-decoration: underline; }
+	.target :global(.current) { border-left: 2px solid var(--ielts-ink); margin-left: -2px; background: var(--ielts-accent-soft); }
+	.input-label { display: block; margin: 24px 0 12px; }
+	textarea { display: block; width: 100%; min-height: 108px; padding: 16px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; line-height: 1.7; }
+	textarea[readonly] { background: var(--ielts-panel); }
+	#typing-status { margin: 16px 0; min-height: 30px; }
+	button { padding: 12px 20px; cursor: pointer; }
+	button:first-child { color: var(--ielts-bg); background: var(--ielts-ink); border-color: var(--ielts-ink); }
+	button:last-child:hover { background: var(--ielts-hover); }
+	.detail { margin: 24px 0 12px; font-variant-numeric: tabular-nums; }
+	.help { font-size: 16px; line-height: 1.8; margin: 0; }
+	@media (max-width: 600px) { main { padding: 28px 20px 40px; } .toolbar { gap: 18px; } .toolbar label { gap: 8px; } .metrics { gap: 12px; } .metrics span { font-size: 16px; } .target { font-size: 20px; height: 190px; } }
+</style>

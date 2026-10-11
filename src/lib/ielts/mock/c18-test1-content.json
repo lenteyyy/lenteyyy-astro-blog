@@ -1,0 +1,4973 @@
+{
+  "source": {
+    "book": 18,
+    "test": 1,
+    "questionPages": {
+      "l": [
+        [
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          17
+        ]
+      ],
+      "r": [
+        [
+          18,
+          19
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          27,
+          28
+        ]
+      ],
+      "q": [
+        [
+          20,
+          21
+        ],
+        [
+          24,
+          25,
+          26
+        ],
+        [
+          29,
+          30
+        ]
+      ],
+      "w": [
+        31,
+        32
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "7f2fdefa5af7b6b75640eec3b0e65c1d49ecb7bd311e1293d53b6377acacbe75"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-1/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-1/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-1/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c18-test-1/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-1/page-18.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.152493,
+                "y": 0.012376,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "READING",
+                "x": 0.490661,
+                "y": 0.063137,
+                "w": 0.131092,
+                "h": 0.022576
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.150538,
+                "y": 0.136475,
+                "w": 0.29912,
+                "h": 0.022306
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.150538,
+                "y": 0.182375,
+                "w": 0.787879,
+                "h": 0.0204
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.152493,
+                "y": 0.204474,
+                "w": 0.162268,
+                "h": 0.018791
+              },
+              {
+                "text": "Urban farming",
+                "x": 0.447703,
+                "y": 0.255262,
+                "w": 0.218964,
+                "h": 0.029112
+              },
+              {
+                "text": "In Paris, urban farmers are trying a soil-free approach to agriculture that uses less",
+                "x": 0.170088,
+                "y": 0.299565,
+                "w": 0.770283,
+                "h": 0.025609
+              },
+              {
+                "text": "space and fewer resources. Could it help cities face the threats to our food supplies?",
+                "x": 0.162268,
+                "y": 0.321716,
+                "w": 0.787879,
+                "h": 0.025597
+              },
+              {
+                "text": "On top of a striking new exhibition hall in southern Paris, the world's largest urban rooftop farm",
+                "x": 0.150538,
+                "y": 0.367496,
+                "w": 0.795699,
+                "h": 0.020675
+              },
+              {
+                "text": "has started to bear fruit. Strawberries that are small, intensely flavoured and resplendently red",
+                "x": 0.150538,
+                "y": 0.388073,
+                "w": 0.772238,
+                "h": 0.0204
+              },
+              {
+                "text": "sprout abundantly from large plastic tubes, Peer inside and you see the tubes are completely",
+                "x": 0.150538,
+                "y": 0.408353,
+                "w": 0.758553,
+                "h": 0.02222
+              },
+              {
+                "text": "hollow, the roots of dozens of strawberry plants dangling down inside them. From identical",
+                "x": 0.150538,
+                "y": 0.430504,
+                "w": 0.754643,
+                "h": 0.022169
+              },
+              {
+                "text": "vertical tubes nearby burst row upon row of lettuces; near those are aromatic herbs, such as basil,",
+                "x": 0.150538,
+                "y": 0.450972,
+                "w": 0.805474,
+                "h": 0.0204
+              },
+              {
+                "text": "sage and peppermint. Opposite, in narrow, horizontal trays packed not with soil but with coconut",
+                "x": 0.150538,
+                "y": 0.472838,
+                "w": 0.801564,
+                "h": 0.022335
+              },
+              {
+                "text": "fibre, grow cherry tomatoes, shiny aubergines and brightly coloured chards.",
+                "x": 0.150538,
+                "y": 0.493472,
+                "w": 0.627566,
+                "h": 0.022191
+              },
+              {
+                "text": "Pascal Hardy, an engineer and sustainable development consultant, began experimenting with",
+                "x": 0.150538,
+                "y": 0.534272,
+                "w": 0.774194,
+                "h": 0.022249
+              },
+              {
+                "text": "vertical farming and aeroponic growing towers — as the soil-free plastic tubes are known - on",
+                "x": 0.150538,
+                "y": 0.556372,
+                "w": 0.772238,
+                "h": 0.0204
+              },
+              {
+                "text": "his Paris apartment block roof five years ago. The urban rooftop space above the exhibition hall",
+                "x": 0.150538,
+                "y": 0.576703,
+                "w": 0.791789,
+                "h": 0.022169
+              },
+              {
+                "text": "is somewhat bigger: 14,000 square metres and almost exactly the size of a couple of football",
+                "x": 0.148583,
+                "y": 0.598854,
+                "w": 0.768328,
+                "h": 0.020417
+              },
+              {
+                "text": "pitches. Already, the team of young urban farmers who tend it have picked, in one day, 3,000",
+                "x": 0.150538,
+                "y": 0.619036,
+                "w": 0.766373,
+                "h": 0.022335
+              },
+              {
+                "text": "lettuces and 150 punnets of strawberries. When the remaining two thirds of the vast open area",
+                "x": 0.148583,
+                "y": 0.639671,
+                "w": 0.778104,
+                "h": 0.022191
+              },
+              {
+                "text": "are in production, 20 staff will harvest up to 1,000 kg of perhaps 35 different varieties of fruit",
+                "x": 0.150444,
+                "y": 0.659998,
+                "w": 0.774385,
+                "h": 0.024615
+              },
+              {
+                "text": "and vegetables, every day. \"We're not ever, obviously, going to feed the whole city this way,'",
+                "x": 0.150538,
+                "y": 0.680471,
+                "w": 0.768328,
+                "h": 0.0238
+              },
+              {
+                "text": "cautions Hardy. 'In the urban environment you're working with very significant practical",
+                "x": 0.150538,
+                "y": 0.704196,
+                "w": 0.737048,
+                "h": 0.020675
+              },
+              {
+                "text": "constraints, clearly, on what you can do and where. But if enough unused space can be developed",
+                "x": 0.150538,
+                "y": 0.72467,
+                "w": 0.805474,
+                "h": 0.0221
+              },
+              {
+                "text": "like this, there's no reason why you shouldn't eventually target maybe between 5% and 10%",
+                "x": 0.150538,
+                "y": 0.74653,
+                "w": 0.766373,
+                "h": 0.020675
+              },
+              {
+                "text": "of consumption.\"",
+                "x": 0.150473,
+                "y": 0.766848,
+                "w": 0.144801,
+                "h": 0.022744
+              },
+              {
+                "text": "Perhaps most significantly, however, this is a real-life showcase for the work of Hardy's",
+                "x": 0.150538,
+                "y": 0.809538,
+                "w": 0.727273,
+                "h": 0.020675
+              },
+              {
+                "text": "flourishing urban agriculture consultancy, Agripolis, which is currently fielding enquiries from",
+                "x": 0.150538,
+                "y": 0.830069,
+                "w": 0.782014,
+                "h": 0.0204
+              },
+              {
+                "text": "around the world to design, build and equip a new breed of soil-free inner-city farm. *The",
+                "x": 0.150538,
+                "y": 0.850395,
+                "w": 0.742913,
+                "h": 0.020675
+              },
+              {
+                "text": "method's advantages are many,' he says. \"First, I don't much like the fact that most of the fruit",
+                "x": 0.150538,
+                "y": 0.870869,
+                "w": 0.782014,
+                "h": 0.0221
+              },
+              {
+                "text": "and vegetables we eat have been treated with something like 17 different pesticides, or that",
+                "x": 0.150538,
+                "y": 0.892728,
+                "w": 0.754643,
+                "h": 0.020675
+              },
+              {
+                "text": "the intensive farming techniques that produced them are such huge generators of greenhouse",
+                "x": 0.150538,
+                "y": 0.913369,
+                "w": 0.766373,
+                "h": 0.022186
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-1/page-19.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "gases. I don't much like the fact, either, that they' ve travelled an average of 2,000 refrigerated",
+                "x": 0.02346,
+                "y": 0.024276,
+                "w": 0.776149,
+                "h": 0.0204
+              },
+              {
+                "text": "kilometres to my plate, that their quality is so poor, because the varieties are selected for their",
+                "x": 0.02346,
+                "y": 0.044578,
+                "w": 0.774194,
+                "h": 0.022197
+              },
+              {
+                "text": "capacity to withstand such substantial journeys, or that 80% of the price 1 pay goes to wholesalers",
+                "x": 0.02346,
+                "y": 0.06673,
+                "w": 0.809384,
+                "h": 0.020675
+              },
+              {
+                "text": "and transport companies, not the producers.",
+                "x": 0.02346,
+                "y": 0.087175,
+                "w": 0.363636,
+                "h": 0.020411
+              },
+              {
+                "text": "Produce grown using this soil-free method, on the other hand - which relies solely on a small",
+                "x": 0.02346,
+                "y": 0.129675,
+                "w": 0.772238,
+                "h": 0.0204
+              },
+              {
+                "text": "quantity of water, enriched with organic nutrients, pumped around a closed circuit of pipes,",
+                "x": 0.02346,
+                "y": 0.14992,
+                "w": 0.756598,
+                "h": 0.022254
+              },
+              {
+                "text": "towers and trays - is \"produced up here, and sold locally, just down there. It barely travels at all,\"",
+                "x": 0.021505,
+                "y": 0.168626,
+                "w": 0.803519,
+                "h": 0.02412
+              },
+              {
+                "text": "Hardy says. \"You can select crop varieties for their flavour, not their resistance to the transport",
+                "x": 0.021398,
+                "y": 0.189693,
+                "w": 0.780268,
+                "h": 0.025142
+              },
+              {
+                "text": "and storage chain, and you can pick them when they're really at their best, and not before.'No",
+                "x": 0.021505,
+                "y": 0.212929,
+                "w": 0.782014,
+                "h": 0.020675
+              },
+              {
+                "text": "soil is exhausted, and the water that gently showers the plants roots every 12 minutes is recycled,",
+                "x": 0.021505,
+                "y": 0.233374,
+                "w": 0.809384,
+                "h": 0.0221
+              },
+              {
+                "text": "so the method uses 90% less water than a classic intensive farm for the same yield.",
+                "x": 0.021505,
+                "y": 0.255262,
+                "w": 0.688172,
+                "h": 0.020675
+              },
+              {
+                "text": "Urban farming is not, of course, a new phenomenon. Inner-city agriculture is booming from",
+                "x": 0.023377,
+                "y": 0.295569,
+                "w": 0.760661,
+                "h": 0.023346
+              },
+              {
+                "text": "Shanghai to Detroit and Tokyo to Bangkok, Strawberries are being grown in disused shipping",
+                "x": 0.02346,
+                "y": 0.316673,
+                "w": 0.774194,
+                "h": 0.022272
+              },
+              {
+                "text": "containers, mushrooms in underground carparks. Aeroponic farming, he says, is \"virtuous'. The",
+                "x": 0.02346,
+                "y": 0.340422,
+                "w": 0.787879,
+                "h": 0.018751
+              },
+              {
+                "text": "equipment weighs little, can be installed on almost any flat surface and is cheap to buy: roughly",
+                "x": 0.023393,
+                "y": 0.360726,
+                "w": 0.788028,
+                "h": 0.021196
+              },
+              {
+                "text": "€100 to €150 per square metre. It is cheap to run, too, consuming a tiny fraction of the electricity",
+                "x": 0.021505,
+                "y": 0.381273,
+                "w": 0.801564,
+                "h": 0.022157
+              },
+              {
+                "text": "used by some techniques.",
+                "x": 0.021505,
+                "y": 0.401461,
+                "w": 0.217009,
+                "h": 0.020675
+              },
+              {
+                "text": "Produce grown this way typically sells at prices that, while generally higher than those of classic",
+                "x": 0.021505,
+                "y": 0.444172,
+                "w": 0.799609,
+                "h": 0.0204
+              },
+              {
+                "text": "intensive agriculture, are lower than soil-based organic growers. There are limits to what farmers",
+                "x": 0.021505,
+                "y": 0.462872,
+                "w": 0.803519,
+                "h": 0.022272
+              },
+              {
+                "text": "can grow this way, of course, and much of the produce is suited to the summer months. Root",
+                "x": 0.021505,
+                "y": 0.486621,
+                "w": 0.776149,
+                "h": 0.020675
+              },
+              {
+                "text": "vegetables we cannot do, at least not yet,' he says. \"Radishes are OK, but carrots, potatoes, that",
+                "x": 0.021505,
+                "y": 0.507072,
+                "w": 0.785924,
+                "h": 0.0221
+              },
+              {
+                "text": "kind of thing - the roots are simply too long. Fruit trees are obviously not an option. And beans",
+                "x": 0.021442,
+                "y": 0.527297,
+                "w": 0.788004,
+                "h": 0.022898
+              },
+              {
+                "text": "tend to take up a lot of space for not much return.' Nevertheless, urban farming of the kind",
+                "x": 0.01955,
+                "y": 0.54766,
+                "w": 0.750733,
+                "h": 0.022312
+              },
+              {
+                "text": "being practised in Paris is one part of a bigger and fast-changing picture that is bringing food",
+                "x": 0.01955,
+                "y": 0.568271,
+                "w": 0.770283,
+                "h": 0.0238
+              },
+              {
+                "text": "production closer to our lives.",
+                "x": 0.021505,
+                "y": 0.590371,
+                "w": 0.252199,
+                "h": 0.0204
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-1/page-22.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.146502,
+                "y": 0.017142,
+                "w": 0.058903,
+                "h": 0.017668
+              },
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.146628,
+                "y": 0.070175,
+                "w": 0.29912,
+                "h": 0.022151
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.146628,
+                "y": 0.112509,
+                "w": 0.799609,
+                "h": 0.022266
+              },
+              {
+                "text": "Passage 2 below:",
+                "x": 0.146628,
+                "y": 0.138106,
+                "w": 0.162268,
+                "h": 0.018769
+              },
+              {
+                "text": "Forest management in Pennsylvania, USA",
+                "x": 0.248289,
+                "y": 0.185775,
+                "w": 0.608016,
+                "h": 0.0323
+              },
+              {
+                "text": "How managing low-quality wood (also known as low-use wood) for bioenergy can",
+                "x": 0.179723,
+                "y": 0.233908,
+                "w": 0.743216,
+                "h": 0.026738
+              },
+              {
+                "text": "encourage sustainable forest management",
+                "x": 0.355574,
+                "y": 0.255342,
+                "w": 0.395449,
+                "h": 0.025072
+              },
+              {
+                "text": "A Atree's 'value' depends on several factors including its species, size, form, condition,",
+                "x": 0.144586,
+                "y": 0.297218,
+                "w": 0.758732,
+                "h": 0.026028
+              },
+              {
+                "text": "quality, function, and accessibility, and depends on the management goals for a given",
+                "x": 0.191401,
+                "y": 0.318067,
+                "w": 0.706133,
+                "h": 0.025943
+              },
+              {
+                "text": "forest. The same tree can be valued very differently by each person who looks at it. A large,",
+                "x": 0.191593,
+                "y": 0.340422,
+                "w": 0.760508,
+                "h": 0.022151
+              },
+              {
+                "text": "straight black cherry tree has high value as timber to be cut into logs or made into furniture,",
+                "x": 0.191409,
+                "y": 0.35818,
+                "w": 0.760805,
+                "h": 0.027736
+              },
+              {
+                "text": "but for a landowner more interested in wildlife habitat, the real value of that stem (or trunk)",
+                "x": 0.191593,
+                "y": 0.382755,
+                "w": 0.758553,
+                "h": 0.020675
+              },
+              {
+                "text": "may be the food it provides to animals. Likewise, if the tree suffers from black knot disease,",
+                "x": 0.191457,
+                "y": 0.401212,
+                "w": 0.764679,
+                "h": 0.02856
+              },
+              {
+                "text": "its value for timber decreases, but to a woodworker interested in making bowls, it brings an",
+                "x": 0.191461,
+                "y": 0.423085,
+                "w": 0.758829,
+                "h": 0.026286
+              },
+              {
+                "text": "opportunity for a unique and beautiful piece of art.",
+                "x": 0.193548,
+                "y": 0.447572,
+                "w": 0.420332,
+                "h": 0.022312
+              },
+              {
+                "text": "B",
+                "x": 0.148583,
+                "y": 0.481572,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "In the past, Pennsylvania landowners were solely interested in the value of their trees as",
+                "x": 0.183608,
+                "y": 0.472558,
+                "w": 0.737426,
+                "h": 0.031135
+              },
+              {
+                "text": "high-quality timber. The norm was to remove the stems of highest quality and leave behind",
+                "x": 0.191485,
+                "y": 0.496673,
+                "w": 0.756847,
+                "h": 0.02611
+              },
+              {
+                "text": "poorly formed trees that were not as well suited to the site where they grew. This practice,",
+                "x": 0.19331,
+                "y": 0.516931,
+                "w": 0.747193,
+                "h": 0.029677
+              },
+              {
+                "text": "called \"high-grading'",
+                "x": 0.193548,
+                "y": 0.542737,
+                "w": 0.177908,
+                "h": 0.020675
+              },
+              {
+                "text": "', has left a legacy of \"low-use wood' in the forests. Some people even",
+                "x": 0.363442,
+                "y": 0.538998,
+                "w": 0.579042,
+                "h": 0.02596
+              },
+              {
+                "text": "call these \"junk trees', and they are abundant in Pennsylvania. These trees have lower",
+                "x": 0.193363,
+                "y": 0.559486,
+                "w": 0.708077,
+                "h": 0.02629
+              },
+              {
+                "text": "economic value for traditional timber markets, compete for growth with higher-value",
+                "x": 0.193548,
+                "y": 0.581871,
+                "w": 0.705767,
+                "h": 0.0221
+              },
+              {
+                "text": "trees, shade out desirable regeneration and decrease the health of a stand\" leaving it more",
+                "x": 0.193344,
+                "y": 0.597709,
+                "w": 0.739366,
+                "h": 0.030444
+              },
+              {
+                "text": "vulnerable to poor weather and disease. Management that specifically targets low-use wood",
+                "x": 0.193405,
+                "y": 0.622959,
+                "w": 0.758849,
+                "h": 0.026012
+              },
+              {
+                "text": "can help landowners manage these forest health issues, and wood energy markets help",
+                "x": 0.193548,
+                "y": 0.646471,
+                "w": 0.715543,
+                "h": 0.0238
+              },
+              {
+                "text": "promote this.",
+                "x": 0.193412,
+                "y": 0.671323,
+                "w": 0.113665,
+                "h": 0.019994
+              },
+              {
+                "text": "Wood energy markets can accept less expensive wood material of lower quality than would",
+                "x": 0.193431,
+                "y": 0.697203,
+                "w": 0.756864,
+                "h": 0.024747
+              },
+              {
+                "text": "be suitable for traditional timber markets. Most wood used for energy in Pennsylvania is",
+                "x": 0.195419,
+                "y": 0.717384,
+                "w": 0.733284,
+                "h": 0.024391
+              },
+              {
+                "text": "used to produce heat or electricity through combustion. Many schools and hospitals use",
+                "x": 0.195503,
+                "y": 0.741607,
+                "w": 0.725318,
+                "h": 0.022163
+              },
+              {
+                "text": "wood boiler systems to heat and power their facilities, many homes are primarily heated",
+                "x": 0.195503,
+                "y": 0.76207,
+                "w": 0.729228,
+                "h": 0.0221
+              },
+              {
+                "text": "with wood, and some coal plants incorporate wood into their coal streams to produce",
+                "x": 0.195364,
+                "y": 0.781613,
+                "w": 0.704106,
+                "h": 0.025356
+              },
+              {
+                "text": "electricity. Wood can also be gasified for electrical generation and can even be made into",
+                "x": 0.195375,
+                "y": 0.802621,
+                "w": 0.735364,
+                "h": 0.025831
+              },
+              {
+                "text": "liquid fuels like ethanol and gasoline for lorries and cars. All these products are made",
+                "x": 0.195386,
+                "y": 0.823519,
+                "w": 0.708007,
+                "h": 0.026356
+              },
+              {
+                "text": "primarily from low-use wood. Several tree- and plant-cutting approaches, which could",
+                "x": 0.195389,
+                "y": 0.845254,
+                "w": 0.717757,
+                "h": 0.024632
+              },
+              {
+                "text": "greatly improve the long-term quality of a forest, focus strongly or solely on the use of",
+                "x": 0.195503,
+                "y": 0.867469,
+                "w": 0.721408,
+                "h": 0.0238
+              },
+              {
+                "text": "wood for those markets.",
+                "x": 0.195503,
+                "y": 0.891252,
+                "w": 0.205279,
+                "h": 0.018717
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-1/page-23.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "D One such approach is called a Timber Stand Improvement (TSI) Cut. In a TSI Cut, really",
+                "x": 0.02926,
+                "y": 0.021997,
+                "w": 0.77823,
+                "h": 0.02271
+              },
+              {
+                "text": "poor-quality tree and plant material is cut down to allow more space, light, and other",
+                "x": 0.072336,
+                "y": 0.044578,
+                "w": 0.703812,
+                "h": 0.020675
+              },
+              {
+                "text": "resources to the highest-valued stems that remain. Removing invasive plants might be",
+                "x": 0.072336,
+                "y": 0.065075,
+                "w": 0.711632,
+                "h": 0.0204
+              },
+              {
+                "text": "another primary goal of a TSI Cut. The stems that are left behind might then grow in",
+                "x": 0.072336,
+                "y": 0.085435,
+                "w": 0.701857,
+                "h": 0.022151
+              },
+              {
+                "text": "size and develop more foliage and larger crowns or tops that produce more coverage for",
+                "x": 0.072336,
+                "y": 0.105875,
+                "w": 0.729228,
+                "h": 0.0221
+              },
+              {
+                "text": "wildlife; they have a better chance to regenerate in a less crowded environment. TSI Cuts",
+                "x": 0.072336,
+                "y": 0.127769,
+                "w": 0.740958,
+                "h": 0.020675
+              },
+              {
+                "text": "can be tailored to one farmer's specific management goals for his or her land.",
+                "x": 0.072336,
+                "y": 0.14992,
+                "w": 0.641251,
+                "h": 0.020675
+              },
+              {
+                "text": "E",
+                "x": 0.029326,
+                "y": 0.182375,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "Another approach that might yield a high amount of low-use wood is a Salvage Cut. With",
+                "x": 0.072336,
+                "y": 0.182375,
+                "w": 0.735093,
+                "h": 0.0204
+              },
+              {
+                "text": "the many pests and pathogens visiting forests including hemlock wooly adelgid, Asian",
+                "x": 0.072336,
+                "y": 0.202591,
+                "w": 0.707722,
+                "h": 0.020675
+              },
+              {
+                "text": "longhorned beetle, emerald ash borer, and gypsy moth, to name just a few, it is important",
+                "x": 0.070381,
+                "y": 0.224743,
+                "w": 0.733138,
+                "h": 0.022231
+              },
+              {
+                "text": "to remember that those working in the forests can help ease these issues through cutting",
+                "x": 0.070381,
+                "y": 0.245274,
+                "w": 0.721408,
+                "h": 0.022294
+              },
+              {
+                "text": "procedures. These types of cut reduce the number of sick trees and seek to manage the future",
+                "x": 0.072336,
+                "y": 0.265599,
+                "w": 0.762463,
+                "h": 0.022174
+              },
+              {
+                "text": "spread of a pest problem. They leave vigorous trees that have stayed healthy enough to",
+                "x": 0.070381,
+                "y": 0.287751,
+                "w": 0.713587,
+                "h": 0.020423
+              },
+              {
+                "text": "survive the outbreak.",
+                "x": 0.070381,
+                "y": 0.306456,
+                "w": 0.177908,
+                "h": 0.020417
+              },
+              {
+                "text": "A Shelterwood Cut, which only takes place in a mature forest that has already been thinned",
+                "x": 0.072336,
+                "y": 0.342173,
+                "w": 0.752688,
+                "h": 0.0204
+              },
+              {
+                "text": "several times, involves removing all the mature trees when other seedlings have become",
+                "x": 0.072336,
+                "y": 0.362573,
+                "w": 0.729228,
+                "h": 0.0204
+              },
+              {
+                "text": "established. This then allows the forester to decide which tree species are regenerated. It",
+                "x": 0.072336,
+                "y": 0.382755,
+                "w": 0.729228,
+                "h": 0.022317
+              },
+              {
+                "text": "leaves a young forest where all trees are at a similar point in their growth. It can also be",
+                "x": 0.070381,
+                "y": 0.404907,
+                "w": 0.725318,
+                "h": 0.020675
+              },
+              {
+                "text": "used to develop a two-tier forest so that there are two harvests and the money that comes in",
+                "x": 0.072336,
+                "y": 0.425473,
+                "w": 0.752688,
+                "h": 0.02226
+              },
+              {
+                "text": "is spread out over a decade or more.",
+                "x": 0.070381,
+                "y": 0.445764,
+                "w": 0.30303,
+                "h": 0.020675
+              },
+              {
+                "text": "Thinnings and dense and dead wood removal for fire prevention also center on the",
+                "x": 0.072336,
+                "y": 0.479729,
+                "w": 0.680352,
+                "h": 0.020675
+              },
+              {
+                "text": "production of low-use wood. However, it is important to remember that some retention of",
+                "x": 0.072336,
+                "y": 0.500272,
+                "w": 0.744868,
+                "h": 0.022283
+              },
+              {
+                "text": "what many would classify as low-use wood is very important. The tops of trees that have",
+                "x": 0.070381,
+                "y": 0.520586,
+                "w": 0.739003,
+                "h": 0.022186
+              },
+              {
+                "text": "been cut down should be left on the site so that their nutrients cycle back into the soil. In",
+                "x": 0.072336,
+                "y": 0.542737,
+                "w": 0.731183,
+                "h": 0.020675
+              },
+              {
+                "text": "addition, trees with many cavities are extremely important habitats for insect predators like",
+                "x": 0.072336,
+                "y": 0.563171,
+                "w": 0.752688,
+                "h": 0.020423
+              },
+              {
+                "text": "woodpeckers, bats and small mammals. They help control problem insects and increase the",
+                "x": 0.070381,
+                "y": 0.585071,
+                "w": 0.756598,
+                "h": 0.020675
+              },
+              {
+                "text": "health and resilience of the forest. It is also important to remember that not all small trees",
+                "x": 0.070381,
+                "y": 0.605671,
+                "w": 0.740958,
+                "h": 0.0204
+              },
+              {
+                "text": "are low-use. For example, many species like hawthorn provide food for wildlife. Finally,",
+                "x": 0.070318,
+                "y": 0.625614,
+                "w": 0.737192,
+                "h": 0.024289
+              },
+              {
+                "text": "rare species of trees in a forest should also stay behind as they add to its structural diversity.",
+                "x": 0.070381,
+                "y": 0.648079,
+                "w": 0.760508,
+                "h": 0.020675
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-1/page-27.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.02346,
+                "y": 0.018981,
+                "w": 0.301075,
+                "h": 0.022294
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.02346,
+                "y": 0.065075,
+                "w": 0.797654,
+                "h": 0.022329
+              },
+              {
+                "text": "Passage 3 below.",
+                "x": 0.02346,
+                "y": 0.085435,
+                "w": 0.162268,
+                "h": 0.020675
+              },
+              {
+                "text": "B",
+                "x": 0.01955,
+                "y": 0.537672,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "C",
+                "x": 0.01955,
+                "y": 0.855569,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "Conquering Earth's space junk problem",
+                "x": 0.136852,
+                "y": 0.13466,
+                "w": 0.5826,
+                "h": 0.034114
+              },
+              {
+                "text": "Satellites, rocket shards and collision debris are creating major traffic risks in orbit",
+                "x": 0.054741,
+                "y": 0.185775,
+                "w": 0.744868,
+                "h": 0.022231
+              },
+              {
+                "text": "around the planet. Researchers are working to reduce these threats",
+                "x": 0.115347,
+                "y": 0.209483,
+                "w": 0.621701,
+                "h": 0.018791
+              },
+              {
+                "text": "Last year, commercial companies, military and civil departments and amateurs",
+                "x": 0.056696,
+                "y": 0.240002,
+                "w": 0.725318,
+                "h": 0.022272
+              },
+              {
+                "text": "sent more than 400 satellites into orbit, over four times the yearly average in",
+                "x": 0.064516,
+                "y": 0.260574,
+                "w": 0.695992,
+                "h": 0.022254
+              },
+              {
+                "text": "tne previous decade. Numbers could rise even more sharply if leading space",
+                "x": 0.064516,
+                "y": 0.286074,
+                "w": 0.699902,
+                "h": 0.01546
+              },
+              {
+                "text": "companies tollow through on plans to deploy hundreds to thousands of large",
+                "x": 0.066471,
+                "y": 0.306456,
+                "w": 0.697947,
+                "h": 0.017229
+              },
+              {
+                "text": "constellations of satellites to space in the next few years.",
+                "x": 0.066471,
+                "y": 0.325162,
+                "w": 0.520039,
+                "h": 0.020411
+              },
+              {
+                "text": "All that traffic can lead to disaster. Ten years ago, a US commercial Iridium satellite",
+                "x": 0.066347,
+                "y": 0.356593,
+                "w": 0.754875,
+                "h": 0.024599
+              },
+              {
+                "text": "smashed into an inactive Russian communications satellite called Cosmos-2251,",
+                "x": 0.064516,
+                "y": 0.379573,
+                "w": 0.740958,
+                "h": 0.0221
+              },
+              {
+                "text": "creating thousands of new pieces of space shrapnel that now threaten other",
+                "x": 0.066471,
+                "y": 0.399973,
+                "w": 0.694037,
+                "h": 0.0204
+              },
+              {
+                "text": "satellites in low Earth orbit- the zone stretching up to 2,000 kilometres in altitude.",
+                "x": 0.064516,
+                "y": 0.422073,
+                "w": 0.748778,
+                "h": 0.0204
+              },
+              {
+                "text": "Altogether, there are roughly 20,000 human-made objects in orbit, from working",
+                "x": 0.064516,
+                "y": 0.442318,
+                "w": 0.727273,
+                "h": 0.022254
+              },
+              {
+                "text": "satellites to small rocket pieces. And satellite operators can't steer away from every",
+                "x": 0.064516,
+                "y": 0.464469,
+                "w": 0.762463,
+                "h": 0.020675
+              },
+              {
+                "text": "potential crash, because each move consumes time and fuel that could otherwise",
+                "x": 0.064516,
+                "y": 0.484972,
+                "w": 0.744868,
+                "h": 0.0204
+              },
+              {
+                "text": "be used for the spacecraft's main job.",
+                "x": 0.064516,
+                "y": 0.505326,
+                "w": 0.347996,
+                "h": 0.020675
+              },
+              {
+                "text": "Concern about space junk goes back to the beginning of the satellite era, but the",
+                "x": 0.064447,
+                "y": 0.537619,
+                "w": 0.737174,
+                "h": 0.023012
+              },
+              {
+                "text": "number of objects in orbit is rising so rapidly that researchers are investigating",
+                "x": 0.064516,
+                "y": 0.557997,
+                "w": 0.713587,
+                "h": 0.022174
+              },
+              {
+                "text": "new ways of attacking the problem. Several teams are trying to improve methods",
+                "x": 0.064516,
+                "y": 0.580148,
+                "w": 0.739003,
+                "h": 0.020423
+              },
+              {
+                "text": "for assessing what is in orbit, so that satellite operators can work more efficiently",
+                "x": 0.0625,
+                "y": 0.600391,
+                "w": 0.737178,
+                "h": 0.022318
+              },
+              {
+                "text": "in ever-more-crowded space. Some researchers are now starting to compile a",
+                "x": 0.062561,
+                "y": 0.622482,
+                "w": 0.713587,
+                "h": 0.020675
+              },
+              {
+                "text": "massive data set that includes the best possible information on where everything is",
+                "x": 0.064451,
+                "y": 0.642375,
+                "w": 0.758678,
+                "h": 0.022907
+              },
+              {
+                "text": "in orbit. Others are developing taxonomies of space debris - working on measuring",
+                "x": 0.062481,
+                "y": 0.663439,
+                "w": 0.760666,
+                "h": 0.022602
+              },
+              {
+                "text": "properties such as the shape and size of an object, so that satellite operators know",
+                "x": 0.064516,
+                "y": 0.68549,
+                "w": 0.756598,
+                "h": 0.020675
+              },
+              {
+                "text": "how much to worry about what's coming their way.",
+                "x": 0.062561,
+                "y": 0.70597,
+                "w": 0.463343,
+                "h": 0.0204
+              },
+              {
+                "text": "The alternative, many say, is unthinkable. Just a few uncontrolled space crashes",
+                "x": 0.064516,
+                "y": 0.738161,
+                "w": 0.733138,
+                "h": 0.020675
+              },
+              {
+                "text": "could generate enough debris to set off a runaway cascade of fragments, rendering",
+                "x": 0.064516,
+                "y": 0.760313,
+                "w": 0.760508,
+                "h": 0.020675
+              },
+              {
+                "text": "near-Earth space unusable. 'If we go on like this, we will reach a point of no return,'",
+                "x": 0.064516,
+                "y": 0.78077,
+                "w": 0.760508,
+                "h": 0.0221
+              },
+              {
+                "text": "says Carolin Frueh, an astrodynamical researcher at Purdue University in West",
+                "x": 0.062561,
+                "y": 0.802646,
+                "w": 0.727273,
+                "h": 0.020675
+              },
+              {
+                "text": "Lafayette, Indiana.",
+                "x": 0.064516,
+                "y": 0.823269,
+                "w": 0.172043,
+                "h": 0.0204
+              },
+              {
+                "text": "Even as our ability to monitor space objects increases, so too does the total",
+                "x": 0.064453,
+                "y": 0.85554,
+                "w": 0.690247,
+                "h": 0.022629
+              },
+              {
+                "text": "number of items in orbit. That means companies, governments and other players in",
+                "x": 0.062561,
+                "y": 0.877469,
+                "w": 0.760508,
+                "h": 0.020675
+              },
+              {
+                "text": "space are collaborating in new ways to avoid a shared threat. International groups",
+                "x": 0.062561,
+                "y": 0.898069,
+                "w": 0.750733,
+                "h": 0.022226
+              },
+              {
+                "text": "such as the Inter-Agency Space Debris Coordination Committee have developed",
+                "x": 0.062561,
+                "y": 0.920169,
+                "w": 0.739003,
+                "h": 0.0204
+              },
+              {
+                "text": "guidelines on space sustainability. Those include inactivating satellites at the",
+                "x": 0.062561,
+                "y": 0.940477,
+                "w": 0.697947,
+                "h": 0.020675
+              },
+              {
+                "text": "end of their useful life by venting pressurised materials or leftover fuel that might",
+                "x": 0.062561,
+                "y": 0.962628,
+                "w": 0.733138,
+                "h": 0.020675
+              },
+              {
+                "text": "25",
+                "x": 0.799609,
+                "y": 0.998368,
+                "w": 0.031281,
+                "h": 0.0221
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c18-test-1/page-28.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.154448,
+                "y": 0.014059,
+                "w": 0.056696,
+                "h": 0.015317
+              },
+              {
+                "text": "D",
+                "x": 0.154448,
+                "y": 0.270774,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "F",
+                "x": 0.156403,
+                "y": 0.609071,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "lead to explosions. The intergovernmental groups also advise lowering satellites",
+                "x": 0.195386,
+                "y": 0.06254,
+                "w": 0.733393,
+                "h": 0.025869
+              },
+              {
+                "text": "deep enough into the atmosphere that they will burn up or disintegrate within 25",
+                "x": 0.197348,
+                "y": 0.08443,
+                "w": 0.729487,
+                "h": 0.025517
+              },
+              {
+                "text": "years. But so far, only about half of all missions have abided by this 25-year goal,",
+                "x": 0.197318,
+                "y": 0.105252,
+                "w": 0.743125,
+                "h": 0.025248
+              },
+              {
+                "text": "says Holger Krag, head of the European Space Agency's space-debris office in",
+                "x": 0.197317,
+                "y": 0.126141,
+                "w": 0.723649,
+                "h": 0.026249
+              },
+              {
+                "text": "Darmstadt, Germany. Operators of the planned large constellations of satellites say",
+                "x": 0.199285,
+                "y": 0.147157,
+                "w": 0.75882,
+                "h": 0.02569
+              },
+              {
+                "text": "they will be responsible stewards in their enterprises in space, but Krag worries",
+                "x": 0.197278,
+                "y": 0.167722,
+                "w": 0.723744,
+                "h": 0.027477
+              },
+              {
+                "text": "that problems could increase, despite their best intentions. 'What happens to those",
+                "x": 0.197269,
+                "y": 0.188017,
+                "w": 0.757,
+                "h": 0.029515
+              },
+              {
+                "text": "that fail or go bankrupt?' he asks. 'They are probably not going to spend money to",
+                "x": 0.197458,
+                "y": 0.212929,
+                "w": 0.748778,
+                "h": 0.022151
+              },
+              {
+                "text": "remove their satellites from space.\"",
+                "x": 0.197458,
+                "y": 0.235074,
+                "w": 0.324536,
+                "h": 0.018711
+              },
+              {
+                "text": "In theory, given the vastness of space, satellite operators should have plenty of",
+                "x": 0.197306,
+                "y": 0.263898,
+                "w": 0.725669,
+                "h": 0.026635
+              },
+              {
+                "text": "room for all these missions to fly safely without ever nearing another object. So",
+                "x": 0.199271,
+                "y": 0.285911,
+                "w": 0.719755,
+                "h": 0.02598
+              },
+              {
+                "text": "some scientists are tackling the problem of space junk by trying to find out where",
+                "x": 0.199227,
+                "y": 0.305575,
+                "w": 0.737402,
+                "h": 0.027346
+              },
+              {
+                "text": "all the debris is to a high degree of precision. That would alleviate the need for",
+                "x": 0.199185,
+                "y": 0.323945,
+                "w": 0.717931,
+                "h": 0.029747
+              },
+              {
+                "text": "many of the unnecessary manoeuvres that are carried out to avoid potential",
+                "x": 0.201202,
+                "y": 0.348723,
+                "w": 0.692434,
+                "h": 0.025967
+              },
+              {
+                "text": "collisions. 'If you knew precisely where everything was, you would almost never",
+                "x": 0.201369,
+                "y": 0.370941,
+                "w": 0.727273,
+                "h": 0.022231
+              },
+              {
+                "text": "have a problem,' says Marlon Sorge, a space-debris specialist at the Aerospace",
+                "x": 0.201227,
+                "y": 0.390307,
+                "w": 0.727549,
+                "h": 0.025456
+              },
+              {
+                "text": "Corporation in El Segundo, California.",
+                "x": 0.201369,
+                "y": 0.415244,
+                "w": 0.347996,
+                "h": 0.022151
+              },
+              {
+                "text": "The field is called space traffic management, because it's similar to managing traffic",
+                "x": 0.201369,
+                "y": 0.444172,
+                "w": 0.764418,
+                "h": 0.022266
+              },
+              {
+                "text": "on the roads or in the air. Think about a busy day at an airport, says Moriba Jah,",
+                "x": 0.201369,
+                "y": 0.466272,
+                "w": 0.733138,
+                "h": 0.022317
+              },
+              {
+                "text": "an astrodynamicist at the University of Texas at Austin: planes line up in the sky,",
+                "x": 0.201231,
+                "y": 0.486075,
+                "w": 0.729475,
+                "h": 0.025007
+              },
+              {
+                "text": "landing and taking off close to one another in a carefully choreographed routine.",
+                "x": 0.197334,
+                "y": 0.50617,
+                "w": 0.735321,
+                "h": 0.026942
+              },
+              {
+                "text": "Air-traffic controllers know the location of the planes down to one metre in accuracy.",
+                "x": 0.201281,
+                "y": 0.528702,
+                "w": 0.764582,
+                "h": 0.022618
+              },
+              {
+                "text": "The same can't be said for space debris. Not all objects in orbit are known, and",
+                "x": 0.201221,
+                "y": 0.549379,
+                "w": 0.721793,
+                "h": 0.026726
+              },
+              {
+                "text": "even those included in databases are not tracked consistently.",
+                "x": 0.201244,
+                "y": 0.572064,
+                "w": 0.571068,
+                "h": 0.021998
+              },
+              {
+                "text": "An additional problem is that there is no authoritative catalogue that accurately",
+                "x": 0.201231,
+                "y": 0.602415,
+                "w": 0.717785,
+                "h": 0.026472
+              },
+              {
+                "text": "lists the orbits of all known space debris. Jah illustrates this with a web-based",
+                "x": 0.199292,
+                "y": 0.624469,
+                "w": 0.708048,
+                "h": 0.025957
+              },
+              {
+                "text": "database that he has developed. It draws on several sources, such as catalogues",
+                "x": 0.203191,
+                "y": 0.646072,
+                "w": 0.745117,
+                "h": 0.024283
+              },
+              {
+                "text": "maintained by the US and Russian governments, to visualise where objects are in",
+                "x": 0.203194,
+                "y": 0.666751,
+                "w": 0.747073,
+                "h": 0.026385
+              },
+              {
+                "text": "space. When he types in an identifier for a particular space object, the database",
+                "x": 0.201245,
+                "y": 0.68824,
+                "w": 0.731426,
+                "h": 0.024935
+              },
+              {
+                "text": "draws a purple line to designate its orbit. Only this doesn't quite work for a number",
+                "x": 0.20318,
+                "y": 0.708554,
+                "w": 0.752979,
+                "h": 0.025723
+              },
+              {
+                "text": "of objects, such as a Russian rocket body designated in the database as object",
+                "x": 0.203205,
+                "y": 0.730678,
+                "w": 0.725579,
+                "h": 0.025155
+              },
+              {
+                "text": "number 32280. When Jah enters that number, the database draws two purple lines:",
+                "x": 0.203324,
+                "y": 0.75187,
+                "w": 0.764418,
+                "h": 0.022226
+              },
+              {
+                "text": "the US and Russian sources contain two completely different orbits for the same",
+                "x": 0.203324,
+                "y": 0.77397,
+                "w": 0.733138,
+                "h": 0.0204
+              },
+              {
+                "text": "object. Jah says that it is almost impossible to tell which is correct, unless a third",
+                "x": 0.203324,
+                "y": 0.794278,
+                "w": 0.733138,
+                "h": 0.022191
+              },
+              {
+                "text": "source of information made it possible to cross-correlate.",
+                "x": 0.203324,
+                "y": 0.816429,
+                "w": 0.521994,
+                "h": 0.020675
+              },
+              {
+                "text": "Jah describes himself as a space environmentalist: 'I want to make space a place",
+                "x": 0.203324,
+                "y": 0.848769,
+                "w": 0.744868,
+                "h": 0.0204
+              },
+              {
+                "text": "that is safe to operate, that is free and useful for generations to come.' Until that",
+                "x": 0.203134,
+                "y": 0.866631,
+                "w": 0.731514,
+                "h": 0.028115
+              },
+              {
+                "text": "happens, he argues, the space community will continue devolving into a tragedy in",
+                "x": 0.205113,
+                "y": 0.887721,
+                "w": 0.753012,
+                "h": 0.02677
+              },
+              {
+                "text": "which all spaceflight operators are polluting a common resource.",
+                "x": 0.203324,
+                "y": 0.913369,
+                "w": 0.592375,
+                "h": 0.0204
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-1/page-31.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.357742,
+                "y": 0.01906,
+                "w": 0.12518,
+                "h": 0.024032
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.01564,
+                "y": 0.088875,
+                "w": 0.232649,
+                "h": 0.022157
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.013685,
+                "y": 0.133075,
+                "w": 0.447703,
+                "h": 0.0204
+              },
+              {
+                "text": "The graph below gives information about the percentage of the population",
+                "x": 0.039101,
+                "y": 0.187331,
+                "w": 0.729228,
+                "h": 0.020675
+              },
+              {
+                "text": "in four Asian countries living in cities from 1970to 2020, with predictions for",
+                "x": 0.037146,
+                "y": 0.207874,
+                "w": 0.754643,
+                "h": 0.022283
+              },
+              {
+                "text": "2030 and 2040.",
+                "x": 0.039101,
+                "y": 0.231634,
+                "w": 0.148583,
+                "h": 0.01874
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.039101,
+                "y": 0.270774,
+                "w": 0.756598,
+                "h": 0.0221
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.037146,
+                "y": 0.294574,
+                "w": 0.344086,
+                "h": 0.018774
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.01564,
+                "y": 0.34879,
+                "w": 0.230694,
+                "h": 0.018883
+              },
+              {
+                "text": "Percentage of the population living in cities",
+                "x": 0.130987,
+                "y": 0.391473,
+                "w": 0.5826,
+                "h": 0.027217
+              },
+              {
+                "text": "90",
+                "x": 0.101662,
+                "y": 0.450972,
+                "w": 0.02737,
+                "h": 0.017
+              },
+              {
+                "text": "80",
+                "x": 0.101662,
+                "y": 0.490072,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "70",
+                "x": 0.101662,
+                "y": 0.527472,
+                "w": 0.025415,
+                "h": 0.017
+              },
+              {
+                "text": "•0",
+                "x": 0.545455,
+                "y": 0.479872,
+                "w": 0.01955,
+                "h": 0.0136
+              },
+              {
+                "text": "50",
+                "x": 0.101662,
+                "y": 0.603971,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "-g.- Philippines",
+                "x": 0.609971,
+                "y": 0.556372,
+                "w": 0.158358,
+                "h": 0.0223
+              },
+              {
+                "text": "-0... Malaysia",
+                "x": 0.607952,
+                "y": 0.583244,
+                "w": 0.136979,
+                "h": 0.021054
+              },
+              {
+                "text": "- * - Thailand",
+                "x": 0.606061,
+                "y": 0.609071,
+                "w": 0.136852,
+                "h": 0.018826
+              },
+              {
+                "text": "→ Indonesia",
+                "x": 0.611926,
+                "y": 0.632819,
+                "w": 0.140762,
+                "h": 0.020675
+              },
+              {
+                "text": "*",
+                "x": 0.252199,
+                "y": 0.680471,
+                "w": 0.017595,
+                "h": 0.0119
+              },
+              {
+                "text": "0-",
+                "x": 0.113392,
+                "y": 0.79267,
+                "w": 0.029326,
+                "h": 0.017
+              },
+              {
+                "text": "1970 1980 1990 2000 2010 2020 2030 2040",
+                "x": 0.117302,
+                "y": 0.80117,
+                "w": 0.465298,
+                "h": 0.0272
+              },
+              {
+                "text": "Year",
+                "x": 0.326491,
+                "y": 0.835169,
+                "w": 0.046921,
+                "h": 0.017
+              },
+              {
+                "text": "→ & p. 127",
+                "x": 0.652917,
+                "y": 0.994704,
+                "w": 0.127206,
+                "h": 0.024327
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c18-test-1/page-32.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.160313,
+                "y": 0.010613,
+                "w": 0.060606,
+                "h": 0.022163
+              },
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.158358,
+                "y": 0.068475,
+                "w": 0.234604,
+                "h": 0.020406
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.158358,
+                "y": 0.112509,
+                "w": 0.445748,
+                "h": 0.022266
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.158358,
+                "y": 0.156812,
+                "w": 0.28348,
+                "h": 0.018763
+              },
+              {
+                "text": "The most important aim of science should be to improve people's lives.",
+                "x": 0.183773,
+                "y": 0.206037,
+                "w": 0.701857,
+                "h": 0.02412
+              },
+              {
+                "text": "To what extent do you agree or disagree with this statement?",
+                "x": 0.183773,
+                "y": 0.248674,
+                "w": 0.602151,
+                "h": 0.023817
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.160313,
+                "y": 0.304774,
+                "w": 0.729228,
+                "h": 0.0204
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.158358,
+                "y": 0.328573,
+                "w": 0.240469,
+                "h": 0.01874
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.160313,
+                "y": 0.369373,
+                "w": 0.228739,
+                "h": 0.018797
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-12.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.154448,
+                "y": 0.06673,
+                "w": 0.121212,
+                "h": 0.034046
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.484848,
+                "y": 0.139875,
+                "w": 0.152493,
+                "h": 0.0204
+              },
+              {
+                "text": "PART 1",
+                "x": 0.158262,
+                "y": 0.229547,
+                "w": 0.097943,
+                "h": 0.017853
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.314761,
+                "y": 0.228188,
+                "w": 0.179863,
+                "h": 0.018786
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.158358,
+                "y": 0.272474,
+                "w": 0.244379,
+                "h": 0.018723
+              },
+              {
+                "text": "Write ONE WORD AND/OR A NUMBER for each answer.",
+                "x": 0.158358,
+                "y": 0.309874,
+                "w": 0.531769,
+                "h": 0.02218
+              },
+              {
+                "text": "Transport survey",
+                "x": 0.447703,
+                "y": 0.36405,
+                "w": 0.232649,
+                "h": 0.025723
+              },
+              {
+                "text": "Sadie Jones",
+                "x": 0.510188,
+                "y": 0.409805,
+                "w": 0.117454,
+                "h": 0.019435
+              },
+              {
+                "text": "1991",
+                "x": 0.512219,
+                "y": 0.437373,
+                "w": 0.048876,
+                "h": 0.0187
+              },
+              {
+                "text": "1",
+                "x": 0.510264,
+                "y": 0.464572,
+                "w": 0.01564,
+                "h": 0.0204
+              },
+              {
+                "text": "Name:",
+                "x": 0.173998,
+                "y": 0.413573,
+                "w": 0.066471,
+                "h": 0.017
+              },
+              {
+                "text": "Year of birth:",
+                "x": 0.173998,
+                "y": 0.440772,
+                "w": 0.130987,
+                "h": 0.017
+              },
+              {
+                "text": "Postcode:",
+                "x": 0.175915,
+                "y": 0.467815,
+                "w": 0.101738,
+                "h": 0.019015
+              },
+              {
+                "text": "Travelling by bus",
+                "x": 0.173998,
+                "y": 0.510249,
+                "w": 0.172043,
+                "h": 0.018923
+              },
+              {
+                "text": "Date of bus journey:",
+                "x": 0.175953,
+                "y": 0.539292,
+                "w": 0.185728,
+                "h": 0.017229
+              },
+              {
+                "text": "Reason for trip:",
+                "x": 0.175953,
+                "y": 0.566365,
+                "w": 0.142717,
+                "h": 0.018906
+              },
+              {
+                "text": "Travelled by bus because cost of",
+                "x": 0.175953,
+                "y": 0.593771,
+                "w": 0.304985,
+                "h": 0.0204
+              },
+              {
+                "text": "Got on bus at",
+                "x": 0.177908,
+                "y": 0.622482,
+                "w": 0.125122,
+                "h": 0.017229
+              },
+              {
+                "text": "Complaints about bus service:",
+                "x": 0.177908,
+                "y": 0.649871,
+                "w": 0.27566,
+                "h": 0.018883
+              },
+              {
+                "text": "2",
+                "x": 0.510264,
+                "y": 0.535972,
+                "w": 0.017595,
+                "h": 0.0187
+              },
+              {
+                "text": "4",
+                "x": 0.512219,
+                "y": 0.592071,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "shopping and visit to the 3",
+                "x": 0.512219,
+                "y": 0.561443,
+                "w": 0.244379,
+                "h": 0.022151
+              },
+              {
+                "text": "too high",
+                "x": 0.697947,
+                "y": 0.588517,
+                "w": 0.080156,
+                "h": 0.022254
+              },
+              {
+                "text": "Street",
+                "x": 0.699902,
+                "y": 0.620971,
+                "w": 0.058651,
+                "h": 0.017
+              },
+              {
+                "text": "5",
+                "x": 0.512219,
+                "y": 0.620971,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "- bus today was 6",
+                "x": 0.510264,
+                "y": 0.648079,
+                "w": 0.172043,
+                "h": 0.020675
+              },
+              {
+                "text": "- frequency of buses in the 7",
+                "x": 0.508309,
+                "y": 0.675153,
+                "w": 0.273705,
+                "h": 0.020675
+              },
+              {
+                "text": "Travelling by car",
+                "x": 0.175953,
+                "y": 0.719456,
+                "w": 0.166178,
+                "h": 0.020675
+              },
+              {
+                "text": "Goes to the",
+                "x": 0.177884,
+                "y": 0.748355,
+                "w": 0.107575,
+                "h": 0.017231
+              },
+              {
+                "text": "8",
+                "x": 0.512219,
+                "y": 0.74677,
+                "w": 0.01564,
+                "h": 0.017
+              },
+              {
+                "text": "Travelling by bicycle",
+                "x": 0.177908,
+                "y": 0.78927,
+                "w": 0.203324,
+                "h": 0.0204
+              },
+              {
+                "text": "Dislikes travelling by bike in the city centre because of the 9",
+                "x": 0.177908,
+                "y": 0.814769,
+                "w": 0.545455,
+                "h": 0.022335
+              },
+              {
+                "text": "Doesn't own a bike because of a lack of 10",
+                "x": 0.177908,
+                "y": 0.843503,
+                "w": 0.394917,
+                "h": 0.020675
+              },
+              {
+                "text": "by car",
+                "x": 0.699902,
+                "y": 0.745053,
+                "w": 0.062561,
+                "h": 0.020417
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-13.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.021505,
+                "y": 0.020876,
+                "w": 0.103617,
+                "h": 0.0204
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.177908,
+                "y": 0.022427,
+                "w": 0.193548,
+                "h": 0.018849
+              },
+              {
+                "text": "Questions 11-13",
+                "x": 0.02346,
+                "y": 0.063284,
+                "w": 0.172043,
+                "h": 0.020675
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.02346,
+                "y": 0.107575,
+                "w": 0.328446,
+                "h": 0.0204
+              },
+              {
+                "text": "Becoming a volunteer for ACE",
+                "x": 0.224829,
+                "y": 0.168626,
+                "w": 0.406647,
+                "h": 0.027566
+              },
+              {
+                "text": "11",
+                "x": 0.021505,
+                "y": 0.219774,
+                "w": 0.035191,
+                "h": 0.017
+              },
+              {
+                "text": "Why does the speaker apologise about the seats?",
+                "x": 0.054741,
+                "y": 0.219774,
+                "w": 0.469208,
+                "h": 0.0204
+              },
+              {
+                "text": "They are too small.",
+                "x": 0.111437,
+                "y": 0.252074,
+                "w": 0.179863,
+                "h": 0.01894
+              },
+              {
+                "text": "B",
+                "x": 0.066471,
+                "y": 0.274174,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "There are not enough of them.",
+                "x": 0.111437,
+                "y": 0.272474,
+                "w": 0.281525,
+                "h": 0.0204
+              },
+              {
+                "text": "Some of them are very close together.",
+                "x": 0.101477,
+                "y": 0.29227,
+                "w": 0.360175,
+                "h": 0.023449
+              },
+              {
+                "text": "12 What does the speaker say about the age of volunteers?",
+                "x": 0.021505,
+                "y": 0.338773,
+                "w": 0.565005,
+                "h": 0.018877
+              },
+              {
+                "text": "A The age of volunteers is less important than other factors.",
+                "x": 0.066471,
+                "y": 0.370941,
+                "w": 0.57478,
+                "h": 0.020675
+              },
+              {
+                "text": "B Young volunteers are less reliable than older ones.",
+                "x": 0.066471,
+                "y": 0.391473,
+                "w": 0.510264,
+                "h": 0.022294
+              },
+              {
+                "text": "C Most volunteers are about 60 years old.",
+                "x": 0.066471,
+                "y": 0.413573,
+                "w": 0.410557,
+                "h": 0.0204
+              },
+              {
+                "text": "13 What does the speaker say about training?",
+                "x": 0.021505,
+                "y": 0.456072,
+                "w": 0.437928,
+                "h": 0.02218
+              },
+              {
+                "text": "A Itis continuous.",
+                "x": 0.066471,
+                "y": 0.490066,
+                "w": 0.191593,
+                "h": 0.018706
+              },
+              {
+                "text": "It is conducted by a manager.",
+                "x": 0.107527,
+                "y": 0.512172,
+                "w": 0.27566,
+                "h": 0.018751
+              },
+              {
+                "text": "It takes place online.",
+                "x": 0.097752,
+                "y": 0.5324,
+                "w": 0.205279,
+                "h": 0.018872
+              },
+              {
+                "text": "Questions 14 and 15",
+                "x": 0.02346,
+                "y": 0.597171,
+                "w": 0.209189,
+                "h": 0.017
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.021505,
+                "y": 0.641188,
+                "w": 0.246334,
+                "h": 0.020675
+              },
+              {
+                "text": "Which TWO issues does the speaker ask the audience to consider before they apply to",
+                "x": 0.01955,
+                "y": 0.682045,
+                "w": 0.795699,
+                "h": 0.020675
+              },
+              {
+                "text": "be volunteers?",
+                "x": 0.01955,
+                "y": 0.70597,
+                "w": 0.138807,
+                "h": 0.017
+              },
+              {
+                "text": "A",
+                "x": 0.066471,
+                "y": 0.73827,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "their financial situation",
+                "x": 0.107527,
+                "y": 0.738161,
+                "w": 0.209189,
+                "h": 0.017229
+              },
+              {
+                "text": "B",
+                "x": 0.066471,
+                "y": 0.76037,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "their level of commitment",
+                "x": 0.107527,
+                "y": 0.760313,
+                "w": 0.236559,
+                "h": 0.015357
+              },
+              {
+                "text": "their work experience",
+                "x": 0.093842,
+                "y": 0.78077,
+                "w": 0.215054,
+                "h": 0.018923
+              },
+              {
+                "text": "D",
+                "x": 0.066471,
+                "y": 0.80117,
+                "w": 0.017595,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.066471,
+                "y": 0.823269,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "their ambition",
+                "x": 0.099707,
+                "y": 0.80117,
+                "w": 0.136852,
+                "h": 0.017229
+              },
+              {
+                "text": "their availability",
+                "x": 0.107527,
+                "y": 0.823269,
+                "w": 0.146628,
+                "h": 0.018757
+              },
+              {
+                "text": "11",
+                "x": 0.805474,
+                "y": 0.998368,
+                "w": 0.02346,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-14.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.158358,
+                "y": 0.014059,
+                "w": 0.056696,
+                "h": 0.017229
+              },
+              {
+                "text": "Questions 16-20",
+                "x": 0.158358,
+                "y": 0.068475,
+                "w": 0.172043,
+                "h": 0.018929
+              },
+              {
+                "text": "What does the speaker suggest would be helpful for each of the following areas of",
+                "x": 0.158358,
+                "y": 0.107575,
+                "w": 0.750733,
+                "h": 0.0238
+              },
+              {
+                "text": "voluntary work?",
+                "x": 0.156079,
+                "y": 0.132887,
+                "w": 0.147397,
+                "h": 0.022171
+              },
+              {
+                "text": "Choose FIVE answers from the box and write the correct letter, A-G, next to",
+                "x": 0.158358,
+                "y": 0.172072,
+                "w": 0.695992,
+                "h": 0.022203
+              },
+              {
+                "text": "Questions 16-20.",
+                "x": 0.158358,
+                "y": 0.195974,
+                "w": 0.164223,
+                "h": 0.0204
+              },
+              {
+                "text": "Helpful things volunteers might offer",
+                "x": 0.381232,
+                "y": 0.25034,
+                "w": 0.365591,
+                "h": 0.023834
+              },
+              {
+                "text": "A",
+                "x": 0.316716,
+                "y": 0.286074,
+                "w": 0.029326,
+                "h": 0.0187
+              },
+              {
+                "text": "experience on stage",
+                "x": 0.346041,
+                "y": 0.286074,
+                "w": 0.203324,
+                "h": 0.0204
+              },
+              {
+                "text": "B original, new ideas",
+                "x": 0.316716,
+                "y": 0.31827,
+                "w": 0.218964,
+                "h": 0.020675
+              },
+              {
+                "text": "C parenting skills",
+                "x": 0.316716,
+                "y": 0.352236,
+                "w": 0.183773,
+                "h": 0.018837
+              },
+              {
+                "text": "Dan understanding of food and diet",
+                "x": 0.318671,
+                "y": 0.384673,
+                "w": 0.353861,
+                "h": 0.018757
+              },
+              {
+                "text": "E retail experience",
+                "x": 0.318671,
+                "y": 0.416973,
+                "w": 0.197458,
+                "h": 0.018946
+              },
+              {
+                "text": "a good memory",
+                "x": 0.353861,
+                "y": 0.449209,
+                "w": 0.154448,
+                "h": 0.020675
+              },
+              {
+                "text": "G a good level of fitness",
+                "x": 0.318671,
+                "y": 0.481572,
+                "w": 0.246334,
+                "h": 0.0204
+              },
+              {
+                "text": "Area of voluntary work",
+                "x": 0.205279,
+                "y": 0.556372,
+                "w": 0.224829,
+                "h": 0.0204
+              },
+              {
+                "text": "16 Fundraising",
+                "x": 0.158358,
+                "y": 0.590371,
+                "w": 0.154448,
+                "h": 0.01882
+              },
+              {
+                "text": "17 Litter collection",
+                "x": 0.158358,
+                "y": 0.622482,
+                "w": 0.185728,
+                "h": 0.018889
+              },
+              {
+                "text": "18 'Playmates'",
+                "x": 0.158358,
+                "y": 0.653271,
+                "w": 0.154448,
+                "h": 0.0221
+              },
+              {
+                "text": "19 Story club",
+                "x": 0.158221,
+                "y": 0.686529,
+                "w": 0.141037,
+                "h": 0.021883
+              },
+              {
+                "text": "20",
+                "x": 0.158358,
+                "y": 0.72127,
+                "w": 0.037146,
+                "h": 0.017
+              },
+              {
+                "text": "First aid",
+                "x": 0.195453,
+                "y": 0.721077,
+                "w": 0.086121,
+                "h": 0.017386
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            14,
+            15
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-15.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.01955,
+                "y": 0.022427,
+                "w": 0.101662,
+                "h": 0.020675
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.175953,
+                "y": 0.022427,
+                "w": 0.195503,
+                "h": 0.020675
+              },
+              {
+                "text": "Questions 21-26",
+                "x": 0.021505,
+                "y": 0.06673,
+                "w": 0.170088,
+                "h": 0.018746
+              },
+              {
+                "text": "Choose the correct letter, A, B or C.",
+                "x": 0.01955,
+                "y": 0.109063,
+                "w": 0.326491,
+                "h": 0.020675
+              },
+              {
+                "text": "Talk on jobs in fashion design",
+                "x": 0.234604,
+                "y": 0.153366,
+                "w": 0.377322,
+                "h": 0.025609
+              },
+              {
+                "text": "21 What problem did Chantal have at the start of the talk?",
+                "x": 0.017595,
+                "y": 0.190777,
+                "w": 0.54741,
+                "h": 0.020675
+              },
+              {
+                "text": "A Her view of the speaker was blocked.",
+                "x": 0.064516,
+                "y": 0.221297,
+                "w": 0.389052,
+                "h": 0.020675
+              },
+              {
+                "text": "B She was unable to find an empty seat.",
+                "x": 0.064516,
+                "y": 0.241874,
+                "w": 0.394917,
+                "h": 0.022249
+              },
+              {
+                "text": "C The students next to her were talking.",
+                "x": 0.064516,
+                "y": 0.263974,
+                "w": 0.391007,
+                "h": 0.0204
+              },
+              {
+                "text": "22 What were Hugo and Chantal surprised to hear about the job market?",
+                "x": 0.017595,
+                "y": 0.297974,
+                "w": 0.688172,
+                "h": 0.022266
+              },
+              {
+                "text": "A Ithas become more competitive than it used to be.",
+                "x": 0.064516,
+                "y": 0.330084,
+                "w": 0.510264,
+                "h": 0.022289
+              },
+              {
+                "text": "B There is more variety in it than they had realised.",
+                "x": 0.064345,
+                "y": 0.34918,
+                "w": 0.49499,
+                "h": 0.026582
+              },
+              {
+                "text": "C Some areas of it are more exciting than others.",
+                "x": 0.064516,
+                "y": 0.374387,
+                "w": 0.477028,
+                "h": 0.020675
+              },
+              {
+                "text": "23 Hugo and Chantal agree that the speaker's message was",
+                "x": 0.01955,
+                "y": 0.410173,
+                "w": 0.572825,
+                "h": 0.0204
+              },
+              {
+                "text": "A unfair to them at times.",
+                "x": 0.064516,
+                "y": 0.442318,
+                "w": 0.258065,
+                "h": 0.018854
+              },
+              {
+                "text": "B hard for them to follow.",
+                "x": 0.064516,
+                "y": 0.464469,
+                "w": 0.256109,
+                "h": 0.017229
+              },
+              {
+                "text": "C critical of the industry.",
+                "x": 0.064516,
+                "y": 0.484972,
+                "w": 0.246334,
+                "h": 0.0204
+              },
+              {
+                "text": "24 What do Hugo and Chantal criticise about their school careers advice?",
+                "x": 0.019449,
+                "y": 0.517223,
+                "w": 0.688394,
+                "h": 0.02323
+              },
+              {
+                "text": "A when they received the advice",
+                "x": 0.064516,
+                "y": 0.552972,
+                "w": 0.324536,
+                "h": 0.018809
+              },
+              {
+                "text": "B how much advice was given",
+                "x": 0.064516,
+                "y": 0.573257,
+                "w": 0.304985,
+                "h": 0.020675
+              },
+              {
+                "text": "C who gave the advice",
+                "x": 0.064516,
+                "y": 0.595408,
+                "w": 0.234604,
+                "h": 0.018763
+              },
+              {
+                "text": "25 When discussing their future, Hugo and Chantal disagree on",
+                "x": 0.01955,
+                "y": 0.625928,
+                "w": 0.59824,
+                "h": 0.022243
+              },
+              {
+                "text": "A which is the best career in fashion.",
+                "x": 0.064516,
+                "y": 0.658371,
+                "w": 0.365591,
+                "h": 0.018751
+              },
+              {
+                "text": "B when to choose a career in fashion.",
+                "x": 0.064516,
+                "y": 0.678599,
+                "w": 0.375367,
+                "h": 0.020675
+              },
+              {
+                "text": "C why they would like a career in fashion.",
+                "x": 0.064346,
+                "y": 0.698744,
+                "w": 0.406945,
+                "h": 0.024671
+              },
+              {
+                "text": "26 How does Hugo feel about being an unpaid assistant?",
+                "x": 0.01955,
+                "y": 0.734716,
+                "w": 0.541544,
+                "h": 0.020675
+              },
+              {
+                "text": "A He is realistic about the practice.",
+                "x": 0.064516,
+                "y": 0.768681,
+                "w": 0.347996,
+                "h": 0.018889
+              },
+              {
+                "text": "B",
+                "x": 0.066471,
+                "y": 0.79097,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "He feels the practice is dishonest.",
+                "x": 0.111437,
+                "y": 0.78927,
+                "w": 0.31085,
+                "h": 0.018791
+              },
+              {
+                "text": "C He thinks others want to change the practice.",
+                "x": 0.064516,
+                "y": 0.809538,
+                "w": 0.461388,
+                "h": 0.020675
+              },
+              {
+                "text": "13",
+                "x": 0.805474,
+                "y": 0.998368,
+                "w": 0.02346,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-16.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.152493,
+                "y": 0.014059,
+                "w": 0.058651,
+                "h": 0.017229
+              },
+              {
+                "text": "Questions 27 and 28",
+                "x": 0.154448,
+                "y": 0.070175,
+                "w": 0.207234,
+                "h": 0.017229
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.152493,
+                "y": 0.114375,
+                "w": 0.246334,
+                "h": 0.0204
+              },
+              {
+                "text": "Which TWO mistakes did the speaker admit she made in her first job?",
+                "x": 0.150538,
+                "y": 0.155175,
+                "w": 0.639296,
+                "h": 0.0204
+              },
+              {
+                "text": "A being dishonest to her employer",
+                "x": 0.195503,
+                "y": 0.189174,
+                "w": 0.342131,
+                "h": 0.018831
+              },
+              {
+                "text": "paying too much attention to how she looked",
+                "x": 0.240469,
+                "y": 0.209483,
+                "w": 0.410557,
+                "h": 0.020675
+              },
+              {
+                "text": "C expecting to become well known",
+                "x": 0.197458,
+                "y": 0.231634,
+                "w": 0.342131,
+                "h": 0.01874
+              },
+              {
+                "text": "D",
+                "x": 0.197458,
+                "y": 0.253774,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "trying to earn a lot of money",
+                "x": 0.232649,
+                "y": 0.252074,
+                "w": 0.265885,
+                "h": 0.020417
+              },
+              {
+                "text": "E",
+                "x": 0.197458,
+                "y": 0.274174,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "openly disliking her client",
+                "x": 0.240469,
+                "y": 0.273968,
+                "w": 0.234604,
+                "h": 0.018906
+              },
+              {
+                "text": "Questions 29 and 30",
+                "x": 0.154448,
+                "y": 0.336976,
+                "w": 0.207234,
+                "h": 0.018797
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.154448,
+                "y": 0.381273,
+                "w": 0.244379,
+                "h": 0.0204
+              },
+              {
+                "text": "Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+                "x": 0.152493,
+                "y": 0.423612,
+                "w": 0.778104,
+                "h": 0.020675
+              },
+              {
+                "text": "A",
+                "x": 0.197458,
+                "y": 0.457772,
+                "w": 0.017595,
+                "h": 0.0187
+              },
+              {
+                "text": "the reasons people return fashion items",
+                "x": 0.240469,
+                "y": 0.457578,
+                "w": 0.365591,
+                "h": 0.018894
+              },
+              {
+                "text": "B",
+                "x": 0.197458,
+                "y": 0.478172,
+                "w": 0.017595,
+                "h": 0.0187
+              },
+              {
+                "text": "how much time people have to shop for clothes",
+                "x": 0.234443,
+                "y": 0.474679,
+                "w": 0.440268,
+                "h": 0.026276
+              },
+              {
+                "text": "C fashion designs people want but can't find",
+                "x": 0.197458,
+                "y": 0.498435,
+                "w": 0.430108,
+                "h": 0.020675
+              },
+              {
+                "text": "D",
+                "x": 0.197458,
+                "y": 0.522372,
+                "w": 0.017595,
+                "h": 0.0153
+              },
+              {
+                "text": "the best time of year for fashion buying",
+                "x": 0.240469,
+                "y": 0.522372,
+                "w": 0.357771,
+                "h": 0.018889
+              },
+              {
+                "text": "E the most popular fashion sizes",
+                "x": 0.197458,
+                "y": 0.542737,
+                "w": 0.324536,
+                "h": 0.018734
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            27,
+            28
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            29,
+            30
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-17.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.021505,
+                "y": 0.022427,
+                "w": 0.103617,
+                "h": 0.022249
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.177908,
+                "y": 0.022427,
+                "w": 0.193548,
+                "h": 0.020675
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.021505,
+                "y": 0.06673,
+                "w": 0.244379,
+                "h": 0.018746
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.021505,
+                "y": 0.105875,
+                "w": 0.391007,
+                "h": 0.0221
+              },
+              {
+                "text": "Elephant translocation",
+                "x": 0.289345,
+                "y": 0.163675,
+                "w": 0.304985,
+                "h": 0.0272
+              },
+              {
+                "text": "Reasons for overpopulation at Majete National Park",
+                "x": 0.070381,
+                "y": 0.211274,
+                "w": 0.506354,
+                "h": 0.0204
+              },
+              {
+                "text": "• strict enforcement of anti-poaching laws",
+                "x": 0.064516,
+                "y": 0.243448,
+                "w": 0.414467,
+                "h": 0.020675
+              },
+              {
+                "text": "• successful breeding",
+                "x": 0.068426,
+                "y": 0.277414,
+                "w": 0.230694,
+                "h": 0.01886
+              },
+              {
+                "text": "Problems caused by elephant overpopulation",
+                "x": 0.070381,
+                "y": 0.31827,
+                "w": 0.447703,
+                "h": 0.020675
+              },
+              {
+                "text": "• greater competition, causing hunger for elephants",
+                "x": 0.068426,
+                "y": 0.34879,
+                "w": 0.502444,
+                "h": 0.020675
+              },
+              {
+                "text": "• damage to 31",
+                "x": 0.068185,
+                "y": 0.379221,
+                "w": 0.174621,
+                "h": 0.022545
+              },
+              {
+                "text": "... in the park",
+                "x": 0.390921,
+                "y": 0.379181,
+                "w": 0.121383,
+                "h": 0.021183
+              },
+              {
+                "text": "The translocation process",
+                "x": 0.070381,
+                "y": 0.422073,
+                "w": 0.258065,
+                "h": 0.018769
+              },
+              {
+                "text": "• a suitable group of elephants from the same 32",
+                "x": 0.068426,
+                "y": 0.450972,
+                "w": 0.480938,
+                "h": 0.0204
+              },
+              {
+                "text": ". was",
+                "x": 0.707722,
+                "y": 0.449209,
+                "w": 0.050831,
+                "h": 0.018763
+              },
+              {
+                "text": "selected",
+                "x": 0.115307,
+                "y": 0.474617,
+                "w": 0.078281,
+                "h": 0.015611
+              },
+              {
+                "text": "• vets and park staff made use of 33",
+                "x": 0.070105,
+                "y": 0.499822,
+                "w": 0.364188,
+                "h": 0.024714
+              },
+              {
+                "text": ".. to help guide the",
+                "x": 0.57869,
+                "y": 0.500272,
+                "w": 0.179863,
+                "h": 0.022283
+              },
+              {
+                "text": "elephants into an open plain",
+                "x": 0.115347,
+                "y": 0.524032,
+                "w": 0.26002,
+                "h": 0.020675
+              },
+              {
+                "text": "elephants were immobilised with tranquilisers",
+                "x": 0.105572,
+                "y": 0.552972,
+                "w": 0.426197,
+                "h": 0.0204
+              },
+              {
+                "text": "- this process had to be completed quickly to reduce 34",
+                "x": 0.111437,
+                "y": 0.583571,
+                "w": 0.520039,
+                "h": 0.0204
+              },
+              {
+                "text": "- elephants had to be turned on their 35",
+                "x": 0.111245,
+                "y": 0.612127,
+                "w": 0.377736,
+                "h": 0.023174
+              },
+              {
+                "text": "to avoid damage",
+                "x": 0.652981,
+                "y": 0.614114,
+                "w": 0.158358,
+                "h": 0.018757
+              },
+              {
+                "text": "to their lungs",
+                "x": 0.134834,
+                "y": 0.635949,
+                "w": 0.123294,
+                "h": 0.019343
+              },
+              {
+                "text": "- elephants' 36",
+                "x": 0.113392,
+                "y": 0.665171,
+                "w": 0.150538,
+                "h": 0.0204
+              },
+              {
+                "text": "had to be monitored constantly",
+                "x": 0.428152,
+                "y": 0.661771,
+                "w": 0.28739,
+                "h": 0.022243
+              },
+              {
+                "text": "- tracking devices were fitted to the matriarchs",
+                "x": 0.113392,
+                "y": 0.69577,
+                "w": 0.435973,
+                "h": 0.0204
+              },
+              {
+                "text": "- data including the size of their tusks and 37....",
+                "x": 0.111437,
+                "y": 0.726347,
+                "w": 0.443793,
+                "h": 0.020423
+              },
+              {
+                "text": ".... was taken",
+                "x": 0.680352,
+                "y": 0.726347,
+                "w": 0.117302,
+                "h": 0.017229
+              },
+              {
+                "text": "• elephants were taken by truck to their new reserve",
+                "x": 0.070381,
+                "y": 0.756867,
+                "w": 0.508309,
+                "h": 0.018803
+              },
+              {
+                "text": "Advantages of translocation at Nkhotakota Wildlife Park",
+                "x": 0.070303,
+                "y": 0.795864,
+                "w": 0.553446,
+                "h": 0.023119
+              },
+              {
+                "text": "38",
+                "x": 0.115347,
+                "y": 0.830069,
+                "w": 0.025415,
+                "h": 0.0153
+              },
+              {
+                "text": "..opportunities",
+                "x": 0.296747,
+                "y": 0.828536,
+                "w": 0.133857,
+                "h": 0.020064
+              },
+              {
+                "text": "a reduction in the number of poachers and 39",
+                "x": 0.111437,
+                "y": 0.858763,
+                "w": 0.422287,
+                "h": 0.020675
+              },
+              {
+                "text": "an example of conservation that other parks can follow",
+                "x": 0.115347,
+                "y": 0.887806,
+                "w": 0.502444,
+                "h": 0.020675
+              },
+              {
+                "text": "•",
+                "x": 0.070381,
+                "y": 0.923569,
+                "w": 0.013685,
+                "h": 0.0136
+              },
+              {
+                "text": "an increase in 40",
+                "x": 0.115347,
+                "y": 0.920169,
+                "w": 0.160313,
+                "h": 0.017
+              },
+              {
+                "text": "as a contributor to GDP",
+                "x": 0.441838,
+                "y": 0.916769,
+                "w": 0.220919,
+                "h": 0.0204
+              },
+              {
+                "text": "• p. 119",
+                "x": 0.578527,
+                "y": 0.996109,
+                "w": 0.098078,
+                "h": 0.023219
+              },
+              {
+                "text": "• p. 102",
+                "x": 0.688003,
+                "y": 0.996087,
+                "w": 0.098091,
+                "h": 0.023262
+              },
+              {
+                "text": "15",
+                "x": 0.807429,
+                "y": 0.996668,
+                "w": 0.029326,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-20.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.148583,
+                "y": 0.017476,
+                "w": 0.056696,
+                "h": 0.017
+              },
+              {
+                "text": "Questions 1-3",
+                "x": 0.148583,
+                "y": 0.073575,
+                "w": 0.144673,
+                "h": 0.018751
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.148583,
+                "y": 0.114375,
+                "w": 0.285435,
+                "h": 0.0204
+              },
+              {
+                "text": "Choose NO MORE THAN TWO WORDS ANDIOR A NUMBER from the passage for",
+                "x": 0.148583,
+                "y": 0.151775,
+                "w": 0.778104,
+                "h": 0.0238
+              },
+              {
+                "text": "each answer.",
+                "x": 0.148583,
+                "y": 0.178963,
+                "w": 0.121212,
+                "h": 0.018711
+              },
+              {
+                "text": "Write your answers in boxes 1-3 on your answer sheet.",
+                "x": 0.14848,
+                "y": 0.218,
+                "w": 0.508492,
+                "h": 0.022514
+              },
+              {
+                "text": "Urban farming in Paris",
+                "x": 0.391007,
+                "y": 0.253774,
+                "w": 0.312805,
+                "h": 0.029054
+              },
+              {
+                "text": "1",
+                "x": 0.164223,
+                "y": 0.294574,
+                "w": 0.017595,
+                "h": 0.0204
+              },
+              {
+                "text": "2",
+                "x": 0.164223,
+                "y": 0.328573,
+                "w": 0.01564,
+                "h": 0.0187
+              },
+              {
+                "text": "Vertical tubes are used to grow strawberries,......",
+                "x": 0.201369,
+                "y": 0.292673,
+                "w": 0.449658,
+                "h": 0.0223
+              },
+              {
+                "text": "There will eventually be a daily harvest of as much as",
+                "x": 0.199413,
+                "y": 0.323473,
+                "w": 0.502444,
+                "h": 0.02384
+              },
+              {
+                "text": ".and herbs.",
+                "x": 0.774109,
+                "y": 0.287435,
+                "w": 0.115516,
+                "h": 0.022777
+              },
+              {
+                "text": "in",
+                "x": 0.86217,
+                "y": 0.321773,
+                "w": 0.025415,
+                "h": 0.0187
+              },
+              {
+                "text": "weight of fruit and vegetables.",
+                "x": 0.207234,
+                "y": 0.347273,
+                "w": 0.281525,
+                "h": 0.022191
+              },
+              {
+                "text": "It may be possible that the farm's produce will account for as much as 10% of",
+                "x": 0.205049,
+                "y": 0.371481,
+                "w": 0.716053,
+                "h": 0.031439
+              },
+              {
+                "text": "the city's...",
+                "x": 0.207066,
+                "y": 0.401073,
+                "w": 0.101998,
+                "h": 0.0233
+              },
+              {
+                "text": ".... overall.",
+                "x": 0.437767,
+                "y": 0.401057,
+                "w": 0.092208,
+                "h": 0.019932
+              },
+              {
+                "text": "Questions 4-7",
+                "x": 0.152493,
+                "y": 0.479729,
+                "w": 0.146628,
+                "h": 0.020675
+              },
+              {
+                "text": "Complete the table below.",
+                "x": 0.150538,
+                "y": 0.522372,
+                "w": 0.238514,
+                "h": 0.018889
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.150538,
+                "y": 0.561443,
+                "w": 0.576735,
+                "h": 0.022151
+              },
+              {
+                "text": "Write your answers in boxes 4-7 on your answer sheet.",
+                "x": 0.152316,
+                "y": 0.603453,
+                "w": 0.508611,
+                "h": 0.025731
+              },
+              {
+                "text": "Intensive",
+                "x": 0.162214,
+                "y": 0.710873,
+                "w": 0.097859,
+                "h": 0.020794
+              },
+              {
+                "text": "farming",
+                "x": 0.164223,
+                "y": 0.73487,
+                "w": 0.082111,
+                "h": 0.0221
+              },
+              {
+                "text": "Intensive farming versus aeroponic urban farming",
+                "x": 0.30694,
+                "y": 0.651525,
+                "w": 0.496579,
+                "h": 0.023846
+              },
+              {
+                "text": "Growth",
+                "x": 0.391007,
+                "y": 0.683871,
+                "w": 0.082111,
+                "h": 0.0204
+              },
+              {
+                "text": "Selection",
+                "x": 0.598199,
+                "y": 0.682019,
+                "w": 0.097835,
+                "h": 0.020703
+              },
+              {
+                "text": "• wide range of",
+                "x": 0.330401,
+                "y": 0.712564,
+                "w": 0.166178,
+                "h": 0.020675
+              },
+              {
+                "text": "quality not good",
+                "x": 0.578414,
+                "y": 0.707954,
+                "w": 0.155038,
+                "h": 0.023266
+              },
+              {
+                "text": "4",
+                "x": 0.367546,
+                "y": 0.73487,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "used",
+                "x": 0.365335,
+                "y": 0.75473,
+                "w": 0.051344,
+                "h": 0.01978
+              },
+              {
+                "text": "• techniques",
+                "x": 0.334311,
+                "y": 0.782464,
+                "w": 0.136852,
+                "h": 0.023806
+              },
+              {
+                "text": "pollute air",
+                "x": 0.369465,
+                "y": 0.804449,
+                "w": 0.09587,
+                "h": 0.022341
+              },
+              {
+                "text": "varieties of fruit",
+                "x": 0.565005,
+                "y": 0.741607,
+                "w": 0.162268,
+                "h": 0.017229
+              },
+              {
+                "text": "and vegetables",
+                "x": 0.57869,
+                "y": 0.763758,
+                "w": 0.148583,
+                "h": 0.018711
+              },
+              {
+                "text": "chosen that can",
+                "x": 0.57869,
+                "y": 0.783941,
+                "w": 0.152493,
+                "h": 0.018929
+              },
+              {
+                "text": "survive long",
+                "x": 0.578579,
+                "y": 0.804065,
+                "w": 0.11948,
+                "h": 0.021408
+              },
+              {
+                "text": "Aeroponic",
+                "x": 0.166178,
+                "y": 0.855569,
+                "w": 0.107527,
+                "h": 0.0204
+              },
+              {
+                "text": "urban farming",
+                "x": 0.168133,
+                "y": 0.879369,
+                "w": 0.138807,
+                "h": 0.018774
+              },
+              {
+                "text": "•",
+                "x": 0.332356,
+                "y": 0.855569,
+                "w": 0.021505,
+                "h": 0.0187
+              },
+              {
+                "text": "no soil used",
+                "x": 0.353861,
+                "y": 0.855569,
+                "w": 0.127077,
+                "h": 0.017
+              },
+              {
+                "text": "• nutrients added",
+                "x": 0.332356,
+                "y": 0.886169,
+                "w": 0.181818,
+                "h": 0.0204
+              },
+              {
+                "text": "to water, which is",
+                "x": 0.367491,
+                "y": 0.904582,
+                "w": 0.162378,
+                "h": 0.024374
+              },
+              {
+                "text": "recycled",
+                "x": 0.367432,
+                "y": 0.928315,
+                "w": 0.08234,
+                "h": 0.021106
+              },
+              {
+                "text": "• produce chosen",
+                "x": 0.54741,
+                "y": 0.850395,
+                "w": 0.187683,
+                "h": 0.023874
+              },
+              {
+                "text": "because of its",
+                "x": 0.57869,
+                "y": 0.872546,
+                "w": 0.136852,
+                "h": 0.020423
+              },
+              {
+                "text": "7",
+                "x": 0.57869,
+                "y": 0.894669,
+                "w": 0.02346,
+                "h": 0.0187
+              },
+              {
+                "text": "Sale",
+                "x": 0.828935,
+                "y": 0.680471,
+                "w": 0.050831,
+                "h": 0.0204
+              },
+              {
+                "text": "receive very little",
+                "x": 0.790475,
+                "y": 0.724498,
+                "w": 0.163126,
+                "h": 0.03817
+              },
+              {
+                "text": "of overall income",
+                "x": 0.791789,
+                "y": 0.753421,
+                "w": 0.162268,
+                "h": 0.020675
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-21.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 8-13",
+                "x": 0.02737,
+                "y": 0.024276,
+                "w": 0.158358,
+                "h": 0.018826
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.025415,
+                "y": 0.068475,
+                "w": 0.772238,
+                "h": 0.0221
+              },
+              {
+                "text": "In boxes 8-13 on your answer sheet, write",
+                "x": 0.02334,
+                "y": 0.112496,
+                "w": 0.391225,
+                "h": 0.022562
+              },
+              {
+                "text": "TRUE",
+                "x": 0.093734,
+                "y": 0.153208,
+                "w": 0.060821,
+                "h": 0.019234
+              },
+              {
+                "text": "FALSE",
+                "x": 0.093775,
+                "y": 0.177041,
+                "w": 0.070514,
+                "h": 0.015768
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.224829,
+                "y": 0.155175,
+                "w": 0.400782,
+                "h": 0.0204
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.224829,
+                "y": 0.175517,
+                "w": 0.392962,
+                "h": 0.020675
+              },
+              {
+                "text": "NOT GIVEN if there is no information on this",
+                "x": 0.093842,
+                "y": 0.194223,
+                "w": 0.422287,
+                "h": 0.020675
+              },
+              {
+                "text": "8 Urban farming can take place above or below ground.",
+                "x": 0.033236,
+                "y": 0.238474,
+                "w": 0.529814,
+                "h": 0.0204
+              },
+              {
+                "text": "9 Some of the equipment used in aeroponic farming can be made by hand.",
+                "x": 0.033236,
+                "y": 0.273968,
+                "w": 0.703812,
+                "h": 0.020675
+              },
+              {
+                "text": "10 Urban farming relies more on electricity than some other types of farming.",
+                "x": 0.02346,
+                "y": 0.307933,
+                "w": 0.719453,
+                "h": 0.020675
+              },
+              {
+                "text": "11",
+                "x": 0.02346,
+                "y": 0.340473,
+                "w": 0.029326,
+                "h": 0.017
+              },
+              {
+                "text": "Fruit and vegetables grown on an aeroponic urban farm are cheaper than",
+                "x": 0.054741,
+                "y": 0.340422,
+                "w": 0.686217,
+                "h": 0.020675
+              },
+              {
+                "text": "traditionally grown organic produce.",
+                "x": 0.066471,
+                "y": 0.362573,
+                "w": 0.332356,
+                "h": 0.0204
+              },
+              {
+                "text": "12 Most produce can be grown on an aeroponic urban farm at any time of the year.",
+                "x": 0.02346,
+                "y": 0.398273,
+                "w": 0.776149,
+                "h": 0.01894
+              },
+              {
+                "text": "13 Beans take longer to grow on an urban farm than other vegetables.",
+                "x": 0.023392,
+                "y": 0.42884,
+                "w": 0.660938,
+                "h": 0.022364
+              },
+              {
+                "text": "→O p. 120",
+                "x": 0.650774,
+                "y": 0.997284,
+                "w": 0.129538,
+                "h": 0.025967
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 11,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 12,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 13,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-24.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.150538,
+                "y": 0.015535,
+                "w": 0.058651,
+                "h": 0.01724
+              },
+              {
+                "text": "Questions 14-18",
+                "x": 0.150538,
+                "y": 0.070175,
+                "w": 0.172043,
+                "h": 0.018706
+              },
+              {
+                "text": "Reading Passage 2 has seven paragraphs, A-G.",
+                "x": 0.150538,
+                "y": 0.110975,
+                "w": 0.451613,
+                "h": 0.022209
+              },
+              {
+                "text": "Which paragraph contains the following information?",
+                "x": 0.148583,
+                "y": 0.153366,
+                "w": 0.482893,
+                "h": 0.020675
+              },
+              {
+                "text": "Write the correct letter, A-G, in boxes 14-18 on your answer sheet.",
+                "x": 0.150458,
+                "y": 0.194059,
+                "w": 0.616024,
+                "h": 0.023583
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.152493,
+                "y": 0.238474,
+                "w": 0.410557,
+                "h": 0.018757
+              },
+              {
+                "text": "14 bad outcomes for a forest when people focus only on its financial reward",
+                "x": 0.150538,
+                "y": 0.289474,
+                "w": 0.707722,
+                "h": 0.020428
+              },
+              {
+                "text": "15",
+                "x": 0.150538,
+                "y": 0.325173,
+                "w": 0.035191,
+                "h": 0.0153
+              },
+              {
+                "text": "reference to the aspects of any tree that contribute to its worth",
+                "x": 0.185728,
+                "y": 0.321716,
+                "w": 0.57869,
+                "h": 0.020675
+              },
+              {
+                "text": "16",
+                "x": 0.150538,
+                "y": 0.357473,
+                "w": 0.029326,
+                "h": 0.0153
+              },
+              {
+                "text": "mention of the potential use of wood to help run vehicles",
+                "x": 0.197458,
+                "y": 0.354073,
+                "w": 0.516129,
+                "h": 0.0204
+              },
+              {
+                "text": "17 examples of insects that attack trees",
+                "x": 0.152493,
+                "y": 0.388073,
+                "w": 0.379277,
+                "h": 0.0204
+              },
+              {
+                "text": "18 an alternative name for trees that produce low-use wood",
+                "x": 0.152493,
+                "y": 0.418673,
+                "w": 0.561095,
+                "h": 0.0204
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-25.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 19-21",
+                "x": 0.031281,
+                "y": 0.020876,
+                "w": 0.170088,
+                "h": 0.017
+              },
+              {
+                "text": "Look at the following purposes (Questions 19-21) and the list of timber cuts below.",
+                "x": 0.029326,
+                "y": 0.063284,
+                "w": 0.752688,
+                "h": 0.020675
+              },
+              {
+                "text": "Match each purpose with the correct timber cut, A, B or C.",
+                "x": 0.029326,
+                "y": 0.105875,
+                "w": 0.531769,
+                "h": 0.0221
+              },
+              {
+                "text": "Write the correct letter, A, B or C, in boxes 19-21 on your answer sheet.",
+                "x": 0.029326,
+                "y": 0.148375,
+                "w": 0.658846,
+                "h": 0.0204
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.029198,
+                "y": 0.186877,
+                "w": 0.410815,
+                "h": 0.022754
+              },
+              {
+                "text": "19 to remove trees that are diseased",
+                "x": 0.025415,
+                "y": 0.241874,
+                "w": 0.355816,
+                "h": 0.018803
+              },
+              {
+                "text": "20 to generate income across a number of years",
+                "x": 0.025415,
+                "y": 0.273968,
+                "w": 0.463343,
+                "h": 0.020675
+              },
+              {
+                "text": "21 to create a forest whose trees are close in age",
+                "x": 0.025415,
+                "y": 0.306456,
+                "w": 0.471163,
+                "h": 0.022151
+              },
+              {
+                "text": "List of Timber Cuts",
+                "x": 0.338221,
+                "y": 0.393093,
+                "w": 0.185728,
+                "h": 0.017229
+              },
+              {
+                "text": "A a TSI Cut",
+                "x": 0.322581,
+                "y": 0.425473,
+                "w": 0.134897,
+                "h": 0.017
+              },
+              {
+                "text": "B a Salvage Cut",
+                "x": 0.322581,
+                "y": 0.457578,
+                "w": 0.177908,
+                "h": 0.020675
+              },
+              {
+                "text": "C",
+                "x": 0.322581,
+                "y": 0.491772,
+                "w": 0.01564,
+                "h": 0.0153
+              },
+              {
+                "text": "a Shelterwood Cut",
+                "x": 0.363636,
+                "y": 0.490066,
+                "w": 0.177908,
+                "h": 0.018706
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-26.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.150538,
+                "y": 0.015535,
+                "w": 0.056696,
+                "h": 0.01724
+              },
+              {
+                "text": "Questions 22-26",
+                "x": 0.150538,
+                "y": 0.070175,
+                "w": 0.172043,
+                "h": 0.018706
+              },
+              {
+                "text": "Complete the sentences below.",
+                "x": 0.150538,
+                "y": 0.112509,
+                "w": 0.28739,
+                "h": 0.020675
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.150451,
+                "y": 0.151124,
+                "w": 0.576915,
+                "h": 0.02281
+              },
+              {
+                "text": "Write your answers in boxes 22-26 on your answer sheet.",
+                "x": 0.152349,
+                "y": 0.193969,
+                "w": 0.528179,
+                "h": 0.024535
+              },
+              {
+                "text": "22 Some dead wood is removed to avoid the possibility of",
+                "x": 0.150448,
+                "y": 0.246696,
+                "w": 0.54758,
+                "h": 0.022473
+              },
+              {
+                "text": "23 The",
+                "x": 0.150538,
+                "y": 0.284305,
+                "w": 0.084066,
+                "h": 0.017229
+              },
+              {
+                "text": ".. from the tops of cut trees can help improve soil quality.",
+                "x": 0.232649,
+                "y": 0.279274,
+                "w": 0.592375,
+                "h": 0.02226
+              },
+              {
+                "text": "24 Some damaged trees should be left, as their",
+                "x": 0.150538,
+                "y": 0.313273,
+                "w": 0.455523,
+                "h": 0.022226
+              },
+              {
+                "text": "........ provide habitats for a range",
+                "x": 0.629215,
+                "y": 0.308292,
+                "w": 0.319206,
+                "h": 0.024813
+              },
+              {
+                "text": "of creatures.",
+                "x": 0.197458,
+                "y": 0.336976,
+                "w": 0.117302,
+                "h": 0.017229
+              },
+              {
+                "text": "25 Some trees that are small, such as",
+                "x": 0.152493,
+                "y": 0.367496,
+                "w": 0.363636,
+                "h": 0.020675
+              },
+              {
+                "text": "...., are a source of food for animals",
+                "x": 0.578258,
+                "y": 0.360762,
+                "w": 0.333193,
+                "h": 0.026465
+              },
+              {
+                "text": "and insects.",
+                "x": 0.197458,
+                "y": 0.391473,
+                "w": 0.113392,
+                "h": 0.017
+              },
+              {
+                "text": "26 Any trees that are ...",
+                "x": 0.152493,
+                "y": 0.422073,
+                "w": 0.232649,
+                "h": 0.022214
+              },
+              {
+                "text": "... should be left to grow, as they add to the variety of",
+                "x": 0.431861,
+                "y": 0.416534,
+                "w": 0.485314,
+                "h": 0.02634
+              },
+              {
+                "text": "species in the forest.",
+                "x": 0.196943,
+                "y": 0.440667,
+                "w": 0.194401,
+                "h": 0.024601
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{23}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{24}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-29.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Questions 27-31",
+                "x": 0.01564,
+                "y": 0.022427,
+                "w": 0.170088,
+                "h": 0.017229
+              },
+              {
+                "text": "Reading Passage 3 has six sections, A-F.",
+                "x": 0.013543,
+                "y": 0.061535,
+                "w": 0.393221,
+                "h": 0.02702
+              },
+              {
+                "text": "Which section contains the following information?",
+                "x": 0.013685,
+                "y": 0.105875,
+                "w": 0.453568,
+                "h": 0.020417
+              },
+              {
+                "text": "Write the correct letter, A-F, in boxes 27-31 on your answer sheet.",
+                "x": 0.013685,
+                "y": 0.146474,
+                "w": 0.611926,
+                "h": 0.02412
+              },
+              {
+                "text": "27 a reference to the cooperation that takes place to try and minimise risk",
+                "x": 0.01173,
+                "y": 0.189174,
+                "w": 0.692082,
+                "h": 0.0204
+              },
+              {
+                "text": "28 an explanation of a person's aims",
+                "x": 0.013685,
+                "y": 0.231634,
+                "w": 0.353861,
+                "h": 0.020675
+              },
+              {
+                "text": "29 a description of a major collision that occurred in space",
+                "x": 0.013685,
+                "y": 0.272474,
+                "w": 0.549365,
+                "h": 0.0204
+              },
+              {
+                "text": "30 a comparison between tracking objects in space and the efficiency of a",
+                "x": 0.013685,
+                "y": 0.314825,
+                "w": 0.692082,
+                "h": 0.020675
+              },
+              {
+                "text": "transportation system",
+                "x": 0.056696,
+                "y": 0.336976,
+                "w": 0.199413,
+                "h": 0.018797
+              },
+              {
+                "text": "31 a reference to efforts to classify space junk",
+                "x": 0.013685,
+                "y": 0.377833,
+                "w": 0.437928,
+                "h": 0.01874
+              },
+              {
+                "text": "Questions 32-35",
+                "x": 0.01564,
+                "y": 0.442318,
+                "w": 0.170088,
+                "h": 0.017229
+              },
+              {
+                "text": "Complete the summary below.",
+                "x": 0.013685,
+                "y": 0.484972,
+                "w": 0.27957,
+                "h": 0.022323
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.013685,
+                "y": 0.527472,
+                "w": 0.580645,
+                "h": 0.022157
+              },
+              {
+                "text": "Write your answers in boxes 32-35 on your answer sheet.",
+                "x": 0.013685,
+                "y": 0.568271,
+                "w": 0.531769,
+                "h": 0.0204
+              },
+              {
+                "text": "The Inter-Agency Space Debris Coordination Committee",
+                "x": 0.039101,
+                "y": 0.629374,
+                "w": 0.756598,
+                "h": 0.027297
+              },
+              {
+                "text": "The committee gives advice on how the 32...",
+                "x": 0.029326,
+                "y": 0.682045,
+                "w": 0.410557,
+                "h": 0.020675
+              },
+              {
+                "text": ".... of space can be",
+                "x": 0.56696,
+                "y": 0.683871,
+                "w": 0.170088,
+                "h": 0.018849
+              },
+              {
+                "text": "achieved. The committee advises that when satellites are no longer active, any",
+                "x": 0.029326,
+                "y": 0.70937,
+                "w": 0.719453,
+                "h": 0.0221
+              },
+              {
+                "text": "unused 33",
+                "x": 0.02927,
+                "y": 0.738024,
+                "w": 0.097863,
+                "h": 0.017492
+              },
+              {
+                "text": "... or pressurised material that could cause",
+                "x": 0.27566,
+                "y": 0.73657,
+                "w": 0.387097,
+                "h": 0.0204
+              },
+              {
+                "text": "34",
+                "x": 0.02737,
+                "y": 0.76547,
+                "w": 0.02737,
+                "h": 0.017
+              },
+              {
+                "text": "..should be removed.",
+                "x": 0.209189,
+                "y": 0.765235,
+                "w": 0.197458,
+                "h": 0.018935
+              },
+              {
+                "text": "Although operators of large satellite constellations accept that they have obligations",
+                "x": 0.02737,
+                "y": 0.812984,
+                "w": 0.762463,
+                "h": 0.022186
+              },
+              {
+                "text": "as stewards of space, Holger Krag points out that the operators that become",
+                "x": 0.02737,
+                "y": 0.840057,
+                "w": 0.699902,
+                "h": 0.022312
+              },
+              {
+                "text": "35..",
+                "x": 0.02737,
+                "y": 0.869169,
+                "w": 0.037146,
+                "h": 0.017
+              },
+              {
+                "text": "are unlikely to prioritise removing their satellites from space.",
+                "x": 0.220919,
+                "y": 0.8691,
+                "w": 0.55132,
+                "h": 0.020675
+              },
+              {
+                "text": "27",
+                "x": 0.791789,
+                "y": 0.994968,
+                "w": 0.033236,
+                "h": 0.0272
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c18-test-1/page-30.webp",
+            "width": 1767,
+            "height": 2031,
+            "lines": [
+              {
+                "text": "Test 1",
+                "x": 0.162268,
+                "y": 0.015535,
+                "w": 0.056696,
+                "h": 0.01724
+              },
+              {
+                "text": "Questions 36-40",
+                "x": 0.162268,
+                "y": 0.070175,
+                "w": 0.170088,
+                "h": 0.0204
+              },
+              {
+                "text": "Look at the following statements (Questions 36-40) and the list of people below.",
+                "x": 0.160153,
+                "y": 0.108803,
+                "w": 0.731519,
+                "h": 0.026349
+              },
+              {
+                "text": "Match each statement with the correct person, A, B, C or D.",
+                "x": 0.160313,
+                "y": 0.153366,
+                "w": 0.549365,
+                "h": 0.020675
+              },
+              {
+                "text": "Write the correct letter, A, B, C or D, in boxes 36-40 on your answer sheet.",
+                "x": 0.162085,
+                "y": 0.192282,
+                "w": 0.684659,
+                "h": 0.02839
+              },
+              {
+                "text": "NB You may use any letter more than once.",
+                "x": 0.162268,
+                "y": 0.238474,
+                "w": 0.410557,
+                "h": 0.0204
+              },
+              {
+                "text": "36 Knowing the exact location of space junk would help prevent any possible danger.",
+                "x": 0.160188,
+                "y": 0.287252,
+                "w": 0.793982,
+                "h": 0.026971
+              },
+              {
+                "text": "37 Space should be available to everyone and should be preserved for the future.",
+                "x": 0.162268,
+                "y": 0.321716,
+                "w": 0.762463,
+                "h": 0.023857
+              },
+              {
+                "text": "38 A recommendation regarding satellites is widely ignored.",
+                "x": 0.162268,
+                "y": 0.355682,
+                "w": 0.561095,
+                "h": 0.020675
+              },
+              {
+                "text": "39 There is conflicting information about where some satellites are in space.",
+                "x": 0.162268,
+                "y": 0.386201,
+                "w": 0.711632,
+                "h": 0.022272
+              },
+              {
+                "text": "40 There is a risk we will not be able to undo the damage that occurs in space.",
+                "x": 0.162268,
+                "y": 0.418673,
+                "w": 0.737048,
+                "h": 0.0204
+              },
+              {
+                "text": "List of People",
+                "x": 0.498427,
+                "y": 0.477607,
+                "w": 0.139021,
+                "h": 0.02153
+              },
+              {
+                "text": "A Carolin Frueh",
+                "x": 0.459433,
+                "y": 0.510249,
+                "w": 0.172043,
+                "h": 0.018923
+              },
+              {
+                "text": "B Holger Krag",
+                "x": 0.459344,
+                "y": 0.542285,
+                "w": 0.156581,
+                "h": 0.023073
+              },
+              {
+                "text": "CMarlon Sorge",
+                "x": 0.459433,
+                "y": 0.576703,
+                "w": 0.172043,
+                "h": 0.020675
+              },
+              {
+                "text": "D Moriba Jah",
+                "x": 0.459433,
+                "y": 0.609071,
+                "w": 0.150538,
+                "h": 0.018826
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "DW30 7YZ",
+      "24 April|24th April|April 24|April 24th",
+      "dentist",
+      "parking",
+      "Claxby",
+      "late",
+      "evening",
+      "supermarket",
+      "pollution",
+      "storage",
+      "C",
+      "A",
+      "A",
+      "B",
+      "E",
+      "B",
+      "G",
+      "D",
+      "A",
+      "F",
+      "A",
+      "B",
+      "A",
+      "C",
+      "B",
+      "A",
+      "B",
+      "E",
+      "A",
+      "C",
+      "fences",
+      "family",
+      "helicopters",
+      "stress",
+      "sides",
+      "breathing",
+      "feet",
+      "employment",
+      "weapons",
+      "tourism"
+    ],
+    "reading": [
+      "lettuces",
+      "1,000 kg|1000 kg",
+      "food consumption|consumption",
+      "pesticides",
+      "journeys",
+      "producers",
+      "flavour|flavor",
+      "TRUE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "FALSE",
+      "NOT GIVEN",
+      "B",
+      "A",
+      "C",
+      "E",
+      "B",
+      "B",
+      "C",
+      "C",
+      "fire",
+      "nutrients",
+      "cavities",
+      "hawthorn",
+      "rare",
+      "C",
+      "F",
+      "A",
+      "E",
+      "B",
+      "sustainability",
+      "fuel",
+      "explosions",
+      "bankrupt",
+      "C",
+      "D",
+      "B",
+      "D",
+      "A"
+    ]
+  },
+  "completionOptions": {}
+}

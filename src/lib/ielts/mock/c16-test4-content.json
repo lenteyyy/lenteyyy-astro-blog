@@ -1,0 +1,5259 @@
+{
+  "source": {
+    "book": 16,
+    "test": 4,
+    "questionPages": {
+      "l": [
+        [
+          78
+        ],
+        [
+          79,
+          80
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          83
+        ]
+      ],
+      "r": [
+        [
+          84,
+          85
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          93,
+          94
+        ]
+      ],
+      "q": [
+        [
+          86,
+          87
+        ],
+        [
+          90,
+          91
+        ],
+        [
+          92,
+          95,
+          96
+        ]
+      ],
+      "w": [
+        97,
+        98
+      ]
+    },
+    "format": "source-faithful scans with selectable OCR layer",
+    "sourceSha256": "11675fa3dcb124e93afbf44371c174f676a78a260b01ebc190aae5f5fed3912e"
+  },
+  "sections": {
+    "listening": [
+      {
+        "label": "Part 1",
+        "first": 1,
+        "last": 10,
+        "title": "Listening Part 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-4/part-1.mp3"
+      },
+      {
+        "label": "Part 2",
+        "first": 11,
+        "last": 20,
+        "title": "Listening Part 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-4/part-2.mp3"
+      },
+      {
+        "label": "Part 3",
+        "first": 21,
+        "last": 30,
+        "title": "Listening Part 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-4/part-3.mp3"
+      },
+      {
+        "label": "Part 4",
+        "first": 31,
+        "last": 40,
+        "title": "Listening Part 4",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "/ielts/mock/c16-test-4/part-4.mp3"
+      }
+    ],
+    "reading": [
+      {
+        "label": "Passage 1",
+        "first": 1,
+        "last": 13,
+        "title": "Reading Passage 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-4/page-84.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING",
+                "x": 0.427114,
+                "y": 0.018507,
+                "w": 0.146059,
+                "h": 0.023438
+              },
+              {
+                "text": "READING PASSAGE 1",
+                "x": 0.051931,
+                "y": 0.092275,
+                "w": 0.328984,
+                "h": 0.018801
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 1-13, which are based on Reading",
+                "x": 0.051931,
+                "y": 0.134573,
+                "w": 0.876554,
+                "h": 0.020602
+              },
+              {
+                "text": "Passage 1 below.",
+                "x": 0.051931,
+                "y": 0.155023,
+                "w": 0.181051,
+                "h": 0.020552
+              },
+              {
+                "text": "Roman tunnels",
+                "x": 0.376499,
+                "y": 0.199374,
+                "w": 0.249498,
+                "h": 0.025702
+              },
+              {
+                "text": "The Romans, who once controlled areas of Europe, North Africa and",
+                "x": 0.091674,
+                "y": 0.243574,
+                "w": 0.823563,
+                "h": 0.0238
+              },
+              {
+                "text": "Asia Minor, adopted the construction techniques of other civilizations to",
+                "x": 0.076218,
+                "y": 0.263802,
+                "w": 0.852266,
+                "h": 0.020572
+              },
+              {
+                "text": "build tunnels in their territories",
+                "x": 0.3213,
+                "y": 0.284252,
+                "w": 0.364311,
+                "h": 0.018821
+              },
+              {
+                "text": "The Persians, who lived in present-day Iran, were one of the first civilizations to build tunnels",
+                "x": 0.051931,
+                "y": 0.330273,
+                "w": 0.856682,
+                "h": 0.018811
+              },
+              {
+                "text": "that provided a reliable supply of water to human settlements in dry areas. In the early first",
+                "x": 0.049723,
+                "y": 0.350673,
+                "w": 0.832395,
+                "h": 0.020602
+              },
+              {
+                "text": "millennium BCE, they introduced the qanat method of tunnel construction, which consisted",
+                "x": 0.049723,
+                "y": 0.371073,
+                "w": 0.845643,
+                "h": 0.0204
+              },
+              {
+                "text": "of placing posts over a hill in a straight line, to ensure that the tunnel kept to its route, and then",
+                "x": 0.051931,
+                "y": 0.393031,
+                "w": 0.867722,
+                "h": 0.018842
+              },
+              {
+                "text": "digging vertical shafts down into the ground at regular intervals. Underground, workers removed",
+                "x": 0.051931,
+                "y": 0.411741,
+                "w": 0.885386,
+                "h": 0.020531
+              },
+              {
+                "text": "the earth from between the ends of the shafts, creating a tunnel. The excavated soil was taken up",
+                "x": 0.049723,
+                "y": 0.433932,
+                "w": 0.883178,
+                "h": 0.01874
+              },
+              {
+                "text": "to the surface using the shafts, which also provided ventilation during the work. Once the tunnel",
+                "x": 0.049723,
+                "y": 0.454372,
+                "w": 0.883178,
+                "h": 0.020461
+              },
+              {
+                "text": "was completed, it allowed water to flow from the top of a hillside down towards a canal, which",
+                "x": 0.051931,
+                "y": 0.474772,
+                "w": 0.865514,
+                "h": 0.020511
+              },
+              {
+                "text": "supplied water for human use. Remarkably, some qanats built by the Persians 2,700 years ago are",
+                "x": 0.051931,
+                "y": 0.495172,
+                "w": 0.894217,
+                "h": 0.020562
+              },
+              {
+                "text": "still in use today.",
+                "x": 0.051931,
+                "y": 0.517272,
+                "w": 0.156764,
+                "h": 0.018912
+              },
+              {
+                "text": "They later passed on their knowledge to the Romans, who also used the qanat method to",
+                "x": 0.051931,
+                "y": 0.55794,
+                "w": 0.812523,
+                "h": 0.020531
+              },
+              {
+                "text": "construct water-supply tunnels for agriculture. Roman qanat tunnels were constructed with",
+                "x": 0.054139,
+                "y": 0.57839,
+                "w": 0.834603,
+                "h": 0.018781
+              },
+              {
+                "text": "vertical shafts dug at intervals of between 30 and 60 meters. The shafts were equipped with",
+                "x": 0.051931,
+                "y": 0.598841,
+                "w": 0.836811,
+                "h": 0.02045
+              },
+              {
+                "text": "handholds and footholds to help those climbing in and out of them and were covered with a",
+                "x": 0.051931,
+                "y": 0.619271,
+                "w": 0.839019,
+                "h": 0.020471
+              },
+              {
+                "text": "wooden or stone lid. To ensure that the shafts were vertical, Romans hung a plumb line from a",
+                "x": 0.051931,
+                "y": 0.639671,
+                "w": 0.865514,
+                "h": 0.020521
+              },
+              {
+                "text": "rod placed across the top of each shaft and made sure that the weight at the end of it hung in the",
+                "x": 0.051811,
+                "y": 0.659487,
+                "w": 0.881194,
+                "h": 0.024793
+              },
+              {
+                "text": "center of the shaft. Plumb lines were also used to measure the depth of the shaft and to determine",
+                "x": 0.051931,
+                "y": 0.682171,
+                "w": 0.894217,
+                "h": 0.0187
+              },
+              {
+                "text": "the slope of the tunnel. The 5.6-kilometer-long Claudius tunnel, built in 41 CE to drain the Fucine",
+                "x": 0.049723,
+                "y": 0.702398,
+                "w": 0.903049,
+                "h": 0.020572
+              },
+              {
+                "text": "Lake in central Italy, had shafts that were up to 122 meters deep, took 11 years to build and",
+                "x": 0.051931,
+                "y": 0.724589,
+                "w": 0.836811,
+                "h": 0.018781
+              },
+              {
+                "text": "involved approximately 30,000 workers.",
+                "x": 0.051931,
+                "y": 0.74504,
+                "w": 0.373143,
+                "h": 0.02045
+              },
+              {
+                "text": "By the 6th century BCE, a second method of tunnel construction appeared called the counter-",
+                "x": 0.054139,
+                "y": 0.78587,
+                "w": 0.861098,
+                "h": 0.018781
+              },
+              {
+                "text": "excavation method, in which the tunnel was constructed from both ends. It was used to cut",
+                "x": 0.051931,
+                "y": 0.80797,
+                "w": 0.834603,
+                "h": 0.017131
+              },
+              {
+                "text": "through high mountains when the qanat method was not a practical alternative. This method",
+                "x": 0.051931,
+                "y": 0.826669,
+                "w": 0.847851,
+                "h": 0.0204
+              },
+              {
+                "text": "required greater planning and advanced knowledge of surveying, mathematics and geometry",
+                "x": 0.051931,
+                "y": 0.848597,
+                "w": 0.852266,
+                "h": 0.018872
+              },
+              {
+                "text": "as both ends of a tunnel had to meet correctly at the center of the mountain. Adjustments to the",
+                "x": 0.051931,
+                "y": 0.869048,
+                "w": 0.872138,
+                "h": 0.018821
+              },
+              {
+                "text": "direction of the tunnel also had to be made whenever builders encountered geological problems",
+                "x": 0.054039,
+                "y": 0.885979,
+                "w": 0.876751,
+                "h": 0.024371
+              },
+              {
+                "text": "or when it deviated from its set path. They constantly checked the tunnel's advancing direction,",
+                "x": 0.054139,
+                "y": 0.909948,
+                "w": 0.872138,
+                "h": 0.02045
+              },
+              {
+                "text": "82",
+                "x": 0.054139,
+                "y": 0.986468,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-4/page-85.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "for example, by looking back at the light that penetrated through the tunnel mouth, and made",
+                "x": 0.04063,
+                "y": 0.016594,
+                "w": 0.854964,
+                "h": 0.027761
+              },
+              {
+                "text": "corrections whenever necessary. Large deviations could happen, and they could result in one end",
+                "x": 0.042905,
+                "y": 0.038169,
+                "w": 0.885749,
+                "h": 0.025166
+              },
+              {
+                "text": "of the tunnel not being usable. An inscription written on the side of a 428-meter tunnel, built by",
+                "x": 0.040632,
+                "y": 0.057094,
+                "w": 0.87709,
+                "h": 0.028516
+              },
+              {
+                "text": "the Romans as part of the Saldae aqueduct system in modern-day Algeria, describes how the two",
+                "x": 0.038406,
+                "y": 0.078361,
+                "w": 0.89031,
+                "h": 0.028875
+              },
+              {
+                "text": "teams of builders missed each other in the mountain and how the later construction of a lateral",
+                "x": 0.038479,
+                "y": 0.099138,
+                "w": 0.868137,
+                "h": 0.024859
+              },
+              {
+                "text": "link between both corridors corrected the initial error.",
+                "x": 0.038445,
+                "y": 0.119475,
+                "w": 0.497286,
+                "h": 0.022252
+              },
+              {
+                "text": "The Romans dug tunnels for their roads using the counter-excavation method, whenever they",
+                "x": 0.038463,
+                "y": 0.161443,
+                "w": 0.852712,
+                "h": 0.026146
+              },
+              {
+                "text": "encountered obstacles such as hills or mountains that were too high for roads to pass over.",
+                "x": 0.040691,
+                "y": 0.181113,
+                "w": 0.824035,
+                "h": 0.026114
+              },
+              {
+                "text": "An example is the 37-meter-long, 6-meter-high, Furlo Pass Tunnel built in Italy in 69-79 CE.",
+                "x": 0.038456,
+                "y": 0.203433,
+                "w": 0.857158,
+                "h": 0.027729
+              },
+              {
+                "text": "Remarkably, a modern road still uses this tunnel today. Tunnels were also built for mineral",
+                "x": 0.038416,
+                "y": 0.224338,
+                "w": 0.828477,
+                "h": 0.027395
+              },
+              {
+                "text": "extraction. Miners would locate a mineral vein and then pursue it with shafts and tunnels",
+                "x": 0.036271,
+                "y": 0.245813,
+                "w": 0.817353,
+                "h": 0.025768
+              },
+              {
+                "text": "underground. Traces of such tunnels used to mine gold can still be found at the Dolaucothi mines",
+                "x": 0.036281,
+                "y": 0.26709,
+                "w": 0.894612,
+                "h": 0.025644
+              },
+              {
+                "text": "in Wales. When the sole purpose of a tunnel was mineral extraction, construction required less",
+                "x": 0.034004,
+                "y": 0.28597,
+                "w": 0.872598,
+                "h": 0.02826
+              },
+              {
+                "text": "planning, as the tunnel route was determined by the mineral vein.",
+                "x": 0.036223,
+                "y": 0.307572,
+                "w": 0.603299,
+                "h": 0.025176
+              },
+              {
+                "text": "Roman tunnel projects were carefully planned and carried out. The length of time it took to",
+                "x": 0.036228,
+                "y": 0.348863,
+                "w": 0.837273,
+                "h": 0.026354
+              },
+              {
+                "text": "construct a tunnel depended on the method being used and the type of rock being excavated. The",
+                "x": 0.034053,
+                "y": 0.368731,
+                "w": 0.890272,
+                "h": 0.027592
+              },
+              {
+                "text": "qanat construction method was usually faster than the counter-excavation method as it was more",
+                "x": 0.036384,
+                "y": 0.390805,
+                "w": 0.887813,
+                "h": 0.021775
+              },
+              {
+                "text": "straightforward. This was because the mountain could be excavated not only from the tunnel",
+                "x": 0.034054,
+                "y": 0.411186,
+                "w": 0.850446,
+                "h": 0.026186
+              },
+              {
+                "text": "mouths but also from shafts. The type of rock could also influence construction times. When",
+                "x": 0.034267,
+                "y": 0.433932,
+                "w": 0.850058,
+                "h": 0.02045
+              },
+              {
+                "text": "the rock was hard, the Romans employed a technique called fire quenching which consisted of",
+                "x": 0.033929,
+                "y": 0.450522,
+                "w": 0.868204,
+                "h": 0.030888
+              },
+              {
+                "text": "heating the rock with fire, and then suddenly cooling it with cold water so that it would crack.",
+                "x": 0.033988,
+                "y": 0.47402,
+                "w": 0.859424,
+                "h": 0.026971
+              },
+              {
+                "text": "Progress through hard rock could be very slow, and it was not uncommon for tunnels to take",
+                "x": 0.034267,
+                "y": 0.495172,
+                "w": 0.847851,
+                "h": 0.022302
+              },
+              {
+                "text": "years, if not decades, to be built. Construction marks left on a Roman tunnel in Bologna show that",
+                "x": 0.03188,
+                "y": 0.515006,
+                "w": 0.903438,
+                "h": 0.027818
+              },
+              {
+                "text": "the rate of advance through solid rock was 30 centimeters per day. In contrast, the rate of advance",
+                "x": 0.031826,
+                "y": 0.536081,
+                "w": 0.896885,
+                "h": 0.027434
+              },
+              {
+                "text": "of the Claudius tunnel can be calculated at 1.4 meters per day. Most tunnels had inscriptions",
+                "x": 0.031856,
+                "y": 0.557059,
+                "w": 0.848278,
+                "h": 0.025987
+              },
+              {
+                "text": "showing the names of patrons who ordered construction and sometimes the name of the architect.",
+                "x": 0.034073,
+                "y": 0.578004,
+                "w": 0.896811,
+                "h": 0.025031
+              },
+              {
+                "text": "For example, the 1.4-kilometer Çevlik tunnel in Turkey, built to divert the floodwater threatening",
+                "x": 0.031767,
+                "y": 0.597204,
+                "w": 0.888164,
+                "h": 0.029667
+              },
+              {
+                "text": "the harbor of the ancient city of Seleuceia Pieria, had inscriptions on the entrance, still visible",
+                "x": 0.029609,
+                "y": 0.618868,
+                "w": 0.86377,
+                "h": 0.027804
+              },
+              {
+                "text": "today, that also indicate that the tunnel was started in 69 CE and was completed in 81 CE.",
+                "x": 0.029584,
+                "y": 0.639355,
+                "w": 0.828509,
+                "h": 0.02817
+              },
+              {
+                "text": "83",
+                "x": 0.897573,
+                "y": 0.988168,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 2",
+        "first": 14,
+        "last": 26,
+        "title": "Reading Passage 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-4/page-88.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 2",
+                "x": 0.060763,
+                "y": 0.019176,
+                "w": 0.331192,
+                "h": 0.017061
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 14-26, which are based on Reading",
+                "x": 0.060763,
+                "y": 0.061473,
+                "w": 0.887594,
+                "h": 0.020602
+              },
+              {
+                "text": "Passage 2 below.",
+                "x": 0.060763,
+                "y": 0.081924,
+                "w": 0.181051,
+                "h": 0.020552
+              },
+              {
+                "text": "Changes in reading habits",
+                "x": 0.301429,
+                "y": 0.127975,
+                "w": 0.417301,
+                "h": 0.0289
+              },
+              {
+                "text": "What are the implications of the way we read today?",
+                "x": 0.204279,
+                "y": 0.173733,
+                "w": 0.611601,
+                "h": 0.023941
+              },
+              {
+                "text": "Look around on your next plane trip. The iPad is the new pacifier for babies and toddlers. Younger",
+                "x": 0.058555,
+                "y": 0.218074,
+                "w": 0.900841,
+                "h": 0.020491
+              },
+              {
+                "text": "school-aged children read stories on smartphones; older kids don't read at all, but hunch over",
+                "x": 0.058555,
+                "y": 0.240174,
+                "w": 0.85889,
+                "h": 0.018842
+              },
+              {
+                "text": "video games. Parents and other passengers read on tablets or skim a flotilla of email and news",
+                "x": 0.058555,
+                "y": 0.260574,
+                "w": 0.863306,
+                "h": 0.018892
+              },
+              {
+                "text": "feeds. Unbeknown to most of us, an invisible, game-changing transformation links everyone",
+                "x": 0.058555,
+                "y": 0.280771,
+                "w": 0.850058,
+                "h": 0.018902
+              },
+              {
+                "text": "in this picture: the neuronal circuit that underlies the brain's ability to read is subtly, rapidly",
+                "x": 0.056347,
+                "y": 0.301222,
+                "w": 0.841227,
+                "h": 0.020552
+              },
+              {
+                "text": "changing and this has implications for everyone from the pre-reading toddler to the expert adult.",
+                "x": 0.058555,
+                "y": 0.321672,
+                "w": 0.883178,
+                "h": 0.020501
+              },
+              {
+                "text": "As work in neurosciences indicates, the acquisition of literacy necessitated a new circuit in our",
+                "x": 0.062971,
+                "y": 0.362573,
+                "w": 0.867722,
+                "h": 0.01871
+              },
+              {
+                "text": "species' brain more than 6,000 years ago. That circuit evolved from a very simple mechanism",
+                "x": 0.058555,
+                "y": 0.382973,
+                "w": 0.85889,
+                "h": 0.020501
+              },
+              {
+                "text": "for decoding basic information, like the number of goats in one's herd, to the present, highly",
+                "x": 0.058555,
+                "y": 0.405073,
+                "w": 0.845643,
+                "h": 0.020592
+              },
+              {
+                "text": "elaborated reading brain. My research depicts how the present reading brain enables the",
+                "x": 0.058555,
+                "y": 0.425473,
+                "w": 0.808108,
+                "h": 0.018902
+              },
+              {
+                "text": "development of some of our most important intellectual and affective processes: internalized",
+                "x": 0.058555,
+                "y": 0.44568,
+                "w": 0.850058,
+                "h": 0.020592
+              },
+              {
+                "text": "knowledge, analogical reasoning, and inference; perspective-taking and empathy; critical analysis",
+                "x": 0.058555,
+                "y": 0.466131,
+                "w": 0.896425,
+                "h": 0.020542
+              },
+              {
+                "text": "and the generation of insight. Research surfacing in many parts of the world now cautions that",
+                "x": 0.058555,
+                "y": 0.488321,
+                "w": 0.867722,
+                "h": 0.01875
+              },
+              {
+                "text": "each of these essential 'deep reading' processes may be under threat as we move into digital-",
+                "x": 0.058555,
+                "y": 0.507031,
+                "w": 0.852266,
+                "h": 0.022191
+              },
+              {
+                "text": "based modes of reading.",
+                "x": 0.058555,
+                "y": 0.529172,
+                "w": 0.227418,
+                "h": 0.018761
+              },
+              {
+                "text": "This is not a simple, binary issue of print versus digital reading and technological innovation. As",
+                "x": 0.058555,
+                "y": 0.569971,
+                "w": 0.887594,
+                "h": 0.020602
+              },
+              {
+                "text": "MIT scholar Sherry Turkle has written, we do not err as a society when we innovate but when",
+                "x": 0.058555,
+                "y": 0.591879,
+                "w": 0.861098,
+                "h": 0.018892
+              },
+              {
+                "text": "we ignore what we disrupt or diminish while innovating. In this hinge moment between print and",
+                "x": 0.058555,
+                "y": 0.612329,
+                "w": 0.889801,
+                "h": 0.018842
+              },
+              {
+                "text": "digital cultures, society needs to confront what is diminishing in the expert reading circuit, what",
+                "x": 0.058555,
+                "y": 0.63278,
+                "w": 0.885386,
+                "h": 0.020491
+              },
+              {
+                "text": "our children and older students are not developing, and what we can do about it.",
+                "x": 0.058555,
+                "y": 0.65323,
+                "w": 0.737453,
+                "h": 0.02045
+              },
+              {
+                "text": "We know from research that the reading circuit is not given to human beings through a genetic",
+                "x": 0.060763,
+                "y": 0.69577,
+                "w": 0.865514,
+                "h": 0.018811
+              },
+              {
+                "text": "blueprint like vision or language; it needs an environment to develop. Further, it will adapt to that",
+                "x": 0.058555,
+                "y": 0.71617,
+                "w": 0.898633,
+                "h": 0.018862
+              },
+              {
+                "text": "environment's requirements - from different writing systems to the characteristics of whatever",
+                "x": 0.058555,
+                "y": 0.73657,
+                "w": 0.867722,
+                "h": 0.0204
+              },
+              {
+                "text": "medium is used. If the dominant medium advantages processes that are fast, multi-task oriented",
+                "x": 0.058555,
+                "y": 0.756788,
+                "w": 0.88097,
+                "h": 0.020582
+              },
+              {
+                "text": "and well-suited for large volumes of information, like the current digital medium, so will the",
+                "x": 0.058555,
+                "y": 0.778979,
+                "w": 0.852266,
+                "h": 0.018791
+              },
+              {
+                "text": "reading circuit. As UCLA psychologist Patricia Greenfield writes, the result is that less attention",
+                "x": 0.058555,
+                "y": 0.799429,
+                "w": 0.885386,
+                "h": 0.01874
+              },
+              {
+                "text": "and time will be allocated to slower, time-demanding deep reading processes.",
+                "x": 0.058555,
+                "y": 0.819869,
+                "w": 0.715374,
+                "h": 0.020461
+              },
+              {
+                "text": "Increasing reports from educators and from researchers in psychology and the humanities bear",
+                "x": 0.060763,
+                "y": 0.862369,
+                "w": 0.867722,
+                "h": 0.015381
+              },
+              {
+                "text": "this out. English literature scholar and teacher Mark Edmundson describes how many college",
+                "x": 0.058555,
+                "y": 0.882769,
+                "w": 0.85889,
+                "h": 0.018912
+              },
+              {
+                "text": "students actively avoid the classic literature of the 19th and 20th centuries in favour of something",
+                "x": 0.060763,
+                "y": 0.902987,
+                "w": 0.889802,
+                "h": 0.020582
+              },
+              {
+                "text": "simpler as they no longer have the patience to read longer, denser, more difficult texts. We should",
+                "x": 0.060763,
+                "y": 0.925178,
+                "w": 0.889802,
+                "h": 0.018791
+              },
+              {
+                "text": "86",
+                "x": 0.060763,
+                "y": 0.984768,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-4/page-89.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "be less concerned with students' \"cognitive impatience', however, than by what may underlie",
+                "x": 0.023228,
+                "y": 0.015776,
+                "w": 0.850058,
+                "h": 0.022201
+              },
+              {
+                "text": "it: the potential inability of large numbers of students to read with a level of critical analysis",
+                "x": 0.02087,
+                "y": 0.035301,
+                "w": 0.848124,
+                "h": 0.024834
+              },
+              {
+                "text": "sufficient to comprehend the complexity of thought and argument found in more demanding texts.",
+                "x": 0.025315,
+                "y": 0.056259,
+                "w": 0.898901,
+                "h": 0.023239
+              },
+              {
+                "text": "Multiple studies show that digital screen use may be causing a variety of troubling downstream",
+                "x": 0.023228,
+                "y": 0.097375,
+                "w": 0.872138,
+                "h": 0.0221
+              },
+              {
+                "text": "effects on reading comprehension in older high school and college students. In Stavanger,",
+                "x": 0.023087,
+                "y": 0.118735,
+                "w": 0.823868,
+                "h": 0.024355
+              },
+              {
+                "text": "Norway, psychologist Anne Mangen and her colleagues studied how high school students",
+                "x": 0.023083,
+                "y": 0.139802,
+                "w": 0.821619,
+                "h": 0.023836
+              },
+              {
+                "text": "comprehend the same material in different mediums. Mangen's group asked subjects questions",
+                "x": 0.023228,
+                "y": 0.161975,
+                "w": 0.867722,
+                "h": 0.022201
+              },
+              {
+                "text": "about a short story whose plot had universal student appeal; half of the students read the story",
+                "x": 0.020864,
+                "y": 0.180051,
+                "w": 0.863666,
+                "h": 0.026221
+              },
+              {
+                "text": "on a tablet, the other half in paperback. Results indicated that students who read on print were",
+                "x": 0.02102,
+                "y": 0.204474,
+                "w": 0.863306,
+                "h": 0.020602
+              },
+              {
+                "text": "superior in their comprehension to screen-reading peers, particularly in their ability to sequence",
+                "x": 0.020882,
+                "y": 0.222666,
+                "w": 0.881243,
+                "h": 0.02504
+              },
+              {
+                "text": "detail and reconstruct the plot in chronological order.",
+                "x": 0.02102,
+                "y": 0.245092,
+                "w": 0.492372,
+                "h": 0.020582
+              },
+              {
+                "text": "Ziming Liu from San Jose State University has conducted a series of studies which indicate that",
+                "x": 0.02102,
+                "y": 0.285993,
+                "w": 0.883178,
+                "h": 0.020481
+              },
+              {
+                "text": "the 'new norm' in reading is skimming, involving word-spotting and browsing through the text.",
+                "x": 0.02102,
+                "y": 0.306443,
+                "w": 0.876554,
+                "h": 0.022191
+              },
+              {
+                "text": "Many readers now use a pattern when reading in which they sample the first line and then word-",
+                "x": 0.018643,
+                "y": 0.326301,
+                "w": 0.885689,
+                "h": 0.025268
+              },
+              {
+                "text": "spot through the rest of the text. When the reading brain skims like this, it reduces time allocated",
+                "x": 0.02102,
+                "y": 0.348973,
+                "w": 0.887594,
+                "h": 0.020562
+              },
+              {
+                "text": "to deep reading processes. In other words, we don't have time to grasp complexity, to understand",
+                "x": 0.018684,
+                "y": 0.368464,
+                "w": 0.890055,
+                "h": 0.024238
+              },
+              {
+                "text": "another's feelings, to perceive beauty, and to create thoughts of the reader's own.",
+                "x": 0.02102,
+                "y": 0.389773,
+                "w": 0.739661,
+                "h": 0.0221
+              },
+              {
+                "text": "The possibility that critical analysis, empathy and other deep reading processes could become",
+                "x": 0.02102,
+                "y": 0.432192,
+                "w": 0.861098,
+                "h": 0.020481
+              },
+              {
+                "text": "the unintended \"collateral damage' of our digital culture is not a straightforward binary issue",
+                "x": 0.018812,
+                "y": 0.452642,
+                "w": 0.852266,
+                "h": 0.022191
+              },
+              {
+                "text": "about print versus digital reading. It is about how we all have begun to read on various mediums",
+                "x": 0.02102,
+                "y": 0.473072,
+                "w": 0.883178,
+                "h": 0.01873
+              },
+              {
+                "text": "and how that changes not only what we read, but also the purposes for which we read. Nor is it",
+                "x": 0.018706,
+                "y": 0.493264,
+                "w": 0.870146,
+                "h": 0.023634
+              },
+              {
+                "text": "only about the young. The subtle atrophy of critical analysis and empathy affects us all equally. It",
+                "x": 0.018665,
+                "y": 0.513674,
+                "w": 0.892294,
+                "h": 0.025128
+              },
+              {
+                "text": "affects our ability to navigate a constant bombardment of information. It incentivizes a retreat to",
+                "x": 0.018812,
+                "y": 0.535972,
+                "w": 0.883178,
+                "h": 0.0187
+              },
+              {
+                "text": "the most familiar stores of unchecked information, which require and receive no analysis, leaving",
+                "x": 0.018721,
+                "y": 0.555707,
+                "w": 0.896601,
+                "h": 0.0245
+              },
+              {
+                "text": "us susceptible to false information and irrational ideas.",
+                "x": 0.018812,
+                "y": 0.57665,
+                "w": 0.507827,
+                "h": 0.020521
+              },
+              {
+                "text": "There's an old rule in neuroscience that does not alter with age: use it or lose it. It is a very",
+                "x": 0.020801,
+                "y": 0.614485,
+                "w": 0.828478,
+                "h": 0.026132
+              },
+              {
+                "text": "hopeful principle when applied to critical thought in the reading brain because it implies choice.",
+                "x": 0.018668,
+                "y": 0.638057,
+                "w": 0.883461,
+                "h": 0.024239
+              },
+              {
+                "text": "The story of the changing reading brain is hardly finished. We possess both the science and the",
+                "x": 0.018812,
+                "y": 0.660071,
+                "w": 0.86993,
+                "h": 0.022312
+              },
+              {
+                "text": "technology to identify and redress the changes in how we read before they become entrenched. If",
+                "x": 0.016492,
+                "y": 0.680322,
+                "w": 0.896628,
+                "h": 0.023765
+              },
+              {
+                "text": "we work to understand exactly what we will lose, alongside the extraordinary new capacities that",
+                "x": 0.016604,
+                "y": 0.702398,
+                "w": 0.892009,
+                "h": 0.020572
+              },
+              {
+                "text": "the digital world has brought us, there is as much reason for excitement as caution.",
+                "x": 0.02102,
+                "y": 0.722849,
+                "w": 0.759533,
+                "h": 0.018821
+              },
+              {
+                "text": "87",
+                "x": 0.886534,
+                "y": 0.983068,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Passage 3",
+        "first": 27,
+        "last": 40,
+        "title": "Reading Passage 3",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-4/page-93.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Attitudes towards Artificial Intelligence",
+                "x": 0.202071,
+                "y": 0.017476,
+                "w": 0.523283,
+                "h": 0.023982
+              },
+              {
+                "text": "A Artificial intelligence (AI) can already predict the future. Police forces are using it",
+                "x": 0.014396,
+                "y": 0.061473,
+                "w": 0.874346,
+                "h": 0.022302
+              },
+              {
+                "text": "to map when and where crime is likely to occur. Doctors can use it to predict when a",
+                "x": 0.060763,
+                "y": 0.085404,
+                "w": 0.847851,
+                "h": 0.020471
+              },
+              {
+                "text": "patient is most likely to have a heart attack or stroke. Researchers are even trying to",
+                "x": 0.062971,
+                "y": 0.107575,
+                "w": 0.836811,
+                "h": 0.020471
+              },
+              {
+                "text": "give AI imagination so it can plan for unexpected consequences.",
+                "x": 0.065179,
+                "y": 0.129675,
+                "w": 0.646928,
+                "h": 0.022302
+              },
+              {
+                "text": "Many decisions in our lives require a good forecast, and AI is almost always better",
+                "x": 0.065179,
+                "y": 0.171992,
+                "w": 0.825771,
+                "h": 0.022282
+              },
+              {
+                "text": "at forecasting than we are. Yet for all these technological advances, we still seem to",
+                "x": 0.062971,
+                "y": 0.194183,
+                "w": 0.832395,
+                "h": 0.022191
+              },
+              {
+                "text": "deeply lack confidence in AI predictions. Recent cases show that people don't like",
+                "x": 0.062971,
+                "y": 0.218074,
+                "w": 0.823563,
+                "h": 0.022231
+              },
+              {
+                "text": "relying on AI and prefer to trust human experts, even if these experts are wrong.",
+                "x": 0.062971,
+                "y": 0.241874,
+                "w": 0.8059,
+                "h": 0.0204
+              },
+              {
+                "text": "If we want Al to really benefit people, we need to find a way to get people to trust",
+                "x": 0.062971,
+                "y": 0.284252,
+                "w": 0.819147,
+                "h": 0.020521
+              },
+              {
+                "text": "it. To do that, we need to understand why people are so reluctant to trust AI in the",
+                "x": 0.062884,
+                "y": 0.304561,
+                "w": 0.817141,
+                "h": 0.027365
+              },
+              {
+                "text": "first place.",
+                "x": 0.065099,
+                "y": 0.330022,
+                "w": 0.108348,
+                "h": 0.020903
+              },
+              {
+                "text": "B Take the case of Watson for Oncology, one of technology giant IBM's",
+                "x": 0.016604,
+                "y": 0.362573,
+                "w": 0.746285,
+                "h": 0.02045
+              },
+              {
+                "text": "supercomputer programs. Their attempt to promote this program to cancer doctors",
+                "x": 0.065084,
+                "y": 0.384419,
+                "w": 0.823755,
+                "h": 0.023046
+              },
+              {
+                "text": "was a PR disaster. The AI promised to deliver top-quality recommendations on",
+                "x": 0.065081,
+                "y": 0.405829,
+                "w": 0.788431,
+                "h": 0.024097
+              },
+              {
+                "text": "the treatment of 12 cancers that accounted for 80% of the world's cases. But when",
+                "x": 0.065179,
+                "y": 0.428711,
+                "w": 0.821355,
+                "h": 0.018862
+              },
+              {
+                "text": "doctors first interacted with Watson, they found themselves in a rather difficult",
+                "x": 0.065179,
+                "y": 0.450902,
+                "w": 0.786028,
+                "h": 0.022191
+              },
+              {
+                "text": "situation. On the one hand, if Watson provided guidance about a treatment that",
+                "x": 0.065179,
+                "y": 0.474772,
+                "w": 0.788236,
+                "h": 0.020511
+              },
+              {
+                "text": "coincided with their own opinions, physicians did not see much point in Watson's",
+                "x": 0.065081,
+                "y": 0.49465,
+                "w": 0.81494,
+                "h": 0.025305
+              },
+              {
+                "text": "recommendations. The supercomputer was simply telling them what they already",
+                "x": 0.065179,
+                "y": 0.51878,
+                "w": 0.814731,
+                "h": 0.022292
+              },
+              {
+                "text": "knew, and these recommendations did not change the actual treatment.",
+                "x": 0.065179,
+                "y": 0.542711,
+                "w": 0.710958,
+                "h": 0.022191
+              },
+              {
+                "text": "On the other hand, if Watson generated a recommendation that contradicted the",
+                "x": 0.065179,
+                "y": 0.574909,
+                "w": 0.79486,
+                "h": 0.022262
+              },
+              {
+                "text": "experts' opinion, doctors would typically conclude that Watson wasn't competent.",
+                "x": 0.065178,
+                "y": 0.5971,
+                "w": 0.821355,
+                "h": 0.023931
+              },
+              {
+                "text": "And the machine wouldn't be able to explain why its treatment was plausible",
+                "x": 0.067386,
+                "y": 0.619271,
+                "w": 0.770572,
+                "h": 0.022211
+              },
+              {
+                "text": "because its machine-learning algorithms were simply too complex to be fully",
+                "x": 0.065178,
+                "y": 0.643071,
+                "w": 0.774988,
+                "h": 0.020602
+              },
+              {
+                "text": "understood by humans. Consequently, this has caused even more suspicion",
+                "x": 0.06512,
+                "y": 0.665036,
+                "w": 0.750826,
+                "h": 0.022593
+              },
+              {
+                "text": "and disbelief, leading many doctors to ignore the seemingly outlandish AI",
+                "x": 0.065178,
+                "y": 0.687169,
+                "w": 0.744077,
+                "h": 0.022201
+              },
+              {
+                "text": "recommendations and stick to their own expertise.",
+                "x": 0.065179,
+                "y": 0.70936,
+                "w": 0.510035,
+                "h": 0.02045
+              },
+              {
+                "text": "C This is just one example of people's lack of confidence in AI and their reluctance to",
+                "x": 0.018691,
+                "y": 0.740959,
+                "w": 0.883426,
+                "h": 0.026076
+              },
+              {
+                "text": "accept what Al has to offer. Trust in other people is often based on our understanding",
+                "x": 0.067304,
+                "y": 0.765338,
+                "w": 0.850221,
+                "h": 0.023522
+              },
+              {
+                "text": "of how others think and having experience of their reliability. This helps create",
+                "x": 0.067386,
+                "y": 0.78927,
+                "w": 0.788236,
+                "h": 0.020602
+              },
+              {
+                "text": "a psychological feeling of safety. AI, on the other hand, is still fairly new and",
+                "x": 0.067386,
+                "y": 0.811177,
+                "w": 0.770572,
+                "h": 0.022292
+              },
+              {
+                "text": "unfamiliar to most people. Even if it can be technically explained (and that's not",
+                "x": 0.067209,
+                "y": 0.829274,
+                "w": 0.806257,
+                "h": 0.029004
+              },
+              {
+                "text": "always the case), Al's decision-making process is usually too difficult for most",
+                "x": 0.067386,
+                "y": 0.855559,
+                "w": 0.786028,
+                "h": 0.023931
+              },
+              {
+                "text": "people to comprehend. And interacting with something we don't understand can",
+                "x": 0.069594,
+                "y": 0.879369,
+                "w": 0.801484,
+                "h": 0.0238
+              },
+              {
+                "text": "cause anxiety and give us a sense that we're losing control.",
+                "x": 0.069594,
+                "y": 0.902987,
+                "w": 0.589521,
+                "h": 0.022282
+              },
+              {
+                "text": "91",
+                "x": 0.89095,
+                "y": 0.983068,
+                "w": 0.026495,
+                "h": 0.0153
+              }
+            ]
+          },
+          {
+            "url": "/ielts/mock/c16-test-4/page-94.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Many people are also simply not familiar with many instances of AI actually",
+                "x": 0.126841,
+                "y": 0.013731,
+                "w": 0.766449,
+                "h": 0.024213
+              },
+              {
+                "text": "working, because it often happens in the background. Instead, they are acutely",
+                "x": 0.124645,
+                "y": 0.035795,
+                "w": 0.784134,
+                "h": 0.026179
+              },
+              {
+                "text": "aware of instances where AI goes wrong. Embarrassing Al failures receive a",
+                "x": 0.124793,
+                "y": 0.059976,
+                "w": 0.766157,
+                "h": 0.0238
+              },
+              {
+                "text": "disproportionate amount of media attention, emphasising the message that we",
+                "x": 0.124793,
+                "y": 0.081924,
+                "w": 0.781612,
+                "h": 0.022252
+              },
+              {
+                "text": "cannot rely on technology. Machine learning is not foolproof, in part because the",
+                "x": 0.124793,
+                "y": 0.104114,
+                "w": 0.810316,
+                "h": 0.023931
+              },
+              {
+                "text": "humans who design it aren't.",
+                "x": 0.124793,
+                "y": 0.126275,
+                "w": 0.291449,
+                "h": 0.020481
+              },
+              {
+                "text": "D",
+                "x": 0.076218,
+                "y": 0.158575,
+                "w": 0.030911,
+                "h": 0.017
+              },
+              {
+                "text": "Feelings about Al run deep. In a recent experiment, people from a range of",
+                "x": 0.104771,
+                "y": 0.159404,
+                "w": 0.773056,
+                "h": 0.024966
+              },
+              {
+                "text": "backgrounds were given various sci-fi films about AI to watch and then asked",
+                "x": 0.124793,
+                "y": 0.182375,
+                "w": 0.774988,
+                "h": 0.020511
+              },
+              {
+                "text": "questions about automation in everyday life. It was found that, regardless of whether",
+                "x": 0.124621,
+                "y": 0.204064,
+                "w": 0.848174,
+                "h": 0.026422
+              },
+              {
+                "text": "the film they watched depicted AI in a positive or negative light, simply watching",
+                "x": 0.124793,
+                "y": 0.228122,
+                "w": 0.812523,
+                "h": 0.022252
+              },
+              {
+                "text": "a cinematic vision of our technological future polarised the participants' attitudes.",
+                "x": 0.122585,
+                "y": 0.250313,
+                "w": 0.821355,
+                "h": 0.022191
+              },
+              {
+                "text": "Optimists became more extreme in their enthusiasm for AI and sceptics became",
+                "x": 0.12457,
+                "y": 0.269829,
+                "w": 0.799722,
+                "h": 0.027464
+              },
+              {
+                "text": "even more guarded.",
+                "x": 0.12215,
+                "y": 0.293673,
+                "w": 0.201672,
+                "h": 0.023976
+              },
+              {
+                "text": "This suggests people use relevant evidence about AI in a biased manner to support",
+                "x": 0.122442,
+                "y": 0.336882,
+                "w": 0.826056,
+                "h": 0.024419
+              },
+              {
+                "text": "their existing attitudes, a deep-rooted human tendency known as \"confirmation",
+                "x": 0.120215,
+                "y": 0.358499,
+                "w": 0.792982,
+                "h": 0.026255
+              },
+              {
+                "text": "bias\"",
+                "x": 0.122585,
+                "y": 0.381273,
+                "w": 0.055199,
+                "h": 0.017
+              },
+              {
+                "text": ". As Al is represented more and more in media and entertainment, it could lead",
+                "x": 0.168952,
+                "y": 0.382973,
+                "w": 0.79486,
+                "h": 0.022241
+              },
+              {
+                "text": "to a society split between those who benefit from AI and those who reject it. More",
+                "x": 0.120216,
+                "y": 0.404012,
+                "w": 0.823888,
+                "h": 0.02394
+              },
+              {
+                "text": "pertinently, refusing to accept the advantages offered by AI could place a large group",
+                "x": 0.122396,
+                "y": 0.425167,
+                "w": 0.848269,
+                "h": 0.028134
+              },
+              {
+                "text": "of people at a serious disadvantage.",
+                "x": 0.120377,
+                "y": 0.449161,
+                "w": 0.362103,
+                "h": 0.022211
+              },
+              {
+                "text": "E Fortunately, we already have some ideas about how to improve trust in AI. Simply",
+                "x": 0.071603,
+                "y": 0.490412,
+                "w": 0.870305,
+                "h": 0.026973
+              },
+              {
+                "text": "having previous experience with AI can significantly improve people's opinions",
+                "x": 0.120124,
+                "y": 0.51168,
+                "w": 0.797526,
+                "h": 0.028693
+              },
+              {
+                "text": "about the technology, as was found in the study mentioned above. Evidence also",
+                "x": 0.120377,
+                "y": 0.53749,
+                "w": 0.803692,
+                "h": 0.022282
+              },
+              {
+                "text": "suggests the more you use other technologies such as the internet, the more you",
+                "x": 0.120377,
+                "y": 0.561421,
+                "w": 0.797068,
+                "h": 0.022191
+              },
+              {
+                "text": "trust them.",
+                "x": 0.117808,
+                "y": 0.580974,
+                "w": 0.113641,
+                "h": 0.018574
+              },
+              {
+                "text": "Another solution may be to reveal more about the algorithms which AI uses and",
+                "x": 0.120162,
+                "y": 0.623389,
+                "w": 0.799675,
+                "h": 0.026685
+              },
+              {
+                "text": "the purposes they serve. Several high-profile social media companies and online",
+                "x": 0.117931,
+                "y": 0.645613,
+                "w": 0.806349,
+                "h": 0.027652
+              },
+              {
+                "text": "marketplaces already release transparency reports about government requests and",
+                "x": 0.118169,
+                "y": 0.6702,
+                "w": 0.816939,
+                "h": 0.023931
+              },
+              {
+                "text": "surveillance disclosures. A similar practice for AI could help people have a better",
+                "x": 0.117805,
+                "y": 0.684541,
+                "w": 0.817716,
+                "h": 0.037723
+              },
+              {
+                "text": "understanding of the way algorithmic decisions are made.",
+                "x": 0.11804,
+                "y": 0.714262,
+                "w": 0.58099,
+                "h": 0.022967
+              },
+              {
+                "text": "F Research suggests that allowing people some control over AI decision-making could",
+                "x": 0.067246,
+                "y": 0.756642,
+                "w": 0.896706,
+                "h": 0.026202
+              },
+              {
+                "text": "also improve trust and enable AI to learn from human experience. For example,",
+                "x": 0.115762,
+                "y": 0.778288,
+                "w": 0.799758,
+                "h": 0.028077
+              },
+              {
+                "text": "one study showed that when people were allowed the freedom to slightly modify an",
+                "x": 0.11797,
+                "y": 0.800659,
+                "w": 0.834994,
+                "h": 0.026978
+              },
+              {
+                "text": "algorithm, they felt more satisfied with its decisions, more likely to believe it was",
+                "x": 0.115808,
+                "y": 0.823964,
+                "w": 0.817256,
+                "h": 0.026537
+              },
+              {
+                "text": "superior and more likely to use it in the future.",
+                "x": 0.115961,
+                "y": 0.848597,
+                "w": 0.470292,
+                "h": 0.020572
+              },
+              {
+                "text": "We don't need to understand the intricate inner workings of AI systems, but if",
+                "x": 0.117988,
+                "y": 0.890499,
+                "w": 0.779725,
+                "h": 0.02496
+              },
+              {
+                "text": "people are given a degree of responsibility for how they are implemented, they will",
+                "x": 0.115795,
+                "y": 0.912425,
+                "w": 0.832747,
+                "h": 0.02745
+              },
+              {
+                "text": "be more willing to accept AI into their lives.",
+                "x": 0.115809,
+                "y": 0.935407,
+                "w": 0.446315,
+                "h": 0.02313
+              },
+              {
+                "text": "92",
+                "x": 0.065179,
+                "y": 0.977968,
+                "w": 0.030911,
+                "h": 0.0187
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "writing": [
+      {
+        "label": "Task 1",
+        "first": 1,
+        "last": 1,
+        "title": "Writing Task 1",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-4/page-97.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING",
+                "x": 0.405072,
+                "y": 0.015321,
+                "w": 0.13936,
+                "h": 0.024709
+              },
+              {
+                "text": "WRITING TASK 1",
+                "x": 0.027643,
+                "y": 0.083664,
+                "w": 0.258329,
+                "h": 0.020511
+              },
+              {
+                "text": "You should spend about 20 minutes on this task.",
+                "x": 0.025436,
+                "y": 0.127975,
+                "w": 0.492372,
+                "h": 0.018781
+              },
+              {
+                "text": "The diagram below shows the process for recycling plastic bottles.",
+                "x": 0.054062,
+                "y": 0.180456,
+                "w": 0.73316,
+                "h": 0.022572
+              },
+              {
+                "text": "Summarise the information by selecting and reporting the main features, and",
+                "x": 0.051931,
+                "y": 0.223174,
+                "w": 0.843435,
+                "h": 0.020612
+              },
+              {
+                "text": "make comparisons where relevant.",
+                "x": 0.054139,
+                "y": 0.241874,
+                "w": 0.384182,
+                "h": 0.0221
+              },
+              {
+                "text": "Write at least 150 words.",
+                "x": 0.027643,
+                "y": 0.299481,
+                "w": 0.256122,
+                "h": 0.018892
+              },
+              {
+                "text": "How plastic bottles are recycled",
+                "x": 0.343379,
+                "y": 0.347273,
+                "w": 0.273785,
+                "h": 0.0136
+              },
+              {
+                "text": "3 Recycling centre: Sorting",
+                "x": 0.614957,
+                "y": 0.396512,
+                "w": 0.196507,
+                "h": 0.015361
+              },
+              {
+                "text": "9",
+                "x": 0.153496,
+                "y": 0.580171,
+                "w": 0.024287,
+                "h": 0.0136
+              },
+              {
+                "text": "Producing end products",
+                "x": 0.179992,
+                "y": 0.580131,
+                "w": 0.167804,
+                "h": 0.01194
+              },
+              {
+                "text": "Compressing",
+                "x": 0.681151,
+                "y": 0.578269,
+                "w": 0.090615,
+                "h": 0.012305
+              },
+              {
+                "text": "into blocks",
+                "x": 0.687819,
+                "y": 0.590371,
+                "w": 0.079486,
+                "h": 0.01021
+              },
+              {
+                "text": "DDD",
+                "x": 0.268309,
+                "y": 0.683871,
+                "w": 0.046367,
+                "h": 0.0085
+              },
+              {
+                "text": "Raw material",
+                "x": 0.199863,
+                "y": 0.738078,
+                "w": 0.090526,
+                "h": 0.010443
+              },
+              {
+                "text": "Crushing",
+                "x": 0.70769,
+                "y": 0.73657,
+                "w": 0.06403,
+                "h": 0.0102
+              },
+              {
+                "text": "6",
+                "x": 0.444945,
+                "y": 0.77907,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "Producing",
+                "x": 0.475856,
+                "y": 0.77907,
+                "w": 0.070654,
+                "h": 0.0119
+              },
+              {
+                "text": "plastic pellets",
+                "x": 0.464816,
+                "y": 0.79097,
+                "w": 0.094942,
+                "h": 0.01194
+              },
+              {
+                "text": "Heating pellets to",
+                "x": 0.232982,
+                "y": 0.867307,
+                "w": 0.119229,
+                "h": 0.012183
+              },
+              {
+                "text": "form raw material",
+                "x": 0.232982,
+                "y": 0.881069,
+                "w": 0.119229,
+                "h": 0.0102
+              },
+              {
+                "text": "Washing",
+                "x": 0.617137,
+                "y": 0.863991,
+                "w": 0.057461,
+                "h": 0.012056
+              },
+              {
+                "text": "33333",
+                "x": 0.259478,
+                "y": 0.945668,
+                "w": 0.06403,
+                "h": 0.0221
+              },
+              {
+                "text": "р. 137",
+                "x": 0.802632,
+                "y": 0.983048,
+                "w": 0.068446,
+                "h": 0.01872
+              },
+              {
+                "text": "95",
+                "x": 0.904197,
+                "y": 0.983068,
+                "w": 0.030911,
+                "h": 0.017
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Task 2",
+        "first": 2,
+        "last": 2,
+        "title": "Writing Task 2",
+        "instructions": "",
+        "paragraphs": [],
+        "questionImages": [],
+        "audioUrl": "",
+        "scans": [
+          {
+            "url": "/ielts/mock/c16-test-4/page-98.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "WRITING TASK 2",
+                "x": 0.065179,
+                "y": 0.015776,
+                "w": 0.260537,
+                "h": 0.01872
+              },
+              {
+                "text": "You should spend about 40 minutes on this task.",
+                "x": 0.067238,
+                "y": 0.057741,
+                "w": 0.494879,
+                "h": 0.020999
+              },
+              {
+                "text": "Write about the following topic:",
+                "x": 0.06463,
+                "y": 0.095958,
+                "w": 0.316827,
+                "h": 0.025105
+              },
+              {
+                "text": "In the future all cars, buses and trucks will be driverless. The only people",
+                "x": 0.087258,
+                "y": 0.153283,
+                "w": 0.803692,
+                "h": 0.023992
+              },
+              {
+                "text": "travelling inside these vehicles will be passengers.",
+                "x": 0.089307,
+                "y": 0.173665,
+                "w": 0.558913,
+                "h": 0.024272
+              },
+              {
+                "text": "Do you think the advantages of driverless vehicles outweigh the",
+                "x": 0.087258,
+                "y": 0.214634,
+                "w": 0.704334,
+                "h": 0.023931
+              },
+              {
+                "text": "disadvantages?",
+                "x": 0.089466,
+                "y": 0.233374,
+                "w": 0.178843,
+                "h": 0.0221
+              },
+              {
+                "text": "Give reasons for your answer and include any relevant examples from your own",
+                "x": 0.064974,
+                "y": 0.289381,
+                "w": 0.812923,
+                "h": 0.026411
+              },
+              {
+                "text": "knowledge or experience.",
+                "x": 0.062971,
+                "y": 0.311574,
+                "w": 0.267161,
+                "h": 0.018801
+              },
+              {
+                "text": "Write at least 250 words.",
+                "x": 0.062741,
+                "y": 0.352161,
+                "w": 0.256644,
+                "h": 0.019053
+              },
+              {
+                "text": "96",
+                "x": 0.056347,
+                "y": 0.981368,
+                "w": 0.035327,
+                "h": 0.0153
+              },
+              {
+                "text": "→ p. 138",
+                "x": 0.113689,
+                "y": 0.97772,
+                "w": 0.154684,
+                "h": 0.024296
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "listening": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-78.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Test 4",
+                "x": 0.047515,
+                "y": 0.015776,
+                "w": 0.136893,
+                "h": 0.034
+              },
+              {
+                "text": "LISTENING",
+                "x": 0.411689,
+                "y": 0.088278,
+                "w": 0.172493,
+                "h": 0.024994
+              },
+              {
+                "text": "PART 1",
+                "x": 0.047515,
+                "y": 0.160244,
+                "w": 0.110397,
+                "h": 0.01873
+              },
+              {
+                "text": "Questions 1-10",
+                "x": 0.221943,
+                "y": 0.161975,
+                "w": 0.203131,
+                "h": 0.01872
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.049723,
+                "y": 0.204474,
+                "w": 0.293657,
+                "h": 0.018862
+              },
+              {
+                "text": "Write ONE WORD ANDIOR A NUMBER for each answer.",
+                "x": 0.049723,
+                "y": 0.241874,
+                "w": 0.589521,
+                "h": 0.0221
+              },
+              {
+                "text": "Holiday rental",
+                "x": 0.384783,
+                "y": 0.310558,
+                "w": 0.228274,
+                "h": 0.032627
+              },
+              {
+                "text": "Owners' names: Jack Fitzgerald and Shirley Fitzgerald",
+                "x": 0.078426,
+                "y": 0.369373,
+                "w": 0.565234,
+                "h": 0.020612
+              },
+              {
+                "text": "Granary Cottage",
+                "x": 0.076218,
+                "y": 0.411741,
+                "w": 0.183259,
+                "h": 0.018831
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.439072,
+                "w": 0.024287,
+                "h": 0.0204
+              },
+              {
+                "text": "available for week beginning 1",
+                "x": 0.124793,
+                "y": 0.440772,
+                "w": 0.31132,
+                "h": 0.020572
+              },
+              {
+                "text": "cost for the week: 2 €",
+                "x": 0.124793,
+                "y": 0.471352,
+                "w": 0.223002,
+                "h": 0.01702
+              },
+              {
+                "text": "May",
+                "x": 0.683403,
+                "y": 0.440772,
+                "w": 0.050783,
+                "h": 0.0221
+              },
+              {
+                "text": "3",
+                "x": 0.078426,
+                "y": 0.512172,
+                "w": 0.013248,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.542772,
+                "w": 0.022079,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.07401,
+                "y": 0.573371,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.600571,
+                "w": 0.022079,
+                "h": 0.0187
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.661771,
+                "w": 0.022079,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.68897,
+                "w": 0.024287,
+                "h": 0.0204
+              },
+              {
+                "text": "•",
+                "x": 0.07401,
+                "y": 0.72127,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.75187,
+                "w": 0.024287,
+                "h": 0.017
+              },
+              {
+                "text": "Cottage",
+                "x": 0.338314,
+                "y": 0.513405,
+                "w": 0.089396,
+                "h": 0.018444
+              },
+              {
+                "text": "cost for the week: £480",
+                "x": 0.122585,
+                "y": 0.542711,
+                "w": 0.242874,
+                "h": 0.017061
+              },
+              {
+                "text": "building was originally a 4",
+                "x": 0.127001,
+                "y": 0.571671,
+                "w": 0.262745,
+                "h": 0.0204
+              },
+              {
+                "text": "walk through doors from living room into a 5 .....",
+                "x": 0.124793,
+                "y": 0.602271,
+                "w": 0.476916,
+                "h": 0.020501
+              },
+              {
+                "text": "several 6",
+                "x": 0.126977,
+                "y": 0.632783,
+                "w": 0.09499,
+                "h": 0.015476
+              },
+              {
+                "text": "... spaces at the front",
+                "x": 0.447153,
+                "y": 0.63278,
+                "w": 0.214171,
+                "h": 0.018791
+              },
+              {
+                "text": "bathroom has a shower",
+                "x": 0.127001,
+                "y": 0.661771,
+                "w": 0.242874,
+                "h": 0.017131
+              },
+              {
+                "text": "central heating and stove that burns 7",
+                "x": 0.115961,
+                "y": 0.69065,
+                "w": 0.401846,
+                "h": 0.02045
+              },
+              {
+                "text": "views of old 8",
+                "x": 0.120377,
+                "y": 0.721108,
+                "w": 0.147932,
+                "h": 0.017162
+              },
+              {
+                "text": ".from living room",
+                "x": 0.447153,
+                "y": 0.721108,
+                "w": 0.231834,
+                "h": 0.020562
+              },
+              {
+                "text": "view of hilltop 9",
+                "x": 0.113753,
+                "y": 0.75187,
+                "w": 0.17222,
+                "h": 0.018842
+              },
+              {
+                "text": "..from the bedroom",
+                "x": 0.517807,
+                "y": 0.75187,
+                "w": 0.196507,
+                "h": 0.018842
+              },
+              {
+                "text": "Payment",
+                "x": 0.076101,
+                "y": 0.792296,
+                "w": 0.099592,
+                "h": 0.019448
+              },
+              {
+                "text": "• deposit: £144",
+                "x": 0.071802,
+                "y": 0.823269,
+                "w": 0.194299,
+                "h": 0.017061
+              },
+              {
+                "text": "•",
+                "x": 0.071802,
+                "y": 0.852169,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "deadline for final payment: end of 10",
+                "x": 0.124793,
+                "y": 0.852078,
+                "w": 0.373143,
+                "h": 0.018791
+              },
+              {
+                "text": "76",
+                "x": 0.043099,
+                "y": 0.979668,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "→ • p. 127",
+                "x": 0.115827,
+                "y": 0.980822,
+                "w": 0.137162,
+                "h": 0.021492
+              },
+              {
+                "text": "• p. 115",
+                "x": 0.272693,
+                "y": 0.981276,
+                "w": 0.097215,
+                "h": 0.020585
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–10"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{7}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{8}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{9}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{10}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-79.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 2",
+                "x": 0.042994,
+                "y": 0.015405,
+                "w": 0.110607,
+                "h": 0.019443
+              },
+              {
+                "text": "Questions 11-20",
+                "x": 0.217527,
+                "y": 0.017476,
+                "w": 0.214171,
+                "h": 0.018761
+              },
+              {
+                "text": "Questions 11-14",
+                "x": 0.043099,
+                "y": 0.058276,
+                "w": 0.187675,
+                "h": 0.017121
+              },
+              {
+                "text": "Choose the correct letter, A,Bor C.",
+                "x": 0.043099,
+                "y": 0.100634,
+                "w": 0.366519,
+                "h": 0.020542
+              },
+              {
+                "text": "Local council report on traffic and highways",
+                "x": 0.161759,
+                "y": 0.138692,
+                "w": 0.65916,
+                "h": 0.041509
+              },
+              {
+                "text": "11 A survey found people's main concern about traffic in the area was",
+                "x": 0.040891,
+                "y": 0.182375,
+                "w": 0.726414,
+                "h": 0.020511
+              },
+              {
+                "text": "A cuts to public transport.",
+                "x": 0.091229,
+                "y": 0.213669,
+                "w": 0.287927,
+                "h": 0.022273
+              },
+              {
+                "text": "B poor maintenance of roads.",
+                "x": 0.093705,
+                "y": 0.235005,
+                "w": 0.32713,
+                "h": 0.01881
+              },
+              {
+                "text": "Cchanges in the type of traffic.",
+                "x": 0.089466,
+                "y": 0.257174,
+                "w": 0.346647,
+                "h": 0.018811
+              },
+              {
+                "text": "12 Which change will shortly be made to the cycle path next to the river?",
+                "x": 0.038469,
+                "y": 0.287316,
+                "w": 0.755491,
+                "h": 0.026076
+              },
+              {
+                "text": "A It will be widened.",
+                "x": 0.089112,
+                "y": 0.319089,
+                "w": 0.234815,
+                "h": 0.019889
+              },
+              {
+                "text": "B It will be extended.",
+                "x": 0.091388,
+                "y": 0.340288,
+                "w": 0.239072,
+                "h": 0.017308
+              },
+              {
+                "text": "C It will be resurfaced.",
+                "x": 0.089466,
+                "y": 0.362573,
+                "w": 0.256122,
+                "h": 0.01871
+              },
+              {
+                "text": "13 Plans for a pedestrian crossing have been postponed because",
+                "x": 0.038683,
+                "y": 0.393031,
+                "w": 0.684463,
+                "h": 0.022241
+              },
+              {
+                "text": "A the Post Office has moved.",
+                "x": 0.086964,
+                "y": 0.424472,
+                "w": 0.32967,
+                "h": 0.021552
+              },
+              {
+                "text": "B the proposed location is unsafe.",
+                "x": 0.089326,
+                "y": 0.447488,
+                "w": 0.375649,
+                "h": 0.018896
+              },
+              {
+                "text": "C funding is not available at present.",
+                "x": 0.087258,
+                "y": 0.467871,
+                "w": 0.401846,
+                "h": 0.020501
+              },
+              {
+                "text": "14 On Station Road, notices have been erected",
+                "x": 0.036475,
+                "y": 0.50007,
+                "w": 0.503411,
+                "h": 0.020602
+              },
+              {
+                "text": "A telling cyclists not to leave their bikes outside the station ticket office.",
+                "x": 0.084815,
+                "y": 0.530723,
+                "w": 0.75121,
+                "h": 0.026856
+              },
+              {
+                "text": "B asking motorists to switch off engines when waiting at the level crossing.",
+                "x": 0.087046,
+                "y": 0.552019,
+                "w": 0.784277,
+                "h": 0.024923
+              },
+              {
+                "text": "warning pedestrians to leave enough time when crossing the railway line.",
+                "x": 0.124587,
+                "y": 0.572865,
+                "w": 0.755576,
+                "h": 0.02652
+              },
+              {
+                "text": "77",
+                "x": 0.899781,
+                "y": 0.984768,
+                "w": 0.030911,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-80.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 15-20",
+                "x": 0.060763,
+                "y": 0.019176,
+                "w": 0.192091,
+                "h": 0.017061
+              },
+              {
+                "text": "Label the map below.",
+                "x": 0.058555,
+                "y": 0.061473,
+                "w": 0.220794,
+                "h": 0.017405
+              },
+              {
+                "text": "Write the correct letter, A-l, next to Questions 15-20.",
+                "x": 0.060763,
+                "y": 0.102374,
+                "w": 0.543154,
+                "h": 0.020501
+              },
+              {
+                "text": "Recreation ground after proposed changes",
+                "x": 0.188713,
+                "y": 0.144904,
+                "w": 0.64493,
+                "h": 0.029141
+              },
+              {
+                "text": "River",
+                "x": 0.517807,
+                "y": 0.214674,
+                "w": 0.055199,
+                "h": 0.017
+              },
+              {
+                "text": "A",
+                "x": 0.347795,
+                "y": 0.274174,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.584045,
+                "y": 0.275874,
+                "w": 0.015456,
+                "h": 0.0153
+              },
+              {
+                "text": "W",
+                "x": 0.846791,
+                "y": 0.299674,
+                "w": 0.024287,
+                "h": 0.0153
+              },
+              {
+                "text": "B",
+                "x": 0.277141,
+                "y": 0.326873,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "D",
+                "x": 0.402994,
+                "y": 0.369373,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Field",
+                "x": 0.144665,
+                "y": 0.411873,
+                "w": 0.050783,
+                "h": 0.0187
+              },
+              {
+                "text": "C",
+                "x": 0.277141,
+                "y": 0.490072,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Community",
+                "x": 0.327899,
+                "y": 0.471297,
+                "w": 0.103823,
+                "h": 0.020549
+              },
+              {
+                "text": "Hall",
+                "x": 0.358835,
+                "y": 0.495172,
+                "w": 0.039743,
+                "h": 0.0153
+              },
+              {
+                "text": "G",
+                "x": 0.489104,
+                "y": 0.469672,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "Key",
+                "x": 0.122585,
+                "y": 0.551272,
+                "w": 0.041951,
+                "h": 0.0204
+              },
+              {
+                "text": "H",
+                "x": 0.458193,
+                "y": 0.568271,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Footpath",
+                "x": 0.098298,
+                "y": 0.612471,
+                "w": 0.08611,
+                "h": 0.0187
+              },
+              {
+                "text": "Road",
+                "x": 0.517807,
+                "y": 0.617571,
+                "w": 0.052991,
+                "h": 0.0153
+              },
+              {
+                "text": "15 New car park",
+                "x": 0.058555,
+                "y": 0.69237,
+                "w": 0.187675,
+                "h": 0.01873
+              },
+              {
+                "text": "16 New cricket pitch",
+                "x": 0.058555,
+                "y": 0.724589,
+                "w": 0.22521,
+                "h": 0.018781
+              },
+              {
+                "text": "17 Children's playground",
+                "x": 0.058555,
+                "y": 0.756788,
+                "w": 0.273785,
+                "h": 0.018882
+              },
+              {
+                "text": "18 Skateboard ramp",
+                "x": 0.058555,
+                "y": 0.78927,
+                "w": 0.227418,
+                "h": 0.018862
+              },
+              {
+                "text": "19 Pavilion",
+                "x": 0.058555,
+                "y": 0.819869,
+                "w": 0.132477,
+                "h": 0.017
+              },
+              {
+                "text": "20 Notice board",
+                "x": 0.058555,
+                "y": 0.852078,
+                "w": 0.181051,
+                "h": 0.018791
+              },
+              {
+                "text": ".. . .",
+                "x": 0.433905,
+                "y": 0.73487,
+                "w": 0.083902,
+                "h": 0.0051
+              },
+              {
+                "text": "78",
+                "x": 0.058555,
+                "y": 0.981368,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "→",
+                "x": 0.129209,
+                "y": 0.981368,
+                "w": 0.026495,
+                "h": 0.0204
+              },
+              {
+                "text": "p.127",
+                "x": 0.197655,
+                "y": 0.983068,
+                "w": 0.072862,
+                "h": 0.0187
+              },
+              {
+                "text": "• p. 116",
+                "x": 0.285863,
+                "y": 0.982719,
+                "w": 0.099576,
+                "h": 0.019398
+              },
+              {
+                "text": "N",
+                "x": 0.89095,
+                "y": 0.269074,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "• E",
+                "x": 0.926277,
+                "y": 0.299481,
+                "w": 0.022079,
+                "h": 0.017405
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 11–20"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-81.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 3",
+                "x": 0.027643,
+                "y": 0.020876,
+                "w": 0.110397,
+                "h": 0.017101
+              },
+              {
+                "text": "Questions 21-30",
+                "x": 0.202071,
+                "y": 0.019176,
+                "w": 0.214171,
+                "h": 0.018801
+              },
+              {
+                "text": "Questions 21-22",
+                "x": 0.029851,
+                "y": 0.063214,
+                "w": 0.189883,
+                "h": 0.017162
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.029851,
+                "y": 0.104114,
+                "w": 0.271577,
+                "h": 0.020461
+              },
+              {
+                "text": "Which TWO benefits of city bike-sharing schemes do the students agree are the",
+                "x": 0.027643,
+                "y": 0.143275,
+                "w": 0.812523,
+                "h": 0.02045
+              },
+              {
+                "text": "most important?",
+                "x": 0.027643,
+                "y": 0.167075,
+                "w": 0.165596,
+                "h": 0.018842
+              },
+              {
+                "text": "A reducing noise pollution",
+                "x": 0.078426,
+                "y": 0.204474,
+                "w": 0.291449,
+                "h": 0.020602
+              },
+              {
+                "text": "reducing traffic congestion",
+                "x": 0.124793,
+                "y": 0.226382,
+                "w": 0.271577,
+                "h": 0.018892
+              },
+              {
+                "text": "improving air quality",
+                "x": 0.122585,
+                "y": 0.246832,
+                "w": 0.218586,
+                "h": 0.018842
+              },
+              {
+                "text": "D",
+                "x": 0.078426,
+                "y": 0.269074,
+                "w": 0.017664,
+                "h": 0.0136
+              },
+              {
+                "text": "E",
+                "x": 0.080634,
+                "y": 0.289474,
+                "w": 0.015456,
+                "h": 0.0136
+              },
+              {
+                "text": "encouraging health and fitness",
+                "x": 0.126685,
+                "y": 0.26503,
+                "w": 0.316421,
+                "h": 0.023428
+              },
+              {
+                "text": "making cycling affordable",
+                "x": 0.127001,
+                "y": 0.287733,
+                "w": 0.262745,
+                "h": 0.02045
+              },
+              {
+                "text": "Questions 23-24",
+                "x": 0.032059,
+                "y": 0.371073,
+                "w": 0.189883,
+                "h": 0.017172
+              },
+              {
+                "text": "Choose TWO letters, A-E.",
+                "x": 0.032059,
+                "y": 0.411741,
+                "w": 0.271577,
+                "h": 0.020531
+              },
+              {
+                "text": "Which TWO things do the students think are necessary for successful bike-sharing",
+                "x": 0.029851,
+                "y": 0.450902,
+                "w": 0.836811,
+                "h": 0.020471
+              },
+              {
+                "text": "schemes?",
+                "x": 0.032034,
+                "y": 0.474658,
+                "w": 0.103824,
+                "h": 0.013829
+              },
+              {
+                "text": "A",
+                "x": 0.082842,
+                "y": 0.513872,
+                "w": 0.030911,
+                "h": 0.0136
+              },
+              {
+                "text": "Bikes should have a GPS system.",
+                "x": 0.111545,
+                "y": 0.512172,
+                "w": 0.366519,
+                "h": 0.018791
+              },
+              {
+                "text": "B The app should be easy to use.",
+                "x": 0.082842,
+                "y": 0.534272,
+                "w": 0.370935,
+                "h": 0.018882
+              },
+              {
+                "text": "C Public awareness should be raised.",
+                "x": 0.082842,
+                "y": 0.554459,
+                "w": 0.410678,
+                "h": 0.017405
+              },
+              {
+                "text": "D Only one scheme should be available.",
+                "x": 0.082842,
+                "y": 0.574909,
+                "w": 0.439381,
+                "h": 0.018862
+              },
+              {
+                "text": "E There should be a large network of cycle lanes.",
+                "x": 0.082842,
+                "y": 0.59536,
+                "w": 0.532115,
+                "h": 0.018811
+              },
+              {
+                "text": "79",
+                "x": 0.901989,
+                "y": 0.979668,
+                "w": 0.030911,
+                "h": 0.017
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-82.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 25-30",
+                "x": 0.043099,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "What is the speakers' opinion of the bike-sharing schemes in each of the",
+                "x": 0.042977,
+                "y": 0.057321,
+                "w": 0.735488,
+                "h": 0.024153
+              },
+              {
+                "text": "following cities?",
+                "x": 0.040891,
+                "y": 0.080183,
+                "w": 0.163388,
+                "h": 0.018892
+              },
+              {
+                "text": "Choose SIX answers from the box and write the correct letter, A-G, next to",
+                "x": 0.042987,
+                "y": 0.118773,
+                "w": 0.759788,
+                "h": 0.023627
+              },
+              {
+                "text": "Questions 25-30.",
+                "x": 0.043099,
+                "y": 0.143275,
+                "w": 0.181051,
+                "h": 0.017
+              },
+              {
+                "text": "Opinion of bike-sharing scheme",
+                "x": 0.316884,
+                "y": 0.201074,
+                "w": 0.351063,
+                "h": 0.018781
+              },
+              {
+                "text": "A They agree it has been disappointing.",
+                "x": 0.1822,
+                "y": 0.233344,
+                "w": 0.434965,
+                "h": 0.01873
+              },
+              {
+                "text": "B They think it should be cheaper.",
+                "x": 0.1822,
+                "y": 0.274174,
+                "w": 0.37535,
+                "h": 0.018781
+              },
+              {
+                "text": "They are surprised it has been so successful.",
+                "x": 0.219735,
+                "y": 0.316673,
+                "w": 0.474708,
+                "h": 0.0187
+              },
+              {
+                "text": "D They agree that more investment is required.",
+                "x": 0.1822,
+                "y": 0.357352,
+                "w": 0.510035,
+                "h": 0.018821
+              },
+              {
+                "text": "E They think the system has been well designed.",
+                "x": 0.1822,
+                "y": 0.398253,
+                "w": 0.529907,
+                "h": 0.02045
+              },
+              {
+                "text": "F They disagree about the reasons for its success.",
+                "x": 0.1822,
+                "y": 0.439072,
+                "w": 0.54757,
+                "h": 0.020531
+              },
+              {
+                "text": "GThey think it has expanded too quickly.",
+                "x": 0.1822,
+                "y": 0.48136,
+                "w": 0.446005,
+                "h": 0.018912
+              },
+              {
+                "text": "Cities",
+                "x": 0.09164,
+                "y": 0.546089,
+                "w": 0.064097,
+                "h": 0.015466
+              },
+              {
+                "text": "25 Amsterdam",
+                "x": 0.040891,
+                "y": 0.57665,
+                "w": 0.170012,
+                "h": 0.017121
+              },
+              {
+                "text": "26 Dublin",
+                "x": 0.040733,
+                "y": 0.608403,
+                "w": 0.117338,
+                "h": 0.018336
+              },
+              {
+                "text": "27",
+                "x": 0.040891,
+                "y": 0.641371,
+                "w": 0.050783,
+                "h": 0.017
+              },
+              {
+                "text": "London",
+                "x": 0.089312,
+                "y": 0.642571,
+                "w": 0.082002,
+                "h": 0.0163
+              },
+              {
+                "text": "28",
+                "x": 0.040891,
+                "y": 0.673671,
+                "w": 0.028703,
+                "h": 0.017
+              },
+              {
+                "text": "Buenos Aires",
+                "x": 0.091674,
+                "y": 0.673671,
+                "w": 0.136893,
+                "h": 0.017
+              },
+              {
+                "text": "29New York",
+                "x": 0.040891,
+                "y": 0.705879,
+                "w": 0.15014,
+                "h": 0.017091
+              },
+              {
+                "text": "30 Sydney",
+                "x": 0.040863,
+                "y": 0.736463,
+                "w": 0.130325,
+                "h": 0.020615
+              },
+              {
+                "text": "80",
+                "x": 0.040891,
+                "y": 0.981368,
+                "w": 0.030911,
+                "h": 0.0187
+              },
+              {
+                "text": "p. 127",
+                "x": 0.177784,
+                "y": 0.981307,
+                "w": 0.07507,
+                "h": 0.020461
+              },
+              {
+                "text": "p. 117",
+                "x": 0.294805,
+                "y": 0.979567,
+                "w": 0.079486,
+                "h": 0.023931
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 21–30"
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            21,
+            22
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "pair",
+          "numbers": [
+            23,
+            24
+          ],
+          "prompt": "Choose TWO letters, A–E.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "A"
+            },
+            {
+              "letter": "B",
+              "text": "B"
+            },
+            {
+              "letter": "C",
+              "text": "C"
+            },
+            {
+              "letter": "D",
+              "text": "D"
+            },
+            {
+              "letter": "E",
+              "text": "E"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{25}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{26}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-83.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "PART 4",
+                "x": 0.03863,
+                "y": 0.015602,
+                "w": 0.112711,
+                "h": 0.020748
+              },
+              {
+                "text": "Questions 31-40",
+                "x": 0.210903,
+                "y": 0.019176,
+                "w": 0.216379,
+                "h": 0.018801
+              },
+              {
+                "text": "Complete the notes below.",
+                "x": 0.038683,
+                "y": 0.061473,
+                "w": 0.271577,
+                "h": 0.018902
+              },
+              {
+                "text": "Write ONE WORD ONLY for each answer.",
+                "x": 0.038683,
+                "y": 0.102374,
+                "w": 0.430549,
+                "h": 0.018801
+              },
+              {
+                "text": "THE EXTINCTION OF THE DODO BIRD",
+                "x": 0.208695,
+                "y": 0.168775,
+                "w": 0.554194,
+                "h": 0.0255
+              },
+              {
+                "text": "The dodo was a large flightless bird which used to inhabit the island of Mauritius.",
+                "x": 0.065013,
+                "y": 0.212314,
+                "w": 0.821691,
+                "h": 0.024521
+              },
+              {
+                "text": "History",
+                "x": 0.065179,
+                "y": 0.253774,
+                "w": 0.083902,
+                "h": 0.0221
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.286074,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "1507 - Portuguese ships transporting 31",
+                "x": 0.109337,
+                "y": 0.284252,
+                "w": 0.419509,
+                "h": 0.022221
+              },
+              {
+                "text": "the island to collect food and water.",
+                "x": 0.113482,
+                "y": 0.30523,
+                "w": 0.362664,
+                "h": 0.021747
+              },
+              {
+                "text": "•",
+                "x": 0.062971,
+                "y": 0.338773,
+                "w": 0.017664,
+                "h": 0.0119
+              },
+              {
+                "text": "1638 - The Dutch established a 32...",
+                "x": 0.113546,
+                "y": 0.333378,
+                "w": 0.375882,
+                "h": 0.022829
+              },
+              {
+                "text": "• They killed the dodo birds for their meat.",
+                "x": 0.062971,
+                "y": 0.365973,
+                "w": 0.463668,
+                "h": 0.020531
+              },
+              {
+                "text": "• The last one was killed in 1681.",
+                "x": 0.062971,
+                "y": 0.396512,
+                "w": 0.37535,
+                "h": 0.020461
+              },
+              {
+                "text": "..stopped at",
+                "x": 0.765036,
+                "y": 0.289234,
+                "w": 0.123766,
+                "h": 0.019179
+              },
+              {
+                "text": "on the island.",
+                "x": 0.71873,
+                "y": 0.338642,
+                "w": 0.1391,
+                "h": 0.018831
+              },
+              {
+                "text": "Description",
+                "x": 0.065141,
+                "y": 0.437223,
+                "w": 0.125928,
+                "h": 0.018999
+              },
+              {
+                "text": "• The only record we have is written descriptions and pictures (possibly",
+                "x": 0.06061,
+                "y": 0.464511,
+                "w": 0.75987,
+                "h": 0.025646
+              },
+              {
+                "text": "unreliable).",
+                "x": 0.113711,
+                "y": 0.48822,
+                "w": 0.11269,
+                "h": 0.019005
+              },
+              {
+                "text": "A Dutch painting suggests the dodo was very 33",
+                "x": 0.111545,
+                "y": 0.517272,
+                "w": 0.492372,
+                "h": 0.0221
+              },
+              {
+                "text": "• The only remaining soft tissue is a dried 34",
+                "x": 0.060763,
+                "y": 0.547872,
+                "w": 0.492372,
+                "h": 0.020511
+              },
+              {
+                "text": "Recent studies of a dodo skeleton suggest the birds were capable of rapid",
+                "x": 0.111424,
+                "y": 0.576637,
+                "w": 0.755374,
+                "h": 0.024079
+              },
+              {
+                "text": "35",
+                "x": 0.111545,
+                "y": 0.607371,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "It's thought they were able to use their small wings to maintain",
+                "x": 0.111545,
+                "y": 0.637971,
+                "w": 0.631472,
+                "h": 0.020481
+              },
+              {
+                "text": "36",
+                "x": 0.111545,
+                "y": 0.666871,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.69747,
+                "w": 0.019871,
+                "h": 0.0153
+              },
+              {
+                "text": "Their 37.",
+                "x": 0.111527,
+                "y": 0.697402,
+                "w": 0.097186,
+                "h": 0.015437
+              },
+              {
+                "text": "Their sense of 38",
+                "x": 0.109337,
+                "y": 0.72633,
+                "w": 0.181051,
+                "h": 0.01704
+              },
+              {
+                "text": ".... was of average size.",
+                "x": 0.38533,
+                "y": 0.69917,
+                "w": 0.271577,
+                "h": 0.018892
+              },
+              {
+                "text": "... enabled them to find food.",
+                "x": 0.517807,
+                "y": 0.72633,
+                "w": 0.289241,
+                "h": 0.022191
+              },
+              {
+                "text": "Reasons for extinction",
+                "x": 0.060763,
+                "y": 0.76717,
+                "w": 0.249498,
+                "h": 0.01703
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.79777,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.828369,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "•",
+                "x": 0.058555,
+                "y": 0.858969,
+                "w": 0.017664,
+                "h": 0.0153
+              },
+              {
+                "text": "Hunting was probably not the main cause.",
+                "x": 0.111545,
+                "y": 0.797689,
+                "w": 0.430549,
+                "h": 0.020481
+              },
+              {
+                "text": "Sailors brought dogs and monkeys.",
+                "x": 0.111545,
+                "y": 0.826669,
+                "w": 0.362103,
+                "h": 0.0204
+              },
+              {
+                "text": "39",
+                "x": 0.109337,
+                "y": 0.857269,
+                "w": 0.028703,
+                "h": 0.0153
+              },
+              {
+                "text": "The arrival of farming meant the 40...",
+                "x": 0.111545,
+                "y": 0.887758,
+                "w": 0.377558,
+                "h": 0.020511
+              },
+              {
+                "text": "also escaped onto the island and ate the birds'eggs.",
+                "x": 0.383122,
+                "y": 0.858969,
+                "w": 0.514451,
+                "h": 0.022262
+              },
+              {
+                "text": "... was destroyed.",
+                "x": 0.696651,
+                "y": 0.887758,
+                "w": 0.178843,
+                "h": 0.022211
+              },
+              {
+                "text": "→ 0 p. 127",
+                "x": 0.608304,
+                "y": 0.982956,
+                "w": 0.145782,
+                "h": 0.022323
+              },
+              {
+                "text": "p. 119",
+                "x": 0.793659,
+                "y": 0.98614,
+                "w": 0.073144,
+                "h": 0.019357
+              },
+              {
+                "text": "81",
+                "x": 0.897573,
+                "y": 0.984768,
+                "w": 0.035327,
+                "h": 0.0221
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 31–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{36}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{37}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{38}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{39}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{40}}"
+        }
+      ]
+    ],
+    "reading": [
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-86.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 1-6",
+                "x": 0.056347,
+                "y": 0.020876,
+                "w": 0.16118,
+                "h": 0.018842
+              },
+              {
+                "text": "Label the diagrams below.",
+                "x": 0.054139,
+                "y": 0.063214,
+                "w": 0.267161,
+                "h": 0.018862
+              },
+              {
+                "text": "Choose ONE WORD ONLY from the passage for each answer.",
+                "x": 0.054024,
+                "y": 0.103365,
+                "w": 0.640533,
+                "h": 0.02211
+              },
+              {
+                "text": "Write your answers in boxes 1-6 on your answer sheet.",
+                "x": 0.054139,
+                "y": 0.146675,
+                "w": 0.563026,
+                "h": 0.018791
+              },
+              {
+                "text": "The Persian Qanat Method",
+                "x": 0.268309,
+                "y": 0.188962,
+                "w": 0.399638,
+                "h": 0.022312
+              },
+              {
+                "text": "1..",
+                "x": 0.060763,
+                "y": 0.245274,
+                "w": 0.041951,
+                "h": 0.0187
+              },
+              {
+                "text": "the tunnelling",
+                "x": 0.060302,
+                "y": 0.265517,
+                "w": 0.140019,
+                "h": 0.019079
+              },
+              {
+                "text": "..to direct",
+                "x": 0.31026,
+                "y": 0.245092,
+                "w": 0.099357,
+                "h": 0.017182
+              },
+              {
+                "text": "water runs into a 2",
+                "x": 0.508975,
+                "y": 0.245092,
+                "w": 0.192091,
+                "h": 0.017182
+              },
+              {
+                "text": "used by local people",
+                "x": 0.511183,
+                "y": 0.265542,
+                "w": 0.211963,
+                "h": 0.020531
+              },
+              {
+                "text": "water table",
+                "x": 0.510216,
+                "y": 0.414829,
+                "w": 0.105484,
+                "h": 0.040549
+              },
+              {
+                "text": "vertical shafts to remove earth and for 3",
+                "x": 0.303636,
+                "y": 0.50007,
+                "w": 0.406262,
+                "h": 0.017405
+              },
+              {
+                "text": "Cross-section of a Roman Qanat Shaft",
+                "x": 0.1822,
+                "y": 0.544451,
+                "w": 0.574065,
+                "h": 0.02045
+              },
+              {
+                "text": "4..",
+                "x": 0.453777,
+                "y": 0.590371,
+                "w": 0.035327,
+                "h": 0.0187
+              },
+              {
+                "text": "made of wood or stone",
+                "x": 0.71873,
+                "y": 0.590371,
+                "w": 0.234042,
+                "h": 0.017172
+              },
+              {
+                "text": "rod",
+                "x": 0.517807,
+                "y": 0.70767,
+                "w": 0.030911,
+                "h": 0.0136
+              },
+              {
+                "text": "5",
+                "x": 0.427281,
+                "y": 0.904869,
+                "w": 0.015456,
+                "h": 0.017
+              },
+              {
+                "text": "... attached to the plumb line",
+                "x": 0.672363,
+                "y": 0.904727,
+                "w": 0.282617,
+                "h": 0.018842
+              },
+              {
+                "text": "handholds and footholds used for 6...",
+                "x": 0.054139,
+                "y": 0.945628,
+                "w": 0.390806,
+                "h": 0.01874
+              },
+              {
+                "text": "84",
+                "x": 0.051931,
+                "y": 0.984768,
+                "w": 0.033119,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-87.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 7-10",
+                "x": 0.036475,
+                "y": 0.015776,
+                "w": 0.176636,
+                "h": 0.017
+              },
+              {
+                "text": "Do the following statements agree with the information given in Reading Passage 1?",
+                "x": 0.034267,
+                "y": 0.058276,
+                "w": 0.856682,
+                "h": 0.0221
+              },
+              {
+                "text": "In boxes 7-10 on your answer sheet, write",
+                "x": 0.031764,
+                "y": 0.097519,
+                "w": 0.435528,
+                "h": 0.023214
+              },
+              {
+                "text": "TRUE",
+                "x": 0.111498,
+                "y": 0.139769,
+                "w": 0.064126,
+                "h": 0.017212
+              },
+              {
+                "text": "FALSE",
+                "x": 0.111511,
+                "y": 0.161874,
+                "w": 0.075139,
+                "h": 0.0155
+              },
+              {
+                "text": "if the statement agrees with the information",
+                "x": 0.25727,
+                "y": 0.141534,
+                "w": 0.441589,
+                "h": 0.02045
+              },
+              {
+                "text": "if the statement contradicts the information",
+                "x": 0.257044,
+                "y": 0.158968,
+                "w": 0.435459,
+                "h": 0.023524
+              },
+              {
+                "text": "NOT GIVENif there is no information on this",
+                "x": 0.111545,
+                "y": 0.182375,
+                "w": 0.465876,
+                "h": 0.018771
+              },
+              {
+                "text": "7",
+                "x": 0.034267,
+                "y": 0.235074,
+                "w": 0.013248,
+                "h": 0.0136
+              },
+              {
+                "text": "The counter-excavation method completely replaced the qanat method in the",
+                "x": 0.071547,
+                "y": 0.231806,
+                "w": 0.793153,
+                "h": 0.029218
+              },
+              {
+                "text": "6th century BCE.",
+                "x": 0.082842,
+                "y": 0.255474,
+                "w": 0.176636,
+                "h": 0.020511
+              },
+              {
+                "text": "Only experienced builders were employed to construct a tunnel using the counter-",
+                "x": 0.071607,
+                "y": 0.2876,
+                "w": 0.843806,
+                "h": 0.025694
+              },
+              {
+                "text": "excavation method.",
+                "x": 0.080634,
+                "y": 0.309874,
+                "w": 0.203131,
+                "h": 0.01702
+              },
+              {
+                "text": "The information about a problem that occurred during the construction of the",
+                "x": 0.071608,
+                "y": 0.33983,
+                "w": 0.78421,
+                "h": 0.025058
+              },
+              {
+                "text": "Saldae aqueduct system was found in an ancient book.",
+                "x": 0.082631,
+                "y": 0.361572,
+                "w": 0.56124,
+                "h": 0.022386
+              },
+              {
+                "text": "10 The mistake made by the builders of the Saldae aqueduct system was that the two",
+                "x": 0.029637,
+                "y": 0.393076,
+                "w": 0.890189,
+                "h": 0.02562
+              },
+              {
+                "text": "parts of the tunnel failed to meet.",
+                "x": 0.080634,
+                "y": 0.415222,
+                "w": 0.335608,
+                "h": 0.01875
+              },
+              {
+                "text": "Questions 11-13",
+                "x": 0.029851,
+                "y": 0.486581,
+                "w": 0.189883,
+                "h": 0.018791
+              },
+              {
+                "text": "Answer the questions below.",
+                "x": 0.027643,
+                "y": 0.529172,
+                "w": 0.293657,
+                "h": 0.018761
+              },
+              {
+                "text": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+                "x": 0.029663,
+                "y": 0.569321,
+                "w": 0.777562,
+                "h": 0.024472
+              },
+              {
+                "text": "Write your answers in boxes 11-13 on your answer sheet.",
+                "x": 0.029691,
+                "y": 0.610703,
+                "w": 0.587612,
+                "h": 0.023195
+              },
+              {
+                "text": "11 What type of mineral were the Dolaucothi mines in Wales built to extract?",
+                "x": 0.027643,
+                "y": 0.65323,
+                "w": 0.792652,
+                "h": 0.02045
+              },
+              {
+                "text": "12 In addition to the patron, whose name might be carved onto a tunnel?",
+                "x": 0.025436,
+                "y": 0.683688,
+                "w": 0.757325,
+                "h": 0.022282
+              },
+              {
+                "text": "13 What part of Seleuceia Pieria was the Çevlik tunnel built to protect?",
+                "x": 0.02753,
+                "y": 0.716136,
+                "w": 0.733246,
+                "h": 0.024085
+              },
+              {
+                "text": "→ O p. 128",
+                "x": 0.722957,
+                "y": 0.980631,
+                "w": 0.141687,
+                "h": 0.023574
+              },
+              {
+                "text": "85",
+                "x": 0.897573,
+                "y": 0.983068,
+                "w": 0.030911,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 1–13"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{1}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{2}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{3}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{4}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{5}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{6}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 7,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 8,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 9,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "TRUE",
+            "FALSE",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 10,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "{{11}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{12}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{13}}"
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-90.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 14-17",
+                "x": 0.056347,
+                "y": 0.019176,
+                "w": 0.192091,
+                "h": 0.017061
+              },
+              {
+                "text": "Choose the correct letter, A, B, C or D.",
+                "x": 0.056347,
+                "y": 0.061473,
+                "w": 0.395222,
+                "h": 0.018902
+              },
+              {
+                "text": "Write the correct letter in boxes 14-17 on your answer sheet.",
+                "x": 0.056347,
+                "y": 0.102374,
+                "w": 0.618224,
+                "h": 0.020501
+              },
+              {
+                "text": "14 What is the writer's main point in the first paragraph?",
+                "x": 0.054139,
+                "y": 0.143275,
+                "w": 0.587313,
+                "h": 0.01871
+              },
+              {
+                "text": "A Our use of technology is having a hidden effect on us.",
+                "x": 0.104922,
+                "y": 0.175473,
+                "w": 0.598353,
+                "h": 0.018801
+              },
+              {
+                "text": "Technology can be used to help youngsters to read.",
+                "x": 0.155704,
+                "y": 0.197664,
+                "w": 0.529907,
+                "h": 0.01871
+              },
+              {
+                "text": "C Travellers should be encouraged to use technology on planes.",
+                "x": 0.107129,
+                "y": 0.218074,
+                "w": 0.682255,
+                "h": 0.01875
+              },
+              {
+                "text": "D Playing games is a more popular use of technology than reading.",
+                "x": 0.104922,
+                "y": 0.238474,
+                "w": 0.713166,
+                "h": 0.018801
+              },
+              {
+                "text": "15 What main point does Sherry Turkle make about innovation?",
+                "x": 0.054139,
+                "y": 0.279274,
+                "w": 0.666799,
+                "h": 0.018902
+              },
+              {
+                "text": "A Technological innovation has led to a reduction in print reading.",
+                "x": 0.104922,
+                "y": 0.311574,
+                "w": 0.693294,
+                "h": 0.018801
+              },
+              {
+                "text": "We should pay attention to what might be lost when innovation occurs.",
+                "x": 0.155704,
+                "y": 0.331973,
+                "w": 0.717582,
+                "h": 0.018852
+              },
+              {
+                "text": "C We should encourage more young people to become involved in innovation.",
+                "x": 0.107129,
+                "y": 0.352373,
+                "w": 0.821355,
+                "h": 0.018902
+              },
+              {
+                "text": "D There is a difference between developing products and developing ideas.",
+                "x": 0.107129,
+                "y": 0.372581,
+                "w": 0.79486,
+                "h": 0.020592
+              },
+              {
+                "text": "16 What point is the writer making in the fourth paragraph?",
+                "x": 0.056347,
+                "y": 0.413482,
+                "w": 0.616016,
+                "h": 0.020491
+              },
+              {
+                "text": "A Humans have an inborn ability to read and write.",
+                "x": 0.109337,
+                "y": 0.447421,
+                "w": 0.540946,
+                "h": 0.017152
+              },
+              {
+                "text": "Reading can be done using many different mediums.",
+                "x": 0.157912,
+                "y": 0.467871,
+                "w": 0.53653,
+                "h": 0.018801
+              },
+              {
+                "text": "Writing systems make unexpected demands on the brain.",
+                "x": 0.157912,
+                "y": 0.488321,
+                "w": 0.585105,
+                "h": 0.01875
+              },
+              {
+                "text": "D Some brain circuits adjust to whatever is required of them.",
+                "x": 0.107129,
+                "y": 0.508772,
+                "w": 0.642512,
+                "h": 0.01871
+              },
+              {
+                "text": "17 According to Mark Edmundson, the attitude of college students",
+                "x": 0.056347,
+                "y": 0.549572,
+                "w": 0.688879,
+                "h": 0.020552
+              },
+              {
+                "text": "A has changed the way he teaches.",
+                "x": 0.107129,
+                "y": 0.581871,
+                "w": 0.393014,
+                "h": 0.02045
+              },
+              {
+                "text": "has influenced what they select to read.",
+                "x": 0.155704,
+                "y": 0.603971,
+                "w": 0.406262,
+                "h": 0.018801
+              },
+              {
+                "text": "C does not worry him as much as it does others.",
+                "x": 0.109337,
+                "y": 0.624371,
+                "w": 0.516659,
+                "h": 0.017111
+              },
+              {
+                "text": "D does not match the views of the general public.",
+                "x": 0.107129,
+                "y": 0.644771,
+                "w": 0.529907,
+                "h": 0.018902
+              },
+              {
+                "text": "88",
+                "x": 0.056347,
+                "y": 0.984768,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-91.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 18-22",
+                "x": 0.018812,
+                "y": 0.015776,
+                "w": 0.189883,
+                "h": 0.017
+              },
+              {
+                "text": "Complete the summary using the list of words, A-H, below.",
+                "x": 0.016604,
+                "y": 0.058276,
+                "w": 0.600561,
+                "h": 0.020602
+              },
+              {
+                "text": "Write the correct letter, A-H, in boxes 18-22 on your answer sheet.",
+                "x": 0.016604,
+                "y": 0.098893,
+                "w": 0.680047,
+                "h": 0.020582
+              },
+              {
+                "text": "Studies on digital screen use",
+                "x": 0.212612,
+                "y": 0.14147,
+                "w": 0.433715,
+                "h": 0.031978
+              },
+              {
+                "text": "There have been many studies on digital screen use, showing some 18",
+                "x": 0.016604,
+                "y": 0.195924,
+                "w": 0.70875,
+                "h": 0.02045
+              },
+              {
+                "text": "trends. Psychologist Anne Mangen gave high-school students a short story to read, half",
+                "x": 0.014396,
+                "y": 0.224874,
+                "w": 0.872138,
+                "h": 0.018912
+              },
+              {
+                "text": "using digital and half using print mediums. Her team then used a question-and-answer",
+                "x": 0.016604,
+                "y": 0.250313,
+                "w": 0.856682,
+                "h": 0.020461
+              },
+              {
+                "text": "technique to find out how 19.....",
+                "x": 0.014396,
+                "y": 0.279274,
+                "w": 0.309112,
+                "h": 0.015421
+              },
+              {
+                "text": ".. each group's understanding of the plot",
+                "x": 0.425073,
+                "y": 0.279274,
+                "w": 0.446005,
+                "h": 0.018902
+              },
+              {
+                "text": "was. The findings showed a clear pattern in the responses, with those who read screens",
+                "x": 0.014252,
+                "y": 0.301123,
+                "w": 0.879067,
+                "h": 0.029456
+              },
+              {
+                "text": "finding the order of information 20",
+                "x": 0.014396,
+                "y": 0.331973,
+                "w": 0.337815,
+                "h": 0.020592
+              },
+              {
+                "text": ".... to recall.",
+                "x": 0.508608,
+                "y": 0.32904,
+                "w": 0.119964,
+                "h": 0.024566
+              },
+              {
+                "text": "Studies by Ziming Liu show that students are tending to read 21 ...",
+                "x": 0.016604,
+                "y": 0.374321,
+                "w": 0.669007,
+                "h": 0.020552
+              },
+              {
+                "text": "words and phrases in a text to save time. This approach, she says, gives the reader a",
+                "x": 0.014396,
+                "y": 0.399973,
+                "w": 0.86993,
+                "h": 0.022211
+              },
+              {
+                "text": "superficial understanding of the 22..",
+                "x": 0.014396,
+                "y": 0.428711,
+                "w": 0.366519,
+                "h": 0.018862
+              },
+              {
+                "text": ".....content of material, leaving no time",
+                "x": 0.522223,
+                "y": 0.42697,
+                "w": 0.390806,
+                "h": 0.020602
+              },
+              {
+                "text": "for thought.",
+                "x": 0.014275,
+                "y": 0.453941,
+                "w": 0.121678,
+                "h": 0.021262
+              },
+              {
+                "text": "A",
+                "x": 0.080634,
+                "y": 0.508772,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "E",
+                "x": 0.080634,
+                "y": 0.534272,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "fast",
+                "x": 0.120377,
+                "y": 0.507072,
+                "w": 0.055199,
+                "h": 0.0187
+              },
+              {
+                "text": "many",
+                "x": 0.131417,
+                "y": 0.535972,
+                "w": 0.057407,
+                "h": 0.0187
+              },
+              {
+                "text": "B",
+                "x": 0.272725,
+                "y": 0.508772,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "F",
+                "x": 0.272725,
+                "y": 0.534272,
+                "w": 0.017664,
+                "h": 0.017
+              },
+              {
+                "text": "isolated",
+                "x": 0.307972,
+                "y": 0.506818,
+                "w": 0.099518,
+                "h": 0.019208
+              },
+              {
+                "text": "hard",
+                "x": 0.316735,
+                "y": 0.533982,
+                "w": 0.055497,
+                "h": 0.01758
+              },
+              {
+                "text": "C",
+                "x": 0.484688,
+                "y": 0.508772,
+                "w": 0.019871,
+                "h": 0.017
+              },
+              {
+                "text": "G",
+                "x": 0.484688,
+                "y": 0.532572,
+                "w": 0.024287,
+                "h": 0.0187
+              },
+              {
+                "text": "emotional",
+                "x": 0.52654,
+                "y": 0.505039,
+                "w": 0.115011,
+                "h": 0.021066
+              },
+              {
+                "text": "combined",
+                "x": 0.533175,
+                "y": 0.5323,
+                "w": 0.106156,
+                "h": 0.020942
+              },
+              {
+                "text": "D worrying",
+                "x": 0.72085,
+                "y": 0.506734,
+                "w": 0.141485,
+                "h": 0.022775
+              },
+              {
+                "text": "H thorough",
+                "x": 0.720855,
+                "y": 0.532218,
+                "w": 0.145889,
+                "h": 0.021107
+              },
+              {
+                "text": "Questions 23-26",
+                "x": 0.016604,
+                "y": 0.631039,
+                "w": 0.192091,
+                "h": 0.017131
+              },
+              {
+                "text": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+                "x": 0.016604,
+                "y": 0.67194,
+                "w": 0.865514,
+                "h": 0.02045
+              },
+              {
+                "text": "In boxes 23-26 on your answer sheet, write",
+                "x": 0.014396,
+                "y": 0.71447,
+                "w": 0.446005,
+                "h": 0.018821
+              },
+              {
+                "text": "YES",
+                "x": 0.093882,
+                "y": 0.75527,
+                "w": 0.046367,
+                "h": 0.0153
+              },
+              {
+                "text": "NO",
+                "x": 0.093882,
+                "y": 0.77567,
+                "w": 0.035327,
+                "h": 0.017
+              },
+              {
+                "text": "if the statement agrees with the views of the writer",
+                "x": 0.250646,
+                "y": 0.75527,
+                "w": 0.514451,
+                "h": 0.0187
+              },
+              {
+                "text": "if the statement contradicts the views of the writer",
+                "x": 0.250646,
+                "y": 0.775498,
+                "w": 0.507827,
+                "h": 0.018872
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.093816,
+                "y": 0.796032,
+                "w": 0.722127,
+                "h": 0.021266
+              },
+              {
+                "text": "23 The medium we use to read can affect our choice of reading content.",
+                "x": 0.018691,
+                "y": 0.834096,
+                "w": 0.746547,
+                "h": 0.021995
+              },
+              {
+                "text": "24 Some age groups are more likely to lose their complex reading skills than others.",
+                "x": 0.016604,
+                "y": 0.867307,
+                "w": 0.872138,
+                "h": 0.020562
+              },
+              {
+                "text": "25 False information has become more widespread in today's digital era.",
+                "x": 0.016604,
+                "y": 0.899769,
+                "w": 0.757325,
+                "h": 0.017142
+              },
+              {
+                "text": "26 We still have opportunities to rectify the problems that technology is presenting.",
+                "x": 0.016604,
+                "y": 0.928658,
+                "w": 0.856682,
+                "h": 0.01871
+              },
+              {
+                "text": "p. 128",
+                "x": 0.78276,
+                "y": 0.983048,
+                "w": 0.068446,
+                "h": 0.01872
+              },
+              {
+                "text": "89",
+                "x": 0.886534,
+                "y": 0.983068,
+                "w": 0.030911,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 14–26"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{14}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{15}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{16}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{17}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{18}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{19}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{20}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{21}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{22}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 23,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 24,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 25,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 26,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-92.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "READING PASSAGE 3",
+                "x": 0.047515,
+                "y": 0.017476,
+                "w": 0.328984,
+                "h": 0.01702
+              },
+              {
+                "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading",
+                "x": 0.047515,
+                "y": 0.059976,
+                "w": 0.887594,
+                "h": 0.0204
+              },
+              {
+                "text": "Passage 3 on pages 91 and 92.",
+                "x": 0.047515,
+                "y": 0.080183,
+                "w": 0.324568,
+                "h": 0.018892
+              },
+              {
+                "text": "Questions 27-32",
+                "x": 0.047515,
+                "y": 0.121084,
+                "w": 0.189883,
+                "h": 0.017091
+              },
+              {
+                "text": "Reading Passage 3 has six sections, A-F.",
+                "x": 0.049723,
+                "y": 0.163675,
+                "w": 0.430549,
+                "h": 0.01702
+              },
+              {
+                "text": "Choose the correct heading for each section from the list of headings below.",
+                "x": 0.047515,
+                "y": 0.204474,
+                "w": 0.770572,
+                "h": 0.018862
+              },
+              {
+                "text": "Write the correct number, i-viii, in boxes 27-32 on your answer sheet.",
+                "x": 0.047515,
+                "y": 0.245092,
+                "w": 0.713166,
+                "h": 0.020582
+              },
+              {
+                "text": "List of Headings",
+                "x": 0.405202,
+                "y": 0.302962,
+                "w": 0.181051,
+                "h": 0.020511
+              },
+              {
+                "text": "i An increasing divergence of attitudes towards Al",
+                "x": 0.164536,
+                "y": 0.335161,
+                "w": 0.518867,
+                "h": 0.020612
+              },
+              {
+                "text": "ii Reasons why we have more faith in human judgement than in Al",
+                "x": 0.157912,
+                "y": 0.367673,
+                "w": 0.691087,
+                "h": 0.020572
+              },
+              {
+                "text": "iii The superiority of Al projections over those made by humans",
+                "x": 0.151288,
+                "y": 0.399973,
+                "w": 0.657967,
+                "h": 0.01873
+              },
+              {
+                "text": "iv The process by which Al can help us make good decisions",
+                "x": 0.153496,
+                "y": 0.432192,
+                "w": 0.63368,
+                "h": 0.020481
+              },
+              {
+                "text": "v The advantages of involving users in Al processes",
+                "x": 0.160005,
+                "y": 0.463976,
+                "w": 0.543386,
+                "h": 0.021762
+              },
+              {
+                "text": "vi Widespread distrust of an Al innovation",
+                "x": 0.153496,
+                "y": 0.496872,
+                "w": 0.437173,
+                "h": 0.020602
+              },
+              {
+                "text": "vii Encouraging openness about how Al functions",
+                "x": 0.146872,
+                "y": 0.529172,
+                "w": 0.518867,
+                "h": 0.018761
+              },
+              {
+                "text": "viii A surprisingly successful Al application",
+                "x": 0.142457,
+                "y": 0.561421,
+                "w": 0.443797,
+                "h": 0.01875
+              },
+              {
+                "text": "27 Section A",
+                "x": 0.045307,
+                "y": 0.626071,
+                "w": 0.152348,
+                "h": 0.017152
+              },
+              {
+                "text": "28 Section B",
+                "x": 0.045307,
+                "y": 0.660071,
+                "w": 0.152348,
+                "h": 0.01535
+              },
+              {
+                "text": "29 Section C",
+                "x": 0.045307,
+                "y": 0.69065,
+                "w": 0.152348,
+                "h": 0.01702
+              },
+              {
+                "text": "30",
+                "x": 0.045307,
+                "y": 0.72297,
+                "w": 0.041951,
+                "h": 0.017
+              },
+              {
+                "text": "Section D",
+                "x": 0.087258,
+                "y": 0.722849,
+                "w": 0.110397,
+                "h": 0.017121
+              },
+              {
+                "text": "31 Section E",
+                "x": 0.047515,
+                "y": 0.75527,
+                "w": 0.15014,
+                "h": 0.017182
+              },
+              {
+                "text": "32 Section F",
+                "x": 0.045307,
+                "y": 0.78757,
+                "w": 0.15014,
+                "h": 0.017081
+              },
+              {
+                "text": "90",
+                "x": 0.047515,
+                "y": 0.981368,
+                "w": 0.030911,
+                "h": 0.0187
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-95.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 33-35",
+                "x": 0.032059,
+                "y": 0.017476,
+                "w": 0.189883,
+                "h": 0.01702
+              },
+              {
+                "text": "Choose the correct letter, A, B, Cor D.",
+                "x": 0.029851,
+                "y": 0.059976,
+                "w": 0.395222,
+                "h": 0.0204
+              },
+              {
+                "text": "Write the correct letter in boxes 33-35 on your answer sheet.",
+                "x": 0.029635,
+                "y": 0.098745,
+                "w": 0.620923,
+                "h": 0.024417
+              },
+              {
+                "text": "33 What is the writer doing in Section A?",
+                "x": 0.027643,
+                "y": 0.143275,
+                "w": 0.432757,
+                "h": 0.01871
+              },
+              {
+                "text": "A providing a solution to a concern",
+                "x": 0.078426,
+                "y": 0.173733,
+                "w": 0.379766,
+                "h": 0.020542
+              },
+              {
+                "text": "B justifying an opinion about an issue",
+                "x": 0.078426,
+                "y": 0.195924,
+                "w": 0.410678,
+                "h": 0.02045
+              },
+              {
+                "text": "C highlighting the existence of a problem",
+                "x": 0.078426,
+                "y": 0.216374,
+                "w": 0.441589,
+                "h": 0.02045
+              },
+              {
+                "text": "D explaining the reasons for a phenomenon",
+                "x": 0.078426,
+                "y": 0.236774,
+                "w": 0.4725,
+                "h": 0.020501
+              },
+              {
+                "text": "34 According to Section C, why might some people be reluctant to accept Al?",
+                "x": 0.025306,
+                "y": 0.277448,
+                "w": 0.803948,
+                "h": 0.024518
+              },
+              {
+                "text": "A They are afraid it will replace humans in decision-making jobs.",
+                "x": 0.076218,
+                "y": 0.311574,
+                "w": 0.684463,
+                "h": 0.020542
+              },
+              {
+                "text": "Its complexity makes them feel that they are at a disadvantage.",
+                "x": 0.102714,
+                "y": 0.333673,
+                "w": 0.666799,
+                "h": 0.0204
+              },
+              {
+                "text": "They would rather wait for the technology to be tested over a period of time.",
+                "x": 0.122461,
+                "y": 0.352298,
+                "w": 0.775263,
+                "h": 0.022324
+              },
+              {
+                "text": "Misunderstandings about how it works make it seem more challenging",
+                "x": 0.127001,
+                "y": 0.374321,
+                "w": 0.713166,
+                "h": 0.020552
+              },
+              {
+                "text": "than it is.",
+                "x": 0.124702,
+                "y": 0.394562,
+                "w": 0.097331,
+                "h": 0.017622
+              },
+              {
+                "text": "35 What does the writer say about the media in Section C of the text?",
+                "x": 0.025436,
+                "y": 0.435673,
+                "w": 0.724206,
+                "h": 0.01871
+              },
+              {
+                "text": "A It leads the public to be mistrustful of Al.",
+                "x": 0.076218,
+                "y": 0.467871,
+                "w": 0.457044,
+                "h": 0.018801
+              },
+              {
+                "text": "B It devotes an excessive amount of attention to Al.",
+                "x": 0.078247,
+                "y": 0.48671,
+                "w": 0.550183,
+                "h": 0.020456
+              },
+              {
+                "text": "Its reports of incidents involving Al are often inaccurate.",
+                "x": 0.122585,
+                "y": 0.510472,
+                "w": 0.567442,
+                "h": 0.01875
+              },
+              {
+                "text": "D lt gives the impression that Al failures are due to designer error.",
+                "x": 0.07401,
+                "y": 0.530872,
+                "w": 0.69771,
+                "h": 0.020542
+              },
+              {
+                "text": "93",
+                "x": 0.89095,
+                "y": 0.989868,
+                "w": 0.028703,
+                "h": 0.0153
+              }
+            ]
+          }
+        },
+        {
+          "type": "scan",
+          "page": {
+            "url": "/ielts/mock/c16-test-4/page-96.webp",
+            "width": 1767,
+            "height": 2298,
+            "lines": [
+              {
+                "text": "Questions 36-40",
+                "x": 0.051931,
+                "y": 0.022576,
+                "w": 0.189883,
+                "h": 0.017142
+              },
+              {
+                "text": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+                "x": 0.049723,
+                "y": 0.061473,
+                "w": 0.874346,
+                "h": 0.020602
+              },
+              {
+                "text": "In boxes 36-40 on your answer sheet, write",
+                "x": 0.047515,
+                "y": 0.105855,
+                "w": 0.448213,
+                "h": 0.01872
+              },
+              {
+                "text": "YES",
+                "x": 0.129209,
+                "y": 0.146675,
+                "w": 0.046367,
+                "h": 0.0153
+              },
+              {
+                "text": "NO",
+                "x": 0.127001,
+                "y": 0.167075,
+                "w": 0.037535,
+                "h": 0.0153
+              },
+              {
+                "text": "if the statement agrees with the claims of the writer",
+                "x": 0.285973,
+                "y": 0.146675,
+                "w": 0.521075,
+                "h": 0.018791
+              },
+              {
+                "text": "if the statement contradicts the claims of the writer",
+                "x": 0.285973,
+                "y": 0.167075,
+                "w": 0.514451,
+                "h": 0.015361
+              },
+              {
+                "text": "NOT GIVEN if it is impossible to say what the writer thinks about this",
+                "x": 0.127001,
+                "y": 0.187475,
+                "w": 0.724206,
+                "h": 0.0204
+              },
+              {
+                "text": "36 Subjective depictions of Al in sci-fi films make people change their opinions about",
+                "x": 0.049723,
+                "y": 0.240174,
+                "w": 0.878762,
+                "h": 0.018842
+              },
+              {
+                "text": "automation.",
+                "x": 0.102672,
+                "y": 0.262078,
+                "w": 0.12152,
+                "h": 0.015692
+              },
+              {
+                "text": "37 Portrayals of Al in media and entertainment are likely to become more positive.",
+                "x": 0.049723,
+                "y": 0.292874,
+                "w": 0.852266,
+                "h": 0.020531
+              },
+              {
+                "text": "38 Rejection of the possibilities of Al may have a negative effect on many people's",
+                "x": 0.049723,
+                "y": 0.325153,
+                "w": 0.852266,
+                "h": 0.02045
+              },
+              {
+                "text": "lives.",
+                "x": 0.099682,
+                "y": 0.346611,
+                "w": 0.057159,
+                "h": 0.016413
+              },
+              {
+                "text": "39 Familiarity with Al has very little impact on people's attitudes to the technology.",
+                "x": 0.049723,
+                "y": 0.377802,
+                "w": 0.847851,
+                "h": 0.020471
+              },
+              {
+                "text": "40 Al applications which users are able to modify are more likely to gain consumer",
+                "x": 0.049665,
+                "y": 0.409723,
+                "w": 0.856805,
+                "h": 0.021111
+              },
+              {
+                "text": "approval.",
+                "x": 0.100364,
+                "y": 0.431829,
+                "w": 0.097433,
+                "h": 0.019587
+              },
+              {
+                "text": "94 → 0 p. 128",
+                "x": 0.051931,
+                "y": 0.984768,
+                "w": 0.214171,
+                "h": 0.020471
+              }
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Answers 27–40"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{27}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{28}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{29}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{30}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{31}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{32}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{33}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{34}}"
+        },
+        {
+          "type": "paragraph",
+          "text": "{{35}}"
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 36,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 37,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 38,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "statements",
+          "options": [
+            "YES",
+            "NO",
+            "NOT GIVEN"
+          ],
+          "rows": [
+            {
+              "number": 40,
+              "text": ""
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "answerKeys": {
+    "listening": [
+      "28th",
+      "550",
+      "Chervil",
+      "garage",
+      "garden",
+      "parking",
+      "wood",
+      "bridge",
+      "monument",
+      "March",
+      "C",
+      "A",
+      "B",
+      "B",
+      "C",
+      "F",
+      "A",
+      "I",
+      "E",
+      "H",
+      "B",
+      "C",
+      "B",
+      "C",
+      "C",
+      "F",
+      "D",
+      "E",
+      "B",
+      "A",
+      "spice|spices",
+      "colony|settlement",
+      "fat",
+      "head",
+      "movement",
+      "balance|balancing",
+      "brain",
+      "smell",
+      "rats",
+      "forest"
+    ],
+    "reading": [
+      "posts",
+      "canal",
+      "ventilation",
+      "lid",
+      "weight",
+      "climbing",
+      "FALSE",
+      "NOT GIVEN",
+      "FALSE",
+      "TRUE",
+      "gold",
+      "architect|the architect|architect name|architects name|architect's name|the architect's name",
+      "harbour|harbor|the harbour|the harbor",
+      "A",
+      "B",
+      "D",
+      "B",
+      "D",
+      "H",
+      "F",
+      "B",
+      "C",
+      "YES",
+      "NO",
+      "NOT GIVEN",
+      "YES",
+      "iii",
+      "vi",
+      "ii",
+      "i",
+      "vii",
+      "v",
+      "C",
+      "B",
+      "A",
+      "NO",
+      "NOT GIVEN",
+      "YES",
+      "NO",
+      "YES"
+    ]
+  },
+  "completionOptions": {}
+}

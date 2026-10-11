@@ -2,6 +2,22 @@ import type {Subject} from './run-policy';
 
 // Actual decoded durations of the four local MP3 files, in seconds.
 export const LISTENING_AUDIO_SECONDS: Readonly<Record<string, readonly number[]>> = Object.freeze({
+	'16-1': [422.5055625,417.3594375,401.8426875,505.6010625],
+	'16-2': [397.9765625,464.197,416.68025,526.2900625],
+	'16-3': [493.558625,408.4516875,411.377375,515.0835],
+	'16-4': [426.2933125,385.09825,408.3471875,553.95375],
+	'17-1': [415.1651875,413.4410625,444.2655625,455.7071875],
+	'17-2': [474.567625,445.1015,402.4435,434.39125],
+	'17-3': [415.321875,450.37825,452.755375,486.8190625],
+	'17-4': [383.1129375,472.6345625,411.6125,515.8933125],
+	'18-1': [431.2826875,398.0810625,400.9023125,527.5961875],
+	'18-2': [468.7945625,437.2125,428.017375,425.95375],
+	'18-3': [470.570875,467.4100625,355.24025,459.7039375],
+	'18-4': [442.8810625,436.115375,418.090875,497.42475],
+	'19-1': [472.6345625,437.2125,420.2329375,414.7733125],
+	'19-2': [481.881875,384.1316875,410.7765625,426.946375],
+	'19-3': [396.174125,371.801875,422.139875,410.410875],
+	'19-4': [405.134125,389.0949375,429.37575,518.897375],
 	'20-1': [501.0024375, 514.377125, 478.87675, 472.4245],
 	'20-2': [408.111, 428.721625, 422.269375, 571.3240625],
 	'20-3': [439.5363125, 525.2440625, 446.4065625, 512.7836875],
@@ -15,6 +31,16 @@ export const LISTENING_AUDIO_SECONDS: Readonly<Record<string, readonly number[]>
 // Offline transcription + waveform verification; 100 ms clearance avoids clipping.
 // The following recorded silence and paper-test transfer instruction are not played.
 export const LISTENING_CHECK_CUE_SECONDS: Readonly<Record<string, number>> = Object.freeze({
+	'16-1': 430.763,
+	'16-2': 451.684,
+	'16-3': 440.467,
+	'16-4': 479.346,
+	'17-1': 381.134,
+	'17-2': 359.816,
+	'17-3': 412.245,
+	'17-4': 444.868,
+	'18-1':452.124, '18-2':350.484, '18-3':384.243, '18-4':421.958,
+	'19-1':377.883, '19-2':418.544, '19-3':392.232, '19-4':512.087,
 	'20-1': 396.505, '20-2': 471.793, '20-3': 423.173, '20-4': 405.964,
 	'21-1': 470.531, '21-2': 383.091, '21-3': 486.298, '21-4': 369.877,
 });
@@ -32,7 +58,7 @@ export function listeningCheckCueSeconds(book: number, paper: number): number {
 }
 
 export function previousListeningDurationSeconds(book: number, paper: number, version: unknown): number {
-	return version === 2 ? LEGACY_EOF_DURATION[`${book}-${paper}`] : 35 * 60;
+	return version === 2 ? (LEGACY_EOF_DURATION[`${book}-${paper}`] ?? 35 * 60) : 35 * 60;
 }
 
 export function subjectDurationSeconds(subject: Subject, book: number, paper: number): number {

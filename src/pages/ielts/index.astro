@@ -146,17 +146,19 @@ const resources = [
 				<section class="module mock-module" id="mock" hidden>
 					<header class="module-head">
 						<h2>模考页面</h2>
-						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷">{[21,20].map(book => <optgroup label={`剑雅${book}`}>{[1,2,3,4].map(test => <option value={`${book}-${test}`}>剑雅{book} · Test {test}</option>)}</optgroup>)}</select></label>
+						<label class="mock-paper-select">试卷<select data-mock-paper aria-label="选择模考试卷">{[21,20,19,18,17,16].map(book => <optgroup label={`剑雅${book}`}>{[1,2,3,4].map(test => <option value={`${book}-${test}`}>剑雅{book} · Test {test}</option>)}</optgroup>)}</select></label>
 					</header>
 					<div class="mock-modes" data-mock-modes>
 						<article class="mock-mode"><h3>自选模考</h3><fieldset class="mock-selection"><legend>选择科目</legend>{[['listening','听力'],['reading','阅读'],['writing','写作']].map(([value,label]) => <label><input type="checkbox" data-mock-subject value={value} checked />{label}</label>)}</fieldset><p data-mock-duration>{formatExamDuration(subjectDurationSeconds('listening',21,1) + 120 * 60)} · 可随时退出</p><a class="mock-open" data-mock-custom href="/ielts/mock/test-1?subject=listening&amp;mode=custom&amp;subjects=listening%2Creading%2Cwriting">开始自选模考<IeltsIcon name="arrow" size={18} /></a></article>
 						<article class="mock-mode simulation-mode"><h3>仿真模考</h3><div class="mock-sequence"><span>听力</span><IeltsIcon name="arrow" size={18} /><span>阅读</span><IeltsIcon name="arrow" size={18} /><span>写作</span></div><p data-mock-simulation-duration>{formatExamDuration(subjectDurationSeconds('listening',21,1) + 120 * 60)} · 按顺序自动切换</p><a class="mock-open" data-mock-simulation href="/ielts/mock/test-1?subject=listening&amp;mode=simulation&amp;subjects=listening%2Creading%2Cwriting">开始仿真模考<IeltsIcon name="arrow" size={18} /></a></article>
 					</div>
+					<article class="entry-test-card"><span><IeltsIcon name="clipboard" size={22} /></span><div><h3>模考错题本</h3><a href="/ielts/mistakes">查看错题与复习</a></div></article>
 				</section>
 
 				<section class="module notes-module" id="notes" hidden>
 					<header class="module-head"><h2>其他</h2></header>
 					<div class="note-list">
+						<article class="entry-test-card"><span><IeltsIcon name="clipboard" size={22} /></span><div><h3>单词本</h3><a href="/ielts/wordbook">收藏与复习单词</a></div></article>
 						<article class="entry-test-card">
 							<span><IeltsIcon name="clipboard" size={22} /></span>
 							<div><h3>入学基础测试</h3><a href="/ielts/entry-test">开始测试</a></div>
@@ -168,6 +170,10 @@ const resources = [
 						<article class="entry-test-card">
 							<span><IeltsIcon name="headphones" size={22} /></span>
 							<div><h3>单词听写</h3><a href="/ielts/dictation">开始听写</a></div>
+						</article>
+						<article class="entry-test-card">
+							<span><IeltsIcon name="keyboard" size={22} /></span>
+							<div><h3>打字速度练习</h3><a href="/ielts/typing">开始练习</a></div>
 						</article>
 					</div>
 				</section>
@@ -368,6 +374,7 @@ const resources = [
 		<script>
 			import { searchStudy } from '../../lib/ielts/search';
 			import { safeIeltsNext } from '../../lib/ielts/oauth-policy';
+			import { PrivateRequestScope } from '../../lib/ielts/private-request-scope';
 			import {reveal,resizeContent,openDialog,closeDialog,installDialogMotion,setMenu} from '../../lib/ielts/dashboard-motion';
 			const page = document.querySelector<HTMLElement>('[data-ielts-page]');
 			const authDialog = document.querySelector<HTMLDialogElement>('[data-auth-dialog]');
@@ -389,10 +396,12 @@ const resources = [
 			const bookingSubmit = page?.querySelector<HTMLButtonElement>('[data-open-booking]');
 			type PendingBooking = { date: string; time: string; customTime: string; subject: string };
 			let pendingBookings: PendingBooking[] = [];
-			let session: { authenticated: boolean; email?: string; role?: 'student' | 'admin' } = { authenticated: false };
+			let session: { authenticated: boolean; userId?: string; email?: string; role?: 'student' | 'admin' } = { authenticated: false };
 			let unavailable = new Map<string, Set<string>>();
 			let availabilityState: 'loading' | 'ready' | 'failed' = 'loading';
 			let availabilityRequestId = 0;
+			const privateScope = new PrivateRequestScope();
+			const authEvents = typeof BroadcastChannel === 'function' ? new BroadcastChannel('ielts-auth-events') : undefined;
 
 			const api = async <T,>(path: string, init?: RequestInit): Promise<T> => {
 				const response = await fetch(path, { credentials: 'same-origin', cache: 'no-store', ...init, headers: { 'content-type': 'application/json', ...(init?.headers || {}) } });
@@ -482,6 +491,7 @@ const resources = [
 			const finishLogin = async () => {
 				authDialog?.close();
 				await syncSession();
+				authEvents?.postMessage('changed');
 				const next = new URLSearchParams(location.search).get('next');
 				if (next) location.assign(safeIeltsNext(next));
 			};
@@ -503,9 +513,10 @@ const resources = [
 					copy.append(title, meta, description);
 					const download = document.createElement('button'); download.type = 'button'; download.textContent = '下载';
 					download.addEventListener('click', async () => {
+						const snapshot = privateScope.capture();
 						download.disabled = true;
-						try { const result = await api<{ url: string }>(`/api/ielts/materials/${String(item.id)}`); window.location.assign(result.url); }
-						catch (error) { description.textContent = messageFor(error instanceof Error ? error.message : ''); }
+						try { const result = await api<{ url: string }>(`/api/ielts/materials/${String(item.id)}`, { signal: snapshot.signal }); if (privateScope.current(snapshot)) window.location.assign(result.url); }
+						catch (error) { if (privateScope.current(snapshot)) description.textContent = messageFor(error instanceof Error ? error.message : ''); }
 						finally { download.disabled = false; }
 					});
 					row.append(copy, download); materialList.append(row);
@@ -544,7 +555,31 @@ const resources = [
 			searchDialog?.querySelector('[data-close-search]')?.addEventListener('click', () => closeDialog(searchDialog));
 			searchInput?.addEventListener('input', renderSearch);
 			closeOnBackdrop(searchDialog || null);
+			const invalidatePrivateView = () => {
+				privateScope.invalidate();
+				session = { authenticated: false };
+				materialsCache = [];
+				materialList?.replaceChildren(); bookingList?.replaceChildren();
+				if (materialState) materialState.textContent = '登录后查看';
+				if (bookingListState) bookingListState.textContent = '登录后查看';
+				if (accountEmail) accountEmail.textContent = '尚未登录';
+				if (accountButton) accountButton.title = '登录或注册';
+				if (managementLink) managementLink.hidden = true;
+				if (accountLogin) accountLogin.hidden = false;
+				if (accountLogout) accountLogout.hidden = true;
+				bookingForm?.reset();
+				pendingBookings = []; renderBookingCart(); renderSearch();
+			};
+			authDialog?.addEventListener('close', () => {
+				authDialog.querySelectorAll<HTMLInputElement>('input[type="password"], input[name="code"]').forEach(input => { input.value = ''; });
+				const codePane = authDialog.querySelector<HTMLElement>('[data-password-code]');
+				if (codePane) codePane.hidden = true;
+				const submit = authDialog.querySelector<HTMLElement>('[data-password-submit]');
+				if (submit) submit.textContent = '发送六位验证码';
+				authDialog.querySelectorAll<HTMLFormElement>('form').forEach(resetAuthConsent);
+			});
 			const loadMaterials = async () => {
+				const snapshot = privateScope.capture();
 				materialsCache = [];
 				renderSearch();
 				if (!session.authenticated) {
@@ -555,14 +590,16 @@ const resources = [
 					return;
 				}
 				try {
-					const result = await api<{ materials: Array<Record<string, unknown>>; role: 'student' | 'admin' }>('/api/ielts/materials');
+					const result = await api<{ materials: Array<Record<string, unknown>>; role: 'student' | 'admin' }>('/api/ielts/materials', { signal: snapshot.signal });
+					if (!privateScope.current(snapshot)) return;
 					materialsCache = result.materials;
 					renderSearch();
 					if (materialState) materialState.textContent = `${materialsCache.length} 份资料`;
 					renderMaterials(materialsCache);
-				} catch { if (materialState) materialState.textContent = '暂时无法读取'; renderMaterials([]); }
+				} catch { if (!privateScope.current(snapshot)) return; if (materialState) materialState.textContent = '暂时无法读取'; renderMaterials([]); }
 			};
 			const loadBookings = async () => {
+				const snapshot = privateScope.capture();
 				if (!bookingList) return;
 				if (!session.authenticated) {
 					bookingListState && (bookingListState.textContent = '登录后查看');
@@ -570,7 +607,8 @@ const resources = [
 					return;
 				}
 				try {
-					const result = await api<{ bookings: Array<Record<string, unknown>> }>('/api/ielts/bookings?scope=mine');
+					const result = await api<{ bookings: Array<Record<string, unknown>> }>('/api/ielts/bookings?scope=mine', { signal: snapshot.signal });
+					if (!privateScope.current(snapshot)) return;
 					bookingList.replaceChildren();
 					bookingListState && (bookingListState.textContent = `${result.bookings.length} 条记录`);
 					if (!result.bookings.length) {
@@ -595,7 +633,8 @@ const resources = [
 								}
 								cancel.disabled = true;
 								try {
-									await api('/api/ielts/bookings', { method: 'PATCH', body: JSON.stringify({ id: item.id, action: 'cancel' }) });
+									await api('/api/ielts/bookings', { method: 'PATCH', signal: snapshot.signal, body: JSON.stringify({ id: item.id, action: 'cancel' }) });
+									if (!privateScope.current(snapshot)) return;
 									await Promise.all([loadBookings(), loadAvailability()]);
 								} catch (error) {
 									cancel.disabled = false;
@@ -606,10 +645,16 @@ const resources = [
 						}
 						bookingList.append(row);
 					}
-				} catch { bookingListState && (bookingListState.textContent = '暂时无法读取'); }
+				} catch { if (privateScope.current(snapshot)) bookingListState && (bookingListState.textContent = '暂时无法读取'); }
 			};
 			const syncSession = async () => {
-				try { session = await api<typeof session>('/api/ielts/auth/me'); } catch { session = { authenticated: false }; }
+				invalidatePrivateView();
+				const snapshot = privateScope.capture();
+				try {
+					const result = await api<typeof session>('/api/ielts/auth/me', { signal: snapshot.signal });
+					if (!privateScope.current(snapshot)) return;
+					session = result;
+				} catch { if (!privateScope.current(snapshot)) return; session = { authenticated: false }; }
 				if (accountEmail) accountEmail.textContent = session.email || '尚未登录';
 				if (accountLogin) accountLogin.hidden = session.authenticated;
 				if (accountLogout) accountLogout.hidden = !session.authenticated;
@@ -626,13 +671,25 @@ const resources = [
 			accountLogin?.addEventListener('click', () => { if (accountPanel) accountPanel.hidden = true; accountButton?.setAttribute('aria-expanded', 'false'); openAuth(); });
 			accountLogout?.addEventListener('click', async () => {
 				accountLogout.disabled = true;
-				await api('/api/ielts/auth/logout', { method: 'POST', body: '{}' }).catch(() => undefined);
-				session = { authenticated: false };
+				invalidatePrivateView();
+				try {
+					await api('/api/ielts/auth/logout', { method: 'POST', body: '{}' });
+					authEvents?.postMessage('changed');
+				} catch {
+					// Do not silently restore an account after an unconfirmed sign-out.
+					if (accountEmail) accountEmail.textContent = '退出未确认，请刷新后重试';
+					accountLogout.hidden = false;
+					accountLogout.disabled = false;
+					return;
+				}
 				if (accountPanel) accountPanel.hidden = true;
 				accountButton?.setAttribute('aria-expanded', 'false');
 				await syncSession();
 				accountLogout.disabled = false;
 			});
+			authEvents?.addEventListener('message', event => { if (event.data === 'changed') void syncSession(); });
+			window.addEventListener('pagehide', invalidatePrivateView);
+			window.addEventListener('pageshow', event => { if (event.persisted) void syncSession(); });
 			document.addEventListener('click', (event) => {
 				if (accountPanel && !accountPanel.hidden && !accountMenu?.contains(event.target as Node)) {
 					setMenu(accountPanel,false);
@@ -752,6 +809,7 @@ const resources = [
 			bookingForm?.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				if (!session.authenticated) { openAuth(); return; }
+				const snapshot = privateScope.capture();
 				const form = event.currentTarget as HTMLFormElement;
 				const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 				const message = form.querySelector<HTMLElement>('[data-booking-message]');
@@ -761,17 +819,19 @@ const resources = [
 				if (message) message.textContent = `正在提交 ${pendingBookings.length} 次预约…`;
 				try {
 					await loadAvailability();
+					if (!privateScope.current(snapshot)) return;
 					if (pendingBookings.some((item) => item.time !== '其他时间' && unavailable.get(item.date)?.has(item.time))) throw new Error('slot_unavailable');
-					const result = await api<{ emailSent: boolean }>('/api/ielts/bookings', { method: 'POST', body: JSON.stringify({
+					const result = await api<{ emailSent: boolean }>('/api/ielts/bookings', { method: 'POST', signal: snapshot.signal, body: JSON.stringify({
 						name: values.get('name'), contact: values.get('contact'), notes: values.get('note'), bookings: pendingBookings, consent: values.get('consent') === 'on',
 					}) });
+					if (!privateScope.current(snapshot)) return;
 					if (message) message.textContent = result.emailSent ? '预约已合并提交，确认邮件已发送。' : '预约已提交；邮件稍有延迟，我会另行确认。';
 					pendingBookings = [];
 					form.reset();
 					renderBookingCart();
 					page?.dispatchEvent(new CustomEvent('ielts:clear-selection'));
 					await Promise.all([loadAvailability(), loadBookings()]);
-				} catch (error) { if (message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
+				} catch (error) { if (privateScope.current(snapshot) && message) message.textContent = messageFor(error instanceof Error ? error.message : ''); }
 				finally {
 					if (submit) submit.disabled = pendingBookings.length === 0;
 				}
@@ -824,8 +884,15 @@ const resources = [
 			};
 			page?.addEventListener('ielts:calendar-change', () => { void loadAvailability(); });
 			page?.addEventListener('ielts:date-change', syncTimeAvailability);
-			window.addEventListener('focus', () => { void loadAvailability(); });
-			document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') void loadAvailability(); });
+			const revalidateSession = async () => {
+				const snapshot = privateScope.capture();
+				try {
+					const result = await api<typeof session>('/api/ielts/auth/me', { signal: snapshot.signal });
+					if (privateScope.current(snapshot) && (result.authenticated !== session.authenticated || result.userId !== session.userId || result.email !== session.email || result.role !== session.role)) await syncSession();
+				} catch { if (privateScope.current(snapshot)) invalidatePrivateView(); }
+			};
+			window.addEventListener('focus', () => { void revalidateSession(); void loadAvailability(); });
+			document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') { void revalidateSession(); void loadAvailability(); } });
 
 			renderBookingCart();
 			void syncSession().then(() => {

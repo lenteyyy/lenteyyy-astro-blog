@@ -16,7 +16,7 @@ const mimeTypes = new Set([
 export const POST: APIRoute = async ({ request, cookies }) => {
 	if (!sameOrigin(request)) return json({ error: 'forbidden' }, 403);
 	try {
-		const auth = await getAuthContext(cookies);
+		const auth = await getAuthContext(cookies, request);
 		if (!auth || auth.role !== 'admin') return json({ error: 'forbidden' }, 403);
 		if (!(await claimRateLimit(request, 'material-upload', auth.user.id, 30, 3600, 'identity'))) return json({ error: 'rate_limited' }, 429);
 		const body = await readJson<Record<string, unknown>>(request);

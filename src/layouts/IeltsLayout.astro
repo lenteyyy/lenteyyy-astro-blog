@@ -35,13 +35,7 @@ const canonical = canonicalUrl(Astro.url.pathname);
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<title>{title}</title>
-		<script is:inline>
-			try {
-				const saved = localStorage.getItem('ielts-theme');
-				const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				document.documentElement.dataset.ieltsTheme = saved === 'dark' || (!saved && systemDark) ? 'dark' : 'light';
-			} catch {}
-		</script>
+		<script is:inline src="/ielts/theme.js"></script>
 	</head>
 	<body class="ielts-site">
 		<slot />

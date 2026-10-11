@@ -35,7 +35,7 @@ export const POST: APIRoute = async ({ request }) => {
 		}, { onConflict: 'email_hash' });
 		if (error) throw error;
 		try { await sendLoginCode(email, code); }
-		catch (error) { await client.from('ielts_verification_codes').delete().eq('email_hash', emailHash); throw error; }
+		catch (error) { await client.from('ielts_verification_codes').delete().eq('email_hash', emailHash).eq('code_hash', codeHash); throw error; }
 		return json({ ok: true }, 202);
 	} catch (error) {
 		if (error instanceof Error && ['invalid_content_type', 'payload_too_large', 'invalid_json'].includes(error.message)) return json({ error: error.message }, 400);

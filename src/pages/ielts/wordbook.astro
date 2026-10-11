@@ -1,0 +1,11 @@
+---
+import Notebook from '../../components/ielts/Notebook.astro';
+import {getAuthContext} from '../../lib/ielts/auth';
+export const prerender=false;
+for(const key of ['Cache-Control','CDN-Cache-Control','Vercel-CDN-Cache-Control'])Astro.response.headers.set(key,'private, no-store');
+Astro.response.headers.set('Vary','Cookie');Astro.response.headers.set('X-Robots-Tag','noindex, nofollow');
+const demo=import.meta.env.DEV&&Astro.url.searchParams.get('demo')==='1';
+const auth=demo?undefined:await getAuthContext(Astro.cookies,Astro.request);
+if(!auth&&!demo){Astro.response.headers.set('Location','/ielts?login=1&next=%2Fielts%2Fwordbook');return new Response(null,{status:302,headers:Astro.response.headers});}
+---
+<Notebook accountId={auth?.user.id||'demo'} kind="words" demo={demo}/>
