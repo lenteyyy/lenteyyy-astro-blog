@@ -16,9 +16,15 @@ const requested = Astro.url.searchParams.get('subject');
 const subject: Subject = requested === 'reading' || requested === 'writing' ? requested : 'listening';
 const demo = import.meta.env.DEV && Astro.url.searchParams.get('demo') === '1';
 const cookieNames=authCookieNames();
-if (!demo && !Astro.cookies.has(cookieNames.access) && !Astro.cookies.has(cookieNames.refresh)) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+if (!demo && !Astro.cookies.has(cookieNames.access) && !Astro.cookies.has(cookieNames.refresh)) {
+  Astro.response.headers.set('Location', `/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+  return new Response(null, { status: 302, headers: Astro.response.headers });
+}
 const auth = demo ? undefined : await getAuthContext(Astro.cookies, Astro.request);
-if (!demo && !auth) return Astro.redirect(`/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+if (!demo && !auth) {
+  Astro.response.headers.set('Location', `/ielts?login=1&next=${encodeURIComponent(`/ielts/entry-test?subject=${subject}`)}`);
+  return new Response(null, { status: 302, headers: Astro.response.headers });
+}
 Astro.response.headers.set('Cache-Control', 'private, no-store');
 Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 const labels = { listening: '听力', reading: '阅读', writing: '写作' };

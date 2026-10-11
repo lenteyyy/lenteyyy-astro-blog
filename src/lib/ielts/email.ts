@@ -34,7 +34,7 @@ type BookingMail = { email: string; name: string; contact: string; notes: string
 
 export async function sendBookingEmails(booking: BookingMail): Promise<boolean> {
 	const config = ieltsConfig();
-	const courses = booking.bookings.map((item, index) => `课程 ${index + 1}\n日期：${item.date}\n时间：${item.time}\n科目：${item.subject}`).join('\n\n');
+	const courses = booking.bookings.map((item, index) => `课程 ${index + 1}\n日期（东八区 UTC+8）：${item.date}\n时间（东八区 UTC+8）：${item.time}\n科目：${item.subject}`).join('\n\n');
 	const details = `称呼：${booking.name}\n邮箱：${booking.email}\n其他联系方式：${booking.contact || '无'}\n\n${courses}\n\n补充：${booking.notes || '无'}`;
 	const safeDetails = escapeHtml(details).replace(/\n/g, '<br>');
 	const studentText = `${booking.name}，谢谢您的预约！我们已经收到您的预约意向。待确认时间后会再次联系您。\n\n${details}\n\n如非本人操作，请忽略本电子邮件或发送咨询邮件至 ${supportEmail}\n\n${securityNotice}`;

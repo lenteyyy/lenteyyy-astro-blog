@@ -7,6 +7,9 @@ const source = path => readFileSync(new URL('../' + path, import.meta.url), 'utf
 const home = source('src/pages/ielts/index.astro');
 
 test('home preserves requested introduction and uses local, icon-only social profiles', () => {
+  assert.match(home, /我是雅思 Overall 8\.0 的独立雅思老师冷踢踢/);
+  assert.match(home, /<p class="teacher-scores">我的成绩：Overall 8\.0 听力 9\.0 阅读 8\.5 写作 7\.5 口语 7\.0 /);
+  assert.match(home, /href="\/assets\/ielts-score-report\.jpg" target="_blank" rel="noopener noreferrer"/);
   assert.match(home, /你可以点击右上角的个人账户进行注册或登录（当然，我们支持Google登陆！）。/);
   assert.match(home, /<h2>Why I do this<\/h2>/);
   assert.match(home, /这个网站会持续更新，感兴趣的话就Stay Focused吧！/);
@@ -79,6 +82,8 @@ test('management requires the exact verified owner identity, never client roles'
   assert.doesNotMatch(auth, /user_metadata|app_metadata/);
   const management = source('src/pages/ielts/management.astro');
   assert.match(management, /auth\.role !== 'admin'/);
+  assert.match(management, /return new Response\(null, \{ status: 302, headers: Astro\.response\.headers \}\)/);
+  assert.doesNotMatch(management, /Astro\.redirect\(/);
   assert.match(management, /private, no-store/);
 });
 test('other contains entrance test, calculator, dictation, typing and wordbook, with management inside account menu', () => {
@@ -98,6 +103,17 @@ test('other contains entrance test, calculator, dictation, typing and wordbook, 
   assert.doesNotMatch(home, /IELTS STUDY DESK|FOR MORE|其他信息|我的个人简介|FULL<br/);
   assert.match(home, /telemetry=\{false\}/);
   assert.match(home, /button\.selected\) \{[^}]*color: var\(--ielts-card\)/);
+});
+test('study tools use distinct semantic icons and the mock notebook shares the tool-card layout', () => {
+  const cards = [...home.matchAll(/<article class="entry-test-card">([\s\S]*?)<\/article>/g)].map(m => ({icon: /IeltsIcon name="([^"]+)"/.exec(m[1])?.[1],title: /<h3>([^<]+)<\/h3>/.exec(m[1])?.[1]}));
+  assert.deepEqual(cards.map(v=>[v.title,v.icon]),[['模考错题本','notebook'],['单词本','book'],['入学基础测试','clipboard'],['IELTS分数计算器','calculator'],['单词听写','headphones'],['打字速度练习','keyboard']]);
+  assert.equal(new Set(cards.map(v=>v.icon)).size,cards.length);
+  assert.match(home,/\.entry-test-card \{[^}]*display: grid;[^}]*grid-template-columns: 46px minmax\(0,1fr\)/);
+  assert.match(home,/\.entry-test-card > span \{[^}]*place-items: center/);
+  assert.match(home,/\.mock-module > \.entry-test-card \{ margin-top: 20px; \}/);
+  assert.doesNotMatch(home,/\.note-list article \{[^}]*grid-template-columns/);
+  const icons=source('src/components/ielts/IeltsIcon.astro');
+  for(const name of ['notebook','calculator'])assert.match(icons,new RegExp(`${name}: \\[`));
 });
 test('cross-page animation uses a compatible CSS fallback and respects reduced motion', () => {
   const layout = source('src/layouts/IeltsLayout.astro');
