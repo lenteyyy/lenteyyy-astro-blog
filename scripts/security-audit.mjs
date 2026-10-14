@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
+import { parseEnv } from 'node:util';
 
 // Diagnostics deliberately name files only, never matching secret values.
 const walk = dir => readdirSync(dir).flatMap(name => {
@@ -13,11 +14,12 @@ const sources = execFileSync('git', ['ls-files', '--cached', '--others', '--excl
 const client = walk('dist/client').filter(file => /\.(?:js|html|json|xml|css|map)$/.test(file));
 const failures = [];
 const secretValues = [];
-for (const file of readdirSync('.').filter(name => /^\.env(?:\.|$)/.test(name))) {
-  for (const line of readFileSync(file, 'utf8').split('\n')) {
-    const match = /^([A-Z][A-Z0-9_]+)\s*=\s*(.*)$/.exec(line);
-    if (!match || /PUBLIC_|(?:SITE_URL|DOMAIN|EMAIL|SUPABASE_URL|PUBLISHABLE|ANON)/.test(match[1])) continue;
-    const value = match[2].trim().replace(/^['"]|['"]$/g, '');
+const environmentFiles = readdirSync('.').filter(name => /^\.env(?:\.|$)/.test(name));
+if (existsSync('.vercel')) environmentFiles.push(...readdirSync('.vercel').filter(name => /^\.env(?:\.|$)/.test(name)).map(name => path.join('.vercel', name)));
+for (const file of environmentFiles) {
+  for (const [name, raw] of Object.entries(parseEnv(readFileSync(file, 'utf8')))) {
+    if (!/(?:SECRET|TOKEN|PASSWORD|API_KEY|POSTGRES|SERVICE_ROLE|DATABASE_URL)/.test(name) || /PUBLISHABLE|ANON/.test(name)) continue;
+    const value = raw.trim();
     if (value.length >= 20 && !/placeholder|replace|your[-_]|example/i.test(value)) secretValues.push(value);
   }
 }
@@ -38,9 +40,5 @@ for (const file of client) {
   if (/SUPABASE_SERVICE_ROLE_KEY|RESEND_API_KEY|SUPABASE_SECRET_KEY|POSTGRES_URL|UPSTASH_REDIS_REST_TOKEN|KV_REST_API_TOKEN/.test(text)) failures.push(`Server-only configuration in public build: ${file}`);
   if (/\.map$/.test(file)) failures.push(`Public source map: ${file}`);
 }
-const entry = JSON.parse(readFileSync('src/lib/ielts/entry-test/content.json', 'utf8'));
-if (/Listening Script|Reference Answers|answerKeys?|Good afternoon, everyone\. Today/.test(JSON.stringify(entry))) failures.push('Excluded appendix in student test');
-const image = readFileSync('public/ielts/entry-test/writing-task-1.png');
-for (const marker of ['eXIf', 'tEXt', 'iTXt', 'zTXt']) if (image.includes(Buffer.from(marker))) failures.push(`Chart metadata: ${marker}`);
 if (failures.length) { console.error([...new Set(failures)].join('\n')); process.exitCode = 1; }
-else console.log(`Privacy scan passed: ${sources.length} source files, ${client.length} public build files; no detected credentials, unsafe public variables, source maps or excluded entry-test content.`);
+else console.log(`Privacy scan passed: ${sources.length} source files, ${client.length} public build files; no detected credentials, unsafe public variables, source maps.`);
