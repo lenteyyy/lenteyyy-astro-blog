@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/harden-build-routes.mjs && node scripts/verify-blog-csp.mjs",
     "check": "astro check",
     "lint": "astro check",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
@@ -19,26 +19,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^7.0.0",
-    "@astrojs/vercel": "^11.0.5",
-    "@fontsource/noto-sans-sc": "^5.3.0",
-    "@fontsource/noto-sans-tc": "^5.3.0",
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/og": "^1.0.1",
-    "@vercel/speed-insights": "^2.0.0",
-    "astro": "^7.2.8",
-    "marked": "^18.0.13",
-    "opencc-js": "^1.4.0",
-    "react": "^19.2.8",
+    "@astrojs/react": "7.0.0",
+    "@astrojs/vercel": "11.0.5",
+    "@fontsource/noto-sans-sc": "5.3.0",
+    "@fontsource/noto-sans-tc": "5.3.0",
+    "@vercel/analytics": "2.0.1",
+    "@vercel/og": "1.0.1",
+    "@vercel/speed-insights": "2.0.0",
+    "astro": "7.2.8",
+    "marked": "18.0.13",
+    "opencc-js": "1.4.0",
+    "react": "19.2.8",
     "react-dom": "19.2.8",
-    "tslib": "^2.8.1"
+    "tslib": "2.8.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@types/node": "^26.1.1",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.3",
+    "@astrojs/check": "0.9.9",
+    "@types/node": "26.1.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.3",
     "sharp": "0.35.5",
-    "typescript": "^5.9.3"
+    "typescript": "5.9.3"
   }
 }

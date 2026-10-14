@@ -33,3 +33,6 @@ pnpm-debug.log*
 
 # Local database session artifact
 :memory:.ses
+
+# Local internal reports
+docs/
