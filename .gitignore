@@ -22,6 +22,7 @@ pnpm-debug.log*
 
 # local deployment metadata
 .vercel/
+/docs/security-review-20261013.md
 
 # macOS-specific files
 .DS_Store
@@ -29,3 +30,6 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 .vercel
+
+# Local database session artifact
+:memory:.ses

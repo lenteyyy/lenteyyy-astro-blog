@@ -1,0 +1,55 @@
+:root {
+  --motion-duration: 220ms;
+  --motion-exit-duration: 140ms;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* Never transform the body: fixed menus, dialogs and highlight tools must
+   retain their viewport coordinates during navigation. */
+@keyframes page-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes surface-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body[data-site-motion='on'] :where(a, button, input, select, textarea, summary) {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: var(--motion-duration);
+  transition-timing-function: var(--motion-ease);
+}
+/* Existing image/logo/card effects keep their properties, but share the same
+   timing. Low specificity lets the practice/reduced-motion guards win. */
+:where(body[data-site-motion='on']) * {
+  transition-duration: var(--motion-duration) !important;
+  transition-timing-function: var(--motion-ease) !important;
+}
+body[data-site-motion='on'] dialog[open]:not([data-motion-managed]) {
+  animation: surface-in var(--motion-duration) var(--motion-ease);
+}
+body[data-site-motion='on'] details[open] > :not(summary) {
+  animation: page-in var(--motion-duration) var(--motion-ease);
+}
+body[data-site-motion='on'] .study-navigation .navigation-indicator {
+  transition-duration: var(--motion-duration);
+  transition-timing-function: var(--motion-ease);
+}
+
+/* Exams, question-by-question practice and review never animate. */
+body[data-site-motion='off'], body[data-site-motion='off'] *,
+[data-motion='off'], [data-motion='off'] * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+html:has(body[data-site-motion='off']) { scroll-behavior: auto !important; }
+body:has([data-practice][data-motion='off']:not([hidden])) { animation: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  body[data-site-motion], body[data-site-motion] *,
+  body[data-site-motion] *::before, body[data-site-motion] *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,4 +1,4 @@
-import { rateLimitAddress } from './ielts/rate-policy';
+import { rateLimitAddress } from './rate-policy';
 
 type RedisResult = { result?: unknown };
 

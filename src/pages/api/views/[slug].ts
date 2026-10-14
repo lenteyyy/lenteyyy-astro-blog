@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { claimDailyView, redis, withinRateLimit } from '../../../lib/rate-limit';
+import { getPostBySlug } from '../../../lib/posts';
 
 export const prerender = false;
 
@@ -17,6 +18,7 @@ export const GET: APIRoute = async ({ params, request }) => {
 	if (!/^[\p{Letter}\p{Number}-]{1,120}$/u.test(slug)) return json({ error: 'invalid_slug' }, 400);
 
 	try {
+		if (!(await getPostBySlug(slug))) return json({ error: 'not_found' }, 404);
 		if (!(await withinRateLimit(request, 'views', 90, 60))) return json({ error: 'rate_limited' }, 429);
 		const key = `post:views:${slug}`;
 		const requestUrl = new URL(request.url);

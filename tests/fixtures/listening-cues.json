@@ -1,4 +1,8 @@
 {
+  "15-1": {"seconds":473.568,"sha256":"1cf3a19cd471a58a7d3424643e5f9659211002c66f4a953ba25acd8e2f9cb3bb","text":"You now have one minute to check your answers to part four."},
+  "15-2": {"seconds":451.766,"sha256":"fe930c7170794200a7734486dfba71d177e6e544a514a157860bf5e481466b86","text":"You now have one minute to check your answers to part 4."},
+  "15-3": {"seconds":393.958,"sha256":"5d990c2f52aaf38117e23f3575e2a298a387847ffa9a7b17b3c59455296a3f58","text":"You now have one minute to check your answers to part four."},
+  "15-4": {"seconds":394.728,"sha256":"bf01435cf493eee151471214fadd1f1bb668f969f9bba894a352a84de82d7d2b","text":"You now have one minute to check your answers to part 4."},
   "18-1": {
     "seconds": 452.124,
     "sha256": "86bbf1a0df627958d7e09ef5b0917fa8aec0d5278e6c056807690cdc8e28a24e",
