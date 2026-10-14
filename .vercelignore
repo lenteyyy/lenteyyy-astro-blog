@@ -5,7 +5,7 @@ node_modules
 dist
 .astro
 .env*
-!.env.example
+!/.env.example
 **/.env*
 **/.DS_Store
 **/*.log
@@ -17,3 +17,8 @@ content/templates
 content/.obsidian
 docs
 
+
+**/.env*
+!/.env.example
+tests
+infra

@@ -61,18 +61,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		{updatedAt && <meta property="article:modified_time" content={updatedAt} />}
 		<title>{title}</title>
 		<ClientRouter />
-		<script is:inline>
-			try {
-				localStorage.removeItem('theme');
-				const applyTheme = () => {
-					const theme = sessionStorage.getItem('theme');
-					if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme;
-					else document.documentElement.removeAttribute('data-theme');
-				};
-				document.addEventListener('astro:after-swap', applyTheme);
-				applyTheme();
-			} catch {}
-		</script>
+		<script is:inline src="/theme-init.js"></script>
 	</head>
 	<body data-site-motion="on">
 		<header class="site-header">
@@ -93,8 +82,8 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 				<span>© {new Date().getFullYear()} Lenteyyy</span>
 				<nav class="footer-links" aria-label={locale === 'zh-TW' ? '聯絡方式' : '联系方式'}>
 					<a href="https://lenteyielts.cn">{locale === 'zh-TW' ? '雅思學習站' : '雅思学习站'}</a>
-					<a href="https://github.com/lenteyyy" target="_blank" rel="noreferrer">GitHub</a>
-					<a href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noreferrer">Instagram</a>
+					<a href="https://github.com/lenteyyy" target="_blank" rel="noopener noreferrer">GitHub</a>
+					<a href="https://www.instagram.com/lenteyyy_/" target="_blank" rel="noopener noreferrer">Instagram</a>
 				</nav>
 			</div>
 		</footer>
