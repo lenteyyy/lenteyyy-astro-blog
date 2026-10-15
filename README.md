@@ -56,4 +56,12 @@ pnpm install
 pnpm dev
 ```
 
-博客与雅思站分别维护。博客项目仅使用站点地址、giscus 和 Redis 统计配置；旧 /ielts 链接保留跳转及浏览器记录迁移窗口。博客所有检查仅验证自身，无需雅思源码或构建。
+本仓库独立维护个人博客，仅使用本站地址、giscus 和 Redis 统计配置。构建、路由、资源和浏览器存储均仅服务本站，不包含其他项目的跳转或数据迁移入口。
+
+## 发布安全边界
+
+发布前执行 `pnpm test`、`pnpm check`、`pnpm build`、`pnpm verify:build` 和 `pnpm security:audit`。公开图片也会检查 EXIF、XMP、IPTC；原始附件与本地隔离文件不进入发布包。
+
+设置本机 `BLOG_VERCEL_ACCOUNT_EMAIL` 后运行 `pnpm security:target`，核对当前登录账户、固定博客团队与项目、GitHub 仓库和生产分支。`BLOG_VERCEL_CLI` 可指定本机 CLI 路径。API 发布准备脚本会强制执行同一核对。
+
+主站地址固定为 `https://www.lenteyyy.com`，评论固定使用本博客仓库。浏览量通过同源 POST 记录，GET 只读取统计；Redis 错误和超时不会阻塞文章阅读。自动 Git 部署关闭，手动发布时只操作博客项目。

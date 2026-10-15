@@ -56,7 +56,7 @@ for (const { slug, hasCover } of posts) {
 const sitemap = await readFile(path.join(buildDir, 'sitemap.xml'), 'utf8');
 const rss = await readFile(path.join(buildDir, 'rss.xml'), 'utf8');
 const twRss = await readFile(path.join(buildDir, 'zh-tw', 'rss.xml'), 'utf8');
-if (sitemap.includes('<loc>https://www.lenteyyy.com/ielts')) failures.push('Retired IELTS pages remain in the blog sitemap');
+
 for (const { slug } of posts) {
 	if (!sitemap.includes(`/posts/${slug}`) || !sitemap.includes(`/zh-tw/posts/${slug}`)) failures.push(`${slug}: sitemap entry is missing`);
 	if (!rss.includes(`/posts/${slug}`) || !twRss.includes(`/zh-tw/posts/${slug}`)) failures.push(`${slug}: RSS entry is missing`);

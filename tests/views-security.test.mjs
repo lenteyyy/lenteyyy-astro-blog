@@ -4,6 +4,14 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
 
+function loadViews(overrides = {}) {
+ const source=readFileSync(new URL('../src/pages/api/views/[slug].ts',import.meta.url),'utf8').replace(/^import .*;\n/gm,'').replaceAll('import.meta.env.PROD','true');
+ const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
+ const exports={};
+ vm.runInNewContext(code,{exports,Response,URL,getPostBySlug:async()=>({slug:'known'}),redis:async()=>({result:'12'}),withinRateLimit:async()=>true,claimDailyView:async()=>true,...overrides});
+ return exports;
+}
+
 test('unknown or unpublished articles cannot create Redis view or deduplication keys',async()=>{
  const source=readFileSync(new URL('../src/pages/api/views/[slug].ts',import.meta.url),'utf8').replace(/^import .*;\n/gm,'').replaceAll('import.meta.env.PROD','true');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
@@ -11,4 +19,34 @@ test('unknown or unpublished articles cannot create Redis view or deduplication 
  vm.runInNewContext(code,{exports,Response,URL,getPostBySlug:async()=>undefined,redis:upstream,withinRateLimit:upstream,claimDailyView:upstream});
  const request=new Request('https://www.lenteyyy.com/api/views/attacker-key?increment=1',{headers:{referer:'https://www.lenteyyy.com/posts/attacker-key'}});
  const response=await exports.GET({params:{slug:'attacker-key'},request});assert.equal(response.status,404);assert.deepEqual(await response.json(),{error:'not_found'});assert.equal(calls,0);
+});
+
+test('GET and prefetch requests cannot increment article counters',async()=>{
+ const commands=[];
+ const route=loadViews({redis:async command=>{commands.push(command);return {result:'12'};},claimDailyView:async()=>assert.fail('GET claimed a daily view')});
+ const request=new Request('https://www.lenteyyy.com/api/views/known?increment=1',{headers:{referer:'https://www.lenteyyy.com/posts/known'}});
+ const response=await route.GET({params:{slug:'known'},request});
+ assert.equal(response.status,200);assert.deepEqual(await response.json(),{slug:'known',views:12});assert.deepEqual(JSON.parse(JSON.stringify(commands)),[['GET','post:views:known']]);
+});
+
+test('cross-site and missing-origin POST requests are rejected before any upstream access',async()=>{
+ const denied=async()=>assert.fail('Cross-site request reached data service');
+ const route=loadViews({getPostBySlug:denied,redis:denied,withinRateLimit:denied,claimDailyView:denied});
+ for(const headers of [{origin:'https://lenteyielts.cn'},{origin:'https://www.lenteyyy.com','sec-fetch-site':'cross-site'},{}]){
+  const response=await route.POST({params:{slug:'known'},request:new Request('https://www.lenteyyy.com/api/views/known',{method:'POST',headers})});
+  assert.equal(response.status,403);assert.equal(response.headers.get('cross-origin-resource-policy'),'same-origin');
+ }
+});
+
+test('only same-origin article visits increment; rate limits and invalid counters fail safely',async()=>{
+ const commands=[];const url='https://www.lenteyyy.com/api/views/known';
+ const request=new Request(url,{method:'POST',headers:{origin:'https://www.lenteyyy.com',referer:'https://www.lenteyyy.com/posts/known','sec-fetch-site':'same-origin'}});
+ const route=loadViews({redis:async command=>{commands.push(command);return {result:13};}});
+ assert.equal((await route.POST({params:{slug:'known'},request})).status,200);assert.deepEqual(JSON.parse(JSON.stringify(commands)),[['INCR','post:views:known']]);
+ const limited=loadViews({withinRateLimit:async()=>false,redis:async()=>assert.fail('Rate-limited request reached Redis')});
+ assert.equal((await limited.POST({params:{slug:'known'},request})).status,429);
+ for(const value of [{},'garbage',-1,Infinity,'9007199254740993']){
+  const broken=loadViews({redis:async()=>({result:value})});const response=await broken.GET({params:{slug:'known'},request:new Request(url)});
+  assert.equal((await response.json()).unavailable,true);assert.equal(response.headers.get('cache-control'),'private, no-store');
+ }
 });

@@ -9,20 +9,29 @@ const botPattern = /bot|crawler|spider|crawling|facebookexternalhit|preview|slur
 function json(body: unknown, status = 200): Response {
 	return new Response(JSON.stringify(body), {
 		status,
-		headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
+		headers: {
+			'content-type': 'application/json; charset=utf-8',
+			'cache-control': 'private, no-store',
+			'cross-origin-resource-policy': 'same-origin',
+			'x-content-type-options': 'nosniff',
+		},
 	});
 }
 
-export const GET: APIRoute = async ({ params, request }) => {
+const handleView: APIRoute = async ({ params, request }) => {
 	const slug = params.slug || '';
 	if (!/^[\p{Letter}\p{Number}-]{1,120}$/u.test(slug)) return json({ error: 'invalid_slug' }, 400);
+	const requestUrl = new URL(request.url);
+	const shouldIncrement = request.method === 'POST';
+	if (shouldIncrement && (
+		request.headers.get('origin') !== requestUrl.origin
+		|| !['same-origin', null].includes(request.headers.get('sec-fetch-site'))
+	)) return json({ error: 'forbidden' }, 403);
 
 	try {
 		if (!(await getPostBySlug(slug))) return json({ error: 'not_found' }, 404);
 		if (!(await withinRateLimit(request, 'views', 90, 60))) return json({ error: 'rate_limited' }, 429);
 		const key = `post:views:${slug}`;
-		const requestUrl = new URL(request.url);
-		const shouldIncrement = requestUrl.searchParams.get('increment') === '1';
 		const userAgent = request.headers.get('user-agent') || '';
 		const purpose = request.headers.get('purpose') || request.headers.get('sec-purpose') || '';
 		const isBot = botPattern.test(userAgent) || /prefetch|prerender/i.test(purpose);
@@ -35,9 +44,14 @@ export const GET: APIRoute = async ({ params, request }) => {
 		const increment = shouldIncrement && validPageRequest && !isBot && await claimDailyView(request, slug);
 		const result = increment ? await redis(['INCR', key]) : await redis(['GET', key]);
 		const raw = result.result ?? 0;
-		return json({ slug, views: Number(raw) || 0 });
+		const views = typeof raw === 'number' || (typeof raw === 'string' && /^\d+$/.test(raw)) ? Number(raw) : NaN;
+		if (!Number.isSafeInteger(views) || views < 0) throw new Error('Invalid view count');
+		return json({ slug, views });
 	} catch {
 		if (import.meta.env.PROD) return json({ slug, views: null, unavailable: true }, 200);
 		return json({ error: 'views_unavailable' }, 503);
 	}
 };
+
+export const GET: APIRoute = handleView;
+export const POST: APIRoute = handleView;

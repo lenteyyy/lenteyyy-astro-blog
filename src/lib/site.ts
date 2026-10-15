@@ -2,7 +2,7 @@ export const site = {
 	name: 'Lenteyyy',
 	title: 'Lenteyyy · 个人博客',
 	description: '酒店、旅行、音乐和一些个人杂谈。',
-	url: import.meta.env.PUBLIC_SITE_URL || 'https://lenteyyy.vercel.app',
+	url: 'https://www.lenteyyy.com',
 	locale: 'zh_CN',
 	lang: 'zh-CN',
 	author: 'Lenteyyy',
@@ -15,6 +15,10 @@ export const giscusConfig = {
 	category: import.meta.env.PUBLIC_GISCUS_CATEGORY || '',
 	categoryId: import.meta.env.PUBLIC_GISCUS_CATEGORY_ID || '',
 };
+
+if (giscusConfig.repo && (giscusConfig.repo !== 'lenteyyy/lenteyyy-astro-blog' || giscusConfig.repoId !== 'R_kgDOTUY6Bg')) {
+	throw new Error('Comments must use the blog repository');
+}
 
 export function canonicalUrl(path = '/'): string {
 	return new URL(path, site.url).toString();
