@@ -13,7 +13,7 @@ function arrayBuffer(buffer: Buffer): ArrayBuffer {
 	return buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength) as ArrayBuffer;
 }
 
-const logo = `data:image/png;base64,${readAsset('public/assets/lenteyyy-logo.png').toString('base64')}`;
+const logo = `data:image/png;base64,${readAsset('public/lenteyyy-logo.png').toString('base64')}`;
 const simplifiedRegularFont = arrayBuffer(readAsset('node_modules/@fontsource/noto-sans-sc/files/noto-sans-sc-chinese-simplified-400-normal.woff'));
 const simplifiedBoldFont = arrayBuffer(readAsset('node_modules/@fontsource/noto-sans-sc/files/noto-sans-sc-chinese-simplified-700-normal.woff'));
 const traditionalRegularFont = arrayBuffer(readAsset('node_modules/@fontsource/noto-sans-tc/files/noto-sans-tc-chinese-traditional-400-normal.woff'));

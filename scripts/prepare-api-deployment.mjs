@@ -1,5 +1,6 @@
 import fs from 'node:fs';import {deploymentFiles} from './deployment-files.mjs';import{createHash}from'node:crypto';
-const link=JSON.parse(fs.readFileSync('.vercel/project.json'));
+import {verifyDeploymentTarget} from './verify-deployment-target.mjs';
+const link=verifyDeploymentTarget(process.cwd(),true);
 const known=new Set(JSON.parse(fs.readFileSync('.vercel/uploaded-manifest.json')).map(x=>x.sha));
 const paths=deploymentFiles();
 const hashes=[],files=paths.sort().map(file=>{const bytes=fs.readFileSync(file),sha=createHash('sha1').update(bytes).digest('hex');hashes.push({file,sha,size:bytes.length});if(known.has(sha))return{file,sha,size:bytes.length};if(bytes.length>10_000_000)throw Error('New large asset needs upload first: '+file);return{file,data:bytes.toString('base64'),encoding:'base64'};});

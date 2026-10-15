@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { parseEnv } from 'node:util';
+import sharp from 'sharp';
 
 // Diagnostics deliberately name files only, never matching secret values.
 const walk = dir => readdirSync(dir).flatMap(name => {
@@ -40,5 +41,10 @@ for (const file of client) {
   if (/SUPABASE_SERVICE_ROLE_KEY|RESEND_API_KEY|SUPABASE_SECRET_KEY|POSTGRES_URL|UPSTASH_REDIS_REST_TOKEN|KV_REST_API_TOKEN/.test(text)) failures.push(`Server-only configuration in public build: ${file}`);
   if (/\.map$/.test(file)) failures.push(`Public source map: ${file}`);
 }
+const publicImages = walk('public').filter(file => /\.(?:png|jpe?g|webp)$/i.test(file));
+for (const file of publicImages) {
+  const metadata = await sharp(file).metadata();
+  if (metadata.exif || metadata.xmp || metadata.iptc) failures.push(`Private image metadata: ${file}`);
+}
 if (failures.length) { console.error([...new Set(failures)].join('\n')); process.exitCode = 1; }
-else console.log(`Privacy scan passed: ${sources.length} source files, ${client.length} public build files; no detected credentials, unsafe public variables, source maps.`);
+else console.log(`Privacy scan passed: ${sources.length} source files, ${client.length} public build files, ${publicImages.length} images; no detected credentials, unsafe public variables, source maps or private image metadata.`);
