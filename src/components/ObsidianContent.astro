@@ -11,6 +11,7 @@ const html = renderMarkdown(source, locale);
 
 <script>
 	import { onPageLoad } from '../lib/client-lifecycle';
+	import { MOTION } from '../lib/motion-policy';
 
 	onPageLoad('obsidian-content', (signal) => {
 		const content = document.querySelector<HTMLElement>('.article-content');
@@ -21,21 +22,34 @@ const html = renderMarkdown(source, locale);
 		let currentIndex = 0;
 		let touchStartX = 0;
 		let lightbox: HTMLElement | null = null;
+		let opener: HTMLElement | null = null;
+		let boxAnimation: Animation | undefined;
+		const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-		const closeLightbox = () => {
-			lightbox?.classList.remove('is-open');
-			if (lightbox) {
-				lightbox.hidden = true;
-				lightbox.setAttribute('aria-hidden', 'true');
-			}
-			document.documentElement.classList.remove('has-lightbox');
-			if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+		const closeLightbox = (immediate = false) => {
+			const box = lightbox;
+			if (!box || box.hidden) return;
+			boxAnimation?.cancel();
+			box.classList.remove('is-open');
+			const finish = () => {
+				if (box.classList.contains('is-open')) return;
+				box.hidden = true;
+				document.documentElement.classList.remove('has-lightbox');
+				if (!signal.aborted) opener?.focus({ preventScroll: true });
+				box.setAttribute('aria-hidden', 'true');
+			};
+			if (immediate || reduced.matches) { finish(); return; }
+			boxAnimation = box.animate([{ opacity: 1 }, { opacity: 0 }], { duration: MOTION.exitDuration, easing: MOTION.easing });
+			void boxAnimation.finished.then(finish, () => {});
 		};
 		const showImage = (index: number) => {
 			if (!images.length) return;
 			currentIndex = (index + images.length) % images.length;
 			const image = images[currentIndex];
 			const box = ensureLightbox();
+			const wasHidden = box.hidden;
+			boxAnimation?.cancel();
+			if (wasHidden) opener = document.activeElement instanceof HTMLElement ? document.activeElement : image;
 			const boxImage = box.querySelector<HTMLImageElement>('img');
 			const boxCaption = box.querySelector<HTMLElement>('figcaption');
 			if (!boxImage || !boxCaption) return;
@@ -47,6 +61,10 @@ const html = renderMarkdown(source, locale);
 			box.setAttribute('aria-hidden', 'false');
 			box.classList.add('is-open');
 			document.documentElement.classList.add('has-lightbox');
+			if (!reduced.matches) {
+				boxAnimation = box.animate([{ opacity: 0 }, { opacity: 1 }], { duration: MOTION.duration, easing: MOTION.easing });
+			}
+			if (wasHidden) box.querySelector<HTMLButtonElement>('.lightbox-close')?.focus({ preventScroll: true });
 		};
 		const ensureLightbox = () => {
 			if (lightbox) return lightbox;
@@ -54,6 +72,9 @@ const html = renderMarkdown(source, locale);
 			lightbox.className = 'lightbox';
 			lightbox.hidden = true;
 			lightbox.setAttribute('aria-hidden', 'true');
+			lightbox.setAttribute('role', 'dialog');
+			lightbox.setAttribute('aria-modal', 'true');
+			lightbox.setAttribute('aria-label', content.dataset.closeLabel === '關閉' ? '圖片預覽' : '图片预览');
 			const close = document.createElement('button');
 			const previous = document.createElement('button');
 			const next = document.createElement('button');
@@ -78,7 +99,14 @@ const html = renderMarkdown(source, locale);
 			return lightbox;
 		};
 
-		images.forEach((image, index) => image.addEventListener('click', () => showImage(index), { signal }));
+		images.forEach((image, index) => {
+			image.tabIndex = 0;
+			image.setAttribute('role', 'button');
+			image.addEventListener('click', () => { opener = image; image.focus({ preventScroll: true }); showImage(index); }, { signal });
+			image.addEventListener('keydown', (event) => {
+				if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); showImage(index); }
+			}, { signal });
+		});
 		document.addEventListener('click', async (event) => {
 			const target = event.target as HTMLElement;
 			if (!content.contains(target)) return;
@@ -101,13 +129,20 @@ const html = renderMarkdown(source, locale);
 			if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeLightbox(); }
 			if (event.key === 'ArrowLeft') showImage(currentIndex - 1);
 			if (event.key === 'ArrowRight') showImage(currentIndex + 1);
+			if (event.key === 'Tab') {
+				const controls = Array.from(lightbox.querySelectorAll<HTMLButtonElement>('button')).filter((button) => button.getClientRects().length > 0);
+				const first = controls[0], last = controls.at(-1);
+				if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+				else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+			}
 		}, { capture: true, signal });
-		signal.addEventListener('abort', () => { closeLightbox(); lightbox?.remove(); }, { once: true });
+		reduced.addEventListener('change', () => { if (boxAnimation?.playState === 'running') boxAnimation.finish(); }, { signal });
+		signal.addEventListener('abort', () => { closeLightbox(true); lightbox?.remove(); }, { once: true });
 	});
 </script>
 
 <style>
-	.article-content { font-size: 18px; line-height: 2.08; }
+	.article-content { font-size: 1.1875rem; line-height: 2.08; }
 	.article-content :global(p) { margin: 0 0 1.35em; }
 	.article-content :global(h2), .article-content :global(h3) { position: relative; }
 	.article-content :global(h2) { margin: 2.35em 0 .72em; font-size: 1.55em; line-height: 1.38; scroll-margin-top: 95px; letter-spacing: 0; }
@@ -123,9 +158,9 @@ const html = renderMarkdown(source, locale);
 	.article-content :global(li) { padding-left: .35em; margin: .18em 0; }
 	.article-content :global(hr) { border: 0; width: 42%; border-top: 1px solid var(--line); margin: 3.2em auto; }
 	.article-content :global(.article-image) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); }
-	.article-content :global(.article-image img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); cursor: zoom-in; transition: transform 180ms ease, filter 180ms ease; }
+	.article-content :global(.article-image img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); cursor: zoom-in; transition: transform var(--motion-image-duration) var(--motion-ease), filter var(--motion-image-duration) var(--motion-ease); }
 	.article-content :global(.article-image img:hover) { transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
-	.article-content :global(figcaption) { margin-top: 9px; color: var(--muted); font: 11px/1.7 var(--mono); letter-spacing: .04em; }
+	.article-content :global(figcaption) { margin-top: 9px; color: var(--muted); font: 0.75rem/1.7 var(--mono); letter-spacing: .04em; }
 	.article-content :global(.image-gallery) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); display: grid; gap: 12px; align-items: start; }
 	.article-content :global(.image-gallery-2) { grid-template-columns: repeat(2, 1fr); }
 	.article-content :global(.image-gallery-3), .article-content :global(.image-gallery-4) { grid-template-columns: repeat(3, 1fr); }
@@ -136,8 +171,8 @@ const html = renderMarkdown(source, locale);
 	.article-content :global(.code-wrap) { position: relative; margin: 1.8em 0; }
 	.article-content :global(pre) { overflow-x: auto; padding: 22px; background: #27231d; color: #f7f1e8; line-height: 1.75; border-radius: var(--radius); }
 	.article-content :global(pre code) { padding: 0; background: none; color: inherit; }
-	.article-content :global(.copy-code) { position: absolute; right: 8px; top: 8px; padding: 5px 8px; border: 1px solid #ffffff33; border-radius: 4px; background: #00000033; color: #fff; font: 11px var(--mono); cursor: pointer; }
-	.article-content :global(.embed-link) { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); text-decoration: none; font: 12px var(--mono); border-radius: var(--radius); }
+	.article-content :global(.copy-code) { position: absolute; right: 8px; top: 8px; padding: 5px 8px; border: 1px solid #ffffff33; border-radius: 4px; background: #00000033; color: #fff; font: 0.75rem var(--mono); cursor: pointer; }
+	.article-content :global(.embed-link) { display: inline-block; padding: 9px 14px; border: 1px solid var(--line); text-decoration: none; font: 0.75rem var(--mono); border-radius: var(--radius); }
 	.article-content :global(.media-embed) { margin: 2em 0; border-radius: var(--radius); overflow: hidden; background: var(--surface); }
 	.article-content :global(.media-embed iframe) { display: block; width: 100%; border: 0; }
 	.article-content :global(.media-embed-youtube iframe) { aspect-ratio: 16 / 9; height: auto; }
@@ -155,17 +190,17 @@ const html = renderMarkdown(source, locale);
 	.article-content :global(table) { width: 100%; border-collapse: collapse; min-width: 520px; }
 	.article-content :global(td) { border: 0; border-bottom: 1px solid var(--line); padding: 12px 14px; vertical-align: top; }
 	:global(.has-lightbox) { overflow: hidden; }
-	:global(.lightbox) { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; gap: 10px; padding: 28px; background: color-mix(in srgb, var(--paper) 92%, #000 8%); opacity: 0; pointer-events: none; transition: opacity 180ms ease; }
-	:global(.lightbox.is-open) { opacity: 1; pointer-events: auto; }
+	:global(.lightbox) { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; gap: 10px; padding: 28px; background: color-mix(in srgb, var(--paper) 92%, #000 8%); }
+	:global(.lightbox[hidden]) { display: none; }
 	:global(.lightbox figure) { min-width: 0; margin: 0; text-align: center; }
 	:global(.lightbox img) { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; }
-	:global(.lightbox figcaption) { margin-top: 10px; color: var(--muted); font: 11px/1.7 var(--mono); }
+	:global(.lightbox figcaption) { margin-top: 10px; color: var(--muted); font: 0.75rem/1.7 var(--mono); }
 	:global(.lightbox button) { border: 0; background: transparent; color: var(--muted); cursor: pointer; transition: color 160ms ease; }
 	:global(.lightbox button:hover) { color: var(--accent); }
-	:global(.lightbox-close) { position: absolute; top: 20px; right: 24px; font-size: 28px; }
-	:global(.lightbox-prev), :global(.lightbox-next) { font-size: 42px; }
+	:global(.lightbox-close) { position: absolute; top: 20px; right: 24px; font-size: 1.75rem; }
+	:global(.lightbox-prev), :global(.lightbox-next) { font-size: 2.625rem; }
 	@media (max-width: 640px) {
-		.article-content { font-size: 16px; line-height: 1.98; }
+		.article-content { font-size: 1.0625rem; line-height: 1.98; }
 		.article-content :global(.article-image), .article-content :global(.image-gallery) { width: 100%; margin-left: 0; transform: none; }
 		.article-content :global(.image-gallery) { grid-template-columns: 1fr; }
 		.article-content :global(.image-gallery .article-image img) { aspect-ratio: auto; height: auto; object-fit: contain; }

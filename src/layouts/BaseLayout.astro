@@ -28,7 +28,7 @@ const simplifiedUrl = canonicalUrl(pathWithoutLocale);
 const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 ---
 <!doctype html>
-<html lang={locale} transition:animate={fade({ duration: '220ms' })}>
+<html lang={locale} transition:animate={fade({ duration: '280ms' })}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -90,6 +90,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 			<div class="easter-egg-card"><button type="button" class="easter-egg-close" data-easter-egg-close aria-label={locale === 'zh-TW' ? '關閉' : '关闭'}>×</button><p id="easter-egg-title">{locale === 'zh-TW' ? '恭喜你發現了這個彩蛋！附上全世界最好喝的手搖飲之相片一張。' : '恭喜你发现了这个彩蛋！附上全世界最好喝的手摇饮之相片一张。'}</p><img src="/assets/egg-tea.png" alt={locale === 'zh-TW' ? '手搖飲照片' : '手摇饮照片'} /></div>
 		</div>
 		<script>
+			import '../lib/site-motion';
 			import { onPageLoad } from '../lib/client-lifecycle';
 			onPageLoad('easter-egg', (signal) => {
 				const egg = document.querySelector<HTMLElement>('[data-easter-egg]');
@@ -116,8 +117,8 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		--serif: 'Noto Serif SC', Georgia, serif;
 		--mono: 'DM Mono', ui-monospace, monospace;
 		--ink: #26231f;
-		--muted: #817b71;
-		--soft: #aaa196;
+		--muted: #756e63;
+		--soft: #766f64;
 		--line: #e4ddd2;
 		--paper: #f8f5ef;
 		--surface: #efebe2;
@@ -128,13 +129,14 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		--radius: 3px;
 		--shadow: 0 18px 45px color-mix(in srgb, var(--ink) 8%, transparent);
 		font-family: var(--serif);
+		font-size: 106.25%;
 	}
 	@media (prefers-color-scheme: dark) {
 		:root:not([data-theme='light']) {
 			color-scheme: dark;
 			--ink: #efe9df;
 			--muted: #aaa197;
-			--soft: #7d756c;
+			--soft: #8b8277;
 			--line: #383229;
 			--paper: #15130f;
 			--surface: #211d18;
@@ -149,7 +151,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		color-scheme: dark;
 		--ink: #efe9df;
 		--muted: #aaa197;
-		--soft: #7d756c;
+		--soft: #8b8277;
 		--line: #383229;
 		--paper: #15130f;
 		--surface: #211d18;
@@ -171,34 +173,38 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
 	.site-header { border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); background: color-mix(in srgb, var(--paper) 91%, transparent); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(16px); }
 	.nav-wrap, .footer-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-	.brand { font-size: 20px; font-weight: 700; letter-spacing: .01em; transition: color 180ms ease; }
+	.brand { font-size: 1.25rem; font-weight: 700; letter-spacing: .01em; transition: color 180ms ease; }
 	.brand span { color: var(--accent); }
 	.brand:hover { color: var(--accent); }
-	nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 14px; }
+	nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 0.875rem; }
 	nav > a { position: relative; padding: 24px 0 22px; transition: color 180ms ease; }
 	nav > a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; }
 	nav > a:hover, nav > a.active { color: var(--ink); }
 	nav > a:hover::after, nav > a.active::after { transform: scaleX(1); }
-	.site-footer { margin-top: 120px; color: var(--muted); font: 11px/1.6 var(--mono); }
+	.site-footer { margin-top: 120px; color: var(--muted); font: 0.75rem/1.6 var(--mono); }
 	.footer-inner { min-height: 84px; border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
-	.footer-links { display: flex; gap: 20px; font: 11px var(--mono); }
+	.footer-links { display: flex; gap: 20px; font: 0.75rem var(--mono); }
 	.footer-links a { color: var(--muted); transition: color 180ms ease; }
 	.footer-links a:hover { color: var(--accent); }
 	.easter-egg { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 22px; background: #0009; }
 	.easter-egg[hidden] { display: none; }
 	.easter-egg-card { position: relative; width: min(560px, 100%); padding: 28px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
-	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 18px; line-height: 1.8; }
+	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 1.125rem; line-height: 1.8; }
 	.easter-egg-card img { display: block; width: 100%; max-height: 65vh; object-fit: cover; }
-	.easter-egg-close { position: absolute; top: 10px; right: 14px; border: 0; background: transparent; color: var(--muted); font-size: 26px; cursor: pointer; }
+	.easter-egg-close { position: absolute; top: 10px; right: 14px; border: 0; background: transparent; color: var(--muted); font-size: 1.625rem; cursor: pointer; }
 	@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .article-content img, :root:not([data-theme='light']) .hero-image { filter: brightness(.9); } }
 	:root[data-theme='dark'] .article-content img, :root[data-theme='dark'] .hero-image { filter: brightness(.9); }
 	@media (max-width: 640px) {
 		.shell { width: min(1180px, calc(100% - 30px)); }
 		.nav-wrap { min-height: 62px; }
-		.brand { font-size: 18px; }
-		nav { gap: 14px; font-size: 13px; }
+		.brand { font-size: 1.125rem; }
+		nav { gap: 14px; font-size: 0.8125rem; }
 		nav > a { padding: 20px 0 17px; }
 		.footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 12px; }
 		.footer-links { gap: 14px; flex-wrap: wrap; }
+	}
+	@media (max-width: 380px) {
+		.nav-wrap { gap: 12px; }
+		.nav-wrap > nav { gap: 9px; }
 	}
 </style>
