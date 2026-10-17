@@ -28,3 +28,31 @@ test('runtime isolation rejects foreign public scripts, leaked private files and
   fs.symlinkSync(path.join(root,'src'),path.join(root,'public','outside'));assert.throws(()=>verifyProjectIsolation(root));
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('only an explicit outbound learning-site anchor is allowed, not a shared runtime',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'blog-outbound-link-'));
+ try{
+  fs.writeFileSync(path.join(root,'vercel.json'),JSON.stringify({git:{deploymentEnabled:false}}));
+  for(const dir of ['src','public','dist/client'])fs.mkdirSync(path.join(root,dir),{recursive:true});
+  const safe='<a href="https://lenteyielts.cn/" target="_blank" rel="noopener noreferrer">冷踢踢的雅思学习网站</a>';
+  fs.writeFileSync(path.join(root,'src','layout.astro'),safe);
+  fs.writeFileSync(path.join(root,'dist/client','index.html'),safe);
+  assert.doesNotThrow(()=>verifyProjectIsolation(root));
+  for(const markup of [
+   '<iframe src="https://lenteyielts.cn/"></iframe>',
+   '<a href="https://lenteyielts.cn/api/ielts/me">account</a>',
+   '<a data-href="https://lenteyielts.cn/">not an href</a>',
+   '<a title=\' href="https://lenteyielts.cn/"\'>quoted attribute</a>',
+   '<div title=\'<a href="https://lenteyielts.cn/">\'>not an anchor</div>',
+   '<a href="https://lenteyielts.cn/" data-endpoint="https://lenteyielts.cn/">bridge</a>',
+   safe+'<script>fetch("https://lenteyielts.cn/")</script>',
+   '<script>const html='+JSON.stringify(safe)+'</script>',
+  ]){
+   fs.writeFileSync(path.join(root,'dist/client','index.html'),markup);
+   assert.throws(()=>verifyProjectIsolation(root));
+  }
+  fs.writeFileSync(path.join(root,'dist/client','index.html'),safe);
+  fs.writeFileSync(path.join(root,'public','bridge.js'),'const html='+JSON.stringify(safe));
+  assert.throws(()=>verifyProjectIsolation(root));
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});

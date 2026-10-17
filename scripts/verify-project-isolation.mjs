@@ -7,6 +7,18 @@ const foreignRuntime = /lenteyielts\.cn|SUPABASE_|RESEND_|migration-bridge|lente
 const privateFile = /(?:^|\/)(?:\.env(?:\.|$)|auth\.json$|\.git(?:\/|$)|\.obsidian(?:\/|$))|\.(?:pem|key|map|log)$/i;
 const foreignAsset = /(?:^|\/)(?:ielts-score-report|google-g)\./i;
 
+// A user-approved, top-level outbound link is not a runtime integration.
+// Mask only an actual href attribute on anchors in markup, never scripts,
+// iframe URLs, data attributes or learning-site API/asset paths.
+function withoutAllowedOutboundLinks(file, source) {
+	if (!/\.(?:astro|html)$/i.test(file)) return source;
+	const tokens = /<!--[\s\S]*?-->|<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>|<\/?[a-z][a-z0-9:-]*(?:[^"'<>]|"[^"]*"|'[^']*')*>/gi;
+	return source.replace(tokens, tag => /^<a\s/i.test(tag) ? tag.replace(
+		/(^<a\s+href\s*=\s*)(["'])https:\/\/lenteyielts\.cn\/?\2(?=\s|\/?>)/i,
+		'$1$2https://allowed-outbound.invalid/$2',
+	) : tag);
+}
+
 function files(root, folder) {
 	if (!fs.existsSync(path.join(root, folder))) return [];
 	return fs.readdirSync(path.join(root, folder), { withFileTypes: true }).flatMap(entry => {
@@ -26,12 +38,12 @@ export function verifyProjectIsolation(root = process.cwd()) {
 	for (const file of [...files(root, 'src'), ...files(root, 'public')]) {
 		if (privateFile.test(file) || foreignAsset.test(file)) throw Error('Private/foreign runtime file: ' + file);
 		if (/\.(?:astro|tsx?|m?js|json|html|css|svg)$/.test(file)
-			&& foreignRuntime.test(fs.readFileSync(path.join(root, file), 'utf8'))) throw Error('Foreign project dependency: ' + file);
+			&& foreignRuntime.test(withoutAllowedOutboundLinks(file, fs.readFileSync(path.join(root, file), 'utf8')))) throw Error('Foreign project dependency: ' + file);
 	}
 	for (const file of files(root, 'dist/client')) {
 		if (privateFile.test(file) || foreignAsset.test(file) || /(?:^|\/)ielts(?:\/|$)/i.test(file)) throw Error('Foreign/private public build file: ' + file);
 		if (/\.(?:html|m?js|json|xml)$/.test(file)
-			&& foreignRuntime.test(fs.readFileSync(path.join(root, file), 'utf8'))) throw Error('Foreign dependency in public build: ' + file);
+			&& foreignRuntime.test(withoutAllowedOutboundLinks(file, fs.readFileSync(path.join(root, file), 'utf8')))) throw Error('Foreign dependency in public build: ' + file);
 	}
 	console.log('Blog isolation verified: own source, routes, assets, service configuration and public build.');
 }

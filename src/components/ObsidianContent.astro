@@ -199,6 +199,10 @@ const html = renderMarkdown(source, locale);
 	:global(.lightbox button:hover) { color: var(--accent); }
 	:global(.lightbox-close) { position: absolute; top: 20px; right: 24px; font-size: 1.75rem; }
 	:global(.lightbox-prev), :global(.lightbox-next) { font-size: 2.625rem; }
+	@media (max-width: 1200px) {
+		/* Do not bleed images beyond the reading column beside the tablet TOC. */
+		.article-content :global(.article-image), .article-content :global(.image-gallery) { width: 100%; margin-left: 0; transform: none; }
+	}
 	@media (max-width: 640px) {
 		.article-content { font-size: 1.0625rem; line-height: 1.98; }
 		.article-content :global(.article-image), .article-content :global(.image-gallery) { width: 100%; margin-left: 0; transform: none; }
