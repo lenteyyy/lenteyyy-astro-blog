@@ -1,6 +1,7 @@
 :root {
   --motion-duration: 220ms;
   --motion-exit-duration: 140ms;
+  --motion-image-duration: 700ms;
   --motion-ease: cubic-bezier(.22, 1, .36, 1);
 }
 
@@ -17,24 +18,47 @@ body[data-site-motion='on'] :where(a, button, input, select, textarea, summary) 
   transition-duration: var(--motion-duration);
   transition-timing-function: var(--motion-ease);
 }
-/* Existing image/logo/card effects keep their properties, but share the same
-   timing. Low specificity lets the practice/reduced-motion guards win. */
-:where(body[data-site-motion='on']) * {
-  transition-duration: var(--motion-duration) !important;
-  transition-timing-function: var(--motion-ease) !important;
-}
 body[data-site-motion='on'] dialog[open]:not([data-motion-managed]) {
   animation: surface-in var(--motion-duration) var(--motion-ease);
 }
 body[data-site-motion='on'] details[open] > :not(summary) {
   animation: page-in var(--motion-duration) var(--motion-ease);
 }
-body[data-site-motion='on'] .study-navigation .navigation-indicator {
-  transition-duration: var(--motion-duration);
-  transition-timing-function: var(--motion-ease);
+body[data-site-motion='on'] :popover-open {
+  animation: surface-in var(--motion-duration) var(--motion-ease);
+}
+body[data-site-motion='on'] .language-menu:not([hidden]),
+body[data-site-motion='on'] .easter-egg:not([hidden]) .easter-egg-card {
+  animation: surface-in var(--motion-duration) var(--motion-ease);
 }
 
-/* Exams, question-by-question practice and review never animate. */
+/* Editorial motion: imagery breathes; the reading column stays still. */
+.cover-link img, .article-content .article-image img {
+  transition-duration: var(--motion-image-duration);
+  transition-timing-function: var(--motion-ease);
+}
+.read-more span, .category-row a > span {
+  display: inline-block;
+  transition: transform var(--motion-duration) var(--motion-ease);
+}
+.post-card:focus-within .read-more span, .category-row a:focus-visible > span {
+  transform: translate(3px, -3px);
+}
+.intro-links a, .section-head > a, .back {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 7px;
+  transition: color var(--motion-duration) var(--motion-ease), text-decoration-color var(--motion-duration) var(--motion-ease);
+}
+:is(.intro-links a, .section-head > a, .back):is(:hover, :focus-visible) {
+  text-decoration-color: var(--accent-soft);
+}
+@media (hover: hover) {
+  .post-card:hover .read-more span, .category-row a:hover > span { transform: translate(3px, -3px); }
+  .category-row a:hover { border-color: var(--accent); }
+}
+
+/* Explicit opt-out remains available to individual surfaces. */
 body[data-site-motion='off'], body[data-site-motion='off'] *,
 [data-motion='off'], [data-motion='off'] * {
   animation: none !important;
@@ -42,14 +66,16 @@ body[data-site-motion='off'], body[data-site-motion='off'] *,
   scroll-behavior: auto !important;
 }
 html:has(body[data-site-motion='off']) { scroll-behavior: auto !important; }
-body:has([data-practice][data-motion='off']:not([hidden])) { animation: none !important; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto !important; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; }
   body[data-site-motion], body[data-site-motion] *,
   body[data-site-motion] *::before, body[data-site-motion] *::after {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
   }
+  .cover-link img, .article-content .article-image img, .read-more span,
+  .category-row a > span, .social-icon { transform: none !important; }
 }

@@ -22,13 +22,13 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 <style>
 	.archive-page { padding-top: 86px; }
 	.page-intro { max-width: 760px; padding-bottom: 54px; }
-	h1 { margin: 14px 0 18px; font-size: clamp(54px, 9vw, 112px); line-height: .98; font-weight: 600; letter-spacing: -.025em; }
+	h1 { margin: 14px 0 18px; font-size: clamp(3.375rem, 9.5625vw, 7rem); line-height: .98; font-weight: 600; letter-spacing: -.025em; }
 	h1 span { color: var(--accent); }
-	.page-intro p:last-child { max-width: 550px; color: var(--muted); font-size: 16px; line-height: 1.9; }
+	.page-intro p:last-child { max-width: 550px; color: var(--muted); font-size: 1rem; line-height: 1.9; }
 	.filters { display: flex; flex-wrap: wrap; gap: 24px; margin: 0 0 42px; padding-top: 12px; }
-	.filters a { color: var(--muted); font: 11px/1.6 var(--mono); letter-spacing: .06em; transition: color 180ms ease; }
+	.filters a { color: var(--muted); font: 0.75rem/1.6 var(--mono); letter-spacing: .06em; transition: color 180ms ease; }
 	.filters a:hover, .filters a.selected { color: var(--accent); }
 	.post-list { display: grid; gap: 42px; }
-	.empty { color: var(--muted); font-size: 15px; line-height: 1.9; }
+	.empty { color: var(--muted); font-size: 0.9375rem; line-height: 1.9; }
 	@media (max-width: 640px) { .archive-page { padding-top: 58px; } .page-intro { padding-bottom: 38px; } }
 </style>
