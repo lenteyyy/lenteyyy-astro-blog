@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname;
 const canonical = canonicalUrl(currentPath);
 const imageUrl = image.startsWith('http') ? image : canonicalUrl(image);
 const imageIsPng = new URL(imageUrl).pathname.endsWith('.png');
-const pathWithoutLocale = locale === 'zh-TW' ? currentPath.replace(/^\/zh-tw/, '') || '/' : currentPath;
+const pathWithoutLocale = localizedPath(locale === 'zh-TW' ? currentPath.replace(/^\/zh-tw/, '') || '/' : currentPath, 'zh-CN');
 const path = (value: string) => localizedPath(value, locale);
 const simplifiedUrl = canonicalUrl(pathWithoutLocale);
 const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
@@ -96,13 +96,27 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 				const egg = document.querySelector<HTMLElement>('[data-easter-egg]');
 				const eggClose = document.querySelector<HTMLButtonElement>('[data-easter-egg-close]');
 				let sevenCount = 0;
+				let opener: HTMLElement | null = null;
+				const close = () => {
+					if (!egg || egg.hidden) return;
+					egg.hidden = true;
+					document.documentElement.classList.remove('has-easter-egg');
+					if (!signal.aborted) opener?.focus({ preventScroll: true });
+				};
 				document.addEventListener('keydown', (event) => {
+					if (egg && !egg.hidden) {
+						if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); close(); }
+						if (event.key === 'Tab') { event.preventDefault(); eggClose?.focus(); }
+						return;
+					}
+					if (event.repeat || event.ctrlKey || event.metaKey || event.altKey || document.documentElement.classList.contains('has-lightbox') || (event.target instanceof Element && event.target.closest('input, textarea, select, [contenteditable]'))) { sevenCount = 0; return; }
 					if (!event.shiftKey || event.code !== 'Digit7') { if (event.key !== 'Shift') sevenCount = 0; return; }
 					sevenCount += 1;
-					if (sevenCount === 3 && egg) { egg.hidden = false; sevenCount = 0; if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); }
-				}, { signal });
-				eggClose?.addEventListener('click', () => { if (egg) egg.hidden = true; }, { signal });
-				egg?.addEventListener('click', (event) => { if (event.target === egg) egg.hidden = true; }, { signal });
+					if (sevenCount === 3 && egg) { opener = document.activeElement instanceof HTMLElement ? document.activeElement : null; egg.hidden = false; sevenCount = 0; document.documentElement.classList.add('has-easter-egg'); eggClose?.focus(); }
+				}, { capture: true, signal });
+				eggClose?.addEventListener('click', close, { signal });
+				egg?.addEventListener('click', (event) => { if (event.target === egg) close(); }, { signal });
+				signal.addEventListener('abort', close, { once: true });
 			});
 		</script>
 		<Analytics />
@@ -188,6 +202,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.footer-links a:hover { color: var(--accent); }
 	.easter-egg { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 22px; background: #0009; }
 	.easter-egg[hidden] { display: none; }
+	html.has-easter-egg { overflow: hidden; }
 	.easter-egg-card { position: relative; width: min(560px, 100%); padding: 28px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 	.easter-egg-card p { margin: 0 30px 22px 0; font-size: 1.125rem; line-height: 1.8; }
 	.easter-egg-card img { display: block; width: 100%; max-height: 65vh; object-fit: cover; }

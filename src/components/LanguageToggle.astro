@@ -2,7 +2,7 @@
 import { localizedPath, type SiteLocale } from '../lib/locale';
 const { locale = 'zh-CN' } = Astro.props as { locale?: SiteLocale };
 const currentPath = Astro.url.pathname;
-const sourcePath = locale === 'zh-TW' ? currentPath.replace(/^\/zh-tw/, '') || '/' : currentPath;
+const sourcePath = localizedPath(locale === 'zh-TW' ? currentPath.replace(/^\/zh-tw/, '') || '/' : currentPath, 'zh-CN');
 const targetPath = locale === 'zh-TW' ? sourcePath : localizedPath(sourcePath, 'zh-TW');
 const label = locale === 'zh-TW' ? '語言' : '语言';
 ---
@@ -32,6 +32,24 @@ const label = locale === 'zh-TW' ? '語言' : '语言';
 				const isOpen = trigger.getAttribute('aria-expanded') === 'true';
 				trigger.setAttribute('aria-expanded', String(!isOpen));
 				menu.hidden = isOpen;
+			}, { signal });
+			const items = Array.from(menu.querySelectorAll<HTMLAnchorElement>('[role="menuitem"]'));
+			trigger.addEventListener('keydown', (event) => {
+				if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+				event.preventDefault();
+				trigger.setAttribute('aria-expanded', 'true');
+				menu.hidden = false;
+				(event.key === 'ArrowUp' ? items.at(-1) : items[0])?.focus();
+			}, { signal });
+			menu.addEventListener('keydown', (event) => {
+				if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+				event.preventDefault();
+				const current = items.indexOf(document.activeElement as HTMLAnchorElement);
+				const next = event.key === 'Home' ? 0 : event.key === 'End' ? items.length - 1 : (current + (event.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+				items[next]?.focus();
+			}, { signal });
+			toggle.addEventListener('focusout', (event) => {
+				if (!(event.relatedTarget instanceof Node) || !toggle.contains(event.relatedTarget)) close();
 			}, { signal });
 
 			document.addEventListener('click', (event) => {

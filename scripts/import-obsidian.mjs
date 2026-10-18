@@ -37,7 +37,7 @@ for (const name of files) {
 	}
 	const title = titleFromFile(name);
 	const slug = String(field(database.data, 'Slug')).trim();
-	if (!slug || slugs.has(slug)) throw new Error(`Missing or duplicate slug: ${name}`);
+	if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slugs.has(slug)) throw new Error(`Invalid or duplicate slug: ${name}`);
 	if (!body.trim()) throw new Error(`Published article has no body: ${name}`);
 	slugs.add(slug);
 

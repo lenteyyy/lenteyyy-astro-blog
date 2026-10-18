@@ -21,6 +21,27 @@ test('unknown or unpublished articles cannot create Redis view or deduplication 
  const response=await exports.GET({params:{slug:'attacker-key'},request});assert.equal(response.status,404);assert.deepEqual(await response.json(),{error:'not_found'});assert.equal(calls,0);
 });
 
+test('bots, speculative loads, unrelated referrers and already-counted visitors cannot increment',async()=>{
+ const url='https://www.lenteyyy.com/api/views/known';
+ for(const extra of [{'user-agent':'ExampleBot'},{purpose:'prefetch'},{'sec-purpose':'prerender'},{referer:'https://www.lenteyyy.com/about'},{referer:'https://example.test/posts/known'}]){
+  const commands=[];const route=loadViews({redis:async command=>{commands.push(command);return {result:12};},claimDailyView:async()=>assert.fail('Invalid page visit claimed a view')});
+  const request=new Request(url,{method:'POST',headers:{origin:'https://www.lenteyyy.com',referer:'https://www.lenteyyy.com/posts/known',...extra}});
+  assert.equal((await route.POST({params:{slug:'known'},request})).status,200);
+  assert.deepEqual(JSON.parse(JSON.stringify(commands)),[['GET','post:views:known']]);
+ }
+ const commands=[];const route=loadViews({redis:async command=>{commands.push(command);return {result:12};},claimDailyView:async()=>false});
+ const request=new Request(url,{method:'POST',headers:{origin:'https://www.lenteyyy.com',referer:'https://www.lenteyyy.com/zh-tw/posts/known'}});
+ assert.equal((await route.POST({params:{slug:'known'},request})).status,200);assert.deepEqual(JSON.parse(JSON.stringify(commands)),[['GET','post:views:known']]);
+});
+
+test('API error responses do not expose backend errors, and invalid slugs never reach Redis',async()=>{
+ const denied=async()=>assert.fail('Invalid slug reached a backend');const route=loadViews({getPostBySlug:denied,redis:denied,withinRateLimit:denied});
+ for(const slug of ['../private','known/other','known?test','a'.repeat(121),''])assert.equal((await route.GET({params:{slug},request:new Request('https://www.lenteyyy.com/api/views/known')})).status,400);
+ const broken=loadViews({redis:async()=>{throw Error('backend_private_error');}});
+ const response=await broken.GET({params:{slug:'known'},request:new Request('https://www.lenteyyy.com/api/views/known')});
+ assert.doesNotMatch(await response.text(),/backend_private_error/);assert.equal(response.headers.get('cache-control'),'private, no-store');
+});
+
 test('GET and prefetch requests cannot increment article counters',async()=>{
  const commands=[];
  const route=loadViews({redis:async command=>{commands.push(command);return {result:'12'};},claimDailyView:async()=>assert.fail('GET claimed a daily view')});

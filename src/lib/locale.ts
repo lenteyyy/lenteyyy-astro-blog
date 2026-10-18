@@ -39,5 +39,7 @@ export function translateText(value: string, locale: SiteLocale): string {
 }
 
 export function localizedPath(path: string, locale: SiteLocale): string {
-	return locale === 'zh-TW' ? `/zh-tw${path === '/' ? '' : path}` || '/zh-tw' : path;
+	// Locale switching must never turn a malformed 404 path into an external URL.
+	const internal = path.startsWith('/') && !path.startsWith('//') && !/[\\\u0000-\u001f\u007f]/.test(path) ? path : '/';
+	return locale === 'zh-TW' ? `/zh-tw${internal === '/' ? '' : internal}` : internal;
 }

@@ -19,6 +19,7 @@ export function safeLinkUrl(value: string, protocols = ['http:', 'https:', 'mail
 	if (trimmed.startsWith('#') || (trimmed.startsWith('/') && !trimmed.startsWith('//'))) return trimmed;
 	try {
 		const parsed = new URL(trimmed);
+		if (parsed.username || parsed.password) return '';
 		return protocols.includes(parsed.protocol) ? parsed.toString() : '';
 	} catch {
 		return '';
@@ -27,7 +28,7 @@ export function safeLinkUrl(value: string, protocols = ['http:', 'https:', 'mail
 
 export function resolveMediaReference(value: string): string {
 	const match = value.trim().match(/^!?\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]$/);
-	if (match) return media[match[1].trim()] || '';
+	if (match) return Object.hasOwn(media, match[1].trim()) ? media[match[1].trim()] : '';
 	if (value.startsWith('/media/')) return value;
 	return safeLinkUrl(value, ['https:']);
 }
@@ -35,7 +36,7 @@ export function resolveMediaReference(value: string): string {
 function prepareWikiImages(source: string): string {
 	return source.replace(/!\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g, (_match, rawRef: string, rawCaption = '') => {
 		const ref = rawRef.trim();
-		const url = media[ref];
+		const url = Object.hasOwn(media, ref) ? media[ref] : '';
 		if (!url) return '';
 		const caption = String(rawCaption).trim().replaceAll('[', '\\[').replaceAll(']', '\\]');
 		return `![${caption}](${url})`;
@@ -96,7 +97,9 @@ function headingId(value: string): string {
 }
 
 
-function createBlogRenderer(locale: SiteLocale): Renderer {
+type MarkdownHeading = { text: string; id: string; level: 2 | 3 };
+
+function createBlogRenderer(locale: SiteLocale, headings?: MarkdownHeading[]): Renderer {
 	const headingCounts = new Map<string, number>();
 	return {
 	html({ text }: Tokens.HTML | Tokens.Tag): string {
@@ -113,6 +116,7 @@ function createBlogRenderer(locale: SiteLocale): Renderer {
 		headingCounts.set(base, count + 1);
 		const id = count ? `${base}-${count + 1}` : base;
 		const level = depth >= 3 ? 3 : 2;
+		headings?.push({ text: translated.replace(/&(amp|lt|gt|quot|#39);/g, (entity) => ({ '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" })[entity] || entity), id, level });
 		const label = locale === 'zh-TW' ? '複製標題連結' : '复制标题链接';
 		return `<h${level} id="${escapeAttribute(id)}">${html}<button type="button" class="heading-anchor" data-anchor="${escapeAttribute(id)}" aria-label="${label}">#</button></h${level}>\n`;
 	},
@@ -198,14 +202,9 @@ export function markdownToPlainText(source: string): string {
 }
 
 export function getMarkdownHeadings(source: string, locale: SiteLocale = 'zh-CN'): Array<{ text: string; id: string; level: 2 | 3 }> {
-	const counts = new Map<string, number>();
-	const headings: Array<{ text: string; id: string; level: 2 | 3 }> = [];
-	for (const match of source.matchAll(/^(#{1,6})\s+(.+?)\s*#*$/gm)) {
-		const text = translateText(match[2].replace(/[*_`~\[\]]/g, '').trim(), locale);
-		const base = headingId(text) || 'section';
-		const count = counts.get(base) || 0;
-		counts.set(base, count + 1);
-		headings.push({ text, id: count ? `${base}-${count + 1}` : base, level: match[1].length >= 3 ? 3 : 2 });
-	}
+	const headings: MarkdownHeading[] = [];
+	// Use the same parser and ID allocation as the article: ignore code fences,
+	// recognize setext/nested headings, and keep inline links and duplicates in sync.
+	new Marked({ renderer: createBlogRenderer(locale, headings), gfm: true, breaks: false, async: false }).parse(prepareWikiImages(source));
 	return headings;
 }

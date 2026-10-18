@@ -7,11 +7,12 @@ const copyDoneLabel = locale === 'zh-TW' ? '已複製' : '已复制';
 const copyLabel = locale === 'zh-TW' ? '複製' : '复制';
 const html = renderMarkdown(source, locale);
 ---
-<div class="article-content" data-copy-done={copyDoneLabel} data-copy-label={copyLabel} data-close-label={locale === 'zh-TW' ? '關閉' : '关闭'} data-previous-label={locale === 'zh-TW' ? '上一張' : '上一张'} data-next-label={locale === 'zh-TW' ? '下一張' : '下一张'} set:html={html} />
+<div class="article-content" data-copy-done={copyDoneLabel} data-copy-label={copyLabel} data-copy-failed={locale === 'zh-TW' ? '複製失敗，請手動複製' : '复制失败，请手动复制'} data-close-label={locale === 'zh-TW' ? '關閉' : '关闭'} data-previous-label={locale === 'zh-TW' ? '上一張' : '上一张'} data-next-label={locale === 'zh-TW' ? '下一張' : '下一张'} set:html={html} />
 
 <script>
 	import { onPageLoad } from '../lib/client-lifecycle';
 	import { MOTION } from '../lib/motion-policy';
+	import { copyText } from '../lib/clipboard';
 
 	onPageLoad('obsidian-content', (signal) => {
 		const content = document.querySelector<HTMLElement>('.article-content');
@@ -114,14 +115,17 @@ const html = renderMarkdown(source, locale);
 			const anchor = target.closest<HTMLButtonElement>('.heading-anchor');
 			if (button) {
 				const code = button.nextElementSibling?.textContent || '';
-				await navigator.clipboard?.writeText(code);
-				button.textContent = copyDoneLabel;
+				const copied = await copyText(code);
+				if (signal.aborted || !button.isConnected) return;
+				button.textContent = copied ? copyDoneLabel : content.dataset.copyFailed || '复制失败，请手动复制';
 				window.setTimeout(() => { if (button.isConnected) button.textContent = copyLabel; }, 1400);
 			}
 			if (anchor?.dataset.anchor) {
 				const url = `${location.origin}${location.pathname}#${anchor.dataset.anchor}`;
 				history.replaceState(null, '', `#${anchor.dataset.anchor}`);
-				await navigator.clipboard?.writeText(url);
+				const copied = await copyText(url);
+				if (signal.aborted || !anchor.isConnected) return;
+				anchor.setAttribute('aria-label', copied ? copyDoneLabel : content.dataset.copyFailed || '复制失败，请手动复制');
 			}
 		}, { signal });
 		document.addEventListener('keydown', (event) => {

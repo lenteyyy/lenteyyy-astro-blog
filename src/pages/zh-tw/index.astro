@@ -17,8 +17,8 @@ const path = (value: string) => localizedPath(value, locale);
 			<h1>歡迎！</h1>
 			<div class="intro-description">
 				<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。</p>
-				<p class="lead">這裡記錄冷踢踢莫名其妙的生活，住過的飯店以及一些瑣碎的事情。</p>
-				<p class="lead">關於雅思學習的事情，頁面最下方可以跳轉至冷踢踢的雅思學習網站。</p>
+				<p class="lead">這裡記錄冷踢踢莫名其妙的生活和一些愛好。</p>
+				<p class="lead">關於雅思學習，頁面最下方可以跳轉至冷踢踢的IELTS學習網站。</p>
 			</div>
 			<div class="intro-links"><a href={path('/posts')}>瀏覽文章 ↗</a><a href={path('/about')}>關於我</a></div>
 		</div>
@@ -46,10 +46,10 @@ const path = (value: string) => localizedPath(value, locale);
 </BaseLayout>
 
 <style>
-	.intro { min-height: 560px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 280px); align-items: center; gap: clamp(40px, 8vw, 120px); padding: 58px 0 70px; }
+	.intro { min-height: 560px; display: grid; grid-template-columns: minmax(0, 1fr) 220px; align-items: center; gap: 40px; padding: 58px 0 70px; }
 	.eyebrow { margin: 0; color: var(--muted); font: 0.75rem/1.5 var(--mono); letter-spacing: .12em; }
 	h1 { margin: 18px 0 30px; font-size: clamp(3rem, 8.5vw, 6.75rem); line-height: .95; letter-spacing: -.03em; font-weight: 600; }
-	.lead { max-width: 480px; margin: 0; color: var(--muted); font-size: 1.0625rem; line-height: 1.9; }
+	.lead { margin: 0; color: var(--muted); font-size: 1.0625rem; line-height: 1.9; }
 	.lead + .lead { margin-top: 1.15em; }
 	.intro-links { display: flex; gap: 24px; margin-top: 34px; font: 0.75rem var(--mono); letter-spacing: .02em; }
 	.intro-links a:first-child { color: var(--accent); }
@@ -71,6 +71,6 @@ const path = (value: string) => localizedPath(value, locale);
 	.category-row a { display: flex; align-items: center; justify-content: space-between; min-height: 88px; padding: 0 2px; border-top: 1px solid var(--line); color: var(--muted); font-size: 1.0625rem; transition: color 180ms ease, border-color 180ms ease; }
 	.category-row a:hover { color: var(--accent); }
 	.category-row span { font: 1rem var(--mono); }
-	@media (max-width: 900px) { .intro { grid-template-columns: 1fr; min-height: 0; } .intro-note { align-self: start; } }
+	@media (max-width: 1100px) { .intro { grid-template-columns: 1fr; min-height: 0; } .intro-note { align-self: start; } }
 	@media (max-width: 700px) { .intro { gap: 34px; padding-top: 52px; padding-bottom: 58px; } .lead { font-size: 1rem; } .category-row { grid-template-columns: 1fr; gap: 0; } }
 </style>

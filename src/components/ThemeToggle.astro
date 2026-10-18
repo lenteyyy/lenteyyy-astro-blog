@@ -15,7 +15,8 @@
 			toggle.textContent = theme === 'dark' ? '☾' : '☼';
 		};
 		const handleSystemTheme = () => {
-			if (sessionStorage.getItem('theme')) return;
+			// The in-memory choice still works when browser storage is blocked.
+			if (root.dataset.theme === 'dark' || root.dataset.theme === 'light') return;
 			root.removeAttribute('data-theme');
 			syncButton();
 			window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: effectiveTheme() } }));
@@ -25,7 +26,7 @@
 		toggle?.addEventListener('click', () => {
 			const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
 			root.dataset.theme = next;
-			sessionStorage.setItem('theme', next);
+			try { sessionStorage.setItem('theme', next); } catch {}
 			syncButton();
 			window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
 		}, { signal });

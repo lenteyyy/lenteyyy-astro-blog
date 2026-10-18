@@ -21,10 +21,13 @@ for (const name of files) {
 	const status = String(field(data, 'status')).trim();
 	if (!title || !slug || !date || !category) failures.push(`${name}: required metadata is incomplete`);
 	if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) failures.push(`${name}: invalid slug ${slug}`);
-	if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) failures.push(`${name}: invalid date ${date}`);
+	const parsedDate = new Date(`${date}T00:00:00Z`);
+	if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(parsedDate.getTime()) || parsedDate.toISOString().slice(0, 10) !== date) failures.push(`${name}: invalid date ${date}`);
 	if (!allowedCategories.has(category)) failures.push(`${name}: unsupported category ${category}`);
 	if (status !== 'published') failures.push(`${name}: content/posts only accepts published articles`);
 	if (slugs.has(slug)) failures.push(`${name}: duplicate slug ${slug}`);
+	const tags = field(data, 'tags', []);
+	if (!Array.isArray(tags) || tags.some(tag => typeof tag !== 'string' || !tag.trim() || /^#|[\/\\\u0000-\u001f\u007f]/.test(tag))) failures.push(`${name}: tags must be plain labels without a leading # or path separators`);
 	slugs.add(slug);
 	if (!body.trim()) failures.push(`${name}: body is empty`);
 	if (/^(?:notion-id|SourcePage|base):/mi.test(source)) failures.push(`${name}: legacy Notion metadata remains`);

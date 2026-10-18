@@ -9,18 +9,20 @@
 		const tocLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]'));
 		let activeId = '';
 		let ticking = false;
+		let frame = 0;
 
 		tocLinks.forEach((link) => link.addEventListener('click', (event) => {
 			const id = link.dataset.tocLink;
 			const target = id ? document.getElementById(id) : null;
 			if (!target) return;
 			event.preventDefault();
-			target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
 			history.replaceState(null, '', `#${id}`);
 		}, { signal }));
 
 		const updateReading = () => {
 			ticking = false;
+			if (signal.aborted) return;
 			const rect = article.getBoundingClientRect();
 			const total = rect.height - window.innerHeight * 0.65;
 			const read = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
@@ -36,10 +38,11 @@
 		const requestUpdate = () => {
 			if (ticking) return;
 			ticking = true;
-			requestAnimationFrame(updateReading);
+			frame = requestAnimationFrame(updateReading);
 		};
 		updateReading();
 		window.addEventListener('scroll', requestUpdate, { passive: true, signal });
 		window.addEventListener('resize', requestUpdate, { signal });
+		signal.addEventListener('abort', () => cancelAnimationFrame(frame), { once: true });
 	});
 </script>
