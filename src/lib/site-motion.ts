@@ -7,7 +7,7 @@ onPageLoad('site-motion', (signal) => {
 	if (reduced.matches || !('IntersectionObserver' in window)) return;
 	const animations = new Set<Animation>();
 	const candidates = document.querySelectorAll<HTMLElement>(
-		'.intro-copy > *, .intro-note, .page-intro > *, .post-header > *, ' +
+		'.intro-copy > :not(.intro-description), .intro-description > *, .intro-note, .not-found > *, .page-intro > *, .post-header > *, ' +
 		'.about-cover, .about > h1, .about-copy, .tag-page > h1, .category-page > h1, ' +
 		'.section-head, .post-card, .category-row > a, .hero-image, .post-nav, .footer-inner',
 	);

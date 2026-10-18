@@ -66,7 +66,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	<body data-site-motion="on">
 		<header class="site-header">
 			<div class="shell nav-wrap">
-				<a class="brand" href={path('/')} aria-label={locale === 'zh-TW' ? 'Lenteyyy 首頁' : 'Lenteyyy 首页'}><img class="brand-logo" src="/brand-sheep.webp" width="48" height="48" alt="" decoding="async" /><span class="brand-name">Lenteyyy</span></a>
+				<a class="brand" href={path('/')} aria-label={locale === 'zh-TW' ? 'Lenteyyy 首頁' : 'Lenteyyy 首页'}><img class="brand-logo" src="/brand-sheep-transparent.webp" width="48" height="48" alt="" decoding="async" /><span class="brand-name">Lenteyyy</span></a>
 				<nav aria-label={locale === 'zh-TW' ? '主導航' : '主导航'}>
 					<a class={pathWithoutLocale === '/' ? 'active' : ''} href={path('/')}>{locale === 'zh-TW' ? '首頁' : '首页'}</a>
 					<a class={pathWithoutLocale.startsWith('/posts') || pathWithoutLocale.startsWith('/tags') ? 'active' : ''} href={path('/posts')}>{locale === 'zh-TW' ? '文章' : '文章'}</a>
@@ -174,7 +174,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.site-header { border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); background: color-mix(in srgb, var(--paper) 91%, transparent); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(16px); }
 	.nav-wrap, .footer-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 	.brand { display: inline-flex; align-items: center; flex-shrink: 0; gap: 12px; font-size: 1.25rem; font-weight: 700; letter-spacing: .01em; transition: color 180ms ease; }
-	.brand-logo { display: block; width: 48px; height: 48px; flex-shrink: 0; border-radius: 10px; object-fit: contain; background: #fff; }
+	.brand-logo { display: block; width: 48px; height: 48px; flex-shrink: 0; object-fit: contain; background: transparent; }
 	.brand:hover { color: var(--accent); }
 	nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 0.875rem; }
 	nav > a { position: relative; padding: 24px 0 22px; transition: color 180ms ease; }

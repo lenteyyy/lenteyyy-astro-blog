@@ -4,11 +4,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 export const prerender = false;
 Astro.response.status = 404;
 ---
-<BaseLayout locale="zh-TW" title="頁面不存在 · Lenteyyy" description="這個頁面不存在。" noindex={true}>
+<BaseLayout locale="zh-TW" title="Oops，頁面不存在！ · Lenteyyy" description="或許你造訪了冷踢踢也找不到的頁面...？" noindex={true}>
 	<section class="not-found shell">
 		<p class="eyebrow">404</p>
-		<h1>頁面不存在<span>.</span></h1>
-		<p>可能是文章尚未發布、連結已更新，或這條路原本就沒有鋪完。</p>
+		<h1>Oops，頁面不存在<span>！</span></h1>
+		<p>或許你造訪了冷踢踢也找不到的頁面...？</p>
 		<a href="/zh-tw/posts">回到文章列表 ↗</a>
 	</section>
 </BaseLayout>

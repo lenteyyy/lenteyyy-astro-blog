@@ -13,7 +13,11 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	<section class="intro shell">
 		<div class="intro-copy">
 			<h1>欢迎！</h1>
-			<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。这里记录酒店、旅行、音乐和一些还没想明白的事情。</p>
+			<div class="intro-description">
+				<p class="lead">你好，我是 Lenteyyy，也可以叫我冷踢踢。</p>
+				<p class="lead">这里记录冷踢踢莫名其妙的生活，住过的酒店以及一些琐碎的事情。</p>
+				<p class="lead">关于雅思学习的事情，页面最下方可以跳转至冷踢踢的雅思学习网站。</p>
+			</div>
 			<div class="intro-links"><a href="/posts">浏览文章 ↗</a><a href="/about">关于我</a></div>
 		</div>
 		<div class="intro-note">
@@ -45,6 +49,7 @@ const categoryHref = (category: string) => `/posts/category/${encodeURIComponent
 	h1 { margin: 18px 0 30px; font-size: clamp(3rem, 8.5vw, 6.75rem); line-height: .95; letter-spacing: -.03em; font-weight: 600; }
 	h1 span { color: var(--accent); }
 	.lead { max-width: 480px; margin: 0; color: var(--muted); font-size: 1.0625rem; line-height: 1.9; }
+	.lead + .lead { margin-top: 1.15em; }
 	.intro-links { display: flex; gap: 24px; margin-top: 34px; font: 0.75rem var(--mono); letter-spacing: .02em; }
 	.intro-links a:first-child { color: var(--accent); }
 	.intro-links a:hover { color: var(--accent); }

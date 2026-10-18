@@ -18,6 +18,9 @@ body[data-site-motion='on'] :where(a, button, input, select, textarea, summary) 
   transition-duration: var(--motion-duration);
   transition-timing-function: var(--motion-ease);
 }
+body[data-site-motion='on'], body[data-site-motion='on'] .site-header {
+  transition: color var(--motion-duration) var(--motion-ease), background-color var(--motion-duration) var(--motion-ease), border-color var(--motion-duration) var(--motion-ease);
+}
 body[data-site-motion='on'] dialog[open]:not([data-motion-managed]) {
   animation: surface-in var(--motion-duration) var(--motion-ease);
 }
