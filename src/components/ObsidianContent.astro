@@ -13,6 +13,7 @@ const html = renderMarkdown(source, locale);
 	import { onPageLoad } from '../lib/client-lifecycle';
 	import { MOTION } from '../lib/motion-policy';
 	import { copyText } from '../lib/clipboard';
+	import { containedImageBox, imageMorphTransform } from '../lib/image-morph';
 
 	onPageLoad('obsidian-content', (signal) => {
 		const content = document.querySelector<HTMLElement>('.article-content');
@@ -25,31 +26,69 @@ const html = renderMarkdown(source, locale);
 		let lightbox: HTMLElement | null = null;
 		let opener: HTMLElement | null = null;
 		let boxAnimation: Animation | undefined;
+		let imageAnimation: Animation | undefined;
+		let ghost: HTMLImageElement | undefined;
+		let imageSelection = 0;
 		const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+		const canAnimate = () => !reduced.matches && document.body.dataset.siteMotion !== 'off' && typeof Element.prototype.animate === 'function';
+		const cancelImageAnimation = () => {
+			imageAnimation?.cancel();
+			imageAnimation = undefined;
+			ghost?.remove(); ghost = undefined;
+			const image = lightbox?.querySelector<HTMLImageElement>('img');
+			if (image) image.style.visibility = '';
+		};
+		const morphImage = (closing = false) => {
+			const image = images[currentIndex];
+			const preview = lightbox?.querySelector<HTMLImageElement>('img');
+			if (!canAnimate() || !image?.isConnected || !image.complete || !image.naturalWidth || !preview?.complete || !preview.naturalWidth) return;
+			const bounds = image.getBoundingClientRect();
+			if (bounds.bottom <= 0 || bounds.top >= innerHeight || bounds.right <= 0 || bounds.left >= innerWidth) return;
+			const source = getComputedStyle(image).objectFit === 'contain' ? containedImageBox(bounds, image.naturalWidth, image.naturalHeight) : bounds;
+			const destination = containedImageBox(preview.getBoundingClientRect(), preview.naturalWidth, preview.naturalHeight);
+			const transform = imageMorphTransform(source, destination);
+			if (!transform) return;
+			const overlay = image.cloneNode(false) as HTMLImageElement;
+			overlay.removeAttribute('id'); overlay.removeAttribute('data-lightbox-image'); overlay.removeAttribute('tabindex');
+			overlay.setAttribute('aria-hidden', 'true'); overlay.setAttribute('role', 'presentation');
+			overlay.className = 'lightbox-morph'; overlay.src = image.currentSrc || image.src;
+			Object.assign(overlay.style, { left: `${destination.left}px`, top: `${destination.top}px`, width: `${destination.width}px`, height: `${destination.height}px` });
+			preview.style.visibility = 'hidden';
+			document.body.append(overlay); ghost = overlay;
+			const animation = overlay.animate(closing ? [{ transform: 'none' }, { transform }] : [{ transform }, { transform: 'none' }], { duration: closing ? MOTION.duration : MOTION.imageDialogDuration, easing: MOTION.easing, fill: 'both' });
+			imageAnimation = animation;
+			void animation.finished.then(() => { if (ghost === overlay) cancelImageAnimation(); }, () => {});
+		};
 
 		const closeLightbox = (immediate = false) => {
 			const box = lightbox;
 			if (!box || box.hidden) return;
+			imageSelection++;
 			boxAnimation?.cancel();
+			cancelImageAnimation();
+			if (!immediate) morphImage(true);
 			box.classList.remove('is-open');
 			const finish = () => {
 				if (box.classList.contains('is-open')) return;
 				box.hidden = true;
+				cancelImageAnimation();
 				document.documentElement.classList.remove('has-lightbox');
 				if (!signal.aborted) opener?.focus({ preventScroll: true });
 				box.setAttribute('aria-hidden', 'true');
 			};
-			if (immediate || reduced.matches) { finish(); return; }
-			boxAnimation = box.animate([{ opacity: 1 }, { opacity: 0 }], { duration: MOTION.exitDuration, easing: MOTION.easing });
+			if (immediate || !canAnimate()) { finish(); return; }
+			boxAnimation = box.animate([{ opacity: 1 }, { opacity: 0 }], { duration: MOTION.duration, easing: MOTION.easing });
 			void boxAnimation.finished.then(finish, () => {});
 		};
 		const showImage = (index: number) => {
 			if (!images.length) return;
+			const selection = ++imageSelection;
 			currentIndex = (index + images.length) % images.length;
 			const image = images[currentIndex];
 			const box = ensureLightbox();
 			const wasHidden = box.hidden;
 			boxAnimation?.cancel();
+			cancelImageAnimation();
 			if (wasHidden) opener = document.activeElement instanceof HTMLElement ? document.activeElement : image;
 			const boxImage = box.querySelector<HTMLImageElement>('img');
 			const boxCaption = box.querySelector<HTMLElement>('figcaption');
@@ -62,8 +101,15 @@ const html = renderMarkdown(source, locale);
 			box.setAttribute('aria-hidden', 'false');
 			box.classList.add('is-open');
 			document.documentElement.classList.add('has-lightbox');
-			if (!reduced.matches) {
+			if (canAnimate()) {
 				boxAnimation = box.animate([{ opacity: 0 }, { opacity: 1 }], { duration: MOTION.duration, easing: MOTION.easing });
+				if (wasHidden) {
+					const selectedIndex = currentIndex;
+					const expand = () => { if (!signal.aborted && selection === imageSelection && box.classList.contains('is-open') && currentIndex === selectedIndex) morphImage(); };
+					if (boxImage.complete) expand();
+					else boxImage.addEventListener('load', expand, { once: true, signal });
+				}
+				else imageAnimation = boxImage.animate([{ opacity: .4 }, { opacity: 1 }], { duration: MOTION.exitDuration, easing: MOTION.easing });
 			}
 			if (wasHidden) box.querySelector<HTMLButtonElement>('.lightbox-close')?.focus({ preventScroll: true });
 		};
@@ -103,7 +149,7 @@ const html = renderMarkdown(source, locale);
 		images.forEach((image, index) => {
 			image.tabIndex = 0;
 			image.setAttribute('role', 'button');
-			image.addEventListener('click', () => { opener = image; image.focus({ preventScroll: true }); showImage(index); }, { signal });
+			image.addEventListener('click', (event) => { event.preventDefault(); opener = image; image.focus({ preventScroll: true }); showImage(index); }, { signal });
 			image.addEventListener('keydown', (event) => {
 				if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); showImage(index); }
 			}, { signal });
@@ -121,8 +167,9 @@ const html = renderMarkdown(source, locale);
 				window.setTimeout(() => { if (button.isConnected) button.textContent = copyLabel; }, 1400);
 			}
 			if (anchor?.dataset.anchor) {
-				const url = `${location.origin}${location.pathname}#${anchor.dataset.anchor}`;
-				history.replaceState(null, '', `#${anchor.dataset.anchor}`);
+				const hash = `#${encodeURIComponent(anchor.dataset.anchor)}`;
+				const url = `${location.origin}${location.pathname}${hash}`;
+				history.replaceState(history.state, '', hash);
 				const copied = await copyText(url);
 				if (signal.aborted || !anchor.isConnected) return;
 				anchor.setAttribute('aria-label', copied ? copyDoneLabel : content.dataset.copyFailed || '复制失败，请手动复制');
@@ -140,7 +187,10 @@ const html = renderMarkdown(source, locale);
 				else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
 			}
 		}, { capture: true, signal });
-		reduced.addEventListener('change', () => { if (boxAnimation?.playState === 'running') boxAnimation.finish(); }, { signal });
+		reduced.addEventListener('change', () => { cancelImageAnimation(); if (boxAnimation?.playState === 'running') boxAnimation.finish(); }, { signal });
+		window.addEventListener('resize', cancelImageAnimation, { passive: true, signal });
+		// Close before Astro snapshots the outgoing page, not after the swap.
+		document.addEventListener('astro:before-preparation', () => closeLightbox(true), { signal });
 		signal.addEventListener('abort', () => { closeLightbox(true); lightbox?.remove(); }, { once: true });
 	});
 </script>
@@ -162,8 +212,8 @@ const html = renderMarkdown(source, locale);
 	.article-content :global(li) { padding-left: .35em; margin: .18em 0; }
 	.article-content :global(hr) { border: 0; width: 42%; border-top: 1px solid var(--line); margin: 3.2em auto; }
 	.article-content :global(.article-image) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); }
-	.article-content :global(.article-image img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); cursor: zoom-in; transition: transform var(--motion-image-duration) var(--motion-ease), filter var(--motion-image-duration) var(--motion-ease); }
-	.article-content :global(.article-image img:hover) { transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
+	.article-content :global(.article-image img) { display: block; width: 100%; height: auto; max-height: 820px; object-fit: contain; background: var(--surface); cursor: zoom-in; transition: filter var(--motion-duration) var(--motion-ease); }
+	.article-content :global(.article-image img:hover) { filter: saturate(1.025) contrast(1.015); }
 	.article-content :global(figcaption) { margin-top: 9px; color: var(--muted); font: 0.75rem/1.7 var(--mono); letter-spacing: .04em; }
 	.article-content :global(.image-gallery) { width: min(920px, calc(100vw - 48px)); margin: 2.45em 0 2.55em 50%; transform: translateX(-50%); display: grid; gap: 12px; align-items: start; }
 	.article-content :global(.image-gallery-2) { grid-template-columns: repeat(2, 1fr); }
@@ -198,6 +248,7 @@ const html = renderMarkdown(source, locale);
 	:global(.lightbox[hidden]) { display: none; }
 	:global(.lightbox figure) { min-width: 0; margin: 0; text-align: center; }
 	:global(.lightbox img) { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; }
+	:global(.lightbox-morph) { position: fixed; z-index: 101; max-width: none; max-height: none; margin: 0; object-fit: fill; transform-origin: top left; pointer-events: none; }
 	:global(.lightbox figcaption) { margin-top: 10px; color: var(--muted); font: 0.75rem/1.7 var(--mono); }
 	:global(.lightbox button) { border: 0; background: transparent; color: var(--muted); cursor: pointer; transition: color 160ms ease; }
 	:global(.lightbox button:hover) { color: var(--accent); }

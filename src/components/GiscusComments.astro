@@ -6,9 +6,11 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 {enabled ? (
 	<section class="comments" data-giscus data-lang={locale === 'zh-TW' ? 'zh-TW' : 'zh-CN'} data-repo={giscusConfig.repo} data-repo-id={giscusConfig.repoId} data-category={giscusConfig.category} data-category-id={giscusConfig.categoryId}>
 		<div class="comments-anchor"></div>
+		<p data-giscus-status role="status" hidden>{locale === 'zh-TW' ? '評論載入失敗，請稍後重試。' : '评论加载失败，请稍后重试。'}</p>
+		<button type="button" data-giscus-retry hidden>{locale === 'zh-TW' ? '重新載入評論' : '重新加载评论'}</button>
 	</section>
 ) : (
-	<section class="comments comments-disabled"><p>评论区配置完成后会显示在这里。</p></section>
+	<section class="comments comments-disabled"><p>{locale === 'zh-TW' ? '評論區設定完成後會顯示在這裡。' : '评论区配置完成后会显示在这里。'}</p></section>
 )}
 
 <script>
@@ -17,14 +19,18 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 	onPageLoad('giscus-comments', (signal) => {
 		const root = document.querySelector<HTMLElement>('[data-giscus]');
 		if (!root) return;
+		const status = root.querySelector<HTMLElement>('[data-giscus-status]');
+		const retry = root.querySelector<HTMLButtonElement>('[data-giscus-retry]');
 		const currentTheme = () => document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 		const setGiscusTheme = (theme: string) => {
 			const iframe = root.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
 			iframe?.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
 		};
 		const load = () => {
-			if (root.dataset.loaded) return;
+			if (root.dataset.loaded || signal.aborted) return;
 			root.dataset.loaded = 'true';
+			if (status) status.hidden = true;
+			if (retry) retry.hidden = true;
 			const script = document.createElement('script');
 			script.src = 'https://giscus.app/client.js';
 			script.async = true;
@@ -40,9 +46,17 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 			script.setAttribute('data-input-position', 'bottom');
 			script.setAttribute('data-theme', currentTheme());
 			script.setAttribute('data-lang', root.dataset.lang || 'zh-CN');
+			script.addEventListener('error', () => {
+				script.remove();
+				delete root.dataset.loaded;
+				if (status) status.hidden = false;
+				if (retry) retry.hidden = false;
+			}, { once: true, signal });
 			root.querySelector('.comments-anchor')?.append(script);
 		};
+		retry?.addEventListener('click', load, { signal });
 		window.addEventListener('themechange', (event) => setGiscusTheme((event as CustomEvent).detail?.theme || currentTheme()), { signal });
+		if (!('IntersectionObserver' in window)) { load(); return; }
 		const observer = new IntersectionObserver((entries) => {
 			if (entries.some((entry) => entry.isIntersecting)) {
 				load();
@@ -57,4 +71,7 @@ const enabled = Boolean(giscusConfig.repo && giscusConfig.repoId && giscusConfig
 <style>
 	.comments { margin-top: 70px; padding-top: 34px; border-top: 1px solid var(--line); }
 	.comments-disabled p { color: var(--muted); font: 0.8125rem/1.8 var(--mono); }
+	[data-giscus-status], [data-giscus-retry] { color: var(--muted); font: 0.8125rem/1.8 var(--mono); }
+	[data-giscus-retry] { padding: 7px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: transparent; cursor: pointer; }
+	[data-giscus-retry]:hover { color: var(--accent); border-color: var(--accent); }
 </style>

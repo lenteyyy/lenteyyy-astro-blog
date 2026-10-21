@@ -1,0 +1,48 @@
+<span class="nav-indicator" data-nav-indicator aria-hidden="true"></span>
+
+<script>
+	import { onPageLoad } from '../lib/client-lifecycle';
+	onPageLoad('nav-indicator', (signal) => {
+		const nav = document.querySelector<HTMLElement>('[data-primary-nav]');
+		const indicator = nav?.querySelector<HTMLElement>('[data-nav-indicator]');
+		if (!nav || !indicator) return;
+		const links = Array.from(nav.querySelectorAll<HTMLAnchorElement>(':scope > a'));
+		let current = links.find(link => link.classList.contains('active'));
+		let frame = 0;
+		let readyFrame = 0;
+		const move = (link?: HTMLAnchorElement) => {
+			current = link;
+			if (signal.aborted) return;
+			indicator.hidden = !link;
+			if (!link) return;
+			const parent = nav.getBoundingClientRect(), rect = link.getBoundingClientRect();
+			indicator.style.width = `${rect.width}px`;
+			indicator.style.transform = `translateX(${rect.left - parent.left}px)`;
+		};
+		const restore = () => move(links.find(link => link === document.activeElement) || links.find(link => link.classList.contains('active')));
+		links.forEach(link => {
+			link.addEventListener('pointerenter', () => move(link), { signal });
+			link.addEventListener('focus', () => move(link), { signal });
+		});
+		nav.addEventListener('pointerleave', restore, { signal });
+		nav.addEventListener('focusout', event => { if (!links.includes(event.relatedTarget as HTMLAnchorElement)) restore(); }, { signal });
+		const resize = () => {
+			cancelAnimationFrame(frame);
+			frame = requestAnimationFrame(() => move(current));
+		};
+		move(current);
+		readyFrame = requestAnimationFrame(() => { if (!signal.aborted) nav.dataset.indicatorReady = 'true'; });
+		window.addEventListener('resize', resize, { passive: true, signal });
+		const observer = typeof ResizeObserver === 'function' ? new ResizeObserver(resize) : null;
+		observer?.observe(nav);
+		void document.fonts?.ready.then(() => { if (!signal.aborted) move(current); });
+		signal.addEventListener('abort', () => { observer?.disconnect(); cancelAnimationFrame(frame); cancelAnimationFrame(readyFrame); }, { once: true });
+	});
+</script>
+
+<style>
+	.nav-indicator { position: absolute; left: 0; bottom: 15px; width: 0; height: 1px; background: var(--accent); pointer-events: none; }
+	:global([data-primary-nav][data-indicator-ready='true']) .nav-indicator { transition: transform var(--motion-duration) var(--motion-ease), width var(--motion-duration) var(--motion-ease); }
+	:global([data-primary-nav][data-indicator-ready='true'] > a::after) { visibility: hidden; }
+	@media (prefers-reduced-motion: reduce) { .nav-indicator { transition: none !important; } }
+</style>

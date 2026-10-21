@@ -5,6 +5,7 @@ import { ClientRouter, fade } from 'astro:transitions';
 import '../styles/motion.css';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageToggle from '../components/LanguageToggle.astro';
+import NavIndicator from '../components/NavIndicator.astro';
 import { canonicalUrl, site } from '../lib/site';
 import { localizedPath, type SiteLocale } from '../lib/locale';
 
@@ -28,7 +29,7 @@ const simplifiedUrl = canonicalUrl(pathWithoutLocale);
 const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 ---
 <!doctype html>
-<html lang={locale} transition:animate={fade({ duration: '280ms' })}>
+<html lang={locale} transition:animate={fade({ duration: '180ms' })}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -64,13 +65,14 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		<script is:inline src="/theme-init.js"></script>
 	</head>
 	<body data-site-motion="on">
-		<header class="site-header">
+		<header class="site-header" transition:name="blog-header" transition:animate="none">
 			<div class="shell nav-wrap">
 				<a class="brand" href={path('/')} aria-label={locale === 'zh-TW' ? 'Lenteyyy 首頁' : 'Lenteyyy 首页'}><img class="brand-logo" src="/brand-sheep-transparent.webp" width="48" height="48" alt="" decoding="async" /><span class="brand-name">Lenteyyy</span></a>
-				<nav aria-label={locale === 'zh-TW' ? '主導航' : '主导航'}>
-					<a class={pathWithoutLocale === '/' ? 'active' : ''} href={path('/')}>{locale === 'zh-TW' ? '首頁' : '首页'}</a>
-					<a class={pathWithoutLocale.startsWith('/posts') || pathWithoutLocale.startsWith('/tags') ? 'active' : ''} href={path('/posts')}>{locale === 'zh-TW' ? '文章' : '文章'}</a>
-					<a class={pathWithoutLocale === '/about' ? 'active' : ''} href={path('/about')}>{locale === 'zh-TW' ? '關於' : '关于'}</a>
+				<nav data-primary-nav aria-label={locale === 'zh-TW' ? '主導航' : '主导航'}>
+					<a class={pathWithoutLocale === '/' ? 'active' : ''} aria-current={pathWithoutLocale === '/' ? 'page' : undefined} href={path('/')}>{locale === 'zh-TW' ? '首頁' : '首页'}</a>
+					<a class={pathWithoutLocale.startsWith('/posts') || pathWithoutLocale.startsWith('/tags') ? 'active' : ''} aria-current={pathWithoutLocale.startsWith('/posts') || pathWithoutLocale.startsWith('/tags') ? 'page' : undefined} href={path('/posts')}>{locale === 'zh-TW' ? '文章' : '文章'}</a>
+					<a class={pathWithoutLocale === '/about' ? 'active' : ''} aria-current={pathWithoutLocale === '/about' ? 'page' : undefined} href={path('/about')}>{locale === 'zh-TW' ? '關於' : '关于'}</a>
+					<NavIndicator />
 					<LanguageToggle locale={locale} />
 					<ThemeToggle />
 				</nav>
@@ -176,7 +178,8 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 		--shadow: 0 18px 45px #00000040;
 	}
 	* { box-sizing: border-box; }
-	body { margin: 0; background: var(--paper); color: var(--ink); text-rendering: optimizeLegibility; animation: page-in var(--motion-duration) var(--motion-ease); }
+	html { scrollbar-gutter: stable; }
+	body { margin: 0; background: var(--paper); color: var(--ink); text-rendering: optimizeLegibility; }
 	html[data-astro-transition] body { animation: none; }
 	nav > a::after { transition: transform var(--motion-duration) var(--motion-ease); }
 	a { color: inherit; text-decoration: none; }
@@ -191,6 +194,7 @@ const traditionalUrl = canonicalUrl(localizedPath(pathWithoutLocale, 'zh-TW'));
 	.brand-logo { display: block; width: 48px; height: 48px; flex-shrink: 0; object-fit: contain; background: transparent; }
 	.brand:hover { color: var(--accent); }
 	nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 0.875rem; }
+	[data-primary-nav] { position: relative; }
 	nav > a { position: relative; padding: 24px 0 22px; transition: color 180ms ease; }
 	nav > a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 15px; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; }
 	nav > a:hover, nav > a.active { color: var(--ink); }

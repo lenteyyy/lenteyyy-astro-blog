@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { claimDailyView, redis, withinRateLimit } from '../../../lib/rate-limit';
+import { recordDailyView, redis, withinRateLimit } from '../../../lib/rate-limit';
 import { getPostBySlug } from '../../../lib/posts';
 
 export const prerender = false;
@@ -41,8 +41,8 @@ const handleView: APIRoute = async ({ params, request }) => {
 			validPageRequest = referrer.origin === requestUrl.origin
 				&& [`/posts/${slug}`, `/zh-tw/posts/${slug}`].includes(referrer.pathname.replace(/\/$/, ''));
 		} catch {}
-		const increment = shouldIncrement && validPageRequest && !isBot && await claimDailyView(request, slug);
-		const result = increment ? await redis(['INCR', key]) : await redis(['GET', key]);
+		const increment = shouldIncrement && validPageRequest && !isBot;
+		const result = increment ? await recordDailyView(request, slug) : await redis(['GET', key]);
 		const raw = result.result ?? 0;
 		const views = typeof raw === 'number' || (typeof raw === 'string' && /^\d+$/.test(raw)) ? Number(raw) : NaN;
 		if (!Number.isSafeInteger(views) || views < 0) throw new Error('Invalid view count');

@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import { field, splitFrontmatter, wikiReference, wikiReferences } from './content-utils.mjs';
@@ -21,13 +21,11 @@ async function markdownFiles(directory) {
 	return result;
 }
 
-await rm(outputDir, { recursive: true, force: true });
-await mkdir(outputDir, { recursive: true });
 const references = new Set();
 for (const file of await markdownFiles(postsDir)) {
 	const source = await readFile(file, 'utf8');
-	const { data } = splitFrontmatter(source);
-	for (const ref of wikiReferences(source)) references.add(ref);
+	const { data, body } = splitFrontmatter(source);
+	for (const ref of wikiReferences(body)) references.add(ref);
 	const cover = wikiReference(field(data, 'cover'));
 	if (cover) references.add(cover);
 }
@@ -42,13 +40,24 @@ for (const name of sourceFiles) {
 const manifest = {};
 let outputBytes = 0;
 
+// Build in an ignored staging directory. Missing/corrupt input must never
+// erase the currently published assets or leave a half-written manifest.
+await mkdir(path.join(project, '.astro'), { recursive: true });
+const staging = await mkdtemp(path.join(project, '.astro', 'media-sync-'));
+const nextOutput = path.join(staging, 'next');
+const previousOutput = path.join(staging, 'previous');
+await mkdir(nextOutput);
+let preserveStaging = false;
+
+try {
+
 for (const ref of [...references].sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))) {
 	const source = sourceMap.get(ref) || extensionlessSourceMap.get(ref);
 	if (!source) throw new Error(`Missing Obsidian attachment: ${ref}`);
 	const input = await readFile(source);
 	const hash = createHash('sha256').update(processingVersion).update(input).digest('hex').slice(0, 20);
 	const outputName = `${hash}.webp`;
-	const output = path.join(outputDir, outputName);
+	const output = path.join(nextOutput, outputName);
 	try {
 		const rendered = await sharp(input, { failOn: 'error' })
 			.rotate()
@@ -63,5 +72,28 @@ for (const ref of [...references].sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'
 	}
 }
 
-await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+const nextManifest = path.join(staging, 'manifest.json');
+await writeFile(nextManifest, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+let backedUp = false;
+let swapped = false;
+try {
+	try { await rename(outputDir, previousOutput); backedUp = true; }
+	catch (error) { if (error.code !== 'ENOENT') throw error; }
+	await rename(nextOutput, outputDir);
+	swapped = true;
+	await rename(nextManifest, manifestPath);
+} catch (error) {
+	try {
+		if (swapped) await rm(outputDir, { recursive: true, force: true });
+		if (backedUp) await rename(previousOutput, outputDir);
+	} catch (rollbackError) {
+		// Never delete the only remaining backup if the filesystem blocks recovery.
+		preserveStaging = true;
+		throw new AggregateError([error, rollbackError], `Media rollback needs manual recovery from ${staging}`);
+	}
+	throw error;
+}
 console.log(`Processed ${references.size} referenced images (${(outputBytes / 1024 / 1024).toFixed(1)} MB), with metadata removed.`);
+} finally {
+	if (!preserveStaging) await rm(staging, { recursive: true, force: true });
+}

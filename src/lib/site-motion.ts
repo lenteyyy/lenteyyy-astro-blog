@@ -4,12 +4,11 @@ import { MOTION } from './motion-policy';
 // Progressive enhancement: nothing is hidden in CSS or left hidden without JS.
 onPageLoad('site-motion', (signal) => {
 	const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-	if (reduced.matches || !('IntersectionObserver' in window)) return;
+	if (reduced.matches || document.body.dataset.siteMotion === 'off' || !document.querySelector('.intro') || !('IntersectionObserver' in window) || !('animate' in Element.prototype)) return;
 	const animations = new Set<Animation>();
 	const candidates = document.querySelectorAll<HTMLElement>(
-		'.intro-copy > :not(.intro-description), .intro-description > *, .intro-note, .not-found > *, .page-intro > *, .post-header > *, ' +
-		'.about-cover, .about > h1, .about-copy, .tag-page > h1, .category-page > h1, ' +
-		'.section-head, .post-card, .category-row > a, .hero-image, .post-nav, .footer-inner',
+		'.intro-links, .intro-description > :not(:first-child), .intro-note, ' +
+		'.archive .section-head, .archive .post-card, .categories .section-head, .category-row > a',
 	);
 	const observer = new IntersectionObserver((entries) => {
 		let order = 0;
@@ -18,8 +17,8 @@ onPageLoad('site-motion', (signal) => {
 			observer.unobserve(entry.target);
 			if (reduced.matches || signal.aborted) continue;
 			const animation = entry.target.animate(
-				[{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'translateY(0)' }],
-				{ duration: MOTION.revealDuration, delay: Math.min(order++, 3) * 65, easing: MOTION.easing, fill: 'backwards' },
+				[{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }],
+				{ duration: MOTION.revealDuration, delay: Math.min(order++, 3) * 55, easing: MOTION.easing, fill: 'backwards' },
 			);
 			animations.add(animation);
 			const release = () => animations.delete(animation);

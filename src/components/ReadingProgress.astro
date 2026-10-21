@@ -14,10 +14,10 @@
 		tocLinks.forEach((link) => link.addEventListener('click', (event) => {
 			const id = link.dataset.tocLink;
 			const target = id ? document.getElementById(id) : null;
-			if (!target) return;
+			if (!id || !target) return;
 			event.preventDefault();
 			target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
-			history.replaceState(null, '', `#${id}`);
+			history.replaceState(history.state, '', `#${encodeURIComponent(id)}`);
 		}, { signal }));
 
 		const updateReading = () => {
@@ -27,12 +27,11 @@
 			const total = rect.height - window.innerHeight * 0.65;
 			const read = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
 			progress.style.transform = `scaleX(${read / Math.max(total, 1)})`;
-			let nextId = activeId;
+			let nextId = '';
 			for (const heading of headings) if (heading.getBoundingClientRect().top <= 130) nextId = heading.id;
-			if (nextId && nextId !== activeId) {
+			if (nextId !== activeId) {
 				activeId = nextId;
 				tocLinks.forEach((link) => link.classList.toggle('active', link.dataset.tocLink === activeId));
-				history.replaceState(null, '', `#${activeId}`);
 			}
 		};
 		const requestUpdate = () => {

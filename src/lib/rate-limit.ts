@@ -54,10 +54,11 @@ export async function withinRateLimit(request: Request, scope: string, limit: nu
 	return count <= limit;
 }
 
-export async function claimDailyView(request: Request, slug: string): Promise<boolean> {
+export async function recordDailyView(request: Request, slug: string): Promise<RedisResult> {
 	const day = new Date().toISOString().slice(0, 10);
 	const hash = await fingerprint(request, `view|${slug}|${day}`);
-	const result = await redis(['SET', `post:viewed:${slug}:${day}:${hash}`, '1', 'NX', 'EX', 90000]);
-	if (result.result !== 'OK' && result.result !== null) throw new Error('Invalid view claim result');
-	return result.result === 'OK';
+	// One atomic operation: a failed INCR must not consume the daily claim;
+	// a lost HTTP response may be retried without double-counting a committed view.
+	const script = "if redis.call('EXISTS', KEYS[2]) == 1 then return redis.call('GET', KEYS[1]); end; local count = redis.call('INCR', KEYS[1]); redis.call('SET', KEYS[2], '1', 'EX', ARGV[1]); return count";
+	return redis(['EVAL', script, '2', `post:views:${slug}`, `post:viewed:${slug}:${day}:${hash}`, '90000']);
 }

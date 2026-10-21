@@ -1,32 +1,45 @@
 ---
 const { title, text, url, locale = 'zh-CN' } = Astro.props as { title: string; text: string; url: string; locale?: 'zh-CN' | 'zh-TW' };
-const labels = locale === 'zh-TW' ? { share: '分享文章', opened: '已開啟分享', copied: '連結已複製' } : { share: '分享文章', opened: '已打开分享', copied: '链接已复制' };
+const labels = locale === 'zh-TW' ? { share: '分享文章', opened: '已開啟分享', copied: '連結已複製', failed: '分享失敗，請複製網址' } : { share: '分享文章', opened: '已打开分享', copied: '链接已复制', failed: '分享失败，请复制网址' };
 ---
-<div class="share" data-opened-label={labels.opened} data-copied-label={labels.copied}>
+<div class="share" data-opened-label={labels.opened} data-copied-label={labels.copied} data-failed-label={labels.failed}>
 	<button type="button" data-share data-title={title} data-text={text} data-url={url}>{labels.share}</button>
 	<span role="status" aria-live="polite" data-share-status></span>
 </div>
 
 <script>
 	import { onPageLoad } from '../lib/client-lifecycle';
+	import { copyText } from '../lib/clipboard';
 
 	onPageLoad('share-button', (signal) => {
 		document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((button) => {
+			let timer = 0;
+			signal.addEventListener('abort', () => window.clearTimeout(timer), { once: true });
 			button.addEventListener('click', async () => {
 				const root = button.closest<HTMLElement>('.share');
 				const openedLabel = root?.dataset.openedLabel || '已打开分享';
 				const copiedLabel = root?.dataset.copiedLabel || '链接已复制';
 				const payload = { title: button.dataset.title || document.title, text: button.dataset.text || '', url: button.dataset.url || location.href };
 				const status = root?.querySelector<HTMLElement>('[data-share-status]');
-				const canShare = typeof navigator.share === 'function';
+				window.clearTimeout(timer);
+				button.disabled = true;
+				if (status) status.textContent = '';
+				let message = '';
 				try {
-					if (canShare) await navigator.share(payload);
-					else await navigator.clipboard.writeText(payload.url);
-					if (status) status.textContent = canShare ? openedLabel : copiedLabel;
-				} catch {
-					if (status) status.textContent = '';
+					if (typeof navigator.share === 'function') {
+						try { await navigator.share(payload); message = openedLabel; }
+						catch (error) {
+							if (error instanceof DOMException && error.name === 'AbortError') return;
+							if (signal.aborted) return;
+						}
+					}
+					if (!message) message = await copyText(payload.url) ? copiedLabel : root?.dataset.failedLabel || '分享失败，请复制网址';
+					if (signal.aborted) return;
+					if (status) status.textContent = message;
+					timer = window.setTimeout(() => { if (status?.isConnected) status.textContent = ''; }, 3000);
+				} finally {
+					button.disabled = false;
 				}
-				window.setTimeout(() => { if (status?.isConnected) status.textContent = ''; }, 1800);
 			}, { signal });
 		});
 	});

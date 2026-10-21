@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { Marked } from 'marked';
 
 export function splitFrontmatter(source) {
 	const normalized = source.replace(/^\uFEFF/, '').replaceAll('\r\n', '\n');
@@ -70,13 +71,22 @@ function quote(value) {
 
 export function wikiReferences(source) {
 	const refs = new Set();
-	for (const match of source.matchAll(/!\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]/g)) refs.add(path.basename(match[1].trim()));
+	// Parse Markdown instead of rewriting raw text: code examples are not assets.
+	const parser = new Marked({ extensions: [{
+		name: 'wikiReference', level: 'inline',
+		start(value) { return value.indexOf('![['); },
+		tokenizer(value) {
+			const match = /^!\[\[([^\]|#\n]+)(?:\|([^\]\n]*))?\]\]/.exec(value);
+			if (match) return { type: 'wikiReference', raw: match[0], ref: match[1].trim() };
+		},
+	}] });
+	parser.walkTokens(parser.lexer(source), token => { if (token.type === 'wikiReference') refs.add(token.ref); });
 	return [...refs];
 }
 
 export function wikiReference(value) {
 	const match = String(value || '').trim().match(/^!?\[\[([^\]|#]+)(?:[|#][^\]]*)?\]\]$/);
-	return match ? path.basename(match[1].trim()) : '';
+	return match ? match[1].trim() : '';
 }
 
 export function titleFromFile(file) {

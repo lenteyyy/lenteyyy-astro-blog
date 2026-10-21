@@ -32,14 +32,18 @@ for (const name of files) {
 	if (!body.trim()) failures.push(`${name}: body is empty`);
 	if (/^(?:notion-id|SourcePage|base):/mi.test(source)) failures.push(`${name}: legacy Notion metadata remains`);
 	if (/\/Users\/|(?:NOTION|VERCEL|GITHUB)_[A-Z_]*TOKEN\s*=|\b(?:gh[op]|sk)-[A-Za-z0-9_-]{12,}/.test(source)) failures.push(`${name}: possible local path or secret`);
-	for (const ref of wikiReferences(source)) if (!manifest[ref]) failures.push(`${name}: missing media manifest entry for ${ref}`);
+	for (const ref of wikiReferences(body)) if (!Object.hasOwn(manifest, ref)) failures.push(`${name}: missing media manifest entry for ${ref}`);
 	const cover = String(field(data, 'cover')).trim();
 	const coverRef = wikiReference(cover);
-	if (coverRef && !manifest[coverRef]) failures.push(`${name}: missing cover manifest entry for ${coverRef}`);
+	if (coverRef && !Object.hasOwn(manifest, coverRef)) failures.push(`${name}: missing cover manifest entry for ${coverRef}`);
 	if (cover && !coverRef && !cover.startsWith('/media/') && !/^https:\/\//.test(cover)) failures.push(`${name}: unsupported cover reference ${cover}`);
 }
 
 for (const [ref, url] of Object.entries(manifest)) {
+	if (typeof url !== 'string' || !/^\/media\/[a-f0-9]{20}\.webp$/.test(url)) {
+		failures.push(`${ref}: invalid public media path`);
+		continue;
+	}
 	const file = path.join(project, 'public', url.replace(/^\//, ''));
 	try {
 		const metadata = await sharp(file).metadata();

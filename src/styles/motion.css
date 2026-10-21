@@ -36,7 +36,7 @@ body[data-site-motion='on'] .easter-egg:not([hidden]) .easter-egg-card {
 }
 
 /* Editorial motion: imagery breathes; the reading column stays still. */
-.cover-link img, .article-content .article-image img {
+.cover-link img {
   transition-duration: var(--motion-image-duration);
   transition-timing-function: var(--motion-ease);
 }

@@ -33,13 +33,19 @@ export function resolveMediaReference(value: string): string {
 	return safeLinkUrl(value, ['https:']);
 }
 
-function prepareWikiImages(source: string): string {
-	return source.replace(/!\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g, (_match, rawRef: string, rawCaption = '') => {
-		const ref = rawRef.trim();
-		const url = Object.hasOwn(media, ref) ? media[ref] : '';
-		if (!url) return '';
-		const caption = String(rawCaption).trim().replaceAll('[', '\\[').replaceAll(']', '\\]');
-		return `![${caption}](${url})`;
+function createMarkdownParser(renderer: Renderer): Marked {
+	return new Marked({ renderer, gfm: true, breaks: false, async: false }).use({
+		extensions: [{
+			name: 'wikiImage',
+			level: 'inline',
+			start(source) { return source.indexOf('![['); },
+			tokenizer(source) {
+				const match = /^!\[\[([^\]|#\n]+)(?:\|([^\]\n]*))?\]\]/.exec(source);
+				if (!match) return;
+				const ref = match[1].trim();
+				return { type: 'image', raw: match[0], href: Object.hasOwn(media, ref) ? media[ref] : '', text: (match[2] || '').trim(), tokens: [] };
+			},
+		}],
 	});
 }
 
@@ -100,7 +106,8 @@ function headingId(value: string): string {
 type MarkdownHeading = { text: string; id: string; level: 2 | 3 };
 
 function createBlogRenderer(locale: SiteLocale, headings?: MarkdownHeading[]): Renderer {
-	const headingCounts = new Map<string, number>();
+	// Layout IDs share the document namespace with article headings.
+	const usedIds = new Set(['language-menu', 'easter-egg-title', 'wechat-contact', 'contact-instagram']);
 	return {
 	html({ text }: Tokens.HTML | Tokens.Tag): string {
 		if (/^<\/?u>$/i.test(text.trim())) return text.trim().toLowerCase();
@@ -112,9 +119,10 @@ function createBlogRenderer(locale: SiteLocale, headings?: MarkdownHeading[]): R
 		const html = this.parser.parseInline(tokens);
 		const translated = translateText(html.replace(/<[^>]*>/g, ''), locale);
 		const base = headingId(translated) || 'section';
-		const count = headingCounts.get(base) || 0;
-		headingCounts.set(base, count + 1);
-		const id = count ? `${base}-${count + 1}` : base;
+		let id = base;
+		let suffix = 2;
+		while (usedIds.has(id)) id = `${base}-${suffix++}`;
+		usedIds.add(id);
 		const level = depth >= 3 ? 3 : 2;
 		headings?.push({ text: translated.replace(/&(amp|lt|gt|quot|#39);/g, (entity) => ({ '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" })[entity] || entity), id, level });
 		const label = locale === 'zh-TW' ? '複製標題連結' : '复制标题链接';
@@ -182,8 +190,7 @@ function translateHtmlText(html: string, locale: SiteLocale): string {
 
 export function renderMarkdown(source: string, locale: SiteLocale = 'zh-CN'): string {
 	const renderer = createBlogRenderer(locale);
-	const parser = new Marked({ renderer, gfm: true, breaks: false, async: false });
-	const html = parser.parse(prepareWikiImages(source)) as string;
+	const html = createMarkdownParser(renderer).parse(source) as string;
 	return translateHtmlText(groupImageGalleries(html), locale);
 }
 
@@ -205,6 +212,6 @@ export function getMarkdownHeadings(source: string, locale: SiteLocale = 'zh-CN'
 	const headings: MarkdownHeading[] = [];
 	// Use the same parser and ID allocation as the article: ignore code fences,
 	// recognize setext/nested headings, and keep inline links and duplicates in sync.
-	new Marked({ renderer: createBlogRenderer(locale, headings), gfm: true, breaks: false, async: false }).parse(prepareWikiImages(source));
+	createMarkdownParser(createBlogRenderer(locale, headings)).parse(source);
 	return headings;
 }

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/optimize-static-images.mjs && node scripts/harden-build-routes.mjs && node scripts/verify-blog-csp.mjs && node scripts/verify-project-isolation.mjs",
+    "build": "node scripts/validate-content.mjs && astro build && node scripts/optimize-static-images.mjs && node scripts/harden-build-routes.mjs && node scripts/verify-blog-csp.mjs && node scripts/verify-project-isolation.mjs",
     "check": "astro check",
     "lint": "astro check",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",

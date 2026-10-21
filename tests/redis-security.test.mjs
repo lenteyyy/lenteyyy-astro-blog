@@ -26,11 +26,24 @@ test('Redis fetches have a deadline, refuse redirects and reject command error p
  }
 });
 
-test('invalid rate counts or deduplication responses never silently authorize a view',async()=>{
+test('invalid rate counts never silently authorize a view',async()=>{
  for(const result of [0,-1,'nonnumeric',{},null,Number.MAX_SAFE_INTEGER+1]){
   const broken=loadRedis('https://example.upstash.io',async()=>new Response(JSON.stringify({result})));
   await assert.rejects(broken.withinRateLimit(new Request('https://example.test'),'views',90,60));
  }
- const broken=loadRedis('https://example.upstash.io',async()=>new Response(JSON.stringify({result:1})));
- await assert.rejects(broken.claimDailyView(new Request('https://example.test'),'known'));
+});
+
+test('daily counting and visitor deduplication use a single atomic Redis operation',async()=>{
+ const commands=[];
+ const store=loadRedis('https://example.upstash.io',async(_url,init)=>{commands.push(JSON.parse(init.body));return new Response(JSON.stringify({result:13}));});
+ assert.equal((await store.recordDailyView(new Request('https://example.test'),'known')).result,13);
+ assert.equal(commands.length,1);
+ const [operation,script,keyCount,counter,claim,expiry]=commands[0];
+ assert.equal(operation,'EVAL');assert.equal(keyCount,'2');assert.equal(counter,'post:views:known');assert.equal(expiry,'90000');
+ assert.match(claim,/^post:viewed:known:\d{4}-\d{2}-\d{2}:[a-f0-9]{64}$/);
+ assert.ok(script.indexOf("redis.call('INCR'")<script.indexOf("redis.call('SET'"));
+ assert.match(script,/EXISTS.*GET/s);
+ await store.recordDailyView(new Request('https://example.test'),'known');assert.equal(commands[1][4],claim);
+ const broken=loadRedis('https://example.upstash.io',async()=>{throw Error('upstream unavailable');});
+ await assert.rejects(broken.recordDailyView(new Request('https://example.test'),'known'));
 });
