@@ -14,8 +14,9 @@ const label = locale === 'zh-TW' ? '閱讀量' : '阅读量';
 			const visible = document.visibilityState === 'visible';
 			const prefetched = /bot|crawler|spider/i.test(navigator.userAgent);
 			const seenKey = `viewed:${slug}`;
+			const day = new Date().toISOString().slice(0, 10);
 			let seen = false;
-			try { seen = sessionStorage.getItem(seenKey) === '1'; } catch {}
+			try { seen = sessionStorage.getItem(seenKey) === day; } catch {}
 			const shouldIncrement = visible && !prefetched && !seen;
 			fetch(`/api/views/${encodeURIComponent(slug)}`, {
 				method: shouldIncrement ? 'POST' : 'GET', credentials: 'omit', signal,
@@ -24,7 +25,7 @@ const label = locale === 'zh-TW' ? '閱讀量' : '阅读量';
 				.then((data) => {
 					if (!data || typeof data.views !== 'number' || signal.aborted) return;
 					item.textContent = `${label} ${data.views}`;
-					if (shouldIncrement) { try { sessionStorage.setItem(seenKey, '1'); } catch {} }
+					if (shouldIncrement) { try { sessionStorage.setItem(seenKey, day); } catch {} }
 				})
 				.catch(() => {});
 		});

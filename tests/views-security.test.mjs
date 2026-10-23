@@ -65,7 +65,7 @@ test('only same-origin article visits increment; rate limits and invalid counter
  const route=loadViews({redis:async()=>assert.fail('Increment bypassed atomic view operation'),recordDailyView:async(_request,slug)=>{commands.push(slug);return {result:13};}});
  assert.equal((await route.POST({params:{slug:'known'},request})).status,200);assert.deepEqual(commands,['known']);
  const limited=loadViews({withinRateLimit:async()=>false,redis:async()=>assert.fail('Rate-limited request reached Redis')});
- assert.equal((await limited.POST({params:{slug:'known'},request})).status,429);
+ const rejected=await limited.POST({params:{slug:'known'},request});assert.equal(rejected.status,429);assert.equal(rejected.headers.get('retry-after'),'60');
  for(const value of [{},'garbage',-1,Infinity,'9007199254740993']){
   const broken=loadViews({redis:async()=>({result:value})});const response=await broken.GET({params:{slug:'known'},request:new Request(url)});
   assert.equal((await response.json()).unavailable,true);assert.equal(response.headers.get('cache-control'),'private, no-store');

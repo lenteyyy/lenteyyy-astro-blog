@@ -14,6 +14,7 @@ function json(body: unknown, status = 200): Response {
 			'cache-control': 'private, no-store',
 			'cross-origin-resource-policy': 'same-origin',
 			'x-content-type-options': 'nosniff',
+			...(status === 429 ? { 'retry-after': '60' } : {}),
 		},
 	});
 }

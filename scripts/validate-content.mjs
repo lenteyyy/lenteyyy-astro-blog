@@ -1,7 +1,8 @@
-import { readFile, readdir } from 'node:fs/promises';
+import { readFile, lstat } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import { field, splitFrontmatter, wikiReference, wikiReferences } from './content-utils.mjs';
+import { postFiles } from './post-files.mjs';
 
 const project = process.cwd();
 const postsDir = path.join(project, 'content', 'posts');
@@ -10,10 +11,17 @@ const allowedCategories = new Set(['酒店测评', '音乐推荐', '个人杂谈
 const slugs = new Set();
 const failures = [];
 
-const files = (await readdir(postsDir)).filter((name) => name.endsWith('.md')).sort();
+const files = await postFiles(postsDir);
 for (const name of files) {
 	const source = await readFile(path.join(postsDir, name), 'utf8');
 	const { data, body } = splitFrontmatter(source);
+	for (const key of ['title', 'slug', 'date', 'category', 'status', 'summary', 'cover']) {
+		if (Object.hasOwn(data, key) && typeof data[key] !== 'string') failures.push(`${name}: ${key} must be text`);
+	}
+	for (const key of ['title', 'slug', 'date', 'category', 'status', 'summary', 'cover', 'tags', 'featured']) {
+		if (Object.keys(data).some(candidate => candidate.toLowerCase() === key && candidate !== key)) failures.push(`${name}: metadata keys must be lowercase: ${key}`);
+	}
+	if (Object.hasOwn(data, 'featured') && typeof data.featured !== 'boolean') failures.push(`${name}: featured must be boolean`);
 	const title = String(field(data, 'title')).trim();
 	const slug = String(field(data, 'slug')).trim();
 	const date = String(field(data, 'date')).trim();
@@ -46,6 +54,7 @@ for (const [ref, url] of Object.entries(manifest)) {
 	}
 	const file = path.join(project, 'public', url.replace(/^\//, ''));
 	try {
+		if ((await lstat(file)).isSymbolicLink()) throw new Error('Media symlink');
 		const metadata = await sharp(file).metadata();
 		if (metadata.exif || metadata.iptc || metadata.xmp) failures.push(`${ref}: published media still contains metadata`);
 	} catch (error) {

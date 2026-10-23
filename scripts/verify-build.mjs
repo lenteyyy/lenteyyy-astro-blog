@@ -1,13 +1,14 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { field, splitFrontmatter } from './content-utils.mjs';
+import { postFiles } from './post-files.mjs';
 
 const project = process.cwd();
 const postsDir = path.join(project, 'content', 'posts');
 const buildDir = path.join(project, 'dist', 'client');
 const mediaDir = path.join(project, 'public', 'media');
 const failures = [];
-const files = (await readdir(postsDir)).filter((name) => name.endsWith('.md')).sort();
+const files = await postFiles(postsDir);
 const posts = [];
 
 for (const name of files) {

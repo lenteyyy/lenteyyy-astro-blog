@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/validate-content.mjs && astro build && node scripts/optimize-static-images.mjs && node scripts/harden-build-routes.mjs && node scripts/verify-blog-csp.mjs && node scripts/verify-project-isolation.mjs",
+    "build": "node scripts/validate-content.mjs && astro build && node scripts/optimize-static-images.mjs && node scripts/harden-build-routes.mjs && node scripts/verify-blog-csp.mjs && node scripts/verify-project-isolation.mjs && node scripts/security-audit.mjs",
     "check": "astro check",
     "lint": "astro check",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
@@ -16,6 +16,7 @@
     "content:validate": "node scripts/validate-content.mjs",
     "verify:build": "node scripts/verify-build.mjs",
     "security:audit": "node scripts/security-audit.mjs",
+    "security:history": "node scripts/audit-git-history.mjs",
     "security:target": "node scripts/verify-deployment-target.mjs --online",
     "astro": "astro"
   },
@@ -27,7 +28,7 @@
     "@vercel/analytics": "2.0.1",
     "@vercel/og": "1.0.1",
     "@vercel/speed-insights": "2.0.0",
-    "astro": "7.2.8",
+    "astro": "7.3.3",
     "marked": "18.0.13",
     "opencc-js": "1.4.0",
     "react": "19.2.8",

@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import { splitFrontmatter } from '../scripts/content-utils.mjs';
 
 test('publication validation rejects broken tag paths and impossible calendar dates',()=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'blog-content-validation-'));
@@ -16,6 +17,23 @@ test('publication validation rejects broken tag paths and impossible calendar da
    assert.equal(result.status,valid?0:1,result.stderr);
    if(!valid)assert.match(result.stderr,/invalid date|tags must be plain labels/);
   }
+ } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+test('publication validation covers nested articles, duplicate slugs, key casing and symlink boundaries',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'blog-nested-content-'));
+ try {
+  const posts=path.join(root,'content','posts');fs.mkdirSync(path.join(posts,'nested'),{recursive:true});
+  fs.writeFileSync(path.join(root,'content','media-manifest.json'),'{}');
+  const article=(slug='known')=>`---\ntitle: Known\nslug: ${slug}\ndate: 2026-10-23\ncategory: 个人杂谈\nstatus: published\ntags:\n  - 生活\n---\n\nA published article.\n`;
+  const run=()=>spawnSync(process.execPath,[path.resolve('scripts/validate-content.mjs')],{cwd:root,encoding:'utf8'});
+  fs.writeFileSync(path.join(posts,'nested','known.md'),article());assert.equal(run().status,0);
+  fs.writeFileSync(path.join(posts,'top.md'),article());assert.match(run().stderr,/duplicate slug/);fs.unlinkSync(path.join(posts,'top.md'));
+  fs.writeFileSync(path.join(posts,'nested','known.md'),article().replace('title:', 'Title:'));assert.match(run().stderr,/metadata keys must be lowercase/);
+  fs.writeFileSync(path.join(posts,'nested','known.md'),article().replace('title: Known','title: true'));assert.match(run().stderr,/title must be text/);
+  fs.writeFileSync(path.join(posts,'nested','known.md'),article());
+  fs.symlinkSync(path.join(posts,'nested','known.md'),path.join(posts,'shortcut.md'));assert.match(run().stderr,/symlink rejected/);
+  assert.throws(()=>splitFrontmatter(article().replace('title: Known','title: Known\ntitle: Other')),/Duplicate frontmatter/);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
 

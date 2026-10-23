@@ -36,3 +36,18 @@ test('media synchronization preserves existing output on missing/corrupt inputs 
   } finally {fs.rmSync(root,{recursive:true,force:true});}
  }
 });
+
+test('media synchronization cannot follow an attachment symlink outside the source boundary',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'blog-media-symlink-'));
+ try{
+  for(const folder of ['content/posts','content/_attachments','public/media'])fs.mkdirSync(path.join(root,folder),{recursive:true});
+  fs.writeFileSync(path.join(root,'content/posts/known.md'),'![[outside.png]]');
+  fs.writeFileSync(path.join(root,'content/media-manifest.json'),'{}');
+  fs.writeFileSync(path.join(root,'private.png'),'private original');
+  fs.symlinkSync(path.join(root,'private.png'),path.join(root,'content/_attachments/outside.png'));
+  fs.writeFileSync(path.join(root,'public/media/old.webp'),'unchanged existing media');
+  const result=spawnSync(process.execPath,[path.resolve('scripts/sync-media.mjs')],{cwd:root,encoding:'utf8'});
+  assert.notEqual(result.status,0);assert.match(result.stderr,/Attachment symlink rejected/);
+  assert.equal(fs.readFileSync(path.join(root,'public/media/old.webp'),'utf8'),'unchanged existing media');
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});

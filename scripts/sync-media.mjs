@@ -1,8 +1,9 @@
 import { createHash } from 'node:crypto';
-import { mkdir, mkdtemp, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
+import { lstat, mkdir, mkdtemp, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import { field, splitFrontmatter, wikiReference, wikiReferences } from './content-utils.mjs';
+import { postFiles } from './post-files.mjs';
 
 const project = process.cwd();
 const postsDir = path.join(project, 'content', 'posts');
@@ -11,26 +12,19 @@ const outputDir = path.join(project, 'public', 'media');
 const manifestPath = path.join(project, 'content', 'media-manifest.json');
 const processingVersion = 'webp-v1-2400-q84';
 
-async function markdownFiles(directory) {
-	const result = [];
-	for (const entry of await readdir(directory, { withFileTypes: true })) {
-		const full = path.join(directory, entry.name);
-		if (entry.isDirectory()) result.push(...await markdownFiles(full));
-		else if (entry.name.endsWith('.md')) result.push(full);
-	}
-	return result;
-}
-
 const references = new Set();
-for (const file of await markdownFiles(postsDir)) {
-	const source = await readFile(file, 'utf8');
+for (const file of await postFiles(postsDir)) {
+	const source = await readFile(path.join(postsDir, file), 'utf8');
 	const { data, body } = splitFrontmatter(source);
 	for (const ref of wikiReferences(body)) references.add(ref);
 	const cover = wikiReference(field(data, 'cover'));
 	if (cover) references.add(cover);
 }
 
-const sourceFiles = await readdir(attachmentsDir);
+if ((await lstat(attachmentsDir)).isSymbolicLink()) throw new Error('Attachment directory symlink rejected');
+const sourceEntries = await readdir(attachmentsDir, { withFileTypes: true });
+if (sourceEntries.some(entry => entry.isSymbolicLink())) throw new Error('Attachment symlink rejected');
+const sourceFiles = sourceEntries.filter(entry => entry.isFile()).map(entry => entry.name);
 const sourceMap = new Map(sourceFiles.map((name) => [name, path.join(attachmentsDir, name)]));
 const extensionlessSourceMap = new Map();
 for (const name of sourceFiles) {

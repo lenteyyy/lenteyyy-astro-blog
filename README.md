@@ -56,11 +56,13 @@ pnpm install
 pnpm dev
 ```
 
-本仓库独立维护个人博客，仅使用本站地址、giscus 和 Redis 统计配置。构建、路由、资源和浏览器存储均仅服务本站，不包含其他项目的跳转或数据迁移入口。
+本仓库独立维护个人博客，仅使用本站地址、giscus 和 Redis 统计配置。构建、路由、资源和浏览器存储均仅服务本站；页脚可通过普通外链访问学习站，不共享账号、服务、存储或数据迁移入口。
 
 ## 发布安全边界
 
-发布前执行 `pnpm test`、`pnpm check`、`pnpm build`、`pnpm verify:build` 和 `pnpm security:audit`。公开图片也会检查 EXIF、XMP、IPTC；原始附件与本地隔离文件不进入发布包。
+发布前执行 `pnpm test`、`pnpm check`、`pnpm build`、`pnpm verify:build` 和 `pnpm security:audit`。构建已强制扫描公开产物；发布校验覆盖文章子目录，拒绝重复元数据、重复 slug 与符号链接。公开图片也会检查 EXIF、XMP、IPTC；原始附件与本地隔离文件不进入发布包。
+
+`pnpm security:history` 在本机扫描 Git 所有可达历史文本对象，仅输出风险类别和文件位置，不输出匹配值；启发式扫描不能证明不存在未知格式的秘密。统计访问者标识使用按用途和日期隔离的 HMAC，并通过有限 TTL 自动过期；客户端按 UTC 日期去重，不持久保留原始 IP。私密统计变量仅配置于 Production，Preview 缺失配置时安全降级，不访问正式统计库。
 
 设置本机 `BLOG_VERCEL_ACCOUNT_EMAIL` 后运行 `pnpm security:target`，核对当前登录账户、固定博客团队与项目、GitHub 仓库和生产分支。`BLOG_VERCEL_CLI` 可指定本机 CLI 路径。API 发布准备脚本会强制执行同一核对。
 

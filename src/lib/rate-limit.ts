@@ -36,8 +36,13 @@ export async function redis(command: unknown[]): Promise<RedisResult> {
 }
 
 async function fingerprint(request: Request, scope: string): Promise<string> {
+	const config = redisConfig();
+	if (!config) throw new Error('Missing Redis env');
 	const input = new TextEncoder().encode(`${scope}|${rateLimitAddress(request)}`);
-	const digest = await crypto.subtle.digest('SHA-256', input);
+	// A plain IP hash can be reversed by enumerating IPv4 addresses. Keyed,
+	// scope-bound identifiers cannot be reconstructed from the Redis keys alone.
+	const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(config.token), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+	const digest = await crypto.subtle.sign('HMAC', key, input);
 	return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
 }
 

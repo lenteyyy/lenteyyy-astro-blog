@@ -21,6 +21,7 @@ export function parseFrontmatter(value) {
 		const field = rawLine.match(/^([A-Za-z][A-Za-z0-9_-]*):(?:\s*(.*))?$/);
 		if (!field) continue;
 		const [, key, raw = ''] = field;
+		if (Object.hasOwn(data, key)) throw new Error(`Duplicate frontmatter field: ${key}`);
 		if (!raw.trim()) {
 			data[key] = [];
 			listKey = key;

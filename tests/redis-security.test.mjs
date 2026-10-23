@@ -4,10 +4,10 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
 
-function loadRedis(url, fetch) {
+function loadRedis(url, fetch, address = '127.0.0.1', token = 'test-only-token') {
  const source=fs.readFileSync('src/lib/rate-limit.ts','utf8').replace(/^import .*;\n/gm,'').replaceAll('import.meta.env','env');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
- const exports={};vm.runInNewContext(code,{exports,URL,AbortSignal,TextEncoder,crypto,fetch,rateLimitAddress:()=> '127.0.0.1',env:{KV_REST_API_URL:url,KV_REST_API_TOKEN:'test-only-token'}});return exports;
+ const exports={};vm.runInNewContext(code,{exports,URL,AbortSignal,TextEncoder,crypto,fetch,rateLimitAddress:()=>address,env:{KV_REST_API_URL:url,KV_REST_API_TOKEN:token}});return exports;
 }
 
 test('Redis credentials cannot be sent to arbitrary, plaintext, credentialed or path-based endpoints',async()=>{
@@ -15,6 +15,22 @@ test('Redis credentials cannot be sent to arbitrary, plaintext, credentialed or 
   const redis=loadRedis(url,async()=>assert.fail('Credentials reached an unapproved endpoint'));
   await assert.rejects(redis.redis(['GET','test']));
  }
+});
+
+test('visitor identifiers are keyed, scoped, bounded and never contain IPs or credentials',async()=>{
+ const keys=[];
+ const capture=async(_url,init)=>{keys.push(JSON.parse(init.body));return new Response(JSON.stringify({result:1}));};
+ const request=new Request('https://example.test');
+ const one=loadRedis('https://example.upstash.io',capture,'192.0.2.42','test-only-token-one');
+ await one.recordDailyView(request,'known');await one.recordDailyView(request,'known');await one.recordDailyView(request,'other');
+ const otherAddress=loadRedis('https://example.upstash.io',capture,'192.0.2.43','test-only-token-one');await otherAddress.recordDailyView(request,'known');
+ const otherSecret=loadRedis('https://example.upstash.io',capture,'192.0.2.42','test-only-token-two');await otherSecret.recordDailyView(request,'known');
+ assert.equal(keys[0][4],keys[1][4]);
+ for(const index of [2,3,4])assert.notEqual(keys[0][4],keys[index][4]);
+ const day=new Date().toISOString().slice(0,10),plain=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(`view|known|${day}|192.0.2.42`));
+ const plainHash=Buffer.from(plain).toString('hex');assert.ok(!keys[0][4].endsWith(plainHash));
+ for(const command of keys){assert.doesNotMatch(JSON.stringify(command),/192\.0\.2\.|test-only-token/);assert.equal(command[5],'90000');}
+ await one.withinRateLimit(request,'views',90,60);assert.equal(keys.at(-1)[4],'65');
 });
 
 test('Redis fetches have a deadline, refuse redirects and reject command error payloads',async()=>{

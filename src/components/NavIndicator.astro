@@ -25,7 +25,9 @@
 			link.addEventListener('focus', () => move(link), { signal });
 		});
 		nav.addEventListener('pointerleave', restore, { signal });
-		nav.addEventListener('focusout', event => { if (!links.includes(event.relatedTarget as HTMLAnchorElement)) restore(); }, { signal });
+		nav.addEventListener('focusout', event => {
+			if (!links.includes(event.relatedTarget as HTMLAnchorElement)) move(links.find(link => link.classList.contains('active')));
+		}, { signal });
 		const resize = () => {
 			cancelAnimationFrame(frame);
 			frame = requestAnimationFrame(() => move(current));

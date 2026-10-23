@@ -90,11 +90,11 @@ function renderEmbed(value: string): string {
 	const url = safeLinkUrl(value, ['https:']);
 	if (!url) return '';
 	const youtube = youtubeEmbedUrl(url);
-	if (youtube) return `<figure class="media-embed media-embed-youtube"><iframe src="${escapeAttribute(youtube)}" title="YouTube embedded player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>`;
+	if (youtube) return `<figure class="media-embed media-embed-youtube"><iframe src="${escapeAttribute(youtube)}" title="YouTube embedded player" loading="lazy" referrerpolicy="strict-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>`;
 	const spotify = spotifyEmbedUrl(url);
-	if (spotify) return `<figure class="media-embed media-embed-spotify"><iframe src="${escapeAttribute(spotify)}" title="Spotify embedded player" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></figure>`;
+	if (spotify) return `<figure class="media-embed media-embed-spotify"><iframe src="${escapeAttribute(spotify)}" title="Spotify embedded player" loading="lazy" referrerpolicy="no-referrer" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></figure>`;
 	const apple = appleMusicEmbedUrl(url);
-	if (apple) return `<figure class="media-embed media-embed-apple"><iframe src="${escapeAttribute(apple)}" title="Apple Music embedded player" loading="lazy" allow="autoplay *; encrypted-media *; fullscreen *"></iframe></figure>`;
+	if (apple) return `<figure class="media-embed media-embed-apple"><iframe src="${escapeAttribute(apple)}" title="Apple Music embedded player" loading="lazy" referrerpolicy="no-referrer" allow="autoplay *; encrypted-media *; fullscreen *"></iframe></figure>`;
 	return '';
 }
 
@@ -157,7 +157,7 @@ function createBlogRenderer(locale: SiteLocale, headings?: MarkdownHeading[]): R
 		const url = href.startsWith('/media/') ? href : safeLinkUrl(href, ['https:']);
 		if (!url) return '';
 		const alt = text || '';
-		return `<figure class="article-image"><img src="${escapeAttribute(url)}" alt="${escapeAttribute(alt)}" loading="lazy" decoding="async" data-lightbox-image data-caption="${escapeAttribute(alt)}" />${alt ? `<figcaption>${escapeHtml(alt)}</figcaption>` : ''}</figure>`;
+		return `<figure class="article-image"><img src="${escapeAttribute(url)}" alt="${escapeAttribute(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-lightbox-image data-caption="${escapeAttribute(alt)}" />${alt ? `<figcaption>${escapeHtml(alt)}</figcaption>` : ''}</figure>`;
 	},
 
 	code({ text, lang }: Tokens.Code): string {
